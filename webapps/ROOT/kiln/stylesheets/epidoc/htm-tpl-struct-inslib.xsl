@@ -162,7 +162,7 @@
          </xsl:when>
          <xsl:otherwise>
            <xsl:for-each select="//t:facsimile[not(//t:graphic)]">
-             <xsl:text>None.</xsl:text>
+             <xsl:text>None available (2019).</xsl:text>
            </xsl:for-each>
          </xsl:otherwise>
        </xsl:choose>
