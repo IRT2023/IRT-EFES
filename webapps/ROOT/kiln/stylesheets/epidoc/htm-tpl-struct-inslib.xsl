@@ -152,13 +152,11 @@
      </p>
      
      <div id="images">
-<<<<<<< HEAD
        <h4>Images</h4>
          <xsl:for-each select="//t:facsimile//t:graphic">
            <span>&#160;</span>
              <xsl:apply-templates select="." />
          </xsl:for-each>
-=======
        <h4 class="slimmer">Images</h4>
        <xsl:choose>
          <xsl:when test="//t:facsimile//t:graphic">
@@ -173,7 +171,6 @@
            </xsl:for-each>
          </xsl:otherwise>
        </xsl:choose>
->>>>>>> 034b34a531fac495ae86945ebca257cebe89ee03
      </div>
    </xsl:template>
 
