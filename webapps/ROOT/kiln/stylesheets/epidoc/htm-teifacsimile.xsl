@@ -16,7 +16,7 @@
 
   <!-- Display a local image with thumbnail. -->
   <xsl:template match="t:graphic">
-    <xsl:param name="parm-image-loc" select="'//ircyr3-dev.kdl.kcl.ac.uk/images/'" tunnel="yes" />
+    <xsl:param name="parm-image-loc" select="''" tunnel="yes" />
     <!-- Create a link to the full image and display a thumbnail
          image.
 

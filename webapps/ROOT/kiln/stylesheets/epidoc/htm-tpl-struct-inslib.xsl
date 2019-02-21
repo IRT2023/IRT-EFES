@@ -153,14 +153,10 @@
      
      <div id="images">
        <h4>Images</h4>
-       <dl>
          <xsl:for-each select="//t:facsimile//t:graphic">
-           <dt width="150" align="left"></dt>
-           <dd>
+           <span>&#160;</span>
              <xsl:apply-templates select="." />
-           </dd>
          </xsl:for-each>
-       </dl>
      </div>
    </xsl:template>
 
