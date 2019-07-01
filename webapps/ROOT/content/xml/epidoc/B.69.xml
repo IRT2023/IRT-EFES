@@ -8,7 +8,8 @@
       <fileDesc>
          <titleStmt>
             <title><rs type="textType">Funerary</rs> inscription</title>
-            <editor>Joyce M. Reynolds</editor>             <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor><!-- revised edition Catherine Dobias-Lalou -->
+            <editor>Catherine Dobias-Lalou, Joyce M. Reynolds</editor>
+            <editor role="translator" xml:id="cdl">Catherine Dobias-Lalou</editor>
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -108,19 +109,19 @@
       <body>
          <div type="bibliography">
             <head>Bibliography</head>
-            <p><bibl><ptr target="barth1849"/> p. <citedRange>387</citedRange> and n. <citedRange>17</citedRange> p. <citedRange>483</citedRange> (drawing)</bibl>;
+            <p><bibl><ptr target="barth1849"/> p. <citedRange>387</citedRange> and n. <citedRange>17</citedRange> p. 
+               <citedRange>483</citedRange> (drawing)</bibl>, whence 
                <bibl><ptr target="jmr1978"/> <citedRange>26</citedRange></bibl>, whence  
                <bibl><title>SEG</title> <citedRange>28.1544</citedRange></bibl>;
-               <!-- To add: cdl forthcoming Bull Antiquaires de France year 2012 -->.
+               rediscovered and republished <bibl><ptr target="cdl2012"/> <citedRange>153-154</citedRange></bibl>
             </p>
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <head xml:lang="en">Text</head>
             <ab>
                     <lb n="1"/><persName type="attested" key="lgpn:V1-61923"><name nymRef="Φλάβιος"><supplied reason="undefined" evidence="previouseditor">Φ</supplied><unclear>λ</unclear>άβιοϲ</name> 
                     <lb n="2"/><name nymRef="Εὐέτης"><supplied reason="undefined" evidence="previouseditor">Εὐ</supplied>έτηϲ</name></persName>
-                    <lb n="3"/> <w>ἐτῶν</w>
+                    <lb n="3"/> <w>ἐτῶν</w>
                     <lb n="4"/><num value="21">κα</num> <unclear><g ref="symbols.xml#leaf"/></unclear>
          </ab>
          </div>
@@ -128,28 +129,22 @@
          <div type="apparatus">
             <head>Apparatus</head>
             <listApp>
-               <app loc="1"><lem><supplied reason="undefined" evidence="previouseditor">Φ</supplied><unclear>λ</unclear>άβιοϲ</lem>
-                  <rdg resp="#barth1849">Φλάβιοϲ</rdg> <note>whence Reynolds</note>
-               </app>
-               <app loc="2"><lem><supplied reason="undefined" evidence="previouseditor">Εὐ</supplied>έτηϲ</lem>
-                  <rdg resp="#barth1849">Εὐέτηϲ</rdg> <note>whence Reynolds</note></app>
+               <app loc="1-2"><note>When Barth transcribed the text it was complete.</note></app>
             </listApp>
          </div>
          
-         <div type="translation" xml:space="preserve" xml:lang="en">
-            <head>Translation</head>
+        <div type="translation" xml:space="preserve"> <head>Translations</head> 
+           <div type="translation" resp="#cdl" xml:lang="en">
             <p>Flavius Euetes <supplied reason="subaudible">died</supplied> aged 21.</p>
          </div>
-         <div type="translation" xml:space="preserve" xml:lang="fr">
-            <head>Translation</head>
+         <div type="translation" resp="#cdl" xml:lang="fr">
             <p>Flavius Euetès <supplied reason="subaudible">mort</supplied> à 21 ans.</p>
-         </div>
+         </div></div>
          
          <div type="commentary">
             <head>Commentary</head>
             <p>It is clear from Barth's copy that he saw the stone still complete, whereas it is now broken into many pieces, part of which have been lost.</p>
-            <p>For the inscription being amongst the marbles acquired from Vattier de Bourville and now in the Louvre, see Dobias-Lalou forthcoming 
-               (séance Antiquaires de France 13 juin 2012).<!-- check --></p>
+            <p>For the inscription being amongst the marbles acquired from Vattier de Bourville and now in the Louvre, see Dobias-Lalou, op.cit.</p>
          </div>
          
       </body>
