@@ -8,7 +8,8 @@
       <fileDesc>
          <titleStmt>
             <title><rs type="textType">Honours</rs> for Tiberius</title>
-            <editor>Joyce M. Reynolds</editor>             <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor>
+            <editor>Joyce M. Reynolds</editor>
+            <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor>
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -45,9 +46,8 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Capitals First century C.E. line 1, <height>0.075</height>; lines2,3, <height>0.055</height>; line 4 <height>0.05</height>; 
-                        stops between words; 
-                        apices above E in line 3 and V, A and the first o in line 4.</handNote>
+                     <handNote>First century C.E.; line 1, <height>0.075</height>; lines 2, 3, <height>0.055</height>; line 4, <height>0.05</height>; 
+                        dot for stops; apices above E in line 3 and V, A and the first o in line 4.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -63,7 +63,7 @@
                               Agora, <placeName type="monuList" ref="http://www.slsgazetteer.org/1012">North Stoa</placeName>; found in <date type="found">1917</date>.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>Findspot.</p>
+                           <p>Findspot (<date type="observed">2008</date>).</p>
                         </provenance>
                      
                   
@@ -127,7 +127,7 @@
                <bibl> <ptr target="gasperini1965"/>
                   <citedRange>327</citedRange> and pl. LIX. 7-8
                </bibl>; <bibl><ptr target="gasperini1967a"/> 173-174, <citedRange>33</citedRange>, fig. 216</bibl>;
-               <bibl><ptr target="demougin1978"/></bibl>, whence
+               <!-- check --><bibl><ptr target="demougin1978"/></bibl>, whence
                <bibl><title>AE</title> <citedRange>1978.829</citedRange></bibl>, <bibl>
                   <title>AE</title> <citedRange>1978.830</citedRange></bibl>, 
                whence <bibl>
@@ -140,18 +140,18 @@
 <ab>
                     
                     <lb n="1"/><persName type="emperor" key="tiberius"><name nymRef="Tiberius"><expan><abbr><supplied reason="lost">T</supplied><unclear>i</unclear></abbr><ex>berius</ex></expan></name>
-                    <name nymRef="Iulius"><unclear>I</unclear>ulius</name> <persName type="emperor" key="augustus"><name nymRef="Augustus">Aug<supplied reason="lost">usti</supplied></name>
+                    <name nymRef="Iulius"><unclear>I</unclear>ulius</name><g ref="symbols.xml#stop"/> <persName type="emperor" key="augustus"><name nymRef="Augustus">Aug<supplied reason="lost">usti</supplied></name>
                     <supplied reason="lost"><name nymRef="Caesar">Caesaris</name></supplied></persName>  <supplied reason="lost"><w lemma="filius">filius</w></supplied> 
-                    <lb n="2"/> <space quantity="1" unit="character"/> <w lemma="diuus">diui</w> <w lemma="nepos">nepos</w> 
+                    <lb n="2"/> <space quantity="1" unit="character"/> <g ref="symbols.xml#stop"/> <w lemma="diuus">diui</w> <g ref="symbols.xml#stop"/> <w lemma="nepos">nepos</w> <g ref="symbols.xml#stop"/> 
                     <persName type="emperor" key="juliuscaesar"><name nymRef="Caesar">Ca<supplied reason="lost">esaris</supplied></name></persName></persName> <gap reason="lost" quantity="12" unit="character" precision="low"/>
-                    <lb n="3"/> <space quantity="3" unit="character"/> 
-                    <lb n="4"/> <space quantity="1" unit="character"/> <persName type="attested"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name nymRef="Sufenas">Sufenas</name> 
-                    <name nymRef="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> 
+                    <lb n="2a"/> <space quantity="2" unit="line"/> 
+                    <lb n="3"/> <space quantity="1" unit="character"/> <persName type="attested"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Sufenas">Sufenas</name> 
+                    <g ref="symbols.xml#stop"/> <name nymRef="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <g ref="symbols.xml#stop"/> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <g ref="symbols.xml#stop"/>
                     <name nymRef="Proculus">P<supplied reason="lost">roculus</supplied></name></persName>
                     <supplied reason="lost" cert="low"><w lemma="praefectus"><expan><abbr>praef</abbr><ex>ectus</ex></expan></w></supplied> 
                     <space quantity="1" unit="character"/>
-                    <lb n="5"/> <space quantity="1" unit="character"/>  
-                    <w lemma="cohors"><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> <placeName type="ethnic"><w lemma="Lusitanus">Lusitanor<unclear>u</unclear><supplied reason="lost">m</supplied></w></placeName> 
+                    <lb n="4"/> <space quantity="1" unit="character"/>  
+                    <w lemma="cohors"><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> <g ref="symbols.xml#stop"/> <placeName type="ethnic"><w lemma="Lusitanus">Lusitanor<unclear>u</unclear><supplied reason="lost">m</supplied></w></placeName> 
                     <gap reason="lost" quantity="12" unit="character" precision="low"/> <space quantity="1" unit="character"/>
          </ab>
 </div>
@@ -159,45 +159,47 @@
          <div type="apparatus">
             <head>Apparatus</head>
                <listApp><app loc="1">
-                  <rdg resp="#gasperini1965">Aug<supplied reason="lost">usti filius</supplied>
+                  <rdg resp="#gasperini1965">Aug[usti filius]
                   </rdg>
                </app>
                <app loc="3">
-                  <rdg resp="#gasperini1965"><unclear>P</unclear><supplied reason="lost">roculus</supplied>
-                     <gap reason="lost" extent="unknown" unit="character"/>
+                  <rdg resp="#gasperini1965"><unclear>P</unclear>[roculus . . .]
                   </rdg>
                </app></listApp>
          </div>
          
-         <div type="translation" xml:space="preserve"><head>Translation</head><p>Tiberius Julius <supplied reason="lost">son of</supplied> Aug<supplied reason="lost">ustus Caesar</supplied>, grandson of a divinity, Ca<supplied reason="lost">esar</supplied> <gap reason="lost" extent="unknown" unit="character"/>.
-               Marcus Sufenas son of Marcus, P<supplied reason="lost">roculus, prefect</supplied> of the cohort of the Lusuitanians <supplied reason="lost" cert="low">honoured him</supplied>.</p><p/></div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Tiberius Julius [son of] Aug[ustus Caesar], grandson of deified Ca[esar . . . ]
+               Marcus Sufenas son of Marcus, P[roculus, prefect?] of the cohort of the Lusuitanians <supplied reason="subaudible">honoured him</supplied>.</p></div></div>
 
          <div type="commentary">
             <head>Commentary</head>
-            <p>On the area, "l'ambiente con bancone", see Stucchi, Agora 326f. Applebaum is probably 
-                    right to associate the re-use with restoration after the Jewish revolt of C.E. 115, see introduction,
-                    p. ... </p>
-            <p> line 1 the line lenght is established by line 3 and seems to us to impose a longer supplement 
-                        than Gasperini's; for order of names proposed cf. ILS 139, line 6. The date is C.E. 4-14, after Tiberius
+            <p>On the area, "l'ambiente con bancone", see Stucchi, <title>Agora</title> 326f. Applebaum <!-- check --> is probably 
+                    right to associate the re-use with restoration after the Jewish revolt of C.E. 115.</p>
+            <p>Line 1: The line length is established by line 3 and seems to us to impose a longer supplement 
+                        than Gasperini's<!-- ; for the order of names proposed cf. ILS 139, line 6. --> The date is C.E. 4-14, after Tiberius
                         was adopted by Augustus and before the latter's death. </p>
-            <p> line 2 Perhaps co(n)s(ul) imp(erator) 
-                        II Trib(unicia) pot(estate), though the order of titles may have varied.  </p>
-            <p> line 4 Also in <ref type="inscription" n="C00800">C.9</ref>, <ref type="inscription" n="C19800">C.225</ref>, 
-               <ref type="inscription" n="C65000">C.226</ref> and perhaps <ref type="inscription" n="C44100">C.436</ref>, in the first three without title, in all concerned with buildings for the imperial 
-               cult and in <ref type="inscription" n="C19800">C.225</ref>, 
+            <p>Line 2: <foreign xml:lang="la">Perhaps co(n)s(ul) imp(erator) II trib(unicia) pot(estate)</foreign>, although the order of titles may have varied.  </p>
+            <p>Line 3: M. Sufenas Proculus: Also in <ref type="inscription" n="C00800">C.9</ref>, <ref type="inscription" n="C19800">C.225</ref>, 
+               <ref type="inscription" n="C65000">C.226</ref> and perhaps <ref type="inscription" n="C44100">C.436</ref>, in the first three without title, 
+               in all concerned with buildings for the imperial cult and in <ref type="inscription" n="C19800">C.225</ref>, 
                <ref type="inscription" n="C65000">C.226</ref>, as here, with the cult of Tiberius as heir. The absence of title in so many texts 
                             may mean that he was resident in Cyrene, and if so his use of Latin suggests an italian immigrant, 
-                            originally perhaps of a family  of merchants.  </p>
-            <p> line 5 Strictly, as Gasperini notes, the title
-                                might be <foreign xml:lang="la">trib.coh.</foreign> but it is very unlikely since there is no evidence that the cohort was
-               milliaria. it is identified by <bibl>
+                            originally perhaps of a family  of merchants. <!-- check Demougin --> </p>
+            <p>Line 4:  Strictly, as Gasperini notes, the title
+                                might be <foreign xml:lang="la">trib.coh.</foreign> but it is very unlikely since there is no evidence that this cohort was of 
+               <foreign xml:lang="la">milliaria</foreign> strength - so c.800 men, the level commanded by a tribune. This is presumably the sohort also 
+               known as <foreign xml:lang="la">cohors I Lusitanorum Cyrenaica</foreign>, attested in several diplomata, at Philippopolis  (CIL XVI. 45 of C.E. 99),  
+               and in Moesia inferior 
+               (AE 1977.0747, whence <ref  target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD020722">EDH</ref> (so <bibl>
                   <ptr target="romanelli1943"/>  <citedRange>192</citedRange>
-               </bibl> with <foreign xml:lang="la">cohors I Lusitanorum Cyrenaica</foreign>
-                                (CIL XVI. 45 of C.E. 99) and its title <foreign xml:lang="la">Cyrenaica</foreign> implies that it had at one stage been
+               </bibl>), whose title <foreign xml:lang="la">Cyrenaica</foreign> implies that it had at one stage been
                                 stationed in Cyrenaica - presumably during the Marmaric War which terminated in 
-                                C.E. 2; see <ref type="inscription" target="gvcyr027">GV Cyr27</ref> and <bibl>J. Desanges, <title>Hommages a Marcel Renard</title> II (1968) 197f</bibl>. Proculus, 
+                                C.E. 2; see <ref type="inscription" target="gvcyr027">GV Cyr27</ref> and J. Desanges, <title>Hommages a Marcel Renard</title> 
+               II (1968) 197f. Proculus, 
                                 whther or not he had local connections, may have become commander of the cohort
-                                there and it is possible that the absence of his title in <ref type="inscription" n="C00800">C.9</ref>, 788, and <ref type="inscription" n="C65000">C.226</ref> is simply due 
+                                there and it is possible that the absence of his title in <ref type="inscription" n="C00800">C.9</ref>, 
+               <ref type="inscription" n="C19800">C.225</ref>, and <ref type="inscription" n="C65000">C.226</ref> is simply due 
                                 to tactful unwillingness to stress the military basis of his authority.</p>
          </div>
          
