@@ -3,20 +3,16 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C12400" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M.301" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary sculptor's <rs type="textType">signature</rs></title>
-            <editor>Joyce M. Reynolds</editor>
-            <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor>
+            <title>?<rs type="textType">Funerary</rs> inscription</title>
+            <editor>Joyce M. Reynolds</editor>             <editor role="translator" xml:id="jmr">Joyce M. Reynolds</editor>
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">C.139</idno>
-            <idno type="ircyr2012">C12400</idno>
-            <idno type="JMR">707</idno>
-            <idno type="Excel">124</idno>
+            <idno type="filename">M.301</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
@@ -32,32 +28,29 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment from the top of a <material>marble</material> <objectType>panel</objectType> (<dimensions><width>0.19</width><height>0.11</height><depth>0.06</depth></dimensions>).</p>
+                           <p>Round-headed <objectType>stele</objectType> of brown local <material>limestone</material> (no measurements).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face on a semi-dressed surface within a roughly outlined rectangle.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Probably second century: <height>0.025 - 0.03</height>; lunate epsilon and sigma.</handNote>
+                     <handNote>The letters are cut ratehr inexpertly between guidelines which were cut quite expertly, apparently with a ruler. L for ἔτους, ἐτῶν</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown.</origPlace>
-                     <origDate notAfter="0200" notBefore="0101" evidence="lettering" precision="low">Probably second century</origDate>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0132" notAfter="0132" precision="low" evidence="lettering">132 C.E.</origDate>
                   </origin>
-                  
-                     
-                        <provenance type="found">
-                           <p>
-                              <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>: 
-                              <placeName type="monuList" ref="http://www.slsgazetteer.org/1009">Agora</placeName>: in the photo of <date type="found">1925</date> as from the Agora, probably the Agora Square.</p>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>: 
+                        <placeName type="monuList" ref="http://www.slsgazetteer.org/2092">Sirat Sanidis</placeName>; found and recorded 
+                        by Dr Fadel Ali Mohammed in <date type="found">2003</date></p>
                         </provenance>
                         <provenance type="observed">
-                           <p>
-                              <placeName type="monuList" ref="http://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                           <p>Findspot (<date type="observed">2003</date>)</p>
                         </provenance>
                      
                   
@@ -91,24 +84,17 @@
                         <geogName type="modernCountry" key="LY">Libya</geogName>
                     </term>
                <term>
-                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/83118">Sirat Sanidis</placeName>
                     </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <creation>Transcription from copy (Reynolds).</creation></profileDesc>
       <revisionDesc>
-         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
-         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
-         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
-         <change when="2010-03-30" who="GB">lemmatized</change>
-         <change when="2009-11-08" who="Pietro">tokenized</change>
-         <change when="2009-06-14" who="MR">turned to XML and tidied</change>
-         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+         <change when="2019-07-06" who="CMR">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><!--Dept. E. 300--><surface/></facsimile>
+   </teiHeader><facsimile><surface/></facsimile>
    <text>
       <body>
-         
          <div type="bibliography">
             <head>Bibliography</head>
             <p/>
@@ -116,14 +102,20 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F">ϲ</w> <w lemma="ποιέω">ἐποίει</w>
+                    <lb n="1"/><date ref="https://godot.date/id/7s36GyFdWU3XeY8m7bu7W2"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="163">ρϛγ</num></date>
+                    <lb n="2"/><space quantity="2" unit="character"/><persName type="attested"><name nymRef="Ἀράτα">Ἀρράτα</name> <persName type="attested"><name nymRef="Μάγνος">Μα
+                    <lb n="3" break="no"/><space quantity="5" unit="character"/>γνου</name></persName></persName>
+                     <lb n="4"/><persName type="attested"><name nymRef="Ἀρέτα">Ἀρέτα</name></persName> <date type="life-span" dur="P24Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="24">κ<unclear>δ</unclear></num></date> <space quantity="2" unit="character"/>
                 </ab>
 </div>
          
-         <div type="translation" xml:space="preserve"><head>Translation</head><p/></div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#jmr" xml:lang="en"><p><date ref="https://godot.date/id/7s36GyFdWU3XeY8m7bu7W2">In the year 163</date>, Arrata <supplied reason="subaudible">daughter</supplied> of Magnus. Areta aged 24</p></div>
+         </div>
          <div type="commentary">
             <head>Commentary</head>
-            <p>Αn artist's signature. The semi dressed surface suggests either that the stone was re-used for the inscription or that the inscription was not meant to be noticeable; probably the letter.</p>
+            <p>It appears that this refers to one woman, with two attempts at writing her name. The form otherwise found at Cyrene is Ἀράτα.</p>
+            <p>The age appears to be 24, but could perhaps be 27.</p>
          </div>
          
       </body>
