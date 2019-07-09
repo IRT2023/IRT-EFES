@@ -7,8 +7,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">decree</rs></title>
-            <editor>Joyce M. Reynolds</editor>             <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor>
+            <title>Fragmentary <rs type="textType">decree <certainty cert="low" locus="value" match=".." /></rs></title>
+            <editor>Joyce M. Reynolds</editor>
+            <editor role="translator" xml:id="cmr">Charlotte Roueché</editor>
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -31,7 +32,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment of <material>marble</material>.</p>
+                           <p>Fragment of <material>marble</material>; no measurements.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -39,7 +40,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>probably Augustan; apices above O in lines 2,3.</handNote>
+                     <handNote>Probably Augustan; dot for stop; apices above O in lines 2, 3; no measurements.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -52,10 +53,11 @@
                         <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>:
-                              <placeName type="monuList" ref="http://www.slsgazetteer.org/1009">Agora</placeName>: in the photo of <date type="found">1925</date> as from the Agora, probably the Agora Square; not found.</p>
+                              <placeName type="monuList" ref="http://www.slsgazetteer.org/1009">Agora</placeName>: 
+                              in the photo of <date type="found">1925</date> as from the Agora, probably the Agora Square.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>Findspot.</p>
+                           <p>Findspot <date type="observed">1925</date>.</p>
                         </provenance>
                      
                   
@@ -104,7 +106,8 @@
          <change when="2009-05-11" who="GB">mailmerged: created from template</change>
       </revisionDesc>
    </teiHeader><facsimile><graphic url="JMR_702front" decls="#photograph"><desc>Together with other fragments, third from the left, 
-      in the first row from the bottom (1925, Department of Antiquities, E. 300)</desc></graphic><surface/></facsimile>
+      in the first row from the bottom (1925, Department of Antiquities, E. 300)</desc></graphic></facsimile>
+   <!-- check image -->
    <text>
       <body>
          
@@ -116,9 +119,9 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
                     <lb n="0"/><gap reason="lost" quantity="1" unit="line"/> 
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>bv</orig><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F">s</w>
-                    <w lemma="is">eoru<supplied reason="lost">m</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>b</unclear>v</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F">s</w> <g ref="symbols.xml#stop"/>
+                    <w lemma="is">eoru<unclear>m</unclear></w> <gap reason="lost" extent="unknown" unit="character"/> 
                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="is">eosque</w> 
                     <w lemma="qui">qu<supplied reason="lost">i</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> 
                     <lb n="3a"/><gap reason="lost" quantity="1" unit="line"/>
@@ -127,16 +130,18 @@
          <div type="apparatus">
             <head>Apparatus</head>
             <listApp>
-               <app loc="2">
-                  <note>Perhaps from a dative or ablative plural ending in <foreign xml:lang="la">ibus</foreign>
+               <app loc="1">
+                  <note>Perhaps from a dative or ablative plural ending in <foreign xml:lang="la">i]bu[s</foreign>
                   </note>
                </app>
             </listApp>
          </div>
-         <div type="translation" xml:space="preserve"><head>Translation</head><p/></div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p> . . .] of them [ . . . ] and those who [ . . .</p></div></div>
+         
          <div type="commentary">
             <head>Commentary</head>
-            <p>l.2. The text is presumably part of an official decree issued by a governor or by an emperor.</p>
+            <p>Line 2. The text is presumably part of an official decree issued by a governor or by an emperor.</p>
          </div>
          
       </body>

@@ -7,8 +7,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">decree</rs></title>
-            <editor>Joyce M. Reynolds</editor>             <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor>
+            <title>Fragmentary <rs type="textType">decree</rs> of <rs type="textType">honours</rs></title>
+            <editor>Joyce M. Reynolds</editor>
+            <editor role="translator" xml:id="cmr">Charlotte Roueché</editor>
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -40,7 +41,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Probably i cent. C.E. : <height>0.015</height>, The top of the letter is shaved off, but Ι is rather close to Ω to be interpreted as Τ.</handNote>
+                     <handNote>Probably first century C.E. : <height>0.015</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -106,8 +107,7 @@
          <change when="2009-06-11" who="MR">turned to XML and tidied</change>
          <change when="2009-05-11" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_702front" decls="#photograph"><desc>Together with other fragments, second from the left, 
-                            in the first row from the bottom (1925, Department of Antiquities, E. 300)</desc></graphic></facsimile>
+   </teiHeader><facsimile><graphic url="JMR_702front" decls="#photograph"><desc>Fragment (1925, Department of Antiquities, E. 300)</desc></graphic></facsimile>
    <text>
       <body>
        
@@ -118,23 +118,38 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>ιωι</w> <gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w>α</w> 
-                    <placeName><seg part="I">Κυρην<supplied reason="lost">α</supplied></seg></placeName><gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>περεμπ</orig><gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w>του</w>
-                    <w lemma="καί">καὶ</w> <w>δ</w> <gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="εὐεργεσία"><supplied reason="lost">ε</supplied>ὐεργεσ<supplied reason="lost">ίας</supplied></w>
-                    <supplied reason="lost"><w lemma="ἕνεκεν">ἕνεκεν</w> <w lemma="καί">καὶ</w></supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>ιιωι</w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <orig><unclear>α</unclear></orig> 
+                    <placeName><seg part="I">Κυρη<unclear>ν</unclear><supplied reason="lost">α</supplied></seg></placeName><gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>τ</unclear>ερεμπ</orig><gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w>τοῦ</w>
+                    <w lemma="καί">καὶ</w> <w part="I">δ</w><gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="εὐεργεσία"><supplied reason="lost">ε</supplied><unclear>ὐ</unclear>εργεσ<supplied reason="lost">ίας</supplied></w>
+                    <supplied reason="lost" cert="medium"><w lemma="ἕνεκεν">ἕνεκεν</w> <w lemma="καί">καὶ</w></supplied> <gap reason="lost" extent="unknown" unit="character"/> 
                     <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>
-                    <w lemma="εἰς"><supplied reason="lost">εἰ</supplied>ς</w> <w>ἑα<supplied reason="lost">υτ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <w lemma="εἰς"><supplied reason="lost" cert="low">εἰ</supplied>ς</w> <w part="I">ἑα<supplied reason="lost" cert="low">υτ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
 </div>
+         <div type="apparatus">
+         <head>Apparatus</head>
+         <listApp>
+            <app loc="1">
+               <note>The top of the second letter is shaved off, but Ι is rather close to Ω to be interpreted as Τ.</note>
+            </app>
+         </listApp>
+         </div>
          
-         <div type="translation" xml:space="preserve"><head>Translation</head><p/></div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>. . . ]Cyren[aeans? . . . ] also [ . . . ] benefit[s? . . . ] ?for themselves [ . . .</p></div>
+         </div>
+         
          <div type="commentary">
             <head>Commentary</head>
-            <p>l.2 The κοινή form is unlikely in a civic decree at this date; the text may, therefore, express the gratitude of an organised group within the city, perhaps the jewish politeuma, cf. 622.</p>
+            <p>Apparently a fragment from a decree of honours to one or more benefactors.</p>
+            <p>Line 2: The koine form of language is unlikely in a civic decree at this date; the text may, therefore, 
+               express the gratitude of an organised group within the city, such as the Jewish politeuma 
+               (for which, at Berenike see <ref type="inscription" n="B11900">B.75</ref> and <ref type="inscription" n="B06800">B.76</ref>).  
+               See for a possibly similar document at Cyrene <ref type="inscription" n="C03600">C.39</ref>.</p>
          </div>
          
       </body>
