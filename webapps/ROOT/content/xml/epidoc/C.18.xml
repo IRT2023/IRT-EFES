@@ -35,15 +35,15 @@
                      <layoutDesc>
                         <layout>
                            <rs type="execution" key="scalpro">Inscribed</rs> 
-                           on one face (panel <dimensions><width>0.53</width> <height>0.75</height></dimensions>).</layout>
+                           on the front face (panel <dimensions><width>0.53</width> <height>0.75</height></dimensions>).</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
                      <handNote>Latin: line 1, <height unit="metre">0.065</height>;
                     lines2,3, <height unit="metre">0.04</height>; line 4,
                         <height unit="metre">0.03</height>; lines5-7,
-                        <height unit="metre">0.025</height>; <foreign xml:lang="grc">E</foreign> at the
-                    end of line 3 written small; line 7, <foreign xml:lang="grc">VM</foreign> ligature; bars above the figures in line 6; stops
+                        <height unit="metre">0.025</height>; E at the
+                    end of line 3 written small; line 7, VM ligature; bars above the figures in line 6; stops
                     between words; an ivy leaf at the end of line 4; design and alignment different.</handNote>
                      <handNote>Greek: <height unit="metre">0.03</height>; stops
                     between words; ivy leaves at the end of lines 10-12.</handNote>
@@ -58,11 +58,12 @@
                      
                         <provenance type="found">
                            <p>
-                              <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>, <placeName type="monuList" ref="http://www.slsgazetteer.org/988">Basilica</placeName>:
+                              <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>, 
+                              <placeName type="monuList" ref="http://www.slsgazetteer.org/988">Basilica</placeName>:
                               Found before <date type="found">1941</date>,  in the apse.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>Findspot. <!--check--></p>
+                           <p>Findspot (<date  type="observed">2008</date>)</p>
                         </provenance>
                      
                   
@@ -122,23 +123,22 @@
       <body>
          <div subtype="editions" type="bibliography">
             <head>Bibliography</head>
-            <p>Mentioned, <bibl><ptr target="oliverio1928"/> <citedRange>p.318</citedRange></bibl>, <bibl><ptr target="pernier1928"/> <citedRange>222</citedRange>, and fig. 2</bibl>,  
+            <p>Mentioned, <bibl><ptr target="oliverio1928"/> <citedRange>p.318</citedRange></bibl>, 
+               <bibl><ptr target="pernier1928"/> <citedRange>222</citedRange>, and fig. 2</bibl>,  
                whence <bibl><ptr target="friedmann1930"/> <citedRange>I.4</citedRange></bibl>; 
                <bibl><title>Arch. Anz.</title> 1941, col. 704 and pl. 158</bibl>, whence 
                     <bibl>
                   <title>AE</title> <citedRange>1946.177</citedRange>
                     </bibl>, whence <bibl>
-                       <title>EDH</title> <citedRange>022747</citedRange>
+                       <title>EDH</title> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD022747">022747</ref></citedRange>
                     </bibl>;
                <bibl>
                   <ptr target="jmr1958"/> 
                   <citedRange>VI.a</citedRange>, p. 163</bibl>
                whence <bibl><ptr target="robertBE"/> <citedRange>1960.438</citedRange></bibl>, 
-               <bibl><title>SEG</title><citedRange>17.808</citedRange></bibl>; <bibl>
-                  <ptr target="gasperini1971"/> <citedRange>B.3</citedRange> and fig. 20</bibl>, whence <bibl>
-                  <title>AE</title> <citedRange>1974.678</citedRange></bibl>, 
-               whence <bibl>
-                  <title>EDH</title> <citedRange>011691</citedRange></bibl>
+               <bibl><title>SEG</title><citedRange>17.808</citedRange></bibl>, whence PHI <ref target="https://epigraphy.packhum.org/text/324419">324419</ref>; 
+               <!-- check Gasperini B.3 at 21 -->
+               
                see also <bibl><ptr target="applebaum1950"/> <citedRange>C.2</citedRange></bibl> 
                and <bibl><ptr target="applebaum1950a"/> <citedRange>27</citedRange></bibl>.
             </p>
@@ -166,7 +166,7 @@
                     <name nymRef="Hadrianus">Hadriano</name>
                     <name nymRef="Augustus">
                         <expan><abbr>Aug</abbr><ex>usto</ex></expan>
-                    </name></persName>
+                    </name></persName><date ref="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ">
                     <w lemma="pontifex">
                         <expan><abbr>pontif</abbr><ex>ici</ex></expan>
                     </w>
@@ -182,10 +182,11 @@
                     <w>
                         <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan>
                     </w>
-                    <num value="2">II</num>
+                    <num value="2">II</num></date>
                     <lb n="7"/>
                     <w lemma="civitas">civitas</w>
                     <placeName type="ethnic"><w lemma="Cyrenensis">Cyrenensium</w></placeName>
+               <lb n="7a"/><space quantity="1" unit="line"/>
             </ab>
             <ab xml:lang="grc">
             <lb n="8"/><persName type="emperor" key="hadrianus"><w>Αὐτοκράτορι</w>
@@ -206,15 +207,16 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <p> <note>Latin</note> To Emperor Caesar, son of deified Trajan, victor in Parthia, grandson of deified Nerva, Trajan Hadrian Augustus, chief priest, holding tribunician power for the second time, consul for the second time, the city of the Cyrenians.
-            </p><p><note>Greek</note> To Emperor Caesar, son of deified Trajan, victor in Parthia, grandson of deified Nerva, Trajan Hadrian.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p> <note>Latin</note> To Emperor Caesar, son of deified Trajan, victor in Parthia, grandson of deified Nerva, 
+               Trajan Hadrian Augustus, chief priest, <date ref="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ">holding tribunician power for the second time, consul for the second time</date>, the city of the Cyrenians.
+            </p><p><note>Greek</note> To Emperor Caesar, son of deified Trajan, victor in Parthia, grandson of deified Nerva, Trajan Hadrian.</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p>Third year of tribunician power, so 1st Jan - 9th Dec. 118, i.e. earlier than the inscription from the Basilica
                     colonnade (<ref type="inscription" n="C68700">C.21</ref>). If it stands in its original position this should indicate
                     that the building, or part of it, was in use before the completion of Hadrian's
                     works.</p>
-            <p>The omission of <foreign xml:lang="grc">θεῶ</foreign> in line  10, and the incorrect and
+            <p>The omission of θεῶ in line  10, and the incorrect and
                     inconsistent use of iota adscript add to the shoddy effect.</p>
          </div>
          
