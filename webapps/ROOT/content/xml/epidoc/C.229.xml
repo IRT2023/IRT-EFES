@@ -31,7 +31,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Lower left corner of a <material>Marble</material> block 
+                           <p>Lower left corner of a <material>barble</material> block 
                               (<dimensions><width>0.39</width><height>0.48</height><depth>0.22</depth></dimensions>)</p>
                         </support>
                      </supportDesc>
@@ -40,7 +40,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>First century C.E. lines 1-5, <height>0.03</height>; lines 6-7, <height>0.012</height>.</handNote>
+                     <handNote>First century C.E.; lines 1-5, <height>0.03</height>; lines 6-7, <height>0.012</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -108,8 +108,8 @@
          <change when="2009-07-06" who="Pietro">turned to XML and tidied</change>
          <change when="2009-05-11" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_794" decls="#photograph"><desc>Front view, top piece (Department of Antiquities, F. 427)</desc></graphic>
-               </facsimile>
+   </teiHeader><facsimile><graphic url="JMR_794" decls="#photograph"><desc>Front view, top piece (Department of Antiquities, F.427)</desc></graphic>
+               </facsimile><!-- photo missing -->
    <text>
       <body>
          <div type="bibliography">
@@ -119,7 +119,7 @@
                        <ptr target="oliverio1929"/> <citedRange>12</citedRange>, p.139 and Fig. 31
                     </bibl>, whence <bibl>
                        <title>AE</title> <citedRange>1929.10</citedRange> </bibl>, 
-                     <bibl> <title>Arch. Anz.</title> <citedRange>XLIV (1929) 404</citedRange></bibl>, 
+                     <bibl> <title>Arch. Anz.</title> <citedRange>XLIV (1929) 404</citedRange></bibl>, <!-- check -->
                <bibl><ptr target="vitali1932"/> <citedRange>96</citedRange></bibl>
                <bibl><title>SEG</title> <citedRange>9.99</citedRange></bibl>; 
                         discussed <bibl><ptr target="laronde1977"/></bibl>, whence 
@@ -129,10 +129,12 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-            <lb n="1"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀπ</supplied>όλλωνι</name></persName> <w>κτίστη</w> <w lemma="καί">καὶ</w> <supplied reason="lost">
+         
+   <lb n="1"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀπ</supplied>όλλωνι</name></persName> <w>κτίστη</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w> <supplied reason="lost">
                <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις">Ἀρτέμιδι</name></persName></supplied>
+   <lb n="1a"/> <space quantity="1" unit="line"/>
                     <lb n="2"/><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τῆς</w> 
-                    <persName type="emperor" key="nero"><supplied reason="undefined" evidence="previous-editor"><name nymRef="Νέρων">Νέρωνος</name></supplied> 
+                    <persName type="emperor" key="nero"><del rend="erasure"><name nymRef="Νέρων">Νέρωνος</name></del> 
                     <supplied reason="lost"><name nymRef="Κλαύδιος">Κλαυδίου</name></supplied>
                     <lb n="3"/><name nymRef="Δροῦσος">Δρούσου</name> <name nymRef="Γερμανικος">Γερμαν<supplied reason="lost">ικοῦ</supplied></name> 
                     <supplied reason="lost"><name nymRef="Καῖσαρ">Καίσαρος</name></supplied>
@@ -150,34 +152,26 @@
          <div type="apparatus">
             <listApp>
                <app loc="7">
-                  <rdg resp="#oliverio1929">
-                     <supplied reason="lost">Ὑγίειαι καὶ Ἰασοῖ</supplied>
+                  <rdg resp="#oliverio1929"><unclear>ν</unclear>έθ<unclear>η</unclear>[κ]αν τ<unclear>ῆ</unclear> [Ὑγιεί]<unclear>ᾳ κ</unclear>[αὶ Ἰασοῖ]
                   </rdg>
                </app>
-            <app loc="8">
-                  <rdg resp="#oliverio1929">?? <gap reason="lost" quantity="2" unit="characters"/>
-                     <orig>ΕΚΙ</orig>
-                    <space quantity="1" unit="character"/> 
-                     <g ref="symbols.xml#stop"/> <orig>AHTH</orig>
-                  </rdg>
-               </app>
+            
             </listApp>
          </div>
-         <div type="translation" xml:space="preserve"><head>Translation</head><p/></div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <p></p></div>
          <div type="commentary">
             <head>Commentary</head>
             <p>All details are taken from Oliverio. </p>
             <p> The text closely parallels <ref type="inscription" n="C20200">C.228</ref>, probably of C.E. 57/58; the use of κοινή forms, however, throughout this
                inscription is in marked contrast to the Doric of <ref type="inscription" n="C20200">C.228</ref>.</p>
-            <p> line 1 A second divinity, as in <ref type="inscription" n="C20200">C.228</ref>, is more probable
+            <p>Line 1: A second divinity, as in <ref type="inscription" n="C20200">C.228</ref>, is more probable
                 than a second cult title for Apollo (σωτῆρι) as proposed by Oliverio. </p>
-            <p> line 6 Perhaps a reference to the Fountain of Apollo, or to one of the
+            <p>Line 6: Perhaps a reference to the Fountain of Apollo, or to one of the
                 several fountains on the Temple Terrace. </p>
-            <p> line 7 Oliverio 
-                    proposed [Ὑγίειαι καὶ Ἰασοῖ] which hardly seems 
+            <p>Line 7: Oliverio's proposed reading would suggest a further dedication to different divinities, which hardly seems 
                     consistent with line 1; the space was more probably occupied by a date, beginning with the
-                    day of the month.
-                   .</p>
+                    day of the month.</p>
          </div>
          
       </body>
