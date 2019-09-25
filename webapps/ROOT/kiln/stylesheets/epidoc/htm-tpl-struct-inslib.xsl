@@ -203,7 +203,7 @@
          <xsl:if test="t:height/text()">h: 
             <xsl:value-of select="t:height"/>
          </xsl:if>
-         <xsl:if test="t:depth/text()">x d:
+         <xsl:if test="t:depth/text()">d:
             <xsl:value-of select="t:depth"/>
          </xsl:if>
          <xsl:if test="t:dim[@type='diameter']/text()">x diam.:
