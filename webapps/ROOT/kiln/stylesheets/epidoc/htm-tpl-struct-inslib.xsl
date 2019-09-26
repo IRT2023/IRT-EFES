@@ -263,6 +263,16 @@
      </xsl:choose>
    </xsl:template>
   
+  <xsl:template match="t:ref">
+    <a>
+      <xsl:attribute name="href">
+        <xsl:value-of select="@target"/>
+      </xsl:attribute>
+      <xsl:attribute name="target">_blank</xsl:attribute>
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
+  
   <!--  old code for inscription numbers now in <idno type="ircyr2012">:
     <xsl:template name="inslib-title">
      <xsl:choose>
