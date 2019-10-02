@@ -203,7 +203,7 @@
          <xsl:if test="t:height/text()">h: 
             <xsl:value-of select="t:height"/>
          </xsl:if>
-         <xsl:if test="t:depth/text()">x d:
+         <xsl:if test="t:depth/text()">d:
             <xsl:value-of select="t:depth"/>
          </xsl:if>
          <xsl:if test="t:dim[@type='diameter']/text()">x diam.:
@@ -262,6 +262,16 @@
        </xsl:otherwise>
      </xsl:choose>
    </xsl:template>
+  
+  <xsl:template match="t:ref">
+    <a>
+      <xsl:attribute name="href">
+        <xsl:value-of select="@target"/>
+      </xsl:attribute>
+      <xsl:attribute name="target">_blank</xsl:attribute>
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
   
   <!--  old code for inscription numbers now in <idno type="ircyr2012">:
     <xsl:template name="inslib-title">
