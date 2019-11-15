@@ -263,7 +263,7 @@
      </xsl:choose>
    </xsl:template>
   
-  <xsl:template match="t:ref">
+  <xsl:template priority="1"  match="t:ref">
     <a>
       <xsl:attribute name="href">
         <xsl:value-of select="@target"/>
