@@ -9,7 +9,7 @@
             <titleStmt>
                 <title><rs type="textType">Boundary</rs> marker</title>
                 
-                <editor xml:id="jmr">Joyce M. Reynolds</editor>
+                <editor xml:id="jmr">Joyce M. Reynolds</editor> <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
             </titleStmt>
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -30,21 +30,23 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <p> <material>Limestone</material> <objectType>cippus</objectType> (<dimensions><width>0.70</width><height>1.30</height><depth>0.18</depth></dimensions>)</p>
+                                    <p> <material>Limestone</material> <objectType>stele</objectType> (<dimensions><width>0.39</width><height>1.89</height><depth>0.25</depth></dimensions>)</p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.<!-- check - ?2 faces -->
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on two faces, b to the left of a; text on side a ends 0.77 fron the lower edge; text on side b ends 1.21 from lower edge. 
+                                    There is one large hole in the middle of side a and many other smaller holes, which created several irregularities 
+                                    in the inscription, and in particular the space between lines 22 and 23 of side a. One at line 8 is misleading (no unexpected S in Germanicus!). 
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height unit="metre">0.04-0.05</height>; lunate sigma.</handNote>
+                            <handNote><height unit="metre">0.04-0.05</height>.</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Findspot</origPlace>
+                            <origPlace>Unknown</origPlace>
                             <origDate notBefore="0056" notAfter="0056" evidence="reign">56 CE</origDate>
                         </origin>
                         
@@ -55,7 +57,7 @@
                                         <placeName type="monuList" ref="http://www.slsgazetteer.org/1256"><!-- check -->to the west</placeName>; found by Breyek Mufta Kuainin in <date type="found">1990.</date></p>
                                 </provenance>
                                 <provenance type="observed">
-                                    <p>Findspot  (<date type="observed">1990</date>).</p>
+                                    <p><rs type="monuList" key="932">Apollonia Museum</rs>, (<date type="observed">1997</date>)  near the French dighouse.</p>
                                 </provenance>
                             
                         
@@ -93,15 +95,15 @@
                     </term>
                 </keywords>
             </textClass>
-        <creation>Transcription (Reynolds).</creation></profileDesc>
+        <creation>Transcription (Dobias-Lalou).</creation></profileDesc>
         <revisionDesc>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
             <change when="2011-08-02" who="CMR">created from publication</change>
         </revisionDesc>
-    </teiHeader><facsimile><graphic url="Photos_0161" decls="#photograph"><desc>Face</desc></graphic>
-        <graphic url="Photos_0217" decls="#photograph"><desc>Face</desc></graphic></facsimile>
+    </teiHeader><facsimile><graphic url="Photos_0161" decls="#photograph"><desc>Face a</desc></graphic>
+        <graphic url="Photos_0217" decls="#photograph"><desc>Face a</desc></graphic></facsimile>
     <text>
         <body>
             
@@ -115,17 +117,18 @@
             </div>
             
             <div type="edition" xml:space="preserve">
-                <div type="textpart" xml:lang="la" n="a">
+                <div type="textpart" n="a" >
                     <ab>
                     <lb n="1"/><persName type="emperor" key="nero"><name nymRef="Nero">Nero</name> 
                 <name nymRef="Claudius">Claudius</name>
 <lb n="2"/><persName type="emperor" key="claudius1"><name nymRef="Claudius">Claudi</name></persName> 
-    <name nymRef="Caesar">Caesar</name>,
- <lb n="3"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> 
-                <name nymRef="Germanicus">Germanicus</name>
-                        <lb n="4"/><persName type="emperor" key="germanicus"><name nymRef="Germanicus">Germanici</name> <name nymRef="Caesar">Cae<lb break="no" n="5"/>saris</name></persName> <w><expan><abbr>nep</abbr><ex>os</ex></expan></w>, 
-                <persName type="emperor" key="tiberius"><supplied reason="lost"><name nymRef="Tiberius"><expan><abbr>Ti</abbr><ex>beri</ex></expan></name> 
-                <name nymRef="Caesar"><expan><abbr>Caes</abbr><ex>aris</ex></expan></name></supplied>
+    <name nymRef="Caesar">Caesaris</name>,
+ <lb n="3"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> 
+                <name nymRef="Germanicus">Germanici</name> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w>
+                        <lb n="4"/><persName type="emperor" key="germanicus"><name nymRef="Germanicus">Germanici</name> <name nymRef="Augustus"><expan><abbr>A<supplied reason="lost">ug</supplied></abbr><ex>usti</ex></expan></name> <name nymRef="Caesar">Cae
+                            <lb break="no" n="5"/>saris</name></persName> <w><expan><abbr>n</abbr><ex>epos</ex></expan></w>, 
+                <persName type="emperor" key="tiberius"><name nymRef="Tiberius"><expan><abbr>Ti</abbr><ex>beri</ex></expan></name> 
+                <name nymRef="Caesar"><supplied reason="lost">C</supplied>aesa<supplied reason="lost">ris</supplied></name>
 <lb n="6"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> 
                 <w><expan><abbr>pron</abbr><ex>epos</ex></expan></w>, 
                 <persName type="emperor" key="augustus"><w lemma="diuus"><unclear>diu</unclear><supplied reason="lost">i</supplied></w>
@@ -133,46 +136,73 @@
                 <w><expan><abbr>abn</abbr><ex>epos</ex></expan></w>,
                 <date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE"><name nymRef="Caesar">Caes<supplied reason="lost">ar</supplied></name>
 <lb n="8"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> 
-                <name nymRef="Germanicus">G<surplus><unclear>s</unclear></surplus>ermani<supplied reason="lost">cus</supplied></name>
+                <name nymRef="Germanicus">Germani<supplied reason="lost">cus</supplied></name>
 <lb n="9"/> <w><expan><abbr>Imp</abbr><ex>erator</ex></expan></w></date></persName> <w lemma="per">per</w> 
                 <persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucium</ex></expan></name> 
                 <name nymRef="Acilius">Acil<supplied reason="lost">ium</supplied></name>
 <lb n="10"/><name nymRef="Strabo">Strabonem</name></persName> <w>l<supplied reason="lost">egatum</supplied></w>
-<lb n="11"/><w lemma="suus">suum</w> <w lemma="finis">fines</w> <w><supplied reason="lost">oc</supplied><lb break="no" n="12"/>cupatos</w> <w lemma="ab">a</w> <w lemma="priuatus">pr<unclear>iu</unclear><supplied reason="lost">atis</supplied></w>
+<lb n="11"/><w lemma="suus">suum</w> <w lemma="finis">fines</w> <w><supplied reason="lost">oc</supplied>
+    <lb break="no" n="12"/>cupatos</w> <w lemma="ab">a</w> <w lemma="priuatus">pr<unclear>iua</unclear><supplied reason="lost">tis</supplied></w>
 <lb n="13"/><expan><w><abbr>P</abbr><ex>opulo</ex></w> 
                 <placeName type="ethnic"><w lemma="Romanus"><abbr>R</abbr><ex>omano</ex></w></placeName> </expan>
                 <w lemma="restituo">restitui<supplied reason="lost">t</supplied></w>
 <lb n="13a"/> <space quantity="1" unit="line"/>
+                    
+                <lb n="14"/><persName type="emperor" key="nero"><name nymRef="Νέρων">Νέρων</name> 
+                <name nymRef="Κλαύδιος">Κλαύδιος</name>,
+<lb n="15"/><persName type="emperor" key="claudius1"><name nymRef="Κλαύδιος">Κλ<unclear>α</unclear>υδίου</name> 
+                <name nymRef="Καῖσαρ">Καί
+                    <lb break="no" n="16"/>σαρος</name> <name nymRef="Σεβαστός">Σεβαστοῦ</name>
+<lb n="17"/><name nymRef="Γερμανικός">Γερμανικοῦ</name></persName> <w>ὑὸς</w>,
+<lb n="18"/><persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερμανικοῦ</name> 
+                <name nymRef="Καῖσαρ">Καί
+                    <lb break="no" n="19"/>σαρος</name></persName> <w>ὑωνός</w>, 
+                <persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name>
+<lb n="20"/><name nymRef="Καῖσαρ"><unclear>Καί</unclear>σσαρος</name> <name nymRef="Σεβαστός">Σεβα
+    <lb break="no" n="21"/>στοῦ</name></persName> <w>κ<supplied reason="lost">αὶ</supplied></w> <persName type="emperor" key="augustus"><w><supplied reason="lost">θ</supplied>εο
+        <lb n="22" break="no"/>ῦ</w> <name nymRef="Σεβαστός">Σεβ<supplied reason="lost">ασ</supplied>τοῦ</name></persName>
+                     <lb n="22a"/> <space quantity="1" unit="line"/>
+        <lb n="23"/>        <w>ἔκγονος</w></persName>
+                        <lb n="23a"/> <space extent="unknown" unit="line"/>
                     </ab>
                 </div>
                 <div type="textpart" xml:lang="grc" n="b">
                 <ab>
-                <lb n="1"/><persName type="emperor" key="nero"><name nymRef="Νέρων">Νέρων</name> 
-                <name nymRef="Κλαύδιος"><supplied reason="lost">Κ</supplied>λαύδιοϲ</name>,
-<lb n="2"/><persName type="emperor" key="claudius1"><w><supplied reason="lost">θεοῦ</supplied></w> 
-                <name nymRef="Κλαύδιος"><supplied reason="lost">Κλ</supplied><unclear>α</unclear>υδίου</name> 
-                <name nymRef="Καῖσαρ">Καί<lb break="no" n="3"/>ϲαροϲ</name> <name nymRef="Σεβαστός">Σεβαϲτοῦ</name>
-<lb n="4"/><name nymRef="Γερμανικός">Γερμανικοῦ</name></persName> <w>ὑὸ<supplied reason="lost">ϲ</supplied></w>,
-<lb n="5"/><persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερμανικοῦ</name> 
-                <name nymRef="Καῖσαρ"><supplied reason="lost">Καί</supplied><lb break="no" n="6"/>ϲαροϲ</name></persName> <w>ὑωνόϲ</w>, 
-                <persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριοϲ</ex></expan></name>
-<lb n="7"/><name nymRef="Καῖσαρ"><unclear>Καί</unclear>ϲαροϲ</name> <name nymRef="Σεβαστός">Σεβα<lb break="no" n="8"/>ϲτοῦ</name></persName> <w><supplied reason="lost" cert="low">καὶ</supplied></w> <persName type="emperor" key="augustus"><w>θεοῦ</w>
-<lb n="9"/><name nymRef="Σεβαστός">Σεβαϲτοῦ</name></persName> 
-                <w><supplied reason="lost" cert="low">ἔγ</supplied><lb break="no" n="10"/> <space extent="unknown" unit="character"/><supplied reason="lost">γ</supplied>ονοϲ</w>, 
-                <w><unclear>α</unclear><supplied reason="lost">ὐ</supplied><lb break="no" n="10a"/><supplied reason="lost">τοκράτωρ</supplied></w></persName><gap reason="lost" extent="4" unit="character"/> 
-                <lb break="no" n="10b"/><gap reason="lost" extent="6" unit="line"/></ab>
+                 <lb n="24"/> <persName type="emperor" key="nero"><name nymRef="Καῖσαρ"> Κα<supplied reason="omitted">ῖ</supplied>σ<supplied reason="lost">αρ</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σε</supplied>
+                <lb n="25" break="no"/>βαστὸς</name> <name nymRef="Γερμανικός"><supplied  reason="lost">Γε</supplied>				
+                <lb n="26" break="no"/><supplied reason="lost">ρ</supplied>μανικ<supplied reason="lost">ος</supplied></name>
+                     <lb n="27"/><w><supplied reason="lost">Α</supplied>ὐτο-
+                <lb n="28" break="no"/><supplied reason="lost">κ</supplied>ράτωρ</w></persName> <w>διὰ</w>
+        <lb n="29"/><persName type="attested"><supplied reason="lost"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name></supplied> <name nymRef="Ἀκίλιος">Ἀκιλίου</name>
+               
+    <lb n="30"/><name nymRef="Στράβων"><supplied reason="lost">Σ</supplied>τράβωνος</name></persName>				
+    <lb n="31"/><w><supplied reason="lost">τ</supplied>οῦ</w> <w>ἰδίου</w>
+    <lb n="32" break="no"/><w>πρεσβευ
+   <lb n="33" break="no"/><unclear>τ</unclear>ου</w> <w>ὅρους</w>
+    <lb n="34"/><w>διακατεχο
+    <lb n="35" break="no"/>μένους</w> <w>ὑπὸ</w>				
+    <lb n="36"/><w>ἰδιωτῶν</w> <w>δή
+    <lb n="37" break="no"/>μῳ</w> <placeName type="ethnic"><w  lemma="Ῥωμαῖος">Ῥωμαίω
+    <lb n="38" break="no"/>ν</w></placeName> <w>ἀποκατέ
+    <lb n="39" break="no"/>στησεν</w>
+<lb n="39a"/> <space extent="unknown" unit="line"/>
+</ab>
                 </div>
             </div>
            <div type="apparatus">
-               <listApp><app loc="1-3"><note>The first three lines were not visible to earlier editors.</note></app></listApp>
+               <listApp><app><note>The first three lines of a, and the text on b were not recorded in the earlier edition.</note></app>
+                   <app loc="7"><rdg resp="#mohamed1996">G<unclear>s</unclear>ermanicus</rdg></app></listApp>
            </div> 
             
             <div type="translation" xml:space="preserve"><head>Translation</head>
-             <div type="translation" resp="#jmr" xml:lang="en"><p> <note>Latin</note>: Nero Claudius son of Claudius, Caesar Augustus Germanicus, grandson of Germanicus Caesar, great grandson of [Tiberius Caesar] Augustus, 
-                 great-great grandson of deified Augustus, <date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE">Caesar Augustus Germanicus, Emperor</date>, by the action of Lucius Acilius Strabo his personal agent, 
+             <div type="translation" resp="#jmr" xml:lang="en"><p> <note>Latin</note>: <date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE">Nero Claudius son of Claudius, Caesar Augustus Germanicus, grandson of Germanicus Caesar, 
+                 great grandson of [Tiberius Caesar] Augustus, 
+                 great-great grandson of deified Augustus, Caesar Augustus Germanicus, Emperor</date>, by <supplied reason="subaudible">the action of</supplied> Lucius Acilius Strabo his personal agent, 
                  restored to the Roman People the boundaries <supplied reason="explanation">of the estates</supplied> which had been occupied by private persons.</p> 
-<p><note>Greek</note>: Nero Claudius son of deified Claudius Caesar Germanicus, grandson of Germanicus Caesar, great-grandson of Tiberius Caesar Augustus and of deified Augustus, 
-Emperor [ . . .</p></div>
+<p><note>Greek</note>: <date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE">Nero Claudius son of Claudius, Caesar Augustus Germanicus, grandson of Germanicus Caesar, 
+                 great grandson of [Tiberius Caesar] Augustus, 
+                 and great-great grandson of deified Augustus, Caesar Augustus Germanicus, Emperor</date>, by <supplied reason="subaudible">the action of</supplied> Lucius Acilius Strabo his personal agent, 
+                 restored to the Roman People the boundaries <supplied reason="explanation">of the estates</supplied> which had been occupied by private persons.</p></div>
                  
 
 </div>
