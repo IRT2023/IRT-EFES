@@ -7,7 +7,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">imperial</rs> ?<rs type="textType">honours</rs></title>
+            <title>Fragmentary <rs type="textType">imperial</rs> <rs type="textType" cert="low">honours</rs></title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
@@ -55,8 +55,7 @@
                               found before <height>1941</height>; findspot unrecorded.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>11
-                              <placeName type="monuList" ref="institution.xml#db933">Cyrene Museum</placeName>.</p>
+                           <p><placeName type="monuList" ref="institution.xml#db933">Cyrene Museum</placeName>.</p>
                         </provenance>
                      
                   
@@ -102,10 +101,10 @@
          <change when="2009-07-06" who="MR">turned to XML and tidied</change>
          <change when="2009-05-11" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_1020_001" decls="#photograph"><desc>Face</desc></graphic><graphic url="JMR_1020_001" decls="#photograph"><desc>Face</desc></graphic><!--JR--><!--
-                   --><!--
-                   --><!--
-               --></facsimile>
+   </teiHeader><facsimile><graphic url="JMR_1020_001" decls="#photograph"><desc>Face</desc></graphic><graphic url="JMR_1020_001" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="JMR_1012_003" decls="#photograph">
+         <desc>From left: <ref type="inscription" n="C.675">C.675</ref>, <ref type="inscription" n="C.684">C.684</ref>, <ref type="inscription" n="C.676">C.676</ref>, 
+            unidentified fragment</desc></graphic></facsimile>
    <text>
       <body>
          <div type="bibliography">
@@ -115,19 +114,21 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
-                    <lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> 
                     <w lemma="Caesar"><supplied reason="lost">Ca</supplied>esa<supplied reason="lost">r</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/> <space quantity="1" unit="character"/>
-                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>d</unclear>a<unclear>i</unclear>e</orig><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="3a"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="1a"/> <space quantity="1" unit="line"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>d</unclear>aie</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3a"/><gap reason="lost" extent="unknown" unit="line"/>
                 </ab>
 </div>
          
-         <div type="translation" xml:space="preserve"><head>Translation</head><p/></div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+          <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ] Caesar [ . . .  </p></div>
+         </div>
          <div type="commentary">
             <head>Commentary</head>
-            <p/>
+            <p>Line 2: the first letter is very uncertain.</p>
          </div>
          
       </body>

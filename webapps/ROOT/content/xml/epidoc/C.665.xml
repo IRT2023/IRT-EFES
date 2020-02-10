@@ -31,7 +31,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Lower right corner of a small <material>marble</material> moulded below 
+                           <p>Lower right corner of a small <material>marble</material> <objectType cert="low">altar</objectType>, moulded below 
                               (<dimensions><width>0.15</width><height>0.185</height><depth>0.12</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
@@ -103,9 +103,7 @@
          <change when="2009-07-07" who="Pietro">turned to XML and tidied</change>
          <change when="2009-05-11" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_998front" decls="#photograph"><desc>Monument</desc></graphic><!--Dept. JR--><!--
-                    --><!--
-                --></facsimile>
+   </teiHeader><facsimile><graphic url="JMR_998front" decls="#photograph"><desc>Monument</desc></graphic><!--Dept. JR--></facsimile>
    <text>
       <body>
          <div type="bibliography">
@@ -115,26 +113,28 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="0"/><gap reason="lost" extent="unkown" unit="line"/>
-                    <lb n="1"/><gap reason="lost" extent="8/9" unit="character"/><orig>νε</orig>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" quantity="8/9" unit="character"/><orig>νε</orig>
+                    <space quantity="2" unit="character"/>
+                    <lb n="2"/><gap reason="lost" quantity="2" unit="character"/> <persName type="attested"><name nymRef="Ἀριστόδημος"><supplied reason="lost" cert="low">Ἀριστό</supplied>δημος</name>
+                    <lb n="3"/><gap reason="lost" quantity="7" unit="character"/> <placeName type="ethnic"><w><supplied reason="lost" cert="low">Κ</supplied>υρη
                     <space quantity="1" unit="character"/>
-                    <lb n="2"/><gap reason="lost" extent="2" unit="character"/> <persName type="attested"><name nymRef="Ἀριστόδημος"><supplied reason="lost">Ἀριστό</supplied>δημος</name>
-                    <lb n="3"/><gap reason="lost" extent="7" unit="character"/><placeName type="ethnic"><w><supplied reason="lost">Κ</supplied>υρη
-                    <space quantity="1" unit="character"/>
-                    <lb n="4"/><supplied reason="lost">ηναῖος</supplied></w></placeName></persName> <w><supplied reason="lost">ἀνέ</supplied>στησε<supplied reason="lost">ν</supplied></w>
+                    <lb n="4" break="no"/><supplied reason="lost" cert="low">ηναῖος</supplied></w></placeName></persName> <w><supplied reason="lost">ἀνέ</supplied>στησε<unclear>ν</unclear></w>
                 </ab>
 </div>
          <div type="apparatus">
             <head>Apparatus</head>
-            <listApp><app loc="3"><note>Perhaps [Αριστο]δήμος / [Κ]υρη ν. / [ναῖος ἀνέ]στησε[ν], 
-               even if it sounds strange that one calls oneself Κυρηναῖος at home.</note></app></listApp>
+            <listApp><app loc="4"><note>ΣΤΗΣΕΙ</note></app>
+            </listApp>
          </div>
          
-         <div type="translation" xml:space="preserve"><head>Translation</head><p/></div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>. . . ?Aristo]demos, a [K]yren[aean] put <supplied reason="subaudible">this</supplied> up </p> </div>
+         </div>
          
          <div type="commentary">
             <head>Commentary</head>
-            <p/>
+            <p>This is a very tentative restoration: it sounds strange that one calls oneself Κυρηναῖος at home.</p>
          </div>
          
       </body>
