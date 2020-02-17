@@ -7,7 +7,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Funerary</rs> inscription</title>
+            <title><rs type="textType">Funerary</rs> <rs type="textType">caption</rs></title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
@@ -31,7 +31,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><material>Marble</material> <objectType>portrait head</objectType> on a roughly rectangular <objectType>base</objectType>.</p>
+                           <p><material>Marble</material> <objectType>portrait head</objectType> sculpted with a cushion-like <objectType>base</objectType> below.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -60,7 +60,7 @@
                         </provenance>
                         <provenance type="observed">
                            <p>
-                              <placeName type="monuList" ref="http://www.slsgazetteer.org/934">British Museum</placeName>.</p>
+                              <placeName type="monuList"  ref="institution.xml#db934">British Museum</placeName>, catalogue number 1861,1127.91.</p>
                         </provenance>
                      
                   
@@ -110,10 +110,9 @@
       </revisionDesc>
    </teiHeader>
          <facsimile>
-            <graphic url="C49500_XI.B.26" decls="#photograph">
-               <desc>Monument (Joyce Reynolds, XI. B. 26)</desc>
+            <graphic url="C49500_XI.B.26" decls="#photograph"><desc>Monument (Joyce Reynolds, XI.B.26)</desc>
             </graphic>
-            <!--British Museum. Available online: link to http://www.britishmuseum.org/research/search_the_collection_database/search_object_details.aspx?objectId=407297--><surface/></facsimile>
+            <!--British Museum. Available online: link to https://research.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=407297&partId=1&--><surface/></facsimile>
    <text>
       <body>
          <div type="bibliography">
@@ -128,17 +127,19 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="attested" key="lgpn:V1-65083"><name nymRef="Νέμεσις">Νέμεσις</name>
+                    <lb n="1"/><space quantity="1" unit="character"/><persName type="attested" key="lgpn:V1-65083"><name nymRef="Νέμεσις">Νέμεσις</name>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-66188"><name nymRef="Ὠρίων">Ὠρίωνος</name></persName></persName> 
             <date type="life-span" dur="P16Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="16">ιϛ</num> </date>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <p>Nemesis <supplied reason="subaudible">daughter</supplied> of Orion aged 16</p><p/></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Nemesis <supplied reason="subaudible">daughter</supplied> of Orion aged 16</p></div>
+         </div>
+         
          <div type="commentary">
             <head>Commentary</head>
-            <p>line 1: For the name see also Inscr. Cret. III.iii.49 (<bibl>PHI <citedRange>PH200288</citedRange></bibl>). </p>
+            <p>Line 1: For the name see also <title>Inscr. Cret.</title> III.iii.49 (available at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/200288">200288</ref>). </p>
             
          </div>
          
