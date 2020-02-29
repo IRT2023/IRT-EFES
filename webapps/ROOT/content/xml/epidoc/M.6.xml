@@ -7,7 +7,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Military</rs> <rs type="textType">presence</rs> inscription of a Syrian</title>
+            <title><rs type="textType">Presence</rs> inscription of a Syrian</title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
@@ -32,7 +32,7 @@
                      <supportDesc>
                         <support>
                            <p><objectType>Outcrop</objectType> of natural <material>rock</material>, on which texts are cut more or less roughly, 
-                              in a series of different hands, with dates ranging from 15-16-52 CE: <ref type="inscription" n="B00400">M.3</ref>, <ref type="inscription" n="B00500">M.4</ref>, 
+                              in a series of different hands, with dates ranging from 15/16 to 52 CE: <ref type="inscription" n="B00400">M.3</ref>, <ref type="inscription" n="B00500">M.4</ref>, 
                               <ref type="inscription" n="B00600">M.5</ref>, <ref type="inscription" n="B00700">M.6</ref>, <ref type="inscription" n="B00800">M.7</ref>, <ref type="inscription" n="B00900">M.8</ref>, 
                               <ref type="inscription" n="B01000">M.9</ref>, <ref type="inscription" n="B01100">M.10</ref>, <ref type="inscription" n="B01200">M.11</ref>, <ref type="inscription" n="B01300">M.12</ref>, 
                               <ref type="inscription" n="B01400">M.13</ref>, <ref type="inscription" n="B01500">M.14</ref>, <ref type="inscription" n="B01600">M.15</ref>, <ref type="inscription" n="B01700">M.16</ref>, 
@@ -48,7 +48,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Lunate epsilon, cursive omega, L for ἔτους.</handNote><!-- check sigma -->
+                     <handNote>Lunate epsilon, sigma, cursive omega; L for ἔτους; small circle for stop.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -118,7 +118,7 @@
          <div type="bibliography">
             <head>Bibliography</head>
              <p><bibl>
-                  <ptr target="ferri1926"/>  <citedRange>4</citedRange> and drawing</bibl>, whence <bibl>
+                  <ptr target="ferri1926"/>  <citedRange>4</citedRange> and drawing, p.374</bibl>, whence <bibl>
                   <title>SEG</title> <citedRange>9.776</citedRange>
                </bibl>
             </p>
@@ -126,21 +126,20 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/GdcgTUM3geZRQJru3XkoUK"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="82">πβ</num></date> 
-                    <lb n="2"/><gap reason="lost" quantity="1" unit="line"><certainty match=".." locus="name"/></gap>
-                    <lb n="3"/><placeName type="ethnic"><w lemma="Ἀπαμεύς">Ἀπα<unclear>μ</unclear>εὺς</w></placeName> <w><supplied reason="lost">ἤ</supplied>κω</w>
+                    <lb n="1"/><date ref="https://godot.date/id/GdcgTUM3geZRQJru3XkoUK"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <g ref="symbols.xml#stop"/> <num value="82">πβ</num></date> 
+                    <lb n="2"/><gap reason="lost" quantity="6" unit="character"/> <orig>α</orig> <gap reason="lost" quantity="2" unit="character"/>
+   <lb n="3"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="4"/><placeName type="ethnic"><w lemma="Ἀπαμεύς">Ἀπα<unclear>μ</unclear>εὺϲ</w></placeName> <w><supplied reason="lost">ἤ</supplied>κω</w>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <p>Year 82 <note>52 CE</note> .... an Apameian, I came here.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/GdcgTUM3geZRQJru3XkoUK">Year 82</ref> [ . . . ] an Apameian, I came here.</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p>For general introduction see on <ref type="inscription" n="B00400">M.3</ref>.</p>
-            <p>The same year as <ref type="inscription" n="B00600">M.5</ref></p>
-            <p> line 3 For the ethnic <foreign xml:lang="grc">Ἀπαμεὺς</foreign> cf. <ref type="inscription" n="B00600">M.5</ref> line 3 and for <foreign xml:lang="grc">ἥκω</foreign> see <ref type="inscription" n="B00600">M.5</ref>, <ref type="inscription" n="B00700">M.6</ref>, 
-               ?<ref type="inscription" n="B00800">M.7</ref>, <ref type="inscription" n="B01300">M.12</ref>, <ref type="inscription" n="B01500">M.14</ref>, <ref type="inscription" n="B01900">M.18</ref>, 
-               <ref type="inscription" n="B02400">M.23</ref>, <ref type="inscription" n="B00300">M.27</ref>)</p>
+            <p>Line 1:The same year as <ref type="inscription" n="B00600">M.5</ref>.</p>
+            <p>Line 4: For the ethnic Ἀπαμεύς see also <ref type="inscription" n="B00600">M.5</ref>.</p>
          </div>
          
       </body>
