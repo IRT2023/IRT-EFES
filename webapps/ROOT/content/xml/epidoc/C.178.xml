@@ -7,8 +7,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">imperial</rs> <rs type="textType">honours<certainty cert="low" locus="value" match=".." /></rs></title>
-                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <title>Fragmentary <rs type="textType">imperial</rs> <rs type="textType">honours<certainty cert="low" locus="value" match=".." /> for a Flavian emperor</rs></title>
+                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor>
+            <editor xml:id="cdl">Catherine Dobias-Lalou</editor> 
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -16,6 +17,10 @@
             <idno type="ircyr2012">C14900</idno>
             <idno type="JMR">734</idno>
             <idno type="Excel">177</idno>
+            <!-- <idno type="filename">C.670</idno>
+            <idno type="ircyr2012">C40900</idno>
+            <idno type="JMR">1005</idno>
+            <idno type="Excel">1303</idno> -->
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
@@ -31,7 +36,8 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment of burnt <material>marble</material> (<dimensions><width>0.19</width><height>0.135</height><depth>0.033</depth></dimensions>).</p>
+                           <p>Two adjoining fragments of <material>marble</material> a:, traces of burning, <dimensions><width>0.19</width><height>0.135</height><depth>0.033</depth></dimensions>; 
+                              b: (<dimensions><width>0.20</width><height>0.145</height><depth>0.03</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -49,7 +55,8 @@
                   </origin><provenance type="found">
                            <p>
                               <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>: 
-                              Valley Street, near <placeName type="monuList" ref="http://www.slsgazetteer.org/1340">Public Building E</placeName>; found in <date type="found">1957</date>.</p>
+                             a:  Valley Street, near <placeName type="monuList" ref="http://www.slsgazetteer.org/1340">Public Building E</placeName>; found in <date type="found">1957</date>; 
+                              b: found before <date type="found">1941</date>; findspot unrecorded..</p>
                         </provenance>
                         <provenance type="observed">
                            <p>
@@ -93,15 +100,17 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-03-10" who="CMR">cobined with C.670</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2009-11-08" who="Pietro">tokenized</change>
-         
          <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+         
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_734front" decls="#photograph"><desc><ref type="inscription" n="C14900">C.178</ref> with <ref type="inscription" n="C40900">C.670</ref> 
-   (Reynolds VI.20)</desc></graphic></facsimile>
+   </teiHeader><facsimile><graphic url="JMR_734front" decls="#photograph"><desc>a and b 
+   (Reynolds VI.20)</desc></graphic>
+      <graphic url="JMR_780_002" decls="#photograph"><desc>From left: <ref type="inscription" n="C47600">C.723</ref>, <ref type="inscription" n="C.178">C.178.b</ref> and unidentified fragment</desc></graphic></facsimile>
    <text>
       <body>
          
@@ -113,20 +122,19 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <date ref="https://godot.date/id/xqsK7PhpfANN3eQcMtJadQ"><persName type="emperor" key="domitianus"><name nymRef="Οὐεσπασιανός"><seg part="I">Οὐεσ<supplied reason="lost">πασιαν</supplied></seg></name> <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="I"><supplied reason="lost">Γ</supplied><unclear>ερ</unclear><supplied reason="lost">μανικ</supplied></w></persName></date> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="domitianus"><name nymRef="Οὐεσπασιανός"><seg part="I">Οὐεσ<supplied reason="lost">πα</supplied>σιανο</seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="ἀρχιερεύς" part="I"><supplied reason="lost">ἀρχ</supplied><unclear>ιερ</unclear><supplied reason="lost">ε-</supplied></w> <w lemma="μέγας" part="I"><supplied reason="lost">μ</supplied><unclear>εγι</unclear><supplied reason="lost">στ-</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2a"/><gap reason="lost" quantity="1" unit="line"/>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <div type="translation" resp="#cmr" xml:lang="en"><p>. . . ] Ves[pasian  . . . G]er[manicus . . .</p> </div>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>. . . ] Ves[pa]sian  . . . ] high priest <supplied reason="explanation"><foreign xml:lang="la">pontifex maximus</foreign></supplied> [ . . .</p> </div>
          </div>
          <div type="commentary">
             <head>Commentary</head>
-            <p>Line 1: Vespasian, Titus, or Domitian. </p>
-            <p>Line 2: possibly from ἀρχι]ερ[εύς, but the following Ε ought to be visible. If our restoration is correct, the subject is Domitian from 84. 
-               </p>
+            <p>Vespasian, Titus, or Domitian. </p>
+            
          </div>
          
       </body>
