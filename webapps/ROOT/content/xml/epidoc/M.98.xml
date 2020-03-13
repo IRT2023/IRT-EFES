@@ -34,17 +34,18 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Average: <height unit="metre" precision="low">0.015</height>. lunate sigma and omega, probably epsilon; square sigma for digamma.</handNote>
+                     <handNote>Average: <height unit="metre" precision="low">0.015</height>; lunate sigma and omega, probably epsilon; square sigma for digamma.  In line 1 
+                     there appears to be a horizontal bar above N; dots for stops.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace><!--check--> </origPlace>
+                     <origPlace>Unknown</origPlace>
                      <origDate notAfter="0100" notBefore="0001" cert="low" precision="low" evidence="lettering">First century CE</origDate>
                   </origin>
                   
                      
-                        <provenance type="found"><p><placeName type="ancientFindspot" key="1174">Gebel Akhdar: West of Cyrene</placeName>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>: 
                            <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/1270">Ghot Jinoubl</placeName>. Found in <date type="found">1971</date>.</p>
                         </provenance>
                         <provenance type="observed">
@@ -101,7 +102,6 @@
        
          <div type="bibliography">
             <head>Bibliography</head>
-            <p>Unpublished.</p>
          </div>
          
          
@@ -109,18 +109,23 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
-               <lb n="1"/><gap reason="lost" quantity="1" unit="character"/><orig>ν<unclear>ε</unclear></orig><gap reason="lost" quantity="2" unit="character"/><orig><unclear>α</unclear>ρ<unclear>ιι</unclear></orig>
+               <lb n="1"/><g ref="symbols.xml#stop"/><num value="50">ν</num><g ref="symbols.xml#stop"/> <orig><unclear>ε</unclear></orig><gap reason="lost" quantity="2" unit="character"/><orig><unclear>α</unclear>ρ<unclear>ιι</unclear></orig>
                <lb n="2" break="no"/><persName type="attested"><name><seg part="F">ος</seg></name> <name nymRef="Πινύτας">Π<supplied reason="lost">ι</supplied>νυ<lb n="3" break="no"/>ταϲ</name></persName>
-               <date type="life-span" dur="P26Y"><w><unclear>ἐ</unclear><supplied reason="lost">τ</supplied><unclear>ῶν</unclear></w>
-               <lb n="4"/> <space quantity="3" unit="character"/> <num value="26">κϛ</num> </date>
+               <date type="life-span" dur="P26Y"><w lemma="ἔτος"><unclear>ἐ</unclear><supplied reason="lost">τ</supplied><unclear>ῶν</unclear></w>
+               <lb n="4"/> <space quantity="3" unit="character"/> <g ref="symbols.xml#stop"/> <num value="26">κϛ</num> </date> <space quantity="2" unit="character"/>
             </ab>
          </div>
          
-         <div type="translation" xml:space="preserve"><head>Translation</head><p><!--  ...--></p></div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>? (Year)] 50 [ . . . ]os Pinytas, aged 26.</p></div></div>
          
          <div type="commentary">
             <head>Commentary</head>
-            <p>l.4, aged 26.</p>
+            <p>Line 1: The number (50) seems most likely to be a year. </p>
+            <p>Pinytas is attested as a masculine name <ref target="http://www.lgpn.ox.ac.uk/id/V5b-47410"><title>LGPN</title> V5b-47410</ref>; if it is the case here, 
+               then this man is presumably using a double name, or <foreign xml:lang="la">tria nomina</foreign>, as in <ref type="inscription" n="M.99">M.99</ref>. 
+               It is less likely that he is described using a matronymic.</p>
+               
          </div>
          
       </body>

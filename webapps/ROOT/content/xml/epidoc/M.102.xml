@@ -40,7 +40,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Probably first century CE; <height>0.035 - 0.04</height>; well-cut; probably square sigma for digamma; 
+                     <handNote>Probably first century CE; <height>0.035-0.04</height>; well-cut; probably square sigma for digamma; 
                     L for ἐτῶν.</handNote>
                   </handDesc>
                </physDesc>
@@ -49,13 +49,13 @@
                      <origPlace>Findspot.</origPlace>
                      <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering">Probably first century CE</origDate>
                   </origin>
-                  <provenance type="found"><p><placeName type="ancientFindspot" key="1174">Gebel Akhdar: West of Cyrene</placeName>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
                      <placeName type="monuList" ref="http://www.slsgazetteer.org/1163">Sidi Yunes</placeName>;
                                found in <date type="found">1971</date>.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>
-                              <placeName type="monuList" ref="http://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>.</p>
+                              <placeName type="monuList" ref="institution.xml#db1096">Tolmeita Museum</placeName>.</p>
                         </provenance>
                      
                   
@@ -104,7 +104,7 @@
          <change when="2009-05-18" who="MR">turned to XML and tidied</change>
          <change when="2009-05-11" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_1971_5" decls="#photograph"><desc>Face</desc></graphic>
+   </teiHeader><facsimile><graphic url="JMR_1971_5" decls="#photograph"><desc>Face</desc></graphic> <!-- image, find -->
       <!--JR 1971.13.--></facsimile>
    <text>
       <body>
@@ -117,7 +117,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
-                    <lb n="1"/><date ref="https://godot.date/id/XNJjYWuSgde5h5BrCvWgib"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <lb n="1"/><date ref="https://godot.date/id/XNJjYWuSgde5h5BrCvWgib"><w lemma="ἔτος"><expan><abbr><am><unclear><g ref="symbols.xml#year"/></unclear></am></abbr><ex>ἔτους</ex></expan></w>
                         <num value="6"><unclear>ϛ</unclear></num> </date>
                         <persName type="attested"><name nymRef="Ποδιν"><unclear>Π</unclear>οδ<unclear>ι</unclear><lb n="2" break="no"/>ν</name> 
                         <persName type="attested"><name nymRef="Ἀνδρόνικος">Ἀνδρ<lb n="3" break="no"/>ονίκω</name></persName></persName> 
@@ -126,10 +126,11 @@
                 </ab>
 </div>
          
-         <div type="translation" xml:space="preserve"><head>Translation</head><p>l. 2, year 6; line  5, aged 65.</p></div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ] <ref target="https://godot.date/id/XNJjYWuSgde5h5BrCvWgib">Year 6</ref>: Podin <supplied reason="subaudible">son</supplied> of Andronikos, aged 65</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
-            <p>l. 1, L is doubtful.</p>
+            
          </div>
          
       </body>
