@@ -8,7 +8,7 @@
         <fileDesc>
             <titleStmt>
                 <title><rs type="textType">Dedication</rs> to Iatros and Iaso</title>
-                <editor>from CDL for IGCyr</editor>
+                <editor xml:id="cdl">Catherine Dobias-Lalou</editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
             </titleStmt>
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -51,7 +51,7 @@
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>.
-                            <origDate evidence="lettering nomenclature" notBefore="0150" notAfter="0299" precision="low" cert="low">probably second half of second century
+                            <origDate evidence="lettering nomenclature" notBefore="0150" notAfter="0250" precision="low" cert="low">probably second half of second century
                             or third century AD</origDate>
                         </origin>
                         
@@ -61,9 +61,8 @@
                                         no findspot reported.
                                    </p>
                                 </provenance>
-                                <provenance type="observed" when="1979" when-iso="1997" resp="cdl">
-                                    <p>Seen by Dobias-Lalou at <placeName type="modernSpot"
-                                        >Shahat</placeName>: in 1979 outside Casa Paris, in 1997 in the courtyard of the new Museum, both places
+                                <provenance type="observed">
+                                    <p>Seen by Dobias-Lalou in <date type="observed">1979</date> outside Casa Paris, in <date type="observed">1997</date> in the courtyard of the new Museum, both places
                                         belonging to <placeName type="monuList" ref="institution.xml#db933">Cyrene Museum</placeName>.</p>
                                 </provenance>
                             
@@ -127,13 +126,14 @@
             
             <div type="bibliography">
                 <head>Bibliography</head>
-                <p><bibl><ptr target="cdl1993"/> <citedRange>5</citedRange>, p. <citedRange>34</citedRange>, (no image)</bibl>, whence
+                <p>Mentioned <bibl><ptr target="SECir"/> note on <citedRange>165</citedRange>, p. 316</bibl>;
+                    lines 3-6 published <bibl><ptr target="cdl1993"/> <citedRange>5</citedRange>, p. <citedRange>34</citedRange>, (no image)</bibl>, whence
                     <bibl><ptr target="SEG"/> <citedRange>43.1191</citedRange></bibl>;
-                    <bibl><ptr target="cdl2000"/> <citedRange>a</citedRange>, p. 225</bibl>;
-                    <bibl><ptr target="marengo2003"/></bibl>, whence 
+                    discussed <bibl><ptr target="cdl2000"/> <citedRange>a</citedRange>, p. 225</bibl>;
+                    complete text published by <bibl><ptr target="marengo2003"/></bibl>, whence 
                     <bibl><ptr target="cdlBE"/> <citedRange>2004.453</citedRange></bibl>, 
                     <bibl><ptr target="SEG"/> <citedRange>53.2052</citedRange></bibl>.
-                    Mentioned <bibl><ptr target="SECir"/> note on <citedRange>165</citedRange>, p. 316</bibl></p>
+                    </p>
                 
             </div>
           
@@ -141,40 +141,34 @@
             <div type="edition" xml:lang="grc" xml:space="preserve">
                 <head>Text</head>
                 <ab>
-                    <lb n="1"/><persName type="divine" key="methusis"><name nymRef="Μεθύσις">Μεθύσι</name></persName>,
-                    <lb n="2"/><persName type="divine" key="minerva"><name nymRef="Μινέρβα">Μινέρβι</name></persName>,
-                    <lb n="3"/><persName type="divine" key="iatros"><name nymRef="Ἰατρός">Ἰατρῶι</name></persName> <persName type="divine" key="iaso"><name nymRef="Ἰασώ">Ἰασο͂ι</name></persName>,
-                    <lb n="4"/> <w>θεοῖς</w> <w>ἐπηκόοις</w>,
-                    <lb n="5"/><persName type="attested"><name nymRef="Κλαῦδιος"><expan><abbr>Κλ</abbr><ex>αύδιος</ex></expan></name> <name nymRef="Λῦκος">Λῦκος</name></persName> <w>εὐχὴν</w>
-                    <lb n="6"/> <w>ἀνέθηκα</w>
+                    <lb n="1"/><space quantity="2" unit="character"/> <persName type="divine" key="methusis"><name nymRef="Μεθύσις">Μεθύϲι</name></persName>,<space quantity="4" unit="character"/>
+                    <lb n="2"/><space quantity="2" unit="character"/> <persName type="divine" key="minerva"><name nymRef="Μινέρβα">Μινέρβι</name></persName>, <space quantity="4" unit="character"/>
+                    <lb n="3"/><space quantity="1" unit="character"/> <persName type="divine" key="iatros"><name nymRef="Ἰατρός">Ἰατρῶι</name></persName> <persName type="divine" key="iaso"><name nymRef="Ἰασώ">Ἰαϲο͂ι</name></persName>, <space quantity="3" unit="character"/>
+                    <lb n="4"/> <w>θεοιϲ</w> <w>ἐπηκόοιϲ</w>,
+                    <lb n="5"/><persName type="attested"><name nymRef="Κλαῦδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Λῦκος">Λῦκοϲ</name></persName> <w lemma="εὐχή">εὐχὴν</w>
+                    <lb n="6"/><space quantity="2" unit="character"/> <w>ἀνέθηκα</w> <space quantity="4" unit="character"/>
                     <lb n="7"/><g ref="symbols.xml#leaf"/> </ab>
             </div>
           
-            <div type="apparatus" xml:space="preserve">
-            <head>Apparatus</head>
-                <p>
-                    <app loc="1-2"><lem resp="#marengo2003"/>
-                    <rdg resp="#cdl1993 cdl2000"><note>Not interpreted.</note></rdg></app>
-                </p>
-            </div>
             
-            <div type="translation" xml:lang="fr" xml:space="preserve">
-            <p>A Methysis, Minerve, Iatros et Iasô, divinités bienveillantes, moi Klaudios Lykos, j'ai consacré <supplied reason="subaudible">ce monument</supplied> 
-                en accomplissement d'un voeu.</p>
-         </div>
-            <div type="translation" xml:lang="en" xml:space="preserve">
-            <p></p>
+            <div type="translation" xml:space="preserve"><head>Translation</head>
+                <div type="translation" resp="#cmr" xml:lang="en"><p>For Methysis, Minerva, Iatros, Iaso, gods who listen, I Kl(audios) Lykos dedicated 
+                    <supplied reason="subaudible">this in fulfilment of</supplied> a vow</p></div>
+            <div type="translation" source="#cdl2000" xml:lang="fr"><p>A Methysis, Minerve, Iatros et Iasô, divinités bienveillantes, moi Klaudios Lykos, j'ai consacré <supplied reason="subaudible">ce monument</supplied> 
+                en accomplissement d'un voeu.</p></div>
          </div>
            
             <div type="commentary">
                 <head>Commentary</head>
                 <p>For other texts associating Iatros and Iaso see <ref type="inscription" n="C20200">C.228</ref>, <ref type="inscription" n="C76700">M.185</ref>, <ref type="inscription" n="C78900">C.756</ref>, 
-                    <ref type="inscription" n="C98000">M.189</ref>, <ref type="inscription" n="C98100">M.191</ref>. Iatros is the name of Asklepios in the sanctuary of Balagrae and in the city of Cyrene (see in the IV century BC <ref target="https://igcyr.unibo.it/igcyr011600">igcyr011600</ref>). In the other dedications he is associated with his daughter Iaso, mostly without <foreign xml:lang="">καί</foreign>. This is the only inscription 
+                    <ref type="inscription" n="C98000">M.189</ref>, <ref type="inscription" n="C98100">M.191</ref>, and Dobias-Lalou, loc.cit. Iatros is the name of Asklepios in the sanctuary of Balagrae and in the city of Cyrene 
+                    (see in the fourth century BCE <ref target="https://igcyr.unibo.it/igcyr011600">igcyr011600</ref>). In the other dedications he is associated with his daughter Iaso, 
+                    mostly without καί. This is the only inscription 
                    where the pair is associated with Methysis (Inebriation), usually a dangerous entity, and the Roman goddess Minerva, who is more usually considered a 
                 benevolent deity. For further comments see Marengo, loc. cit.</p>
-          	<p>As pointed by Marengo, <foreign xml:lang="grc">Μεθύσι</foreign> stands for <foreign xml:lang="grc">Μεθύσει</foreign> because of iotacism. This ending might
-          	have served as a model for the dative <foreign xml:lang="grc">Μινέρβι</foreign>, translating the latin name <foreign xml:lang="la">Minerva</foreign>.</p>
-	<p><foreign xml:lang="grc">ἐπήκοος</foreign> 'listening prayers' is used for benevolent or saviour gods.</p>
+          	<p>As pointed by Marengo, Μεθύσι stands for Μεθύσει because of iotacism. This ending might
+          	have served as a model for the dative Μινέρβι, translating the Latin name <foreign xml:lang="la">Minerva</foreign>.</p>
+	<p>Line 4: ἐπήκοος 'listening to prayers' is used for benevolent or saviour gods.</p>
             </div>
         </body>
     </text>
