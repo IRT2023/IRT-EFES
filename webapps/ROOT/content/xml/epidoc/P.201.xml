@@ -45,7 +45,8 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Probably III – IV cent. lines 1,3; <height unit="metre">0.13</height>; line 2 <height unit="metre">0.115</height>. ligatures in lines2 between NT, in line 3 between DU.</handNote>
+                     <handNote>Probably third-fourth century CE; lines 1, 3; <height unit="metre">0.13</height>; line 2 <height unit="metre">0.115</height>; in line 3, o written in miniature;
+                        dot for stops; ligatures in line 2 between NT, in line 3 between DU.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -112,17 +113,14 @@
          <change when="2009-02-24" who="GB">mailmerged: created from template</change>
       </revisionDesc>
    </teiHeader><facsimile><graphic url="JMR_387_001" decls="#photograph"><desc>Face (Department of Antiquities, B. 317)</desc></graphic>
-      <graphic url="JMR_387_002" decls="#photograph"><desc>Face (Department of Antiquities, B. 317)</desc></graphic><graphic url="JMR_387_003" decls="#photograph"><desc>Face (The Oriental Institute - Chicago, 48088)</desc></graphic><!--
-                    --><!--
-                    --><!--
-                    --><!--
-                --></facsimile>
+      <graphic url="JMR_387_002" decls="#photograph"><desc>Face (Department of Antiquities, B. 317)</desc></graphic>
+      <graphic url="JMR_387_003" decls="#photograph"><desc>Face (The Oriental Institute - Chicago, 48088)</desc></graphic></facsimile>
    <text>
       <body>
          <div type="bibliography">
             <head>Bibliography</head>
             <p><bibl><ptr target="rgg-jmr1962"/> <citedRange>2.a</citedRange>, pp. 39-40 and pl. XXIIIc</bibl>;
-               whence <bibl><title>AE</title> <citedRange>1969/70.639</citedRange></bibl>, whence <bibl> <title>EDH</title> <citedRange>HD012430</citedRange></bibl>;
+               whence <bibl><title>AE</title> <citedRange>1969/70.639</citedRange></bibl>, whence <bibl> <title>EDH</title> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD012430">012430</ref></citedRange></bibl>;
                see also <bibl> <ptr target="jmr1965a"/> <citedRange>1</citedRange></bibl>.
                
             </p>
@@ -130,22 +128,25 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <w><expan><abbr>Ped</abbr><ex>atura</ex></expan></w>
-                    <w lemma="uexillatio"><expan><abbr>uexil</abbr><ex>lationis</ex></expan></w>
+                    <lb n="1"/> <w><expan><abbr>Ped</abbr><ex>atura</ex></expan></w> <g ref="symbols.xml#stop"/>
+                    <w lemma="uexillatio"><expan><abbr>uexil</abbr><ex>lationis</ex></expan></w> <g ref="symbols.xml#stop"/>
                     <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> 
-                    <lb n="2"/><num value="3"><supplied reason="lost">I</supplied>II</num> 
-                    <w><expan><abbr>Aug</abbr><ex>ustae</ex></expan></w> <w lemma="curo">curante</w> 
-                    <lb n="3"/><persName type="attested"><name nymRef="Aurelius"><expan><abbr>Aur</abbr><ex>elio</ex></expan></name>
-                    <name nymRef="Mucianus">Muciano</name></persName> <w><expan><abbr>duc</abbr><ex cert="low">enario</ex></expan></w>
+                    <lb n="2"/><num value="3"><supplied reason="lost">I</supplied>II</num> <g ref="symbols.xml#stop"/>
+                    <w lemma="Augustus"><expan><abbr>Aug</abbr><ex>ustae</ex></expan></w> <w lemma="curo">curante</w> <g ref="symbols.xml#stop"/>
+                    <lb n="3"/><persName type="attested"><name nymRef="Aurelius"><expan><abbr>Aur</abbr><ex>elio</ex></expan></name> <g ref="symbols.xml#stop"/>
+                    <name nymRef="Mucianus">Muciano</name></persName> <g ref="symbols.xml#stop"/> <w><expan><abbr>duc</abbr><ex cert="low">enario</ex></expan></w>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <p>The infantry battalion of the third Augusta Legion (?made this); the overseer was Aurelius Mucianus duc(enarius).</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>The infantry battalion of the third Augusta Legion <supplied reason="subaudible">made this</supplied>; the overseer was Aurelius Mucianus <foreign xml:lang="la">duc(enarius)</foreign>.</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
-            <p>cf. <title level="m">CIL</title> VII. 864, 970; the detachment had been involved in the construction of 
-               installations which are likely to be military.  See also <ref type="inscription" n="P07900">P.67</ref></p>
+            <p>Line 1: <foreign xml:lang="la">Pedatura</foreign>: presumably involved in the construction of 
+               military installations. The term is used of the detachments responsible for work on Hadrian's Wall:  RIB <ref target="https://romaninscriptionsofbritain.org/inscriptions/1944">1944</ref>, 
+               <ref target="https://romaninscriptionsofbritain.org/inscriptions/1945">1945</ref>, and <ref target="https://romaninscriptionsofbritain.org/inscriptions/2022">2022</ref> and
+               <ref target="https://romaninscriptionsofbritain.org/inscriptions/2053">2053</ref>, both dated to 369. </p>
+            <p>Line 2: For a soldier from this legion see also <ref type="inscription" n="P07900">P.67</ref>.</p>
             <p> line  3: The name indicates Thracian origin; it is too common to allow of identification.</p>
          </div>
          
