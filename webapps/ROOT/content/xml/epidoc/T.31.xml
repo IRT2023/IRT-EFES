@@ -39,12 +39,13 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> with two texts, each within a wreath.</layout>
+                        <layout>Two texts each <rs type="execution" key="litteris scariphatis">incised</rs> within a wreath; i to the left, ii to the right. In ii, 
+                           the date has been cut above the wreath.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
                      <handNote>i: <height>0.04</height>; L for ἔτους; everything below line 1 has been deliberately though incompletely erased. 
-                        ii: <height>0.04</height>; lunate epsilon, sigma, omega; L for ἔτους; the date cut above the wreath</handNote>
+                        ii: <height>0.04</height>; lunate epsilon, sigma, omega; L for ἔτους</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -107,7 +108,9 @@
          <change when="2009-02-12" who="CB">turned to XML and tidied</change>
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_63004" decls="#photograph"><desc>Text (Joyce Reynolds, Tocra II.2.11A, NS.III.11)</desc></graphic></facsimile>
+   </teiHeader><facsimile><graphic url="JMRNS03_016" decls="#photograph"><desc>View of wall: above, from left, <ref type="inscription" n="T.30">T.30</ref>, <ref type="inscription" n="T.29">T.29</ref>, <ref type="inscription" n="T.31">T.31</ref>;
+      below, <ref type="inscription" n="T.27">T.27</ref> I and II (E. Alföldi-Rosenbaum, Reynolds Tocra II.4.16a, NS.III.16)</desc></graphic>
+      <graphic url="JMR_63004" decls="#photograph"><desc>Face (Joyce Reynolds, Tocra II.2.11A, NS.III.11)</desc></graphic></facsimile><!-- reverse image -->
    <text>
       <body>
          
@@ -118,19 +121,19 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="part" n="i" type="textpart"><ab>
                         <lb n="1"/><date ref="https://godot.date/id/RBRxZzgdQdSdz56bdagRWX"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="11">ια</num></date>                                       
-                        <lb n="2"/><gap  reason="lost" extent="unknown" unit="line"/>
+                        <lb n="2"/><del rend="erasure"><gap reason="lost" quantity="4" unit="line"/></del>
                     </ab></div><div subtype="part" n="ii" type="textpart"><ab>
                         <lb n="1"/><date ref="https://godot.date/id/LBG9KV8e2LEJFgAfvtiZJW"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan> </w> <num value="5">ε</num></date>
-                        <lb n="2"/><persName type="attested"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>όπλιος</ex></expan></name><g ref="symbols.xml#stop"/> <w>τα<unclear>μ</unclear><lb n="3" break="no"/>ε<supplied reason="lost">ιο</supplied><unclear>ς</unclear></w> 
-                            <persName type="divine" key="serapis"><name nymRef="Σέραπις">Σερα<lb n="4" break="no"/>π<supplied reason="lost">ι</supplied><unclear>ω</unclear></name></persName> 
-                            <placeName>Kανω<lb n="5" break="no"/>που</placeName></persName><!-- check -->
+                        <lb n="2"/><persName type="attested"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>όπλιοϲ</ex></expan></name><g ref="symbols.xml#stop"/> <name>Τα<unclear>μ</unclear><lb n="3" break="no"/>ε<supplied reason="lost" cert="low">α</supplied><unclear>ϲ</unclear></name> 
+                            <name nymRef="Σεραπίω">Ϲερα<lb n="4" break="no"/>π<supplied reason="lost">ί</supplied><unclear>ω</unclear></name> 
+                            <persName type="attested"><name nymRef="Κάνωπος">Kανω<lb n="5" break="no"/>που</name></persName></persName><!-- check -->
                     </ab>
 </div>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <p>i:<date ref="https://godot.date/id/RBRxZzgdQdSdz56bdagRWX">Year 11</date> [ . . ..</p>
-            <p>ii: <date ref="https://godot.date/id/LBG9KV8e2LEJFgAfvtiZJW">Year 5</date>, </p></div>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>i:<ref target="https://godot.date/id/RBRxZzgdQdSdz56bdagRWX">Year 11</ref> [ . . . </p>
+            <p>ii: <ref target="https://godot.date/id/LBG9KV8e2LEJFgAfvtiZJW">Year 5</ref>, P(oplios) ?Tameas Serapio, <supplied reason="subaudible">son</supplied> of Kanopos </p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p>ii, line  1, cut above the wreath.</p>
