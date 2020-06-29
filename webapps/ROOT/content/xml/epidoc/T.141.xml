@@ -31,8 +31,8 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Two adjacent <material>sandstone</material> blocks: a <dimensions><width>0.32</width> <height>0.55</height></dimensions>, b <dimensions><width>0.73</width> <height>0.52</height></dimensions>. 
-                              From a group 
+                           <p>Two adjacent <material>sandstone</material> blocks: a (<dimensions><width>0.32</width> <height>0.55</height></dimensions>), b (<dimensions><width>0.73</width> <height>0.52</height></dimensions>), 
+                              from a group 
                               inscribed with <ref type="inscription" n="T09300">T.132</ref>, <ref type="inscription" n="T09400">T.133</ref>, 
                               <ref type="inscription" n="T09500">T.134</ref>, <ref type="inscription" n="T09600">T.135</ref>, <ref type="inscription" n="T09700">T.136</ref>, <ref type="inscription" n="T09800">T.137</ref>, 
                               <ref type="inscription" n="T09900">T.138</ref>, <ref type="inscription" n="T10000">T.139</ref>, <ref type="inscription" n="T10100">T.140</ref>, <ref type="inscription" n="T10200">T.141</ref>, <ref type="inscription" n="T10300">T.142</ref>, 
@@ -45,8 +45,8 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> across the face of both blocks. i, ii, iii on block a; 
-                           iv, v on block b; i. line 2 completed on block b.</layout>
+                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> across the face of both blocks: i, ii, iii across blocks a and b; 
+                           iv, v on block b; iv probably completed on a block to the right, now lost.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -115,7 +115,8 @@
          <change when="2009-02-06" who="VA">turned to XML and tidied</change>
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMRNS02_003" decls="#photograph"><desc>Face (Reynolds NS.II.3)</desc></graphic>
+   </teiHeader><facsimile><graphic url="JMRNS02_003" decls="#photograph"><desc><ref type="inscription" n="T.141">T.141</ref>, with <ref type="inscription" n="T.142">T.142</ref>
+      inserted above (Reynolds NS.II.3)</desc></graphic>
       <graphic url="JMRNS02_020" decls="#photograph"><desc>View of group (Reynolds NS.II.20)</desc></graphic><graphic url="DSC05342" decls="#photograph"><desc>View of group (2008, H.Walda)</desc></graphic>
       <graphic url="JMRSB05_300" decls="#photograph"><desc>View of wall (Reynolds, SB.V.300)</desc></graphic></facsimile>
    <text>
@@ -130,15 +131,20 @@
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="part" n="i" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested" key="lgpn:V1-60209"><name nymRef="Ἀρίσταρχος"><supplied reason="lost">Ἀρ</supplied><unclear>ίσ</unclear><lb n="2" break="no"/>ταρχος</name></persName>
-                    </ab></div><div subtype="part" n="ii" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested"><name nymRef="Ἀριστοκράτης"><supplied reason="lost">Ἀριστ</supplied><unclear>ο</unclear>κράτης</name></persName>
-                    </ab></div><div subtype="part" n="iii" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested" key="lgpn:V1-60208"><name nymRef="Ἀπολλωνίδας"><supplied reason="lost">Ἀπο</supplied>λλωνίδας</name></persName>
-                    </ab></div><div subtype="part" n="iv" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested" key="lgpn:V1-60210"><name nymRef="Ἀρίμμας">Ἀρίμμ<lb n="2" break="no"/><supplied reason="lost">ας</supplied></name></persName>
-                    </ab></div><div subtype="part" n="v" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested" key="lgpn:V1-60211"><name nymRef="Ἰσίδωρος">Ἰσίδ<unclear>ω</unclear>ρ<lb n="2" break="no"/>ος</name></persName>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60209"><name nymRef="Ἀρίσταρχος"><supplied reason="lost">Ἀρ</supplied><unclear>ίσ</unclear><lb n="2" break="no"/>ταρχο<milestone unit="block"/>ς</name></persName>
+                    </ab></div>
+            <div subtype="part" n="ii" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested"><name nymRef="Ἀριστοκράτης"><supplied reason="lost">Ἀριστ</supplied><unclear>ο</unclear><milestone unit="block"/>κράτης</name></persName>
+                    </ab></div>
+            <div subtype="part" n="iii" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60208"><name nymRef="Ἀπολλωνίδας"><supplied reason="lost">Ἀπο</supplied>λλωνί<milestone unit="block"/>δας</name></persName>
+                    </ab></div>
+            <div subtype="part" n="iv" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60210"><name nymRef="Ἀρίμμας">Ἀρίμμ<milestone unit="block"/><supplied reason="lost">ας</supplied></name></persName>
+                    </ab></div>
+            <div subtype="part" n="v" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60211"><name nymRef="Ἰσίδωρος">Ἰσίδ<unclear>ω</unclear>ρ<milestone unit="block"/>
+                           <lb n="2" break="no"/>ος</name></persName>
                     </ab>
 </div>
 </div>
@@ -146,8 +152,7 @@
             <head>Apparatus</head>
             <listApp>
                     <app loc="i">
-                  <rdg resp="#oliverioDAI">
-                     <supplied reason="lost">Ἀρίσ</supplied>ταρχο<supplied reason="lost">ς</supplied>
+                  <rdg resp="#oliverioDAI">Ἀρίστ]αρχο[ς
                   </rdg>
                </app>
                     <app loc="ii">
@@ -157,23 +162,23 @@
                   <note>Omitted by Oliverio</note>
                </app>
                     <app loc="v">
-                  <rdg resp="#oliverioDAI">Ἰσίδ<supplied reason="lost">ω</supplied>ρ<lb break="no"/>ος <lb/> Α -</rdg>
+                  <rdg resp="#oliverioDAI">Ἰσίδ[ω]ρ/ος/ Α -</rdg> <note>; the final alpha is from iii.</note>
                </app>
                 </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translations</head>
             <div  type="translation" source="#oliverioDAI" xml:lang="it"><p>i and ii. - Aristarco di - cr -</p>
             <p>iv. Arimma Isidoro. A -</p></div>
-            <div type="translation" resp="#edd" xml:lang="en"><p>i. <supplied reason="lost">Ar</supplied>istarchos.</p>
-            <p>ii. <supplied reason="lost">Arist</supplied>okrates.</p>
-            <p>iii. <supplied reason="lost">Apo</supplied>llonidas.</p>
-            <p>iv. Arimm<supplied reason="lost">as</supplied>.</p>
-            <p>v. Isidoros.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> [Ar]istarchos.</p>
+            <p><note>ii</note> [Arist]okrates.</p>
+            <p><note>iii</note> [Apo]llonidas.</p>
+            <p><note>iv</note> Arimm[as].</p>
+            <p><note>v</note> Isidoros.</p></div>
          </div>
          
          <div type="commentary">
             <head>Commentary</head>
-            <p>I, ii, iii on block a; iv, v on block b; i. line 2 completed on block b</p>
+            
          </div>
          
       </body>
