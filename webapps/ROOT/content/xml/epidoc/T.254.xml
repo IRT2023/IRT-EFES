@@ -31,12 +31,12 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><material>Sandstone</material> block (<dimensions><width>0.47</width><height>0.35</height>
+                           <p>Fragment from a <material>sandstone</material> block (<dimensions><width>0.47</width><height>0.35</height>
                                <depth>0.50</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> on one side.</layout>
+                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> on the face, with at least two texts, each within a <rs type="decoration">wreath</rs></layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -107,8 +107,8 @@
          <change when="2009-09-17" who="Lourdes">turned to XML and tidied</change>
          <change when="2009-08-19" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_81_003" decls="#photograph"><desc><ref type="inscription" n="T24600">T.251</ref>, 
-      <ref type="inscription" n="T24700">T.252</ref>.iii, <ref type="inscription" n="T24800">T.253</ref>, <ref type="inscription" n="T24900">T.254</ref>, <ref type="inscription" n="T25200">T.708</ref>  (Department of Antiquities, F. 1069)</desc></graphic>
+   </teiHeader><facsimile><graphic url="JMR_81_003" decls="#photograph"><desc>: From right to left:  <ref type="inscription" n="T24900">T.254</ref> (upside down), <ref type="inscription" n="T24600">T.251</ref>, 
+      <ref type="inscription" n="T24700">T.252</ref>.iii, <ref type="inscription" n="T24800">T.253</ref> (upside down), <ref type="inscription" n="T25200">T.708</ref> (above) (Department of Antiquities, F. 1069)</desc></graphic>
       <graphic url="JMR_81_003d" decls="#photograph"><desc>Face (part) (Department of Antiquities, F. 1069)</desc></graphic></facsimile>
    <text>
       <body>
@@ -119,12 +119,19 @@
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
-<ab>
+            <div subtype="wreath" n="i" type="textpart"><ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/><gap reason="lost"  extent="unknown" unit="character"/><orig>λ</orig>
+                <lb n="2"/><gap reason="lost"  extent="unknown"  unit="character"/><orig>ο</orig>
+               <lb n="2a"/><gap reason="lost" extent="unknown" unit="character"/>
+                </ab></div>
+            
+<div subtype="wreath" n="ii" type="textpart"><ab>
                     <lb n="1"/><date ref="https://godot.date/id/QEEpTtCKhwLjNEhLvD8woK"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="19">ιθ</num></date>
                     <lb n="2"/><persName type="attested"><name nymRef="Ἰάσων">Ἰάϲων</name>
                 <lb n="3"/><persName type="attested"><name nymRef="Ζωΐλος">Ζοίλω</name></persName></persName>
-                </ab>
+                </ab></div>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head><p/>
