@@ -7,8 +7,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Jewish</rs> 
-               <rs type="textType">funerary</rs> inscription</title>
+            <title><rs type="textType">Funerary</rs> inscription</title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
@@ -42,7 +41,7 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout><rs type="execution" key="scalpro">Inscribed</rs> in a rectangular panel (<dimensions><width>0.245</width><height>0.33</height></dimensions>)
-                            outlined in relief below <ref type="inscription" n="T42400">T.452</ref>.</layout>
+                            outlined in relief below <ref type="inscription" n="T.452">T.452</ref>.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -112,7 +111,8 @@
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
    </teiHeader>
-      <facsimile><surface/></facsimile>
+   <facsimile><graphic url="JMR_186002" decls="#photograph"><desc> <ref type="inscription" n="T452">T.452</ref>; below, from left <ref type="inscription" n="T42500">T.455</ref>, <ref type="inscription" n="T.453">T.453</ref>, 
+      <ref type="inscription" n="T451">T.451</ref> (Joyce Reynolds, Tocra VIII.4.17)</desc></graphic></facsimile>
    <text>
       <body>
          
@@ -121,15 +121,15 @@
             <p> 
                <bibl><ptr target="jmr1983"/>  <citedRange>16.c</citedRange></bibl>, 
                whence <bibl><title>SEG</title> <citedRange>33.1414</citedRange></bibl>, 
-               <bibl><title>PHI</title> <citedRange n="PH324595">324595</citedRange></bibl>.
-            </p>
+               <bibl><title>PHI</title> <citedRange><ref target="https://epigraphy.packhum.org/text/324595">324595</ref></citedRange></bibl>.
+            </p><!-- El Haddar 198 -->
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/BcwJL846woVx95NLsfd9PK"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <gap reason="lost" quantity="1" unit="character"/> <rs type="month" key="Μεχίρ"><w>Με<supplied reason="lost">χ</supplied><lb n="2" break="no"/>ὶ<supplied reason="lost">ρ</supplied></w></rs><gap reason="lost" extent="unknown" unit="character"/></date>
-                    <lb n="3"/><persName type="attested" key="lgpn:V1-60818"><name nymRef="Νίκαις">Νείκαις</name> 
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-60818"><name nymRef="Νίκαιος">Νείκαις</name> 
                     <lb n="4"/><persName type="attested" key="lgpn:V1-60027"><name nymRef="Ἀνδροσθένης">Ἀν<unclear>δ</unclear><supplied reason="lost">ροσ</supplied><lb n="5" break="no"/>θένευς</name></persName></persName> 
                     <lb n="6"/><date type="life-span" dur="P15Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="15">ιε</num> </date>
@@ -137,10 +137,14 @@
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div type="translation" source="#jmr1983" xml:lang="en"><p><date ref="https://godot.date/id/BcwJL846woVx95NLsfd9PK">Year ?, Mechir ?</date>, Neikais <supplied reason="subaudible">daughter</supplied> of Androsthenes, aged 15.</p></div></div>
+            <div type="translation" source="#jmr1983" xml:lang="en"><p>Year ?, Mechir ?, Neikais daughter of 
+               Androsthenes, aged 15.</p></div>
+         <div type="translation" source="#jmr1983" xml:lang="en"><p><ref target="https://godot.date/id/BcwJL846woVx95NLsfd9PK">Year ?, Mechir ?</ref>, Neikai(o)s <supplied reason="subaudible">son</supplied> of 
+               Androsthenes, aged 15.</p></div>
+         </div>
          <div type="commentary">
             <head>Commentary</head>
-            <p>L2: Mecheir? (January/February). </p>
+           <!--  January/February-->
          </div>
          
       </body>
