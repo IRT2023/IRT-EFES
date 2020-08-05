@@ -7,8 +7,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Jewish</rs> 
-               <rs type="textType">funerary</rs> inscription</title>
+            <title><rs type="textType">Funerary</rs> inscription</title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
@@ -39,7 +38,8 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> above the door (no panel) in a badly worn area.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> above the door (no panel) in a badly worn area; 
+                           <ref type="inscription" n="T52000">T.531</ref> is immediately above.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -110,7 +110,10 @@
          <change when="2008-08-20" who="VA">turned to XML and tidied</change>
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><!--Dept. JR.--><surface/></facsimile>
+   </teiHeader><facsimile><!--Dept. JR.--><graphic url="JMR_203" decls="#photograph"><desc><ref type="inscription" n="T.531">T.531</ref> above 
+      <ref type="inscription" n="T.530">T.530</ref> (Reynolds XII.17)</desc></graphic>
+      <graphic url="JMRNB12_079" decls="#photograph"><desc><ref type="inscription" n="T.531">T.531</ref> above 
+         <ref type="inscription" n="T.530">T.530</ref> (Reynolds XII.17)</desc></graphic></facsimile>
    <text>
       <body>
          
@@ -120,7 +123,8 @@
                <bibl><title>SEG</title> <citedRange>16.910</citedRange></bibl>;
                <bibl><ptr target="gl-jmr1983"/>  <citedRange>53.a</citedRange></bibl>, whence 
                <bibl><title>SEG</title> <citedRange>33.1502</citedRange></bibl>, 
-               <bibl><title>PHI</title> <citedRange n="PH324677">324677</citedRange></bibl>.
+               <bibl><title>PHI</title> <citedRange><ref target="https://epigraphy.packhum.org/text/324677">324677</ref></citedRange></bibl>.
+               <!-- El Haddar 292 -->
             </p>
          </div>
          
@@ -145,15 +149,16 @@
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
             <div  type="translation" source="#gray1956" xml:lang="en"><p>Line 1: ? aged 10.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 10, . . .Phamenot, Serapion . . .</p></div>
-            <div type="translation" resp="#edd" xml:lang="en"><p><date ref="https://godot.date/id/gZNfyGRYZCgYKb7hBaMukn">Year 10, Phamenoth ?</date>, Serapion ... </p></div>
+            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 10, . . . Phamenot, Serapion . . .</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/gZNfyGRYZCgYKb7hBaMukn">Year 10, Phamenoth ?</ref>, 
+               Serapion ... </p></div>
        </div>
        
          <div type="commentary">
             <head>Commentary</head>
-            <p>Gray read the first line as part of <ref type="inscription">T052000</ref></p>
-            <p>line 1: Phamenoth (?) (February/March). In view of the date of  <ref type="inscription" n="T52000">T.531</ref>,
-               it seems likely that this is 10 of the reign of Vespasian, CE 77/78.</p>
+            <p>Gray read the first line as part of <ref type="inscription" n="T52000">T.531</ref></p>
+            <p>Line 1: In view of the date of <ref type="inscription" n="T52000">T.531</ref>,
+               it seems likely that this is 10 of the reign of Vespasian, CE 77/78.</p><!--   Phamenoth (?) (February/March).-->
          </div>
          
       </body>

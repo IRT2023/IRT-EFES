@@ -7,9 +7,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Jewish</rs> 
-               <rs type="textType">funerary</rs> inscription</title>
-                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> 
+            <editor xml:id="cmr"> Charlotte Roueché</editor> <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -111,7 +111,7 @@
          <change when="2009-02-06" who="VA">turned to XML and tidied</change>
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMRNB12_036" decls="#photograph"><desc>View of <ref type="inscription" n="T52300">T.534</ref> 
+   </teiHeader><facsimile><graphic url="JMRNB12_036" decls="#photograph"><desc>From left: <ref type="inscription" n="T52300">T.534</ref> 
       and <ref type="inscription" n="T52200">T.533</ref> (Reynolds XII.36)</desc></graphic></facsimile>
    <text>
       <body>
@@ -123,14 +123,14 @@
                <bibl><title>SEG</title> <citedRange>16.912</citedRange></bibl>;
                <bibl><ptr target="gl-jmr1983"/>  <citedRange>53.c</citedRange></bibl>, whence 
                <bibl><title>SEG</title> <citedRange>33.1503</citedRange></bibl>, 
-               <bibl><title>PHI</title> <citedRange n="PH324678">324678</citedRange></bibl>.
-            </p>
+               <bibl><title>PHI</title> <citedRange><ref target="https://epigraphy.packhum.org/text/324678">324678</ref></citedRange></bibl>.
+            </p><!-- El Haddar 294 -->
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/hQjFr59JNruM95tw4mQQDo"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="10">ι</num> <persName type="attested" key="lgpn:V1-60738"><name nymRef="Ἀριστόβουλος">Ἀριϲτ<lb n="2" break="no"/>όβο<supplied reason="omitted">υ</supplied>λοϲ</name> 
+                    <num value="10">ι</num> <persName type="attested" key="lgpn:V1-60738"><name nymRef="Ἀριστόβουλος">Ἀριϲτ<lb n="2" break="no"/>όβολοϲ</name> 
                        <persName type="attested" key="lgpn:V1-60739"><name nymRef="Σεραπίων">Ϲε<lb n="3" break="no"/>ραπίωνοϲ</name></persName></persName>
                     <lb n="4"/><date type="life-span" dur="P80Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="80">π</num> </date> <rs type="month" key="Μεσορή"><w>Μεϲορ<lb n="5" break="no"/>ὴ</w></rs> <num value="25">κε</num></date>
@@ -141,20 +141,23 @@
 </div>
          <div type="apparatus" xml:space="preserve"><head>Apparatus</head>
             <listApp>
-               <app loc="4"><note>π might be read as γι, and may be a year numeral rather than an age.</note></app>
+               <app loc="4"><note>π might be read as γι, and may be a year numeral rather than an age (so Reynolds in SEG).</note></app>
+               <app loc="5/6"><rdg resp="#gl-jmr1983">Λίκο/ς</rdg>
+               <rdg resp="#cdl">Λύκο/ς</rdg></app>
             <app loc="6"><rdg resp="#gray1956">ΓΑΙΑΝ  LΔ</rdg>
                   <note>Corrected by Reynolds in SEG</note></app></listApp></div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
             <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 10, Aristobolos, son of Serapion. Year 80, Mesore 25th, ? aged 4.</p></div>
             <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 10, Aristobulos des Serapion, (Jahr?) 80, 25.Mesore, Likos des Gaius, 4 (Jahre)</p></div><!-- check -->
-            <div type="translation" resp="#edd" xml:lang="en"><p>Year 10, Aristoboulos <supplied reason="subaudible">son</supplied> of Serapion, ?aged 80; 
-              <date ref="https://godot.date/id/hQjFr59JNruM95tw4mQQDo"> Mesore 25</date>, Lykos <supplied reason="subaudible">son</supplied> of Gaius, aged 4.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/hQjFr59JNruM95tw4mQQDo">Year 10</ref>, Aristobolos <supplied reason="subaudible">son</supplied> of Serapion, ?aged 80; 
+              <ref target="https://godot.date/id/hQjFr59JNruM95tw4mQQDo"> Mesore 25</ref>, Lykos <supplied reason="subaudible">son</supplied> 
+               of Gaios <supplied reason="explanation"><foreign xml:lang="la">Gaius</foreign></supplied>, aged 4.</p></div>
        </div>
          
          <div type="commentary">
             <head>Commentary</head>
-            <p>Line 4: Aged 80; alternatively (ἔτους) γι, year 13, the beginning of the next entry. <note>or year 13, August 18</note></p>
+            <p>Line 4: Aged 80; alternatively (ἔτους) γι, year 13, the beginning of the next entry.<!-- or year 13, August 18 --></p>
          </div>
          
       </body>
