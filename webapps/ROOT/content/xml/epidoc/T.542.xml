@@ -7,8 +7,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Jewish</rs> 
-               <rs type="textType">funerary</rs> inscription</title>
+            <title><rs type="textType">Funerary</rs> inscription</title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
@@ -110,8 +109,9 @@
          <change when="2009-02-11" who="VA">turned to XML and tidied</change>
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMRNB12_013" decls="#photograph"><desc>View of <ref type="inscription" n="T53100">T.542</ref>, 
-      <ref type="inscription" n="T53200">T.543</ref>, <ref type="inscription" n="T53300">T.544</ref> and <ref type="inscription" n="T53500">T.546</ref> (Reynolds XII.13)</desc></graphic></facsimile>
+   </teiHeader><facsimile><graphic url="JMRNB12_013" decls="#photograph"><desc><ref type="inscription" n="T53100">T.542</ref> above
+      <ref type="inscription" n="T53200">T.543</ref> above<ref type="inscription" n="T53300">T.544</ref>; to the left, 
+      <ref type="inscription" n="T53500">T.546</ref> (Reynolds XII.13)</desc></graphic></facsimile>
    <text>
       <body>
          
@@ -122,7 +122,7 @@
                <bibl><title>SEG</title> <citedRange>16.904</citedRange></bibl>; 
                <bibl><ptr target="gl-jmr1983"/>  <citedRange>54.a</citedRange></bibl>, whence 
                <bibl><title>SEG</title> <citedRange>33.1505</citedRange></bibl>, 
-               <bibl><title>PHI</title> <citedRange n="PH324680">324680</citedRange></bibl>.
+               <bibl><title>PHI</title> <citedRange><ref target="https://epigraphy.packhum.org/text/324680">324680</ref></citedRange></bibl>.
                <!-- El Haddar 297 -->
             </p>
          </div>
@@ -132,7 +132,7 @@
                     <lb n="1"/><date ref="https://godot.date/id/ZRkjap8SynhaYxR2p928CP"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="11">ια</num> <rs type="month" key="Τυβί"><w lemma="Τυβί">Τυβὶ</w></rs>
                     <lb n="2"/><num value="14">δι</num></date> <persName type="attested" key="lgpn:V1-60153"><name  nymRef="Δωσᾶς">Δωϲᾶϲ</name> 
-                    <lb n="3"/><persName type="attested" key="lgpn:V1-60152"><name nymRef="Ἀριστοκράτης">Ἀριϲτοκρά<lb n="4" break="no"/>τευϲ</name></persName></persName> 
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-60152"><name nymRef="Ἀριστοκράτης">Ἀριϲτοκρά<lb n="4" break="no"/>τ<unclear>ο</unclear>υϲ</name></persName></persName> 
                     <date type="life-span" dur="P35Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="35">λε</num> </date>
                 </ab>
@@ -149,12 +149,14 @@
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
             <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 11, Tubi . . . th, Didosas, son of Aristocrates, aged 35.</p></div>
-            <div  type="translation" resp="#edd" xml:lang="en"><p><date ref="https://godot.date/id/ZRkjap8SynhaYxR2p928CP">Year 11, Tybi 14</date>, Dosas <supplied reason="subaudible">son</supplied> of Aristokrates, aged 35. </p></div><!-- check gl -->
+            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 11, 14.Tubi, Dosas des Aristokrates, 35 (Jahre)</p></div>
+            <div  type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/ZRkjap8SynhaYxR2p928CP">Year 11, Tybi 14</ref>, 
+               Dosas <supplied reason="subaudible">son</supplied> of Aristokrates, aged 35. </p></div>
             </div>
          
          <div type="commentary">
             <head>Commentary</head>
-            <p>line 1: Tubi (?) (December/January). </p>
+           <!-- December/January --> 
          </div>
          
       </body>
