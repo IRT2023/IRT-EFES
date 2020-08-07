@@ -7,9 +7,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Jewish</rs> 
-               <rs type="textType">funerary</rs> inscription</title>
-                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> 
+            <editor xml:id="cmr"> Charlotte Roueché</editor> <editor xml:id="cdl">Catherine Dobias-Lalou </editor>
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -113,7 +113,8 @@
          <change when="2009-02-16" who="VA">turned to XML and tidied</change>
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="B_059" decls="#photograph"><desc>Face (Joyce Reynolds XII.9)</desc></graphic></facsimile>
+   </teiHeader><facsimile><graphic url="B_059" decls="#photograph"><desc>Face (Joyce Reynolds XII.9)</desc></graphic></facsimile><!-- reverse image -->
+   <!-- better image JMRNB12_028 -->
    <text>
       <body>
         
@@ -125,7 +126,7 @@
                and, with readings from J. Reynolds, 
                <bibl><title>SEG</title> <citedRange>16.887</citedRange></bibl>; 
                <bibl><ptr target="gl-jmr1983"/>  <citedRange>57.a</citedRange></bibl>.
-            </p>
+            </p><!-- El Haddar 317 -->
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
@@ -133,7 +134,7 @@
                     <lb n="1"/><date ref="https://godot.date/id/6rRpYxAfc7fbXK52V4JHLB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="2">β</num> <rs type="month" key="Παχών"><w>Παχὼν</w></rs>
                     <lb n="2"/><num value="20">κ</num></date> <persName type="attested" key="lgpn:V1-60696"><name nymRef="Μάριν">Μάριν</name> 
-                    <lb n="3"/><persName type="attested" key="lgpn:V1-60697"><name nymRef="Βάσσιος">Βασσίω</name></persName></persName> 
+                    <lb n="3"/><persName type="attested"><name nymRef="Κάσσιος">Κασσίω</name></persName></persName> 
                     <lb n="4"/><date type="life-span" dur="P70Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="70">ο</num> </date>
                 </ab>
@@ -147,19 +148,23 @@
                </app>
                <app loc="3">
                   <rdg resp="#gray1956">ΚΑΣΣΙΩ</rdg>
-                  <note>corrected by Reynolds in SEG 16.</note>
+                  <rdg resp="#gl-jmr1983">Βασσίω</rdg>
+                  <note>also Reynolds in SEG 16, <!-- check -->whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-60697">V1-60697</ref></note>
+                  <rdg resp="#cdl">Κάσσιω</rdg>
                </app>
             </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translations</head>
             <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 20, Pachon 20th, Marin son of Cassios, aged 70.</p></div>
             <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 2, 20.Pachon, Marin des Bassius, 70 (Jahre)</p></div>
-            <div type="translation" resp="#edd" xml:lang="en"><p><date ref="https://godot.date/id/6rRpYxAfc7fbXK52V4JHLB">Year 2, Pachon 20</date>, Marin <supplied reason="subaudible">daughter</supplied> of Bassios, aged 70. </p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/6rRpYxAfc7fbXK52V4JHLB">Year 2, Pachon 20</ref>, 
+               Marin <supplied reason="subaudible">daughter</supplied> of Kassios <supplied reason="explanation"><foreign xml:lang="la">Cassius</foreign></supplied>, aged 70. </p></div>
        </div>
         
          <div type="commentary">
-            <head>Commentary</head> 
-            <note>May 15</note>
+            <head>Commentary</head>
+            <p>The reading by Dobias-Lalou in line 3 is based on an excellent photograph by Elhaddar.</p>
+            <!-- May 15 -->
             <p/>
          </div>
          

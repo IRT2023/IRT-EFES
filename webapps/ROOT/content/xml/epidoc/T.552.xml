@@ -7,10 +7,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title> <rs type="textType">Jewish<certainty cert="low" locus="value" match=".."/>
-               </rs> 
-               <rs type="textType">funerary</rs> inscription</title>
+            <title><rs type="textType">Funerary</rs> inscription</title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+           
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -44,11 +43,11 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout><rs type="execution" key="scalpro">Inscribed</rs> within a roughly square panel (<dimensions><width>0.35 </width><height> 0.35</height></dimensions>)
-                            to the right of <ref type="inscription" n="T54000">T.551</ref>.</layout>
+                            to the right of the door, to the right of <ref type="inscription" n="T54000">T.551</ref>.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height>0.03 - 0.05</height>; superscript bar of the figure in line 2</handNote>
+                     <handNote><height>0.03 - 0.05</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -114,7 +113,7 @@
          <change when="2009-02-16" who="VA">turned to XML and tidied</change>
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMRNB12_100" decls="#photograph"><desc>Face (Reynolds XII.100)</desc></graphic></facsimile>
+   </teiHeader><facsimile><graphic url="JMRNB12_100" decls="#photograph"><desc>Face (Reynolds XII.100)</desc></graphic></facsimile><!-- better image JMRNB12_028 -->
    <text>
       <body>
        
@@ -124,7 +123,7 @@
                <bibl><ptr target="gray1956"/>  <citedRange>7</citedRange></bibl>, whence, with readings by J. Reynolds, 
                <bibl><title>SEG</title> <citedRange>16.886</citedRange></bibl>; 
                <bibl><ptr target="gl-jmr1983"/>  <citedRange>57.c</citedRange></bibl>.
-            </p>
+            </p><!-- El Haddar 319 -->
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
@@ -141,9 +140,9 @@
 </div>
          <div type="apparatus" xml:space="preserve"><head>Apparatus</head>
             <listApp> <app loc="2">
-                  <rdg resp="#gray1956">ΡΗ   ΓΝΑΙΟΣ</rdg>
-                  <note>corrected by Reynolds in SEG 16: that ι is α figure is indicated by a superscript bar.</note></app>
-               
+                  <rdg resp="#gray1956">ΡΗ  ΓΝΑΙΟΣ</rdg>
+               <rdg resp="gl-jmr1983">ρὴ ι΄ Ναῖος</rdg> <note>also by Reynolds in SEG 16, reading ι as α figure with a superscript bar.</note>
+              <rdg resp="#cdl">ρὴ Γναῖος</rdg></app>
                <app loc="4-5">
                   <rdg resp="#gray1956">ΑΡΤΙΩ/M</rdg>
                   <note>Ἀρτεμᾶ/ [(ἐτῶν)] μς΄ Reynolds in SEG 16.</note></app>
@@ -152,12 +151,14 @@
          <div type="translation" xml:space="preserve"><head>Translations</head>
             <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 8, Mesore (8th or 3rd) Gnaios son of Artios (?), aged ?.</p></div>
             <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 8, 10.Mesore, Naios Bassius Artemas, 18 (Jahre)</p></div>
-            <div type="translation" resp="#edd" xml:lang="en"><p><date ref="https://godot.date/id/kiGL9nP4CVVMbqcUYEUG7a">Year 8, Mesore 10</date> Naiοs Bassios <note xml:lang="la">Gnaeus Bassius</note> Artemas, aged 18.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/kiGL9nP4CVVMbqcUYEUG7a">Year 8, Mesore 10</ref> 
+               Gnaiοs Bassios <supplied reason="explanation"><foreign xml:lang="la">Gnaeus Bassius</foreign></supplied> Artemas, aged 18.</p></div>
        </div>
          
          <div type="commentary">
             <head>Commentary</head>
-            
+            <p>Line 2: the reading by Dobias-Lalou is based on an excellent photograph by Elhaddar. The layout, with no date for the day, 
+               is then the same as in T</p>
          </div>
          
       </body>
