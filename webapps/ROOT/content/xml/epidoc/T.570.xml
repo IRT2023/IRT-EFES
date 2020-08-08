@@ -7,8 +7,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Jewish</rs> 
-               <rs type="textType">funerary</rs> inscription</title>
+            <title><rs type="textType">Funerary</rs> inscription</title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
@@ -109,8 +108,8 @@
          <change when="2008-09-08" who="GB">turned to XML and tidied</change>
          <change when="2008-08-18" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMRNB12_068" decls="#photograph"><desc><ref type="inscription" n="T55900">T.570</ref>, 
-      left, and <ref type="inscription" n="T55800">T.569</ref> (Reynolds XII.68)</desc></graphic></facsimile>
+   </teiHeader><facsimile><graphic url="JMRNB12_068" decls="#photograph"><desc>From left: <ref type="inscription" n="T55900">T.570</ref>, 
+       <ref type="inscription" n="T55800">T.569</ref> (Reynolds XII.68)</desc></graphic></facsimile>
    <text>
       <body>
          
@@ -122,14 +121,14 @@
                </bibl>, whence <bibl>
                   <title>SEG</title> 
                   <citedRange>33.1520</citedRange>, available at 
-               </bibl> <bibl><title>PHI</title> <citedRange n="PH324695">324695</citedRange></bibl>
-            </p>
+               </bibl> <bibl><title>PHI</title> <citedRange><ref target="https://epigraphy.packhum.org/text/324695">324695</ref></citedRange></bibl>
+            </p><!-- El Haddar 333 -->
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
-                    <lb n="1"/><gap reason="lost" quantity="5" unit="character" precision="low"/> <persName type="attested"><name><seg part="F"><orig>ϲ<unclear>α</unclear>ν</orig>
+                    <lb n="1"/><gap reason="lost" quantity="5" unit="character" precision="low"/><persName type="attested"><name><seg part="F"><orig>ϲ<unclear>α</unclear>ν</orig>
                     <lb n="2"/><orig>ναιϲ</orig></seg></name> <persName type="attested" key="lgpn:V1-60684"><name nymRef="Σίλιος">Ϲιλί<lb n="3" break="no"/>ω</name></persName></persName>
                     <date type="life-span" dur="P24Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="24">κδ</num> </date>
                 </ab>
@@ -137,16 +136,17 @@
          <div type="apparatus">
             <head>Apparatus</head>
             <listApp>
-               <app loc="1">
-                  <rdg resp="#reynolds1957">. . . ]ΣΑΝ</rdg>
-               </app>
             <app loc="2">
                <rdg resp="#reynolds1957">Ναῖ<unclear>ο</unclear>ς Ἰα<unclear>ν</unclear></rdg>
                </app>
             </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <p><gap reason="lost" extent="unknown" unit="line"/> (child of) Silius, (aged) 24. </p><p/></div>
+            
+         <div type="translation" source="#gl-jmr1983" xml:lang="de"><p> . . . des Silius, 24 (Jahre)</p></div>
+         <div  type="translation" resp="#edd" xml:lang="en"><p> . . . ] ? <supplied reason="subaudible">child</supplied> of Silios 
+            <supplied reason="explanation"><foreign xml:lang="la">Silius</foreign></supplied>, (aged) 24.</p></div>
+            </div>
          <div type="commentary">
             <head>Commentary</head>
             <p/>
