@@ -39,8 +39,8 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Face 1. i. c. <height>0.03</height>; ii. line 1, <height>0.06</height>;
-                         line 2 <height>0.05</height>; Face 2. <height>0.04-0.05</height>; Face 3. <height>0.04</height>.</handNote>
+                     <handNote>Face 1.i: c. <height>0.03</height>, very irregular sizes; ii: line 1, <height>0.06</height>;
+                         line 2, <height>0.05</height>; Face 2: <height>0.04-0.05</height>; Face 3: <height>0.04</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -56,7 +56,7 @@
                         </provenance>
                         <provenance type="observed">
                            <p>
-                              <placeName type="monuList" ref="http://www.slsgazetteer.org/1095">Tocra Museum.</placeName>
+                              <placeName type="monuList" ref="institution.xml#db1095">Tocra Museum.</placeName>
                            </p>
                         </provenance>
                      
@@ -107,7 +107,8 @@
          <change when="2009-09-30" who="Lourdes">turned to XML and tidied</change>
          <change when="2009-08-19" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMRNS04_009" decls="#photograph"><desc>Face 1 (Reynolds Tocra III.1.9, NS.IV.9)</desc></graphic></facsimile>
+   </teiHeader><facsimile><graphic url="JMRNS04_009" decls="#photograph"><desc>Face 1 (Reynolds Tocra III.1.9, NS.IV.9)</desc></graphic>
+   </facsimile><!-- add JMRNS04_008, perhaps 006, 007 -->
    <text>
       <body>
        
@@ -120,15 +121,18 @@
                            <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
                          <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name><seg part="F"><supplied reason="lost">ο</supplied>δωρω</seg></name></persName>
                          <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ι</unclear></orig>
-                        <persName type="attested"><name nymRef="Βουλίας">Βουλια</name></persName>
-                    </ab></div><div subtype="fragment" n="ii" type="textpart"><ab>
+                        <persName type="attested"><name nymRef="Βουλίας"><unclear>Β</unclear>ουλια</name></persName>
+                    </ab></div>
+            <div subtype="fragment" n="ii" type="textpart"><ab>
                       <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
                       <persName type="attested"><name nymRef="Πεῖσις">Πεῖσις</name></persName>
                      <lb n="2"/><w lemma="ἔθος">ἔθος</w>
-                  </ab></div></div><div subtype="fragment" n="Face 2" type="textpart"><ab>
+                <lb n="2a"/><gap reason="lost" extent="unknown" unit="line"/>
+                  </ab></div>
+         </div><div subtype="fragment" n="Face 2" type="textpart"><ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>τι</w>
-                        <persName type="attested"><name nymRef="Πρώταρχος" cert="low">Πρώ
-                        <lb n="2" break="no"/>ταρχω</name></persName>
+                        <persName type="attested"><name nymRef="Πρώταρχος" cert="low">Πρω
+                        <lb n="2" break="no"/>τάρχω</name></persName>
                         <lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
                     </ab></div>
             <div subtype="fragment" n="Face 3" type="textpart"><ab>
@@ -140,16 +144,19 @@
          <div type="apparatus">
             <head>Apparatus</head>
             <listApp>
-               <app loc="2">
-                  <note>Possibly Πρωταρχος</note>
+               <app loc="1.ii">
+                  <note>The text may have continued on a stone below</note>
                </app>
             </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translation</head>
-         <div type="translation" resp="#cmr" xml:lang="en"><p>xxx </p></div></div>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>1.i</note> . . . of -]doros [ . . . ] of Boulias</p>
+         <p><note>1.ii</note> Peisis, customary companion [?of . . .</p>
+         <p><note>2</note> . . . ] of Protarchos</p>
+         <p><note>3</note> <note>Not usefully translatable</note></p></div></div>
          <div type="commentary">
             <head>Commentary</head>
-            <p/>
+            <p>i.ii: for the use of ἕθος see on <ref type="inscription" n="T.27">T.27</ref>.</p>
          </div>
          
       </body>
