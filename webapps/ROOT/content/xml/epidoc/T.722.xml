@@ -7,7 +7,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Funerary</rs> inscription.</title>
+            <title><rs type="textType">Ephebic</rs> inscription.</title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
@@ -33,12 +33,11 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face. In the lower left corner are traces of 
-                           ? another text, Τ/ΛΟ, and ? a decorative line.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face: i above, ii lower left, iii lower right.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Large clear letters; horozontal bar above the abbreviated praenomen; the year number, line 3, is written in a monogram.</handNote>
+                     <handNote>i: Large clear letters; horizontal bar above the abbreviated praenomen; L with a dot for ἔτους; ii, smaller letters; iii is written in a monogram.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -114,15 +113,17 @@
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab>
-               <lb n="1"/><date ref="https://godot.date/id/2kJ6Xzg5XNTahp89WC8CGL"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+            
+               <div type="textpart" n="i"><ab><lb n="1"/><date ref="https://godot.date/id/2kJ6Xzg5XNTahp89WC8CGL"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                 <num value="15">ι<unclear>ε</unclear></num></date> 
               <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
                   <name nymRef="Βειβάριος">Βειβάριος</name>
-               <lb n="2"/><name nymRef="Ῥουστικός">Ῥουστικὸς</name></persName>
-               <lb n="3"/><date type="life-span" dur="P40Y"><w><expan><abbr><am></am></abbr><ex>ἐτῶν</ex></expan></w>
-                   <num value="40">μ</num> </date>
-            </ab>
+               <lb n="2"/><name nymRef="Ῥουστικός">Ῥουστικὸς</name></persName></ab></div>
+               <div type="textpart" n="ii"><ab><lb n="1"/><orig>τ</orig>
+                  <lb n="2"/><orig>λο</orig>
+            </ab></div>
+            <div type="textpart" n="iii"><ab><g ref="symbols.xml#monogram">ΜΓΟ</g>
+            </ab></div>
          </div>
          <div type="apparatus">
             <head>Apparatus</head>
@@ -133,7 +134,9 @@
                </listApp>
          </div>  
          <div type="translation" xml:space="preserve">
-            <p><date ref="https://godot.date/id/2kJ6Xzg5XNTahp89WC8CGL">Year 15</date>. L(oukios) Beibarios Roustikos <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Vivarius Rusticus</foreign></supplied>, aged 40.</p>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note>: <ref target="https://godot.date/id/2kJ6Xzg5XNTahp89WC8CGL">Year 15</ref>. L(oukios) Beibarios Roustikos 
+               <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Vivarius Rusticus</foreign></supplied></p>
+            <p><note>ii and iii, not usefully translatable</note></p></div>
          </div>
           
          <div type="commentary">
