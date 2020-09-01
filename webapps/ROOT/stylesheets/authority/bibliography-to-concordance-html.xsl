@@ -23,7 +23,7 @@
   </xsl:template>
 
   <xsl:template match="doc" mode="bibl-list">
-    <xsl:variable name="bibl-id" select="substring-after(str[@name='concordance_bibliography_ref'], '#')" />
+    <xsl:variable name="bibl-id" select="str[@name='concordance_bibliography_ref']" />
     <li>
       <a href="{kiln:url-for-match('local-concordance-bibliography-item', ($language, $bibl-id), 0)}">
         <xsl:apply-templates mode="full-citation" select="id($bibl-id)" />
@@ -56,8 +56,9 @@
   <xsl:template match="tei:bibl" mode="full-citation">
     <xsl:apply-templates select="tei:author" />
     <xsl:apply-templates select="tei:editor" />
-    <xsl:apply-templates select="tei:date" />
-    <xsl:apply-templates select="tei:title" />
+    <xsl:apply-templates select="tei:date[1]" />
+    <xsl:apply-templates select="tei:title[1]" />
+    <xsl:apply-templates select="tei:title[2]" />
   </xsl:template>
 
   <xsl:template match="tei:bibl" mode="short-citation">
@@ -85,6 +86,24 @@
           <xsl:text>s</xsl:text>
         </xsl:if>
         <xsl:text>) </xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="tei:title[1]">
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="." />
+  </xsl:template>
+  
+  <xsl:template match="tei:title[2]">
+    <xsl:choose>
+      <xsl:when test="@level='j'">
+        <xsl:text>, </xsl:text>
+        <xsl:value-of select="." />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>, in </xsl:text>
+        <xsl:value-of select="." />
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
