@@ -9,6 +9,8 @@
    <!-- Called from htm-tpl-structure.xsl -->
 
    <xsl:template name="inslib-body-structure">
+     <xsl:call-template name="inscriptionnav"/>
+     
      <p><b><i18n:text i18n:key="epidoc-xslt-inslib-description">Description</i18n:text>: </b>
      <xsl:choose>
        <xsl:when test="//t:support/t:p/text()">
@@ -271,6 +273,66 @@
       <xsl:attribute name="target">_blank</xsl:attribute>
       <xsl:apply-templates/>
     </a>
+  </xsl:template>
+  
+  <xsl:template name="inscriptionnav">
+    <xsl:param name="next_inscr"/>
+    <xsl:param name="prev_inscr"/>
+    
+    <xsl:variable name="filename">
+      <xsl:value-of select="//t:idno[@type='filename']"/>
+    </xsl:variable>
+    
+    <xsl:variable name="prev"
+      select="/aggregation/order//result/doc[str[@name='document_id' and text()=$filename]]/preceding-sibling::doc[1]/str[@name='file_path']/text()"/> <!-- from IOSPE: edit -->
+    <xsl:variable name="next"
+      select="/aggregation/order//result/doc[str[@name='document_id' and text()=$filename]]/following-sibling::doc[1]/str[@name='file_path']/text()"/> <!-- from IOSPE: edit -->
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <ul class="pagination right">
+          <li class="arrow">
+            <xsl:attribute name="class">
+              <xsl:text>arrow</xsl:text>
+              <xsl:if test="not($prev)">
+                <xsl:text> unavailable</xsl:text>
+              </xsl:if>
+            </xsl:attribute>
+            <a>
+              <xsl:attribute name="href">
+                <xsl:if test="$prev">
+                  <xsl:text>./</xsl:text>
+                  <xsl:value-of select="$prev"/>
+                  <xsl:text>.html</xsl:text>
+                </xsl:if>
+              </xsl:attribute>
+              <xsl:text>&#171;</xsl:text>
+              <i18n:text>Previous</i18n:text>
+            </a>
+          </li>
+          
+          <li class="arrow">
+            <xsl:attribute name="class">
+              <xsl:text>arrow</xsl:text>
+              <xsl:if test="not($next)">
+                <xsl:text> unavailable</xsl:text>
+              </xsl:if>
+            </xsl:attribute>
+            <a>
+              <xsl:attribute name="href">
+                <xsl:if test="$next">
+                  <xsl:text>./</xsl:text>
+                  <xsl:value-of select="$next"/>
+                  <xsl:text>.html</xsl:text>
+                </xsl:if>
+              </xsl:attribute>
+              <i18n:text>Next</i18n:text>
+              <xsl:text>&#187;</xsl:text>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </xsl:template>
   
   <!--  old code for inscription numbers now in <idno type="ircyr2012">:
