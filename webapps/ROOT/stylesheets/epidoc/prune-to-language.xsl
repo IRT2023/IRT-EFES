@@ -13,4 +13,10 @@
     </xsl:copy>
   </xsl:template>
 
+  <xsl:template priority="10" match="tei:div[@type='translation']">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:copy>
+  </xsl:template>
+
 </xsl:stylesheet>
