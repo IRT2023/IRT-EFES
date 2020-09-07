@@ -21,10 +21,38 @@
       <xsl:apply-imports />
     </add>
   </xsl:template>
+  
+  <xsl:template match="tei:rs[@type='textType']" mode="facet_text_type">
+    <field name="text_type">
+      <xsl:value-of select="." />
+    </field>
+  </xsl:template>
+  
+  <xsl:template match="tei:div[@xml:lang!='en']|tei:ab[@xml:lang!='en']|tei:foreign[@xml:lang!='en']" mode="facet_language">
+    <field name="language">
+      <xsl:choose>
+        <xsl:when test="@xml:lang='la'"><xsl:text>Latin</xsl:text></xsl:when>
+        <xsl:when test="@xml:lang='grc'"><xsl:text>Greek</xsl:text></xsl:when>
+        <xsl:when test="@xml:lang='grc-Latn'">Transliterated Greek</xsl:when>
+        <xsl:otherwise><xsl:value-of select="@xml:lang" /></xsl:otherwise>
+      </xsl:choose>
+    </field>
+  </xsl:template>
 
   <!-- This template is called by the Kiln tei-to-solr.xsl as part of
        the main doc for the indexed file. Put any code to generate
        additional Solr field data (such as new facets) here. -->
-  <xsl:template name="extra_fields" />
+  <xsl:template name="extra_fields">
+    <xsl:call-template name="field_text_type"/>
+    <xsl:call-template name="field_language"/>
+  </xsl:template>
+  
+  <xsl:template name="field_text_type">
+    <xsl:apply-templates mode="facet_text_type" select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title/tei:rs[@type='textType']"/>
+  </xsl:template>
+  
+  <xsl:template name="field_language">
+    <xsl:apply-templates mode="facet_language" select="//tei:text/tei:body/tei:div[@type='edition']"/>
+  </xsl:template>
 
 </xsl:stylesheet>
