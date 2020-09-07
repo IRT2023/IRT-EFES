@@ -265,6 +265,12 @@
      </xsl:choose>
    </xsl:template>
   
+  <xsl:template match="t:ptr[@target]">
+    <xsl:variable name="bibl-ref" select="@target"/>
+    <xsl:variable name="bibl" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$bibl-ref]"/>
+    <xsl:apply-templates select="$bibl"/>
+  </xsl:template>
+  
   <xsl:template priority="1"  match="t:ref">
     <a>
       <xsl:attribute name="href">
