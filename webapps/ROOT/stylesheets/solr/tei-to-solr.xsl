@@ -22,9 +22,10 @@
     </add>
   </xsl:template>
   
-  <xsl:template match="tei:rs[@type='textType']" mode="facet_text_type">
+  <xsl:template match="tei:rs[@type='textType']/text()" mode="facet_text_type">
     <field name="text_type">
-      <xsl:value-of select="." />
+      <xsl:value-of select="upper-case(substring(normalize-space(.), 1, 1))" />
+      <xsl:value-of select="substring(normalize-space(.), 2)" />
     </field>
   </xsl:template>
   
