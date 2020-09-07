@@ -164,7 +164,8 @@
 
   <xsl:template match="tei:material" mode="facet_support_material">
     <field name="support_material">
-      <xsl:value-of select="." />
+      <xsl:value-of select="upper-case(substring(., 1, 1))" />
+      <xsl:value-of select="substring(., 2)" />
     </field>
   </xsl:template>
 
@@ -186,7 +187,8 @@
 
   <xsl:template match="tei:objectType" mode="facet_support_object_type">
     <field name="support_object_type">
-      <xsl:value-of select="." />
+      <xsl:value-of select="upper-case(substring(normalize-space(.), 1, 1))" />
+      <xsl:value-of select="substring(normalize-space(.), 2)" />
     </field>
   </xsl:template>
 

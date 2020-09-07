@@ -77,17 +77,10 @@ function prepare_form(form, slider, inputs=[], checked_inputs=[]) {
         }
         for (i = 0; i < checked_inputs.length; i++) {
             var checked_values = [];
-<<<<<<< HEAD
             $("*[name=" + checked_inputs[i] + ']:checked').each(
                 function() { checked_values.push($(this).val()); }
             );
             params[checked_inputs[i]] = checked_values;
-=======
-+            $("*[name=" + checked_inputs[i] + ']:checked').each(
-+                function() { checked_values.push($(this).val()); }
-+            );
-+            params[checked_inputs[i]] = checked_values;
->>>>>>> 19c90fda53a8088dbcfb3d6e9557fa819ec35218
         }
         document.location.href = "?" + URI.buildQuery(params);
     });
