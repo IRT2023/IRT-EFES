@@ -53,7 +53,7 @@
       </xsl:for-each-group>
     </add>
   </xsl:template>
-  
+
   <xsl:template match="tei:placeName">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
