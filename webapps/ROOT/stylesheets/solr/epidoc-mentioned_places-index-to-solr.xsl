@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="."> <!-- replace "." with "@ref" and add ref to a list from inscriptions -->
+      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="."> <!-- replace "." with "@ref" and add @ref linked to the place names authority list -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -26,16 +26,23 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="@nymRef">
-                <xsl:value-of select="@nymRef" />
-              </xsl:when>  <!-- or: concat($base-uri, @ref) -->
+              <xsl:when test="@ref">
+                <xsl:value-of select="@ref" />
+              </xsl:when>
               <xsl:otherwise>
                 <xsl:choose>
-                  <xsl:when test="descendant::w[@lemma]">
-                    <xsl:value-of select="descendant::w[1][@lemma]/@lemma" />
+                  <xsl:when test="@nymRef">
+                    <xsl:value-of select="@nymRef" />
                   </xsl:when>
                   <xsl:otherwise>
-                    <xsl:value-of select="." />
+                    <xsl:choose>
+                      <xsl:when test="descendant::w[@lemma]">
+                        <xsl:value-of select="descendant::w[1][@lemma]/@lemma" />
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:value-of select="." />
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:otherwise>
