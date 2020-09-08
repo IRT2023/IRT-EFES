@@ -5,7 +5,7 @@
 
   <menu label="Inscriptions" match="local-epidoc-index-display"
     i18n:key="menu-inscriptions" />
-  <menu label="Indices" match="local-indices-type-display" i18n:key="menu-indices">
+  <menu label="Indices" match="local-indices-type-display" i18n:key="menu-indices-epidoc" params="epidoc">
     <item label="Abbreviations" match="local-index-display-html" params="epidoc abbreviation" i18n:key="menu-index-abbreviation"/>
     <item label="Fragments" match="local-index-display-html" params="epidoc fragment" i18n:key="menu-index-fragment"/>
     <item label="Numerals" match="local-index-display-html" params="epidoc numeral" i18n:key="menu-index-numeral"/>
@@ -18,10 +18,7 @@
     <item label="Words" match="local-index-display-html" params="epidoc word" i18n:key="menu-index-word"/>
     <item label="Mentioned places" match="local-index-display-html" params="epidoc mentioned_places" i18n:key="menu-index-mentioned_places"/>
   </menu>
-  <menu label="Concordances" i18n:key="menu-concordances">
-    <item label="Bibliographic" match="local-concordance-bibliography"
-      i18n:key="menu-concordance-bibliography" />
-  </menu>
+  <menu label="Bibliographic concordance" match="local-concordance-bibliography" i18n:key="menu-concordance-bibliography"/>
   <menu i18n:key="menu-search" label="Search" match="local-search" />
   <menu i18n:key="menu-admin" label="Admin" language="" match="local-admin-home-page" />
 </root>

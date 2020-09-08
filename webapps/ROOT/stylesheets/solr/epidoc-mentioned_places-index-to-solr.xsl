@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName[@ref]" group-by="@ref"> <!-- add ref to alist from inscriptions -->
+      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="."> <!-- replace "." with "@ref" and add ref to a list from inscriptions -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,7 +25,21 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="concat($base-uri, @ref)" />
+            <xsl:choose>
+              <xsl:when test="@nymRef">
+                <xsl:value-of select="@nymRef" />
+              </xsl:when>  <!-- or: concat($base-uri, @ref) -->
+              <xsl:otherwise>
+                <xsl:choose>
+                  <xsl:when test="descendant::w[@lemma]">
+                    <xsl:value-of select="descendant::w[1][@lemma]/@lemma" />
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:value-of select="." />
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>

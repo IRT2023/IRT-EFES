@@ -12,7 +12,7 @@
   <xsl:param name="bibl-id" />
 
   <xsl:variable name="title">
-    <xsl:apply-templates mode="short-citation" select="id($bibl-id)" />
+    <xsl:apply-templates mode="full-citation" select="id($bibl-id)" />
   </xsl:variable>
 
   <kiln:parent>
