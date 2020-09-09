@@ -43,15 +43,16 @@
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id='abbreviation'])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
       <xsl:apply-templates select="str[@name='index_item_sort_dur']" />
+      <xsl:apply-templates select="str[@name='external_resource']" />
     </tr>
   </xsl:template>
-  
-  
+
+
   <!-- separate results by language -->
   <xsl:template match="response/result">
     <xsl:choose>
       <xsl:when test="doc/arr/@name='language_code'">
-        <table class="index"> 
+        <table class="index">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
         <xsl:apply-templates select="doc[arr[@name='language_code']='la']" />
@@ -65,7 +66,7 @@
     </table>
       </xsl:when>
       <xsl:otherwise>
-        <table class="index"> 
+        <table class="index">
           <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
           <tbody>
             <xsl:apply-templates select="doc" />
@@ -73,23 +74,23 @@
         </table>
       </xsl:otherwise>
     </xsl:choose>
-    
+
   </xsl:template>
-  
-  
-  <!-- 
+
+
+  <!--
     original index result template
-    
+
     <xsl:template match="response/result">
-    <table class="index"> 
+    <table class="index">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
         <xsl:apply-templates select="doc" />
       </tbody>
     </table>
   </xsl:template>
-    
-  
+
+
   -->
 
   <xsl:template match="str[@name='index_abbreviation_expansion']">
@@ -98,7 +99,7 @@
     </td>
   </xsl:template>
 
-  
+
   <xsl:template match="str[@name='index_item_name']">
     <th scope="row">
       <!-- Look up the value in the RDF names, in case it's there.
@@ -129,7 +130,7 @@
       </xsl:choose>
     </th>
   </xsl:template>
-  
+
   <xsl:template match="str[@name='index_item_sort_name']">
     <th scope="row">
       <xsl:variable name="rdf-name" select="/aggregation/index_names/rdf:RDF/rdf:Description[@rdf:about=current()][1]/*[@xml:lang=$language][1]" />
@@ -143,7 +144,7 @@
       </xsl:choose>
     </th>
   </xsl:template>
-  
+
   <xsl:template match="str[@name='index_item_sort_dur']">
     <th scope="row">
       <xsl:variable name="rdf-name" select="/aggregation/index_names/rdf:RDF/rdf:Description[@rdf:about=current()][1]/*[@xml:lang=$language][1]" />
@@ -156,6 +157,12 @@
         </xsl:otherwise>
       </xsl:choose>
     </th>
+  </xsl:template>
+
+  <xsl:template match="str[@name='external_resource']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
   </xsl:template>
 
   <xsl:template match="arr[@name='index_instance_location']">
@@ -185,7 +192,7 @@
       <xsl:value-of select="."/>
     </li>
   </xsl:template>
-  
+
   <xsl:template match="str[@name='index_symbol_glyph']">
     <td>
       <xsl:value-of select="."/>
