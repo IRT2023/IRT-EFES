@@ -2,15 +2,15 @@
 <!-- $Id$ -->
 <xsl:stylesheet xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:t="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t" 
+                xmlns:t="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t"
                 version="2.0">
-  <!-- Contains named templates for InsLib file structure (aka "metadata" aka "supporting data") -->  
-   
+  <!-- Contains named templates for InsLib file structure (aka "metadata" aka "supporting data") -->
+
    <!-- Called from htm-tpl-structure.xsl -->
 
    <xsl:template name="inslib-body-structure">
      <xsl:call-template name="inscriptionnav"/>
-     
+
      <p><b><i18n:text i18n:key="epidoc-xslt-inslib-description">Description</i18n:text>: </b>
      <xsl:choose>
        <xsl:when test="//t:support/t:p/text()">
@@ -77,7 +77,7 @@
        <xsl:when test="//t:provenance[@type='observed'][string(translate(normalize-space(.),' ',''))]">
          <xsl:apply-templates select="//t:provenance[@type='observed']" mode="inslib-placename"/>
          <!-- Named template found below. -->
-         <xsl:call-template name="inslib-invno"/> 
+         <xsl:call-template name="inslib-invno"/>
        </xsl:when>
        <xsl:when test="//t:msIdentifier//t:repository[string(translate(normalize-space(.),' ',''))]">
          <xsl:value-of select="//t:msIdentifier//t:repository[1]"/>
@@ -147,19 +147,28 @@
      </div>
 
      <p><b><i18n:text i18n:key="epidoc-xslt-inslib-bibliography">Bibliography</i18n:text>: </b>
-     <xsl:apply-templates select="//t:div[@type='bibliography']/t:p/node()"/> 
+     <xsl:apply-templates select="//t:div[@type='bibliography']/t:p/node()"/>
      <br/>
      <b><i18n:text i18n:key="epidoc-xslt-inslib-constituted-from">Text constituted from</i18n:text>: </b>
      <xsl:apply-templates select="//t:creation"/>
      </p>
-     
+
      <div id="images">
        <h4 class="slimmer">Images</h4>
        <xsl:choose>
          <xsl:when test="//t:facsimile//t:graphic">
            <xsl:for-each select="//t:facsimile//t:graphic">
              <span>&#160;</span>
-             <xsl:apply-templates select="." />
+             <xsl:choose>
+               <xsl:when test="contains(@url,'http')">
+                 <div id="external_image">
+                   <a target="_blank"><xsl:attribute name="href"><xsl:value-of select="@url"/></xsl:attribute><iframe style="height:200px; border: 0;"><xsl:attribute name="src"><xsl:value-of select="@url"/></xsl:attribute></iframe></a>
+                 </div>
+               </xsl:when>
+               <xsl:otherwise>
+                 <xsl:apply-templates select="." />
+               </xsl:otherwise>
+             </xsl:choose>
            </xsl:for-each>
          </xsl:when>
          <xsl:otherwise>
@@ -196,13 +205,13 @@
 
    <xsl:template match="t:dimensions" mode="inslib-dimensions">
       <xsl:if test="//text()">
-         <xsl:if test="t:width/text()">w: 
+         <xsl:if test="t:width/text()">w:
             <xsl:value-of select="t:width"/>
             <xsl:if test="t:height/text()">
                <xsl:text> x </xsl:text>
             </xsl:if>
          </xsl:if>
-         <xsl:if test="t:height/text()">h: 
+         <xsl:if test="t:height/text()">h:
             <xsl:value-of select="t:height"/>
          </xsl:if>
          <xsl:if test="t:depth/text()">d:
@@ -213,7 +222,7 @@
          </xsl:if>
       </xsl:if>
    </xsl:template>
-   
+
    <xsl:template match="t:placeName|t:rs" mode="inslib-placename"> <!-- remove rs? -->
       <xsl:choose>
         <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
@@ -229,7 +238,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   
+
    <xsl:template name="inslib-invno">
       <xsl:if test="//t:idno[@type='invNo'][string(translate(normalize-space(.),' ',''))]">
          <xsl:text> (Inv. no. </xsl:text>
@@ -246,7 +255,7 @@
    <xsl:template name="inslib-title">
      <xsl:choose>
        <xsl:when test="//t:titleStmt/t:title/text() and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),2,5))">
-         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()"/> 
+         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()"/>
          <xsl:text>. </xsl:text>
          <xsl:value-of select="//t:titleStmt/t:title"/>
        </xsl:when>
@@ -264,13 +273,13 @@
        </xsl:otherwise>
      </xsl:choose>
    </xsl:template>
-  
+
   <xsl:template match="t:ptr[@target]">
     <xsl:variable name="bibl-ref" select="@target"/>
     <xsl:variable name="bibl" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$bibl-ref]"/>
     <xsl:apply-templates select="$bibl"/>
   </xsl:template>
-  
+
   <xsl:template priority="1"  match="t:ref">
     <a>
       <xsl:attribute name="href">
@@ -280,20 +289,20 @@
       <xsl:apply-templates/>
     </a>
   </xsl:template>
-  
+
   <xsl:template name="inscriptionnav">
     <xsl:param name="next_inscr"/>
     <xsl:param name="prev_inscr"/>
-    
+
     <xsl:variable name="filename">
       <xsl:value-of select="//t:idno[@type='filename']"/>
     </xsl:variable>
-    
+
     <xsl:variable name="prev"
       select="/aggregation/order//result/doc[str[@name='document_id' and text()=$filename]]/preceding-sibling::doc[1]/str[@name='file_path']/text()"/> <!-- from IOSPE: edit -->
     <xsl:variable name="next"
       select="/aggregation/order//result/doc[str[@name='document_id' and text()=$filename]]/following-sibling::doc[1]/str[@name='file_path']/text()"/> <!-- from IOSPE: edit -->
-    
+
     <div class="row">
       <div class="large-12 columns">
         <ul class="pagination right">
@@ -316,7 +325,7 @@
               <i18n:text>Previous</i18n:text>
             </a>
           </li>
-          
+
           <li class="arrow">
             <xsl:attribute name="class">
               <xsl:text>arrow</xsl:text>
@@ -340,14 +349,14 @@
       </div>
     </div>
   </xsl:template>
-  
+
   <!--  old code for inscription numbers now in <idno type="ircyr2012">:
     <xsl:template name="inslib-title">
      <xsl:choose>
        <xsl:when test="//t:titleStmt/t:title/text() and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),2,5))">
-         <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename'],1,1)"/> 
+         <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename'],1,1)"/>
          <xsl:text>. </xsl:text>
-         <xsl:value-of select="number(substring(//t:publicationStmt/t:idno[@type='filename'],2,5)) div 100"/> 
+         <xsl:value-of select="number(substring(//t:publicationStmt/t:idno[@type='filename'],2,5)) div 100"/>
          <xsl:text>. </xsl:text>
          <xsl:value-of select="//t:titleStmt/t:title"/>
        </xsl:when>

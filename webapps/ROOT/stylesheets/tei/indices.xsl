@@ -52,24 +52,24 @@
   <xsl:template match="response/result">
     <xsl:choose>
       <xsl:when test="doc/arr/@name='language_code'">
-        <table class="index">
+        <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
-        <xsl:apply-templates select="doc[arr[@name='language_code']='la']" />
+        <xsl:apply-templates select="doc[arr[@name='language_code']='la']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates>
       </tbody>
     </table>
-    <table class="index">
+    <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
-        <xsl:apply-templates select="doc[arr[@name='language_code']='grc']" />
+        <xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates>
       </tbody>
     </table>
       </xsl:when>
       <xsl:otherwise>
-        <table class="index">
+        <table class="index tablesorter">
           <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
           <tbody>
-            <xsl:apply-templates select="doc" />
+            <xsl:apply-templates select="doc"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates>
           </tbody>
         </table>
       </xsl:otherwise>
