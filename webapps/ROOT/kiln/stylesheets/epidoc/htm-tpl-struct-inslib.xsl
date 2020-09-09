@@ -130,7 +130,27 @@
        <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-inslib-translation">Translation</i18n:text>:</h4>
        <!-- Translation text output -->
        <xsl:variable name="transtxt">
-         <xsl:apply-templates select="//t:div[@type='translation']//t:p"/>
+         <xsl:variable name="editor" select="//t:teiHeader/t:fileDesc/t:titleStmt/t:editor"/>
+         <xsl:for-each select="//t:div[@type='translation']">
+           <xsl:if test="@xml:lang"><h5><xsl:choose>
+             <xsl:when test="@xml:lang='en'"><xsl:text>English </xsl:text></xsl:when>
+             <xsl:when test="@xml:lang='fr'"><xsl:text>French </xsl:text></xsl:when>
+             <xsl:when test="@xml:lang='it'"><xsl:text>Italian </xsl:text></xsl:when>
+             <xsl:otherwise><xsl:value-of select="@xml:lang"/></xsl:otherwise>
+           </xsl:choose>
+             <xsl:text>translation</xsl:text></h5></xsl:if>
+           <xsl:if test="@source">
+             <xsl:variable name="source-id" select="substring-after(@source, '#')"/>
+             <xsl:variable name="source" select="$editor[@xml:id=$source-id]"/>
+             <p><xsl:text>Translation source: </xsl:text> <xsl:value-of select="$source"/></p>
+           </xsl:if>
+           <xsl:if test="@resp">
+             <xsl:variable name="resp-id" select="substring-after(@resp, '#')"/>
+             <xsl:variable name="resp" select="$editor[@xml:id=$resp-id]"/>
+             <p><xsl:text>Translation by: </xsl:text> <xsl:value-of select="$resp"/></p>
+           </xsl:if>
+           <xsl:apply-templates select=".//t:p"/>
+         </xsl:for-each>
        </xsl:variable>
        <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
        <xsl:apply-templates select="$transtxt" mode="sqbrackets"/>
