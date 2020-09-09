@@ -33,7 +33,7 @@
     <field name="language">
       <xsl:choose>
         <xsl:when test="@xml:lang='la'"><xsl:text>Latin</xsl:text></xsl:when>
-        <xsl:when test="@xml:lang='grc'"><xsl:text>Greek</xsl:text></xsl:when>
+        <xsl:when test="@xml:lang='grc'"><xsl:text>Ancient Greek</xsl:text></xsl:when>
         <xsl:when test="@xml:lang='grc-Latn'">Transliterated Greek</xsl:when>
         <xsl:otherwise><xsl:value-of select="@xml:lang" /></xsl:otherwise>
       </xsl:choose>
