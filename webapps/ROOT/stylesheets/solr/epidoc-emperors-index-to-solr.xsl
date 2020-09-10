@@ -29,7 +29,7 @@
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="$key">
-                <!--<a target="_blank"><xsl:attribute name="href"><xsl:value-of select="$key/tei:idno" /></xsl:attribute>--><xsl:value-of select="$key/tei:persName" /><!--</a>-->
+                <xsl:value-of select="$key/tei:persName" />
                 <xsl:if test="$key/tei:floruit"><xsl:text> (</xsl:text><xsl:value-of select="$key/tei:floruit" /><xsl:text>)</xsl:text></xsl:if>
               </xsl:when>
               <xsl:otherwise>
@@ -37,6 +37,9 @@
               </xsl:otherwise>
             </xsl:choose>
           </field>
+          <!--<field name="index_external_resource">
+            <xsl:value-of select="$key/tei:idno" />
+          </field>-->
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>
