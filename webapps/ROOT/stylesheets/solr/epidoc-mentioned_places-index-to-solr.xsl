@@ -16,6 +16,8 @@
   <xsl:template match="/">
     <add>
       <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="."> <!-- replace "." with "@ref" and add @ref linked to the place names authority list -->
+        <xsl:variable name="ref-id" select="@ref"/>
+        <xsl:variable name="ref" select="document('../../content/xml/authority/mentionedplace.xml')//tei:place[@xml:id=$ref-id]"/>
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -27,7 +29,15 @@
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="@ref">
-                <xsl:value-of select="@ref" />
+                <xsl:value-of select="$ref/tei:placeName[1]" />
+                <xsl:if test="$ref/tei:placeName[2]">
+                  <xsl:text> / </xsl:text>
+                  <xsl:value-of select="$ref/tei:placeName[2]" />
+                </xsl:if>
+                <xsl:if test="$ref/tei:placeName[3]">
+                  <xsl:text> / </xsl:text>
+                  <xsl:value-of select="$ref/tei:placeName[3]" />
+                </xsl:if>
               </xsl:when>
               <xsl:otherwise>
                 <xsl:choose>
@@ -48,6 +58,9 @@
               </xsl:otherwise>
             </xsl:choose>
           </field>
+          <!--<field name="index_external_resource">
+                    <xsl:value-of select="$ref/tei:idno" />
+                  </field>-->
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>
