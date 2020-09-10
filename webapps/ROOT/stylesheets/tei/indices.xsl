@@ -159,11 +159,11 @@
     </th>
   </xsl:template>
 
-  <xsl:template match="str[@name='index_external_resource']">
+  <!--<xsl:template match="str[@name='index_external_resource']">
     <td>
       <xsl:value-of select="."/>
     </td>
-  </xsl:template>
+  </xsl:template>-->
 
   <xsl:template match="arr[@name='index_instance_location']">
     <td>

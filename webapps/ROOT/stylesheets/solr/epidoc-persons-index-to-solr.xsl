@@ -27,9 +27,9 @@
           <field name="index_item_name">
             <xsl:value-of select="tei:name[1]/@nymRef" />
           </field>
-          <field name="index_external_resource">
+          <!--<field name="index_external_resource">
             <xsl:value-of select="@key" />
-          </field>
+          </field>-->
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>

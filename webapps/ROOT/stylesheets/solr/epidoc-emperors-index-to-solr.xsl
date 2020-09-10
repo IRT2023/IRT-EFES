@@ -15,7 +15,9 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='emperor']" group-by="@key">
+      <xsl:for-each-group select="//tei:persName[@type='emperor'][@key]" group-by="@key">
+        <xsl:variable name="key-id" select="@key"/>
+        <xsl:variable name="key" select="document('../../content/xml/authority/emperors.xml')//tei:person[@xml:id=$key-id]"/>
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,7 +27,15 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="@key" />
+            <xsl:choose>
+              <xsl:when test="$key">
+                <!--<a target="_blank"><xsl:attribute name="href"><xsl:value-of select="$key/tei:idno" /></xsl:attribute>--><xsl:value-of select="$key/tei:persName" /><!--</a>-->
+                <xsl:if test="$key/tei:floruit"><xsl:text> (</xsl:text><xsl:value-of select="$key/tei:floruit" /><xsl:text>)</xsl:text></xsl:if>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="@key" />
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
