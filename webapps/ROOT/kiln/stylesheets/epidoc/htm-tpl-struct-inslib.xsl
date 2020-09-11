@@ -127,11 +127,9 @@
      </div>
 
      <div id="translation">
-       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-inslib-translation">Translation</i18n:text>:</h4>
-       <!-- Translation text output -->
-       <xsl:variable name="transtxt">
+       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-inslib-translation">Translation</i18n:text></h4>
          <xsl:variable name="editor" select="//t:teiHeader/t:fileDesc/t:titleStmt/t:editor"/>
-         <xsl:for-each select="//t:div[@type='translation']">
+         <xsl:for-each select="//t:div[@type='translation'][@xml:lang]">
            <xsl:if test="@xml:lang"><h5><xsl:choose>
              <xsl:when test="@xml:lang='en'"><xsl:text>English </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='fr'"><xsl:text>French </xsl:text></xsl:when>
@@ -141,23 +139,30 @@
              <xsl:text>translation</xsl:text></h5></xsl:if>
            <xsl:if test="@source">
              <xsl:variable name="source-id" select="substring-after(@source, '#')"/>
-             <xsl:variable name="source" select="$editor[@xml:id=$source-id]"/>
-             <p><xsl:text>Translation source: </xsl:text> <xsl:value-of select="$source"/></p>
+             <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$source-id]"/>
+             <p><xsl:text>Translation source: </xsl:text> 
+               <xsl:choose>
+                 <xsl:when test="$source/t:bibl[@type='abbrev']"><xsl:value-of select="$source/t:bibl[@type='abbrev']"/></xsl:when>
+                 <xsl:when test="$source[not(descendant::t:bibl[@type='abbrev'])]"><xsl:value-of select="$source"/></xsl:when>
+                 <xsl:otherwise><xsl:value-of select="$source-id"/></xsl:otherwise>
+               </xsl:choose></p>
            </xsl:if>
            <xsl:if test="@resp">
              <xsl:variable name="resp-id" select="substring-after(@resp, '#')"/>
              <xsl:variable name="resp" select="$editor[@xml:id=$resp-id]"/>
              <p><xsl:text>Translation by: </xsl:text> <xsl:value-of select="$resp"/></p>
            </xsl:if>
-           <xsl:apply-templates select=".//t:p"/>
+           <!-- Translation text output -->
+           <xsl:variable name="transtxt">
+             <xsl:apply-templates select=".//t:p"/>
+           </xsl:variable>
+           <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
+           <xsl:apply-templates select="$transtxt" mode="sqbrackets"/>
          </xsl:for-each>
-       </xsl:variable>
-       <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
-       <xsl:apply-templates select="$transtxt" mode="sqbrackets"/>
      </div>
 
      <div id="commentary">
-       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text>:</h4>
+       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text></h4>
        <!-- Commentary text output -->
        <xsl:variable name="commtxt">
          <xsl:apply-templates select="//t:div[@type='commentary']//t:p"/>
