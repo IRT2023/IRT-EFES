@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="."> <!-- @nymRef? -->
+      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="@nymRef">
         <xsl:variable name="ref-id" select="@nymRef"/>
         <xsl:variable name="ref" select="document('../../content/xml/authority/mentionedplace.xml')//tei:place[@xml:id=$ref-id]"/>
         <doc>
@@ -28,8 +28,6 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="@nymRef">
-                <xsl:choose>
                   <xsl:when test="$ref">
                     <xsl:value-of select="$ref/tei:placeName[1]" />
                     <xsl:if test="$ref/tei:placeName[2]">
@@ -44,18 +42,6 @@
                   <xsl:otherwise>
                     <xsl:value-of select="@nymRef" />
                   </xsl:otherwise>
-                </xsl:choose>
-              </xsl:when>
-              <xsl:otherwise>
-                    <xsl:choose>
-                      <xsl:when test="descendant::w[@lemma]">
-                        <xsl:value-of select="descendant::w[1][@lemma]/@lemma" />
-                      </xsl:when>
-                      <xsl:otherwise>
-                        <xsl:value-of select="." />
-                      </xsl:otherwise>
-                    </xsl:choose>
-              </xsl:otherwise>
             </xsl:choose>
           </field>
           <!--<field name="index_external_resource">
