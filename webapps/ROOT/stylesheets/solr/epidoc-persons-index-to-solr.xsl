@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='attested']" group-by="."> <!-- tei:name[1]/@nymRef -->
+      <xsl:for-each-group select="//tei:persName[@type='attested'][descendant::tei:name[@nymRef]]" group-by="tei:name[1]/@nymRef">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,21 +25,14 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:choose>
-              <xsl:when test="descendant::tei:name[@nymRef]">
-                <xsl:value-of select="tei:name[1]/@nymRef" />
-              </xsl:when>
+           <!-- <xsl:choose>
+              <xsl:when test="descendant::tei:name[@nymRef]">-->
+                <xsl:value-of select="tei:name/@nymRef" />
+              <!--</xsl:when>
               <xsl:otherwise>
-                <xsl:choose>
-                  <xsl:when test="descendant::tei:seg[@part='I']"><xsl:value-of select="." /><xsl:text>-</xsl:text></xsl:when>
-                  <xsl:when test="descendant::tei:seg[@part='M']"><xsl:text>-</xsl:text><xsl:value-of select="." /><xsl:text>-</xsl:text></xsl:when>
-                  <xsl:when test="descendant::tei:seg[@part='F']"><xsl:text>-</xsl:text><xsl:value-of select="." /></xsl:when>
-                  <xsl:otherwise>
                     <xsl:value-of select="." />
-                  </xsl:otherwise>
-                </xsl:choose>
               </xsl:otherwise>
-            </xsl:choose>
+            </xsl:choose>-->
           </field>
           <!--<field name="index_external_resource">
             <xsl:value-of select="@key" />
