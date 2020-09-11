@@ -5,7 +5,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- This XSLT transforms a set of EpiDoc documents into a Solr
-       index document representing an index of symbols in those
+       index document representing an index of mentioned places in those
        documents. -->
 
   <xsl:import href="epidoc-index-utils.xsl" />
@@ -15,8 +15,8 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="."> <!-- replace "." with "@ref" and add @ref linked to the place names authority list -->
-        <xsl:variable name="ref-id" select="@ref"/>
+      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="."> <!-- @nymRef? -->
+        <xsl:variable name="ref-id" select="@nymRef"/>
         <xsl:variable name="ref" select="document('../../content/xml/authority/mentionedplace.xml')//tei:place[@xml:id=$ref-id]"/>
         <doc>
           <field name="document_type">
@@ -28,23 +28,25 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="@ref">
-                <xsl:value-of select="$ref/tei:placeName[1]" />
-                <xsl:if test="$ref/tei:placeName[2]">
-                  <xsl:text> / </xsl:text>
-                  <xsl:value-of select="$ref/tei:placeName[2]" />
-                </xsl:if>
-                <xsl:if test="$ref/tei:placeName[3]">
-                  <xsl:text> / </xsl:text>
-                  <xsl:value-of select="$ref/tei:placeName[3]" />
-                </xsl:if>
-              </xsl:when>
-              <xsl:otherwise>
+              <xsl:when test="@nymRef">
                 <xsl:choose>
-                  <xsl:when test="@nymRef">
-                    <xsl:value-of select="@nymRef" />
+                  <xsl:when test="$ref">
+                    <xsl:value-of select="$ref/tei:placeName[1]" />
+                    <xsl:if test="$ref/tei:placeName[2]">
+                      <xsl:text> / </xsl:text>
+                      <xsl:value-of select="$ref/tei:placeName[2]" />
+                    </xsl:if>
+                    <xsl:if test="$ref/tei:placeName[3]">
+                      <xsl:text> / </xsl:text>
+                      <xsl:value-of select="$ref/tei:placeName[3]" />
+                    </xsl:if>
                   </xsl:when>
                   <xsl:otherwise>
+                    <xsl:value-of select="@nymRef" />
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:when>
+              <xsl:otherwise>
                     <xsl:choose>
                       <xsl:when test="descendant::w[@lemma]">
                         <xsl:value-of select="descendant::w[1][@lemma]/@lemma" />
@@ -53,8 +55,6 @@
                         <xsl:value-of select="." />
                       </xsl:otherwise>
                     </xsl:choose>
-                  </xsl:otherwise>
-                </xsl:choose>
               </xsl:otherwise>
             </xsl:choose>
           </field>

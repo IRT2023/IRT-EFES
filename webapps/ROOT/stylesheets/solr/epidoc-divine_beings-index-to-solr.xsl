@@ -27,11 +27,18 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
+            <xsl:choose>
+              <xsl:when test="$key">
             <xsl:value-of select="$key/tei:persName[1]" />
             <xsl:if test="$key/tei:persName[2]">
               <xsl:text> / </xsl:text>
               <xsl:value-of select="$key/tei:persName[2]" />
             </xsl:if>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="@key" />
+              </xsl:otherwise>
+            </xsl:choose>
           </field>
           <!--<field name="index_external_resource">
             <xsl:value-of select="$key/tei:idno" />
