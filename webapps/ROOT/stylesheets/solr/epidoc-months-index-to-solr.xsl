@@ -45,9 +45,9 @@
                     <field name="language_code">
                         <xsl:value-of select="ancestor-or-self::*[@xml:lang][1]/@xml:lang"/>
                     </field>
-                    <!--<field name="index_external_resource">
+                    <field name="index_external_resource">
                     <xsl:value-of select="$key/tei:idno" />
-                  </field>-->
+                  </field>
                     <xsl:apply-templates select="current-group()" />
                 </doc>
             </xsl:for-each-group>

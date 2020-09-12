@@ -44,9 +44,9 @@
                   </xsl:otherwise>
             </xsl:choose>
           </field>
-          <!--<field name="index_external_resource">
-                    <xsl:value-of select="$ref/tei:idno" />
-                  </field>-->
+          <field name="index_external_resource">
+            <xsl:value-of select="$ref/tei:idno" />
+          </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>

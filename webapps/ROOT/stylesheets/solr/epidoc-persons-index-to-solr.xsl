@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='attested'][descendant::tei:name[@nymRef]]" group-by="tei:name[1]/@nymRef">
+      <xsl:for-each-group select="//tei:persName[@type='attested'][descendant::tei:name[@nymRef]]" group-by="concat(tei:name[1]/@nymRef,'-',@key)">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -34,9 +34,9 @@
               </xsl:otherwise>
             </xsl:choose>-->
           </field>
-          <!--<field name="index_external_resource">
+          <field name="index_external_resource">
             <xsl:value-of select="@key" />
-          </field>-->
+          </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>

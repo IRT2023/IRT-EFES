@@ -43,7 +43,7 @@
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id='abbreviation'])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
       <xsl:apply-templates select="str[@name='index_item_sort_dur']" />
-      <!--<xsl:apply-templates select="str[@name='index_external_resource']" />-->
+      <xsl:apply-templates select="str[@name='index_external_resource']" />
     </tr>
   </xsl:template>
 
@@ -159,11 +159,11 @@
     </th>
   </xsl:template>
 
-  <!--<xsl:template match="str[@name='index_external_resource']">
+  <xsl:template match="str[@name='index_external_resource']">
     <td>
       <xsl:value-of select="."/>
     </td>
-  </xsl:template>-->
+  </xsl:template>
 
   <xsl:template match="arr[@name='index_instance_location']">
     <td>
