@@ -142,9 +142,27 @@
              <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$source-id]"/>
              <p><xsl:text>Translation source: </xsl:text> 
                <xsl:choose>
-                 <xsl:when test="$source/t:bibl[@type='abbrev']"><xsl:value-of select="$source/t:bibl[@type='abbrev']"/></xsl:when>
-                 <xsl:when test="$source[not(descendant::t:bibl[@type='abbrev'])]"><xsl:value-of select="$source"/></xsl:when>
-                 <xsl:otherwise><xsl:value-of select="$source-id"/></xsl:otherwise>
+                 <xsl:when test="$source">
+                 <a>
+                   <xsl:attribute name="href">
+                     <xsl:text>../concordance/bibliography/</xsl:text>
+                     <xsl:value-of select="$source-id"/>
+                     <xsl:text>.html</xsl:text>
+                   </xsl:attribute>
+                   <xsl:attribute name="target">_blank</xsl:attribute>
+                   <xsl:choose>
+                     <xsl:when test="$source//t:*[@type='abbrev']">
+                       <xsl:apply-templates select="$source//t:*[@type='abbrev']"/>
+                     </xsl:when>
+                     <xsl:otherwise>
+                       <xsl:apply-templates select="$source"/>
+                     </xsl:otherwise>
+                   </xsl:choose>
+                 </a>
+                 </xsl:when>
+                 <xsl:otherwise>
+                   <xsl:value-of select="$source-id"/>
+                 </xsl:otherwise>
                </xsl:choose></p>
            </xsl:if>
            <xsl:if test="@resp">
@@ -302,7 +320,22 @@
   <xsl:template match="t:ptr[@target]">
     <xsl:variable name="bibl-ref" select="@target"/>
     <xsl:variable name="bibl" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$bibl-ref]"/>
-    <xsl:apply-templates select="$bibl"/>
+    <a>
+      <xsl:attribute name="href">
+        <xsl:text>../concordance/bibliography/</xsl:text>
+        <xsl:value-of select="$bibl-ref"/>
+        <xsl:text>.html</xsl:text>
+      </xsl:attribute>
+      <xsl:attribute name="target">_blank</xsl:attribute>
+      <xsl:choose>
+        <xsl:when test="$bibl//t:*[@type='abbrev']">
+          <xsl:apply-templates select="$bibl//t:*[@type='abbrev']"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:apply-templates select="$bibl"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </a>
   </xsl:template>
 
   <xsl:template priority="1"  match="t:ref">
