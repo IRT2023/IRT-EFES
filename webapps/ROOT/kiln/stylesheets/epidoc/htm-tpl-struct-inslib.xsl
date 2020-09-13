@@ -273,6 +273,7 @@
                <xsl:attribute name="href">
                   <xsl:value-of select="@ref"/>
                </xsl:attribute>
+              <xsl:attribute name="target">_blank</xsl:attribute>
                <xsl:apply-templates/>
             </a>
       </xsl:when>
