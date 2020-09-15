@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="@nymRef">
+      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="concat(@nymRef,'-',@type)">
         <xsl:variable name="ref-id" select="@nymRef"/>
         <xsl:variable name="ref" select="document('../../content/xml/authority/mentionedplace.xml')//tei:place[@xml:id=$ref-id]"/>
         <doc>
@@ -42,6 +42,16 @@
                   <xsl:otherwise>
                     <xsl:value-of select="@nymRef" />
                   </xsl:otherwise>
+            </xsl:choose>
+          </field>
+          <field name="index_ethnic">
+            <xsl:choose>
+              <xsl:when test="@type='ethnic'">
+                <xsl:text>Ethnic</xsl:text>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:text>Toponym</xsl:text>
+              </xsl:otherwise>
             </xsl:choose>
           </field>
           <field name="index_external_resource">
