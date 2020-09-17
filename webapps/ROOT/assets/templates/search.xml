@@ -41,7 +41,7 @@
       <div class="row">
         <div class="large-4 columns">
           <form action="." id="search-form" method="get">
-            <input name="q" placeholder="Search terms" type="search">
+            <input id="write" name="q" placeholder="Search terms" type="search">
               <xsl:attribute name="value">
                 <xsl:value-of select="$q_value" />
               </xsl:attribute>
@@ -56,8 +56,127 @@
                 <xsl:text> Search lemmatised text</xsl:text>
               </label>
             </xsl:if>
+            <label id="search_options">
+              <a href="#" onclick="toggle_visibility('keyboard_box');">Greek keyboard</a> <xsl:text> | </xsl:text>
+              <a href="{kiln:url-for-match('local-search', ($language), 0)}"><xsl:text>Reset search</xsl:text></a>
+            </label>
+            <div id="keyboard_box">
+              <ul id="keyboard">
+                <li class="letter">α</li>
+                <li class="letter">β</li>
+                <li class="letter">γ</li>
+                <li class="letter">δ</li>
+                <li class="letter">ε</li>
+                <li class="letter">ζ</li>
+                <li class="letter">η</li>
+                <li class="letter">θ</li>
+                <li class="letter">ι</li>
+                <li class="letter">κ</li>
+                <li class="letter">λ</li>
+                <li class="letter">μ</li>
+                <li class="letter">ν</li>
+                <li class="letter">ξ</li>
+                <li class="letter">ο</li>
+                <li class="letter">π</li>
+                <li class="letter">ρ</li>
+                <li class="letter">σ</li>
+                <li class="letter">ς</li>
+                <li class="letter">τ</li>
+                <li class="letter">υ</li>
+                <li class="letter">φ</li>
+                <li class="letter">χ</li>
+                <li class="letter">ψ</li>
+                <li class="letter">ω</li>
+                <li class="letter">ϝ</li>
+                <li class="letter">ϛ</li>
+                <li class="letter">ϙ</li>
+                <li class="letter">ϡ</li>
+                
+                <li class="letter">ά</li>
+                <li class="letter">ὰ</li>
+                <li class="letter">ᾶ</li>
+                <li class="letter">ἀ</li>
+                <li class="letter">ἁ</li>
+                <li class="letter">ἄ</li>
+                <li class="letter">ἂ</li>
+                <li class="letter">ἆ</li>
+                <li class="letter">ἅ</li>
+                <li class="letter">ἃ</li>
+                <li class="letter">ἇ</li>
+                <li class="letter">έ</li>
+                <li class="letter">ὲ</li>
+                <li class="letter">ε͂</li>
+                <li class="letter">ἐ</li>
+                <li class="letter">ἑ</li>
+                <li class="letter">ἔ</li>
+                <li class="letter">ἒ</li>
+                <li class="letter">ἐ͂</li>
+                <li class="letter">ἕ</li>
+                <li class="letter">ἓ</li>
+                <li class="letter">ἑ͂</li>
+                <li class="letter">ή</li>
+                <li class="letter">ὴ</li>
+                <li class="letter">ῆ</li>
+                <li class="letter">ἠ</li>
+                <li class="letter">ἡ</li>
+                <li class="letter">ἤ</li>
+                <li class="letter">ἢ</li>
+                <li class="letter">ἦ</li>
+                <li class="letter">ἥ</li>
+                <li class="letter">ἣ</li>
+                <li class="letter">ἧ</li>
+                <li class="letter">ί</li>
+                <li class="letter">ὶ</li>
+                <li class="letter">ῖ</li>
+                <li class="letter">ἰ</li>
+                <li class="letter">ἱ</li>
+                <li class="letter">ἴ</li>
+                <li class="letter">ἲ</li>
+                <li class="letter">ἶ</li>
+                <li class="letter">ἵ</li>
+                <li class="letter">ἳ</li>
+                <li class="letter">ἷ</li>
+                <li class="letter">ό</li>
+                <li class="letter">ὸ</li>
+                <li class="letter">ο͂</li>
+                <li class="letter">ὀ</li>
+                <li class="letter">ὁ</li>
+                <li class="letter">ὄ</li>
+                <li class="letter">ὂ</li>
+                <li class="letter">ὀ͂</li>
+                <li class="letter">ὅ</li>
+                <li class="letter">ὃ</li>
+                <li class="letter">ὁ͂</li>
+                <li class="letter">ύ</li>
+                <li class="letter">ὺ</li>
+                <li class="letter">ῦ</li>
+                <li class="letter">ὐ</li>
+                <li class="letter">ὑ</li>
+                <li class="letter">ὔ</li>
+                <li class="letter">ὒ</li>
+                <li class="letter">ὖ</li>
+                <li class="letter">ὕ</li>
+                <li class="letter">ὓ</li>
+                <li class="letter">ὗ</li>
+                <li class="letter">ώ</li>
+                <li class="letter">ὼ</li>
+                <li class="letter">ῶ</li>
+                <li class="letter">ὠ</li>
+                <li class="letter">ὡ</li>
+                <li class="letter">ὤ</li>
+                <li class="letter">ὢ</li>
+                <li class="letter">ὦ</li>
+                <li class="letter">ὥ</li>
+                <li class="letter">ὣ</li>
+                <li class="letter">ὧ</li>
+                <li class="letter">ῥ</li>
+                <li class="letter">ῤ</li>
+                <li class="letter">*</li>
+                <li class="delete">⇐</li>
+              </ul>
+            </div>
             <h4>Date <span id="date-slider-label"></span></h4>
-            <div id="date-slider-widget" data-range-min="-0096" data-range-max="0700" data-value-min="-0096" data-value-max="0700" data-step="25" data-label-prefix="B.C." data-label-suffix="A.D." data-field-name="origin_date" />
+            <div id="date-slider-widget" data-range-min="-100" data-range-max="700" data-value-min="-100" data-value-max="700" data-step="25" data-label-prefix="B.C." data-label-suffix="A.D." data-field-name="origin_date" />
           </form>
           <!-- List of currently applied facets. -->
           <xsl:apply-templates mode="search-results" select="/aggregation/response/lst[@name='responseHeader']/lst[@name='params']/*[@name='fq']" />
@@ -87,6 +206,35 @@
         prepare_form(form, widget, inputs, checked_inputs);
         setup_slider(widget, label);
       });
+      </script>
+      <script>
+        $(function(){
+        var $write = $('#write');
+        
+        $('#keyboard li').click(function(){
+        var $this = $(this),
+        character = $this.html();
+        
+        if ($this.hasClass('delete')) {
+        var html = $write.val();
+        
+        $write.val(html.substr(0, html.length - 1));
+        return false;
+        }
+        
+        console.log("DO IT ", character);
+        $write.val($write.val() + character);
+        });
+        });
+      </script>
+      <script>
+        function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block')
+        e.style.display = 'none';
+        else
+        e.style.display = 'block';
+        }
       </script>
     </kiln:block>
   </kiln:child>
