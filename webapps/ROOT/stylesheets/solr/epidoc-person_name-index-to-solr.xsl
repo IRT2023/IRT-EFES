@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-        <xsl:for-each-group select="//tei:name[ancestor::tei:div/@type='edition']" group-by="."> <!-- @nymRef -->
+      <xsl:for-each-group select="//tei:name[ancestor::tei:div/@type='edition']" group-by="@nymRef"> <!-- or "." -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
