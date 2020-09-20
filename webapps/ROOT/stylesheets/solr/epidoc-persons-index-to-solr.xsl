@@ -12,10 +12,10 @@
 
   <xsl:param name="index_type" />
   <xsl:param name="subdirectory" />
-
+  
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='attested'][descendant::tei:name[@nymRef]]" group-by="."> <!-- or concat(tei:name/@nymRef,'-',@key) -->
+      <xsl:for-each-group select="//tei:persName[@type='attested'][descendant::tei:name[@nymRef]][not(ancestor::tei:persName[@type='attested'])]" group-by="."> <!-- group-by="concat(tei:name/@nymRef,'-',@key)" -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,13 +25,41 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
+            <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][1]][not(ancestor::tei:persName[@type='attested'][2])]/@nymRef"/>
+            <xsl:if test="descendant::tei:persName[@type='attested']">
+                <xsl:text> of </xsl:text>
+              <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][2]][not(ancestor::tei:persName[@type='attested'][3])]/@nymRef"/>
+              <xsl:if test="descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested']]">
+                <xsl:text> of </xsl:text>
+                <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][3]][not(ancestor::tei:persName[@type='attested'][4])]/@nymRef"/>
+                <xsl:if test="descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested']]]">
+                  <xsl:text> of </xsl:text>
+                  <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][4]][not(ancestor::tei:persName[@type='attested'][5])]/@nymRef"/>
+                  <xsl:if test="descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested']]]]">
+                    <xsl:text> of </xsl:text>
+                    <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][5]][not(ancestor::tei:persName[@type='attested'][6])]/@nymRef"/>
+                    <xsl:if test="descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested'][descendant::tei:persName[@type='attested']]]]]">
+                      <xsl:text> of </xsl:text>
+                      <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][6]][not(ancestor::tei:persName[@type='attested'][7])]/@nymRef"/>
+                    </xsl:if>
+                  </xsl:if>
+                </xsl:if>
+              </xsl:if>
+            </xsl:if>
+            <xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
+              <xsl:text> from </xsl:text>
+              <xsl:value-of select="tei:placeName"/>
+            </xsl:if><xsl:if test="descendant::tei:placeName[@type='ethnic']">
+              <xsl:text> </xsl:text>
+              <xsl:value-of select="tei:placeName"/>
+            </xsl:if>
            <!-- <xsl:choose>
-              <xsl:when test="descendant::tei:name[@nymRef]">-->
+              <xsl:when test="descendant::tei:name[@nymRef]">
                 <xsl:value-of select="tei:name/@nymRef" />
-              <!--</xsl:when>
+                </xsl:when>
               <xsl:otherwise>
-                    <xsl:value-of select="." />
-              </xsl:otherwise>
+              <xsl:value-of select="." />
+             </xsl:otherwise>
             </xsl:choose>-->
           </field>
           <field name="index_external_resource">

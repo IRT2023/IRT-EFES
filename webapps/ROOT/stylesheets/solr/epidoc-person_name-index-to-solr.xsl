@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:name[ancestor::tei:div/@type='edition']" group-by="@nymRef"> <!-- or "." -->
+      <xsl:for-each-group select="//tei:name[@nymRef][ancestor::tei:div/@type='edition']" group-by="@nymRef"> <!-- or "." -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,10 +25,10 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:choose>
-              <xsl:when test="@nymRef">
+            <!--<xsl:choose>
+              <xsl:when test="@nymRef">-->
                 <xsl:value-of select="@nymRef" />
-              </xsl:when>
+              <!--</xsl:when>
               <xsl:otherwise>
                 <xsl:choose>
                   <xsl:when test="descendant::tei:seg[@part='I']"><xsl:value-of select="." /><xsl:text>-</xsl:text></xsl:when>
@@ -39,7 +39,7 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:otherwise>
-            </xsl:choose>
+            </xsl:choose>-->
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
