@@ -164,10 +164,13 @@
     <td>
       <xsl:choose>
         <xsl:when test="contains(., 'http')">
+          <xsl:for-each select="tokenize(., ' ')">
           <a target="_blank">
             <xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
             <xsl:value-of select="."/>
           </a>
+            <xsl:text> </xsl:text>
+          </xsl:for-each>
         </xsl:when>
         <xsl:otherwise>
             <xsl:value-of select="."/>
