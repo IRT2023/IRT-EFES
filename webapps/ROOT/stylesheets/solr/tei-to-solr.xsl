@@ -39,6 +39,21 @@
       </xsl:choose>
     </field>
   </xsl:template>
+  
+  <xsl:template match="tei:idno[@type='filename']" mode="facet_ordered_id">
+    <field name="ordered_id">
+      <xsl:variable name="filename-letter" select="substring-before(., '.')"/>
+      <xsl:variable name="filename-no" select="substring-after(., '.')"/>
+      <xsl:variable name="filename-number">
+        <xsl:choose>
+          <xsl:when test="string-length($filename-no)=1"><xsl:value-of select="concat('00',$filename-no)"/></xsl:when>
+          <xsl:when test="string-length($filename-no)=2"><xsl:value-of select="concat('0',$filename-no)"/></xsl:when>
+          <xsl:otherwise><xsl:value-of select="$filename-no"/></xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <xsl:value-of select="concat($filename-letter,'.',$filename-number)"/>
+    </field>
+  </xsl:template>
 
   <!-- This template is called by the Kiln tei-to-solr.xsl as part of
        the main doc for the indexed file. Put any code to generate
@@ -46,6 +61,7 @@
   <xsl:template name="extra_fields">
     <xsl:call-template name="field_text_type"/>
     <xsl:call-template name="field_language"/>
+    <xsl:call-template name="field_ordered_id"/>
   </xsl:template>
   
   <xsl:template name="field_text_type">
@@ -54,6 +70,10 @@
   
   <xsl:template name="field_language">
     <xsl:apply-templates mode="facet_language" select="//tei:text/tei:body/tei:div[@type='edition']"/>
+  </xsl:template>
+  
+  <xsl:template name="field_ordered_id">
+    <xsl:apply-templates mode="facet_ordered_id" select="//tei:publicationStmt//tei:idno[@type='filename']"/>
   </xsl:template>
 
 </xsl:stylesheet>

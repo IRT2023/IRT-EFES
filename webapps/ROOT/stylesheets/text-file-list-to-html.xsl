@@ -24,7 +24,9 @@
         </tr>
       </thead>
       <tbody>
-        <xsl:apply-templates mode="text-index" select="result" />
+        <xsl:apply-templates mode="text-index" select="result/doc" >
+          <xsl:sort select="str[@name='ordered_id']"/>
+        </xsl:apply-templates>
       </tbody>
     </table>
   </xsl:template>
@@ -39,7 +41,7 @@
   <xsl:template match="result/doc" mode="text-index">
     <tr>
       <xsl:apply-templates mode="text-index" select="str[@name='file_path']" />
-      <!--<xsl:apply-templates mode="text-index" select="str[@name='document_id']" />-->
+      <!--<xsl:apply-templates mode="text-index" select="str[@name='ordered_id']" />-->
       <xsl:apply-templates mode="text-index" select="arr[@name='document_title']" />
       <!--<xsl:apply-templates mode="text-index" select="arr[@name='author']" />
       <xsl:apply-templates mode="text-index" select="arr[@name='editor']" />-->
@@ -51,12 +53,12 @@
     <xsl:variable name="filename" select="substring-after(., '/')" />
     <td>
       <a href="{kiln:url-for-match($match_id, ($language, $filename), 0)}">
-        <xsl:value-of select="$filename" />
+        <xsl:value-of select="$filename"/>
       </a>
     </td>
   </xsl:template>
 
-  <!--<xsl:template match="str[@name='document_id']" mode="text-index">
+  <!--<xsl:template match="str[@name='ordered_id']" mode="text-index">
     <td><xsl:value-of select="." /></td>
   </xsl:template>-->
 
