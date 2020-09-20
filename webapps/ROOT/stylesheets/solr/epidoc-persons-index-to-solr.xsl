@@ -15,7 +15,7 @@
   
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='attested'][descendant::tei:name[@nymRef]][not(ancestor::tei:persName[@type='attested'])]" group-by="."> <!-- group-by="concat(tei:name/@nymRef,'-',@key)" -->
+      <xsl:for-each select="//tei:persName[@type='attested'][descendant::tei:name[@nymRef]][not(ancestor::tei:persName[@type='attested'])]">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -46,28 +46,26 @@
                 </xsl:if>
               </xsl:if>
             </xsl:if>
+            <!-- not handling possible ethnics/provenance of patronymics -->
             <xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
               <xsl:text> from </xsl:text>
-              <xsl:value-of select="tei:placeName"/>
-            </xsl:if><xsl:if test="descendant::tei:placeName[@type='ethnic']">
-              <xsl:text> </xsl:text>
-              <xsl:value-of select="tei:placeName"/>
+              <xsl:value-of select="tei:placeName[not(@type='ethnic')][1]"/>
+              <xsl:if test="descendant::tei:placeName[not(@type='ethnic')][2]">
+              <xsl:text> and </xsl:text>
+                <xsl:value-of select="tei:placeName[not(@type='ethnic')][2]"/>
             </xsl:if>
-           <!-- <xsl:choose>
-              <xsl:when test="descendant::tei:name[@nymRef]">
-                <xsl:value-of select="tei:name/@nymRef" />
-                </xsl:when>
-              <xsl:otherwise>
-              <xsl:value-of select="." />
-             </xsl:otherwise>
-            </xsl:choose>-->
+            </xsl:if>
+            <xsl:if test="descendant::tei:placeName[@type='ethnic']">
+              <xsl:text> </xsl:text>
+              <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+            </xsl:if>
           </field>
           <field name="index_external_resource">
             <xsl:value-of select="@key" />
           </field>
-          <xsl:apply-templates select="current-group()" />
+          <xsl:apply-templates select="." />
         </doc>
-      </xsl:for-each-group>
+      </xsl:for-each>
     </add>
   </xsl:template>
 
