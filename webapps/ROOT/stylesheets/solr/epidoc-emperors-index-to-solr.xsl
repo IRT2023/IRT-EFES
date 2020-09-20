@@ -40,6 +40,8 @@
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="$key">
+                <xsl:value-of select="$key/@n" />
+                <xsl:text>. </xsl:text>
                 <xsl:value-of select="$key/tei:persName" />
                 <xsl:if test="$key/tei:floruit"><xsl:text> (</xsl:text><xsl:value-of select="$key/tei:floruit" /><xsl:text>)</xsl:text></xsl:if>
               </xsl:when>

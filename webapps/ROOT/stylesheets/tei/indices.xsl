@@ -162,7 +162,17 @@
 
   <xsl:template match="str[@name='index_external_resource']">
     <td>
-      <xsl:value-of select="."/>
+      <xsl:choose>
+        <xsl:when test="contains(., 'http')">
+          <a target="_blank">
+            <xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
+            <xsl:value-of select="."/>
+          </a>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="."/>
+        </xsl:otherwise>
+      </xsl:choose>
     </td>
   </xsl:template>
   
