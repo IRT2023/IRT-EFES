@@ -134,6 +134,8 @@
              <xsl:when test="@xml:lang='en'"><xsl:text>English </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='fr'"><xsl:text>French </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='it'"><xsl:text>Italian </xsl:text></xsl:when>
+             <xsl:when test="@xml:lang='de'"><xsl:text>German </xsl:text></xsl:when>
+             <xsl:when test="@xml:lang='la'"><xsl:text>Latin </xsl:text></xsl:when>
              <xsl:otherwise><xsl:value-of select="@xml:lang"/></xsl:otherwise>
            </xsl:choose>
              <xsl:text>translation</xsl:text></h5></xsl:if>
@@ -357,10 +359,16 @@
       <xsl:value-of select="//t:idno[@type='filename']"/>
     </xsl:variable>
 
-    <xsl:variable name="prev"
-      select="/aggregation/order//result/doc[str[@name='document_id' and text()=$filename]]/preceding-sibling::doc[1]/str[@name='file_path']/text()"/> <!-- from IOSPE: edit -->
-    <xsl:variable name="next"
-      select="/aggregation/order//result/doc[str[@name='document_id' and text()=$filename]]/following-sibling::doc[1]/str[@name='file_path']/text()"/> <!-- from IOSPE: edit -->
+    <xsl:variable name="prev" select="/aggregation/order//result/doc[str[@name = 'file_path' and text() = $filename]]/preceding-sibling::doc[1]/str[@name='file_path']/text()"/>
+    <xsl:variable name="next" select="/aggregation/order//result/doc[str[@name = 'file_path' and text() = $filename]]/following-sibling::doc[1]/str[@name='file_path']/text()"/>
+    
+    <!--         
+      /aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/preceding-sibling::doc[1]/str[@name='file_path']/text()
+      /aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/following-sibling::doc[1]/str[@name='file_path']/text()
+      
+      /aggregation/order//result/doc[str[@name = 'tei-id' and text() = $filename]]/preceding-sibling::doc[1]/str/text()
+      /aggregation/order//result/doc[str[@name = 'tei-id' and text() = $filename]]/following-sibling::doc[1]/str/text()
+    -->
 
     <div class="row">
       <div class="large-12 columns">
