@@ -28,19 +28,19 @@
           <field name="index_item_name">
             <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][1]][not(ancestor::tei:persName[@type='attested'][2])]/@nymRef"/>
             <xsl:if test="descendant::tei:persName[@type='attested'][1]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
               <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][2]][not(ancestor::tei:persName[@type='attested'][3])]/@nymRef"/>
               <xsl:if test="descendant::tei:persName[@type='attested'][2]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
                 <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][3]][not(ancestor::tei:persName[@type='attested'][4])]/@nymRef"/>
                 <xsl:if test="descendant::tei:persName[@type='attested'][3]">
-                  <xsl:text> of </xsl:text>
+                  <xsl:text> child of </xsl:text>
                   <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][4]][not(ancestor::tei:persName[@type='attested'][5])]/@nymRef"/>
                   <xsl:if test="descendant::tei:persName[@type='attested'][4]">
-                    <xsl:text> of </xsl:text>
+                    <xsl:text> child of </xsl:text>
                     <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][5]][not(ancestor::tei:persName[@type='attested'][6])]/@nymRef"/>
                     <xsl:if test="descendant::tei:persName[@type='attested'][5]">
-                      <xsl:text> of </xsl:text>
+                      <xsl:text> child of </xsl:text>
                       <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][6]][not(ancestor::tei:persName[@type='attested'][7])]/@nymRef"/>
                     </xsl:if>
                   </xsl:if>
@@ -82,24 +82,25 @@
           <field name="index_item_name">
             <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][2]][not(ancestor::tei:persName[@type='attested'][3])]/@nymRef"/>
             <xsl:if test="descendant::tei:persName[@type='attested'][1]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
               <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][3]][not(ancestor::tei:persName[@type='attested'][4])]/@nymRef"/>
               <xsl:if test="descendant::tei:persName[@type='attested'][2]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
                 <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][4]][not(ancestor::tei:persName[@type='attested'][5])]/@nymRef"/>
                 <xsl:if test="descendant::tei:persName[@type='attested'][3]">
-                  <xsl:text> of </xsl:text>
+                  <xsl:text> child of </xsl:text>
                   <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][5]][not(ancestor::tei:persName[@type='attested'][6])]/@nymRef"/>
                   <xsl:if test="descendant::tei:persName[@type='attested'][4]">
-                    <xsl:text> of </xsl:text>
+                    <xsl:text> child of </xsl:text>
                     <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][6]][not(ancestor::tei:persName[@type='attested'][7])]/@nymRef"/>
                   </xsl:if>
                 </xsl:if>
               </xsl:if>
             </xsl:if>
-            <!-- add also "father/mother of" + ancestor::tei:persName "and" -->
+            <xsl:text> parent of </xsl:text>
+            <xsl:value-of select="preceding-sibling::tei:name[@nymRef]/@nymRef|following-sibling::tei:name[@nymRef]/@nymRef"/>
             <!-- not handling possible ethnics/provenance of patronymics -->
-            <!--<xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
+            <xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
               <xsl:text> from </xsl:text>
               <xsl:value-of select="tei:placeName[not(@type='ethnic')][1]"/>
               <xsl:if test="descendant::tei:placeName[not(@type='ethnic')][2]">
@@ -110,7 +111,7 @@
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
               <xsl:value-of select="tei:placeName[@type='ethnic']"/>
-            </xsl:if>-->
+            </xsl:if>
           </field>
           <field name="index_external_resource">
             <xsl:value-of select="@key" />
@@ -133,20 +134,21 @@
           <field name="index_item_name">
             <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][3]][not(ancestor::tei:persName[@type='attested'][4])]/@nymRef"/>
             <xsl:if test="descendant::tei:persName[@type='attested'][1]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
               <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][4]][not(ancestor::tei:persName[@type='attested'][5])]/@nymRef"/>
               <xsl:if test="descendant::tei:persName[@type='attested'][2]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
                 <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][5]][not(ancestor::tei:persName[@type='attested'][6])]/@nymRef"/>
                 <xsl:if test="descendant::tei:persName[@type='attested'][3]">
-                  <xsl:text> of </xsl:text>
+                  <xsl:text> child of </xsl:text>
                   <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][6]][not(ancestor::tei:persName[@type='attested'][7])]/@nymRef"/>
                 </xsl:if>
               </xsl:if>
             </xsl:if>
-            <!-- add also "father/mother of" + ancestor::tei:persName "and" -->
+            <xsl:text> parent of </xsl:text>
+            <xsl:value-of select="preceding-sibling::tei:name[@nymRef]/@nymRef|following-sibling::tei:name[@nymRef]/@nymRef"/>
             <!-- not handling possible ethnics/provenance of patronymics -->
-            <!--<xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
+            <xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
               <xsl:text> from </xsl:text>
               <xsl:value-of select="tei:placeName[not(@type='ethnic')][1]"/>
               <xsl:if test="descendant::tei:placeName[not(@type='ethnic')][2]">
@@ -157,7 +159,7 @@
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
               <xsl:value-of select="tei:placeName[@type='ethnic']"/>
-            </xsl:if>-->
+            </xsl:if>
           </field>
           <field name="index_external_resource">
             <xsl:value-of select="@key" />
@@ -180,16 +182,17 @@
           <field name="index_item_name">
             <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][4]][not(ancestor::tei:persName[@type='attested'][5])]/@nymRef"/>
             <xsl:if test="descendant::tei:persName[@type='attested'][1]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
               <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][5]][not(ancestor::tei:persName[@type='attested'][6])]/@nymRef"/>
               <xsl:if test="descendant::tei:persName[@type='attested'][2]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
                 <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][6]][not(ancestor::tei:persName[@type='attested'][7])]/@nymRef"/>
               </xsl:if>
             </xsl:if>
-            <!-- add also "father/mother of" + ancestor::tei:persName "and" -->
+            <xsl:text> parent of </xsl:text>
+            <xsl:value-of select="preceding-sibling::tei:name[@nymRef]/@nymRef|following-sibling::tei:name[@nymRef]/@nymRef"/>
             <!-- not handling possible ethnics/provenance of patronymics -->
-            <!--<xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
+            <xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
               <xsl:text> from </xsl:text>
               <xsl:value-of select="tei:placeName[not(@type='ethnic')][1]"/>
               <xsl:if test="descendant::tei:placeName[not(@type='ethnic')][2]">
@@ -200,7 +203,7 @@
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
               <xsl:value-of select="tei:placeName[@type='ethnic']"/>
-            </xsl:if>-->
+            </xsl:if>
           </field>
           <field name="index_external_resource">
             <xsl:value-of select="@key" />
@@ -223,12 +226,13 @@
           <field name="index_item_name">
             <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][5]][not(ancestor::tei:persName[@type='attested'][6])]/@nymRef"/>
             <xsl:if test="descendant::tei:persName[@type='attested'][1]">
-                <xsl:text> of </xsl:text>
+                <xsl:text> child of </xsl:text>
               <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][6]][not(ancestor::tei:persName[@type='attested'][7])]/@nymRef"/>
             </xsl:if>
-            <!-- add also "father/mother of" + ancestor::tei:persName "and" -->
+            <xsl:text> parent of </xsl:text>
+            <xsl:value-of select="preceding-sibling::tei:name[@nymRef]/@nymRef|following-sibling::tei:name[@nymRef]/@nymRef"/>
             <!-- not handling possible ethnics/provenance of patronymics -->
-            <!--<xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
+            <xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
               <xsl:text> from </xsl:text>
               <xsl:value-of select="tei:placeName[not(@type='ethnic')][1]"/>
               <xsl:if test="descendant::tei:placeName[not(@type='ethnic')][2]">
@@ -239,7 +243,7 @@
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
               <xsl:value-of select="tei:placeName[@type='ethnic']"/>
-            </xsl:if>-->
+            </xsl:if>
           </field>
           <field name="index_external_resource">
             <xsl:value-of select="@key" />
@@ -261,9 +265,10 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][6]][not(ancestor::tei:persName[@type='attested'][7])]/@nymRef"/>
-            <!-- add also "father/mother of" + ancestor::tei:persName "and" -->
+            <xsl:text> parent of </xsl:text>
+            <xsl:value-of select="preceding-sibling::tei:name[@nymRef]/@nymRef|following-sibling::tei:name[@nymRef]/@nymRef"/>
             <!-- not handling possible ethnics/provenance of patronymics -->
-            <!--<xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
+            <xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
               <xsl:text> from </xsl:text>
               <xsl:value-of select="tei:placeName[not(@type='ethnic')][1]"/>
               <xsl:if test="descendant::tei:placeName[not(@type='ethnic')][2]">
@@ -274,7 +279,7 @@
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
               <xsl:value-of select="tei:placeName[@type='ethnic']"/>
-            </xsl:if>-->
+            </xsl:if>
           </field>
           <field name="index_external_resource">
             <xsl:value-of select="@key" />
