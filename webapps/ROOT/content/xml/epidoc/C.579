@@ -3,19 +3,19 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C34700" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C55000" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">imperial</rs> <rs type="textType">honours</rs> </title>
+            <title><rs type="textType">Funerary</rs> inscription, Tomb N.213</title>
                          <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">C.279</idno>
-            <idno type="ircyr2012">C34700</idno>
-            <idno type="JMR">888</idno>
-            <idno type="Excel">1114</idno>
+            <idno type="filename">C.579</idno>
+            <idno type="ircyr2012">C55000</idno>
+            <idno type="JMR">1124b i</idno>
+            <idno type="Excel">285</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
@@ -31,39 +31,31 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment of a <material>limestone</material> block with traces of moulding above 
-                               (<dimensions>
-                                   <width>0.44</width>
-                                   <height>0.32</height>
-                                   <depth>0.20</depth>
-                               </dimensions>).</p>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType>, inscribed with <ref type="inscription" n="C.578">C.578</ref>, <ref type="inscription" n="C.579">C.579</ref>, 
+                              <ref type="inscription" n="C.580">C.580</ref>, <ref type="inscription" n="C.581">C.581</ref>, <ref type="inscription" n="C.582">C.582</ref>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> in the second chamber on the wall opposite the entrance: above the doors of the tomb recesses, followed by some erased text.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Second-third century; lines 1-2, <height>0.05-0.055</height>; line 3, <height>0.04</height>; cursive omega.</handNote>
+                     <handNote><height>0.07 - 0.075</height>; square sigma</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Second-third century CE</origDate>
+                     <origPlace>Findspot</origPlace>
+                     <origDate evidence="lettering" notBefore="0001" notAfter="0100">Perhaps first century. </origDate>
                   </origin>
-                  
-                     
-                        <provenance type="found">
+                  <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>: 
-                              <placeName type="monuList" ref="http://www.slsgazetteer.org/1033">Temple of Apollo</placeName>: found in <date type="found">1959</date>, in a late rubble-built wall to the west.</p>
+                              in the <placeName type="monuList" ref="http://www.slsgazetteer.org/1071">North Necropolis</placeName>, N.213; first recorded in <date type="found">1955</date>.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot.</p>
                         </provenance>
-                     
-                  
                </history>
             </msDesc>
          </sourceDesc>
@@ -103,36 +95,36 @@
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
-         <change when="2010-06-21" who="GillianB">tokenized</change>
-         <change when="2009-07-07" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-06-18" who="Pietro">turned to XML and tidied</change>
          <change when="2009-05-11" who="GB">mailmerged: created from template</change>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="JMR_888_003" decls="#photograph"><desc>Face (Reynolds, NB VIII.65)</desc></graphic>
-      <graphic url="JMR_888_002" decls="#photograph"><desc>Face (Joyce Reynolds I.98)</desc></graphic>
-      <graphic url="JMR_888_001" decls="#photograph"><desc>View on site (1961, Joyce Reynolds II.87)</desc></graphic></facsimile>
+   </teiHeader><facsimile><surface/></facsimile>
    <text>
       <body>
+         
          <div type="bibliography">
             <head>Bibliography</head>
-            <p/>
+            <p>
+               <bibl>
+                  <ptr target="cassels1955"/>, <citedRange>197</citedRange> and p. 20</bibl>, whence  
+               <bibl><title>SEG</title> <citedRange>16.869b</citedRange></bibl>. </p>
+            <p>For the tomb see <bibl><ptr target="thorn2009"/>, <citedRange unit="page">85</citedRange></bibl></p>
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>των</orig><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="anonymus"><name nymRef="Λούκιος"><supplied reason="lost">Λου</supplied>κίω</name> <name nymRef="Αὐρήλιος">Αὐ<supplied reason="lost">ρηλίω</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w>διαμ<supplied reason="lost" cert="low">ονᾶς</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/><persName type="attested"><name nymRef="Γάϊς">Γάιϲ</name></persName> 
+            <date type="life-span" dur="P25Y"><w><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="25">κε</num> </date>
                 </ab>
 </div>
-         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <p/>
+         </div>
          <div type="translation" xml:space="preserve"><head>Translation</head>
-           <div type="translation" resp="#cmr" xml:lang="en"> <p>. . . ] ?permanence <supplied reason="explanation">in power, of an emperor</supplied> [ . . .</p></div></div>
-         
+         <div type="translation" resp="#cmr" xml:lang="en"><p>Gaios <supplied reason="explanation"><foreign xml:lang="la">Gaius</foreign></supplied>, aged 25</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
-            <p>If διαμονᾶς is correctly restored in line 3, it is almost certain that lines 1 and 2 
-               contained the names of a pair of emperors who should be Aurelius and Verus or Aurelius and Commodus. 
-               The text could be reconstructed on the following lines: [ὑπὲρ] τῶν [Αὐτοκρατόρων Καίσαρων Μ(άρκω) Αὐρηλίω Ἀντωνείνω καὶ] / [Λου]κίω Αὐ[ρηλίω Κομμόδω Σεβαστῶν νείκας καὶ σωτηρίας] / [καὶ] διαμ[ονᾶς αἰωνίας ...]</p>
          </div>
          
       </body>
