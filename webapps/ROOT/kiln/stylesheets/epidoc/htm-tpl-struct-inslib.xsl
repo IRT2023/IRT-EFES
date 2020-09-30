@@ -2,6 +2,7 @@
 <!-- $Id$ -->
 <xsl:stylesheet xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:t="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t"
                 version="2.0">
   <!-- Contains named templates for InsLib file structure (aka "metadata" aka "supporting data") -->
@@ -350,7 +351,7 @@
       <xsl:apply-templates/>
     </a>
   </xsl:template>
-
+  
   <xsl:template name="inscriptionnav">
     <xsl:param name="next_inscr"/>
     <xsl:param name="prev_inscr"/>
@@ -358,10 +359,9 @@
     <xsl:variable name="filename">
       <xsl:value-of select="//t:idno[@type='filename']"/>
     </xsl:variable>
-
-    <xsl:variable name="prev" select="/aggregation/order//result/doc[str[@name = 'file_path' and text() = $filename]]/preceding-sibling::doc[1]/str[@name='file_path']/text()"/>
-    <xsl:variable name="next" select="/aggregation/order//result/doc[str[@name = 'file_path' and text() = $filename]]/following-sibling::doc[1]/str[@name='file_path']/text()"/>
     
+    <xsl:variable name="prev" select="preceding-sibling::doc[1]//t:idno[@name='filename']"/>
+    <xsl:variable name="next" select="following-sibling::doc[1]//t:idno[@name='filename']"/>
     <!--         
       /aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/preceding-sibling::doc[1]/str[@name='file_path']/text()
       /aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/following-sibling::doc[1]/str[@name='file_path']/text()

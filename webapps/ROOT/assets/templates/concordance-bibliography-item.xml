@@ -22,13 +22,13 @@
   <kiln:child>
     <kiln:block name="title">
       <kiln:super />
-      <xsl:text>Bibliographic Concordance: </xsl:text>
+      <!--<xsl:text>Bibliographic Concordance: </xsl:text>-->
       <xsl:value-of select="$title" />
     </kiln:block>
 
     <kiln:block name="page-heading">
       <kiln:super />
-      <xsl:text>Bibliographic Concordance: </xsl:text>
+      <!--<xsl:text>Bibliographic Concordance: </xsl:text>-->
       <xsl:value-of select="$title" />
     </kiln:block>
 
@@ -37,7 +37,7 @@
         <div class="large-12 columns">
           <table>
             <xsl:apply-templates mode="item-display"
-                                 select="/aggregation/response/result/doc" />
+              select="/aggregation/response/result/doc[descendant::str[@name='concordance_bibliography_ref' and . = $bibl-id]]" ><xsl:sort select="number(str[@name='concordance_bibliography_cited_range'])"/></xsl:apply-templates>
           </table>
         </div>
       </div>
