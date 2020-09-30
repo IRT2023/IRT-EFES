@@ -45,23 +45,17 @@
     </li>
   </xsl:template>
 
-  <xsl:template match="tei:author">
-    <xsl:value-of select="." />
-    <xsl:if test="following-sibling::tei:author">
-      <xsl:text>,</xsl:text>
-    </xsl:if>
-    <xsl:text> </xsl:text>
-  </xsl:template>
-
-  <xsl:template match="tei:bibl" mode="full-citation">
+  <xsl:template match="tei:bibl[@xml:id]" mode="full-citation">
+    <xsl:apply-templates select="." />
+    <!--<xsl:apply-templates select="tei:bibl[@type='abbrev']" /><xsl:text>: </xsl:text>
     <xsl:apply-templates select="tei:author" />
     <xsl:apply-templates select="tei:editor" />
     <xsl:apply-templates select="tei:date[1]" />
     <xsl:apply-templates select="tei:title[1]" />
-    <xsl:apply-templates select="tei:title[2]" />
+    <xsl:apply-templates select="tei:title[2]" />-->
   </xsl:template>
 
-  <xsl:template match="tei:bibl" mode="short-citation">
+  <xsl:template match="tei:bibl[@xml:id]" mode="short-citation">
     <xsl:choose>
       <xsl:when test="tei:editor">
         <xsl:value-of select="tei:editor[1]" />
@@ -74,6 +68,14 @@
     <xsl:value-of select=".//tei:date[1]" />
   </xsl:template>
 
+  <!--<xsl:template match="tei:author">
+    <xsl:value-of select="." />
+    <xsl:if test="following-sibling::tei:author">
+      <xsl:text>,</xsl:text>
+    </xsl:if>
+    <xsl:text> </xsl:text>
+  </xsl:template>
+  
   <xsl:template match="tei:editor">
     <xsl:value-of select="." />
     <xsl:choose>
@@ -106,6 +108,6 @@
         <xsl:value-of select="." />
       </xsl:otherwise>
     </xsl:choose>
-  </xsl:template>
+  </xsl:template>-->
 
 </xsl:stylesheet>
