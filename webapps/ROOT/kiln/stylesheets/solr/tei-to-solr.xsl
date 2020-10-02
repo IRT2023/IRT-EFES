@@ -156,9 +156,16 @@
     </doc>
   </xsl:template>
 
-  <xsl:template match="tei:repository[@ref]" mode="facet_source_repository">
+  <xsl:template match="tei:repository" mode="facet_source_repository">
     <field name="source_repository">
-      <xsl:value-of select="@ref"/>
+      <xsl:choose>
+        <xsl:when test="@ref">
+          <xsl:value-of select="@ref"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="normalize-space(.)"/>
+        </xsl:otherwise>
+      </xsl:choose>
     </field>
   </xsl:template>
 
@@ -269,7 +276,7 @@
   </xsl:template>
 
   <xsl:template name="field_source_repository">
-    <xsl:apply-templates mode="facet_source_repository" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:repository[@ref]"/>
+    <xsl:apply-templates mode="facet_source_repository" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:repository"/>
   </xsl:template>
 
   <xsl:template name="field_support_material">
