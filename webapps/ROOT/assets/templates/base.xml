@@ -40,9 +40,10 @@
       <kiln:block name="body">
         <body>
           <kiln:block name="navigation">
-            <div class="text-left">
-              <h1 id="site-title"><img src="{$kiln:assets-path}/images/DSC04838_1.JPG" alt="logo"/> IRCyr</h1>
-            </div>
+            <!--<div class="text-left">-->
+              <h1 id="site-title"><img src="{$kiln:assets-path}/images/DSC04838_2.JPG" alt="logo"/>
+                <br/>IRCyr - Inscriptions of Roman Cyrenaica</h1>
+            <!--</div>-->
             <nav class="top-bar">
               <kiln:block name="main-navigation">
                 <ul class="title-area">
@@ -59,12 +60,12 @@
                                          select="/aggregation/kiln:nav" />
                   </ul>
                   <ul class="right">
-                    <li class="has-form search">
+                    <!--<li class="has-form search">
                       <form action="{kiln:url-for-match('local-search', ($language), 0)}" method="get">
                         <input name="q" placeholder="Search"
                                required="required" type="search" />
                       </form>
-                    </li>
+                    </li>-->
                   </ul>
                 </section>
               </kiln:block>
@@ -86,8 +87,7 @@
           </kiln:block>
           <kiln:block name="footer">
             <footer>
-              <p>Powered by <a href="http://kcl-ddh.github.io/kiln/">Kiln</a></p>
-              <p>Theme by <a href="http://foundation.zurb.com/">Foundation</a></p>
+              <p>Powered by <a href="http://kcl-ddh.github.io/kiln/">Kiln</a>. Theme by <a href="http://foundation.zurb.com/">Foundation</a>.</p>
             </footer>
           </kiln:block>
           <kiln:block name="end-js">

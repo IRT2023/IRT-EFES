@@ -1,24 +1,3 @@
-/*  original EFES css 
- 
- ul.index-instances { }
-
-.index-instance-file {
-    font-weight: bolder;
-}
-
-.index-instance-text-parts { }
-
-.index-instance-line { }
-
-footer {
-    background: none repeat scroll 0 0 #fafafa;
-    border-top: 1px solid #eeeeee;
-    color: #777777;
-    font-size: 80%;
-    padding: 1em;
-}
-*/
-
 ul.index-instances { }
 
 .index-instance-file {
@@ -32,15 +11,22 @@ ul.index-instances { }
 #site-title {
   overflow: hidden;
   background: #c1b7ae /*url(../images/DSC04838_1.JPG) left*/ no-repeat; 
+  text-align: center;
   font-variant: small-caps;
-  font-size: 45px;
-  color: #F8F8F8;
-  height: 100px;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #F8F7F6;
+  height: 190px;
   position: relative;
   margin-top: -1px;
   margin-bottom: -1px;
-  /*padding-top: 38px;*/
-  width: 100%
+  width: 100%;
+}
+
+h1#site-title img {
+    margin: 30px 0 5px 0;
+    border: solid #D3D3D3 1px;
+    width: 90%;
 }
 
 nav.top-bar, nav.top-bar ul.right li, nav.top-bar ul.left * {
@@ -48,7 +34,7 @@ nav.top-bar, nav.top-bar ul.right li, nav.top-bar ul.left * {
 }
 
 nav.top-bar {
-    margin: 0 0px 40px 140px;
+    margin: 0 0 40px 0;
 }
 
 .top-bar-section {
@@ -60,7 +46,7 @@ p, li {
 }
 
 p, h1, h2, h3, h4, h5, li, ul {
-    font-family: "Lucida Sans", Tahoma, Verdana, Arial, Helvetica, sans-serif
+    font-family: "Lucida Sans", Tahoma, Verdana, Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -72,22 +58,26 @@ a:link, a:visited, a:active { color: #637893; }
 a:hover { color: #45658B; } 
 
 body{
-    background: url(../images/body_bg.png) -7px top repeat-y;
+    /*background: url(../images/body_bg.png) -7px top repeat-y;*/
     font: 100% "Lucida Sans", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
     color: #333;
-    background-color: #fcfcfc;
+    background-color: #F8F7F6;
     display: block;
     border: 1px solid #efefef;
     padding: 3px 1px 3px 3px;
 }
 
 footer{
-    margin: 0 20px 40px 170px;
+    margin: 0 30px 40px 30px;
     border-top: 2px solid #efefef;
     font-size: 75%;
-    color: #999
+    color: #999;
+}
+
+footer p { 
+    margin-top: 20px;
+    text-align: center;
 }
 
 li.active a {
