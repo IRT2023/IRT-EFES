@@ -12,7 +12,7 @@
   <xsl:param name="bibl-id" />
 
   <xsl:variable name="title">
-    <xsl:apply-templates mode="full-citation" select="id($bibl-id)" />
+    <xsl:apply-templates mode="short-citation" select="id($bibl-id)" />
   </xsl:variable>
 
   <kiln:parent>
@@ -35,6 +35,7 @@
     <kiln:block name="content">
       <div class="row">
         <div class="large-12 columns">
+          <p><xsl:apply-templates mode="full-citation" select="id($bibl-id)" /></p>
           <table>
             <xsl:apply-templates mode="item-display"
               select="/aggregation/response/result/doc[descendant::str[@name='concordance_bibliography_ref' and . = $bibl-id]]" ><xsl:sort select="number(str[@name='concordance_bibliography_cited_range'])"/></xsl:apply-templates>
