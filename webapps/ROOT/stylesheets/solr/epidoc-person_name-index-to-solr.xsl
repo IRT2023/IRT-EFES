@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:name[@nymRef][ancestor::tei:div/@type='edition']" group-by="@nymRef"> <!-- or "." -->
+      <xsl:for-each-group select="//tei:name[@nymRef][ancestor::tei:div/@type='edition']" group-by="normalize-unicode(@nymRef,'NFD')"> <!-- or "." -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -27,7 +27,7 @@
           <field name="index_item_name">
             <!--<xsl:choose>
               <xsl:when test="@nymRef">-->
-                <xsl:value-of select="@nymRef" />
+            <xsl:value-of select="normalize-unicode(@nymRef,'NFD')" />
               <!--</xsl:when>
               <xsl:otherwise>
                 <xsl:choose>

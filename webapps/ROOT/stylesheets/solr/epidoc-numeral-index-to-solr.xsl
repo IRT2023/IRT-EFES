@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:num[@value][ancestor::tei:div/@type='edition']" group-by="concat(.,'##',@value)">
+      <xsl:for-each-group select="//tei:num[@value][ancestor::tei:div/@type='edition']" group-by="concat(string-join(.//text(), ''),'##',@value)">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,7 +25,7 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="." />
+            <xsl:value-of select="string-join(.//text(), '')" />
           </field>
           <field name="index_numeral_value">
             <xsl:value-of select="@value"/>
