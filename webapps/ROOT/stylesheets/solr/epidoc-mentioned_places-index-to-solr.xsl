@@ -15,8 +15,8 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="concat(@nymRef,'-',@type)">
-        <xsl:variable name="ref-id" select="@nymRef"/>
+      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="concat(normalize-unicode(@nymRef,'NFD'),'-',@type)">
+        <xsl:variable name="ref-id" select="normalize-unicode(@nymRef,'NFD')"/>
         <xsl:variable name="ref" select="document('../../content/xml/authority/mentionedplace.xml')//tei:place[@xml:id=$ref-id]"/>
         <doc>
           <field name="document_type">
@@ -40,7 +40,7 @@
                     </xsl:if>
                   </xsl:when>
                   <xsl:otherwise>
-                    <xsl:value-of select="@nymRef" />
+                    <xsl:value-of select="normalize-unicode(@nymRef,'NFD')" />
                   </xsl:otherwise>
             </xsl:choose>
           </field>

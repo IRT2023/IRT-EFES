@@ -16,7 +16,7 @@
 
     <xsl:template match="/">
         <add>
-            <xsl:for-each-group select="//tei:w[ancestor::tei:div/@type='edition']" group-by=".">
+            <xsl:for-each-group select="//tei:w[ancestor::tei:div/@type='edition']" group-by="normalize-unicode(normalize-space(.),'NFD')">
                 <doc>
                     <field name="document_type">
                         <xsl:value-of select="$subdirectory" />
@@ -26,7 +26,7 @@
                     </field>
                     <xsl:call-template name="field_file_path" />
                     <field name="index_item_name">
-                        <xsl:value-of select="." />
+                        <xsl:value-of select="normalize-unicode(normalize-space(.),'NFD')" />
                     </field>
                     <field name="language_code">
                         <xsl:value-of select="ancestor-or-self::*[@xml:lang][1]/@xml:lang"/>

@@ -16,7 +16,7 @@
 
     <xsl:template match="/">
         <add>
-            <xsl:for-each-group select="//tei:orig[not(parent::tei:del or parent::tei:choice)] | //tei:w[@part != 'N']" group-by=".">
+            <xsl:for-each-group select="//tei:orig[ancestor::tei:div/@type='edition'][not(parent::tei:del or parent::tei:choice)] | //tei:w[@part != 'N']" group-by="lower-case(normalize-space(normalize-unicode(string-join(.//text(), ''))))">
                 <doc>
                     <field name="document_type">
                         <xsl:value-of select="$subdirectory" />
@@ -26,7 +26,7 @@
                     </field>
                     <xsl:call-template name="field_file_path" />
                     <field name="index_item_name">
-                        <xsl:value-of select="." />
+                        <xsl:value-of select="lower-case(normalize-space(normalize-unicode(string-join(.//text(), ''))))" />
                     </field>
                     <!-- <field name="language_code">
                         <xsl:value-of select="ancestor-or-self::*[@xml:lang][1]/@xml:lang"/>
