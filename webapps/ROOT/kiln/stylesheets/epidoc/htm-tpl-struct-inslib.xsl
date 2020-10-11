@@ -8,6 +8,7 @@
   <!-- Contains named templates for InsLib file structure (aka "metadata" aka "supporting data") -->
 
    <!-- Called from htm-tpl-structure.xsl -->
+  
   <xsl:import href="../../../stylesheets/tei/navigation.xsl"/>
 
    <xsl:template name="inslib-body-structure">

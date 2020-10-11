@@ -11,12 +11,19 @@
       <xsl:value-of select="//tei:idno[@type='filename']"/>
     </xsl:variable>
     
-    <xsl:variable name="prev" select="./preceding-sibling::doc[1]//tei:idno[@name='filename']"/>
-    <xsl:variable name="next" select="./following-sibling::doc[1]//tei:idno[@name='filename']"/>
-    <!--         
-      /aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/preceding-sibling::doc[1]/str[@name='file_path']/text()
-      /aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/following-sibling::doc[1]/str[@name='file_path']/text()
+    <xsl:variable name="prev" select="/aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/preceding-sibling::doc[1]/str[@name = 'file_path']"/>
+    <xsl:variable name="next" select="/aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/following-sibling::doc[1]/str[@name = 'file_path']"/>
+    
+    <!--  
+      possible @select values (?):
+        
+      ./preceding-sibling::doc[1]//tei:idno[@name='filename']
+      ./following-sibling::doc[1]//tei:idno[@name='filename']
       
+      /aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/preceding-sibling::doc[1]/str[@name='file_path']
+      /aggregation/response/result/doc[str[@name = 'file_path' and text() = $filename]]/following-sibling::doc[1]/str[@name='file_path']
+      
+      IOSPE:
       /aggregation/order//result/doc[str[@name = 'tei-id' and text() = $filename]]/preceding-sibling::doc[1]/str/text()
       /aggregation/order//result/doc[str[@name = 'tei-id' and text() = $filename]]/following-sibling::doc[1]/str/text()
     -->
