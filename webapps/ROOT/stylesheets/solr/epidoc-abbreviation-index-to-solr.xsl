@@ -15,7 +15,7 @@
     <xsl:template match="/">
         <add>
             <xsl:for-each-group select="//tei:expan[ancestor::tei:div/@type='edition'][not(parent::tei:abbr)]" 
-                group-by="concat(lower-case(normalize-unicode(normalize-space(string-join(.//tei:abbr//text(), '')),'NFD')),'-',lower-case(normalize-unicode(normalize-space(string-join(.//text(),'')),'NFD')))"> <!-- added //text(), normalize-unicode(), normalize-space(), lower-case(), string-join(.) -->
+                group-by="concat(upper-case(normalize-unicode(translate(translate(normalize-space(string-join(.//tei:abbr//text(), '')), 'Ϲ', 'Σ'),'&#x300;&#x0301;&#x0313;&#x0314;&#x0342;',''),'NFD')),'-',lower-case(normalize-unicode(replace(translate(normalize-space(string-join(.//text(),'')), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1'),'NFD')))"> <!-- added //text(), normalize-unicode(), normalize-space(), upper-case(), lower-case(), string-join(), translate()x2 -->
                 <!--<xsl:sort order="ascending"
                     select="translate(normalize-unicode(current-grouping-key(),'NFD'),'&#x0301;&#x0313;&#x0314;&#x0342;','')"/>-->
                 <doc>
@@ -29,20 +29,20 @@
                     <field name="index_item_name">
                         <xsl:choose>
                             <xsl:when test="descendant::tei:g">
-                                <xsl:value-of select="concat(lower-case(normalize-unicode(normalize-space(substring-after(descendant::tei:g/@ref,'#')),'NFD')), 'QQQQQ')" /> <!-- added normalize-unicode(), normalize-space(), lower-case(); substring-after(descendant::tei:g/@ref,'#') instead of $base-uri, descendant::tei:g/@ref -->
+                                <xsl:value-of select="concat(normalize-unicode(normalize-space(substring-after(descendant::tei:g/@ref,'#')),'NFD'), 'QQQQQ')" /> <!-- added normalize-unicode(), normalize-space(), lower-case(); substring-after(descendant::tei:g/@ref,'#') instead of $base-uri, descendant::tei:g/@ref -->
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="lower-case(normalize-unicode(normalize-space(string-join(.//tei:abbr//text(), '')),'NFD'))" /> <!-- added //text(), normalize-unicode(), normalize-space(), lower-case() -->
+                                <xsl:value-of select="upper-case(translate(normalize-unicode(translate(normalize-space(string-join(.//tei:abbr//text(), '')), 'Ϲϲ', 'Σσ'),'NFD'),'&#x300;&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- added //text(), normalize-unicode(), normalize-space(), upper-case(), translate()x2 -->
                             </xsl:otherwise>
                         </xsl:choose>
                     </field>
                     <field name="index_item_sort_name">
                         <xsl:choose>
                             <xsl:when test="descendant::tei:g">
-                                <xsl:value-of select="lower-case(translate(normalize-unicode(normalize-space(concat(substring-after(descendant::tei:g/@ref,'#'), 'QQQQQ')),'NFD'),'&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- substring-after(descendant::tei:g/@ref,'#') instead of $base-uri, descendant::tei:g/@ref; added normalize-space() -->
+                                <xsl:value-of select="lower-case(translate(normalize-unicode(normalize-space(concat(substring-after(descendant::tei:g/@ref,'#'), 'QQQQQ')),'NFD'),'&#x300;&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- substring-after(descendant::tei:g/@ref,'#') instead of $base-uri, descendant::tei:g/@ref; added normalize-space() -->
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="lower-case(translate(normalize-unicode(normalize-space(string-join(.//tei:abbr//text(), '')),'NFD'),'&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- added //text(), normalize-space() -->
+                                <xsl:value-of select="upper-case(translate(normalize-unicode(normalize-space(string-join(.//tei:abbr//text(), '')),'NFD'),'&#x300;&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- added //text(), normalize-space(), translate(), upper-case() -->
                             </xsl:otherwise>
                         </xsl:choose>
                     </field>
@@ -50,7 +50,7 @@
                         <xsl:value-of select="ancestor-or-self::*[@xml:lang][1]/@xml:lang"/>
                     </field>
                     <field name="index_abbreviation_expansion">
-                        <xsl:value-of select="normalize-unicode(normalize-space(string-join(.//text()[not(ancestor::tei:am)], '')), 'NFD')"/>  <!-- .//text()[not(ancestor::tei:am)]; added normalize-space() -->
+                        <xsl:value-of select="normalize-unicode(replace(translate(normalize-space(string-join(.//text()[not(ancestor::tei:am)], '')), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1'), 'NFD')"/>  <!-- .//text()[not(ancestor::tei:am)] -->
                     </field>
                     <xsl:apply-templates select="current-group()" />
                 </doc>
