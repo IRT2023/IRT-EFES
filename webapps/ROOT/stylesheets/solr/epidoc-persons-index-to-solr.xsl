@@ -58,7 +58,14 @@
             </xsl:if>
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
-              <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+              <xsl:choose>
+                <xsl:when test="descendant::tei:w[@lemma]">
+                  <xsl:value-of select="tei:placeName[@type='ethnic']//tei:w/@lemma"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+                </xsl:otherwise>
+              </xsl:choose>
             </xsl:if>
           </field>
           <field name="index_external_resource">
@@ -110,7 +117,14 @@
             </xsl:if>
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
-              <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+              <xsl:choose>
+                <xsl:when test="descendant::tei:w[@lemma]">
+                  <xsl:value-of select="tei:placeName[@type='ethnic']//tei:w/@lemma"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+                </xsl:otherwise>
+              </xsl:choose>
             </xsl:if>
           </field>
           <field name="index_external_resource">
@@ -158,7 +172,14 @@
             </xsl:if>
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
-              <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+              <xsl:choose>
+                <xsl:when test="descendant::tei:w[@lemma]">
+                  <xsl:value-of select="tei:placeName[@type='ethnic']//tei:w/@lemma"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+                </xsl:otherwise>
+              </xsl:choose>
             </xsl:if>
           </field>
           <field name="index_external_resource">
@@ -202,7 +223,14 @@
             </xsl:if>
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
-              <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+              <xsl:choose>
+                <xsl:when test="descendant::tei:w[@lemma]">
+                  <xsl:value-of select="tei:placeName[@type='ethnic']//tei:w/@lemma"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+                </xsl:otherwise>
+              </xsl:choose>
             </xsl:if>
           </field>
           <field name="index_external_resource">
@@ -242,7 +270,14 @@
             </xsl:if>
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
-              <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+              <xsl:choose>
+                <xsl:when test="descendant::tei:w[@lemma]">
+                  <xsl:value-of select="tei:placeName[@type='ethnic']//tei:w/@lemma"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+                </xsl:otherwise>
+              </xsl:choose>
             </xsl:if>
           </field>
           <field name="index_external_resource">
@@ -278,7 +313,14 @@
             </xsl:if>
             <xsl:if test="descendant::tei:placeName[@type='ethnic']">
               <xsl:text> </xsl:text>
-              <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+              <xsl:choose>
+                <xsl:when test="descendant::tei:w[@lemma]">
+                  <xsl:value-of select="tei:placeName[@type='ethnic']//tei:w/@lemma"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="tei:placeName[@type='ethnic']"/>
+                </xsl:otherwise>
+              </xsl:choose>
             </xsl:if>
           </field>
           <field name="index_external_resource">
