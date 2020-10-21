@@ -1,30 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--<!DOCTYPE list SYSTEM "../../../IRCyr/xmldev/01_process/dtd/tei/cch_tei.dtd">-->
-<list n="modern_locationAL">
-    <label>Modern Locations</label>
-    <item>
-        <label>Libyan Museums</label>
-        <list>
-            <item key="db932">Apollonia Museum</item>
-            <item key="db00002">Balagrae Museum</item>
-            <item key="db1288">Barke Museum</item>
-            <item key="db1094">Benghasi Museum</item>
-            <item key="db933">Cyrene Museum</item>
-            <item key="db934">Cyrene Sculpture Museum</item>
-            <item key="db1414">Derna: Museum of the Society of the Hela</item>
-            <item key="db1100">Qasr Libya Museum</item>
-            <item key="db1095">Tocra Museum</item>
-            <item key="db1096">Tolmeita Museum</item>
-            <item key="db1098">Tripoli Museum</item>
-        </list>
-    </item>
-    <item>
-        <label>Foreign Museums</label>
-        <list>
-            <item key="db00001">Carpentras, Musée lapidaire</item>
-            <item key="db1097">Louvre, Paris</item>
-            <item key="db904">British Museum, London</item>
-            <item  key="db1455">Musée St. Raymond, Toulouse</item>
-        </list>
-    </item>
-</list>
+<?xml version="1.0" encoding="UTF-8"?><!--<!DOCTYPE list SYSTEM "../../../IRCyr/xmldev/01_process/dtd/tei/cch_tei.dtd">-->
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Modern Locations</title>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+        <listPlace>
+            <head>Libyan Museums</head>
+            <place xml:id="db932"><placeName>Apollonia Museum</placeName></place>
+            <place xml:id="db00002"><placeName>Balagrae Museum</placeName></place>
+            <place xml:id="db1288"><placeName>Barke Museum</placeName></place>
+            <place xml:id="db1094"><placeName>Benghasi Museum</placeName></place>
+            <place xml:id="db933"><placeName>Cyrene Museum</placeName></place>
+            <place xml:id="db934"><placeName>Cyrene Sculpture Museum</placeName></place>
+            <place xml:id="db1414"><placeName>Derna: Museum of the Society of the Hela</placeName></place>
+            <place xml:id="db1100"><placeName>Qasr Libya Museum</placeName></place>
+            <place xml:id="db1095"><placeName>Tocra Museum</placeName></place>
+            <place xml:id="db1096"><placeName>Tolmeita Museum</placeName></place>
+            <place xml:id="db1098"><placeName>Tripoli Museum</placeName></place>
+        </listPlace>
+        <listPlace>
+            <head>Foreign Museums</head>
+            <place xml:id="db00001"><placeName>Carpentras, Musée lapidaire</placeName></place>
+            <place xml:id="db1097"><placeName>Louvre, Paris</placeName></place>
+            <place xml:id="db904"><placeName>British Museum, London</placeName></place>
+            <place xml:id="db1455"><placeName>Musée St. Raymond, Toulouse</placeName></place>
+        </listPlace>
+        </body>
+    </text>
+</TEI>

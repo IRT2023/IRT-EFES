@@ -82,8 +82,8 @@
          <!-- Named template found below. -->
          <xsl:call-template name="inslib-invno"/>
        </xsl:when>
-       <xsl:when test="//t:msIdentifier//t:repository[string(translate(normalize-space(.),' ',''))]">
-         <xsl:value-of select="//t:msIdentifier//t:repository[1]"/>
+       <xsl:when test="//t:msIdentifier//t:repository[@ref][string(translate(normalize-space(.),' ',''))]">
+         <xsl:value-of select="//t:msIdentifier//t:repository[@ref][1]"/>
          <!-- Named template found below. -->
          <xsl:call-template name="inslib-invno"/>
        </xsl:when>
