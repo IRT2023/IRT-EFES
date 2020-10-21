@@ -157,10 +157,12 @@
   </xsl:template>
 
   <xsl:template match="tei:repository" mode="facet_source_repository">
+    <xsl:variable name="repo-id" select="substring-after(@ref,'#')"/>
+    <xsl:variable name="repository-id" select="document('../../../content/xml/authority/institution.xml')//tei:item[@key=$repo-id]"/>
     <field name="source_repository">
       <xsl:choose>
-        <xsl:when test="@ref">
-          <xsl:value-of select="@ref"/>
+        <xsl:when test="$repository-id">
+          <xsl:value-of select="$repository-id"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="normalize-space(.)"/>
