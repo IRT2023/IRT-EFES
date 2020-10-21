@@ -82,12 +82,16 @@
          <!-- Named template found below. -->
          <xsl:call-template name="inslib-invno"/>
        </xsl:when>
-       <xsl:when test="//t:msIdentifier//t:repository[@ref][string(translate(normalize-space(.),' ',''))]">
+       <xsl:otherwise>
+         <xsl:choose>
+         <xsl:when test="//t:msIdentifier//t:repository[@ref][string(translate(normalize-space(.),' ',''))]">
          <xsl:value-of select="//t:msIdentifier//t:repository[@ref][1]"/>
          <!-- Named template found below. -->
          <xsl:call-template name="inslib-invno"/>
        </xsl:when>
-       <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text></xsl:otherwise>
+           <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text></xsl:otherwise>
+         </xsl:choose>
+       </xsl:otherwise>
      </xsl:choose>
      </p>
 
