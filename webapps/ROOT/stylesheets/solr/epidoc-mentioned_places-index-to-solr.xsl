@@ -15,8 +15,8 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="concat(normalize-unicode(@nymRef,'NFD'),'-',@type)">
-        <xsl:variable name="ref-id" select="normalize-unicode(@nymRef,'NFD')"/>
+      <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="concat(@ref,'-',normalize-unicode(@nymRef,'NFD'),'-',@type)">
+        <xsl:variable name="ref-id" select="normalize-unicode(@ref,'NFD')"/>
         <xsl:variable name="ref" select="document('../../content/xml/authority/mentionedplace.xml')//tei:place[@xml:id=$ref-id]"/>
         <doc>
           <field name="document_type">
@@ -28,21 +28,24 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <xsl:choose>
-                  <xsl:when test="$ref">
-                    <xsl:value-of select="$ref/tei:placeName[1]" />
-                    <xsl:if test="$ref/tei:placeName[2]">
-                      <xsl:text> / </xsl:text>
-                      <xsl:value-of select="$ref/tei:placeName[2]" />
-                    </xsl:if>
-                    <xsl:if test="$ref/tei:placeName[3]">
-                      <xsl:text> / </xsl:text>
-                      <xsl:value-of select="$ref/tei:placeName[3]" />
-                    </xsl:if>
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:value-of select="normalize-unicode(@nymRef,'NFD')" />
-                  </xsl:otherwise>
+              <xsl:when test="$ref">
+                <xsl:value-of select="$ref/tei:placeName[1]" />
+                <xsl:if test="$ref/tei:placeName[2]">
+                  <xsl:text> / </xsl:text>
+                  <xsl:value-of select="$ref/tei:placeName[2]" />
+                </xsl:if>
+                <xsl:if test="$ref/tei:placeName[3]">
+                  <xsl:text> / </xsl:text>
+                  <xsl:value-of select="$ref/tei:placeName[3]" />
+                </xsl:if>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="normalize-unicode(@ref,'NFD')" />
+              </xsl:otherwise>
             </xsl:choose>
+          </field>
+          <field name="index_item_sort_name">
+            <xsl:value-of select="normalize-unicode(@nymRef,'NFD')" />
           </field>
           <field name="index_ethnic">
             <xsl:choose>

@@ -16,6 +16,8 @@
   <xsl:template match="/">
     <add>
       <xsl:for-each-group select="//tei:g[@ref][ancestor::tei:div/@type='edition']" group-by="@ref">
+        <xsl:variable name="ref-id" select="substring-after(@ref,'#')"/>
+        <xsl:variable name="ref" select="document('../../content/xml/authority/symbols.xml')//tei:glyph[@xml:id=$ref-id]"/>
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,7 +27,7 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="substring-after(@ref,'#')" />
+            <xsl:value-of select="$ref//tei:value[preceding-sibling::tei:localName[text()='text-display']]" /> <!-- replace 'text-display' with 'glyph-display' in order to show symbols -->
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
