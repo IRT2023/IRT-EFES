@@ -28,7 +28,10 @@
           <field name="index_item_name">
             <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][1]][not(ancestor::tei:persName[@type='attested'][2])]/@nymRef"/>
             <xsl:if test="descendant::tei:persName[@type='attested'][1]">
-                <xsl:text> child of </xsl:text>
+              <xsl:choose>
+                <xsl:when test="descendant::tei:w[@lemma='ἀπελεύθερος' or @lemma='libertus']"><xsl:text> freedman of </xsl:text></xsl:when>
+                <xsl:otherwise><xsl:text> child of </xsl:text></xsl:otherwise>
+              </xsl:choose>  
               <xsl:value-of select=".//tei:name[@nymRef][ancestor::tei:persName[@type='attested'][2]][not(ancestor::tei:persName[@type='attested'][3])]/@nymRef"/>
               <xsl:if test="descendant::tei:persName[@type='attested'][2]">
                 <xsl:text> child of </xsl:text>
@@ -104,7 +107,10 @@
                 </xsl:if>
               </xsl:if>
             </xsl:if>
-            <xsl:text> parent of </xsl:text>
+            <xsl:choose>
+              <xsl:when test="preceding-sibling::tei:w[@lemma='ἀπελεύθερος' or @lemma='libertus']|following-sibling::tei:w[@lemma='ἀπελεύθερος' or @lemma='libertus']"><xsl:text> former master of </xsl:text></xsl:when>
+              <xsl:otherwise><xsl:text> parent of </xsl:text></xsl:otherwise>
+            </xsl:choose>
             <xsl:value-of select="preceding-sibling::tei:name[@nymRef]/@nymRef|following-sibling::tei:name[@nymRef]/@nymRef"/>
             <!-- not handling possible ethnics/provenance of patronymics -->
             <xsl:if test="descendant::tei:placeName[not(@type='ethnic')]">
