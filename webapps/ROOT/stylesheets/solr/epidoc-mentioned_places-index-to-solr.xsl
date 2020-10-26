@@ -17,9 +17,9 @@
     <add>
       <xsl:for-each-group select="//tei:div[@type='edition']//tei:placeName" group-by="concat(@ref,'-',normalize-unicode(@nymRef,'NFD'),'-',@type)">
         <xsl:variable name="ref-id" select="normalize-unicode(substring-after(@ref, '#'),'NFD')"/>
-        <xsl:variable name="ref" select="document('../../content/xml/authority/mentionedplace.xml')//tei:place[@xml:id=$ref-id]"/>
+        <xsl:variable name="ref" select="document('../../content/xml/authority/places.xml')//tei:place[@xml:id=$ref-id]"/>
         <xsl:variable name="nymRef-id" select="normalize-unicode(substring-after(@nymRef, '#'),'NFD')"/>
-        <xsl:variable name="nymRef" select="document('../../content/xml/authority/mentionedplace.xml')//tei:place//tei:placeName[.=$nymRef-id]"/>
+        <xsl:variable name="nymRef" select="document('../../content/xml/authority/places.xml')//tei:place//tei:placeName[.=$nymRef-id]"/>
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
