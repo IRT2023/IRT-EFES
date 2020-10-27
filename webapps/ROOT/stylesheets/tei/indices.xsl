@@ -42,6 +42,9 @@
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id='abbreviation'])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'fragment')])"><xsl:apply-templates select="arr[@name='language_code']"/></xsl:if>
       <xsl:apply-templates select="str[@name='index_ethnic']" />
+      <xsl:apply-templates select="str[@name='index_findspot_upper_level']" />
+      <xsl:apply-templates select="str[@name='index_findspot_intermediate_level']" />
+      <xsl:apply-templates select="str[@name='index_findspot_lower_level']" />
       <xsl:apply-templates select="str[@name='index_external_resource']" />
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
       
@@ -167,6 +170,24 @@
     </td>
   </xsl:template>
 
+  <xsl:template match="str[@name='index_findspot_upper_level']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_findspot_intermediate_level']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_findspot_lower_level']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
   <xsl:template match="str[@name='index_external_resource']">
     <td>
       <xsl:choose>

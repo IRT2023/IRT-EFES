@@ -14,7 +14,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:provenance[@type='found']//tei:placeName" group-by="concat(@ref,'-',.)">
+      <xsl:for-each-group select="//tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" group-by="concat(@ref,'-',following-sibling::tei:placeName[not(@type)][1]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][1]/@ref)">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -23,11 +23,39 @@
             <xsl:text>_index</xsl:text>
           </field>
           <xsl:call-template name="field_file_path" />
-          <field name="index_item_name">
+          <field name="index_findspot_upper_level">
                 <xsl:value-of select="." />
           </field>
+          <field name="index_findspot_intermediate_level">
+            <xsl:choose>
+              <xsl:when test="following-sibling::tei:placeName[not(@type)]">
+                <xsl:value-of select="following-sibling::tei:placeName[not(@type)][1]" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:text>-</xsl:text>
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
+          <field name="index_findspot_lower_level">
+            <xsl:choose>
+              <xsl:when test="following-sibling::tei:placeName[@type='monuList']">
+                <xsl:value-of select="following-sibling::tei:placeName[@type='monuList'][1]" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:text>-</xsl:text>
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
           <field name="index_external_resource">
-            <xsl:value-of select="@ref" />
+            <xsl:choose>
+              <xsl:when test="following-sibling::tei:placeName[@type='monuList']">
+                <xsl:value-of select="following-sibling::tei:placeName[@type='monuList'][1]/@ref" />
+              </xsl:when>
+              <xsl:when test="following-sibling::tei:placeName[not(@type)]">
+                <xsl:value-of select="following-sibling::tei:placeName[not(@type)][1]/@ref" />
+              </xsl:when>
+              <xsl:otherwise><xsl:value-of select="@ref" /></xsl:otherwise>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
