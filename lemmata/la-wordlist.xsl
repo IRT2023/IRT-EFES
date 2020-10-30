@@ -33,22 +33,7 @@
             <xsl:for-each-group select="$lemmata//w"
                 group-by="translate(normalize-space(.), ' ', '')">
                 <xsl:sort select="translate(normalize-space(lower-case(.)), ' ', '')"/>
-                <word xml:lang="la">
-                    <token>
-                        <xsl:value-of select="translate(normalize-space(.), ' ', '')"/>
-                    </token>
-                    <lemma>
-                        <xsl:value-of select="@lemma"/>
-                    </lemma>
-                    <alllemmata>
-                        <xsl:for-each-group
-                            select="$lemmata//w[translate(normalize-space(.), ' ', '')=translate(normalize-space(current()), ' ', '')]"
-                            group-by="concat(translate(normalize-space(.), ' ', ''),@lemma)">
-                            <xsl:value-of select="@lemma"/>
-                            <xsl:text> </xsl:text>
-                        </xsl:for-each-group>
-                    </alllemmata>
-                </word>
+                <word><xsl:value-of select="translate(normalize-space(.), ' ', '')"/></word>
             </xsl:for-each-group>
         </body>
     </xsl:template>
