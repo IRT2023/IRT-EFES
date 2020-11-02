@@ -8,11 +8,9 @@
   <!-- Contains named templates for InsLib file structure (aka "metadata" aka "supporting data") -->
 
    <!-- Called from htm-tpl-structure.xsl -->
-  
-  <xsl:import href="../../../stylesheets/tei/navigation.xsl"/>
 
    <xsl:template name="inslib-body-structure">
-     <xsl:call-template name="inscriptionnav"/>
+     <xsl:call-template name="navigation"/>
 
      <p><b><i18n:text i18n:key="epidoc-xslt-inslib-description">Description</i18n:text>: </b>
      <xsl:choose>
@@ -356,6 +354,51 @@
       <xsl:attribute name="target">_blank</xsl:attribute>
       <xsl:apply-templates/>
     </a>
+  </xsl:template>
+  
+  <xsl:template name="navigation">
+    <xsl:variable name="filename"><xsl:value-of select="//t:idno[@type='filename']"/></xsl:variable>
+    <xsl:variable name="list" select="document(concat('file:',system-property('user.dir'),'/lemmata/all_inscriptions.xml'))//t:list"/>
+    <xsl:variable name="prev" select="$list/t:item[substring-before(@n,'.xml')=$filename]/preceding-sibling::t:item[1]/substring-before(@n,'.xml')"/>
+    <xsl:variable name="next" select="$list/t:item[substring-before(@n,'.xml')=$filename]/following-sibling::t:item[1]/substring-before(@n,'.xml')"/>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <ul class="pagination right">
+          <xsl:if test="$prev">
+            <li class="arrow">
+            <a>
+              <xsl:attribute name="href">
+                <xsl:if test="$prev">
+                  <xsl:text>./</xsl:text>
+                  <xsl:value-of select="$prev"/>
+                  <xsl:text>.html</xsl:text>
+                </xsl:if>
+              </xsl:attribute>
+              <xsl:text>&#171;</xsl:text>
+              <i18n:text>Previous: </i18n:text><xsl:value-of select="$prev"/>
+            </a>
+          </li>
+          </xsl:if>
+          
+          <xsl:if test="$next">
+            <li class="arrow">
+            <a>
+              <xsl:attribute name="href">
+                <xsl:if test="$next">
+                  <xsl:text>./</xsl:text>
+                  <xsl:value-of select="$next"/>
+                  <xsl:text>.html</xsl:text>
+                </xsl:if>
+              </xsl:attribute>
+              <i18n:text>Next: </i18n:text><xsl:value-of select="$next"/>
+              <xsl:text>&#187;</xsl:text>
+            </a>
+          </li>
+          </xsl:if>
+        </ul>
+      </div>
+    </div>
   </xsl:template>
 
   <!--  old code for inscription numbers now in <idno type="ircyr2012">:

@@ -8,7 +8,7 @@
     <xsl:template match="/">
         <body>
             <xsl:variable name="lemmata">
-                <xsl:for-each select="/list/inscription">
+                <xsl:for-each select="//t:list/t:item">
                     <xsl:variable name="filename">
                         <xsl:text>../webapps/ROOT/content/xml/epidoc/</xsl:text>
                         <xsl:value-of select="@n"/>
