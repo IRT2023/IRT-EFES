@@ -369,11 +369,9 @@
             <li class="arrow">
             <a>
               <xsl:attribute name="href">
-                <xsl:if test="$prev">
                   <xsl:text>./</xsl:text>
                   <xsl:value-of select="$prev"/>
                   <xsl:text>.html</xsl:text>
-                </xsl:if>
               </xsl:attribute>
               <xsl:text>&#171;</xsl:text>
               <i18n:text>Previous: </i18n:text><xsl:value-of select="$prev"/>
@@ -385,11 +383,9 @@
             <li class="arrow">
             <a>
               <xsl:attribute name="href">
-                <xsl:if test="$next">
                   <xsl:text>./</xsl:text>
                   <xsl:value-of select="$next"/>
                   <xsl:text>.html</xsl:text>
-                </xsl:if>
               </xsl:attribute>
               <i18n:text>Next: </i18n:text><xsl:value-of select="$next"/>
               <xsl:text>&#187;</xsl:text>

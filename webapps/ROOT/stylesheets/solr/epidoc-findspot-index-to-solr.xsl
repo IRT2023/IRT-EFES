@@ -15,6 +15,8 @@
   <xsl:template match="/">
     <add>
       <xsl:for-each-group select="//tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" group-by="concat(@ref,'-',following-sibling::tei:placeName[not(@type)][1]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][1]/@ref)">
+        <xsl:variable name="place" select="."/>
+        <xsl:variable name="place-n" select="document('../../content/xml/authority/places.xml')//tei:listPlace[descendant::tei:head=$place]/@n"/>
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -24,7 +26,9 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_findspot_upper_level">
-                <xsl:value-of select="." />
+            <xsl:value-of select="$place-n" />
+            <xsl:text>. </xsl:text>
+            <xsl:value-of select="." />
           </field>
           <field name="index_findspot_intermediate_level">
             <xsl:choose>
