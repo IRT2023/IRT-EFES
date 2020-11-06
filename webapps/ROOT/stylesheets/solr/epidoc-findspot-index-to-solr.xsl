@@ -67,7 +67,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:placeName">
+  <xsl:template match="tei:placeName[ancestor::tei:provenance[@type='found']]">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 
