@@ -40,8 +40,8 @@
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="$key">
-                <xsl:value-of select="$key/@n" />
-                <xsl:text>. </xsl:text>
+                <!--<xsl:value-of select="$key/@n" />
+                <xsl:text>. </xsl:text>-->
                 <xsl:value-of select="$key/tei:persName" />
                 <xsl:if test="$key/tei:floruit"><xsl:text> (</xsl:text><xsl:value-of select="$key/tei:floruit" /><xsl:text>)</xsl:text></xsl:if>
               </xsl:when>
@@ -49,6 +49,9 @@
                 <xsl:value-of select="$key-value" />
               </xsl:otherwise>
             </xsl:choose>
+          </field>
+          <field name="index_item_sort_name">
+            <xsl:value-of select="$key/@n" />
           </field>
           <field name="index_external_resource">
             <xsl:value-of select="$key/tei:idno" />

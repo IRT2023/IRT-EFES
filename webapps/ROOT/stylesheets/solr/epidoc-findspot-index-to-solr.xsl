@@ -26,8 +26,8 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_findspot_upper_level">
-            <xsl:value-of select="$place-n" />
-            <xsl:text>. </xsl:text>
+            <!--<xsl:value-of select="$place-n" />
+            <xsl:text>. </xsl:text>-->
             <xsl:value-of select="." />
           </field>
           <field name="index_findspot_intermediate_level">
@@ -49,6 +49,9 @@
                 <xsl:text>-</xsl:text>
               </xsl:otherwise>
             </xsl:choose>
+          </field>
+          <field name="index_item_sort_name">
+            <xsl:value-of select="$place-n" />
           </field>
           <field name="index_external_resource">
             <xsl:choose>

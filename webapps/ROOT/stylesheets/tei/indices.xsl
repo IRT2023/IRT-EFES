@@ -36,10 +36,10 @@
 
   <xsl:template match="result/doc">
     <tr>
-      <xsl:apply-templates select="str[@name='index_item_name']" />
+      <xsl:apply-templates select="str[@name='index_item_name']"/>
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
       <xsl:apply-templates select="str[@name='index_numeral_value']"/>
-      <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id='abbreviation'])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
+      <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'findspot', 'emperors', 'months')])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'fragment')])"><xsl:apply-templates select="arr[@name='language_code']"/></xsl:if>
       <xsl:apply-templates select="str[@name='index_ethnic']" />
       <xsl:apply-templates select="str[@name='index_findspot_upper_level']" />
@@ -60,13 +60,15 @@
         <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
-        <xsl:apply-templates select="doc[arr[@name='language_code']='la']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates>
+        <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='la']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+        <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='la']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
       </tbody>
     </table>
     <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
-        <xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates>
+        <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+        <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
       </tbody>
     </table>
       </xsl:when>
@@ -74,7 +76,8 @@
         <table class="index tablesorter">
           <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
           <tbody>
-            <xsl:apply-templates select="doc"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates>
+            <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+            <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
           </tbody>
         </table>
       </xsl:otherwise>
@@ -106,7 +109,7 @@
 
 
   <xsl:template match="str[@name='index_item_name']">
-    <th scope="row">
+    <th scope="row" class="larger_cell">
       <!-- Look up the value in the RDF names, in case it's there.
         The QQQQQ string is added at time of indexing to mark instances
         of symbols that expand to abbreviations -->
@@ -171,7 +174,7 @@
   </xsl:template>
 
   <xsl:template match="str[@name='index_findspot_upper_level']">
-    <td>
+    <td class="larger_cell">
       <xsl:value-of select="."/>
     </td>
   </xsl:template>
