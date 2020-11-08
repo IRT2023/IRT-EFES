@@ -30,11 +30,11 @@
                     <field name="index_item_name">
                         <xsl:choose>
                             <xsl:when test="$key">
-                                <xsl:choose>
+                                <!--<xsl:choose>
                                     <xsl:when test="contains($key/@n, 'r')"><xsl:value-of select="substring-after($key/@n, 'r')" /></xsl:when>
                                     <xsl:when test="contains($key/@n, 'e')"><xsl:value-of select="substring-after($key/@n, 'e')" /></xsl:when>
                                 </xsl:choose>
-                                <xsl:text>. </xsl:text>
+                                <xsl:text>. </xsl:text>-->
                                 <xsl:value-of select="$key/tei:term[1]" />
                                 <xsl:if test="$key/tei:term[2]">
                                     <xsl:text> / </xsl:text>
@@ -46,6 +46,9 @@
                                 <xsl:value-of select="@key" />
                             </xsl:otherwise>
                         </xsl:choose>
+                    </field>
+                    <field name="index_item_sort_name">
+                        <xsl:value-of select="$key/@n" />
                     </field>
                     <field name="language_code">
                         <xsl:value-of select="ancestor-or-self::*[@xml:lang][1]/@xml:lang"/>

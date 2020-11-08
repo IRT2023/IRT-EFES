@@ -26,8 +26,8 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_findspot_upper_level">
-            <xsl:value-of select="$place-n" />
-            <xsl:text>. </xsl:text>
+            <!--<xsl:value-of select="$place-n" />
+            <xsl:text>. </xsl:text>-->
             <xsl:value-of select="." />
           </field>
           <field name="index_findspot_intermediate_level">
@@ -50,6 +50,9 @@
               </xsl:otherwise>
             </xsl:choose>
           </field>
+          <field name="index_item_sort_name">
+            <xsl:value-of select="$place-n" />
+          </field>
           <field name="index_external_resource">
             <xsl:choose>
               <xsl:when test="following-sibling::tei:placeName[@type='monuList']">
@@ -67,7 +70,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:placeName">
+  <xsl:template match="tei:placeName[ancestor::tei:provenance[@type='found']]">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 
