@@ -358,7 +358,7 @@
   
   <xsl:template name="navigation">
     <xsl:variable name="filename"><xsl:value-of select="//t:idno[@type='filename']"/></xsl:variable>
-    <xsl:variable name="list" select="document(concat('file:',system-property('user.dir'),'/lemmata/all_inscriptions.xml'))//t:list"/>
+    <xsl:variable name="list" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/lemmata/all_inscriptions.xml'))//t:list"/>
     <xsl:variable name="prev" select="$list/t:item[substring-before(@n,'.xml')=$filename]/preceding-sibling::t:item[1]/substring-before(@n,'.xml')"/>
     <xsl:variable name="next" select="$list/t:item[substring-before(@n,'.xml')=$filename]/following-sibling::t:item[1]/substring-before(@n,'.xml')"/>
     
