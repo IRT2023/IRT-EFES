@@ -34,9 +34,28 @@
    </xsl:template>
 
    <xsl:template match="t:g">
-       <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
+      <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
+      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"></xsl:param>
+      <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
       <xsl:choose>
          <xsl:when test="starts-with($parm-leiden-style, 'edh')"/>
+         
+         <xsl:when test="$parm-edn-structure='inslib'">
+            <xsl:variable name="symbol" select="substring-after(@ref,'#')"/>
+            <xsl:variable name="symbol-id" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/symbols.xml'))//t:glyph[@xml:id=$symbol]"/>
+               <xsl:choose>
+                  <xsl:when test="$symbol-id//t:charProp[t:localName='glyph-display'][t:value[text()]] and $parm-edition-type='diplomatic'">
+                     <xsl:value-of select="$symbol-id//t:charProp[t:localName='glyph-display']/t:value"/>
+                  </xsl:when>
+                  <xsl:when test="$symbol-id//t:charProp[t:localName='text-display'][t:value[text()]]">
+                     <xsl:value-of select="$symbol-id//t:charProp[t:localName='text-display']/t:value"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <xsl:value-of select="@ref"/>
+                  </xsl:otherwise>
+               </xsl:choose>
+         </xsl:when>
+         
          <xsl:when test="starts-with(@ref,'#') and //t:glyph[@xml:id=substring-after(current()/@ref,'#')]">
             <xsl:for-each select="//t:glyph[@xml:id=substring-after(current()/@ref,'#')]">
                <xsl:choose>
