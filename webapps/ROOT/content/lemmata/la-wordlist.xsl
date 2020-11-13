@@ -5,12 +5,14 @@
 
     <!-- ============== run against all_inscriptions.xml ============== -->
     
+    <xsl:template name="ignore" match="//t:sic | //t:orig | //t:am | //t:surplus | //t:del[@rend='corrected']"></xsl:template>
+    
     <xsl:template match="/">
         <body>
             <xsl:variable name="lemmata">
                 <xsl:for-each select="//t:list/t:item">
                     <xsl:variable name="filename">
-                        <xsl:text>../webapps/ROOT/content/xml/epidoc/</xsl:text>
+                        <xsl:text>../xml/epidoc/</xsl:text>
                         <xsl:value-of select="@n"/>
                     </xsl:variable>
                     <xsl:for-each
@@ -21,11 +23,7 @@
                                     <xsl:value-of select="@lemma"/>
                                 </xsl:attribute>
                             </xsl:if>
-                            <xsl:choose>    
-                                <xsl:when test="descendant::t:reg"><xsl:value-of select=".//t:reg"/></xsl:when>
-                                <xsl:when test="descendant::t:corr"><xsl:value-of select=".//t:corr"/></xsl:when>
-                                <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
-                            </xsl:choose>
+                            <xsl:apply-templates select="."/>
                         </xsl:element>
                     </xsl:for-each>
                 </xsl:for-each>
