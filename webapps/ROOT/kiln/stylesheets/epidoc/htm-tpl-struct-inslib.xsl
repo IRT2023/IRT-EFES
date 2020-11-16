@@ -132,10 +132,9 @@
      </div>
 
      <div id="translation">
-       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-inslib-translation">Translation</i18n:text></h4>
          <xsl:variable name="editor" select="//t:teiHeader/t:fileDesc/t:titleStmt/t:editor"/>
          <xsl:for-each select="//t:div[@type='translation'][@xml:lang]">
-           <xsl:if test="@xml:lang"><h5><xsl:choose>
+           <xsl:if test="@xml:lang"><h4 class="slimmer"><xsl:choose>
              <xsl:when test="@xml:lang='en'"><xsl:text>English </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='fr'"><xsl:text>French </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='it'"><xsl:text>Italian </xsl:text></xsl:when>
@@ -143,7 +142,7 @@
              <xsl:when test="@xml:lang='la'"><xsl:text>Latin </xsl:text></xsl:when>
              <xsl:otherwise><xsl:value-of select="@xml:lang"/></xsl:otherwise>
            </xsl:choose>
-             <xsl:text>translation</xsl:text></h5></xsl:if>
+             <i18n:text i18n:key="epidoc-xslt-inslib-translation">translation</i18n:text></h4></xsl:if>
            <xsl:if test="@source">
              <xsl:variable name="source-id" select="substring-after(@source, '#')"/>
              <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$source-id]"/>
@@ -223,7 +222,7 @@
          </xsl:when>
          <xsl:otherwise>
            <xsl:for-each select="//t:facsimile[not(//t:graphic)]">
-             <xsl:text>None available (2019).</xsl:text>
+             <xsl:text>None available (2020).</xsl:text>
            </xsl:for-each>
          </xsl:otherwise>
        </xsl:choose>
