@@ -33,8 +33,12 @@
               <xsl:when test="$ref">
                 <xsl:choose>
                   <xsl:when test="$ref//tei:placeName[@xml:lang='en']"><xsl:value-of select="$ref//tei:placeName[@xml:lang='en'][1]" /></xsl:when>
-                  <xsl:when test="$ref//tei:placeName[@xml:lang='la']"><xsl:value-of select="$ref//tei:placeName[@xml:lang='la'][1]" /></xsl:when>
+                  <xsl:otherwise>
+                    <xsl:choose>
+                    <xsl:when test="$ref//tei:placeName[@xml:lang='la']"><xsl:value-of select="$ref//tei:placeName[@xml:lang='la'][1]" /></xsl:when>
                   <xsl:otherwise><xsl:value-of select="$ref//tei:placeName[1]" /></xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:otherwise>
                 </xsl:choose>
               </xsl:when>
               <xsl:otherwise>
@@ -45,7 +49,7 @@
           <field name="index_item_sort_name">
             <xsl:choose>
               <xsl:when test="$nymRef">
-                <xsl:value-of select="$nymRef" />
+                <xsl:value-of select="$nymRef[1]" />
               </xsl:when>
               <xsl:otherwise>
                 <xsl:value-of select="$nymRef-id" />
