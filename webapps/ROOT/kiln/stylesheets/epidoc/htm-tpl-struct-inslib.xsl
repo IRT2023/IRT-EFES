@@ -256,17 +256,23 @@
       <xsl:if test="//text()">
          <xsl:if test="t:width/text()">w:
             <xsl:value-of select="t:width"/>
-            <xsl:if test="t:height/text()">
+           <xsl:if test="t:height/text() | t:depth/text() | t:dim[@type='diameter']/text()">
                <xsl:text> x </xsl:text>
             </xsl:if>
          </xsl:if>
          <xsl:if test="t:height/text()">h:
             <xsl:value-of select="t:height"/>
+           <xsl:if test="t:depth/text() | t:dim[@type='diameter']/text()">
+             <xsl:text> x </xsl:text>
+           </xsl:if>
          </xsl:if>
          <xsl:if test="t:depth/text()">d:
             <xsl:value-of select="t:depth"/>
+           <xsl:if test="t:dim[@type='diameter']/text()">
+             <xsl:text> x </xsl:text>
+           </xsl:if>
          </xsl:if>
-         <xsl:if test="t:dim[@type='diameter']/text()">x diam.:
+         <xsl:if test="t:dim[@type='diameter']/text()">diam.:
             <xsl:value-of select="t:dim[@type='diameter']"/>
          </xsl:if>
       </xsl:if>
