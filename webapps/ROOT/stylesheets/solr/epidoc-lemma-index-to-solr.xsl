@@ -30,7 +30,7 @@
     <add>
       <xsl:for-each select="$lemmata">
         <xsl:variable name="lemma" select="replace(translate(., 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')" />
-        <xsl:variable name="w" select="$root//tei:w[ancestor::tei:div/@type='edition'][contains(concat(' ', @lemma, ' '), replace(translate($lemma, 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1'))]" />
+        <xsl:variable name="w" select="$root//tei:w[ancestor::tei:div/@type='edition'][contains(concat(' ', @lemma, ' '), $lemma)]" />
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -40,7 +40,7 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="normalize-unicode(replace(translate($lemma, 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1'),'NFD')" />
+            <xsl:value-of select="normalize-unicode($lemma,'NFD')" />
             <xsl:text> (</xsl:text>
             <xsl:value-of select="count($w)" />
             <xsl:text>)</xsl:text>
