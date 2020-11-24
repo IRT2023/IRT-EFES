@@ -51,21 +51,21 @@
             <xsl:choose>
                 <xsl:when
                     test="ancestor-or-self::t:*[@xml:lang][1]/@xml:lang='la' and
-                    document('./all_latin_words.xml')//word[translate(normalize-space(token), ' ', '')
-                    = translate(normalize-space(current()), ' ', '')][string(translate(normalize-space(lemma), ' ', ''))]">
+                    document('./all_latin_lemmata.xml')//word[translate(normalize-space(.), ' ', '')
+                    = translate(normalize-space(current()), ' ', '')][string(translate(normalize-space(@lemma), ' ', ''))]">
                     <xsl:attribute name="lemma">
                         <xsl:value-of
-                            select="translate(normalize-space(document('./all_latin_words.xml')//word[translate(normalize-space(token), ' ', '')=translate(normalize-space(current()), ' &#xA;', '')][1]/lemma), ' ', '')"
+                            select="translate(normalize-space(document('./all_latin_lemmata.xml')//word[translate(normalize-space(.), ' ', '')=translate(normalize-space(current()), ' &#xA;', '')][1]/@lemma), ' ', '')"
                         />
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when
                     test="ancestor-or-self::t:*[@xml:lang][1][@xml:lang='grc'] and
-                    document('./all_greek_words.xml')//word[normalize-unicode(lower-case(translate(normalize-space(token), ' ', '')))
-                    = normalize-unicode(lower-case(translate(normalize-space(current()), ' ', '')))][string(translate(normalize-space(lemma), ' ', ''))]">
+                    document('./all_greek_lemmata.xml')//word[normalize-unicode(lower-case(translate(normalize-space(.), ' ', '')))
+                    = normalize-unicode(lower-case(translate(normalize-space(current()), ' ', '')))][string(translate(normalize-space(@lemma), ' ', ''))]">
                     <xsl:attribute name="lemma">
                         <xsl:value-of
-                            select="normalize-unicode(translate(normalize-space(document('./all_greek_words.xml')//word[normalize-unicode(lower-case(translate(normalize-space(token), ' ', '')))=normalize-unicode(lower-case(translate(normalize-space(current()), ' &#xA;', '')))][1]/lemma), ' ', ''))"
+                            select="normalize-unicode(translate(normalize-space(document('./all_greek_lemmata.xml')//word[normalize-unicode(lower-case(translate(normalize-space(.), ' ', '')))=normalize-unicode(lower-case(translate(normalize-space(current()), ' &#xA;', '')))][1]/@lemma), ' ', ''))"
                         />
                     </xsl:attribute>
                 </xsl:when>
