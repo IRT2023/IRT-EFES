@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -122,13 +122,13 @@
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
                         <placeName nymRef="#Ῥώμη" ref="#roma">Ῥώμη<unclear>ς</unclear></placeName> <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> 
-                        <w  lemma="ἀνθύπατος" part="I"><supplied reason="lost">ἀνθ</supplied>υπα<unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/></w>
+                        <w lemma="ἀνθύπατος" part="I"><supplied reason="lost">ἀνθ</supplied>υπα<unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/></w>
                 </ab></div>
             <div subtype="fragment" n="b" type="textpart"><ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ων</unclear></orig><gap reason="lost" quantity="2" unit="character"/><orig>ο<unclear>ς</unclear></orig><gap reason="lost" quantity="2" unit="character"/><orig><unclear>ια</unclear></orig> <space quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
-                        <w><supplied reason="lost">τ</supplied>ούτ<space quantity="1" unit="character"/>ου</w> 
-                        <w>γυνὴ</w> <space quantity="1" unit="character"/><orig><unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="οὗτος"><supplied reason="lost">τ</supplied>ούτ<space quantity="1" unit="character"/>ου</w> 
+                        <w lemma="γυνή">γυνὴ</w> <space quantity="1" unit="character"/><orig><unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> 
                         <persName type="attested"><name nymRef="Μαρκελλιανός"><seg part="I"><supplied reason="lost">Μαρκ</supplied>ελλ<space quantity="1" unit="character"/>ιανο</seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                   </ab>
@@ -150,7 +150,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>290: Eponimo - questore di Roma ? - (essendo- del ?) proconsole -. 
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>290: Eponimo - questore di Roma ? - (essendo- del ?) proconsole -. 
                289: Eponimo di Im-  di questo moglie- (essendo- di?) Marcelliano -</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><note>a</note> . . (magistrate?) of Rome [. . . ] proconsul [ . . . <note>b</note> . . . ] his wife . . . Mark]elliano[s . . .
             </p></div>

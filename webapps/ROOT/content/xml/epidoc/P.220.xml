@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -134,10 +134,10 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
                     <lb n="1"/><persName type="attested"><name nymRef="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name nymRef="Sempronius">Sempronio</name>
-                    <name nymRef="Caius"><expan><abbr>C</abbr><ex>aii</ex></expan></name> <w><expan><abbr>f</abbr><ex>ilio</ex></expan></w> 
-                    <lb n="2"/><name nymRef="Longus"><unclear>L</unclear>ongo</name></persName> <w><expan><abbr>duplicar</abbr><ex>io</ex></expan></w>
-                    <lb n="3"/> <w><expan><abbr>c</abbr><ex>o</ex><abbr><unclear>h</unclear>ortis</abbr></expan></w>
-                    <placeName type="ethnic" nymRef="#Hispanus"  ref="#hispania"><expan><abbr>Hispanor</abbr><ex>um</ex></expan></placeName> 
+                    <name nymRef="Caius"><expan><abbr>C</abbr><ex>aii</ex></expan></name> <w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w> 
+                    <lb n="2"/><name nymRef="Longus"><unclear>L</unclear>ongo</name></persName> <w lemma="duplicarius"><expan><abbr>duplicar</abbr><ex>io</ex></expan></w>
+                    <lb n="3"/> <w lemma="cohors"><expan><abbr>c</abbr><ex>o</ex><abbr><unclear>h</unclear>ortis</abbr></expan></w>
+                    <placeName type="ethnic" nymRef="#Hispanus" ref="#hispania"><expan><abbr>Hispanor</abbr><ex>um</ex></expan></placeName> 
                     <lb n="4"/> <space quantity="1" unit="line"/> 
                     <lb n="5"/> <space quantity="3" unit="character"/>
                     <persName type="attested"><name nymRef="Venusta">Ve<unclear>n</unclear>usta</name> <w lemma="liberta"><expan><abbr>lib</abbr><ex>erta</ex></expan></w></persName> <space quantity="3" unit="character"/>

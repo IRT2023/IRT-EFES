@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-03" who="Pietro">metadata</change>
@@ -115,12 +115,12 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="emperor" key="iulia" cert="low"><name nymRef="Ἰουλία"><supplied reason="lost">Ἰουλίαν</supplied></name> <w>τὰν</w>
-                    <lb n="2"/><persName  type="emperor" key="augustus"><name  nymRef="Καῖσαρ"><supplied reason="lost">Καίσαρος</supplied></name> <name  nymRef="Σεβαστός"><supplied reason="lost">Σεβ</supplied>αστῶ</name></persName>
+                    <lb n="1"/><persName type="emperor" key="iulia" cert="low"><name nymRef="Ἰουλία"><supplied reason="lost">Ἰουλίαν</supplied></name> <w lemma="ὁ">τὰν</w>
+                    <lb n="2"/><persName type="emperor" key="augustus"><name nymRef="Καῖσαρ"><supplied reason="lost">Καίσαρος</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σεβ</supplied>αστῶ</name></persName>
                     <lb n="3"/><w lemma="θυγάτηρ"><supplied reason="lost" cert="low">θυγατέρ</supplied>α</w></persName>
-                    <lb n="4"/><gap reason="lost" quantity="8"  unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ος</seg></name></persName>
-                    <lb n="5"/><gap reason="lost" quantity="6"  unit="character"/><orig><unclear>α</unclear>μμον</orig>
-                    <lb n="6"/><gap reason="lost" quantity="2" unit="character"/><supplied cert="low" reason="lost"><w>τᾶι</w></supplied> <persName  type="divine" key="artemis"><name nymRef="Ἄρτεμις"><supplied reason="lost" cert="low">Ἀρτάμι</supplied>τι</name></persName>
+                    <lb n="4"/><gap reason="lost" quantity="8" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ος</seg></name></persName>
+                    <lb n="5"/><gap reason="lost" quantity="6" unit="character"/><orig><unclear>α</unclear>μμον</orig>
+                    <lb n="6"/><gap reason="lost" quantity="2" unit="character"/><supplied cert="low" reason="lost"><w lemma="ὁ">τᾶι</w></supplied> <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις"><supplied reason="lost" cert="low">Ἀρτάμι</supplied>τι</name></persName>
                 </ab>
 </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>Transcription (Reynolds)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -125,12 +125,12 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="column" n="1" type="textpart"> 
             <ab><lb n="1"/> <persName type="attested" key="lgpn:V1-64323"><name nymRef="Ἰάσων">Ἰάσονος</name></persName>
-                        <lb n="2"/> <w>τόπος</w> </ab>
+                        <lb n="2"/> <w lemma="τόπος">τόπος</w> </ab>
                         
-                        <div  subtype="column" n="2" type="textpart">
+                        <div subtype="column" n="2" type="textpart">
                            <div subtype="section" n="a" type="textpart"><ab><lb n="1"/><persName type="attested" key="lgpn:V1-63605"><name nymRef="Διοσκoυρίδης">Διοσκουρίδης</name> </persName>
                        <lb n="2"/><space quantity="1" unit="line"/> 
-                              <lb n="3"/> <w>ἐ<unclear>π</unclear>ῆλθε</w> </ab>
+                              <lb n="3"/> <w lemma="ἐπέρχομαι">ἐ<unclear>π</unclear>ῆλθε</w> </ab>
                         </div>
                            <div subtype="section" n="b" type="textpart"><ab> <lb n="1"/><gap reason="illegible" quantity="1" unit="line"/>
                               <lb n="12"/><persName type="attested"><name nymRef="Ἄραχος">Ἀράχω</name></persName> </ab>
@@ -152,7 +152,7 @@
                         <lb n="2"/><persName type="attested"><name nymRef="Ἀγαθοκλῆς">Ἀγαθοκλέ<unclear>ο</unclear>υς</name></persName> 
                         <lb n="3"/><placeName type="ethnic" nymRef="#Ἰδουμαῖος" ref="#idoumaios">Ἰδουμαῖος</placeName> </persName>
                         <lb n="4"/><orig>Α</orig> <space quantity="4" unit="character"/> <orig>Ο</orig> 
-                        <lb n="5"/> <w>ἦλ<space quantity="4" unit="character"/>θε</w></ab></div>
+                        <lb n="5"/> <w lemma="ἔρχομαι">ἦλ<space quantity="4" unit="character"/>θε</w></ab></div>
                     
 </div>
 </div>

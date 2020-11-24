@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -159,28 +159,28 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
                     <lb n="0"/><supplied reason="lost"><persName type="divine" key="zeus"><name nymRef="Iupiter">Iupiter</name> 
-                       <w><expan><abbr>O</abbr><ex>ptime</ex></expan></w>
-                        <w><expan><abbr>M</abbr><ex>axime</ex></expan></w></persName> 
+                       <w lemma="bonus"><expan><abbr>O</abbr><ex>ptime</ex></expan></w>
+                        <w lemma="maximus"><expan><abbr>M</abbr><ex>axime</ex></expan></w></persName> 
                        <w lemma="tu">te</w> 
-                       <w lemma="precor">precamur</w> <w>quaesumusque</w> <w lemma="ut">ut</w> <w lemma="tu">tu</w> 
+                       <w lemma="precor">precamur</w> <w lemma="quaeroque">quaesumusque</w> <w lemma="ut">ut</w> <w lemma="tu">tu</w> 
                        <w lemma="imperator">imperatorem</w></supplied>
                     <lb n="0a"/><gap reason="lost" quantity="1" unit="line"/>
                     <lb n="0b"/><supplied reason="lost"><w lemma="saluus">saluom</w> 
                        <w lemma="incolumis">incolumemque</w> <w lemma="conseruo">conserues</w> 
                        <w lemma="et">et</w> <w lemma="in">in</w> <w lemma="reliquus">reliquom</w> 
                        <w lemma="malus">malae</w> <w lemma="ualetudo">ualetudinis</w></supplied>
-                    <lb n="1"/> <w><supplied reason="lost">prim</supplied>o</w> 
+                    <lb n="1"/> <w lemma="primus"><supplied reason="lost">prim</supplied>o</w> 
             <w lemma="quoque">q<supplied reason="lost">uoque</supplied></w><supplied reason="lost"><w lemma="tempus">tempore</w>
                     <w lemma="in">in</w> <w lemma="urbs">urbem</w> <placeName nymRef="#Roma" ref="#roma">Romam</placeName> 
             <w lemma="sisto">sistas</w> <w lemma="astus">astu</w> <w lemma="is">ea</w> <w lemma="ita">ita</w> 
                     <w lemma="facio">faxis</w> <w lemma="tum">tum</w> <w lemma="tu">tibi</w> <w lemma="bos">boue</w> 
-            <w><expan><abbr>aurat</abbr><ex>a</ex></expan></w> <w>uouemus</w> <w lemma="sum">esse</w> <w lemma="futurus">futurum</w></supplied>
+            <w lemma="auratus"><expan><abbr>aurat</abbr><ex>a</ex></expan></w> <w lemma="voveo">uouemus</w> <w lemma="sum">esse</w> <w lemma="futurus">futurum</w></supplied>
                     <lb n="2"/><persName type="divine" key="hera"><supplied reason="lost"><name nymRef="Iuno">Iuno</name></supplied> 
-            <w><supplied reason="lost">Regin</supplied>a</w></persName> 
+            <w lemma="regina"><supplied reason="lost">Regin</supplied>a</w></persName> 
             <w lemma="qui">quae</w> <supplied reason="lost"><w lemma="in">in</w> <w lemma="uerbum">uerba</w> 
                <persName type="divine" key="zeus"><name nymRef="Iupiter">Ioui</name> 
-               <w><expan><abbr>O</abbr><ex>ptimo</ex></expan></w>
-                       <w><expan><abbr>M</abbr><ex>aximo</ex></expan></w></persName> 
+               <w lemma="bonus"><expan><abbr>O</abbr><ex>ptimo</ex></expan></w>
+                       <w lemma="maximus"><expan><abbr>M</abbr><ex>aximo</ex></expan></w></persName> 
                <w lemma="bos">boue</w> <w lemma="auro">aurato</w> <w lemma="uoueo">uouimus</w></supplied>
                     <lb n="3"/><supplied reason="lost"><w lemma="sum">esse</w></supplied> 
             <w lemma="futurus">futurum</w> <supplied reason="lost"><w lemma="quod">quod</w>
@@ -193,24 +193,24 @@
                     <lb n="5"/><persName type="divine" key="athena"><name nymRef="Minerua"><supplied reason="lost">Minerua</supplied></name></persName> 
             <w lemma="qui">quae</w> <w lemma="in">in</w> <w lemma="uerbum">u<supplied reason="lost">erba</supplied></w>
                         <supplied reason="lost"><persName type="divine" key="zeus"><name nymRef="Iupiter">Ioui</name> 
-                           <w><expan><abbr>O</abbr><ex>ptimo</ex></expan></w> 
-               <w><expan><abbr>M</abbr><ex>aximo</ex></expan></w></persName>
+                           <w lemma="bonus"><expan><abbr>O</abbr><ex>ptimo</ex></expan></w> 
+               <w lemma="maximus"><expan><abbr>M</abbr><ex>aximo</ex></expan></w></persName>
                         <w lemma="bos">boue</w> <w lemma="auro">aurato</w> <w lemma="uoueo">uouimus</w> <w lemma="sum">esse</w></supplied>
-                    <lb n="6"/> <w><supplied reason="lost">fut</supplied>urum</w> 
+                    <lb n="6"/> <w lemma="futurus"><supplied reason="lost">fut</supplied>urum</w> 
             <w lemma="quod">quo<supplied reason="lost">d</supplied></w> <supplied reason="lost"><w lemma="hodie">hodie</w> 
                         <w lemma="uoueo">uouimus</w> <w lemma="astus">astu</w> <w lemma="is">ea</w> <w lemma="ita">ita</w> 
                <w lemma="facio">faxis</w> <w lemma="tum">tum</w> <w lemma="tu">tibi</w> <w lemma="in">in</w></supplied>
-                    <lb n="7"/> <w><supplied reason="lost">eade</supplied>m</w> 
+                    <lb n="7"/> <w lemma="eadem"><supplied reason="lost">eade</supplied>m</w> 
             <w lemma="uerbum">uerba</w> <w lemma="bos">b<supplied reason="lost">oue</supplied></w> 
                     <supplied reason="lost"><w lemma="auro">aurata</w> <w lemma="uoueo">uouemus</w> 
                        <w lemma="sum">esse</w> <w lemma="futurus">futurum</w></supplied>
                     <lb n="8"/><supplied reason="lost"><w lemma="salus">Salus</w></supplied> 
-                       <w><supplied reason="lost">pu</supplied>blica</w> <w lemma="populus">populi</w> 
+                       <w lemma="publicus"><supplied reason="lost">pu</supplied>blica</w> <w lemma="populus">populi</w> 
                     <supplied reason="lost"><placeName type="ethnic" nymRef="#Romanus" ref="#roma">Romani</placeName> <w lemma="qui">quae</w> <w lemma="in">in</w> 
                        <w lemma="uerbum">uerba</w> <persName type="divine" key="zeus"><name nymRef="Iupiter">Ioui</name> 
-                          <w><expan><abbr>O</abbr><ex>ptimo</ex></expan></w>
-                        <w><expan><abbr>M</abbr><ex>aximo</ex></expan></w></persName></supplied>
-               <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">Sal</supplied>us</w>
+                          <w lemma="bonus"><expan><abbr>O</abbr><ex>ptimo</ex></expan></w>
+                        <w lemma="maximus"><expan><abbr>M</abbr><ex>aximo</ex></expan></w></persName></supplied>
+               <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="salus"><supplied reason="lost">Sal</supplied>us</w>
                     <w part="I">public<supplied reason="lost">a</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                <gap reason="lost" extent="unknown" unit="line"/>
          </ab>

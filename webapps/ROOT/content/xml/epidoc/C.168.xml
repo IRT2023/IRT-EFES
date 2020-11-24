@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,7 +121,7 @@
                     <name nymRef="Appius">A<unclear>pp</unclear><supplied reason="lost">ius</supplied></name></persName> <gap reason="lost" quantity="8" unit="character" precision="low"/>
                     <lb n="2"/><w lemma="ueteranus" part="I"><expan><abbr>uet</abbr><ex>eranus</ex></expan></w> <g ref="symbols.xml#stop"/>
                     <w lemma="legio">leg<supplied reason="lost">ionis</supplied></w> <supplied reason="lost"><num value="10">X</num> </supplied>
-                    <lb n="3"/> <w>Fretens<unclear>i</unclear><supplied reason="lost">s</supplied></w> <gap reason="lost" quantity="5" unit="character" precision="low"/>                    
+                    <lb n="3"/> <w lemma="Fretensis">Fretens<unclear>i</unclear><supplied reason="lost">s</supplied></w> <gap reason="lost" quantity="5" unit="character" precision="low"/>                    
                     <lb n="4"/> <space quantity="1" unit="character"/> 
                     <w lemma="annus">anno<unclear>r</unclear><supplied reason="lost">um</supplied></w> <gap reason="lost" quantity="5" unit="character" precision="low"/>
                     <lb n="5"/> <space quantity="1" unit="character"/>

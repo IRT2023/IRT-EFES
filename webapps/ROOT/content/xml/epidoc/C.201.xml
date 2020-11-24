@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-30" who="Pietro">metadata</change>
@@ -121,28 +121,28 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><persName type="emperor" key="antoninuspius"><w><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w>
-                     <name nymRef="Caesar"><supplied reason="lost">Caesar</supplied></name> <persName type="emperor" key="hadrianus"><w><supplied reason="lost">diui</supplied></w> 
+               <lb n="1"/><persName type="emperor" key="antoninuspius"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w>
+                     <name nymRef="Caesar"><supplied reason="lost">Caesar</supplied></name> <persName type="emperor" key="hadrianus"><w lemma="divus"><supplied reason="lost">diui</supplied></w> 
                <name nymRef="Hadrianus"><supplied reason="lost">Hadriani</supplied></name></persName>
-                    <w><expan><abbr>fil</abbr><ex>ius</ex></expan></w> 
-                  <persName type="emperor" key="traianus"><supplied reason="lost"><w>diui</w></supplied> <name nymRef="Traianus"><supplied reason="lost">Traiani</supplied></name>
-                    <lb n="2"/><name nymRef="Parthicus"><supplied reason="lost">Parthici</supplied></name></persName> <w><supplied reason="lost"><expan><abbr>nep</abbr><ex>os</ex></expan></supplied></w>
-                       <persName type="emperor"  key="nerva"><w><supplied reason="lost">diui</supplied></w> <name nymRef="Nerua"><supplied reason="lost">Ner</supplied>uae</name></persName>
-                       <w><expan><abbr>pron</abbr><supplied reason="lost"><abbr>ep</abbr><ex>os</ex></supplied></expan></w> 
+                    <w lemma="filius"><expan><abbr>fil</abbr><ex>ius</ex></expan></w> 
+                  <persName type="emperor" key="traianus"><supplied reason="lost"><w lemma="divus">diui</w></supplied> <name nymRef="Traianus"><supplied reason="lost">Traiani</supplied></name>
+                    <lb n="2"/><name nymRef="Parthicus"><supplied reason="lost">Parthici</supplied></name></persName> <w lemma="nepos"><supplied reason="lost"><expan><abbr>nep</abbr><ex>os</ex></expan></supplied></w>
+                       <persName type="emperor" key="nerva"><w lemma="divus"><supplied reason="lost">diui</supplied></w> <name nymRef="Nerua"><supplied reason="lost">Ner</supplied>uae</name></persName>
+                       <w lemma="pronepos"><expan><abbr>pron</abbr><supplied reason="lost"><abbr>ep</abbr><ex>os</ex></supplied></expan></w> 
                     <name nymRef="Titus"><supplied reason="lost"><expan><abbr>T</abbr><ex>itus</ex></expan></supplied></name> 
                   <name nymRef="Aelius"><supplied reason="lost">Aelius</supplied></name>
                    <lb n="3"/><name nymRef="Antoninus"><supplied reason="lost">Antoninus</supplied></name> <name nymRef="Pius"><supplied reason="lost">Pius</supplied></name> 
                   <name nymRef="Augustus"><supplied reason="lost"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></supplied></name></persName> 
-                        <w><supplied reason="lost"><expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied></w> 
-                  <w><expan><abbr><supplied reason="lost">m</supplied>ax</abbr><ex>imus</ex></expan></w>
-                    <w><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> 
-                  <w><expan><abbr>p<supplied reason="lost">ot</supplied></abbr><ex>estate</ex></expan></w> <supplied reason="lost"><num>. .</num></supplied>
-                    <w><supplied reason="lost" cert="low"><expan><abbr>imp</abbr><ex>erator</ex></expan></supplied></w> <num value="2"><supplied reason="lost" cert="low">II</supplied></num>
+                        <w lemma="pontifex"><supplied reason="lost"><expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied></w> 
+                  <w lemma="maximus"><expan><abbr><supplied reason="lost">m</supplied>ax</abbr><ex>imus</ex></expan></w>
+                    <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> 
+                  <w lemma="potestas"><expan><abbr>p<supplied reason="lost">ot</supplied></abbr><ex>estate</ex></expan></w> <supplied reason="lost"><num>. .</num></supplied>
+                    <w lemma="imperator"><supplied reason="lost" cert="low"><expan><abbr>imp</abbr><ex>erator</ex></expan></supplied></w> <num value="2"><supplied reason="lost" cert="low">II</supplied></num>
                     <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
                        <supplied reason="lost"> <space quantity="1" unit="character"/> 
-                        <w>per</w></supplied> <persName type="attested" key="pir2-i-0484a"><name nymRef="Quintus"><supplied reason="lost"><expan><abbr>Q</abbr><ex>uintum</ex></expan></supplied></name>
+                        <w lemma="per">per</w></supplied> <persName type="attested" key="pir2-i-0484a"><name nymRef="Quintus"><supplied reason="lost"><expan><abbr>Q</abbr><ex>uintum</ex></expan></supplied></name>
                      <gap reason="lost" extent="unknown" unit="character"/><name nymRef="Iulius"><supplied reason="lost" cert="low">Iuliu</supplied>m</name> 
-                    <name nymRef="Potitus">Potitu<supplied reason="lost">m</supplied></name></persName> <w><supplied reason="lost"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ulem</ex></expan></supplied></w>
+                    <name nymRef="Potitus">Potitu<supplied reason="lost">m</supplied></name></persName> <w lemma="proconsul"><supplied reason="lost"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ulem</ex></expan></supplied></w>
                 </ab>
          </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -130,13 +130,14 @@
                     <name nymRef="Aurelius">Aureli</name> <name nymRef="Antoninus">An<lb n="2" break="no"/> <space quantity="2" unit="character"/>tonini</name> 
                     <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> <name nymRef="Armeniacus">Armeniaci</name></persName></date> <w lemma="et">et</w> 
                     <date ref="https://godot.date/id/vBoHBCH7XoN7DW3DqD9QXi"><persName type="emperor" key="luciusverus"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name nymRef="Aurelius">Aureli</name> <name nymRef="Verus">Veri</name> <name nymRef="Armeniacus">Armeniaci</name> 
-                    <name nymRef="Parthicus"><expan><abbr>Parthi</abbr><ex>ci</ex></expan></name> <w>Maximi</w></persName></date></date> <w>recep<lb n="3" break="no"/> <space quantity="2" unit="character"/>tacula</w> 
+                    <name nymRef="Parthicus"><expan><abbr>Parthi</abbr><ex>ci</ex></expan></name> <w lemma="maximus">Maximi</w></persName></date></date> <w lemma="receptaculum">recep<lb 
+                       n="3" break="no"/> <space quantity="2" unit="character"/>tacula</w> 
                     <w lemma="pecunia">pecunia</w> <w lemma="publicus"><expan><abbr>p</abbr><ex>ublica</ex></expan></w> <space quantity="40" unit="character"/>
                     <lb n="3a"/> <space quantity="8" unit="line"/>
                 </ab></div><div xml:lang="grc" type="textpart"><ab>
-                    <lb n="4"/><persName type="attested"><name nymRef="Ναιουϊανός"><supplied reason="omitted">Ναι</supplied>υιανὸς</name></persName> <w>ὁ</w> <w><expan><abbr>κρ</abbr><ex>άτιστος</ex></expan></w> <space quantity="35" unit="character"/>
-                    <lb n="5"/> <w>θεμελίων</w> <w>κατεσκεύασεν</w> <w lemma="καί">καὶ</w> <w>ἀφιέρωσεν</w> <w>μετὰ</w> <persName type="attested"><name nymRef="Σίλιος">Σειλίου</name><g ref="symbols.xml#leaf"/> <lb n="6"/><name nymRef="Πλαύτιος">Πλαυτίου</name> <name nymRef="Ἁτεριανός">Ἀτεριανοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w>κρατίστου</w>
-                    <w>ταμί<supplied reason="omitted">ου</supplied></w> <space quantity="15" unit="character"/>
+                    <lb n="4"/><persName type="attested"><name nymRef="Ναιουϊανός"><supplied reason="omitted">Ναι</supplied>υιανὸς</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="κράτιστος"><expan><abbr>κρ</abbr><ex>άτιστος</ex></expan></w> <space quantity="35" unit="character"/>
+                    <lb n="5"/> <w lemma="θεμέλιος">θεμελίων</w> <w lemma="κατασκευάζω">κατεσκεύασεν</w> <w lemma="καί">καὶ</w> <w lemma="ἀφιερόω">ἀφιέρωσεν</w> <w lemma="μετά">μετὰ</w> <persName type="attested"><name nymRef="Σίλιος">Σειλίου</name><g ref="symbols.xml#leaf"/> <lb n="6"/><name nymRef="Πλαύτιος">Πλαυτίου</name> <name nymRef="Ἁτεριανός">Ἀτεριανοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="κράτιστος">κρατίστου</w>
+                    <w lemma="ταμίας">ταμί<supplied reason="omitted">ου</supplied></w> <space quantity="15" unit="character"/>
                 </ab>
 </div>
 </div>

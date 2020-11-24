@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -117,7 +117,7 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/RNggAsWubNbEYjc4fxjJWC"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="1">α</num> <rs type="month" key="pachon"><w>Παχ<lb n="2" break="no"/>ὼν</w></rs> <num value="21">κα</num></date> 
+                    <lb n="1"/><date ref="https://godot.date/id/RNggAsWubNbEYjc4fxjJWC"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="1">α</num> <rs type="month" key="pachon"><w lemma="Παχών">Παχ<lb n="2" break="no"/>ὼν</w></rs> <num value="21">κα</num></date> 
                     <persName type="attested"><name nymRef="Πύθων">Π<lb n="3" break="no"/>ύθων</name> <persName type="attested"><name nymRef="Μαλλυλᾶς">Μ<lb n="4" break="no"/>αλλυλο
                        <lb n="5" break="no"/>ῦ</name></persName></persName> 
                     <date type="life-span" dur="P4Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="4"><unclear>δ</unclear></num> </date>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
@@ -129,14 +129,14 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
              <ab>
-                    <lb n="1"/><persName type="divine" key="kyrios"><w>θεὸϲ</w></persName> <w>βοηθὸϲ</w>
-                     <persName type="attested" key="lgpn:V1-62780"><name nymRef="Ἀλυπώ">Ἀλοίπωτι</name></persName> <w>ϲὺν</w> <w lemma="τέκνον">τέκνοιϲ</w>
+                    <lb n="1"/><persName type="divine" key="kyrios"><w lemma="θεός">θεὸϲ</w></persName> <w lemma="βοηθός">βοηθὸϲ</w>
+                     <persName type="attested" key="lgpn:V1-62780"><name nymRef="Ἀλυπώ">Ἀλοίπωτι</name></persName> <w lemma="σύν">ϲὺν</w> <w lemma="τέκνον">τέκνοιϲ</w>
              </ab>
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div type="translation" xml:lang="en" source="#jmr-jbwp-rgg2003" ><p>God is (?be) the help of Aloipo and <supplied reason="subaudible">her</supplied> children.</p></div>
-            <div type="translation" xml:lang="en" resp="#edd" ><p>God is (?be) the help of Alypos and <supplied reason="subaudible">his</supplied> children.</p></div>
+            <div type="translation" xml:lang="en" source="#jmr-jbwp-rgg2003"><p>God is (?be) the help of Aloipo and <supplied reason="subaudible">her</supplied> children.</p></div>
+            <div type="translation" xml:lang="en" resp="#edd"><p>God is (?be) the help of Alypos and <supplied reason="subaudible">his</supplied> children.</p></div>
          </div>
          
          <div type="commentary">

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -130,10 +130,10 @@
                     <lb n="1"/><date><date ref="https://godot.date/id/MKvpSxXFU2U4Pacfo3wBmg"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="15">ιε</num></date> <space quantity="2" unit="character"/> <date ref="https://godot.date/id/5H5gZigQeHgNXSJRkgde97"><w lemma="ἐπί">ἐπὶ</w> <roleName><w lemma="ἱερεύς">ἱερέ<space quantity="1" unit="character"/>ως</w></roleName>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-65953"><name nymRef="Φιλίσκος">Φιλίσκω</name> <persName type="attested" key="lgpn:V1-63908"><name nymRef="Εὐφάνης">Εὐφάνευς</name></persName></persName></date>
-                    <lb n="3"/><date ref="https://godot.date/eponymous_office/Xjzq3894YE45FNuvbNvcr9/hgzEdPhFEnwhCSXLnBWMAC"><persName type="emperor" key="augustus"><w>Αὐτοκράτορος</w> <w lemma="δέ">δὲ</w> <name nymRef="Καῖσαρ">Καίσα
-                        <lb n="4" break="no"/>ρος</name> <w>Θεῶι</w> <w lemma="υἱός">υἱῶ</w> <name nymRef="Σεβαστός">Σεβαστῶ</name></persName>
+                    <lb n="3"/><date ref="https://godot.date/eponymous_office/Xjzq3894YE45FNuvbNvcr9/hgzEdPhFEnwhCSXLnBWMAC"><persName type="emperor" key="augustus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορος</w> <w lemma="δέ">δὲ</w> <name nymRef="Καῖσαρ">Καίσα
+                        <lb n="4" break="no"/>ρος</name> <w lemma="θεός">Θεῶι</w> <w lemma="υἱός">υἱῶ</w> <name nymRef="Σεβαστός">Σεβαστῶ</name></persName>
                     <lb n="5"/><persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος">Βαρκαίω</name> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-64220"><name nymRef="Θεύχρηστος">Θεοχρήστω</name></persName></persName></date></date>
-                    <lb n="6"/> <roleName><w>Νομοφύλακ<supplied reason="omitted">ε</supplied>ς</w></roleName>
+                    <lb n="6"/> <roleName><w lemma="νομοφύλαξ">Νομοφύλακ<supplied reason="omitted">ε</supplied>ς</w></roleName>
                     <lb n="7"/><persName type="attested" key="lgpn:V1-62989"><name nymRef="Ἀπολλώνιος">Ἀπολλώνιος</name> <persName type="attested" key="lgpn:V1-63802"><name nymRef="Εὔιππος">Εὐίππω</name></persName></persName>
                     <lb n="8"/><persName type="attested" key="lgpn:V1-64113"><name nymRef="Θεόδωρος">Θεόδωρος</name> <persName type="attested" key="lgpn:V1-63213"><name nymRef="Ἀρίστων">Ἀρίστωνος</name></persName></persName>
                     <lb n="9"/><persName type="attested" key="lgpn:V1-62990"><name nymRef="Ἀπολλώνιος">Ἀπολλώνιος</name> <persName type="attested" key="lgpn:V1-63795"><name nymRef="Εὐδαίμων">Εὐδαίμονος</name></persName></persName>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
             </textClass>
         <creation>Transcription (Reynolds).</creation></profileDesc>
         <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
             <change when="2011-08-11" who="Pietro">entered and tagged text</change>
@@ -130,15 +130,15 @@
 	<lb n="2"/><name nymRef="Caesar">Ca<unclear>esa</unclear>r</name> 
                <name nymRef="Augustus"><unclear>Augus</unclear>tus</name>		
 	<lb n="3"/><name nymRef="Germanicus">G<unclear>e</unclear>r<supplied reason="lost">m</supplied><unclear>an</unclear>i<supplied reason="lost">cu</supplied><unclear>s</unclear></name> 
-               <w><expan><abbr><supplied reason="lost">I</supplied><unclear>m</unclear>p</abbr><ex>erator</ex></expan></w></persName></date>		
+               <w lemma="imperator"><expan><abbr><supplied reason="lost">I</supplied><unclear>m</unclear>p</abbr><ex>erator</ex></expan></w></persName></date>		
 <lb n="4"/><w lemma="uia">ui<unclear>a</unclear><supplied reason="lost">s</supplied></w> 
-                <w><supplied reason="lost">fe</supplied><unclear>cit</unclear></w> <w><unclear>per</unclear></w>	
+                <w lemma="facio"><supplied reason="lost">fe</supplied><unclear>cit</unclear></w> <w lemma="per"><unclear>per</unclear></w>	
 	<lb n="5"/><persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucium</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Pedius"><unclear>Pe</unclear><supplied reason="lost">dium</supplied></name> 
                 <name nymRef="Blaesus"><supplied reason="lost">Blaes</supplied>um</name>	
-	<lb n="6"/> <w><expan><abbr>p<supplied reason="lost">roco</supplied></abbr><supplied reason="lost"><ex>n</ex><abbr>s</abbr><ex>ulem</ex></supplied></expan></w></persName> 
+	<lb n="6"/> <w lemma="proconsul"><expan><abbr>p<supplied reason="lost">roco</supplied></abbr><supplied reason="lost"><ex>n</ex><abbr>s</abbr><ex>ulem</ex></supplied></expan></w></persName> 
                 <placeName nymRef="#Creta et Cyrenae" ref="#creteandcyrene"><placeName nymRef="#Creta" ref="#crete"><supplied reason="lost">Cretae</supplied></placeName> 
                 <w lemma="et">e<supplied reason="lost">t</supplied></w>		
-	<lb n="7"/><placeName  nymRef="#Cyrenae" ref="#cyrene"><supplied reason="lost" cert="low">Cyrenarum</supplied></placeName></placeName> 
+	<lb n="7"/><placeName nymRef="#Cyrenae" ref="#cyrene"><supplied reason="lost" cert="low">Cyrenarum</supplied></placeName></placeName> 
                 <supplied reason="lost"> <space extent="unknown" unit="character"/></supplied>
                 </ab>
             </div>
@@ -150,14 +150,14 @@
                 <name nymRef="Καῖσαρ"><lb n="9"/>Κα<unclear>ῖσ</unclear><supplied reason="lost">αρ</supplied></name> 
                 <name nymRef="Σεβαστός"><supplied reason="lost">Σεβαστὸς</supplied></name>
 <lb n="10"/><name nymRef="Γερμανικός">Γερμ<unclear>α</unclear><supplied reason="lost">νικ</supplied>ὸ<supplied reason="lost">ς</supplied></name>
-<lb n="11"/> <w><unclear>Αὐ</unclear><supplied reason="lost">τοκράτωρ</supplied></w></persName></date>
-<lb n="12"/> <w>ὁδο<unclear>ὺ</unclear>ς</w> <w>ἐ<supplied reason="lost">π</supplied>όησε</w> <w><unclear>διὰ</unclear></w>
+<lb n="11"/> <w lemma="Αὐτοκράτωρ"><unclear>Αὐ</unclear><supplied reason="lost">τοκράτωρ</supplied></w></persName></date>
+<lb n="12"/> <w lemma="ὁδός">ὁδο<unclear>ὺ</unclear>ς</w> <w lemma="ποιέω">ἐ<supplied reason="lost">π</supplied>όησε</w> <w lemma="διά"><unclear>διὰ</unclear></w>
 <lb n="13"/><persName type="attested" key="pir2-p-0212"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Πέδιος">Πε<unclear>δίο</unclear><supplied reason="lost">υ</supplied></name> 
                 <name nymRef="Βλαῖσος"><supplied reason="lost">Βλαίσου</supplied></name>
-<lb n="14"/> <w>ἀν<unclear>θυπ</unclear><supplied reason="lost">άτου</supplied></w> </persName>
-                <placeName  nymRef="#Creta et Cyrene" ref="#creteandcyrene"><placeName nymRef="#Κρήτη" ref="#crete"><supplied reason="lost">Κρήτης</supplied></placeName> 
-                <w><supplied reason="lost">καὶ</supplied></w>
-<lb n="15"/><placeName  nymRef="#Κυρήνη" ref="#cyrene"><supplied reason="lost" cert="low">Κυρήνης</supplied></placeName></placeName>
+<lb n="14"/> <w lemma="ἀνθύπατος">ἀν<unclear>θυπ</unclear><supplied reason="lost">άτου</supplied></w> </persName>
+                <placeName nymRef="#Creta et Cyrene" ref="#creteandcyrene"><placeName nymRef="#Κρήτη" ref="#crete"><supplied reason="lost">Κρήτης</supplied></placeName> 
+                <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
+<lb n="15"/><placeName nymRef="#Κυρήνη" ref="#cyrene"><supplied reason="lost" cert="low">Κυρήνης</supplied></placeName></placeName>
                 <supplied reason="lost"> <space extent="unknown" unit="character"/></supplied>
 <lb n="16"/><gap reason="lost" quantity="1" unit="line"><desc>mileage figure</desc></gap>
             </ab>
@@ -167,14 +167,14 @@
             <div type="apparatus">
                 <head>Apparatus</head>
                 <listApp><app loc="1"><rdg resp="#ghislanzoni1916">[Ti] Claudius <note>taking this to be the Emperor Claudius</note></rdg></app>
-                    <app loc="2"><rdg  resp="#ghislanzoni1916">C[aesar A]ugu[stus]</rdg> </app>
-                    <app loc="4"><rdg  resp="#ghislanzoni1916">vi[am . . .</rdg></app>
-                    <app loc="5"><rdg  resp="#ghislanzoni1916"> L . . . M . .  .</rdg></app>
-                    <app loc="6"><rdg  resp="#ghislanzoni1916"><unclear>R</unclear> .. . E . . .</rdg></app>
-                    <app loc="8"><rdg  resp="#ghislanzoni1916">[Τι(βέριος) Κλαύδιος]</rdg></app>
-                    <app loc="12"><rdg  resp="#ghislanzoni1916">ὁδὸν [ . . .</rdg></app>
-                    <app loc="12"><rdg  resp="#ghislanzoni1916">. Π . . .</rdg></app>
-                    <app loc="12"><rdg  resp="#ghislanzoni1916">ΑΝ . . . </rdg></app>
+                    <app loc="2"><rdg resp="#ghislanzoni1916">C[aesar A]ugu[stus]</rdg> </app>
+                    <app loc="4"><rdg resp="#ghislanzoni1916">vi[am . . .</rdg></app>
+                    <app loc="5"><rdg resp="#ghislanzoni1916"> L . . . M . .  .</rdg></app>
+                    <app loc="6"><rdg resp="#ghislanzoni1916"><unclear>R</unclear> .. . E . . .</rdg></app>
+                    <app loc="8"><rdg resp="#ghislanzoni1916">[Τι(βέριος) Κλαύδιος]</rdg></app>
+                    <app loc="12"><rdg resp="#ghislanzoni1916">ὁδὸν [ . . .</rdg></app>
+                    <app loc="12"><rdg resp="#ghislanzoni1916">. Π . . .</rdg></app>
+                    <app loc="12"><rdg resp="#ghislanzoni1916">ΑΝ . . . </rdg></app>
                   </listApp>
             </div>
             

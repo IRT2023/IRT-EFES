@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -92,6 +91,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -119,15 +119,15 @@
             <ab>
                     <lb n="1"/><persName type="divine"><persName type="divine" key="iatros"><name nymRef="Ἰατρός"><supplied reason="lost">Ἰατρῶι</supplied></name></persName> 
             <persName type="divine" key="iaso"><name nymRef="Ἰασώ"><supplied reason="lost">Ἰασ</supplied><unclear>ο</unclear>ῖ</name></persName> 
-            <space quantity="2" unit="character"/> <name nymRef="θεός">θεο<supplied reason="lost">ῖς</supplied></name> <name  nymRef="Σωτήρ"><supplied reason="lost">σωτῆρσι</supplied></name></persName>
-                    <lb n="2"/> <w><supplied reason="lost">ὑπὲρ</supplied></w>
-            <persName type="emperor" key="antoninuspius"><w><supplied reason="lost">σωτηρίας</supplied></w> 
-                    <w><supplied reason="lost">Αὐτοκράτορος</supplied></w> 
+            <space quantity="2" unit="character"/> <name nymRef="θεός">θεο<supplied reason="lost">ῖς</supplied></name> <name nymRef="Σωτήρ"><supplied reason="lost">σωτῆρσι</supplied></name></persName>
+                    <lb n="2"/> <w lemma="ὑπέρ"><supplied reason="lost">ὑπὲρ</supplied></w>
+            <persName type="emperor" key="antoninuspius"><w lemma="σωτηρία"><supplied reason="lost">σωτηρίας</supplied></w> 
+                    <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτορος</supplied></w> 
                <name nymRef="Καῖσαρ"><supplied reason="lost">Καίσαρος</supplied></name> 
                <name nymRef="Τίτος"><supplied reason="lost"><expan><abbr>Τ</abbr><ex>ίτω</ex></expan></supplied></name> 
                     <name nymRef="Αἴλιος"><supplied reason="lost">Αἰ</supplied>λίω</name>
                <name nymRef="Ἁδριανός">Ἁδρι<unclear>α</unclear><supplied reason="lost">νῶ</supplied></name> 
-               <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀντωνείνω</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σεβαστῶ</supplied></name> <w><supplied reason="lost">Εὐσεβοῦς</supplied></w></persName>
+               <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀντωνείνω</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σεβαστῶ</supplied></name> <w lemma="Εὐσεβής"><supplied reason="lost">Εὐσεβοῦς</supplied></w></persName>
          </ab>
          </div>
          

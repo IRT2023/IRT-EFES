@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-09-25" who="TW">Edited photo info</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -116,7 +116,7 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <w><expan><abbr>Im<supplied reason="lost">p</supplied></abbr><ex>erator</ex></expan></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/> <w lemma="imperator"><expan><abbr>Im<supplied reason="lost">p</supplied></abbr><ex>erator</ex></expan></w> <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><w lemma="tribunicius"><unclear>tr</unclear><supplied reason="lost">ibunicia</supplied></w> <w lemma="potestas"><supplied reason="lost">potestate</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2a"/><gap reason="lost" quantity="1" unit="line"/>
                 </ab>

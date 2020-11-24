@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -93,6 +92,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-07" who="MLA">corrected Mohamed-jmr1991 reference in bibliography</change>
@@ -117,8 +117,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <w>ἀπ
-                    <lb n="2" break="no"/>έθανε</w>
+                    <lb n="1"/> <w lemma="ἀποθνήσκω">ἀπ<lb 
+                       n="2" break="no"/>έθανε</w>
                     <lb n="3"/><persName type="attested"><name nymRef="Ζηνοῦ">Ζηνοῦ</name></persName>
                     <lb n="4"/><date type="life-span" dur="P20Y"><w lemma="ἔτος">ἔτουϲ</w>
             <lb n="5"/><num value="20">κ</num> </date>

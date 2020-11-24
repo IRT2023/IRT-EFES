@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-02-17" who="MGDA">fixed bibliography</change>
@@ -131,7 +131,7 @@
 <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
                     <persName type="emperor" key="arcadius"><persName type="emperor" key="honorius"><expan><name nymRef="Φλάβιος"><abbr><am><supplied reason="lost">Φ</supplied></am>Φ<am>Λ</am>λ</abbr><ex>αουίων</ex></name>  
-                       <w><ex>δυοῖν</ex></w></expan> <name nymRef="Ἀρκάδιος">Ἀρκαδ<supplied reason="lost">ί</supplied><milestone unit="block"/>ου</name> <!-- check DAI -->
+                       <w lemma="δύο"><ex>δυοῖν</ex></w></expan> <name nymRef="Ἀρκάδιος">Ἀρκαδ<supplied reason="lost">ί</supplied><milestone unit="block"/>ου</name> <!-- check DAI -->
                             <w lemma="καί">καὶ</w> <name nymRef="Ὁνώριος">Ὁνωρίου</name></persName></persName>
                     <w lemma="ὁ"><unclear>τ</unclear><milestone unit="block"/><supplied reason="lost">ῶν</supplied></w> 
                         <w lemma="κύριος"><supplied reason="lost" cert="low">κυρίων</supplied></w>
@@ -150,7 +150,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>(essendo degli ?) (imperatori) Flavi Arcadio ed Onorio, signori (del mondo)</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>(essendo degli ?) (imperatori) Flavi Arcadio ed Onorio, signori (del mondo)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>. . . ]of the two Flavii, Arcadius and Honorius [our Lords] and Masters [of the World . . .</p></div>
          </div>
          

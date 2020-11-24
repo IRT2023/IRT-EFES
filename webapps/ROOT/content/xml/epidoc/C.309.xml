@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription from the stone and from the photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-05" who="TW">added name tag</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -134,11 +134,11 @@
 <ab>
             <lb n="1"/><orig>δ<unclear>ε</unclear></orig><gap reason="lost" quantity="4" unit="character"/><orig>ν</orig>
             <persName type="attested" key="lgpn:V1-62942"><name nymRef="Ἀντίπατρος">Ἀντίπατροϲ</name></persName> 
-                    <w>ἱερώμενο<unclear>ϲ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/> <w>ἐκ</w> <w>προϲόδων</w>
-               <w>ἱερῶν</w> <w lemma="ναός">ν<unclear>η</unclear>οὺϲ</w>
+                    <w lemma="ἱερόω">ἱερώμενο<unclear>ϲ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/> <w lemma="ἐκ">ἐκ</w> <w lemma="πρόσοδος">προϲόδων</w>
+               <w lemma="ἱερός">ἱερῶν</w> <w lemma="ναός">ν<unclear>η</unclear>οὺϲ</w>
                <orig>Μ</orig> <gap reason="lost" quantity="2" unit="character"/><orig>ι<unclear>α</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="3"/> <space extent="5" unit="character"/> <w>εὐτυχῶϲ</w> <space extent="8" unit="character"/>
+                    <lb n="3"/> <space extent="5" unit="character"/> <w lemma="εὐτυχής">εὐτυχῶϲ</w> <space extent="8" unit="character"/>
                     <lb n="4"/> <space extent="5" unit="character"/> <persName type="attested"><name nymRef="Κοράκιος">Κορακίῳ</name></persName> <space extent="8" unit="character"/>
                 </ab>
 </div>

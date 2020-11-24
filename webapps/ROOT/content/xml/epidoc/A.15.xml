@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds); photographs.</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,13 +121,13 @@
             <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
                     <supplied reason="lost"><w lemma="σύν">σὺν</w> <w lemma="ὁ">τῷ</w></supplied> 
-            <w><supplied reason="lost">κ</supplied>όσμῳ</w>
+            <w lemma="κόσμος"><supplied reason="lost">κ</supplied>όσμῳ</w>
             <w lemma="περί"><unclear>π</unclear>ερ<supplied reason="lost">ὶ</supplied></w>
                     <gap reason="lost" quantity="7" unit="character" precision="low"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῇ</w>
-            <w>πατ<supplied reason="lost">ρίδι</supplied></w> <supplied reason="lost"><w>ἔδωκε</w></supplied>
+            <w lemma="πατρίς">πατ<supplied reason="lost">ρίδι</supplied></w> <supplied reason="lost"><w lemma="δίδωμι">ἔδωκε</w></supplied>
             <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
-            <w><supplied reason="lost">ἀ</supplied>φιερώσαντ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w>
+            <w lemma="ἀφιερόω"><supplied reason="lost">ἀ</supplied>φιερώσαντ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w>
             <gap reason="lost" extent="unknown" unit="character"/>
          </ab>
          </div>

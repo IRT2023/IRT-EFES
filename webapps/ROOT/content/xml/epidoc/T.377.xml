@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -131,7 +131,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/FEgTRK62Zze5QVgfRoD6Sc"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
-                    <num value="111">ρια</num> <rs type="month" key="thoth"><w>Θώθ<unclear>υ</unclear></w></rs>
+                    <num value="111">ρια</num> <rs type="month" key="thoth"><w lemma="Θώθ">Θώθ<unclear>υ</unclear></w></rs>
                     <lb n="2"/><num value="19">ιθ</num></date> <persName type="attested" key="lgpn:V1-60500"><name nymRef="Βιλλιήνα">Βιλλι<lb n="3" break="no"/>ήνα</name> <name nymRef="Ἱππονίκα">Ἱπ<lb n="4" break="no"/>πονίκα</name></persName>
                     <lb n="5"/><date type="life-span" dur="P40Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="40">μ</num> </date>
@@ -160,7 +160,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 38, Thothy 9. Billiena di Ipponice, di anni 40.</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 38, Thothy 9. Billiena di Ipponice, di anni 40.</p></div>
             <div type="translation" source="#jmr1983" xml:lang="en"><p>Year 111, Thothy 19, Billiena Hipponica, aged 40.</p></div>
             <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/FEgTRK62Zze5QVgfRoD6Sc">Year 111, Thoth 19</ref>, Billiena Hipponika, aged 40.</p></div>
        </div>

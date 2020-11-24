@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -123,7 +123,7 @@
                     <persName type="emperor" key="valentinianus2"><supplied reason="lost"><expan><w lemma="dominus"><abbr>D<am>D<supplied reason="lost">D</supplied></am></abbr><ex>ominis</ex></w> 
                    <w lemma="noster"><abbr><supplied reason="lost">N</supplied><am>NN</am></abbr><ex>ostris tribus</ex></w></expan>
                          <w lemma="imperator"><expan><abbr>imp</abbr><ex>eratores</ex></expan></w>
-                   <name nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ares</ex></expan></name></supplied> <persName type="emperor" key="gratianus"><supplied reason="lost"><name nymRef="Gratianus">Gratianum</name> <w>et</w></supplied>
+                   <name nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ares</ex></expan></name></supplied> <persName type="emperor" key="gratianus"><supplied reason="lost"><name nymRef="Gratianus">Gratianum</name> <w lemma="et">et</w></supplied>
                     <lb n="2"/><name nymRef="Valentinianus"><supplied reason="lost">Valentinian</supplied>um</name> 
                     <w lemma="et">et</w> <persName type="emperor" key="valens"><name nymRef="Valens">Valentem</name> <w lemma="pius">pios</w> <supplied reason="lost">
                         <w lemma="felix">Felices</w> <w lemma="semper">semper</w></supplied> 

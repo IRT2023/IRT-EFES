@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -133,7 +133,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/ieRFixfjcFBTPWrbHgF7Xh"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
-                    <num value="11">ια</num> <rs type="month"  key="hathyr"><w>Ἁθὺρ</w></rs>
+                    <num value="11">ια</num> <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs>
                     <lb n="2"/><num value="2">β</num></date> <persName type="attested" key="lgpn:V1-60726"><name nymRef="Ἀρίμμας">Ἀρίμμ<lb n="3" break="no"/>ας</name> 
                        <persName type="attested" key="lgpn:V1-60725"><name nymRef="Ἰούδας">Ἰούδα</name></persName></persName>
                     <lb n="4"/><space quantity="2" unit="character"/><date type="life-span" dur="P21Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
@@ -152,7 +152,7 @@
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
             <div type="translation" source="#gray1956" xml:lang="en"><p>Year 11, Athur 2nd, Arimmas, son of Judah, aged 21</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 11, 2.Hathyr, Arimmas des Juda(s), 21 (Jahre)</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 11, 2.Hathyr, Arimmas des Juda(s), 21 (Jahre)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/ieRFixfjcFBTPWrbHgF7Xh">Year 11, Hathyr 2</ref>, Arimmas <supplied reason="subaudible">son</supplied> of Ioudas, aged 21.</p></div>
        </div>
         

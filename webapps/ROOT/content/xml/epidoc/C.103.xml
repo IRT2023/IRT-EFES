@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -107,6 +106,7 @@
          </textClass>
       <creation>Transcription (Reynolds, Paci)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-08-15" who="SS">Improved mark-up</change>
@@ -139,8 +139,8 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <div subtype="face" n="a" type="textpart">
                <ab>
-                    <lb n="1"/> <persName type="divine" key="theos"><name nymRef="Θεός">θέος</name>.</persName> <persName type="divine" key="agathetyche"><name nymRef="Τύχα">Τύχα</name> <w>Ἀγαθ<unclear>ά</unclear></w></persName> 
-                    <lb n="2"/> <w>Ἱάρεαι</w> <w lemma="ὁ">τᾶς</w> <persName type="divine" key="hera"><name nymRef="Ἥρα">Ἥ<unclear>ρας</unclear></name></persName>
+                    <lb n="1"/> <persName type="divine" key="theos"><name nymRef="Θεός">θέος</name>.</persName> <persName type="divine" key="agathetyche"><name nymRef="Τύχα">Τύχα</name> <w lemma="ἀγαθός">Ἀγαθ<unclear>ά</unclear></w></persName> 
+                    <lb n="2"/> <w lemma="ἱέρεια">Ἱάρεαι</w> <w lemma="ὁ">τᾶς</w> <persName type="divine" key="hera"><name nymRef="Ἥρα">Ἥ<unclear>ρας</unclear></name></persName>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-64463"><name nymRef="Καλλιβώλα">Καλλιβώλα</name> <persName type="attested"><name nymRef="Κλέαρχος"><unclear>Κλ</unclear><supplied reason="lost" cert="low">εάρ</supplied>χω</name></persName></persName>
                     <lb n="4"/><persName type="attested" key="lgpn:V1-64204"><name nymRef="Θευπρόπα">Θευπρόπα</name> <persName type="attested"><name nymRef="Η-"><seg part="I"><unclear>Η</unclear></seg><gap reason="lost" quantity="6" unit="character" precision="low"/></name> </persName></persName>
                     <lb n="5"/><persName type="attested" key="lgpn:V1-64412"><name nymRef="Ἱππονείκα">Ἱππονείκα</name> <persName type="attested" key="lgpn:V1-63977"><name nymRef="Ζευξίμαχος">Ζευ<supplied reason="lost">ξι</supplied><unclear>μάχω</unclear></name> </persName></persName>
@@ -158,7 +158,7 @@
                     <lb n="17"/><w lemma="φύσις">φύσει</w> <w lemma="δέ">δὲ</w> <persName type="attested" key="lgpn:V1-64570"><name nymRef="Καρνήδας">Καρνήδα</name></persName></persName></del> 
                     <lb n="18"/><persName type="attested" key="lgpn:V1-65077"><name nymRef="Μυρώ">Μυρὼ</name> <persName type="attested" key="lgpn:V1-64971"><name nymRef="Μελάνιππος">Μελαν<unclear>ί</unclear>ππω</name></persName></persName>
                     <lb n="19"/><persName type="attested" key="lgpn:V1-65783"><name nymRef="Τελεσώ">Τελεσὼ</name> <persName type="attested" key="lgpn:V1-64511"><name nymRef="Κάλλιππος">Καλίπ<unclear>πω</unclear></name></persName></persName> 
-                    <lb n="20"/><persName type="attested" key="lgpn:V1-63408"><name nymRef="Βερνίκα">Βερνίκα</name> <persName type="attested"><name nymRef="Ἱππα-"><seg part="I">Ἱππα</seg><gap reason="lost" extent="4" unit="character"></gap></name></persName></persName> 
+                    <lb n="20"/><persName type="attested" key="lgpn:V1-63408"><name nymRef="Βερνίκα">Βερνίκα</name> <persName type="attested"><name nymRef="Ἱππα-"><seg part="I">Ἱππα</seg><gap reason="lost" extent="4" unit="character"/></name></persName></persName> 
                     <lb n="21"/><persName type="attested" key="lgpn:V1-66128"><name nymRef="Φρονίμα">Φρονίμα</name> <persName type="attested"><name nymRef="Ἀλεξίμαχος"><unclear>Ἀλε</unclear><supplied reason="lost">ξ</supplied><unclear>ιμά</unclear><supplied reason="lost">χ</supplied><unclear>ω</unclear></name></persName></persName>
                     <lb n="22"/><persName type="attested" key="lgpn:V1-65804"><name nymRef="Τιμαρέτα">Τειμαρέτα</name> <persName type="attested"><name nymRef="Καρνήδας">Καρν<unclear>ή</unclear>δα</name></persName></persName> 
                     <lb n="23"/><persName type="attested" key="lgpn:V1-62503"><name nymRef="Ἅβρολα">Ἅβρολα</name> <persName type="attested" key="lgpn:V1-64638"><name nymRef="Κλέαρχος">Κλεάρχω</name></persName> </persName>
@@ -204,17 +204,17 @@
             <app loc="26/27"><rdg resp="#oliverioDAI2">Τιμαρέτα Ἀλεξιμ[α]χίδευ[ς] / <unclear>φυ</unclear>[σει] <unclear>δὲ</unclear></rdg></app>
                <app loc="28"><rdg resp="#oliverioDAI2">Καλλιβώλα [Ἐ]τεάρχω</rdg></app>
                <app loc="29"><rdg resp="#oliverioDAI2">Πελεία [Ε]ὐαρίστ[ω</rdg> <note>, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-63785">V1-63785</ref></note></app>
-               <app loc="31"><rdg  resp="#oliverioDAI2">Μνασὼι - ι -</rdg></app>
-               <app loc="32"><rdg  resp="#oliverioDAI2">Ἀριστοδίκα Ἰσο[κράτ̣ε]υς</rdg></app>
-               <app loc="33"><rdg  resp="#oliverioDAI2">Μεγὼ Ἀριστο[δά]μω</rdg><note>, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-63142">V1-63142</ref></note></app>
-               <app loc="b"><rdg  resp="#paci2000"><note> Not previously recorded; note a misprint in SEG, ϙ for ρ</note></rdg></app>
+               <app loc="31"><rdg resp="#oliverioDAI2">Μνασὼι - ι -</rdg></app>
+               <app loc="32"><rdg resp="#oliverioDAI2">Ἀριστοδίκα Ἰσο[κράτ̣ε]υς</rdg></app>
+               <app loc="33"><rdg resp="#oliverioDAI2">Μεγὼ Ἀριστο[δά]μω</rdg><note>, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-63142">V1-63142</ref></note></app>
+               <app loc="b"><rdg resp="#paci2000"><note> Not previously recorded; note a misprint in SEG, ϙ for ρ</note></rdg></app>
                
                </listApp>
          </div>
            
            
               <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Dio. Buona Fortuna. Sacerdotesse di Giunone: Callibola di -, Teopropa di -, Ipponica di Zeuximaco, Aiscra di Augea, 
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Dio. Buona Fortuna. Sacerdotesse di Giunone: Callibola di -, Teopropa di -, Ipponica di Zeuximaco, Aiscra di Augea, 
             Timareta di Eforo, Nicippa di Aristarco, Olympias di Clearco, Zeuxó di Teucresto, Callibola di Demofane, Epagó di Isocrate, Cidimaca di Clearco, Euricleta di Eglanore, Ammonarion di Alessandro, 
             Megó di Alessandro (per adozione) ma per natura di Carneade. Myrò di Melanippo, Telesò di Callippo, Bernice di Dic-, Fronima di Al-, Timareta di Mnesarco, Abrola di Clearco, 
             Arata di Dionisio, Cleopatra di Etearco, Timareta di Alessimachide (peradozione) ma per natura di Carneade; Callibola di Etearco, Pelia di Euaristo, Mnesó di Lisania,  Mnesó -, Aristodice 

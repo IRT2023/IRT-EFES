@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -93,6 +92,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-16" who="MGDA">Tagged header information</change>
@@ -119,7 +119,7 @@
                         <persName type="attested"><name nymRef="Σ-"><seg part="I">Σ</seg></name></persName></persName> <gap reason="lost" extent="unknown" unit="character"/>
                     </ab></div>
             <div subtype="section" n="ii" type="textpart"><ab>
-                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w><expan><abbr><hi rend="ligature">φίλ</hi></abbr><ex>ος</ex></expan></w> <persName type="attested"><name nymRef="Γράνιος"><unclear>Γρανί</unclear><supplied reason="lost" cert="low">ωι</supplied></name></persName>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="φίλος"><expan><abbr><hi rend="ligature">φίλ</hi></abbr><ex>ος</ex></expan></w> <persName type="attested"><name nymRef="Γράνιος"><unclear>Γρανί</unclear><supplied reason="lost" cert="low">ωι</supplied></name></persName>
                     </ab></div>
             <div subtype="section" n="iii" type="textpart"><ab>
                         <lb n="1"/><persName type="attested" key="lgpn:V1-60383"><name nymRef="Καρνήδας">Καρνήδας</name></persName> 
@@ -136,7 +136,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>- - Carneda</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>- - Carneda</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> . . . kos. <note>ii</note> . . . friend . . . <note>iii</note> Karnedas</p></div>
        </div>
          

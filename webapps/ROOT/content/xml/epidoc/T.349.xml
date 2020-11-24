@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -134,7 +134,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><persName type="attested" key="lgpn:V1-60479"><name nymRef="Καλλίνικος"><unclear>Κ</unclear>αλλίνικοϲ</name></persName> 
-                        <date type="life-span" dur="P15Y"><w>ἔ<unclear>τη</unclear></w> <num value="15">ιε</num> </date> 
+                        <date type="life-span" dur="P15Y"><w lemma="ἔτος">ἔ<unclear>τη</unclear></w> <num value="15">ιε</num> </date> 
                     <lb n="2"/> <persName type="attested" key="lgpn:V1-60480"><name nymRef="Τιμῶχος"><unclear>Τ</unclear>ιμ<supplied reason="lost">ῶ</supplied><unclear>χ</unclear>ο<unclear>ϲ</unclear></name></persName>
                     <date type="life-span" dur="P10Y"><w lemma="ἔτος">ἐτῶν</w> <num value="10">ι</num> </date>
                 </ab>
@@ -157,7 +157,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Marinico di anni 15. Gimico di anno 10.</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Marinico di anni 15. Gimico di anno 10.</p></div>
             
             <div type="translation" resp="#edd" xml:lang="en"><p>Kallinikos, aged 15. Timochos aged 10</p></div>
        </div>

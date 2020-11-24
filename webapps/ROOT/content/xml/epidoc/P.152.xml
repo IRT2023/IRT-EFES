@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription from photograph (Reynolds)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -120,7 +120,7 @@
                 <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                 <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>κ</orig><gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="2"/> <gap reason="lost" extent="unknown" unit="character"/><w part="F"><supplied reason="lost">ο</supplied>υ</w> 
-                <w>πρε<supplied reason="lost">σβευτοῦ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                <w lemma="πρεσβευτής">πρε<supplied reason="lost">σβευτοῦ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Τιβέριος"><seg part="I"><expan><abbr>Τι</abbr><ex>βεριο</ex></expan></seg></name>
                 <name nymRef="Κ-"><seg part="I"><unclear>Κ</unclear></seg><gap reason="lost" extent="unknown" unit="character"/></name></persName>
                 <lb n="3a"/><gap reason="lost" extent="unknown" unit="line"/></ab>

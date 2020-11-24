@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-22" who="MGDA">Tagged header information</change>
@@ -143,15 +143,15 @@
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/></date> 
                     <persName type="attested" key="lgpn:V1-60604"><name nymRef="Σεκόνδα"><supplied reason="lost">Σε</supplied>
                     <lb n="3" break="no"/><unclear>κόνδα</unclear></name> 
-                    <lb n="4"/><persName type="attested" key="lgpn:V1-60605"><name nymRef="Γάϊος">Γαΐ<unclear>ω</unclear></name></persName></persName>
-                    <lb n="5"/> <w><supplied reason="lost">ἐτ</supplied>ῶ<supplied reason="lost">ν</supplied></w> 
+                    <lb n="4"/><persName type="attested" key="lgpn:V1-60605"><name nymRef="Γάϊος">Γαΐ<unclear>ω</unclear></name></persName></persName>
+                    <lb n="5"/> <w lemma="ἔτος"><supplied reason="lost">ἐτ</supplied>ῶ<supplied reason="lost">ν</supplied></w> 
                     <gap reason="lost" quantity="1" unit="character"/>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 5, -. Seconda di Gaio, di anni -.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 5, . . ., Secunda des Gaius, . . . Jahre (?)</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 5, -. Seconda di Gaio, di anni -.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 5, . . ., Secunda des Gaius, . . . Jahre (?)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/LBG9KV8e2LEJFgAfvtiZJW">Year 5</ref>, [ . . ], Sekonda <supplied reason="explanation"><foreign xml:lang="la">Secunda</foreign></supplied> 
                <supplied reason="subaudible">daughter</supplied> of Gaios <supplied reason="explanation"><foreign xml:lang="la">Gaius</foreign></supplied>, aged ....</p></div>
        </div>

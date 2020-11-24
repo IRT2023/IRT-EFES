@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
          <creation>Transcription, supplemented from the photographs (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -116,22 +116,22 @@
          </div>
          
          <div type="edition" xml:space="preserve"><div subtype="face" n="a" type="textpart"><div xml:lang="la" type="textpart"><ab>
-                       <lb n="1"/><date ref="https://godot.date/id/d7uUJksMH3VT3aS4khkLzL"><persName type="emperor" key="nero"><name nymRef="Nero"><supplied reason="lost">Ne</supplied>ro</name> <name nymRef="Claudius">Cla<supplied reason="lost">udius</supplied></name> <persName type="emperor" key="claudius"><w><supplied reason="lost">diui</supplied></w>
-                   <lb n="2"/><name nymRef="Claudius"><supplied reason="lost">Cl</supplied>audi</name></persName> <w><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <persName type="emperor" key="germanicus"><name nymRef="Germanicus"><unclear>Germ</unclear><supplied reason="lost">anici</supplied></name>
-                   <lb n="3"/><name nymRef="Caesar"><supplied reason="lost"><expan><abbr>Caes</abbr><ex>aris</ex></expan></supplied></name></persName> <w><expan><abbr>n</abbr><ex>epos</ex></expan></w> <persName type="emperor" key="tiberius"><name nymRef="Tiberius"><expan><abbr>Ti</abbr><ex>beri</ex></expan></name> 
+                       <lb n="1"/><date ref="https://godot.date/id/d7uUJksMH3VT3aS4khkLzL"><persName type="emperor" key="nero"><name nymRef="Nero"><supplied reason="lost">Ne</supplied>ro</name> <name nymRef="Claudius">Cla<supplied reason="lost">udius</supplied></name> <persName type="emperor" key="claudius"><w lemma="divus"><supplied reason="lost">diui</supplied></w>
+                   <lb n="2"/><name nymRef="Claudius"><supplied reason="lost">Cl</supplied>audi</name></persName> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <persName type="emperor" key="germanicus"><name nymRef="Germanicus"><unclear>Germ</unclear><supplied reason="lost">anici</supplied></name>
+                   <lb n="3"/><name nymRef="Caesar"><supplied reason="lost"><expan><abbr>Caes</abbr><ex>aris</ex></expan></supplied></name></persName> <w lemma="nepos"><expan><abbr>n</abbr><ex>epos</ex></expan></w> <persName type="emperor" key="tiberius"><name nymRef="Tiberius"><expan><abbr>Ti</abbr><ex>beri</ex></expan></name> 
                    <name nymRef="Caesar">C<supplied reason="lost">ae</supplied>sa<unclear>r</unclear><supplied reason="lost">is</supplied></name>
-                   <lb n="4"/><name nymRef="Augustus"><expan><abbr><unclear>A</unclear>u<unclear>g</unclear></abbr><ex>usti</ex></expan></name></persName> <w><expan><abbr>pron</abbr><ex>epos</ex></expan></w> <persName type="emperor" key="augustus"><w lemma="diuus">diui</w> 
+                   <lb n="4"/><name nymRef="Augustus"><expan><abbr><unclear>A</unclear>u<unclear>g</unclear></abbr><ex>usti</ex></expan></name></persName> <w lemma="pronepos"><expan><abbr>pron</abbr><ex>epos</ex></expan></w> <persName type="emperor" key="augustus"><w lemma="diuus">diui</w> 
                       <name nymRef="Augustus"><expan><abbr>Au<supplied reason="lost">g</supplied></abbr><ex>usti</ex></expan></name></persName> 
-                       <w><supplied reason="lost"><expan><abbr>abn</abbr><ex>epos</ex></expan></supplied></w><lb n="5"/><name nymRef="Caesar"><unclear>C</unclear><supplied reason="lost">a</supplied>esar</name>
+                       <w lemma="abnepos"><supplied reason="lost"><expan><abbr>abn</abbr><ex>epos</ex></expan></supplied></w><lb n="5"/><name nymRef="Caesar"><unclear>C</unclear><supplied reason="lost">a</supplied>esar</name>
                    <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name>
                    <name nymRef="Germanicus">Ger<supplied reason="lost">ma</supplied><lb n="6" break="no"/><note>sic</note> <orig>V</orig> nicus</name></persName> 
-                   <w><supplied reason="lost"><expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied></w> <w><supplied reason="lost"><expan><abbr>max</abbr><ex>imus</ex></expan></supplied></w>
-                   <lb n="7"/> <space quantity="1" unit="character"/> <w><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> <w><expan><abbr>po<supplied reason="lost">t</supplied></abbr><supplied reason="lost"><ex>estate</ex></supplied></expan></w> <w><supplied reason="lost"><expan><abbr>imp</abbr><ex>erator</ex></expan></supplied></w> 
-                       <w><supplied reason="lost"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></supplied></w></date>
-                   <lb n="8"/> <w><supplied reason="lost">pe</supplied><unclear>r</unclear></w> <persName type="attested" key="pir2-a-0082"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucium</ex></expan></name> <name nymRef="Acilius">Ac<supplied reason="lost">ilium</supplied></name>
+                   <w lemma="pontifex"><supplied reason="lost"><expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied></w> <w lemma="maximus"><supplied reason="lost"><expan><abbr>max</abbr><ex>imus</ex></expan></supplied></w>
+                   <lb n="7"/> <space quantity="1" unit="character"/> <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> <w lemma="potestas"><expan><abbr>po<supplied reason="lost">t</supplied></abbr><supplied reason="lost"><ex>estate</ex></supplied></expan></w> <w lemma="imperator"><supplied reason="lost"><expan><abbr>imp</abbr><ex>erator</ex></expan></supplied></w> 
+                       <w lemma="consul"><supplied reason="lost"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></supplied></w></date>
+                   <lb n="8"/> <w lemma="per"><supplied reason="lost">pe</supplied><unclear>r</unclear></w> <persName type="attested" key="pir2-a-0082"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucium</ex></expan></name> <name nymRef="Acilius">Ac<supplied reason="lost">ilium</supplied></name>
                        <lb n="9"/><name nymRef="Strabo"><supplied reason="lost">Stra</supplied>bo<supplied reason="lost">nem</supplied></name></persName> 
-                       <w><supplied reason="lost"><expan><abbr>legat</abbr><ex>um</ex></expan></supplied></w>
-                   <lb n="10"/> <w><supplied reason="lost">suu</supplied><unclear>m</unclear></w> <w lemma="finis">fines</w> <w lemma="occupo">occu<supplied reason="lost">patos</supplied></w>
+                       <w lemma="legatus"><supplied reason="lost"><expan><abbr>legat</abbr><ex>um</ex></expan></supplied></w>
+                   <lb n="10"/> <w lemma="suus"><supplied reason="lost">suu</supplied><unclear>m</unclear></w> <w lemma="finis">fines</w> <w lemma="occupo">occu<supplied reason="lost">patos</supplied></w>
                    <lb n="11"/> <space quantity="1" unit="character"/> <w lemma="ab">a</w> <w lemma="priuatus">priuates</w>
                        <w lemma="populus"><supplied reason="lost"><expan><abbr>P</abbr><ex>opulo</ex></expan></supplied></w>
                        <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><supplied reason="lost"><expan><abbr>R</abbr><ex>omano</ex></expan></supplied></placeName>
@@ -139,23 +139,23 @@
                    </ab></div><div xml:lang="grc" type="textpart"><ab>
                    <lb n="13"/><persName type="emperor" key="nero"><name nymRef="Νέρων">Νέρων</name> 
                    <name nymRef="Κλαύδιος">Κλ<supplied reason="lost">αύδι</supplied><lb n="14" break="no"/><supplied reason="lost">ος</supplied></name>
-                   <persName type="emperor" key="claudius"><w>θεοῦ</w> <name nymRef="Κλαύδιος"><unclear>Κλ</unclear><supplied reason="lost">αυδίου</supplied></name></persName>
-                   <lb n="15"/> <w>υἱὸς</w> <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερ<unclear>μ</unclear><supplied reason="lost">ανικοῦ</supplied></name>
-                   <lb n="16"/><name nymRef="Καῖσαρ"><supplied reason="lost">Κ</supplied><unclear>αί</unclear>σα<unclear>ρ</unclear>ος</name></persName> <w>υἱ<supplied reason="lost">ωνὸς</supplied></w></persName>
+                   <persName type="emperor" key="claudius"><w lemma="θεός">θεοῦ</w> <name nymRef="Κλαύδιος"><unclear>Κλ</unclear><supplied reason="lost">αυδίου</supplied></name></persName>
+                   <lb n="15"/> <w lemma="υἱός">υἱὸς</w> <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερ<unclear>μ</unclear><supplied reason="lost">ανικοῦ</supplied></name>
+                   <lb n="16"/><name nymRef="Καῖσαρ"><supplied reason="lost">Κ</supplied><unclear>αί</unclear>σα<unclear>ρ</unclear>ος</name></persName> <w lemma="υἱωνός">υἱ<supplied reason="lost">ωνὸς</supplied></w></persName>
                    <lb n="17"/><gap reason="lost" extent="unknown" unit="line"/>
                </ab></div></div>
          <div subtype="face" n="b" xml:lang="grc" type="textpart">
             <ab> 
                <lb n="1"/> 
-                <w lemma="διά">διὰ</w> <persName type="attested"  key="pir2-a-0082">
+                <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-a-0082">
                   <name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <name nymRef="Ἀκίλιος">Ἀκιλίου</name> 
-                   <lb n="2"/><name nymRef="Στράβων">Στράβωνος</name></persName> <w>τ<unclear>ο</unclear><supplied reason="lost">ῦ</supplied></w>
+                   <lb n="2"/><name nymRef="Στράβων">Στράβωνος</name></persName> <w lemma="τις">τ<unclear>ο</unclear><supplied reason="lost">ῦ</supplied></w>
                 <lb n="3"/><w lemma="ἴδιος">ἰδίου</w> <w lemma="πρεσβευτής">πρεσβευτο<supplied reason="lost">ῦ</supplied></w>
-                <lb n="4"/> <w>ὅρους</w> <w>διακατε<lb n="5" break="no"/>χομένους</w>
-                <w lemma="ὑπό">ὑπὸ</w> <w><supplied reason="lost">ἰ</supplied>
-                  <lb n="7" break="no"/>διωτῶν</w> <w lemma="δῆμος">Δήμῳ</w>
+                <lb n="4"/> <w lemma="ὅρος">ὅρους</w> <w lemma="διακατέχω">διακατε<lb n="5" break="no"/>χομένους</w>
+                <w lemma="ὑπό">ὑπὸ</w> <w lemma="ἰδιώτης"><supplied reason="lost">ἰ</supplied><lb 
+                   n="7" break="no"/>διωτῶν</w> <w lemma="δῆμος">Δήμῳ</w>
                <lb n="8"/><placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><supplied reason="lost">Ῥ</supplied>ωμαίων</placeName> 
-                <w>ἀπ<unclear>ο</unclear><lb n="7" break="no"/><supplied reason="lost">κ</supplied><unclear>α</unclear>τέ<unclear>σ</unclear>τησεν</w>
+                <w lemma="ἀποκαθίστημι">ἀπ<unclear>ο</unclear><lb n="7" break="no"/><supplied reason="lost">κ</supplied><unclear>α</unclear>τέ<unclear>σ</unclear>τησεν</w>
             </ab>
          </div></div>
          <div type="apparatus">

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -130,7 +130,7 @@
 <ab><lb n="1"/><g ref="symbols.xml#crux"/>
    <lb n="1a"/><space quantity="2" unit="line"/>
                     <lb n="2"/><date ref="https://godot.date/id/7BYf2rBwLjhQ6DAiLf9FJS"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied> 
-                        <gap reason="lost" quantity="1" unit="character"/> <rs type="month" key="thoth"><w>Θώθυ</w></rs>
+                        <gap reason="lost" quantity="1" unit="character"/> <rs type="month" key="thoth"><w lemma="Θώθ">Θώθυ</w></rs>
                     <lb n="3"/><num value="4">δ</num></date>
                         <gap reason="lost" quantity="2" unit="character"/><orig><unclear>οο</unclear></orig><gap reason="lost" quantity="3" unit="character"/>
                     <lb n="4"/><persName type="attested"><name nymRef="Ἀπολλώνιος">Ἀπολλω<supplied reason="lost">ν</supplied><lb n="5" break="no"/>ίου</name></persName> 

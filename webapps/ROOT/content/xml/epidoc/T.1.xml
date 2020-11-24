@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -138,23 +138,23 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-                    <lb n="1"/><persName type="emperor" key="hadrianus"><w><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
+                    <lb n="1"/><persName type="emperor" key="hadrianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
               <name nymRef="Caesar">Caesa<unclear>r</unclear></name> <milestone unit="block"/>
                         <supplied reason="lost"><persName type="emperor" key="traianus"><w lemma="diuus">diui</w> <name nymRef="Nerva">Nervae</name> 
                            <name nymRef="Traianus">Traiani</name> <name nymRef="Parthicus">Parthici</name></persName> 
-                            <w><expan><abbr>fil</abbr><ex>ius</ex></expan></w></supplied>
+                            <w lemma="filius"><expan><abbr>fil</abbr><ex>ius</ex></expan></w></supplied>
                     <lb n="2"/> <space quantity="4" unit="character"/> <persName type="emperor" key="nerva"><w lemma="diuus">diui</w> <g ref="symbols.xml#leaf"/> <name nymRef="Nerva">N<unclear>e</unclear><milestone unit="block"/><supplied reason="lost">rvae</supplied></name></persName> 
-               <supplied reason="lost"><w><expan><abbr>nep</abbr><ex>os</ex></expan></w> 
+               <supplied reason="lost"><w lemma="nepos"><expan><abbr>nep</abbr><ex>os</ex></expan></w> 
                   <name nymRef="Traianus">Traianus</name>
                         <name nymRef="Hadrianus">Hadrianus</name> 
                   <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> <space quantity="1" unit="character"/></supplied> 
               
                     <lb n="3"/> <space quantity="2" unit="character"/> 
-                        <w><expan><abbr>pont</abbr><ex>ifex</ex></expan></w> 
-                        <w><expan><abbr>max</abbr><ex>imus</ex></expan></w> 
-                        <w><expan><abbr>trib<milestone unit="block"/><supplied reason="lost">unic</supplied></abbr><supplied reason="lost"><ex>ia</ex></supplied></expan></w>
-                        <supplied reason="lost" cert="low"><w><expan><abbr>potestat</abbr><ex>e</ex></expan></w>
-                        <w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="pontifex"><expan><abbr>pont</abbr><ex>ifex</ex></expan></w> 
+                        <w lemma="maximus"><expan><abbr>max</abbr><ex>imus</ex></expan></w> 
+                        <w lemma="tribunicius"><expan><abbr>trib<milestone unit="block"/><supplied reason="lost">unic</supplied></abbr><supplied reason="lost"><ex>ia</ex></supplied></expan></w>
+                        <supplied reason="lost" cert="low"><w lemma="potestas"><expan><abbr>potestat</abbr><ex>e</ex></expan></w>
+                        <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
 </persName>
             </ab>
          </div>

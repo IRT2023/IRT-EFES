@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -93,6 +92,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           
           <change when="2013-07-09" who="JenniferSarha">fixed schematron error</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
@@ -114,7 +114,7 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="i" type="textpart"><ab>
                       <lb n="1"/><persName type="attested"><name nymRef="Ἡρόδοτος">Ἡρόδοτος</name></persName>
-                      <lb n="2"/> <w><expan><abbr><expan><abbr><am><g ref="symbols.xml#ΦΙΛ"/></am></abbr><ex>φίλ</ex></expan></abbr><ex>ος</ex></expan></w> <gap reason="lost" quantity="1" unit="character"/> <persName type="attested"><name nymRef="-ωμια"><seg part="F"><unclear>ωμ</unclear>ία</seg></name></persName>
+                      <lb n="2"/> <w lemma="φίλος"><expan><abbr><expan><abbr><am><g ref="symbols.xml#ΦΙΛ"/></am></abbr><ex>φίλ</ex></expan></abbr><ex>ος</ex></expan></w> <gap reason="lost" quantity="1" unit="character"/> <persName type="attested"><name nymRef="-ωμια"><seg part="F"><unclear>ωμ</unclear>ία</seg></name></persName>
                    </ab></div><div subtype="section" n="ii" type="textpart"><ab>
                         <lb n="1"/><persName type="attested"><name nymRef="Δάχις">Δάχις</name> 
                        <lb n="2"/><persName type="attested"><name nymRef="Ἀριστώνυμος">Ἀριστωνύ

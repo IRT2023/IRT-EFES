@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -10,7 +9,7 @@
                 <title><rs type="textType">List</rs> of names and ?reserved <rs type="textType">place</rs>s</title>
                 <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
                 <editor xml:id="jmr">Joyce M. Reynolds</editor>
-                <editor  xml:id="aben">Alice Bencivenni</editor>
+                <editor xml:id="aben">Alice Bencivenni</editor>
             </titleStmt>
             <publicationStmt>
                 <authority/>
@@ -109,6 +108,7 @@
             </textClass>
         <creation>Transcription from stone (Reynolds, Dobias-Lalou)</creation></profileDesc>
         <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
             <change when="2017-02-09" who="CDL">translations; overall check</change>
             <change when="2014-02-21" who="CDL+HB">lemma, text, apparatus, commentary</change>
             <change when="2013-01-31" who="GB Ljuba">moved text-constituted-from to profileDesc/creation</change>
@@ -130,64 +130,38 @@
             <div type="edition" xml:lang="grc" xml:space="preserve">
                 <head>Text</head>
                 <ab>
-                    <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <space unit="character" extent="unknown"/> <w>τόπος</w>
+                    <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/> <space unit="character" extent="unknown"/> <w lemma="τόπος">τόπος</w>
                     <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> 
-                    <persName type="attested" ><name nymRef="Νικηφόρος">Νικηφόρο<supplied reason="lost">ς</supplied></name></persName>
-                    <lb n="3"/><persName type="attested"><name nymRef="-"><gap reason="lost" unit="character" extent="unknown"/></name></persName> <space unit="character" extent="unknown"/> <w>τόπος</w>
-                    <lb n="4"/><persName type="attested"><name nymRef="-"><gap reason="lost" unit="character" extent="unknown"/></name></persName> <space unit="character" extent="unknown"/> <w>τόπος</w>
-                    <lb n="5"/><persName type="attested"><name nymRef="-ς"><gap reason="lost" unit="character" extent="unknown"/><seg part="F"><unclear>ς</unclear></seg></name></persName> <space 
-                        unit="character" quantity="3"/> <w>τόπος</w>
-                    <lb n="6"/><persName type="attested" ><name nymRef="-ιτος"><gap reason="lost" unit="character" extent="unknown"/><seg part="F"><unclear>ίτ</unclear>ω</seg></name></persName> <space 
-                        unit="character" quantity="5"/> <w>τόπος</w>
-                    <lb n="7"/><persName type="attested"><name nymRef="-ανωρ"><gap reason="lost" unit="character" quantity="4"/><seg part="F"><unclear>ά</unclear>νορος</seg></name></persName> <space 
-                        unit="character" quantity="6"/> <w>τόπος</w>
-                    <lb n="8"/><persName type="attested"><name nymRef="Θεύδωρος"><supplied reason="lost">Θ</supplied><unclear>ε</unclear>υδώρω</name></persName> <space 
-                        unit="character" quantity="8"/> <w>τόπος</w>
-                    <lb n="9"/><persName type="attested"><name nymRef="Ἀριστέας">Ἀριστέα</name></persName> <space 
-                        unit="character" quantity="8"/> <w>τόπος</w>
-                    <lb n="10"/><persName type="attested"><name nymRef="Πολυκλῆς">Πολυκλεῦς</name></persName> <space 
-                        unit="character" quantity="6"/> <w>τόπος</w>
-                    <lb n="11"/><persName type="attested"><name nymRef="Βάκαλ">Βακαλος</name></persName> <space unit="character" quantity="9"/> <w>τόπος</w>
-                    <lb n="12"/><persName type="attested"><name nymRef="Ξηνόφαντος">Ξηνοφάντω</name></persName> <space 
-                        unit="character" quantity="6"/> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
-                    <lb n="13"/><persName type="attested"><name nymRef="Νίκαιος"><supplied reason="lost">Ν</supplied>ικαίω</name></persName> <space 
-                        unit="character" quantity="11"/> <w lemma="τόπος">τόπ<supplied reason="lost">ος</supplied></w>
-                    <lb n="14"/><persName type="attested"><name nymRef="Μνάσων"><supplied reason="lost">Μ</supplied>νάσωνος</name></persName> <space 
-                        unit="character" quantity="7"/> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
-                    <lb n="15"/><persName type="attested"><name nymRef="Λύσιππος"><unclear>Λ</unclear>υσίππω</name></persName> <space 
-                        unit="character" quantity="9"/> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
-                    <lb n="16"/><persName type="attested"><name nymRef="Δαμοσθένης"><unclear>Δ</unclear>αμοσθένευς</name></persName> <space 
-                        unit="character" quantity="3"/> <w>τόπος</w>
-                    <lb n="17"/><persName type="attested"><name nymRef="Ἀντίπατρος">Ἀντιπάτρω</name></persName> <space 
-                        unit="character" quantity="6"/> <w>τόπος</w>
-                    <lb n="18"/><persName type="attested"><name nymRef="Φαίνιππος"><unclear>Φ</unclear>αινίππω</name></persName> <space 
-                        unit="character" quantity="9"/> <w>τόπος</w>
-                    <lb n="19"/><persName type="attested"><name nymRef="Φίλιππος"><supplied reason="lost">Φ</supplied><unclear>ιλίπ</unclear>πω</name></persName> <space 
-                        unit="character" quantity="10"/> <w>τόπος</w>
-                    <lb n="20"/><persName type="attested"><name nymRef="Ἠρίλοχος"><supplied reason="lost">Ἠρ</supplied><unclear>ι</unclear>λόχω</name></persName> <space 
-                        unit="character" quantity="11"/> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
-                    <lb n="21"/><persName type="attested"><name nymRef="Πρᾶτις"><unclear>Π</unclear>ράτιος</name></persName> <space 
-                        unit="character" quantity="10"/> <w lemma="τόπος">τόπ<supplied reason="lost">ος</supplied></w>
-                    <lb n="22"/><persName type="attested"><name nymRef="Καλλίγνωτος"><unclear>Κ</unclear>αλλιγνώ<supplied reason="lost">τω</supplied></name></persName> <space 
-                        unit="character" quantity="7"/> <w>τόπος</w>
-                    <lb n="23"/><persName type="attested"><name nymRef="Ἀλεξίμαχος">Ἀλεξιμάχω</name></persName> <space 
-                        unit="character" quantity="6"/> <w>τόπος</w>
-                    <lb n="24"/><persName type="attested"><name nymRef="Εὔιππος">Εὐίππ<unclear>ω</unclear></name></persName> <space 
-                        unit="character" quantity="10"/> <w>τόπος</w>
-                    <lb n="25"/><persName type="attested"><name nymRef="Εὐμηλίδας">Εὐμηλίδα</name></persName> <space 
-                        unit="character" quantity="8"/> <w>τόπος</w>
-                    <lb n="26"/><persName type="attested" ><name nymRef="Νικομήδης">Νικομήδευς</name></persName> <space 
-                        unit="character" quantity="6"/> <w>τόπος</w>                    
-                    <lb n="27"/><persName type="attested" ><name nymRef="Δαμοσθένης">Δαμοσθένευς</name></persName> <space 
-                        unit="character" quantity="3"/> <w>τόπος</w>                    
-                    <lb n="28"/><persName type="attested" ><name nymRef="Πασικράτης"><unclear>Π</unclear>ασικράτευς</name></persName> <space 
-                        unit="character" quantity="3"/> <w>τόπος</w>
-                    <lb n="29"/><persName type="attested" ><name nymRef="Ἀπολλώνιος"><supplied reason="lost">Ἀ</supplied><unclear>π</unclear>ολλω<supplied reason="lost">νίω</supplied></name></persName> <space 
-                        unit="character" quantity="5"/> <w>τόπος</w>
-                    <lb n="30"/><persName type="attested"><name nymRef="-"><gap reason="lost" extent="unknown" unit="character"/></name></persName> <supplied reason="lost"> <space 
-                        unit="character" extent="unknown"/></supplied> <w lemma="τόπος"><supplied reason="lost">τ</supplied>όπος</w>
-                    <lb n="31"/><persName type="attested"><name nymRef="-"><gap reason="lost" extent="unknown" unit="character"/></name></persName> <supplied reason="lost"> <space unit="character" 
-                        extent="unknown"/></supplied> <w lemma="τόπος"><supplied reason="lost">τό</supplied><unclear>π</unclear>ος</w>
+                    <persName type="attested"><name nymRef="Νικηφόρος">Νικηφόρο<supplied reason="lost">ς</supplied></name></persName>
+                    <lb n="3"/><persName type="attested"><name nymRef="-"><gap reason="lost" unit="character" extent="unknown"/></name></persName> <space unit="character" extent="unknown"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="4"/><persName type="attested"><name nymRef="-"><gap reason="lost" unit="character" extent="unknown"/></name></persName> <space unit="character" extent="unknown"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="5"/><persName type="attested"><name nymRef="-ς"><gap reason="lost" unit="character" extent="unknown"/><seg part="F"><unclear>ς</unclear></seg></name></persName> <space unit="character" quantity="3"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="6"/><persName type="attested"><name nymRef="-ιτος"><gap reason="lost" unit="character" extent="unknown"/><seg part="F"><unclear>ίτ</unclear>ω</seg></name></persName> <space unit="character" quantity="5"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="7"/><persName type="attested"><name nymRef="-ανωρ"><gap reason="lost" unit="character" quantity="4"/><seg part="F"><unclear>ά</unclear>νορος</seg></name></persName> <space unit="character" quantity="6"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="8"/><persName type="attested"><name nymRef="Θεύδωρος"><supplied reason="lost">Θ</supplied><unclear>ε</unclear>υδώρω</name></persName> <space unit="character" quantity="8"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="9"/><persName type="attested"><name nymRef="Ἀριστέας">Ἀριστέα</name></persName> <space unit="character" quantity="8"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="10"/><persName type="attested"><name nymRef="Πολυκλῆς">Πολυκλεῦς</name></persName> <space unit="character" quantity="6"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="11"/><persName type="attested"><name nymRef="Βάκαλ">Βακαλος</name></persName> <space unit="character" quantity="9"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="12"/><persName type="attested"><name nymRef="Ξηνόφαντος">Ξηνοφάντω</name></persName> <space unit="character" quantity="6"/> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
+                    <lb n="13"/><persName type="attested"><name nymRef="Νίκαιος"><supplied reason="lost">Ν</supplied>ικαίω</name></persName> <space unit="character" quantity="11"/> <w lemma="τόπος">τόπ<supplied reason="lost">ος</supplied></w>
+                    <lb n="14"/><persName type="attested"><name nymRef="Μνάσων"><supplied reason="lost">Μ</supplied>νάσωνος</name></persName> <space unit="character" quantity="7"/> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
+                    <lb n="15"/><persName type="attested"><name nymRef="Λύσιππος"><unclear>Λ</unclear>υσίππω</name></persName> <space unit="character" quantity="9"/> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
+                    <lb n="16"/><persName type="attested"><name nymRef="Δαμοσθένης"><unclear>Δ</unclear>αμοσθένευς</name></persName> <space unit="character" quantity="3"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="17"/><persName type="attested"><name nymRef="Ἀντίπατρος">Ἀντιπάτρω</name></persName> <space unit="character" quantity="6"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="18"/><persName type="attested"><name nymRef="Φαίνιππος"><unclear>Φ</unclear>αινίππω</name></persName> <space unit="character" quantity="9"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="19"/><persName type="attested"><name nymRef="Φίλιππος"><supplied reason="lost">Φ</supplied><unclear>ιλίπ</unclear>πω</name></persName> <space unit="character" quantity="10"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="20"/><persName type="attested"><name nymRef="Ἠρίλοχος"><supplied reason="lost">Ἠρ</supplied><unclear>ι</unclear>λόχω</name></persName> <space unit="character" quantity="11"/> <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
+                    <lb n="21"/><persName type="attested"><name nymRef="Πρᾶτις"><unclear>Π</unclear>ράτιος</name></persName> <space unit="character" quantity="10"/> <w lemma="τόπος">τόπ<supplied reason="lost">ος</supplied></w>
+                    <lb n="22"/><persName type="attested"><name nymRef="Καλλίγνωτος"><unclear>Κ</unclear>αλλιγνώ<supplied reason="lost">τω</supplied></name></persName> <space unit="character" quantity="7"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="23"/><persName type="attested"><name nymRef="Ἀλεξίμαχος">Ἀλεξιμάχω</name></persName> <space unit="character" quantity="6"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="24"/><persName type="attested"><name nymRef="Εὔιππος">Εὐίππ<unclear>ω</unclear></name></persName> <space unit="character" quantity="10"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="25"/><persName type="attested"><name nymRef="Εὐμηλίδας">Εὐμηλίδα</name></persName> <space unit="character" quantity="8"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="26"/><persName type="attested"><name nymRef="Νικομήδης">Νικομήδευς</name></persName> <space unit="character" quantity="6"/> <w lemma="τόπος">τόπος</w>                    
+                    <lb n="27"/><persName type="attested"><name nymRef="Δαμοσθένης">Δαμοσθένευς</name></persName> <space unit="character" quantity="3"/> <w lemma="τόπος">τόπος</w>                    
+                    <lb n="28"/><persName type="attested"><name nymRef="Πασικράτης"><unclear>Π</unclear>ασικράτευς</name></persName> <space unit="character" quantity="3"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="29"/><persName type="attested"><name nymRef="Ἀπολλώνιος"><supplied reason="lost">Ἀ</supplied><unclear>π</unclear>ολλω<supplied reason="lost">νίω</supplied></name></persName> <space unit="character" quantity="5"/> <w lemma="τόπος">τόπος</w>
+                    <lb n="30"/><persName type="attested"><name nymRef="-"><gap reason="lost" extent="unknown" unit="character"/></name></persName> <supplied reason="lost"> <space unit="character" extent="unknown"/></supplied> <w lemma="τόπος"><supplied reason="lost">τ</supplied>όπος</w>
+                    <lb n="31"/><persName type="attested"><name nymRef="-"><gap reason="lost" extent="unknown" unit="character"/></name></persName> <supplied reason="lost"> <space unit="character" extent="unknown"/></supplied> <w lemma="τόπος"><supplied reason="lost">τό</supplied><unclear>π</unclear>ος</w>
                     <lb n="31a"/><gap reason="lost" extent="unknown" unit="line"/> 
 
 
@@ -210,14 +184,14 @@
             emplacement d'Euippos, (25) emplacement d'Eumèlidas, emplacement de Nikomèdès, emplacement de Damosthénès, emplacement de Pasikratès, emplacement d'
             Apollônios, (30) emplacement d'[Untel], emplacement d'[Untel, . . .</p>
          </div>
-            <div type="translation"  resp="#cdl" xml:lang="en">
+            <div type="translation" resp="#cdl" xml:lang="en">
             <p> . . . ] place(s) Nikephoros [ . . . ]: place of [So-and-so], place of [So-and-so], (5) place of [So-and-so], place of [ . . -]itos, 
             place of [ . . . -]anor, place of Theudoros, place of Aristeas, (10) place of Polykles, place of Bakal, place of Xenophantos, 
             place of Nikaios, place of Mnason, (15) place of Lysippos, place of Damosthenes, place of Antipatros, place of Phainippos, place of Philippos, 
             (20) place of Erilochos, place of Pratis, place of Kallignotos, place of Aleximachos, place of Euippos, (25) place of Eumelidas, place of Nikomedes, 
             place of Damosthenes, place of Pasikrates, place of Apollonios, (30) place of [So-and-so], place of [So-and-so . . . </p>
          </div>
-            <div type="translation"  resp="#aben"  xml:lang="it">
+            <div type="translation" resp="#aben" xml:lang="it">
              <p> . . .] posto (posti) Nikephoros [ . . . ]: posto di [Un tale], posto di [Un tale], (5) posto di [Un tale], posto di [ . . . -]itos, 
             posto di [ . . . -]anor, posto di Theudoros, posto di Aristeas, (10) posto di Polykles, posto di Bakal, posto di Xenophantos, 
             posto di Nikaios, posto di Mnason, (15) posto di Lysippos, posto di Damosthenes, posto di Antipatros, posto di Phainippos, posto di Philippos, 
@@ -233,7 +207,7 @@
                 spaces for any activity. The stone was probably brought to the later Theatre 2 for reuse of the marble.</p>
                 
                 <p>Line 7: both Αἰγλάνωρ and Πολυάνωρ, which are common at Cyrene, would fit the gap.</p>
-	<p></p>
+	<p/>
             </div>
         </body>
     </text>

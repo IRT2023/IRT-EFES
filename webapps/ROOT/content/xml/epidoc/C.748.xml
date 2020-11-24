@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -117,30 +117,29 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/d7uUJksMH3VT3aS4khkLzL"><persName type="emperor" key="nero"><name nymRef="Νέρων"><supplied reason="lost">Νέρω</supplied>ν</name> <name nymRef="Κλαύδιος">Κλαύδιος</name> <persName type="emperor" key="claudius"><w><supplied reason="lost">θε</supplied>οῦ</w>
-                    <lb n="2"/><note>sic</note> <name nymRef="Κλαύδιος"><unclear>Κ</unclear>λαυδίου</name> </persName><w>ὑὸς</w> <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερμαν<unclear>ι</unclear>
-                    <lb n="3" break="no"/><note>sic</note> κου</name> <name nymRef="Καῖσαρ">Καίσαρος</name></persName> <space quantity="1" unit="character"/> <w>ὑωνὸς</w>
+                    <lb n="1"/><date ref="https://godot.date/id/d7uUJksMH3VT3aS4khkLzL"><persName type="emperor" key="nero"><name nymRef="Νέρων"><supplied reason="lost">Νέρω</supplied>ν</name> <name nymRef="Κλαύδιος">Κλαύδιος</name> <persName type="emperor" key="claudius"><w lemma="θεός"><supplied reason="lost">θε</supplied>οῦ</w>
+                    <lb n="2"/><note>sic</note> <name nymRef="Κλαύδιος"><unclear>Κ</unclear>λαυδίου</name> </persName><w lemma="υἱός">ὑὸς</w> <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερμαν<unclear>ι</unclear>
+                    <lb n="3" break="no"/><note>sic</note> κου</name> <name nymRef="Καῖσαρ">Καίσαρος</name></persName> <space quantity="1" unit="character"/> <w lemma="ὑωνός">ὑωνὸς</w>
                     <lb n="4"/><persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name> <name nymRef="Καῖσαρ">Καίσαρος</name>
                     <space quantity="1" unit="character"/> <name nymRef="Σεβαστός">Σεβαστ<unclear>ο</unclear><supplied reason="lost">ῦ</supplied></name></persName>
-                    <lb n="5"/> <w><supplied reason="lost">κ</supplied>αὶ</w> <persName type="emperor" key="augustus"><w>θεοῦ</w> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName>
-                    <lb n="6"/> <w>ἔκγονος</w> <name nymRef="Καῖσαρ">Καῖσαρ</name>
+                    <lb n="5"/> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <persName type="emperor" key="augustus"><w lemma="θεός">θεοῦ</w> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName>
+                    <lb n="6"/> <w lemma="ἔκγονος">ἔκγονος</w> <name nymRef="Καῖσαρ">Καῖσαρ</name>
                     <lb n="7"/><name nymRef="Σεβαστός">Σεβαστ<unclear>ὸ</unclear>ς</name>  
                     <name nymRef="Γερμανικός">Γερμαν<supplied reason="lost">ι</supplied><lb n="8" break="no"/>κὸς</name></persName> 
-                    <w>ἀρχ<unclear>ι</unclear><supplied reason="lost">ερε</supplied><unclear>ὺ</unclear>ς</w> 
-                    <w>μέ<lb n="9" break="no"/>γιστο<supplied reason="lost">ς</supplied></w> 
-                    <w><supplied reason="lost">δημαρχ</supplied>ικῆ<supplied reason="lost">ς</supplied></w>
-                    <lb n="10"/> <w>ἐξου<unclear>σ</unclear><supplied reason="lost">ί</supplied><unclear>α</unclear><supplied reason="lost">ς</supplied></w> 
-                    <w><supplied reason="lost">Αὐτο</supplied><unclear>κρ</unclear><supplied reason="lost">ά</supplied><lb n="11" break="no"/>τωρ</w>
+                    <w lemma="ἀρχιερεύς">ἀρχ<unclear>ι</unclear><supplied reason="lost">ερε</supplied><unclear>ὺ</unclear>ς</w> 
+                    <w lemma="μέγας">μέ<lb n="9" break="no"/>γιστο<supplied reason="lost">ς</supplied></w> 
+                    <w lemma="δημαρχικός"><supplied reason="lost">δημαρχ</supplied>ικῆ<supplied reason="lost">ς</supplied></w>
+                    <lb n="10"/> <w lemma="ἐξουσία">ἐξου<unclear>σ</unclear><supplied reason="lost">ί</supplied><unclear>α</unclear><supplied reason="lost">ς</supplied></w> 
+                    <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτο</supplied><unclear>κρ</unclear><supplied reason="lost">ά</supplied><lb n="11" break="no"/>τωρ</w>
                     <space quantity="1" unit="character"/> <w lemma="ὕπατος">ὕπα<supplied reason="lost">τος</supplied></w></date> <space quantity="1" unit="character"/>
                     <lb n="12"/> <w lemma="διά">διὰ</w> 
                     <space quantity="1" unit="character"/> 
-                    <persName type="attested"  key="pir2-a-0082"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <space quantity="1" unit="character"/> <name nymRef="Ἀκίλιος">Ἀκιλί<unclear>ο</unclear><supplied reason="lost">υ</supplied></name>
-                    <lb n="13"/><name nymRef="Στράβων">Στράβων <space quantity="1" unit="character"/> ος</name></persName> <w lemma="ὁ">τοῦ</w> <w>ἰδίο<supplied reason="lost">υ</supplied></w>
-                    <lb n="14"/> <w><unclear>π</unclear>ρε 
-                    <space quantity="1" unit="character"/> σβευτοῦ</w> <w>ὅρου<supplied reason="lost">ς</supplied></w>
-   <lb n="15"/> <w>κατ <space quantity="1" unit="character"/> εχομένους</w> <w>ὑπ<unclear>ὸ</unclear></w>
-   <lb n="16"/> <w>ἰ<supplied reason="lost">δ</supplied>ιωτῶν</w> <w>Δήμῳ</w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαί
-    <lb n="17" break="no"/><unclear>ων</unclear></placeName> <w><supplied reason="lost">ἀπο</supplied><unclear>κατ</unclear><supplied reason="lost">έ</supplied><unclear>στ</unclear>ησεν</w>
+                    <persName type="attested" key="pir2-a-0082"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <space quantity="1" unit="character"/> <name nymRef="Ἀκίλιος">Ἀκιλί<unclear>ο</unclear><supplied reason="lost">υ</supplied></name>
+                    <lb n="13"/><name nymRef="Στράβων">Στράβων <space quantity="1" unit="character"/> ος</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="ἴδιος">ἰδίο<supplied reason="lost">υ</supplied></w>
+                    <lb n="14"/> <w lemma="πρεσβευτής"><unclear>π</unclear>ρε <space quantity="1" unit="character"/> σβευτοῦ</w> <w lemma="ὅρος">ὅρου<supplied reason="lost">ς</supplied></w>
+   <lb n="15"/> <w lemma="κατέχω">κατ <space quantity="1" unit="character"/> εχομένους</w> <w lemma="ὑπό">ὑπ<unclear>ὸ</unclear></w>
+   <lb n="16"/> <w lemma="ἰδιώτης">ἰ<supplied reason="lost">δ</supplied>ιωτῶν</w> <w lemma="Δῆμος">Δήμῳ</w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαί
+    <lb n="17" break="no"/><unclear>ων</unclear></placeName> <w lemma="ἀποκαθίστημι"><supplied reason="lost">ἀπο</supplied><unclear>κατ</unclear><supplied reason="lost">έ</supplied><unclear>στ</unclear>ησεν</w>
                 </ab>
 </div>
          <div type="apparatus">

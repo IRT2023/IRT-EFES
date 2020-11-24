@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-05" who="TW">Persnamed most of the names</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -131,7 +131,7 @@
             <div subtype="section" n="1b" type="textpart">
                <ab>
                <lb n="1"/><date ref="https://godot.date/id/xxfK2iVhxnhhtxniMSK2xE"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="83">π<unclear>γ</unclear></num>
-                  <rs type="month" key="mesore"><w>Μεϲορὴ</w></rs> <num value="6"><unclear>ϛ</unclear></num></date>
+                  <rs type="month" key="mesore"><w lemma="Μεσορή">Μεϲορὴ</w></rs> <num value="6"><unclear>ϛ</unclear></num></date>
                   <lb n="2"/> <persName type="attested"><name nymRef="Τίμαρχος">Τίμαρχοϲ</name> <persName type="attested"><name nymRef="Π-"><seg part="I">Π</seg></name> <gap reason="lost" extent="unknown" unit="character"/></persName></persName>
                   <lb n="3"/><date type="life-span" dur="P10Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num atLeast="10">ι<gap reason="lost" extent="unknown" unit="character"/></num> </date>
                </ab>
@@ -164,7 +164,7 @@
                               <ab>
                               <lb n="1"/><date ref="https://godot.date/id/Py4h2GLsopDKeF6C8adER7"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                                  <num value="105">ρ<unclear>ε</unclear></num> 
-                                 <rs type="month" key="pachon"><w>Παχὼν</w></rs> <num value="5">ε</num></date>
+                                 <rs type="month" key="pachon"><w lemma="Παχών">Παχὼν</w></rs> <num value="5">ε</num></date>
                                  <lb n="2"/> <persName type="attested"><name nymRef="Μυρτώ">Μυρτὼ</name> <persName type="attested"><name nymRef="Θεόδωρος">θεοδώρω</name></persName></persName>
                                  <lb n="3"/><date type="life-span" dur="P68Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="68">ξη</num> </date>
                               </ab>
@@ -189,7 +189,7 @@
             <div subtype="section" n="5b" type="textpart">
                                     <ab>
                                     <lb n="1"/><date ref="https://godot.date/id/V6JgFJoyAGmDBns2qWe2EC"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="103">ρ<unclear>γ</unclear></num> 
-                                       <rs type="month"  key="tybi"><w lemma="Τυβί">Τυ<unclear>β</unclear>ὶ</w></rs> <gap reason="lost" extent="unknown" unit="character"/></date>
+                                       <rs type="month" key="tybi"><w lemma="Τυβί">Τυ<unclear>β</unclear>ὶ</w></rs> <gap reason="lost" extent="unknown" unit="character"/></date>
                                        <lb n="2"/><gap reason="lost" quantity="7" unit="character" precision="low"/> <persName type="attested"><name nymRef="Σῖμος">Σίμου</name></persName>
                                        <date type="life-span" dur="P30Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="30">λ</num> </date>
                                     </ab>
@@ -197,7 +197,7 @@
             <div subtype="section" n="6a" type="textpart">
                                        <ab>
                                        <lb n="1"/><date ref="https://godot.date/id/WEfQaj7AgpAhcoPopAPxtQ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
-                                          <num value="50">ν</num> <rs type="month"  key="hathyr"><w lemma="Ἁθύρ">Ἁ<unclear>θ</unclear><supplied reason="lost">ὺρ</supplied></w></rs><gap reason="lost" quantity="1" unit="character"/></date>
+                                          <num value="50">ν</num> <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁ<unclear>θ</unclear><supplied reason="lost">ὺρ</supplied></w></rs><gap reason="lost" quantity="1" unit="character"/></date>
                                           <lb n="2"/><persName type="attested"><name nymRef="Τίμαρχος">Τίμαρχοϲ</name></persName>
                                           <lb n="3"/><persName type="attested"><name nymRef="Σῖμος">Ϲίμου</name></persName> <date type="life-span" dur="P30Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
                                                       <num value="30"><unclear>λ</unclear></num> </date></ab></div>

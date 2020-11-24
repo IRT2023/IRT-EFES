@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -129,12 +129,11 @@
                     <lb n="1"/><date ref="https://godot.date/id/o8Vw6LGNn9GFpgHgj9DLHg"><persName type="emperor" key="marcusaurelius"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορα</w> <name nymRef="Καῖσαρ">Καίσα<milestone unit="block"/><supplied reason="lost">ρα</supplied></name>
                     <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκον</ex></expan></name> 
                     <name nymRef="Αὐρήλιος">Αὐρήλ<supplied reason="lost">ιον</supplied></name>
-                    <lb n="2"/><name nymRef="Ἀντωνῖνος">Ἀντωνείνον</name> <name nymRef="Σεβαστός">Σεβα<supplied reason="lost">σ</supplied><milestone unit="block"/><unclear
-                       >τ</unclear>ὸν</name>
+                    <lb n="2"/><name nymRef="Ἀντωνῖνος">Ἀντωνείνον</name> <name nymRef="Σεβαστός">Σεβα<supplied reason="lost">σ</supplied><milestone unit="block"/><unclear>τ</unclear>ὸν</name>
                     <name nymRef="Ἀρμενιακός"><expan><abbr>Ἀρμε<supplied reason="lost">νιακ</supplied></abbr><supplied reason="lost"><ex>ὸν</ex></supplied></expan></name></persName></date>
                     <lb n="3"/> <w lemma="ὁ">ἁ</w> <w lemma="πόλις">πόλις</w> <w lemma="ὁ">ἁ</w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυρανάων</placeName><milestone unit="block"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear>ὸ</unclear>ν</w> 
-                    <w>μ<supplied reason="lost" cert="low">έγιστον</supplied></w>
-                    <lb n="4"/> <w>ἀφιερώσαντος</w> <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> 
+                    <w lemma="μέγας">μ<supplied reason="lost" cert="low">έγιστον</supplied></w>
+                    <lb n="4"/> <w lemma="ἀφιερόω">ἀφιερώσαντος</w> <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> 
                     <orig><unclear>ο</unclear></orig><gap reason="lost" quantity="4" unit="character"/><orig>μ</orig></persName> <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
 </div>

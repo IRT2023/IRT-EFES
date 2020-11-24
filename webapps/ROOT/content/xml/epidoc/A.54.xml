@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -107,6 +106,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -143,8 +143,7 @@
              </bibl>, whence <bibl><ptr target="AE"/> <citedRange>1967.531</citedRange></bibl>,
                (whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015145">015145</ref></citedRange></bibl>), 
                <bibl><ptr target="jmr1972"/>, <citedRange>46</citedRange></bibl>; <bibl>
-                  <ptr target="jmr1976"/>, <citedRange>76</citedRange></bibl>. For the proconsul see <bibl><ref type="external" 
-                     target="http://pir.bbaw.de/addenda//alia/IRN1891.html">PIR addenda</ref></bibl> 
+                  <ptr target="jmr1976"/>, <citedRange>76</citedRange></bibl>. For the proconsul see <bibl><ref type="external" target="http://pir.bbaw.de/addenda//alia/IRN1891.html">PIR addenda</ref></bibl> 
                 </p>
          </div>
          
@@ -156,7 +155,8 @@
                         <date><persName type="attested"><name nymRef="Gaius"><expan><abbr>G</abbr><ex>aius</ex></expan></name> 
                         <name nymRef="Arinius">Arinius</name> <name nymRef="Modestus">Modes<lb n="4" break="no"/>tus</name> 
                         <w lemma="proconsul"><expan><abbr>pr<unclear>o</unclear>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
-                        <num value="2">II</num> </persName></date> <w lemma="chorium">choria</w> <placeName type="ethnic" nymRef="#Apolloniata" ref="#apollonia">Apol<lb n="5" break="no"/>loniatarum</placeName> <w lemma="qui">quae</w> <w lemma="respublica">respu<lb n="6" break="no"/>bl<unclear>i</unclear> <space quantity="1" unit="character"/> ca</w> <w lemma="cum">cum</w> 
+                        <num value="2">II</num> </persName></date> <w lemma="chorium">choria</w> <placeName type="ethnic" nymRef="#Apolloniata" ref="#apollonia">Apol<lb n="5" break="no"/>loniatarum</placeName> <w lemma="qui">quae</w> <w lemma="respublica">respu<lb 
+                           n="6" break="no"/>bl<unclear>i</unclear> <space quantity="1" unit="character"/> ca</w> <w lemma="cum">cum</w> 
                         <w lemma="socius">soci<supplied reason="omitted">i</supplied>s</w> <w lemma="emo">emerat</w> 
                     <lb n="7"/> <space quantity="1" unit="character"/> <w lemma="diuido">diuisa</w> <space quantity="1" unit="character"/>
                         <w lemma="loco">locauit</w> 
@@ -171,7 +171,7 @@
                     <lb n="13"/><persName type="attested"><name nymRef="Antonius">Anto<space quantity="1" unit="character"/> ni</name> 
                         <name nymRef="Bathyllus">Bathylli</name></persName> <w lemma="in">i<unclear>n</unclear></w>
                     <lb n="14"/><w lemma="qui">quibus</w> <space quantity="1" unit="character"/> <w lemma="sum">sunt</w>
-                        <w>medi<unclear>m</unclear>nia</w> 
+                        <w lemma="medimnium">medi<unclear>m</unclear>nia</w> 
                     <lb n="15"/> <space quantity="1" unit="character"/> <num value="23">XXIII</num> 
                         <space quantity="1" unit="character"/>
                         <w part="I"><expan><abbr>hemi</abbr><ex>su</ex></expan></w> <num value="1">I</num>
@@ -203,8 +203,7 @@
                     Susa are unlikely to indicate allotments made to veterans by Hadrian after the
                     Jewish Revolt as suggested by Applebaum, <title level="j">JJS</title> 2 (1951) 181.</p>
             <p>Lines 3-4: For the proconsul see W. Eck, <title level="j">Vestigia</title> XIII (1970) 119ff,  
-               see <bibl><ref type="external" 
-                  target="http://pir.bbaw.de/addenda//alia/IRN1891.html">PIR addenda</ref></bibl>, and 
+               see <bibl><ref type="external" target="http://pir.bbaw.de/addenda//alia/IRN1891.html">PIR addenda</ref></bibl>, and 
                Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.030. He may have held office in any 
                     year of Vespasian's reign except CE 72/3 (Josephus, BJ VII. 439f.) or 77/8 
                     (<!--xref Milestones to be published in IRC-->); but if his action is to be associated 

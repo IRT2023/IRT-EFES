@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-07-09" who="JenniferSarha">fixed schematron error</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -133,7 +133,7 @@
                     <num value="3">γ</num> </date> 
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60435"><name nymRef="Μενέλαος">Μενελ<lb n="4" break="no"/>άο<unclear>υ</unclear></name></persName> 
    <date ref="https://godot.date/id/nXU8qLddVyReVPuUwThAw9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
-                    <num value="12"><unclear>ι</unclear>β</num> <w><unclear>Φ</unclear><lb n="5" break="no"/>αμε<unclear>ν</unclear>ὼτ</w>
+                    <num value="12"><unclear>ι</unclear>β</num> <w lemma="Φαμενώθ"><unclear>Φ</unclear><lb n="5" break="no"/>αμε<unclear>ν</unclear>ὼτ</w>
                     <lb n="6"/><num value="4">δ</num></date>
                 </ab>
 </div>
@@ -150,7 +150,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Seconda di Simone, Hathyr 2 Phamenoth 4</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Seconda di Simone, Hathyr 2 Phamenoth 4</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>Sekonda <supplied reason="explanation"><foreign xml:lang="la">Secunda</foreign></supplied>, aged 3 
                <supplied reason="subaudible">daughter</supplied> of Menelaos, <ref target="https://godot.date/id/nXU8qLddVyReVPuUwThAw9">year 12, Phamenoth 4</ref>.</p></div>
        </div>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -7,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Boundary<certainty cert="low" locus="value" match=".." /></rs> marker</title>
+            <title><rs type="textType">Boundary<certainty cert="low" locus="value" match=".."/></rs> marker</title>
             <editor>Joyce M. Reynolds</editor>
             <editor xml:id="cmr">Charlotte Roueché</editor>
          </titleStmt>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -117,24 +117,24 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/xqsK7PhpfANN3eQcMtJadQ"><persName type="emperor" key="domitianus"><supplied reason="lost"><w>Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name></supplied>
-                        <persName type="emperor" key="vespasianus"><supplied reason="lost"><w>Θ<unclear>ε</unclear><lb n="2" break="no"/>οῦ</w></supplied>
-                    <name nymRef="Οὐεσπασιανός"><unclear>Οὐ</unclear><supplied reason="lost">ε</supplied>σ<supplied reason="lost">π</supplied>αϲια<space quantity="1" unit="character"/><lb n="3" break="no"/><supplied reason="lost">νο</supplied>ῦ</name></persName> <w>υἱὸϲ</w> 
+                    <lb n="1"/><date ref="https://godot.date/id/xqsK7PhpfANN3eQcMtJadQ"><persName type="emperor" key="domitianus"><supplied reason="lost"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name></supplied>
+                        <persName type="emperor" key="vespasianus"><supplied reason="lost"><w lemma="θεός">Θ<unclear>ε</unclear><lb n="2" break="no"/>οῦ</w></supplied>
+                    <name nymRef="Οὐεσπασιανός"><unclear>Οὐ</unclear><supplied reason="lost">ε</supplied>σ<supplied reason="lost">π</supplied>αϲια<space quantity="1" unit="character"/><lb n="3" break="no"/><supplied reason="lost">νο</supplied>ῦ</name></persName> <w lemma="υἱός">υἱὸϲ</w> 
                     <name nymRef="Δομετιανός"><supplied reason="lost">Δ</supplied>ομετι<lb n="4" break="no"/><supplied reason="lost">α</supplied>νὸϲ</name>
                     <name nymRef="Σεβαστός">Ϲε<supplied reason="lost">β</supplied>αϲτὸϲ</name> 
                     <lb n="5"/><name nymRef="Γερμανικός"><supplied reason="lost">Γερ</supplied>μανικὸ<unclear>ϲ</unclear></name></persName>
-                    <w lemma="ἀρχιερεύς">ἀρχιε<lb n="6" break="no"/><supplied reason="lost">ρε</supplied>ὺϲ</w> <w>μέγιϲ<unclear>τ</unclear>οϲ</w>
-                    <w>δη<lb n="7" break="no"/>μ<supplied reason="lost">αρ</supplied><unclear>χ</unclear>ικῆϲ</w>
-                    <w><supplied reason="lost">ἐ</supplied>ξουϲί<lb n="8" break="no"/>α<supplied reason="lost">ϲ</supplied></w>
-                    <w><supplied reason="lost">τ</supplied>ὸ</w> <gap reason="lost" extent="2"   cert="medium" unit="character"/> <w lemma="ὕπατος">ὕπατοϲ</w> 
-                    <lb n="9"/> <w><supplied reason="lost">τὸ</supplied></w> <gap reason="lost" extent="6"  cert="medium" unit="character"/>
-                    <w><supplied reason="lost">τι</supplied><unclear>μητ</unclear>ὴ<supplied reason="lost">ς</supplied></w> 
-                    <lb n="10"/> <w>δ<supplied reason="lost">ιὰ</supplied></w> <w><supplied reason="lost">βίου</supplied></w> <w lemma="πατήρ"><supplied reason="lost">πατὴρ</supplied></w>
+                    <w lemma="ἀρχιερεύς">ἀρχιε<lb n="6" break="no"/><supplied reason="lost">ρε</supplied>ὺϲ</w> <w lemma="μέγας">μέγιϲ<unclear>τ</unclear>οϲ</w>
+                    <w lemma="δημαρχικός">δη<lb n="7" break="no"/>μ<supplied reason="lost">αρ</supplied><unclear>χ</unclear>ικῆϲ</w>
+                    <w lemma="ἐξουσία"><supplied reason="lost">ἐ</supplied>ξουϲί<lb n="8" break="no"/>α<supplied reason="lost">ϲ</supplied></w>
+                    <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸ</w> <gap reason="lost" extent="2" cert="medium" unit="character"/> <w lemma="ὕπατος">ὕπατοϲ</w> 
+                    <lb n="9"/> <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <gap reason="lost" extent="6" cert="medium" unit="character"/>
+                    <w lemma="τιμητής"><supplied reason="lost">τι</supplied><unclear>μητ</unclear>ὴ<supplied reason="lost">ς</supplied></w> 
+                    <lb n="10"/> <w lemma="διά">δ<supplied reason="lost">ιὰ</supplied></w> <w lemma="βίος"><supplied reason="lost">βίου</supplied></w> <w lemma="πατήρ"><supplied reason="lost">πατὴρ</supplied></w>
                         <lb n="11"/> <w lemma="πατρίς"><supplied reason="lost">πατρί</supplied><unclear>δ</unclear>ο<unclear>ς</unclear></w></date>
                     <gap reason="lost" quantity="2" unit="character"/><orig>ε</orig> 
                     <lb n="12"/><gap reason="lost" quantity="6" unit="character" precision="low"/><orig>μο</orig><gap reason="lost" quantity="2" unit="character"/><orig>α</orig>
                     <space quantity="1" unit="character"/> 
-                    <lb n="13"/><gap reason="lost" quantity="4" unit="character"/> <w><supplied reason="lost">ἀν</supplied>θυ<supplied reason="lost">πάτου</supplied></w> 
+                    <lb n="13"/><gap reason="lost" quantity="4" unit="character"/> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀν</supplied>θυ<supplied reason="lost">πάτου</supplied></w> 
                     <lb n="14"/><orig><unclear>μ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> 
                     <lb n="14a"/><gap reason="lost" quantity="1" unit="line"/>
                 </ab>

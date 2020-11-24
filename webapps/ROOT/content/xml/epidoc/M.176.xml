@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -88,6 +87,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
         <change when="2012-03-26" who="AFS">created from template</change>
@@ -109,9 +109,9 @@
           <div type="textpart" n="a">
              <ab>
              <lb n="1"/> <date><date ref="https://godot.date/id/9jMMKBvqDovSRop8tbbUq9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                <num value="129">ρκθ</num>, <date ref="https://godot.date/id/quWsarVBdUD637RSaeS5WK"><w>ἐ<unclear>π</unclear><supplied reason="lost">ὶ</supplied></w>
-                <supplied reason="lost"><w>ἱαρέως</w></supplied> <gap reason="lost" quantity="3" unit="character"/>, 
-                <rs type="month" key="epiphi"><w>Ἐπιφὶ</w></rs> <num value="8">η</num></date> </date></date>
+                <num value="129">ρκθ</num>, <date ref="https://godot.date/id/quWsarVBdUD637RSaeS5WK"><w lemma="ἐπί">ἐ<unclear>π</unclear><supplied reason="lost">ὶ</supplied></w>
+                <supplied reason="lost"><w lemma="ἱερεύς">ἱαρέως</w></supplied> <gap reason="lost" quantity="3" unit="character"/>, 
+                <rs type="month" key="epiphi"><w lemma="Ἐπιφί">Ἐπιφὶ</w></rs> <num value="8">η</num></date> </date></date>
                 <gap reason="lost" extent="unknown" unit="character"/>
              </ab>
           </div>
@@ -127,7 +127,7 @@
             <note>a</note>. <ref target="https://godot.date/id/9jMMKBvqDovSRop8tbbUq9">Year 129</ref>, in the priesthood of [ . . . ], Epiphi 8.</p>
            <p>
               <note>b</note>. <note>Not usefully translatable</note></p></div>
-            <div  type="translation" source="#AE" xml:lang="fr"><p><note>a</note>: L'an 129, sous la prêtrise de..., le 8 d'Epeiphi.</p></div>
+            <div type="translation" source="#AE" xml:lang="fr"><p><note>a</note>: L'an 129, sous la prêtrise de..., le 8 d'Epeiphi.</p></div>
             
          </div>
          <div type="commentary">

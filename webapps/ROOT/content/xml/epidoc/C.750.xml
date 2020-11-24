@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -107,6 +106,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -136,25 +136,25 @@
                <ab>
                      <lb n="1"/><persName type="attested"><name type="praenomen" nymRef="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" nymRef="Iulius">Iulio</name>
                      <persName type="attested"><name type="praenomen" nymRef="Caius"><expan><abbr>C</abbr><ex>aii</ex></expan></name></persName> 
-                     <w><expan><abbr>f</abbr><ex>ilio</ex></expan></w>
-                     <name type="tribe" key="Voltinia"><expan><abbr>Vo<supplied reason="lost">l</supplied></abbr><ex>tinia</ex></expan></name> <supplied reason="subaudible"><w>tribu</w></supplied>
+                     <w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w>
+                     <name type="tribe" key="Voltinia"><expan><abbr>Vo<supplied reason="lost">l</supplied></abbr><ex>tinia</ex></expan></name> <supplied reason="subaudible"><w lemma="tribus">tribu</w></supplied>
                      <lb n="2"/><name type="cognomen" nymRef="Karus">Karo</name></persName> <w lemma="ex">ex</w> <w lemma="prouincia">prouincia</w>
-                  <placeName nymRef="#Narbonensis" ref="#narbonensis">Narbo<lb n="3" break="no"/>nensi</placeName> <w><expan><abbr>trib</abbr><ex>uno</ex></expan></w>
-                  <w><expan><abbr>mil</abbr><ex>itum</ex></expan></w>
-                     <w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num>
+                  <placeName nymRef="#Narbonensis" ref="#narbonensis">Narbo<lb n="3" break="no"/>nensi</placeName> <w lemma="tribunus"><expan><abbr>trib</abbr><ex>uno</ex></expan></w>
+                  <w lemma="miles"><expan><abbr>mil</abbr><ex>itum</ex></expan></w>
+                     <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num>
                      <placeName type="ethnic" nymRef="#Cyrenaicus" ref="#cyrenaica"><expan><abbr>Cy<supplied reason="lost">r</supplied></abbr><ex>enaicae</ex></expan></placeName>
-                     <lb n="4"/> <w><expan><abbr>praef</abbr><ex>ecto</ex></expan></w>
-                  <w><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> <num value="2">II</num>
-                     <placeName type="ethnic" nymRef="#Astur" ref="#asturia">Asturum</placeName> <w><expan><abbr>eq</abbr><ex>uitatae</ex></expan></w> 
+                     <lb n="4"/> <w lemma="praefectus"><expan><abbr>praef</abbr><ex>ecto</ex></expan></w>
+                  <w lemma="cohors"><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> <num value="2">II</num>
+                     <placeName type="ethnic" nymRef="#Astur" ref="#asturia">Asturum</placeName> <w lemma="equito"><expan><abbr>eq</abbr><ex>uitatae</ex></expan></w> 
                      <lb n="5"/><w lemma="dono">donato</w> <w lemma="bellum">bello</w> <placeName type="ethnic" nymRef="#Brittanicus" ref="#britannia">Brittanico</placeName> 
-                  <w><expan><abbr>c<supplied reason="lost">or</supplied></abbr><supplied reason="lost"><ex>ona</ex></supplied></expan></w>
+                  <w lemma="corona"><expan><abbr>c<supplied reason="lost">or</supplied></abbr><supplied reason="lost"><ex>ona</ex></supplied></expan></w>
                      <lb n="6"/><w lemma="muralis">murali</w> <w lemma="corona">corona</w> <w lemma="uallaris">uallari</w> <w lemma="corona"><expan><abbr>cor</abbr><ex>ona</ex></expan></w> 
                      <lb n="7"/><w lemma="aureus">aurea</w> <w lemma="hasta">hasta</w> <w lemma="purus">pura</w> 
-                     <lb n="8"/> <w><supplied reason="lost">c</supplied>ent<choice><corr>u</corr><sic>y</sic></choice>riones</w>
+                     <lb n="8"/> <w lemma="centurio"><supplied reason="lost">c</supplied>ent<choice><corr>u</corr><sic>y</sic></choice>riones</w>
                   <w lemma="et">et</w> 
-                     <lb n="9"/><w lemma="miles">milites</w> <w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num>
+                     <lb n="9"/><w lemma="miles">milites</w> <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num>
                      <placeName type="ethnic" nymRef="#Cyrenaicus" ref="#cyrenaica"><expan><abbr>Cyr</abbr><ex>enaicae</ex></expan></placeName> <w lemma="et">et</w>
-                  <w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w>
+                  <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w>
                      <lb n="10"/><num value="22"><supplied reason="lost">X</supplied>XII</num> <w lemma="mitto">missi</w> <w lemma="in">in</w>
                   <w lemma="prouincia">prouinciam</w> 
                      <lb n="11"/><placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene"><supplied reason="lost">C</supplied>yrenensium</placeName> <w lemma="diligo">dilectus</w>

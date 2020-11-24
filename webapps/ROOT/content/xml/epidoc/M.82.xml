@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-28" who="MGDA">Tagged header information</change>
@@ -119,7 +119,7 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/VsR5YntpXAjCjvpq6eTta9"><w lemma="ἔτος">ἔτουϲ</w> 
                         <num value="10">ι</num> 
-                        <rs type="month" key="epiphi"><w>Ἐπιφὶ</w></rs> <num value="25">κε</num></date>
+                        <rs type="month" key="epiphi"><w lemma="Ἐπιφί">Ἐπιφὶ</w></rs> <num value="25">κε</num></date>
                     <lb n="2"/><persName type="attested"><name nymRef="Σεκόνδα">Ϲεκόν<unclear>δ</unclear>α</name> 
                         <persName type="attested"><name nymRef="Ἀντίοχος">Ἀ<unclear>ν</unclear>τιόχ<lb n="3" break="no"/>ω</name></persName></persName> 
                         <date type="life-span" dur="P12Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 

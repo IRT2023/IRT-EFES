@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -106,6 +105,7 @@
          </textClass>
       <creation>Transcription (Reynolds, Dobias-Lalou).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -168,22 +168,22 @@
                     <lb n="7"/><name nymRef="Φιλόξενος">Φιλόξενος</name> <name nymRef="Ἀντωνίανος">Ἀντωνίανος</name></persName> 
                     <lb n="8"/><date ref="https://godot.date/id/vwtGPHgNB7sFMtXAugetSY"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                     <num value="142">ρμβ</num></date> <persName type="attested"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>όπλιος</ex></expan></name> <name nymRef="Σήστιος">Σήστιος</name> <name nymRef="Πωλλίων">Πωλλίων</name> 
-                    <persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊου</ex></expan></name> <name nymRef="Σήστιος">Σηστίου</name> <name nymRef="Φλῶρος">Φλώ<lb n="9" break="no"/>ρου</name> <w>υἱὸς</w> <w>ἄμναμμος</w> <hi rend="superscript"><orig>οσ</orig></hi>
-            <persName type="attested"  key="pir2-a-0831"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="Ἀντώνιος">Ἀντωνίου</name>  <name nymRef="Φλάμμα">Φλάμ<lb n="10" break="no"/>μα</name></persName></persName></persName> <w>ἱερεὺς</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλω<supplied reason="lost">νο</supplied>ς</name></persName>
-            <w>συνκλητικὸς</w> <w lemma="καί">καὶ</w>
-                    <lb n="11"/> <w>ταμίας</w> <placeName nymRef="#Ῥώμη" ref="#roma">Ῥώμης</placeName> <w>ἀγ<supplied reason="lost">ορα</supplied>νόμος</w>
-            <w>κορούλης</w>
-                    <lb n="12"/> <w>στρατηγικὸς</w> <w><unclear>πρ</unclear><supplied reason="lost">εσβε</supplied>υτὴς</w> <w lemma="καί">καὶ</w> 
-                    <w>ἀντιστρά<lb n="13" break="no"/><space quantity="4" unit="character"/>τηγος</w>
+                    <persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊου</ex></expan></name> <name nymRef="Σήστιος">Σηστίου</name> <name nymRef="Φλῶρος">Φλώ<lb n="9" break="no"/>ρου</name> <w lemma="υἱός">υἱὸς</w> <w lemma="ἄμναμμος">ἄμναμμος</w> <hi rend="superscript"><orig>οσ</orig></hi>
+            <persName type="attested" key="pir2-a-0831"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="Ἀντώνιος">Ἀντωνίου</name>  <name nymRef="Φλάμμα">Φλάμ<lb n="10" break="no"/>μα</name></persName></persName></persName> <w lemma="ἱερεύς">ἱερεὺς</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλω<supplied reason="lost">νο</supplied>ς</name></persName>
+            <w lemma="συνκλητικός">συνκλητικὸς</w> <w lemma="καί">καὶ</w>
+                    <lb n="11"/> <w lemma="ταμίας">ταμίας</w> <placeName nymRef="#Ῥώμη" ref="#roma">Ῥώμης</placeName> <w lemma="ἀγορανόμος">ἀγ<supplied reason="lost">ορα</supplied>νόμος</w>
+            <w lemma="κορουλής">κορούλης</w>
+                    <lb n="12"/> <w lemma="στρατηγικός">στρατηγικὸς</w> <w lemma="πρεσβευτής"><unclear>πρ</unclear><supplied reason="lost">εσβε</supplied>υτὴς</w> <w lemma="καί">καὶ</w> 
+                    <w lemma="ἀντιστράτηγος">ἀντιστρά<lb n="13" break="no"/><space quantity="4" unit="character"/>τηγος</w>
             <placeName ref="#creteandcyrene" nymRef="#Κρήτη καὶ Κυρήνη"><placeName nymRef="#Κρήτη" ref="#crete">Κρήτ<supplied reason="lost">ης</supplied></placeName>
-            <w><supplied reason="lost">κ</supplied><unclear>α</unclear>ὶ</w> <placeName nymRef="#Κυρήνη" ref="#cyrene">Κυρήνης</placeName></placeName> <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
+            <w lemma="καί"><supplied reason="lost">κ</supplied><unclear>α</unclear>ὶ</w> <placeName nymRef="#Κυρήνη" ref="#cyrene">Κυρήνης</placeName></placeName> <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
                <lb n="14"/><date><date ref="https://godot.date/id/3AmXhvEyLXUzTFSD54WSDJ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>  
-                    <num value="137">ρλζ</num></date> <date ref="https://godot.date/id/WWhexyw5hhr8ZZun3JzXHE"><w lemma="ὁ">τοῦ</w> <w>κ<supplied reason="lost">αὶ</supplied></w>
+                    <num value="137">ρλζ</num></date> <date ref="https://godot.date/id/WWhexyw5hhr8ZZun3JzXHE"><w lemma="ὁ">τοῦ</w> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>
             <supplied reason="lost"><num value="10">ι</num> </supplied></date></date> 
                     <persName type="attested"><name nymRef="Γάϊος"><expan><abbr><unclear>Γ</unclear></abbr><ex>άϊος</ex></expan></name> <name nymRef="Ποστόμιος">Ποστόμιος</name>
             <lb n="15"/><name nymRef="Ὀπτᾶτος">Ὀπτ<unclear>ᾶτ</unclear><supplied reason="lost">ος</supplied></name> <gap reason="lost" quantity="4" unit="character"/> <persName type="attested"><name nymRef="Ποστόμιος"><supplied reason="lost">Π</supplied>ωστομίω</name>
-            <name nymRef="Ὀπτᾶτος">Ὀ<unclear>π</unclear><lb n="16" break="no"/><unclear>τ</unclear><supplied reason="lost">ά</supplied><unclear>τ</unclear>ω</name></persName> <w>υἱὸ<supplied reason="lost">ς</supplied></w></persName>
-            <w><supplied reason="lost">ἱερεὺ</supplied>ς</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλω<supplied reason="lost">νος</supplied></name></persName> 
+            <name nymRef="Ὀπτᾶτος">Ὀ<unclear>π</unclear><lb n="16" break="no"/><unclear>τ</unclear><supplied reason="lost">ά</supplied><unclear>τ</unclear>ω</name></persName> <w lemma="υἱός">υἱὸ<supplied reason="lost">ς</supplied></w></persName>
+            <w lemma="ἱερεύς"><supplied reason="lost">ἱερεὺ</supplied>ς</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλω<supplied reason="lost">νος</supplied></name></persName> 
             <lb n="17"/><space quantity="6" unit="character"/> <w lemma="καλλιέτης"><supplied reason="lost">καλλιέ</supplied>της</w> <space quantity="6" unit="character"/>
                     <lb n="18"/><date><date ref="https://godot.date/id/y4nhX88ex4Jq4Q9aHkecoJ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>  
                     <num value="138">ρλη</num></date> <date><w lemma="ὁ">το<unclear>ῦ</unclear></w> <supplied reason="lost" cert="low"><w lemma="καί">καὶ</w>

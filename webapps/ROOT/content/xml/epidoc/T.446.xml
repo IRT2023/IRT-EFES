@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -120,7 +120,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/tDwyvnqtNrBzTmiLPTZH2M"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="21">κα</num> <rs type="month" key="thoth"><w>Θώθυ</w></rs> <num value="1"><unclear>α</unclear></num></date>
+                    <num value="21">κα</num> <rs type="month" key="thoth"><w lemma="Θώθ">Θώθυ</w></rs> <num value="1"><unclear>α</unclear></num></date>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-60805"><name nymRef="Ἱππονίκα">Ἱππονίκ<unclear>α</unclear></name>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60823"><name nymRef="Πρωτίων">Πρωτίω <space quantity="1" unit="character"/><lb n="4" break="no"/><supplied reason="lost">νος</supplied></name></persName></persName> 
                     <gap reason="lost" extent="unknown" unit="character"/>
@@ -128,8 +128,8 @@
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <div  type="translation" source="#jmr1983" xml:lang="en"><p>Year 21, Thothy 1, Hipponica <supplied reason="subaudible">daughter</supplied> of Protion  . . . </p></div>
-         <div  type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/tDwyvnqtNrBzTmiLPTZH2M">Year 21, Thothy 1</ref>, Hipponika 
+            <div type="translation" source="#jmr1983" xml:lang="en"><p>Year 21, Thothy 1, Hipponica <supplied reason="subaudible">daughter</supplied> of Protion  . . . </p></div>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/tDwyvnqtNrBzTmiLPTZH2M">Year 21, Thothy 1</ref>, Hipponika 
                <supplied reason="subaudible">daughter</supplied> of Protion [ . . . </p></div></div>
          
          <div type="commentary">

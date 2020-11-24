@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -143,8 +143,8 @@
                     <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="2">II</num> 
                     <w lemma="adiutrix"><expan><abbr>Ad</abbr><ex>iutricis</ex></expan></w> <w lemma="ex">ex</w>
                     <w part="I" lemma="doctor"><expan><abbr>d</abbr><supplied reason="lost"><abbr>oc</abbr></supplied><supplied reason="lost"><ex>tore</ex></supplied></expan></w>
-                    <lb n="4"/> <space quantity="1" unit="character"/> <w lemma="fabrica">fabrica<space quantity="2" unit="character"/>e</w> <w><expan><abbr>sep</abbr><ex>ulcrum</ex></expan></w> 
-                    <w>ui<supplied reason="omitted">u</supplied>us</w>
+                    <lb n="4"/> <space quantity="1" unit="character"/> <w lemma="fabrica">fabrica<space quantity="2" unit="character"/>e</w> <w lemma="sepulcrum"><expan><abbr>sep</abbr><ex>ulcrum</ex></expan></w> 
+                    <w lemma="vivus">ui<supplied reason="omitted">u</supplied>us</w>
                     <lb n="5"/> <space quantity="1" unit="character"/> <w lemma="se">sibi</w> <w lemma="et">et</w> 
                     <w lemma="suus">s<supplied reason="lost">u<space quantity="2" unit="character"/></supplied>is</w>
                     <space quantity="1" unit="character"/>

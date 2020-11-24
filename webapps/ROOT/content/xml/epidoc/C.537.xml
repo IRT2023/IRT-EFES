@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -94,6 +93,7 @@
          </textClass>
       <creation>Transcription (Goodchild).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-05" who="MGDA">fixed Goodchild bibliography</change>
@@ -115,21 +115,21 @@
                        <name nymRef="Claudius">Claudius</name> 
                     <lb n="2"/><name nymRef="Caesar">Caesar</name> <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name>
                     <lb n="3"/><name nymRef="Germanicus">Germanicus</name> </persName>
-                    <lb n="4"/><expan><w><abbr>p</abbr><ex>ontifex</ex></w> <w><abbr>m</abbr><ex>aximus</ex></w></expan>
-              <expan> <w><abbr>trib</abbr><ex>unicia</ex></w> <w><abbr>pot</abbr><ex>estate</ex></w></expan>
+                    <lb n="4"/><expan><w lemma="pontifex"><abbr>p</abbr><ex>ontifex</ex></w> <w lemma="maximus"><abbr>m</abbr><ex>aximus</ex></w></expan>
+              <expan> <w lemma="tribunicius"><abbr>trib</abbr><ex>unicia</ex></w> <w lemma="potestas"><abbr>pot</abbr><ex>estate</ex></w></expan>
                <num>V<supplied reason="lost" cert="medium">I</supplied></num>
-                    <lb n="5"/> <w><expan><abbr>imp</abbr><ex>erator</ex></expan></w> <num value="11">XI</num>
-              <expan> <w><abbr>p</abbr><ex>ater</ex></w> <w><abbr>p</abbr><ex>atriae</ex></w></expan>
-               <w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                    <lb n="5"/> <w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w> <num value="11">XI</num>
+              <expan> <w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan>
+               <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
                <supplied reason="lost"><num value="3">III</num> </supplied> 
-                    <lb n="6"/> <w><expan><abbr>designat</abbr><ex>us</ex></expan></w> <num value="4">IIII</num></date> 
-                    <lb n="7"/> <w>restituit</w> <w>ann<supplied reason="lost">o</supplied></w> 
+                    <lb n="6"/> <w lemma="designatus"><expan><abbr>designat</abbr><ex>us</ex></expan></w> <num value="4">IIII</num></date> 
+                    <lb n="7"/> <w lemma="restituo">restituit</w> <w lemma="annus">ann<supplied reason="lost">o</supplied></w> 
                     <lb n="8"/><gap reason="lost" extent="1" unit="character"/>
                <date><persName type="attested"><name nymRef="Caesernius"><supplied reason="lost">C</supplied>aeserni</name>
                   <name nymRef="Veiento">Veienton<supplied reason="lost">is</supplied></name></persName>
-                    <lb n="9"/> <space extent="3"/> <w><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ulis</ex></expan></w>
+                    <lb n="9"/> <space extent="3"/> <w lemma="proconsul"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ulis</ex></expan></w>
                <space extent="3"/>
-                     <lb n="10"/> <placeName nymRef="#Creta et Cyrenae" ref="#creteandcyrene"><supplied reason="lost"><placeName nymRef="#Creta" ref="#crete">Cretae</placeName> <w>et</w></supplied>
+                     <lb n="10"/> <placeName nymRef="#Creta et Cyrenae" ref="#creteandcyrene"><supplied reason="lost"><placeName nymRef="#Creta" ref="#crete">Cretae</placeName> <w lemma="et">et</w></supplied>
                         <placeName nymRef="#Cyrenae" ref="#cyrene"><supplied reason="lost">Cyr</supplied>en<supplied reason="lost">arum</supplied></placeName></placeName></date>
                      <lb n="11"/> <space extent="5"/> <num value="1">I</num> <space extent="5"/>
             </ab>

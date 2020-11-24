@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-24" who="MLA">copied from CMC</change>
@@ -128,18 +128,18 @@
             <lb n="1"/><persName type="divine" key="iesous">
                <name nymRef="Ἰησοῦς"><expan><abbr>Ἰ</abbr><ex>ηϲοῦ</ex><abbr>ϲ</abbr></expan></name>
                   <g ref="symbols.xml#crux"/> <name nymRef="Χριστός"><expan><abbr>Χ</abbr><ex>ριϲτό</ex><abbr>ϲ</abbr></expan></name></persName>
-            <lb n="2"/> <w>νι<g ref="symbols.xml#crux"/>κᾷ</w>
+            <lb n="2"/> <w lemma="νικάω">νι<g ref="symbols.xml#crux"/>κᾷ</w>
          </ab>
             </div>
             <div subtype="section" n="c" type="textpart">
             <ab>
-            <lb n="1"/> <w>Χά<g ref="symbols.xml#crux"/>ριϲ</w> 
-               <persName type="divine" key="kyrios"><w><expan><abbr>Θ</abbr><ex>εο</ex><abbr>ῦ</abbr></expan></w></persName>
+            <lb n="1"/> <w lemma="χάρις">Χά<g ref="symbols.xml#crux"/>ριϲ</w> 
+               <persName type="divine" key="kyrios"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>εο</ex><abbr>ῦ</abbr></expan></w></persName>
          </ab>
             </div>
             <div subtype="section" n="d" type="textpart">
             <ab>
-            <w><expan><abbr><am><g ref="symbols.xml#monogram"/></am></abbr><ex cert="low">Φῶϲ</ex></expan></w>
+            <w lemma="φῶς"><expan><abbr><am><g ref="symbols.xml#monogram"/></am></abbr><ex cert="low">Φῶϲ</ex></expan></w>
          </ab>
          </div>
          </div>

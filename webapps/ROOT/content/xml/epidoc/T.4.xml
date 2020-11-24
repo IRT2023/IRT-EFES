@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -86,6 +85,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -116,7 +116,8 @@
                     <orig><unclear>α</unclear></orig><gap reason="lost" quantity="9" unit="character" precision="low"/>
                 <lb n="3"/><w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> 
                     <w lemma="ἐκ"><supplied reason="lost">ἐκ</supplied></w> 
-                    <w lemma="θεμέλιος">θεμε<supplied reason="lost">λί</supplied><lb n="4" break="no"/> <space quantity="3" unit="character"/><unclear>ω</unclear>ν</w>
+                    <w lemma="θεμέλιος">θεμε<supplied reason="lost">λί</supplied><lb 
+                       n="4" break="no"/> <space quantity="3" unit="character"/><unclear>ω</unclear>ν</w>
                     <w lemma="ποιέω">ἐπ<unclear>ο</unclear><supplied reason="lost">ίησ</supplied><unclear>εν</unclear></w>
                     <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
                 <lb n="5"/><w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w>
@@ -125,10 +126,10 @@
                        <gap reason="lost" quantity="4" unit="character" precision="low"/>
                        <w part="F">λωσεν</w>
                <lb n="6"/><w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w>
-                    <w lemma="ὁ">τὸν</w> <w lemma="περίβολος">περίβολον</w> <w lemma="οἰκοδομέω">ὠκοδόμε
-                <lb n="7" break="no"/><supplied reason="lost">σεν</supplied></w> 
+                    <w lemma="ὁ">τὸν</w> <w lemma="περίβολος">περίβολον</w> <w lemma="οἰκοδομέω">ὠκοδόμε<lb 
+                       n="7" break="no"/><supplied reason="lost">σεν</supplied></w> 
                     <space quantity="1" unit="character"/> <w lemma="ἐκ">ἐκ</w><surplus>χ</surplus> <note>sic</note>
-                    <w>θεμελίων</w> <g ref="symbols.xml#leaf"/> <space extent="unknown" unit="character"/>
+                    <w lemma="θεμέλιος">θεμελίων</w> <g ref="symbols.xml#leaf"/> <space extent="unknown" unit="character"/>
             </ab>
          </div>
          

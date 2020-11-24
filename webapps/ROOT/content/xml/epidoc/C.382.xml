@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
          <creation>From previous publications and photographs (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-01" who="MGDA">fixed Oliverio bibliography</change>
@@ -122,13 +122,13 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <w>σὺν</w> <w>θεοφανείᾳ</w>
-                    <lb n="2"/><persName type="divine" key="agathetyche"><w>ἀγαθῇ</w> <w>τύχῃ</w></persName> <date><w lemma="ἐπί">ἐπὶ</w> <w><supplied reason="lost">ἱερέως</supplied></w>
-                    <lb n="3"/><persName type="divine" key="apollo"><w lemma="ὁ">τοῦ</w> <w>κτίστου</w> <name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀπόλλ</supplied>ωνος</name>
+                    <lb n="1"/> <w lemma="σύν">σὺν</w> <w lemma="θεοφάνεια">θεοφανείᾳ</w>
+                    <lb n="2"/><persName type="divine" key="agathetyche"><w lemma="ἀγαθός">ἀγαθῇ</w> <w lemma="τύχη">τύχῃ</w></persName> <date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς"><supplied reason="lost">ἱερέως</supplied></w>
+                    <lb n="3"/><persName type="divine" key="apollo"><w lemma="ὁ">τοῦ</w> <w lemma="κτίστης">κτίστου</w> <name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀπόλλ</supplied>ωνος</name>
             <lb n="4"/><name nymRef="Ἰούλιος">Ἰουλί<supplied reason="lost">ου</supplied></name> <name nymRef="Κλερο-"><seg part="I">Κλερο</seg></name><!-- check --> <gap reason="lost" extent="unknown" unit="character"/></persName></date>
                     <lb n="5"/><persName type="attested"><name nymRef="Βαλέριος">Βαλέριος</name>
                     <lb n="6"/><name nymRef="Μάξιμος">Μάξιμος</name></persName> <gap reason="lost" extent="unknown" unit="character"/>
-            <lb n="7"/> <w>αἱ</w> <w lemma="ἐν">ἐν</w> <w>τ<supplied reason="lost" cert="low">ῷ</supplied></w> <w><supplied reason="lost" cert="low">νυμφαίῳ</supplied></w>
+            <lb n="7"/> <w lemma="ὁ">αἱ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τ<supplied reason="lost" cert="low">ῷ</supplied></w> <w lemma="νυμφαῖον"><supplied reason="lost" cert="low">νυμφαίῳ</supplied></w>
                 </ab>
 </div>
          <div type="apparatus">

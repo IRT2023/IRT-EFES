@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -105,6 +104,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -133,7 +133,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/jYvTEg8encKo4q7qmxXPAG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="4">δ</num>
-                    <rs type="month"  key="mechir"><w>Μεχεὶρ</w></rs> <gap reason="lost" quantity="1" unit="character"/></date>
+                    <rs type="month" key="mechir"><w lemma="Μεχίρ">Μεχεὶρ</w></rs> <gap reason="lost" quantity="1" unit="character"/></date>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-60743"><name nymRef="Δωσίθεος">Δωσ<supplied reason="lost">ίθε</supplied>ος</name> 
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60742"><name nymRef="Δωσίθεος">Δω<supplied reason="lost">σιθέου</supplied></name></persName></persName>
                     <lb n="4"/><date type="life-span"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w></date> <gap reason="lost" extent="unknown" unit="character"/>
@@ -163,8 +163,8 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 14, Mecheir, Dositheos son of . . .</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 4 (?) . . .Dositheos des Dositheos, . . . (Jahre)</p></div>
+            <div type="translation" source="#gray1956" xml:lang="en"><p>Year 14, Mecheir, Dositheos son of . . .</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 4 (?) . . .Dositheos des Dositheos, . . . (Jahre)</p></div>
             
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/jYvTEg8encKo4q7qmxXPAG">Year 4, Mexeir ?</ref>, Dositheos <supplied reason="subaudible">son</supplied> of Do[sitheos], aged ? </p></div>
        </div>

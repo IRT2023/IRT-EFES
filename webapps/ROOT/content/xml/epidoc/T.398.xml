@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-22" who="MGDA">Tagged header information</change>
@@ -124,14 +124,14 @@
          <div type="edition" xml:lang="grc" xml:space="preserve"><ab>
                         <lb n="1"/><date ref="https://godot.date/id/gupbjtkcQB8xhSt7fCicxG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                         <gap reason="lost" quantity="1" unit="character"/>
-                        <lb n="2"/> <w>Ἁθ<supplied reason="lost">ὺ</supplied>ρ</w> <num value="10">ι</num></date>
+                        <lb n="2"/> <w lemma="Ἁθύρ">Ἁθ<supplied reason="lost">ὺ</supplied>ρ</w> <num value="10">ι</num></date>
                    
                         <lb n="3"/><persName type="attested"><name nymRef="Ἀρετοκλήα"><supplied reason="lost">Ἀ</supplied><unclear>ρ</unclear>ε<unclear>το</unclear>κλήα</name>
                         <lb n="4"/><persName type="attested"><name nymRef="Αρε-"><seg part="I">Αρ<unclear>ε</unclear></seg><gap reason="lost" quantity="2" unit="character"/>ντοϲ</name></persName></persName> 
                         <date type="life-span" dur="P70Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                         <num value="70"><unclear>ο</unclear></num> </date> 
                         <lb n="5"/><date ref="https://godot.date/id/WXDJkyYNy5PVQs9V3aNvm7"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                        <num value="104">ρδ</num> <rs type="month"  key="pharmuthi"><w lemma="Φαρμουθί"><supplied reason="lost">Φα</supplied>ρμ<supplied reason="lost">ο</supplied><lb n="6" break="no"/>υ<unclear>θ</unclear>ὶ</w></rs> 
+                        <num value="104">ρδ</num> <rs type="month" key="pharmuthi"><w lemma="Φαρμουθί"><supplied reason="lost">Φα</supplied>ρμ<supplied reason="lost">ο</supplied><lb n="6" break="no"/>υ<unclear>θ</unclear>ὶ</w></rs> 
                         <gap reason="lost" extent="unknown" unit="character"/></date> 
                         <lb n="6a"/><gap reason="lost" extent="unknown" unit="line"/>
                     </ab>

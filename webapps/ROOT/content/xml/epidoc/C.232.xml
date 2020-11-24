@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-13" who="TW">tagged names</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -130,12 +130,12 @@
                     <lb n="1"/><persName type="attested" key="lgpn:V1-65290, lgpn:V1-65316"><name nymRef="Μᾶρκος"><supplied reason="lost"><expan><abbr>Μ</abbr><ex>ᾶρκοϲ</ex></expan></supplied></name> 
                     <name nymRef="Ἰούλιος"><supplied reason="lost">Ἰού</supplied>λιοϲ</name> <name nymRef="Κοκκηϊανός">Κ<unclear>οκκ</unclear>ηια<supplied reason="lost">νὸϲ</supplied></name>
                     <name nymRef="Πειθαγόρας"><supplied reason="lost">Πειθάγορα</supplied>ϲ</name> <name nymRef="Πλάτων">Πλάτων</name></persName>
-                    <lb n="2"/> <w><supplied reason="lost">ἱαριτεύ</supplied>ων</w> <space quantity="1" unit="character"/> <w>τὰν</w>
+                    <lb n="2"/> <w lemma="ἱαριτεύω"><supplied reason="lost">ἱαριτεύ</supplied>ων</w> <space quantity="1" unit="character"/> <w lemma="ὁ">τὰν</w>
                     <persName type="divine" key="athena"><name nymRef="Ἀθήνη">Ἀθάνα<supplied reason="lost">ν</supplied></name></persName>
-                    <supplied reason="lost"><w>ἐκ</w> <w>τᾶν</w> <w lemma="ὁ">τῶ</w></supplied>
+                    <supplied reason="lost"><w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τᾶν</w> <w lemma="ὁ">τῶ</w></supplied>
                     <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀπ</supplied>όλλωνοϲ</name></persName> 
-                    <lb n="3"/> <space quantity="1" unit="character"/>  <w>προϲόδω<supplied reason="lost" cert="low">ν</supplied></w>
-                    <supplied reason="lost"><w>ἀνέθηκεν</w> <space quantity="1" unit="character"/></supplied>
+                    <lb n="3"/> <space quantity="1" unit="character"/>  <w lemma="πρόσοδος">προϲόδω<supplied reason="lost" cert="low">ν</supplied></w>
+                    <supplied reason="lost"><w lemma="ἀνατίθημι">ἀνέθηκεν</w> <space quantity="1" unit="character"/></supplied>
                 </ab>
 </div>
          <div type="apparatus">

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription from the photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -128,10 +128,10 @@
                     <persName type="emperor" key="anonymus"><name nymRef="Καῖσαρ"><supplied reason="lost" cert="low">Καίσ</supplied>αρος</name></persName>
                     <del><gap reason="lost" quantity="8" unit="character" precision="low"/></del> 
                     <lb n="2"/><supplied reason="lost"><persName type="emperor" key="anonymus"><name nymRef="Σεβαστός">Σεβαστῶ</name></persName> <w lemma="καί">καὶ</w> 
-                        <w lemma="ὁ">τῶ</w> <w>σύνπαντος</w></supplied> <w lemma="αὐτός"><supplied reason="lost">αὐ</supplied>τῶ</w> <w>οἴκω</w>
+                        <w lemma="ὁ">τῶ</w> <w lemma="σύμπας">σύνπαντος</w></supplied> <w lemma="αὐτός"><supplied reason="lost">αὐ</supplied>τῶ</w> <w lemma="οἶκος">οἴκω</w>
                     <gap reason="lost" quantity="2" unit="character"/> <persName type="attested"><name nymRef="Φάωνι-"><seg part="I">Φαωνι</seg></name></persName>
-                    <lb n="3" break="no"/><gap reason="lost" quantity="20" unit="character" precision="low"/> <w><supplied reason="lost">σὺν</supplied></w> 
-                    <w><supplied reason="lost">π</supplied>αντὶ</w> <w>το͂ι</w> <w>κόσμοι</w>
+                    <lb n="3" break="no"/><gap reason="lost" quantity="20" unit="character" precision="low"/> <w lemma="σύν"><supplied reason="lost">σὺν</supplied></w> 
+                    <w lemma="πᾶς"><supplied reason="lost">π</supplied>αντὶ</w> <w lemma="ὁ">το͂ι</w> <w lemma="κόσμος">κόσμοι</w>
                 </ab>
 </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
@@ -118,13 +118,13 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-                    <lb n="1"/> <persName type="divine" key="iesous"><w><expan><abbr>Θ</abbr><ex>ε</ex><abbr>ὲ</abbr></expan></w>
-  <name nymRef="Χριστός"><expan><abbr>Χ</abbr><ex>ριϲτ</ex><abbr>ὲ</abbr></expan></name></persName> <w>ζοὴν</w> <w>δὸϲ</w> 
+                    <lb n="1"/> <persName type="divine" key="iesous"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>ε</ex><abbr>ὲ</abbr></expan></w>
+  <name nymRef="Χριστός"><expan><abbr>Χ</abbr><ex>ριϲτ</ex><abbr>ὲ</abbr></expan></name></persName> <w lemma="ζωή">ζοὴν</w> <w lemma="δίδωμι">δὸϲ</w> 
                     <lb n="2"/><persName type="attested" key="lgpn:V1-63147"><name nymRef="Σαμφοδίων">Ϲαμφ<unclear>ο</unclear>δί<unclear>ο</unclear>νι</name></persName> <supplied reason="omitted"><orig>Ϲ</orig></supplied> 
-                    <lb n="3"/> <w lemma="ὁ">τῷ</w> <w>κτίϲτῃ</w> <w lemma="ὁ">τοῦ</w> 
-                    <lb n="4"/> <w>ἐργαλίου</w> <w>τού 
-                    <lb n="5" break="no"/>του</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w>μνήμηϲ</w> 
-                    <lb n="6"/> <w>ἰδίαϲ</w> <w>ἐπύη<unclear>ϲ</unclear><supplied reason="lost">εν</supplied></w>
+                    <lb n="3"/> <w lemma="ὁ">τῷ</w> <w lemma="κτίστης">κτίϲτῃ</w> <w lemma="ὁ">τοῦ</w> 
+                    <lb n="4"/> <w lemma="ἐργάλιον">ἐργαλίου</w> <w lemma="οὗτος">τού<lb 
+                       n="5" break="no"/>του</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="μνήμη">μνήμηϲ</w> 
+                    <lb n="6"/> <w lemma="ἴδιος">ἰδίαϲ</w> <w lemma="ποιέω">ἐπύη<unclear>ϲ</unclear><supplied reason="lost">εν</supplied></w>
                 </ab>
          </div>
          

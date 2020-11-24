@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -108,6 +107,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-08-22" who="TW">Deleted '/' in text 2 line 2</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -135,7 +135,7 @@
                      <lb n="1"/><gap reason="lost" quantity="1" unit="line"/>
                      <lb n="2"/> <w lemma="ἑαυτός">ἑαυτ<unclear>ῷ</unclear></w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> 
                          <w lemma="ἴδιος">ἰδί<lb n="3" break="no"/>οις</w> <w lemma="ὁ">τὸν</w> <w lemma="τάφος">τάφον</w> 
-                    <w>ἐκτ<lb n="4" break="no"/><unclear>ί</unclear>σατο</w> <space quantity="3" unit="character"/>
+                    <w lemma="κτίζω">ἐκτ<lb n="4" break="no"/><unclear>ί</unclear>σατο</w> <space quantity="3" unit="character"/>
                 </ab></div>
             <div subtype="text" n="ii" type="textpart"><ab>
                         <lb n="1"/><persName type="attested"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οίντου</ex></expan></name> <name nymRef="Ὀλόσσιος">Ὀ<unclear>λ</unclear>οσσίου</name> 
@@ -145,7 +145,7 @@
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <div  type="translation" resp="#edd" xml:lang="en"><p>i. . . . ] built the tomb for himself and his family.</p><p>
+            <div type="translation" resp="#edd" xml:lang="en"><p>i. . . . ] built the tomb for himself and his family.</p><p>
                <supplied reason="subaudible">Tomb of</supplied> K(ointos) Olossios Chresimos</p></div></div>
          <div type="commentary">
             <head>Commentary</head>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-01" who="Pietro">metadata</change>
@@ -130,8 +130,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-            <lb n="0"/> <gap reason="lost" extent="unknown" unit="line"  cert="low"/>         
-   <lb n="1"/><date ref="https://godot.date/id/sUrmR4N2WvYB4YYn7xQNXd"><supplied reason="lost"><w><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied>
+            <lb n="0"/> <gap reason="lost" extent="unknown" unit="line" cert="low"/>         
+   <lb n="1"/><date ref="https://godot.date/id/sUrmR4N2WvYB4YYn7xQNXd"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied>
                     <num value="108"><unclear>ρη</unclear></num></date> <persName type="attested" key="lgpn:V1-65792"><name nymRef="Τιμαγένης"><unclear>Τ</unclear>ειμαγένης</name>
                     <persName type="attested" key="lgpn:V1-64158"><name nymRef="Θεόδωρος">Θεοδώρο<supplied reason="lost">υ</supplied></name></persName></persName>
                     <lb n="2"/><date ref="https://godot.date/id/aVpbjf5X6RZgQhGAopy2x3"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
@@ -140,7 +140,7 @@
             <num value="200">σ</num></date>, <date ref="https://godot.date/id/BeoPLDbL6DMRg5Mai23fxV"><num value="9">θ</num> <persName type="emperor" key="marcusaurelius"><name nymRef="Ἀντωνῖνος">Ἀντωνείνου</name> <w lemma="ὁ">τοῦ</w> <w lemma="κύριος">κυρίου</w></persName></date></date>
                     <lb n="4"/> <space quantity="3" unit="character"/> <persName type="attested" key="lgpn:V1-62751"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊοϲ</ex></expan></name> <name nymRef="Κοράνιος">Κοράνιοϲ</name> <name nymRef="Ἄλεξις">Ἄλεξιϲ</name> <surplus>Ι</surplus>
                     
-                    <name  nymRef="Αἰλιανός">Αἰλιανόϲ</name>
+                    <name nymRef="Αἰλιανός">Αἰλιανόϲ</name>
                     <lb n="5"/> <space quantity="3" unit="character"/> <w lemma="ἱερεύς">ἱερεὺϲ</w> <w lemma="καλλιέτης">καλλιέτηϲ</w>
                     <lb n="6"/> <space quantity="3" unit="character"/> <persName type="attested"><name nymRef="Φιλόξενος">Φιλοξένου</name></persName></persName>
                     <lb n="7"/><date><w lemma="ἐπί">ἐπὶ</w> <persName type="attested" key="lgpn:V1-64827"><name nymRef="Λούκιος">Λουκίω</name>

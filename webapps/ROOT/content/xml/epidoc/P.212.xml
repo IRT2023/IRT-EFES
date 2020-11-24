@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription and previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,7 +121,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-61395"><name nymRef="Κλεοπάτρα">Κλεοπά<unclear>τ</unclear><supplied reason="lost" evidence="previouseditor">ρα</supplied></name> <persName type="attested"><name nymRef="Σ-"><seg part="I"><supplied reason="lost" evidence="previouseditor">Ϲ</supplied></seg></name></persName></persName><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">ἐτε</supplied>λεύτη<supplied reason="lost" evidence="previouseditor">ϲεν</supplied></w> <date type="life-span" dur="P19Y"><num value="19"><supplied  reason="lost" evidence="previouseditor">ιθ</supplied></num> </date><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="τελευτάω"><supplied reason="lost">ἐτε</supplied>λεύτη<supplied reason="lost" evidence="previouseditor">ϲεν</supplied></w> <date type="life-span" dur="P19Y"><num value="19"><supplied reason="lost" evidence="previouseditor">ιθ</supplied></num> </date><gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
 </div>
          <div type="apparatus">
@@ -139,7 +139,7 @@
          </div> 
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>- Cleopatra - morì (di anni) 19.</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>- Cleopatra - morì (di anni) 19.</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>Kleopatra [ . . . ] died <supplied reason="subaudible">at</supplied> 19, <hi rend="italic">or</hi> aged 9.</p></div>
          </div>
          

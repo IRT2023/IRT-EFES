@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
          <creation>From previous publications, drawings and photographs (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-31" who="MGDA">fixed Oliverio bibliography</change>
@@ -127,7 +127,7 @@
                     <persName type="attested"><name nymRef="Μα-"><seg part="I">Μα</seg></name></persName></date><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>νο</orig><gap reason="lost" extent="unknown" unit="character"/>
    <lb n="2a"/><gap reason="lost" quantity="1" unit="line" cert="low"/>
-                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost" cert="low">εἰσῆ</supplied>λ<unclear>θ</unclear><supplied cert="low" reason="lost">εν</supplied></w>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="εἰσέρχομαι"><supplied reason="lost" cert="low">εἰσῆ</supplied>λ<unclear>θ</unclear><supplied cert="low" reason="lost">εν</supplied></w>
                     <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
 </div>

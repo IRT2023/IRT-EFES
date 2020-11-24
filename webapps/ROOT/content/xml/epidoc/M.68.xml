@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -128,26 +128,26 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
-                    <lb n="1"/><gap reason="lost" extent="3" unit="character"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"> <persName type="emperor"  key="vespasianus"><w>δ<supplied reason="lost">η</supplied><unclear>μ</unclear><supplied reason="lost">αρχι</supplied><unclear>κ</unclear>ῆς</w>
-                    <w><unclear>ἐξ</unclear><supplied reason="lost">ουσί<lb n="2" break="no"/>ας</supplied></w> <w lemma="ὁ">τὸ</w>
-               <num value="3">γ</num> <w>Αὐτοκράτωρ</w> <w><unclear>τὸ</unclear></w> <num value="8">η</num>
-                    <lb n="3"/> <w><unclear>πα</unclear>τὴρ</w> <w><unclear>π</unclear>ατρίδος</w> 
-               <w><unclear>ὕπ</unclear>ατ<supplied reason="lost">ος</supplied></w>
+                    <lb n="1"/><gap reason="lost" extent="3" unit="character"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"> <persName type="emperor" key="vespasianus"><w lemma="δημαρχικός">δ<supplied reason="lost">η</supplied><unclear>μ</unclear><supplied reason="lost">αρχι</supplied><unclear>κ</unclear>ῆς</w>
+                    <w lemma="ἐξουσία"><unclear>ἐξ</unclear><supplied reason="lost">ουσί<lb n="2" break="no"/>ας</supplied></w> <w lemma="ὁ">τὸ</w>
+               <num value="3">γ</num> <w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <w lemma="ὁ"><unclear>τὸ</unclear></w> <num value="8">η</num>
+                    <lb n="3"/> <w lemma="πατήρ"><unclear>πα</unclear>τὴρ</w> <w lemma="πατρίς"><unclear>π</unclear>ατρίδος</w> 
+               <w lemma="ὕπατος"><unclear>ὕπ</unclear>ατ<supplied reason="lost">ος</supplied></w>
                     <lb n="4"/><supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> </supplied>
-               <w>ἀπ<unclear>οδεδε</unclear><supplied reason="lost">ιγ</supplied>μέν<supplied reason="lost">ος</supplied></w>
-               <w><supplied reason="lost">τ</supplied>ὸ</w> <supplied reason="lost"><num value="4">δ</num> </supplied></persName></date>
-                    <lb n="5"/> <w><supplied reason="lost">δι</supplied>ὰ</w> 
-                    <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> 
+               <w lemma="ἀποδείκνυμι">ἀπ<unclear>οδεδε</unclear><supplied reason="lost">ιγ</supplied>μέν<supplied reason="lost">ος</supplied></w>
+               <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸ</w> <supplied reason="lost"><num value="4">δ</num> </supplied></persName></date>
+                    <lb n="5"/> <w lemma="διά"><supplied reason="lost">δι</supplied>ὰ</w> 
+                    <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> 
                        <name nymRef="Πακώνιος"><unclear>Π</unclear>ακωνί<supplied reason="lost">ου</supplied></name> <space/>
                        <lb n="5a"/> <space extent="1" unit="line"/>
                     <lb n="6"/><name nymRef="Ἀγριππῖνος"><supplied reason="lost">Ἀ</supplied>γριππίνου</name></persName> 
-               <w>ἰδίο<supplied reason="lost">υ</supplied></w> 
-               <w><supplied reason="lost">πρ</supplied>εσ<supplied reason="lost">βευ</supplied>
-                  <lb n="7" break="no"/><supplied reason="lost">τ</supplied>οῦ</w>
+               <w lemma="ἴδιος">ἰδίο<supplied reason="lost">υ</supplied></w> 
+               <w lemma="πρεσβευτής"><supplied reason="lost">πρ</supplied>εσ<supplied reason="lost">βευ</supplied><lb 
+                  n="7" break="no"/><supplied reason="lost">τ</supplied>οῦ</w>
                <w lemma="δῆμος">Δ<supplied reason="lost">ήμῳ</supplied></w> 
                <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><expan><abbr>Ῥ</abbr><ex>ωμαίων</ex></expan></placeName> 
-                    <w>ἀγρὸν</w> <w lemma="δημόσιος">δ<unclear>η</unclear><supplied reason="lost">μόσι</supplied>ον</w><!-- check -->
-                    <lb n="8"/> <w><supplied reason="lost">ἀ</supplied><unclear>π</unclear>ο<unclear>κ</unclear>ατέσ<unclear>τ</unclear><supplied reason="lost">η</supplied>σ<supplied reason="lost">εν</supplied></w>
+                    <w lemma="ἀγρός">ἀγρὸν</w> <w lemma="δημόσιος">δ<unclear>η</unclear><supplied reason="lost">μόσι</supplied>ον</w><!-- check -->
+                    <lb n="8"/> <w lemma="ἀποκαθίστημι"><supplied reason="lost">ἀ</supplied><unclear>π</unclear>ο<unclear>κ</unclear>ατέσ<unclear>τ</unclear><supplied reason="lost">η</supplied>σ<supplied reason="lost">εν</supplied></w>
          </ab>
          </div>
          <div type="translation" xml:space="preserve">

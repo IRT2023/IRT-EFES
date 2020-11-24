@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (a and b: Dobias-Lalou, b: Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-02-22" who="MLA">corrected Oliverio reference in bibliography</change>
@@ -135,9 +135,9 @@
             <div type="textpart" n="a">
                <ab> <lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/>
-                  <rs type="month"  key="phamenoth"><w lemma="Φαμενώθ"><supplied reason="lost">Φ</supplied>αμενὼθ</w></rs>  <num value="14"><unclear>ι</unclear><supplied reason="lost">δ</supplied></num> <gap reason="lost" extent="unknown" unit="character"/>
+                  <rs type="month" key="phamenoth"><w lemma="Φαμενώθ"><supplied reason="lost">Φ</supplied>αμενὼθ</w></rs>  <num value="14"><unclear>ι</unclear><supplied reason="lost">δ</supplied></num> <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="8" unit="character"/> <num value="15">ιε</num><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/> <rs type="month"  key="pharmuthi"><w lemma="Φαρμουθί">Φαρμοῦθ</w></rs> <num value="16">ιϛ</num> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/> <rs type="month" key="pharmuthi"><w lemma="Φαρμουθί">Φαρμοῦθ</w></rs> <num value="16">ιϛ</num> <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="8" unit="character"/> <num value="17">ιζ</num> <gap reason="lost" extent="unknown" unit="character"/>   
                <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/> <rs type="month" key="pachon"><w lemma="Παχών">Παχὼν</w></rs> <num value="18">ιη</num> <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="8" unit="character"/> <num value="19">ιθ</num>   <gap reason="lost" extent="unknown" unit="character"/>
@@ -156,13 +156,13 @@
                <rs type="month" key="pauni"><w lemma="Παῦνι">Πα<unclear>ῦ</unclear><supplied reason="lost">νι</supplied></w></rs>  <gap reason="lost" extent="unknown" unit="character"/> 
                     <lb n="3"/><num value="20">κ</num> <w lemma="ἕως">ἕως</w> <w lemma="ὥρα"><expan><abbr>ὥ</abbr><ex>ρας</ex></expan></w> <num value="10">ι</num>
                     <space quantity="2" unit="character"/> <num value="3">γ</num> <space quantity="1" unit="character"/> 
-                    <w>ἕ<unclear>ω</unclear><supplied reason="lost">ς</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <w lemma="ἕως">ἕ<unclear>ω</unclear><supplied reason="lost">ς</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> 
                 <lb n="3a"/> <space extent="1" unit="line"/>
                     <lb n="4"/><w lemma="ἐάν">ἐὰν</w> <w lemma="δέ">δέ</w> <w lemma="τις">τις</w> 
                  <w lemma="ὁ">τῶν</w> <orig>ου<unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="διά">διὰ</w></supplied>
-                 <w><supplied reason="lost">ἰ</supplied><lb n="5" break="no"/>δίας</w> <w lemma="αἰτία">αἰτίας</w> 
-                 <w>νηστεία</w><gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="6"/><w lemma="ὑπέρ">ὑπὲρ</w> <w>ἑκάστου</w> <w>μην<supplied reason="lost">ὸς</supplied></w> 
+                 <w lemma="ἴδιος"><supplied reason="lost">ἰ</supplied><lb n="5" break="no"/>δίας</w> <w lemma="αἰτία">αἰτίας</w> 
+                 <w lemma="νηστεία">νηστεία</w><gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="6"/><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ἕκαστος">ἑκάστου</w> <w lemma="μείς">μην<supplied reason="lost">ὸς</supplied></w> 
                  <gap reason="lost" extent="unknown" unit="character"/> 
                     <lb n="7"/><persName type="divine" key="isis"><name nymRef="Ἶσις">Ἴσιδι</name>
                     <name nymRef="Μυρυώνυμος">Μυρυωνύμωι</name></persName> <gap reason="lost" extent="unknown" unit="character"/> 

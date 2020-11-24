@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -53,7 +52,7 @@
                            </p>
                         </provenance>
                         <provenance type="observed">
-                           <p><placeName  type="monuList" ref="institution.xml#db1455">Musée St. Raymond, Toulouse</placeName>.</p>
+                           <p><placeName type="monuList" ref="institution.xml#db1455">Musée St. Raymond, Toulouse</placeName>.</p>
                         </provenance>
                      
                   
@@ -89,6 +88,7 @@
          </textClass>
       <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-04" who="MGDA">fixed bibliography</change>
@@ -123,8 +123,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/sXUzJwGA4urSxmC9egK2iN"><w><supplied reason="lost">Ἔ</supplied>τους</w> <num value="55">νε</num> <rs type="month"  key="phaophi"><w>Φαῶφ</w></rs> <num value="25">κε</num></date> <w lemma="ἐπί">ἐπὶ</w>
-                    <w>συλλόγου</w> <w lemma="ὁ">τῆς</w> <w>σκηνο<lb n="2" break="no"/>πηγίας</w> <date><w lemma="ἐπί">ἐπὶ</w> <w>ἀρχόντων</w> 
+                    <lb n="1"/><date ref="https://godot.date/id/sXUzJwGA4urSxmC9egK2iN"><w lemma="ἔτος"><supplied reason="lost">Ἔ</supplied>τους</w> <num value="55">νε</num> <rs type="month" key="phaophi"><w lemma="Φαωφί">Φαῶφ</w></rs> <num value="25">κε</num></date> <w lemma="ἐπί">ἐπὶ</w>
+                    <w lemma="σύλλογος">συλλόγου</w> <w lemma="ὁ">τῆς</w> <w lemma="σκηνοπηγία">σκηνο<lb n="2" break="no"/>πηγίας</w> <date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἄρχων">ἀρχόντων</w> 
                     <persName type="attested" key="lgpn:V1-61854"><name nymRef="Κλέανδρος">Κλεάνδρου</name> <w lemma="ὁ">τοῦ</w> <lb n="3"/><persName type="attested" key="lgpn:V1-61856"><name nymRef="Στρατόνικος">Στρατονίκου</name></persName></persName>,
                     <persName type="attested" key="lgpn:V1-61853"><name nymRef="Εὐφράνωρ">Εὐφράνορος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61855"><name nymRef="Ἀρίστων">Ἀρίστωνος</name></persName></persName>, 
                    <lb n="4"/><persName type="attested" key="lgpn:V1-61859"><name nymRef="Σωσιγένης">Σωσιγένους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61858"><name nymRef="Σώσιππος">Σωσίππου</name></persName></persName>,
@@ -133,30 +133,31 @@
                     <persName type="attested" key="lgpn:V1-61864"><name nymRef="Φιλωνίδης">Φιλωνίδου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61862"><name nymRef="Ἁγήμων">Ἁγή<lb n="7" break="no"/>μονος</name></persName></persName>, 
                     <persName type="attested" key="lgpn:V1-61867"><name nymRef="Αὐτοκλῆς">Αὐτοκλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61865"><name nymRef="Ζήνων">Ζήνωνος</name></persName></persName>, 
                     <persName type="attested" key="lgpn:V1-61866"><name nymRef="Σώνικος">Σωνί<lb n="8" break="no"/>κου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61869"><name nymRef="Θεόδοτος">Θεοδότου</name></persName></persName>,
-                    <persName type="attested" key="lgpn:V1-61870"><name nymRef="Ἰώσηπος">Ἰωσήπου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61868"><name nymRef="Στράτων">Στράτωνος</name></persName></persName>· 
+                    <persName type="attested" key="lgpn:V1-61870"><name nymRef="Ἰώσηπος">Ἰωσήπου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61868"><name nymRef="Στράτων">Στράτωνος</name></persName></persName>· 
                     <space unit="line" quantity="1"/>
-   <lb n="9"/> <w>Ἐπεὶ</w> <persName type="attested" key="pir2-t-0279"><name nymRef="Μᾶρκος">Μᾶρκος</name> <name nymRef="Τίττιος">Τίττιος</name> <persName type="attested"><name nymRef="Σέξτος">Σέξτου</name></persName> <w>υἱὸς</w> <name type="tribe" key="Aemilia">Αἱμιλὶᾳ</name></persName></date> 
+   <lb n="9"/> <w lemma="ἐπεί">Ἐπεὶ</w> <persName type="attested" key="pir2-t-0279"><name nymRef="Μᾶρκος">Μᾶρκος</name> <name nymRef="Τίττιος">Τίττιος</name> <persName type="attested"><name nymRef="Σέξτος">Σέξτου</name></persName> <w lemma="υἱός">υἱὸς</w> <name type="tribe" key="Aemilia">Αἱμιλὶᾳ</name></persName></date> 
                     
-   <lb n="10"/> <w lemma="ἀνήρ">ἀνὴρ</w> <w lemma="καλός">καλὸς</w> <w lemma="καί">καὶ</w> <w>ἀγαθὸς</w> <w>παραγενηθεὶς</w> <w lemma="εἰς">εἰς</w> 
-                     <lb n="11"/> <w>τὴν</w> <w>ἐπαρχείαν</w> <w lemma="ἐπί">ἐπὶ</w> <w>δημοσίων</w> <w>πραγμάτων</w> <w lemma="ὁ">τήν</w> 
-                     <lb n="12"/> <w lemma="τε">τε</w> <w lemma="προστασία">προστασίαν</w> <w>αὐτῶν</w> <w>ἐποιήσατο</w> <w>φιλανθρώ<space quantity="3" unit="character"/><lb n="13" break="no"/>πως</w> 
-                    <w lemma="καί">καὶ</w> <w>καλῶς</w> <w>ἔν</w> <w>τε</w> <w>τῇ</w> <w>ἀναστροφῇ</w> <w>ἡσύχιον</w><lb n="14"/> <w>ἦθος</w> <w>ἐνδικνύμενος</w> 
-                    <w>ἀεὶ</w> <w>διατελῶν</w> <w>τυγχάνει</w> 
-                   <lb n="15"/> <w>οὐ</w> <w>μόνον</w> <w lemma="δέ">δὲ</w> <w lemma="ἐν">ἐν</w> <w>τούτοις</w> <w>ἀβαρῆ</w> <w lemma="ἑαυτός">ἑαυτὸν</w> <w>παρέσ<lb n="16" break="no"/>χηται</w> <w>ἀλλὰ</w> <w lemma="καί">καὶ</w>
-                   <w lemma="ὁ">τοῖς</w> <w>κατ’</w><w>ἰδίαν</w> <w>ἐντυγχάνουσι</w> <lb n="17"/> <w lemma="ὁ">τῶν</w> <w>πολιτῶν</w> <space quantity="1" unit="character"/> <w>ἔτι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w>
-                    <w lemma="ὁ">τοῖς</w> <w>ἐκ</w> <w lemma="ὁ">τοῦ</w> <w>πολιτεύ <lb n="18" break="no"/>ματος</w> <w>ἡμῶν</w> <placeName type="ethnic" nymRef="#Ἰουδαῖος" ref="#ioudaios">Ἰουδαίοις</placeName> <w lemma="καί">καὶ</w> <w>κοινῇ</w>
-                  <w lemma="καί">καὶ</w> <w>κατ’</w><w>ἰδίαν</w> <lb n="19"/> <w>εὔχρηστον</w> <w>προσστασίαν</w> <w>ποιούμενος</w> <w>οὐ</w>
-                    <w>δια<lb n="20" break="no"/>λείπει</w> <w lemma="ὁ">τῆς</w> <w>ἰδίας</w> <w>καλοκαγαθίας</w> <w>ἄξια</w> <w>πράσσων</w>
-                   <lb n="21"/> <w>ὧν</w> <w>χάριν</w> <w>ἔδοξε</w> <w lemma="ὁ">τοῖς</w> <w>ἄρχουσι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w>πολιτεύ<lb n="22" break="no"/>ματι</w>
+   <lb n="10"/> <w lemma="ἀνήρ">ἀνὴρ</w> <w lemma="καλός">καλὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθὸς</w> <w lemma="παραγίγνομαι">παραγενηθεὶς</w> <w lemma="εἰς">εἰς</w> 
+                     <lb n="11"/> <w lemma="ὁ">τὴν</w> <w lemma="ἐπαρχία">ἐπαρχείαν</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="δημόσιος">δημοσίων</w> <w lemma="πρᾶγμα">πραγμάτων</w> <w lemma="ὁ">τήν</w> 
+                     <lb n="12"/> <w lemma="τε">τε</w> <w lemma="προστασία">προστασίαν</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ποιέω">ἐποιήσατο</w> <w lemma="φιλάνθρωπος">φιλανθρώ<space quantity="3" unit="character"/><lb n="13" break="no"/>πως</w> 
+                    <w lemma="καί">καὶ</w> <w lemma="καλῶς">καλῶς</w> <w lemma="ἐν">ἔν</w> <w lemma="τε">τε</w> <w lemma="ὁ">τῇ</w> <w lemma="ἀναστροφή">ἀναστροφῇ</w> <w lemma="ἡσύχιος">ἡσύχιον</w><lb n="14"/> <w lemma="ἦθος">ἦθος</w> <w lemma="ἐνδείκνυμι">ἐνδικνύμενος</w> 
+                    <w lemma="ἀεί">ἀεὶ</w> <w lemma="διατελέω">διατελῶν</w> <w lemma="τυγχάνω">τυγχάνει</w> 
+                   <lb n="15"/> <w lemma="οὐ">οὐ</w> <w lemma="μόνος">μόνον</w> <w lemma="δέ">δὲ</w> <w lemma="ἐν">ἐν</w> <w lemma="οὗτος">τούτοις</w> <w lemma="ἀβαρής">ἀβαρῆ</w> <w lemma="ἑαυτός">ἑαυτὸν</w> <w lemma="παρέχω">παρέσ<lb n="16" break="no"/>χηται</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="καί">καὶ</w>
+                   <w lemma="ὁ">τοῖς</w> <w lemma="κατά">κατ’</w><w lemma="ἴδιος">ἰδίαν</w> <w lemma="ἐντυγχάνω">ἐντυγχάνουσι</w> <lb n="17"/> <w lemma="ὁ">τῶν</w> <w lemma="πολίτης">πολιτῶν</w> <space quantity="1" unit="character"/> <w lemma="ἔτι">ἔτι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w>
+                    <w lemma="ὁ">τοῖς</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τοῦ</w> <w lemma="πολίτευμα">πολιτεύ<lb 
+                       n="18" break="no"/>ματος</w> <w lemma="ἐγώ">ἡμῶν</w> <placeName type="ethnic" nymRef="#Ἰουδαῖος" ref="#ioudaios">Ἰουδαίοις</placeName> <w lemma="καί">καὶ</w> <w lemma="κοινός">κοινῇ</w>
+                  <w lemma="καί">καὶ</w> <w lemma="κατά">κατ’</w><w lemma="ἴδιος">ἰδίαν</w> <lb n="19"/> <w lemma="εὔχρηστος">εὔχρηστον</w> <w lemma="προστασία">προσστασίαν</w> <w lemma="ποιέω">ποιούμενος</w> <w lemma="οὐ">οὐ</w>
+                    <w lemma="διαλείπω">δια<lb n="20" break="no"/>λείπει</w> <w lemma="ὁ">τῆς</w> <w lemma="ἴδιος">ἰδίας</w> <w lemma="καλοκαγαθία">καλοκαγαθίας</w> <w lemma="ἄξιος">ἄξια</w> <w lemma="πράσσω">πράσσων</w>
+                   <lb n="21"/> <w lemma="ὅς">ὧν</w> <w lemma="χάρις">χάριν</w> <w lemma="δοκέω">ἔδοξε</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἄρχων">ἄρχουσι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="πολίτευμα">πολιτεύ<lb n="22" break="no"/>ματι</w>
                    <w lemma="ὁ">τῶν</w> <w lemma="ἐν">ἐν</w> <placeName nymRef="#Βερενίκη" ref="#berenike">Βερενίκη</placeName> <placeName type="ethnic" nymRef="#Ἰουδαῖος" ref="#ioudaios">Ἰουδαίων</placeName>
-                   <w>ἐπαινέσαι</w> <w>τε</w> <w>αὐ<lb n="23" break="no"/>τὸν</w>
-                    <w lemma="καί">καὶ</w> <w>στεφανοῦν</w> <w>ὀνομαστὶ</w> <w>καθ’</w><w>ἑκάστην</w> 
-                   <lb n="24"/> <w>σύνοδον</w> <w lemma="καί">καὶ</w> <w>νουμηνίαν</w> <w>στεφάνωι</w> <w>ἐλαίνωι</w> <w lemma="καί">καὶ</w> <lb n="25"/> <w>λημνίσκωι</w> <w>τοὺς</w>
-                    <w lemma="δέ">δὲ</w> <w>ἄρχοντας</w> <w>ἀναγράψαι</w> <w lemma="ὁ">τὸ</w> <lb n="26"/> <w lemma="ψήφισμα">ψήφισμα</w> <w>εἰς</w> <w>στήλην</w> <w>λίθου</w>
-                  <placeName type="ethnic" nymRef="#Πάριος" ref="#paros">Παρίου</placeName> <w lemma="καί">καὶ</w> <w>θεῖναι</w>
-                    <w>εἰς</w> <lb n="27"/> <w lemma="ὁ">τὸν</w> <w>ἐπισημότα<unclear>τ</unclear>ον</w> <w>τόπον</w> <w lemma="ὁ">τοῦ</w> <w>ἀμφιθεάτρου</w> 
+                   <w lemma="ἐπαινέω">ἐπαινέσαι</w> <w lemma="τε">τε</w> <w lemma="αὐτός">αὐ<lb n="23" break="no"/>τὸν</w>
+                    <w lemma="καί">καὶ</w> <w lemma="στεφανόω">στεφανοῦν</w> <w lemma="ὀνομαστί">ὀνομαστὶ</w> <w lemma="κατά">καθ’</w><w lemma="ἕκαστος">ἑκάστην</w> 
+                   <lb n="24"/> <w lemma="σύνοδος">σύνοδον</w> <w lemma="καί">καὶ</w> <w lemma="νουμηνία">νουμηνίαν</w> <w lemma="στέφανος">στεφάνωι</w> <w lemma="ἐλάινος">ἐλαίνωι</w> <w lemma="καί">καὶ</w> <lb n="25"/> <w lemma="λημνίσκος">λημνίσκωι</w> <w lemma="ὁ">τοὺς</w>
+                    <w lemma="δέ">δὲ</w> <w lemma="ἄρχων">ἄρχοντας</w> <w lemma="ἀναγράφω">ἀναγράψαι</w> <w lemma="ὁ">τὸ</w> <lb n="26"/> <w lemma="ψήφισμα">ψήφισμα</w> <w lemma="εἰς">εἰς</w> <w lemma="στήλη">στήλην</w> <w lemma="λίθος">λίθου</w>
+                  <placeName type="ethnic" nymRef="#Πάριος" ref="#paros">Παρίου</placeName> <w lemma="καί">καὶ</w> <w lemma="τίθημι">θεῖναι</w>
+                    <w lemma="εἰς">εἰς</w> <lb n="27"/> <w lemma="ὁ">τὸν</w> <w lemma="ἐπίσημος">ἐπισημότα<unclear>τ</unclear>ον</w> <w lemma="τόπος">τόπον</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀμφιθέατρον">ἀμφιθεάτρου</w> 
                   <lb n="28"/> <space quantity="1" unit="character"/> <w lemma="λευκός">Λευ<space quantity="1" unit="character"/>καὶ</w> <space quantity="1" unit="character"/>
-            <w>πᾶ<space quantity="1" unit="character"/>σαι</w> <space quantity="1" unit="character"/></ab>
+            <w lemma="πᾶς">πᾶ<space quantity="1" unit="character"/>σαι</w> <space quantity="1" unit="character"/></ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -62,7 +61,7 @@
                               First recorded in <date type="found">1817</date>; apparently (see photo below) located in 1927 with <ref type="inscription" n="C.248">C.248</ref>.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>Standing in front of the <placeName  type="monuList" ref="https://www.slsgazetteer.org/1052">Temple of Hekate</placeName> (<date type="observed">2008</date>).</p>
+                           <p>Standing in front of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1052">Temple of Hekate</placeName> (<date type="observed">2008</date>).</p>
                         </provenance>
                      
                   
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-09-25" who="TW">Edited photo info</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -133,9 +133,9 @@
                     <persName type="attested" key="lgpn:V1-65281"><name nymRef="Τίτος"><supplied reason="lost"><expan><abbr>Τ</abbr><ex>ίτου</ex></expan></supplied></name> <name nymRef="Φλάβιος"><supplied reason="lost">Φ</supplied><unclear>λαβί</unclear><supplied reason="lost">ου</supplied></name> 
                     <lb n="3"/><name nymRef="Παυσανίας">Παυσανίο<milestone unit="block"/><unclear>υ</unclear></name></persName> <name nymRef="Παυσανίας">Παυσαν<supplied reason="lost">ίας</supplied></name> </persName>
                     <lb n="4"/> <space quantity="4" unit="line"/>
-                    <lb n="5"/><gap reason="lost" quantity="8" unit="character" precision="low"/> <milestone unit="block"/> <persName type="attested"><persName type="attested" key="lgpn:V1-65509"><name nymRef="Πτολεμαῖος">Πτυλμαίου</name></persName> <w>ὑὸ<supplied reason="lost">ς</supplied></w> 
+                    <lb n="5"/><gap reason="lost" quantity="8" unit="character" precision="low"/> <milestone unit="block"/> <persName type="attested"><persName type="attested" key="lgpn:V1-65509"><name nymRef="Πτολεμαῖος">Πτυλμαίου</name></persName> <w lemma="υἱός">ὑὸ<supplied reason="lost">ς</supplied></w> 
                     <lb n="6"/><gap reason="lost" quantity="9" unit="character" precision="low"/><milestone unit="block"/><gap reason="lost" quantity="1" unit="character" precision="low"/><name nymRef="-ας"><seg part="F"/>ας</name></persName> 
-                    <lb n="7"/><gap reason="lost" quantity="8" unit="character" precision="low"/><milestone unit="block"/><persName type="attested" key="lgpn:V1-65511"><name nymRef="-ος"><seg part="F"/>ος</name> <persName type="attested" key="lgpn:V1-65510"><name nymRef="Πτολεμαῖος">Πτολε<lb n="8" break="no"/><supplied reason="lost">μαίου</supplied></name> <w><supplied reason="lost">υἱὸς</supplied></w> 
+                    <lb n="7"/><gap reason="lost" quantity="8" unit="character" precision="low"/><milestone unit="block"/><persName type="attested" key="lgpn:V1-65511"><name nymRef="-ος"><seg part="F"/>ος</name> <persName type="attested" key="lgpn:V1-65510"><name nymRef="Πτολεμαῖος">Πτολε<lb n="8" break="no"/><supplied reason="lost">μαίου</supplied></name> <w lemma="υἱός"><supplied reason="lost">υἱὸς</supplied></w> 
                     <milestone unit="block"/> <name nymRef="Πτολεμαῖος">Πτολε<lb n="9" break="no"/><supplied reason="lost">μαῖ<milestone unit="block"/>ο</supplied>ς</name></persName></persName> <space quantity="3" unit="character"/> 
                     <lb n="10"/> <space quantity="1" unit="character"/>
                 </ab>
@@ -145,7 +145,7 @@
          <listApp><app loc="1">
             <note>Omitted by Robinson, Oliverio</note></app>
          <app loc="2"><lem>[Τ(ίτου) Φ]<unclear>λαβί</unclear>[ου]</lem>
-            <rdg  resp="#SECir">[Σ]<unclear>αβ</unclear>ει<unclear>νο</unclear>[ς ὑὸς]</rdg>
+            <rdg resp="#SECir">[Σ]<unclear>αβ</unclear>ει<unclear>νο</unclear>[ς ὑὸς]</rdg>
            </app>
             <app loc="3">
                <lem>Παυσαν</lem>

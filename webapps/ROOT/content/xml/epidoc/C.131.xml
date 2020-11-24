@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
           <change when="2010-02-22" who="MLA">corrected Oliverio reference in bibliography</change>
@@ -131,7 +131,7 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
              <div type="textpart" n="a"><ab> <lb n="1a"/><supplied reason="lost"> <space quantity="7" unit="character"/> <persName type="divine" nymRef="Τύχη" key="tyche"><name nymRef="Τύχη">Τύχα</name>
-                        <w>ἀγαθὰ</w></persName> <space quantity="7" unit="character"/></supplied> 
+                        <w lemma="ἀγαθός">ἀγαθὰ</w></persName> <space quantity="7" unit="character"/></supplied> 
                     <lb n="1"/><date><date ref="https://godot.date/id/LWdJCf6KsZY9oHSkNTqink"><supplied reason="lost" cert="low"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied>
                         <gap extent="unknown" unit="character" reason="lost"/><supplied reason="lost" cert="low"><w lemma="ὁ">τῶ</w></supplied> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <num value="1"><unclear>α</unclear></num> 
                     <persName type="emperor" key="marcusaurelius"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκρατόρων</supplied></w>
@@ -141,26 +141,26 @@
                     <lb n="3"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
                  <persName type="emperor" key="luciusverus"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίω</ex></expan></name>
                     <name nymRef="Αὐρήλιος">Αὐρηλίω</name> <name nymRef="Βῆρος">Βήρω</name> <name nymRef="Σεβαστός">Σεβαστῶ<unclear>ν</unclear></name></persName></date> 
-                    <lb n="4"/><date><w lemma="ἐπί"><supplied reason="lost">ἐ</supplied><unclear>π</unclear>ὶ</w> <w>ἱαρέος</w> <w lemma="ὁ">τῶ</w>
+                    <lb n="4"/><date><w lemma="ἐπί"><supplied reason="lost">ἐ</supplied><unclear>π</unclear>ὶ</w> <w lemma="ἱερεύς">ἱαρέος</w> <w lemma="ὁ">τῶ</w>
                     <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> 
                     <persName type="attested"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>οπλίω</ex></expan></name> 
                     <lb n="5"/><name nymRef="Ἀγαρῆνος"><supplied reason="lost">Ἀ</supplied>γαρήνω</name>
-                    <name nymRef="Σέκονδος">Σεκόνδω</name></persName></date></date>, <w>ἐφήβαρχος</w> 
-                    <lb n="6"/> <w><supplied reason="lost">τ</supplied><unclear>ρ</unclear>ιακατιάρχας</w> 
+                    <name nymRef="Σέκονδος">Σεκόνδω</name></persName></date></date>, <w lemma="ἐφήβαρχος">ἐφήβαρχος</w> 
+                    <lb n="6"/> <w lemma="τριακατιάρχας"><supplied reason="lost">τ</supplied><unclear>ρ</unclear>ιακατιάρχας</w> 
                     <persName type="attested" key="lgpn:V1-63948"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιος</ex></expan></name>
                         <name nymRef="Βαλέριος">Βαλέριος</name> 
                     <lb n="7"/> <space quantity="2" unit="character"/> <name nymRef="Εὐφράτης">Εὐφράτης</name> <name nymRef="Φρετήνσιος">Φρετήνσιος</name></persName> <space quantity="2" unit="character"/> 
-                    <lb n="8"/> <w><supplied reason="lost">σ</supplied><unclear>τ</unclear>ραταγοὶ</w> <w>γυμνασιαρχέντες</w> 
-                    <lb n="9"/><supplied reason="lost"><w lemma="καί">καὶ</w></supplied> <w>δε<unclear>κα</unclear>δαρχέντες</w> 
+                    <lb n="8"/> <w lemma="στρατηγός"><supplied reason="lost">σ</supplied><unclear>τ</unclear>ραταγοὶ</w> <w lemma="γυμνασιάρχω">γυμνασιαρχέντες</w> 
+                    <lb n="9"/><supplied reason="lost"><w lemma="καί">καὶ</w></supplied> <w lemma="δεκαδαρχέω">δε<unclear>κα</unclear>δαρχέντες</w> 
                     <persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name>
                         <name nymRef="Σήδιος">Σήδιος</name> 
                     <lb n="10"/><name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀν</supplied><unclear>τ</unclear>ωνεῖνος</name></persName> <w lemma="καί">καὶ</w> 
                     <persName type="attested" key="lgpn:V1-64367"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
                         <name nymRef="Νόβιος">Νόβιος</name> <name nymRef="Ἰατρόδωρος">Ἰα 
-                    <lb n="11" break="no"/><supplied reason="lost">τρό</supplied>δωρος</name></persName>, <w>ἀκαδήμαρχος</w>
+                    <lb n="11" break="no"/><supplied reason="lost">τρό</supplied>δωρος</name></persName>, <w lemma="ἀκαδήμαρχος">ἀκαδήμαρχος</w>
                     <persName type="attested"><name nymRef="Τίτος"><expan><abbr>Τ</abbr><ex>ίτος</ex></expan></name> 
                     <lb n="12"/><name nymRef="Φλάβιος"><supplied reason="lost">Φλ</supplied>άβιος</name> <name nymRef="Φλαβιανός">Φλαβιανός</name></persName> <g ref="symbols.xml#leaf"/>
-                 <lb n="13"/> <space quantity="7" unit="character"/> <w>Ἔφηβοι</w> <space quantity="7" unit="character"/></ab>
+                 <lb n="13"/> <space quantity="7" unit="character"/> <w lemma="ἔφηβος">Ἔφηβοι</w> <space quantity="7" unit="character"/></ab>
          </div>  
                    <div type="textpart" subtype="text" n="b">
                        <div type="textpart" subtype="column" n="i"><ab>
@@ -304,8 +304,8 @@
                     <lb n="45"/><space quantity="1" unit="line"/>
                     <lb n="46"/><space quantity="1" unit="line"/>
                     <lb n="47"/><orig>γ <space quantity="10" unit="character"/> ι</orig> 
-                    <lb n="48"/><w>ἐπιστατέντος</w> <w lemma="καί">καὶ</w>
-                    <w>παιδονο<supplied reason="lost">μέν</supplied><unclear>τ</unclear><supplied reason="lost">ος</supplied></w>
+                    <lb n="48"/><w lemma="ἐπιστατέω">ἐπιστατέντος</w> <w lemma="καί">καὶ</w>
+                    <w lemma="παιδονομέω">παιδονο<supplied reason="lost">μέν</supplied><unclear>τ</unclear><supplied reason="lost">ος</supplied></w>
 
                     <lb n="49"/><persName type="attested"><name nymRef="Αἴλιος">Αἴλιος</name> 
                         <persName type="attested" key="lgpn:V1-63674"><name nymRef="Ἐπαφρόδιτος">Ἐπαφροδεῖτος</name></persName></persName>
@@ -314,7 +314,7 @@
          </div>
                     <div type="textpart" n="c"><ab><lb n="51"/><persName type="attested" key="lgpn:V1-63948"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιος</ex></expan></name>
                         <name nymRef="Οὐαλέριος">Οὐαλέριος</name> <name nymRef="Εὐφράτης">Εὐφράτης</name> 
-                    <lb n="52"/><name nymRef="Φρετήνσιος">Φρετήνσιος</name></persName> <w>ἐφηβαρχῶν</w>
+                    <lb n="52"/><name nymRef="Φρετήνσιος">Φρετήνσιος</name></persName> <w lemma="ἐφηβαρχέω">ἐφηβαρχῶν</w>
                     <lb n="53"/><persName type="divine" key="hermes"><name nymRef="Ἑρμῆς">Ἑρμαῖ</name></persName>
                     <persName type="divine" key="herakles"><name nymRef="Ἡρακλῆς">Ἡρακλεῖ</name></persName>
                 </ab></div>
@@ -322,7 +322,7 @@
          
          <div type="translation" xml:space="preserve">
              
-             <div  type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>[With Good Fortune. Year ? ]also year 1 of the [Emperors] Caesars M(arcus) Aurelius Antoninus and L(ucius) Aurelius Verus, Augusti, when the priest of Apollo was Poplios Agarenos Sekondos. 
+             <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>[With Good Fortune. Year ? ]also year 1 of the [Emperors] Caesars M(arcus) Aurelius Antoninus and L(ucius) Aurelius Verus, Augusti, when the priest of Apollo was Poplios Agarenos Sekondos. 
                  The ephebarch and triankatiarch was Gaios Balerios Euphrates Phretensios; the generals, acting as gymnasirachs and dekadarchs were Gaios Sedios Antoneinos and Loukios Nobio 
                  Iatrodoros; the akademarch was Titos Phlabios Phlabianos. The ephebes were:</p>
                  <p><note>b: Column i</note>; [ . . .] Philemon, [ . . -]ios Markellos, [ . . .] Antonios, [ . . .] Phelix, [ . . . -]os Euphemos, [ . . .] Serapodoros, [ . . .-]lios Biktor. [ .] Nobios 

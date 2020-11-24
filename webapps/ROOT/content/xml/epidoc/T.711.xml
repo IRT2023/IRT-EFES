@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
            <change when="2013-07-09" who="JenniferSarha">fixed schematron error</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -130,7 +130,7 @@
                 <lb n="2a"/><gap reason="lost" extent="unknown" unit="line"/>
                   </ab></div>
          </div><div subtype="fragment" n="Face 2" type="textpart"><ab>
-                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>τι</w>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="τις">τι</w>
                         <persName type="attested"><name nymRef="Πρώταρχος" cert="low">Πρω
                         <lb n="2" break="no"/>τάρχω</name></persName>
                         <lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -93,6 +92,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -129,7 +129,7 @@
                     <lb n="2"/><date ref="https://godot.date/id/SJNZHUR6QPLgjee8wERNvc"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                     <num value="131">ρλα</num></date> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-65879"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Κλαύδιος">Κλαυδίου</name> 
                     <name nymRef="Φείδιμος">Φειδίμ<unclear>ο</unclear><supplied reason="lost">υ</supplied></name></persName>
-                    <lb n="3"/> <w>υἱὸς</w> <persName type="attested" key="lgpn:V1-64434"><name nymRef="Ἴστρος">Ἴστρος</name></persName> <g ref="symbols.xml#stop"/> <w>ἱερεὺς</w>
+                    <lb n="3"/> <w lemma="υἱός">υἱὸς</w> <persName type="attested" key="lgpn:V1-64434"><name nymRef="Ἴστρος">Ἴστρος</name></persName> <g ref="symbols.xml#stop"/> <w lemma="ἱερεύς">ἱερεὺς</w>
                         <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλ<supplied reason="lost">ω</supplied><lb n="4" break="no"/> <space quantity="8" unit="character"/> νος <space quantity="8" unit="character"/></name></persName>
                     <lb n="4a"/> <space quantity="2" unit="line"/>
                 </ab>

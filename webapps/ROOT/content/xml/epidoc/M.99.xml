@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -83,6 +82,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -103,7 +103,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
              
             <ab><lb n="1"/><date ref="https://godot.date/id/EeGM85bHwxkrJRe5wD7ZU2"><w lemma="ἔτος"><supplied reason="lost"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w>
-               <num value="9"><unclear>θ</unclear></num> <rs type="month" key="mesore"><w>Μ<unclear>ε</unclear>ϲορὴ</w></rs> 
+               <num value="9"><unclear>θ</unclear></num> <rs type="month" key="mesore"><w lemma="Μεσορή">Μ<unclear>ε</unclear>ϲορὴ</w></rs> 
                <num atLeast="20">κ<gap reason="lost" quantity="1" unit="character"/></num></date>
                <gap reason="lost" quantity="1" unit="character"/> <persName type="attested"><name nymRef="Καίσιος">Καίϲι<lb n="2" break="no"/>οϲ</name> <name nymRef="Λονγεῖνος">Λονγεῖνοϲ</name></persName>
                <w lemma="τελευτάω">ἐτ<lb n="3" break="no"/>ελεύτα</w> <date type="life-span" dur="P32Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="32">λβ</num> </date>

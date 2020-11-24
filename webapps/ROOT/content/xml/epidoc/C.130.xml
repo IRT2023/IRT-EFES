@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-02-17" who="MGDA">fixed bibliography</change>
@@ -128,8 +128,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <persName type="divine" key="theos"><w>θεός</w></persName> <persName type="divine" key="agathetyche"><name nymRef="Τύχη">Τύχα</name> <w>ἀγαθά</w></persName>
-                    <lb n="2"/> <w>Ἱάρεαι</w> <w lemma="ὁ">τᾶς</w> <persName type="divine" key="hera"><name nymRef="Ἥρα">Ἥρας</name></persName>
+                    <lb n="1"/> <persName type="divine" key="theos"><w lemma="θεός">θεός</w></persName> <persName type="divine" key="agathetyche"><name nymRef="Τύχη">Τύχα</name> <w lemma="ἀγαθός">ἀγαθά</w></persName>
+                    <lb n="2"/> <w lemma="ἱέρεια">Ἱάρεαι</w> <w lemma="ὁ">τᾶς</w> <persName type="divine" key="hera"><name nymRef="Ἥρα">Ἥρας</name></persName>
                     <lb n="3"/> <persName type="attested" key="lgpn:V1-64951"><name nymRef="Μεγώ">Μεγὼ</name> <space extent="4" unit="character"/> <persName type="attested" key="lgpn:V1-63624"><name nymRef="Εἰδόκριτος">Εἰδοκρίτω</name></persName></persName>
                     <lb n="4"/> <persName type="attested" key="lgpn:V1-64760"><name nymRef="Λαβράμεα">Λαβράμεα</name> <space extent="4" unit="character"/> <persName type="attested" key="lgpn:V1-63362"><name nymRef="Βάκαλ">Βάκαλος</name></persName></persName>
                     <lb n="5"/> <persName type="attested" key="lgpn:V1-65503"><name nymRef="Πρωταρχίς">Πρωταρχὶς</name> <space extent="4" unit="character"/> <persName type="attested" key="lgpn:V1-64031"><name nymRef="Ἡρακλείδας">Ἡρακλείδα</name></persName></persName>
@@ -160,7 +160,7 @@
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Dio. Buona Fortuna. Sacerdotesse di Giunone: Megó di Idocrito, Labramia di Bacal, Protarchis di Eraclide, 
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Dio. Buona Fortuna. Sacerdotesse di Giunone: Megó di Idocrito, Labramia di Bacal, Protarchis di Eraclide, 
             Nicarista di Poliante, Pelia di Giasone, Critola di Dionisio, Aristobola di Socrate, Callivia di Eschine, Olympias di Aristodemo, Mnesta di Filote, Erotion di Didimo, 
             Clearista di Eucle, Callivia di Trasicle, Arata di Carnis, Timareta di Elpinico, Eratasila di Eglanore, Cleopatra di Eufris, Clenata di Criton, Anassidica di Tolemeo, Timassam? -</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>God. Good Fortune. Priestesses of Hera:  Mego <supplied reason="subaudible">daughter</supplied> of Eidokritos; 

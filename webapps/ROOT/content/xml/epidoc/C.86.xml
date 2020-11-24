@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -109,6 +108,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -148,17 +148,17 @@
                     <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκοϲ</ex></expan></name> 
                     <name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Κλαύδιος">Κλαύδιοϲ</name>
                        <name nymRef="Σεβαστός"><expan><abbr>Ϲεβ</abbr><ex>αϲτόϲ</ex></expan></name></persName>
-                    <lb n="2"/><w lemma="ὅπλον">ὅπλοιϲ</w> <w>ἀναϲτίλαϲ</w> <w lemma="ὁ">τὴν</w> 
-               <w>πολυχ<unclear>ρ</unclear>όνιον</w>
-            <lb n="3"/><placeName type="ethnic" nymRef="#Μαρμαρίτης" ref="#marmarike">Μαρμαριτῶν</placeName> <w>θ<unclear>ραϲύ</unclear>τητα</w>
+                    <lb n="2"/><w lemma="ὅπλον">ὅπλοιϲ</w> <w lemma="ἀναστέλλω">ἀναϲτίλαϲ</w> <w lemma="ὁ">τὴν</w> 
+               <w lemma="πολυχρόνιος">πολυχ<unclear>ρ</unclear>όνιον</w>
+            <lb n="3"/><placeName type="ethnic" nymRef="#Μαρμαρίτης" ref="#marmarike">Μαρμαριτῶν</placeName> <w lemma="θρασύτης">θ<unclear>ραϲύ</unclear>τητα</w>
                <placeName nymRef="#Κλαυδιόπολις" ref="#cyrene">Κλαυδιόπολιν</placeName>
                     <lb n="4"/> <w lemma="ἐπώνυμος">ἐπώνυμον</w> <w lemma="ἑαυτός">ἑαυτοῦ</w> <w lemma="ἐκ">ἐκ</w>
-               <w lemma="νέος">νέαϲ</w> <w>ἱδρύϲατο</w>, <w>ἡγουμένου</w>
-                    <lb n="5"/> <w lemma="ὁ">τὸν</w> <w><unclear>πό</unclear>λεμον</w> <w lemma="καί">καὶ</w> 
-               <w>κτίζοντοϲ</w> 
+               <w lemma="νέος">νέαϲ</w> <w lemma="ἱδρύω">ἱδρύϲατο</w>, <w lemma="ἡγέομαι">ἡγουμένου</w>
+                    <lb n="5"/> <w lemma="ὁ">τὸν</w> <w lemma="πόλεμος"><unclear>πό</unclear>λεμον</w> <w lemma="καί">καὶ</w> 
+               <w lemma="κτίζω">κτίζοντοϲ</w> 
                     <persName type="attested" key="plre:1-probus8"><name nymRef="Πρόβος">Πρόβου</name></persName> <w lemma="ὁ">τοῦ</w> 
-               <w><expan><abbr>διαϲημ</abbr><ex>οτάτου</ex></expan></w> 
-                    <w><expan><abbr><unclear>ἐπ</unclear><supplied reason="lost">ά</supplied><unclear>ρχ</unclear></abbr><ex>ου</ex></expan></w>
+               <w lemma="διάσημος,"><expan><abbr>διαϲημ</abbr><ex>οτάτου</ex></expan></w> 
+                    <w lemma="ἔπαρχος"><expan><abbr><unclear>ἐπ</unclear><supplied reason="lost">ά</supplied><unclear>ρχ</unclear></abbr><ex>ου</ex></expan></w>
                     <placeName nymRef="#Αἴγυπτος" ref="#egypt"><expan><abbr>Αἰγύπ</abbr><ex>του</ex></expan></placeName>                
             </ab>
          </div>
@@ -170,7 +170,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>L'Imperatore Cesare Marco Aurelio Claudio Augusto, con le armi dopo aver stroncato l'annosa 
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>L'Imperatore Cesare Marco Aurelio Claudio Augusto, con le armi dopo aver stroncato l'annosa 
             dei Marmaridai (beduina) oltracotanza, Claudiopoli, sua eponima di nuovo (sana pianta) costrui, dirigendo le operazioni militari e provvedendo all costruzione 
             dell'abitato Probo, l'illustrissimo Prefetto d'Egitto.</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>Emperor Caesar Marcus Aurelius Claudius Augustus, having removed, with arms, the longlasting savagery of the Marmaritae, 

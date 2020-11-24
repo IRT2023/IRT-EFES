@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -50,7 +49,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate  notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Perhaps second to third centuries CE </origDate>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Perhaps second to third centuries CE </origDate>
                   </origin>
                   <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
                      <placeName ref="https://www.slsgazetteer.org/1186">Taurguni</placeName>; 
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-10-10" who="TW">Added picture code</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -122,8 +122,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ν</orig> <w lemma="καί">καὶ</w> <w>τὰς</w> <w>θύραϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>ν</orig> <w>ἐκ</w> <w lemma="ὁ">τῶν</w> <w><unclear>ἰδ</unclear><supplied reason="lost">ίων</supplied></w>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ν</orig> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="θύρα">θύραϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>ν</orig> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος"><unclear>ἰδ</unclear><supplied reason="lost">ίων</supplied></w>
                   </ab>
 </div>
          

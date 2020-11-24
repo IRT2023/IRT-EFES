@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation/></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -125,13 +125,13 @@
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="anonymus"><name nymRef="Augustus"><supplied reason="lost">A</supplied>u<unclear>g</unclear>usti</name></persName> 
                   <gap reason="lost" extent="unknown" unit="character"/> 
                     <lb n="2"/><gap reason="lost" extent="2" unit="character"/> <persName type="attested"><name nymRef="Bruttidius"><supplied reason="lost">B</supplied>ruttid<supplied reason="lost">i</supplied>o</name> 
-                  <name nymRef="Sabinus">Sabino</name></persName> <w><expan><abbr>proc</abbr><supplied reason="lost"><abbr>o</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex><abbr>i</abbr></supplied></expan></w> <gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="3"/> <w><supplied reason="lost">no</supplied>mine</w> <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene">Cyrenen<supplied reason="lost">sium</supplied></placeName> 
-                  <w>et</w> <w lemma="ciuis">ciuium</w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma">Romanorum</placeName> <w>qui</w> <w>ibi</w> <w>negotiantur</w> <w>et</w> <orig>CO</orig>
+                  <name nymRef="Sabinus">Sabino</name></persName> <w lemma="proconsul"><expan><abbr>proc</abbr><supplied reason="lost"><abbr>o</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex><abbr>i</abbr></supplied></expan></w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="3"/> <w lemma="nomen"><supplied reason="lost">no</supplied>mine</w> <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene">Cyrenen<supplied reason="lost">sium</supplied></placeName> 
+                  <w lemma="et">et</w> <w lemma="ciuis">ciuium</w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma">Romanorum</placeName> <w lemma="qui">qui</w> <w lemma="ibi">ibi</w> <w lemma="negotior">negotiantur</w> <w lemma="et">et</w> <orig>CO</orig>
                   <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="4"/><space quantity="8" unit="character"/> <persName type="attested"><name type="praenomen" nymRef="Titus"><expan><abbr>T</abbr><ex>itus</ex></expan></name> 
                       <name type="gentilicium" nymRef="S-"><seg part="I">S</seg><gap reason="lost" quantity="6" unit="character" precision="low"/><seg part="F">us</seg></name>
-                       <name type="cognomen" nymRef="Celer">Celer</name></persName> <w>praifectus</w><note>!</note> <w>cohortis</w> <space quantity="8" unit="character"/>                           
+                       <name type="cognomen" nymRef="Celer">Celer</name></persName> <w lemma="praefectus">praifectus</w><note>!</note> <w lemma="cohors">cohortis</w> <space quantity="8" unit="character"/>                           
             </ab>
              </div>
 

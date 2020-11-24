@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
          <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-22" who="MGDA">Tagged header information</change>
@@ -130,18 +130,18 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/dBd6sKjSW78QKj7Vwn8Ct4"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
-                    <num value="9"><unclear>θ</unclear></num> <rs type="month"  key="tybi"><w>Τ<supplied reason="lost">υβὶ</supplied></w></rs> 
+                    <num value="9"><unclear>θ</unclear></num> <rs type="month" key="tybi"><w lemma="Τυβί́">Τ<supplied reason="lost">υβὶ</supplied></w></rs> 
                     <num value="4">δ</num></date> <persName type="attested" key="lgpn:V1-60672"><name nymRef="Ἀουιανία">Ἀουια<unclear>νί</unclear><lb n="2" break="no"/>α</name> <gap reason="lost" quantity="6" unit="character" precision="low"/></persName> 
                     <date type="life-span" dur="P33Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="33">γλ</num> </date> <date ref="https://godot.date/id/va9Vi2RkNNFbhyGfjgBJrS"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="20">κ</num>
-                    <lb n="3"/><rs type="month" key="thoth"><w>Θώθυ</w></rs> <num value="20">κ</num></date> 
+                    <lb n="3"/><rs type="month" key="thoth"><w lemma="Θώθ">Θώθυ</w></rs> <num value="20">κ</num></date> 
                     <persName type="attested" key="lgpn:V1-60672"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
                         <name nymRef="Ἀβιάνιος">Ἀβιάνι<lb n="4" break="no"/>ος</name> <name nymRef="Ἰωάννης"><unclear>Ι</unclear>ο<supplied reason="lost">άν</supplied>ης</name></persName> 
                     <date type="life-span" dur="P18Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="18">ιη</num> </date> 
                     <lb n="5"/><date ref="https://godot.date/id/oPz9q4TmgPdKfAG7nFQyuk"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="30">λ</num> <rs type="month" key="epiphi"><w><unclear>Ἐ</unclear>πιφὶ</w></rs> <num value="23">γκ</num> </date>
+                    <num value="30">λ</num> <rs type="month" key="epiphi"><w lemma="Ἐπιφί"><unclear>Ἐ</unclear>πιφὶ</w></rs> <num value="23">γκ</num> </date>
                     <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
                     <lb n="6"/><name nymRef="Ἀβιάνιος">Ἀ<unclear>βι</unclear>ά<unclear>νι</unclear>ος</name>
                         <name nymRef="Μάξιμος">Μά<unclear>ξ</unclear><lb n="7" break="no"/>ι<unclear>μ</unclear>ος</name></persName> 
@@ -179,7 +179,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 4, Payni -. Filoteucle di Avianio, di anni 8.</p>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 4, Payni -. Filoteucle di Avianio, di anni 8.</p>
             <p>Anno 4, Phaophi 3. Prassidamo di Magio, di anni 2</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/dBd6sKjSW78QKj7Vwn8Ct4">Year 9 <note>19?</note>, Tubi 4</ref>, Aouiania 
                <supplied reason="explanation"><foreign xml:lang="la">Aviania</foreign></supplied> [ . . . ], aged 33. 

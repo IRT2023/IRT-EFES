@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-04" who="MGDA">fixed CIG bibliography</change>
@@ -128,9 +128,9 @@
                     <lb n="1"/><persName type="attested" key="lgpn:VI-63214"><supplied reason="lost" evidence="previouseditor"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>αρκοϲ</ex></expan></name></supplied> 
                        <name nymRef="Βαλέριος"><supplied evidence="previouseditor" reason="lost">Βαλέ</supplied><unclear>ρ</unclear>ιοϲ</name>
                     <lb n="2"/><supplied reason="lost" evidence="previouseditor"><name nymRef="Ἀρίστων">Ἀρίστων</name></supplied></persName> 
-   <w><supplied reason="lost">ἱ</supplied>ερώμε<lb n="3" break="no"/><supplied reason="lost" evidence="previouseditor">νοϲ</supplied></w> <persName type="divine" key="apollo"><w lemma="ὁ"><supplied evidence="previouseditor" reason="lost">το</supplied><unclear>ῦ</unclear></w> <w>κτίϲτου</w>
+   <w lemma="ἱερόω"><supplied reason="lost">ἱ</supplied>ερώμε<lb n="3" break="no"/><supplied reason="lost" evidence="previouseditor">νοϲ</supplied></w> <persName type="divine" key="apollo"><w lemma="ὁ"><supplied evidence="previouseditor" reason="lost">το</supplied><unclear>ῦ</unclear></w> <w lemma="κτίστης">κτίϲτου</w>
                     <lb n="4"/><name nymRef="Ἀπόλλων"><supplied reason="lost" evidence="previouseditor">Ἀπόλλω</supplied>νοϲ</name></persName> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w>
-                    <lb n="5"/><supplied evidence="previouseditor" reason="lost"><w lemma="ἴδιος"><unclear>ἰ</unclear>δίων</w> <w lemma="ὁ">τὸ</w></supplied> <w>ἴχνοϲ</w> <w>ἐ<lb n="6" break="no"/><supplied reason="lost" evidence="previouseditor">πεϲκεύ</supplied><unclear>α</unclear>ϲεν</w> <g ref="symbols.xml#leaf"/> 
+                    <lb n="5"/><supplied evidence="previouseditor" reason="lost"><w lemma="ἴδιος"><unclear>ἰ</unclear>δίων</w> <w lemma="ὁ">τὸ</w></supplied> <w lemma="ἴχνος">ἴχνοϲ</w> <w lemma="ἐπισκευάζω">ἐ<lb n="6" break="no"/><supplied reason="lost" evidence="previouseditor">πεϲκεύ</supplied><unclear>α</unclear>ϲεν</w> <g ref="symbols.xml#leaf"/> 
    <lb n="7"/><supplied evidence="previouseditor" reason="lost"><w lemma="καί">καὶ</w></supplied> <w lemma="ἀνατίθημι"><supplied reason="lost" evidence="previouseditor">ἀνέ</supplied>θηκεν</w>
                 </ab>
 </div>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -52,11 +51,10 @@
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="-0100" notAfter="0100"  precision="low" evidence="lettering">First century BCE to first century CE</origDate>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering">First century BCE to first century CE</origDate>
                   </origin>
                   <provenance type="found">
-                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911"
-                        >Apollonia</placeName>: Baptistery in  the <placeName type="monuList" ref="https://www.slsgazetteer.org/914">East Church</placeName>;
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: Baptistery in  the <placeName type="monuList" ref="https://www.slsgazetteer.org/914">East Church</placeName>;
                         found in <date type="found">1920</date>.</p>
                   </provenance>
                   <provenance type="observed">
@@ -98,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds, Tupman).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -137,9 +136,9 @@
                     <lb n="1"/>
                     <date><persName type="attested" key="lgpn:V1-62052"><name nymRef="Διόδοτος"><supplied reason="lost">Δ</supplied><unclear>ι</unclear>όδοτος</name> 
                         <persName type="attested" key="lgpn:V1-62095"><name nymRef="Καρνεάδης">Καρνεά<unclear>δ</unclear><supplied reason="lost">ου</supplied></name></persName></persName>
-                    <lb n="2"/> <w><supplied reason="lost">ἱ</supplied><unclear>ε</unclear>ρειτεύων</w>
+                    <lb n="2"/> <w lemma="ἱερειτεύω"><supplied reason="lost">ἱ</supplied><unclear>ε</unclear>ρειτεύων</w>
                     <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλ<supplied reason="lost">ωνος</supplied></name></persName></date>
-                    <lb n="3"/> <space quantity="1" unit="character"/> <persName type="divine" key="theos"><name nymRef="Θεός">Θεός</name></persName>. <space quantity="1" unit="character"/> <persName type="divine" key="agathetyche"><name nymRef="Τύχη">Τύχη</name> <space quantity="1" unit="character"/> <w><supplied reason="lost">Ἀγαθὴ</supplied></w></persName>
+                    <lb n="3"/> <space quantity="1" unit="character"/> <persName type="divine" key="theos"><name nymRef="Θεός">Θεός</name></persName>. <space quantity="1" unit="character"/> <persName type="divine" key="agathetyche"><name nymRef="Τύχη">Τύχη</name> <space quantity="1" unit="character"/> <w lemma="ἀγαθός"><supplied reason="lost">Ἀγαθὴ</supplied></w></persName>
                     <lb n="4"/><w lemma="ἱερεύς"><supplied reason="lost">ἱ</supplied>ερεῖς</w> <w lemma="ὁ">τοῦ</w>
                        <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλ<unclear>ω</unclear><supplied reason="lost">νος</supplied></name></persName>
                     <lb n="5"/><persName type="attested" key="lgpn:V1-62052"><name nymRef="Διόδοτος">Διόδοτος</name> 

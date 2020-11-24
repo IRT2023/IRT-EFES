@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
          <creation>From previous publications and drawings (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-31" who="MGDA">fixed Oliverio bibliography</change>
@@ -125,10 +125,10 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/gFm9x8jsJc7cct6suf7MP7"><w lemma="ἔτος"><expan><abbr>ἔτου</abbr><ex>ϲ</ex></expan></w> <supplied reason="omitted"><num value="1">α</num></supplied>
                     <persName type="emperor" key="diocletianus"><name nymRef="Διοκλητιανός"><expan><abbr>Διοκλη</abbr><ex>τιανοῦ</ex></expan></name></persName></date> 
-                    <w lemma="ἱερεύς">ἱερεὺς</w> <persName type="attested" key="lgpn:V1-64391"><name nymRef="Ἰούλιος">Ἰού<lb n="2" break="no"/>λιοϲ</name></persName> <w>εἰϲῆλ<supplied reason="lost">θ</supplied>εν</w> <gap reason="lost" quantity="4" unit="character"/> <orig><unclear>α</unclear>τ</orig>
+                    <w lemma="ἱερεύς">ἱερεὺς</w> <persName type="attested" key="lgpn:V1-64391"><name nymRef="Ἰούλιος">Ἰού<lb n="2" break="no"/>λιοϲ</name></persName> <w lemma="εἰσέρχομαι">εἰϲῆλ<supplied reason="lost">θ</supplied>εν</w> <gap reason="lost" quantity="4" unit="character"/> <orig><unclear>α</unclear>τ</orig>
                     <lb n="3"/><gap reason="lost" quantity="5" unit="character" precision="low"/><orig>νεω<unclear>ηι</unclear>οφ<unclear>ι</unclear>λ</orig><gap reason="lost" quantity="2" unit="character"/><gap reason="lost" quantity="4" unit="character"/>
-                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>λ</unclear>υ</orig><gap reason="lost"  quantity="2" unit="character"/>
-                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>η</unclear></orig><gap reason="lost"  quantity="2" unit="character"/>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>λ</unclear>υ</orig><gap reason="lost" quantity="2" unit="character"/>
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>η</unclear></orig><gap reason="lost" quantity="2" unit="character"/>
                 </ab>
 </div>
          

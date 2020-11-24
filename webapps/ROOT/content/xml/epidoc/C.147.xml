@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
          <creation>Transcription, supplemented from the photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -118,19 +118,19 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <gap reason="lost" quantity="3" unit="character"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><supplied reason="lost"><w lemma="δημαρχικός">δημαρ
-                    <lb n="2" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w></supplied>
+                    <lb n="1"/> <gap reason="lost" quantity="3" unit="character"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><supplied reason="lost"><w lemma="δημαρχικός">δημαρ<lb 
+                       n="2" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w></supplied>
                     <lb n="3"/> <w lemma="ὁ"><unclear>τ</unclear>ὸ</w> 
-                    <num value="3"><unclear>γ</unclear></num> <w><supplied reason="lost">Αὐτοκράτωρ</supplied></w>
+                    <num value="3"><unclear>γ</unclear></num> <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτωρ</supplied></w>
                     <lb n="4"/> <w lemma="ὁ"><unclear>τ</unclear>ὸ</w> <num value="8">η</num> 
                     <w lemma="πατήρ">πα<unclear>τὴρ</unclear></w>
                      <w lemma="πατρίς"><unclear>π</unclear><supplied reason="lost">ατρί</supplied><lb n="5" break="no"/><supplied reason="lost">δ</supplied>ος</w>
                     <w lemma="ὕπατος">ὕπατος</w> <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> </supplied>
-                    <lb n="6"/> <w lemma=""><supplied reason="lost">δ</supplied>εδειγμένος</w> <w>τ<supplied reason="lost">ὸ</supplied></w> <supplied reason="lost"><num value="4">δ</num> </supplied></date>
-                    <lb n="7"/> <w><supplied reason="lost">δ</supplied>ιὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> 
+                    <lb n="6"/> <w lemma=""><supplied reason="lost">δ</supplied>εδειγμένος</w> <w lemma="ὁ">τ<supplied reason="lost">ὸ</supplied></w> <supplied reason="lost"><num value="4">δ</num> </supplied></date>
+                    <lb n="7"/> <w lemma="διά"><supplied reason="lost">δ</supplied>ιὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> 
                     <name nymRef="Πακώνιος">Πακω<unclear>ν</unclear><supplied reason="lost">ίου</supplied></name>
-                    <lb n="8"/><name nymRef="Ἀγριππῖνος"><supplied reason="lost">Ἀ</supplied>γριππείνο<supplied reason="lost">υ</supplied></name></persName> <w><supplied reason="lost">ἰδί
-                    <lb n="9" break="no"/> ου</supplied></w> <w lemma="πρεσβευτής"><supplied reason="lost">π</supplied>ρεσβευτο<supplied reason="lost">ῦ</supplied></w> <gap reason="lost" quantity="3" unit="character"/>
+                    <lb n="8"/><name nymRef="Ἀγριππῖνος"><supplied reason="lost">Ἀ</supplied>γριππείνο<supplied reason="lost">υ</supplied></name></persName> <w lemma="ἴδιος"><supplied reason="lost">ἰδί<lb 
+                       n="9" break="no"/>ου</supplied></w> <w lemma="πρεσβευτής"><supplied reason="lost">π</supplied>ρεσβευτο<supplied reason="lost">ῦ</supplied></w> <gap reason="lost" quantity="3" unit="character"/>
                 </ab>
 </div>
          

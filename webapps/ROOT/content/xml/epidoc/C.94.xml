@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Read from the photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,8 +121,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <w>Νομοφύλακες</w>
-                    <lb n="2"/> <w lemma="ὁ">οἱ</w> <date ref="https://godot.date/id/5iw2q96T36nqyARjioqmPf"><w>ἐφ’</w><w>ἱαρεῦς</w> <persName type="attested" key="lgpn:V1-63786"><name nymRef="Εὐβάτας">Εὐβάτα</name></persName></date>
+                    <lb n="1"/> <w lemma="νομοφύλαξ">Νομοφύλακες</w>
+                    <lb n="2"/> <w lemma="ὁ">οἱ</w> <date ref="https://godot.date/id/5iw2q96T36nqyARjioqmPf"><w lemma="ἐπί">ἐφ’</w><w lemma="ἱερεύς">ἱαρεῦς</w> <persName type="attested" key="lgpn:V1-63786"><name nymRef="Εὐβάτας">Εὐβάτα</name></persName></date>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-63171"><name nymRef="Ἀριστοτέλης">Ἀριστοτέλης</name> <persName type="attested" key="lgpn:V1-63170"><name nymRef="Ἀριστοτέλης">Ἀριστοτέλευς</name></persName></persName>
                         <lb n="4"/><persName type="attested" key="lgpn:V1-63456"><name nymRef="Δαμήτριος">Δαμάτριος</name> <persName type="attested" key="lgpn:V1-62793"><name nymRef="Ἀμμώνιος">Ἀμμωνίω</name></persName></persName>
                         <lb n="5"/><persName type="attested" key="lgpn:V1-64450"><name nymRef="Κάϊκος">Κάϊκος</name> <persName type="attested" key="lgpn:V1-63099"><name nymRef="Ἄριστις">Ἀρίστιος</name></persName> </persName>
@@ -130,7 +130,7 @@
                         <lb n="7"/><persName type="attested" key="lgpn:V1-65008"><name nymRef="Μενεκλῆς">Μενεκλῆς</name> <persName type="attested" key="lgpn:V1-64026"><name nymRef="Ἡρακλείδας">Ἡρακλείδα </name></persName></persName>
                         <lb n="8"/><persName type="attested" key="lgpn:V1-62864"><name nymRef="Ἀνδρίας">Ἀνδρίας</name> <persName type="attested" key="lgpn:V1-66167"><name nymRef="Χαρτάδας">Χαρτάδα</name></persName></persName>
                     <lb n="8a"/> <space quantity="1" unit="line"/>
-   <lb n="9"/> <w>τὰν</w> <persName type="divine" key="agathetyche"><w>Ἀγαθὰν</w> <name nymRef="Τύχα">Τύχαν</name></persName> 
+   <lb n="9"/> <w lemma="ὁ">τὰν</w> <persName type="divine" key="agathetyche"><w lemma="ἀγαθός">Ἀγαθὰν</w> <name nymRef="Τύχα">Τύχαν</name></persName> 
                     <lb n="10"/> <space quantity="2" unit="character"/> <w lemma="ἀνατίθημι">ἀνέθηκαν</w>  <space quantity="2" unit="character"/>
                 </ab>
 </div>

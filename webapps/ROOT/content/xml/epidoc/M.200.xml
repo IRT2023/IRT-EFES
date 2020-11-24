@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -45,7 +44,7 @@
                <history>
                   <origin>
                      <origPlace><rs type="milestone" key="cyr-pto" n="10">Cyrene-Ptolemais road, Mile X</rs>.</origPlace>
-                     <origDate notBefore="0100" notAfter="0100"  precision="medium" evidence="titulature">CE 100</origDate>
+                     <origDate notBefore="0100" notAfter="0100" precision="medium" evidence="titulature">CE 100</origDate>
                   </origin>
                   <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
                      <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>, with <ref type="inscription" n="M.199">M.199</ref>, <ref type="inscription" n="M.201">M.201</ref>, 
@@ -92,6 +91,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -114,10 +114,10 @@
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                     <lb n="1"/><persName type="emperor" key="traianus"><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> <!-- check from Transcription stage: A 
                     square bracket is missing in the first line. --><supplied reason="lost"><name nymRef="Germanicus">Germanicus</name> <w lemma="pontifex"><expan><abbr>p</abbr><ex>ontifex</ex></expan></w> <w lemma="maximus"><expan><abbr>m</abbr><ex>aximus</ex></expan></w></supplied> <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w>
-                    <lb n="2"/> <w lemma="potestas"><expan><abbr>pot</abbr><ex>estate</ex></expan></w> <supplied reason="lost"><num value="4">IIII</num> <w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
-                        <num value="3">III</num> <expan><w><abbr>p</abbr><ex>ater</ex></w> <w><abbr>p</abbr><ex>atriae</ex></w></expan></supplied></persName> <w lemma="uia">uiam</w>
-                    <lb n="3"/> <w><supplied reason="lost">fe</supplied>cit</w> <w lemma="per">pe<supplied reason="lost">r</supplied></w>
-                        <supplied reason="lost"><w>tirones</w></supplied> <w><supplied reason="lost">l</supplied>ect<supplied reason="lost">os</supplied></w>
+                    <lb n="2"/> <w lemma="potestas"><expan><abbr>pot</abbr><ex>estate</ex></expan></w> <supplied reason="lost"><num value="4">IIII</num> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                        <num value="3">III</num> <expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan></supplied></persName> <w lemma="uia">uiam</w>
+                    <lb n="3"/> <w lemma="facio"><supplied reason="lost">fe</supplied>cit</w> <w lemma="per">pe<supplied reason="lost">r</supplied></w>
+                        <supplied reason="lost"><w lemma="tiro">tirones</w></supplied> <w lemma="lectus"><supplied reason="lost">l</supplied>ect<supplied reason="lost">os</supplied></w>
                     <lb n="4"/><w lemma="in">in</w> <w lemma="prouincia">prou<supplied reason="lost">incia</supplied></w> <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene"><supplied reason="lost">Cyrenensi</supplied></placeName>
                     <lb n="5"/><supplied reason="lost"> <space quantity="3" unit="character"/>
                         <num value="10">X</num>  <space quantity="3" unit="character"/></supplied> 

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,8 +121,8 @@
             <ab>
                 <lb n="1"/><persName type="emperor" key="domitia"><name nymRef="Δομειτία"><supplied reason="lost" cert="low">Δομειτίαν</supplied></name>
                  <name nymRef="Σεβαστή"><supplied reason="lost">Σεβαστ</supplied><unclear>α</unclear>ν</name> <space quantity="3" unit="character"/>
-                <lb n="2"/> <supplied reason="lost"><w>γυναῖκα</w></supplied>
-                <w><supplied reason="lost">Αὐτοκ</supplied>ράτορ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w> 
+                <lb n="2"/> <supplied reason="lost"><w lemma="γυνή">γυναῖκα</w></supplied>
+                <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκ</supplied>ράτορ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w> 
                 <lb n="3"/><persName type="emperor" key="domitianus"><name nymRef="Δομετιανός"><supplied reason="lost" cert="low">Δομετιανο</supplied><unclear>ῦ</unclear></name>
                 <name nymRef="Καῖσαρ"><unclear>Κ</unclear>αίσαρ<supplied reason="lost">ος</supplied></name> 
                 <lb n="4"/><supplied reason="lost"><name nymRef="Σεβαστός">Σεβαστοῦ</name></supplied> <name nymRef="Γερμανικός"><supplied reason="lost">Γ</supplied>ερμανικ<supplied reason="lost">οῦ</supplied></name></persName></persName> 

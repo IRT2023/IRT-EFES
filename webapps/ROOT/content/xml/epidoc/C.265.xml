@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -137,21 +137,21 @@
                        <g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>Πτολεμαίου</ex></expan></name> <g ref="symbols.xml#stop"/> 
                        <persName type="attested" key="lgpn:V1-65514"><name nymRef="Πτολεμαῖος"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>Πτολεμαίου</ex></expan></name> <g ref="symbols.xml#stop"/> 
                           <persName type="attested" key="lgpn:V1-65513"><name nymRef="Πτολεμαῖος"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>Πτολεμαίου</ex></expan></name> 
-                             <g ref="symbols.xml#stop"/> <w>υἱὸς</w> <g ref="symbols.xml#leaf"/></persName></persName></persName></supplied></persName></persName></persName>
+                             <g ref="symbols.xml#stop"/> <w lemma="υἱός">υἱὸς</w> <g ref="symbols.xml#leaf"/></persName></persName></persName></supplied></persName></persName></persName>
                     <lb n="3"/><space quantity="6" unit="character"/> <persName type="attested" key="lgpn:V1-62627"><name nymRef="Αἰγλάνωρ">Αἰγλάν<unclear>ω</unclear><supplied reason="lost" evidence="previouseditor">ρ</supplied></name> <space quantity="4" unit="character"/>
                     <lb n="4"/><persName type="attested" key="lgpn:V1-65022"><name nymRef="Μητρόδωρος"><supplied reason="lost" evidence="previouseditor">Μ</supplied>ητρόδωρος</name>  <persName type="attested" key="lgpn:V1-65021"><name nymRef="Μητρόδωρος"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>Μητροδώρου</ex></expan></name> 
                     <supplied reason="lost"><w lemma="ὁ">τοῦ</w></supplied>
                     <lb n="5"/><space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-65020"><name nymRef="Μητρόδωρος">Μητροδώρου</name></persName></persName></persName></persName> <supplied reason="lost" evidence="previouseditor"><g ref="symbols.xml#leaf"/></supplied>
                     <lb n="6"/><date ref="https://godot.date/id/4sNx6NGMmB8AqACAD6vczZ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                     <num value="98">ϙη</num></date> <persName type="attested" key="lgpn:V1-63279"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name> <name nymRef="Κλαύδιος">Κλαύδιος</name> <persName type="attested" key="lgpn:V1-63280"><name nymRef="Ἄρχιππος">Ἀρχίπ<supplied reason="lost">που</supplied></name></persName> <supplied reason="lost"><g ref="symbols.xml#leaf"/></supplied>
-                    <lb n="7"/> <space quantity="3" unit="character"/> <w>υἱὸς</w> <name nymRef="Ἄρχιππος">Ἄρχιππος</name></persName> <supplied reason="lost" evidence="previouseditor"><g ref="symbols.xml#leaf"/></supplied>
-                    <lb n="8"/><date ref="https://godot.date/id/uMKPsJkzTL2QChHpjKiyFe"><w><supplied reason="lost" evidence="previouseditor"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w>
+                    <lb n="7"/> <space quantity="3" unit="character"/> <w lemma="υἱός">υἱὸς</w> <name nymRef="Ἄρχιππος">Ἄρχιππος</name></persName> <supplied reason="lost" evidence="previouseditor"><g ref="symbols.xml#leaf"/></supplied>
+                    <lb n="8"/><date ref="https://godot.date/id/uMKPsJkzTL2QChHpjKiyFe"><w lemma="ἔτος"><supplied reason="lost" evidence="previouseditor"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w>
                     <num value="99">ϙθ</num></date> <persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name> <name nymRef="Ἀντώνιος">Ἀντώνιος</name> 
                     <persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="Ἀντώνιος">Ἀν<unclear>τ</unclear><supplied reason="lost">ωνίου</supplied></name>
-                    <lb n="9"/><space quantity="2" unit="character"/> <name nymRef="Φλάμμα">Φλάμμα</name></persName> <w>υἱὸς</w> <name nymRef="Κασκέλλιος">Κασκέ<supplied reason="lost" evidence="previouseditor">λλιος</supplied></name></persName>
-                    <lb n="10"/><date ref="https://godot.date/id/4bsa4kn5jai6VrT5RVKdFN"><w><supplied reason="lost"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w> 
-                    <num value="101"><supplied reason="lost">ρ</supplied><unclear>α</unclear></num></date> <persName type="attested"  key="lgpn:V1-65940"><name nymRef="Κόϊντος"><expan><abbr><unclear>Κ</unclear></abbr><ex>όϊντος</ex></expan></name> 
-                    <name nymRef="Φάβιος">Φάβιος</name> <persName type="attested" key="lgpn:V1-63960"><name nymRef="Φιλίσκος">Φιλίσκου</name></persName> <w>υἱὸς</w> <name nymRef="Φίλιππος">Φίλιππος</name></persName>
+                    <lb n="9"/><space quantity="2" unit="character"/> <name nymRef="Φλάμμα">Φλάμμα</name></persName> <w lemma="υἱός">υἱὸς</w> <name nymRef="Κασκέλλιος">Κασκέ<supplied reason="lost" evidence="previouseditor">λλιος</supplied></name></persName>
+                    <lb n="10"/><date ref="https://godot.date/id/4bsa4kn5jai6VrT5RVKdFN"><w lemma="ἔτος"><supplied reason="lost"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w> 
+                    <num value="101"><supplied reason="lost">ρ</supplied><unclear>α</unclear></num></date> <persName type="attested" key="lgpn:V1-65940"><name nymRef="Κόϊντος"><expan><abbr><unclear>Κ</unclear></abbr><ex>όϊντος</ex></expan></name> 
+                    <name nymRef="Φάβιος">Φάβιος</name> <persName type="attested" key="lgpn:V1-63960"><name nymRef="Φιλίσκος">Φιλίσκου</name></persName> <w lemma="υἱός">υἱὸς</w> <name nymRef="Φίλιππος">Φίλιππος</name></persName>
    <lb n="10a"/><space quantity="3" unit="line"/>
                 </ab>
 </div>

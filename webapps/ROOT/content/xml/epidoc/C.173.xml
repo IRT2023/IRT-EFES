@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -106,6 +105,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -151,17 +151,17 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/WrYmscXsHSsbi4DCibJrfC"><persName type="emperor" key="commodus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορ<unclear>α</unclear></w> <name nymRef="Kαῖσαρ">Κ<unclear>α</unclear><supplied reason="lost">ίσα</supplied>ρα</name> <name nymRef="Λούκιος">Λούκιο<supplied reason="lost">ν</supplied></name> 
                     <name nymRef="Αἴλιος"><supplied reason="lost">Αἴλιον</supplied></name> <name nymRef="Αὐρήλιος"><supplied reason="lost">Αὐρ</supplied><unclear>ή</unclear>λιον</name> 
-                    <name nymRef="Κόμμοδος">Κ<supplied reason="lost">όμμοδ</supplied>ον</name> <w>Εὐ<supplied reason="lost">σ</supplied>εβῆ</w> <g ref="symbols.xml#leaf"/> <lb n="2"/>, <w>Εὐτυχῆ</w> <name nymRef="Σεβαστός">Σε<supplied reason="lost">βα</supplied>στ<unclear>ὸ</unclear><supplied reason="lost">ν</supplied></name> 
+                    <name nymRef="Κόμμοδος">Κ<supplied reason="lost">όμμοδ</supplied>ον</name> <w lemma="Εὐσεβής">Εὐ<supplied reason="lost">σ</supplied>εβῆ</w> <g ref="symbols.xml#leaf"/> <lb n="2"/>, <w lemma="εὐτυχής">Εὐτυχῆ</w> <name nymRef="Σεβαστός">Σε<supplied reason="lost">βα</supplied>στ<unclear>ὸ</unclear><supplied reason="lost">ν</supplied></name> 
                    <name nymRef="Σαρματικός"><supplied reason="lost">Σ</supplied>αρματικὸ<unclear>ν</unclear></name> <name nymRef="Γερμανικός"><supplied reason="lost">Γερμανικὸν</supplied></name> 
                     <w lemma="μέγας">μέγι<unclear>σ</unclear><supplied reason="lost">τον</supplied></w> <name><supplied reason="lost">Βρε</supplied>ταννικὸν</name></persName></date> 
-                    <lb n="3"/><w lemma="ὁ">τὸν</w> <w lemma="σωτήρ">σωτῆ<supplied reason="lost">ρα</supplied></w> <w lemma="καί">καὶ</w> <w>εὐεργέταν</w> <w lemma="ὁ">ἁ</w> <w lemma="πόλις">π<supplied reason="lost">όλις</supplied></w>
-                        <w><supplied reason="lost">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυρανάων</supplied></placeName> <w><unclear>ἁ</unclear></w> 
-                    <w lemma="μητρόπολις">μ<unclear>α</unclear><supplied reason="lost">τρόπολις</supplied></w> <w>τ<unclear>ᾶς</unclear></w> <placeName nymRef="#Ἑξάπολις" key="#hexapolis">Ἑξα <space quantity="1" unit="character"/> 
-                    <lb n="4" break="no"/>πόλιο<unclear>ς</unclear></placeName> <w><supplied reason="lost">ἀ</supplied>φιερώσαντος</w> <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίω</ex></expan></name>
+                    <lb n="3"/><w lemma="ὁ">τὸν</w> <w lemma="σωτήρ">σωτῆ<supplied reason="lost">ρα</supplied></w> <w lemma="καί">καὶ</w> <w lemma="εὐεργέτης">εὐεργέταν</w> <w lemma="ὁ">ἁ</w> <w lemma="πόλις">π<supplied reason="lost">όλις</supplied></w>
+                        <w lemma="ὁ"><supplied reason="lost">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυρανάων</supplied></placeName> <w lemma="ὁ"><unclear>ἁ</unclear></w> 
+                    <w lemma="μητρόπολις">μ<unclear>α</unclear><supplied reason="lost">τρόπολις</supplied></w> <w lemma="ὁ">τ<unclear>ᾶς</unclear></w> <placeName nymRef="#Ἑξάπολις" key="#hexapolis">Ἑξα <space quantity="1" unit="character"/> 
+                    <lb n="4" break="no"/>πόλιο<unclear>ς</unclear></placeName> <w lemma="ἀφιερόω"><supplied reason="lost">ἀ</supplied>φιερώσαντος</w> <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίω</ex></expan></name>
                     <name nymRef="Σεμπρώνιος">Σε<unclear>μ</unclear><supplied reason="lost">πρ</supplied><unclear>ω</unclear>νίω</name></persName> <gap reason="lost" quantity="3" unit="character"/>
-                    <orig><unclear>ι</unclear>γ</orig> <gap reason="lost" quantity="8" unit="character" precision="low"/> <w><supplied reason="lost">τ</supplied>ῶ</w> 
-                    <w>κρατίστ<unclear>ω</unclear></w> 
-                    <lb n="5"/> <space quantity="6" unit="character"/> <g ref="symbols.xml#palm"/> <space quantity="2" unit="character"/> <w>ἀνθυπάτω</w> <space quantity="5" unit="character"/><w lemma="ἐπί">ἐπ’</w><w>ἀγαθῷ</w> <space quantity="12" unit="character" precision="low"/>
+                    <orig><unclear>ι</unclear>γ</orig> <gap reason="lost" quantity="8" unit="character" precision="low"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶ</w> 
+                    <w lemma="κράτιστος">κρατίστ<unclear>ω</unclear></w> 
+                    <lb n="5"/> <space quantity="6" unit="character"/> <g ref="symbols.xml#palm"/> <space quantity="2" unit="character"/> <w lemma="ἀνθύπατος">ἀνθυπάτω</w> <space quantity="5" unit="character"/><w lemma="ἐπί">ἐπ’</w><w lemma="ἀγαθός">ἀγαθῷ</w> <space quantity="12" unit="character" precision="low"/>
                 </ab>
 </div>
          <div type="apparatus">

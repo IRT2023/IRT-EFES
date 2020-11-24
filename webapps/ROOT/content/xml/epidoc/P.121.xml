@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -104,6 +103,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-08-22" who="TW">Tagged orig</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -135,15 +135,15 @@
                 </ab></div>-->
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-               <lb n="0a"/><supplied reason="lost" cert="low"><w lemma="ὑπέρ">ὑπὲρ</w> <w>νίκης</w> 
-                           <w lemma="καί">καὶ</w> <w>ὑγιείας</w></supplied>
-               <lb n="0b"/><persName type="emperor" key="septimiusseverus"><supplied reason="lost"><w>Αὐτοκράτορος</w> <name nymRef="Καῖσαρ">Καίσαρος</name>
+               <lb n="0a"/><supplied reason="lost" cert="low"><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="νίκη">νίκης</w> 
+                           <w lemma="καί">καὶ</w> <w lemma="ὑγίεια">ὑγιείας</w></supplied>
+               <lb n="0b"/><persName type="emperor" key="septimiusseverus"><supplied reason="lost"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορος</w> <name nymRef="Καῖσαρ">Καίσαρος</name>
                <lb n="0c"/><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name>
-                            <name nymRef="Σεπτίμιος">Σεπτιμίου</name> <name nymRef="Σεουῆρος">Σεουήρου</name> <w>Εὐσεβοῦς</w>
+                            <name nymRef="Σεπτίμιος">Σεπτιμίου</name> <name nymRef="Σεουῆρος">Σεουήρου</name> <w lemma="Εὐσεβής">Εὐσεβοῦς</w>
                <lb n="1"/><name nymRef="Πέρτιναξ">Περτίνακος</name> 
                             <name nymRef="Σεβαστός">Σεβαστοῦ</name> <name nymRef="Ἀραβικός">Ἀραβικοῦ</name></supplied>
                <lb n="2"/><name nymRef="Ἀδιαβηνικός">Ἀδιαβ<hi rend="ligature">ην</hi>ικο<supplied reason="lost">ῦ</supplied></name> <supplied reason="lost"><name nymRef="Παρθικός">Παρθικοῦ</name>
-                                    <w>μεγίστου</w></supplied></persName>
+                                    <w lemma="μέγας">μεγίστου</w></supplied></persName>
                <lb n="3"/><persName type="attested"><name nymRef="Ἰούλιος">Ἰούλιος</name> 
                    <name nymRef="Χρυσ-"><seg part="I">Χρυ<supplied reason="lost">σ</supplied></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="4"/><orig>σα<hi rend="ligature">ντ</hi>ασοσ</orig><orig><unclear>Ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>

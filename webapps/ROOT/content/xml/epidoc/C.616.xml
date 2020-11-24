@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -120,9 +120,9 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <date ref="https://godot.date/id/PT2a48jirmisCcxHkqbKc9"><w><supplied reason="lost">Ἔ</supplied>τουϲ</w> <num atLeast="10">ι<gap reason="lost" quantity="1" unit="character"/></num></date> 
+                    <lb n="1"/> <date ref="https://godot.date/id/PT2a48jirmisCcxHkqbKc9"><w lemma="ἔτος"><supplied reason="lost">Ἔ</supplied>τουϲ</w> <num atLeast="10">ι<gap reason="lost" quantity="1" unit="character"/></num></date> 
             <lb n="2"/><persName type="attested" key="lgpn:VI-64740"><name nymRef="Κτησικλῆς">Κτηϲικ<unclear>λ</unclear><lb n="3" break="no"/>ῆϲ</name> <persName type="attested" key="lgpn:VI-64739"><name nymRef="Κτησικλῆς">Κτηϲι<unclear>κ</unclear><lb n="4" break="no"/><unclear>λεῦϲ</unclear></name></persName></persName>
-                    <lb n="5"/><date type="life-span" dur="P70Y"><w><unclear>ἐτῶν</unclear></w> <num value="70">ο</num> </date>
+                    <lb n="5"/><date type="life-span" dur="P70Y"><w lemma="ἔτος"><unclear>ἐτῶν</unclear></w> <num value="70">ο</num> </date>
                 </ab>
 </div>
          <div type="apparatus">

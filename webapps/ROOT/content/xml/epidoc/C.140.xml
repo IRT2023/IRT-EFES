@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -125,12 +125,12 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                     <lb n="1"/><persName type="divine" key="theos"><name nymRef="Θεός">θεὸς</name></persName> <g ref="symbols.xml#leaf"/>. <persName type="divine" key="agathetyche"><name nymRef="Τύχα">Τύχα</name>
-                       <g ref="symbols.xml#leaf"/> <w>ἀγαθά</w></persName>
-                    <lb n="2"/> <w>Ἱαρὲς</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName>
+                       <g ref="symbols.xml#leaf"/> <w lemma="ἀγαθός">ἀγαθά</w></persName>
+                    <lb n="2"/> <w lemma="ἱερεύς">Ἱαρὲς</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-63373"><name nymRef="Βαρκαῖος">Βαρκαῖος</name> <g ref="symbols.xml#leaf"/> 
                        <persName type="attested" key="lgpn:V1-63907"><name nymRef="Εὐφάνης">Εὐφάνευς</name></persName></persName> <g ref="symbols.xml#leaf"/> 
                <lb n="4"/><persName type="attested" key="lgpn:V1-65955"><name nymRef="Φιλίσκος">Φιλίσκος</name> <g ref="symbols.xml#leaf"/> <persName type="attested" key="lgpn:V1-65953"><name nymRef="Φιλίσκος">Φιλίσκου</name></persName>
-                    <lb n="5"/> <w>φύσει</w> <w lemma="δέ">δὲ</w> <persName type="attested" key="lgpn:V1-63906"><name nymRef="Εὐφάνης">Εὐφάνευς</name></persName></persName>
+                    <lb n="5"/> <w lemma="φύσις">φύσει</w> <w lemma="δέ">δὲ</w> <persName type="attested" key="lgpn:V1-63906"><name nymRef="Εὐφάνης">Εὐφάνευς</name></persName></persName>
                 </ab>
          </div>
          

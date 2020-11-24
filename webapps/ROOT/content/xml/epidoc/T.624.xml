@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>From previous publications (by Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -133,11 +133,11 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/ZomgSaFeTU4GEEQD2ZtDMX"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="9"><unclear>θ</unclear></num>
-                    <rs type="month"  key="mechir"><w>Με<lb n="2" break="no"/><unclear>χ</unclear>ὶ<unclear>ρ</unclear></w></rs> <num value="23"><unclear>κ</unclear>γ</num></date> 
+                    <rs type="month" key="mechir"><w lemma="Μεχίρ">Με<lb n="2" break="no"/><unclear>χ</unclear>ὶ<unclear>ρ</unclear></w></rs> <num value="23"><unclear>κ</unclear>γ</num></date> 
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60143"><name nymRef="Κράτεια">Κρ<unclear>άτ</unclear>ε<supplied reason="lost">ι</supplied><lb n="4" break="no"/>α</name> 
                    <persName type="attested" key="lgpn:V1-60144"><name nymRef="Θεύχρηστος">Θευχρ<lb n="5" break="no"/><supplied reason="lost">ήστου</supplied></name></persName></persName>
-                    <lb n="6"/> <date  type="life-span" dur="P8Y"><w><supplied reason="lost"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></supplied></w>
-                       <num value="8">η</num></date>. <date ref="https://godot.date/id/GkUNY3wJVNEe8ZxPny5Bv9"><rs type="month"  key="mechir"><w>Μεχὶρ</w></rs>
+                    <lb n="6"/> <date type="life-span" dur="P8Y"><w lemma="ἔτος"><supplied reason="lost"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></supplied></w>
+                       <num value="8">η</num></date>. <date ref="https://godot.date/id/GkUNY3wJVNEe8ZxPny5Bv9"><rs type="month" key="mechir"><w lemma="Μεχίρ">Μεχὶρ</w></rs>
                     <lb n="7"/><num value="30">λ</num></date> 
                    <persName type="attested" key="lgpn:V1-60142"><name nymRef="Γάϊος">Γάϊ<lb n="8" break="no"/><supplied reason="lost">ος</supplied></name> 
                     <lb n="9"/><persName type="attested" key="lgpn:V1-60145"><name nymRef="Γάϊος"><supplied reason="lost">Γα</supplied>ΐου</name></persName></persName>

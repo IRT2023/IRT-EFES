@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -87,6 +86,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -116,19 +116,19 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                 
-                <lb n="1"/><persName type="emperor" key="antoninuspius"><w><supplied reason="lost">Αὐτοκράτορα</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καί</supplied>σαρα</name> <g ref="symbols.xml#stop"/> <name nymRef="Τίτος">Τίτ<supplied reason="lost">ον</supplied></name> <name nymRef="Αἴλιος"><supplied reason="lost">Αἴ</supplied>λιον</name> 
-                    <g ref="symbols.xml#stop"/> <name nymRef="Ἁδριανός">Ἁδριανὸν</name> <g ref="symbols.xml#leaf"/> <lb n="2"/> <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀντωνεῖνον</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σεβα</supplied><unclear>σ</unclear>τὸν</name> <w>Εὐσ<supplied reason="lost">εβῆ</supplied></w>
-                    <w>υἱὸν</w> <g ref="symbols.xml#stop"/> <persName type="emperor" key="hadrianus"><w>θεῶ</w> <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
+                <lb n="1"/><persName type="emperor" key="antoninuspius"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτορα</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καί</supplied>σαρα</name> <g ref="symbols.xml#stop"/> <name nymRef="Τίτος">Τίτ<supplied reason="lost">ον</supplied></name> <name nymRef="Αἴλιος"><supplied reason="lost">Αἴ</supplied>λιον</name> 
+                    <g ref="symbols.xml#stop"/> <name nymRef="Ἁδριανός">Ἁδριανὸν</name> <g ref="symbols.xml#leaf"/> <lb n="2"/> <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀντωνεῖνον</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σεβα</supplied><unclear>σ</unclear>τὸν</name> <w lemma="Εὐσεβής">Εὐσ<supplied reason="lost">εβῆ</supplied></w>
+                    <w lemma="υἱός">υἱὸν</w> <g ref="symbols.xml#stop"/> <persName type="emperor" key="hadrianus"><w lemma="θεός">θεῶ</w> <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
                     <lb n="3"/><name nymRef="Τραιανός"><supplied reason="lost">Τραιανῶ</supplied></name> <name nymRef="Ἁδριανός"><supplied reason="lost">Ἁδριανῶ</supplied></name></persName> 
-                    <persName type="emperor" key="traianus"><w>θεῶ</w> <name nymRef="Τραιανός">Τραι<unclear>α</unclear><supplied reason="lost">νῶ</supplied></name></persName> <w>υἱωνὸν</w> <g ref="symbols.xml#stop"/> <persName type="emperor" key="nerva"><w>θεῶ</w> <g ref="symbols.xml#leaf"/> 
+                    <persName type="emperor" key="traianus"><w lemma="θεός">θεῶ</w> <name nymRef="Τραιανός">Τραι<unclear>α</unclear><supplied reason="lost">νῶ</supplied></name></persName> <w lemma="υἱωνός">υἱωνὸν</w> <g ref="symbols.xml#stop"/> <persName type="emperor" key="nerva"><w lemma="θεός">θεῶ</w> <g ref="symbols.xml#leaf"/> 
                        <lb n="4"/><name nymRef="Νέρβα"><supplied reason="lost">Νέρβα</supplied></name></persName>
-					 <w><supplied reason="lost">ἔκγονον</supplied></w></persName> 
-                    <w><supplied reason="lost" cert="low">τροφέ</supplied>α</w> <g ref="symbols.xml#stop"/> <w lemma="καί">καὶ</w> <w>σωτ<supplied reason="lost">ῆρα</supplied></w> <w><supplied reason="lost">κ</supplied>αὶ</w> <g ref="symbols.xml#stop"/> <w>εὐεργέταν</w> <g ref="symbols.xml#leaf"/> 
-   <lb n="5"/> <w><supplied reason="lost" cert="low">ἁ</supplied></w> <w><supplied reason="lost" cert="low">πόλις</supplied></w> <w><supplied reason="lost" cert="low">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost" cert="low">Κυρανάων</supplied></placeName> 
+					 <w lemma="ἔκγονος"><supplied reason="lost">ἔκγονον</supplied></w></persName> 
+                    <w lemma="τροφεύς"><supplied reason="lost" cert="low">τροφέ</supplied>α</w> <g ref="symbols.xml#stop"/> <w lemma="καί">καὶ</w> <w lemma="σωτήρ">σωτ<supplied reason="lost">ῆρα</supplied></w> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <g ref="symbols.xml#stop"/> <w lemma="εὐεργέτης">εὐεργέταν</w> <g ref="symbols.xml#leaf"/> 
+   <lb n="5"/> <w lemma="ὁ"><supplied reason="lost" cert="low">ἁ</supplied></w> <w lemma="πόλις"><supplied reason="lost" cert="low">πόλις</supplied></w> <w lemma="ὁ"><supplied reason="lost" cert="low">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost" cert="low">Κυρανάων</supplied></placeName> 
                     <date><w lemma="ἐπί">ἐπὶ</w> <g ref="symbols.xml#stop"/> <persName type="attested"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οίντου</ex></expan></name></persName> 
                     <g ref="symbols.xml#stop"/> <persName type="attested" key="pir2-i-0484a"><name nymRef="Ἰούλιος">Ἰο<supplied reason="lost">υλίου</supplied></name> <name nymRef="Ποτῖτος">Ποτείτου</name> </persName>
                     <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
-                    <lb n="6"/> <w><supplied reason="lost">τοῦ</supplied></w> <w><supplied reason="lost">κρατίστου</supplied></w> <w><supplied reason="lost">ἀνθυπά</supplied>του</w></date>
+                    <lb n="6"/> <w lemma="τις"><supplied reason="lost">τοῦ</supplied></w> <w lemma="κράτιστος"><supplied reason="lost">κρατίστου</supplied></w> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀνθυπά</supplied>του</w></date>
                     <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/></ab>
 </div>
          <div type="apparatus">
@@ -155,7 +155,7 @@
                was the proconsul.</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
-            <p>For the procosul see <title>PIR</title><hi rend="superscript">2</hi> I 0484a --></p>
+            <p>For the procosul see <title>PIR</title><hi rend="superscript">2</hi> I 0484a --&gt;</p>
             <p>Line 4: for the restoration see the fragmentary <ref type="inscription" n="C.674">C.674</ref>, also for Antoninus. </p>
          </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -92,6 +91,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-23" who="Ljuba">entered and tagged text</change>
@@ -110,7 +110,7 @@
             <ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                <lb n="1"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ<am><g ref="symbols.xml#stop"/></am></abbr><ex>άϊος</ex></expan></name>
                   <name nymRef="Ι-"><seg part="I">Ι</seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="2"/> <w>κα<unclear>ὶ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>	
+               <lb n="2"/> <w lemma="καί">κα<unclear>ὶ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>	
                <lb n="3"/><persName type="attested"><name nymRef="Κρίσπος"><seg part="I">Κρισ<unclear>π</unclear></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="4"/> <space quantity="1" unit="character"/> <w part="I">ἥρω</w> <gap reason="lost" extent="unknown" unit="character"/>
             </ab>

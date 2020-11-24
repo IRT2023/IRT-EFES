@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -94,6 +93,7 @@
          </textClass>
       <creation>Transcribed from a photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
@@ -126,17 +126,17 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-                    <lb n="1"/> <g ref="symbols.xml#crux"/> <w>σύ</w> <w>εἰ</w> <w>θεοτό<supplied reason="lost">κοϲ</supplied></w>
-               <supplied reason="lost"><w>ἡ</w> <w>ἐγείρουϲα</w> <w>ἀπὸ</w> <w>γῆϲ</w></supplied> 
-                    <lb n="2"/> <w>πτωχὸν</w> <w>κα<supplied reason="lost" evidence="previous-editor">ὶ</supplied></w>
-               <w>ἀπ<supplied reason="lost">ὸ</supplied></w> <supplied reason="lost"><w>κοπρίαϲ</w> 
-                  <w>ἀνυψοῦϲα</w></supplied> 
-                    <lb n="3"/> <w>πένητα</w> <w>κα<unclear>ὶ</unclear></w> <orig>μετ</orig><gap reason="lost" quantity="16" unit="character"/>
-                    <lb n="4"/> <w>μετὰ</w> <w>βαϲιλέω<supplied reason="lost">ν</supplied></w>
+                    <lb n="1"/> <g ref="symbols.xml#crux"/> <w lemma="σύ">σύ</w> <w lemma="εἰ">εἰ</w> <w lemma="θεότοκος">θεοτό<supplied reason="lost">κοϲ</supplied></w>
+               <supplied reason="lost"><w lemma="ὁ">ἡ</w> <w lemma="ἐγείρω">ἐγείρουϲα</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="γῆ">γῆϲ</w></supplied> 
+                    <lb n="2"/> <w lemma="πτωχός">πτωχὸν</w> <w lemma="καί">κα<supplied reason="lost" evidence="previous-editor">ὶ</supplied></w>
+               <w lemma="ἀπό">ἀπ<supplied reason="lost">ὸ</supplied></w> <supplied reason="lost"><w lemma="κοπρία">κοπρίαϲ</w> 
+                  <w lemma="ἀνυψόω">ἀνυψοῦϲα</w></supplied> 
+                    <lb n="3"/> <w lemma="πένης">πένητα</w> <w lemma="καί">κα<unclear>ὶ</unclear></w> <orig>μετ</orig><gap reason="lost" quantity="16" unit="character"/>
+                    <lb n="4"/> <w lemma="μετά">μετὰ</w> <w lemma="βαίλη">βαϲιλέω<supplied reason="lost">ν</supplied></w>
                <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="5"/><orig>ρηϲια<unclear>ν</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="6"/><orig>λωϲ</orig><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="7"/> <w>ϲῶ<supplied reason="lost">ϲον</supplied></w>
+                    <lb n="7"/> <w lemma="σώζω">ϲῶ<supplied reason="lost">ϲον</supplied></w>
                <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
          </div>

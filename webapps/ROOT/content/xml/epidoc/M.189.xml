@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -31,7 +30,7 @@
                                 <support>
                                     <p> <objectType>Sundial</objectType> of white <material>marble</material>   
                                         (dimensions not recorded <dimensions>
-                                            <width></width>
+                                            <width/>
                                             <height/>
                                             <depth/>
                                         </dimensions>).</p>
@@ -53,7 +52,7 @@
                             <origDate notBefore="0001" notAfter="0300" precision="low" evidence="lettering">First - third century CE</origDate>
                         </origin>
                         
-                                <provenance type="found" >
+                                <provenance type="found">
                                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
                                         <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>: 
                                         no findspot reported.
@@ -110,6 +109,7 @@
             </textClass>
         <creation>Transcription from stone (CDL)</creation></profileDesc>
         <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
             <change when="2014-11-13" who="cdl">file created and filled</change>
         </revisionDesc>
     </teiHeader>
@@ -132,9 +132,9 @@
             <div type="edition" xml:lang="grc" xml:space="preserve">
                 <head>Text</head>
                 <ab>
-                    <lb n="1"/><persName type="divine"><persName type="divine" key="iatros"><name nymRef="Ἰατρός">Ἰατρῶι</name></persName> <space quantity="1" unit="character"/> 
-                    <persName type="divine" key="iaso"><name nymRef="Ἰασώ">Ἰαϲο͂ι</name></persName> <name nymRef="θεός">θεοῖϲ</name> <space quantity="1" unit="character"/> <name nymRef="Σωτήρ">ϲωτῆρϲι</name></persName>
-                    <lb n="2"/> <space quantity="3" unit="character"/> <persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκοϲ</ex></expan></name> <name nymRef="Ἀντώνιος">Ἀντώνιοϲ</name> <name nymRef="Σεκοῦνδος">Ϲεκοῦνδοϲ</name></persName> <w><hi rend="ligature">ἀνέ</hi>θηκε</w>                
+                    <lb n="1"/><persName type="divine"><persName type="divine" key="iatros"><name nymRef="Ἰατρός">Ἰατρῶι</name></persName> <space quantity="1" unit="character"/> 
+                    <persName type="divine" key="iaso"><name nymRef="Ἰασώ">Ἰαϲο͂ι</name></persName> <name nymRef="θεός">θεοῖϲ</name> <space quantity="1" unit="character"/> <name nymRef="Σωτήρ">ϲωτῆρϲι</name></persName>
+                    <lb n="2"/> <space quantity="3" unit="character"/> <persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκοϲ</ex></expan></name> <name nymRef="Ἀντώνιος">Ἀντώνιοϲ</name> <name nymRef="Σεκοῦνδος">Ϲεκοῦνδοϲ</name></persName> <w lemma="ἀνατίθημι"><hi rend="ligature">ἀνέ</hi>θηκε</w>                
                 </ab>
             </div>
           
@@ -155,7 +155,7 @@
                     <ref type="inscription" n="M.190">M.190</ref>, <ref type="inscription" n="M.191">M.191</ref>, and Dobias-Lalou, loc.cit.</p>
                <p>It is probably this inscription that Oliverio mentioned (loc cit above) when publishing
                <ref type="inscription" n="C.228">C.228</ref>, although there he restored Ἀσκληπίωι instead of the better Ἰατρῶι</p>
-	<p></p><p/>
+	<p/><p/>
 	<p/>
             </div>
         </body>

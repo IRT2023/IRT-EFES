@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -182,11 +182,11 @@
                         <num value="10">ι</num> <persName type="attested" key="lgpn:V1-60856"><name nymRef="Ἀριστοτέλης">Ἀριστοτέλης</name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                     </ab></div>
             <div subtype="section" n="h" type="textpart"><ab>
-                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>ἱππ<unclear>ε</unclear><supplied reason="lost">ύ</supplied>ς</w> 
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἱππεύς">ἱππ<unclear>ε</unclear><supplied reason="lost">ύ</supplied>ς</w> 
                         <gap reason="lost" extent="unknown" unit="character"/>
                     </ab></div>
             <div subtype="section" n="j" type="textpart"><ab>
-                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>ϲτρατιώτηϲ</w> <w lemma="ἥκω">ἥκω</w>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="στρατιώτης">ϲτρατιώτηϲ</w> <w lemma="ἥκω">ἥκω</w>
                         <date ref="https://godot.date/id/PdyuasiMxoqYzoe7MfHeCB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                         <num value="10">ι</num></date>
                     </ab>

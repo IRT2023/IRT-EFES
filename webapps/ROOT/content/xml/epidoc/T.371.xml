@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
           <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -128,7 +128,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/7ZQ5XNzcWV6KxyjoAgwvBa"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="4">δ</num> <rs type="month" key="epagomenai"><w>Ἐπα<lb n="2" break="no"/>γομέν<lb n="3" break="no"/>ων</w></rs> <num value="5">ε</num></date> 
+                    <num value="4">δ</num> <rs type="month" key="epagomenai"><w lemma="Ἐπαγομέναι">Ἐπα<lb n="2" break="no"/>γομέν<lb n="3" break="no"/>ων</w></rs> <num value="5">ε</num></date> 
                     <persName type="attested" key="lgpn:V1-60491"><name nymRef="Ἀρίμανθος">Ἀ<lb n="4" break="no"/>ρίμ<unclear>ανθ</unclear><lb n="5" break="no"/>ος</name> 
                     <persName type="attested" key="lgpn:V1-60492"><name nymRef="Καλλισθένης">Καλ<lb n="6" break="no"/>λισθέν<lb n="7" break="no"/>ους</name></persName></persName> 
                     <date type="life-span" dur="P9Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
@@ -153,7 +153,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Licisco di Licisco, di anni 18</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Licisco di Licisco, di anni 18</p></div>
             <div type="translation" source="#jmr1983" xml:lang="en"><p>Year 4, intercalary day 5, 
                Arimanthos son of Callisthenes, aged 9.</p></div>
             <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/7ZQ5XNzcWV6KxyjoAgwvBa">Year 4, intercalary day 5</ref>, 

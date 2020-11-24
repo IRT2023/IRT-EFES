@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>         
@@ -142,26 +142,26 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-                    <lb n="1"/> <w><supplied reason="lost">ὑ</supplied>πὲρ</w> <w lemma="ὁ">τᾶς</w> <persName type="emperor" key="marcusaurelius"><w><supplied reason="lost">Αὐ</supplied>το<supplied reason="lost">κρά</supplied>το<supplied reason="lost">ρος</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καίσ</supplied><unclear>α</unclear>ρος</name> 
+                    <lb n="1"/> <w lemma="ὑπέρ"><supplied reason="lost">ὑ</supplied>πὲρ</w> <w lemma="ὁ">τᾶς</w> <persName type="emperor" key="marcusaurelius"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐ</supplied>το<supplied reason="lost">κρά</supplied>το<supplied reason="lost">ρος</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καίσ</supplied><unclear>α</unclear>ρος</name> 
                     <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκω</ex></expan></name> <name nymRef="Αὐρήλιος">Αὐρηλίω</name> <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀν</supplied>τωνείν<supplied reason="lost">ω</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σεβαστῶ</supplied></name> <name nymRef="Ἀρμενιακός"><supplied reason="lost">Ἀρμενι</supplied>
                         <lb n="2" break="no"/><supplied reason="lost">α</supplied>κῶ</name> <name nymRef="Παρθικός">Παρθ<supplied reason="lost">ικῶ</supplied></name> <name nymRef="Μηδικός"><supplied reason="lost">Μηδικῶ</supplied></name> <name nymRef="Γερμανικός"><supplied reason="lost">Γερ</supplied>μανικῶ</name> 
-                    <w>τύχας</w> <w lemma="καί">καὶ</w> <w>ν<supplied reason="lost">ε</supplied>ίκας</w> <w lemma="καί">καὶ</w> <w>α<supplied reason="lost">ἰωνίας</supplied></w> <w><supplied reason="lost">διαμονᾶς</supplied></w></persName>
-                    <lb n="3"/> <w><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ὁ">τῶ</w> <w>σύνπαντος</w> <w lemma="αὐτός">ὠτῶ</w> <w>οἴκω</w> <w lemma="καί">καὶ</w> <w>ἱερᾶς</w> <w>συ<unclear>ν</unclear>κλήτω</w> 
-                    <w><supplied reason="lost">καὶ</supplied></w> <w><supplied reason="lost">δάμω</supplied></w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><supplied reason="lost">Ῥωμαίων</supplied></placeName>
-                    <lb n="4"/> <w><supplied reason="lost">ἁ</supplied></w> <w>πόλις</w> <w><supplied reason="lost">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυ</supplied>ρανάων</placeName> <w lemma="ὁ">ἁ</w> <w>ματρόπολις</w> 
-                    <w lemma="ὁ">τὸν</w> <w>ν<supplied reason="lost">αὸν</supplied></w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="zeus"><name nymRef="Ζεύς"><supplied reason="lost">Διὸς</supplied></name></persName> <gap reason="lost" quantity="7" unit="character" precision="low"/> <w><supplied reason="lost">τὸν</supplied></w>
-                    <lb n="5"/> <w><supplied reason="lost">κα</supplied>τ<supplied reason="lost">αβλ</supplied><unclear>η</unclear>θέντα</w> 
-                    <w>το͂ι</w> <placeName type="ethnic" nymRef="#Ἰουδαικός" ref="#ioudaios">Ἰουδ<supplied reason="lost">αικο͂ι</supplied></placeName> <w><supplied reason="lost">ταράχοι</supplied></w> <gap reason="lost" quantity="14" unit="character" precision="low"/>
-                    <lb n="6"/><gap reason="lost" quantity="9" unit="character" precision="low"/><orig><seg part="F">μα</seg></orig> <w>ἀνέστα<supplied reason="lost">σ</supplied>εν</w> <gap reason="lost" quantity="26" unit="character" precision="low"/>
+                    <w lemma="τύχη">τύχας</w> <w lemma="καί">καὶ</w> <w lemma="νείκη">ν<supplied reason="lost">ε</supplied>ίκας</w> <w lemma="καί">καὶ</w> <w lemma="αἰώνιος">α<supplied reason="lost">ἰωνίας</supplied></w> <w lemma="διαμονή"><supplied reason="lost">διαμονᾶς</supplied></w></persName>
+                    <lb n="3"/> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ὁ">τῶ</w> <w lemma="σύμπας">σύνπαντος</w> <w lemma="αὐτός">ὠτῶ</w> <w lemma="οἶκος">οἴκω</w> <w lemma="καί">καὶ</w> <w lemma="ἱερός">ἱερᾶς</w> <w lemma="σύνκλητος">συ<unclear>ν</unclear>κλήτω</w> 
+                    <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="δῆμος"><supplied reason="lost">δάμω</supplied></w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><supplied reason="lost">Ῥωμαίων</supplied></placeName>
+                    <lb n="4"/> <w lemma="ὁ"><supplied reason="lost">ἁ</supplied></w> <w lemma="πόλις">πόλις</w> <w lemma="ὁ"><supplied reason="lost">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυ</supplied>ρανάων</placeName> <w lemma="ὁ">ἁ</w> <w lemma="μητρόπολις">ματρόπολις</w> 
+                    <w lemma="ὁ">τὸν</w> <w lemma="ναός">ν<supplied reason="lost">αὸν</supplied></w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="zeus"><name nymRef="Ζεύς"><supplied reason="lost">Διὸς</supplied></name></persName> <gap reason="lost" quantity="7" unit="character" precision="low"/> <w lemma="ὁ"><supplied reason="lost">τὸν</supplied></w>
+                    <lb n="5"/> <w lemma="καταβάλλω"><supplied reason="lost">κα</supplied>τ<supplied reason="lost">αβλ</supplied><unclear>η</unclear>θέντα</w> 
+                    <w lemma="ὁ">το͂ι</w> <placeName type="ethnic" nymRef="#Ἰουδαικός" ref="#ioudaios">Ἰουδ<supplied reason="lost">αικο͂ι</supplied></placeName> <w lemma="τάραχος"><supplied reason="lost">ταράχοι</supplied></w> <gap reason="lost" quantity="14" unit="character" precision="low"/>
+                    <lb n="6"/><gap reason="lost" quantity="9" unit="character" precision="low"/><orig><seg part="F">μα</seg></orig> <w lemma="ἀνίστημι">ἀνέστα<supplied reason="lost">σ</supplied>εν</w> <gap reason="lost" quantity="26" unit="character" precision="low"/>
                             
                 </ab>
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>Lines 1-5</note>: Für das Glück (τύχη) und den Sieg und die ewige Dauer des Imperators Caesar M(arcus) Aurelius Antoninus 
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>Lines 1-5</note>: Für das Glück (τύχη) und den Sieg und die ewige Dauer des Imperators Caesar M(arcus) Aurelius Antoninus 
             Augustus Armeniacus Parthicus Medicus Germanicus und für sein gesamtes Haus und den heiligen Senat und das Volk der Römer hat die Stadt der Kyrener, die Metropolis, 
             den Tempel des Zeus . . ., den im jüdischen Aufstand umgestürzten . . . wieder aufgestellet . . .</p></div>
-            <div  type="translation" source="berthelot2018" xml:lang="en"><p>For the fortune, victory, and everlasting preservation of the emperor Caesar Marcus Aurelius Antoninus Augustus Armeniacus 
+            <div type="translation" source="berthelot2018" xml:lang="en"><p>For the fortune, victory, and everlasting preservation of the emperor Caesar Marcus Aurelius Antoninus Augustus Armeniacus 
                Parthicus Medicus Germanicus and all his house and the sacred Senate and People of the Romans, the city of the Cyreneans, 
                the metropolis, the temple of [Zeus] seized in the Jewish riots [...] rebuilt.</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>On behalf of the fortune and victory and [eternal endurance] of the Emperor M(arcus) Aurelius Antoninus [Augustus],

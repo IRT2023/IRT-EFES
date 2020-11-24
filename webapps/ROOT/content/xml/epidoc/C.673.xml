@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -115,10 +115,10 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><w lemma="ὑπέρ"><supplied reason="lost">ὑ</supplied>πὲ<supplied reason="lost">ρ</supplied></w> <w><supplied reason="lost">νείκας</supplied></w> 
+                    <lb n="1"/><w lemma="ὑπέρ"><supplied reason="lost">ὑ</supplied>πὲ<supplied reason="lost">ρ</supplied></w> <w lemma="νείκη"><supplied reason="lost">νείκας</supplied></w> 
                     <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
                     <lb n="2"/><w lemma="σωτηρία">σω<supplied reason="lost">τηρίας</supplied></w>
-                    <lb n="3"/><w lemma="καί">καὶ</w> <w>δ<supplied reason="lost">ιαμονᾶς</supplied></w> 
+                    <lb n="3"/><w lemma="καί">καὶ</w> <w lemma="διαμονή">δ<supplied reason="lost">ιαμονᾶς</supplied></w> 
                     <lb n="4"/><w lemma="ὁ">τῶ</w> <w lemma="κύριος"><supplied reason="lost">κ</supplied>υ<supplied reason="lost">ρίω</supplied></w>
                         <persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτο</supplied><lb n="5" break="no"/>κράτορ<supplied reason="lost">ος</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καίσα</supplied><lb n="6" break="no"/><unclear>ρ</unclear>ος</name> <name nymRef="Τραιανός">Τρα<supplied reason="lost">ιανῶ</supplied></name></persName>
                     <lb n="6a"/><gap reason="lost" extent="unknown" unit="line"/>

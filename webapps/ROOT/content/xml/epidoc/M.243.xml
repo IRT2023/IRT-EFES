@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
@@ -125,7 +125,7 @@
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="fragment" n="a" type="textpart"><div subtype="fragment" n="i" type="textpart"><ab>
-                            <lb n="1"/><g ref="symbols.xml#crux"/> <w><expan><abbr>βοή</abbr><ex>θ</ex><abbr>ει</abbr></expan></w> <orig>ιν</orig> <g ref="symbols.xml#crux"/> <gap reason="lost" extent="unknown" unit="character"/><orig>ιν</orig>
+                            <lb n="1"/><g ref="symbols.xml#crux"/> <w lemma="βοηθέω"><expan><abbr>βοή</abbr><ex>θ</ex><abbr>ει</abbr></expan></w> <orig>ιν</orig> <g ref="symbols.xml#crux"/> <gap reason="lost" extent="unknown" unit="character"/><orig>ιν</orig>
                         </ab></div><div subtype="fragment" n="ii" type="textpart"><ab>
                             <lb n="1"/><g ref="symbols.xml#crux"/> <orig>ΒΕΝΟΝΙBΕΚΑΥΤΙΟϹΜΙΝΙϹΟΝ</orig><orig>δ</orig>
                            <persName type="divine" key="abraham"><name nymRef="Ἀβραάμ">Ἀβ<unclear>ρ</unclear>α</name></persName> <orig>ϲ <unclear>β</unclear>αο</orig>

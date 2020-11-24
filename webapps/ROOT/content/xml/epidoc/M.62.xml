@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -152,30 +152,30 @@
                     </ab></div><div subtype="section" n="d" type="textpart"><ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ναλινδιοανοτοιν</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> 
                     </ab></div><div subtype="section" n="e" type="textpart"><ab>
-                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>φίλοιϲ</w> <orig>αι</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="φίλος">φίλοιϲ</w> <orig>αι</orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>νανναωφιλιϲδα</orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>οχωλοϲ</orig> <persName type="attested" key="lgpn:V1-60891"><name nymRef="Ἰτθαννυρας">Ἰτθαννυρας</name></persName> 
                     </ab></div><div subtype="section" n="f" type="textpart"><ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Λουκιανός">Λουκιαν<unclear>ὸς</unclear></name></persName>
-                        <lb n="2"/> <space quantity="3" unit="character"/> <w>ἱππεύς</w> 
+                        <lb n="2"/> <space quantity="3" unit="character"/> <w lemma="ἱππεύς">ἱππεύς</w> 
                     </ab></div><div subtype="section" n="g" type="textpart"><ab>
                         <lb n="1"/><date ref="https://godot.date/id/ax3HHcPLuNU7wTBRErerML"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                        <num value="18">ιη</num> <rs type="month" key="pachon"><w>Παχὼν</w></rs> <num value="24">κδ</num></date> <persName type="attested"><name nymRef="Βιβ-"><seg part="I">Βιβ</seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                        <num value="18">ιη</num> <rs type="month" key="pachon"><w lemma="Παχών">Παχὼν</w></rs> <num value="24">κδ</num></date> <persName type="attested"><name nymRef="Βιβ-"><seg part="I">Βιβ</seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                     </ab></div><div subtype="section" n="h" type="textpart"><ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> 
-                        <w><supplied reason="lost">τεϲ</supplied>ϲεράριο<supplied reason="lost">ϲ</supplied></w>
+                        <w lemma="τεσσεράριος"><supplied reason="lost">τεϲ</supplied>ϲεράριο<supplied reason="lost">ϲ</supplied></w>
                         <gap reason="lost" extent="unknown" unit="character"/> 
                     </ab></div><div subtype="section" n="j" type="textpart"><ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>δακιλι<unclear>ων</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> 
                     </ab></div><div subtype="section" n="k" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested"><name nymRef="Θεύδωρος">Θεύδωρος</name> <name nymRef="Κρίσπος">Κρίϲποϲ</name></persName> <w>ϲτρατιώτηϲ</w> 
+                        <lb n="1"/><persName type="attested"><name nymRef="Θεύδωρος">Θεύδωρος</name> <name nymRef="Κρίσπος">Κρίϲποϲ</name></persName> <w lemma="στρατιώτης">ϲτρατιώτηϲ</w> 
                     </ab></div><div subtype="section" n="l" type="textpart"><ab>
                         <lb n="1"/><persName type="attested"><name nymRef="Ἀνδρόνικος">Ἀνδρόνικο<unclear>ς</unclear></name>
                         <lb n="2"/><persName type="attested"><name nymRef="Ἡλιόδωρος">Ἡλιοδώρου</name></persName></persName> 
                     </ab>
 </div>
          <div subtype="section" n="m" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested" key="lgpn:V1-60913"><name nymRef="Μαλλυλᾶς">Μαλλυλᾶς</name></persName> <w>στρατιώτης</w>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60913"><name nymRef="Μαλλυλᾶς">Μαλλυλᾶς</name></persName> <w lemma="στρατιώτης">στρατιώτης</w>
                         </ab>
 </div>
 </div>

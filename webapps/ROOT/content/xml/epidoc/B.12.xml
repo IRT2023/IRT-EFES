@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-23" who="Pietro">marked metadata</change>
@@ -124,12 +124,12 @@
 <ab>
                     <lb n="0"/><gap reason="lost" extent="1 line" unit="character"/>
                     <lb n="1"/><gap reason="lost" atLeast="4" atMost="5" unit="character"/><g ref="symbols.xml#denarius"/><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/> <space quantity="3" unit="character"/> <w>χῶμα</w> <g ref="symbols.xml#denarius"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/> <space quantity="3" unit="character"/> <w lemma="χῶμα">χῶμα</w> <g ref="symbols.xml#denarius"/><gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" resp="#edd" xml:lang="en"><p> . . (denarii) . . . pile (denarii) . . . </p></div></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p> . . (denarii) . . . pile (denarii) . . . </p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p>The denarius sign in two lines suggests that this was a record of purchases, a

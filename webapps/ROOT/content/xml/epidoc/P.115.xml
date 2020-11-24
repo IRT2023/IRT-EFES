@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -119,7 +119,7 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">a</supplied>edificandas</w> <w lemma="et">e<unclear>t</unclear></w> 
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="aedifico"><supplied reason="lost">a</supplied>edificandas</w> <w lemma="et">e<unclear>t</unclear></w> 
                     <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="et"><supplied reason="lost">e</supplied>t</w> <w lemma="ualuae">ualuas</w> <w lemma="et">et</w> <w lemma="hydragogia">hyd<unclear>r</unclear><supplied reason="lost">agogias</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
@@ -139,7 +139,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>(fece) edificare e - e le porte (le chiuse ?) e l'acquedotto -</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>(fece) edificare e - e le porte (le chiuse ?) e l'acquedotto -</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p> . . . ] the building of [ . . . ] and double water-gates and conduit[s . . . </p></div>
          </div>
         

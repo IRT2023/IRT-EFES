@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -119,19 +119,17 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-               <lb n="0"/><gap reason="lost" extent="unknown" unit="line"></gap>
-                    <lb n="1"/><supplied reason="lost" evidence="previouseditor"><w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="Γαΐα">Γαΐᾳ</name></persName> <orig><unclear>ιι</unclear>ο<unclear>ιι</unclear>α</orig>
-                         <w>ϲυνβίῳ</w></supplied>
-                    <w>μου</w> <w>ἀπαγορεύω</w> <w lemma="δέ">δὲ</w> <w>ἕτερόν</w> <w>τι<space quantity="3" unit="character"/> 
-                    <lb n="2" break="no"/><supplied reason="lost" evidence="previouseditor">να</supplied></w> <supplied reason="lost" evidence="previouseditor"><w><unclear>μ</unclear>ὴ</w> <w lemma="ἀνοίγνυμι">ἀνῦξαι</w> <w>μ<supplied reason="lost">η</supplied>δὲ</w> 
-                        <w>θά<unclear>ψ</unclear>αι</w></supplied> 
+               <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><supplied reason="lost" evidence="previouseditor"><w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="Γαΐα">Γαΐᾳ</name></persName> <orig><unclear>ιι</unclear>ο<unclear>ιι</unclear>α</orig>
+                         <w lemma="σύμβιος">ϲυνβίῳ</w></supplied>
+                    <w lemma="ἐγώ">μου</w> <w lemma="ἀπαγορεύω">ἀπαγορεύω</w> <w lemma="δέ">δὲ</w> <w lemma="ἕτερος">ἕτερόν</w> <w lemma="τις">τι<space quantity="3" unit="character"/> <lb n="2" break="no"/><supplied reason="lost" evidence="previouseditor">να</supplied></w> <supplied reason="lost" evidence="previouseditor"><w lemma="μή"><unclear>μ</unclear>ὴ</w> <w lemma="ἀνοίγνυμι">ἀνῦξαι</w> <w lemma="μηδέ">μ<supplied reason="lost">η</supplied>δὲ</w> 
+                        <w lemma="θάπτω">θά<unclear>ψ</unclear>αι</w></supplied> 
                     <w lemma="ἐκτός">ἐκτὸϲ</w> 
                     <w lemma="εἰ">εἰ</w> <w lemma="μή">μὴ</w> <w lemma="παῖς">παιδὶ</w> <w lemma="ἑαυτός">αὑτ<supplied reason="lost">ο</supplied>ῦ</w>· 
-                    <w lemma="εἰ"><unclear>ε</unclear>ἰ</w> <w>δ’</w><w lemma="οὖν">οὖν</w> <w>ἐκτε<supplied reason="lost">ί</supplied>
-                    <lb n="3" break="no"/> <space quantity="3" unit="character"/> 
-                    <supplied reason="lost" evidence="previouseditor">ϲει</supplied></w> <supplied reason="lost" evidence="previouseditor"><w lemma="ὁ">τῷ</w></supplied> 
-                    <w><supplied reason="lost" evidence="previouseditor">ταμεί</supplied>ῳ</w> 
-                    <w><expan><abbr><am><g ref="symbols.xml#denarius"/></am></abbr><ex>δενάρια</ex></expan></w> <num value="1500">αφ</num><space unit="character" quantity="7"/> <g ref="symbols.xml#leaf"/>
+                    <w lemma="εἰ"><unclear>ε</unclear>ἰ</w> <w lemma="δ̓́">δ’</w><w lemma="οὖν">οὖν</w> <w lemma="ἐκτείνω">ἐκτε<supplied reason="lost">ί</supplied><lb 
+                       n="3" break="no"/><space quantity="3" unit="character"/> <supplied reason="lost" evidence="previouseditor">ϲει</supplied></w> <supplied reason="lost" evidence="previouseditor"><w lemma="ὁ">τῷ</w></supplied> 
+                    <w lemma="ταμεῖον"><supplied reason="lost" evidence="previouseditor">ταμεί</supplied>ῳ</w> 
+                    <w lemma="δενάριον"><expan><abbr><am><g ref="symbols.xml#denarius"/></am></abbr><ex>δενάρια</ex></expan></w> <num value="1500">αφ</num><space unit="character" quantity="7"/> <g ref="symbols.xml#leaf"/>
                 </ab>
          </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>From previous publications (Roueché)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2017-04-07" who="CR">transcribed: created from template</change>
       </revisionDesc>
    </teiHeader><facsimile><graphic url="PachoXLIX" decls="#photograph"><desc>Transcription (1827, Pacho, plate XLIX)</desc></graphic>
@@ -125,16 +125,16 @@
          <div subtype="scene" n="1" type="textpart">
             <ab>
                <lb n="1"/><persName type="attested"><name nymRef="Ἐπίκτητος"><supplied reason="lost">Ἐ</supplied>πίκτητοϲ</name></persName>
-                <lb n="2"/> <w><supplied reason="lost">ὁπλ</supplied>όμαχοϲ</w>
+                <lb n="2"/> <w lemma="ὁπλόμαχος"><supplied reason="lost">ὁπλ</supplied>όμαχοϲ</w>
             </ab>
             </div>
          <div subtype="scene" n="3" type="textpart">
             <div type="textpart" n="i"><ab>
-               <lb n="1"/> <w>ἀλλ’</w><w>ἐψόφηκεν</w> <w>ἡ</w> <w>θύρα</w>·
-               <lb n="2"/> <w>προϲ<unclear>έ</unclear>ρχεται</w> <w>ὁ</w> <w>πατήρ</w> 
+               <lb n="1"/> <w lemma="ἀλλά">ἀλλ’</w><w lemma="ψοφέω">ἐψόφηκεν</w> <w lemma="ὁ">ἡ</w> <w lemma="θύρα">θύρα</w>·
+               <lb n="2"/> <w lemma="προσέρχομαι">προϲ<unclear>έ</unclear>ρχεται</w> <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πατήρ</w> 
             </ab></div>
             <div type="textpart" n="ii"><ab>
-               <w>κρού<unclear>ϲ</unclear><supplied reason="lost">ομαι</supplied></w> <w>αὐτόϲ</w>
+               <w lemma="κρούω">κρού<unclear>ϲ</unclear><supplied reason="lost">ομαι</supplied></w> <w lemma="αὐτός">αὐτόϲ</w>
             </ab></div>
             </div>
                </div>

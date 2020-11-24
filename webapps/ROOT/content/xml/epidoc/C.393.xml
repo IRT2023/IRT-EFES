@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -60,7 +59,7 @@
                               First recorded in <date type="found">1817</date>.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>Standing in front of the <placeName  type="monuList" ref="https://www.slsgazetteer.org/1052">Temple of Hekate</placeName> (<date type="observed">2008</date>)</p>
+                           <p>Standing in front of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1052">Temple of Hekate</placeName> (<date type="observed">2008</date>)</p>
                         </provenance>
                      
                   
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -140,8 +140,7 @@
                   <persName type="attested" key="lgpn:V1-64615"><name nymRef="Καρτισθένης">Καρτισθένευς</name></persName></persName>
                <space quantity="1" unit="character"/>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-65229"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name>
-                       <name nymRef="Κλαύδιος">Κλαύδιος</name> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-65559"><name nymRef="Σαραπίων">Σαρα<supplied reason="lost">π</supplied>ίω<lb
-                          n="4" break="no"/>νος</name></persName> <w>υἱὸς</w>
+                       <name nymRef="Κλαύδιος">Κλαύδιος</name> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-65559"><name nymRef="Σαραπίων">Σαρα<supplied reason="lost">π</supplied>ίω<lb n="4" break="no"/>νος</name></persName> <w lemma="υἱός">υἱὸς</w>
                        <name nymRef="Παγκλῆς">Παγκλῆς</name></persName> 
                     <lb n="4a"/> <space quantity="4" unit="line"/>
                     <lb n="5"/><persName type="attested" key="lgpn:V1-64441"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name>
@@ -155,13 +154,13 @@
                <space quantity="3" unit="character"/>
                     <lb n="9"/><persName type="attested" key="lgpn:V1-63944"><name nymRef="Μᾶρκος"><supplied reason="lost" evidence="previouseditor"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></supplied></name>
                        <name nymRef="Ἀσίνιος">Ἀσίνιος</name> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-66105"><name nymRef="Φίλων">Φίλωνος</name></persName> 
-                    <lb n="10"/> <w><supplied reason="lost" evidence="previouseditor">υ</supplied>ἱὸς</w> <g ref="symbols.xml#stop"/> <name nymRef="Εὐφράνωρ">Εὐφράνωρ</name></persName> 
+                    <lb n="10"/> <w lemma="υἱός"><supplied reason="lost" evidence="previouseditor">υ</supplied>ἱὸς</w> <g ref="symbols.xml#stop"/> <name nymRef="Εὐφράνωρ">Εὐφράνωρ</name></persName> 
                     <lb n="11"/><persName type="attested" key="lgpn:V1-64585"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name>
                        <name nymRef="Κλαύδιος">Κλαύδιος</name>
                        <persName type="attested" key="lgpn:V1-64648"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name>
                           <name nymRef="Κλαύδιος">Κλαυδί<supplied reason="lost">ου</supplied></name> 
                     <lb n="12"/><name nymRef="Κλέαρχος"><supplied reason="lost">Κλε</supplied><unclear>άρ</unclear>χ<unclear>ου</unclear></name></persName>
-                       <w>υἱ<supplied reason="lost">ὸς</supplied></w>
+                       <w lemma="υἱός">υἱ<supplied reason="lost">ὸς</supplied></w>
                        <name nymRef="Καρνήδας"><supplied reason="lost">Καρνήδας</supplied></name></persName> 
                     <lb n="12a"/><gap reason="lost" quantity="1" unit="line"/>
                 </ab>

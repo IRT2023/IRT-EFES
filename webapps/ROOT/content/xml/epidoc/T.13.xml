@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -87,6 +86,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -114,8 +114,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                <lb n="1"/><w lemma="κατά">κατὰ</w> <w>ἐπιφ<unclear>α</unclear>νεί
-                    <space quantity="1" unit="character"/>αν</w><lb n="2"/><w lemma="θεός">θε<space quantity="1" unit="character"/>ο<supplied reason="lost">ῦ</supplied></w>
+                <lb n="1"/><w lemma="κατά">κατὰ</w> <w lemma="ἐπιφάνεια">ἐπιφ<unclear>α</unclear>νεί <space quantity="1" unit="character"/>αν</w>
+                <lb n="2"/><w lemma="θεός">θε<space quantity="1" unit="character"/>ο<supplied reason="lost">ῦ</supplied></w>
                 <lb n="3"/><date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς">ἱερέ<supplied reason="lost">ως</supplied></w> 
                     <w lemma="ἐπώνυμος">ἐπωνύμ<hi rend="ligature">ου</hi></w> <space quantity="7" unit="character"/>
                 <lb n="4"/><persName type="attested" key="lgpn:V1-60175"><name nymRef="Ἀντώνιος">Ἀντων<unclear>ί</unclear><hi rend="ligature">ου</hi></name> 
@@ -134,7 +134,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Nicia di Eponimo Casto minore (iunior)</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Nicia di Eponimo Casto minore (iunior)</p></div>
             <div type="translation" source="#jmr1974-1975a" xml:lang="en"><p>According to the appearance of <supplied reason="subaudible">the</supplied> God, 
               in the time of the eponymous priest Antonius Hagnos the young(er)</p></div>
        </div>

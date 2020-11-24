@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -127,15 +127,15 @@
                     <lb n="3"/><w lemma="filia"><expan><abbr><unclear>f</unclear></abbr><ex>ilia</ex></expan></w> <name nymRef="Catulla">Catulla</name></persName>
                     <lb n="4"/><date type="life-span" dur="P12Y"><w lemma="annus"><expan><abbr><supplied reason="lost">a</supplied>nnor</abbr><ex>um</ex></expan></w> 
                     <num value="12">XII</num> </date> 
-                    <w><expan><abbr>h</abbr><ex>ic</ex></expan></w>                    
-                  <w><expan><abbr>s</abbr><ex>ita</ex></expan></w> <w><expan><abbr>e</abbr><ex>st</ex></expan></w>                
+                    <w lemma="hic"><expan><abbr>h</abbr><ex>ic</ex></expan></w>                    
+                  <w lemma="situs"><expan><abbr>s</abbr><ex>ita</ex></expan></w> <w lemma="sum"><expan><abbr>e</abbr><ex>st</ex></expan></w>                
                </ab>
             </div>
             <div xml:lang="grc" type="textpart">
                   <ab>
                     <lb n="5"/><persName type="attested"><name nymRef="Ὀκταβία"><supplied reason="lost">Ὀ</supplied>κταβία</name>
                     <lb n="6"/><persName type="attested"><name nymRef="Ἀφροδίσιος"><supplied reason="lost">Ἀφρ</supplied><unclear>ο</unclear>δεισίου</name></persName>
-                    <lb n="7"/> <w>θυγάτηρ</w>
+                    <lb n="7"/> <w lemma="θυγάτηρ">θυγάτηρ</w>
                     <lb n="8"/><name nymRef="Κάτυλλα">Κάτυλλα</name></persName>                    
                       <lb n="9"/><date type="life-span" dur="P12Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="12">ιβ</num> </date>
                      </ab>
@@ -144,19 +144,19 @@
                   <ab>
                     <lb n="10"/><persName type="attested"><name nymRef="Lucius"><supplied reason="lost"><expan><abbr>L</abbr><ex>ucius</ex></expan></supplied></name> <name nymRef="Octauius"><supplied reason="lost">O</supplied>ctauius</name>
                     <persName type="attested"><name nymRef="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName>
-                    <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <name type="tribe" key="Publilia"><expan><abbr>Pub</abbr><ex>lilia</ex></expan></name>  <supplied reason="subaudible"><w>tribu</w></supplied>                 
-                      <lb n="11"/><name nymRef="Camars"><supplied reason="lost">Ca</supplied>mars</name></persName> <date type="life-span" dur="P24Y"><w lemma="annus"><expan><abbr>annor</abbr><ex>um</ex></expan></w> <g ref="symbols.xml#leaf"/> <lb n="12"/><num value="24">XXIV</num> </date> <w><expan><abbr>h</abbr><ex>ic</ex></expan></w>
-                    <w><expan><abbr>s</abbr><ex>itus</ex></expan></w> <w><expan><abbr>e</abbr><ex>st</ex></expan></w>
+                    <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <name type="tribe" key="Publilia"><expan><abbr>Pub</abbr><ex>lilia</ex></expan></name>  <supplied reason="subaudible"><w lemma="tribus">tribu</w></supplied>                 
+                      <lb n="11"/><name nymRef="Camars"><supplied reason="lost">Ca</supplied>mars</name></persName> <date type="life-span" dur="P24Y"><w lemma="annus"><expan><abbr>annor</abbr><ex>um</ex></expan></w> <g ref="symbols.xml#leaf"/> <lb n="12"/><num value="24">XXIV</num> </date> <w lemma="hic"><expan><abbr>h</abbr><ex>ic</ex></expan></w>
+                    <w lemma="situs"><expan><abbr>s</abbr><ex>itus</ex></expan></w> <w lemma="sum"><expan><abbr>e</abbr><ex>st</ex></expan></w>
                      </ab>
             </div>
             <div xml:lang="grc" type="textpart">
                   <ab>
                     <lb n="13"/><persName type="attested"><name nymRef="Λούκιος"><supplied reason="lost">Λ</supplied>ούκιος</name> <name nymRef="Ὀκτάουιος">Ὀκτάουιος</name>
-                    <lb n="14"/><persName type="attested"><name nymRef="Ἀφροδίσιος">Ἀφροδεισίου</name></persName> <w>υἱὸς</w>
+                    <lb n="14"/><persName type="attested"><name nymRef="Ἀφροδίσιος">Ἀφροδεισίου</name></persName> <w lemma="υἱός">υἱὸς</w>
                     <lb n="15"/><name nymRef="Κάμαρς">Κάμαρς</name></persName> <date type="life-span" dur="P24Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="24">κδ</num> </date>
-                   <lb n="15a"/> <space  extent="2" unit="line"/>
+                   <lb n="15a"/> <space extent="2" unit="line"/>
                      <lb n="16"/><persName type="attested"><name nymRef="Πόπλιος">Πόπλιος</name> <name nymRef="Ὀκτάουιος">Ὀκ<lb n="17" break="no"/>τάϊος</name> <persName type="attested"><name nymRef="Φαῦστος">Φαύστου</name></persName>
-                    <lb n="18"/> <w>υἱὸς</w> <name nymRef="Νάστας">Νάστας</name></persName>
+                    <lb n="18"/> <w lemma="υἱός">υἱὸς</w> <name nymRef="Νάστας">Νάστας</name></persName>
                     <lb n="19"/><date type="life-span" dur="P19Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="18">ιη</num> </date>
                 </ab>
 </div>

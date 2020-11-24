@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -135,13 +135,13 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/ANkMaUubJX53kmyFX2Tii7"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="2">β</num> 
-                    <rs type="month" key="mesore"><w>Μ<lb n="2" break="no"/>εϲορ<lb n="3" break="no"/>ὴ</w></rs> 
-                    <w>τρί<lb n="4" break="no"/>τη</w></date> 
+                    <rs type="month" key="mesore"><w lemma="Μεσορή">Μ<lb n="2" break="no"/>εϲορ<lb n="3" break="no"/>ὴ</w></rs> 
+                    <w lemma="τρίτος">τρί<lb n="4" break="no"/>τη</w></date> 
                     <persName type="attested" key="lgpn:V1-60745"><name nymRef="Σωγένης">Ϲω<lb n="5" break="no"/>γένη<lb n="6" break="no"/>ϲ</name>
                     <persName type="attested"><name nymRef="Ἰώσηπος">Ἰ<unclear>ω</unclear>ϲή<lb n="7" break="no"/><unclear>π</unclear>ω</name></persName></persName> 
-   <date type="life-span" dur="P24Y"><w>εἰ
-                    <lb n="8" break="no"/><unclear>κοϲιτ</unclear>
-                    <lb n="9" break="no"/>έϲερ<unclear>α</unclear></w>
+   <date type="life-span" dur="P24Y"><w lemma="εἰκοσιτέσσαρες">εἰ<lb 
+      n="8" break="no"/><unclear>κοϲιτ</unclear><lb 
+         n="9" break="no"/>έϲερ<unclear>α</unclear></w>
                     <lb n="10"/> <supplied reason="lost"><w lemma="ἔτος">ἐτῶν</w></supplied></date>
                 </ab>
 </div>
@@ -177,8 +177,8 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 2, Mesori 8th, Tri . . . te, daughter of Sogen(es) . . .</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 2, dritter Mesore, Sogenes des Josepos, vierundzwanzig [(Jahre)]</p></div>
+            <div type="translation" source="#gray1956" xml:lang="en"><p>Year 2, Mesori 8th, Tri . . . te, daughter of Sogen(es) . . .</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 2, dritter Mesore, Sogenes des Josepos, vierundzwanzig [(Jahre)]</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/ANkMaUubJX53kmyFX2Tii7">Year 2, Mesore 3</ref>, Sogenes <supplied reason="subaudible">son</supplied> of Iosepos, [aged] 24.</p></div>
        </div>
        

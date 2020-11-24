@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -123,7 +123,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/wu4wLs6MzpGCQpCnfEmLoK"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="15">ι<unclear>ε</unclear></num> <rs type="month"  key="hathyr"><w><unclear>Ἁθ</unclear><supplied reason="lost">ὺ</supplied><unclear>ρ</unclear></w></rs> <gap reason="lost" quantity="1" unit="character"/></date>
+                    <num value="15">ι<unclear>ε</unclear></num> <rs type="month" key="hathyr"><w lemma="Ἁθύρ"><unclear>Ἁθ</unclear><supplied reason="lost">ὺ</supplied><unclear>ρ</unclear></w></rs> <gap reason="lost" quantity="1" unit="character"/></date>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-60443"><name nymRef="Ἰάσων">Ἰά<supplied reason="lost">ϲ</supplied>ων</name>
                     <lb n="3"/> <persName type="attested" key="lgpn:V1-60444"><name nymRef="Ἰάσων">Ἰάϲονοϲ</name></persName></persName> 
                     <lb n="4"/><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w></supplied> <gap reason="lost" quantity="1" unit="character"/>
@@ -147,7 +147,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Filon di Filone</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Filon di Filone</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/wu4wLs6MzpGCQpCnfEmLoK">Year 15, Hathyr ?</ref>, Iason <supplied reason="subaudible">son</supplied> of Iason, aged ?.</p></div>
        </div>
          

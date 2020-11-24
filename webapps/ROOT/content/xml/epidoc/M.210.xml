@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-13" who="TW">tagged an orig</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -124,11 +124,11 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <div subtype="column" n="1" type="textpart"><ab>     
                         <lb n="1"/><orig>αξ</orig></ab></div>
-            <div  subtype="column" n="2" type="textpart">
+            <div subtype="column" n="2" type="textpart">
                <div subtype="section" n="i" type="textpart"><ab>     
                         <lb n="1"/><persName type="attested" key="lgpn:V1-62723"><name nymRef="Ἀλέξανδρος">Ἀλέξανδρος</name></persName></ab></div> 
                        <div subtype="section" n="ii" type="textpart"><ab> <lb n="1"/><persName type="attested" key="lgpn:V1-63632"><name nymRef="Ἑλβία"><unclear>Ἑ</unclear>λ<unclear>β</unclear>ίας</name> <name nymRef="Εἰρήνη">Ἰρηνης</name></persName> <g ref="symbols.xml#leaf"/> 
-                          <lb n="2"/> <w>ἦλθε</w></ab></div> 
+                          <lb n="2"/> <w lemma="ἔρχομαι">ἦλθε</w></ab></div> 
                      
                         <div subtype="section" n="iii" type="textpart"><ab><lb n="1"/><persName type="attested" key="lgpn:V1-63258"><name nymRef="Ἀρτεμισία">Ἀρτεμίσ<unclear>α</unclear></name></persName></ab></div> 
                     
@@ -137,7 +137,7 @@
          <div subtype="section" n="v" type="textpart"><ab> <lb n="2"/><persName type="attested" key="lgpn:V1-64960"><name nymRef="Μελάνιππος">Μελάνιππος</name> </persName></ab></div>
          <div subtype="section" n="vi" type="textpart"><ab>  <lb n="3"/><persName type="attested"><name nymRef="Σώστρατος">Σώστρατος </name></persName>
                     </ab></div>
-         <div  subtype="column" n="3" type="textpart"><div subtype="section" n="i" type="textpart"><ab>    
+         <div subtype="column" n="3" type="textpart"><div subtype="section" n="i" type="textpart"><ab>    
                         <lb n="1"/><orig>αν</orig> <gap reason="lost" extent="unknown" unit="character"/> 
             <lb n="2"/><persName type="attested" key="lgpn:V1-63999"><name nymRef="Ζήνων">Ζήνων</name> <persName type="attested"><name nymRef="Ζήνων"><supplied reason="lost">Ζήν</supplied>ων<supplied reason="lost">ος</supplied></name></persName></persName>  </ab></div>
          <div subtype="section" n="ii" type="textpart"><ab> <lb n="1"/><persName type="attested" key="lgpn:V1-65738"><name nymRef="Σώστρατος">Σώστρα<unclear>τ</unclear><supplied reason="lost">ος</supplied></name> 

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -170,23 +170,23 @@
                         <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><orig>αυτην</orig>
             <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>λ</unclear>εξατο</orig>
                         <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><orig>ϲονι</orig>
-                        <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w>πάτηρ</w>
+                        <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="πατήρ">πάτηρ</w>
                         <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>μ</unclear>ε<unclear>ω</unclear></orig>
                         <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><orig>ϲιϲ</orig>
 <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/> <space extent="unknown" unit="character"/>            
                     
                     </ab></div><div subtype="column" n="b" type="textpart"><ab>
-                       <lb n="1"/><g ref="symbols.xml#chi-rho"/> <persName type="attested" key="lgpn:V1-63517"><name nymRef="Δημητρία">Διμιτρία</name> <w>θυγάτηρ</w>
-                          <lb n="2"/><persName type="attested" key="lgpn:V1-63424"><name nymRef="Γάϊος">Γάϊου</name></persName></persName> <w lemma="ὁ">τοῦ</w> <w>ὠνηϲα<hi rend="ligature">μέν</hi>ου</w>
-                        <lb n="3"/> <w>τὸ</w> <w><hi rend="ligature">μν</hi>ημῖο<supplied reason="omitted">ν</supplied></w> <w>τ<unclear>ο</unclear>ῦτο</w> <w>ἔνθαδε</w> <w>κῖτε</w>
-                        <lb n="4"/> <w><unclear>μ</unclear>ετὰ</w> <w lemma="ὁ">τοῦ</w> <w lemma="υἱός">υἱοῦ</w> <w>αὐτῆϲ</w> <persName type="attested" key="lgpn:V1-64111"><name nymRef="Θεόδουλος">Θεω<lb n="5" break="no"/>δούλου</name></persName>· <w>οὗτοι</w> <w lemma="τελευτάω">ἐτελεύτηϲαν</w>
-                        <lb n="6"/> <w lemma="ἐπί">ἐπὶ</w> <w><supplied reason="lost">ἀ</supplied>γροῦ</w> <placeName nymRef="#Μυροπῶλα" ref="#myropola">Μυρο<unclear>π</unclear>ῶλα</placeName> <w>ϲιϲμοῦ</w>
-                        <lb n="7"/> <w>γενομένου</w>· <w>τέθικαν</w> <w>αὐτὸϲ</w>
-                          <lb n="8"/><persName type="attested"><name nymRef="Κάλλιππος">Κάλλιπποϲ</name></persName> <w>ὁ</w> <surplus>υ</surplus> <w lemma="ἀνήρ">ἀνὴρ</w> <w>αὐτῆϲ</w> <w lemma="καί">κὲ</w>
-                          <lb n="9"/> <surplus><w>κὲ</w></surplus> <w>υἱ<unclear>ὸϲ</unclear></w> <w>αὐτοῦ</w> <persName type="attested"><name nymRef="Γάϊος">Γάϊοϲ</name></persName>
-                          <w lemma="καί">κὲ</w> <w>γαμ<lb n="10" break="no"/>βρε<unclear>ό</unclear><supplied reason="lost">ϲ</supplied></w> 
-                          <w>αὐτοῦ</w> <persName type="attested" key="lgpn:V1-65361"><name nymRef="Πολύβουλος">Π<unclear>ο</unclear>λύβουλοϲ</name></persName>
-                          <lb n="11"/><persName type="divine" key="kyrios"><w><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName> <w>μνηϲθήτω</w> <w lemma="ὁ">τὸν</w> <w>ἐντὸ<supplied reason="lost">ϲ</supplied></w> <w>ϲπελέ<lb n="12" break="no"/>ου</w> <w>τούτου</w>.
+                       <lb n="1"/><g ref="symbols.xml#chi-rho"/> <persName type="attested" key="lgpn:V1-63517"><name nymRef="Δημητρία">Διμιτρία</name> <w lemma="θυγάτηρ">θυγάτηρ</w>
+                          <lb n="2"/><persName type="attested" key="lgpn:V1-63424"><name nymRef="Γάϊος">Γάϊου</name></persName></persName> <w lemma="ὁ">τοῦ</w> <w lemma="ὠνέομαι">ὠνηϲα<hi rend="ligature">μέν</hi>ου</w>
+                        <lb n="3"/> <w lemma="ὁ">τὸ</w> <w lemma="μνημεῖ́ον"><hi rend="ligature">μν</hi>ημῖο<supplied reason="omitted">ν</supplied></w> <w lemma="οὗτος">τ<unclear>ο</unclear>ῦτο</w> <w lemma="ἐνθάδε">ἔνθαδε</w> <w lemma="κεῖμαι">κῖτε</w>
+                        <lb n="4"/> <w lemma="μετά"><unclear>μ</unclear>ετὰ</w> <w lemma="ὁ">τοῦ</w> <w lemma="υἱός">υἱοῦ</w> <w lemma="αὐτός">αὐτῆϲ</w> <persName type="attested" key="lgpn:V1-64111"><name nymRef="Θεόδουλος">Θεω<lb n="5" break="no"/>δούλου</name></persName>· <w lemma="οὗτος">οὗτοι</w> <w lemma="τελευτάω">ἐτελεύτηϲαν</w>
+                        <lb n="6"/> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἀγρός"><supplied reason="lost">ἀ</supplied>γροῦ</w> <placeName nymRef="#Μυροπῶλα" ref="#myropola">Μυρο<unclear>π</unclear>ῶλα</placeName> <w lemma="σεισμός">ϲιϲμοῦ</w>
+                        <lb n="7"/> <w lemma="γίγνομαι">γενομένου</w>· <w lemma="τίθημι">τέθικαν</w> <w lemma="αὐτός">αὐτὸϲ</w>
+                          <lb n="8"/><persName type="attested"><name nymRef="Κάλλιππος">Κάλλιπποϲ</name></persName> <w lemma="ὁ">ὁ</w> <surplus>υ</surplus> <w lemma="ἀνήρ">ἀνὴρ</w> <w lemma="αὐτός">αὐτῆϲ</w> <w lemma="καί">κὲ</w>
+                          <lb n="9"/> <surplus><w lemma="καί">κὲ</w></surplus> <w lemma="υἱός">υἱ<unclear>ὸϲ</unclear></w> <w lemma="αὐτοῦ">αὐτοῦ</w> <persName type="attested"><name nymRef="Γάϊος">Γάϊοϲ</name></persName>
+                          <w lemma="καί">κὲ</w> <w lemma="γαμβρός">γαμ<lb n="10" break="no"/>βρε<unclear>ό</unclear><supplied reason="lost">ϲ</supplied></w> 
+                          <w lemma="αὐτοῦ">αὐτοῦ</w> <persName type="attested" key="lgpn:V1-65361"><name nymRef="Πολύβουλος">Π<unclear>ο</unclear>λύβουλοϲ</name></persName>
+                          <lb n="11"/><persName type="divine" key="kyrios"><w lemma="κύριος"><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName> <w lemma="μιμνήσκω">μνηϲθήτω</w> <w lemma="ὁ">τὸν</w> <w lemma="ἐντός">ἐντὸ<supplied reason="lost">ϲ</supplied></w> <w lemma="σπήλαιον">ϲπελέ<lb n="12" break="no"/>ου</w> <w lemma="οὗτος">τούτου</w>.
                     </ab>
 </div>
 </div>
@@ -197,10 +197,10 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#AE" xml:lang="fr"><p><note>1992</note>: ii: Dimitria, fille de Gaios, lui qui a acquis ce monument, repose ici avec son fils Théodoulos; 
+            <div type="translation" source="#AE" xml:lang="fr"><p><note>1992</note>: ii: Dimitria, fille de Gaios, lui qui a acquis ce monument, repose ici avec son fils Théodoulos; 
                ceux-ci sont morts dans le domaine de Myropolas lors d'un tremblement de terre; Kallippos son mari, Gaios son fils et son gendre Polyboulos les ont déposés. 
                Seigneur, souviens-toi de ceux qui reposent dans cet hypogée. </p></div>
-            <div  type="translation" source="#AE" xml:lang="fr"><p><note>2005</note>: ii: Dimitria, fille de Gaius qui a acheté ce monument, repose ici avec son fils Théodoulos. 
+            <div type="translation" source="#AE" xml:lang="fr"><p><note>2005</note>: ii: Dimitria, fille de Gaius qui a acheté ce monument, repose ici avec son fils Théodoulos. 
                Ils périrent sur le domaine de Myropolas lors d'un tremblement de terre. C'est Kallippos en personne, son mari, qui les a ensevelis avec son fils Gaius et 
                son gendre Polyboulos. Que le Seigneur se souvienne de celui qui repose en ce caveau.</p></div>
             <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p>i: <note>not usefully translatable</note></p>

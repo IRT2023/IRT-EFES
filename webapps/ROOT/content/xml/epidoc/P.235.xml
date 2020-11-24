@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -127,7 +127,7 @@
 <ab>
                    <lb n="1"/><persName type="attested"><name nymRef="Βασσάρα">Βασσάραϲ</name></persName> 
    <persName type="emperor" key="anonymus"><name nymRef="Καῖσαρ">Καίϲαροϲ</name></persName>
-                    <lb n="2"/> <space extent="5" unit="character"/> <w>δούληϲ</w> <space extent="4" unit="character"/>
+                    <lb n="2"/> <space extent="5" unit="character"/> <w lemma="δούλη">δούληϲ</w> <space extent="4" unit="character"/>
                 </ab>
 </div>
          <div type="apparatus">
@@ -140,7 +140,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>Bassara, Cäsars Sklavin</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>Bassara, Cäsars Sklavin</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>
                <supplied reason="subaudible">Tomb of</supplied> Bassara, slave of Caesar. </p></div>
        </div>

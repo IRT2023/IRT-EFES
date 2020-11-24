@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -128,7 +128,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><persName type="emperor" key="anonymus"><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="δημαρχικός">δημαρχικῆς</w></supplied> <w lemma="ἐξουσία">ἐξουσίας</w> <w lemma="ὁ">τὸ</w>
-                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><date ref="https://godot.date/id/mKhCaoN5qa2kShsLe8MMNb"><w><supplied reason="lost">Αὐτοκράτορ</supplied>α</w> <w lemma="ὁ">τὸ</w> <w lemma="ἕβδομος">ἕβδομον</w></date></persName>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><date ref="https://godot.date/id/mKhCaoN5qa2kShsLe8MMNb"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτορ</supplied>α</w> <w lemma="ὁ">τὸ</w> <w lemma="ἕβδομος">ἕβδομον</w></date></persName>
                     <lb n="3"/> <supplied reason="lost"> <space extent="unknown" unit="character"><certainty match=".." locus="name"/></space> <w lemma="ὁ">οἱ</w></supplied> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυραν</supplied>αῖοι</placeName> <space quantity="1" unit="character"/>
                 </ab>
 </div>

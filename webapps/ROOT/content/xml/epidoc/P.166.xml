@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -128,10 +128,10 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="attested" key="lgpn:V1-61242"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>αΐωι</ex></expan></name> <name nymRef="Ἰούλιος">Ἰουλίωι</name> <name nymRef="Ἐπίνικος">Ἐπινείκωι</name></persName>
-                    <w lemma="ἥρως">ἥρωι</w> <w>ἐπήκοωι</w> 
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-61242"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>αΐωι</ex></expan></name> <name nymRef="Ἰούλιος">Ἰουλίωι</name> <name nymRef="Ἐπίνικος">Ἐπινείκωι</name></persName>
+                    <w lemma="ἥρως">ἥρωι</w> <w lemma="ἐπήκοος">ἐπήκοωι</w> 
                     <lb n="2"/><persName type="attested" key="lgpn:V1-61543"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊοϲ</ex></expan></name> <name nymRef="Ἰούλιος">Ἰούλιοϲ</name> <name nymRef="Παυσανίας">Παυϲανίαϲ</name></persName> <w lemma="καί">καὶ</w>
-                    <persName type="attested" key="lgpn:V1-61306"><name nymRef="Κοκκεΐα">Κοκκεΐα</name> 
+                    <persName type="attested" key="lgpn:V1-61306"><name nymRef="Κοκκεΐα">Κοκκεΐα</name> 
                     <lb n="3"/><g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/> <name nymRef="Θάλεια">Θάλεια</name></persName> <g ref="symbols.xml#leaf"/> <space extent="unknown" unit="character"/>  
                     <lb n="4"/><g ref="symbols.xml#leaf"/> <space quantity="2" unit="character"/> <w lemma="ὁ">οἱ</w> <w lemma="γονεύς">γονεῖϲ</w> <g ref="symbols.xml#leaf"/> <space extent="unknown" unit="character"/>
                 </ab>
@@ -143,7 +143,7 @@
          <div type="commentary">
             <head>Commentary</head>
             <!-- Ghislanzoni, loc. cit. states that the dead man has three cognomina and therefore that the date should be late third or early fourth century CE, 
-               which is nonsense. --><p></p>
+               which is nonsense. --><p/>
             <p>Line 1: On heroisation of the dead see Dobias-Lalou, art.cit.</p>
          </div>
          

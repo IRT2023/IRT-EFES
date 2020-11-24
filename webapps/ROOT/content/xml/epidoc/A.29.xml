@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -147,12 +147,12 @@
             <div n="b" type="textpart">
                <ab>
                         <lb n="1"/><orig><unclear>σ</unclear>ατι</orig> <g ref="symbols.xml#figure"/> <space quantity="3" unit="character"/>
-                        <lb n="2"/><persName type="divine" key="kyrios"><w><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName>
-                        <w>βοήθ<choice><corr>ηϲ</corr><sic>ϲη</sic></choice>ον</w> <w lemma="ὁ">τ<unclear>ὸ</unclear></w>
+                        <lb n="2"/><persName type="divine" key="kyrios"><w lemma="κύριος"><expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan></w></persName>
+                        <w lemma="βοηθέω">βοήθ<choice><corr>ηϲ</corr><sic>ϲη</sic></choice>ον</w> <w lemma="ὁ">τ<unclear>ὸ</unclear></w>
                         <orig>Αὐτ<unclear>ατ</unclear>η<unclear>λ</unclear>ήκη</orig>
                         <lb n="3"/><g ref="symbols.xml#crux"/> <g ref="symbols.xml#crux"/> <num value="80" cert="low">π</num> <g ref="symbols.xml#stop"/> <orig>λ</orig> <g ref="symbols.xml#stop"/> <orig>VI</orig>
                         <orig>II</orig> <g ref="symbols.xml#crux"/> <g ref="symbols.xml#crux"/> <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ιλ</unclear></orig><gap reason="lost" quantity="3" unit="character"/><num><unclear>ϲ</unclear></num> <gap reason="lost" quantity="3" unit="character"/>
-                        <w>ὄγδο<unclear>α</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="ὄγδοος">ὄγδο<unclear>α</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
                     </ab>
 </div>
 </div>

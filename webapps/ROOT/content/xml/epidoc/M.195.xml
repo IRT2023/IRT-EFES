@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -92,6 +91,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -116,16 +116,16 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="emperor" key="philippus1"><w><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">C<supplied reason="lost">aesar</supplied></name> <supplied reason="lost"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name nymRef="Iulius"><expan><abbr>Iul</abbr><ex>ius</ex></expan></name></supplied>
-                    <lb n="2"/><name nymRef="Philippus">Philip<supplied reason="lost">pus</supplied></name> <w><supplied reason="lost">Pius</supplied></w>
-                    <lb n="3"/><w><unclear>Fe</unclear>lix</w> <w lemma="inuictus">I<supplied reason="lost">nuictus</supplied></w>
+                    <lb n="1"/><persName type="emperor" key="philippus1"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">C<supplied reason="lost">aesar</supplied></name> <supplied reason="lost"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name nymRef="Iulius"><expan><abbr>Iul</abbr><ex>ius</ex></expan></name></supplied>
+                    <lb n="2"/><name nymRef="Philippus">Philip<supplied reason="lost">pus</supplied></name> <w lemma="pius"><supplied reason="lost">Pius</supplied></w>
+                    <lb n="3"/><w lemma="Felix"><unclear>Fe</unclear>lix</w> <w lemma="inuictus">I<supplied reason="lost">nuictus</supplied></w>
                         <name nymRef="Augustus"><supplied reason="lost"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></supplied></name></persName>
-                    <lb n="4"/><w lemma="pontifex">ponti<supplied reason="lost">fex</supplied></w> <w><supplied reason="lost">maxi</supplied><lb n="5" break="no"/><unclear>mu</unclear>s</w> <expan><w lemma="tribunicius"><abbr>t<supplied reason="lost">rib</supplied></abbr><supplied reason="lost"><ex>unicia</ex></supplied></w>
-                        <supplied reason="lost"><w><abbr>pot</abbr><ex>estate</ex></w></supplied></expan> <supplied reason="lost"><w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w></supplied>
-                    <lb n="6"/> <w><expan><abbr>proc</abbr><supplied reason="lost"><abbr>o</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></supplied></expan></w>
-                    <lb n="7"/><expan><w><abbr>p</abbr><ex>ater</ex></w> <w><abbr>p</abbr><ex>atriae</ex></w></expan> <w lemma="et">et</w> <persName type="emperor" key="philippus2"><name nymRef="Marcus"><expan><abbr><unclear>M</unclear></abbr><ex>arcus</ex></expan></name>
+                    <lb n="4"/><w lemma="pontifex">ponti<supplied reason="lost">fex</supplied></w> <w lemma="maximus"><supplied reason="lost">maxi</supplied><lb n="5" break="no"/><unclear>mu</unclear>s</w> <expan><w lemma="tribunicius"><abbr>t<supplied reason="lost">rib</supplied></abbr><supplied reason="lost"><ex>unicia</ex></supplied></w>
+                        <supplied reason="lost"><w lemma="potestas"><abbr>pot</abbr><ex>estate</ex></w></supplied></expan> <supplied reason="lost"><w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w></supplied>
+                    <lb n="6"/> <w lemma="proconsul"><expan><abbr>proc</abbr><supplied reason="lost"><abbr>o</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></supplied></expan></w>
+                    <lb n="7"/><expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan> <w lemma="et">et</w> <persName type="emperor" key="philippus2"><name nymRef="Marcus"><expan><abbr><unclear>M</unclear></abbr><ex>arcus</ex></expan></name>
                     <name nymRef="Iulius"><supplied reason="lost"><expan><abbr>Iul</abbr><ex>ius</ex></expan></supplied></name>
-                    <lb n="8"/><name nymRef="Philippus">Phili<supplied reason="lost">ppus</supplied></name> <w><supplied reason="lost">no</supplied><lb n="9" break="no"/>bilis<supplied reason="lost">simus</supplied></w>
+                    <lb n="8"/><name nymRef="Philippus">Phili<supplied reason="lost">ppus</supplied></name> <w lemma="nobilis"><supplied reason="lost">no</supplied><lb n="9" break="no"/>bilis<supplied reason="lost">simus</supplied></w>
                     <lb n="10"/><name nymRef="Caesar">Caes<supplied reason="lost">ar</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="10a"/><gap reason="lost" extent="unknown" unit="line"/>
                 </ab>

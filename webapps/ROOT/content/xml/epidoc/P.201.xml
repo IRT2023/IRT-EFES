@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -104,6 +103,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-05" who="MGDA">fixed  Goodchild-Reynolds bibliography</change>
@@ -128,13 +128,13 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <w><expan><abbr>Ped</abbr><ex>atura</ex></expan></w> <g ref="symbols.xml#stop"/>
+                    <lb n="1"/> <w lemma="pedatura"><expan><abbr>Ped</abbr><ex>atura</ex></expan></w> <g ref="symbols.xml#stop"/>
                     <w lemma="uexillatio"><expan><abbr>uexil</abbr><ex>lationis</ex></expan></w> <g ref="symbols.xml#stop"/>
                     <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> 
                     <lb n="2"/><num value="3"><supplied reason="lost">I</supplied>II</num> <g ref="symbols.xml#stop"/>
                     <w lemma="Augustus"><expan><abbr>Aug</abbr><ex>ustae</ex></expan></w> <w lemma="curo">curante</w> <g ref="symbols.xml#stop"/>
                     <lb n="3"/><persName type="attested"><name nymRef="Aurelius"><expan><abbr>Aur</abbr><ex>elio</ex></expan></name> <g ref="symbols.xml#stop"/>
-                    <name nymRef="Mucianus">Muciano</name></persName> <g ref="symbols.xml#stop"/> <w><expan><abbr>duc</abbr><ex cert="low">enario</ex></expan></w>
+                    <name nymRef="Mucianus">Muciano</name></persName> <g ref="symbols.xml#stop"/> <w lemma="ducenarius"><expan><abbr>duc</abbr><ex cert="low">enario</ex></expan></w>
                 </ab>
 </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,23 +121,23 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date><supplied reason="lost" cert="low"><expan><w><abbr>D<am>DDD</am></abbr><ex>ominis</ex></w>
-                          <w><abbr>N<am>NNN</am></abbr><ex>ostris quattuor</ex></w></expan> </supplied>
+                    <lb n="1"/><date><supplied reason="lost" cert="low"><expan><w lemma="dominus"><abbr>D<am>DDD</am></abbr><ex>ominis</ex></w>
+                          <w lemma="noster quattuor"><abbr>N<am>NNN</am></abbr><ex>ostris quattuor</ex></w></expan> </supplied>
                     <lb n="2"/><persName type="emperor" key="constantinus1"><name nymRef="Flavius"><supplied reason="lost"><expan><abbr>Fl</abbr><ex>auio</ex></expan></supplied></name> 
                     <name nymRef="Valerius"><expan><abbr><supplied reason="lost">Va</supplied>l</abbr><ex>erio</ex></expan></name> <name nymRef="Constantinus">Constantino</name>
-            <supplied reason="lost" cert="low"><w><expan><abbr>P</abbr><ex>io</ex></expan></w> <w><expan><abbr>F</abbr><ex>elici</ex></expan></w></supplied> 
-                    <lb n="3"/> <w><expan><abbr><supplied reason="lost">in</supplied>uic</abbr><ex>to</ex></expan></w> <w><expan><abbr>tr</abbr><ex>iumphatori</ex></expan></w>
-                    <w><expan><abbr><unclear>m</unclear><supplied reason="lost">a</supplied>x</abbr><ex>imo</ex></expan></w> 
+            <supplied reason="lost" cert="low"><w lemma="pius"><expan><abbr>P</abbr><ex>io</ex></expan></w> <w lemma="Felix"><expan><abbr>F</abbr><ex>elici</ex></expan></w></supplied> 
+                    <lb n="3"/> <w lemma="invictus"><expan><abbr><supplied reason="lost">in</supplied>uic</abbr><ex>to</ex></expan></w> <w lemma="triumfator"><expan><abbr>tr</abbr><ex>iumphatori</ex></expan></w>
+                    <w lemma="maximus"><expan><abbr><unclear>m</unclear><supplied reason="lost">a</supplied>x</abbr><ex>imo</ex></expan></w> 
                    <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></persName></date> <w lemma="et">e<supplied reason="lost">t</supplied></w> 
                     <persName type="emperor"><lb n="4"/><persName type="emperor" key="constantinussecundus"><name nymRef="Flavius"><supplied reason="lost"><expan><abbr>Fl</abbr><ex>auio</ex></expan></supplied></name> 
-                    <name nymRef="Claudius"><expan><abbr>Cl</abbr><ex>audio</ex></expan></name> <name nymRef="Constantinus">Constantino</name></persName> <w><supplied reason="lost">et</supplied></w> 
+                    <name nymRef="Claudius"><expan><abbr>Cl</abbr><ex>audio</ex></expan></name> <name nymRef="Constantinus">Constantino</name></persName> <w lemma="et"><supplied reason="lost">et</supplied></w> 
                     <lb n="5"/><persName type="emperor" key="constantiussecundus"><name nymRef="Flavius"><supplied reason="lost"><expan><abbr>Fl</abbr><ex>auio</ex></expan></supplied></name> 
                     <name nymRef="Iulius"><expan><abbr><supplied reason="lost">Iu</supplied>l</abbr><ex>io</ex></expan></name> <name nymRef="Constantius">Constantio</name></persName>
-            <w><supplied reason="lost">et</supplied></w> 
+            <w lemma="et"><supplied reason="lost">et</supplied></w> 
                     <lb n="6"/><del><persName type="emperor" key="constans"><name nymRef="Flavius"><supplied reason="lost"><expan><abbr>Fl</abbr><ex>auio</ex></expan></supplied></name> 
                         <name nymRef="Iulius"><expan><abbr>Iul</abbr><ex>io</ex></expan></name> <name nymRef="Constans">Constanti</name></persName></del> 
-                    <lb n="7"/> <w><supplied reason="lost" cert="low"><expan><abbr>nob</abbr><ex>ilissimis</ex></expan></supplied></w>
-            <name nymRef="Caesar"><supplied reason="lost" cert="low"><expan><abbr>Caes</abbr><ex>aribus</ex></expan></supplied></name>  <w><supplied reason="lost" cert="low">tribus</supplied></w> </persName>
+                    <lb n="7"/> <w lemma="nobilis"><supplied reason="lost" cert="low"><expan><abbr>nob</abbr><ex>ilissimis</ex></expan></supplied></w>
+            <name nymRef="Caesar"><supplied reason="lost" cert="low"><expan><abbr>Caes</abbr><ex>aribus</ex></expan></supplied></name>  <w lemma="tres"><supplied reason="lost" cert="low">tribus</supplied></w> </persName>
                     <lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
 </ab>
 </div>

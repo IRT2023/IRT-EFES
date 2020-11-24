@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2014-06-05" who="CMR">created text from typescript</change>
          
       </revisionDesc>
@@ -125,8 +125,8 @@
             <div type="textpart" n="iii"><ab>
                        <lb n="1"/><orig><unclear>α</unclear>π</orig><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><persName type="attested"><name nymRef="Πτολεμ-"><seg part="I">Πτο<supplied reason="lost">λεμ</supplied></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
-   <lb n="3"/> <w>ϲτρα<supplied reason="lost">τιώτ</supplied> 
-               <lb n="4" break="no"/>ηϲ</w> <space quantity="2" unit="character"/>
+   <lb n="3"/><w lemma="στρατιώτης">ϲτρα<supplied reason="lost">τιώτ</supplied><lb 
+      n="4" break="no"/>ηϲ</w> <space quantity="2" unit="character"/>
                     </ab></div>
             <div type="textpart" n="iv"><ab>
                        <lb n="1"/><gap reason="lost" extent="5" unit="character"/><orig>ρα</orig> <space quantity="3" unit="character"/>
@@ -147,7 +147,7 @@
             iv. . . . ] <ref target="https://godot.date/id/WTdHnctg6M4AcBjx6qqWSC">Year 72</ref> [ . . . ;  v: . . . -]erios; vi: . . . -]arkes, I came here.</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
-            <p></p>
+            <p/>
          </div>
          
       </body>

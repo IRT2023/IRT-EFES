@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription from the photograph (Reynolds)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-02" who="Pietro">metadata</change>
@@ -124,8 +124,8 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><persName type="attested" key="lgpn:V1-65417"><name nymRef="Ποσειδώνιος"><supplied reason="lost">Ποσει</supplied>δώνιος</name> <persName type="attested" key="lgpn:V1-65418"><name nymRef="Ποσειδώνιος">Ποσειδωνίω</name></persName></persName>
-                    <lb n="2"/> <w><supplied reason="lost">ἱερατ</supplied><unclear>ε</unclear>ύων</w> <persName type="divine" key="dionysus"><name nymRef="Διόνυσος">Διόνυσον</name> <space quantity="2" unit="character"/>
-                    <lb n="3"/><supplied reason="lost"> <space quantity="5" unit="character"/></supplied><w><supplied reason="lost">χ</supplied><unclear>α</unclear>ριδώταν</w></persName> <space quantity="5" unit="character"/>
+                    <lb n="2"/> <w lemma="ἱερατεύω"><supplied reason="lost">ἱερατ</supplied><unclear>ε</unclear>ύων</w> <persName type="divine" key="dionysus"><name nymRef="Διόνυσος">Διόνυσον</name> <space quantity="2" unit="character"/>
+                    <lb n="3"/><supplied reason="lost"> <space quantity="5" unit="character"/></supplied><w lemma="χαριδώτης"><supplied reason="lost">χ</supplied><unclear>α</unclear>ριδώταν</w></persName> <space quantity="5" unit="character"/>
                 </ab>
 </div>
          

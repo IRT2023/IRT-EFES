@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -93,6 +92,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-09-25" who="TW">Edited photo info</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -120,9 +120,9 @@
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> 
                     <w lemma="restituo">res<supplied reason="lost">tituerunt</supplied></w>
-                    <lb n="2"/> <w><supplied reason="lost">a</supplied></w> <placeName nymRef="#Cyrenae" ref="#cyrene"><supplied reason="lost">C</supplied>yren<supplied reason="lost">is</supplied></placeName>
+                    <lb n="2"/> <w lemma="ab"><supplied reason="lost">a</supplied></w> <placeName nymRef="#Cyrenae" ref="#cyrene"><supplied reason="lost">C</supplied>yren<supplied reason="lost">is</supplied></placeName>
                     <lb n="2a"/> <space extent="unknown" unit="character"/>
-                    <lb n="3"/> <w><expan><abbr>m</abbr><ex>ilia</ex></expan></w> <w><expan><abbr>p</abbr><ex>assuum</ex></expan></w>
+                    <lb n="3"/> <w lemma="milium"><expan><abbr>m</abbr><ex>ilia</ex></expan></w> <w lemma="passus"><expan><abbr>p</abbr><ex>assuum</ex></expan></w>
                     <num value="11"><unclear>XI</unclear></num>
                 </ab>
          </div>

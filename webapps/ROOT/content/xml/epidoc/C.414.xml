@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -117,7 +117,7 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="emperor" key="hadrianus"><w>θεὸς</w> <name nymRef="Ἁδριανός">Ἁδ<unclear>ρ</unclear><supplied reason="lost">ιανόϲ</supplied></name></persName>
+                    <lb n="1"/><persName type="emperor" key="hadrianus"><w lemma="θεός">θεὸς</w> <name nymRef="Ἁδριανός">Ἁδ<unclear>ρ</unclear><supplied reason="lost">ιανόϲ</supplied></name></persName>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-62601"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Ἀγχίστρατος"><unclear>Ἀ</unclear>γχίστρατο<supplied reason="lost">ϲ</supplied></name></persName>
                     <lb n="3"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιοϲ</ex></expan></name> <name nymRef="Νόβιος"><unclear>Ν</unclear><supplied reason="lost">ό</supplied>βιοϲ</name> <name nymRef="Ῥοῦφος">Ῥοῦφο<supplied reason="lost">ϲ</supplied></name></persName>
                     <lb n="4"/><persName type="attested"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Μάρκελλος"><supplied reason="lost">Μάρκ</supplied>ελλοϲ</name></persName>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -105,6 +104,7 @@
             </textClass>
         <creation>Transcription (Reynolds).</creation></profileDesc>
         <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
             <change when="2011-08-11" who="Pietro">entered and tagged text</change>
@@ -131,36 +131,36 @@
             
             <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-                <lb n="1"/><persName type="emperor" key="elagabalus"><w>Αὐτοκράτορι</w> <name nymRef="Καῖσαρ">Καίϲαρι</name>
+                <lb n="1"/><persName type="emperor" key="elagabalus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορι</w> <name nymRef="Καῖσαρ">Καίϲαρι</name>
 	<lb n="2"/><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκῳ</ex></expan></name> 
                 <name nymRef="Αὐρήλιος">Αὐρηλίῳ</name> 
                 <name nymRef="Ἀντωνῖνος"><del rend="erased">Ἀ<supplied reason="lost">ντω</supplied>νεί<supplied reason="lost">ν</supplied></del></name>
-	<lb n="3"/> <w>Εὐϲεβεῖ</w> <w>Εὐτυχεῖ</w> <name nymRef="Σεβαστός">Ϲεβαϲτῷ</name>,
-<lb n="4"/><persName type="emperor" key="caracalla"><w>Θεοῦ</w> 
+	<lb n="3"/> <w lemma="εὐεβής">Εὐϲεβεῖ</w> <w lemma="εὐτυχής">Εὐτυχεῖ</w> <name nymRef="Σεβαστός">Ϲεβαϲτῷ</name>,
+<lb n="4"/><persName type="emperor" key="caracalla"><w lemma="θεός">Θεοῦ</w> 
                 <name nymRef="Ἀντωνῖνος">Ἀντω<supplied reason="lost">νε</supplied>ίνο<supplied reason="lost">υ</supplied></name> 
-                <w lemma="υἱός">υἱῷ</w></persName>, <persName type="emperor" key="septimiusseverus"><w>Θεοῦ</w>
+                <w lemma="υἱός">υἱῷ</w></persName>, <persName type="emperor" key="septimiusseverus"><w lemma="θεός">Θεοῦ</w>
 <lb n="5"/><name nymRef="Σεουῆρος">Ϲευήρου</name> 
-                <w>ἐγγ<supplied reason="lost">ό</supplied>ν<supplied reason="lost">ῳ</supplied></w></persName>,
-                <w lemma="ἀρχιερεύς">ἀρχιερεῖ</w> <w><supplied reason="lost">μεγίϲτῳ</supplied></w>,
-<lb n="6"/> <w>δημαρχικῆς</w> <w>ἐξ<supplied reason="lost">ου</supplied>ϲίαϲ</w>,
-                <w>ὑπάτῳ</w> <supplied reason="lost" cert="low"><w lemma="ὁ">τὸ</w> 
+                <w lemma="ἔγγονος">ἐγγ<supplied reason="lost">ό</supplied>ν<supplied reason="lost">ῳ</supplied></w></persName>,
+                <w lemma="ἀρχιερεύς">ἀρχιερεῖ</w> <w lemma="μέγας"><supplied reason="lost">μεγίϲτῳ</supplied></w>,
+<lb n="6"/> <w lemma="δημαρχικός">δημαρχικῆς</w> <w lemma="ἐξουσία">ἐξ<supplied reason="lost">ου</supplied>ϲίαϲ</w>,
+                <w lemma="ὕπατος">ὑπάτῳ</w> <supplied reason="lost" cert="low"><w lemma="ὁ">τὸ</w> 
                     <num value="4">δ</num> </supplied></persName>
 <lb n="7"/> <w lemma="καί">καὶ</w> <date><persName type="emperor" key="severusalexander"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκῳ</ex></expan></name> 
                 <name nymRef="Αὐρήλιος">Αὐρηλίῳ</name> 
-                <name nymRef="Ἀλέξανδρος">Ἀλεξάνδρῳ</name> <w><supplied reason="lost" cert="low">ἐπιφανεϲτάτῳ</supplied></w>
+                <name nymRef="Ἀλέξανδρος">Ἀλεξάνδρῳ</name> <w lemma="ἐπιφανής"><supplied reason="lost" cert="low">ἐπιφανεϲτάτῳ</supplied></w>
 <lb n="8"/> <name nymRef="Kαῖσαρ"><supplied reason="lost">Κ</supplied>αίσαρι</name> 
-                <w lemma="υἱός">υἱῷ</w> <w lemma="ὁ">τοῦ</w> <w>κυρίου</w> 
+                <w lemma="υἱός">υἱῷ</w> <w lemma="ὁ">τοῦ</w> <w lemma="κύριος">κυρίου</w> 
                <name nymRef="Σεβαστός">Ϲεβα<supplied reason="lost">ϲτοῦ</supplied></name></persName></date>
                 <supplied reason="lost"><w lemma="καί">καὶ</w></supplied>
 <lb n="9"/><persName type="emperor" key="juliamaesa"><name nymRef="Ἰουλία">Ἰουλίᾳ</name> <name nymRef="Μαέσα">Μαέσῃ</name> 
                 <name nymRef="Σεβαστός">Ϲεβ<supplied reason="lost">α</supplied><unclear>ϲτ</unclear>ῇ </name></persName>
-                <w>μ<unclear>η</unclear><supplied reason="lost" cert="low">τρομήτορι</supplied></w>
-<lb n="10"/>	<w><unclear>κ</unclear><supplied reason="lost">αὶ</supplied></w>
+                <w lemma="μητρομήτωρ">μ<unclear>η</unclear><supplied reason="lost" cert="low">τρομήτορι</supplied></w>
+<lb n="10"/>	<w lemma="καί"><unclear>κ</unclear><supplied reason="lost">αὶ</supplied></w>
                 <persName type="emperor" key="juliasoemias"><name nymRef="Ἰουλία"><supplied reason="lost">Ἰουλίᾳ</supplied></name> 
                 <name nymRef="Σοαιμίς"><supplied reason="lost">Ϲοαιμίδ</supplied>ι </name>
               <name nymRef="Σεβαστός">Ϲεβαϲ<supplied reason="lost">τῇ</supplied></name> 
-                <w><supplied reason="lost">μητρὶ</supplied></w>
-<lb n="10α"/>	<supplied reason="lost"><w lemma="ὁ">τοῦ</w> <w>κυρίου</w> 
+                <w lemma="μήτηρ"><supplied reason="lost">μητρὶ</supplied></w>
+<lb n="10α"/>	<supplied reason="lost"><w lemma="ὁ">τοῦ</w> <w lemma="κύριος">κυρίου</w> 
     <name nymRef="Σεβαστός">Ϲεβαϲτοῦ</name> </supplied></persName> <gap reason="lost" extent="unknown" unit="line"/>
             </ab>
          </div>

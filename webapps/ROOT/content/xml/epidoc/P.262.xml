@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -131,8 +131,8 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><persName type="attested" key="lgpn:V1-61623"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊοϲ</ex></expan></name> <name nymRef="Ἰούλιος">Ἰούλιοϲ</name> <name nymRef="Στέφανος">Ϲτέφανοϲ</name></persName> <w lemma="ποιέω">ἐπόηϲεν</w> <note>sic</note> 
-                    <lb n="2"/> <w>ἐξαρχίδιον</w> <w lemma="ὁ">τὸν</w> <w>ϲηκόν</w> <w lemma="καί">καὶ</w> <w>τὰν</w> <w>ἐξέδραν</w> 
-                    <lb n="3"/><w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w>περίβολον</w> <w lemma="ἐκ">ἐξ</w> <w lemma="ἴδιος">ἰδιᾶν</w> <w lemma="δαπάνη">δαπανᾶ<space quantity="1" unit="character"/>ν</w> 
+                    <lb n="2"/> <w lemma="ἐξαρχίδιος">ἐξαρχίδιον</w> <w lemma="ὁ">τὸν</w> <w lemma="σηκός">ϲηκόν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰν</w> <w lemma="ἐξέδρα">ἐξέδραν</w> 
+                    <lb n="3"/><w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="περίβολος">περίβολον</w> <w lemma="ἐκ">ἐξ</w> <w lemma="ἴδιος">ἰδιᾶν</w> <w lemma="δαπάνη">δαπανᾶ<space quantity="1" unit="character"/>ν</w> 
                     <lb n="4"/> <space quantity="3" unit="character"/> <w lemma="ἑαυτός">ἑαυτῶ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖϲ</w> <w lemma="τέκνον">τέκνοιϲ</w> <space quantity="3" unit="character"/>.
                 </ab>
 </div>
@@ -157,7 +157,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Gaio Giulio Stefano costruì dalle fondamenta il recesso (questa tomba) e l'esedra ed il peribolo, 
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Gaio Giulio Stefano costruì dalle fondamenta il recesso (questa tomba) e l'esedra ed il peribolo, 
             a proprie spese, per sè e per i propri figli.</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>G(aios) Ioulios <supplied reason="explanation"><foreign xml:lang="la">G(aius) Julius</foreign></supplied> Stephanos built from the foundations this enclosure and recess and the surrounding wall at his own expense for himself and his children</p></div>
          </div>

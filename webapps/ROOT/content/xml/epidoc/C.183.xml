@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-05" who="MGDA">fixed  Goodchild-Reynolds bibliography</change>
@@ -131,9 +131,11 @@
             <w lemma="noster"><expan><abbr>n<am>n<del rend="erasure">n</del></am></abbr><ex>ostrorum trium</ex></expan></w></persName></persName></persName>
                     <lb n="4"/> <persName type="attested"><name nymRef="Valerius">Valerius </name> <space quantity="1" unit="character"/>
                     <lb n="5"/> <name nymRef="Valens">Valens</name></persName> <w lemma="praefectus"><expan><abbr>pr<unclear>a</unclear><supplied reason="lost">e</supplied>f</abbr><ex>ectus</ex></expan></w>
-                    <lb n="6"/><w lemma="cohors"><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> <supplied reason="lost"><num value="1">I</num> </supplied> <w><expan><abbr><supplied reason="lost">M</supplied>aced</abbr><ex>onicae</ex></expan></w>
-                    <lb n="7"/><w lemma="praeses">praesidi</w> <w lemma="optimus">opt<supplied reason="lost">i</supplied><lb n="8" break="no"/> mo</w>
-                    <w lemma="et"><unclear>et</unclear></w> <w lemma="benignus">beni<lb n="9" break="no"/><space quantity="1" unit="character"/> gnissimo</w> <space quantity="1" unit="character"/>
+                    <lb n="6"/><w lemma="cohors"><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> <supplied reason="lost"><num value="1">I</num> </supplied> <w lemma="Macedonicus"><expan><abbr><supplied reason="lost">M</supplied>aced</abbr><ex>onicae</ex></expan></w>
+                    <lb n="7"/><w lemma="praeses">praesidi</w> <w lemma="optimus">opt<supplied reason="lost">i</supplied><lb 
+                       n="8" break="no"/>mo</w>
+                    <w lemma="et"><unclear>et</unclear></w> <w lemma="benignus">beni<lb 
+                       n="9" break="no"/><space quantity="1" unit="character"/> gnissimo</w> <space quantity="1" unit="character"/>
                 </ab>
 </div>
          <div type="apparatus">

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -124,15 +124,15 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <space quantity="1" unit="character"/> <w>Νομοφ<supplied reason="lost">ύλ</supplied><unclear>α</unclear>κες</w> <space quantity="1" unit="character"/>
-                    <lb n="2"/><w lemma="ὁ">οἱ</w> <date ref="https://godot.date/id/JgwzYhBsPhjvzmBbAVwoET"><w lemma="ἐπί">ἐφ’</w><w>ἱαρ<supplied reason="lost">εῦς</supplied></w> <persName type="attested" key="lgpn:V1-65194"><name nymRef="Ξοῦθος">Ξούθω</name></persName></date>
+                    <lb n="1"/> <space quantity="1" unit="character"/> <w lemma="νομοφύλαξ">Νομοφ<supplied reason="lost">ύλ</supplied><unclear>α</unclear>κες</w> <space quantity="1" unit="character"/>
+                    <lb n="2"/><w lemma="ὁ">οἱ</w> <date ref="https://godot.date/id/JgwzYhBsPhjvzmBbAVwoET"><w lemma="ἐπί">ἐφ’</w><w lemma="ἱερεύς">ἱαρ<supplied reason="lost">εῦς</supplied></w> <persName type="attested" key="lgpn:V1-65194"><name nymRef="Ξοῦθος">Ξούθω</name></persName></date>
                         <lb n="3"/><persName type="attested" key="lgpn:V1-64419"><name nymRef="Ἰσίδωρος">Ἰσιδωρο<supplied reason="lost">ς</supplied></name> <persName type="attested" key="lgpn:V1-63757"><name nymRef="Ἐτέαρχος"><supplied reason="lost">Ἐ</supplied>τεάρχω</name></persName></persName>
                         <lb n="4"/><persName type="attested" key="lgpn:V1-64699"><name nymRef="Κλητόμαχος">Κλητόμα<supplied reason="lost">χος</supplied></name> <persName type="attested" key="lgpn:V1-64698"><name nymRef="Κλητόμαχος"><supplied reason="lost">Κ</supplied>λητομάχω</name></persName></persName>
                     <lb n="5"/><persName type="attested" key="lgpn:V1-65146"><name nymRef="Νίκιππος">Νίκιππος</name> <persName type="attested" key="lgpn:V1-63133"><name nymRef="Ἀριστόβουλος">Ἀριστοβούλω</name></persName></persName>
                     <lb n="6"/><persName type="attested" key="lgpn:V1-63863"><name nymRef="Εὔνικος">Εὔνικος</name> <persName type="attested" key="lgpn:V1-63803"><name nymRef="Εὔιππος">Εὐίππω</name></persName></persName>
                     <lb n="7"/><persName type="attested" key="lgpn:V1-63413"><name nymRef="Βίων">Βίων</name> <persName type="attested" key="lgpn:V1-64420"><name nymRef="Ἰσόγονος">Ἰσογόνω</name></persName> </persName>
                     <lb n="8"/><persName type="attested" key="lgpn:V1-64015"><name nymRef="Ἡλιόδωρος">Ἡλιόδωρος</name> <persName type="attested" key="lgpn:V1-64015"><name nymRef="Ἡλιόδωρος">Ἡλιοδώρω </name></persName></persName>
-                    <lb n="9"/> <space quantity="2" unit="character"/> <w>Γραμματές</w> <space quantity="2" unit="character"/>
+                    <lb n="9"/> <space quantity="2" unit="character"/> <w lemma="γραμματεύς">Γραμματές</w> <space quantity="2" unit="character"/>
                     <lb n="10"/><persName type="attested" key="lgpn:V1-65067"><name nymRef="Μουσαῖος">Μουσαῖο<supplied reason="lost">ς</supplied></name> <persName type="attested" key="lgpn:V1-65068"><name nymRef="Μουσαῖος">Μουσα<supplied reason="lost">ίω</supplied></name></persName></persName>
                     <lb n="11"/><persName type="attested" key="lgpn:V1-65739"><name nymRef="Σώστρατος">Σώστρατ<supplied reason="lost">ος</supplied></name> <persName type="attested"><name nymRef="Σώστρατος"><unclear>Σω</unclear><supplied reason="lost" cert="low">στράτω</supplied> </name></persName></persName>
                     <lb n="12"/><persName type="attested" key="lgpn:V1-64065"><name nymRef="Θαλίαρχος">Θαλίαρχ<supplied reason="lost">ος</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/> 
@@ -152,7 +152,7 @@
                Nikippos <supplied reason="subaudible">son</supplied> of Aristoboulos, Eunikos <supplied reason="subaudible">son</supplied> of Euippos, Bios <supplied reason="subaudible">son</supplied> of Isagonos <supplied reason="subaudible">and</supplied> the secretaries,
                Mousaios <supplied reason="subaudible">son</supplied> of Mousaios, Sostratos <supplied reason="subaudible">son</supplied> of So<supplied reason="lost">stratos</supplied>, 
             Thaliarchos <gap reason="lost" extent="unknown" unit="character"/>, set up <supplied reason="subaudible">the image of</supplied> Homonoia</p></div>
-         <div  type="translation" source="#theriault1996" xml:lang="fr"><p>Les nomophylaques (en charge) sous le prêtre Xouthos, Isidôros fils d'Etéarchos, 
+         <div type="translation" source="#theriault1996" xml:lang="fr"><p>Les nomophylaques (en charge) sous le prêtre Xouthos, Isidôros fils d'Etéarchos, 
             Klètomachos fils de Klètomachos, Nikippos fils d'Aristoboulos, Eunikos fils d'Euippos, Biôn fils d'Isogonos, Hèliodôros fils d'Hèliodôros; 
             secrétaires Mousaios fils de Mousaios, Sôstratos fils de ..., Thaliarchos fils de ..., ont consacré (une statue) d'Homonoia.</p></div></div>
          <div type="commentary">

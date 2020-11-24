@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription from the photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -127,7 +127,7 @@
                     <w lemma="beneficiarius">be<supplied reason="lost">neficiarius</supplied></w>
                     <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w></supplied> 
-                    <num value="3"><supplied reason="lost">I</supplied>II</num> <g ref="symbols.xml#stop"/> <w><expan><abbr>Au<supplied reason="lost">g</supplied></abbr><supplied reason="lost"><ex>ustae</ex></supplied></expan></w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <num value="3"><supplied reason="lost">I</supplied>II</num> <g ref="symbols.xml#stop"/> <w lemma="Augusta"><expan><abbr>Au<supplied reason="lost">g</supplied></abbr><supplied reason="lost"><ex>ustae</ex></supplied></expan></w> <gap reason="lost" extent="unknown" unit="character"/> 
                     <lb n="5"/><supplied reason="lost" cert="low"><w lemma="curo">curante</w></supplied> 
                     <persName type="attested"><name nymRef="Claudius"><expan><abbr>Cl</abbr><ex>audio</ex></expan></name> <g ref="symbols.xml#stop"/>
                     <name nymRef="Ai-"><seg part="I">A<unclear>i</unclear></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/> .

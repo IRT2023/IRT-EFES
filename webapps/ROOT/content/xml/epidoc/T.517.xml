@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -104,6 +103,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-05" who="MGDA">fixed CIG bibliography</change>
@@ -141,7 +141,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/Kd4DhoLPi3ixhYe9hAMHSj"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="89">πθ</num>  <rs type="month" key="epiphi"><w>Ἐπ<unclear>ει</unclear>φὶ</w></rs>
+                    <num value="89">πθ</num>  <rs type="month" key="epiphi"><w lemma="Ἐπιφί">Ἐπ<unclear>ει</unclear>φὶ</w></rs>
                     <gap reason="lost" quantity="1" unit="character"/></date>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-60593"><name nymRef="Θεόδοτος">Θεόδοτος</name>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60594"><name nymRef="Πτολεμαῖος">Πτολεμαίου</name></persName></persName>
@@ -149,7 +149,7 @@
                     <num value="80"><unclear>π</unclear></num> </date>
                     <lb n="5"/><date ref="https://godot.date/id/MFc5Jyri5NpR443UbdkRYE"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="4">δ</num>  
-                   <rs type="month"  key="hathyr"><w lemma="Ἁθύρ">Ἁθὺ<supplied reason="lost">ρ</supplied></w></rs> <gap reason="lost" quantity="1" unit="character"/></date>
+                   <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺ<supplied reason="lost">ρ</supplied></w></rs> <gap reason="lost" quantity="1" unit="character"/></date>
                     <lb n="6"/><persName type="attested" key="lgpn:V1-60595"><name nymRef="Καλλικλεία">Καλλικλεία</name>
                     <lb n="7"/><persName type="attested" key="lgpn:V1-60589"><name nymRef="Σωγένης">Σωγένους</name></persName></persName>
                     <lb n="8"/><date type="life-span" dur="P35Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
@@ -199,11 +199,11 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 19, Epiphi 3 Teodoto di Tolemeo, di anni 40.</p>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 19, Epiphi 3 Teodoto di Tolemeo, di anni 40.</p>
             <p>Anno 4, Hathyr -. Calliclea di Sogene, di anni 35.</p></div>
-            <div  type="translation" source="#gray1956" xml:lang="en"><p>Year ? . . . ., Theodotos son of Ptolemaios, aged 40.</p>
+            <div type="translation" source="#gray1956" xml:lang="en"><p>Year ? . . . ., Theodotos son of Ptolemaios, aged 40.</p>
             <p>Year 4, Athur, P . . ., Pheid(i)as, Philip (. . . ), sons (?) of Sogenes.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 89, . . Epiphi, Theodotos des Ptolemaios, 80 (Jahre)</p>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 89, . . Epiphi, Theodotos des Ptolemaios, 80 (Jahre)</p>
             <p>(Jahr) 4 . . . Hathyr, Kallikleia des Sogenes, 35 (Jahre).</p></div>
             <div type="translation" resp="#edd" xml:lang="en"> <p><ref target="https://godot.date/id/Kd4DhoLPi3ixhYe9hAMHSj">Year 89, Epeiph ?</ref>, Theodotos <supplied reason="subaudible">son</supplied> of 
                Ptolemaios, aged 40. </p>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -125,12 +125,12 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/FqV4PKe6aMiinUhupjgpyB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <supplied reason="lost" evidence="previouseditor"><num value="15">ιε</num></supplied>
-            <lb n="2"/><rs type="month"  key="choiak"><w lemma="Χοιάκ"><supplied reason="lost">Χοιά</supplied><supplied reason="lost" evidence="previouseditor">χι</supplied></w></rs> <supplied reason="lost" evidence="previouseditor"><num value="6">ς</num></supplied></date>
+            <lb n="2"/><rs type="month" key="choiak"><w lemma="Χοιάκ"><supplied reason="lost">Χοιά</supplied><supplied reason="lost" evidence="previouseditor">χι</supplied></w></rs> <supplied reason="lost" evidence="previouseditor"><num value="6">ς</num></supplied></date>
             <lb n="3"/><gap reason="lost" quantity="1" unit="character"/> <persName type="attested"><name nymRef="-αυρος"><seg part="F"><unclear>αυ</unclear>ρος</seg></name> 
                     <lb n="4"/><persName type="attested" key="lgpn:V1-61299"><name nymRef="Ἠρίλοχος">Ἠ<unclear>ριλ</unclear>όχου</name></persName></persName> 
                     <lb n="5"/><date type="life-span" dur="P48Y"><w lemma="ἔτος">ἐτῶν</w> <num value="48">μη</num> </date>
                     <lb n="6"/><persName type="attested" key="lgpn:V1-61599"><name nymRef="Σεβηριανή">Σεβηριανὴ</name></persName>
-            <lb n="7"/> <orig><unclear>ι</unclear>ε<unclear>υ</unclear></orig> <gap reason="lost" quantity="1" unit="character"/> <w><unclear>ἐ</unclear>τ<supplied reason="lost">ῶν</supplied></w> 
+            <lb n="7"/> <orig><unclear>ι</unclear>ε<unclear>υ</unclear></orig> <gap reason="lost" quantity="1" unit="character"/> <w lemma="ἔτος"><unclear>ἐ</unclear>τ<supplied reason="lost">ῶν</supplied></w> 
                     <lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
                 </ab>
 </div>

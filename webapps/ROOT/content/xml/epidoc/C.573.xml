@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription from stone and photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -130,16 +130,16 @@
 <ab>
                     <lb n="1"/><persName type="attested" key="lgpn:V1-62821"><supplied reason="lost" evidence="previouseditor"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name></supplied>
                         <name nymRef="Ἀμμώνις"><supplied reason="lost" evidence="previouseditor">Ἀμ</supplied>μώνιϲ</name></persName> <w lemma="βετράνος">βε<lb n="2" break="no"/><supplied reason="lost" evidence="previouseditor">τράν</supplied>οϲ</w>
-                    <w><unclear>λ</unclear>εγι<space quantity="1" unit="character"/><lb n="3" break="no"/><supplied reason="lost" evidence="previouseditor">όνο</supplied>ϲ</w> 
-   <w>δευτ<lb n="4" break="no"/><supplied reason="lost" evidence="previouseditor">έρηϲ</supplied></w> <w>Βοηθο<lb n="5" break="no"/><supplied reason="lost" evidence="previouseditor">ῦ</supplied></w>
-                    <w><supplied reason="lost" evidence="previouseditor">ἐλθ</supplied>ῶν</w>
+                    <w lemma="λεγίων"><unclear>λ</unclear>εγι<space quantity="1" unit="character"/><lb n="3" break="no"/><supplied reason="lost" evidence="previouseditor">όνο</supplied>ϲ</w> 
+   <w lemma="δεύτερος">δευτ<lb n="4" break="no"/><supplied reason="lost" evidence="previouseditor">έρηϲ</supplied></w> <w lemma="Βοηθός">Βοηθο<lb n="5" break="no"/><supplied reason="lost" evidence="previouseditor">ῦ</supplied></w>
+                    <w lemma="ἔρχομαι"><supplied reason="lost" evidence="previouseditor">ἐλθ</supplied>ῶν</w>
                     <w lemma="εἰς">ἰϲ</w> <w lemma="ὁ">τ<space quantity="1" unit="character"/><lb n="6" break="no"/><supplied reason="lost" evidence="previouseditor">ὴν</supplied></w>
                     <w lemma="ἴδιος"><supplied reason="lost" evidence="previouseditor">ἰδί</supplied><unclear>α</unclear>ν</w>
                     <w lemma="πατρίς">πα<space quantity="1" unit="character"/><lb n="7" break="no"/><supplied reason="lost" evidence="previouseditor">τρίδα</supplied></w>
                     <supplied reason="lost" evidence="previouseditor"><w lemma="διά">διὰ</w>
                     <w lemma="ἔτος"><unclear>ἐτ</unclear>ῶν</w>
-                    <lb n="8"/><num value="30">λ</num> <w>ἐφιλωπώνηϲε</w>
-                    <lb n="9"/> <w>ἑατῷ</w> <w>μνημῖον</w> <w lemma="ἔτι">ἔ<lb n="10" break="no"/>τι</w> <w>ζοῦϲ</w> <space quantity="3" unit="character"/></supplied>
+                    <lb n="8"/><num value="30">λ</num> <w lemma="φιλοπονέω">ἐφιλωπώνηϲε</w>
+                    <lb n="9"/> <w lemma="ἑαυτου">ἑατῷ</w> <w lemma="μνημεῖ́ον">μνημῖον</w> <w lemma="ἔτι">ἔ<lb n="10" break="no"/>τι</w> <w lemma="ζάω">ζοῦϲ</w> <space quantity="3" unit="character"/></supplied>
                 </ab>
 </div>
          <div type="apparatus">

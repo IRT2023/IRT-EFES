@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-18" who="MGDA">Tagged header information</change>
@@ -127,12 +127,12 @@
                        <persName type="attested" key="lgpn:V1-60178"><name nymRef="Φιλόκωμος">Φιλοκώμω</name></persName></persName>  <w lemma="καί">καὶ</w> 
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><milestone unit="block"/><persName type="attested"><name nymRef="-κος"><seg part="F">κω</seg></name></persName>  
    <persName type="attested" key="lgpn:V1-60178"><name nymRef="Φιλόκωμος">Φιλόκωμον</name></persName>
-                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">ἱαρι</supplied><milestone unit="block"/>τεύσαντα</w>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἱαριτεύω"><supplied reason="lost">ἱαρι</supplied><milestone unit="block"/>τεύσαντα</w>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>- s di Filocomo e - di co Filocomo di -, che era stato sacerdote</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>- s di Filocomo e - di co Filocomo di -, che era stato sacerdote</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p> . . .-]s <supplied reason="subaudible">son</supplied> of Philokomos, and  
                [ . . . <supplied reason="subaudible">son</supplied> of . . .]kos <supplied reason="subaudible">honoured</supplied> Philokomos [ . . . ] who served as a priest.</p></div>
          </div>

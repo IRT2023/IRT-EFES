@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-05" who="MGDA">fixed CIG bibliography</change>
@@ -141,7 +141,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/u35u8qqeEh6BTUtioYmrHU"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="21"><unclear>κ</unclear>α</num> <rs type="month" key="mesore"><w>Μεσορὴ</w></rs> <num value="24">κδ</num></date>
+                    <num value="21"><unclear>κ</unclear>α</num> <rs type="month" key="mesore"><w lemma="Μεσορή">Μεσορὴ</w></rs> <num value="24">κδ</num></date>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-60590"><name nymRef="Σωγένης">Σωγένης</name>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60591"><name nymRef="Δωσίθεος">Δωσιθέου</name></persName></persName> 
                     <lb n="4"/><date type="life-span" dur="P64Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
@@ -167,11 +167,11 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 21, Mesore. Sogene di Dositeo, di anni 45.</p></div>
-            <div  type="translation" source="#gray1956" xml:lang="en"><p><note>30</note> Phamenoth 24th, (S)ogenes, son of Dositheos, aged 64.</p></div>
-            <div  type="translation" source="#gray1956" xml:lang="en"><p><note>35</note>. . .. , Mesori . . . , Sogenes, son of Dositheos, aged 64.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>50.j</note> (Jahr) . . , 24.Phamenot, etc. [(Jahre)]</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>50.g</note>(Jahr) 21, 24.Mesore, Sogenes des Dositheos, 64 (Jahre).</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 21, Mesore. Sogene di Dositeo, di anni 45.</p></div>
+            <div type="translation" source="#gray1956" xml:lang="en"><p><note>30</note> Phamenoth 24th, (S)ogenes, son of Dositheos, aged 64.</p></div>
+            <div type="translation" source="#gray1956" xml:lang="en"><p><note>35</note>. . .. , Mesori . . . , Sogenes, son of Dositheos, aged 64.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>50.j</note> (Jahr) . . , 24.Phamenot, etc. [(Jahre)]</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>50.g</note>(Jahr) 21, 24.Mesore, Sogenes des Dositheos, 64 (Jahre).</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/u35u8qqeEh6BTUtioYmrHU">Year 21, Mesore 24</ref>, 
                Sogenes <supplied reason="subaudible">son</supplied> of Dositheos, aged 64.</p></div>
        </div>

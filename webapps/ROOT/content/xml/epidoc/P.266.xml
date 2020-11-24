@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -122,13 +122,12 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
-                    <lb n="1"/> <w>τίϲ</w> <w lemma="ἄν">ἂν</w> <w lemma="ἐνθάδε">ἐν<space quantity="3" unit="character"/> 
-                    <lb n="2" break="no"/>θά<unclear>δ</unclear>ε</w> <w>κακόν</w> 
+                    <lb n="1"/> <w lemma="τις">τίϲ</w> <w lemma="ἄν">ἂν</w> <w lemma="ἐνθάδε">ἐν<space quantity="3" unit="character"/> <lb n="2" break="no"/>θά<unclear>δ</unclear>ε</w> <w lemma="κακός">κακόν</w> 
                     <lb n="3"/> <w lemma="τις">τει</w> <w lemma="ποιέω">π<unclear>ο</unclear>υήϲη</w> <orig><unclear>ο</unclear>πλ<unclear>ο</unclear></orig> 
                     <lb n="4"/><orig>τμ<unclear>υη</unclear>ωτοιχω </orig>
-                    <lb n="5"/><orig><unclear>θ</unclear>υ</orig> <w lemma="καί">καὶ</w> <w>πάν 
-                    <lb n="6" break="no"/>τα</w> <orig>ξ</orig><gap reason="illegible" quantity="1" unit="character"/><orig>θε</orig><gap reason="illegible" quantity="1" unit="character"/><orig>οι</orig>
-                    <lb n="7"/><w lemma="καί">καὶ</w> <w lemma="μή">μὴ</w> <w>τύχαιτο</w> <orig>θαβηϲ</orig>
+                    <lb n="5"/><orig><unclear>θ</unclear>υ</orig> <w lemma="καί">καὶ</w> <w lemma="πᾶς">πάν<lb 
+                       n="6" break="no"/>τα</w> <orig>ξ</orig><gap reason="illegible" quantity="1" unit="character"/><orig>θε</orig><gap reason="illegible" quantity="1" unit="character"/><orig>οι</orig>
+                    <lb n="7"/><w lemma="καί">καὶ</w> <w lemma="μή">μὴ</w> <w lemma="τυγχάνω">τύχαιτο</w> <orig>θαβηϲ</orig>
                 </ab>
 </div>
          <div type="apparatus">

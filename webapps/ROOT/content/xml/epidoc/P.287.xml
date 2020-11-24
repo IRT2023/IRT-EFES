@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -123,9 +123,9 @@
                         <lb n="1"/><date ref="https://godot.date/id/k3i7T55b6VoAe2qJJvRQsJ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w> 
                         <num value="80">π</num> <gap reason="lost" quantity="5/6" unit="character"/><orig>τω</orig><gap reason="lost" quantity="1" unit="character"/>
                         <lb n="2"/><persName type="attested" key="lgpn:V1-61105"><name nymRef="Ἀπολλώνιος">Ἀπολλώνιο<unclear>ϲ</unclear></name></persName>
-                        <lb n="3"/><w lemma="εὖ">ε<unclear>ὖ</unclear></w> <w>ἔζ<unclear>ησ</unclear>α</w> <date type="life-span" dur="P50Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="50">ν</num> </date>
+                        <lb n="3"/><w lemma="εὖ">ε<unclear>ὖ</unclear></w> <w lemma="ζάω">ἔζ<unclear>ησ</unclear>α</w> <date type="life-span" dur="P50Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="50">ν</num> </date>
                        
-                        <lb n="4"/><rs type="month" key="thoth"><w>Θώθυ</w></rs> <num value="20">κ</num></date>
+                        <lb n="4"/><rs type="month" key="thoth"><w lemma="Θώθ">Θώθυ</w></rs> <num value="20">κ</num></date>
                     </ab>
 </div>
          <div type="apparatus">
@@ -151,7 +151,7 @@
             </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/k3i7T55b6VoAe2qJJvRQsJ">Year 80+</ref> .... I, Apollonios, lived well 
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/k3i7T55b6VoAe2qJJvRQsJ">Year 80+</ref> .... I, Apollonios, lived well 
                <supplied reason="subaudible">and died</supplied>, aged 50, on Thoth 20.</p></div></div>
          <div type="commentary">
             <head>Commentary</head>

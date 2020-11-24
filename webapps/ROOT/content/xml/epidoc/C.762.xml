@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
@@ -125,19 +125,19 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><gap reason="lost" extent="30" unit="character"/><orig><unclear>λλ</unclear></orig><gap reason="lost" extent="1" unit="character"/>
-   <lb n="2"/><supplied reason="lost"><w>ἤν</w> <w lemma="τις">τις</w> <w>ἀδικήϲῃ</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w></supplied> <w lemma="σύ">ϲου</w>
-                    <w lemma="ὁ">τῶν</w> <w lemma="ἐνταῦθα">ἐνταῦθα</w> <w>θε<lb n="3" break="no"/><supplied reason="lost">ομαχούντων</supplied></w> 
-   <w><supplied reason="lost">κακοπο</supplied><unclear>ί</unclear>ηϲον</w> <w lemma="ὁ">τὸν</w> <w lemma="οἶκος">οἶκον</w> <w lemma="αὐτός">αὐτοῦ</w>
+   <lb n="2"/><supplied reason="lost"><w lemma="ἐάν">ἤν</w> <w lemma="τις">τις</w> <w lemma="ἀδικέω">ἀδικήϲῃ</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w></supplied> <w lemma="σύ">ϲου</w>
+                    <w lemma="ὁ">τῶν</w> <w lemma="ἐνταῦθα">ἐνταῦθα</w> <w lemma="θεομαχέω">θε<lb n="3" break="no"/><supplied reason="lost">ομαχούντων</supplied></w> 
+   <w lemma="κακοποιέω"><supplied reason="lost">κακοπο</supplied><unclear>ί</unclear>ηϲον</w> <w lemma="ὁ">τὸν</w> <w lemma="οἶκος">οἶκον</w> <w lemma="αὐτός">αὐτοῦ</w>
                     <lb n="4"/><supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">τὸ</w> <w lemma="ὄνομα">ὄνομα</w> <w lemma="αὐτός">αὐτοῦ</w></supplied> 
-   <w><supplied reason="lost">ἐ</supplied>ξάλιψον</w> <w lemma="ἐν">ἐν</w> <w>γενεᾷ</w> <w>μιᾷ</w> <w lemma="καί">καὶ</w> <w>τὴν</w>
-<lb n="5"/><supplied reason="lost"><w>μερίδα</w> <w>αὐτοῦ</w></supplied> <w lemma="μετά"><supplied reason="lost">μετ</supplied>ὰ</w>
-                    <w lemma="ὁ">τῶν</w> <w>θεοκτόνων</w> <placeName type="ethnic" nymRef="#Ἰουδαῖος" ref="#ioudaios">Ἰουδαίων</placeName> <w>κα<lb n="6" break="no"/><supplied reason="lost">τάθεϲ</supplied></w> 
+   <w lemma="ἐξαλείφω"><supplied reason="lost">ἐ</supplied>ξάλιψον</w> <w lemma="ἐν">ἐν</w> <w lemma="γενεά">γενεᾷ</w> <w lemma="εἷς">μιᾷ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w>
+<lb n="5"/><supplied reason="lost"><w lemma="μερίς">μερίδα</w> <w lemma="αὐτοῦ">αὐτοῦ</w></supplied> <w lemma="μετά"><supplied reason="lost">μετ</supplied>ὰ</w>
+                    <w lemma="ὁ">τῶν</w> <w lemma="θεοκτόνος">θεοκτόνων</w> <placeName type="ethnic" nymRef="#Ἰουδαῖος" ref="#ioudaios">Ἰουδαίων</placeName> <w lemma="κατατίθημι">κα<lb n="6" break="no"/><supplied reason="lost">τάθεϲ</supplied></w> 
    <supplied reason="lost"><w lemma="ὁ">τῶν</w></supplied> <w lemma="δέ"><supplied reason="lost">δ</supplied>ὲ</w> 
-                    <w>φροντιζόντων</w> <w lemma="ὁ">τοῦ</w> <w lemma="ναός">ναοῦ</w> <w lemma="σύ">ϲου</w> <w>τού
-                    <lb n="7" break="no"/><supplied reason="lost">του</supplied></w> <persName type="divine" key="maria"><name nymRef="Παρθένος"><supplied reason="lost">Παρθέ</supplied>νε</name>
-                    <name nymRef="θεοτόκος">θεοτόκε</name></persName> <w lemma="μή">μὴ</w> <w>ἐκλείπῃ</w> <w lemma="ὁ">τὸ</w> <w lemma="γένος">γένοϲ</w> <w lemma="ἕως">ἕ<lb n="8" break="no"/><supplied reason="lost">ωϲ</supplied></w> 
+                    <w lemma="φροντίζω">φροντιζόντων</w> <w lemma="ὁ">τοῦ</w> <w lemma="ναός">ναοῦ</w> <w lemma="σύ">ϲου</w> <w lemma="οὗτος">τού<lb 
+                       n="7" break="no"/><supplied reason="lost">του</supplied></w> <persName type="divine" key="maria"><name nymRef="Παρθένος"><supplied reason="lost">Παρθέ</supplied>νε</name>
+                    <name nymRef="θεοτόκος">θεοτόκε</name></persName> <w lemma="μή">μὴ</w> <w lemma="ἐκλείπω">ἐκλείπῃ</w> <w lemma="ὁ">τὸ</w> <w lemma="γένος">γένοϲ</w> <w lemma="ἕως">ἕ<lb n="8" break="no"/><supplied reason="lost">ωϲ</supplied></w> 
    <supplied reason="lost"><w lemma="ὁ">τῆϲ</w></supplied> <w lemma="συντελεία"><supplied reason="lost">ϲυν</supplied>τελίαϲ</w>
-                    <w lemma="ὁ">τοῦ</w> <w>αἰῶνοϲ</w> <w lemma="ἀμήν">ἀμήν</w> <lb n="6"/> <g ref="symbols.xml#crux"/> <g ref="symbols.xml#leaf"/> </ab>
+                    <w lemma="ὁ">τοῦ</w> <w lemma="αἰών">αἰῶνοϲ</w> <w lemma="ἀμήν">ἀμήν</w> <lb n="6"/> <g ref="symbols.xml#crux"/> <g ref="symbols.xml#leaf"/> </ab>
 </div>
          <div type="apparatus">
             <listApp>

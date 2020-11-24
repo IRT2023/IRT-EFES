@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -47,7 +46,7 @@
                <history>
                   <origin>
                      <origPlace>It is probable that all four came originally from the architrave of Temple F.</origPlace>
-                     <origDate notBefore="0180" notAfter="0192"  precision="low" evidence="lettering reign">? 180-192 CE</origDate>
+                     <origDate notBefore="0180" notAfter="0192" precision="low" evidence="lettering reign">? 180-192 CE</origDate>
                   </origin>
                   
                      
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -123,9 +123,9 @@
                         
                         <lb n="0"/><del rend="erasure"><note>Erased name ? of Commodus</note></del>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>λισια</unclear></orig> 
-                        <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w> <w>ἐκ</w> <w><supplied reason="lost">θεμελίω</supplied>ν</w> <w>κατεσκεύασεν</w> <w>σὺν</w>
-                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w>κα<unclear>ὶ</unclear></w> 
-                        <w><unclear>τὸν</unclear></w> <gap reason="lost" quantity="4" unit="character"/><orig>πον</orig> <w>ἐκ</w> <w lemma="ὁ">τῶν</w> <w>ἰδίων</w>
+                        <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="θεμέλιος"><supplied reason="lost">θεμελίω</supplied>ν</w> <w lemma="κατασκευάζω">κατεσκεύασεν</w> <w lemma="σύν">σὺν</w>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί">κα<unclear>ὶ</unclear></w> 
+                        <w lemma="ὁ"><unclear>τὸν</unclear></w> <gap reason="lost" quantity="4" unit="character"/><orig>πον</orig> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w>
                         <space quantity="1" unit="character"/>  
                     
                     </ab></div><div subtype="section" n="c" type="textpart"><ab>

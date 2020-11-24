@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -135,10 +135,10 @@
             <div type="edition" xml:lang="la" xml:space="preserve">
                <ab>
                         <lb n="1"/><supplied reason="lost"><persName type="divine" key="zeus"><name nymRef="Iupiter"><expan><abbr>I</abbr><ex>upiter</ex></expan></name>
-                            <w><expan><abbr>o</abbr><ex>ptime</ex></expan></w> 
-                           <w><expan><abbr>m</abbr><ex>axime</ex></expan></w></persName>
+                            <w lemma="bonus"><expan><abbr>o</abbr><ex>ptime</ex></expan></w> 
+                           <w lemma="maximus"><expan><abbr>m</abbr><ex>axime</ex></expan></w></persName>
                             <w lemma="si">si</w> 
-                           <w><expan><abbr>r</abbr><ex>es</ex><abbr>p</abbr><ex>ublica</ex></expan></w> 
+                           <w lemma="respublica"><expan><abbr>r</abbr><ex>es</ex><abbr>p</abbr><ex>ublica</ex></expan></w> 
                             <w lemma="populus"><expan><abbr>p</abbr><ex>opuli</ex></expan></w> 
                             <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><expan><abbr>R</abbr><ex>omani</ex></expan></placeName> <placeName type="ethnic" nymRef="#Quiris" ref="#roma">Quiritium</placeName> 
                            <w lemma="imperium">imperium</w></supplied> 
@@ -149,7 +149,7 @@
                            <w lemma="populus">populi</w> 
                             <placeName type="ethnic" nymRef="#Romanus" ref="#roma">Romani</placeName> <placeName type="ethnic" nymRef="#Quiris" ref="#roma">Quiritium</placeName></supplied> 
                         <lb n="4"/><supplied reason="lost"><w lemma="sum">sunt</w> <w lemma="incolumis">incolumes</w> 
-                            <w lemma="sum">erunt</w> <w><expan><abbr>a</abbr><ex>nte</ex></expan></w> 
+                            <w lemma="sum">erunt</w> <w lemma="ante"><expan><abbr>a</abbr><ex>nte</ex></expan></w> 
                             <w lemma="dies"><expan><abbr>d</abbr><ex>iem</ex></expan></w> 
                            <num value="3">III</num> </supplied> 
                        <date> <w lemma="nonae"><unclear>non</unclear><supplied reason="lost">as</supplied></w> 
@@ -158,19 +158,19 @@
                         <w lemma="populus"><supplied reason="lost">pop</supplied>ulo</w> 
                   <placeName type="ethnic" nymRef="#Romanus" ref="#roma">Ro<lb n="6" break="no"/><supplied reason="lost">mano</supplied></placeName> 
                   <supplied reason="lost"><placeName type="ethnic" nymRef="#Quiris" ref="#roma">Quiritibus</placeName> 
-                            <w><expan><abbr>r</abbr><ex>ei</ex><abbr>public</abbr><ex>ae</ex></expan></w>
+                            <w lemma="respublica"><expan><abbr>r</abbr><ex>ei</ex><abbr>public</abbr><ex>ae</ex></expan></w>
                             <w lemma="populus"><expan><abbr>p</abbr><ex>opuli</ex></expan></w></supplied> 
                         <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><expan><abbr><unclear>R</unclear></abbr><ex>omani</ex></expan></placeName>
                         <placeName type="ethnic" nymRef="#Quiris" ref="#roma">Quiri<lb n="7" break="no"/><supplied reason="lost">tium</supplied></placeName>
                   <supplied reason="lost"><w lemma="sum">erunt</w>
                             <w lemma="sum">fuerint</w> <w lemma="et">et</w></supplied> 
-                        <w><expan><abbr><supplied reason="lost">I</supplied>mp</abbr><ex>eratorem</ex></expan></w> 
+                        <w lemma="imperator"><expan><abbr><supplied reason="lost">I</supplied>mp</abbr><ex>eratorem</ex></expan></w> 
                         <persName type="emperor" key="marcusaurelius" cert="low"><name nymRef="Caesar"><expan><abbr>Ca<supplied reason="lost">es</supplied></abbr><supplied reason="lost"><ex>arem</ex></supplied></expan></name> 
                         <lb n="8"/><supplied reason="lost"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcum</ex></expan></name>
                             <name nymRef="Aurelius">Aurelium</name> <name nymRef="Antoninus">Antoninum</name> 
                             <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustum</ex></expan></name></supplied> 
                         <name nymRef="Armeniacus"><supplied reason="lost">A</supplied>rm<supplied reason="lost">en</supplied><supplied reason="lost">iacum</supplied></name> </persName>
-                        <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w>seruaueris</w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="servo">seruaueris</w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
                </ab>
             </div>
          

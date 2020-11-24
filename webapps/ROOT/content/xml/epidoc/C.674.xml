@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -116,15 +116,15 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="emperor" key="antoninuspius"><supplied reason="lost"><w>Αὐτοκράτορα</w> <name nymRef="Καῖσαρ">Καίσαρα</name>
+                    <lb n="1"/><persName type="emperor" key="antoninuspius"><supplied reason="lost"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορα</w> <name nymRef="Καῖσαρ">Καίσαρα</name>
     <lb n="2"/><name nymRef="Τίτος"><expan><abbr>Τ</abbr><ex>ίτον</ex></expan></name> <name nymRef="Αἴλιος">Αἴλιον</name> <name nymRef="Ἀντωνῖνος">Ἀντωνεινὸν</name> <name nymRef="Σεβαστός">Σεβαστὸν</name>
-                    <lb n="3"/> <w>θεῶ</w> <name nymRef="Ἁδριανός">Ἁδριανῶ</name></supplied> <w><supplied reason="lost">υ</supplied><unclear>ἱ</unclear>ὸν</w>
-                    <w>θ<unclear>ε</unclear><supplied reason="lost">ῶ</supplied></w>
+                    <lb n="3"/> <w lemma="θεός">θεῶ</w> <name nymRef="Ἁδριανός">Ἁδριανῶ</name></supplied> <w lemma="υἱός"><supplied reason="lost">υ</supplied><unclear>ἱ</unclear>ὸν</w>
+                    <w lemma="θεός">θ<unclear>ε</unclear><supplied reason="lost">ῶ</supplied></w>
                     <lb n="2"/><supplied reason="lost"><name nymRef="Νέρουα">Νέρουα</name></supplied> <name nymRef="Τραιανός"><supplied reason="lost">Τραι</supplied><unclear>α</unclear>νῶ</name> 
-                    <w>υἱ<unclear>ω</unclear><supplied reason="lost">νὸν</supplied></w> 
-                    <lb n="3"/><gap reason="lost" extent="6" unit="character"/> <w><supplied reason="lost">τροφέ</supplied>α</w> 
-                    <w lemma="καί">κα<unclear>ὶ</unclear></w> <w><supplied reason="lost">σω
-                    <lb n="3a" break="no"/>τῆρα</supplied></w></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <w lemma="υἱωνός">υἱ<unclear>ω</unclear><supplied reason="lost">νὸν</supplied></w> 
+                    <lb n="3"/><gap reason="lost" extent="6" unit="character"/> <w lemma="τροφεύς"><supplied reason="lost">τροφέ</supplied>α</w> 
+                    <w lemma="καί">κα<unclear>ὶ</unclear></w> <w lemma="σωτήρ"><supplied reason="lost">σω<lb 
+                       n="3a" break="no"/>τῆρα</supplied></w></persName> <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
 </div>
          

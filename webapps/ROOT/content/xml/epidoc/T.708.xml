@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
            <change when="2013-07-09" who="JenniferSarha">fixed schematron error</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -134,9 +134,9 @@
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Πραξίλας"><supplied reason="lost" cert="low">Πρα</supplied>ξίλ<supplied reason="lost">ας</supplied></name>
                         <persName type="attested" key="lgpn:V1-60429"><name nymRef="Βουτίας">Βουτία</name></persName></persName>
                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-60426"><name nymRef="Ἄριστις"><supplied reason="lost">Ἄρ</supplied><unclear>ι</unclear>στις</name> </persName>
-                        <persName type="attested" key="lgpn:V1-60428"><name nymRef="Ζωΐλος"><supplied reason="lost" cert="low">Ζ</supplied>ωΐλο<unclear>ς</unclear></name></persName>
+                        <persName type="attested" key="lgpn:V1-60428"><name nymRef="Ζωΐλος"><supplied reason="lost" cert="low">Ζ</supplied>ωΐλο<unclear>ς</unclear></name></persName>
    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-60426"><name nymRef="Στυρβάκας">Στυρβάκας</name></persName> <space quantity="3" unit="character"/>
-                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w>ἔθη</w> <persName type="attested" key="lgpn:V1-60424"><name nymRef="Μολεύς">Μόλει</name></persName>
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἔθος">ἔθη</w> <persName type="attested" key="lgpn:V1-60424"><name nymRef="Μολεύς">Μόλει</name></persName>
                     <space quantity="3" unit="character"/>
                 </ab>
 </div>
@@ -154,7 +154,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>- o di Praxila Bout-io(ite)? Aristis Troilo Sturbaca per costime di Moles</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>- o di Praxila Bout-io(ite)? Aristis Troilo Sturbaca per costime di Moles</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>[ . . . Emisa]this. [ . . .?Pra]xilas of Boutias. [ . . . Ar]istis [ . . . ] Zoilos [ . . . ] Sturbakas customary companion of Moleus.</p></div>
          </div>
          

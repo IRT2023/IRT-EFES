@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>         
@@ -126,43 +126,45 @@
          <div type="edition" xml:space="preserve">
             <div subtype="face" n="a" xml:lang="la" type="textpart">
                <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/eNEx3CGAZpHkvKSFydWCjE"><persName type="emperor" key="vespasianus"><w><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
+                    <lb n="1"/><date ref="https://godot.date/id/eNEx3CGAZpHkvKSFydWCjE"><persName type="emperor" key="vespasianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
                     <name nymRef="Caesar">Caisar</name> <name nymRef="Vespasianus">Vesp<supplied reason="lost">a</supplied><lb n="2" break="no"/>sianus</name> <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name></persName>
-                  <expan>  <w><abbr>pont</abbr><ex>ifex</ex></w> <w><abbr>max</abbr><ex>imus</ex></w></expan>
-                    <lb n="3"/><expan><w><abbr><unclear>t</unclear>rib</abbr><ex>unicia</ex></w>
-                    <w><abbr>pot</abbr><ex>estate</ex></w></expan> <num value="5">V</num>
-                    <w><expan><abbr>imp</abbr><ex>erator</ex></expan></w>
-                    <num value="10">X</num> <expan><w><abbr>p</abbr><ex>ater</ex></w> 
-                    <w><abbr>p</abbr><ex>atriae</ex></w></expan> 
-                    <w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> <num value="5">V</num></date>
+                  <expan>  <w lemma="pontifex"><abbr>pont</abbr><ex>ifex</ex></w> <w lemma="maximus"><abbr>max</abbr><ex>imus</ex></w></expan>
+                    <lb n="3"/><expan><w lemma="tribunicius"><abbr><unclear>t</unclear>rib</abbr><ex>unicia</ex></w>
+                    <w lemma="potestas"><abbr>pot</abbr><ex>estate</ex></w></expan> <num value="5">V</num>
+                    <w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w>
+                    <num value="10">X</num> <expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> 
+                    <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan> 
+                    <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> <num value="5">V</num></date>
                     <lb n="4"/><w lemma="per">per</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintum</ex></expan></name> <name nymRef="Paconius">Paconium</name> <name nymRef="Agrippinus">Agrippi
                     <lb n="5" break="no"/>nu<unclear>m</unclear></name></persName> <w lemma="legatus"><expan><abbr>leg</abbr><ex>atum</ex></expan></w> <w lemma="suus">suum</w> <w lemma="ager">agrum</w>
-                    <lb n="6"/><w lemma="regius">regium</w> <expan><w><abbr>P</abbr><ex>opulo</ex></w> 
+                    <lb n="6"/><w lemma="regius">regium</w> <expan><w lemma="populus"><abbr>P</abbr><ex>opulo</ex></w> 
                     <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName></expan> <w lemma="restituo">restituit</w>
                </ab>
                <ab xml:lang="grc">
-                    <lb n="7"/><date ref="https://godot.date/id/eNEx3CGAZpHkvKSFydWCjE"><persName type="emperor" key="vespasianus"><w>Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖσαρ</name> 
-                    <lb n="8"/><name nymRef="Οὐεσπασιανός">Οὐεσπασιανὸς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιε<lb n="9" break="no"/>ρεὺς</w> <w>μέγιστος</w> <w>δημαρ<lb n="10" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <num value="5">ε</num></date> <space quantity="1" unit="character"/> 
+                    <lb n="7"/><date ref="https://godot.date/id/eNEx3CGAZpHkvKSFydWCjE"><persName type="emperor" key="vespasianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖσαρ</name> 
+                    <lb n="8"/><name nymRef="Οὐεσπασιανός">Οὐεσπασιανὸς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιε<lb n="9" break="no"/>ρεὺς</w> <w lemma="μέγας">μέγιστος</w> <w lemma="δημαρχικός">δημαρ<lb n="10" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <num value="5">ε</num></date> <space quantity="1" unit="character"/> 
                     <lb n="10a"/> <space extent="unknown" unit="line"/>
                </ab>
             </div>
             <div subtype="face" n="b" type="textpart" xml:lang="grc">
                <ab>
                         <lb n="1"/> <space quantity="3" unit="character"/>
-                        <w>Αὐ<unclear>τ</unclear><supplied reason="lost">οκράτω</supplied><lb n="2" break="no"/><unclear>ρ</unclear></w> <num value="10"><unclear>ι</unclear></num> <w>πατ<unclear>ὴ</unclear><supplied reason="lost">ρ</supplied></w> <w><supplied reason="lost">πα</supplied><lb n="3" break="no"/> <space quantity="1" unit="character"/> τρίδος</w> <w lemma="ὕπατος"><supplied reason="lost">ὕπα</supplied><lb n="4" break="no"/>τος</w> <supplied reason="lost"><num value="5">ε</num> 
+                        <w lemma="Αὐτοκράτωρ">Αὐ<unclear>τ</unclear><supplied reason="lost">οκράτω</supplied><lb n="2" break="no"/><unclear>ρ</unclear></w> <num value="10"><unclear>ι</unclear></num> <w lemma="πατήρ">πατ<unclear>ὴ</unclear><supplied reason="lost">ρ</supplied></w> <w lemma="πατρίς"><supplied reason="lost">πα</supplied><lb 
+                           n="3" break="no"/><space quantity="1" unit="character"/> τρίδος</w> <w lemma="ὕπατος"><supplied reason="lost">ὕπα</supplied><lb 
+                              n="4" break="no"/>τος</w> <supplied reason="lost"><num value="5">ε</num> 
                                     <space quantity="1" unit="character"/></supplied>.
                         <lb n="4a"/> <space extent="unknown" unit="line"/>
             </ab>
             </div>
             <div subtype="face" n="c" type="textpart" xml:lang="grc"><ab>
-                        <lb n="1"/> <w><supplied reason="lost">διὰ</supplied></w> 
-                        <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><supplied reason="lost"><expan><abbr>Κ</abbr><ex>ουΐντου</ex></expan></supplied></name>
+                        <lb n="1"/> <w lemma="διά"><supplied reason="lost">διὰ</supplied></w> 
+                        <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><supplied reason="lost"><expan><abbr>Κ</abbr><ex>ουΐντου</ex></expan></supplied></name>
                         <name nymRef="Πακώνιος"><supplied reason="lost">Πα</supplied><unclear>κω</unclear>νίου</name>
                         <name nymRef="Ἀγριππῖνος"><supplied reason="lost">Ἀγρ</supplied><lb n="2" break="no"/><supplied reason="lost">ι</supplied>ππίνου</name></persName>
-                        <lb n="3"/> <w lemma="ἴδιος">ἰδίου</w> <w>π<unclear>ρ</unclear><supplied reason="lost">ε</supplied>σ<lb n="4" break="no"/>β<unclear>ε</unclear>υτοῦ</w> <w><unclear>ἀγρ</unclear>ὸν</w>
-                        <w><supplied reason="lost">β</supplied><lb n="5" break="no"/>ασιλικ <space quantity="1" unit="character"/>ὸν</w> <expan><w lemma="δῆμος"><abbr>Δ</abbr><ex>ήμῳ</ex></w>
+                        <lb n="3"/> <w lemma="ἴδιος">ἰδίου</w> <w lemma="πρεσβευτής">π<unclear>ρ</unclear><supplied reason="lost">ε</supplied>σ<lb n="4" break="no"/>β<unclear>ε</unclear>υτοῦ</w> <w lemma="ἀγρός"><unclear>ἀγρ</unclear>ὸν</w>
+                        <w lemma="βασιλικός"><supplied reason="lost">β</supplied><lb n="5" break="no"/>ασιλικ <space quantity="1" unit="character"/>ὸν</w> <expan><w lemma="δῆμος"><abbr>Δ</abbr><ex>ήμῳ</ex></w>
                         <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><abbr>Ῥ</abbr><ex>ωμαίων</ex></placeName></expan>
-                        <lb n="6"/> <w><supplied reason="lost">ἀπ</supplied>οκατέσ<supplied reason="lost">τη</supplied><lb n="7" break="no"/>σεν</w> <space quantity="3" unit="character"/>
+                        <lb n="6"/> <w lemma="ἀποκαθίστημι"><supplied reason="lost">ἀπ</supplied>οκατέσ<supplied reason="lost">τη</supplied><lb n="7" break="no"/>σεν</w> <space quantity="3" unit="character"/>
                
             </ab>
             </div>

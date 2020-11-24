@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-10-10" who="TW">Edited pic code</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -135,7 +135,7 @@
                     <lb n="3"/><persName type="attested" key="lgpn:V1-64297"><name nymRef="Ἰάσων"><supplied reason="lost">Ἰά</supplied>σων</name> <persName type="attested" key="lgpn:V1-64848"><name nymRef="Λυσανίας">Λυσανί<supplied reason="lost">α</supplied></name></persName></persName> 
                     <lb n="4"/><persName type="attested" key="lgpn:V1-63554"><name nymRef="Δημήτρις"><unclear>Δ</unclear>ημῆτρις</name> <persName type="attested" key="lgpn:V1-64629"><name nymRef="Κλέαρχος">Κλεάρχ<supplied reason="lost">ω</supplied></name></persName></persName>
                     <lb n="5"/><persName type="attested" key="lgpn:V1-64721"><name nymRef="Κράτης"><unclear>Κ</unclear>ράτης</name> <persName type="attested" key="lgpn:V1-65774"><name nymRef="Τελεσίας">Τελεσ<unclear>ί</unclear><supplied reason="lost">α</supplied></name></persName></persName>
-                    <lb n="6"/> <w>τὰν</w> <persName type="divine" key="aphrodite"><name nymRef="Ἀφροδείτη">Ἀφροδ<unclear>ε</unclear><supplied reason="lost">ίταν</supplied></name></persName>
+                    <lb n="6"/> <w lemma="ὁ">τὰν</w> <persName type="divine" key="aphrodite"><name nymRef="Ἀφροδείτη">Ἀφροδ<unclear>ε</unclear><supplied reason="lost">ίταν</supplied></name></persName>
                     <lb n="7"/><space quantity="2" unit="character"/><w lemma="ἀνατίθημι">ἀνέθηκ<supplied reason="lost">αν</supplied></w>
                 </ab>
          </div>
@@ -150,7 +150,7 @@
          </div>
          
          <div type="translation" xml:space="preserve">
-            <div  type="translation" resp="#edd" xml:lang="en"><p><gap reason="lost" extent="unknown" unit="line"/> <supplied reason="subaudible">son</supplied> of Dionysios, <gap reason="lost" extent="unknown" unit="character"/>
+            <div type="translation" resp="#edd" xml:lang="en"><p><gap reason="lost" extent="unknown" unit="line"/> <supplied reason="subaudible">son</supplied> of Dionysios, <gap reason="lost" extent="unknown" unit="character"/>
                <supplied reason="subaudible">son</supplied> of Sopatros, Jason <supplied reason="subaudible">son</supplied> of Lysanias, Demetris <supplied reason="subaudible">son</supplied> of Klearchos,
             Krates <supplied reason="subaudible">son</supplied> of Telesias, set up the <supplied reason="subaudible">image of</supplied> Aphrodite.</p></div>
             <div type="translation" source="#vitali1932" xml:lang="it"><p>I nomofylaci... di Dionysio,... di Sopatro lason di Lysania. Demetris di Clearcho, Crates di Telesta, posero una statua di Afrodite</p></div>

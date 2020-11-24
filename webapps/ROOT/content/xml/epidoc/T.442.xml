@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -123,7 +123,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/Spbt4DMzCwiT7nrHqRYRcJ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="6">ϛ</num> <rs type="month" key="pachon"><w>Πα<lb n="2" break="no"/>χὼν</w></rs> <num value="4">δ</num></date>
+                    <num value="6">ϛ</num> <rs type="month" key="pachon"><w lemma="Παχών">Πα<lb n="2" break="no"/>χὼν</w></rs> <num value="4">δ</num></date>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60114"><name nymRef="Πρωτίων">Πρωτ<unclear>ί</unclear><lb n="4" break="no"/>ων</name> 
                        <persName type="attested" key="lgpn:V1-60115"><name nymRef="Λυσίας">Λυ<lb n="5" break="no"/>σία</name></persName></persName> 
             <date type="life-span" dur="P4Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>

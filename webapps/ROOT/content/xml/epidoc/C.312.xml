@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -141,10 +141,10 @@
 
                     <div type="textpart" n="a">
                        <ab><lb n="1"/><persName type="attested" key="lgpn:V1-65708"><name nymRef="Σωσίβιος">Σωσιβίῳ</name> <name nymRef="Ῥοῦφος">Ῥούφῳ</name></persName>
-                    <lb n="2"/> <space quantity="3" unit="character"/> <w>νέῳ</w> <space quantity="3" unit="character"/>
-                    <lb n="3"/> <w>τῷ</w> <w>ἀληθῶς</w> <space quantity="1" unit="character"/>
-                    <lb n="4"/> <w>καλλιέτει</w> <space quantity="1" unit="character"/>
-                    <lb n="5"/> <space quantity="1" unit="character"/> <w>εὐτυχῶς</w> <space quantity="1" unit="character"/>
+                    <lb n="2"/> <space quantity="3" unit="character"/> <w lemma="νέος">νέῳ</w> <space quantity="3" unit="character"/>
+                    <lb n="3"/> <w lemma="ὁ">τῷ</w> <w lemma="ἀληθής">ἀληθῶς</w> <space quantity="1" unit="character"/>
+                    <lb n="4"/> <w lemma="καλλιέτης">καλλιέτει</w> <space quantity="1" unit="character"/>
+                    <lb n="5"/> <space quantity="1" unit="character"/> <w lemma="εὐτυχῶς">εὐτυχῶς</w> <space quantity="1" unit="character"/>
                     <lb n="5a"/><gap reason="illegible" quantity="1" unit="line"/></ab></div>
                     <div type="textpart" n="b">
                        <ab><lb n="1"/> <orig>κοιρο</orig> <w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
@@ -152,8 +152,8 @@
                     <lb n="3"/> <gap reason="illegible" quantity="1" unit="line"/></ab></div>
             <div type="textpart" n="c">
                        <ab><lb n="1"/> <persName type="attested" key="lgpn:V1-64121"><name nymRef="Θεόδωρος">Θεοδώρῳ</name></persName>
-                    <lb n="2"/> <w lemma="ὁ">τῷ</w> <w>ἀληθῶϲ</w> <w>καλλιέτει</w>
-                    <lb n="3"/> <space quantity="1" unit="character"/> <w>εὐτυχῶϲ</w>  <space quantity="1" unit="character"/></ab></div>
+                    <lb n="2"/> <w lemma="ὁ">τῷ</w> <w lemma="ἀληθής">ἀληθῶϲ</w> <w lemma="καλλιέτης">καλλιέτει</w>
+                    <lb n="3"/> <space quantity="1" unit="character"/> <w lemma="εὐτυχής">εὐτυχῶϲ</w>  <space quantity="1" unit="character"/></ab></div>
                 
 </div>
          <div type="apparatus">
@@ -174,8 +174,8 @@
             <p>On the cave see <bibl><ptr target="stucchi1981"/></bibl>.</p>
             <p>Line a.1: Perhaps the son of the Sosibios Rouphos in <ref type="inscription" n="C.194">C.194</ref>, <ref type="inscription" n="C.195">C.195</ref>. </p>
             <p>Lines a.4, b.2: For this epithet applied to priests at Cyrene, see commentary on <ref type="inscription" n="C.222">C.222</ref>; 
-               For the emphatic ἀληθῶς here, and in <ref type="inscription" n="C.314">C.314</ref>, see Robert, <title >Hellenica XI-XII</title>, loc.cit. </p>
-           <!-- Lines 5, 8 For the acclamation see.  --> <p></p>
+               For the emphatic ἀληθῶς here, and in <ref type="inscription" n="C.314">C.314</ref>, see Robert, <title>Hellenica XI-XII</title>, loc.cit. </p>
+           <!-- Lines 5, 8 For the acclamation see.  --> <p/>
             
          </div>
          

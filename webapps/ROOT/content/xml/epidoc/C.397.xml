@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>   
@@ -128,10 +128,10 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                     <lb n="1"/><persName type="divine" key="demeter"><name nymRef="Δημήτηρ">Δάματρι</name></persName> <w lemma="καί">καὶ</w>
-                                 <persName type="divine" key="kore"><name nymRef="Κόρη">Κόραι</name></persName> <w>ἡρωίδα</w>
+                                 <persName type="divine" key="kore"><name nymRef="Κόρη">Κόραι</name></persName> <w lemma="ἡρωίς">ἡρωίδα</w>
                     <lb n="2"/><persName type="attested"><name nymRef="Κυδιμάχα">Κυδιμάχαν</name> <space quantity="2" unit="character"/>
                                  <persName type="attested"><name nymRef="Κλέαρχος">Κλεάρχω</name></persName></persName>
-                    <lb n="3"/> <w>ἀρετᾶς</w> <w>ἕνεκα</w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυραναῖοι</placeName>
+                    <lb n="3"/> <w lemma="ἀρετή">ἀρετᾶς</w> <w lemma="ἕνεκα">ἕνεκα</w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυραναῖοι</placeName>
                 </ab>
          </div>
         

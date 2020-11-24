@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -94,6 +93,7 @@
          </textClass>
       <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -117,13 +117,13 @@
             <div subtype="fragment" n="i" type="textpart"><ab>    
                         <lb n="1"/><persName type="attested" key="lgpn:V1-65519"><name nymRef="Πτολεμαῖος">Πτολε<supplied reason="lost">μαῖοϲ</supplied></name></persName> 
                         <lb n="2"/><persName type="attested" key="lgpn:V1-63566"><name nymRef="Διόδωρος">Διόδωροϲ</name></persName>
-                        <lb n="3"/><w>ἦλ<supplied reason="lost">θον</supplied></w> <w>οἱ</w> <orig>ιτιανο</orig></ab></div>
-                        <div  subtype="fragment" n="ii" type="textpart"><ab><lb n="1"/><orig>ν</orig></ab></div> 
-                        <div  subtype="fragment" n="iii" type="textpart"><ab><lb n="1"/><orig>ιη</orig> </ab>  </div>
-                        <div  subtype="fragment" n="iv" type="textpart"><ab><lb n="1"/><gap reason="lost" quantity="3" unit="character"/><orig>ηνιωι</orig> <orig>μ</orig></ab></div>
+                        <lb n="3"/><w lemma="ἔρχομαι">ἦλ<supplied reason="lost">θον</supplied></w> <w lemma="ὁ">οἱ</w> <orig>ιτιανο</orig></ab></div>
+                        <div subtype="fragment" n="ii" type="textpart"><ab><lb n="1"/><orig>ν</orig></ab></div> 
+                        <div subtype="fragment" n="iii" type="textpart"><ab><lb n="1"/><orig>ιη</orig> </ab>  </div>
+                        <div subtype="fragment" n="iv" type="textpart"><ab><lb n="1"/><gap reason="lost" quantity="3" unit="character"/><orig>ηνιωι</orig> <orig>μ</orig></ab></div>
                     <div subtype="fragment" n="v" type="textpart"><ab> 
-                        <lb n="1"/><w>ἦλ<supplied reason="lost" cert="low">θον</supplied></w>
-                       <lb n="2"/><orig><unclear>μ</unclear></orig><gap reason="lost" quantity="1" unit="character"/><w>ἦκα</w>
+                        <lb n="1"/><w lemma="ἔρχομαι">ἦλ<supplied reason="lost" cert="low">θον</supplied></w>
+                       <lb n="2"/><orig><unclear>μ</unclear></orig><gap reason="lost" quantity="1" unit="character"/><w lemma="ἤκω">ἦκα</w>
                        <lb n="3"/><orig>μιυλ<unclear>ω</unclear>νι</orig></ab></div>
               </div>      
 

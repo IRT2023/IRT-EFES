@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -93,6 +92,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-08-22" who="TW">tagged words</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -129,11 +129,11 @@
             <ab>
             <lb n="1"/><g ref="symbols.xml#leaf"/> <persName type="attested"><name nymRef="Σεμπρώνιος">Σεμπρώνιος</name>
 	<lb n="2"/><name nymRef="Ἄπερ">Ἄπερ</name></persName>
-                <date type="life-span" dur="P64Y"><w><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                <date type="life-span" dur="P64Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="64">ξδ</num> </date> <g ref="symbols.xml#leaf"/> <lb n="3"/><persName type="attested"><name nymRef="Σεμπρωνία">Σεμπρωνία</name>
 	<lb n="4"/><name nymRef="Μαξίμα">Μαξίμα</name></persName>
 	<lb n="5"/> <space extent="unknown" unit="character"/>
-                <date type="life-span" dur="P50Y"><w><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                <date type="life-span" dur="P50Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="50">ν</num> </date> <g ref="symbols.xml#leaf"/> <lb n="6"/> <space extent="unknown" unit="character"/>
                 <persName type="attested"><name nymRef="Σεμπρώνιος">Σεμπρώνι<supplied reason="lost">ο</supplied>ς</name></persName>
                 <gap reason="lost" extent="unknown" unit="character"/>
@@ -145,14 +145,14 @@
 <lb n="1"/><persName type="attested"><name nymRef="Σεμπρωνία">Σεμπρωνία</name>
 <lb n="2"/><name nymRef="Μαρκέλλα">Μαρκέλλα</name></persName>	
 <lb n="3"/> <space extent="unknown" unit="character"/>
-                   <date type="life-span" dur="P5Y"><w><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                   <date type="life-span" dur="P5Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                        <num value="5">ε</num> </date> <g ref="symbols.xml#leaf"/> </ab>
             </div>
                <div type="textpart" subtype="column" n="III">
                   <ab><lb n="1"/><persName type="attested"><name nymRef="Σεμπρώνιος">Σ<supplied reason="lost" cert="low">εμπρώνιος</supplied></name>
 <lb n="2"/> <space extent="unknown" unit="character"/> <name nymRef="Σταλάκκιος">Στα<supplied reason="lost" cert="low">λάκκιος</supplied></name></persName>	
 <lb n="3"/> <space extent="unknown" unit="character"/>
-                   <date type="life-span" dur="P21Y"><w><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                   <date type="life-span" dur="P21Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                        <g ref="symbols.xml#leaf"/> <num value="21">κα</num> </date> <g ref="symbols.xml#leaf"/> <lb n="4"/> <space extent="unknown" unit="character"/></ab>
                </div>
             </div>
@@ -163,7 +163,7 @@
             <p><note>b, Column I</note>: Sempronios Aper, aged 64. Sempronia Maxima, aged 50; Sempronios . . . 
             <note>Column II</note>: Sempronia Markella, aged 5.
             <note>Column III</note>:S[empronios?] Sta[lakkios] aged 21</p></div>
-            <div  type="translation" source="#AE" xml:lang="fr"><p><note>I</note>:  Sempronius Aper, âgé de 64 ans. Sempronia Maxima, âgée de 50 ans. Sempronius [?].
+            <div type="translation" source="#AE" xml:lang="fr"><p><note>I</note>:  Sempronius Aper, âgé de 64 ans. Sempronia Maxima, âgée de 50 ans. Sempronius [?].
             <note>Ii, III</note>: Sempronia Marcella, âgée de 5 ans. S[---] St[---], âgée de 21 ans</p></div>
 </div>
          <div type="commentary">

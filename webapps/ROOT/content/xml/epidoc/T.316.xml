@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -135,10 +135,10 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/gevRpUueRiQ2WjtbMuY2bU"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="15">ιε</num> <rs type="month"  key="hathyr"><w>Ἁθὺρ</w></rs> 
+                    <num value="15">ιε</num> <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs> 
                     <lb n="2"/><num value="18">ηι</num></date> 
                     <persName type="attested" key="lgpn:V1-60452"><name nymRef="Θαλασσίς"><unclear>Θ</unclear>α<unclear>λ</unclear><lb n="3" break="no"/>α<supplied reason="lost">σσὶς</supplied></name> 
-                    <persName type="attested"  key="lgpn:V1-60451"><name nymRef="Λυσανίας"><unclear>Λ</unclear><supplied reason="lost">υ</supplied><lb n="4" break="no"/>σ<supplied reason="lost">α</supplied>ν<supplied reason="lost">ί</supplied>α</name></persName></persName>
+                    <persName type="attested" key="lgpn:V1-60451"><name nymRef="Λυσανίας"><unclear>Λ</unclear><supplied reason="lost">υ</supplied><lb n="4" break="no"/>σ<supplied reason="lost">α</supplied>ν<supplied reason="lost">ί</supplied>α</name></persName></persName>
                     <lb n="5"/> <space quantity="1" unit="character"/> <date type="life-span" dur="P36Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="36">λϛ</num> </date>
                 </ab>
@@ -174,7 +174,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 15, Hathyr 8. Talassis ?</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 15, Hathyr 8. Talassis ?</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/gevRpUueRiQ2WjtbMuY2bU">Year 15, Hathyr 18</ref>, Thalassis 
                <supplied reason="subaudible">daughter</supplied> of Lysanias, aged 36.</p></div>
        </div>

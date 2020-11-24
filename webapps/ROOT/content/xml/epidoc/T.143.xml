@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -105,6 +104,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
           <change when="2011-03-15" who="MGDA">Tagged header information</change>
@@ -135,7 +135,7 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="part" n="i" type="textpart"><ab>
                         <lb n="1"/><persName type="attested"><name nymRef="Ἐμισαθις"><supplied reason="lost">Ἐμισ</supplied>άθις</name></persName>
-                        <w>ἔθη</w>  <persName type="attested" key="lgpn:V1-60213"><name nymRef="Φιλόκωμος">Φιλ<supplied reason="lost">οκώ</supplied><unclear>μ</unclear>ω</name></persName>
+                        <w lemma="ἔθος">ἔθη</w>  <persName type="attested" key="lgpn:V1-60213"><name nymRef="Φιλόκωμος">Φιλ<supplied reason="lost">οκώ</supplied><unclear>μ</unclear>ω</name></persName>
                     </ab></div>
             <div subtype="part" n="ii" type="textpart"><ab>
                         <lb n="1"/><persName type="attested" key="lgpn:V1-60167"><name nymRef="Ἰταιαλαν">Ἰταιαλα<unclear>ν</unclear></name></persName>
@@ -152,7 +152,7 @@
             <div subtype="part" n="v" type="textpart"><ab>
                         <lb n="1"/><gap reason="lost" quantity="2" unit="character"/>
                         <persName type="attested" key="lgpn:V1-60777"><name nymRef="Ἀρίββας"><supplied reason="lost">Ἀ</supplied><unclear>ρ</unclear>ιββας</name></persName>
-                        <w><expan><abbr><expan><abbr><g ref="symbols.xml#ΦΙΛ"/></abbr><ex>φίλ</ex></expan></abbr><ex>ος</ex></expan></w>
+                        <w lemma="φίλος"><expan><abbr><expan><abbr><g ref="symbols.xml#ΦΙΛ"/></abbr><ex>φίλ</ex></expan></abbr><ex>ος</ex></expan></w>
                         <persName type="attested"><name nymRef="Βοσύλιος">Βο<unclear>σ</unclear>υ<unclear>λ</unclear>ίω</name></persName>
                     </ab></div>
             <div subtype="part" n="vi" type="textpart"><ab>
@@ -187,7 +187,7 @@
                 </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>161: -this  Italeàn Euclide - ibba di Eufrosino. 162: Anno 19. Filocomo fi -ar- Casandro di A-</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>161: -this  Italeàn Euclide - ibba di Eufrosino. 162: Anno 19. Filocomo fi -ar- Casandro di A-</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> Emisathis, customary companion of Philokomos. <note>ii</note> Itaialan. 
                <note>iii</note> <ref target="https://godot.date/id/2kJ6Xzg5XNTahp89WC8CGL">Year 15</ref>: Nikandros A-. 
                <note>iv</note> Eukleitos. <note>v</note> [A]ribbas, friend of Bosulios. 

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -104,6 +103,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-01" who="Pietro">metadata</change>
@@ -142,7 +142,7 @@
                     <lb n="6"/><persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name> <name nymRef="Ἀντώνιος">Ἀντώνιος</name> <persName type="attested"><name nymRef="Φλάμμα">Φλάμμα</name></persName>
                     <lb n="7"/><w lemma="υἱός">υἱὸς</w> <name nymRef="Γέμελλος">Γέμελλος</name></persName>
                     <lb n="8"/><persName type="attested" key="lgpn:V1-63008"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name> <name nymRef="Κλαύδιος">Κλαύδιος</name> 
-                    <lb n="9"/><persName type="attested"><name nymRef="Ἀπολλώνιος">Ἀπολλωνίω</name></persName> <w>υἱὸς</w>
+                    <lb n="9"/><persName type="attested"><name nymRef="Ἀπολλώνιος">Ἀπολλωνίω</name></persName> <w lemma="υἱός">υἱὸς</w>
                     <lb n="10"/> <space quantity="1" unit="character"/> <name nymRef="Πρεῖσκος">Πρεῖσκος</name></persName> <space quantity="3" unit="character"/> 
                     <lb n="11"/><persName type="attested" key="lgpn:V1-63061"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name> <name nymRef="Κλαύδιος">Κλαύδιος</name> <space quantity="1" unit="character"/>
                     <lb n="12"/><persName type="attested" key="lgpn:V1-63071"><name nymRef="Ἀρίσταρχος">Ἀριστάρχω</name></persName>

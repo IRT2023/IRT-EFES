@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -126,7 +126,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/yYzNKHRj9igd2u9BZZLrQW"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="7">ζ</num> <w>Θώ<unclear>θ</unclear><supplied reason="lost">υ</supplied></w> 
+                    <num value="7">ζ</num> <w lemma="Θώθ">Θώ<unclear>θ</unclear><supplied reason="lost">υ</supplied></w> 
                     <lb n="2"/><num value="15">ει</num></date> <persName type="attested" key="lgpn:V1-60455"><name nymRef="Λεύκιππος">Λε<unclear>ύ</unclear><supplied reason="lost">κιπ</supplied><lb n="3" break="no"/>πος</name></persName> 
                     <persName type="attested"><name nymRef="Λ-"><seg part="I"><unclear>Λ</unclear></seg></name></persName><gap reason="lost" quantity="4" unit="character"/> 
                     <lb n="4"/><gap reason="lost" quantity="2" unit="character"/> 
@@ -157,7 +157,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 7, Thothy 15. Leucippo di L-</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 7, Thothy 15. Leucippo di L-</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/yYzNKHRj9igd2u9BZZLrQW">Year 7, Thoth 15</ref>, Leu[kip]pos 
                <supplied reason="subaudible" cert="low">son</supplied> of L-</p></div>
        </div>

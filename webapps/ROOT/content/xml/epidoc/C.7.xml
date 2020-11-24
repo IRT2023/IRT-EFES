@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -104,6 +103,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>         
@@ -174,40 +174,40 @@
                            <num value="2">II</num> </supplied></date> 
                     <lb n="2"/><w lemma="ciuitas"><supplied reason="lost">ciuitati</supplied></w> 
                   <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene"><supplied reason="lost">Cy</supplied><unclear>r</unclear>enensium</placeName> 
-                    <placeName  nymRef="#Caesareum" ref="#caesareum"><supplied reason="lost">Caesareu</supplied><unclear>m</unclear></placeName> <g ref="symbols.xml#leaf"/>
+                    <placeName nymRef="#Caesareum" ref="#caesareum"><supplied reason="lost">Caesareu</supplied><unclear>m</unclear></placeName> <g ref="symbols.xml#leaf"/>
                   <w lemma="tumultus">tumul<supplied reason="lost">tu</supplied></w> <placeName type="ethnic" nymRef="#Iudaicus" ref="#ioudaios"><supplied reason="lost">Iudaic</supplied>o</placeName>
-                    <w lemma="diruo">dirutum</w> <supplied reason="lost"><w>et</w> <w lemma="exuro">exustum</w></supplied> 
+                    <w lemma="diruo">dirutum</w> <supplied reason="lost"><w lemma="et">et</w> <w lemma="exuro">exustum</w></supplied> 
                   <supplied reason="lost" cert="low"><w lemma="restituo">restitui</w> <w lemma="iubeo">iussit</w></supplied> <space unit="character" quantity="2"/>
                </ab>
                <ab xml:lang="grc">
-                    <lb n="3"/><date ref="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ"><persName type="emperor" key="hadrianus"><w><supplied reason="lost">Αὐτοκράτωρ</supplied></w> 
+                    <lb n="3"/><date ref="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτωρ</supplied></w> 
                   <name nymRef="Καῖσαρ">Καῖσαρ</name> 
-                  <w>θ<supplied reason="lost">εοῦ</supplied></w> 
+                  <w lemma="θεός">θ<supplied reason="lost">εοῦ</supplied></w> 
                     <persName type="emperor" key="traianus"><supplied reason="lost"><name nymRef="Τραιανός">Τραιανοῦ</name></supplied></persName> 
                   <name nymRef="Παρθικός"><supplied reason="lost">Π</supplied>αρθικ<supplied reason="lost">οῦ</supplied></name> 
-                  <w><supplied reason="lost">υἱὸς</supplied></w>
-                    <w>θεοῦ</w> <persName type="emperor" key="hadrianus"><name nymRef="Νέρβα">Νέρου<supplied reason="lost">α</supplied></name></persName> 
+                  <w lemma="υἱός"><supplied reason="lost">υἱὸς</supplied></w>
+                    <w lemma="θεός">θεοῦ</w> <persName type="emperor" key="hadrianus"><name nymRef="Νέρβα">Νέρου<supplied reason="lost">α</supplied></name></persName> 
                   <supplied reason="lost"><w lemma="υἱωνός">υἱωνὸς</w> 
                      <name nymRef="Τραιανός">Τραιανὸς</name> <name nymRef="Ἁδριανός">Ἁδριανὸς</name> 
-                  <name nymRef="Σεβαστός">Σεβαστὸς</name></supplied></persName> <w><supplied reason="lost">ἀρ</supplied>χιερεὺς</w> <space unit="character" quantity="2"/>
-                    <lb n="4"/> <w><supplied reason="lost">μέγιστος</supplied></w> <w>δημαρχικῆς</w> 
-                    <w><supplied reason="lost">ἐξουσία</supplied><unclear>ς</unclear></w> <w lemma="ὁ">τὸ</w> 
+                  <name nymRef="Σεβαστός">Σεβαστὸς</name></supplied></persName> <w lemma="ἀρχιερεύς"><supplied reason="lost">ἀρ</supplied>χιερεὺς</w> <space unit="character" quantity="2"/>
+                    <lb n="4"/> <w lemma="μέγας"><supplied reason="lost">μέγιστος</supplied></w> <w lemma="δημαρχικός">δημαρχικῆς</w> 
+                    <w lemma="ἐξουσία"><supplied reason="lost">ἐξουσία</supplied><unclear>ς</unclear></w> <w lemma="ὁ">τὸ</w> 
                   <num value="2"><unclear>β</unclear></num> 
                   <supplied reason="lost"><w lemma="ὕπατος">ὕπατος</w>
                         <w lemma="ὁ">τὸ</w> <num value="2">β</num> </supplied></date> 
-                  <w><supplied reason="lost">τ</supplied><unclear>ῇ</unclear></w> <w>πόλει</w> <g ref="symbols.xml#leaf"/>
-                  <w><unclear>τ</unclear>ὸ</w> <space quantity="1" unit="character"/>
+                  <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear>ῇ</unclear></w> <w lemma="πόλις">πόλει</w> <g ref="symbols.xml#leaf"/>
+                  <w lemma="ὁ"><unclear>τ</unclear>ὸ</w> <space quantity="1" unit="character"/>
                   <placeName nymRef="#Καισάρειον" ref="#caesareum">Κα<unclear>ι</unclear><supplied reason="lost" cert="low">σάρειον</supplied></placeName> 
                         <supplied reason="lost"><w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῶι</w> 
                            <placeName type="ethnic" nymRef="#Ἰουδαικός" ref="#ioudaios">Ἰουδαικῶι</placeName> <w lemma="τάραχος">ταράχωι</w>
-                           <w>κατεστραμμένον</w></supplied>
-                  <w><supplied reason="lost">κα</supplied>τασταθῆναι</w> 
-                  <w>ἐκέλευσ<supplied reason="lost">εν</supplied></w>.
+                           <w lemma="καταστρέφω">κατεστραμμένον</w></supplied>
+                  <w lemma="καθίστημι"><supplied reason="lost">κα</supplied>τασταθῆναι</w> 
+                  <w lemma="κελεύω">ἐκέλευσ<supplied reason="lost">εν</supplied></w>.
                </ab>
             </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>Lines 1-2</note>: Der Imperator Caesar, Sohn des zum Gott erhobenen Traianus Parthicus, Enkel des 
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>Lines 1-2</note>: Der Imperator Caesar, Sohn des zum Gott erhobenen Traianus Parthicus, Enkel des 
             zum Gott erhobenen Nerva, Traianus Hadrianus Augustus, Pontifex Maximus, im zweiten Jahr der tribunizischen Gewalt, zum zweiten Mal Konsul, befahl, dass für 
             die Bürgerschaft der Kyrener das im jüdischen Aufstand zerstörte und abgebrannte Caesareum widerhergestellt werde.</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><note>Lines 1-2</note>: <ref target="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ">[Emperor Caesar] son of the deified Trajan, [victor in Parthia,] 

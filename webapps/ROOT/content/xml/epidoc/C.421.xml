@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription from fragments and from pre-war photographs (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-05" who="MGDA">fixed  Goodchild-Reynolds bibliography</change>
@@ -129,15 +129,15 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="part" n="a" type="textpart"><ab>   
                         
-                        <lb n="1"/> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τᾶς</w> <date><persName type="emperor" key="commodus"><w>Αὐτοκράτορος</w> <name nymRef="Καῖσαρ">Καίσαρος</name> <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκω</ex></expan></name> 
+                        <lb n="1"/> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τᾶς</w> <date><persName type="emperor" key="commodus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορος</w> <name nymRef="Καῖσαρ">Καίσαρος</name> <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκω</ex></expan></name> 
                         <name nymRef="Αὐρήλιος">Αὐρηλίω</name> <name nymRef="Κόμμοδος">Κο<unclear>μ</unclear><supplied reason="lost">μόδω</supplied></name>
-                        <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀν</supplied>τω<unclear>ν</unclear><supplied reason="lost">ε</supplied><unclear>ί</unclear>νω</name> <w>Εὐσε<supplied reason="lost">βοῦς</supplied></w> 
-                        <w>Εὐτυ<supplied reason="lost">χοῦς</supplied></w> <name nymRef="Σεβαστός">Σεβαστῶ</name></persName></date> <w>σ<supplied reason="lost">ω</supplied><unclear>τ</unclear>ηρί<supplied reason="lost">ας</supplied></w> <supplied reason="lost" cert="low"><w lemma="καί">καὶ</w> <w>νείκας</w></supplied>
-                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w>αἰωνίας</w></supplied> <w><supplied reason="lost">δια</supplied>μονᾶ<supplied reason="lost">ς</supplied></w> <gap reason="lost" extent="unknown" unit="character"/><orig>ς</orig> <w lemma="ὁ">τὸ</w> 
-            <w>ἄ<unclear>γ</unclear><supplied reason="lost">α</supplied><unclear>λ</unclear>μα</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="zeus"><name nymRef="Ζεύς">Διὸς</name></persName> <orig><unclear>Σ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> <w>ἐκ</w>
-                        <w>τῶ<unclear>ν</unclear></w> <w>ἰδί<supplied reason="lost">ων</supplied></w> <supplied reason="lost"><w>τᾶι</w></supplied>
-                        <w><supplied reason="lost">γλυ</supplied>κυτάται</w> <w>πατρ<supplied reason="lost" cert="low">ίδι</supplied></w>  <w><supplied reason="lost" cert="low">ἔδω</supplied>κεν</w> <w>κ<supplied reason="lost">αὶ</supplied></w>
-                        <w>ἀν<supplied reason="lost">έθηκε</supplied>ν</w> 
+                        <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀν</supplied>τω<unclear>ν</unclear><supplied reason="lost">ε</supplied><unclear>ί</unclear>νω</name> <w lemma="Εὐσεβής">Εὐσε<supplied reason="lost">βοῦς</supplied></w> 
+                        <w lemma="εὐτυχής">Εὐτυ<supplied reason="lost">χοῦς</supplied></w> <name nymRef="Σεβαστός">Σεβαστῶ</name></persName></date> <w lemma="σωτηρία">σ<supplied reason="lost">ω</supplied><unclear>τ</unclear>ηρί<supplied reason="lost">ας</supplied></w> <supplied reason="lost" cert="low"><w lemma="καί">καὶ</w> <w lemma="νείκη">νείκας</w></supplied>
+                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="αἰώνιος">αἰωνίας</w></supplied> <w lemma="διαμονή"><supplied reason="lost">δια</supplied>μονᾶ<supplied reason="lost">ς</supplied></w> <gap reason="lost" extent="unknown" unit="character"/><orig>ς</orig> <w lemma="ὁ">τὸ</w> 
+            <w lemma="ἄγαλμα">ἄ<unclear>γ</unclear><supplied reason="lost">α</supplied><unclear>λ</unclear>μα</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="zeus"><name nymRef="Ζεύς">Διὸς</name></persName> <orig><unclear>Σ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἐκ">ἐκ</w>
+                        <w lemma="ὁ">τῶ<unclear>ν</unclear></w> <w lemma="ἴδιος">ἰδί<supplied reason="lost">ων</supplied></w> <supplied reason="lost"><w lemma="ὁ">τᾶι</w></supplied>
+                        <w lemma="γλυκύς"><supplied reason="lost">γλυ</supplied>κυτάται</w> <w lemma="πατρίς">πατρ<supplied reason="lost" cert="low">ίδι</supplied></w>  <w lemma="δίδωμι"><supplied reason="lost" cert="low">ἔδω</supplied>κεν</w> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w>
+                        <w lemma="ἀνατίθημι">ἀν<supplied reason="lost">έθηκε</supplied>ν</w> 
                     
                     </ab></div><div subtype="part" n="b" type="textpart"><ab>
                             
@@ -188,15 +188,15 @@
 </div>
          <div type="apparatus">
             <head>Apparatus</head>
-            <listApp><app loc="a+i"><rdg  resp="#pesce1951"><note>On the basis of fragment i, reading ΣΥΝ, 
+            <listApp><app loc="a+i"><rdg resp="#pesce1951"><note>On the basis of fragment i, reading ΣΥΝ, 
                Pesce proposed to insert the formula καὶ ἱερᾶς 
                συνκλητῶ καὶ δάμω Ῥωμαίων; we believe 
                that this lengthens the line unduly.</note></rdg></app> 
-               <app  loc="a"><rdg resp="#pesce1951"><note>Pesce 
+               <app loc="a"><rdg resp="#pesce1951"><note>Pesce 
             proposed Διὸς Σ[ω]τηρί[ω]  using
                   here the fragment Σ[ . . ΤΗΡΙ which we have
                   interpreted as part of σ[ωτηρί]ας</note></rdg></app>
-               <app  loc="i + j + k + l"><note>Perhaps, after Διὸς, σὺν <unclear>τ</unclear>οῖ <unclear>π</unclear>[ερὶ τ]ὴν [β]άσιν [κόσμοι . . .</note></app></listApp>
+               <app loc="i + j + k + l"><note>Perhaps, after Διὸς, σὺν <unclear>τ</unclear>οῖ <unclear>π</unclear>[ερὶ τ]ὴν [β]άσιν [κόσμοι . . .</note></app></listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translations</head>
          <div type="translation" resp="#cmr" xml:lang="en"><p>On behalf of the safety [and victory and eternal] permanence of the Emperor Caesar M(arcus) Aurelius 

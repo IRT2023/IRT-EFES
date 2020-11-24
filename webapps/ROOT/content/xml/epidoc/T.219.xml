@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -93,6 +92,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -120,53 +120,53 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
-                    <lb n="1"/> <w>δί<unclear>χα</unclear></w> <w><supplied reason="lost">π<supplied reason="omitted">ροϲ</supplied></supplied>τάγμ<unclear>α</unclear><supplied reason="lost">τοϲ</supplied></w> <w lemma="ὁ">τὴν</w> 
-                        <w><supplied reason="lost">πάρ</supplied><unclear>οδ</unclear><supplied reason="lost">ον</supplied></w> 
-                        <space quantity="1" unit="character"/> <w lemma="ἐπί"><supplied reason="lost">ἐ</supplied>πὶ</w> <w><unclear>τ</unclear>οὺϲ</w> 
-                        <w>βαρ<supplied reason="lost">βάρουϲ</supplied></w> <supplied reason="lost"><w>ποιεῖν</w>· <w>τοὺϲ</w> <w lemma="δέ">δὲ</w> <w>ἐκ</w> <w lemma="ὁ">τοῦ</w> <w>ἔθνουϲ</w> <w>τῶν</w>
-        <placeName type="ethnic" nymRef="#Μάκαι" ref="#macae">Μακῶν</placeName> <w lemma="διά">διὰ</w> <w>γραμμάτων</w> <w lemma="ὁ">τοῦ</w> <w><expan><abbr><unclear>λα</unclear></abbr><ex>μπροτάτου</ex></expan></w> <w>πραιφέκτου</w> <w>ϲυγχωρῖϲθαι</w> 
-                           <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τὰ</w> <w>χωρία</w> 
-                           <placeName  nymRef="#Pentapolis" ref="#pentapolis">Πενταπόλεωϲ</placeName> <w>παραγίνεϲθαι</w>. <note>12</note> <w>Ὥϲτε</w> <w><unclear>π</unclear>αρὰ</w> <w>τοῖϲ</w> <w>γενναιοτάτοιϲ</w></supplied>
-                    <lb n="2"/><orig>γ</orig> <w>ϲτρατιώταιϲ</w> 
-                        <w>δί<space quantity="3" unit="character"/>χα</w> <w lemma="τις">τινὸς</w> <space quantity="5" unit="character"/>
+                    <lb n="1"/> <w lemma="δίχα">δί<unclear>χα</unclear></w> <w lemma="πρόσταγμα"><supplied reason="lost">π<supplied reason="omitted">ροϲ</supplied></supplied>τάγμ<unclear>α</unclear><supplied reason="lost">τοϲ</supplied></w> <w lemma="ὁ">τὴν</w> 
+                        <w lemma="πάροδος"><supplied reason="lost">πάρ</supplied><unclear>οδ</unclear><supplied reason="lost">ον</supplied></w> 
+                        <space quantity="1" unit="character"/> <w lemma="ἐπί"><supplied reason="lost">ἐ</supplied>πὶ</w> <w lemma="ὁ"><unclear>τ</unclear>οὺϲ</w> 
+                        <w lemma="βάρβαρος">βαρ<supplied reason="lost">βάρουϲ</supplied></w> <supplied reason="lost"><w lemma="ποιέω">ποιεῖν</w>· <w lemma="ὁ">τοὺϲ</w> <w lemma="δέ">δὲ</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἔθνος">ἔθνουϲ</w> <w lemma="ὁ">τῶν</w>
+        <placeName type="ethnic" nymRef="#Μάκαι" ref="#macae">Μακῶν</placeName> <w lemma="διά">διὰ</w> <w lemma="γράμμα">γραμμάτων</w> <w lemma="ὁ">τοῦ</w> <w lemma="λαμπρός"><expan><abbr><unclear>λα</unclear></abbr><ex>μπροτάτου</ex></expan></w> <w lemma="πραιφέκτος">πραιφέκτου</w> <w lemma="συγχωρίζω">ϲυγχωρῖϲθαι</w> 
+                           <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="χωρίον">χωρία</w> 
+                           <placeName nymRef="#Pentapolis" ref="#pentapolis">Πενταπόλεωϲ</placeName> <w lemma="παραγίγνομαι">παραγίνεϲθαι</w>. <note>12</note> <w lemma="ὥστε">Ὥϲτε</w> <w lemma="παρά"><unclear>π</unclear>αρὰ</w> <w lemma="ὁ">τοῖϲ</w> <w lemma="γενναῖος">γενναιοτάτοιϲ</w></supplied>
+                    <lb n="2"/><orig>γ</orig> <w lemma="στρατιώτης">ϲτρατιώταιϲ</w> 
+                        <w lemma="δίχα">δί<space quantity="3" unit="character"/>χα</w> <w lemma="τις">τινὸς</w> <space quantity="5" unit="character"/>
                          <w lemma="παρά">παρὰ</w> <w lemma="ὁ">τὸ</w> 
-                        <w lemma="δίκαιος">δίκ<supplied reason="lost">αιον</supplied></w> <supplied reason="lost"><w>ἐπιϲαγομένηϲ</w> <w>ἐπηρίαϲ</w> <w>παρέχεϲθαι</w>. <note>13</note> <w>Ὥϲτε</w> <w lemma="ὁ">τὸν</w> 
-                           <w>παραβαίνοντά</w> <w>τι</w> <w lemma="ὁ">τῶν</w> <w>τυπωθέντων</w> <w>πεντήκοντα</w> </supplied>
-                    <lb n="3"/> <w>χ<space quantity="2" unit="character"/>ρυϲίου</w> <w lemma="λίτρα">λίτραϲ</w> <space quantity="3" unit="character"/>
-                        <w>λόγῳ</w> <w>προϲτ<space quantity="1" unit="character"/>ίμου</w> 
-                        <w>με<space quantity="1" unit="character"/>θο<supplied reason="lost">δεύεϲθαι</supplied></w> 
-                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w>ταύταϲ</w> <w>περὶ</w> <w>τὴν</w> <w lemma="ὁ">τῶν</w> <w>ὅρων</w> <w>ἐπιμέλιαν</w> 
-                           <w>δαπανᾶϲθαι</w>. <note>14</note> <w>Γνῶϲιϲ</w> <w lemma="ὁ">τῶν</w> <w>μετὰ</w> <w lemma="ὁ">τὰ</w> <w>ἐπέτεια</w> 
-         <w>εἰϲ</w></supplied>
-                    <lb n="4"/> <w>μιώϲειϲ</w> <w lemma="ὁ">τῶ<space quantity="1" unit="character"/>ν</w> <w>ϲυνηθειῶν</w> <w>τυπωθέντων</w> 
-                        <w lemma="κατά">καθ’</w><w lemma="ἕκαστος">ἕ<space quantity="2" unit="character"/>κα<supplied reason="lost">ϲτον</supplied></w> <supplied reason="lost"><w>ἔτοϲ</w> <w>παρέχονται</w> <w>παρὰ</w> <w>τῶν</w> <w>γενναιωτάτων</w> <w>ϲτρατιωτῶν</w>
-          <w>ἐκ</w> <w lemma="πᾶς">πάντων</w> <w lemma="ὁ">τῶν</w> <w>ἀριθμῶν</w> <w lemma="καί">καὶ</w> <w>οὐκ</w> <w>ἀφ’</w><w>ἑκάϲτου</w> <w>τούτων</w> </supplied>
-                    <lb n="5"/> <w>διαφόροιϲ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="χώρα">χώραν</w> <w>προϲώποιϲ</w> <w>ὧν</w> 
-                        <w lemma="οὐδέ">οὐδὲ</w> <w lemma="πλείων"><unclear>π</unclear><supplied reason="lost">λέον</supplied></w> <supplied reason="lost"><w>αὐτοὺϲ</w> <w>ἐπινοεῖϲθαι</w> 
-                           <w>χρή</w>, <w lemma="οὕτως">οὕτωϲ</w>· <w>ϲυγκαθέδρῳ</w> <w lemma="ὁ">τοῦ</w> <w>περιβλέπτου</w> <w>δουκὸϲ</w> 
-                           <w><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="154"><supplied reason="omitted">ρ</supplied>νδ</num>· <w>δομεϲτικῷ</w> 
-                           <w lemma="ὁ">τοῦ</w> <w>αὐτοῦ</w> <w><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="126">ρκϛ</num> </supplied>
-                    <lb n="6"/> <w>κανκελλαρίου</w> <w lemma="ὁ">τοῦ</w> <w lemma="αὐτός">αὐτοῦ</w> 
-                        <w><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="24">κδ</num>· <w>δεκανῷ</w> <w lemma="καί">καὶ</w> 
-                        <w>ϲουπ<supplied reason="omitted">ϲκ</supplied>ρ<supplied reason="lost">ιβενδαρίῳ</supplied></w> 
-                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w>ϲπαθαρίῳ</w> <w lemma="καί">καὶ</w> <w>βουκινάτορι</w> <w lemma="καί">καὶ</w> 
-                           <w>ἀνθρώποιϲ</w> <w lemma="ὁ">τοῦ</w> <w>δουκόϲ</w>, <w>τοῖϲ</w> <w>πᾶϲιν</w> <w>τούτοιϲ</w> <w><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="180">ρπ</num>· </supplied>
-                    <lb n="7"/><w lemma="ὁ">τῇ</w> <w lemma="τάξις">τάξει</w> <w>λόγῳ</w> <w>καλανδαρικῶν</w> 
-                        <w><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="161">ρξα</num>· 
-                        <w>νου<space quantity="1" unit="character"/>μεραρίῳ</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w> 
-                        <supplied reason="lost"><w>πριμιϲκρινίῳ</w> <w>ὑπὲρ</w>
-          <w>ἀννώναϲ</w> <w>προϲτιθεμένηϲ</w> <w lemma="καί">καὶ</w> <w>παραπομπῆϲ</w> <w><expan><abbr>νό</abbr><ex>μιϲμα</ex></expan></w> <num value="1">α</num>· <w lemma="ὁ">τοῖϲ</w> 
-                           <w>αὐτοῖϲ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w>καπίτου</w> <w>ὁμοίωϲ</w> <w>προϲτιθεμένου</w> <w><expan><abbr>νό</abbr><ex>μιϲμα</ex></expan></w> <num value="1">α</num>· <w>τοῖϲ</w> 
-                           <w>αὐτοῖϲ</w> <w lemma="ὑπέρ">ὑπὲρ</w> </supplied>
-                    <lb n="8"/> <w>προκοπῆϲ</w> <w>βαθμοῦ</w> <w><expan><abbr>νό</abbr><ex>μιϲμα</ex></expan></w> 
+                        <w lemma="δίκαιος">δίκ<supplied reason="lost">αιον</supplied></w> <supplied reason="lost"><w lemma="ἐπεισάγω">ἐπιϲαγομένηϲ</w> <w lemma="ἐπήρεια">ἐπηρίαϲ</w> <w lemma="παρέχω">παρέχεϲθαι</w>. <note>13</note> <w lemma="ὥστε">Ὥϲτε</w> <w lemma="ὁ">τὸν</w> 
+                           <w lemma="παραβαίνω">παραβαίνοντά</w> <w lemma="τις">τι</w> <w lemma="ὁ">τῶν</w> <w lemma="τυπόω">τυπωθέντων</w> <w lemma="πεντήκοντα">πεντήκοντα</w> </supplied>
+                    <lb n="3"/> <w lemma="χρυσίον">χ<space quantity="2" unit="character"/>ρυϲίου</w> <w lemma="λίτρα">λίτραϲ</w> <space quantity="3" unit="character"/>
+                        <w lemma="λόγος">λόγῳ</w> <w lemma="πρόστιμον">προϲτ<space quantity="1" unit="character"/>ίμου</w> 
+                        <w lemma="μεθοδεύω">με<space quantity="1" unit="character"/>θο<supplied reason="lost">δεύεϲθαι</supplied></w> 
+                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="οὗτος">ταύταϲ</w> <w lemma="περί">περὶ</w> <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τῶν</w> <w lemma="ὅρος">ὅρων</w> <w lemma="ἐπιμέλεια">ἐπιμέλιαν</w> 
+                           <w lemma="δαπανάω">δαπανᾶϲθαι</w>. <note>14</note> <w lemma="γνῶσις">Γνῶϲιϲ</w> <w lemma="ὁ">τῶν</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τὰ</w> <w lemma="ἐπέτειος">ἐπέτεια</w> 
+         <w lemma="εἰς">εἰϲ</w></supplied>
+                    <lb n="4"/> <w lemma="μείωσις">μιώϲειϲ</w> <w lemma="ὁ">τῶ<space quantity="1" unit="character"/>ν</w> <w lemma="συνήθης">ϲυνηθειῶν</w> <w lemma="τυπόω">τυπωθέντων</w> 
+                        <w lemma="κατά">καθ’</w><w lemma="ἕκαστος">ἕ<space quantity="2" unit="character"/>κα<supplied reason="lost">ϲτον</supplied></w> <supplied reason="lost"><w lemma="ἔτος">ἔτοϲ</w> <w lemma="παρέχω">παρέχονται</w> <w lemma="παρά">παρὰ</w> <w lemma="ὁ">τῶν</w> <w lemma="γενναῖος">γενναιωτάτων</w> <w lemma="στρατιώτης">ϲτρατιωτῶν</w>
+          <w lemma="ἐκ">ἐκ</w> <w lemma="πᾶς">πάντων</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀριθμός">ἀριθμῶν</w> <w lemma="καί">καὶ</w> <w lemma="οὐ">οὐκ</w> <w lemma="ἀπό">ἀφ’</w><w lemma="ἕκαστος">ἑκάϲτου</w> <w lemma="οὗτος">τούτων</w> </supplied>
+                    <lb n="5"/> <w lemma="διάφορος">διαφόροιϲ</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὴν</w> <w lemma="χώρα">χώραν</w> <w lemma="πρόσωπον">προϲώποιϲ</w> <w lemma="ὅς">ὧν</w> 
+                        <w lemma="οὐδέ">οὐδὲ</w> <w lemma="πλείων"><unclear>π</unclear><supplied reason="lost">λέον</supplied></w> <supplied reason="lost"><w lemma="αὐτός">αὐτοὺϲ</w> <w lemma="ἐπινοέω">ἐπινοεῖϲθαι</w> 
+                           <w lemma="χρή">χρή</w>, <w lemma="οὕτως">οὕτωϲ</w>· <w lemma="συγκάθεδρος">ϲυγκαθέδρῳ</w> <w lemma="ὁ">τοῦ</w> <w lemma="περίβλεπτος">περιβλέπτου</w> <w lemma="δούξ">δουκὸϲ</w> 
+                           <w lemma="νόμισμα"><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="154"><supplied reason="omitted">ρ</supplied>νδ</num>· <w lemma="δομεστικός">δομεϲτικῷ</w> 
+                           <w lemma="ὁ">τοῦ</w> <w lemma="αὐτοῦ">αὐτοῦ</w> <w lemma="νόμισμα"><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="126">ρκϛ</num> </supplied>
+                    <lb n="6"/> <w lemma="κανκελλάριος">κανκελλαρίου</w> <w lemma="ὁ">τοῦ</w> <w lemma="αὐτός">αὐτοῦ</w> 
+                        <w lemma="νόμισμα"><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="24">κδ</num>· <w lemma="δεκανός">δεκανῷ</w> <w lemma="καί">καὶ</w> 
+                        <w lemma="σουβσκριβενδάριος">ϲουπ<supplied reason="omitted">ϲκ</supplied>ρ<supplied reason="lost">ιβενδαρίῳ</supplied></w> 
+                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="σπαθάριος">ϲπαθαρίῳ</w> <w lemma="καί">καὶ</w> <w lemma="βουκινάτωρ">βουκινάτορι</w> <w lemma="καί">καὶ</w> 
+                           <w lemma="ἄνθρωπος">ἀνθρώποιϲ</w> <w lemma="ὁ">τοῦ</w> <w lemma="δούξ">δουκόϲ</w>, <w lemma="ὁ">τοῖϲ</w> <w lemma="πᾶς">πᾶϲιν</w> <w lemma="οὗτος">τούτοιϲ</w> <w lemma="νόμισμα"><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="180">ρπ</num>· </supplied>
+                    <lb n="7"/><w lemma="ὁ">τῇ</w> <w lemma="τάξις">τάξει</w> <w lemma="λόγος">λόγῳ</w> <w lemma="καλανδαρικός">καλανδαρικῶν</w> 
+                        <w lemma="νόμισμα"><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="161">ρξα</num>· 
+                        <w lemma="νουμεράριος">νου<space quantity="1" unit="character"/>μεραρίῳ</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w> 
+                        <supplied reason="lost"><w lemma="πριμισκρίνιος">πριμιϲκρινίῳ</w> <w lemma="ὑπέρ">ὑπὲρ</w>
+          <w lemma="ἀννώνη">ἀννώναϲ</w> <w lemma="προστίθημι">προϲτιθεμένηϲ</w> <w lemma="καί">καὶ</w> <w lemma="παραπομπή">παραπομπῆϲ</w> <w lemma="νόμισμα"><expan><abbr>νό</abbr><ex>μιϲμα</ex></expan></w> <num value="1">α</num>· <w lemma="ὁ">τοῖϲ</w> 
+                           <w lemma="αὐτός">αὐτοῖϲ</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="κάπιτον">καπίτου</w> <w lemma="ὅμοιος">ὁμοίωϲ</w> <w lemma="προστίθημι">προϲτιθεμένου</w> <w lemma="νόμισμα"><expan><abbr>νό</abbr><ex>μιϲμα</ex></expan></w> <num value="1">α</num>· <w lemma="ὁ">τοῖϲ</w> 
+                           <w lemma="αὐτός">αὐτοῖϲ</w> <w lemma="ὑπέρ">ὑπὲρ</w> </supplied>
+                    <lb n="8"/> <w lemma="προκοπή">προκοπῆϲ</w> <w lemma="βαθμός">βαθμοῦ</w> <w lemma="νόμισμα"><expan><abbr>νό</abbr><ex>μιϲμα</ex></expan></w> 
                         <num value="1">α</num>· <w lemma="ὁ">τοῖϲ</w> <w lemma="αὐτός">α<unclear>ὐτο</unclear>ῖϲ</w> <w lemma="ὑπέρ">ὑπὲρ</w> 
-                        <w>ϲτρατευϲίμ<supplied reason="lost">ου</supplied></w> <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">τῆϲ</w> 
-                           <w>καλουμένηϲ</w> <w>προβατωρίαϲ</w> <w><expan><abbr>νό</abbr><ex>μιϲμα</ex></expan></w> <num value="1">α</num>· <w>τοῖϲ</w> 
-                           <w>αὐτοῖϲ</w> <w>λόγῳ</w> <w>χαρτατικῶν</w> <orig><unclear>Ν</unclear>ΟΑ</orig> <w>ἀπὸ</w> 
-                           <w>ἑκάϲτου</w> <w>κάϲτρου</w> <w lemma="ὁ">τῶν</w></supplied> <w><supplied reason="lost">καϲτρη</supplied>
-                    <lb n="9" break="no"/> ϲιανῶν</w> <w><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="6">ϛ</num>· 
-                        <w lemma="ὁ">τ<supplied reason="lost">οῖϲ</supplied></w> <w lemma="αὐτός"><supplied reason="lost">α</supplied>ὐτοῖϲ</w> <w>λόγῳ</w> 
-                        <w>τετραμηνιακῶ<unclear>ν</unclear></w> <supplied reason="lost"><w>ὁμοίωϲ</w> <w><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="4">δ</num>.</supplied>
+                        <w lemma="στρατεύσιμος">ϲτρατευϲίμ<supplied reason="lost">ου</supplied></w> <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">τῆϲ</w> 
+                           <w lemma="καλέω">καλουμένηϲ</w> <w lemma="προβατωρία">προβατωρίαϲ</w> <w lemma="νόμισμα"><expan><abbr>νό</abbr><ex>μιϲμα</ex></expan></w> <num value="1">α</num>· <w lemma="ὁ">τοῖϲ</w> 
+                           <w lemma="αὐτός">αὐτοῖϲ</w> <w lemma="λόγος">λόγῳ</w> <w lemma="χαρτατικός">χαρτατικῶν</w> <orig><unclear>Ν</unclear>ΟΑ</orig> <w lemma="ἀπό">ἀπὸ</w> 
+                           <w lemma="ἕκαστος">ἑκάϲτου</w> <w lemma="κάστρον">κάϲτρου</w> <w lemma="ὁ">τῶν</w></supplied> <w lemma="καστρησιανός"><supplied reason="lost">καϲτρη</supplied><lb 
+                              n="9" break="no"/>ϲιανῶν</w> <w lemma="νόμισμα"><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="6">ϛ</num>· 
+                        <w lemma="ὁ">τ<supplied reason="lost">οῖϲ</supplied></w> <w lemma="αὐτός"><supplied reason="lost">α</supplied>ὐτοῖϲ</w> <w lemma="λόγος">λόγῳ</w> 
+                        <w lemma="τετραμηνιακός">τετραμηνιακῶ<unclear>ν</unclear></w> <supplied reason="lost"><w lemma="ὅμοιος">ὁμοίωϲ</w> <w lemma="νόμισμα"><expan><abbr>νο</abbr><ex>μίϲματα</ex></expan></w> <num value="4">δ</num>.</supplied>
    <lb n="9a"/><gap reason="lost" extent="unknown" unit="line"/>
                 </ab>
 </div>

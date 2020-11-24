@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
          <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-22" who="Pietro">marked metadata</change>
@@ -127,7 +127,7 @@
                     <lb n="1"/><date ref="https://godot.date/id/aNHe7rTzEijnddyZKPXD42"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="70">ο</num></date>
                     <persName type="attested"><name nymRef="Θεο-νας">Θεο<gap reason="lost" quantity="2" unit="character"/><unclear>ι</unclear>ας</name> 
                     <persName type="attested" key="lgpn:V1-62013"><name nymRef="Ἀριστόδημος"><hi rend="ligature">Ἀρ</hi><unclear>ι</unclear><supplied reason="lost">σ</supplied><unclear>τ</unclear>οδή<supplied reason="lost">μ</supplied>ω</name></persName></persName>
-                    <lb n="2"/> <w>κεντυρ<supplied reason="lost">ίω</supplied><unclear>ν</unclear></w> 
+                    <lb n="2"/> <w lemma="κεντυρίων">κεντυρ<supplied reason="lost">ίω</supplied><unclear>ν</unclear></w> 
                     <gap reason="lost" quantity="1" unit="character"/><orig>ησ<unclear>λ</unclear>υ<unclear>ακ</unclear>ος</orig>
                     <lb n="3"/> <w lemma="ἥκω"><hi rend="ligature">ἥκ</hi>ω</w>
                 </ab>

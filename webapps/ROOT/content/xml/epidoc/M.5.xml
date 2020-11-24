@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
          <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -135,9 +135,9 @@
             <ab>
                     <lb n="1"/><date ref="https://godot.date/id/yPbA3EDnLAKAJqyErmR9QR"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <g ref="symbols.xml#stop"/>
                     <num value="82">πβ</num> <g ref="symbols.xml#stop"/>
-                    <rs type="month"  key="mechir"><w>Μεχεὶρ</w></rs> <g ref="symbols.xml#stop"/> <num value="7">ζ</num> <g ref="symbols.xml#stop"/></date> <w lemma="ἥκω">ἥκω</w>
+                    <rs type="month" key="mechir"><w lemma="Μεχίρ">Μεχεὶρ</w></rs> <g ref="symbols.xml#stop"/> <num value="7">ζ</num> <g ref="symbols.xml#stop"/></date> <w lemma="ἥκω">ἥκω</w>
                     <lb n="2"/><persName type="attested"><name nymRef="Μαγίων">Μαγίων</name> <persName type="attested"><name nymRef="Ἀρτεμίδωρος">Ἀρτεμ<supplied reason="lost">ι</supplied>δώρου</name></persName></persName> <w lemma="κεντυρίων">κεντυρίων</w>
-                    <lb n="3"/><placeName type="ethnic" ref="#apameia" nymRef="#Ἀπαμεύς">Ἀπαμεὺϲ</placeName> <w lemma="ὁ">τῶν</w> <w>ἀπὸ</w> <placeName nymRef="#Συρία" ref="#syria">Ϲυρίαϲ</placeName>
+                    <lb n="3"/><placeName type="ethnic" ref="#apameia" nymRef="#Ἀπαμεύς">Ἀπαμεὺϲ</placeName> <w lemma="ὁ">τῶν</w> <w lemma="ἀπό">ἀπὸ</w> <placeName nymRef="#Συρία" ref="#syria">Ϲυρίαϲ</placeName>
                 </ab>
          </div>
          
@@ -149,7 +149,7 @@
          <div type="commentary">
             <head>Commentary</head>
             <p>For general introduction see on <ref type="inscription" n="M.3">M.3</ref>.</p>
-            <!--  line 1 , 82 of the Actian era, Mecheir 7 (CE 52, February 2) --><p></p>
+            <!--  line 1 , 82 of the Actian era, Mecheir 7 (CE 52, February 2) --><p/>
          </div>
          
       </body>

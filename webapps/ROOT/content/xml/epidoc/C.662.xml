@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -52,16 +51,13 @@
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="-0030" notAfter="0100" precision="low" evidence="lettering"
-                        >Augustan or first century CE </origDate>
+                     <origDate notBefore="-0030" notAfter="0100" precision="low" evidence="lettering">Augustan or first century CE </origDate>
                   </origin>
 
 
                   <provenance type="found">
                      <p>
-                        <placeName type="ancientFindspot"
-                           ref="https://www.slsgazetteer.org/909">Cyrene</placeName>, <date
-                              type="found">found before 1941</date>: Findspot unrecorded.</p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>, <date type="found">found before 1941</date>: Findspot unrecorded.</p>
                   </provenance>
                   <provenance type="observed">
                      <p>
@@ -109,14 +105,14 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972"
-                     >Shahat</placeName>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
                </term>
             </keywords>
          </textClass>
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to
             profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
@@ -145,7 +141,7 @@
 
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><gap reason="lost" quantity="11" unit="character"/><w part="F">ος</w> <w>ἱαρε<supplied reason="lost">ῦς</supplied></w>
+                    <lb n="1"/><gap reason="lost" quantity="11" unit="character"/><w part="F">ος</w> <w lemma="ἱερεύς">ἱαρε<supplied reason="lost">ῦς</supplied></w>
                     <lb n="2"/><gap reason="lost" quantity="10" unit="character"/> <persName type="attested" key="lgpn:V1-62862"><name nymRef="Ἀνδρέας"><supplied reason="lost">Ἀ</supplied>νδρ<unclear>έα</unclear></name> <space quantity="3" unit="character"/>
                     <lb n="3"/><gap reason="lost" quantity="9" unit="character"/> <persName type="attested" key="lgpn:V1-64234"><name nymRef="Θεύχρηστος"><supplied reason="lost">Θε</supplied><unclear>υ</unclear>χρήσ<unclear>τ</unclear>ω</name></persName></persName> <space quantity="2" unit="character"/>
                     <lb n="4"/><gap reason="lost" quantity="11" unit="character"/><persName type="attested"><name nymRef="-έμαρχος"><seg part="F"><unclear>εμ</unclear><supplied reason="lost">ά</supplied>ρχω</seg></name></persName> <space quantity="2" unit="character"/>
@@ -155,7 +151,7 @@
                     <lb n="7"/> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-64485"><name nymRef="Καλλίμαχος">Καλλ<supplied reason="lost">ιμά</supplied><unclear>χω</unclear></name></persName></persName> <space quantity="1" unit="character"/>
                     <lb n="8"/><persName type="attested" key="lgpn:V1-64030"><name nymRef="Ἡρακλείδας">Ἡρακλείδ<unclear>ας</unclear></name> <persName type="attested" key="lgpn:V1-63595"><name nymRef="Διονύσιος">Διονυ<unclear>σ</unclear><supplied reason="lost">ίω</supplied></name></persName></persName>
                     <lb n="9"/> <w lemma="ὁ">τὸν</w> <persName type="divine" key="priapus"><name nymRef="Πρίαπος">Πρίαπον</name></persName> <space quantity="6" unit="character"/>
-                    <lb n="10"/> <space quantity="4" unit="character"/> <w>ἀνέθηκαν</w> <space quantity="1" unit="character"/>
+                    <lb n="10"/> <space quantity="4" unit="character"/> <w lemma="ἀνατίθημι">ἀνέθηκαν</w> <space quantity="1" unit="character"/>
                 </ab>
 </div>
          <div type="apparatus">

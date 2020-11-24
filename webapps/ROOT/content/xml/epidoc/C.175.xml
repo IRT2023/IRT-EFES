@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-30" who="Pietro">metadata</change>
@@ -131,15 +131,15 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>κη</unclear></orig> <g ref="symbols.xml#leaf"/> <lb n="2"/><w lemma="ὑπέρ"><supplied reason="lost">ὑπὲρ</supplied></w> <w lemma="σωτηρία"><supplied reason="lost">ϲωτηρί</supplied><unclear>α</unclear>ϲ</w> 
-                    <w lemma="καί">καὶ</w> <w>ν<supplied reason="lost">είκαϲ</supplied></w> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w><supplied reason="lost">αἰωνίας</supplied></w> 
-                    <lb n="3"/> <w><supplied reason="lost">διαμονᾶϲ</supplied></w> <w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w> <w><unclear>θε</unclear>ίων</w> 
-                    <persName type="emperor" key="diocletianus"><persName type="emperor" key="maximianus"><w><unclear>Κυ</unclear><supplied reason="lost">ρίων</supplied></w> <w><supplied reason="lost">Αὐτοκρατόρων</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καιϲάρων</supplied></name> <gap reason="lost" quantity="8" unit="character" precision="low"/>
+                    <w lemma="καί">καὶ</w> <w lemma="νίκη">ν<supplied reason="lost">είκαϲ</supplied></w> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="αἰώνιος"><supplied reason="lost">αἰωνίας</supplied></w> 
+                    <lb n="3"/> <w lemma="διαμονή"><supplied reason="lost">διαμονᾶϲ</supplied></w> <w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w> <w lemma="θεῖος"><unclear>θε</unclear>ίων</w> 
+                    <persName type="emperor" key="diocletianus"><persName type="emperor" key="maximianus"><w lemma="κύριος"><unclear>Κυ</unclear><supplied reason="lost">ρίων</supplied></w> <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκρατόρων</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καιϲάρων</supplied></name> <gap reason="lost" quantity="8" unit="character" precision="low"/>
                     <lb n="4"/><name nymRef="Μᾶρκος"><supplied reason="lost"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></supplied></name> <name nymRef="Οὐαλέριος"><supplied reason="lost">Οὐαλερίου</supplied></name>
                     <name nymRef="Διοκλητιανός"><supplied reason="lost">Δ</supplied>ιοκλητιανοῦ</name> <w lemma="καί"><unclear>κ</unclear><supplied reason="lost">αὶ</supplied></w> 
                     <name nymRef="Μᾶρκος"><supplied reason="lost"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></supplied></name> <name nymRef="Αὐρήλιος"><unclear>Αὐ</unclear>ρηλίου</name> 
                     <lb n="5"/><name nymRef="Οὐαλέριος"><supplied reason="lost">Οὐαλερίου</supplied></name> <name nymRef="Μαξιμιανός"><del>Μαξιμιανοῦ</del></name> <name nymRef="Σεβαστός"><expan><abbr>Ϲεβ</abbr><ex>αϲτῶν</ex></expan></name></persName> </persName>
-                    <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w> <w lemma="ὁ">τοῦ</w> <w>ϲύνπαν<lb n="6" break="no"/><supplied reason="lost">τοϲ</supplied></w>
-                        <supplied reason="lost"><w lemma="αὐτός">αὐτῶν</w> <w>οἶκον</w> <w lemma="ὁ">ἡ</w> 
+                    <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w> <w lemma="ὁ">τοῦ</w> <w lemma="σύμπας">ϲύνπαν<lb n="6" break="no"/><supplied reason="lost">τοϲ</supplied></w>
+                        <supplied reason="lost"><w lemma="αὐτός">αὐτῶν</w> <w lemma="οἶκος">οἶκον</w> <w lemma="ὁ">ἡ</w> 
                     <w lemma="πόλις">πόλιϲ</w> <w lemma="ὁ">τῶν</w></supplied> <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene"><supplied reason="lost">Κυρ</supplied>ηναίων</placeName> 
                     <w lemma="εὐτυχής">εὐ<lb n="7" break="no"/><supplied reason="lost">τυχῶϲ</supplied></w> <g ref="symbols.xml#palm"/>
                 </ab>

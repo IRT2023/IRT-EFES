@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -89,6 +88,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-21" who="CMR">added bibliography</change>
@@ -110,13 +110,14 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-            <lb n="1"/><persName type="attested"><name nymRef="Ἰουλία">Ἰουλία</name></persName> <w>ἐ <lb n="2" break="no"/>τελεύ
-               <lb n="3" break="no"/>τηϲεν</w> <date type="life-span" dur="P35Y"><w>ἐ
-                  <lb n="4" break="no"/>τυῶν</w> <num value="35">λε</num> </date></ab>
+            <lb n="1"/><persName type="attested"><name nymRef="Ἰουλία">Ἰουλία</name></persName> <w lemma="τελευτάω">ἐ<lb 
+               n="2" break="no"/>τελεύ<lb 
+               n="3" break="no"/>τηϲεν</w> <date type="life-span" dur="P35Y"><w lemma="ἔτος">ἐ<lb 
+                  n="4" break="no"/>τυῶν</w> <num value="35">λε</num> </date></ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <div  type="translation" resp="#edd" xml:lang="en"><p>Julia died, aged 35</p></div></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Julia died, aged 35</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p/>

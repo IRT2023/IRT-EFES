@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -110,6 +109,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -137,15 +137,15 @@
                         <lb n="1"/><date><date ref="https://godot.date/id/NQ2ZHHYJ3ZZaFLJhuwE5G6"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                         <num value="28">κη</num></date> <date><w lemma="ἐπί">ἐφ’</w><w lemma="ἱερεύς">ἱερέως</w> <persName type="attested" key="lgpn:V1-61243"><name nymRef="Ἐπίνικος">Ἐπινίκου</name> <w lemma="ὁ">τοῦ</w> 
                         <persName type="attested" key="lgpn:V1-61639"><name nymRef="Σώτεχνος">Σω<unclear>τ</unclear>έ<lb n="2" break="no"/>χνου</name></persName></persName></date>
-                        <date><w>ἐφηβαρχούντων</w> <persName type="attested" key="lgpn:V1-61655"><name nymRef="Τιμῶναξ">Τιμωνάκτο<unclear>υ</unclear></name>
+                        <date><w lemma="ἐφηβαρχέω">ἐφηβαρχούντων</w> <persName type="attested" key="lgpn:V1-61655"><name nymRef="Τιμῶναξ">Τιμωνάκτο<unclear>υ</unclear></name>
                             <lb n="3"/><w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61500"><name nymRef="Νίκαθλος">Νικά<unclear>θ</unclear>λου</name></persName></persName>, 
                         <persName type="attested" key="lgpn:V1-61213"><name nymRef="Δημήτριος">Δημητρίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61521"><name nymRef="Νίκων">Νε<unclear>ί</unclear><lb n="4" break="no"/>κωνος</name></persName></persName>, 
                         <persName type="attested" key="lgpn:V1-61617"><name nymRef="Σῖμος">Σίμου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61527"><name nymRef="Ξένων">Ξένωνος</name></persName></persName></date>, 
-                        <date><w>γυ<lb n="5" break="no"/>μνασιαρχούντων</w> <persName type="attested" key="lgpn:V1-61313"><name nymRef="Θεόδωρος">θεοδώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61504"><name nymRef="Νίκαιος">Ν<supplied reason="lost">ι</supplied><lb n="6" break="no"/>καίου</name></persName> </persName>,
+                        <date><w lemma="γυμνασιαρχέω">γυ<lb n="5" break="no"/>μνασιαρχούντων</w> <persName type="attested" key="lgpn:V1-61313"><name nymRef="Θεόδωρος">θεοδώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61504"><name nymRef="Νίκαιος">Ν<supplied reason="lost">ι</supplied><lb n="6" break="no"/>καίου</name></persName> </persName>,
                         <persName type="attested" key="lgpn:V1-61201"><name nymRef="Δεξικράτης">Δεξικ<unclear>ρ</unclear>άτους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61561"><name nymRef="Πολυκλῆς">Πολύκλε<lb n="7" break="no"/>ους</name></persName></persName>, 
-                        <persName type="attested" key="lgpn:V1-61653"><name nymRef="Τιμοῦχος">Τιμούχου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61688"><name nymRef="Φιλόκωμος">Φιλοκώμου</name></persName></persName></date>, <date><w>ὑπ<supplied reason="lost">η</supplied>
-                        <lb n="8" break="no"/>ρετοῦντος</w> <persName type="attested" key="lgpn:V1-61214"><name nymRef="Δημήτριος">Δημητρίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61283"><name nymRef="Ζηνόδοτος">Ζην<unclear>ο</unclear><lb n="9" break="no"/>δότου</name></persName></persName></date></date>, 
-                        <w lemma="ὁ">τοὺς</w> <w>ὑπ’</w><w>αὐτοὺς</w> <w>ἐφηβεύσαντ<supplied reason="lost">ας</supplied></w>. 
+                        <persName type="attested" key="lgpn:V1-61653"><name nymRef="Τιμοῦχος">Τιμούχου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61688"><name nymRef="Φιλόκωμος">Φιλοκώμου</name></persName></persName></date>, <date><w lemma="ὑπηρετέω">ὑπ<supplied reason="lost">η</supplied><lb 
+                           n="8" break="no"/>ρετοῦντος</w> <persName type="attested" key="lgpn:V1-61214"><name nymRef="Δημήτριος">Δημητρίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61283"><name nymRef="Ζηνόδοτος">Ζην<unclear>ο</unclear><lb n="9" break="no"/>δότου</name></persName></persName></date></date>, 
+                        <w lemma="ὁ">τοὺς</w> <w lemma="ὑπό">ὑπ’</w><w lemma="αὐτός">αὐτοὺς</w> <w lemma="ἐφηβεύω">ἐφηβεύσαντ<supplied reason="lost">ας</supplied></w>. 
                     </ab></div>
             <div subtype="section" n="b" type="textpart"><div subtype="column" n="i" type="textpart"><ab>
                         

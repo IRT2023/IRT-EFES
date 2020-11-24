@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -52,12 +51,7 @@
                   </origin>
                   <provenance type="found">
                      <p>
-                        <placeName type="ancientFindspot"
-                           ref="https://www.slsgazetteer.org/909"
-                           >Cyrene</placeName>: <placeName ref="https://www.slsgazetteer.org/1069">East Necropolis</placeName>, between the hill of <placeName type="monuList" ref="https://www.slsgazetteer.org/1375"
-                              >Eluet Gassam</placeName> and the <ref target="https://www.slsgazetteer.org/1066/">Temple of Zeus</ref>, not far from <ref
-                              type="inscription" n="C.429">C.429</ref>, <ref
-                                 type="inscription" n="C.430">C.430</ref>; found in <date type="found">1916</date>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: <placeName ref="https://www.slsgazetteer.org/1069">East Necropolis</placeName>, between the hill of <placeName type="monuList" ref="https://www.slsgazetteer.org/1375">Eluet Gassam</placeName> and the <ref target="https://www.slsgazetteer.org/1066/">Temple of Zeus</ref>, not far from <ref type="inscription" n="C.429">C.429</ref>, <ref type="inscription" n="C.430">C.430</ref>; found in <date type="found">1916</date>
                         and photographed when complete.</p>
                   </provenance>
                   <provenance type="observed">
@@ -106,14 +100,14 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972"
-                     >Shahat</placeName>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
                </term>
             </keywords>
          </textClass>
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to
             profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
@@ -143,37 +137,37 @@
                <bibl><ptr target="cdl2016a"/>, <citedRange>53-59</citedRange></bibl></p>
          </div>
 
-         <div type="edition" xml:space="preserve"><div xml:lang="la" type="textpart"  subtype="face" n="a" ><ab>
-                    <lb n="1"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><persName type="emperor" key="vespasianus"><w><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w> <name nymRef="Caesar"><supplied reason="lost">Caesar</supplied></name>
+         <div type="edition" xml:space="preserve"><div xml:lang="la" type="textpart" subtype="face" n="a"><ab>
+                    <lb n="1"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><persName type="emperor" key="vespasianus"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w> <name nymRef="Caesar"><supplied reason="lost">Caesar</supplied></name>
                     <lb n="2"/><name nymRef="Vespasianus"><supplied reason="lost">Vespasianus</supplied></name>
                     <lb n="3"/><name nymRef="Augustus"><expan><abbr><supplied reason="lost">Au</supplied><unclear>g</unclear></abbr><ex>ustus</ex></expan></name></persName> <w lemma="pontifex"><expan><abbr>punt</abbr><ex>ifex</ex></expan></w> <note>sic</note>
-                    <w><expan><abbr>max</abbr><ex>imus</ex></expan></w>
-                    <lb n="4"/><w><expan><abbr>tribunic</abbr><ex>ia</ex></expan></w>
-                    <w><expan><abbr>put</abbr><ex>estate</ex></expan></w> <num value="3">III</num> <note>sic</note>
-                    <lb n="5"/> <w><expan><abbr>imp</abbr><ex>erator</ex></expan></w>
+                    <w lemma="maximus"><expan><abbr>max</abbr><ex>imus</ex></expan></w>
+                    <lb n="4"/><w lemma="tribunicius"><expan><abbr>tribunic</abbr><ex>ia</ex></expan></w>
+                    <w lemma="potestas"><expan><abbr>put</abbr><ex>estate</ex></expan></w> <num value="3">III</num> <note>sic</note>
+                    <lb n="5"/> <w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w>
                     <num value="8">VIII</num>
                    <w lemma="pater"><expan><abbr>p</abbr><ex>ater</ex></expan></w> <w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w>
-                    <w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
-                    <lb n="6"/><num value="3">III</num>, <w><expan><abbr>desig</abbr><ex>natus</ex></expan></w>
+                    <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                    <lb n="6"/><num value="3">III</num>, <w lemma="designatus"><expan><abbr>desig</abbr><ex>natus</ex></expan></w>
                     <num value="4">IV</num></date> <w lemma="per">per</w>
                     <lb n="7"/><persName type="attested" key="pir2-p-0027"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintum</ex></expan></name> <name nymRef="Paconius">Paconium</name> <name nymRef="Agrippinus">A<lb n="8" break="no"/>grippeinum</name></persName> <w lemma="legatus">le<lb n="9" break="no"/>gatum</w>
                     <w lemma="suus">suum</w><lb n="10"/><w lemma="populus">Populo</w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><expan><abbr>R</abbr><ex>omano</ex></expan></placeName>
                     <lb n="11"/><placeName nymRef="#Ptolmaeum" ref="#ptolomeon">Ptolmaeum</placeName> <w lemma="restituo">restituit</w>
                 </ab></div>
             <div xml:lang="grc" type="textpart" subtype="face" n="b"><ab>
-                    <lb n="1"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><persName type="emperor" key="vespasianus"><w><supplied reason="lost">Αὐτοκράτωρ</supplied></w>
+                    <lb n="1"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><persName type="emperor" key="vespasianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτωρ</supplied></w>
                     
-                    <lb n="2"/><name nymRef="Καῖσαρ"><supplied reason="lost">Καῖσαρ</supplied></name> <name nymRef="Οὐεσπασιανός"><supplied reason="lost">Οὐεσπα</supplied>
-                       <lb n="3" break="no"/>σιανὸς</name></persName> <w>ἀρχιε<supplied reason="lost">ρεὺς</supplied></w> 
-                       <lb n="4" break="no"/><w>μέγιστος</w>, <w>δημ<supplied reason="lost">αρ</supplied>
-                        <lb n="5" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w>
-                       <lb n="6"/> <w lemma="ὁ">τὸ</w> <num value="3">γ</num>, <w>Αὐτοκράτωρ</w> 
-                       <lb n="7" break="no"> </lb><w lemma="ὁ">τὸ</w> <num value="8">η</num>, <w lemma="πατήρ">πατὴρ</w> <w lemma="πατρίς">πα
-                          <lb n="8" break="no"/>τρίδος</w>, <w lemma="ὕπατος">ὕπατος</w> <w lemma="ὁ">τὸ</w> <num value="3">γ</num>, 
-                       <lb n="9"/> <w>ἀποδεδειγμένος</w> 
-                       <lb n="10"/> <w lemma="ὁ">τὸ</w> <num value="4">δ</num></date> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> <name nymRef="Πακώνιος">Πακωνί
-                          <lb n="11" break="no"/>ου</name><name nymRef="Ἀγριππῖνος">Ἀγριππείνου</name></persName> <w>ἰ<lb n="12" break="no"/>δίου</w> <w lemma="πρεσβευτής">πρεσβευτοῦ</w><lb n="11"/> <w><expan><abbr>Δ</abbr><ex>ήμῳ</ex></expan></w>
-                    <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαίων</placeName> <w lemma="ὁ">τὸ</w> <placeName ref="#ptolomeon" nymRef="#Πτυλυμαῖον">Πτυλυμαῖ<lb n="13" break="no"/>ου</placeName> <w>ἀποκατέστη<lb n="13" break="no"/>σεν</w> <space quantity="3" unit="character"/>
+                    <lb n="2"/><name nymRef="Καῖσαρ"><supplied reason="lost">Καῖσαρ</supplied></name> <name nymRef="Οὐεσπασιανός"><supplied reason="lost">Οὐεσπα</supplied><lb 
+                       n="3" break="no"/>σιανὸς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιε<supplied reason="lost">ρεὺς</supplied></w> 
+                       <lb n="4"/><w lemma="μέγας">μέγιστος</w>, <w lemma="δημαρχικός">δημ<supplied reason="lost">αρ</supplied><lb 
+                          n="5" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w>
+                       <lb n="6"/><w lemma="ὁ">τὸ</w> <num value="3">γ</num>, <w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> 
+                       <lb n="7"/><w lemma="ὁ">τὸ</w> <num value="8">η</num>, <w lemma="πατήρ">πατὴρ</w> <w lemma="πατρίς">πα<lb 
+                          n="8" break="no"/>τρίδος</w>, <w lemma="ὕπατος">ὕπατος</w> <w lemma="ὁ">τὸ</w> <num value="3">γ</num>, 
+                       <lb n="9"/> <w lemma="ἀποδείκνυμι">ἀποδεδειγμένος</w> 
+                       <lb n="10"/> <w lemma="ὁ">τὸ</w> <num value="4">δ</num></date> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> <name nymRef="Πακώνιος">Πακωνί
+                          <lb n="11" break="no"/>ου</name><name nymRef="Ἀγριππῖνος">Ἀγριππείνου</name></persName> <w lemma="ἴδιος">ἰ<lb n="12" break="no"/>δίου</w> <w lemma="πρεσβευτής">πρεσβευτοῦ</w><lb n="11"/> <w lemma="Δῆμος"><expan><abbr>Δ</abbr><ex>ήμῳ</ex></expan></w>
+                    <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαίων</placeName> <w lemma="ὁ">τὸ</w> <placeName ref="#ptolomeon" nymRef="#Πτυλυμαῖον">Πτυλυμαῖ<lb n="13" break="no"/>ου</placeName> <w lemma="ἀποκαθίστημι">ἀποκατέστη<lb n="13" break="no"/>σεν</w> <space quantity="3" unit="character"/>
                 </ab>
 </div>
 </div>

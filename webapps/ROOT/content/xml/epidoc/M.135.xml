@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
@@ -127,36 +127,38 @@
              
             <div n="i" type="textpart">
             <ab>
-                    <lb n="1"/><persName type="divine" key="kyrios"><w>κύριοϲ</w> <w lemma="ὁ">τῶν</w> <w>δυνάμεων</w> 
-                    <lb n="2"/> <w>μεθ’</w><w>ἡμῶν</w> <w>ἀντιλήμπτωρ</w> 
-                    <lb n="3"/> <w>ἡμῶν</w> <w>ὁ</w>
-                       <w><expan><abbr>Θ</abbr><ex>εό</ex><abbr>ϲ</abbr></expan></w>
-              <persName type="divine" key="jacob"><name nymRef="Ἰάκωβ">Ἰάκωβ</name></persName> <w>ὁ</w>
-                  <w><expan><abbr>Θ</abbr><ex>εό</ex><abbr>ϲ</abbr></expan></w>
-                    <w>ὁ</w> <w>μέ<lb n="4" break="no"/>γαϲ</w> <w>ὁ</w> <w>αἰώνιοϲ</w></persName>
-               <w>ὑπερασ<lb n="5" break="no"/>πιϲτήϲ</w> <w>γένου</w> <w lemma="ὁ">τοῦ</w> <w>δού<lb n="6" break="no"/>λου</w>
-               <w>σου</w> <persName type="attested" key="lgpn:V1-60881"><name nymRef="Θεόδωρος">Θεοδώρου</name>
-               <w><expan><abbr>δ</abbr><ex cert="low">ιακόνου</ex></expan></w>
-                    <w>νέ<hi rend="ligature">ου</hi></w> </persName>
+                    <lb n="1"/><persName type="divine" key="kyrios"><w lemma="κύριος">κύριοϲ</w> <w lemma="ὁ">τῶν</w> <w lemma="δύναμις">δυνάμεων</w> 
+                    <lb n="2"/> <w lemma="μετά">μεθ’</w><w lemma="ἐγώ">ἡμῶν</w> <w lemma="ἀντιλήμπτωρ">ἀντιλήμπτωρ</w> 
+                    <lb n="3"/> <w lemma="ἐγώ">ἡμῶν</w> <w lemma="ὁ">ὁ</w>
+                       <w lemma="θεός"><expan><abbr>Θ</abbr><ex>εό</ex><abbr>ϲ</abbr></expan></w>
+              <persName type="divine" key="jacob"><name nymRef="Ἰάκωβ">Ἰάκωβ</name></persName> <w lemma="ὁ">ὁ</w>
+                  <w lemma="θεός"><expan><abbr>Θ</abbr><ex>εό</ex><abbr>ϲ</abbr></expan></w>
+                    <w lemma="ὁ">ὁ</w> <w lemma="μέγας">μέ<lb n="4" break="no"/>γαϲ</w> <w lemma="ὁ">ὁ</w> <w lemma="αἰώνιος">αἰώνιοϲ</w></persName>
+               <w lemma="ὑπερασπιστής">ὑπερασ<lb n="5" break="no"/>πιϲτήϲ</w> <w lemma="γίγνομαι">γένου</w> <w lemma="ὁ">τοῦ</w> <w lemma="δοῦλος">δού<lb n="6" break="no"/>λου</w>
+               <w lemma="σύ">σου</w> <persName type="attested" key="lgpn:V1-60881"><name nymRef="Θεόδωρος">Θεοδώρου</name>
+               <w lemma="διάκονος"><expan><abbr>δ</abbr><ex cert="low">ιακόνου</ex></expan></w>
+                    <w lemma="νέος">νέ<hi rend="ligature">ου</hi></w> </persName>
             </ab>
             </div>
             <div n="ii" type="textpart">
                <ab> 
-                    <lb n="1"/> <w>ἐγέ
-                       <lb n="2" break="no"/>νετο</w> <w lemma="καί">καὶ</w> 
-                    <lb n="3"/> <w>τοῦτο</w> <w lemma="ὁ">τὸ</w> <w>ἀ<lb n="4" break="no"/>γαθόν</w> <w>ἔργον</w> 
+                    <lb n="1"/> <w lemma="γίγνομαι">ἐγέ<lb 
+                       n="2" break="no"/>νετο</w> <w lemma="καί">καὶ</w> 
+                    <lb n="3"/> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἀγαθός">ἀ<lb n="4" break="no"/>γαθόν</w> <w lemma="ἔργον">ἔργον</w> 
                     <lb n="5"/> <date><date ref="https://godot.date/eponymous_office/2LQmqZa54s6enn7LAuEGh4/uxzkrCdToCGgi44QhLGn5C"><w lemma="ἐπί">ἐπὶ</w> <persName type="attested" key="lgpn:V1-60882"><name nymRef="Θεόδωρος">Θεοδώρου</name> 
-                    <lb n="6"/> <w lemma="ὁ">τοῦ</w> <w>ὁσιωτάτ<hi rend="ligature">ου</hi></w> 
-                    <lb n="7"/> <w>νέου</w> <w><expan><abbr>ἐπισκό</abbr><ex>που</ex></expan></w> </persName></date>
-               <lb n="8"/> <date ref="https://godot.date/id/K4kJUFbcNjmRxxGMVzLJEU"><w><expan><abbr>ἰνδ</abbr><ex>ικτιῶνος</ex></expan></w> <num value="3">γ</num></date></date>
+                    <lb n="6"/> <w lemma="ὁ">τοῦ</w> <w lemma="ὅσιος">ὁσιωτάτ<hi rend="ligature">ου</hi></w> 
+                    <lb n="7"/> <w lemma="νέος">νέου</w> <w lemma="ἐπίσκοπος"><expan><abbr>ἐπισκό</abbr><ex>που</ex></expan></w> </persName></date>
+               <lb n="8"/> <date ref="https://godot.date/id/K4kJUFbcNjmRxxGMVzLJEU"><w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτιῶνος</ex></expan></w> <num value="3">γ</num></date></date>
                     </ab>
                     </div>
             <div n="iii" type="textpart">
                        <ab> 
-                    <lb n="1"/> <w lemma="ὁ">τὰ</w> <w>μαρ
-                   <lb n="2" break="no"/>τύριά</w> <w>σου</w> 
-                    <lb n="3"/> <w>ἐπιστώθη<lb n="4" break="no"/>σαν</w> <w>σφό<lb n="5" break="no"/>δρα</w> <w lemma="ὁ">τῷ</w>
-                          <w>οἴ<lb n="6" break="no"/>κῳ</w> <w>σου</w> <w><expan><abbr>πρ</abbr><ex>έπει</ex></expan></w>
+                    <lb n="1"/> <w lemma="ὁ">τὰ</w> <w lemma="μαρτύριον">μαρ<lb 
+                       n="2" break="no"/>τύριά</w> <w lemma="σύ">σου</w> 
+                    <lb n="3"/> <w lemma="πιστόω">ἐπιστώθη<lb n="4" break="no"/>σαν</w> <w lemma="σφόδρα">σφό<lb 
+                       n="5" break="no"/>δρα</w> <w lemma="ὁ">τῷ</w>
+                          <w lemma="οἶκος">οἴ<lb 
+                             n="6" break="no"/>κῳ</w> <w lemma="σύ">σου</w> <w lemma="πρέπω"><expan><abbr>πρ</abbr><ex>έπει</ex></expan></w>
                        </ab>
             </div>
          </div>

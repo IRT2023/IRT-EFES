@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-04" who="MGDA">fixed bibliography</change>
@@ -142,7 +142,7 @@
                     <date><date ref="https://godot.date/id/gV4WCB3MvnFyFh9oo74m24"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <gap reason="lost" quantity="1" unit="character"/>
                     <num value="3"><unclear>γ</unclear></num>
-                    <rs type="month"  key="phamenoth"><w lemma="Φαμενώθ">Φ<supplied reason="lost">αμ</supplied>ενὼθ</w></rs>
+                    <rs type="month" key="phamenoth"><w lemma="Φαμενώθ">Φ<supplied reason="lost">αμ</supplied>ενὼθ</w></rs>
                     <num value="5">ε</num></date>
                     <date><w lemma="ἐπί">ἐπὶ</w>
                     <w lemma="ἄρχων">ἀρχόντων</w>
@@ -177,111 +177,109 @@
                        <name nymRef="Οὐαλέριος">Ο<supplied reason="lost">ὐαλέριος</supplied></name> 
                        <persName type="attested"><name nymRef="Γάϊος"><supplied reason="lost">Γ</supplied>αίο<supplied reason="lost">υ</supplied></name></persName> 
                       <name nymRef="Διονύσιος"><supplied reason="lost">Διον</supplied>ύσιος</name></persName>
-                    <w><unclear>πρ</unclear>η<unclear>π</unclear>ότης</w>
-                    <lb n="7"/><supplied reason="lost"><w lemma="ὁ">τῆς</w></supplied> <w><supplied reason="lost">συναγ</supplied><unclear>ωγῆς</unclear></w>
-                    <w lemma="ἀνήρ">ἀνὴρ</w> <w lemma="καλός">καλὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθὸς</w> <w lemma="εἰμί">ὢν</w> <w lemma="διατελέω">δια<lb 
-                       n="8" break="no"/>τελε<supplied reason="lost">ῖ</supplied></w> <supplied reason="lost" cert="low"><w>λόγῳ</w> <w lemma="καί">καὶ</w> <w>ἔργῳ</w> <w lemma="καί">καὶ</w></supplied> <w><supplied reason="lost">αἱρ</supplied>έσ<unclear>ει</unclear></w>
+                    <w lemma="πραπότης"><unclear>πρ</unclear>η<unclear>π</unclear>ότης</w>
+                    <lb n="7"/><supplied reason="lost"><w lemma="ὁ">τῆς</w></supplied> <w lemma="συναγωγή"><supplied reason="lost">συναγ</supplied><unclear>ωγῆς</unclear></w>
+                    <w lemma="ἀνήρ">ἀνὴρ</w> <w lemma="καλός">καλὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθὸς</w> <w lemma="εἰμί">ὢν</w> <w lemma="διατελέω">δια<lb n="8" break="no"/>τελε<supplied reason="lost">ῖ</supplied></w> <supplied reason="lost" cert="low"><w lemma="λόγος">λόγῳ</w> <w lemma="καί">καὶ</w> <w lemma="ἔργον">ἔργῳ</w> <w lemma="καί">καὶ</w></supplied> <w lemma="αἵρεσις"><supplied reason="lost">αἱρ</supplied>έσ<unclear>ει</unclear></w>
                     <w lemma="καί">καὶ</w>
-                    <w>ποιῶν</w>
+                    <w lemma="ποιέω">ποιῶν</w>
                     <w lemma="ἀγαθός">ἀγαθὸν</w>
                     <lb n="9"/><w lemma="ὅτι"><supplied reason="lost">ὅτι</supplied></w>
                     <w lemma="ἄν"><unclear>ἂ</unclear><supplied reason="lost">ν</supplied></w>
                     <w lemma="δύναμαι">δ<supplied reason="lost">ύνηται</supplied></w>
                     <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
-                    <w><supplied reason="lost">κοι</supplied><unclear>ν</unclear>ᾶι</w>
+                    <w lemma="κοινός"><supplied reason="lost">κοι</supplied><unclear>ν</unclear>ᾶι</w>
                     <w lemma="καί">καὶ</w>
-                    <w>ἰδίαι</w>
-                    <w>ἑκάστωι</w>
+                    <w lemma="ἴδιος">ἰδίαι</w>
+                    <w lemma="ἕκαστος">ἑκάστωι</w>
                     <w lemma="ὁ">τῶν</w>
                     <lb n="10"/>
-                    <w><unclear>π</unclear><supplied reason="lost">ο</supplied><unclear>λιτ</unclear><supplied reason="lost">ῶν</supplied></w>
-   <w lemma="καί">καὶ</w> <w>δ<supplied reason="lost">ὴ</supplied></w> <supplied reason="lost"><w lemma="καί">καὶ</w></supplied> <w>ἐκονίασεν</w>
+                    <w lemma="πολίτης"><unclear>π</unclear><supplied reason="lost">ο</supplied><unclear>λιτ</unclear><supplied reason="lost">ῶν</supplied></w>
+   <w lemma="καί">καὶ</w> <w lemma="δή">δ<supplied reason="lost">ὴ</supplied></w> <supplied reason="lost"><w lemma="καί">καὶ</w></supplied> <w lemma="κονιάω">ἐκονίασεν</w>
                     <w lemma="ὁ">τοῦ</w>
-                    <w>ἀνφιθεάτρου</w>
+                    <w lemma="ἀνθιθέατρον">ἀνφιθεάτρου</w>
                     <lb n="11"/><w lemma="ὁ">τ<supplied reason="lost">ὸ</supplied></w>
-                    <w><supplied reason="lost">ἔδ</supplied><unclear>α</unclear>φος</w>
+                    <w lemma="ἔδαφος"><supplied reason="lost">ἔδ</supplied><unclear>α</unclear>φος</w>
                     <w lemma="καί">καὶ</w>
-                    <w><unclear>τοὺ</unclear><supplied reason="lost">ς</supplied></w>
-                    <w><unclear>τ</unclear>οίχους</w>
-                    <w>ἐζωγράφησεν</w>·
+                    <w lemma="ὁ"><unclear>τοὺ</unclear><supplied reason="lost">ς</supplied></w>
+                    <w lemma="τοῖχος"><unclear>τ</unclear>οίχους</w>
+                    <w lemma="ζωγραφέω">ἐζωγράφησεν</w>·
                     <lb n="12"/>
                     <w lemma="δοκέω">ἔ<supplied reason="lost">δοξε</supplied></w>
                     <w lemma="ὁ"><supplied reason="lost">τοῖς</supplied></w>
             <w lemma="ἄρχων"><supplied reason="lost">ἄ</supplied>ρχουσι</w>
                     <w lemma="καί">καὶ</w>
                     <w lemma="ὁ">τῶι</w>
-                    <w>πολιτεύματι</w>
+                    <w lemma="πολίτευμα">πολιτεύματι</w>
                     <lb n="13"/>
-                    <w><unclear>τ</unclear><supplied reason="lost">ῶν</supplied></w> <w><unclear>ἐν</unclear></w> <placeName nymRef="#Βερενίκη" ref="#berenike"><unclear>Βερνικίδι</unclear></placeName>
+                    <w lemma="ὁ"><unclear>τ</unclear><supplied reason="lost">ῶν</supplied></w> <w lemma="ἐν"><unclear>ἐν</unclear></w> <placeName nymRef="#Βερενίκη" ref="#berenike"><unclear>Βερνικίδι</unclear></placeName>
                     <placeName type="ethnic" nymRef="#Ἰουδαῖος" ref="#ioudaios"><unclear>Ἰου</unclear>δαίων</placeName>
                     <w lemma="ἀναγράφω">ἀναγράψαι</w>
                     <w lemma="αὐτός">αὐτὸν</w>
                     <w lemma="εἰς">εἰς</w>
                     <lb n="14"/>
-            <w lemma="ὁ">τὸ</w> <w><unclear>τῶν</unclear></w> <w part="I">τ</w><gap reason="lost" quantity="6" unit="character" precision="low"/><orig>ΕΥΕ<unclear>ΙΣΥΔΙΟΥ</unclear></orig>
+            <w lemma="ὁ">τὸ</w> <w lemma="ὁ"><unclear>τῶν</unclear></w> <w part="I">τ</w><gap reason="lost" quantity="6" unit="character" precision="low"/><orig>ΕΥΕ<unclear>ΙΣΥΔΙΟΥ</unclear></orig>
    <w lemma="καί"><unclear>καὶ</unclear></w>
                     <w lemma="εἰμί">εἶναι</w>
-                    <w>ἀλειτούρ<lb n="15" break="no"/>γητο<supplied reason="lost">ν</supplied></w> <w><supplied reason="lost">πά</supplied>σης</w> <w><supplied reason="lost">λε</supplied>ιτουρ<supplied reason="lost">γί</supplied>ας</w>
-                    <w><supplied reason="lost">ὁ</supplied><unclear>μ</unclear>οίως</w>
+                    <w lemma="ἀλειτούργητος">ἀλειτούρ<lb n="15" break="no"/>γητο<supplied reason="lost">ν</supplied></w> <w lemma="πᾶς"><supplied reason="lost">πά</supplied>σης</w> <w lemma="λειτουργία"><supplied reason="lost">λε</supplied>ιτουρ<supplied reason="lost">γί</supplied>ας</w>
+                    <w lemma="ὅμοιος"><supplied reason="lost">ὁ</supplied><unclear>μ</unclear>οίως</w>
                     <w lemma="δέ">δὲ</w>
                     <w lemma="καί">καὶ</w>
-                    <w>στε<lb n="16" break="no"/>φα<supplied reason="lost">νοῦν</supplied></w>
+                    <w lemma="στεφανόω">στε<lb n="16" break="no"/>φα<supplied reason="lost">νοῦν</supplied></w>
                     <w lemma="αὐτός"><supplied reason="lost">α</supplied>ὐτὸν</w>
                     <w lemma="κατά">καθ’</w> 
-                    <w>ἑκάστην</w>
+                    <w lemma="ἕκαστος">ἑκάστην</w>
                     <w lemma="σύνοδος">σύνοδον</w>
                     <w lemma="καί">καὶ</w>
-                    <w>νου<unclear>μη</unclear><lb n="17" break="no"/>νί<unclear>αν</unclear></w>
+                    <w lemma="νουμηνία">νου<unclear>μη</unclear><lb n="17" break="no"/>νί<unclear>αν</unclear></w>
                     <w lemma="στέφανος"><unclear>στε</unclear><supplied reason="lost">φ</supplied>άνωι</w>
-                    <w><supplied reason="lost">ἐλ</supplied>αίνωι</w>
+                    <w lemma="ἐλάινος"><supplied reason="lost">ἐλ</supplied>αίνωι</w>
                     <w lemma="καί">καὶ</w>
-                    <w>λημνίσκωι</w>
-                    <w>ὀνομαστί</w>
+                    <w lemma="λημνίσκος">λημνίσκωι</w>
+                    <w lemma="ὀνομαστί">ὀνομαστί</w>
                     <lb n="18"/>
                     <w lemma="ὁ">τὸ</w>
                     <w lemma="δέ"><supplied reason="lost">δ</supplied>ὲ</w>
                     <w lemma="ψήφισμα">ψήφισμα</w>
                     <w lemma="ὅδε">τόδε</w>
-                    <w>ἀναγράψαντες</w>
+                    <w lemma="ἀναγράφω">ἀναγράψαντες</w>
                     <w lemma="ὁ">οἱ</w>
-                    <w>ἄρχον<supplied reason="lost">τες</supplied></w>
+                    <w lemma="ἄρχων">ἄρχον<supplied reason="lost">τες</supplied></w>
                     <lb n="19"/>
                     <w lemma="εἰς"><supplied reason="lost">εἰ</supplied><unclear>ς</unclear></w>
-                    <w>στήλην</w> <placeName type="ethnic" nymRef="#Πάριος" ref="#paros">Παρίου</placeName> <w>θέτωσαν</w>
+                    <w lemma="στήλη">στήλην</w> <placeName type="ethnic" nymRef="#Πάριος" ref="#paros">Παρίου</placeName> <w lemma="τίθημι">θέτωσαν</w>
                     <w lemma="εἰς">εἰς</w>
                     <w lemma="ὁ">τὸν</w>
-                    <w lemma="ἐπί">ἐ<supplied reason="lost">πι</supplied><lb n="20" 
-                       break="no"/><supplied reason="lost">σημ</supplied><unclear>ό</unclear>τατον</w>
+                    <w lemma="ἐπί">ἐ<supplied reason="lost">πι</supplied><lb n="20" break="no"/><supplied reason="lost">σημ</supplied><unclear>ό</unclear>τατον</w>
                     <w lemma="τόπος"><supplied reason="lost">τόπ</supplied>ον</w>
                     <w lemma="ὁ">τοῦ</w>
-                    <w>ἀμφιθεάτρου</w>
+                    <w lemma="ἀμφιθέατρον">ἀμφιθεάτρου</w>
                     <space/><lb n="21"/>
                     <space/>
                     <w lemma="λευκός">λευκαὶ</w>
-                    <w>πᾶσαι</w>
+                    <w lemma="πᾶς">πᾶσαι</w>
                     <space/>
                     <lb n="22"/>
                     <persName type="attested"><name nymRef="Δέκμος">Δέκμος</name>
                     <name nymRef="Οὐαλέριος">Οὐαλέριος</name>
-                    <persName type="attested"><name nymRef="Γάϊος">Γαΐου</name></persName>
+                    <persName type="attested"><name nymRef="Γάϊος">Γαΐου</name></persName>
                     <name nymRef="Διονύσιος">Διονύσιος</name></persName>
                     <lb n="23"/>
                     <w lemma="ὁ">τὸ</w>
-                    <w><unclear>ἔ</unclear><supplied reason="lost">δ</supplied><unclear>α</unclear><supplied reason="lost">φ</supplied>ος</w>
-                    <w>ἐκονίασεν</w>
+                    <w lemma="ἔδαφος"><unclear>ἔ</unclear><supplied reason="lost">δ</supplied><unclear>α</unclear><supplied reason="lost">φ</supplied>ος</w>
+                    <w lemma="κονιάω">ἐκονίασεν</w>
                     <w lemma="καί">καὶ</w>
                     <w lemma="ὁ">τὸ</w>
-                    <w>ἀμφι<lb n="24" break="no"/>θέατρον</w>
-            <w lemma="καί">καὶ</w> <w>ἐζωγράφησεν</w>
+                    <w lemma="ἀμφιθέατρον">ἀμφι<lb n="24" break="no"/>θέατρον</w>
+            <w lemma="καί">καὶ</w> <w lemma="ζωγραφέω">ἐζωγράφησεν</w>
                     <w lemma="ὁ">τοῖς</w>
                     <lb n="25"/>
                     <w lemma="ἴδιος">ἰδίοις</w>
                     <w lemma="δαπάνημα">δαπανήμασιν</w>
-                    <w>ἐπίδομα</w>
+                    <w lemma="ἐπίδομα">ἐπίδομα</w>
                     <lb n="26"/>
                     <space/>
                     <w lemma="ὁ">τῶι</w>
-                    <w>πολιτεύματι</w>
+                    <w lemma="πολίτευμα">πολιτεύματι</w>
                     <space/></ab>
 </div>
          <div type="apparatus">
@@ -294,14 +292,14 @@
                     regarded it as more prudent to leave it open 'dans les trente années qui ont
                     précedé l'ère chrétienne ou le siècle suivant'.</note>
                </app>
-               <app loc="3"><rdg  resp="jmr1978">Ἀρα<unclear>ξα</unclear></rdg> <note>emendation by Fraser, LGPN</note></app>
+               <app loc="3"><rdg resp="jmr1978">Ἀρα<unclear>ξα</unclear></rdg> <note>emendation by Fraser, LGPN</note></app>
                <app loc="6-7"><rdg resp="jmr1978">Π̣Ρ̣ΗΠ̣ΟΤΗΣ [ . . . . ]ΩΓΗΣ</rdg>
                <rdg resp="cdlBE"><unclear>πρ</unclear>ηποτης/[τῆς συναγ]<unclear>ω</unclear>γῆς</rdg></app>
             </listApp>
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) . . ., 5.Phamenoth, zur Amtszeit der Archonten Arimmas des . . ., Dorion des
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) . . ., 5.Phamenoth, zur Amtszeit der Archonten Arimmas des . . ., Dorion des
                Ptolemaios, Zelaios des Gnaeus, Ariston des Araxa- . . ., Serapion des Andromachos, Nikias des . . . . . . des Simon. Da Valerius Dionysius des 
                Gaius . . . . . . stets ein edler und gutr Mann ist . . . und Gutes tut, . . .(?) wo immer es vermag, allgemein und privat, einem jeden der Bürger 
                und darüber hinaus den Boden des Amphitheaters weissen und die Wande bemalen liess, beschlossen die Archonten und das Politeuma der Juden in Berenike, 
@@ -323,7 +321,7 @@
                wool. After inscribing this decree on a stele of Parian stone <note>i.e. marble</note> the archons are to place it in the most conspicuous part 
             of the amphitheatre.</p>
             <p>All <note>the voting pebbles</note> white <note>i.e. decided unanimously</note>. </p>
-            <p>Dekmos Oualerios <supplied reason="explanation"><foreign  xml:lang="la">Decimus Valerius</foreign></supplied> Dionysios <supplied reason="subaudible">son</supplied> of Gaios, has plastered the floor and the amphitheatre and painted it at his own expense 
+            <p>Dekmos Oualerios <supplied reason="explanation"><foreign xml:lang="la">Decimus Valerius</foreign></supplied> Dionysios <supplied reason="subaudible">son</supplied> of Gaios, has plastered the floor and the amphitheatre and painted it at his own expense 
                as a contribution to the politeuma.</p></div>
        
        

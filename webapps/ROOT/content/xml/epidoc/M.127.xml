@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -123,13 +123,13 @@
                         <persName type="attested" key="lgpn:V1-60878"><name nymRef="Ἡράκων">Ἡράκωνοϲ</name></persName></persName> 
                     <lb n="2"/><w lemma="καί">καὶ</w> <persName type="attested" key="lgpn:V1-60876"><name nymRef="Εὐφρώ"><seg part="I">Εὐφρὼ</seg></name></persName> <gap cert="low" reason="lost" quantity="2" unit="character"/>
                     <lb n="3"/><gap reason="lost" quantity="7" unit="character"/>
-                    <lb n="4"/> <w>ἐπύηϲαϲ</w> <space quantity="3" unit="character"/> <note>sic</note>
-                    <lb n="5"/> <w>ἡατοῦϲ</w> <space quantity="3" unit="character"/> <note>sic</note>
+                    <lb n="4"/> <w lemma="ποιέω">ἐπύηϲαϲ</w> <space quantity="3" unit="character"/> <note>sic</note>
+                    <lb n="5"/> <w lemma="ἑαυτου">ἡατοῦϲ</w> <space quantity="3" unit="character"/> <note>sic</note>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Filippo di Eracon ed Eufrò fecero per sé stessi</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Filippo di Eracon ed Eufrò fecero per sé stessi</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>Philippos <supplied reason="subaudible">son</supplied> of Herakon, and Euphro [ . . .] 
                set this up for themselves.</p></div>
          </div>

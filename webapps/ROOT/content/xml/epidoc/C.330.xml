@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -145,15 +145,15 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="1"/><gap reason="lost" quantity="14" unit="character" precision="low"/> <w><unclear>ἱα</unclear>ρεὺ<unclear>ς</unclear></w>
-                    <lb n="2"/> <supplied reason="lost" evidence="previouseditor"><w lemma="ὁ">τῶ</w> <persName type="divine" key="amun"><name nymRef="Ἄμμων">Ἄμμωνος</name></persName></supplied> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸ</w> <w><supplied reason="lost">ἅ</supplied>γαλμα</w> 
+                    <lb n="1"/><gap reason="lost" quantity="14" unit="character" precision="low"/> <w lemma="ἱερεύς"><unclear>ἱα</unclear>ρεὺ<unclear>ς</unclear></w>
+                    <lb n="2"/> <supplied reason="lost" evidence="previouseditor"><w lemma="ὁ">τῶ</w> <persName type="divine" key="amun"><name nymRef="Ἄμμων">Ἄμμωνος</name></persName></supplied> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸ</w> <w lemma="ἄγαλμα"><supplied reason="lost">ἅ</supplied>γαλμα</w> 
                     <lb n="3"/> <w lemma="ὁ">τῶ</w> <persName type="divine" key="amun"><name nymRef="Ἄμμων">Ἄμμωνος</name></persName> 
-                    <w><supplied reason="lost">ἀν</supplied>θυπατεύ<lb n="4" break="no"/><supplied evidence="previouseditor" reason="lost">οντος</supplied></w> <supplied reason="lost" evidence="previouseditor"><w lemma="καί">καὶ</w></supplied>
-                    <w><supplied evidence="previouseditor" reason="lost">ἀφι</supplied><supplied reason="lost">ερ</supplied>ώσαντος</w>
+                    <w lemma="ἀνθυπατεύω"><supplied reason="lost">ἀν</supplied>θυπατεύ<lb n="4" break="no"/><supplied evidence="previouseditor" reason="lost">οντος</supplied></w> <supplied reason="lost" evidence="previouseditor"><w lemma="καί">καὶ</w></supplied>
+                    <w lemma="ἀφιερόω"><supplied evidence="previouseditor" reason="lost">ἀφι</supplied><supplied reason="lost">ερ</supplied>ώσαντος</w>
                     <lb n="5"/><persName type="attested" key="pir2-f-0346"><supplied reason="lost" evidence="previouseditor"><name nymRef="Φλάβιος">Φλαβίω</name></supplied> 
                         <name nymRef="Πούδης"><supplied evidence="previouseditor" reason="lost">Πούδ</supplied><supplied reason="lost">εν</supplied><unclear>τ</unclear>ος</name> 
                        <name nymRef="Πομπωνιανός">Πομπω<lb n="6" break="no"/><supplied reason="lost" evidence="previouseditor">νιανῶ</supplied></name></persName> <supplied reason="lost" evidence="previouseditor"><w lemma="ὁ">τῶ</w></supplied> 
-                    <w>κ<supplied reason="lost">ρατίστ</supplied>ω</w> <w>ἀνθυπάτω</w>
+                    <w lemma="κράτιστος">κ<supplied reason="lost">ρατίστ</supplied>ω</w> <w lemma="ἀνθύπατος">ἀνθυπάτω</w>
                 </ab>
 </div>
          <div type="apparatus">

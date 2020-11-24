@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -128,8 +128,8 @@
             <date type="life-span" dur="P15Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="15">ιε</num> </date> 
                     <lb n="5"/><persName type="attested" key="lgpn:V1-64836"><name nymRef="Λύκα">Λύκα</name> <persName type="attested" key="lgpn:V1-63422"><name nymRef="Γάϊος">Γαίου</name></persName></persName>
                     <lb n="6"/><date type="life-span" dur="P58Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="58">νη</num> </date>
-            <lb n="7"/><persName type="attested" key="lgpn:V1-65564"><name nymRef="Σάρρα">Σάρρα</name></persName> <w>προσ
-            <lb n="8" break="no"/>ήλυτος</w>
+            <lb n="7"/><persName type="attested" key="lgpn:V1-65564"><name nymRef="Σάρρα">Σάρρα</name></persName> <w lemma="προσήλυτος">προσ<lb 
+               n="8" break="no"/>ήλυτος</w>
                     <lb n="9"/><date type="life-span" dur="P18Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="18">ιη</num> </date>
                 </ab>
 </div>
@@ -139,7 +139,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>Joses des Crispus, 4 (Jahre); Quintus des Quintus, 15 (Jahre) Lyka des Gaius, 58 (Jahre); 
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>Joses des Crispus, 4 (Jahre); Quintus des Quintus, 15 (Jahre) Lyka des Gaius, 58 (Jahre); 
             Sarra die Proselytin, 18 (Jahre)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>Joses <supplied reason="subaudible">son</supplied> of Krispos <supplied reason="explanation"><foreign xml:lang="la">Crispus</foreign></supplied>, aged 4; 
                Kointos <supplied reason="explanation"><foreign xml:lang="la">Quints</foreign></supplied> <supplied reason="subaudible">son</supplied> of Kointos <supplied reason="explanation"><foreign xml:lang="la">Quintus</foreign></supplied>, aged 15; 

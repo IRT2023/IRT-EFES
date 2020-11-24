@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -105,6 +104,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -133,7 +133,7 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/aQhZaLDLHRi9CVYbpgpGBB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="3">γ</num> 
-                   <rs type="month" key="thoth"><w>Θώ<unclear>θ</unclear><lb n="2" break="no"/><supplied reason="lost">υ</supplied></w></rs> <num value="3">γ</num></date> <persName type="attested"><name nymRef="Ἁγησιτίμα" cert="low">Ἁ
+                   <rs type="month" key="thoth"><w lemma="Θώθ">Θώ<unclear>θ</unclear><lb n="2" break="no"/><supplied reason="lost">υ</supplied></w></rs> <num value="3">γ</num></date> <persName type="attested"><name nymRef="Ἁγησιτίμα" cert="low">Ἁ
                     <lb n="3"/>γη<unclear>ϲ</unclear>ιτ<supplied reason="omitted">ί</supplied>μ<lb n="4" break="no"/>α</name> <persName type="attested"><name nymRef="Πτυλᾶς" cert="low">Πτυλᾶ</name></persName></persName> 
                     <lb n="5"/><date type="life-span" dur="P71Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="71">οα</num> </date>

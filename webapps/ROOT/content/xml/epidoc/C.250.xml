@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-01" who="Pietro">metadata</change>
@@ -127,8 +127,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/femgEKASPbWBRjnGsHzyYd"><w><supplied reason="lost"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w> <gap reason="lost" quantity="1" unit="character"/> <persName  type="emperor" key="commodus"><name nymRef="Μᾶρκος"><expan><abbr><unclear>Μ</unclear></abbr><ex>άρκου</ex></expan></name> 
-                    <name nymRef="Αὐρήλιος"><unclear>Αὐρη</unclear>λίου</name> <del rend="erasure"><name  nymRef="Κόμμοδος">Κομμόδου</name></del> <name nymRef="Ἀντωνῖνος">Ἀντωνείνου</name>
+                    <lb n="1"/><date ref="https://godot.date/id/femgEKASPbWBRjnGsHzyYd"><w lemma="ἔτος"><supplied reason="lost"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w> <gap reason="lost" quantity="1" unit="character"/> <persName type="emperor" key="commodus"><name nymRef="Μᾶρκος"><expan><abbr><unclear>Μ</unclear></abbr><ex>άρκου</ex></expan></name> 
+                    <name nymRef="Αὐρήλιος"><unclear>Αὐρη</unclear>λίου</name> <del rend="erasure"><name nymRef="Κόμμοδος">Κομμόδου</name></del> <name nymRef="Ἀντωνῖνος">Ἀντωνείνου</name>
                     <lb n="2"/><name nymRef="Σεβαστός"><supplied reason="lost">Σε</supplied>β<supplied reason="lost">α</supplied><unclear>στ</unclear>οῦ</name></persName></date>
                    <persName type="attested" key="lgpn:V1-63184"><name nymRef="Δέκμος"><expan><abbr>Δ</abbr><ex>έκμος</ex></expan></name> 
                     <name nymRef="Κασκέλλιος">Κασκέλλιος</name> <name nymRef="Ἀριστοτέλης">Ἀριστοτέλης</name></persName>
@@ -136,8 +136,8 @@
                     <space quantity="1" unit="character"/> <w lemma="καί">καὶ</w> <space quantity="3" unit="character"/>
                     <lb n="4"/><gap reason="lost" quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-63185"><name nymRef="Κασκέλλιος"><supplied reason="lost">Κ</supplied>ασκέ<unclear>λλ</unclear>ιος</name> 
                     <name nymRef="Ἀριστοτέλης">Ἀριστοτέλης</name></persName> <orig>να<unclear>ι</unclear></orig><gap reason="lost" quantity="5" unit="character" precision="low"/>
-                    <lb n="5"/><date><w lemma="ἐπί"><supplied reason="lost">ἐφ’</supplied></w><w><unclear>ὧ</unclear>ν</w></date> <w>ὁ</w> <w><unclear>ν</unclear>εὼς</w> 
-                    <w lemma="γίγνομαι">ἐγένετο</w> <w lemma="καί">καὶ</w> <w>ἀφ<supplied reason="lost">ιερώθη</supplied></w>
+                    <lb n="5"/><date><w lemma="ἐπί"><supplied reason="lost">ἐφ’</supplied></w><w lemma="ὅς"><unclear>ὧ</unclear>ν</w></date> <w lemma="ὁ">ὁ</w> <w lemma="ναός"><unclear>ν</unclear>εὼς</w> 
+                    <w lemma="γίγνομαι">ἐγένετο</w> <w lemma="καί">καὶ</w> <w lemma="ἀφιερόω">ἀφ<supplied reason="lost">ιερώθη</supplied></w>
                 </ab>
          </div>
          

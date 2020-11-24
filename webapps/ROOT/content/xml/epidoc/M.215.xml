@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
             </textClass>
         <creation>Transcription (Reynolds).</creation></profileDesc>
         <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
             <change when="2011-08-12" who="Pietro">entered and tagged text</change>
@@ -129,7 +129,7 @@
             <ab>
                 <lb n="1"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name> 
                 <g ref="symbols.xml#stop"/> <name nymRef="Φούφιος">Φούφιος</name> <g ref="symbols.xml#stop"/> <lb n="1"/><name nymRef="Σέκονδος"><supplied reason="lost">Σέ</supplied>κονδος</name></persName> <space unit="character" extent="3"/>
- <lb n="2"/> <w>ὀέτρανος</w> <g ref="symbols.xml#stop"/> <w><expan><abbr>λεγ</abbr><ex>ιῶνος</ex></expan></w> 
+ <lb n="2"/> <w lemma="οὐέτρανος">ὀέτρανος</w> <g ref="symbols.xml#stop"/> <w lemma="λεγίων"><expan><abbr>λεγ</abbr><ex>ιῶνος</ex></expan></w> 
  <lb n="3"/><num value="1">α</num> <placeName type="ethnic" nymRef="#Εἰταλικός" ref="#italia">Εἰταλικῆς</placeName>
  <lb n="4"/> <space unit="character" extent="unknown"/> 
                 <date type="life-span" dur="P60Y"><w lemma="ἔτος">ἐτῶν</w>
@@ -143,7 +143,7 @@
             </div>
             <div type="translation" xml:space="preserve">
             <div type="translation" source="#mohamed-jmr2002" xml:lang="en"><p>Lucius Fufius Secundus, veteran of Legion Prima Italica, aged 60.</p></div>
-                <div  type="translation" source="#AE" xml:lang="fr"><p>Lucius Fufius Secundus, vétéran de la legio I Italica, âgé de 60 ans.</p></div>
+                <div type="translation" source="#AE" xml:lang="fr"><p>Lucius Fufius Secundus, vétéran de la legio I Italica, âgé de 60 ans.</p></div>
                 <div type="translation" resp="cmr" xml:lang="en"><p>L(oukios) Phouphios Sekondos 
                     <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Fufius Secundus</foreign></supplied>, veteran of Legion Prima Italica, aged 60.</p></div>
          </div>

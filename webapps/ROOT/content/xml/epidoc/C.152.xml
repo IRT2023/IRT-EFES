@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-02-17" who="MGDA">fixed bibliography</change>
@@ -134,27 +134,27 @@
 
                     <!-- check number values missing "|" marks?  -->
                     <div type="textpart" subtype="text" n="a">
-                       <ab><lb n="1"/> <space quantity="2" unit="character"/> <persName type="divine" key="agathetyche"><name nymRef="Τύχα">Τύχα</name> <w>Ἀγαθά</w> </persName>.
+                       <ab><lb n="1"/> <space quantity="2" unit="character"/> <persName type="divine" key="agathetyche"><name nymRef="Τύχα">Τύχα</name> <w lemma="ἀγαθός">Ἀγαθά</w> </persName>.
                     <lb n="2"/><date><date ref="https://godot.date/id/Fk9V2n8d5ktGEzfSfq7QaQ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                     <num value="254">σνδ</num></date> <w lemma="ὁ">τοῦ</w> <w lemma="καί">καὶ</w> <date ref="https://godot.date/id/xmJvKQK2xNRKyuNQG8Aj3o"><num value="3">γ</num> 
                     <w lemma="Αὐτοκράτωρ">Αὐτοκρά<lb n="3" break="no"/>τορος</w> <persName type="emperor" key="severusalexander"><name nymRef="Καῖσαρ">Καίσαρος</name> 
                     <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκου</ex></expan></name> <name nymRef="Αὐρήλιος">Αὐρηλίου</name> 
-                    <lb n="4"/><name nymRef="Σεβῆρος">Σεβήρου</name> <name nymRef="Ἀλέξανδρος">Ἀλεξάνδρου</name> <g ref="symbols.xml#leaf"/> <lb n="5"/> <w>Εὐσεβοῦς</w> <w>Εὐτυχοῦς</w> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName></date> 
-                    <lb n="6"/><date><w lemma="ἐπί">ἐπ’</w><w>ἱερέος</w> <w lemma="ὁ">τοῦ</w> <w>κτίστου</w> 
-                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλ<lb n="7" break="no"/>λωνος</name></persName> <persName type="attested"  key="lgpn:V1-63080"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκου</ex></expan></name>
-                    <name nymRef="Ἀντώνιος">Ἀντωνίου</name> <name nymRef="Ἀρίστιππος">Ἀριστίπ<lb n="8" break="no"/>που</name> <w>νέου</w></persName></date> <date><w>ἐφηβαρχούντων</w> 
+                    <lb n="4"/><name nymRef="Σεβῆρος">Σεβήρου</name> <name nymRef="Ἀλέξανδρος">Ἀλεξάνδρου</name> <g ref="symbols.xml#leaf"/> <lb n="5"/> <w lemma="Εὐσεβής">Εὐσεβοῦς</w> <w lemma="εὐτυχής">Εὐτυχοῦς</w> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName></date> 
+                    <lb n="6"/><date><w lemma="ἐπί">ἐπ’</w><w lemma="ἱερεύς">ἱερέος</w> <w lemma="ὁ">τοῦ</w> <w lemma="κτίστης">κτίστου</w> 
+                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλ<lb n="7" break="no"/>λωνος</name></persName> <persName type="attested" key="lgpn:V1-63080"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκου</ex></expan></name>
+                    <name nymRef="Ἀντώνιος">Ἀντωνίου</name> <name nymRef="Ἀρίστιππος">Ἀριστίπ<lb n="8" break="no"/>που</name> <w lemma="νέος">νέου</w></persName></date> <date><w lemma="ἐφηβαρχέω">ἐφηβαρχούντων</w> 
                     <lb n="9"/><persName type="attested" key="lgpn:V1-63541"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκου</ex></expan></name>
                     <name nymRef="Ἰούλιος">Ἰουλίου</name> <name nymRef="Δημήτριος">Δημητρίου</name></persName> <w lemma="καί">καὶ</w> 
                     <lb n="10"/><persName type="attested"><name nymRef="Ἀνθέστιος">Ἀνθεστίου</name> <name nymRef="Μάξιμος">Μαξίμου</name></persName></date> <w lemma="καί">καὶ</w> 
-                    <lb n="11"/> <w>στρατηγοῦντος</w> <persName type="attested" key="lgpn:V1-64008"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>οπλίου</ex></expan></name>
-                    <name nymRef="Κάσσιος">Κασσί<lb n="12" break="no"/>ου</name> <name nymRef="Ζωτικός">Ζωτικοῦ</name></persName> <w lemma="καί">καὶ</w> <w>γυμνασι<lb n="13" break="no"/>αρχούντων</w> <persName type="attested"><name nymRef="Φουλβείνιος">Φουλβεινίου</name> 
+                    <lb n="11"/> <w lemma="στρατηγέω">στρατηγοῦντος</w> <persName type="attested" key="lgpn:V1-64008"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>οπλίου</ex></expan></name>
+                    <name nymRef="Κάσσιος">Κασσί<lb n="12" break="no"/>ου</name> <name nymRef="Ζωτικός">Ζωτικοῦ</name></persName> <w lemma="καί">καὶ</w> <w lemma="γυμνασιαρχέω">γυμνασι<lb n="13" break="no"/>αρχούντων</w> <persName type="attested"><name nymRef="Φουλβείνιος">Φουλβεινίου</name> 
                             <lb n="14"/><name nymRef="Κόϊντος">Κοίντου</name></persName> <w lemma="καί">καὶ</w> <persName type="attested" key="lgpn:V1-63011"><name nymRef="Αὐρήλιος">Αὐρηλίου</name> 
                     <lb n="15"/><name nymRef="Ἀπολλώς">Ἀπολλῶτος</name></persName></date> 
-                    <lb n="16"/> <space quantity="5" unit="character"/> <w>Ἔφηβοι</w> <space quantity="5" unit="character"/></ab></div>                    
+                    <lb n="16"/> <space quantity="5" unit="character"/> <w lemma="ἔφηβος">Ἔφηβοι</w> <space quantity="5" unit="character"/></ab></div>                    
                     <div type="textpart" subtype="text" n="b">
                        <div type="textpart" subtype="column" n="i">
                        <ab><lb n="1"/><persName type="attested" key="lgpn:V1-65583"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name>
-                    <name nymRef="Αἴλιος">Αἴλιος</name> <name nymRef="Σεραπίων">Σεραπίων</name></persName> <w><expan><abbr>γρ</abbr><ex>αμμάτευς</ex></expan></w>
+                    <name nymRef="Αἴλιος">Αἴλιος</name> <name nymRef="Σεραπίων">Σεραπίων</name></persName> <w lemma="γραμματεύς"><expan><abbr>γρ</abbr><ex>αμμάτευς</ex></expan></w>
                       
                     <lb n="2"/><persName type="attested"><name nymRef="Βαλέριος"><expan><abbr>Βα</abbr><ex>λέριοϲ</ex></expan></name> <name nymRef="Μᾶρκος">Μᾶρκοϲ</name></persName>   
                     <lb n="3"/><persName type="attested"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Φαῦστος">Φαῦϲτοϲ</name></persName>   
@@ -188,12 +188,12 @@
                        </ab>
                        </div>
                        <div type="textpart" subtype="column" n="ii"><ab>
-                       <lb n="1"/><persName type="attested" key="lgpn:V1-63737"><name nymRef="Κυῖντος"><expan><abbr>Κυ</abbr><ex>ῖντος</ex></expan></name> <name nymRef="Αἴλιος"><expan><abbr>Αἴ</abbr><ex>λιος</ex></expan></name> <name nymRef="Ἑρμῆς">Ἑρμῆς</name></persName> <w><expan><abbr>γρ</abbr><ex>αμμάτευς</ex></expan></w> 
+                       <lb n="1"/><persName type="attested" key="lgpn:V1-63737"><name nymRef="Κυῖντος"><expan><abbr>Κυ</abbr><ex>ῖντος</ex></expan></name> <name nymRef="Αἴλιος"><expan><abbr>Αἴ</abbr><ex>λιος</ex></expan></name> <name nymRef="Ἑρμῆς">Ἑρμῆς</name></persName> <w lemma="γραμματεύς"><expan><abbr>γρ</abbr><ex>αμμάτευς</ex></expan></w> 
                     <lb n="2"/><persName type="attested" key="lgpn:V1-63542"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Δημήτριος">Δημήτριοϲ</name></persName> 
                     <lb n="3"/><persName type="attested" key="lgpn:V1-63414"><name nymRef="Πετρώνιος"><expan><abbr>Πετ</abbr><ex>ρώνιοϲ</ex></expan></name> <name nymRef="Βίων">Βίων</name></persName> 
                     <lb n="4"/><persName type="attested" key="lgpn:V1-64016"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ἡλιόδωρος">Ἡλιόδωροϲ</name></persName> 
                     <lb n="5"/><persName type="attested" key="lgpn:V1-62797"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ἀμμώνιος">Ἀμμώνιοϲ</name></persName> 
-                    <lb n="6"/><persName type="attested"  key="lgpn:V1-64007"><name nymRef="Σεμπρώνιος"><expan><abbr>Ϲεμ</abbr><ex>πρώνιοϲ</ex></expan></name> <name nymRef="Ζώσιμος">Ζωϲ<supplied reason="omitted">ι</supplied>μοϲ</name></persName> 
+                    <lb n="6"/><persName type="attested" key="lgpn:V1-64007"><name nymRef="Σεμπρώνιος"><expan><abbr>Ϲεμ</abbr><ex>πρώνιοϲ</ex></expan></name> <name nymRef="Ζώσιμος">Ζωϲ<supplied reason="omitted">ι</supplied>μοϲ</name></persName> 
                     <lb n="7"/><persName type="attested" key="lgpn:V1-65577"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Σέμνος">Ϲέμνοϲ</name></persName> 
                     <lb n="8"/><persName type="attested"><name nymRef="Βαλέριος"><expan><abbr>Βα</abbr><ex>λέριοϲ</ex></expan></name> <name nymRef="Μᾶρκος">Μᾶρκοϲ</name></persName> 
                     <lb n="9"/><persName type="attested" key="lgpn:V1-62708"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ἀλέξανδρος">Ἀλέξανδροϲ</name></persName> 
@@ -203,12 +203,12 @@
                     <lb n="13"/><persName type="attested"><name nymRef="Αἴλιος"><expan><abbr>Αἴλ</abbr><ex>ιοϲ</ex></expan></name> <name nymRef="Ἀντώνιος">Ἀντώνιοϲ</name></persName> 
                     <lb n="14"/><persName type="attested" key="lgpn:V1-62796"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ἀμμώνιος">Ἀμμώνιοϲ</name></persName> 
                     <lb n="15"/><persName type="attested" key="lgpn:V1-63736"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ἑρμῆς">Ἑρμῆϲ</name></persName> 
-                    <lb n="16"/><persName type="attested"  key="lgpn:V1-63899"><name nymRef="Τούλλιος"><expan><abbr>Τού</abbr><ex>λλιοϲ</ex></expan></name> <name nymRef="Εὐτυχιανός">Εὐτυχιανόϲ</name></persName> 
+                    <lb n="16"/><persName type="attested" key="lgpn:V1-63899"><name nymRef="Τούλλιος"><expan><abbr>Τού</abbr><ex>λλιοϲ</ex></expan></name> <name nymRef="Εὐτυχιανός">Εὐτυχιανόϲ</name></persName> 
                     <lb n="17"/><persName type="attested" key="lgpn:V1-64838"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιοϲ</ex></expan></name> <name nymRef="Ἰούλιος"><expan><abbr>Ἰού</abbr><ex>λιοϲ</ex></expan></name> <name nymRef="Λύκος">Λύκοϲ</name></persName> 
                     <lb n="18"/><persName type="attested" key="lgpn:V1-62996"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ἀπολλώνιος">Ἀπολλώνιοϲ</name></persName> 
                     <lb n="19"/><persName type="attested" key="lgpn:V1-64423"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Ἰσοκράτης">Ἰϲοκράτηϲ</name></persName> 
                     <lb n="20"/><persName type="attested" key="lgpn:V1-62795"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ἀμμώνιος">Ἀμμώνιοϲ</name> <name nymRef="Ῥωμαῖος"><expan><abbr>Ῥω</abbr><ex cert="low">μαῖοϲ</ex></expan></name></persName> 
-                    <lb n="21"/><persName type="attested"  key="lgpn:V1-63900"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Εὐτυχίδας">Εὐτυχίδαϲ</name></persName> 
+                    <lb n="21"/><persName type="attested" key="lgpn:V1-63900"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Εὐτυχίδας">Εὐτυχίδαϲ</name></persName> 
                     <lb n="22"/><persName type="attested"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ποτεῖτος">Ποτεῖτοϲ</name></persName> 
                     <lb n="23"/><persName type="attested" key="lgpn:V1-64017"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιοϲ</ex></expan></name> <name nymRef="Ἡλιόδωρος">Ἡλιόδωροϲ</name></persName> 
                     <lb n="24"/><persName type="attested"><name nymRef="Ἀβίνιος"><expan><abbr>Ἀβί</abbr><ex>νιοϲ</ex></expan></name> <name nymRef="Μουνάτιος">Μουνάτιοϲ</name></persName> 
@@ -224,7 +224,7 @@
                     
                     <div type="textpart" subtype="text" n="c"><ab><lb n="1"/><persName type="divine" key="hermes"><name nymRef="Ἑρμῆς">Ἑρμαῖ</name></persName>
                     <space quantity="5" unit="character"/> <persName type="divine" key="herakles"><name nymRef="Ἡρακλῆς">Ἡρακλεῖ </name></persName> <space quantity="5" unit="character"/>
-                    <lb n="2"/> <space quantity="7" unit="character"/> <w lemma="ὁ">οἱ</w> <w>ἔφηβοι</w> <space quantity="7" unit="character"/></ab></div>
+                    <lb n="2"/> <space quantity="7" unit="character"/> <w lemma="ὁ">οἱ</w> <w lemma="ἔφηβος">ἔφηβοι</w> <space quantity="7" unit="character"/></ab></div>
                 
 </div>
          <div type="apparatus">
@@ -237,7 +237,7 @@
             </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <div  type="translation" source="#oliverioDAI1" xml:lang="it"><p>Buona Fortuna! Nell'anno 254 (detto anche il) III dell'Imperatore Cesare Marco Aurelio Severo 
+            <div type="translation" source="#oliverioDAI1" xml:lang="it"><p>Buona Fortuna! Nell'anno 254 (detto anche il) III dell'Imperatore Cesare Marco Aurelio Severo 
             Alessandro Pio Felice Augusto, durante la carica del fondatore Apollo Marco Antonio Aristippo iunior, essendo efebarchi Marco Giulio Demetrio ed Antistio Massimo, 
             e(d essendo) stratego Publio Cassio Zotico, e(d essendo) ginnasiarchi Fulvinio Quinto ed Aurelio Apollonio, (sono iscritti nella lista degli) efebi: 
                <note>column 1</note> Tiberio Elio Serapion anziano; Valerio Marco; Aurelio Fausto; Cecilio Augure,; Aurelio Onesimo; Aurelio Demetrio; Flavio Alessandro; 
@@ -248,7 +248,7 @@
             Tull(i)o Eutichiano; Gaio Giulio Lupo; Aurelio  Apollonio; Claudio Isocrate; Aurelio Ammonio, Ro(mano); Aurelio Eurichide; Aurelio Potito; Aurelio Eliodoro; 
             Avi(dio) Munazio; Por(cio) Marciano; Ati(nio) Calemero; Aurelio Sref(an)eforo; Sesto Lelio Agatone; Pos(tmio) Prisco; Cassio Serapodoro. 
                <note>Below</note>: ad Hermes (e) ad Herakles gli efebi.</p></div>
-            <div  type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>: Good Fortune. <ref target="https://godot.date/id/Fk9V2n8d5ktGEzfSfq7QaQ">Year 254</ref>, which is 
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>: Good Fortune. <ref target="https://godot.date/id/Fk9V2n8d5ktGEzfSfq7QaQ">Year 254</ref>, which is 
                also <ref target="https://godot.date/id/xmJvKQK2xNRKyuNQG8Aj3o">year 3</ref> of Emperor Caesar M(arcus) Aurelius Severus Alexander, Pius, Fortunate, Augustus; 
                the priest of Apollo the founder was M(arkos) Antonios <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Antonius</foreign></supplied> Aristippos the young(er); the ephebarchs M(arkos) 
                Ioulios <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Julius</foreign></supplied>Demetrios and Anthestios Maximos <supplied reason="explanation"><foreign xml:lang="la">Anthestius Maximus</foreign></supplied>, 

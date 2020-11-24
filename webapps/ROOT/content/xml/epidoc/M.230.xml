@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,10 +121,10 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="1"/> <date ref="https://godot.date/id/hAGNKUF88Heuz9ospnQd4a"><w><unclear>Α</unclear><supplied reason="lost">ὐτοκ</supplied><unclear>ρ</unclear>ά<supplied reason="lost">τω</supplied>ρ</w>
+                    <lb n="1"/> <date ref="https://godot.date/id/hAGNKUF88Heuz9ospnQd4a"><w lemma="Αὐτοκράτωρ"><unclear>Α</unclear><supplied reason="lost">ὐτοκ</supplied><unclear>ρ</unclear>ά<supplied reason="lost">τω</supplied>ρ</w>
                     <num value="10">ι</num></date>
                     <lb n="2"/> <w lemma="πατήρ"><supplied reason="lost">πατὴ</supplied>ρ</w> <w lemma="πατρίς"><supplied reason="lost">πα</supplied><unclear>τρί</unclear><supplied reason="lost">δ</supplied><lb n="3" break="no"/>ος</w> <w lemma="ὕπατος">ὕπατος</w> <supplied reason="lost"><num value="5">ε</num> </supplied>
-                    <lb n="4"/> <w><supplied reason="lost">δ</supplied>ιὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>ουΐντου</ex></expan></name>
+                    <lb n="4"/> <w lemma="διά"><supplied reason="lost">δ</supplied>ιὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>ουΐντου</ex></expan></name>
                     <name nymRef="Πακώνιος">Πακωνίο<supplied reason="lost">υ</supplied></name>
                     <lb n="5"/><name nymRef="Ἀγριππῖνος"><supplied reason="lost">Ἀ</supplied>γριππείνου</name></persName> <space quantity="3" unit="character"/>
                     <lb n="5a"/><space extent="unknown" unit="line"/>

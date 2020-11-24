@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -136,14 +136,14 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
             <div subtype="part" n="a" xml:lang="la" type="textpart">
 <ab>
-                    <lb n="1"/><gap reason="lost" quantity="17" unit="character" precision="low"/> <w><expan><abbr><supplied reason="lost">pr</supplied>o<supplied reason="lost">co</supplied></abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
-                    <persName type="divine" key="zeus"><name nymRef="Iupiter"><supplied reason="lost">Io</supplied>ui</name> <name nymRef="Augustus">Augus<supplied reason="lost" cert="low">to</supplied></name></persName> <w><supplied reason="lost" cert="low">dedicauit</supplied></w>
+                    <lb n="1"/><gap reason="lost" quantity="17" unit="character" precision="low"/> <w lemma="proconsul"><expan><abbr><supplied reason="lost">pr</supplied>o<supplied reason="lost">co</supplied></abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                    <persName type="divine" key="zeus"><name nymRef="Iupiter"><supplied reason="lost">Io</supplied>ui</name> <name nymRef="Augustus">Augus<supplied reason="lost" cert="low">to</supplied></name></persName> <w lemma="dedico"><supplied reason="lost" cert="low">dedicauit</supplied></w>
                     <lb n="2"/><gap reason="lost" quantity="19" unit="character" precision="low"/> 
                     <space quantity="1" unit="character"/> <w lemma="ciuitas" part="I">ciuit<supplied reason="lost">a</supplied></w>
                     <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene"><supplied reason="lost">Cyrenensium</supplied></placeName>
                 </ab></div>
 <div subtype="part" n="b" xml:lang="grc" type="textpart">
-                  <ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">κ</supplied>α<unclear>ὶ</unclear></w> <w>ἀφ<supplied reason="lost">ιε</supplied>ρώσαντος</w> <w lemma="ὁ">τῶ</w> <w>κρα<space quantity="1" unit="character"></space>τί<supplied reason="lost">στ</supplied>ω</w> <w>ἀνθυπάτω</w> <persName type="attested"><name nymRef="Κλαύδιος"><expan><abbr><unclear>Κ</unclear>λ</abbr><ex>αυδίω</ex></expan></name>
+                  <ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί"><supplied reason="lost">κ</supplied>α<unclear>ὶ</unclear></w> <w lemma="ἀφιερόω">ἀφ<supplied reason="lost">ιε</supplied>ρώσαντος</w> <w lemma="ὁ">τῶ</w> <w lemma="κράτιστος">κρα<space quantity="1" unit="character"/>τί<supplied reason="lost">στ</supplied>ω</w> <w lemma="ἀνθύπατος">ἀνθυπάτω</w> <persName type="attested"><name nymRef="Κλαύδιος"><expan><abbr><unclear>Κ</unclear>λ</abbr><ex>αυδίω</ex></expan></name>
                      <lb n="2"/> <space extent="unknown" unit="character"/> <name nymRef="Ἄτταλος">Ἀττάλω</name></persName> <space extent="unknown" unit="character"/></ab></div></div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>

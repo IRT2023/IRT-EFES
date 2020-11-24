@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-05" who="MGDA">fixed bibliography</change>
@@ -134,22 +134,22 @@
                     <lb n="1"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνι</name></persName> <w lemma="καί">καὶ</w> <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις">Ἀρτ<supplied reason="lost">άμιδι</supplied></name></persName> <gap reason="lost" quantity="19" unit="character" precision="low"/> <supplied reason="lost"><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τᾶς</w> <w lemma="ὁ">τῶ</w></supplied> 
                     <lb n="2"/><persName type="emperor" key="traianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορος</w> <name nymRef="Νέρβα">Νέρβα</name> <name nymRef="Τραιανός">Τρ<supplied reason="lost">αιανῶ</supplied></name> 
                     <supplied reason="lost"><name nymRef="Καῖσαρ">Καίσαρος</name> <name nymRef="Σεβαστός">Σεβαστῶ</name> 
-                        <name nymRef="Γερμανικός">Γερμανικῶ</name></supplied> <name nymRef="Δακικός"><supplied reason="lost">Δακι</supplied><lb n="3" break="no"/>κῶ</name></persName> <w lemma="σωτηρία">σωτηρίας</w> <w lemma="καί">καὶ</w> <w>διαμ<supplied reason="lost">ονᾶς</supplied></w> 
-                    <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">τῶ</w> <w>σύνπαντος</w> 
-                        <w lemma="αὐτός">αὐτῶ</w> <w>οἴκω</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w></supplied> 
-                    <lb n="4"/><w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w>στοὰς</w> <w lemma="ἐκτός">ἐκτὸς</w> <w lemma="ὁ">τῶ</w> 
+                        <name nymRef="Γερμανικός">Γερμανικῶ</name></supplied> <name nymRef="Δακικός"><supplied reason="lost">Δακι</supplied><lb n="3" break="no"/>κῶ</name></persName> <w lemma="σωτηρία">σωτηρίας</w> <w lemma="καί">καὶ</w> <w lemma="διαμονή">διαμ<supplied reason="lost">ονᾶς</supplied></w> 
+                    <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">τῶ</w> <w lemma="σύμπας">σύνπαντος</w> 
+                        <w lemma="αὐτός">αὐτῶ</w> <w lemma="οἶκος">οἴκω</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w></supplied> 
+                    <lb n="4"/><w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="στοά">στοὰς</w> <w lemma="ἐκτός">ἐκτὸς</w> <w lemma="ὁ">τῶ</w> 
                     <gap reason="lost" quantity="33" unit="character" precision="low"/>
-                    <lb n="5" break="no"/><w part="F">τω</w> <w lemma="ὁ">οἱ</w> <w>ἱαρὲς</w> <w lemma="ἐκ">ἐκ</w> 
-                    <w>τᾶν</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπ<supplied reason="lost">όλλωνος</supplied></name></persName> 
-                    <supplied reason="lost"><w lemma="πρόσοδος">προσόδων</w></supplied> <gap reason="lost" quantity="17" unit="character"/> <w><supplied reason="lost">ἐ</supplied><lb n="6" break="no"/>πεσκεύασαν</w> <w lemma="διά">διὰ</w> <persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊω</ex></expan></name> 
+                    <lb n="5" break="no"/><w part="F">τω</w> <w lemma="ὁ">οἱ</w> <w lemma="ἱερεύς">ἱαρὲς</w> <w lemma="ἐκ">ἐκ</w> 
+                    <w lemma="ὁ">τᾶν</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπ<supplied reason="lost">όλλωνος</supplied></name></persName> 
+                    <supplied reason="lost"><w lemma="πρόσοδος">προσόδων</w></supplied> <gap reason="lost" quantity="17" unit="character"/> <w lemma="ἐπισκευάζω"><supplied reason="lost">ἐ</supplied><lb n="6" break="no"/>πεσκεύασαν</w> <w lemma="διά">διὰ</w> <persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊω</ex></expan></name> 
                     <name nymRef="Ποστόμιος">Ποστο<supplied reason="lost">μίω</supplied></name> 
                     <supplied reason="lost"><name nymRef="Ὀπτᾶτος">Ὀπτάτω</name></supplied></persName> 
-                    <supplied reason="lost"><w>ἱαρεῦς</w> <persName type="attested"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> 
-                        <w>καλλιέτευς</w></supplied> 
-                    <lb n="7"/><w lemma="ἐπί">ἐφ’</w><w>ᾧ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w>κύριος</w> <persName type="emperor" key="traianus"><name nymRef="Νέρβα">Νέρβας</name> 
+                    <supplied reason="lost"><w lemma="ἱερεύς">ἱαρεῦς</w> <persName type="attested"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> 
+                        <w lemma="καλλιέτης">καλλιέτευς</w></supplied> 
+                    <lb n="7"/><w lemma="ἐπί">ἐφ’</w><w lemma="ὅς">ᾧ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="κύριος">κύριος</w> <persName type="emperor" key="traianus"><name nymRef="Νέρβα">Νέρβας</name> 
                     <name nymRef="Τραιανός">Τ<supplied reason="lost">ραιανὸς</supplied></name> <!-- check -->
-                    <name nymRef="Σεβαστός"><supplied reason="lost">σεβαστὸς</supplied></name></persName> <gap reason="lost" quantity="12" unit="character"/> <w><supplied reason="lost" cert="low">μονάρ</supplied>
-                    <lb n="8" break="no"/>χον</w> <persName type="attested"><name nymRef="Δεκίβαλλος">Δεκίβαλλον</name></persName> <w>ἔλαβε</w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <name nymRef="Σεβαστός"><supplied reason="lost">σεβαστὸς</supplied></name></persName> <gap reason="lost" quantity="12" unit="character"/> <w lemma="μονάρχος"><supplied reason="lost" cert="low">μονάρ</supplied><lb 
+                       n="8" break="no"/>χον</w> <persName type="attested"><name nymRef="Δεκίβαλλος">Δεκίβαλλον</name></persName> <w lemma="λαμβάνω">ἔλαβε</w> <gap reason="lost" extent="unknown" unit="character"/>
    <lb n="8a"/><gap reason="lost" extent="unknown" unit="line"/>
                 </ab>
 </div>

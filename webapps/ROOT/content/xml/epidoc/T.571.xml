@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -127,7 +127,7 @@
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><ab type="attested">
-             <lb n="1"/><date ref="https://godot.date/id/bNvsDcwykTgeGTb2UYTkVf"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="4"><unclear>δ</unclear></num> <w><unclear>Π</unclear><supplied reason="lost">αῦ</supplied><unclear>ν</unclear></w> 
+             <lb n="1"/><date ref="https://godot.date/id/bNvsDcwykTgeGTb2UYTkVf"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="4"><unclear>δ</unclear></num> <w lemma="Παϋνί"><unclear>Π</unclear><supplied reason="lost">αῦ</supplied><unclear>ν</unclear></w> 
             <num value="28">ηκ</num></date>
  <lb n="2"/><gap reason="lost" quantity="5" unit="character" precision="low"/><persName type="attested"><name nymRef="-ας"><seg part="F">ας</seg></name> <persName type="attested" key="lgpn:V1-60827"><name nymRef="Σίλιος">Σι
  <lb n="3" break="no"/>λίω</name></persName></persName> 
@@ -138,7 +138,7 @@
  <lb n="5" break="no"/><supplied reason="lost">σύ</supplied>να</name> <persName type="attested" key="lgpn:V1-60827"><name nymRef="Σίλιος">Σιλί
             <lb n="6" break="no"/><unclear>ου</unclear></name></persName></persName> 
             <date type="life-span" dur="P17Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
- <num value="17">ιζ</num> </date> <rs type="month" key="pauni"><w>Πα<lb n="7" break="no"/>ῦ<supplied reason="lost">ν</supplied></w></rs> <num value="19">θι</num>.
+ <num value="17">ιζ</num> </date> <rs type="month" key="pauni"><w lemma="Παϋνί">Πα<lb n="7" break="no"/>ῦ<supplied reason="lost">ν</supplied></w></rs> <num value="19">θι</num>.
                     
                 </ab>
 </div>

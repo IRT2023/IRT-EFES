@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-22" who="MGDA">Tagged header information</change>
@@ -126,7 +126,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/yxc8UYTrpgjTqnxMVVRhgA"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="6">ϛ</num> <rs type="month" key="epiphi"><w>Ἐπιφὶ</w></rs> <num value="12">βι</num></date>
+                    <num value="6">ϛ</num> <rs type="month" key="epiphi"><w lemma="Ἐπιφί">Ἐπιφὶ</w></rs> <num value="12">βι</num></date>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-60587"><name nymRef="Κάνδιδος">Κάνδιδος</name> 
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60586"><name nymRef="Ἑρέννιος">Ἑρενν<supplied reason="omitted">ί</supplied>ου</name></persName></persName>
                     <lb n="4"/><date type="life-span" dur="P19Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
@@ -152,9 +152,9 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 6, Epiphi 12. Candido di Erennio, di anni 19.</p></div>
-            <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 5 (?), Epiphi 12th, Candidus, son of Herennus, aged 15.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 6, 12.Epiphi, Candidus des Herennius, 19 (Jahre).</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 6, Epiphi 12. Candido di Erennio, di anni 19.</p></div>
+            <div type="translation" source="#gray1956" xml:lang="en"><p>Year 5 (?), Epiphi 12th, Candidus, son of Herennus, aged 15.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 6, 12.Epiphi, Candidus des Herennius, 19 (Jahre).</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/yxc8UYTrpgjTqnxMVVRhgA">Year 6, Epeiph 12</ref>, Kandidos <supplied reason="explanation"><foreign xml:lang="la">Candidus</foreign></supplied> 
                <supplied reason="subaudible">son</supplied> of Herennios <supplied reason="explanation"><foreign xml:lang="la">Herrenius</foreign></supplied>, aged 19.</p></div>
        </div>

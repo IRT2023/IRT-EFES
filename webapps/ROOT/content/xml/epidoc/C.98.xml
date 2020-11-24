@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription from stones and from photographs (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-08-24" who="Pietro">bibliography and apparatus</change>
@@ -135,15 +135,15 @@
                     <num value="90">ϙ</num></date> <space quantity="1" unit="character"/>
                     <w lemma="καί">καὶ</w> <date ref="https://godot.date/id/RvaJu3kZPpNLb9dMCnCgZm"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="91">ϙα</num></date> <space quantity="3" unit="character"/>
-                    <lb n="2"/><date><w lemma="ἐν">ἐν</w> <w>ἱερεῖ</w> <persName type="attested" key="lgpn:V1-64441"><name nymRef="Ἴστρος">Ἴστρῳ</name></persName></date></date>
+                    <lb n="2"/><date><w lemma="ἐν">ἐν</w> <w lemma="ἱερεύς">ἱερεῖ</w> <persName type="attested" key="lgpn:V1-64441"><name nymRef="Ἴστρος">Ἴστρῳ</name></persName></date></date>
                <date ref="https://godot.date/id/wD4kLRqFjQqGGTk9NjvkSK"><w lemma="εἰς">ἐς</w> 
-                    <lb n="3"/> <w>ἱερέα</w> <persName type="attested" key="lgpn:V1-63296"><name nymRef="Ἄσκλαπος">Ἄσκλαπον</name> <w lemma="ὁ">τοὺς</w>
-                      <persName type="attested" key="lgpn:V1-63954"><name nymRef="Φιλίσκος">Φι
-                    <lb n="4" break="no"/>λίσκου</name></persName></persName></date> <w lemma="ὁ">οἱ</w> <w>συνάρξαν
-                    <lb n="5" break="no"/>τες</w> <w>νομοφύλακες</w>
+                    <lb n="3"/> <w lemma="ἱερεύς">ἱερέα</w> <persName type="attested" key="lgpn:V1-63296"><name nymRef="Ἄσκλαπος">Ἄσκλαπον</name> <w lemma="ὁ">τοὺς</w>
+                      <persName type="attested" key="lgpn:V1-63954"><name nymRef="Φιλίσκος">Φι<lb 
+                         n="4" break="no"/>λίσκου</name></persName></persName></date> <w lemma="ὁ">οἱ</w> <w lemma="συνάρχω">συνάρξαν<lb 
+                       n="5" break="no"/>τες</w> <w lemma="νομοφύλαξ">νομοφύλακες</w>
                        <lb n="6"/><persName type="attested" key="lgpn:V1-64893"><name nymRef="Λῦσις">Λῦσις</name> <persName type="attested" key="lgpn:V1-63013"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>οπλίω</ex></expan></name> <name nymRef="Κοϊντίλιος">Κοιντιλίω</name>
-                       <name nymRef="Ἀπολλώς">Ἀπολ
-                    <lb n="7" break="no"/> <space quantity="3" unit="character"/>λῶτος</name></persName></persName> <space quantity="5" unit="character"/> 
+                       <name nymRef="Ἀπολλώς">Ἀπολ<lb 
+                          n="7" break="no"/> <space quantity="3" unit="character"/>λῶτος</name></persName></persName> <space quantity="5" unit="character"/> 
                        <lb n="8"/><persName type="attested" key="lgpn:V1-63640"><name nymRef="Ἐλάζαρ">Ἐλάζα<supplied reason="lost">ρ</supplied></name> 
                        <persName type="attested" key="lgpn:V1-64320"><name nymRef="Ἰάσων"><supplied reason="lost">Ἰ</supplied>άσονος</name></persName></persName> 
                        <lb n="9"/><persName type="attested" key="lgpn:V1-63429"><name nymRef="Γέμελλος">Γέμε<unclear>λ</unclear><supplied reason="lost">λ</supplied>ος</name> 
@@ -190,7 +190,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 90 und (Jahr) 91, in der Zeit des Priesters Istros bis zum Priester Asklapos, den (Söhnen) des 
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 90 und (Jahr) 91, in der Zeit des Priesters Istros bis zum Priester Asklapos, den (Söhnen) des 
             Philiskos, die gemeinsam amtierenden Nomophylaken Lysis des P(ublius) Quintilius, Elazar des Jason, Gemellos des Alopex, Damis des Arimmas, Thrasymachos des 
             Lysimachos, . . . . des Aiglanor, . . . . des Hyratthis, ? ?</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/eynf7mg68dXkiavvTUXFhk">Year 90</ref> and 

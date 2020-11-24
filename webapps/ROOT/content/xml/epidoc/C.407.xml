@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription from stone and photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-03-01" who="MLA">corrected Oliverio reference in bibliography</change>
@@ -124,16 +124,16 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ου</w> <w lemma="καί">καὶ</w> <persName type="attested" key="lgpn:V1-63515"><name nymRef="Δέκμος">Δέκμος</name> <persName type="attested"><name nymRef="Σα-"><seg part="I">Σα</seg></name></persName></persName>
-   <lb n="2" break="no"/><gap reason="lost" extent="unknown" unit="character"/> <w><unclear>τ</unclear>οῦ</w> 
+   <lb n="2" break="no"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="τις"><unclear>τ</unclear>οῦ</w> 
                     <persName type="attested" key="lgpn:V1-65671"><name nymRef="Σώσανδρος">Σωσ<unclear>άν</unclear>δρου</name></persName>
                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ου</w>
                     <w lemma="ὁ">τοῦ</w> 
                     <persName type="attested" key="lgpn:V1-65806"><name nymRef="Τίμαρχος">Τειμάρχο<supplied reason="lost">υ</supplied></name></persName>
                     <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig>ς</orig> <g ref="symbols.xml#stop"/> <w lemma="καί">καὶ</w>
                     <persName type="attested" key="lgpn:V1-64815"><name nymRef="Λεωνίδης">Λεωνίδης</name> <g ref="symbols.xml#stop"/> <persName type="attested"><name nymRef="Π-"><seg part="I">Π</seg></name></persName></persName>
-   <lb n="5" break="no"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">τ</supplied><unclear>ὴν</unclear></w>
+   <lb n="5" break="no"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear>ὴν</unclear></w>
                     
-                    <w>συναγω<lb n="6" break="no"/><supplied reason="lost">γὴν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <space quantity="3" unit="character"/>
+                    <w lemma="συναγωγή">συναγω<lb n="6" break="no"/><supplied reason="lost">γὴν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <space quantity="3" unit="character"/>
                 </ab>
 </div>
          <div type="apparatus">

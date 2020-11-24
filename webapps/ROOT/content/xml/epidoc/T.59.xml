@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -45,7 +44,7 @@
                <history>
                   <origin>
                      <origPlace>Gymnasium.</origPlace>
-                     <origDate notBefore="-0100" notAfter="0100" cert="low" evidence="context" >First century BCE-first century CE</origDate>
+                     <origDate notBefore="-0100" notAfter="0100" cert="low" evidence="context">First century BCE-first century CE</origDate>
                   </origin>
                   <provenance type="found">
                      <p>
@@ -91,6 +90,7 @@
          </textClass>
       <creation>From previous publications (Reynolds)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -118,7 +118,7 @@
                         <lb n="3a"/><gap reason="lost" extent="unknown" unit="line"/>
                     </ab></div>
             <div subtype="fragment" n="ii" type="textpart"><ab>
-                    <lb n="1"/> <date ref="https://godot.date/id/AUEeZ6kTa3crdx84rWhznS"><w><expan><abbr><am><unclear><g ref="symbols.xml#year"/></unclear></am></abbr><ex>ἔτους</ex></expan></w> 
+                    <lb n="1"/> <date ref="https://godot.date/id/AUEeZ6kTa3crdx84rWhznS"><w lemma="ἔτος"><expan><abbr><am><unclear><g ref="symbols.xml#year"/></unclear></am></abbr><ex>ἔτους</ex></expan></w> 
                     <num value="17"><unclear>ιζ</unclear></num></date> <persName type="attested" key="lgpn:V1-60080"><name nymRef="Ζωΐλος"><unclear>Ζ</unclear><lb n="2" break="no"/><supplied reason="lost">ω</supplied>ίλ<unclear>ο</unclear><supplied reason="lost">ς</supplied></name>
                     <lb n="3"/><persName type="attested"><name nymRef="Ζωΐλος">Ζ<supplied reason="lost">ωίλου</supplied></name></persName></persName><!-- check -->
                 </ab>
@@ -128,7 +128,7 @@
                 <listApp>
                     <app loc="i.2">
                        <rdg resp="#pacho1827">Λ ΒΙΒΙΑ</rdg>
-                  <rdg resp="#cigiii"></rdg>
+                  <rdg resp="#cigiii"/>
                        <note>Franz did not attempt line 3</note>
                </app>
                     <app loc="ii">

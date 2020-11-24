@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-28" who="MGDA">Tagged header information</change>
@@ -131,7 +131,7 @@
             <ab>
                     <lb n="1"/><date ref="https://godot.date/id/gjy5kVJ3bQSqkATKKF4tm3"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied>
                <num value="25"><unclear>κ</unclear>ε</num> 
-                    <rs type="month"  key="mechir"><w>Μεχ<lb n="2" break="no"/><supplied reason="lost">ὶρ</supplied></w></rs> <num value="7">ζ</num></date>
+                    <rs type="month" key="mechir"><w lemma="Μεχίρ">Μεχ<lb n="2" break="no"/><supplied reason="lost">ὶρ</supplied></w></rs> <num value="7">ζ</num></date>
                     <persName type="attested" key="lgpn:V1-60773"><name nymRef="Ἁγεμόνα">Ἁγ<lb n="3" break="no"/><supplied reason="lost">εμόν</supplied><unclear>α</unclear></name> 
                     <persName type="attested"><name nymRef="Ασ-"><seg part="I">Α<unclear>σ</unclear></seg><lb n="4" break="no"/><gap reason="lost" quantity="5" unit="character"/><seg part="F">ο<unclear>υ</unclear></seg></name></persName></persName> 
                    <lb n="5"/><date type="life-span" dur="P14Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>

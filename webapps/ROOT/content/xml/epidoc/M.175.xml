@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -81,6 +80,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-03-28" who="SS">created from template</change>
@@ -100,9 +100,9 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
             <lb n="1"/><date><date ref="https://godot.date/id/7xbKfrMbpCmjusQH2j4Ega"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>Ἔτουϲ</ex></expan></w>
-               <num value="100"><unclear cert="low">ρ</unclear></num>, <date><w lemma="ἐπί">ἐπὶ</w> <w><unclear>ἱ</unclear>αρέ
-            <lb n="2" break="no"/><unclear>ω</unclear>ϲ</w> <persName type="attested"><name nymRef="Μάξιμος">Μαξίμω</name></persName>,
-            <lb n="3"/><rs type="month"  key="choiak"><w lemma="Χοιάκ">Χυάκι</w></rs> <num value="26">ϛκ</num></date></date></date> 
+               <num value="100"><unclear cert="low">ρ</unclear></num>, <date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς"><unclear>ἱ</unclear>αρέ<lb 
+                  n="2" break="no"/><unclear>ω</unclear>ϲ</w> <persName type="attested"><name nymRef="Μάξιμος">Μαξίμω</name></persName>,
+            <lb n="3"/><rs type="month" key="choiak"><w lemma="Χοιάκ">Χυάκι</w></rs> <num value="26">ϛκ</num></date></date></date> 
             <lb n="4"/><persName type="attested"><name nymRef="Λύων"><unclear>Λύ</unclear>ων</name>
                <persName type="attested"><name nymRef="Ἀνδροκλῆς">Ἀν<lb n="5" break="no"/>δροκλεῦϲ</name></persName></persName>
             <lb n="6"/> <space extent="unknown" unit="character"/>
@@ -124,7 +124,7 @@
          <div type="translation" xml:space="preserve"><head>Translation</head>
          <div type="translation" source="#mohamed-jmr2002" xml:lang="en"><p><ref target="https://godot.date/id/7xbKfrMbpCmjusQH2j4Ega">Year ?100</ref>, in the priesthood of Maximus, Choiak 26, ?Lyon 
             <supplied reason="subaudible">son</supplied> of Androkles, aged 21.</p></div>
-            <div  type="translation" source="#AE" xml:lang="fr"><p>L'an 100, sous la prêtrise de Maximus, le 26 Choiak, Lyon, fils d'Androkles, âgé de 21 ans.</p></div>
+            <div type="translation" source="#AE" xml:lang="fr"><p>L'an 100, sous la prêtrise de Maximus, le 26 Choiak, Lyon, fils d'Androkles, âgé de 21 ans.</p></div>
          </div>
          <div type="commentary">
             <head>Commentary</head>

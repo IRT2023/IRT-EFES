@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-05" who="MGDA">fixed CIG bibliography</change>
@@ -128,8 +128,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/FfDntnkYkxpFGJ9NsYCZyV"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="10">ι</num> <rs type="month" key="pauni"><w>Παοῖ
-                       <lb n="2" break="no"/>νι</w></rs> <num value="22">β<unclear>κ</unclear></num></date> <gap reason="lost" quantity="1" unit="character"/>
+                    <lb n="1"/><date ref="https://godot.date/id/FfDntnkYkxpFGJ9NsYCZyV"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="10">ι</num> <rs type="month" key="pauni"><w lemma="Παϋνί">Παοῖ<lb 
+                       n="2" break="no"/>νι</w></rs> <num value="22">β<unclear>κ</unclear></num></date> <gap reason="lost" quantity="1" unit="character"/>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60554"><name nymRef="Δορκάς">Δορ<unclear>κ</unclear><supplied reason="lost">ὰς</supplied></name>
                     <lb n="4"/><persName type="attested" key="lgpn:V1-60091"><name nymRef="Ἀρίμμας">Ἀρί<supplied reason="lost">μμα</supplied></name></persName></persName> 
                     <lb n="5"/><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <gap reason="lost" quantity="1" unit="character"/>
@@ -159,8 +159,8 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 10, Paoini 2. Dorco doi Aristis, di anni -</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 10, 2 Paioni, Dorkas des Arimmas, . . . (Jahre)</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 10, Paoini 2. Dorco doi Aristis, di anni -</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 10, 2 Paioni, Dorkas des Arimmas, . . . (Jahre)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/FfDntnkYkxpFGJ9NsYCZyV">Year 10, Payni 22</ref>, 
                Dorkas <supplied reason="subaudible">daughter</supplied> of Arimmas, aged _ .</p></div>
        </div>

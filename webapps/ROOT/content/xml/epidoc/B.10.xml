@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-23" who="Pietro">marked metadata</change>
@@ -124,15 +124,15 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/> <w><supplied reason="lost">εὐ</supplied>τυχ<unclear>ῶ</unclear>ς</w> 
+                    <lb n="1"/> <w lemma="εὐτυχῶς"><supplied reason="lost">εὐ</supplied>τυχ<unclear>ῶ</unclear>ς</w> 
                     <persName type="attested"><name nymRef="Κοσμικός" key="lgpn:V1-61900">Κοσ<unclear>μ</unclear><supplied reason="lost">ι</supplied>
                     <lb n="2"/><unclear>κ</unclear>ῷ</name></persName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> <w lemma="σύν">σὺν</w> 
-                    <lb n="3"/> <w>αὐτῷ</w>
+                    <lb n="3"/> <w lemma="αὐτός">αὐτῷ</w>
                 </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" resp="#edd" xml:lang="en"><p>With good fortune for Kosmikos and those with him.</p></div></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>With good fortune for Kosmikos and those with him.</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p><!-- A Kosmikos, who was an imperial freedman official, is attested at Ptolemais P.50: but thattext has Kosmos  if this was the same man his title would be expected.-->, but

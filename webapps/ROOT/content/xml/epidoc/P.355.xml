@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -104,6 +103,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-05" who="TW">added cert = low tag</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -127,13 +127,13 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <div subtype="fragment" n="i" type="textpart">
                         <ab>
-                        <w>Ὑπὲρ</w> <milestone unit="block"/> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="ὑπέρ">Ὑπὲρ</w> <milestone unit="block"/> <gap reason="lost" extent="unknown" unit="character"/>
                     </ab>
                </div>
              <div subtype="fragment" n="ii" type="textpart">
                  <ab>
-                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>γ</unclear>ε</orig><gap reason="lost" quantity="1" unit="character"><certainty locus="name" match=".."/></gap> <w>δοῦλοϲ</w>
-                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost" cert="low">ἄ</supplied>τοπε</w> <w>καλέ</w> <g ref="symbols.xml#leaf"/> </ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>γ</unclear>ε</orig><gap reason="lost" quantity="1" unit="character"><certainty locus="name" match=".."/></gap> <w lemma="δοῦλος">δοῦλοϲ</w>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἄτοπος"><supplied reason="lost" cert="low">ἄ</supplied>τοπε</w> <w lemma="καλός">καλέ</w> <g ref="symbols.xml#leaf"/> </ab>
              </div>
              
          </div>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-23" who="MGDA">Tagged header information</change>
@@ -134,8 +134,8 @@
                     <num value="10">ι</num> <persName type="attested" key="lgpn:V1-60738"><name nymRef="Ἀριστόβουλος">Ἀριϲτ<lb n="2" break="no"/>όβολοϲ</name> 
                        <persName type="attested" key="lgpn:V1-60739"><name nymRef="Σεραπίων">Ϲε<lb n="3" break="no"/>ραπίωνοϲ</name></persName></persName>
                     <lb n="4"/><date type="life-span" dur="P80Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
-                    <num value="80">π</num> </date> <rs type="month" key="mesore"><w>Μεϲορ<lb n="5" break="no"/>ὴ</w></rs> <num value="25">κε</num></date>
-   <persName type="attested" key="lgpn:V1-60737"><name nymRef="Λύκος">Λίκο<lb n="6" break="no"/>ϲ</name> <persName type="attested" key="lgpn:V1-60740"><name nymRef="Γάϊος">Γαΐω</name></persName></persName> 
+                    <num value="80">π</num> </date> <rs type="month" key="mesore"><w lemma="Μεσορή">Μεϲορ<lb n="5" break="no"/>ὴ</w></rs> <num value="25">κε</num></date>
+   <persName type="attested" key="lgpn:V1-60737"><name nymRef="Λύκος">Λίκο<lb n="6" break="no"/>ϲ</name> <persName type="attested" key="lgpn:V1-60740"><name nymRef="Γάϊος">Γαΐω</name></persName></persName> 
             <date type="life-span" dur="P4Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="4"><unclear>δ</unclear></num> </date>
                 </ab>
@@ -149,8 +149,8 @@
                   <note>Corrected by Reynolds in SEG</note></app></listApp></div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 10, Aristobolos, son of Serapion. Year 80, Mesore 25th, ? aged 4.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 10, Aristobulos des Serapion, (Jahr?) 80, 25.Mesore, Likos des Gaius, 4 (Jahre)</p></div><!-- check -->
+            <div type="translation" source="#gray1956" xml:lang="en"><p>Year 10, Aristobolos, son of Serapion. Year 80, Mesore 25th, ? aged 4.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 10, Aristobulos des Serapion, (Jahr?) 80, 25.Mesore, Likos des Gaius, 4 (Jahre)</p></div><!-- check -->
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/hQjFr59JNruM95tw4mQQDo">Year 10</ref>, Aristobolos <supplied reason="subaudible">son</supplied> of Serapion, ?aged 80; 
               <ref target="https://godot.date/id/hQjFr59JNruM95tw4mQQDo"> Mesore 25</ref>, Lykos <supplied reason="subaudible">son</supplied> 
                of Gaios <supplied reason="explanation"><foreign xml:lang="la">Gaius</foreign></supplied>, aged 4.</p></div>

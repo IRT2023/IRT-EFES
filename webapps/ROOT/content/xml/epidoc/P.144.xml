@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -110,6 +109,7 @@
          </textClass>
       <creation>From transcription and previous publications (Reynolds)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-03-28" who="SS">Created from template</change>
@@ -130,59 +130,59 @@
             <div subtype="section" type="textpart" n="N">
    <ab>
 <lb n="0"/><note>Part of the first two lines of the Imperial titles, immediately preceding the Preamble</note>
-<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="diocletianus"><supplied reason="lost"><name nymRef="Diocletianus">Diocletianus</name></supplied> <w><expan><abbr>P</abbr><ex>ius</ex></expan></w> <w><expan><abbr>F</abbr><ex>elix</ex></expan></w> <w><expan><abbr>inu</abbr><ex>ictus</ex></expan></w> <supplied reason="lost"><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> <w><expan><abbr>pont</abbr><ex>ifex</ex></expan></w> <w><expan><abbr>max</abbr><ex>imus</ex></expan></w></supplied></persName> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <del rend="erasure"><w>et</w></del> <persName type="emperor" key="maximianus"><del rend="erasure"><w><expan><abbr>im<supplied reason="lost">p</supplied></abbr><supplied reason="lost"><ex>erator</ex></supplied></expan></w></del> <supplied reason="lost"><del rend="erasure"><name nymRef="Caesar">Caesar</name></del> <note>Maximianus</note></supplied></persName> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="diocletianus"><supplied reason="lost"><name nymRef="Diocletianus">Diocletianus</name></supplied> <w lemma="pius"><expan><abbr>P</abbr><ex>ius</ex></expan></w> <w lemma="Felix"><expan><abbr>F</abbr><ex>elix</ex></expan></w> <w lemma="invictus"><expan><abbr>inu</abbr><ex>ictus</ex></expan></w> <supplied reason="lost"><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> <w lemma="pontifex"><expan><abbr>pont</abbr><ex>ifex</ex></expan></w> <w lemma="maximus"><expan><abbr>max</abbr><ex>imus</ex></expan></w></supplied></persName> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <del rend="erasure"><w lemma="et">et</w></del> <persName type="emperor" key="maximianus"><del rend="erasure"><w lemma="imperator"><expan><abbr>im<supplied reason="lost">p</supplied></abbr><supplied reason="lost"><ex>erator</ex></supplied></expan></w></del> <supplied reason="lost"><del rend="erasure"><name nymRef="Caesar">Caesar</name></del> <note>Maximianus</note></supplied></persName> <gap reason="lost" extent="unknown" unit="character"/>
 <gap reason="lost" extent="unknown" unit="line"/>
 </ab></div>
       <div subtype="section" type="textpart" n="O">
    <ab>
 <lb n="0"/><note>Preamble, II.22</note>
       <gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w>species</w></supplied> <w>uictu<supplied reason="lost">i</supplied></w> <supplied reason="lost"><w>adque</w> <w>usui</w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="2"/> <w><supplied reason="lost">temperamen</supplied>tum</w> <w>ex<supplied reason="lost">istumauerit</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w>esse</w></supplied> <w><supplied reason="lost">deb</supplied>eat</w> <w>infe<supplied reason="lost">rentis</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="species">species</w></supplied> <w lemma="victus">uictu<supplied reason="lost">i</supplied></w> <supplied reason="lost"><w lemma="adque">adque</w> <w lemma="usus">usui</w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/> <w lemma="temperamentum"><supplied reason="lost">temperamen</supplied>tum</w> <w lemma="existumo">ex<supplied reason="lost">istumauerit</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="sum">esse</w></supplied> <w lemma="debeo"><supplied reason="lost">deb</supplied>eat</w> <w lemma="infero">infe<supplied reason="lost">rentis</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
 <gap reason="lost" extent="unknown" unit="line"/>
 </ab></div>
       <div subtype="section" type="textpart" n="P">
    <ab>
       <lb n="0"/><note>Preamble, II.26, and Chapter I, lines 14-18</note>
 <gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">mitigar</supplied>e</w> <w>aut</w> <w>satiare</w> <w>p<supplied reason="lost">otuerunt</supplied></w>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="mitigo"><supplied reason="lost">mitigar</supplied>e</w> <w lemma="aut">aut</w> <w lemma="satio">satiare</w> <w lemma="possum">p<supplied reason="lost">otuerunt</supplied></w>
 <lb n="2"/> <space extent="1" unit="line"/>
       <lb n="3"/> <space extent="1" unit="line"/>
-<lb n="4"/> <w>unum</w> <g ref="symbols.xml#denarius"/> <w>sexagin<supplied reason="lost">ta</supplied></w>
-<lb n="5"/> <w><supplied reason="lost">un</supplied>um</w> <g ref="symbols.xml#denarius"/> <w>centum</w>
-<lb n="6"/><gap reason="lost" extent="3" unit="character"/> <g ref="symbols.xml#denarius"/> <w>centum</w>
-<lb n="7"/><gap reason="lost" extent="7" unit="character"/> <w>triginta</w>
-<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">ce</supplied>ntum</w>
+<lb n="4"/> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> <w lemma="sexaginta">sexagin<supplied reason="lost">ta</supplied></w>
+<lb n="5"/> <w lemma="unus"><supplied reason="lost">un</supplied>um</w> <g ref="symbols.xml#denarius"/> <w lemma="centum">centum</w>
+<lb n="6"/><gap reason="lost" extent="3" unit="character"/> <g ref="symbols.xml#denarius"/> <w lemma="centum">centum</w>
+<lb n="7"/><gap reason="lost" extent="7" unit="character"/> <w lemma="triginta">triginta</w>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="centum"><supplied reason="lost">ce</supplied>ntum</w>
    <gap reason="lost" extent="unknown" unit="line"/></ab>
 </div>
             <div subtype="section" type="textpart" n="V">
    <ab>
     <lb n="0"/><note>Chapter I, lines 21-23</note>
       <gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/> <w><supplied reason="lost">Fasi</supplied><unclear>o</unclear>li</w> <w>s<supplied reason="lost">icci</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="2"/><supplied reason="lost"><w>Lini</w></supplied> <w>semi<supplied reason="lost">nis</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="3"/> <w><supplied reason="lost">oryza</supplied>e</w> <w>mun<supplied reason="lost">dae</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/> <w lemma="fasiolum"><supplied reason="lost">Fasi</supplied><unclear>o</unclear>li</w> <w lemma="siccus">s<supplied reason="lost">icci</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><supplied reason="lost"><w lemma="linum">Lini</w></supplied> <w lemma="semen">semi<supplied reason="lost">nis</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/> <w lemma="oryza"><supplied reason="lost">oryza</supplied>e</w> <w lemma="mundus">mun<supplied reason="lost">dae</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
 <gap reason="lost" extent="unknown" unit="line"/>
 </ab>
 </div>
 <div subtype="section" type="textpart" n="X">
    <ab><lb n="0"/><note>Chapter V, lines 1a-4</note>
       <gap reason="lost" extent="unknown" unit="line"/>
-  <lb n="1"/><supplied reason="lost"><w>piscis</w> <w>aspratilis</w> <w>marini</w> <placeName type="ethnic" nymRef="#Italicus" ref="#italia"><expan><abbr>Ital</abbr><ex>icum</ex></expan></placeName> <w><expan><abbr>po</abbr><ex>ndo</ex></expan></w></supplied> <w><supplied reason="lost">unu</supplied>m</w> <g ref="symbols.xml#denarius"/> <w>uiginti</w>
+  <lb n="1"/><supplied reason="lost"><w lemma="piscis">piscis</w> <w lemma="aspratilis">aspratilis</w> <w lemma="marinus">marini</w> <placeName type="ethnic" nymRef="#Italicus" ref="#italia"><expan><abbr>Ital</abbr><ex>icum</ex></expan></placeName> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndo</ex></expan></w></supplied> <w lemma="unus"><supplied reason="lost">unu</supplied>m</w> <g ref="symbols.xml#denarius"/> <w lemma="viginti">uiginti</w>
   <lb n="2"/> <space extent="1" unit="line"/>
-   <lb n="3"/><supplied reason="lost"><w>piscis</w> <w>secundi</w> <space extent="6" unit="character"/> <placeName type="ethnic" nymRef="#Italicus" ref="#italia"><expan><abbr>Ital</abbr><ex>icum</ex></expan></placeName> <w><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w>unum</w> <g ref="symbols.xml#denarius"/> </supplied> <w><supplied reason="lost">sed</supplied>ecim</w>
-  <lb n="4"/><supplied reason="lost"><w>piscis</w> <w>flubialis</w> <w>optimi</w> <placeName type="ethnic" nymRef="#Italicus" ref="#italia"><expan><abbr>Ital</abbr><ex>icum</ex></expan></placeName> <w><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w>unum</w> <g ref="symbols.xml#denarius"/></supplied> <w><supplied reason="lost">d</supplied>uodecim</w>
-   <lb n="5"/><supplied reason="lost"><w>piscis</w> <w>secundi</w> <w>flubialis</w> <placeName type="ethnic" nymRef="#Italicus" ref="#italia"><expan><abbr>Ital</abbr><ex>icum</ex></expan></placeName> <w><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w>unum</w> <g ref="symbols.xml#denarius"/> </supplied> <w><supplied reason="lost">o</supplied>cto</w>
+   <lb n="3"/><supplied reason="lost"><w lemma="piscis">piscis</w> <w lemma="secundus">secundi</w> <space extent="6" unit="character"/> <placeName type="ethnic" nymRef="#Italicus" ref="#italia"><expan><abbr>Ital</abbr><ex>icum</ex></expan></placeName> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> </supplied> <w lemma="sedecim"><supplied reason="lost">sed</supplied>ecim</w>
+  <lb n="4"/><supplied reason="lost"><w lemma="piscis">piscis</w> <w lemma="fluvialis">flubialis</w> <w lemma="bonus">optimi</w> <placeName type="ethnic" nymRef="#Italicus" ref="#italia"><expan><abbr>Ital</abbr><ex>icum</ex></expan></placeName> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/></supplied> <w lemma="duodecim"><supplied reason="lost">d</supplied>uodecim</w>
+   <lb n="5"/><supplied reason="lost"><w lemma="piscis">piscis</w> <w lemma="secundus">secundi</w> <w lemma="fluvialis">flubialis</w> <placeName type="ethnic" nymRef="#Italicus" ref="#italia"><expan><abbr>Ital</abbr><ex>icum</ex></expan></placeName> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> </supplied> <w lemma="octo"><supplied reason="lost">o</supplied>cto</w>
       <gap reason="lost" extent="unknown" unit="line"/>
 </ab>
 </div>
             <div subtype="section" type="textpart" n="Z.e">
    <ab><lb n="0"/><note>Chapter XII, lines 3-4</note>
       <gap reason="lost" extent="unknown" unit="line"/>
-      <lb n="1"/><supplied reason="lost"><w>cubitorum</w> <w><expan><abbr>n</abbr><ex>umero</ex></expan></w> <w>quadraginta</w> <w>latitudinis</w> <w><expan><abbr>s</abbr><ex>upra</ex><abbr>s</abbr><ex>criptae</ex></expan></w></supplied> <g ref="symbols.xml#denarius"/> <w>trigin<supplied reason="lost">ta</supplied></w> <supplied reason="lost"><w>milibus</w></supplied>
-      <lb n="2"/><supplied reason="lost"><w>cubitorum</w> <w><expan><abbr>n</abbr><ex>umero</ex></expan></w> <w>triginta</w> <w>quinque</w></supplied> <w><supplied reason="lost">latitudi</supplied>nis</w> <w>per</w> <w>q<supplied reason="lost">uadrum</supplied></w> <supplied reason="lost"><w>digitorum</w> <w>octoginta</w> <g ref="symbols.xml#denarius"/> <w>duodecim</w> <w>milibus</w></supplied>
+      <lb n="1"/><supplied reason="lost"><w lemma="cubitum">cubitorum</w> <w lemma="numerus"><expan><abbr>n</abbr><ex>umero</ex></expan></w> <w lemma="quadraginta">quadraginta</w> <w lemma="latitudo">latitudinis</w> <w lemma="suprascribo"><expan><abbr>s</abbr><ex>upra</ex><abbr>s</abbr><ex>criptae</ex></expan></w></supplied> <g ref="symbols.xml#denarius"/> <w lemma="triginta">trigin<supplied reason="lost">ta</supplied></w> <supplied reason="lost"><w lemma="mille">milibus</w></supplied>
+      <lb n="2"/><supplied reason="lost"><w lemma="cubitum">cubitorum</w> <w lemma="numerus"><expan><abbr>n</abbr><ex>umero</ex></expan></w> <w lemma="triginta">triginta</w> <w lemma="quinque">quinque</w></supplied> <w lemma="latitudo"><supplied reason="lost">latitudi</supplied>nis</w> <w lemma="per">per</w> <w lemma="quadra">q<supplied reason="lost">uadrum</supplied></w> <supplied reason="lost"><w lemma="digitus">digitorum</w> <w lemma="octoginta">octoginta</w> <g ref="symbols.xml#denarius"/> <w lemma="duodecim">duodecim</w> <w lemma="mille">milibus</w></supplied>
       <gap reason="lost" extent="unknown" unit="line"/>
 </ab>
 </div>
@@ -190,93 +190,91 @@
    <ab>
  <note>From Chapter XV</note> 
       <gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/> <w>ae<supplied reason="lost">ramentum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="2"/> <w>aerame<supplied reason="lost">ntum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="3"/> <w>aeram<supplied reason="lost">entum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="4"/> <w>aer<supplied reason="lost">amentum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/> <w lemma="aeramentum">ae<supplied reason="lost">ramentum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/> <w lemma="aeramentum">aerame<supplied reason="lost">ntum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/> <w lemma="aeramentum">aeram<supplied reason="lost">entum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/> <w lemma="aeramentum">aer<supplied reason="lost">amentum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
 <gap reason="lost" extent="unknown" unit="line"/>
 </ab>
 </div>
             <div subtype="section" type="textpart" n="A-N, I, Col. 1"><ab> 
             <lb n="0"/><note>Chapter XIX,  lines 11 to 36</note> <gap reason="lost" extent="unknown" unit="line"/>
  
-<lb n="1"/><note>11</note> <w><supplied reason="lost">s</supplied>ex</w> <w>milibus</w>
+<lb n="1"/><note>11</note> <w lemma="sex"><supplied reason="lost">s</supplied>ex</w> <w lemma="mille">milibus</w>
  
-<lb n="2"/><note>12</note> <w><supplied reason="lost">Dalmaticomafor</supplied>tium</w> <w>subseri<supplied reason="lost">c</supplied>um</w> <w>aluum</w> <w>clauans</w> <w><expan><abbr>purpu<supplied reason="lost">r</supplied></abbr><supplied reason="lost"><ex>ae</ex></supplied></expan></w>
+<lb n="2"/><note>12</note> <w lemma="dalmaticomafortium"><supplied reason="lost">Dalmaticomafor</supplied>tium</w> <w lemma="subsericus">subseri<supplied reason="lost">c</supplied>um</w> <w lemma="alvus">aluum</w> <w lemma="clavo">clauans</w> <w lemma="purpura"><expan><abbr>purpu<supplied reason="lost">r</supplied></abbr><supplied reason="lost"><ex>ae</ex></supplied></expan></w>
  
-<lb n="3"/><supplied reason="lost"> <space extent="8" unit="character"/></supplied> <w><supplied reason="lost">hy</supplied>poblattae</w> <w>l<supplied reason="lost">ibra</supplied>m</w> <w>unam</w> <g ref="symbols.xml#denarius"/> <num><w>quadragintaqu<supplied reason="lost">at</supplied>
+<lb n="3"/><supplied reason="lost"> <space extent="8" unit="character"/></supplied> <w lemma="hypoblattus"><supplied reason="lost">hy</supplied>poblattae</w> <w lemma="libra">l<supplied reason="lost">ibra</supplied>m</w> <w lemma="unus">unam</w> <g ref="symbols.xml#denarius"/> <num><w lemma="quadragintaquattuor">quadragintaqu<supplied reason="lost">at</supplied><lb 
+   n="4" break="no"/><supplied reason="lost"> <space extent="20" unit="character"/></supplied> <supplied reason="lost">tu</supplied>or</w> <w lemma="mille">milibus</w></num> <space extent="12" unit="character"/>
  
-<lb n="4" break="no"/><supplied reason="lost"> <space extent="20" unit="character"/></supplied> <supplied reason="lost">tu</supplied>or</w> <w>milibus</w></num> <space extent="12" unit="character" />
+<lb n="5"/><note>13 a-b</note>  <w lemma="dalmaticomafortium"><supplied reason="lost">Dalmat</supplied>icoma<supplied reason="lost">fortium</supplied></w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina"><supplied reason="lost">Mutinen</supplied>se</placeName> <w lemma="subsericus">subsericum</w> <w lemma="clavo">clauan<supplied reason="lost">s</supplied></w>
  
-<lb n="5"/><note>13 a-b</note>  <w><supplied reason="lost">Dalmat</supplied>icoma<supplied reason="lost">fortium</supplied></w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina"><supplied reason="lost">Mutinen</supplied>se</placeName> <w>subsericum</w> <w>clauan<supplied reason="lost">s</supplied></w>
+<lb n="6"/> <supplied reason="lost"><space extent="2" unit="character"/></supplied> <w lemma="purpura"><supplied reason="lost">pur</supplied>purae</w> <w lemma="hypoblattus">hypoblat<supplied reason="lost">tae</supplied></w> <w lemma="libra"><supplied reason="lost">libram</supplied></w> <w lemma="unus"><supplied reason="lost">u</supplied>nam</w> <g ref="symbols.xml#denarius"/> <w lemma="quadragintasex">quadragintasex</w> <w lemma="mille"><supplied reason="lost">milibu</supplied>s</w>
  
-<lb n="6"/> <supplied reason="lost"><space extent="2" unit="character"/></supplied> <w><supplied reason="lost">pur</supplied>purae</w> <w>hypoblat<supplied reason="lost">tae</supplied></w> <w><supplied reason="lost">libram</supplied></w> <w><supplied reason="lost">u</supplied>nam</w> <g ref="symbols.xml#denarius"/> <w>quadragintasex</w> <w><supplied reason="lost">milibu</supplied>s</w>
+<lb n="7"/><note>14 c</note> <w lemma="dalmaticomafortium"><supplied reason="lost">Dalmatic</supplied>omafortium</w> <w lemma="marinus">marinum</w> <w lemma="subsericus">subsericum</w> <w lemma="ut">ut</w> <w lemma="supra"><expan><abbr>s</abbr><ex>upra</ex></expan></w> <g ref="symbols.xml#denarius"/> <num><w lemma="quadragintaocto">qu<supplied reason="lost">adra</supplied><lb 
+   n="8" break="no"/><space extent="28" unit="character"/> gintaocto</w> <w lemma="mille">mi<supplied reason="lost">libus</supplied></w></num>
  
-<lb n="7"/><note>14 c</note> <w><supplied reason="lost">Dalmatic</supplied>omafortium</w> <w>marinum</w> <w>subsericum</w> <w>ut</w> <w><expan><abbr>s</abbr><ex>upra</ex></expan></w> <g ref="symbols.xml#denarius"/> <num><w>qu<supplied reason="lost">adra</supplied>
+<lb n="9"/><note>15 d-e</note> <supplied reason="lost"><w lemma="dalmatica">Dalmatica</w></supplied> <w lemma="holosericus">holoserica</w> <w lemma="virilis">uirilis</w> <w lemma="clavo">clauans</w> <w lemma="purpura"><expan><abbr>purpur</abbr><ex>ae</ex></expan></w> <w lemma="blatta">blattae</w> <gap reason="lost" extent="2" unit="character"/> <w lemma="libra"><expan><abbr><unclear>li</unclear>br</abbr><ex>am</ex></expan></w> <g ref="symbols.xml#denarius"/> <lb n="10"/> <space extent="30" unit="character"/><num><w lemma="quinquaginta">quinqua<supplied reason="lost">ginta</supplied></w> <w lemma="mille"><supplied reason="lost">mil</supplied>ibus</w></num>
  
-<lb n="8" break="no"/> <space extent="28" unit="character"/> gintaocto</w> <w>mi<supplied reason="lost">libus</supplied></w></num>
+<lb n="11"/><note>16 f</note>  <w lemma="dalmaticomafortium"><supplied reason="lost">Dalmati</supplied>comafortium</w> <w lemma="holosericus">holosericum</w> <w lemma="alvus">aluum</w> <w lemma="clavo">clau<supplied reason="lost">ans</supplied></w> <w lemma="purpura"><supplied cert="low" reason="lost">purpur</supplied>ae</w>
  
-<lb n="9"/><note>15 d-e</note> <supplied reason="lost"><w>Dalmatica</w></supplied> <w>holoserica</w> <w>uirilis</w> <w>clauans</w> <w><expan><abbr>purpur</abbr><ex>ae</ex></expan></w> <w>blattae</w> <gap reason="lost" extent="2" unit="character"/> <w><expan><abbr><unclear>li</unclear>br</abbr><ex>am</ex></expan></w> <g ref="symbols.xml#denarius"/> <lb n="10"/> <space extent="30" unit="character"/><num><w>quinqua<supplied reason="lost">ginta</supplied></w> <w><supplied reason="lost">mil</supplied>ibus</w></num>
+<lb n="12"/><supplied reason="lost"> <space extent="4" unit="character"/></supplied><w lemma="libra"><supplied reason="lost">lib</supplied><unclear>ras</unclear></w> <w lemma="duo">duas</w> <g ref="symbols.xml#denarius"/> <num><w lemma="centum">centum</w> <w lemma="triginta">triginta</w> <w lemma="quinque">quin<supplied reason="lost">que</supplied></w> <w lemma="mille"><supplied reason="lost">milibus</supplied></w></num>
  
-<lb n="11"/><note>16 f</note>  <w><supplied reason="lost">Dalmati</supplied>comafortium</w> <w>holosericum</w> <w>aluum</w> <w>clau<supplied reason="lost">ans</supplied></w> <w><supplied cert="low" reason="lost">purpur</supplied>ae</w>
+<lb n="13"/><note>17 g-h</note> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="infectus">infectis</w> <w lemma="eadem">eadem</w> <w lemma="holosericus">h<supplied reason="lost">olo</supplied>seric<supplied reason="lost">a</supplied></w>  <w lemma="habeo"><supplied reason="lost">habit</supplied>a</w>
  
-<lb n="12"/><supplied reason="lost"> <space extent="4" unit="character"/></supplied><w><supplied reason="lost">lib</supplied><unclear>ras</unclear></w> <w>duas</w> <g ref="symbols.xml#denarius"/> <num><w>centum</w> <w>triginta</w> <w>quin<supplied reason="lost">que</supplied></w> <w><supplied reason="lost">milibus</supplied></w></num>
+<lb n="14"/> <space extent="22" unit="character"/>  <w lemma="ratio">ratione</w> <w lemma="tingo">tin<supplied reason="lost">cturae</supplied></w>  <supplied reason="lost"><w lemma="distraho">distrahi</w></supplied> <w lemma="debeo"><supplied reason="lost">debe</supplied>t</w>
  
-<lb n="13"/><note>17 g-h</note> <gap reason="lost" extent="unknown" unit="character"/> <w>infectis</w> <w>eadem</w> <w>h<supplied reason="lost">olo</supplied>seric<supplied reason="lost">a</supplied></w>  <w><supplied reason="lost">habit</supplied>a</w>
+<lb n="15"/><note>18, i</note> <w lemma="strictoria"><supplied reason="lost">S</supplied>tricto<supplied reason="lost">ria</supplied></w> <w lemma="holosericus"><supplied reason="lost">holoseric</supplied>a</w> <w lemma="clavo">clauans</w> <w lemma="purpura">purpu<supplied reason="lost">rae</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w lemma="uncia">uncias</w></supplied> <w lemma="sex"><supplied reason="lost">se</supplied>x</w>
  
-<lb n="14"/> <space extent="22" unit="character"/>  <w>ratione</w> <w>tin<supplied reason="lost">cturae</supplied></w>  <supplied reason="lost"><w>distrahi</w></supplied> <w><supplied reason="lost">debe</supplied>t</w>
+<lb n="16"/> <space extent="24" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="quadraginta"><supplied reason="lost">qu</supplied>adragi<supplied reason="lost">nta</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w lemma="mille">milibus</w></supplied>
  
-<lb n="15"/><note>18, i</note> <w><supplied reason="lost">S</supplied>tricto<supplied reason="lost">ria</supplied></w> <w><supplied reason="lost">holoseric</supplied>a</w> <w>clauans</w> <w>purpu<supplied reason="lost">rae</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w>uncias</w></supplied> <w><supplied reason="lost">se</supplied>x</w>
+<lb n="17"/><note>19, k</note> <supplied reason="lost"><w lemma="asema">Asema</w></supplied> <w lemma="holosericus">holo<supplied reason="lost">serica</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <g ref="symbols.xml#denarius"/> <w lemma="quadraginta">qu<supplied reason="lost">adraginta</supplied></w> <supplied reason="lost"><w lemma="quinque">quinque</w> <w lemma="mille">milibus</w></supplied>
  
-<lb n="16"/> <space extent="24" unit="character"/><g ref="symbols.xml#denarius"/> <w><supplied reason="lost">qu</supplied>adragi<supplied reason="lost">nta</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w>milibus</w></supplied>
- 
-<lb n="17"/><note>19, k</note> <supplied reason="lost"><w>Asema</w></supplied> <w>holo<supplied reason="lost">serica</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <g ref="symbols.xml#denarius"/> <w>qu<supplied reason="lost">adraginta</supplied></w> <supplied reason="lost"><w>quinque</w> <w>milibus</w></supplied>
- 
-<lb n="18"/><note>20, l-n</note> <gap reason="lost" extent="21" unit="character"/> <w><supplied cert="low" reason="lost">qualit</supplied>ate</w> <w>lana<supplied reason="lost">e</supplied></w> <gap reason="lost" extent="10" unit="character"/> <w>et</w>
-<lb n="19"/><supplied cert="low" reason="lost"><w>habita</w> <w>ratione</w> <w>mensurae</w> <w>auri</w></supplied> <w>et</w> <w>plumatur<supplied reason="lost">ae</supplied></w> <w><supplied reason="lost">distr</supplied>ahi</w>
-<lb n="20"/> <space extent="25" unit="character"/>  <w>poterunt</w>  <space extent="15" unit="character" />
-<lb n="21"/> <note>21, o-p</note> <supplied reason="lost"><w>Chlamys</w></supplied> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina"><supplied reason="lost">Mutin</supplied>ens<supplied reason="lost">is</supplied></placeName> <w><supplied reason="lost">dupl</supplied>ex</w> <w>clauans</w> <supplied reason="lost"><w><expan><abbr>purpur</abbr><ex>ae</ex></expan></w></supplied> <gap reason="lost" extent="10" unit="character"/> <w><supplied reason="lost">sec</supplied>un
-<lb n="22" break="no"/><supplied reason="lost"> <space extent="8" unit="character" /></supplied><supplied reason="lost" cert="low">dae</supplied></w> <w><supplied reason="lost">un</supplied>cias</w> <gap reason="lost" extent="10" unit="character"/> <g ref="symbols.xml#denarius"/> <w part="I"><unclear>d</unclear></w> <gap reason="lost" extent="25" unit="character"/>
-<lb n="23"/><note>22, q</note> <w>Autem</w> <w><unclear>c</unclear><supplied reason="lost">hlamydes</supplied></w> <w part="I">p</w><gap reason="lost" extent="10" unit="character"/><orig>ui</orig><gap reason="lost" extent="14" unit="character"/><orig>i</orig>
+<lb n="18"/><note>20, l-n</note> <gap reason="lost" extent="21" unit="character"/> <w lemma="qualitas"><supplied cert="low" reason="lost">qualit</supplied>ate</w> <w lemma="lana">lana<supplied reason="lost">e</supplied></w> <gap reason="lost" extent="10" unit="character"/> <w lemma="et">et</w>
+<lb n="19"/><supplied cert="low" reason="lost"><w lemma="habeo">habita</w> <w lemma="ratio">ratione</w> <w lemma="mensura">mensurae</w> <w lemma="aurum">auri</w></supplied> <w lemma="et">et</w> <w lemma="plumaturus">plumatur<supplied reason="lost">ae</supplied></w> <w lemma="distraho"><supplied reason="lost">distr</supplied>ahi</w>
+<lb n="20"/> <space extent="25" unit="character"/>  <w lemma="possum">poterunt</w>  <space extent="15" unit="character"/>
+<lb n="21"/> <note>21, o-p</note> <supplied reason="lost"><w lemma="chlamys">Chlamys</w></supplied> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina"><supplied reason="lost">Mutin</supplied>ens<supplied reason="lost">is</supplied></placeName> <w lemma="duplex"><supplied reason="lost">dupl</supplied>ex</w> <w lemma="clavo">clauans</w> <supplied reason="lost"><w lemma="purpura"><expan><abbr>purpur</abbr><ex>ae</ex></expan></w></supplied> <gap reason="lost" extent="10" unit="character"/> <w lemma="secundus"><supplied reason="lost">sec</supplied>un
+<lb n="22" break="no"/><supplied reason="lost"> <space extent="8" unit="character"/></supplied><supplied reason="lost" cert="low">dae</supplied></w> <w lemma="uncia"><supplied reason="lost">un</supplied>cias</w> <gap reason="lost" extent="10" unit="character"/> <g ref="symbols.xml#denarius"/> <w part="I"><unclear>d</unclear></w> <gap reason="lost" extent="25" unit="character"/>
+<lb n="23"/><note>22, q</note> <w lemma="autem">Autem</w> <w lemma="chlamys"><unclear>c</unclear><supplied reason="lost">hlamydes</supplied></w> <w part="I">p</w><gap reason="lost" extent="10" unit="character"/><orig>ui</orig><gap reason="lost" extent="14" unit="character"/><orig>i</orig>
 <lb n="24"/> <space extent="12" unit="character"/>  <gap reason="lost" extent="15" unit="character"/>  <w part="I"><supplied reason="lost">p</supplied>urp<supplied reason="lost">ur</supplied></w> <gap reason="lost" extent="11" unit="character"/><orig>ur</orig>
-<lb n="25"/><note>23, r</note> <w><supplied reason="lost">Ch</supplied>lamys</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutin<supplied reason="lost">ensis</supplied></placeName> <supplied reason="lost"><w>simplex</w></supplied> <w><supplied reason="lost">cla</supplied>uan<supplied reason="lost">s</supplied></w> <supplied reason="lost" cert="low"><w>purpurae</w></supplied> <gap reason="lost" extent="6" unit="character"/>
+<lb n="25"/><note>23, r</note> <w lemma="chlamys"><supplied reason="lost">Ch</supplied>lamys</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutin<supplied reason="lost">ensis</supplied></placeName> <supplied reason="lost"><w lemma="simplex">simplex</w></supplied> <w lemma="clavo"><supplied reason="lost">cla</supplied>uan<supplied reason="lost">s</supplied></w> <supplied reason="lost" cert="low"><w lemma="purpura">purpurae</w></supplied> <gap reason="lost" extent="6" unit="character"/>
  
-<lb n="26"/> <space extent="8" unit="character"/> <w>unc<supplied reason="lost">ias</supplied></w> <w>quin<supplied reason="lost" cert="low">que</supplied></w> <gap reason="lost" extent="22" unit="character"/>
+<lb n="26"/> <space extent="8" unit="character"/> <w lemma="uncia">unc<supplied reason="lost">ias</supplied></w> <w lemma="quinque">quin<supplied reason="lost" cert="low">que</supplied></w> <gap reason="lost" extent="22" unit="character"/>
  
-<lb n="27"/><note>24, s</note>  <w><supplied reason="lost">Fi</supplied>bulatorium</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mu<supplied reason="lost">tinen</supplied>se</placeName> <w>sim<supplied reason="lost">plex</supplied></w> <gap reason="lost" extent="7" unit="character"/>  <supplied reason="lost"><w>clauans</w></supplied> <w><supplied reason="lost">purpura</supplied>e</w>
+<lb n="27"/><note>24, s</note>  <w lemma="fibulatorium"><supplied reason="lost">Fi</supplied>bulatorium</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mu<supplied reason="lost">tinen</supplied>se</placeName> <w lemma="simplex">sim<supplied reason="lost">plex</supplied></w> <gap reason="lost" extent="7" unit="character"/>  <supplied reason="lost"><w lemma="clavo">clauans</w></supplied> <w lemma="purpura"><supplied reason="lost">purpura</supplied>e</w>
  
-<lb n="28"/><supplied reason="lost"> <space extent="8" unit="character"/></supplied><w>hapli<supplied reason="lost">ae</supplied></w> <gap reason="lost" extent="unknown" unit="character"></gap>
+<lb n="28"/><supplied reason="lost"> <space extent="8" unit="character"/></supplied><w lemma="haplius">hapli<supplied reason="lost">ae</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
  
-<lb n="29"/><note>25, t</note> <w><supplied reason="lost">Fib</supplied>ulatorium</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">L<supplied reason="lost">adicenum</supplied></placeName> <supplied reason="lost"><w>simplex</w></supplied> <w><supplied reason="lost">e</supplied>x</w> <w>lani<supplied reason="lost">s</supplied></w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina"><supplied reason="lost">Mutinen</supplied>si
-<lb n="30" break="no"/> <space extent="3" unit="character"/>bus</placeName> <w>et</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">Ladicenis</placeName> <gap reason="lost" extent="11" unit="character"/> <supplied reason="lost"><w>ut</w></supplied> <w><expan><abbr>s</abbr><ex>upra</ex></expan></w> <w>uncias</w> <w>quattuor</w> <g ref="symbols.xml#denarius"/> <w><supplied reason="lost">quadragint</supplied>a</w>
+<lb n="29"/><note>25, t</note> <w lemma="fibulatorium"><supplied reason="lost">Fib</supplied>ulatorium</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">L<supplied reason="lost">adicenum</supplied></placeName> <supplied reason="lost"><w lemma="simplex">simplex</w></supplied> <w lemma="ex"><supplied reason="lost">e</supplied>x</w> <w lemma="lana">lani<supplied reason="lost">s</supplied></w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina"><supplied reason="lost">Mutinen</supplied>si
+<lb n="30" break="no"/> <space extent="3" unit="character"/>bus</placeName> <w lemma="et">et</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">Ladicenis</placeName> <gap reason="lost" extent="11" unit="character"/> <supplied reason="lost"><w lemma="ut">ut</w></supplied> <w lemma="supra"><expan><abbr>s</abbr><ex>upra</ex></expan></w> <w lemma="uncia">uncias</w> <w lemma="quattuor">quattuor</w> <g ref="symbols.xml#denarius"/> <w lemma="quadraginta"><supplied reason="lost">quadragint</supplied>a</w>
  
-<lb n="31"/><note>26, u-v</note> <w><supplied reason="lost">Chl</supplied>amys</w> <w>simplex</w> <w>ex</w> <w>l<supplied reason="lost">anis</supplied></w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina"><supplied reason="lost">Muti</supplied>nensibus</placeName> <w>et</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">Ladiceni<supplied reason="lost">s</supplied></placeName> <gap reason="lost" extent="8" unit="character"/>
+<lb n="31"/><note>26, u-v</note> <w lemma="chlamys"><supplied reason="lost">Chl</supplied>amys</w> <w lemma="simplex">simplex</w> <w lemma="ex">ex</w> <w lemma="lana">l<supplied reason="lost">anis</supplied></w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina"><supplied reason="lost">Muti</supplied>nensibus</placeName> <w lemma="et">et</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">Ladiceni<supplied reason="lost">s</supplied></placeName> <gap reason="lost" extent="8" unit="character"/>
  
-<lb n="32"/> <space extent="8" unit="character"/> <w>unc<supplied reason="lost">ias</supplied></w> <gap reason="lost" extent="8" unit="character"/> <supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w>quindecim</w> <w>milib<supplied reason="lost">us</supplied></w>
+<lb n="32"/> <space extent="8" unit="character"/> <w lemma="uncia">unc<supplied reason="lost">ias</supplied></w> <gap reason="lost" extent="8" unit="character"/> <supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w lemma="quindecim">quindecim</w> <w lemma="mille">milib<supplied reason="lost">us</supplied></w>
  
-<lb n="33"/> <note>27, w</note> <w><supplied reason="lost">Fib</supplied>ulatoriu<supplied reason="lost">m</supplied></w> <gap reason="lost" extent="9" unit="character"/> <w part="F">um</w> <w>clabans</w> <w>purpu<supplied reason="lost">rae</supplied></w> <gap reason="lost" extent="7" unit="character"/> <w>primae</w>
+<lb n="33"/> <note>27, w</note> <w lemma="fibulatorium"><supplied reason="lost">Fib</supplied>ulatoriu<supplied reason="lost">m</supplied></w> <gap reason="lost" extent="9" unit="character"/> <w part="F">um</w> <w lemma="clavo">clabans</w> <w lemma="purpura">purpu<supplied reason="lost">rae</supplied></w> <gap reason="lost" extent="7" unit="character"/> <w lemma="primus">primae</w>
  
-<lb n="34"/> <space extent="8" unit="character"/> <w>un<supplied reason="lost">cias</supplied></w> <w><supplied reason="lost">qu</supplied>attuor</w> <g ref="symbols.xml#denarius"/> <w>quatt<supplied reason="lost">uor</supplied></w> <w>milib<supplied reason="lost">u</supplied>s</w>
+<lb n="34"/> <space extent="8" unit="character"/> <w lemma="uncia">un<supplied reason="lost">cias</supplied></w> <w lemma="quattuor"><supplied reason="lost">qu</supplied>attuor</w> <g ref="symbols.xml#denarius"/> <w lemma="quattuor">quatt<supplied reason="lost">uor</supplied></w> <w lemma="mille">milib<supplied reason="lost">u</supplied>s</w>
  
-<lb n="35"/><note>28, 17</note>  <w><supplied reason="lost">Tap</supplied>ete</w> <placeName type="ethnic" nymRef="#Britanicus" ref="#britannia">Britannic<supplied reason="lost">u</supplied>m</placeName> <w><expan><abbr>prim</abbr><ex>ae</ex></expan></w> <w>form<supplied reason="lost">ae</supplied></w> <supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w><supplied reason="lost">quinqu</supplied>e</w> <w>mili<supplied reason="lost">b</supplied>us</w>
+<lb n="35"/><note>28, 17</note>  <w lemma="tapete"><supplied reason="lost">Tap</supplied>ete</w> <placeName type="ethnic" nymRef="#Britanicus" ref="#britannia">Britannic<supplied reason="lost">u</supplied>m</placeName> <w lemma="primus"><expan><abbr>prim</abbr><ex>ae</ex></expan></w> <w lemma="forma">form<supplied reason="lost">ae</supplied></w> <supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w lemma="quinque"><supplied reason="lost">quinqu</supplied>e</w> <w lemma="mille">mili<supplied reason="lost">b</supplied>us</w>
  
-<lb n="36"/> <note>29, 18</note><supplied reason="lost"> <space extent="2" unit="character"/></supplied><w><supplied reason="lost">For</supplied>ma<supplied reason="lost">e</supplied></w> <w>secundae</w> <space extent="5" unit="character"/><supplied reason="lost" cert="low"><g ref="symbols.xml#denarius"/> <w>quattuor</w></supplied> <w>milibus</w>
+<lb n="36"/> <note>29, 18</note><supplied reason="lost"> <space extent="2" unit="character"/></supplied><w lemma="forma"><supplied reason="lost">For</supplied>ma<supplied reason="lost">e</supplied></w> <w lemma="secundus">secundae</w> <space extent="5" unit="character"/><supplied reason="lost" cert="low"><g ref="symbols.xml#denarius"/> <w lemma="quattuor">quattuor</w></supplied> <w lemma="mille">milibus</w>
  
-<lb n="37"/> <note>30, 19</note><supplied reason="lost"><w>Tapete</w></supplied> <placeName type="ethnic" nymRef="#Cappadocicus" ref="#cappadocia"><supplied reason="lost">Cappa</supplied>docicum</placeName> <w>siu<supplied reason="lost">e</supplied></w> <supplied reason="lost"><placeName type="ethnic" nymRef="#Ponticus" ref="#pontus">Ponticum</placeName></supplied> <gap reason="lost" extent="9" unit="character"/> <w part="F">im</w> <g ref="symbols.xml#denarius"/> <w>tribus</w> <w>milibus</w>
+<lb n="37"/> <note>30, 19</note><supplied reason="lost"><w lemma="tapete">Tapete</w></supplied> <placeName type="ethnic" nymRef="#Cappadocicus" ref="#cappadocia"><supplied reason="lost">Cappa</supplied>docicum</placeName> <w lemma="sive">siu<supplied reason="lost">e</supplied></w> <supplied reason="lost"><placeName type="ethnic" nymRef="#Ponticus" ref="#pontus">Ponticum</placeName></supplied> <gap reason="lost" extent="9" unit="character"/> <w part="F">im</w> <g ref="symbols.xml#denarius"/> <w lemma="tres">tribus</w> <w lemma="mille">milibus</w>
  
-<lb n="38"/><note>31, 20</note> <supplied reason="lost"> <space extent="2" unit="character"/></supplied><supplied reason="lost"><w>Formae</w></supplied> <w><supplied reason="lost">secun</supplied>dae</w> <space extent="6" unit="character"/><supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w><supplied reason="lost" cert="low">duobu</supplied>s</w>  <w>milibus</w>
+<lb n="38"/><note>31, 20</note> <supplied reason="lost"> <space extent="2" unit="character"/></supplied><supplied reason="lost"><w lemma="forma">Formae</w></supplied> <w lemma="secundus"><supplied reason="lost">secun</supplied>dae</w> <space extent="6" unit="character"/><supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w lemma="duo"><supplied reason="lost" cert="low">duobu</supplied>s</w>  <w lemma="mille">milibus</w>
  
-<lb n="39"/><note>32, 21</note> <supplied reason="lost"><w>Tapete</w></supplied> <placeName type="ethnic" nymRef="#Aegyptius" ref="#egypt"><supplied reason="lost">Aegyptiu</supplied>m</placeName> <space extent="3" unit="character"/><supplied reason="lost"><g ref="symbols.xml#denarius"/> <w>mille</w> <w>septingentis</w></supplied> <w>quinquaginta</w>
+<lb n="39"/><note>32, 21</note> <supplied reason="lost"><w lemma="tapete">Tapete</w></supplied> <placeName type="ethnic" nymRef="#Aegyptius" ref="#egypt"><supplied reason="lost">Aegyptiu</supplied>m</placeName> <space extent="3" unit="character"/><supplied reason="lost"><g ref="symbols.xml#denarius"/> <w lemma="mille">mille</w> <w lemma="septingenti">septingentis</w></supplied> <w lemma="quinquaginta">quinquaginta</w>
  
-<lb n="40"/><note>33, 22</note> <supplied reason="lost"><w>Tapete</w></supplied> <gap reason="lost" extent="7" unit="character"/><supplied reason="lost" cert="low"> <space extent="3" unit="character"/></supplied><supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w><supplied reason="lost">quadri</supplied>nge<supplied reason="lost">ntis</supplied></w>
+<lb n="40"/><note>33, 22</note> <supplied reason="lost"><w lemma="tapete">Tapete</w></supplied> <gap reason="lost" extent="7" unit="character"/><supplied reason="lost" cert="low"> <space extent="3" unit="character"/></supplied><supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w lemma="quadringenti"><supplied reason="lost">quadri</supplied>nge<supplied reason="lost">ntis</supplied></w>
  
-<lb n="41"/><note>34, 23</note> <supplied reason="lost"><w>Tapete</w></supplied> <gap reason="lost" extent="8" unit="character"/><orig>es</orig><gap reason="lost" extent="9" unit="character"/> <g ref="symbols.xml#denarius"/> <num><w>quat<supplied reason="lost">tuor</supplied></w> <supplied reason="lost"><w>milibus</w></supplied> <w><supplied reason="lost">q</supplied>uingentis</w></num>
+<lb n="41"/><note>34, 23</note> <supplied reason="lost"><w lemma="tapete">Tapete</w></supplied> <gap reason="lost" extent="8" unit="character"/><orig>es</orig><gap reason="lost" extent="9" unit="character"/> <g ref="symbols.xml#denarius"/> <num><w lemma="quattuor">quat<supplied reason="lost">tuor</supplied></w> <supplied reason="lost"><w lemma="mille">milibus</w></supplied> <w lemma="quingenti"><supplied reason="lost">q</supplied>uingentis</w></num>
 
-<lb n="42"/><note>35, 24</note> <supplied reason="lost"><w>Tapete</w> <placeName  type="ethnic" nymRef="#Africanus" ref="#africa">Africanum</placeName></supplied> <space extent="12" unit="character"/><g ref="symbols.xml#denarius"/> <num><w>milleq<supplied reason="lost">uingentis</supplied></w>
+<lb n="42"/><note>35, 24</note> <supplied reason="lost"><w lemma="tapete">Tapete</w> <placeName type="ethnic" nymRef="#Africanus" ref="#africa">Africanum</placeName></supplied> <space extent="12" unit="character"/><g ref="symbols.xml#denarius"/> <num><w lemma="millequingenti">milleq<supplied reason="lost">uingentis</supplied></w>
  </num>
-<lb n="43"/><note>36, 25</note> <supplied reason="lost" cert="low"><w>Stragula</w> <w>secundum</w> <w>ponderem</w></supplied> <w><supplied reason="lost">pl</supplied>umatu<supplied reason="lost">rae</supplied></w> <supplied reason="lost"><w>et</w> <w>lanae</w></supplied> <w><supplied reason="lost">di</supplied>strahi</w>
+<lb n="43"/><note>36, 25</note> <supplied reason="lost" cert="low"><w lemma="stragulum">Stragula</w> <w lemma="secundus">secundum</w> <w lemma="pondus">ponderem</w></supplied> <w lemma="plumaturus"><supplied reason="lost">pl</supplied>umatu<supplied reason="lost">rae</supplied></w> <supplied reason="lost"><w lemma="et">et</w> <w lemma="lana">lanae</w></supplied> <w lemma="distraho"><supplied reason="lost">di</supplied>strahi</w>
  
-<lb n="44"/> <space extent="25" unit="character" />  <supplied reason="lost"><w>debent</w></supplied>  <space extent="15" unit="character" />
+<lb n="44"/> <space extent="25" unit="character"/>  <supplied reason="lost"><w lemma="debeo">debent</w></supplied>  <space extent="15" unit="character"/>
   
 </ab></div>
  <div subtype="section" type="textpart" n="M">
@@ -285,70 +283,70 @@
 <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>in</orig><gap reason="lost" extent="unknown" unit="character"/>
 <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w part="I">quin</w> <gap reason="lost" extent="unknown" unit="character"/>
  <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w part="I">duod</w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w>octo</w> <w>mil<supplied reason="lost">ibus</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w>decem</w> <w>milibu<supplied reason="lost">s</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w>sex</w> <w>milibus</w> <gap reason="lost" extent="unknown" unit="character"/>
- <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w>sex</w> <w>milibus</w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="octo">octo</w> <w lemma="mille">mil<supplied reason="lost">ibus</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="decem">decem</w> <w lemma="mille">milibu<supplied reason="lost">s</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="sex">sex</w> <w lemma="mille">milibus</w> <gap reason="lost" extent="unknown" unit="character"/>
+ <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="sex">sex</w> <w lemma="mille">milibus</w> <gap reason="lost" extent="unknown" unit="character"/>
 <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
 </ab></div>           
             <div subtype="section" type="textpart" n="A-N, I, Col. 2">
    <ab><lb n="0"/><note>Chapter  XIX, line 74 - Chapter XXII, line 17</note>
-<lb n="1"/><note>74 = 63</note> <w><supplied reason="lost">D</supplied>almaticomafortium</w> <w>leporinum</w> <w>clauans</w> <supplied reason="lost"><w>purpurae</w></supplied>
-<lb n="2"/> <space extent="8" unit="character"/> <w><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w>unum</w> <w>semis</w> <g ref="symbols.xml#denarius"/> <w>septem</w> <w><supplied reason="omitted">m</supplied>i<supplied reason="lost">libus</supplied></w>
+<lb n="1"/><note>74 = 63</note> <w lemma="dalmaticomafortium"><supplied reason="lost">D</supplied>almaticomafortium</w> <w lemma="leporinus">leporinum</w> <w lemma="clavo">clauans</w> <supplied reason="lost"><w lemma="purpura">purpurae</w></supplied>
+<lb n="2"/> <space extent="8" unit="character"/> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w lemma="unus">unum</w> <w lemma="semis">semis</w> <g ref="symbols.xml#denarius"/> <w lemma="septem">septem</w> <w lemma="mille"><supplied reason="omitted">m</supplied>i<supplied reason="lost">libus</supplied></w>
 <note>Chapter XX</note>
-      <lb n="3"/> <supplied reason="lost"><w>De</w></supplied> <w><supplied reason="lost">mercedi</supplied>bus</w> <w>plumariorum</w> <w>et</w> <w>sericarioru<supplied reason="lost">m</supplied></w>
-<lb n="4"/><note>1a</note> <w><supplied reason="lost">Plumari</supplied>o</w> <w>in</w> <w>strictoria</w> <w>subserica</w> <w>pro</w> <w>uncia</w> <supplied reason="lost"><w>una</w> <g ref="symbols.xml#denarius"/> <w>ducentos</w></supplied>
-<lb n="5"/><note>2</note> <w>In</w> <w>strictoria</w> <w>holoserica</w> <w>per</w> <w>singulas</w> <w>unc<supplied reason="lost">ias</supplied></w> <supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w><supplied reason="lost">trecen</supplied>tos</w>
-<lb n="6"/><note>3</note> <w>In</w> <w>chlamydem</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensi</placeName> <w>in</w> <w>uncia</w> <w>una</w> <g ref="symbols.xml#denarius"/> <w>uiginti</w> <w>quinque</w>
-<lb n="7"/> <note>4</note> <w>In</w> <w>chlamydem</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">Ladicena</placeName> <w>ut</w> <w><expan><abbr>s</abbr><ex>upra</ex></expan></w> <w>in</w> <w>uncia</w> <w>una</w> <g ref="symbols.xml#denarius"/> <w>uigi<supplied reason="lost">n</supplied>ti</w> <w>quinque</w>
-<lb n="8"/> <note>5</note> <w>Barbaricario</w> <w>ex</w> <w>a<supplied reason="lost">u</supplied>ro</w> <w>faciente</w> <w>operis</w> <w>primi</w> <w>in</w> <w>uncia</w> <w>una</w>
- <lb n="9"/> <space extent="35" unit="character"/> <g ref="symbols.xml#denarius"/> <w>mille</w>
-<lb n="10"/><note>6</note> <w>Operis</w> <w>secundi</w> <space extent="12" unit="character"/> <g ref="symbols.xml#denarius"/> <w>septingentos</w> <w>quinquaginta</w>
+      <lb n="3"/> <supplied reason="lost"><w lemma="de">De</w></supplied> <w lemma="merces"><supplied reason="lost">mercedi</supplied>bus</w> <w lemma="plumarius">plumariorum</w> <w lemma="et">et</w> <w lemma="sericarius">sericarioru<supplied reason="lost">m</supplied></w>
+<lb n="4"/><note>1a</note> <w lemma="plumarius"><supplied reason="lost">Plumari</supplied>o</w> <w lemma="in">in</w> <w lemma="strictoria">strictoria</w> <w lemma="subsericus">subserica</w> <w lemma="pro">pro</w> <w lemma="uncia">uncia</w> <supplied reason="lost"><w lemma="unus">una</w> <g ref="symbols.xml#denarius"/> <w lemma="ducenti">ducentos</w></supplied>
+<lb n="5"/><note>2</note> <w lemma="in">In</w> <w lemma="strictoria">strictoria</w> <w lemma="holosericus">holoserica</w> <w lemma="per">per</w> <w lemma="singulus">singulas</w> <w lemma="uncia">unc<supplied reason="lost">ias</supplied></w> <supplied reason="lost"><g ref="symbols.xml#denarius"/></supplied> <w lemma="trecenti"><supplied reason="lost">trecen</supplied>tos</w>
+<lb n="6"/><note>3</note> <w lemma="in">In</w> <w lemma="chlamys">chlamydem</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensi</placeName> <w lemma="in">in</w> <w lemma="uncia">uncia</w> <w lemma="unus">una</w> <g ref="symbols.xml#denarius"/> <w lemma="viginti">uiginti</w> <w lemma="quinque">quinque</w>
+<lb n="7"/> <note>4</note> <w lemma="in">In</w> <w lemma="chlamys">chlamydem</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">Ladicena</placeName> <w lemma="ut">ut</w> <w lemma="supra"><expan><abbr>s</abbr><ex>upra</ex></expan></w> <w lemma="in">in</w> <w lemma="uncia">uncia</w> <w lemma="unus">una</w> <g ref="symbols.xml#denarius"/> <w lemma="viginti">uigi<supplied reason="lost">n</supplied>ti</w> <w lemma="quinque">quinque</w>
+<lb n="8"/> <note>5</note> <w lemma="barbaricarius">Barbaricario</w> <w lemma="ex">ex</w> <w lemma="aurum">a<supplied reason="lost">u</supplied>ro</w> <w lemma="facio">faciente</w> <w lemma="opus">operis</w> <w lemma="primus">primi</w> <w lemma="in">in</w> <w lemma="uncia">uncia</w> <w lemma="unus">una</w>
+ <lb n="9"/> <space extent="35" unit="character"/> <g ref="symbols.xml#denarius"/> <w lemma="mille">mille</w>
+<lb n="10"/><note>6</note> <w lemma="opus">Operis</w> <w lemma="secundus">secundi</w> <space extent="12" unit="character"/> <g ref="symbols.xml#denarius"/> <w lemma="septingenti">septingentos</w> <w lemma="quinquaginta">quinquaginta</w>
 <lb n="0"/><note>XIX</note>
-<lb n="11"/><note>7</note> <w>Barbaricari<supplied reason="lost">o</supplied></w> <w><supplied reason="lost">i</supplied>n</w><w>holos<supplied reason="lost">eri</supplied>cai</w> <w>in</w> <w>uncia</w> <w>una</w> <g ref="symbols.xml#denarius"/> <w>quingentos</w>
-<lb n="12"/><note>8</note> <w>Operis</w> <w>secundi</w> <w>in</w> <w>uncia</w> <w>una</w> <g ref="symbols.xml#denarius"/> <w>quadringentos</w>
-<lb n="13"/><note>9</note> <w>Sericario</w> <w>in</w> <w>subserica</w> <w>pasto</w> <w>diurnos</w> <g ref="symbols.xml#denarius"/> <w>uiginti</w> <w>quinque</w>
-<lb n="14"/><note>10</note> <w>In</w> <w>holoserica</w> <w>pura</w> <w>pasto</w> <w>diurnos</w> <g ref="symbols.xml#denarius"/> <w>uiginti</w> <w>quinque</w>
-<lb n="15"/><note>11</note> <w>In</w> <w>holoserica</w> <w><expan><abbr>scut</abbr><ex>u</ex><abbr>lata</abbr></expan></w> <space extent="5" unit="character"/><g ref="symbols.xml#denarius"/> <w>quadraginta</w>
-<lb n="16"/><note>12</note> <w>Gerdiae</w> <w>pastae</w> <w>in</w> <w>tunica</w> <w>pexa</w> <w>indictionali</w> <g ref="symbols.xml#denarius"/> <w>duodecim</w>
-<lb n="17"/><note>13</note> <w>In</w> <w>tunicis</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensibus</placeName> <w>uel</w> <w>ceteris</w> <w>pastae</w> <g ref="symbols.xml#denarius"/> <w>sedecim</w>
+<lb n="11"/><note>7</note> <w lemma="barbaricarius">Barbaricari<supplied reason="lost">o</supplied></w> <w lemma="in"><supplied reason="lost">i</supplied>n</w><w lemma="holosericus">holos<supplied reason="lost">eri</supplied>cai</w> <w lemma="in">in</w> <w lemma="uncia">uncia</w> <w lemma="unus">una</w> <g ref="symbols.xml#denarius"/> <w lemma="quingenti">quingentos</w>
+<lb n="12"/><note>8</note> <w lemma="opus">Operis</w> <w lemma="secundus">secundi</w> <w lemma="in">in</w> <w lemma="uncia">uncia</w> <w lemma="unus">una</w> <g ref="symbols.xml#denarius"/> <w lemma="quadringenti">quadringentos</w>
+<lb n="13"/><note>9</note> <w lemma="sericarius">Sericario</w> <w lemma="in">in</w> <w lemma="subsericus">subserica</w> <w lemma="pastus">pasto</w> <w lemma="diurnus">diurnos</w> <g ref="symbols.xml#denarius"/> <w lemma="viginti">uiginti</w> <w lemma="quinque">quinque</w>
+<lb n="14"/><note>10</note> <w lemma="in">In</w> <w lemma="holosericus">holoserica</w> <w lemma="purus">pura</w> <w lemma="pastus">pasto</w> <w lemma="diurnus">diurnos</w> <g ref="symbols.xml#denarius"/> <w lemma="viginti">uiginti</w> <w lemma="quinque">quinque</w>
+<lb n="15"/><note>11</note> <w lemma="in">In</w> <w lemma="holosericus">holoserica</w> <w lemma="scutulatus"><expan><abbr>scut</abbr><ex>u</ex><abbr>lata</abbr></expan></w> <space extent="5" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="quadraginta">quadraginta</w>
+<lb n="16"/><note>12</note> <w lemma="gerdia">Gerdiae</w> <w lemma="pastus">pastae</w> <w lemma="in">in</w> <w lemma="tunica">tunica</w> <w lemma="pecto">pexa</w> <w lemma="indictio">indictionali</w> <g ref="symbols.xml#denarius"/> <w lemma="duodecim">duodecim</w>
+<lb n="17"/><note>13</note> <w lemma="in">In</w> <w lemma="tunica">tunicis</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensibus</placeName> <w lemma="vel">uel</w> <w lemma="ceterus">ceteris</w> <w lemma="pastus">pastae</w> <g ref="symbols.xml#denarius"/> <w lemma="sedecim">sedecim</w>
 <lb n="0"/><note>XXI</note>
-<lb n="18"/><note>1a</note> <w>Lanario</w> <w>in</w> <w>lana</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensi</placeName> <w>uel</w> <w>marina</w> <w>pasto</w> <w>in</w> <w><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w>unum</w> <g ref="symbols.xml#denarius"/> <w>qua
-<lb n="19" break="no"/> <space extent="35" unit="character"/> draginta</w>
-<lb n="20"/><note>2</note> <w>In</w> <w>lana</w> <placeName type="ethnic" nymRef="#Terentinus" ref="#tarentum">Terentina</placeName> <w>uel</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">Ladicena</placeName> <w>uel</w> <placeName type="ethnic" nymRef="#Altinatus" ref="#altinum">Altinata</placeName> <w>in</w> <w><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w>unum</w> <g ref="symbols.xml#denarius"/> <w>tri
-<lb n="21" break="no"/> <space extent="35" unit="character"/> ginta</w>
-<lb n="22"/><note>3</note> <w>In</w> <w>lana</w> <w>sequenti</w> <w>in</w> <w><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w>unum</w> <g ref="symbols.xml#denarius"/> <w>uiginti</w>
-<lb n="23"/><note>4</note> <w>In</w> <w>lana</w> <w>grossa</w> <w>in</w> <w><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w>unum</w> <g ref="symbols.xml#denarius"/> <w>quindecim</w>
-<lb n="24"/><note>5</note> <w>Linteoni</w> <w>diurnos</w> <w>in</w> <w>opere</w> <w>primo</w> <w><expan><abbr>past</abbr><ex>o</ex></expan></w> <w><expan><abbr>diurn</abbr><ex>os</ex></expan></w> <g ref="symbols.xml#denarius"/> <w>quadraginta</w>
-<lb n="25"/><note>6</note> <w>In</w> <w>opere</w> <w>secundo</w> <w>pasto</w> <g ref="symbols.xml#denarius"/> <w>uiginti</w>
+<lb n="18"/><note>1a</note> <w lemma="lanarius">Lanario</w> <w lemma="in">in</w> <w lemma="lana">lana</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensi</placeName> <w lemma="vel">uel</w> <w lemma="marinus">marina</w> <w lemma="pastus">pasto</w> <w lemma="in">in</w> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> <w lemma="quadraginta">qua<lb 
+   n="19" break="no"/><space extent="35" unit="character"/> draginta</w>
+<lb n="20"/><note>2</note> <w lemma="in">In</w> <w lemma="lana">lana</w> <placeName type="ethnic" nymRef="#Terentinus" ref="#tarentum">Terentina</placeName> <w lemma="vel">uel</w> <placeName type="ethnic" nymRef="#Ladicenus" ref="#laodicea">Ladicena</placeName> <w lemma="vel">uel</w> <placeName type="ethnic" nymRef="#Altinatus" ref="#altinum">Altinata</placeName> <w lemma="in">in</w> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> <w lemma="triginta">tri<lb 
+   n="21" break="no"/><space extent="35" unit="character"/> ginta</w>
+<lb n="22"/><note>3</note> <w lemma="in">In</w> <w lemma="lana">lana</w> <w lemma="sequor">sequenti</w> <w lemma="in">in</w> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> <w lemma="viginti">uiginti</w>
+<lb n="23"/><note>4</note> <w lemma="in">In</w> <w lemma="lana">lana</w> <w lemma="grossus">grossa</w> <w lemma="in">in</w> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndum</ex></expan></w> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> <w lemma="quindecim">quindecim</w>
+<lb n="24"/><note>5</note> <w lemma="linteo">Linteoni</w> <w lemma="diurnus">diurnos</w> <w lemma="in">in</w> <w lemma="opus">opere</w> <w lemma="primus">primo</w> <w lemma="pastus"><expan><abbr>past</abbr><ex>o</ex></expan></w> <w lemma="diurnus"><expan><abbr>diurn</abbr><ex>os</ex></expan></w> <g ref="symbols.xml#denarius"/> <w lemma="quadraginta">quadraginta</w>
+<lb n="25"/><note>6</note> <w lemma="in">In</w> <w lemma="opus">opere</w> <w lemma="secundus">secundo</w> <w lemma="pastus">pasto</w> <g ref="symbols.xml#denarius"/> <w lemma="viginti">uiginti</w>
 <lb n="0"/><note>XXII</note>
-<lb n="26"/><note>1</note> <w>De</w> <w>fullonibus</w>
-<lb n="27"/><note>1a</note> <w>Fulloni</w> <w>in</w> <w>chlamyde</w> <w>indictionali</w> <w>rudi</w> <space extent="2" unit="character"/><g ref="symbols.xml#denarius"/> <w>quinquaginta</w>
-<lb n="28"/><note>2</note> <w>In</w> <w>strictoria</w> <w>indictionali</w> <w>rudi</w> <space extent="10" unit="character"/><g ref="symbols.xml#denarius"/> <w>uigintiquinque</w>
-<lb n="29"/><note>3</note> <w>In</w> <w>asema</w> <w>ex</w> <w>lanis</w> <w>grossioribus</w> <space extent="10" unit="character"/><g ref="symbols.xml#denarius"/> <w>uiginti</w>
-<lb n="30"/><note>4</note> <w>In</w> <w>rachana</w> <w>rudi</w> <space extent="16" unit="character"/><g ref="symbols.xml#denarius"/> <w>triginta</w>
-<lb n="31"/><note>5</note> <w>In</w> <w>dalmaticomafortio</w> <w>grossiori</w> <w>rudi</w> <space extent="4" unit="character"/> <g ref="symbols.xml#denarius"/> <w>quinquaginta</w>
-<lb n="32"/><note>6</note> <w>In</w> <w>dalmaticomafortio</w> <w>pexo</w> <w>tenuiori</w> <w>rudi</w> <space extent="6" unit="character"/><g ref="symbols.xml#denarius"/> <w>centum</w>
-<lb n="33"/><note>7</note> <w>In</w> <w>strictoria</w> <w>pexa</w> <w>tenui</w> <w>rudi</w> <space extent="12" unit="character"/><g ref="symbols.xml#denarius"/> <w>quinquaginta</w>
-<lb n="34"/><note>8</note> <w>In</w> <w>dalmatica</w> <w>uirili</w> <w>subserica</w> <w>rudi</w> <space extent="6" unit="character"/> <g ref="symbols.xml#denarius"/> <w>ducentos</w>
-<lb n="35"/><note>9</note> <w>In</w> <w>strictoria</w> <w>subserica</w> <w>rudi</w> <space extent="4" unit="character"/> <g ref="symbols.xml#denarius"/> <w>centum</w> <w>septuagin<supplied reason="lost">ta</supplied></w> <supplied reason="lost"><w>quinque</w></supplied>
-<lb n="36"/><note>10</note> <w>In</w> <w>asema</w> <w>subserica</w> <w>rudi</w> <space extent="6" unit="character"/> <g ref="symbols.xml#denarius"/> <w>centum</w> <w>ui<supplied reason="lost">ginti</supplied></w> <supplied reason="lost"><w>quinque</w></supplied>
-<lb n="37"/><note>11</note> <w>In</w> <w>d<supplied reason="lost">almaticomafortio</supplied></w> <supplied reason="lost"> <w>subserico</w> <w>rudi</w> <note>300 denarii</note></supplied>
-<lb n="38"/><note>12</note> <w>In</w> <supplied reason="lost"><w>dalmatica</w> <w>holoserica</w> <w>uirili</w> <w>rudi</w> <note>400 denarii</note></supplied>
-<lb n="39"/><note>13</note> <w>In</w> <w>d<supplied reason="lost">almaticomafortio</supplied></w> <supplied reason="lost"><w>holoserico</w> <w>rudi</w> <note>600 denarii</note></supplied>
-<lb n="40"/><note>14</note> <w>In</w> <w>s<supplied reason="lost">trictoria</supplied></w> <supplied reason="lost"><w>holoserica</w> <w>rudi</w> <note>250 denarii</note></supplied>
-<lb n="41"/><note>15</note> <w>In</w> <supplied reason="lost"><w>asema</w> <w>holoserica</w> <w>rudi</w> <note>200 denarii</note></supplied>
-<lb n="42"/><note>16</note> <w>In</w> <supplied reason="lost"><w>chlamyde</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensi</placeName> <w>duplici</w> <w>rudi</w> <note>500 denarii</note></supplied>
-<lb n="43"/><note>17</note> <w>In</w> <supplied reason="lost"><w>chlamyde</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensi</placeName> <w>simplici</w> <w>rudi</w> <note>250 denarii</note></supplied>
+<lb n="26"/><note>1</note> <w lemma="de">De</w> <w lemma="fullo">fullonibus</w>
+<lb n="27"/><note>1a</note> <w lemma="fullo">Fulloni</w> <w lemma="in">in</w> <w lemma="chlamys">chlamyde</w> <w lemma="indictio">indictionali</w> <w lemma="rudis">rudi</w> <space extent="2" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="quinquaginta">quinquaginta</w>
+<lb n="28"/><note>2</note> <w lemma="in">In</w> <w lemma="strictoria">strictoria</w> <w lemma="indictio">indictionali</w> <w lemma="rudis">rudi</w> <space extent="10" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="vigintiquinque">uigintiquinque</w>
+<lb n="29"/><note>3</note> <w lemma="in">In</w> <w lemma="asema">asema</w> <w lemma="ex">ex</w> <w lemma="lana">lanis</w> <w lemma="grossus">grossioribus</w> <space extent="10" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="viginti">uiginti</w>
+<lb n="30"/><note>4</note> <w lemma="in">In</w> <w lemma="rachana">rachana</w> <w lemma="rudis">rudi</w> <space extent="16" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="triginta">triginta</w>
+<lb n="31"/><note>5</note> <w lemma="in">In</w> <w lemma="dalmaticomafortium">dalmaticomafortio</w> <w lemma="grossus">grossiori</w> <w lemma="rudis">rudi</w> <space extent="4" unit="character"/> <g ref="symbols.xml#denarius"/> <w lemma="quinquaginta">quinquaginta</w>
+<lb n="32"/><note>6</note> <w lemma="in">In</w> <w lemma="dalmaticomafortium">dalmaticomafortio</w> <w lemma="pecto">pexo</w> <w lemma="tenuis">tenuiori</w> <w lemma="rudis">rudi</w> <space extent="6" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="centum">centum</w>
+<lb n="33"/><note>7</note> <w lemma="in">In</w> <w lemma="strictoria">strictoria</w> <w lemma="pecto">pexa</w> <w lemma="tenuis">tenui</w> <w lemma="rudis">rudi</w> <space extent="12" unit="character"/><g ref="symbols.xml#denarius"/> <w lemma="quinquaginta">quinquaginta</w>
+<lb n="34"/><note>8</note> <w lemma="in">In</w> <w lemma="dalmatica">dalmatica</w> <w lemma="virilis">uirili</w> <w lemma="subsericus">subserica</w> <w lemma="rudis">rudi</w> <space extent="6" unit="character"/> <g ref="symbols.xml#denarius"/> <w lemma="ducenti">ducentos</w>
+<lb n="35"/><note>9</note> <w lemma="in">In</w> <w lemma="strictoria">strictoria</w> <w lemma="subsericus">subserica</w> <w lemma="rudis">rudi</w> <space extent="4" unit="character"/> <g ref="symbols.xml#denarius"/> <w lemma="centum">centum</w> <w lemma="septuaginta">septuagin<supplied reason="lost">ta</supplied></w> <supplied reason="lost"><w lemma="quinque">quinque</w></supplied>
+<lb n="36"/><note>10</note> <w lemma="in">In</w> <w lemma="asema">asema</w> <w lemma="subsericus">subserica</w> <w lemma="rudis">rudi</w> <space extent="6" unit="character"/> <g ref="symbols.xml#denarius"/> <w lemma="centum">centum</w> <w lemma="viginti">ui<supplied reason="lost">ginti</supplied></w> <supplied reason="lost"><w lemma="quinque">quinque</w></supplied>
+<lb n="37"/><note>11</note> <w lemma="in">In</w> <w lemma="dalmaticomafortium">d<supplied reason="lost">almaticomafortio</supplied></w> <supplied reason="lost"> <w lemma="subsericus">subserico</w> <w lemma="rudis">rudi</w> <note>300 denarii</note></supplied>
+<lb n="38"/><note>12</note> <w lemma="in">In</w> <supplied reason="lost"><w lemma="dalmatica">dalmatica</w> <w lemma="holosericus">holoserica</w> <w lemma="virilis">uirili</w> <w lemma="rudis">rudi</w> <note>400 denarii</note></supplied>
+<lb n="39"/><note>13</note> <w lemma="in">In</w> <w lemma="dalmaticomafortium">d<supplied reason="lost">almaticomafortio</supplied></w> <supplied reason="lost"><w lemma="holosericus">holoserico</w> <w lemma="rudis">rudi</w> <note>600 denarii</note></supplied>
+<lb n="40"/><note>14</note> <w lemma="in">In</w> <w lemma="strictoria">s<supplied reason="lost">trictoria</supplied></w> <supplied reason="lost"><w lemma="holosericus">holoserica</w> <w lemma="rudis">rudi</w> <note>250 denarii</note></supplied>
+<lb n="41"/><note>15</note> <w lemma="in">In</w> <supplied reason="lost"><w lemma="asema">asema</w> <w lemma="holosericus">holoserica</w> <w lemma="rudis">rudi</w> <note>200 denarii</note></supplied>
+<lb n="42"/><note>16</note> <w lemma="in">In</w> <supplied reason="lost"><w lemma="chlamys">chlamyde</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensi</placeName> <w lemma="duplex">duplici</w> <w lemma="rudis">rudi</w> <note>500 denarii</note></supplied>
+<lb n="43"/><note>17</note> <w lemma="in">In</w> <supplied reason="lost"><w lemma="chlamys">chlamyde</w> <placeName type="ethnic" nymRef="#Mutinensis" ref="#mutina">Mutinensi</placeName> <w lemma="simplex">simplici</w> <w lemma="rudis">rudi</w> <note>250 denarii</note></supplied>
    </ab></div>
             
 <div subtype="section" type="textpart" n="S">
    <ab>
   <lb n="0"/><note>From Chapter XXIV</note>
       <gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/> <w>pur<supplied reason="lost">pura</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="2"/> <w>pur<supplied reason="lost">pura</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="3"/> <w><supplied reason="lost">pu</supplied>r<supplied reason="lost">pura</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/> <w lemma="purpura">pur<supplied reason="lost">pura</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/> <w lemma="purpura">pur<supplied reason="lost">pura</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/> <w lemma="purpura"><supplied reason="lost">pu</supplied>r<supplied reason="lost">pura</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
 <gap reason="lost" extent="unknown" unit="line"/>
 </ab>
                                </div>
@@ -357,16 +355,16 @@
    <ab><lb n="0"/><note>From Chapter XXVI</note>
       <gap reason="lost" extent="unknown" unit="line"/>
       <lb n="1"/> <space extent="4" unit="character"/><placeName type="ethnic" nymRef="#Tarsicus" ref="#tarsus">Tarsico</placeName> <placeName type="ethnic" nymRef="#Alexandrinus" ref="#alexandria"><unclear>A</unclear><supplied reason="lost">lexandrinarum</supplied></placeName><gap reason="lost" extent="unknown" unit="character"/>
-      <lb n="2"/><w>Dalmatic<supplied reason="lost">arum</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
+      <lb n="2"/><w lemma="dalmatica">Dalmatic<supplied reason="lost">arum</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
       <gap reason="lost" extent="unknown" unit="line"/>
 </ab></div>
                <div subtype="section" type="textpart" n="Q">
    <ab><lb n="0"/><note>Chapter XXVIII, lines 45-47</note>
  <gap reason="lost" extent="unknown" unit="line"/>     
-<lb n="1"/> <w>forma<supplied reason="lost">e</supplied></w> <supplied reason="lost"><w>tertiae</w></supplied>
-<lb n="2"/> <w>item</w> <w>culcita</w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="3"/> <w>mili<supplied reason="lost">bus</supplied></w>
-<lb n="4"/><placeName type="ethnic"  nymRef="#Damascenus" ref="#damascus">Damascen<supplied reason="lost">a</supplied></placeName> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/> <w lemma="forma">forma<supplied reason="lost">e</supplied></w> <supplied reason="lost"><w lemma="tertius">tertiae</w></supplied>
+<lb n="2"/> <w lemma="item">item</w> <w lemma="culcita">culcita</w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/> <w lemma="mille">mili<supplied reason="lost">bus</supplied></w>
+<lb n="4"/><placeName type="ethnic" nymRef="#Damascenus" ref="#damascus">Damascen<supplied reason="lost">a</supplied></placeName> <gap reason="lost" extent="unknown" unit="character"/>
 <gap reason="lost" extent="unknown" unit="line"/>
 </ab>
 </div>
@@ -375,9 +373,9 @@
             <div subtype="section" type="textpart" n="Y">
    <ab><lb n="0"/><note>Chapter XXX, lines 2-4</note>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
-<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w>unum</w> <g ref="symbols.xml#denarius"/> </supplied><w><supplied reason="lost">duod</supplied><unclear>e</unclear>cim</w> <supplied reason="lost"><w>milibus</w> <space extent="4" unit="character"/></supplied>
-<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F">is</w> <w>in</w> <w><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w>u<supplied reason="lost">num</supplied></w><supplied reason="lost"> <g ref="symbols.xml#denarius"/> <w>quinque</w> <w>milibus</w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="4"/><supplied reason="lost"><w>Auricaesoribus</w> <w>in</w> <w><expan><abbr>po</abbr><ex>ndo</ex></expan></w></supplied> <w>unum</w> <g ref="symbols.xml#denarius"/> <supplied reason="lost"><w>tribus</w> <w>milibus</w></supplied> <space extent="4" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="pondus"><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> </supplied><w lemma="duodecim"><supplied reason="lost">duod</supplied><unclear>e</unclear>cim</w> <supplied reason="lost"><w lemma="mille">milibus</w> <space extent="4" unit="character"/></supplied>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F">is</w> <w lemma="in">in</w> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndo</ex></expan></w> <w lemma="unus">u<supplied reason="lost">num</supplied></w><supplied reason="lost"> <g ref="symbols.xml#denarius"/> <w lemma="quinque">quinque</w> <w lemma="mille">milibus</w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><supplied reason="lost"><w lemma="auricaesor">Auricaesoribus</w> <w lemma="in">in</w> <w lemma="pondus"><expan><abbr>po</abbr><ex>ndo</ex></expan></w></supplied> <w lemma="unus">unum</w> <g ref="symbols.xml#denarius"/> <supplied reason="lost"><w lemma="tres">tribus</w> <w lemma="mille">milibus</w></supplied> <space extent="4" unit="character"/>
 <gap reason="lost" extent="unknown" unit="line"/>
 </ab>
 </div>
@@ -386,8 +384,8 @@
    <ab><lb n="0"/><note>Chapter XXXI, lines 1-3</note>
  <gap reason="lost" extent="unknown" unit="line"/>     
 <lb n="1"/> <w lemma="de">de</w> <w lemma="pretium">pretiis</w> <w lemma="mancipium">m<supplied reason="lost">ancipiorum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="2"/><w lemma="mancipium">mancipi<supplied reason="lost">a</supplied></w> <supplied reason="lost" cert="low"><w>mascula</w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="3"/><w>ab</w> <w>an<supplied reason="lost">nis</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><w lemma="mancipium">mancipi<supplied reason="lost">a</supplied></w> <supplied reason="lost" cert="low"><w lemma="masculus">mascula</w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><w lemma="ab">ab</w> <w lemma="annus">an<supplied reason="lost">nis</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
 <lb n="4"/> <space extent="4" unit="character"/>
       <gap reason="lost" extent="unknown" unit="line"/>
 </ab>
@@ -395,7 +393,7 @@
                                             <div subtype="section" type="textpart" n="U">
    <ab>
       <gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/> <space extent="10" unit="character"/> <w>cum</w> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/> <space extent="10" unit="character"/> <w lemma="cum">cum</w> <gap reason="lost" extent="unknown" unit="character"/>
 <lb n="2"/> <space extent="10" unit="character"/> <orig>palo</orig><gap reason="lost" extent="unknown" unit="character"/>
 <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F">is</w> <space extent="4" unit="character"/><orig>cumi</orig><gap reason="lost" extent="unknown" unit="character"/>
 <lb n="4"/> <space extent="unknown" unit="character"/>
@@ -407,7 +405,7 @@
                <div subtype="section" type="textpart" n="Z.g">
    <ab>
       <gap reason="lost" extent="unknown" unit="line"/>
-    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">qu</supplied>inqua<supplied reason="lost">ginta</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="quinquaginta"><supplied reason="lost">qu</supplied>inqua<supplied reason="lost">ginta</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
       <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F">ginta</w> <space extent="unknown" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
       <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>us<unclear>o</unclear>v</orig><gap reason="lost" extent="unknown" unit="character"/>
       <gap reason="lost" extent="unknown" unit="line"/>

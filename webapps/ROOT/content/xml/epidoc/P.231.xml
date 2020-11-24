@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -56,7 +55,7 @@
                <history>
                   <origin>
                      <origPlace>Findspot.</origPlace>
-                     <origDate  notBefore="0001" notAfter="0100" precision="low" evidence="lettering">Probably first century CE </origDate>
+                     <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering">Probably first century CE </origDate>
                   </origin>
                   
                      
@@ -106,6 +105,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-04" who="MGDA">fixed CIG bibliography</change>
@@ -145,14 +145,14 @@
                 </ab></div>
             <div subtype="section" n="b" type="textpart"><ab>
                         <lb n="1"/><date ref="https://godot.date/id/UEy3SUAD4TzpgFDwt6XTp9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="6">ϛ</num> 
-                        <rs type="month" key="pachon"><w>Πα<unclear>χ</unclear><supplied reason="lost">ὼ</supplied>ν</w></rs> <num value="7">ζ</num></date> 
+                        <rs type="month" key="pachon"><w lemma="Παχών">Πα<unclear>χ</unclear><supplied reason="lost">ὼ</supplied>ν</w></rs> <num value="7">ζ</num></date> 
                         <persName type="attested" key="lgpn:V1-61492"><name nymRef="Καρτιλία">Καρ<lb n="2" break="no"/>τιλία</name>
                         <name nymRef="Μυρτώ">Μυ<unclear>ρ</unclear><lb n="3" break="no"/><supplied reason="lost">τ</supplied>ὼ</name> </persName>
                         <date type="life-span" dur="P14Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="14">ιδ</num> </date>
                     </ab></div>
             <div subtype="section" n="c" type="textpart"><ab>
                        <lb n="1"/><date ref="https://godot.date/id/DtM7JYCwas2KiPnjBodA9d"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
-                       <num value="12">ιβ</num> <rs type="month"  key="choiak"><w lemma="Χοιάκ">Χοι<supplied reason="lost">ὰ</supplied><unclear>κ</unclear></w></rs> <num value="27">κζ</num></date>
+                       <num value="12">ιβ</num> <rs type="month" key="choiak"><w lemma="Χοιάκ">Χοι<supplied reason="lost">ὰ</supplied><unclear>κ</unclear></w></rs> <num value="27">κζ</num></date>
                         <lb n="2"/><persName type="attested"><name nymRef="Καρτιλία">Καρτιλ<supplied reason="lost">ί</supplied>α</name> 
                             <name nymRef="Πετρωνία">Π<unclear>ε</unclear><lb n="3" break="no"/>τρωνία</name></persName> 
                         <lb n="4"/> <space quantity="1" unit="character"/> 
@@ -160,7 +160,7 @@
                         <num atLeast="70">ο<gap reason="lost" quantity="1" unit="character"/></num> </date>
                     </ab></div>
             <div subtype="section" n="d" type="textpart"><ab>
-                       <lb n="1"/><date ref="https://godot.date/id/JJ8a48mDtJr2eDgsWCwrrn"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="1"><unclear>α</unclear></num> <rs type="month" key="pauni"><w><supplied reason="lost">Π</supplied>αῦνι</w></rs> <num value="5">ε</num></date>
+                       <lb n="1"/><date ref="https://godot.date/id/JJ8a48mDtJr2eDgsWCwrrn"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="1"><unclear>α</unclear></num> <rs type="month" key="pauni"><w lemma="Παϋνί"><supplied reason="lost">Π</supplied>αῦνι</w></rs> <num value="5">ε</num></date>
                        <lb n="2"/><persName type="attested" key="lgpn:V1-61587"><name nymRef="Σάρα">Ϲ<unclear>ά</unclear>ρα</name> 
                           <persName type="attested"><name nymRef="Καρτίλιος">Καρτι<lb n="3" break="no"/>λίου</name></persName></persName> <date type="life-span" dur="P10Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="10">ι</num> </date>                      
                     </ab>
@@ -204,7 +204,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>a</note>: des Aulus Cartilius Capito. <note>b</note>: (Jahr) 6, 7.Pachon, Cartilia Myrto, 14 (Jahre). 
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>a</note>: des Aulus Cartilius Capito. <note>b</note>: (Jahr) 6, 7.Pachon, Cartilia Myrto, 14 (Jahre). 
             <note>c</note>: (Jahr) 12, 27.Choiak, Cartilia Petronia 70 (+?) (Jahre). <note>d</note>: (Jahr) 1, 5.Paüni, Sara des Cartilius, 10 (Jahre) </p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>
             a) <supplied reason="subaudible">Tomb of</supplied> Aulos Kartilios Kapito.</p>

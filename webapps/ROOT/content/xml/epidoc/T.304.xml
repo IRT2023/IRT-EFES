@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-07-09" who="JenniferSarha">fixed schematron error</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -126,10 +126,10 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/iMxoH3qLpskPitHAquwMQ6"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="15">ιε</num> <rs type="month" key="pachon"><w>Παχὼ<unclear>ν</unclear></w></rs>
+                    <num value="15">ιε</num> <rs type="month" key="pachon"><w lemma="Παχών">Παχὼ<unclear>ν</unclear></w></rs>
                     <lb n="2"/> <space quantity="1" unit="character"/>
                     <num value="14">ιδ</num></date> <persName type="attested" key="lgpn:V1-60438"><name nymRef="Βάσσος">Βάσ<lb n="3" break="no"/>σος</name> <persName type="attested" key="lgpn:V1-60437"><name nymRef="Γάϊος">Γαί<lb n="4" break="no"/>ου</name></persName></persName> 
-            <date type="life-span" dur="P3Y"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><w><ex>ἐτῶν</ex></w></expan> <num value="3"><gap reason="lost" quantity="1" unit="character"/>γ</num> </date>
+            <date type="life-span" dur="P3Y"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><w lemma="ἔτος"><ex>ἐτῶν</ex></w></expan> <num value="3"><gap reason="lost" quantity="1" unit="character"/>γ</num> </date>
                 </ab>
 </div>
          <div type="apparatus">
@@ -159,7 +159,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 5, Pachon 14. Basso di Basso, di anni -</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 5, Pachon 14. Basso di Basso, di anni -</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/iMxoH3qLpskPitHAquwMQ6">Year 15, Pachon 14</ref>, 
                Bassos <supplied reason="explanation"><foreign xml:lang="la">Bassus</foreign></supplied> <supplied reason="subaudible">son</supplied> of Gaios 
                <supplied reason="explanation"><foreign xml:lang="la">Gaius</foreign></supplied>, aged ?3.</p></div>

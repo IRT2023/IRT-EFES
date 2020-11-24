@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription from the stone and the photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -136,15 +136,15 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date><date ref="https://godot.date/id/XAfbiFjMJHdCE7KgeHE54G"><persName type="emperor" key="hadrianus"><w>Αὐτοκράτορι</w> <name nymRef="Καῖσαρ">Καίσαρι</name> <persName type="emperor" key="traianus"><w>θεοῦ</w> <name nymRef="Τραιανός">Τραια<unclear>ν</unclear><supplied reason="lost">οῦ</supplied></name> <name nymRef="Παρθικός">Παρθικοῦ</name>
-                    <lb n="2"/> <w lemma="υἱός">υἱῷ</w> <persName type="emperor" key="nerva"><w>θεοῦ</w> <name nymRef="Νέρβα">Νέρουα</name></persName> <w>υἱωνῷ</w> <name nymRef="Τραιανός">Τραιανῷ</name> <name nymRef="Ἁδριανός"><supplied reason="lost">Ἁδρι</supplied>ανῷ</name> <name nymRef="Σεβαστός">Σεβαστ<unclear>ῷ</unclear></name></persName></persName>
-                    <lb n="3"/> <w>Αὐτοκράτορι</w> <w lemma="ὁ">τὸ</w> <g ref="symbols.xml#stop"/> <num value="2">β</num> <g ref="symbols.xml#stop"/> <w lemma="ἀρχιερεύς">ἀρχιερεῖ</w> 
-                    <w>μ<unclear>ε</unclear>γίστ<unclear>ῳ</unclear></w> <w>δημαρχι<lb n="4" break="no"/>κῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <num value="22">κβ</num> <w>ὑπάτ<supplied reason="lost">ῳ</supplied></w> <w><unclear>τ</unclear>ὸ</w>
-                    <num value="3">γ</num></date> <w>πατρὶ</w> <w lemma="πατρίς">πατρίδος</w>
-                    <lb n="5"/> <w>σωτῆρι</w> <w lemma="καί">καὶ</w> <w>κτίστῃ</w> <w lemma="καί">καὶ</w> <date ref="https://godot.date/id/ANkYxXfzuWxoDCtHG2R5Vo"><persName type="emperor" key="antoninuspius"><w>Αὐτοκράτορι</w> <name nymRef="Τίτος">Τίτῳ</name> <name nymRef="Αἴλιος">Αἰλίῳ</name> <name nymRef="Καῖσαρ">Καί<lb n="6" break="no"/>σαρι</name> <name nymRef="Ἀντωνῖνος">Ἀντωνείνῳ</name> 
+                    <lb n="1"/><date><date ref="https://godot.date/id/XAfbiFjMJHdCE7KgeHE54G"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορι</w> <name nymRef="Καῖσαρ">Καίσαρι</name> <persName type="emperor" key="traianus"><w lemma="θεός">θεοῦ</w> <name nymRef="Τραιανός">Τραια<unclear>ν</unclear><supplied reason="lost">οῦ</supplied></name> <name nymRef="Παρθικός">Παρθικοῦ</name>
+                    <lb n="2"/> <w lemma="υἱός">υἱῷ</w> <persName type="emperor" key="nerva"><w lemma="θεός">θεοῦ</w> <name nymRef="Νέρβα">Νέρουα</name></persName> <w lemma="υἱωνός">υἱωνῷ</w> <name nymRef="Τραιανός">Τραιανῷ</name> <name nymRef="Ἁδριανός"><supplied reason="lost">Ἁδρι</supplied>ανῷ</name> <name nymRef="Σεβαστός">Σεβαστ<unclear>ῷ</unclear></name></persName></persName>
+                    <lb n="3"/> <w lemma="Αὐτοκράτωρ">Αὐτοκράτορι</w> <w lemma="ὁ">τὸ</w> <g ref="symbols.xml#stop"/> <num value="2">β</num> <g ref="symbols.xml#stop"/> <w lemma="ἀρχιερεύς">ἀρχιερεῖ</w> 
+                    <w lemma="μέγας">μ<unclear>ε</unclear>γίστ<unclear>ῳ</unclear></w> <w lemma="δημαρχικός">δημαρχι<lb n="4" break="no"/>κῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <num value="22">κβ</num> <w lemma="ὕπατος">ὑπάτ<supplied reason="lost">ῳ</supplied></w> <w lemma="ὁ"><unclear>τ</unclear>ὸ</w>
+                    <num value="3">γ</num></date> <w lemma="πατήρ">πατρὶ</w> <w lemma="πατρίς">πατρίδος</w>
+                    <lb n="5"/> <w lemma="σωτήρ">σωτῆρι</w> <w lemma="καί">καὶ</w> <w lemma="κτίστης">κτίστῃ</w> <w lemma="καί">καὶ</w> <date ref="https://godot.date/id/ANkYxXfzuWxoDCtHG2R5Vo"><persName type="emperor" key="antoninuspius"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορι</w> <name nymRef="Τίτος">Τίτῳ</name> <name nymRef="Αἴλιος">Αἰλίῳ</name> <name nymRef="Καῖσαρ">Καί<lb n="6" break="no"/>σαρι</name> <name nymRef="Ἀντωνῖνος">Ἀντωνείνῳ</name> 
                        <w lemma="υἱός">υἱῷ</w> <persName type="emperor" key="hadrianus"><name nymRef="Ἁδριανός">Ἁδριανοῦ</name> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName></persName></date></date> <g ref="symbols.xml#leaf"/> <space quantity="2" unit="character"/>
-                    <lb n="7"/> <w>ἡ</w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυρηναίων</placeName> <w>πόλις</w> <w>κοσμηθεῖσα</w> <w>ὑπ’</w><w>αὐτοῦ</w> <space quantity="2" unit="character"/>
-                    <lb n="8"/> <space quantity="10" unit="character"/> <w lemma="καί">καὶ</w> <w>το<unclear>ῖς</unclear></w> <w>ἀγάλμασιν</w> <space quantity="10" unit="character"/>
+                    <lb n="7"/> <w lemma="ὁ">ἡ</w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυρηναίων</placeName> <w lemma="πόλις">πόλις</w> <w lemma="κοσμέω">κοσμηθεῖσα</w> <w lemma="ὑπό">ὑπ’</w><w lemma="αὐτοῦ">αὐτοῦ</w> <space quantity="2" unit="character"/>
+                    <lb n="8"/> <space quantity="10" unit="character"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">το<unclear>ῖς</unclear></w> <w lemma="ἄγαλμα">ἀγάλμασιν</w> <space quantity="10" unit="character"/>
                 </ab>
 </div>
                                    

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -139,13 +139,13 @@
                     <w lemma="ἔκγονος"><unclear>ἔ</unclear><supplied reason="lost">κγ</supplied><lb n="6" break="no"/><supplied reason="lost">ο</supplied>νος</w> <supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
                     <lb n="7"/><date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE"><name nymRef="σεβαστός">Σεβασ<supplied reason="lost">τὸς</supplied></name>
                     <lb n="8"/><name nymRef="Γερμανικός"><expan><abbr>Γερμ<unclear>α</unclear><supplied reason="lost">ν</supplied></abbr><supplied reason="lost"><ex>ικὸς</ex></supplied></expan></name>
-                    <lb n="9"/> <w>Αὐτοκ<supplied reason="lost">ρά</supplied><lb n="10" break="no"/>τωρ</w></date></persName> <w lemma="διά"><supplied reason="lost">διὰ</supplied></w>
+                    <lb n="9"/> <w lemma="Αὐτοκράτωρ">Αὐτοκ<supplied reason="lost">ρά</supplied><lb n="10" break="no"/>τωρ</w></date></persName> <w lemma="διά"><supplied reason="lost">διὰ</supplied></w>
                     <lb n="11"/><persName type="attested" key="pir2-a-0082"><name nymRef="Λούκιος">Λουκ<supplied reason="lost">ίου</supplied></name>
                     <lb n="12"/><name nymRef="Ἀκίλιος">Ἀκιλί<supplied reason="lost">ου</supplied></name>
                     <name nymRef="Στράβων"><supplied reason="lost">Στρά</supplied><lb n="13" break="no"/>βω<unclear>ν</unclear><supplied reason="lost">ος</supplied></name></persName>
-                    <w><supplied reason="lost">τοῦ</supplied></w>
+                    <w lemma="τις"><supplied reason="lost">τοῦ</supplied></w>
                     <lb n="14"/><supplied reason="lost"><w lemma="ἴδιος">ἰδίου</w></supplied>
-                    <w><supplied reason="lost">πρεσ</supplied><lb n="15" break="no"/><supplied reason="lost">βευτοῦ</supplied></w>
+                    <w lemma="πρεσβευτής"><supplied reason="lost">πρεσ</supplied><lb n="15" break="no"/><supplied reason="lost">βευτοῦ</supplied></w>
                     <lb n="15a"/><gap reason="lost" extent="unknown" unit="line"/>
                 </ab>
          </div>

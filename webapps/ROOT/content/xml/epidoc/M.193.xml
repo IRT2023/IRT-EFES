@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -87,6 +86,7 @@
          </textClass>
       <creation>Transcription (Reynolds)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-21" who="CMR">created from publication</change>
@@ -107,10 +107,10 @@
                     <persName type="divine" key="asklepios"><name nymRef="Ἀσκληπιός"><supplied reason="lost">Ἀϲκληπ</supplied>ιῶι</name>
                        <g ref="symbols.xml#stop"/> <placeName type="ethnic" nymRef="#Βαλαγρείτης" ref="#balagrae">Βαλαγρείτηι</placeName> <g ref="symbols.xml#stop"/> <name nymRef="Ἰατρος">Ἰητρῶι</name></persName> <g ref="symbols.xml#stop"/> <lb n="2"/><gap reason="lost" extent="3" unit="character"/>
             <persName type="attested"><name nymRef="Λούκουλλος"><supplied reason="lost">Λο</supplied>ύκουλλοϲ</name>
-            <g ref="symbols.xml#stop"/> <w>ἐπίτροποϲ</w> <g ref="symbols.xml#stop"/> <w lemma="ὁ">τοῦ</w>
+            <g ref="symbols.xml#stop"/> <w lemma="ἐπίτροπος">ἐπίτροποϲ</w> <g ref="symbols.xml#stop"/> <w lemma="ὁ">τοῦ</w>
             <persName type="emperor" key="anonymus"><name nymRef="Σεβαστός">Ϲεβαϲτοῦ</name></persName></persName>
-            <lb n="3"/><gap reason="lost" extent="3" unit="character"/><orig>ν</orig> <w>ὑγείαϲ</w> <g ref="symbols.xml#stop"/> <w lemma="καί">καὶ</w> <w>εἰϲ</w> <w>ὑπόμνηϲιν</w> <g ref="symbols.xml#stop"/> <w>τῆϲ</w> <w>πρὸϲ</w>
-            <lb n="4"/> <w><supplied reason="lost" cert="low">ἑαυτὸν</supplied></w> <w>φιλίαϲ</w> <g ref="symbols.xml#stop"/> <w>δράκοντα</w> <g ref="symbols.xml#stop"/> <w>ἀργύρεον</w> <g ref="symbols.xml#leaf"/> </ab>
+            <lb n="3"/><gap reason="lost" extent="3" unit="character"/><orig>ν</orig> <w lemma="ὑγεία">ὑγείαϲ</w> <g ref="symbols.xml#stop"/> <w lemma="καί">καὶ</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὑπόμνησις">ὑπόμνηϲιν</w> <g ref="symbols.xml#stop"/> <w lemma="ὁ">τῆϲ</w> <w lemma="πρός">πρὸϲ</w>
+            <lb n="4"/> <w lemma="ἑαυτοῦ"><supplied reason="lost" cert="low">ἑαυτὸν</supplied></w> <w lemma="φιλία">φιλίαϲ</w> <g ref="symbols.xml#stop"/> <w lemma="δράκων">δράκοντα</w> <g ref="symbols.xml#stop"/> <w lemma="ἀργύρεος">ἀργύρεον</w> <g ref="symbols.xml#leaf"/> </ab>
 </div>
          
          <div type="translation" xml:space="preserve">

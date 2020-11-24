@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -107,6 +106,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
@@ -136,9 +136,9 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                     <lb n="1"/><g ref="symbols.xml#crux"/> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="μνήμη">μνήμηϲ</w> 
-                    <lb n="2"/> <w>κοιμήϲεωϲ</w> <g ref="symbols.xml#leaf"/> <lb n="3"/><w lemma="καί">καὶ</w> <w>ἀναπαύϲεωϲ</w> 
-                    <lb n="4"/><w lemma="ὁ">τῆϲ</w> <w>μακαρίαϲ</w> <g ref="symbols.xml#leaf"/> <lb n="5"/> <w>δούλης</w> <w lemma="ὁ">τοῦ</w> 
-                        <persName type="divine" key="kyrios"><w><expan><abbr>Θ</abbr><ex>εο</ex><abbr>ῦ</abbr></expan></w></persName> 
+                    <lb n="2"/> <w lemma="κοίμησις">κοιμήϲεωϲ</w> <g ref="symbols.xml#leaf"/> <lb n="3"/><w lemma="καί">καὶ</w> <w lemma="ἀνάπαυσις">ἀναπαύϲεωϲ</w> 
+                    <lb n="4"/><w lemma="ὁ">τῆϲ</w> <w lemma="μακάριος">μακαρίαϲ</w> <g ref="symbols.xml#leaf"/> <lb n="5"/> <w lemma="δούλη">δούλης</w> <w lemma="ὁ">τοῦ</w> 
+                        <persName type="divine" key="kyrios"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>εο</ex><abbr>ῦ</abbr></expan></w></persName> 
                            <persName type="attested" key="lgpn:V1-61352"><name nymRef="Ἰουλία">Ἰουλίαϲ</name></persName>
                 </ab>
          </div>

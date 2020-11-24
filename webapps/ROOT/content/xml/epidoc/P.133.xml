@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-10-03" who="TW">edited image information</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -124,7 +124,7 @@
                    
                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ς"><seg part="F">ς</seg></name></persName> 
                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ος</seg></name> <persName type="attested"><name nymRef="-ος"><gap reason="lost" extent="unknown" unit="character"/><seg part="F">ου</seg></name></persName></persName>
-    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w><expan><abbr><expan><abbr><g ref="symbols.xml#ΣΤΚ"/></abbr><ex>σύγκ</ex></expan></abbr><ex>οιτοι</ex></expan></w>
+    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="σύγκοιτος"><expan><abbr><expan><abbr><g ref="symbols.xml#ΣΤΚ"/></abbr><ex>σύγκ</ex></expan></abbr><ex>οιτοι</ex></expan></w>
                 </ab>
 </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-03" who="Pietro">markup of text and metadata</change>
@@ -120,8 +120,8 @@
 <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ΚΙΟΣΤΙΑΙΙΕ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
-            <supplied reason="lost"><w lemma="καί">καὶ</w></supplied> <w><unclear>τᾶ</unclear>ς</w> <w>ποτὶ</w> 
-            <supplied reason="lost" cert="low"><w lemma="ὁ">τὸς</w> <w>θεὸς</w> <w>εὐσεβέας</w></supplied>	
+            <supplied reason="lost"><w lemma="καί">καὶ</w></supplied> <w lemma="ὁ"><unclear>τᾶ</unclear>ς</w> <w lemma="πρός">ποτὶ</w> 
+            <supplied reason="lost" cert="low"><w lemma="ὁ">τὸς</w> <w lemma="θεός">θεὸς</w> <w lemma="εὐσέβεια">εὐσεβέας</w></supplied>	
       
                 </ab>
 </div>

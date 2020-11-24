@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -125,13 +125,13 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/MKLvxq84LBVeyUhsajhRND"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="2">β</num> <rs type="month" key="pauni"><w lemma="Παῦνι">Παοινί</w></rs> <num value="22">κβ</num></date> 
-                    <w>ἐτελ<supplied reason="lost">ε</supplied>ύτησε</w> 
+                    <w lemma="τελευτάω">ἐτελ<supplied reason="lost">ε</supplied>ύτησε</w> 
                     <lb n="2"/><persName type="attested" key="lgpn:V1-61227"><name nymRef="Κλαύδιος">Κλαῦδις</name> <name nymRef="Δράκων">Δράκων</name></persName> 
                     <date type="life-span" dur="P24Y3M15D"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w></supplied> <num value="24">κδ</num> 
-                    <w lemma="μείς">μη<lb n="3" break="no"/>νῶν</w> <num value="3">γ</num> <w>ἁμερᾶν</w> <num value="15">ιε</num> </date>
-                    <lb n="4"/><date ref="https://godot.date/id/3ESpgrypZs8akbQuwdbAtU"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="6">ϛ</num> <rs type="month"  key="hathyr"><w>Ἁθὺρ</w></rs> <num value="25">κε</num></date> <w lemma="τελευτάω">ἐτελεύτ<unclear>ησ</unclear>ε</w> 
+                    <w lemma="μείς">μη<lb n="3" break="no"/>νῶν</w> <num value="3">γ</num> <w lemma="ἡμέρα">ἁμερᾶν</w> <num value="15">ιε</num> </date>
+                    <lb n="4"/><date ref="https://godot.date/id/3ESpgrypZs8akbQuwdbAtU"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="6">ϛ</num> <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs> <num value="25">κε</num></date> <w lemma="τελευτάω">ἐτελεύτ<unclear>ησ</unclear>ε</w> 
                     <lb n="5"/><persName type="attested" key="lgpn:V1-61163"><name nymRef="Κλαύδιος">Κλαῦδις</name> <name nymRef="Ἀχίλλας">Ἀχίλλας</name></persName> <date type="life-span" dur="P24Y2M5D"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="24">κδ</num> 
-                    <lb n="6"/><w lemma="μείς">μηνῶν</w> <num value="2"><unclear>β</unclear></num> <w>ἁμερᾶν</w> <num value="5">ε</num> </date>
+                    <lb n="6"/><w lemma="μείς">μηνῶν</w> <num value="2"><unclear>β</unclear></num> <w lemma="ἡμέρα">ἁμερᾶν</w> <num value="5">ε</num> </date>
                 </ab>
 </div>
          <div type="apparatus">

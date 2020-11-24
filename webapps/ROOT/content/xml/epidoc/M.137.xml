@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -91,6 +90,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2013-10-10" who="TW">Added pic code</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -116,18 +116,18 @@
                <bibl><ptr target="jmr1980"/>, <citedRange unit="page">146, B</citedRange></bibl>. 
                whence <bibl><ptr target="SEG"/> <citedRange>30.1787</citedRange>.B</bibl>
                whence <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324535">324535</ref></citedRange></bibl>;
-               <bibl><ptr target="jmr-jbwp-rgg2003" /> <citedRange unit="page">284.D</citedRange></bibl>
+               <bibl><ptr target="jmr-jbwp-rgg2003"/> <citedRange unit="page">284.D</citedRange></bibl>
             </p>
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-                    <lb n="1"/> <w><supplied reason="lost">ἐγέ</supplied><lb n="2" break="no"/><supplied reason="lost">νετο</supplied></w>
-               <w><supplied reason="lost">τοῦτο</supplied></w>
-                    <lb n="3"/> <w lemma="ὁ">τὸ</w> <w>ἔργον</w> <date ref="https://godot.date/eponymous_office/2LQmqZa54s6enn7LAuEGh4/uxzkrCdToCGgi44QhLGn5C"><w>ἐπ<supplied reason="lost">ὶ</supplied></w>
-               <persName type="attested" key="lgpn:V1-60882"><supplied reason="lost" cert="low"><w lemma="ὁ">τοῦ</w> <w><expan><abbr>ὁϲιω</abbr><ex>τάτου</ex></expan></w></supplied>
-                    <lb n="4"/> <w lemma="καί">κὲ</w> <w>θεοϲεβ<supplied reason="lost">εϲτάτου</supplied></w>
-                    <lb n="5"/> <w>ἐπιϲκόπ<supplied reason="lost">ου</supplied></w>
+                    <lb n="1"/> <w lemma="γίγνομαι"><supplied reason="lost">ἐγέ</supplied><lb n="2" break="no"/><supplied reason="lost">νετο</supplied></w>
+               <w lemma="οὗτος"><supplied reason="lost">τοῦτο</supplied></w>
+                    <lb n="3"/> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <date ref="https://godot.date/eponymous_office/2LQmqZa54s6enn7LAuEGh4/uxzkrCdToCGgi44QhLGn5C"><w lemma="ἐπί">ἐπ<supplied reason="lost">ὶ</supplied></w>
+               <persName type="attested" key="lgpn:V1-60882"><supplied reason="lost" cert="low"><w lemma="ὁ">τοῦ</w> <w lemma="ὅσιος"><expan><abbr>ὁϲιω</abbr><ex>τάτου</ex></expan></w></supplied>
+                    <lb n="4"/> <w lemma="καί">κὲ</w> <w lemma="θεοσεβής">θεοϲεβ<supplied reason="lost">εϲτάτου</supplied></w>
+                    <lb n="5"/> <w lemma="ἐπισ́κοπος">ἐπιϲκόπ<supplied reason="lost">ου</supplied></w>
                <name nymRef="Θεόδωρος"><supplied reason="lost">Θεο</supplied>
                     <lb n="6" break="no"/>δώ<supplied reason="lost">ρου</supplied></name></persName></date>
                 </ab>

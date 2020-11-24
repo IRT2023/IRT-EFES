@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -110,6 +109,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-05" who="TW">persnamed incomplete name</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -143,22 +143,22 @@
                         <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F"><unclear>α</unclear>νοῦ</w> 
                         <orig>ἐπιφ</orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="3"/> <gap reason="lost" extent="unknown" unit="character"/><w part="F">ιν</w>
-                        <w>ἔθνοϲ</w> <w lemma="συνέρχομαι">ϲυνελθὸν</w><gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="ἔθνος">ἔθνοϲ</w> <w lemma="συνέρχομαι">ϲυνελθὸν</w><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">εν</w> <w lemma="ὁμοίως">ὁμοίωϲ</w> 
-                        <w>προϲήκ<supplied reason="lost" cert="low">ειν</supplied></w>
+                        <w lemma="προσήκω">προϲήκ<supplied reason="lost" cert="low">ειν</supplied></w>
                         <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἄρχων"><supplied reason="lost">ἄρ</supplied>χοντα</w> <w lemma="ὁ">τῶ</w> 
-                        <w lemma="τε">τε</w> <w>ἡμετέ<supplied reason="lost">ρω</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w>μήτε</w> <w lemma="ὁ">τῶν</w> 
-                        <w>παλαιῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="τε">τε</w> <w lemma="ἡμέτερος">ἡμετέ<supplied reason="lost">ρω</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="μήτε">μήτε</w> <w lemma="ὁ">τῶν</w> 
+                        <w lemma="παλαιός">παλαιῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">μον</w> <w lemma="ὡς">ὡϲ</w> 
                         <w lemma="ἔχω">ἔχοι</w> <orig>λει</orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ">τᾶϲ</w> <w lemma="τε">τε</w> 
-                        <w>ἀνδραγαθί<unclear>α</unclear><supplied reason="lost">ϲ</supplied></w>
+                        <w lemma="ἀνδραγαθία">ἀνδραγαθί<unclear>α</unclear><supplied reason="lost">ϲ</supplied></w>
                         <gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">γκεϲ</w> <w>ὧν</w> 
+                        <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">γκεϲ</w> <w lemma="ὅς">ὧν</w> 
                         <w lemma="ὁ">τὰϲ</w> <w lemma="μέν">μὲν</w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ο</unclear>ϲ</w> <w lemma="ὡς">ὡϲ</w> 
-                        <w lemma="μηδέ">μήδε</w> <w>τοῦ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="μηδέ">μήδε</w> <w lemma="τις">τοῦ</w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ"><supplied reason="lost">το</supplied><unclear>ῦ</unclear></w> <w lemma="τε">τε</w> 
                         <w lemma="ἄρχων">ἄρχοντο<unclear>ϲ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> <w part="I"><supplied reason="lost">ε</supplied><unclear>ὐ</unclear>πρεπεϲτ<supplied reason="lost">ατ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
@@ -168,34 +168,34 @@
                     </ab></div>
             <div subtype="section" n="b" type="textpart"><ab>
                         <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
-                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">ἐ</supplied><unclear>χ</unclear></w> 
-                        <w>κακῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἐκ"><supplied reason="lost">ἐ</supplied><unclear>χ</unclear></w> 
+                        <w lemma="κακός">κακῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ϲ</unclear></w> 
                        <w lemma="ποιέω">ποιεῖϲθ<supplied reason="lost">αι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">ἠ</supplied><unclear>ν</unclear>γγέλθαι</w> 
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἀγγέλλω"><supplied reason="lost">ἠ</supplied><unclear>ν</unclear>γγέλθαι</w> 
                         <orig>λα</orig><gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w>δὲ</w> <w lemma="ἐπί">ἐπὶ</w> 
-                        <w>ταύταιϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="δέ">δὲ</w> <w lemma="ἐπί">ἐπὶ</w> 
+                        <w lemma="οὗτος">ταύταιϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="πάρειμι">παρούϲηϲ</w>
                         <w lemma="πρεσβεία">πρεϲβείαϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="καθά"><supplied reason="lost">κα</supplied>θάπερ</w> <w lemma="ἐνθάδε">ἐνθάδε</w> <w lemma="καί">καὶ</w> 
                         <w lemma="πάλαι">π<unclear>ά</unclear><supplied reason="lost">λαι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ι</unclear></orig> <w lemma="αὐτός">αὐτῆ</w> 
-                        <w lemma="ὁ">τὰ</w> <w>παρόντα</w> <w lemma="ψήφισμα">ψη<supplied reason="lost">φίϲματα</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost" cert="low">δικα</supplied><unclear>ι</unclear>οϲύνηϲ</w> 
-                        <w lemma="ὁ">τῶ</w> <w lemma="τε">τε</w> <w>ἄρχοντει</w> <w lemma="ὁ">τῶ</w> <gap reason="lost" extent="unknown" unit="character"/>                  <note>sic</note>
+                        <w lemma="ὁ">τὰ</w> <w lemma="πάρειμι">παρόντα</w> <w lemma="ψήφισμα">ψη<supplied reason="lost">φίϲματα</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="δῐκαιοσύνη"><supplied reason="lost" cert="low">δικα</supplied><unclear>ι</unclear>οϲύνηϲ</w> 
+                        <w lemma="ὁ">τῶ</w> <w lemma="τε">τε</w> <w lemma="ἄρχων">ἄρχοντει</w> <w lemma="ὁ">τῶ</w> <gap reason="lost" extent="unknown" unit="character"/>                  <note>sic</note>
                         <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">την</w> <space quantity="1" unit="character"/> <w lemma="ὁ">τὴν</w> 
-                        <w>πρεϲβίαν</w> <w>ϲτελλομένου</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="πρεσβεία">πρεϲβίαν</w> <w lemma="στέλλω">ϲτελλομένου</w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῆϲ</w> 
-                        <w lemma="στήλη">ϲτήληϲ</w> <w>ἀξιοῦμεν</w> <w lemma="γίγνομαι">γενέ<supplied reason="lost">ϲθαι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="στήλη">ϲτήληϲ</w> <w lemma="ἀξιόω">ἀξιοῦμεν</w> <w lemma="γίγνομαι">γενέ<supplied reason="lost">ϲθαι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ">τοῦ</w> <w lemma="ἔθνος">ἔθνουϲ</w> 
-                        <w>πληρώματι</w> <w lemma="οὗτος">ταῦτ<supplied reason="lost">α</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> <w><unclear>ἐ</unclear>φεξῆϲ</w>
-                        <w lemma="λέγω">εἰπ<supplied reason="omitted">ε</supplied>ῖν</w> <w>ἀνάγκη</w> <w lemma="δέ">δὲ</w> <orig><unclear>ϲ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="πλήρωμα">πληρώματι</w> <w lemma="οὗτος">ταῦτ<supplied reason="lost">α</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἐφεξῆς"><unclear>ἐ</unclear>φεξῆϲ</w>
+                        <w lemma="λέγω">εἰπ<supplied reason="omitted">ε</supplied>ῖν</w> <w lemma="ἀνάγκη">ἀνάγκη</w> <w lemma="δέ">δὲ</w> <orig><unclear>ϲ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">πω</w>
-                        <w>ϲυλλαβ<supplied reason="omitted">ε</supplied>ῖν</w> 
-                        <w>οἷον</w> <w part="I"><unclear>εϲ</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="14"/><gap reason="lost" extent="unknown" unit="character"/> <w>δὲ</w>
+                        <w lemma="συλλαμβάνω">ϲυλλαβ<supplied reason="omitted">ε</supplied>ῖν</w> 
+                        <w lemma="οἷος">οἷον</w> <w part="I"><unclear>εϲ</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="14"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="δέ">δὲ</w>
                         <orig>καθο</orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="15"/><gap reason="lost" extent="unknown" unit="character"/><orig>νευδο</orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>γ</unclear>ενε<unclear>ϲ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
@@ -206,19 +206,19 @@
                         <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w part="I"><unclear>δ</unclear>ουλ<unclear>ι</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ϲ</unclear></w> <w lemma="εἰ">εἰ</w> 
-                        <w lemma="δέ">δὲ</w> <w>τῶ</w> <orig><unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w><supplied reason="lost">βοη</supplied>θείαϲ</w> 
-                        <w>τ<unclear>ε</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="δέ">δὲ</w> <w lemma="ὁ">τῶ</w> <orig><unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="βοήθεια"><supplied reason="lost">βοη</supplied>θείαϲ</w> 
+                        <w lemma="τε">τ<unclear>ε</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">τοϲ</w>
                         <w part="I">ϲυν<unclear>ι</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">οι</w> 
-                        <w>δ’</w><w>αὐτῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w><unclear>τ</unclear>ὸ</w> <w lemma="δέ">δὲ</w> 
+                        <w lemma="δ̓́">δ’</w><w lemma="αὐτός">αὐτῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ"><unclear>τ</unclear>ὸ</w> <w lemma="δέ">δὲ</w> 
                         <w lemma="πρός">πρὸϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>α</unclear>ιγει<unclear>λ</unclear>λομ<hi rend="superscript">ν</hi></orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἅπας">ἁπάντων</w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>αϲ</unclear></w> <w lemma="εἰς">εἰϲ</w> 
-                        <w>χύϲ<supplied reason="lost" cert="low">ιν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="χύσις">χύϲ<supplied reason="lost" cert="low">ιν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>μ</unclear>α<unclear>δ</unclear>ειϲ</orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <w part="I"><supplied reason="lost">ἀ</supplied>ρχο<unclear>ν</unclear></w><gap reason="lost" extent="unknown" unit="character"/>                       
                         <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">εϲθ<supplied reason="lost">αι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>

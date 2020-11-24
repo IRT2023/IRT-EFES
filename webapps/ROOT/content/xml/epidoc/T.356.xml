@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -131,7 +131,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                     <lb n="1"/><date ref="https://godot.date/id/eowSTYRdVqnYNTjYJyLs3N"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                           <num value="8">η</num> <rs type="month" key="thoth"><w>Θώθυ</w></rs>
+                           <num value="8">η</num> <rs type="month" key="thoth"><w lemma="Θώθ">Θώθυ</w></rs>
                     <lb n="2"/><num value="1">α</num></date> <persName type="attested"><name nymRef="Σεκόνδα">Σεκόν<lb n="3" break="no"/>δα</name> <persName type="attested"><name nymRef="Σκευᾶς"><unclear>Σ</unclear><supplied reason="lost">κ</supplied><unclear>ε</unclear>υ
                     <lb n="4" break="no"/><unclear>ᾶ</unclear></name></persName></persName> <persName type="attested"><name nymRef="Πρίσκος"><seg part="I">Πρ<supplied reason="lost">ί</supplied>σ<unclear>κ</unclear></seg></name></persName>
                     <lb n="4a"/><gap reason="lost" quantity="2" unit="line"/>
@@ -153,8 +153,8 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 8, Thothy, Seconda di -</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 8, 1.Thothy, Secunda des Scaeva; Priscus . . . </p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 8, Thothy, Seconda di -</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 8, 1.Thothy, Secunda des Scaeva; Priscus . . . </p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/eowSTYRdVqnYNTjYJyLs3N">Year 8, Thothy 1</ref>, Sekonda <supplied reason="explanation"><foreign xml:lang="la">Secunda</foreign></supplied>
                <supplied reason="subaudible">daughter</supplied> of Skeuas <supplied reason="explanation"><foreign xml:lang="la">Scaeva</foreign></supplied>;  Prisk[os <supplied reason="explanation"><foreign xml:lang="la">Priscus</foreign></supplied> [ . . . </p></div>
        </div>

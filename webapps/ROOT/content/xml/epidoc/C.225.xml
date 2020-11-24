@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-04" who="MLA">correted Oliverio reference in bibliography</change>
@@ -135,9 +135,9 @@
             <ab>
                     <lb n="1"/><date ref="https://godot.date/id/yKMmcBRB7HnVWYacHQw4nD"><persName type="emperor" key="tiberius"><name nymRef="Tiberius"><expan><abbr>Ti</abbr><ex>berio</ex></expan></name> <name nymRef="Caesar">Caesari</name>
                     <persName type="emperor" key="augustus"><name nymRef="Augustus"><supplied reason="lost">Augu</supplied>sti</name></persName> 
-                    <w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w> <w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w>
-                    <w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w> <w><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> 
-                    <w><expan><abbr>pot</abbr><ex>estate</ex></expan></w></persName></date>
+                    <w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w>
+                    <w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w> <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> 
+                    <w lemma="potestas"><expan><abbr>pot</abbr><ex>estate</ex></expan></w></persName></date>
                     <lb n="2"/> <space quantity="3" unit="character"/>
                     <persName type="attested" key="pir2-s-0965"><name nymRef="Sufenas">Su<supplied reason="lost">fenas</supplied></name>
                     <name nymRef="Proculus"><supplied reason="lost">Pr</supplied>oculus</name></persName> 

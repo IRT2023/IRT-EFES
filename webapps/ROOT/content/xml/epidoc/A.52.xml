@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
          <creation>Previous publication (Reynolds)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -130,12 +130,11 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="emperor" key="commodus"><w><supplied reason="lost">Αὐτοκράτορα</supplied></w>
+                    <lb n="1"/><persName type="emperor" key="commodus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτορα</supplied></w>
                         <name nymRef="Καῖσαρ"><supplied reason="lost">Κ</supplied>αίσαρα</name>
-                            <name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιον</ex></expan></name> <name nymRef="Αὐρήλιος"><unclear>Α</unclear>ὐρή <g ref="symbols.xml#leaf"/><lb n="2" break="no"/><supplied reason="lost">λιον</supplied></name> <gap reason="lost" quantity="8" unit="character" precision="low"/> <name nymRef="Σεβαστός"><unclear>Σ</unclear>εβαστὸν</name> <w>ἀρ<lb 
-                               n="3" break="no"/><supplied reason="lost">χιερέα</supplied></w> <supplied reason="lost"><w>μέγιστον</w></supplied></persName>
-                    <supplied reason="lost"><w lemma="ὁ">ἁ</w></supplied> <w><supplied reason="lost">πό</supplied>λις</w> <w><supplied reason="lost">ἁ</supplied></w> 
-                    <placeName type="ethnic"  nymRef="#Ἀπολλωνιάτης" ref="#apollonia"><supplied reason="lost">Ἁπολλ</supplied><unclear>ω</unclear>νιά
+                            <name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιον</ex></expan></name> <name nymRef="Αὐρήλιος"><unclear>Α</unclear>ὐρή <g ref="symbols.xml#leaf"/><lb n="2" break="no"/><supplied reason="lost">λιον</supplied></name> <gap reason="lost" quantity="8" unit="character" precision="low"/> <name nymRef="Σεβαστός"><unclear>Σ</unclear>εβαστὸν</name> <w lemma="ἀρχιερεύς">ἀρ<lb n="3" break="no"/><supplied reason="lost">χιερέα</supplied></w> <supplied reason="lost"><w lemma="μέγας">μέγιστον</w></supplied></persName>
+                    <supplied reason="lost"><w lemma="ὁ">ἁ</w></supplied> <w lemma="πόλις"><supplied reason="lost">πό</supplied>λις</w> <w lemma="ὁ"><supplied reason="lost">ἁ</supplied></w> 
+                    <placeName type="ethnic" nymRef="#Ἀπολλωνιάτης" ref="#apollonia"><supplied reason="lost">Ἁπολλ</supplied><unclear>ω</unclear>νιά
                      <lb n="4" break="no"/><supplied reason="lost">των</supplied></placeName> <space quantity="1" unit="character"/>
                 </ab>
 </div>

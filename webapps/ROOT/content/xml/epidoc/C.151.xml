@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -94,6 +93,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-10" who="MGDA">fixed bibliography</change>
@@ -140,10 +140,10 @@
                     <persName type="emperor" key="augustus"><name nymRef="Caesar">Caesare</name> <name nymRef="Augustus">Augusto</name>
                     <w lemma="pontifex"><expan><abbr>pont</abbr><ex>ifice</ex></expan></w> 
                         <w lemma="maximus"><expan><abbr>max</abbr><ex>imo</ex></expan></w></persName> </date>
-                    <persName type="attested"  key="pir2-l-0348"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name>
+                    <persName type="attested" key="pir2-l-0348"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name>
                         <name nymRef="Lucanius">Lucanius</name> <name nymRef="Proculus">Proculus</name> 
                         <w lemma="proconsul"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w></persName> 
-                   <w lemma="murus">muros</w> <w lemma="arx">arcis</w> <w><expan><abbr>reficiend</abbr><ex>os</ex></expan></w>
+                   <w lemma="murus">muros</w> <w lemma="arx">arcis</w> <w lemma="reficio"><expan><abbr>reficiend</abbr><ex>os</ex></expan></w>
                     <w lemma="curo"><expan><abbr>cur</abbr><ex>auit</ex></expan></w>
                 </ab>
 </div>
@@ -151,7 +151,7 @@
          <div type="translation" xml:space="preserve"><head>Translation</head>
             <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Essendo imperatore Cesare Augusto pontefice massimo - Il proconsule Quinto Lucanio Proculo - provvide a restaurare 
             le mura dell'acropoli.</p></div>
-         <div  type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/gMNaAdRQtSeKijrMxNRsWb">For [Emperor] Caesar Augustus, pontifex maximus</ref>: 
+         <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/gMNaAdRQtSeKijrMxNRsWb">For [Emperor] Caesar Augustus, pontifex maximus</ref>: 
             Q(uintus) Lucanius Proculus, proconsul, was responsible for restoring the walls of the citadel </p></div></div>
          <div type="commentary">
             <head>Commentary</head>

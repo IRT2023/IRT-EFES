@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-18" who="MGDA">Tagged header information</change>
@@ -124,15 +124,15 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
              
             <ab>
-                    <lb n="1"/> <date ref="https://godot.date/id/NVpyHgACcLDXBwQqu98Q6V"><w>ἕκτ<unclear>η</unclear></w> <rs type="month" key="mesore"><w>Μεϲορὴ</w></rs></date>
-                    <w>τέθνη<lb n="2" break="no"/>κεν</w> <w lemma="ὁ">ὁ</w> <w>ποθητὸϲ</w>
+                    <lb n="1"/> <date ref="https://godot.date/id/NVpyHgACcLDXBwQqu98Q6V"><w lemma="ἕκτος">ἕκτ<unclear>η</unclear></w> <rs type="month" key="mesore"><w lemma="Μεσορή">Μεϲορὴ</w></rs></date>
+                    <w lemma="θνήσκω">τέθνη<lb n="2" break="no"/>κεν</w> <w lemma="ὁ">ὁ</w> <w lemma="ποθητός">ποθητὸϲ</w>
                     <persName type="attested" key="lgpn:V1-60758"><name nymRef="Ἄδωνις">Ἄδωνιϲ</name>
                     <lb n="3"/><name nymRef="Ὑάκινθος">Ὑάκινθοϲ</name></persName>
                     <date type="life-span" dur="P17Y"><w lemma="ἔτος">ἐτῶν</w>
-                    <w>δεχε<lb n="4" break="no"/>πτὰ</w></date> <w lemma="καί">κ’</w><w lemma="οὐδέ">οὐδ’</w> 
+                    <w lemma="δεκαεπτά">δεχε<lb n="4" break="no"/>πτὰ</w></date> <w lemma="καί">κ’</w><w lemma="οὐδέ">οὐδ’</w> 
                     <w lemma="ὅλος">ὅληϲ</w>
                     <w lemma="ἡμέρα"><expan><abbr><unclear>ἡ</unclear>μέ</abbr><ex>ραϲ</ex></expan></w>  
-                    <lb n="5"/> <w lemma="ἄουε"><unclear>ἄ</unclear>ου<unclear>ε</unclear></w> <w>εὐψύχι</w>
+                    <lb n="5"/> <w lemma="ἄουε"><unclear>ἄ</unclear>ου<unclear>ε</unclear></w> <w lemma="εὐψυχέω">εὐψύχι</w>
                     <space extent="unknown" unit="character"/>
                     <lb n="6"/><w lemma="τέκνον">τέκνον</w> <persName type="attested" key="lgpn:V1-60758"><name nymRef="Ὑάκινθος">Ὑάκιν<space quantity="1" unit="character"/>θε</name></persName>
               </ab>
@@ -142,12 +142,12 @@
             <listApp><app loc="1"><rdg resp="#wright1963"> Ἕκῑω, τεθν[η]</rdg> <note>, corr. Reynolds, ap. SEG</note></app>
                <app loc="2"><rdg resp="#wright1963">π[ο]θητὸς, Ἄδω[ν]ις</rdg> <note>, corr. Reynolds, ap. SEG</note></app>
                <app loc="4"><note>Wright reports nothing after ΠΤΑ; but he suggests the possibility of οὐδεὶς ἀθάνατος</note></app>
-               <app loc="5"><rdg  resp="#wright1963">vac.. [εὐ]ψύχι</rdg> <note>, corr. Reynolds, ap. SEG</note></app>
+               <app loc="5"><rdg resp="#wright1963">vac.. [εὐ]ψύχι</rdg> <note>, corr. Reynolds, ap. SEG</note></app>
                <app loc="6"><rdg resp="#wright1963">vac. Ὑάκιν[θ]o(ς)</rdg> <note>, corr. Reynolds, ap. SEG</note></app></listApp>
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>Am sechsten Mesore starb der beklagte Adonis Hyakinthos, siebzehn Jahre, und nicht einamal 
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>Am sechsten Mesore starb der beklagte Adonis Hyakinthos, siebzehn Jahre, und nicht einamal 
             einen ganzen Tag mehr; ave, lebe wohl, Kind Hyakinthos</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/NVpyHgACcLDXBwQqu98Q6V">On the sixth of the month Mesore</ref> <note>30 July</note> died the much-loved Adonis, Hyakinthos.
                aged 17 years and not even a whole day (more). Ave, live well, child Hyakinthos.</p></div>
@@ -165,7 +165,7 @@
                recall both the beauty and the early death of the subject.</p>
                <p>Line 4: Κ perhaps for καί; it may have been the intention to state that he did not live for a whole day more than his seventeen years but the text is too obscure for certainty.</p>
             <p>Line 5: The formula is rare in Cyrenaica but is common elsewhere and does occur in Jewish Cemeteries, eg. at Tell el Yehudieh, 
-               <ref target="https://zenon.dainst.org/Record/000175458"><title >CIJ</title> II</ref>, 1477. </p>
+               <ref target="https://zenon.dainst.org/Record/000175458"><title>CIJ</title> II</ref>, 1477. </p>
             <p>Line 6: The cutter has avoided a fault in the stone.</p>
          </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Read from photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-19" who="GB">Merged with C66800</change>
@@ -125,8 +125,8 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
              
             <ab>
-                    <lb n="1"/> <w>Νομοφύλακες</w> <w lemma="ὁ">οἱ</w> 
-                    <date><w>ἐ<lb n="2" break="no"/>φ’</w><w>ἱαρεῦς</w> <persName type="attested" key="lgpn:V1-65419"><name nymRef="Ποσειδώνιος">Ποσειδωνίω</name></persName></date> 
+                    <lb n="1"/> <w lemma="νομοφύλαξ">Νομοφύλακες</w> <w lemma="ὁ">οἱ</w> 
+                    <date><w lemma="ἐπί">ἐ<lb n="2" break="no"/>φ’</w><w lemma="ἱερεύς">ἱαρεῦς</w> <persName type="attested" key="lgpn:V1-65419"><name nymRef="Ποσειδώνιος">Ποσειδωνίω</name></persName></date> 
                      <lb n="3"/><persName type="attested" key="lgpn:V1-65472"><name nymRef="Πρατομήδης">Πρατομήδης</name> <persName type="attested" key="lgpn:V1-65897"><name nymRef="Φιλάμμων">Φιλάμμονος</name></persName></persName> 
                     <lb n="4"/><persName type="attested" key="lgpn:V1-63806"><name nymRef="Εὔκαρπος">Εὔκαρπος</name> <persName type="attested" key="lgpn:V1-62656"><name nymRef="Αἴγυπτος">Αἰγύπτω</name></persName></persName> 
                     <lb n="5"/><persName type="attested" key="lgpn:V1-63229"><name nymRef="Ἀριστώνυμος">Ἀριστώνυμος</name> <persName type="attested" key="lgpn:V1-65106"><name nymRef="Νίκαιος">Νικαίω</name></persName></persName> 

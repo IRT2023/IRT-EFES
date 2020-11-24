@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -45,7 +44,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0122" notAfter="0123" evidence="titulature" >122-123 CE</origDate>
+                     <origDate notBefore="0122" notAfter="0123" evidence="titulature">122-123 CE</origDate>
                   </origin>
                   
                      
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -120,43 +120,43 @@
          
          <div type="edition" xml:space="preserve"><div xml:lang="la" type="textpart"><ab>
                      
-                    <lb n="0"/><persName type="emperor" key="hadrianus"><supplied reason="lost"><w><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
+                    <lb n="0"/><persName type="emperor" key="hadrianus"><supplied reason="lost"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
                         <name nymRef="Caesar">Caesar</name> <persName type="emperor" key="traianus"><w lemma="diuus">diui</w> <name nymRef="Traianus">Traiani</name> 
-                       <name nymRef="Parthicus">Parthici</name></persName> <w><expan><abbr>fil</abbr><ex>ius</ex></expan></w></supplied>
-                    <lb n="0a"/><supplied reason="lost"><persName type="emperor" key="nerva"><w>diui</w> <name nymRef="Nerva">Neruae</name></persName> 
-                       <w><expan><abbr>nep</abbr><ex>os</ex></expan></w>
+                       <name nymRef="Parthicus">Parthici</name></persName> <w lemma="filius"><expan><abbr>fil</abbr><ex>ius</ex></expan></w></supplied>
+                    <lb n="0a"/><supplied reason="lost"><persName type="emperor" key="nerva"><w lemma="divus">diui</w> <name nymRef="Nerva">Neruae</name></persName> 
+                       <w lemma="nepos"><expan><abbr>nep</abbr><ex>os</ex></expan></w>
                     <name nymRef="Traianus">Traianus</name> <name nymRef="Hadrianus">Hadrianus</name> <name nymRef="Augustus">Augustus</name></supplied>
                     <lb n="1"/><supplied reason="lost"><w lemma="pontifex">pontifex</w> 
-                       <w lemma="maximus">maximus</w></supplied> <w><expan><abbr><supplied reason="lost">t</supplied>ribu<supplied reason="lost">nic</supplied></abbr><supplied reason="lost"><ex>ia</ex></supplied></expan></w>
-                    <supplied reason="lost"><w><expan><abbr>potest</abbr><ex>ate</ex></expan></w> 
+                       <w lemma="maximus">maximus</w></supplied> <w lemma="tribunicius"><expan><abbr><supplied reason="lost">t</supplied>ribu<supplied reason="lost">nic</supplied></abbr><supplied reason="lost"><ex>ia</ex></supplied></expan></w>
+                    <supplied reason="lost"><w lemma="potestas"><expan><abbr>potest</abbr><ex>ate</ex></expan></w> 
                         <num value="7">VII</num> </supplied>
-                    <lb n="2"/> <space quantity="1" unit="character"/> <w><expan><supplied reason="lost"><abbr>co</abbr><ex>n</ex></supplied><abbr><unclear>s</unclear></abbr><ex>ul</ex></expan></w> 
+                    <lb n="2"/> <space quantity="1" unit="character"/> <w lemma="consul"><expan><supplied reason="lost"><abbr>co</abbr><ex>n</ex></supplied><abbr><unclear>s</unclear></abbr><ex>ul</ex></expan></w> 
                <num value="3"><unclear>III</unclear></num> </persName>
                     <supplied reason="lost" cert="low"><w lemma="ciuitas">ciuitati</w> <w lemma="do">dedit</w></supplied>
                <lb n="2a"/> <space quantity="1" unit="line"/>
                 </ab></div>
             <div xml:lang="grc" type="textpart"><ab>
-                    <lb n="3"/><date ref="https://godot.date/id/hegxMikdS9ZhwBNHDPRYAS"><persName type="emperor" key="hadrianus"><w><supplied reason="lost">Α</supplied><unclear>ὐ</unclear>τοκράτωρ</w>
-                       <name nymRef="Καῖσαρ">Καῖσαρ</name> <persName type="emperor" key="traianus"><w><unclear>θ</unclear><supplied reason="lost">εοῦ</supplied></w> 
+                    <lb n="3"/><date ref="https://godot.date/id/hegxMikdS9ZhwBNHDPRYAS"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Α</supplied><unclear>ὐ</unclear>τοκράτωρ</w>
+                       <name nymRef="Καῖσαρ">Καῖσαρ</name> <persName type="emperor" key="traianus"><w lemma="θεός"><unclear>θ</unclear><supplied reason="lost">εοῦ</supplied></w> 
                        <supplied reason="lost"><name nymRef="Τραιανός">Τραιανοῦ</name> <name nymRef="Παρθικός">Παρθικοῦ</name></supplied></persName>
-                    <lb n="4"/> <w><supplied reason="lost">υἱ</supplied>ός</w>, 
-                   <persName type="emperor" key="nerva"><w>θεο<supplied reason="lost">ῦ</supplied></w> 
+                    <lb n="4"/> <w lemma="υἱός"><supplied reason="lost">υἱ</supplied>ός</w>, 
+                   <persName type="emperor" key="nerva"><w lemma="θεός">θεο<supplied reason="lost">ῦ</supplied></w> 
                        <supplied reason="lost"><name nymRef="Νέρβα">Νέρβα</name></supplied></persName> 
-                   <w><supplied reason="lost">υἱωνό</supplied>ς</w>, 
+                   <w lemma="υἱωνός"><supplied reason="lost">υἱωνό</supplied>ς</w>, 
                        <name nymRef="Τραιανός">Τραιαν<unclear>ὸ</unclear><supplied reason="lost">ς</supplied></name> 
                        <name nymRef="Ἁδριανός">Ἀδρι<unclear>αν</unclear>ὸς</name> <name nymRef="Σεβαστός">Σεβαστός</name>,
                    <space quantity="1" unit="character"/>
                     <lb n="5"/><supplied reason="lost"> <space quantity="1" unit="character"/></supplied> 
                    <w lemma="ἀρχιερεύς">ἀρχιερεὺ<supplied reason="lost">ς</supplied></w> 
-                   <supplied reason="lost"><w>μέγιστος</w></supplied> 
-                   <w><supplied reason="lost">δημα</supplied>ρχικῆς</w> 
-                  <w><unclear>ἐ</unclear><supplied reason="lost">ξ</supplied>ουσί<unclear>α</unclear>ς</w>  
+                   <supplied reason="lost"><w lemma="μέγας">μέγιστος</w></supplied> 
+                   <w lemma="δημαρχικός"><supplied reason="lost">δημα</supplied>ρχικῆς</w> 
+                  <w lemma="ἐξουσία"><unclear>ἐ</unclear><supplied reason="lost">ξ</supplied>ουσί<unclear>α</unclear>ς</w>  
                    <g ref="symbols.xml#leaf"/><g ref="symbols.xml#leaf"/> <w lemma="ὁ">τὸ</w> <num value="7">ζ</num> 
                    <space quantity="1" unit="character"/>
                     <lb n="6"/><supplied reason="lost"> <space quantity="1" unit="character"/></supplied>
-                   <w><supplied reason="lost">ὕ</supplied>πατ<supplied reason="lost">ος</supplied></w>
-                   <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> </supplied></persName></date><supplied reason="lost" cert="low"><w>τῇ</w> <w>πόλει</w></supplied>  
-                    <g ref="symbols.xml#leaf"/> <w>ἔδωκεν</w> <space quantity="1" unit="character"/>
+                   <w lemma="ὕπατος"><supplied reason="lost">ὕ</supplied>πατ<supplied reason="lost">ος</supplied></w>
+                   <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> </supplied></persName></date><supplied reason="lost" cert="low"><w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w></supplied>  
+                    <g ref="symbols.xml#leaf"/> <w lemma="δίδωμι">ἔδωκεν</w> <space quantity="1" unit="character"/>
                 </ab>
                 </div>
           </div>

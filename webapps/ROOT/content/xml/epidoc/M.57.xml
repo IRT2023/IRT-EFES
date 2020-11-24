@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -137,7 +137,7 @@
                <ab>
                         <lb n="1"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιοϲ</ex></expan></name>
                            <name nymRef="Ἀντώνιος">Ἀντών<supplied reason="omitted">ε</supplied>ιοϲ</name>
-                           <name nymRef="Ῥωμανός">Ῥωμανὸϲ</name></persName> <w>ϲτρατιώτηϲ</w>
+                           <name nymRef="Ῥωμανός">Ῥωμανὸϲ</name></persName> <w lemma="στρατιώτης">ϲτρατιώτηϲ</w>
                </ab>
             </div>
             <div subtype="section" n="b" type="textpart">
@@ -169,13 +169,13 @@
                <ab>
                         <lb n="1"/><persName type="attested"><name nymRef="Ἰούλιος">Ἰούλιοϲ</name>
                         <lb n="2"/><gap reason="lost" quantity="6" unit="character"/><name nymRef="-εῖνος"><seg part="F">εῖνοϲ</seg></name></persName>
-                        <lb n="3"/> <w>ἱππεύϲ</w>
+                        <lb n="3"/> <w lemma="ἱππεύς">ἱππεύϲ</w>
                </ab>
             </div>
             <div subtype="section" n="g" type="textpart">
                <ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Ἰούλιος">Ἰούλιοϲ</name></persName> 
-                        <w>ἱππεύϲ</w> <orig>το</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="ἱππεύς">ἱππεύϲ</w> <orig>το</orig><gap reason="lost" extent="unknown" unit="character"/>
                </ab>
             </div>
          </div>
@@ -199,7 +199,7 @@
            <div type="translation" resp="#cmr" xml:lang="en"><p> <note>a</note>: L(oukios) Antonios Romanos, soldier <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Antonius Romanus</foreign></supplied>; 
               <note>b</note>: T(itos) Petronios <supplied reason="explanation"><foreign xml:lang="la">T(itus) Petronius </foreign></supplied> [ . . . ; 
               <note>c</note>: Ioulios <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied> Epaphrodeitos [ . . . ; 
-              <note>d</note>: ><note>Not usefully translatable</note>;
+              <note>d</note>: &gt;<note>Not usefully translatable</note>;
             <note>e</note>: Poplios Niger <supplied reason="explanation"><foreign xml:lang="la">Publius Niger</foreign></supplied> [ . . .; 
               <note>f</note>: Iolios  <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied> [. . -]einos, cavalryman; 
               <note>g</note>: [ . . . ] Ioulios <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied>, cavalryman [ . . . ;</p></div>

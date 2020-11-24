@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -53,16 +52,13 @@
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate evidence="lettering" notBefore="-0031" notAfter="0100"
-                        precision="low">Augustan to first century CE</origDate>
+                     <origDate evidence="lettering" notBefore="-0031" notAfter="0100" precision="low">Augustan to first century CE</origDate>
                   </origin>
 
 
                   <provenance type="found">
                      <p>
-                        <placeName type="ancientFindspot"
-                           ref="https://www.slsgazetteer.org/909"
-                           >Cyrene</placeName>: found before <date type="found">1941</date>; findspot
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: found before <date type="found">1941</date>; findspot
                         unrecorded.</p>
                   </provenance>
                   <provenance type="observed">
@@ -111,14 +107,14 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972"
-                     >Shahat</placeName>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
                </term>
             </keywords>
          </textClass>
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to
             profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
@@ -154,7 +150,7 @@
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
                      
                     <lb n="1"/><placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυρα</supplied>ναίω<supplied reason="lost">ν</supplied></placeName><gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="2"/><supplied reason="lost"><w lemma="ἐπί">ἐπὶ</w></supplied> <w><unclear>ἱ</unclear>ερεὺς</w>
+                    <lb n="2"/><supplied reason="lost"><w lemma="ἐπί">ἐπὶ</w></supplied> <w lemma="ἱερεύς"><unclear>ἱ</unclear>ερεὺς</w>
                     <supplied reason="lost"><w lemma="ὁ">τοῦ</w>
                    <w lemma="μέν">μὲν</w>
                     <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName>

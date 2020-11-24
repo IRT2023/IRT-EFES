@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-17" who="MGDA">Tagged header information</change>
@@ -124,10 +124,10 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
-               <persName type="emperor" key="valentinianus1"><persName type="emperor" key="valens"><w><supplied reason="lost">Αὐτοκ</supplied>ρατ<supplied reason="lost">όρ</supplied>ων</w> 
+               <persName type="emperor" key="valentinianus1"><persName type="emperor" key="valens"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκ</supplied>ρατ<supplied reason="lost">όρ</supplied>ων</w> 
             <name nymRef="Καῖσαρ"><supplied reason="lost">Καιϲάρων</supplied></name>
                     <name nymRef="Οὐαλεντινιανός">Οὐαλ<supplied reason="lost">ε</supplied>ντινιανο<supplied reason="lost">ῦ</supplied></name>
-                    <w><supplied reason="lost">κ</supplied><unclear>α</unclear>ὶ</w> 
+                    <w lemma="καί"><supplied reason="lost">κ</supplied><unclear>α</unclear>ὶ</w> 
             <name nymRef="Οὐάλης">Οὐάλεντ<supplied reason="lost">οϲ</supplied></name>
                <gap reason="lost" extent="unknown" unit="character"/>
                <name nymRef="Γερμανικός"><supplied reason="lost">Γερμανι</supplied>κῶν</name></persName></persName>
@@ -136,7 +136,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p> (essendo - dell' ?) Imperatore Valentiniano</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p> (essendo - dell' ?) Imperatore Valentiniano</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p>Emperors [Caesars, Vale]ntinianus and Valens, [Germani]ci.</p></div>
          </div>
        

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -123,10 +123,10 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/7eEEteEPsmkpCs3Mx9uEQK"><rs type="month" key="epiphi"><w>Ἐπι<supplied reason="omitted">φὶ</supplied></w></rs> <num value="11">ια</num></date>
+                    <lb n="1"/><date ref="https://godot.date/id/7eEEteEPsmkpCs3Mx9uEQK"><rs type="month" key="epiphi"><w lemma="Ἐπιφί">Ἐπι<supplied reason="omitted">φὶ</supplied></w></rs> <num value="11">ια</num></date>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-60780"><name nymRef="Ἀρτάφαν">Ἀρτάφα<lb n="3" break="no"/>ντοϲ</name></persName> <w lemma="ἔτος">ἐτ<lb n="4" break="no"/>ῶν</w> <num value="15">ιε</num>
                     <lb n="5"/><persName type="attested" key="lgpn:V1-60031"><name nymRef="Ἀντιγόνα">Ἀντιγόν<lb n="6" break="no"/>α</name> <persName type="attested" key="lgpn:V1-60498"><name nymRef="Νικίας">Νικίου</name></persName></persName>  
-                    <lb n="7"/><date ref="https://godot.date/id/qtL27e384Lq3KNAkfzeFwe"><rs type="month"  key="choiak"><w lemma="Χοιάκ">Χοάχι</w></rs> 
+                    <lb n="7"/><date ref="https://godot.date/id/qtL27e384Lq3KNAkfzeFwe"><rs type="month" key="choiak"><w lemma="Χοιάκ">Χοάχι</w></rs> 
                     <lb n="8"/><num value="5">ε</num></date> <supplied reason="omitted"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>  </supplied> <num value="66">ξϛ</num>
  </ab>
 </div>
@@ -161,9 +161,9 @@
                                                              </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <div  type="translation" source="#jmr1983" xml:lang="en"><p>Epeiph 11 (tomb) of Artaphan, aged 15; 
+            <div type="translation" source="#jmr1983" xml:lang="en"><p>Epeiph 11 (tomb) of Artaphan, aged 15; 
                Antigona daughter of Nicias, Choiak 5, aged 66 (or: year 66)</p></div>
-            <div  type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/7eEEteEPsmkpCs3Mx9uEQK">Epeiph 11</ref> <supplied reason="subaudible">Tomb</supplied> of Artaphan, aged 15; 
+            <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/7eEEteEPsmkpCs3Mx9uEQK">Epeiph 11</ref> <supplied reason="subaudible">Tomb</supplied> of Artaphan, aged 15; 
                Antigona <supplied reason="subaudible">daughter</supplied> of Nikias, <ref target="https://godot.date/id/qtL27e384Lq3KNAkfzeFwe">Choiak 5</ref>, aged 66 (or, Year 66)</p></div></div>
          <div type="commentary">
             <head>Commentary</head>

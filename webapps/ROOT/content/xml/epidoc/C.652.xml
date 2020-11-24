@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -52,17 +51,14 @@
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate evidence="lettering" precision="low" notBefore="0001" notAfter="0200"
-                        >First to second centuries CE </origDate>
+                     <origDate evidence="lettering" precision="low" notBefore="0001" notAfter="0200">First to second centuries CE </origDate>
                   </origin>
 
 
                   <provenance type="found">
                      <p>
-                        <placeName type="ancientFindspot"
-                           ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: Findspot unrecorded. 
-                        Found before <date type="found"
-                           >1941</date>.</p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: Findspot unrecorded. 
+                        Found before <date type="found">1941</date>.</p>
                   </provenance>
                   <provenance type="observed">
                      <p>
@@ -110,14 +106,14 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972"
-                     >Shahat</placeName>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
                </term>
             </keywords>
          </textClass>
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-13" who="TW">tagged a word</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to
             profileDesc/creation</change>
@@ -147,8 +143,8 @@
 <ab>
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
-                    <w>υἱό<unclear>ς</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/><supplied reason="lost" cert="low"><w>ἱερεὺς</w></supplied>
+                    <w lemma="υἱός">υἱό<unclear>ς</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><supplied reason="lost" cert="low"><w lemma="ἱερεύς">ἱερεὺς</w></supplied>
                     <w lemma="τελεσφόρος"><supplied reason="lost">τ</supplied>ελεσ<unclear>φ</unclear><supplied reason="lost">όρος</supplied></w>
                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
                     <orig><unclear>ι</unclear>ος</orig> <orig><unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
@@ -174,12 +170,10 @@
          <div type="commentary">
             <head>Commentary</head>
 
-            <p> The only other known use of this title in the Roman period is in <ref
-                  type="inscription" n="C.263">C.263</ref>, line 1, where it is applied to a priest of Apollo
+            <p> The only other known use of this title in the Roman period is in <ref type="inscription" n="C.263">C.263</ref>, line 1, where it is applied to a priest of Apollo
                whose name is lost; he was followed on the stone there by Ti. Claudius Istros
                   son of Phaidimos, priest in CE 100/101
-                  whose name would fit the traces surviving here in line 3. See further commentary on <ref
-                     type="inscription" n="C.263">C.263</ref></p>
+                  whose name would fit the traces surviving here in line 3. See further commentary on <ref type="inscription" n="C.263">C.263</ref></p>
             <p>Line 3: perhaps Oliverio was right in restoring the title of priest of Apollo; but the
                traces may also be from another name.</p>
          </div>

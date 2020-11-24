@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-22" who="MGDA">Tagged header information</change>
@@ -128,7 +128,7 @@
                     <lb n="1"/><date ref="https://godot.date/id/dFvHipwoLB8gihLbUGw5Nb"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="2">β</num></date> <persName type="attested" key="lgpn:V1-60536"><name nymRef="Μυρτόι">Μυρ<lb n="2" break="no"/>τόι</name> 
                        <persName type="attested" key="lgpn:V1-60537"><name nymRef="Διόδοτος">Διοδό<unclear>τ</unclear><lb n="3" break="no"/>ου</name></persName></persName> 
-   <date type="life-span" dur="P60Y"><w>ἐ<unclear>τῶν</unclear></w>
+   <date type="life-span" dur="P60Y"><w lemma="ἔτος">ἐ<unclear>τῶν</unclear></w>
                     <num value="60"><unclear>ξ</unclear></num> </date>
                 </ab>
 </div>
@@ -148,8 +148,8 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 8. Mirtò di Gaio Euemero.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 2, Myrto des Diodotos, 60 (Jahre)</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 8. Mirtò di Gaio Euemero.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 2, Myrto des Diodotos, 60 (Jahre)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/dFvHipwoLB8gihLbUGw5Nb">Year 2</ref>, Myrto <supplied reason="subaudible">daughter</supplied> of Diodotos, aged 60.</p></div>
        </div>
    

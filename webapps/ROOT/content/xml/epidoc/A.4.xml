@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -56,7 +55,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="0301" notAfter="0500"  precision="low" evidence="lettering context">Fourth to fifth centuries CE</origDate>
+                     <origDate notBefore="0301" notAfter="0500" precision="low" evidence="lettering context">Fourth to fifth centuries CE</origDate>
                   </origin>
                   
                   
@@ -107,6 +106,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -140,17 +140,17 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
-                  <persName type="emperor" key="anonymi"><w><supplied reason="lost">ὑ</supplied>φ᾽</w><w>ἡλίῳ</w>
-                      <w>δεϲπόται</w>
+                  <persName type="emperor" key="anonymi"><w lemma="ὑπό"><supplied reason="lost">ὑ</supplied>φ᾽</w><w lemma="ἥλιος">ἡλίῳ</w>
+                      <w lemma="δεσπότης">δεϲπόται</w>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
-                    <w lemma="Εὐτυχής"><supplied reason="lost">εὐ</supplied>τυχεῖϲ</w> 
+                    <w lemma="εὐτυχής"><supplied reason="lost">εὐ</supplied>τυχεῖϲ</w> 
                         <name nymRef="Σεβαστός">Ϲεβαϲτοί</name></persName> <g ref="symbols.xml#palm"/>
                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
-                    <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w> <w>πόλει</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w>εὐτυχίαϲ</w>
-                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>τ</unclear>ουϲ</w> <w>αὑτῶν</w> <g ref="symbols.xml#palm"/>
+                    <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w> <w lemma="πόλις">πόλει</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="εὐτυχία">εὐτυχίαϲ</w>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>τ</unclear>ουϲ</w> <w lemma="ἑαυτοῦ">αὑτῶν</w> <g ref="symbols.xml#palm"/>
                     <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>
                     <supplied reason="lost"><w lemma="ὁ">τοῦ</w></supplied>
-                    <w><supplied reason="lost">λαμ</supplied>προτάτου</w>
+                    <w lemma="λαμπρός"><supplied reason="lost">λαμ</supplied>προτάτου</w>
                     <lb n="6"/><supplied reason="lost" cert="low"> <space quantity="3" unit="character"/>
                         <w lemma="ἡγεμών">ἡγεμόνοϲ</w> <space quantity="3" unit="character"/></supplied>
                 </ab>

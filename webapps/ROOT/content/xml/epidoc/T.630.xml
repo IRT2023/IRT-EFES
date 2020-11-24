@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-28" who="MGDA">Tagged header information</change>
@@ -140,7 +140,7 @@
              
             <ab>
                     <lb n="1"/><date ref="https://godot.date/id/XW3M7XPiFtdYTQoTGYTt4W"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-            <num value="20">κ</num> <rs type="month" key="mesore"><w>Μεϲορὴ</w></rs>
+            <num value="20">κ</num> <rs type="month" key="mesore"><w lemma="Μεσορή">Μεϲορὴ</w></rs>
                     <lb n="2"/><num value="2">β</num></date> <persName type="attested" key="lgpn:V1-60644"><name nymRef="Ἰούδας">Ἰο<supplied reason="omitted">υ</supplied>δὰϲ</name> 
                     <persName type="attested" key="lgpn:V1-60645"><name nymRef="Ἰώσηπος">Ἰοϲ<lb n="3" break="no"/>ήπω</name></persName></persName>
             <date type="life-span" dur="P100Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="100">ρ</num> </date>
@@ -156,8 +156,8 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 20, Mesore 2. Giuda di Giosippo (Giuseppe), di anni 100.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 20, 2.Mesore, Judas des Josepos, 100 (Jahre)</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 20, Mesore 2. Giuda di Giosippo (Giuseppe), di anni 100.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 20, 2.Mesore, Judas des Josepos, 100 (Jahre)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/XW3M7XPiFtdYTQoTGYTt4W">Year 20, Mesore 2</ref>, Judas <supplied reason="subaudible">son</supplied> of Iosepos, aged 100.</p></div>
        </div>
        

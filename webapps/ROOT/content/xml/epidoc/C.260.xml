@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-02-17" who="MGDA">fixed bibliography</change>
@@ -123,8 +123,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="divine" key="theos"><w lemma="θεός">θεός</w></persName>. <persName type="divine" key="agathetyche" ><name nymRef="τύχη">Τύχα</name> <w lemma="ἀγαθός">Ἀγαθά</w></persName>
-                    <lb n="2"/> <w>Ἱαρὲς</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> 
+                    <lb n="1"/><persName type="divine" key="theos"><w lemma="θεός">θεός</w></persName>. <persName type="divine" key="agathetyche"><name nymRef="τύχη">Τύχα</name> <w lemma="ἀγαθός">Ἀγαθά</w></persName>
+                    <lb n="2"/> <w lemma="ἱερεύς">Ἱαρὲς</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> 
                     <lb n="3"/><persName type="attested" key="lgpn:V1-63302"><name nymRef="Τιβέριος">Τιβέριος</name> <name nymRef="Κλαύδιος">Κλαύδιος</name> <persName type="attested" key="lgpn:V1-63303"><name nymRef="Ἐπικράτης">Ἐπικράτευς</name></persName>
                     <lb n="4"/><w lemma="υἱός">υἱὸς</w> <name nymRef="Ἀσκλαπιάδας">Ἀσκλαπιάδας</name></persName> 
                     <lb n="4a"/><gap reason="lost" extent="unknown" unit="character"/>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
          <creation>Transcription (Reynolds)</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
         <change when="2011-04-05" who="MGDA">fixed Goodchild bibliography</change>
@@ -127,7 +127,7 @@
                 
                     <lb n="3"/><name nymRef="Μελίωρ"><supplied reason="lost">Μελίω</supplied><unclear>ρ</unclear></name> 
                   <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-64604"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Κλαύδιος">Κλαυ<unclear>δ</unclear><supplied reason="lost">ίου</supplied></name>                    
-                     <lb n="4"/><name nymRef="Καρτισθένης"><supplied reason="lost">Καρτισθέ</supplied><unclear>ν</unclear>ους</name> <g ref="symbols.xml#stop"/></persName> <w>υἱ<supplied reason="lost">ός</supplied></w></persName>                    
+                     <lb n="4"/><name nymRef="Καρτισθένης"><supplied reason="lost">Καρτισθέ</supplied><unclear>ν</unclear>ους</name> <g ref="symbols.xml#stop"/></persName> <w lemma="υἱός">υἱ<supplied reason="lost">ός</supplied></w></persName>                    
             </ab>
              </div>
 

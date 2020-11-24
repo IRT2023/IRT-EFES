@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-02-17" who="MGDA">fixed bibliography</change>
@@ -135,16 +135,16 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><w lemma="ὑπέρ">ὑπὲρ</w> <w>τᾶϲ</w> <persName type="emperor" key="marcusaurelius"><w lemma="Αὐτοκράτωρ">Αὐτοκράτοροϲ</w> <name nymRef="Καῖσαρ">Καίϲαροϲ</name> 
+                    <lb n="1"/><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τᾶϲ</w> <persName type="emperor" key="marcusaurelius"><w lemma="Αὐτοκράτωρ">Αὐτοκράτοροϲ</w> <name nymRef="Καῖσαρ">Καίϲαροϲ</name> 
                         <lb n="2"/><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> 
-                    <name nymRef="Αὐρήλιος">Αὐρηλίου</name> <name nymRef="Ἀντωνῖνος">Ἀντωνείνου</name> <name nymRef="Σεβαστός">Ϲεβαϲτοῦ</name></persName> <w>τύχαϲ</w> <w lemma="καί">καὶ</w> <w>νεί<lb n="3" break="no"/>καϲ</w> 
-   <w lemma="καί">καὶ</w> <w>διαμονᾶϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶ</w> <w>ϲύνπαντοϲ</w> <w lemma="αὐτός">αὐτῶ</w> <w>οἴκω</w>
+                    <name nymRef="Αὐρήλιος">Αὐρηλίου</name> <name nymRef="Ἀντωνῖνος">Ἀντωνείνου</name> <name nymRef="Σεβαστός">Ϲεβαϲτοῦ</name></persName> <w lemma="τύχη">τύχαϲ</w> <w lemma="καί">καὶ</w> <w lemma="νίκη">νεί<lb n="3" break="no"/>καϲ</w> 
+   <w lemma="καί">καὶ</w> <w lemma="διαμονή">διαμονᾶϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶ</w> <w lemma="σύμπας">ϲύνπαντοϲ</w> <w lemma="αὐτός">αὐτῶ</w> <w lemma="οἶκος">οἴκω</w>
                     <lb n="4"/><persName type="attested" key="lgpn:V1-63395"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριοϲ</ex></expan></name> 
-                    <name nymRef="Κλαύδιος">Κλαύδιοϲ</name> <name nymRef="Βάττος">Βάττοϲ</name></persName> <w>ἱαρειτεύων</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w>  <persName type="divine" key="apollo"><w lemma="ὁ">τῶ</w> <name nymRef="Νυνφαγέτας">Νυνφα<lb n="5" break="no"/>γέτα</name></persName> <w>ἐπισκεύαϲεν</w> <w lemma="καί">καὶ</w> <w>ἐϲτέγαϲεν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="πρόσοδος">προϲόδων</w> 
+                    <name nymRef="Κλαύδιος">Κλαύδιοϲ</name> <name nymRef="Βάττος">Βάττοϲ</name></persName> <w lemma="ἱαρετεύω">ἱαρειτεύων</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w>  <persName type="divine" key="apollo"><w lemma="ὁ">τῶ</w> <name nymRef="Νυνφαγέτας">Νυνφα<lb n="5" break="no"/>γέτα</name></persName> <w lemma="ἐπισκευάζω">ἐπισκεύαϲεν</w> <w lemma="καί">καὶ</w> <w lemma="στεγάζω">ἐϲτέγαϲεν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="πρόσοδος">προϲόδων</w> 
                     <lb n="6"/><w lemma="ὁ"><unclear>το</unclear><supplied reason="lost">ῦ</supplied></w>
-                  <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνοϲ</name></persName> <date><w>ἀνθυπατεύοντοϲ</w>
+                  <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνοϲ</name></persName> <date><w lemma="ἀνθυπατεύω">ἀνθυπατεύοντοϲ</w>
                     <persName type="attested" key="pir2-n-0211"><name nymRef="Νουμίσιος">Νουμιϲί<unclear>ο</unclear><supplied reason="lost">υ</supplied></name> 
-                    <lb n="7"/><name nymRef="Μαρκελλιανός">Μαρκελλιανοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w>κρατίϲτου</w> <w>ἀνθυ<supplied reason="lost">π</supplied><unclear>άτ</unclear><supplied reason="lost">ου</supplied></w></date>
+                    <lb n="7"/><name nymRef="Μαρκελλιανός">Μαρκελλιανοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="κράτιστος">κρατίϲτου</w> <w lemma="ἀνθύπατος">ἀνθυ<supplied reason="lost">π</supplied><unclear>άτ</unclear><supplied reason="lost">ου</supplied></w></date>
                 </ab>
 </div>
          

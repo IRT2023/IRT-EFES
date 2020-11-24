@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
          <creation>From previous publications, drawings and photographs (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-05" who="TW">added name tag</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -121,14 +121,14 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-             <lb n="1"/><date ref="https://godot.date/id/RWHFzypjwf8vwkqBtmVJJJ"><w>ἐ<supplied reason="lost">π’</supplied></w><w><unclear>ἱε</unclear><supplied reason="lost">ρέ</supplied>ωϲ</w>
-                 <persName type="divine" key="apollo"><w>τ<supplied reason="lost">οῦ</supplied></w>
-            <w><supplied reason="lost">κτ</supplied>ίϲ<supplied reason="lost">του</supplied></w>
+             <lb n="1"/><date ref="https://godot.date/id/RWHFzypjwf8vwkqBtmVJJJ"><w lemma="ἐπί">ἐ<supplied reason="lost">π’</supplied></w><w lemma="ἱερεύς"><unclear>ἱε</unclear><supplied reason="lost">ρέ</supplied>ωϲ</w>
+                 <persName type="divine" key="apollo"><w lemma="τις">τ<supplied reason="lost">οῦ</supplied></w>
+            <w lemma="κτίστης"><supplied reason="lost">κτ</supplied>ίϲ<supplied reason="lost">του</supplied></w>
                     <lb n="2"/><name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀπόλλωνος</supplied></name></persName></date>
             <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2a"/><gap reason="lost" quantity="1" unit="line"/>
                     <lb n="3"/><supplied reason="lost" cert="low"><w part="I" lemma="εἰσέρχομαι">εἰϲήλθ</w></supplied>
-                    <lb n="4"/> <w>εἰϲ</w> <supplied reason="lost" cert="low"><w lemma="ὁ">τὸ</w> <w>νυμφαῖον</w></supplied>
+                    <lb n="4"/> <w lemma="εἰς">εἰϲ</w> <supplied reason="lost" cert="low"><w lemma="ὁ">τὸ</w> <w lemma="νυμφαῖον">νυμφαῖον</w></supplied>
                     <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>
                 </ab>
 </div>

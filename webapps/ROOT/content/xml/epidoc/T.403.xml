@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -49,7 +48,7 @@
                <history>
                   <origin>
                      <origPlace>Findspot.</origPlace>
-                     <origDate notBefore="0050" notAfter="0050"  cert="low" evidence="internal-date">?50 CE</origDate>
+                     <origDate notBefore="0050" notAfter="0050" cert="low" evidence="internal-date">?50 CE</origDate>
                   </origin>
                   
                      
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-22" who="MGDA">Tagged header information</change>
@@ -123,7 +123,7 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/rmxr4XuVoJYVTRR8nPZUVE"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                     <num value="80"><unclear>π</unclear></num>
-                    <rs type="month" key="mesore"><w>Με<lb n="2" break="no"/><unclear>ϲο</unclear>ρὴ</w></rs> <num value="3">γ</num></date>
+                    <rs type="month" key="mesore"><w lemma="Μεσορή">Με<lb n="2" break="no"/><unclear>ϲο</unclear>ρὴ</w></rs> <num value="3">γ</num></date>
                     <lb n="3"/><persName type="attested"><name nymRef="Κε-"><orig>κε<unclear>ιο</unclear>ρ</orig>
                     <lb n="4"/><orig>οξ<unclear>ιρι</unclear></orig> 
                     <lb n="5"/><orig><unclear>λθ</unclear>ε<unclear>γχ</unclear>ρ</orig><lb n="6" break="no"/><orig>α</orig> </name></persName>
@@ -138,7 +138,7 @@
                   <note>The numeral may be Γ.</note>
                </app> 
                <app loc="2">
-                  <note></note>
+                  <note/>
                </app> 
                                      
                     </listApp>

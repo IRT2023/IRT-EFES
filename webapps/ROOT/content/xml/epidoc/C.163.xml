@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -116,6 +115,7 @@
          </textClass>
       <creation>Publications; transcription (Reynolds); notes from Fraser given to Reynolds.</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -172,127 +172,127 @@
             <div type="textpart" subtype="part" n="1"><ab>
                <lb n="1"/> <space quantity="3" unit="character"/> 
                <persName type="divine" key="theos"><name nymRef="θεός">θεόϲ</name></persName> <space quantity="3" unit="character"/> <persName type="divine" key="agathetyche"><name nymRef="Τύχα">Τύχ<supplied reason="lost">ᾳ</supplied></name><supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
-                  <w>Ἀγα<unclear>θ</unclear><supplied reason="lost">ᾷ</supplied></w></persName><supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
-               <lb n="2"/><date ref="https://godot.date/id/2AznLJfkN5gLWthxQUQSW7"><persName type="emperor" key="hadrianus"><w>Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name> 
-                  <persName type="emperor" key="traianus"><w>θεοῦ</w> 
+                  <w lemma="ἀγαθός">Ἀγα<unclear>θ</unclear><supplied reason="lost">ᾷ</supplied></w></persName><supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
+               <lb n="2"/><date ref="https://godot.date/id/2AznLJfkN5gLWthxQUQSW7"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name> 
+                  <persName type="emperor" key="traianus"><w lemma="θεός">θεοῦ</w> 
                <name nymRef="Τραιανός">Τρα<supplied reason="lost">ιανοῦ</supplied></name> 
                <name nymRef="Παρθικός">Παρθικο<supplied reason="lost">ῦ</supplied></name></persName> 
-                  <supplied reason="lost"><w>υἱόϲ</w>,</supplied> 
-                  <persName type="emperor" key="nerva"><supplied reason="lost"><w>θεοῦ</w></supplied>
-               <lb n="3"/><name nymRef="Νέρβα">Νέρουα</name></persName> <w>υἱωνόϲ</w>, 
+                  <supplied reason="lost"><w lemma="υἱός">υἱόϲ</w>,</supplied> 
+                  <persName type="emperor" key="nerva"><supplied reason="lost"><w lemma="θεός">θεοῦ</w></supplied>
+               <lb n="3"/><name nymRef="Νέρβα">Νέρουα</name></persName> <w lemma="υἱωνός">υἱωνόϲ</w>, 
                   <name nymRef="Τραιανός">Τραιανὸϲ</name> <name nymRef="Ἁδριανός">Ἀδρια<unclear>ν</unclear><supplied reason="lost">ὸϲ</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Ϲεβα</supplied>ϲτόϲ</name>, <w lemma="ἀρχιερεύς">ἀρχιε<supplied reason="lost">ρεὺϲ</supplied></w> 
-                     <supplied reason="lost"><w>μέγιϲτοϲ</w></supplied>, 
-               <lb n="4"/> <w>δημαρχικῆϲ</w> <w>ἐξουϲίαϲ</w> <w lemma="ὁ">τὸ</w> <num value="19">ιθ</num>, 
+                     <supplied reason="lost"><w lemma="μέγας">μέγιϲτοϲ</w></supplied>, 
+               <lb n="4"/> <w lemma="δημαρχικός">δημαρχικῆϲ</w> <w lemma="ἐξουσία">ἐξουϲίαϲ</w> <w lemma="ὁ">τὸ</w> <num value="19">ιθ</num>, 
                <w lemma="ὕπατος">ὕπα<unclear>τ</unclear><supplied reason="lost">οϲ</supplied></w> 
                <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> </supplied>, 
                <w lemma="πατήρ">πατὴρ</w> <w lemma="πατρίς">πατ<unclear>ρ</unclear><supplied reason="lost">ίδοϲ</supplied></w></persName></date> 
                <lb n="5"/> <space quantity="3" unit="character"/> <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene">Κυρηναίοιϲ</placeName> <space quantity="3" unit="character"/>
-               <w>χαίρ<supplied reason="lost">ειν</supplied></w> 
+               <w lemma="χαίρω">χαίρ<supplied reason="lost">ειν</supplied></w> 
                <supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
-               <lb n="6"/> <w>ὁ</w> <w>ἄρχων</w> <w lemma="ὁ">τοῦ</w> 
+               <lb n="6"/> <w lemma="ὁ">ὁ</w> <w lemma="ἄρχων">ἄρχων</w> <w lemma="ὁ">τοῦ</w> 
                <placeName nymRef="#Πανελλήνιον" ref="#panhellenion">Πανελληνίου</placeName> 
-               <w>ἐφ<unclear>θ</unclear>άκει</w> <w>ἐπιϲτεῖλαί</w> 
-               <w>μοι</w> <w><unclear>π</unclear><supplied reason="lost">ερὶ</supplied></w> 
-               <w><supplied reason="lost">τῆϲ</supplied></w> 
-               <w><supplied reason="lost">ἀ</supplied>ξιώϲεωϲ</w> 
-               <w>ὑμῶ<supplied reason="lost">ν</supplied></w> 
-               <w><supplied reason="lost" cert="low">ϲπουδάζων</supplied></w> <gap reason="lost" quantity="13" precision="low" unit="character"/>
-               <lb n="7"/> <w lemma="ὁ">τὰ</w> <w>δόξαντά</w> <w>μοι</w> 
-               <w>ἀντ<unclear>έ</unclear>γραψα</w> <w lemma="καί">καὶ</w> 
-               <w>ὑμεῖν</w> <w>ἔπεμψα</w> <w>τὴν</w> <w>προ<unclear>κ</unclear><supplied reason="lost" cert="low">ειμένη</supplied>ν</w> 
-               <w>ἀπό<unclear>κ</unclear><supplied reason="lost" cert="low">ριϲιν</supplied></w> <gap reason="lost" quantity="17" precision="low" unit="character"/> <persName type="attested"><name nymRef="Σαλούιος"><supplied reason="lost">Ϲαλούιοϲ</supplied></name>
-               <lb n="8"/><name nymRef="Κᾶρος">Κᾶροϲ</name></persName> <w>ὁ</w> 
-               <w>κράτιϲτοϲ</w> <w>ἀνθύπατοϲ</w> <space quantity="7" unit="character"/>
-               <w>εὐτυχεῖ<supplied reason="lost">τε</supplied></w> 
+               <w lemma="φθάνω">ἐφ<unclear>θ</unclear>άκει</w> <w lemma="ἐπιστέλλω">ἐπιϲτεῖλαί</w> 
+               <w lemma="ἐγώ">μοι</w> <w lemma="περί"><unclear>π</unclear><supplied reason="lost">ερὶ</supplied></w> 
+               <w lemma="ὁ"><supplied reason="lost">τῆϲ</supplied></w> 
+               <w lemma="ἀξίωσις"><supplied reason="lost">ἀ</supplied>ξιώϲεωϲ</w> 
+               <w lemma="σύ">ὑμῶ<supplied reason="lost">ν</supplied></w> 
+               <w lemma="σπουδάζω"><supplied reason="lost" cert="low">ϲπουδάζων</supplied></w> <gap reason="lost" quantity="13" precision="low" unit="character"/>
+               <lb n="7"/> <w lemma="ὁ">τὰ</w> <w lemma="δοκέω">δόξαντά</w> <w lemma="ἐγώ">μοι</w> 
+               <w lemma="ἀντιγράφω">ἀντ<unclear>έ</unclear>γραψα</w> <w lemma="καί">καὶ</w> 
+               <w lemma="σύ">ὑμεῖν</w> <w lemma="πέμπω">ἔπεμψα</w> <w lemma="ὁ">τὴν</w> <w lemma="πρόκειμαι">προ<unclear>κ</unclear><supplied reason="lost" cert="low">ειμένη</supplied>ν</w> 
+               <w lemma="ἀπόκρισις">ἀπό<unclear>κ</unclear><supplied reason="lost" cert="low">ριϲιν</supplied></w> <gap reason="lost" quantity="17" precision="low" unit="character"/> <persName type="attested"><name nymRef="Σαλούιος"><supplied reason="lost">Ϲαλούιοϲ</supplied></name>
+               <lb n="8"/><name nymRef="Κᾶρος">Κᾶροϲ</name></persName> <w lemma="ὁ">ὁ</w> 
+               <w lemma="κράτιος">κράτιϲτοϲ</w> <w lemma="ἀνθύπατος">ἀνθύπατοϲ</w> <space quantity="7" unit="character"/>
+               <w lemma="εὐτυχέω">εὐτυχεῖ<supplied reason="lost">τε</supplied></w> 
                <supplied reason="lost"> <space extent="unknown" unit="character"/>
                </supplied> <gap reason="lost" atLeast="30" atMost="40" precision="low" unit="character"/>
-                <lb n="9"/> <w>δέχεϲθαι</w> <w>δεῖ</w> <w>οὐ</w> 
-               <w>μέντοι</w> <w>δίκαια</w> <w>ἀξιοῦϲιν</w> <w lemma="ὁ">τῶν</w> <w>αὐτ<unclear>ῶ</unclear><supplied reason="lost" cert="low">ν</supplied></w> <gap reason="lost" quantity="40" precision="low" unit="character"/> <w>γέ<lb break="no" n="10"/>νοϲ</w> <placeName type="ethnic" nymRef="#Ἀχαιός" ref="#achaios">Ἀχαιὸν</placeName> 
-               <w lemma="καί">καὶ</w> <w>ἀκρειβῶϲ</w> <placeName type="ethnic" nymRef="#Δώριος" ref="#dorios">Δώριον</placeName>
-               <w>αὐτοὶ</w> <w lemma="δέ">δὲ</w> 
-               <w>ἰ<unclear>θα</unclear>γεν<unclear>ε</unclear><supplied reason="lost">ῖϲ</supplied></w> <gap reason="lost" quantity="36" unit="character"/> <w part="F">ον</w>
+                <lb n="9"/> <w lemma="δέχομαι">δέχεϲθαι</w> <w lemma="δεῖ">δεῖ</w> <w lemma="οὐ">οὐ</w> 
+               <w lemma="μέντοι">μέντοι</w> <w lemma="δίκαιος">δίκαια</w> <w lemma="ἀξιόω">ἀξιοῦϲιν</w> <w lemma="ὁ">τῶν</w> <w lemma="αὐτός">αὐτ<unclear>ῶ</unclear><supplied reason="lost" cert="low">ν</supplied></w> <gap reason="lost" quantity="40" precision="low" unit="character"/> <w lemma="γένος">γέ<lb break="no" n="10"/>νοϲ</w> <placeName type="ethnic" nymRef="#Ἀχαιός" ref="#achaios">Ἀχαιὸν</placeName> 
+               <w lemma="καί">καὶ</w> <w lemma="ἀκριβής">ἀκρειβῶϲ</w> <placeName type="ethnic" nymRef="#Δώριος" ref="#dorios">Δώριον</placeName>
+               <w lemma="αὐτός">αὐτοὶ</w> <w lemma="δέ">δὲ</w> 
+               <w lemma="ἰθαγενής">ἰ<unclear>θα</unclear>γεν<unclear>ε</unclear><supplied reason="lost">ῖϲ</supplied></w> <gap reason="lost" quantity="36" unit="character"/> <w part="F">ον</w>
                <w lemma="δέ">δὲ</w>  
-               <lb n="11"/> <w>προϲεκτήϲαντο</w> <w>τὴν</w> <w>προϲαγορίαν</w> <w>ἀπὸ</w> 
-               <w lemma="ὁ">τοῦ</w> <w part="I">ἐπικρα<supplied reason="lost">τ</supplied></w> <gap reason="lost" quantity="35" unit="character" precision="low"/> <w><supplied reason="lost">τὴ</supplied>ν</w> <w>πό<lb break="no" n="12"/>λιν</w> <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene">Κυρηναίων</placeName> 
-               <w>δὴ</w> <num value="2"><w>δύο</w></num> 
-               <w>ϲυνέδρουϲ</w> <w>πεμπόντω<supplied reason="lost">ν</supplied></w> <gap reason="lost" quantity="40" unit="character" precision="low"/> <space extent="unknown" unit="character"/>
-               <lb n="13"/> <space quantity="20" unit="character"/> <w>Κεφάλαια</w> <w>ἐξ</w> 
-               <w>ἐπιϲτολ<unclear>ῆ</unclear>ϲ</w> <persName type="emperor" key="hadrianus"><w>θεοῦ</w> <name nymRef="Ἁδριανός">Ἁδριανοῦ</name></persName> 
-               <lb n="14"/> <w>προϲκειμένου</w> <w lemma="δέ">δὲ</w> 
-               <persName type="attested"><name nymRef="Ἐπιτέλης">Ἐπιτέλουϲ</name></persName> <w>ἑνὶ</w> <w>ὅτι</w> 
-               <w>ἄρα</w> <w part="I">ἐπεθεϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="15"/> <w>ϲυμ<unclear>φ</unclear>έρειν</w> <w>τῇ</w> <w>πόλει</w> 
-               <w>προυποϲυλλέγειν</w> <w>αὐτὸν</w> <w part="I">ἐπι</w><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="16"/> <w>ἀνάμνηϲιν</w> <w>τῆϲ</w> <w>παλαιᾶϲ</w> 
-               <w>ὑμῶν</w> <w>εὐγενείαϲ</w> <w part="I">διε<unclear>ϲ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="17"/><w part="F">θωθ<unclear>ή</unclear>ϲεϲθαι</w> <w>δοκεῖ</w> <w>ἐπέδωκέ</w> 
-               <w>μοι</w> <space quantity="1" unit="character"/> <g ref="symbols.xml#leaf"/> <space quantity="1" unit="character"/> <w lemma="νῦν">νῦν</w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="18"/> <w>πολυανθρωποτάτην</w> <w lemma="καί">καὶ</w> <w>καλλίϲτην</w> <w>πόλιν</w>
-               <w>γένοϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="19"/> <w>μητρόπολιϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w>εἰϲ</w> <w>τοὺϲ</w>
+               <lb n="11"/> <w lemma="προσκτάομαι">προϲεκτήϲαντο</w> <w lemma="ὁ">τὴν</w> <w lemma="προσαγορία">προϲαγορίαν</w> <w lemma="ἀπό">ἀπὸ</w> 
+               <w lemma="ὁ">τοῦ</w> <w part="I">ἐπικρα<supplied reason="lost">τ</supplied></w> <gap reason="lost" quantity="35" unit="character" precision="low"/> <w lemma="ὁ"><supplied reason="lost">τὴ</supplied>ν</w> <w lemma="πόλις">πό<lb break="no" n="12"/>λιν</w> <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene">Κυρηναίων</placeName> 
+               <w lemma="δή">δὴ</w> <num value="2"><w lemma="δύο">δύο</w></num> 
+               <w lemma="σύνεδρος">ϲυνέδρουϲ</w> <w lemma="πέμπω">πεμπόντω<supplied reason="lost">ν</supplied></w> <gap reason="lost" quantity="40" unit="character" precision="low"/> <space extent="unknown" unit="character"/>
+               <lb n="13"/> <space quantity="20" unit="character"/> <w lemma="κεφάλαιον">Κεφάλαια</w> <w lemma="ἐκ">ἐξ</w> 
+               <w lemma="ἐπιστολή">ἐπιϲτολ<unclear>ῆ</unclear>ϲ</w> <persName type="emperor" key="hadrianus"><w lemma="θεός">θεοῦ</w> <name nymRef="Ἁδριανός">Ἁδριανοῦ</name></persName> 
+               <lb n="14"/> <w lemma="πρόσκειμαι">προϲκειμένου</w> <w lemma="δέ">δὲ</w> 
+               <persName type="attested"><name nymRef="Ἐπιτέλης">Ἐπιτέλουϲ</name></persName> <w lemma="εἷς">ἑνὶ</w> <w lemma="ὅτι">ὅτι</w> 
+               <w lemma="ἄρα">ἄρα</w> <w part="I">ἐπεθεϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="15"/> <w lemma="συμφέρω">ϲυμ<unclear>φ</unclear>έρειν</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> 
+               <w lemma="προυποσυλλέγω">προυποϲυλλέγειν</w> <w lemma="αὐτός">αὐτὸν</w> <w part="I">ἐπι</w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="16"/> <w lemma="ἀνάμνησις">ἀνάμνηϲιν</w> <w lemma="ὁ">τῆϲ</w> <w lemma="παλαιός">παλαιᾶϲ</w> 
+               <w lemma="σύ">ὑμῶν</w> <w lemma="εὐγένεια">εὐγενείαϲ</w> <w part="I">διε<unclear>ϲ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="17"/><w part="F">θωθ<unclear>ή</unclear>ϲεϲθαι</w> <w lemma="δοκεύς">δοκεῖ</w> <w lemma="ἐπιδίδωμι">ἐπέδωκέ</w> 
+               <w lemma="ἐγώ">μοι</w> <space quantity="1" unit="character"/> <g ref="symbols.xml#leaf"/> <space quantity="1" unit="character"/> <w lemma="νῦν">νῦν</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="18"/> <w lemma="πολυάνθρωπος">πολυανθρωποτάτην</w> <w lemma="καί">καὶ</w> <w lemma="καλός">καλλίϲτην</w> <w lemma="πόλις">πόλιν</w>
+               <w lemma="γένος">γένοϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="19"/> <w lemma="μητρόπολις">μητρόπολιϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὁ">τοὺϲ</w>
                <placeName type="ethnic" nymRef="#Ἕλλην" ref="#hellas">Ἕλληναϲ</placeName> 
-               <w>ἔργα</w> <w part="I">α<unclear>ι</unclear></w><gap reason="lost" atMost="45" atLeast="35" unit="character"/> <w><supplied reason="lost">γέ</supplied><lb break="no" n="20"/>γραφα</w> <w>ὅτι</w> <w>καλὰ</w> <w lemma="καί">καὶ</w> <w>πρέποντα</w> 
-               <w>αὐτοῖϲ</w> <w>ἐϲτιν</w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="21"/> <w>εἶναι</w> <w>δίκαιον</w> <w lemma="ὁ">τὸ</w> 
-               <w>πρὸϲ</w> <w>τὴν</w> <w>μητρόπολιν</w> <w part="I"><unclear>ευ</unclear></w> <gap reason="lost" atMost="45" atLeast="35" unit="character"/> <w><supplied reason="lost">κα</supplied><lb break="no" n="22"/>θεϲτῶταϲ</w> <w>τὴν</w> <w>ἐπικουρίαν</w> 
-               <w>παρὰ</w> <w lemma="ὁ">τῶν</w> <placeName type="ethnic" nymRef="#Ἕλλην" ref="#hellas">Ἑλλ<unclear>ή</unclear><supplied reason="lost" cert="low">νων</supplied></placeName> 
+               <w lemma="ἔργον">ἔργα</w> <w part="I">α<unclear>ι</unclear></w><gap reason="lost" atMost="45" atLeast="35" unit="character"/> <w lemma="γράφω"><supplied reason="lost">γέ</supplied><lb break="no" n="20"/>γραφα</w> <w lemma="ὅτι">ὅτι</w> <w lemma="καλός">καλὰ</w> <w lemma="καί">καὶ</w> <w lemma="πρέπω">πρέποντα</w> 
+               <w lemma="αὐτός">αὐτοῖϲ</w> <w lemma="εἰμί">ἐϲτιν</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="21"/> <w lemma="εἰμί">εἶναι</w> <w lemma="δίκαιος">δίκαιον</w> <w lemma="ὁ">τὸ</w> 
+               <w lemma="πρός">πρὸϲ</w> <w lemma="ὁ">τὴν</w> <w lemma="μητρόπολις">μητρόπολιν</w> <w part="I"><unclear>ευ</unclear></w> <gap reason="lost" atMost="45" atLeast="35" unit="character"/> <w lemma="καθίστημι"><supplied reason="lost">κα</supplied><lb break="no" n="22"/>θεϲτῶταϲ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἐπικουρία">ἐπικουρίαν</w> 
+               <w lemma="παρά">παρὰ</w> <w lemma="ὁ">τῶν</w> <placeName type="ethnic" nymRef="#Ἕλλην" ref="#hellas">Ἑλλ<unclear>ή</unclear><supplied reason="lost" cert="low">νων</supplied></placeName> 
                <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="23"/> <w>ὡϲ</w> <w>μὲν</w> <w>βούλομαι</w> <w>πλῆθοϲ</w> <w>ἀνδρῶν</w> 
-               <w>παρὰ</w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="24"/> <w>πᾶν</w> <w><supplied reason="lost">γ</supplied><unclear>έ</unclear>νοϲ</w> 
-               <w lemma="καί">καὶ</w> <w>πολὺ</w> <w>δὴ</w> <w>μᾶλλον</w> <w>τὴν</w> 
+               <lb n="23"/> <w lemma="ὡς">ὡϲ</w> <w lemma="μέν">μὲν</w> <w lemma="βούλομαι">βούλομαι</w> <w lemma="πλῆθος">πλῆθοϲ</w> <w lemma="ἀνήρ">ἀνδρῶν</w> 
+               <w lemma="παρά">παρὰ</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="24"/> <w lemma="πᾶς">πᾶν</w> <w lemma="γένος"><supplied reason="lost">γ</supplied><unclear>έ</unclear>νοϲ</w> 
+               <w lemma="καί">καὶ</w> <w lemma="πολύς">πολὺ</w> <w lemma="δή">δὴ</w> <w lemma="μᾶλλον">μᾶλλον</w> <w lemma="ὁ">τὴν</w> 
                <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene">Κυρη<supplied reason="lost">ναίων</supplied></placeName> 
-               <w><supplied reason="lost">πόλιν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+               <w lemma="πόλις"><supplied reason="lost">πόλιν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
               <space quantity="1" unit="line"/>
-               <lb n="25"/> <space quantity="20" unit="character"/> <w>Κεφάλαιον</w> 
-               <w>ἐκ</w> <w><unclear>δ</unclear><supplied reason="lost">ιατάγματος</supplied></w> 
-               <supplied reason="lost"><persName type="emperor" key="hadrianus"><w>θεοῦ</w> 
+               <lb n="25"/> <space quantity="20" unit="character"/> <w lemma="κεφάλαιον">Κεφάλαιον</w> 
+               <w lemma="ἐκ">ἐκ</w> <w lemma="διάταγμα"><unclear>δ</unclear><supplied reason="lost">ιατάγματος</supplied></w> 
+               <supplied reason="lost"><persName type="emperor" key="hadrianus"><w lemma="θεός">θεοῦ</w> 
                   <name nymRef="Ἁδριανός">Ἁδριανοῦ</name></persName> <space quantity="3" unit="character"/></supplied>
-               <lb n="26"/> <w>βουλοίμην</w> <w>δ’</w><w>ἂν</w> <w>ὑμᾶϲ</w> 
-               <w>μὴ</w> <w lemma="ὁ">τῷ</w> <w>φόβῳ</w> <w lemma="ὁ">τῶν</w> <orig>ε</orig><gap reason="lost" quantity="37" unit="character" cert="low"/><w part="F"><unclear>ωϲ</unclear></w> 
-               <w>εἴξαν<lb break="no" n="27"/>ταϲ</w> <w lemma="καί">καὶ</w> <w>ἀναμνηϲθένταϲ</w> <w>ὅτι</w> 
-               <w>αἰϲχρόν</w> <w>ἐϲτι</w> <gap reason="lost" quantity="20" unit="character" cert="low"/><supplied reason="lost"><w>πόλιν</w></supplied> 
-               <w><supplied reason="lost">διὰ</supplied></w> <w><unclear>χ</unclear>ρηϲμοὺϲ</w> <w lemma="ὁ">τοῦ</w>
+               <lb n="26"/> <w lemma="βούλομαι">βουλοίμην</w> <w lemma="δ̓́">δ’</w><w lemma="ἄν">ἂν</w> <w lemma="σύ">ὑμᾶϲ</w> 
+               <w lemma="μή">μὴ</w> <w lemma="ὁ">τῷ</w> <w lemma="φόβος">φόβῳ</w> <w lemma="ὁ">τῶν</w> <orig>ε</orig><gap reason="lost" quantity="37" unit="character" cert="low"/><w part="F"><unclear>ωϲ</unclear></w> 
+               <w lemma="εἴ̓́κω">εἴξαν<lb break="no" n="27"/>ταϲ</w> <w lemma="καί">καὶ</w> <w lemma="ἀναμιμνήσκω">ἀναμνηϲθένταϲ</w> <w lemma="ὅτι">ὅτι</w> 
+               <w lemma="αἰσχρός">αἰϲχρόν</w> <w lemma="εἰμί">ἐϲτι</w> <gap reason="lost" quantity="20" unit="character" cert="low"/><supplied reason="lost"><w lemma="πόλις">πόλιν</w></supplied> 
+               <w lemma="διά"><supplied reason="lost">διὰ</supplied></w> <w lemma="χρησμός"><unclear>χ</unclear>ρηϲμοὺϲ</w> <w lemma="ὁ">τοῦ</w>
                <lb n="28"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνοϲ</name></persName> 
-               <w>ᾠκιϲμένην</w> <w>ἀναξίωϲ</w> <w lemma="καί">καὶ</w> 
-               <w part="I"><unclear>τ</unclear></w> <gap reason="lost" quantity="28" unit="character" cert="low"/> <w>τῆϲ</w> <w>παλαιᾶϲ</w> <w>δια<lb break="no" n="29"/>κειμένην</w> <w>ϲυνελθεῖν</w> <w lemma="καί">καὶ</w> <w>ϲυναυξῆϲαι</w> 
-               <w>τ<supplied reason="lost">ὴν</supplied></w> <supplied reason="lost"><w>ὑμετέραν</w> 
-                  <w>πόλιν</w> <w lemma="καί">καὶ</w> <w>οὐ</w> <w>μόνον</w></supplied> 
-               <w><supplied reason="lost">ο</supplied><unclear>ἰ</unclear>κήτοραϲ</w> <w>ἀλλὰ</w> 
-               <lb n="30"/> <w lemma="καί">καὶ</w> <w>οἰκιϲτὰϲ</w> <w>γενέϲθαι</w> <w>τῆϲ</w> 
-               <w>πατρίδοϲ</w> <space quantity="1" unit="character"/><supplied reason="lost"> <space quantity="3" unit="character"/></supplied> <space quantity="3" unit="character"/>
-               <lb n="31"/> <w>πυνθάνομαι</w> <w lemma="ὁ">τὸ</w> <w>γυμνάϲιον</w>
-               <w>ὑμῶν</w> <w part="I">κα</w><gap reason="lost" quantity="35" unit="character" cert="low"/> <w><supplied reason="lost">μα</supplied>ν<unclear>θ</unclear>άνων</w> <w>πολ<lb break="no" n="32"/>λοὺϲ</w> <w>ἤδη</w> <w>παῖδαϲ</w> <w>τρεφομένουϲ</w> <w lemma="καί">καὶ</w> 
-               <w>αὐξ<supplied reason="lost">ανομένουϲ</supplied></w> <gap reason="lost" quantity="20" unit="character" cert="low"/><w part="F">ν</w> <w>μὴ</w> 
-               <w lemma="ἐν">ἐν</w> <w>τῷ</w> <w>κοι<lb break="no" n="33"/>νῷ</w> <w>γυμναϲίῳ</w> <w>ϲυναναφύρωνται</w> 
-               <w lemma="ὁ">τοῖϲ</w> <w part="I">α</w><gap reason="lost" quantity="30" unit="character" cert="low"/> <w><supplied reason="lost">ἐ</supplied>φηβικὴν</w> <w>ἰδίᾳ</w>
-               <lb n="34"/> <w>εἰϲ</w> <w>ἣν</w> <w>φοιτῶντεϲ</w> <w lemma="καί">καὶ</w> <w>τὰϲ</w> 
-               <w>διατριβὰϲ</w> <w>ποι<supplied reason="lost">ούμενοι</supplied></w> <gap reason="lost" quantity="14" unit="character" cert="low"/> <w><supplied reason="lost">δωρεᾶϲ</supplied></w> 
-               <w>λήμψονται</w> <w><unclear>τὰ</unclear>ϲ</w> 
-               <lb n="35"/> <w>παρ’</w><w>ἐμοῦ</w> <w>διδομέναϲ</w> <space quantity="3" unit="character"/> <supplied reason="lost"> <space quantity="3" unit="character"/></supplied> <space quantity="3" unit="character"/> 
-               <lb n="36"/> <w>ὃ</w> <w>μάλιϲτα</w> <w>ἀνανκαῖον</w> <w>ἦν</w> 
-               <w>ὡϲ</w> <w>ἠξιώϲατ<supplied reason="lost">ε</supplied></w> 
-               <w><supplied reason="lost">ὑμεῖϲ</supplied></w> 
-               <w><supplied reason="lost" cert="low">αὐτοὶ</supplied></w> <gap reason="lost" quantity="13" cert="low" unit="character"/> <w><supplied reason="lost" cert="low">νομοθε</supplied><unclear>ϲ</unclear>ίαν</w> <w>ἐποιη<supplied reason="lost">ϲ</supplied><unclear>ά</unclear> <space quantity="1" unit="character"/><lb break="no" n="37"/>μην</w>, <w>ἔϲτιν</w> <w>δ’</w><w>οὐδὲν</w> <w>νόμῳ</w> 
-               <w>πρὸ</w> <w part="I">ὑ<unclear>μ</unclear></w> <gap reason="lost" quantity="44" cert="low" unit="character"/> <w part="F"><unclear>ω</unclear>ν</w> <w>ἀφ’</w><w>οἵων</w> <w>ὑμεῖϲ</w> 
-               <lb n="38"/> <w>κατοικιζομένην</w> <space quantity="1" unit="character"/> <w>τίνεϲ</w>
-               <w>δ’</w><w>ἂν</w> <w part="I">νό<supplied reason="lost">μ</supplied></w> <gap reason="lost" quantity="45" cert="low" unit="character"/> <placeName type="ethnic" nymRef="#Λακωνικός" ref="#lakonia"><supplied reason="lost">Λ</supplied>ακωνικῶν</placeName>
-               <lb n="39"/> <w lemma="καί">καὶ</w> <w>τύχῃ</w> <w>τινὶ</w> <w>ἀγαθῇ</w> 
-               <w>τῆϲ</w> <placeName nymRef="#Κυρήνη" ref="#cyrene">Κυρήνη<unclear>ϲ</unclear></placeName> 
+               <w lemma="οἰκίζω">ᾠκιϲμένην</w> <w lemma="ἀνάξιος">ἀναξίωϲ</w> <w lemma="καί">καὶ</w> 
+               <w part="I"><unclear>τ</unclear></w> <gap reason="lost" quantity="28" unit="character" cert="low"/> <w lemma="ὁ">τῆϲ</w> <w lemma="παλαιός">παλαιᾶϲ</w> <w lemma="διάκειμαι">δια<lb break="no" n="29"/>κειμένην</w> <w lemma="συνέρχομαι">ϲυνελθεῖν</w> <w lemma="καί">καὶ</w> <w lemma="συναυξάνω">ϲυναυξῆϲαι</w> 
+               <w lemma="ὁ">τ<supplied reason="lost">ὴν</supplied></w> <supplied reason="lost"><w lemma="ὑμέτερος">ὑμετέραν</w> 
+                  <w lemma="πόλις">πόλιν</w> <w lemma="καί">καὶ</w> <w lemma="οὐ">οὐ</w> <w lemma="μόνος">μόνον</w></supplied> 
+               <w lemma="οἰκήτωρ"><supplied reason="lost">ο</supplied><unclear>ἰ</unclear>κήτοραϲ</w> <w lemma="ἀλλά">ἀλλὰ</w> 
+               <lb n="30"/> <w lemma="καί">καὶ</w> <w lemma="οἰκιστής">οἰκιϲτὰϲ</w> <w lemma="γίγνομαι">γενέϲθαι</w> <w lemma="ὁ">τῆϲ</w> 
+               <w lemma="πατρίς">πατρίδοϲ</w> <space quantity="1" unit="character"/><supplied reason="lost"> <space quantity="3" unit="character"/></supplied> <space quantity="3" unit="character"/>
+               <lb n="31"/> <w lemma="πυνθάνομαι">πυνθάνομαι</w> <w lemma="ὁ">τὸ</w> <w lemma="γυμνάσιον">γυμνάϲιον</w>
+               <w lemma="σύ">ὑμῶν</w> <w part="I">κα</w><gap reason="lost" quantity="35" unit="character" cert="low"/> <w lemma="μανθάνω"><supplied reason="lost">μα</supplied>ν<unclear>θ</unclear>άνων</w> <w lemma="πολύς">πολ<lb break="no" n="32"/>λοὺϲ</w> <w lemma="ἤδη">ἤδη</w> <w lemma="παῖς">παῖδαϲ</w> <w lemma="τρέφω">τρεφομένουϲ</w> <w lemma="καί">καὶ</w> 
+               <w lemma="αὐξάνω">αὐξ<supplied reason="lost">ανομένουϲ</supplied></w> <gap reason="lost" quantity="20" unit="character" cert="low"/><w part="F">ν</w> <w lemma="μή">μὴ</w> 
+               <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="κοινός">κοι<lb break="no" n="33"/>νῷ</w> <w lemma="γυμνάσιον">γυμναϲίῳ</w> <w lemma="συναναφύρομαι">ϲυναναφύρωνται</w> 
+               <w lemma="ὁ">τοῖϲ</w> <w part="I">α</w><gap reason="lost" quantity="30" unit="character" cert="low"/> <w lemma="ἐφηβικός"><supplied reason="lost">ἐ</supplied>φηβικὴν</w> <w lemma="ἴδιος">ἰδίᾳ</w>
+               <lb n="34"/> <w lemma="εἰς">εἰϲ</w> <w lemma="ὅς">ἣν</w> <w lemma="φοιτάω">φοιτῶντεϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰϲ</w> 
+               <w lemma="διατριβή">διατριβὰϲ</w> <w lemma="ποιέω">ποι<supplied reason="lost">ούμενοι</supplied></w> <gap reason="lost" quantity="14" unit="character" cert="low"/> <w lemma="δωρεά"><supplied reason="lost">δωρεᾶϲ</supplied></w> 
+               <w lemma="λαμβάνω">λήμψονται</w> <w lemma="ὁ"><unclear>τὰ</unclear>ϲ</w> 
+               <lb n="35"/> <w lemma="παρά">παρ’</w><w lemma="ἐγώ">ἐμοῦ</w> <w lemma="δίδωμι">διδομέναϲ</w> <space quantity="3" unit="character"/> <supplied reason="lost"> <space quantity="3" unit="character"/></supplied> <space quantity="3" unit="character"/> 
+               <lb n="36"/> <w lemma="ὅς">ὃ</w> <w lemma="μάλιστα">μάλιϲτα</w> <w lemma="ἀναγκαῖον">ἀνανκαῖον</w> <w lemma="εἰμί">ἦν</w> 
+               <w lemma="ὡς">ὡϲ</w> <w lemma="ἀξιόω">ἠξιώϲατ<supplied reason="lost">ε</supplied></w> 
+               <w lemma="σύ"><supplied reason="lost">ὑμεῖϲ</supplied></w> 
+               <w lemma="αὐτός"><supplied reason="lost" cert="low">αὐτοὶ</supplied></w> <gap reason="lost" quantity="13" cert="low" unit="character"/> <w lemma="νομοθεσία"><supplied reason="lost" cert="low">νομοθε</supplied><unclear>ϲ</unclear>ίαν</w> <w lemma="ποιέω">ἐποιη<supplied reason="lost">ϲ</supplied><unclear>ά</unclear> <space quantity="1" unit="character"/><lb break="no" n="37"/>μην</w>, <w lemma="εἰμί">ἔϲτιν</w> <w lemma="δ̓́">δ’</w><w lemma="οὐδείς">οὐδὲν</w> <w lemma="νόμος">νόμῳ</w> 
+               <w lemma="πρό">πρὸ</w> <w part="I">ὑ<unclear>μ</unclear></w> <gap reason="lost" quantity="44" cert="low" unit="character"/> <w part="F"><unclear>ω</unclear>ν</w> <w lemma="ἀπό">ἀφ’</w><w lemma="οἷος">οἵων</w> <w lemma="σύ">ὑμεῖϲ</w> 
+               <lb n="38"/> <w lemma="κατοικίζω">κατοικιζομένην</w> <space quantity="1" unit="character"/> <w lemma="τις">τίνεϲ</w>
+               <w lemma="δ̓́">δ’</w><w lemma="ἄν">ἂν</w> <w part="I">νό<supplied reason="lost">μ</supplied></w> <gap reason="lost" quantity="45" cert="low" unit="character"/> <placeName type="ethnic" nymRef="#Λακωνικός" ref="#lakonia"><supplied reason="lost">Λ</supplied>ακωνικῶν</placeName>
+               <lb n="39"/> <w lemma="καί">καὶ</w> <w lemma="τύχη">τύχῃ</w> <w lemma="τις">τινὶ</w> <w lemma="ἀγαθός">ἀγαθῇ</w> 
+               <w lemma="ὁ">τῆϲ</w> <placeName nymRef="#Κυρήνη" ref="#cyrene">Κυρήνη<unclear>ϲ</unclear></placeName> 
                <gap reason="lost" quantity="42" cert="low" unit="character"/> 
-               <w><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὁ">τοῖϲ</w>  <placeName type="ethnic" nymRef="#Λακεδαιμόνιος" ref="#lakedaimonia">Λακεδαι<lb break="no" n="40"/><unclear>μ</unclear>ονίοιϲ</placeName> 
-               <w>ἐπηνορθωκὼϲ</w> <w>τοὺϲ</w>
+               <w lemma="ἐν"><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὁ">τοῖϲ</w>  <placeName type="ethnic" nymRef="#Λακεδαιμόνιος" ref="#lakedaimonia">Λακεδαι<lb break="no" n="40"/><unclear>μ</unclear>ονίοιϲ</placeName> 
+               <w lemma="ἐπανορθόω">ἐπηνορθωκὼϲ</w> <w lemma="ὁ">τοὺϲ</w>
                <gap reason="lost" quantity="44" cert="low" unit="character"/> <space quantity="3" unit="character"/>
-               <lb n="41"/><gap reason="lost" quantity="2" unit="character"/><orig><unclear>τηϲενϲ</unclear></orig><gap reason="lost" quantity="1" unit="character"/><orig><unclear>νχωρα</unclear></orig><gap reason="lost" quantity="4" unit="character"/><orig>ν</orig><gap reason="lost" quantity="54" cert="low" unit="character"/> <w><unclear>τ</unclear>έϲϲαρα</w> 
+               <lb n="41"/><gap reason="lost" quantity="2" unit="character"/><orig><unclear>τηϲενϲ</unclear></orig><gap reason="lost" quantity="1" unit="character"/><orig><unclear>νχωρα</unclear></orig><gap reason="lost" quantity="4" unit="character"/><orig>ν</orig><gap reason="lost" quantity="54" cert="low" unit="character"/> <w lemma="τέσσαρες"><unclear>τ</unclear>έϲϲαρα</w> 
                <space unit="character" extent="unknown"/>
-               <lb n="42"/><placeName type="ethnic" nymRef="#Δωριεύς" ref="#dorios">Δωριέων</placeName> <w>γὰρ</w> 
-               <w>ἀνθρώπω<supplied reason="lost">ν</supplied></w> <gap reason="lost" quantity="56" cert="low" unit="character"/> 
+               <lb n="42"/><placeName type="ethnic" nymRef="#Δωριεύς" ref="#dorios">Δωριέων</placeName> <w lemma="γάρ">γὰρ</w> 
+               <w lemma="ἄνθρωπος">ἀνθρώπω<supplied reason="lost">ν</supplied></w> <gap reason="lost" quantity="56" cert="low" unit="character"/> 
                 <placeName type="ethnic" nymRef="#Λακωνικός" ref="#lakonia"><supplied reason="lost">Λα</supplied><unclear>κ</unclear>ωνικὴ</placeName>
-               <lb n="43"/> <w>ϲωφροϲύνη</w> <w lemma="καί">καὶ</w> 
-               <w>ἄϲκ<unclear>η</unclear><supplied reason="lost">ϲιϲ</supplied></w>
+               <lb n="43"/> <w lemma="σωφροσύνη">ϲωφροϲύνη</w> <w lemma="καί">καὶ</w> 
+               <w lemma="ἄσκησις">ἄϲκ<unclear>η</unclear><supplied reason="lost">ϲιϲ</supplied></w>
                <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="44"/> <w><unclear>Ὁ</unclear><supplied reason="lost">ρ</supplied>ῶ</w> 
-               <w>γὰρ</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὸ</w> 
+               <lb n="44"/> <w lemma="ὁράω"><unclear>Ὁ</unclear><supplied reason="lost">ρ</supplied>ῶ</w> 
+               <w lemma="γάρ">γὰρ</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὸ</w> 
                <w part="I">γ<unclear>εν</unclear></w> <gap reason="lost" extent="unknown" unit="character"/> 
                <lb n="45"/><w part="F">ατω</w> <w lemma="ὁ">τῶν</w> 
                <orig><unclear>εκϲϲου</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
@@ -300,120 +300,121 @@
                <lb n="47"/> <w lemma="καί">καὶ</w> <w part="I">τη</w><gap reason="lost" extent="unknown" unit="character"/> 
                <lb n="48"/><orig><unclear>ν</unclear>ο<unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
                <lb n="49"/><gap reason="lost" quantity="1" unit="character"/><orig>κ</orig><gap reason="lost" atLeast="8" atMost="9" unit="character"/><w part="F">ον</w> 
-               <w><unclear>π</unclear>ῶϲ</w> <w>ἦν</w> <w part="I">τ</w><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="50"/><gap reason="lost" atLeast="8" atMost="9" unit="character"/><w part="F">ϲύνη</w> <w lemma="ὁ">τοῦ</w> <w>θεοῦ</w> 
-               <w>τῶ<unclear>ν</unclear></w> <gap reason="lost" extent="unknown" unit="character"/> 
-               <lb n="51"/><gap reason="lost" atLeast="7" atMost="8" unit="character"/> <w part="F">ϲ</w> <w>μόνον</w> <w>ἀλλὰ</w> 
-               <w lemma="καί">καὶ</w> <w>το<unclear>ῦ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="52"/><gap reason="lost" atLeast="6" atMost="7" unit="character"/> <w>ὑμεῖν</w> <w>μὴ</w> 
-               <w>ἀποδέ<unclear>χ</unclear><supplied reason="lost" cert="low">εϲθαι</supplied></w>
+               <w lemma="πῶς"><unclear>π</unclear>ῶϲ</w> <w lemma="εἰμί">ἦν</w> <w part="I">τ</w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="50"/><gap reason="lost" atLeast="8" atMost="9" unit="character"/><w part="F">ϲύνη</w> <w lemma="ὁ">τοῦ</w> <w lemma="θεός">θεοῦ</w> 
+               <w lemma="ὁ">τῶ<unclear>ν</unclear></w> <gap reason="lost" extent="unknown" unit="character"/> 
+               <lb n="51"/><gap reason="lost" atLeast="7" atMost="8" unit="character"/> <w part="F">ϲ</w> <w lemma="μόνος">μόνον</w> <w lemma="ἀλλά">ἀλλὰ</w> 
+               <w lemma="καί">καὶ</w> <w lemma="τις">το<unclear>ῦ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="52"/><gap reason="lost" atLeast="6" atMost="7" unit="character"/> <w lemma="σύ">ὑμεῖν</w> <w lemma="μή">μὴ</w> 
+               <w lemma="ἀποδέχομαι">ἀποδέ<unclear>χ</unclear><supplied reason="lost" cert="low">εϲθαι</supplied></w>
                <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="53"/><gap reason="lost" atLeast="5" atMost="6" unit="character"/> <w part="F">αζε</w> 
-               <w>ϲπουδῇ</w> <gap reason="lost" extent="unknown" unit="character"/> 
+               <w lemma="σπουδή">ϲπουδῇ</w> <gap reason="lost" extent="unknown" unit="character"/> 
                <lb n="54"/><gap reason="lost" atLeast="5" atMost="6" unit="character"/><orig>υδιονι<unclear>λο</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="55"/> <w><supplied reason="lost">κατοι</supplied>κ<unclear>ίϲ</unclear>αν<supplied reason="lost" cert="low">τεϲ</supplied></w> 
+               <lb n="55"/> <w lemma="κατοικίζω"><supplied reason="lost">κατοι</supplied>κ<unclear>ίϲ</unclear>αν<supplied reason="lost" cert="low">τεϲ</supplied></w> 
                <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="56"/><gap reason="lost" atLeast="5" atMost="6" unit="character"/><orig><unclear>ο</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> 
                <gap reason="lost" quantity="6" unit="line"/> 
-               <lb n="63"/> <w>κἀγὼ</w> <w>πάνυ</w> <w>ἡδέωϲ</w> 
-               <w>ἀνεθέ<unclear>μ</unclear><supplied reason="lost">ην</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="64"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w>δι’</w><w>ὑμᾶϲ</w> 
-               <w>ὑπαρξάν<supplied reason="lost">των</supplied></w>
+               <lb n="63"/> <w lemma="ἐγώ">κἀγὼ</w> <w lemma="πάνυ">πάνυ</w> <w lemma="ἡδέως">ἡδέωϲ</w> 
+               <w lemma="ἀνατίθημι">ἀνεθέ<unclear>μ</unclear><supplied reason="lost">ην</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="64"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="διά">δι’</w><w lemma="σύ">ὑμᾶϲ</w> 
+               <w lemma="ὑπάρχω">ὑπαρξάν<supplied reason="lost">των</supplied></w>
                <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="65"/> <w>ὅϲοι</w> <w>ἄν</w> <w>ἐκ</w> <w>τῆϲ</w> <w>ὑμετέραϲ</w> 
-               <w>πό<supplied reason="lost">λεωϲ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="66"/><w part="F">ται</w> <w>παρ’</w><w>ὑμεῖν</w> <w>ἐργάϲονται</w> 
+               <lb n="65"/> <w lemma="ὅσος">ὅϲοι</w> <w lemma="ἄν">ἄν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῆϲ</w> <w lemma="ὑμέτερος">ὑμετέραϲ</w> 
+               <w lemma="πόλις">πό<supplied reason="lost">λεωϲ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="66"/><w part="F">ται</w> <w lemma="παρά">παρ’</w><w lemma="σύ">ὑμεῖν</w> <w lemma="ἐργάζομαι">ἐργάϲονται</w> 
                <orig><unclear>λ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="67"/> <w lemma="ὁ">τῷ</w> <w>ἀνθυπάτῳ</w> <w>ὅϲοι</w> <orig>αναλο</orig><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="68"/> <w>τε<unclear>θ</unclear>νάναι</w> <w>δεϲμοῦ</w> 
+               <lb n="67"/> <w lemma="ὁ">τῷ</w> <w lemma="ἀνθύπατος">ἀνθυπάτῳ</w> <w lemma="ὅσος">ὅϲοι</w> <orig>αναλο</orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="68"/> <w lemma="θνήσκω">τε<unclear>θ</unclear>νάναι</w> <w lemma="δεσμός">δεϲμοῦ</w> 
                <w part="I">πρόϲτε<unclear>ι</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="69"/> <space quantity="3" unit="character"/> <w>Κεφάλαια</w> 
-               <w>ἐπιϲ<supplied reason="lost">τολῶν</supplied></w> <w><supplied reason="lost">τοῦ</supplied></w>
-               <w>κυρίου</w> <persName type="emperor" key="hadrianus"><name nymRef="Ἀντωνῖνος">Ἀντωνείν<supplied reason="lost">ου</supplied></name></persName><supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
+               <lb n="69"/> <space quantity="3" unit="character"/> <w lemma="κεφάλαιον">Κεφάλαια</w> 
+               <w lemma="ἐπιστολή">ἐπιϲ<supplied reason="lost">τολῶν</supplied></w> <w lemma="τις"><supplied reason="lost">τοῦ</supplied></w>
+               <w lemma="κύριος">κυρίου</w> <persName type="emperor" key="hadrianus"><name nymRef="Ἀντωνῖνος">Ἀντωνείν<supplied reason="lost">ου</supplied></name></persName><supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
                <lb n="70"/><placeName type="ethnic" nymRef="#Βερενικεύς" ref="#berenike">Βερνεικεῖϲ</placeName> 
-               <w>ἠξίουν</w> <w lemma="καί">καὶ</w> 
-               <w>ἀγορ<unclear>ὰ</unclear><supplied reason="lost">ν</supplied></w> 
-               <w><supplied reason="lost" cert="low">δικῶν</supplied></w> 
-               <w><supplied reason="lost">αὐτοῦ</supplied></w> 
-               <w><supplied reason="lost">ἀχθ</supplied><unclear>ῆναι</unclear></w> 
-               <w>προϲτεθῆναι</w> <w>μὲν</w> <w>οὖν</w> <w>ταῖ<unclear>ϲ</unclear></w> 
-               <w><supplied reason="lost">ἀγοραί</supplied><lb break="no" n="71"/>οιϲ</w> <w>πάνυ</w> <w>ἐργῶδεϲ</w> <w>εἶναί</w> <w>μοι</w> 
-               <w><unclear>ἔ</unclear><supplied reason="lost">δοξεν</supplied></w> 
-               <supplied reason="lost"><w>ὁ</w> <w>γὰρ</w></supplied> 
-                  <w><supplied reason="lost">ἀ</supplied>νθύπατοϲ</w> 
-               <w>ὥϲπερ</w> <w>ἴϲτε</w> 
-               <w lemma="καί">καὶ</w> <w>ὑμεῖϲ</w> <w>ἐπιμ<unclear>ε</unclear><supplied reason="lost">λούμε</supplied><lb break="no" n="72"/>νοϲ</w> <w>ὁμοῦ</w> <w>τῆϲ</w> <w>τε</w> 
-               <placeName ref="#creteandcyrene" nymRef="#Κρήτη καὶ Κυρήνη"><placeName nymRef="#Κρήτη" ref="#crete">Κρήτηϲ</placeName> <w lemma="καί">καὶ</w> <w>τῆϲ</w> 
+               <w lemma="ἀξιόω">ἠξίουν</w> <w lemma="καί">καὶ</w> 
+               <w lemma="ἀγορά">ἀγορ<unclear>ὰ</unclear><supplied reason="lost">ν</supplied></w> 
+               <w lemma="δίκη"><supplied reason="lost" cert="low">δικῶν</supplied></w> 
+               <w lemma="αὐτοῦ"><supplied reason="lost">αὐτοῦ</supplied></w> 
+               <w lemma="ἄγω"><supplied reason="lost">ἀχθ</supplied><unclear>ῆναι</unclear></w> 
+               <w lemma="προστίθημι">προϲτεθῆναι</w> <w lemma="μέν">μὲν</w> <w lemma="οὖν">οὖν</w> <w lemma="ὁ">ταῖ<unclear>ϲ</unclear></w> 
+               <w lemma="ἀγοραῖος"><supplied reason="lost">ἀγοραί</supplied><lb break="no" n="71"/>οιϲ</w> <w lemma="πάνυ">πάνυ</w> <w lemma="ἐργώδης">ἐργῶδεϲ</w> <w lemma="εἰμί">εἶναί</w> <w lemma="ἐγώ">μοι</w> 
+               <w lemma="δοκέω"><unclear>ἔ</unclear><supplied reason="lost">δοξεν</supplied></w> 
+               <supplied reason="lost"><w lemma="ὁ">ὁ</w> <w lemma="γάρ">γὰρ</w></supplied> 
+                  <w lemma="ἀνθύπατος"><supplied reason="lost">ἀ</supplied>νθύπατοϲ</w> 
+               <w lemma="ὥσπερ">ὥϲπερ</w> <w lemma="οἶδα">ἴϲτε</w> 
+               <w lemma="καί">καὶ</w> <w lemma="σύ">ὑμεῖϲ</w> <w lemma="ἐπιμελέομαι">ἐπιμ<unclear>ε</unclear><supplied reason="lost">λούμε</supplied><lb break="no" n="72"/>νοϲ</w> <w lemma="ὁμοῦ">ὁμοῦ</w> <w lemma="ὁ">τῆϲ</w> <w lemma="τε">τε</w> 
+               <placeName ref="#creteandcyrene" nymRef="#Κρήτη καὶ Κυρήνη"><placeName nymRef="#Κρήτη" ref="#crete">Κρήτηϲ</placeName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῆϲ</w> 
                <placeName nymRef="#Κυρήνη" ref="#cyrene">Κυρήνηϲ</placeName></placeName> 
-               <w>οὐκ</w> <w>ἔϲτιν</w> <w>ἱκανὸϲ</w> <w>πλείω</w> <w>χρόνον</w> 
-               <w>διάγειν</w> <w lemma="ἐν">ἐν</w> <w>ὑ<lb break="no" n="73"/>μεῖν</w> <w>ἢ</w> <w>νῦν</w> <w>ποιεῖ</w> 
+               <w lemma="οὐ">οὐκ</w> <w lemma="εἰμί">ἔϲτιν</w> <w lemma="ἱκανός">ἱκανὸϲ</w> <w lemma="πλείων">πλείω</w> <w lemma="χρόνος">χρόνον</w> 
+               <w lemma="διάγω">διάγειν</w> <w lemma="ἐν">ἐν</w> <w lemma="σύ">ὑ<lb break="no" n="73"/>μεῖν</w> <w lemma="ἤ">ἢ</w> <w lemma="νῦν">νῦν</w> <w lemma="ποιέω">ποιεῖ</w> 
                <space quantity="1" unit="character"/> 
-               <w>ἀξιούντ<unclear>ω</unclear><supplied reason="lost">ν</supplied></w> 
-               <supplied reason="lost"><w>οὖν</w> <w>τῶν</w></supplied> 
+               <w lemma="ἀξιόω">ἀξιούντ<unclear>ω</unclear><supplied reason="lost">ν</supplied></w> 
+               <supplied reason="lost"><w lemma="οὖν">οὖν</w> <w lemma="ὁ">τῶν</w></supplied> 
                <placeName type="ethnic" nymRef="#Βερενικεύς" ref="#berenike"><unclear>Β</unclear>ερνεικέων</placeName> 
-               <w>παρὰ</w> <w>μέροϲ</w> <w>ἄγεϲθαι</w> 
-               <w>τὴν</w> <w>ἀγ<unclear>ο</unclear><supplied reason="lost" cert="low">ρὰν</supplied></w> 
-               <lb n="74"/> <w lemma="ἐν">ἐν</w> <w>ἑκάϲτῃ</w> <w>πόλει</w> <w>ἀπεκριν<unclear>ά</unclear><supplied reason="lost">μην</supplied></w> <supplied reason="lost"><w>ὅτι</w> <w>αἱ</w></supplied> 
-               <w><supplied reason="lost" cert="low">ν</supplied><unclear>ῦ</unclear>ν</w> <w>τὴν</w> 
-               <w>ἀγοραίαν</w> <w>ἔχουϲαι</w> <w>πόλειϲ</w> <w>ἄδηλόν</w> <w>ἐϲτιν</w> 
-               <w><supplied reason="lost">ὡϲ</supplied></w> 
-               <lb n="75"/> <w>δέξονται</w> <w lemma="ὁ">τὸ</w> <w>μὴ</w>
-               <w>κατ’</w><w>ἐνιαυ<unclear>τ</unclear><supplied reason="lost">ὸν</supplied></w> 
-               <w><supplied reason="lost">ἔχειν</supplied></w> 
-               <w><supplied reason="lost">ὥ</supplied>ϲπερ</w> <w>εἶχον</w> 
-               <space quantity="1" unit="character"/> <w>ἀφαιρεθῆναι</w> 
-               <w lemma="δέ">δὲ</w> <w>τοὺϲ</w> <w>ἔχονταϲ</w> 
-               <w lemma="ὑπέρ">ὑπὲρ</w> <w><unclear>τ</unclear><supplied reason="lost">οῦ</supplied></w> 
-               <lb n="76"/> <w>δοθῆναι</w> <w lemma="ὁ">τοῖϲ</w> <w>οὐκ</w> <w>ἔχουϲιν</w> <w><supplied reason="lost" cert="low">ἀδικῆϲ</supplied><unclear>α</unclear>ί</w> <w>μοι</w> 
-               <w>δοκεῖ</w> <w>πλὴν</w> <w>εἰ</w> <w>μὴ</w> <w>ἄρα</w> 
-               <w>ὑμεῖν</w> <w>βουλομένοιϲ</w> <w>εἴη<unclear>ν</unclear></w>
-               <w><unclear>τ</unclear><supplied reason="lost">ὸ</supplied></w>
-               <lb n="77"/> <w>τοιαύτην</w> <w>κοινωνίαν</w> 
-               <w><unclear>κ</unclear>α<supplied reason="lost">ταϲτῆϲαι</supplied></w> 
+               <w lemma="παρά">παρὰ</w> <w lemma="μέρος">μέροϲ</w> <w lemma="ἄγω">ἄγεϲθαι</w> 
+               <w lemma="ὁ">τὴν</w> <w lemma="ἀγορά">ἀγ<unclear>ο</unclear><supplied reason="lost" cert="low">ρὰν</supplied></w> 
+               <lb n="74"/> <w lemma="ἐν">ἐν</w> <w lemma="ἕκαστος">ἑκάϲτῃ</w> <w lemma="πόλις">πόλει</w> <w lemma="ἀποκρίνω">ἀπεκριν<unclear>ά</unclear><supplied reason="lost">μην</supplied></w> <supplied reason="lost"><w lemma="ὅτι">ὅτι</w> <w lemma="ὁ">αἱ</w></supplied> 
+               <w lemma="νῦν"><supplied reason="lost" cert="low">ν</supplied><unclear>ῦ</unclear>ν</w> <w lemma="ὁ">τὴν</w> 
+               <w lemma="ἀγοραῖος">ἀγοραίαν</w> <w lemma="ἔχω">ἔχουϲαι</w> <w lemma="πόλις">πόλειϲ</w> <w lemma="ἄδηλος">ἄδηλόν</w> <w lemma="εἰμί">ἐϲτιν</w> 
+               <w lemma="ὡς"><supplied reason="lost">ὡϲ</supplied></w> 
+               <lb n="75"/> <w lemma="δέχομαι">δέξονται</w> <w lemma="ὁ">τὸ</w> <w lemma="μή">μὴ</w>
+               <w lemma="κατά">κατ’</w><w lemma="ἐνιαυτός">ἐνιαυ<unclear>τ</unclear><supplied reason="lost">ὸν</supplied></w> 
+               <w lemma="ἔχω"><supplied reason="lost">ἔχειν</supplied></w> 
+               <w lemma="ὥσπερ"><supplied reason="lost">ὥ</supplied>ϲπερ</w> <w lemma="ἔχω">εἶχον</w> 
+               <space quantity="1" unit="character"/> <w lemma="ἀφαιρέω">ἀφαιρεθῆναι</w> 
+               <w lemma="δέ">δὲ</w> <w lemma="ὁ">τοὺϲ</w> <w lemma="ἔχω">ἔχονταϲ</w> 
+               <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="τις"><unclear>τ</unclear><supplied reason="lost">οῦ</supplied></w> 
+               <lb n="76"/> <w lemma="δίδωμι">δοθῆναι</w> <w lemma="ὁ">τοῖϲ</w> <w lemma="οὐ">οὐκ</w> <w lemma="ἔχω">ἔχουϲιν</w> <w lemma="ἀδικέω"><supplied reason="lost" cert="low">ἀδικῆϲ</supplied><unclear>α</unclear>ί</w> <w lemma="ἐγώ">μοι</w> 
+               <w lemma="δοκεύς">δοκεῖ</w> <w lemma="πλήν">πλὴν</w> <w lemma="εἰ">εἰ</w> <w lemma="μή">μὴ</w> <w lemma="ἄρα">ἄρα</w> 
+               <w lemma="σύ">ὑμεῖν</w> <w lemma="βούλομαι">βουλομένοιϲ</w> <w lemma="εἰμί">εἴη<unclear>ν</unclear></w>
+               <w lemma="ὁ"><unclear>τ</unclear><supplied reason="lost">ὸ</supplied></w>
+               <lb n="77"/> <w lemma="τοιοῦτος">τοιαύτην</w> <w lemma="κοινωνία">κοινωνίαν</w> 
+               <w lemma="καθίστημι"><unclear>κ</unclear>α<supplied reason="lost">ταϲτῆϲαι</supplied></w> 
                <space extent="unknown" unit="character"/>
-               <lb n="78"/><date ref="https://godot.date/id/GzEUcSgJNtPCh89vHpPaeL"><persName type="emperor" key="antoninuspius"><w>Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name> 
-                 <persName type="emperor" key="hadrianus"><w>θεοῦ</w> <name nymRef="Ἁδριανός">Ἁ<supplied reason="lost">δριανοῦ</supplied></name></persName> <w><supplied reason="lost">υἱ</supplied>όϲ</w>, 
-               <persName type="emperor" key="traianus"><w>θεοῦ</w> <name nymRef="Τραιανός">Τραιανοῦ</name> <name nymRef="Παρθικός">Παρθικοῦ</name></persName> 
-               <w>υἱωνόϲ</w>, <persName type="emperor" key="nerva"><w>θεοῦ</w> <name nymRef="Νέρβα">Νέρουα</name></persName> 
-                  <w>ἔγγ<supplied reason="lost">ο</supplied><lb break="no" n="79"/>νοϲ</w>, <name nymRef="Τίτος">Τίτοϲ</name> <name nymRef="Αἴλιος">Αἴλιοϲ</name> 
+               <lb n="78"/><date ref="https://godot.date/id/GzEUcSgJNtPCh89vHpPaeL"><persName type="emperor" key="antoninuspius"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name> 
+                 <persName type="emperor" key="hadrianus"><w lemma="θεός">θεοῦ</w> <name nymRef="Ἁδριανός">Ἁ<supplied reason="lost">δριανοῦ</supplied></name></persName> <w lemma="υἱός"><supplied reason="lost">υἱ</supplied>όϲ</w>, 
+               <persName type="emperor" key="traianus"><w lemma="θεός">θεοῦ</w> <name nymRef="Τραιανός">Τραιανοῦ</name> <name nymRef="Παρθικός">Παρθικοῦ</name></persName> 
+               <w lemma="υἱωνός">υἱωνόϲ</w>, <persName type="emperor" key="nerva"><w lemma="θεός">θεοῦ</w> <name nymRef="Νέρβα">Νέρουα</name></persName> 
+                  <w lemma="ἔγγονος">ἔγγ<supplied reason="lost">ο</supplied><lb break="no" n="79"/>νοϲ</w>, <name nymRef="Τίτος">Τίτοϲ</name> <name nymRef="Αἴλιος">Αἴλιοϲ</name> 
                   <name nymRef="Ἁδριανός">Ἁδριαν<supplied reason="lost">ὸϲ</supplied></name> 
                <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀντωνε</supplied>ῖνοϲ</name> <name nymRef="Σεβαστός">Ϲεβαϲτόϲ</name>, 
-               <w lemma="ἀρχιερεύς">ἀρχιερεὺϲ</w> <w>μέγιϲτοϲ</w> <w>δημαρχικῆϲ</w> <w>ἐξου<lb break="no" n="80"/>ϲίαϲ</w> <w lemma="ὁ">τὸ</w> <num value="17">ιζ</num>, 
-               <w>Αὐτοκράτω<supplied reason="lost">ρ</supplied></w> <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="2">β</num> </supplied>, 
+               <w lemma="ἀρχιερεύς">ἀρχιερεὺϲ</w> <w lemma="μέγας">μέγιϲτοϲ</w> <w lemma="δημαρχικός">δημαρχικῆϲ</w> <w lemma="ἐξουσία">ἐξου<lb break="no" n="80"/>ϲίαϲ</w> <w lemma="ὁ">τὸ</w> <num value="17">ιζ</num>, 
+               <w lemma="Αὐτοκράτωρ">Αὐτοκράτω<supplied reason="lost">ρ</supplied></w> <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="2">β</num> </supplied>, 
                <w lemma="ὕπατος"><supplied reason="lost">ὕπα</supplied>τοϲ</w> <w lemma="ὁ">τὸ</w> <num value="4">δ</num>, <w lemma="πατήρ">πατὴρ</w> <w lemma="πατρίς">πατρίδοϲ</w></persName></date>, 
                <placeName type="ethnic" nymRef="#Πτολεμαιεύς" ref="#ptolemais">Πτολεμαιεῦϲι</placeName> 
-               <placeName type="ethnic" nymRef="#Βαρκαῖος"  ref="#barke">Βαρκαίοι<supplied reason="lost">ϲι</supplied></placeName><supplied reason="lost"> <space extent="unknown" unit="character"/></supplied>
-               <lb n="81"/> <w>χαίρειν</w> <space unit="character" quantity="3"/> <w>θ<supplied reason="lost">αυμάζ</supplied>ω</w> <w>ὅτι</w> 
-               <w>μηδέποτε</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w>ἔμπροϲθεν</w> 
-               <w>χρόνῳ</w> <w>διαπέμψαν<supplied reason="lost">τεϲ</supplied></w> 
-               <supplied reason="lost"><w>ἀλλὰ</w></supplied> 
-               <lb n="82"/> <w>ϲυνθύϲαντεϲ</w> <w>εἰϲ</w> <w lemma="ὁ">τὸν</w> 
-               <w>τ<unclear>ῶ</unclear><supplied reason="lost">ν</supplied></w> 
+               <placeName type="ethnic" nymRef="#Βαρκαῖος" ref="#barke">Βαρκαίοι<supplied reason="lost">ϲι</supplied></placeName><supplied reason="lost"> <space extent="unknown" unit="character"/></supplied>
+               <lb n="81"/> <w lemma="χαίρω">χαίρειν</w> <space unit="character" quantity="3"/> <w lemma="θαυμάζω">θ<supplied reason="lost">αυμάζ</supplied>ω</w> <w lemma="ὅτι">ὅτι</w> 
+               <w lemma="μηδέποτε">μηδέποτε</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="ἔμπροσθεν">ἔμπροϲθεν</w> 
+               <w lemma="χρόνος">χρόνῳ</w> <w lemma="διαπέμπω">διαπέμψαν<supplied reason="lost">τεϲ</supplied></w> 
+               <supplied reason="lost"><w lemma="ἀλλά">ἀλλὰ</w></supplied> 
+               <lb n="82"/> <w lemma="συνθύω">ϲυνθύϲαντεϲ</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὁ">τὸν</w> 
+               <w lemma="ὁ">τ<unclear>ῶ</unclear><supplied reason="lost">ν</supplied></w> 
                   <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene"><supplied reason="lost">Κυρην</supplied><unclear>α</unclear>ίων</placeName> 
-               <w>ἀγῶνα</w> <w>νῦν</w> <w>πρῶτον</w> <w>ἀπεϲτείλατε</w>, 
-               <w>οὐ</w> <w>γὰρ</w> <w>ἀγνοεῖ<supplied reason="lost">τε</supplied></w> <supplied reason="lost"><w>ὅτι</w></supplied>
-               <lb n="83"/> <w lemma="ὁ">τὸ</w> <w lemma="ὁ">τὰ</w> <w>τοιαῦτα</w> 
-               <w>καινοτο<unclear>μ</unclear><supplied reason="lost">εῖν</supplied></w> 
-               <w><supplied reason="lost" cert="low">αἰτί</supplied>αν</w> <w>παρέχει</w> 
-               <w>ταῖϲ</w> <w>πόλεϲι</w> <w>φιλονεικίαϲ</w> 
-               <space quantity="1" unit="character"/> <w>ἐγένετο</w> 
-               <w>τοίνυ<supplied reason="lost">ν</supplied></w> 
-               <supplied reason="lost"><w>ἡ</w></supplied> 
-               <w><supplied reason="lost">ϲυν</supplied><lb break="no" n="84"/>θυϲία</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τοῦ</w> <w>ἔθνουϲ</w> <gap quantity="7" precision="low" unit="character" reason="lost"/><w part="F">ενα</w> 
-               <w>ἐπρέϲβευεν</w> <persName type="attested"><name nymRef="Οὐαλέριος">Οὐαλέριοϲ</name> 
-                  <name nymRef="Παυσανίας">Παυϲανίαϲ</name></persName> <w>ᾧ</w> <w lemma="ὁ">τὸ</w> 
-               <w>ἐφόδι<supplied reason="lost">ον</supplied></w> 
-               <w><supplied reason="lost">δοθή</supplied><lb break="no" n="85"/> τω</w> <w>εἰ</w> <w>μὴ</w> 
-               <w>προῖκα</w> <w>ὑπ<unclear>έϲ</unclear><supplied reason="lost">χηται</supplied></w> 
-               <w><supplied reason="lost">εὐτυ</supplied>χεῖτε</w> <space quantity="3" unit="character"/>
+               <w lemma="ἀγών">ἀγῶνα</w> <w lemma="νῦν">νῦν</w> <w lemma="πρῶτος">πρῶτον</w> <w lemma="ἀποστέλλω">ἀπεϲτείλατε</w>, 
+               <w lemma="οὐ">οὐ</w> <w lemma="γάρ">γὰρ</w> <w lemma="ἀγνοέω">ἀγνοεῖ<supplied reason="lost">τε</supplied></w> <supplied reason="lost"><w lemma="ὅτι">ὅτι</w></supplied>
+               <lb n="83"/> <w lemma="ὁ">τὸ</w> <w lemma="ὁ">τὰ</w> <w lemma="τοιοῦτος">τοιαῦτα</w> 
+               <w lemma="καινοτομέω">καινοτο<unclear>μ</unclear><supplied reason="lost">εῖν</supplied></w> 
+               <w lemma="αἰτία"><supplied reason="lost" cert="low">αἰτί</supplied>αν</w> <w lemma="παρέχω">παρέχει</w> 
+               <w lemma="ὁ">ταῖϲ</w> <w lemma="πόλις">πόλεϲι</w> <w lemma="φιλονεικία">φιλονεικίαϲ</w> 
+               <space quantity="1" unit="character"/> <w lemma="γίγνομαι">ἐγένετο</w> 
+               <w lemma="τοίνυν">τοίνυ<supplied reason="lost">ν</supplied></w> 
+               <supplied reason="lost"><w lemma="ὁ">ἡ</w></supplied> 
+               <w lemma="συνθυσία"><supplied reason="lost">ϲυν</supplied><lb break="no" n="84"/>θυϲία</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἔθνος">ἔθνουϲ</w> <gap quantity="7" precision="low" unit="character" reason="lost"/><w part="F">ενα</w> 
+               <w lemma="πρεσβεύω">ἐπρέϲβευεν</w> <persName type="attested"><name nymRef="Οὐαλέριος">Οὐαλέριοϲ</name> 
+                  <name nymRef="Παυσανίας">Παυϲανίαϲ</name></persName> <w lemma="ὅς">ᾧ</w> <w lemma="ὁ">τὸ</w> 
+               <w lemma="ἐφόδιον">ἐφόδι<supplied reason="lost">ον</supplied></w> 
+               <w lemma="δίδωμι"><supplied reason="lost">δοθή</supplied><lb 
+                  break="no" n="85"/>τω</w> <w lemma="εἰ">εἰ</w> <w lemma="μή">μὴ</w> 
+               <w lemma="προίξ">προῖκα</w> <w lemma="ὑπισχνέομαι">ὑπ<unclear>έϲ</unclear><supplied reason="lost">χηται</supplied></w> 
+               <w lemma="εὐτυχέω"><supplied reason="lost">εὐτυ</supplied>χεῖτε</w> <space quantity="3" unit="character"/>
             </ab>
             </div>
          <div type="textpart" subtype="part" n="2">
             <ab>
                <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
-               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>α</unclear></w> <w>πρὸϲ</w>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>α</unclear></w> <w lemma="πρός">πρὸϲ</w>
                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <space extent="unknown" unit="character"/> 
-               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ϲ</unclear>ε</w> <w>εἰϲ</w> <w lemma="ὁ">τὸ</w>
+               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ϲ</unclear>ε</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὁ">τὸ</w>
                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">δεύονται</w>
                <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><supplied reason="lost">ι</supplied>ϲταμαι</w> 
                <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><w part="M"><unclear>λ</unclear>ιπου<lb break="no" n="7"/><gap reason="lost" extent="unknown" unit="character"/></w> <space extent="unknown" unit="character"/>
@@ -614,7 +615,7 @@
      your claim [ . . . ] I wrote back what I thought and for you I sent (a text of) the reply pertaining thereto, 
       [which my friend ?Salvius] Carus the clarissimus proconsul [will give you]. Farewell.
     [The Barkans? say that] one ought to accept [delegates also from them]. 
-    Their vindications, however, are not justified. [They aspire to] the same [>rights as do 
+    Their vindications, however, are not justified. [They aspire to] the same [&gt;rights as do 
     the Cyrenaeans, whose] ancestry [away back was] pure Greek and specifically Dorian. 
     They themselves [long ago were] aborigines [and not Hellenes for the most part. 
     Rather] they acquired the classification from [ . . . ] city. With the Cyrenaeans sending two delegates [ . . .</p></div>
@@ -623,7 +624,7 @@
             
             <p><note>ll.25-68</note></p>
             </div>
-           <div  type="translation" source="#jmr1978a" xml:lang="en"> <p><note>Lines 69-77</note>: Chief points from letters of our lord Antoninus:
+           <div type="translation" source="#jmr1978a" xml:lang="en"> <p><note>Lines 69-77</note>: Chief points from letters of our lord Antoninus:
 The Bereniceans requested that an assize should be held in their city;
 but it seemed to me difficult to add to the number of court-days, for, as you know yourselves,
 the proconsul, having charge of Crete at the same time as of Cyrene, is unable to spend more time with you than he already does.
@@ -643,7 +644,7 @@ therefore common(?) sacrifice was established(?) for the whole province.
 Valerius Pausanias carried out the function of ambassador;
 travelling expenses should be paid to him unless he promised to pay them himself. Farewell.</p></div>
             
-            <div  type="translation" source="#oliver1979" xml:lang="en"> <p><note>Lines 78-85</note>: Imperator Caesar Titus Aelius Hadrian [Anton ]inus Augustus,
+            <div type="translation" source="#oliver1979" xml:lang="en"> <p><note>Lines 78-85</note>: Imperator Caesar Titus Aelius Hadrian [Anton ]inus Augustus,
 [son] of divus [Hadrian], grandson of divus Trajan Parthicus, greatgrandson
 of divus Nerva, pontifex maximus, tribunician power for the
 seventeenth time, imperator [twice, consul] four times, pater patriae,
@@ -708,8 +709,8 @@ Farewell.</p></div>
             <p>The first document, lines 1-78, is a letter of Hadrian to the people of Cyrene dated to CE 134/5, about two years after the foundation 
                of the Panhellenion and, as Oliver (op.cit.) points out, at a stage when consideration of applications 
                for membership must have taken up much of the time of its officers. Hadrian writes briefly to the Cyrenaeans on a subject on which he has been 
-               consulted by the  archon of the Panhellenion, and apparently also, though later, by the 
-               Cyrenaeans themselves, though  a Cyrenaean approach to the archon is probably implied as well. 
+               consulted by the&#x2028; archon of the Panhellenion, and apparently also, though later, by the 
+               Cyrenaeans themselves, though&#x2028; a Cyrenaean approach to the archon is probably implied as well. 
                He has made a decision, incorporated in a rescript to the archon, sends an additional document 
                to the Cyrenaeans and also refers to some action of the proconsul Salvius Carus.</p>
             <p>The second document is a copy of a letter from Antoninus Pius to 

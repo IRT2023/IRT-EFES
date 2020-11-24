@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -184,24 +184,24 @@
                            <lb n="0"/><note>It is possible to reconstruct a text from these fragments on the following lines:</note> 
                     <lb n="1"/><persName type="emperor" key="augustus"><w lemma="Αὐτοκράτωρ">Α<supplied reason="lost">ὐ</supplied>το<supplied reason="lost">κρ</supplied>άτορι</w> 
                         <name nymRef="Καῖσαρ"><supplied reason="lost">Κ</supplied>α<supplied reason="lost">ίσαρι</supplied></name> 
-                        <w><supplied reason="lost">θεῶ</supplied></w> 
-                  <w><supplied reason="lost">υἱ</supplied>ῷ</w>
-                        <w>θ<supplied reason="lost">εῷ</supplied></w> 
+                        <w lemma="θεός"><supplied reason="lost">θεῶ</supplied></w> 
+                  <w lemma="υἱός"><supplied reason="lost">υἱ</supplied>ῷ</w>
+                        <w lemma="θεός">θ<supplied reason="lost">εῷ</supplied></w> 
                   <name nymRef="Σεβαστός"><supplied reason="lost">Σεβα</supplied>στῷ</name></persName> 
                         <w lemma="ἀρχιερεύς">ἀ<supplied reason="lost">ρχιε</supplied>ρεῖ</w> 
                   <space quantity="1" unit="character"/> 
-                        <w><supplied reason="lost">τὸ</supplied>ν</w> <w>βωμὸν</w> 
-                  <w><supplied reason="lost">οἱ</supplied></w> 
-                        <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυραναῖοι</supplied></placeName> <w><supplied reason="lost">ἱδρύσαν</supplied>το</w>
+                        <w lemma="ὁ"><supplied reason="lost">τὸ</supplied>ν</w> <w lemma="βωμός">βωμὸν</w> 
+                  <w lemma="ὁ"><supplied reason="lost">οἱ</supplied></w> 
+                        <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυραναῖοι</supplied></placeName> <w lemma="ἱδρύω"><supplied reason="lost">ἱδρύσαν</supplied>το</w>
                </ab>
             </div>
             <div n="b" type="textpart"><ab>
               <lb n="1"/>
-                        <gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="anonymus"><persName type="emperor"  key="augustus"><name nymRef="Καῖσαρ">Καίσαρος</name> 
+                        <gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="anonymus"><persName type="emperor" key="augustus"><name nymRef="Καῖσαρ">Καίσαρος</name> 
                <name nymRef="Σεβαστός">Σε<supplied reason="lost">βασ</supplied>τῶ</name></persName> 
-                        <w>παιδ<supplied reason="lost">ὶ</supplied></w></persName> <gap reason="lost" extent="unknown" unit="character"><certainty match=".." locus="name"/></gap><supplied reason="lost"><w>τὸν</w> <w>βωμὸν</w> <w lemma="ὁ">οἱ</w> 
+                        <w lemma="παῖς">παιδ<supplied reason="lost">ὶ</supplied></w></persName> <gap reason="lost" extent="unknown" unit="character"><certainty match=".." locus="name"/></gap><supplied reason="lost"><w lemma="ὁ">τὸν</w> <w lemma="βωμός">βωμὸν</w> <w lemma="ὁ">οἱ</w> 
                                  <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυραναῖοι</placeName></supplied> 
-                        <w>ἱδρύσαντο</w>
+                        <w lemma="ἱδρύω">ἱδρύσαντο</w>
                         </ab>
                         </div>
          </div>

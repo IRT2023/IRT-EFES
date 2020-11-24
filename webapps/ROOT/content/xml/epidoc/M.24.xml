@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
          <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-22" who="Pietro">marked metadata</change>
@@ -124,7 +124,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
            <ab>
                <lb n="1"/><gap reason="lost" quantity="10" unit="character"/> <orig><unclear>λ</unclear>ω</orig>
-                    <lb n="2"/><placeName type="ethnic" nymRef="#Σύρος" ref="#syria"><supplied reason="lost">Ϲ</supplied>ύρο<unclear>ϲ</unclear></placeName> <w>κυ<unclear>ί</unclear>γκτηϲ</w> <date ref="https://godot.date/id/aNHe7rTzEijnddyZKPXD42"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w> <num value="70">ο</num></date>
+                    <lb n="2"/><placeName type="ethnic" nymRef="#Σύρος" ref="#syria"><supplied reason="lost">Ϲ</supplied>ύρο<unclear>ϲ</unclear></placeName> <w lemma="κυί́γκτος">κυ<unclear>ί</unclear>γκτηϲ</w> <date ref="https://godot.date/id/aNHe7rTzEijnddyZKPXD42"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w> <num value="70">ο</num></date>
               <lb n="3"/><gap reason="lost" extent="unknown" unit="line"/> 
                     
                 </ab>

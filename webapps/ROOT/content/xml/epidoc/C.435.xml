@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,10 +121,10 @@
                <ab>
                        <lb n="0"/><gap reason="illegible" quantity="7" unit="line"/>
                        <lb n="1"/> <gap reason="lost" extent="unknown" unit="character"/>
-                  <w><supplied reason="lost">fi</supplied><unclear>n</unclear>es</w>
-                       <lb n="2"/> <w><supplied reason="lost">occupa</supplied>tos</w> <w><supplied reason="lost">a</supplied></w> 
-                       <w>p<unclear>r</unclear>iu<unclear>a</unclear><lb n="3" break="no"/><supplied reason="lost">tis</supplied></w> 
-                    <expan>   <w><supplied reason="lost"><abbr>P</abbr><ex>opulo</ex></supplied></w>
+                  <w lemma="finis"><supplied reason="lost">fi</supplied><unclear>n</unclear>es</w>
+                       <lb n="2"/> <w lemma="occupo"><supplied reason="lost">occupa</supplied>tos</w> <w lemma="ab"><supplied reason="lost">a</supplied></w> 
+                       <w lemma="privatus">p<unclear>r</unclear>iu<unclear>a</unclear><lb n="3" break="no"/><supplied reason="lost">tis</supplied></w> 
+                    <expan>   <w lemma="populus"><supplied reason="lost"><abbr>P</abbr><ex>opulo</ex></supplied></w>
                   <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><supplied reason="lost"><abbr>R</abbr><ex>omano</ex></supplied></placeName> </expan>
                        <w lemma="restituo">re<unclear>st</unclear>itui<unclear>t</unclear></w>
                </ab>
@@ -132,17 +132,17 @@
             <div type="textpart" xml:lang="grc">
                <ab>
                        <lb n="1"/><persName type="emperor" key="nero"><name nymRef="Νέρων"><supplied reason="lost">Νέρων</supplied></name> <name nymRef="Κλαύδιος">Κλαύδιος</name>
-                       <lb n="2"/> <space quantity="1" unit="character"/> <persName type="emperor" key="claudius"><w>Θεοῦ</w>
+                       <lb n="2"/> <space quantity="1" unit="character"/> <persName type="emperor" key="claudius"><w lemma="θεός">Θεοῦ</w>
                        <name nymRef="Κλαύδιος">Κλαυδί<lb n="6" break="no"/> <space quantity="1" unit="character"/>oυ</name></persName>
-                          <w>υἱὸς</w> <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερ
+                          <w lemma="υἱός">υἱὸς</w> <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερ
                        <lb n="3" break="no"/>μανικοῦ</name> <name nymRef="Καῖσαρ">Καίσαρος</name></persName>
-                       <lb n="4"/> <w>ὑωνὸς</w>
+                       <lb n="4"/> <w lemma="ὑωνός">ὑωνὸς</w>
                           <persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name>
                              <name nymRef="Καῖσαρ">Καίσαρος</name>
-                       <lb n="5"/><name nymRef="Σεβαστός">Σεβαστοῦ</name></persName> <w lemma="καί">καὶ</w> <persName type="emperor" key="augustus"><w>θεοῦ</w>
+                       <lb n="5"/><name nymRef="Σεβαστός">Σεβαστοῦ</name></persName> <w lemma="καί">καὶ</w> <persName type="emperor" key="augustus"><w lemma="θεός">θεοῦ</w>
                        <lb n="6"/> <space quantity="1" unit="character"/> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName>
-                          <w>ἔγγο
-                             <lb n="11" break="no"/> <space quantity="5" unit="character"/>νος</w></persName>
+                          <w lemma="ἔγγονος">ἔγγο<lb 
+                             n="11" break="no"/> <space quantity="5" unit="character"/>νος</w></persName>
                        <lb n="11a"/> <space quantity="1" unit="line"/>
                </ab>
             </div>

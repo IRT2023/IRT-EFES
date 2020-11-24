@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -53,13 +52,11 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0200" precision="low" evidence="lettering"
-                        >Probably first to second centuries CE</origDate>
+                     <origDate notBefore="0001" notAfter="0200" precision="low" evidence="lettering">Probably first to second centuries CE</origDate>
                   </origin>
                   <provenance type="found">
                      <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>: 
-                        <placeName ref="https://www.slsgazetteer.org/1195">Safsaf</placeName>, on the upper Plateau; found in <date
-                           type="found">1963</date>.</p>
+                        <placeName ref="https://www.slsgazetteer.org/1195">Safsaf</placeName>, on the upper Plateau; found in <date type="found">1963</date>.</p>
                   </provenance>
                   <provenance type="observed">
                      <p><ref target="https://www.slsgazetteer.org/933">Cyrene Museum</ref>: Casa Parisi</p>
@@ -106,14 +103,14 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot" ref="http://sws.geonames.org/88603"
-                     >Safsaf</placeName>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/88603">Safsaf</placeName>
                </term>
             </keywords>
          </textClass>
          <creation>Transcription (Reynolds).</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to
             profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
@@ -141,7 +138,8 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><persName type="attested"><name nymRef="Ἱστιέα">Ἱϲτιέα</name></persName> <orig>ι</orig> <lb n="2" break="no"/><orig>ϲο</orig> 
-                    <date type="life-span" dur="P20Y"><w>ἐτῶ<lb n="3" break="no"/><space quantity="2" unit="character"/> ν</w> <space quantity="2" unit="character"/>
+                    <date type="life-span" dur="P20Y"><w lemma="ἔτος">ἐτῶ<lb 
+                       n="3" break="no"/><space quantity="2" unit="character"/> ν</w> <space quantity="2" unit="character"/>
                     <lb n="4"/><num value="20">κ</num> </date> <space quantity="4" unit="character"/>
                 </ab>
 </div>
@@ -152,7 +150,7 @@
                   <rdg resp="#cdlBE">Ἱϲτιέα ΙϹΟ</rdg>
                </app>
                <app loc="2">
-                  <rdg  resp="#jmr-bacchielli1987">Ο: either for Θ = (<foreign xml:lang="la">obiit</foreign>) or a mason's error for ΟϹ</rdg>
+                  <rdg resp="#jmr-bacchielli1987">Ο: either for Θ = (<foreign xml:lang="la">obiit</foreign>) or a mason's error for ΟϹ</rdg>
                </app>
             </listApp>
          </div>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>From previous publications (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-05" who="TW">tagged a word</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -122,7 +122,7 @@
                         <lb n="1"/><date ref="https://godot.date/id/pS6Ayesj6pG73ve2RUPurG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                             <num value="59">νθ</num> 
                             <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὶ</ex></expan></w>
-                            <rs type="month"  key="hathyr"><w>Ἁθὺρ</w></rs></date> 
+                            <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs></date> 
                         <lb n="2"/><persName type="attested" key="lgpn:V1-60655"><name nymRef="Ἀρίμμας">Ἀρίμμας</name>
                         <lb n="3"/><persName type="attested" key="lgpn:V1-60656"><name nymRef="Ἀπολλωνίδας">Ἀπολων 
                             <space quantity="1" unit="character"/> ίδα</name></persName></persName>
@@ -131,7 +131,7 @@
                         <lb n="5"/> 
                             <date ref="https://godot.date/id/6EiuauYdLetxAvj8WbPULg"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                             <num value="13">ιγ</num> 
-                            <w lemma="μείς">μηνὶ</w> <rs type="month"  key="hathyr"><w>Ἁθρύ</w></rs> <note>sic</note></date>
+                            <w lemma="μείς">μηνὶ</w> <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθρύ</w></rs> <note>sic</note></date>
                         <lb n="6"/><persName type="attested" key="lgpn:V1-60657"><name nymRef="Στρατώ">Στρατὼ</name> 
                             <persName type="attested" key="lgpn:V1-60658"><name nymRef="Φίλων">Φίλωνος</name></persName></persName> 
                         <lb n="7"/><date type="life-span" dur="P35Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
@@ -139,7 +139,7 @@
                         <lb n="8"/><date ref="https://godot.date/id/P9huWU5jGadUXbTVxF7dsG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>  
                             <num value="13">γι</num>  
                             <w lemma="μείς"><expan><abbr>μην</abbr><ex>ὶ</ex></expan></w>  
-                            <rs type="month"  key="choiak"><w lemma="Χοιάκ"><expan><abbr>Χο</abbr><ex>ιὰκ</ex></expan></w></rs></date>
+                            <rs type="month" key="choiak"><w lemma="Χοιάκ"><expan><abbr>Χο</abbr><ex>ιὰκ</ex></expan></w></rs></date>
                         <lb n="9"/><persName type="attested" key="lgpn:V1-60659"><name nymRef="Φίλων">Φίλων</name> 
                             <persName type="attested" key="lgpn:V1-60660"><name nymRef="Ἀρτάφαν">Ἀρταφᾶν<lb n="10" break="no"/>τος</name></persName></persName> 
                             <date type="life-span" dur="P11Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
@@ -147,9 +147,9 @@
                         <lb n="11"/><date ref="https://godot.date/id/P9huWU5jGadUXbTVxF7dsG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                             <num value="13">γι</num>  
                             <w lemma="μείς"><expan><abbr>μη</abbr><ex>νὶ</ex></expan></w> 
-                            <rs type="month"  key="choiak"><w  lemma="Χοιάκ"><expan><abbr>Χο</abbr><ex>ιὰκ</ex></expan></w></rs></date>
+                            <rs type="month" key="choiak"><w lemma="Χοιάκ"><expan><abbr>Χο</abbr><ex>ιὰκ</ex></expan></w></rs></date>
                         <lb n="12"/><persName type="attested" key="lgpn:V1-60654"><name nymRef="Ἀρτάφαν">Ἀρτάφαν</name> 
-                            <persName type="attested"  key="lgpn:V1-60660"><name nymRef="Ἀρτάφαν">Ἀρταφᾶντος</name></persName></persName> 
+                            <persName type="attested" key="lgpn:V1-60660"><name nymRef="Ἀρτάφαν">Ἀρταφᾶντος</name></persName></persName> 
                         <lb n="13"/><date type="life-span" dur="P8Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
                             <num value="8">η</num> </date>
                     </ab></div>
@@ -158,7 +158,7 @@
                         <lb n="1"/><date ref="https://godot.date/id/Tr3vRKfefHGiw4wbuLRXTY"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                             <num value="13">γι</num>
                         <lb n="2"/><w lemma="μείς"><expan><abbr>μη</abbr><ex>νὶ</ex></expan></w> 
-                            <rs type="month"  key="tybi"><w lemma="Τυβί">Τυβ<supplied reason="lost">ὶ</supplied></w></rs>
+                            <rs type="month" key="tybi"><w lemma="Τυβί">Τυβ<supplied reason="lost">ὶ</supplied></w></rs>
                         <lb n="3"/><num value="25">κε</num> </date>
                             <persName type="attested" key="lgpn:V1-60652"><name nymRef="Δαδος">Δαδος</name> 
                         <lb n="4"/><persName type="attested" key="lgpn:V1-60653"><name nymRef="Ὀνόμαρχος">Ὀνομάρ<lb n="5" break="no"/>χω</name></persName></persName> 
@@ -167,14 +167,14 @@
                         <lb n="5a"/><gap reason="lost" quantity="3" unit="line"/> 
                         <lb n="6"/><date ref="https://godot.date/id/6EiuauYdLetxAvj8WbPULg"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                             <num value="13">γ<unclear>ι</unclear></num> 
-                            <w lemma="μείς">μηνὶ</w> <rs type="month"  key="hathyr"><w>Ἁθὺρ</w></rs></date>
+                            <w lemma="μείς">μηνὶ</w> <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs></date>
                         <lb n="6a"/><gap reason="lost" extent="unknown" unit="line"/>
                     </ab>
 </div>
 </div>
           
           <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 9, mese Hathyr. Arimma di Apollonide, di anni 70.</p>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 9, mese Hathyr. Arimma di Apollonide, di anni 70.</p>
             <p>Anno 13, mese Hathry (Hathyr). Strato di Filone, di anni 35.</p>
             <p>Anno 13, mese Choiak. Filone di Artafàn, di anni 11.</p>
             <p>Anno 13, mese Choiak. Artafàn di Artafàn, di anni 8.</p>

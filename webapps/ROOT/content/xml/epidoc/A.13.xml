@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -123,7 +123,7 @@
                     <gap reason="lost" extent="unknown" unit="line"/>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
                     <space quantity="1" unit="character"/> <persName type="divine" key="apollo" cert="low"><name nymRef="Ap-"><seg part="I">A<unclear>p</unclear><supplied reason="lost">oll</supplied></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/><persName type="emperor" key="anonymus"><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>i</unclear></w> <w><expan><abbr>imp</abbr><ex>erator</ex></expan></w></persName>
+                    <lb n="2"/><persName type="emperor" key="anonymus"><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>i</unclear></w> <w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w></persName>
                     <space quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="3"/><note>erasure</note>
                     <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-canius"><seg part="F">canius</seg></name> <name nymRef="Ce-"><seg part="I">C<unclear>e</unclear></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
@@ -135,7 +135,7 @@
          </listApp></div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" xml:space="preserve" xml:lang="en" resp="#jmr"><p>
+            <div type="translation" xml:space="preserve" xml:lang="en" resp="#jmr"><p>
                . . . ] ?to Ap[ollo . . . ] emperor <note>case perhaps dative</note> 
                <note>erasure</note> . . . -]canius Ce[ . . . 
             </p></div>

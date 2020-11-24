@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-21" who="MGDA">Tagged header information</change>
@@ -119,7 +119,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/BcwJL846woVx95NLsfd9PK"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied> 
-                    <gap reason="lost" quantity="1" unit="character"/> <rs type="month"  key="mechir"><w>Μεχὶρ</w></rs>
+                    <gap reason="lost" quantity="1" unit="character"/> <rs type="month" key="mechir"><w lemma="Μεχίρ">Μεχὶρ</w></rs>
                     <lb n="2"/><gap reason="lost" quantity="1" unit="character"/></date> 
                     <persName type="attested"><name nymRef="Σεκόνδα">Σεκόνδ<lb n="3" break="no"/>α</name> <persName type="attested"><name nymRef="Πρίσκος">Π<unclear>ρί</unclear>σ<lb n="4" break="no"/><supplied reason="lost">κ</supplied>ου</name></persName></persName> <date type="life-span" dur="P15Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="15">ιε</num> </date>
@@ -139,7 +139,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>- Mecheir -.Seconda di Pesso, di anni 15.</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>- Mecheir -.Seconda di Pesso, di anni 15.</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/BcwJL846woVx95NLsfd9PK">[Year ?], Mecheir ?</ref>, Sekonda <supplied reason="explanation"><foreign xml:lang="la">Secunda</foreign></supplied> 
                <supplied reason="subaudible">daughter</supplied> of Priskos <supplied reason="explanation"><foreign xml:lang="la">Priscus</foreign></supplied>, aged 15.</p></div>
        </div>

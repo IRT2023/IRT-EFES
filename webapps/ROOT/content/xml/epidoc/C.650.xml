@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-21" who="CMR">added bibliography</change>
@@ -120,7 +120,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><persName type="attested"><name nymRef="Εὐκλῆς">Εὐκλῆϲ</name> <persName type="attested"><name nymRef="Χαιρεσίλαος" cert="low">Χαι<lb n="2" break="no"/><unclear>ρε</unclear><supplied reason="lost">ϲιλ</supplied>άου</name></persName></persName> 
-                    <lb n="3"/> <w>ἀπ<supplied reason="lost">έ</supplied>θανε</w> 
+                    <lb n="3"/> <w lemma="ἀποθνήσκω">ἀπ<supplied reason="lost">έ</supplied>θανε</w> 
                     <lb n="4"/><date type="life-span" dur="P30Y"><w lemma="ἔτος">ἐτῶν</w> <num value="30">λ</num> </date>
                 </ab>
 </div>

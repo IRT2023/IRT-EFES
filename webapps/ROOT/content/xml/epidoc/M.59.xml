@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -134,17 +134,17 @@
             <ab>
                         <lb n="1"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊοϲ</ex></expan></name> <name nymRef="Ἰούλιος">Ἰούλιοϲ</name> 
                         <name nymRef="Καπίτων">Καπίτων</name>
-            <lb n="2"/> <w>ὅϲ</w> <w lemma="καί">καὶ</w> 
+            <lb n="2"/> <w lemma="ὅς">ὅϲ</w> <w lemma="καί">καὶ</w> 
                         <name nymRef="Ὀδυσσεύς">Ὀδυϲ<supplied reason="lost">ϲ</supplied>εὺϲ</name></persName> 
                         <w lemma="ἥκω"><expan><abbr>ἥκ</abbr><ex cert="low">ω</ex></expan></w>
-                        <lb n="3"/> <w>ϲτρατιώτηϲ</w>
+                        <lb n="3"/> <w lemma="στρατιώτης">ϲτρατιώτηϲ</w>
                         <lb n="4"/><gap reason="lost" quantity="6" unit="character"/> <space quantity="1" unit="character"/> <date ref="https://godot.date/id/aiFranwdzxo4QonDse2yu2"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w> 
                         <num value="13">γι</num></date> 
                     </ab>
             </div>
             <div subtype="section" n="b" type="textpart">
                <ab>
-                        <lb n="1"/> <w><subst><del rend="corrected">θ</del><add place="overstrike">ν</add></subst>έων</w> 
+                        <lb n="1"/> <w lemma="θεός"><subst><del rend="corrected">θ</del><add place="overstrike">ν</add></subst>έων</w> 
                        <orig><unclear>δο</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
                     </ab></div><div subtype="section" n="c" type="textpart"><ab>
                         <lb n="1"/><persName type="attested"><name nymRef="Νικηφόρος">Νικηφόρος</name></persName> 
@@ -158,14 +158,14 @@
             <div subtype="section" n="f" type="textpart">
                <ab>
                   <lb n="1"/><persName type="attested"><name nymRef="Ἀριπαχθίς"><unclear>Ἀρ</unclear>ιπαχ<unclear>θ</unclear><supplied reason="lost" cert="low">ίς</supplied></name></persName>
-                        <date ref="https://godot.date/id/aiFranwdzxo4QonDse2yu2"><w><expan><abbr><am><unclear><g ref="symbols.xml#year"/></unclear></am></abbr><ex>ἔτους</ex></expan></w>
+                        <date ref="https://godot.date/id/aiFranwdzxo4QonDse2yu2"><w lemma="ἔτος"><expan><abbr><am><unclear><g ref="symbols.xml#year"/></unclear></am></abbr><ex>ἔτους</ex></expan></w>
                   <num value="13"><unclear>ιγ</unclear><certainty locus="value" match="../@value" cert="low"/></num></date> 
                        </ab>
                     </div>
             <div subtype="section" n="g" type="textpart">
                <ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
-                  <w>ϲτρατι<unclear>ώτ</unclear><supplied reason="lost">ηϲ</supplied></w>
+                  <w lemma="στρατιώτης">ϲτρατι<unclear>ώτ</unclear><supplied reason="lost">ηϲ</supplied></w>
                   <gap reason="lost" extent="unknown" unit="character"/>
                     </ab>
             </div>

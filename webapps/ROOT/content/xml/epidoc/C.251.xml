@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -106,6 +105,7 @@
          </textClass>
       <creation>Transcription from survuving stones, from photographs and from notes by Oliverio (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-01" who="Pietro">metadata</change>
@@ -124,7 +124,7 @@
       <graphic url="JMR_806_005" decls="#photograph"><desc>Text fragment a. vi and v in the order (Department of Antiquities, F. 412)</desc></graphic>
       <graphic url="JMR_806_004" decls="#photograph"><desc>Text fragment a.iv (Department of Antiquities, F.476)</desc></graphic>
       <graphic url="JMR_806_008" decls="#photograph"><desc><ref type="inscription" n="C.251">C.251</ref> a.vii above; 
-         <ref  type="inscription" n="C.261">C.261</ref> below (Department of Antiquities, F. 411)</desc></graphic>
+         <ref type="inscription" n="C.261">C.261</ref> below (Department of Antiquities, F. 411)</desc></graphic>
       <graphic url="JMR_806_002" decls="#photograph"><desc>Text fragment b.i</desc></graphic>
       <graphic url="JMR_806_006" decls="#photograph"><desc>Text fragment b.i and a.iii (Department of Antiquities, F. 410)</desc></graphic>
       <graphic url="JMR_806_003" decls="#photograph"><desc>Text fragment b.ii (Department of Antiquities, F. 466)</desc></graphic>
@@ -159,8 +159,8 @@
                     </div>-->
             <div type="edition" xml:lang="grc" xml:space="preserve">
                <div type="textpart" subtype="section" n="a"><ab>    
-                    <supplied reason="lost"><w>ὑπὲρ</w> <w>νείκης</w></supplied> 
-                        <persName type="emperor" key="commodus"><w><supplied reason="lost">Αὐτοκράτ</supplied><milestone unit="block" n="i"/>ορος</w> 
+                    <supplied reason="lost"><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="νίκη">νείκης</w></supplied> 
+                        <persName type="emperor" key="commodus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτ</supplied><milestone unit="block" n="i"/>ορος</w> 
                   <name nymRef="Καῖσαρ">Κα<supplied reason="lost">ίσαρος</supplied></name> 
                   <name nymRef="Μᾶρκος"><supplied reason="lost"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></supplied></name>
                             <name nymRef="Αὐρήλιος"><expan><abbr><milestone unit="block" n="ii"/><supplied reason="lost">Αὐρη</supplied><unclear>λ</unclear></abbr><supplied reason="lost"><ex>ίου</ex></supplied></expan></name>
@@ -168,7 +168,7 @@
          <supplied reason="lost"><name nymRef="Σεβαστός"><expan><abbr>Σεβ</abbr><ex>αστοῦ</ex></expan></name></supplied> 
                         <name nymRef="Γερμανικός"><supplied reason="lost" cert="low">Γερμα<milestone unit="block" n="v"/></supplied>νικ<supplied reason="lost">οῦ</supplied></name> 
                         <name nymRef="Σαρματικός"><milestone unit="block" n="vi"/><supplied reason="lost" cert="low">Σ</supplied>αρμ<milestone unit="block"/><supplied reason="lost">ατικοῦ</supplied></name>
-                    <milestone unit="block" n="vii"/><w><expan><abbr><supplied reason="lost" cert="low">με</supplied>γ</abbr><ex>ίστου</ex></expan></w><g ref="symbols.xml#stop"/></persName>
+                    <milestone unit="block" n="vii"/><w lemma="μέγας"><expan><abbr><supplied reason="lost" cert="low">με</supplied>γ</abbr><ex>ίστου</ex></expan></w><g ref="symbols.xml#stop"/></persName>
                </ab></div>
                
          <div subtype="section" n="b" type="textpart">

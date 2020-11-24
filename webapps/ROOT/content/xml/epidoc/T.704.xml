@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>From previous publications (Reynolds)</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-28" who="MGDA">Tagged header information</change>
@@ -118,7 +118,7 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/89Gu3ktkRRbYQPNE27SuSh"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
                         <num value="11">ια</num> 
-                        <rs type="month"  key="mechir"><w>Μ<unclear>ε</unclear><lb n="2" break="no"/>χὶρ</w></rs> 
+                        <rs type="month" key="mechir"><w lemma="Μεχίρ">Μ<unclear>ε</unclear><lb n="2" break="no"/>χὶρ</w></rs> 
                         <num value="24">δ<unclear>κ</unclear></num></date> 
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60126"><name nymRef="Φίλων">Φ<supplied reason="lost">ί</supplied>λω<lb n="4" break="no"/>ν</name>
                         <persName type="attested" key="lgpn:V1-60127"><name nymRef="Στράτων">Σ<unclear>τ</unclear>ρά<lb n="5" break="no"/>των<lb n="6" break="no"/><unclear>ο</unclear>ς</name></persName></persName>

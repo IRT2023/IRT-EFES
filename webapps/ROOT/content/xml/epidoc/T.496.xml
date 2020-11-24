@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -107,6 +106,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-22" who="MGDA">Tagged header information</change>
@@ -149,7 +149,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/ArzQUX4f7zCBQpyjAfvUZL"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
-                    <num value="19">ιθ</num> <rs type="month"  key="hathyr"><w>Ἁθὺρ</w></rs>  
+                    <num value="19">ιθ</num> <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs>  
                     <lb n="2"/> <num value="28">κη</num></date> <persName type="attested" key="lgpn:V1-60612"><name nymRef="Δωσίθεος">Δωσί<lb n="3" break="no"/>θεος</name> <persName type="attested" key="lgpn:V1-60611"><name nymRef="Ἀριστῆς">Ἀρισ<lb n="4" break="no"/>τεύς</name></persName></persName> 
                     <date type="life-span" dur="P14Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
                     <num value="14">ιδ</num> </date><!-- El Haddar 248 -->
@@ -157,8 +157,8 @@
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 19, Hathyr 28. Dositeo di Aristeo, di anni 14.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 19, 28.Hathyr, Dositheos des Aristes, 14 (Jahre)</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 19, Hathyr 28. Dositeo di Aristeo, di anni 14.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 19, 28.Hathyr, Dositheos des Aristes, 14 (Jahre)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/ArzQUX4f7zCBQpyjAfvUZL">Year 19, Hathyr 28</ref>, Dositheos <supplied reason="subaudible">son</supplied> of Aristes, aged 14.</p></div>
        </div>
         

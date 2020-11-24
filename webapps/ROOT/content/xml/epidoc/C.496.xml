@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-30" who="Pietro">updated from C37200 acording to text C.4 in Joyce2(text)-2.xcoded.doc</change>
@@ -119,9 +119,9 @@
                     <lb n="1"/><persName type="attested"><name nymRef="Κλαυδία"><expan><abbr>Κλ</abbr><ex>αυδία</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Βενόστα">Βενόστα</name> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-64602"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name>
                   <g ref="symbols.xml#stop"/> <name nymRef="Καρτισθένης">Καρτισ<lb n="2" break="no"/><g ref="symbols.xml#stop"/>θένους</name> <g ref="symbols.xml#stop"/> <name nymRef="Μελίωρ">Μελίορος</name></persName>
                        <space extent="unknown" unit="character"/>
-                    <lb n="3"/> <space extent="8" unit="character"/> <w>θυγάτηρ</w></persName> <space extent="8" unit="character"/>
-                    <lb n="4"/> <w>τὰν</w> <persName type="divine" key="kore"><name nymRef="Κόρη">Κόραν</name></persName> <space quantity="4" unit="character"/> 
-            <w>ἐκ</w> <w lemma="ὁ">τῶν</w> <w>ἰδίων</w>
+                    <lb n="3"/> <space extent="8" unit="character"/> <w lemma="θυγάτηρ">θυγάτηρ</w></persName> <space extent="8" unit="character"/>
+                    <lb n="4"/> <w lemma="ὁ">τὰν</w> <persName type="divine" key="kore"><name nymRef="Κόρη">Κόραν</name></persName> <space quantity="4" unit="character"/> 
+            <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w>
                     <lb n="5"/> <space quantity="6" unit="character"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w> <space quantity="6" unit="character"/>
                 </ab>
 </div>

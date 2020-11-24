@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -92,6 +91,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -112,13 +112,13 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="vespasianus"><date ref="https://godot.date/id/37Ff4FJdwVNjdPAhvUwDVP"><w lemma="ἀρχιερεύς"><supplied reason="lost">ἀρχιε</supplied><lb n="2" break="no"/>ρε<supplied reason="lost">ὺ</supplied>ς</w> <w><supplied reason="lost">μέγιστος</supplied></w> <w><supplied reason="lost">δ</supplied>η<lb n="3" break="no"/>μαρχικῆς</w> <w><unclear>ἐξουσίας </unclear></w>                   
-                    <lb n="4"/> <w lemma="ὁ">τὸ</w> <num value="9"><unclear>θ</unclear></num> <w>ὕπ<supplied reason="lost">ατο</supplied>ς</w> <w lemma="ὁ">τὸ</w> <num value="8">η</num> <w>κέν<unclear>σ</unclear>ορ</w>
-                    <lb n="5"/> <w>Αὐτοκρ<supplied reason="lost">άτ</supplied><unclear>ωρ</unclear></w></date> <w lemma="πατήρ">πατὴρ</w>                    
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="vespasianus"><date ref="https://godot.date/id/37Ff4FJdwVNjdPAhvUwDVP"><w lemma="ἀρχιερεύς"><supplied reason="lost">ἀρχιε</supplied><lb n="2" break="no"/>ρε<supplied reason="lost">ὺ</supplied>ς</w> <w lemma="μέγας"><supplied reason="lost">μέγιστος</supplied></w> <w lemma="δημαρχικός"><supplied reason="lost">δ</supplied>η<lb n="3" break="no"/>μαρχικῆς</w> <w lemma="ἐξουσία"><unclear>ἐξουσίας</unclear></w>                   
+                    <lb n="4"/> <w lemma="ὁ">τὸ</w> <num value="9"><unclear>θ</unclear></num> <w lemma="ὕπατος">ὕπ<supplied reason="lost">ατο</supplied>ς</w> <w lemma="ὁ">τὸ</w> <num value="8">η</num> <w lemma="κένσωρ">κέν<unclear>σ</unclear>ορ</w>
+                    <lb n="5"/> <w lemma="Αὐτοκράτωρ">Αὐτοκρ<supplied reason="lost">άτ</supplied><unclear>ωρ</unclear></w></date> <w lemma="πατήρ">πατὴρ</w>                    
                     <lb n="6"/> <w lemma="πατρίς">πατρ<supplied reason="lost"> <space quantity="1" unit="character"/> ί</supplied>δος</w></persName> 
-                    <w><unclear>ὁ</unclear>δ<supplied reason="lost">ο</supplied>ὺς</w>                    
-                    <lb n="7"/> <w>ἐπισκευάσαι</w>  <w>ἐ <space quantity="1" unit="character"/> κέλευ<lb n="8" break="no"/>σεν</w> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-m-0626"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <name nymRef="Μινίκιος">Μ<supplied reason="lost">ινι</supplied>κίου</name>                    
-                    <lb n="9"/><name nymRef="Ῥοῦφος">Ῥούφου</name></persName> <w><supplied reason="lost">ἀ</supplied>ν<supplied reason="lost">θυπάτου</supplied></w>                    
+                    <w lemma="ὁδός"><unclear>ὁ</unclear>δ<supplied reason="lost">ο</supplied>ὺς</w>                    
+                    <lb n="7"/> <w lemma="ἐπισκευάζω">ἐπισκευάσαι</w>  <w lemma="κελεύω">ἐ <space quantity="1" unit="character"/> κέλευ<lb n="8" break="no"/>σεν</w> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-m-0626"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <name nymRef="Μινίκιος">Μ<supplied reason="lost">ινι</supplied>κίου</name>                    
+                    <lb n="9"/><name nymRef="Ῥοῦφος">Ῥούφου</name></persName> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀ</supplied>ν<supplied reason="lost">θυπάτου</supplied></w>                    
                     <lb n="9a"/><gap reason="lost" extent="unknown" unit="line"/>
                 </ab>
 </div>

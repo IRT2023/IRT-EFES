@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -94,6 +93,7 @@
          </textClass>
       <creation>From previous publications (Roueché).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          
          <change when="2017-03-27" who="CR">transcribed: created from template</change>
       </revisionDesc>
@@ -108,7 +108,7 @@
          
          <div type="edition" xml:space="preserve">
                         <div type="textpart" n="a" xml:lang="la">
-                    <lb n="1"/><ab><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><persName type="emperor" key="vespasianus"><w><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">Caesar</name>
+                    <lb n="1"/><ab><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><persName type="emperor" key="vespasianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">Caesar</name>
                     <lb n="2"/><name nymRef="Vespasianus">V<supplied reason="lost">e</supplied>sp<supplied reason="lost">a</supplied>sianu<supplied reason="lost">s</supplied></name>
                     <lb n="3"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name></persName> <expan><w lemma="pontifex"><abbr>pont</abbr><ex>ifex</ex></w> 
                     <w lemma="maximus"><abbr>ma<supplied reason="lost">x</supplied></abbr><ex>imus</ex></w></expan>
@@ -120,8 +120,8 @@
                     <lb n="6"/><num value="3">III</num> <w lemma="designo"><expan><abbr>desig</abbr><ex>natus</ex></expan></w> <num value="4">IIII</num></date>, 
                     <w lemma="per">per</w> 
                      <lb n="7"/><persName type="attested" key="pir2-p-0027"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintum</ex></expan></name> <name nymRef="Paconius">Paconium</name>
-                    <lb n="8" /><name nymRef="Agrippinus">Agrippinum</name></persName> <w lemma="legatus"><expan><abbr>leg</abbr><ex>atum</ex></expan></w>
-                    <lb n="9"/><w lemma="suus">suum</w> <expan><w><abbr>P</abbr><ex>opulo</ex></w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName></expan> 
+                    <lb n="8"/><name nymRef="Agrippinus">Agrippinum</name></persName> <w lemma="legatus"><expan><abbr>leg</abbr><ex>atum</ex></expan></w>
+                    <lb n="9"/><w lemma="suus">suum</w> <expan><w lemma="populus"><abbr>P</abbr><ex>opulo</ex></w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName></expan> 
                               <w lemma="hortus">hortos</w>
                     <lb n="10"/> <w lemma="restituo"><supplied reason="lost">restitui</supplied>t</w> <space quantity="3" unit="character"/> 
                 </ab></div>

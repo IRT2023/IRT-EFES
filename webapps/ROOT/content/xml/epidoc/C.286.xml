@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -145,7 +145,7 @@
                   <w lemma="καί">καὶ</w> 
                         <w lemma="διαμονή">δια<space quantity="1" unit="character"/><lb n="7" break="no"/>μονῆς</w>
                   <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῦ</w> 
-                        <lb n="8"/> <w><supplied reason="lost">σύ</supplied>νπαντος</w> 
+                        <lb n="8"/> <w lemma="σύμπας"><supplied reason="lost">σύ</supplied>νπαντος</w> 
                         <w lemma="αὐτός"><supplied reason="lost">αὐ</supplied><lb n="9" break="no"/><supplied reason="lost">τοῦ</supplied></w> 
                         <w lemma="οἶκος">οἴκου</w> <w lemma="καί">καὶ</w> <space quantity="1" unit="character"/>
                         <lb n="10"/><w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w> <w lemma="ἱερός">ἱερᾶς</w> 
@@ -168,11 +168,11 @@
                         <lb n="19"/><w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-63419"><name nymRef="Βωλακλῆς">Βωλακλέος</name></persName></persName> 
                         <w lemma="ἱέρεια">ἱ<lb n="20" break="no"/>έρεια</w>
                         <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις">Ἀρτέμιδος</name></persName> 
-                        <lb n="21"/> <w>ἀριστιεῖ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τὴν</w>
+                        <lb n="21"/> <w lemma="ἀριστίζω">ἀριστιεῖ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τὴν</w>
                         <lb n="22"/><w lemma="πόλις">πόλιν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὴν</w> 
                         <w lemma="χώρα">χώραν</w>
-                        <lb n="23"/> <w><supplied reason="lost">κα</supplied>τοικούσας</w> 
-                        <w>πα<unclear>ρ</unclear><lb n="24" break="no"/><supplied reason="lost">θένους</supplied></w>
+                        <lb n="23"/> <w lemma="κατοικέω"><supplied reason="lost">κα</supplied>τοικούσας</w> 
+                        <w lemma="παρθένος">πα<unclear>ρ</unclear><lb n="24" break="no"/><supplied reason="lost">θένους</supplied></w>
                         <gap reason="lost" extent="unknown" unit="character"/>
          </ab>
             </div>
@@ -185,14 +185,14 @@
                         <lb n="3"/><orig>χεριων</orig><gap reason="lost" extent="unknown" unit="character"/>
                         <lb n="4"/><orig>μοιηα<unclear>λ</unclear></orig> 
                         <gap reason="lost" extent="unknown" unit="character"/>   
-                        <lb n="5"/><date><date ref="https://godot.date/id/yT8EfpuY7WoCLx8Lpx7RLJ"><w lemma="ὁ">τ<unclear>ῇ</unclear></w> <w><expan><abbr>ἕκ</abbr><ex>τῃ</ex></expan></w>
-               <w lemma="ὁ">τοῦ</w> <rs type="month" key="mesore"><w>Μ<supplied reason="lost">εσορὴ</supplied></w></rs>
+                        <lb n="5"/><date><date ref="https://godot.date/id/yT8EfpuY7WoCLx8Lpx7RLJ"><w lemma="ὁ">τ<unclear>ῇ</unclear></w> <w lemma="ἕκτος"><expan><abbr>ἕκ</abbr><ex>τῃ</ex></expan></w>
+               <w lemma="ὁ">τοῦ</w> <rs type="month" key="mesore"><w lemma="Μεσορή">Μ<supplied reason="lost">εσορὴ</supplied></w></rs>
                        <w lemma="μείς"><supplied reason="lost">μη</supplied><lb n="6" break="no"/>νὸς</w> 
                         <w lemma="ἔτος">ἔτου<supplied reason="lost">ς</supplied></w>
                <num value="136"><supplied reason="lost">ρλϛ</supplied></num></date> 
                         <w lemma="ὁ"><supplied reason="lost">τοῦ</supplied></w>  
                         <lb n="7"/><w lemma="καί">καὶ</w> <date ref="https://godot.date/id/2D4CN3sLZWtH5jr8iwY4W3"><num value="9"><unclear>θ</unclear></num> 
-                        <persName type="emperor" key="traianus"><w>Αὐ<unclear>τ</unclear><supplied reason="lost">οκράτορος</supplied></w>   
+                        <persName type="emperor" key="traianus"><w lemma="Αὐτοκράτωρ">Αὐ<unclear>τ</unclear><supplied reason="lost">οκράτορος</supplied></w>   
                         <lb n="8"/><name nymRef="Νέρβα">Νέ<unclear>ρο</unclear><supplied reason="lost">υα</supplied></name> 
                         <name nymRef="Τραιανός"><supplied reason="lost">Τραιανοῦ</supplied></name> <name nymRef="Σεβαστός">Σε<lb n="9" break="no"/><unclear>β</unclear>
                            <supplied reason="lost">α</supplied><unclear>σ</unclear><supplied reason="lost">τοῦ</supplied></name></persName></date></date>

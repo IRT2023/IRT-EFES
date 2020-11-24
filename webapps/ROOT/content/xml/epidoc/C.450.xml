@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,12 +101,13 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-03" who="Pietro">markup of text and metadata</change>
          <change when="2010-08-14" who="CMR">created from JMR's notes</change>
       </revisionDesc>
-   </teiHeader><facsimile><surface></surface><!-- addimage White829_IRCyrC.450.jpg --></facsimile>
+   </teiHeader><facsimile><surface/><!-- addimage White829_IRCyrC.450.jpg --></facsimile>
    <text>
       <body>
          <div type="bibliography">
@@ -125,9 +125,9 @@
           <lb n="2"/> <w lemma="καί">καὶ</w> <persName type="divine" key="kore"><name nymRef="Κόρη">Κό<supplied reason="lost">ραι</supplied></name></persName>             
             <lb n="3"/><persName type="attested"><name nymRef="Μνασώ">Μνασὼ</name> <persName type="attested"><name nymRef="Εὐκλείδας">Εὐκλε<supplied reason="lost">ίδα</supplied></name></persName></persName>             
             <lb n="4"/> <w lemma="ὑπερδικέω">ὑπερδικήσαισαν</w>
-             <lb n="5"/> <w lemma="καί">καὶ</w> <w>ἱερατεύσαισαν</w>
+             <lb n="5"/> <w lemma="καί">καὶ</w> <w lemma="ἱερατεύω">ἱερατεύσαισαν</w>
             <lb n="6"/><persName type="attested"><name nymRef="Ἀρίσταρχος">Ἀρίσταρχος</name> <persName type="attested"><name nymRef="Θεύχρηστος">Θευχρήστω</name></persName></persName>            
-            <lb n="7"/> <space quantity="1" unit="character"/> <w>τὰν</w> <w>γ<space quantity="1" unit="character"/>υναῖκα</w> <space quantity="2" unit="character"/>
+            <lb n="7"/> <space quantity="1" unit="character"/> <w lemma="ὁ">τὰν</w> <w lemma="γυνή">γ<space quantity="1" unit="character"/>υναῖκα</w> <space quantity="2" unit="character"/>
                 </ab>
 </div>
          

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -108,6 +107,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
           <change when="2011-03-16" who="MGDA">Tagged header information</change>
@@ -154,7 +154,7 @@
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="part" n="i" type="textpart"><ab>
-                           <lb n="1"/><persName type="attested"  key="lgpn:V1-60217"><name nymRef="Ἀπολλώνιος">Ἀπολ<milestone unit="block"/>λώνιοϲ</name></persName>
+                           <lb n="1"/><persName type="attested" key="lgpn:V1-60217"><name nymRef="Ἀπολλώνιος">Ἀπολ<milestone unit="block"/>λώνιοϲ</name></persName>
                        </ab></div>
             <div subtype="part" n="ii" type="textpart"><ab>
                            <lb n="1"/><date ref="https://godot.date/id/Ee7cqUpNoSaN32zaZytNsM"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="7">ζ</num></date>
@@ -162,10 +162,9 @@
             <div subtype="part" n="iii" type="textpart"><ab>
                            <lb n="1"/><date ref="https://godot.date/id/puESXHZfTKfs9yv8eWsbnh"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="40">μ</num></date>
                            <lb n="2"/> <persName type="attested" key="lgpn:V1-60222"><name nymRef="Ἀτθυμάλλας">Ἀτθυμάλλας</name></persName>
-                           <w><expan><abbr><expan><abbr><g ref="symbols.xml#ΦΙΛ"/></abbr><ex>φίλ</ex></expan></abbr><ex>ος</ex></expan></w>
+                           <w lemma="φίλος"><expan><abbr><expan><abbr><g ref="symbols.xml#ΦΙΛ"/></abbr><ex>φίλ</ex></expan></abbr><ex>ος</ex></expan></w>
                            <lb n="3"/><persName type="attested" key="lgpn:V1-60219"><name nymRef="Στρατοκλῆς">Στρα<milestone unit="block"/>τοκλεῖ</name></persName> 
-                       </ab></div
-            ><div subtype="part" n="iv" type="textpart"><ab>
+                       </ab></div><div subtype="part" n="iv" type="textpart"><ab>
                            <lb n="1"/><date ref="https://godot.date/id/uggB4UR8WuKoFkouddSKob"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="8">η</num></date> 
                            <persName type="attested" key="lgpn:V1-60220"><name nymRef="Δαμοκλῆς">Δαμο<milestone unit="block"/>κλῆ<milestone unit="block"/>ϲ</name>
                    <lb n="2"/> <persName type="attested" key="lgpn:V1-60221"><name nymRef="Δαμοκλῆς">Δα<milestone unit="block"/>μοκλε<milestone unit="block"/>ῦϲ</name></persName></persName>
@@ -207,7 +206,7 @@
                 </listApp>
          </div>
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>164: -ni Apollonio. Anno 40, Ethimalla Fi- di Stratocle. 
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>164: -ni Apollonio. Anno 40, Ethimalla Fi- di Stratocle. 
                Anno 8, Democle di Democle, Emisathis ?. 165: Anisan di Nicasia? F- oc- di Eutacto ?</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> Apollonios.</p> 
                <p><note>ii</note> <ref target="https://godot.date/id/Ee7cqUpNoSaN32zaZytNsM">Year 7</ref>. </p> 

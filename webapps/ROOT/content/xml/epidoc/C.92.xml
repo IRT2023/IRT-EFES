@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -111,6 +110,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -142,16 +142,16 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
              
             <ab>
-                    <lb n="1"/><date ref="https://godot.date/id/LAY5ZzaWdDdxtLXzJM8Q6M"><persName type="emperor" key="domitianus"><w><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">Caesa<supplied reason="lost">r</supplied></name> 
-                    <w><supplied reason="lost">diui</supplied></w> <name nymRef="Vespasianus"><supplied reason="lost">Ve</supplied>spasia<supplied reason="lost">ni</supplied></name> <w><supplied reason="lost"><expan><abbr>f</abbr><ex>ilius</ex></expan></supplied></w>
+                    <lb n="1"/><date ref="https://godot.date/id/LAY5ZzaWdDdxtLXzJM8Q6M"><persName type="emperor" key="domitianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">Caesa<supplied reason="lost">r</supplied></name> 
+                    <w lemma="divus"><supplied reason="lost">diui</supplied></w> <name nymRef="Vespasianus"><supplied reason="lost">Ve</supplied>spasia<supplied reason="lost">ni</supplied></name> <w lemma="filius"><supplied reason="lost"><expan><abbr>f</abbr><ex>ilius</ex></expan></supplied></w>
                    <del><name nymRef="Domitianus"><supplied reason="lost" evidence="previouseditor">Domi</supplied>tia<supplied reason="lost">nus</supplied></name></del> 
                         <name nymRef="Augustus"><supplied reason="lost"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></supplied></name>
-                        <name nymRef="Germanicus"><supplied reason="lost">Germani</supplied><unclear>c</unclear>us</name> <w><expan><abbr>p</abbr><ex>ontifex</ex></expan></w> 
-                    <w><expan><abbr>m</abbr><ex>aximus</ex></expan></w> <w><expan><abbr>tribu<unclear>n</unclear></abbr><supplied reason="lost" evidence="previouseditor"><ex>icia</ex></supplied></expan></w> <w><supplied reason="lost" evidence="previouseditor"><expan><abbr>pot</abbr><ex>estate</ex></expan></supplied></w> 
+                        <name nymRef="Germanicus"><supplied reason="lost">Germani</supplied><unclear>c</unclear>us</name> <w lemma="pontifex"><expan><abbr>p</abbr><ex>ontifex</ex></expan></w> 
+                    <w lemma="maximus"><expan><abbr>m</abbr><ex>aximus</ex></expan></w> <w lemma="tribunicius"><expan><abbr>tribu<unclear>n</unclear></abbr><supplied reason="lost" evidence="previouseditor"><ex>icia</ex></supplied></expan></w> <w lemma="potestas"><supplied reason="lost" evidence="previouseditor"><expan><abbr>pot</abbr><ex>estate</ex></expan></supplied></w> 
                        <num><gap reason="lost" extent="unknown" unit="character"/></num>
-                    <lb n="2"/> <space quantity="10" unit="character"/> <w><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w>
+                    <lb n="2"/> <space quantity="10" unit="character"/> <w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w>
                     <num value="2"><gap reason="lost" atLeast="1" atMost="4" unit="character"/>II</num> 
-                    <w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w></persName>
+                    <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w></persName>
                     <num atLeast="10"><unclear>X</unclear><gap reason="lost" quantity="2" unit="character"/></num></date> 
                   <expan><w lemma="pater"><abbr><unclear>p</unclear></abbr><ex>ater</ex></w> <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan>
                     <w lemma="censor">censor</w> <w lemma="perpetuus">perpe<supplied reason="lost">tuus</supplied></w> 

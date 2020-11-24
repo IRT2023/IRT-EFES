@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -111,6 +110,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-06" who="MGDA">fixed Goodchild bibliography</change>
@@ -150,7 +150,7 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
             <div type="textpart" n="1: Upper line"><div subtype="fragment" n="a-c" type="textpart"><ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="emperor" key="gratianus"><name nymRef="Gratianus"><supplied reason="lost" cert="low">Gratia</supplied>num</name></persName> 
-                        <w lemma="uictor">uic<supplied reason="lost">t</supplied>ores</w> <w>ac</w> 
+                        <w lemma="uictor">uic<supplied reason="lost">t</supplied>ores</w> <w lemma="ac">ac</w> 
             <w lemma="triumfator"><supplied reason="lost">t</supplied>riumfatores</w> 
                <w lemma="semper">semper</w> <persName type="emperor" key="anonymi"><name nymRef="Augustus"><seg>A<supplied reason="lost">ugustos</supplied></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
          </ab>
@@ -164,7 +164,7 @@
                         <w lemma="et">e<supplied reason="lost">t</supplied></w><gap reason="ellipsis" extent="unknown" unit="character"/>
             </ab>
             </div></div>
-           <div  type="textpart" n="2: Lower line"> <div subtype="fragment" n="f" type="textpart">
+           <div type="textpart" n="2: Lower line"> <div subtype="fragment" n="f" type="textpart">
                <ab>
                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="numen">numini</w> 
                            <w lemma="maiestas">maiestati</w><w lemma="que">que</w></supplied> <w lemma="is">eorum</w> <w lemma="semper">semper</w> <supplied reason="lost"><w lemma="dicatus">dicatus</w></supplied>
@@ -180,7 +180,7 @@
          </div>
          <div type="apparatus">
             <head>Apparatus</head><listApp>
-                    <app loc="1, a-c"><rdg  resp="#rgg1961">
+                    <app loc="1, a-c"><rdg resp="#rgg1961">
                   <note>: perhaps in aeter]num</note></rdg>
                </app>
                     <app loc="1, d-e">

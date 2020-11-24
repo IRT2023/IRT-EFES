@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
@@ -115,35 +115,35 @@
          </div>
          
          <div type="edition" xml:space="preserve"><div subtype="face" n="a" xml:lang="la" type="textpart"><ab>
-                        <lb n="1"/><date ref="https://godot.date/id/C7ukfrk7rQKXGXHPRQRrJY"><persName type="emperor" key="vespasianus"><w><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">Cae<lb n="2" break="no"/>sar</name>
+                        <lb n="1"/><date ref="https://godot.date/id/C7ukfrk7rQKXGXHPRQRrJY"><persName type="emperor" key="vespasianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">Cae<lb n="2" break="no"/>sar</name>
                     <name nymRef="Vespasianus">Vespasi<lb n="3" break="no"/>anus</name>
-                    <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name></persName> <expan><w><abbr>pont</abbr><ex>ifex</ex></w> 
-                    <lb n="4"/> <w><abbr>max</abbr><ex>imus</ex></w></expan> <expan><w><abbr>trib</abbr><ex>unicia</ex></w>
-                    <w><abbr>pot</abbr><ex>estate</ex></w></expan> <num value="4">IIII</num>
-                    <lb n="5"/> <w><expan><abbr>imp</abbr><ex>erator</ex></expan></w>
+                    <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name></persName> <expan><w lemma="pontifex"><abbr>pont</abbr><ex>ifex</ex></w> 
+                    <lb n="4"/> <w lemma="maximus"><abbr>max</abbr><ex>imus</ex></w></expan> <expan><w lemma="tribunicius"><abbr>trib</abbr><ex>unicia</ex></w>
+                    <w lemma="potestas"><abbr>pot</abbr><ex>estate</ex></w></expan> <num value="4">IIII</num>
+                    <lb n="5"/> <w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w>
                     <num value="8">VIII</num> <expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> 
-                    <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan> <w><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                    <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
                     <num value="4">IIII</num></date>
                     <lb n="6"/><w lemma="per">per</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintum</ex></expan></name> <name nymRef="Paconius">Paconi<lb n="7" break="no"/>um</name>
                     <name nymRef="Agrippinus">Agrippinum</name></persName><lb n="8"/> <w lemma="legatus"><expan><abbr>leg</abbr><ex>atum</ex></expan></w>
-                    <w lemma="suus">suum</w> <expan><w><abbr>P</abbr><ex>opulo</ex></w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName></expan> 
+                    <w lemma="suus">suum</w> <expan><w lemma="populus"><abbr>P</abbr><ex>opulo</ex></w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName></expan> 
                     <w lemma="res">res<lb n="9" break="no"/> <space quantity="1" unit="character"/>tituit</w> <space quantity="1" unit="character"/> 
                 </ab></div>
             <div subtype="face" n="b" xml:lang="grc" type="textpart"><ab>
-                        <lb n="1"/><date ref="https://godot.date/id/C7ukfrk7rQKXGXHPRQRrJY"><persName type="emperor" key="vespasianus"><w>Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖσαρ</name>
-                        <lb n="2"/> <name nymRef="Οὐεσπασιανός">Οὐεσπασιανὸς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιε
-                           <lb n="3" break="no"/>ρεὺς</w> <w>μέγιστος</w> <w>δημ
-                              <lb n="3" break="no"/>αρχικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <w lemma="ὁ">τὸ</w> <num value="4">δ</num> <w>αὐτο
-                                 <lb n="6" break="no"/><supplied reason="lost">κρ</supplied><unclear>ά</unclear>τ<unclear>ω</unclear><supplied reason="lost">ρ</supplied></w>
-                        <w lemma="ὁ">τὸ</w> <num value="8">η</num> <w>π<unclear>α</unclear>
-                           <lb n="7" break="no"/><supplied reason="lost">τὴρ</supplied></w> <w><supplied reason="lost">πα</supplied>τρίδος</w>
-                        <w>ὕ<lb n="8" break="no"/><supplied reason="lost">πατο</supplied>ς</w> 
-                        <num value="4">δ</num></date> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> 
+                        <lb n="1"/><date ref="https://godot.date/id/C7ukfrk7rQKXGXHPRQRrJY"><persName type="emperor" key="vespasianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖσαρ</name>
+                        <lb n="2"/> <name nymRef="Οὐεσπασιανός">Οὐεσπασιανὸς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιε<lb 
+                           n="3" break="no"/>ρεὺς</w> <w lemma="μέγας">μέγιστος</w> <w lemma="δημαρχικός">δημ<lb 
+                              n="3" break="no"/>αρχικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <w lemma="ὁ">τὸ</w> <num value="4">δ</num> <w lemma="Αὐτοκράτωρ">αὐτο<lb 
+                                 n="6" break="no"/><supplied reason="lost">κρ</supplied><unclear>ά</unclear>τ<unclear>ω</unclear><supplied reason="lost">ρ</supplied></w>
+                        <w lemma="ὁ">τὸ</w> <num value="8">η</num> <w lemma="πατήρ">π<unclear>α</unclear><lb 
+                           n="7" break="no"/><supplied reason="lost">τὴρ</supplied></w> <w lemma="πατρίς"><supplied reason="lost">πα</supplied>τρίδος</w>
+                        <w lemma="ὕπατος">ὕ<lb n="8" break="no"/><supplied reason="lost">πατο</supplied>ς</w> 
+                        <num value="4">δ</num></date> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> 
                         <name nymRef="Πακώνιος">Πα<lb n="9" break="no"/><supplied reason="lost">κ</supplied>ωνίου</name>
-                        <name nymRef="Ἀγριππῖνος">Ἀγριππεί<lb n="10" break="no"/><unclear>ν</unclear>ου</name></persName> <w lemma="ἴδιος">ἰδίου</w> <w>πρεσ<lb n="11" break="no"/>βευτοῦ</w>
-                        <w><expan><abbr>Δ</abbr><ex>ήμῳ</ex></expan></w>
-                        <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαίων</placeName> <space extent="character"/><lb n="12"/> <w>ἀποκατέ <space extent="character"/>σ
-                        <lb n="12" break="no"/> <space extent="character"/>τησεν</w> <space extent="character"/>
+                        <name nymRef="Ἀγριππῖνος">Ἀγριππεί<lb n="10" break="no"/><unclear>ν</unclear>ου</name></persName> <w lemma="ἴδιος">ἰδίου</w> <w lemma="πρεσβευτής">πρεσ<lb n="11" break="no"/>βευτοῦ</w>
+                        <w lemma="Δῆμος"><expan><abbr>Δ</abbr><ex>ήμῳ</ex></expan></w>
+                        <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαίων</placeName> <space extent="character"/><lb n="12"/> <w lemma="ἀποκαθίστημι">ἀποκατέ <space extent="character"/>σ<lb 
+                           n="12" break="no"/> <space extent="character"/>τησεν</w> <space extent="character"/>
                 </ab>
 </div>
 </div>

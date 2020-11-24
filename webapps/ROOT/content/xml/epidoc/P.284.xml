@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -100,6 +99,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -132,7 +132,7 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/mDha8ivFFUEeijcoAswNPW"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="9"><unclear>θ</unclear></num></date> <gap reason="lost" quantity="1" unit="character"/>
                     <persName type="attested" key="lgpn:V1-61388"><name nymRef="Σήστιος">Σήσ<space quantity="1" unit="character"/>τιος</name> <name nymRef="Κάρπος">Κά<space quantity="1" unit="character"/>ρπος</name></persName> 
-                    <w lemma="καί">καὶ</w> <persName type="attested" key="lgpn:V1-61446"><name nymRef="Σηστία">Σηστία</name> <name nymRef="Λυχνὶς">Λυχνίς</name></persName> <w>ἐποίησαν</w> 
+                    <w lemma="καί">καὶ</w> <persName type="attested" key="lgpn:V1-61446"><name nymRef="Σηστία">Σηστία</name> <name nymRef="Λυχνὶς">Λυχνίς</name></persName> <w lemma="ποιέω">ἐποίησαν</w> 
                     <lb n="2"/> <space quantity="3" unit="character"/> <w lemma="ἑαυτός">ἑατο<space quantity="1" unit="character"/>ῖς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> 
                     <w lemma="ἴδιος">ἰδί<space quantity="1" unit="character"/>οις</w> <w lemma="τέκνον">τέκνοιϲ</w>
                 </ab>
@@ -154,7 +154,7 @@
            </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Sestio Carpo e Sestia Lichnìs fecero per sè e per i propri figli</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Sestio Carpo e Sestia Lichnìs fecero per sè e per i propri figli</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/mDha8ivFFUEeijcoAswNPW">Year 9</ref>, Sestios Karpos and Sestia Lychnis made this for themselves and their own children.</p></div>
          </div>
        

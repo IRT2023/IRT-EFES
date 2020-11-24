@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -105,6 +104,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-16" who="MGDA">Tagged header information</change>
@@ -142,34 +142,34 @@
                          <lb n="1"/><persName type="attested"><name nymRef="Ἐπικρα-"><seg part="I">Ἐπικρ<unclear>α</unclear></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                      </ab></div>
             <div subtype="part" n="ii" type="textpart"><ab>
-                         <lb n="1"/><persName type="attested"  key="lgpn:V1-60256"><name nymRef="Εὔμαχος"><supplied reason="lost">Ε</supplied><unclear>ὔ</unclear><unclear>μ</unclear>αχ<unclear>ο</unclear><supplied reason="lost">ς</supplied></name></persName>
+                         <lb n="1"/><persName type="attested" key="lgpn:V1-60256"><name nymRef="Εὔμαχος"><supplied reason="lost">Ε</supplied><unclear>ὔ</unclear><unclear>μ</unclear>αχ<unclear>ο</unclear><supplied reason="lost">ς</supplied></name></persName>
                      </ab></div>
             <div subtype="part" n="iii" type="textpart"><ab>
-                         <lb n="1"/><persName type="attested"  key="lgpn:V1-60254"><name nymRef="Ἀραταχαν">Ἀρ<unclear>α</unclear>ταχάν</name></persName>
+                         <lb n="1"/><persName type="attested" key="lgpn:V1-60254"><name nymRef="Ἀραταχαν">Ἀρ<unclear>α</unclear>ταχάν</name></persName>
                          <note>sic</note>
                      </ab></div>
             <div subtype="part" n="iv" type="textpart"><ab>
                          <lb n="1"/><persName type="attested"><name nymRef="Φιλ-"><seg part="I">Φίλ</seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/><!-- check -->
                      </ab></div>
             <div subtype="part" n="v" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested"  key="lgpn:V1-60253"><name nymRef="Ἀριστόμαχος">Ἀ<supplied reason="lost">ρι</supplied><unclear>σ</unclear>τόμαχος</name></persName>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60253"><name nymRef="Ἀριστόμαχος">Ἀ<supplied reason="lost">ρι</supplied><unclear>σ</unclear>τόμαχος</name></persName>
                     </ab></div>
             <div subtype="part" n="vi" type="textpart"><ab>
                        <lb n="1"/><persName type="attested" key="lgpn:V1-60251"><name nymRef="Φιλόστρατος">Φιλόστρατοϲ</name></persName>
                    </ab></div>
             <div subtype="part" n="vii" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested"  key="lgpn:V1-60257"><name nymRef="Ξενάρης">Ξενάρ<unclear>η</unclear>ϲ</name></persName>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60257"><name nymRef="Ξενάρης">Ξενάρ<unclear>η</unclear>ϲ</name></persName>
                     </ab></div>
            <div subtype="part" n="viii" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested"  key="lgpn:V1-60252"><name nymRef="Χαρίδαμος">Χαρίδαμο<milestone unit="block"/>ς</name></persName>
-                        <lb n="2"/> <w><expan><abbr><am><g ref="symbols.xml#ΦΙΛ"/></am></abbr><ex>φίλος</ex></expan></w> 
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60252"><name nymRef="Χαρίδαμος">Χαρίδαμο<milestone unit="block"/>ς</name></persName>
+                        <lb n="2"/> <w lemma="φίλος"><expan><abbr><am><g ref="symbols.xml#ΦΙΛ"/></am></abbr><ex>φίλος</ex></expan></w> 
                         <persName type="attested" key="lgpn:V1-60255"><name nymRef="Αἰάλαν"><unclear>Α</unclear>ἰαλάντι</name></persName>
                     </ab></div>
             <div subtype="part" n="ix" type="textpart"><ab>
-                        <lb n="1"/><persName type="attested"  key="lgpn:V1-60259"><name nymRef="Νικίας">Νικίαϲ</name></persName> 
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60259"><name nymRef="Νικίας">Νικίαϲ</name></persName> 
                     </ab></div>
             <div subtype="part" n="x" type="textpart"><ab>
-                       <lb n="1"/><persName type="attested"  key="lgpn:V1-60258"><name nymRef="Διονύσιος">Διονύσιος</name></persName>
+                       <lb n="1"/><persName type="attested" key="lgpn:V1-60258"><name nymRef="Διονύσιος">Διονύσιος</name></persName>
                    </ab>
 </div>
 </div>
@@ -203,7 +203,7 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>178: Epis- An- di Euaristo. Ara- di Filostrato. Xena- di Charidemo a? Fealàn. 
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>178: Epis- An- di Euaristo. Ara- di Filostrato. Xena- di Charidemo a? Fealàn. 
             179: Nikias Dionisio</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> Epikra[- <note>i</note> Eumachos. <note>ii</note> Artachan <note>iii</note> Phil[- <note>iv</note> Aristomachos 
             <note>vi</note> Philostratos <note>vii</note> Xenares <note>viii</note> Charodamos friend of Aialan. <note>ix</note> Nikias <note>x</note> Dionysios</p></div>

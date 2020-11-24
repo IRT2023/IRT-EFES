@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -102,6 +101,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-05" who="MGDA">fixed Goodchild bibliography</change>
@@ -146,8 +146,8 @@
                            
                     <lb n="1"/><persName type="attested" key="lgpn:V1-63920"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name> 
                            <name nymRef="Αὐρήλιος">Α<unclear>ὐ</unclear><supplied reason="lost">ρή</supplied>λιος</name> 
-                           <name nymRef="Εὐφράνωρ"><supplied reason="lost">Ε</supplied><unclear>ὐ</unclear>φρά<lb n="2" break="no"/>νωρ</name> <w lemma="ἱερεύς">ἱ<supplied reason="lost">ερε</supplied>ὺς</w></persName> <persName type="divine" key="apollo"><w lemma="ὁ">τοῦ</w> <w>κτίσ<lb n="3" break="no"/>του</w> <name nymRef="Ἀπόλλων">Ἀ<supplied reason="lost">πό</supplied>λλω<supplied reason="lost">ν</supplied>ος</name></persName>
-                   <lb n="4"/> <w>ἐπ<supplied reason="lost">οί</supplied>ησεν</w> <w lemma="ἐκ">ἐκ</w> <surplus>κ</surplus> <w>τῶ<supplied reason="lost">ν</supplied></w> 
+                           <name nymRef="Εὐφράνωρ"><supplied reason="lost">Ε</supplied><unclear>ὐ</unclear>φρά<lb n="2" break="no"/>νωρ</name> <w lemma="ἱερεύς">ἱ<supplied reason="lost">ερε</supplied>ὺς</w></persName> <persName type="divine" key="apollo"><w lemma="ὁ">τοῦ</w> <w lemma="κτίστης">κτίσ<lb n="3" break="no"/>του</w> <name nymRef="Ἀπόλλων">Ἀ<supplied reason="lost">πό</supplied>λλω<supplied reason="lost">ν</supplied>ος</name></persName>
+                   <lb n="4"/> <w lemma="ποιέω">ἐπ<supplied reason="lost">οί</supplied>ησεν</w> <w lemma="ἐκ">ἐκ</w> <surplus>κ</surplus> <w lemma="ὁ">τῶ<supplied reason="lost">ν</supplied></w> 
                    <lb n="5"/><w lemma="ὁ">τοῦ</w> <w lemma="θεός"><supplied reason="lost">θ</supplied>εοῦ</w> 
                           <w lemma="χρῆμα">χ<supplied reason="lost">ρ</supplied>ημάτω<supplied reason="lost">ν</supplied></w>
                        
@@ -155,9 +155,9 @@
             <div subtype="section" n="b" type="textpart"><ab> 
                        
                             <lb n="1"/><w lemma="εἰς"><supplied reason="omitted">ε</supplied>ἰϲ</w> <w lemma="αἰών"><unclear>ἐ</unclear>ῶνα</w>
-                        <lb n="1a"/><gap reason="lost"  extent="unknown" unit="character"/>
-                        <lb n="2"/><w><unclear>τ</unclear>ὸ</w> <w>κοι
-                        <lb n="3" break="no"/>ν<unclear>ὸ</unclear>ν</w>
+                        <lb n="1a"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><w lemma="ὁ"><unclear>τ</unclear>ὸ</w> <w lemma="κοινός">κοι<lb 
+                           n="3" break="no"/>ν<unclear>ὸ</unclear>ν</w>
                <lb n="4"/><gap reason="lost" quantity="2" unit="character"/> <placeName nymRef="#Ἑξάπολις" key="#hexapolis"><supplied reason="lost">Ἑ</supplied>ξαπόλ<unclear>ε</unclear><lb n="5" break="no"/>ωϲ</placeName>
                     
                     </ab></div>

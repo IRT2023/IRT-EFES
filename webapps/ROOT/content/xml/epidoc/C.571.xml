@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-12-02" who="Pietro">metadata</change>
@@ -119,7 +119,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/eponymous_office/25NxqN94Xqtp9mr5oymWzi/JKSoufogW8V4DJt8RRUn3X"><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς"><w lemma="ἱερεύς">ἱερ<supplied reason="lost">έω</supplied>ϲ</w></w> <persName type="divine" key="apollo"><w lemma="ὁ">τοῦ</w> 
-                    <w>κ<unclear>τ</unclear><supplied reason="lost">ί</supplied><unclear>σ</unclear>του</w>
+                    <w lemma="κτίστης">κ<unclear>τ</unclear><supplied reason="lost">ί</supplied><unclear>σ</unclear>του</w>
                     <lb n="2"/><name nymRef="Ἀπόλλων">Ἀπόλλωνοϲ</name></persName>
                     <lb n="3"/><gap reason="lost" quantity="4" unit="character"/><persName type="attested"><name nymRef="-νιος"><seg part="F">νίου</seg></name> <persName type="attested"><name nymRef="Μνήσαρχος">Μ<supplied reason="lost">ν</supplied>ηϲάρχου</name></persName></persName></date>
                     <lb n="4"/><gap reason="lost" quantity="13" unit="character" precision="low"/><orig>ευ</orig><gap reason="lost" quantity="2" unit="character"/>

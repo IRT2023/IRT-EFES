@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -84,6 +83,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
          <change when="2011-07-14" who="Pietro">added photographs</change>
@@ -106,8 +106,8 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve"><ab>   
          </ab><div subtype="fragment" n="a" type="textpart"><ab>
-            <lb n="1"/><date ref="https://godot.date/id/JBL4WtHWEvrq7wEpymZ7XY"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="12">ιβ</num> <rs type="month"  key="pharmuthi"><w lemma="Φαρμουθί">Φαρμου<supplied reason="lost">θὶ</supplied></w></rs> <w>ἕκτ
-            <lb n="2" break="no"/>η</w> <w lemma="καί"><expan><abbr>κ</abbr><ex>ὲ</ex></expan></w> <w lemma="εἰκάς">εἰκάδ<supplied reason="lost">ι</supplied></w></date></ab>
+            <lb n="1"/><date ref="https://godot.date/id/JBL4WtHWEvrq7wEpymZ7XY"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="12">ιβ</num> <rs type="month" key="pharmuthi"><w lemma="Φαρμουθί">Φαρμου<supplied reason="lost">θὶ</supplied></w></rs> <w lemma="ἕκτος">ἕκτ<lb 
+               n="2" break="no"/>η</w> <w lemma="καί"><expan><abbr>κ</abbr><ex>ὲ</ex></expan></w> <w lemma="εἰκάς">εἰκάδ<supplied reason="lost">ι</supplied></w></date></ab>
          </div><div subtype="fragment" n="b" type="textpart"><ab>
             <lb n="1"/> <w lemma="ἀπογίγνομαι">ἀπεγένε<lb n="2" break="no"/><unclear>τ</unclear><supplied reason="lost">ο</supplied></w> <gap reason="lost" quantity="2" unit="character"/><orig><unclear>ϲϲ</unclear>τουϲ</orig> 
             <lb n="3"/> <gap reason="lost" quantity="3" unit="character"/><orig><unclear>ε</unclear><space quantity="3" unit="character"/>κ</orig>

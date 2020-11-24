@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -103,6 +102,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -125,18 +125,18 @@
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
                     <foreign xml:lang="la"><w lemma="restituo">re<supplied reason="lost">s</supplied>t<supplied reason="lost">ituit</supplied></w></foreign>
-                    <lb n="2"/><persName type="emperor" key="nero"><name nymRef="Νέρων">Νέρων</name> <name nymRef="Κλαύδιος">Κλ<unclear>α</unclear>ύδιο<supplied reason="lost">ς</supplied></name> <persName type="emperor" key="claudius"><w><supplied reason="lost">θεοῦ</supplied></w>
-                    <lb n="3"/><name nymRef="Κλαύδιος">Κλαυδ <space quantity="1" unit="character"/> ίου</name></persName> <w>υἱὸς</w>
-                    <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός"><supplied reason="lost">Γερμα</supplied><lb n="4" break="no"/>νικοῦ</name> <name nymRef="Καῖσαρ">Καίσαρος</name></persName> <w>ὑω<supplied reason="lost">νὸς</supplied></w>
+                    <lb n="2"/><persName type="emperor" key="nero"><name nymRef="Νέρων">Νέρων</name> <name nymRef="Κλαύδιος">Κλ<unclear>α</unclear>ύδιο<supplied reason="lost">ς</supplied></name> <persName type="emperor" key="claudius"><w lemma="θεός"><supplied reason="lost">θεοῦ</supplied></w>
+                    <lb n="3"/><name nymRef="Κλαύδιος">Κλαυδ <space quantity="1" unit="character"/> ίου</name></persName> <w lemma="υἱός">υἱὸς</w>
+                    <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός"><supplied reason="lost">Γερμα</supplied><lb n="4" break="no"/>νικοῦ</name> <name nymRef="Καῖσαρ">Καίσαρος</name></persName> <w lemma="ὑωνός">ὑω<supplied reason="lost">νὸς</supplied></w>
                     <lb n="5"/><persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name> 
                     <name nymRef="Καῖσαρ">Καίσαρος</name> <name nymRef="Σεβαστός">Σεβασ<supplied reason="lost">τοῦ</supplied></name></persName>
-                    <lb n="6"/> <w lemma="καί">καὶ</w> <persName type="emperor" key="augustus"><w>θεοῦ</w> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName>
-                    <lb n="7"/> <w>ἔγγο<unclear>ν</unclear>ο<unclear>ς</unclear></w></persName> <space quantity="3" unit="character"/>
+                    <lb n="6"/> <w lemma="καί">καὶ</w> <persName type="emperor" key="augustus"><w lemma="θεός">θεοῦ</w> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName>
+                    <lb n="7"/> <w lemma="ἔγγονος">ἔγγο<unclear>ν</unclear>ο<unclear>ς</unclear></w></persName> <space quantity="3" unit="character"/>
     <lb n="8"/><g ref="symbols.xml#palm"/> </ab>
 </div>
          
          <div type="translation" xml:space="preserve"><head>Translation</head>
-            <div  type="translation" resp="#cmr" xml:lang="en"><p> <note>Latin</note>: . . . ] restored. <note>Greek</note>: Nero Claudius, son 
+            <div type="translation" resp="#cmr" xml:lang="en"><p> <note>Latin</note>: . . . ] restored. <note>Greek</note>: Nero Claudius, son 
                   of deified Claudius, grandson of Germanicus Caesar, great grandson of Tiberius Caesar Augustus and of deified Augustus [ . . .</p></div></div>
          <div type="commentary">
             <head>Commentary</head>

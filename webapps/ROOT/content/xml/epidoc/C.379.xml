@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -96,6 +95,7 @@
          </textClass>
          <creation>From previous publications and drawings (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-04-01" who="MGDA">fixed Oliverio bibliography</change>
@@ -120,9 +120,9 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date><w lemma="ἐπί">ἐπὶ</w> <w>ἱερέ<unclear>ω</unclear>ϲ</w> <w lemma="ὁ">τοῦ</w>
-            <lb n="2"/><persName type="divine" key="apollo"><w>κτίϲτο<supplied reason="lost">υ</supplied></w> <name nymRef="Ἀπόλλων">Ἀ<unclear>π</unclear>ό<supplied reason="lost">λλ</supplied>ονο<unclear>ϲ</unclear></name></persName>
-                       <lb n="3"/><persName type="attested"  key="lgpn:V1-63868"><name nymRef="Ἀντώνιος">Ἀντωνίου</name> <name nymRef="Εὐώνυμος">Εὐον<supplied reason="lost" cert="low">ύμου</supplied></name></persName></date><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/><date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς">ἱερέ<unclear>ω</unclear>ϲ</w> <w lemma="ὁ">τοῦ</w>
+            <lb n="2"/><persName type="divine" key="apollo"><w lemma="κτίστης">κτίϲτο<supplied reason="lost">υ</supplied></w> <name nymRef="Ἀπόλλων">Ἀ<unclear>π</unclear>ό<supplied reason="lost">λλ</supplied>ονο<unclear>ϲ</unclear></name></persName>
+                       <lb n="3"/><persName type="attested" key="lgpn:V1-63868"><name nymRef="Ἀντώνιος">Ἀντωνίου</name> <name nymRef="Εὐώνυμος">Εὐον<supplied reason="lost" cert="low">ύμου</supplied></name></persName></date><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="4"/><gap reason="lost" quantity="4" unit="character"/><orig>Μ</orig><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="4a"/><gap reason="lost" quantity="1" unit="line"/>
                     <lb n="4b"/><gap reason="lost" quantity="1" unit="line"/>

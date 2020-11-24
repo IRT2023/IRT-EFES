@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -46,7 +45,7 @@
                <history>
                   <origin>
                      <origPlace> Unknown.</origPlace>
-                     <origDate notAfter="0014" notBefore="-0027"  precision="low" evidence="lettering">Augustan</origDate>
+                     <origDate notAfter="0014" notBefore="-0027" precision="low" evidence="lettering">Augustan</origDate>
                   </origin><provenance type="found">
                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>, 
                               Between <placeName type="monuList" ref="https://www.slsgazetteer.org/994">Theatre 3</placeName> and the <ref target="https://www.slsgazetteer.org/991">House of Jason Magnus</ref>, in the south theatre area;
@@ -90,6 +89,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-11-30" who="Pietro">metadata</change>
@@ -114,22 +114,22 @@
 <ab>
                 <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                  <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>σ</unclear>τα</orig>   
-                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low"><w>ἀναγράψαι</w></supplied> <w lemma="αὐτός"><supplied reason="lost">αὐτὸ</supplied>ν</w> <w lemma="εἰς">εἰς</w> 
-                <lb n="3"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί">καὶ</w> <w>στε<lb n="4" break="no"/><supplied reason="lost">φανοῦν</supplied></w> <w><supplied reason="lost">ὀνομαστὶ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="κατά"><supplied reason="lost">καθ’</supplied></w> <w lemma="ἕκαστος"><supplied reason="lost">ἑκ</supplied>άστην</w> <space quantity="1" unit="character"/>
-                <lb n="5"/> <w><supplied reason="lost">σύνοδον</supplied></w> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w><supplied reason="lost">νουμηνίαν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="τε"><supplied reason="lost">τ</supplied>ε</w>
-                <w lemma="οὖν">οὖν</w> <w>στε<lb n="6" break="no"/><supplied reason="lost">φάνῳ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost" cert="low">ἀρετῆς</supplied></w>
+                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low"><w lemma="ἀναγράφω">ἀναγράψαι</w></supplied> <w lemma="αὐτός"><supplied reason="lost">αὐτὸ</supplied>ν</w> <w lemma="εἰς">εἰς</w> 
+                <lb n="3"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί">καὶ</w> <w lemma="στεφανόω">στε<lb n="4" break="no"/><supplied reason="lost">φανοῦν</supplied></w> <w lemma="ὀνομαστί"><supplied reason="lost">ὀνομαστὶ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="κατά"><supplied reason="lost">καθ’</supplied></w> <w lemma="ἕκαστος"><supplied reason="lost">ἑκ</supplied>άστην</w> <space quantity="1" unit="character"/>
+                <lb n="5"/> <w lemma="σύνοδος"><supplied reason="lost">σύνοδον</supplied></w> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="νουμηνία"><supplied reason="lost">νουμηνίαν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="τε"><supplied reason="lost">τ</supplied>ε</w>
+                <w lemma="οὖν">οὖν</w> <w lemma="στέφανος">στε<lb n="6" break="no"/><supplied reason="lost">φάνῳ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἀρετή"><supplied reason="lost" cert="low">ἀρετῆς</supplied></w>
                 <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w> 
-                <w lemma="εὔνοια"><supplied reason="lost">εὐ</supplied>νοίας</w> <w>ἕνε<lb n="7" break="no"/><supplied reason="lost">κε</supplied></w> <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w> 
-                <supplied reason="lost" cert="low"><w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸ</w> <w>πολίτευμα</w>· <w lemma="εἰμί">εἶναι</w> <w lemma="δέ">δὲ</w></supplied> <w lemma="αὐτός">αὐτῶι</w> <space quantity="4" unit="character"/>
-                <lb n="8"/><w lemma="ἀλειτουργησία"><supplied reason="lost" cert="low">ἀλειτουργησίαν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w>τἆλλα</w>
+                <w lemma="εὔνοια"><supplied reason="lost">εὐ</supplied>νοίας</w> <w lemma="ἕνεκα">ἕνε<lb n="7" break="no"/><supplied reason="lost">κε</supplied></w> <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w> 
+                <supplied reason="lost" cert="low"><w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸ</w> <w lemma="πολίτευμα">πολίτευμα</w>· <w lemma="εἰμί">εἶναι</w> <w lemma="δέ">δὲ</w></supplied> <w lemma="αὐτός">αὐτῶι</w> <space quantity="4" unit="character"/>
+                <lb n="8"/><w lemma="ἀλειτουργησία"><supplied reason="lost" cert="low">ἀλειτουργησίαν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="ἄλλος">τἆλλα</w>
                 <space quantity="3" unit="character"/>
-                <lb n="9"/><supplied reason="lost" cert="low"><w lemma="ὅσος">ὅσα</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἄλλος">ἄλλοις</w> <w>εὐεργέταις</w></supplied>, <w lemma="ὁ"><supplied reason="lost">τοὺς</supplied></w> 
-                <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w> <w>ἄρχοντας</w> <space quantity="3" unit="character"/> 
-                <lb n="10"/> <w><supplied reason="lost">ἀναγράψαντας</supplied></w> <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <w><supplied reason="lost">ψήφισμα</supplied></w> 
-                <w lemma="εἰς">εἰ<supplied reason="omitted">ς</supplied></w> <w>στήλην</w> <space quantity="2" unit="character"/>
-                <lb n="11"/> <w><supplied reason="lost">λίθου</supplied></w> <placeName type="ethnic" nymRef="#Πάριος" ref="#paros"><unclear>Π</unclear><supplied reason="lost">αρ</supplied>ίου</placeName> <space quantity="3" unit="character"/> <w>θεῖναι</w> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ὃν</w> <w lemma="ἐάν">ἂν</w>
+                <lb n="9"/><supplied reason="lost" cert="low"><w lemma="ὅσος">ὅσα</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἄλλος">ἄλλοις</w> <w lemma="εὐεργέτης">εὐεργέταις</w></supplied>, <w lemma="ὁ"><supplied reason="lost">τοὺς</supplied></w> 
+                <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w> <w lemma="ἄρχων">ἄρχοντας</w> <space quantity="3" unit="character"/> 
+                <lb n="10"/> <w lemma="ἀναγράφω"><supplied reason="lost">ἀναγράψαντας</supplied></w> <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <w lemma="ψήφισμα"><supplied reason="lost">ψήφισμα</supplied></w> 
+                <w lemma="εἰς">εἰ<supplied reason="omitted">ς</supplied></w> <w lemma="στήλη">στήλην</w> <space quantity="2" unit="character"/>
+                <lb n="11"/> <w lemma="λίθος"><supplied reason="lost">λίθου</supplied></w> <placeName type="ethnic" nymRef="#Πάριος" ref="#paros"><unclear>Π</unclear><supplied reason="lost">αρ</supplied>ίου</placeName> <space quantity="3" unit="character"/> <w lemma="τίθημι">θεῖναι</w> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ὃν</w> <w lemma="ἐάν">ἂν</w>
                 <lb n="12"/><w lemma="βούλομαι"><supplied reason="lost" cert="low">βουληθ</supplied>ῶσιν</w>  
-                <space quantity="1" unit="character"/> <w lemma="ὁ">οἱ</w> <w>ἄρχοντας</w> <note>sic</note> <w lemma="τόπος">τόπον</w>
+                <space quantity="1" unit="character"/> <w lemma="ὁ">οἱ</w> <w lemma="ἄρχων">ἄρχοντας</w> <note>sic</note> <w lemma="τόπος">τόπον</w>
             
             </ab>
 </div>

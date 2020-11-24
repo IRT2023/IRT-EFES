@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -95,6 +94,7 @@
          </textClass>
       <creation>Transcription from drawing (left end) and from stone and photograph (right end) (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -119,10 +119,10 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
-                    <lb n="1"/><date><persName type="attested" key="lgpn:V1-64222"><name nymRef="Θεύχρηστος">Θ<supplied reason="lost">ε</supplied>ύχρηστο<supplied reason="lost">ς</supplied></name></persName> <supplied reason="lost"><w lemma="ὁ">τοῦ</w> <w>δεῖνα</w></supplied>
-                    <lb n="2"/> <w>ἱαριτεύων</w></date> <orig>κα</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/><date><persName type="attested" key="lgpn:V1-64222"><name nymRef="Θεύχρηστος">Θ<supplied reason="lost">ε</supplied>ύχρηστο<supplied reason="lost">ς</supplied></name></persName> <supplied reason="lost"><w lemma="ὁ">τοῦ</w> <w lemma="δεῖνα">δεῖνα</w></supplied>
+                    <lb n="2"/> <w lemma="ἱαριτεύω">ἱαριτεύων</w></date> <orig>κα</orig><gap reason="lost" extent="unknown" unit="character"/>
                     
-                    <lb n="3"/> <space quantity="3" unit="character"/> <w>ἀ <space quantity="1" unit="character"/>ν<space quantity="2" unit="character"/>έ <space quantity="1" unit="character"/><supplied reason="lost">θηκεν</supplied></w>
+                    <lb n="3"/> <space quantity="3" unit="character"/> <w lemma="ἀνατίθημι">ἀ <space quantity="1" unit="character"/>ν<space quantity="2" unit="character"/>έ <space quantity="1" unit="character"/><supplied reason="lost">θηκεν</supplied></w>
                 </ab>
 </div>
          <div type="apparatus">

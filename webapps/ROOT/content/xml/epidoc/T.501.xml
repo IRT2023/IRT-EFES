@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -107,6 +106,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-22" who="MGDA">Tagged header information</change>
@@ -154,7 +154,7 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/> <space quantity="1" unit="character"/> <date ref="https://godot.date/id/DkWUjzM3rmQDgCkGeEoV4h"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w> <num value="3">γ</num>
-                    <lb n="2"/><rs type="month"  key="hathyr"><w>Ἁθὺρ</w></rs> <num value="12">βι</num></date>
+                    <lb n="2"/><rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs> <num value="12">βι</num></date>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60147"><name nymRef="Ἰησοῦς">Εἰηϲο<supplied reason="lost">ῦϲ</supplied></name>
                     <lb n="4"/><persName type="attested" key="lgpn:V1-60148"><name nymRef="Ἀπολλόδωρος">Ἀπολλ<lb n="5" break="no"/>οδώρω</name></persName></persName>  
                     <lb n="6"/> <space quantity="1" unit="character"/>
@@ -194,9 +194,9 @@
          </div>
          
          <div type="translation" xml:space="preserve"><head>Translations</head>
-            <div  type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 3, Hathyr 5. Gesù di Apollodoro, di anni 8.</p></div>
-            <div  type="translation" source="#gray1956" xml:lang="en"><p>Year 1, Tub(i), Jesus, son of Apolinodoros, aged 8.</p></div>
-            <div  type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 3, 12.Hathyr, Jesus des Apollodoros, 8 (Jahre)</p></div>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 3, Hathyr 5. Gesù di Apollodoro, di anni 8.</p></div>
+            <div type="translation" source="#gray1956" xml:lang="en"><p>Year 1, Tub(i), Jesus, son of Apolinodoros, aged 8.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 3, 12.Hathyr, Jesus des Apollodoros, 8 (Jahre)</p></div>
             <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/DkWUjzM3rmQDgCkGeEoV4h">Year 3, Hathyr 12</ref>, Eiesous <supplied reason="subaudible">son</supplied> 
                of Apollodoros, aged 8.</p></div>
        </div>

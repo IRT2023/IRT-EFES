@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -94,6 +93,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -116,24 +116,23 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE"><persName type="emperor" key="nero"><name nymRef="Νέρων"><supplied reason="lost">Νέρων</supplied></name> <name nymRef="Κλαύδιος"><supplied reason="lost">Κλ</supplied>αύδ<unclear>ιο</unclear>ς</name> 
-                   <persName type="emperor" key="claudius"><w><supplied reason="lost">θεοῦ</supplied></w>
+                   <persName type="emperor" key="claudius"><w lemma="θεός"><supplied reason="lost">θεοῦ</supplied></w>
                     <lb n="2"/><name nymRef="Κλαύδιος"><supplied reason="lost">Κ</supplied>λαυ<unclear>δί</unclear>ου</name> <name nymRef="Καῖσαρ">Κα<unclear>ί</unclear><supplied reason="lost">σα</supplied>ρος</name>
                     <lb n="3"/><name nymRef="Σεβαστός">Σεβασ<unclear>τ</unclear>οῦ</name> <name nymRef="Γερμανικός">Γε<unclear>ρ</unclear>μανι
                     <lb n="4" break="no"/><note>sic</note>
-                    <supplied reason="lost">κο</supplied>ῦ</name></persName> <w>ὑὸς</w> <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός"><supplied reason="lost">Γερ</supplied>μανικοῦ</name>
-                    <lb n="5"/><note>sic</note> <name nymRef="Καῖσαρ"><supplied reason="lost">Κ</supplied>αίσ<supplied reason="lost">α</supplied>ρος</name></persName> <w>ὑω<supplied reason="lost">ν</supplied> ὸς</w> <persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name>
+                    <supplied reason="lost">κο</supplied>ῦ</name></persName> <w lemma="υἱός">ὑὸς</w> <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός"><supplied reason="lost">Γερ</supplied>μανικοῦ</name>
+                    <lb n="5"/><note>sic</note> <name nymRef="Καῖσαρ"><supplied reason="lost">Κ</supplied>αίσ<supplied reason="lost">α</supplied>ρος</name></persName> <w lemma="ὑωνός">ὑω<supplied reason="lost">ν</supplied>ὸς</w> <persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name>
                     <lb n="6"/><name nymRef="Καῖσαρ"><supplied reason="lost">Καί</supplied>σαρος</name> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName>
-                       <lb n="7"/> <w><supplied reason="lost">κ</supplied>αὶ</w> <persName type="emperor" key="augustus"><w><unclear>θε</unclear>οῦ</w> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName>
-                    <lb n="8"/> <w>ἔκγονος</w> <name nymRef="Καῖσαρ">Καῖσαρ</name> <name nymRef="Σεβαστός">Σεβασ
+                       <lb n="7"/> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <persName type="emperor" key="augustus"><w lemma="θεός"><unclear>θε</unclear>οῦ</w> <name nymRef="Σεβαστός">Σεβαστοῦ</name></persName>
+                    <lb n="8"/> <w lemma="ἔκγονος">ἔκγονος</w> <name nymRef="Καῖσαρ">Καῖσαρ</name> <name nymRef="Σεβαστός">Σεβασ
                        <lb n="9" break="no"/>τος</name> <name nymRef="Γερμανικός">Γερμανικὸς</name>
-                    <lb n="10"/> <w>Αὐτοκράτωρ</w></persName></date>
+                    <lb n="10"/> <w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w></persName></date>
                     <lb n="11"/> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-a-0082"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <name nymRef="Ἀκίλιος">Ἀκιλ<supplied reason="lost">ίο</supplied>υ</name> 
-                    <name nymRef="Στράβων">Στράβω<lb n="12" break="no"/>νος</name></persName> <w lemma="ὁ">τοῦ</w> <w><supplied reason="lost">ἰδί</supplied>ου</w> 
-                    <w>πρεσ<lb n="13" break="no"/>βευτοῦ</w> <w><supplied reason="lost">ὅρου</supplied>ς</w> <w>ὑπὸ</w>
-                    <lb n="14"/> <w lemma="ἰδιώτης">ἰδιωτῶν</w> <w>κατεχομένους</w>
-                    <lb n="15"/> <w><supplied reason="lost">Δήμῳ</supplied></w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><unclear>Ῥω</unclear>μαίων</placeName> <w>ἀπο
-                    <lb n="16" break="no"/> <space quantity="1" unit="character"/>
-                    <unclear>κατέστ</unclear><supplied reason="lost">η</supplied><unclear>σε</unclear></w> <space quantity="1" unit="character"/>
+                    <name nymRef="Στράβων">Στράβω<lb n="12" break="no"/>νος</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="ἴδιος"><supplied reason="lost">ἰδί</supplied>ου</w> 
+                    <w lemma="πρεσβευτής">πρεσ<lb n="13" break="no"/>βευτοῦ</w> <w lemma="ὅρος"><supplied reason="lost">ὅρου</supplied>ς</w> <w lemma="ὑπό">ὑπὸ</w>
+                    <lb n="14"/> <w lemma="ἰδιώτης">ἰδιωτῶν</w> <w lemma="κατέχω">κατεχομένους</w>
+                    <lb n="15"/> <w lemma="Δῆμος"><supplied reason="lost">Δήμῳ</supplied></w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><unclear>Ῥω</unclear>μαίων</placeName> <w lemma="ἀποκαθίστημι">ἀπο<lb 
+                       n="16" break="no"/><space quantity="1" unit="character"/> <unclear>κατέστ</unclear><supplied reason="lost">η</supplied><unclear>σε</unclear></w> <space quantity="1" unit="character"/>
                 </ab>
 </div>
          

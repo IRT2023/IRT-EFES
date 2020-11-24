@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
           <change when="2013-08-05" who="TW">put name inside persname tag</change>
           <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
@@ -122,11 +122,11 @@
 <ab>
                     <lb n="1"/><persName type="attested"><name nymRef="Ἀυρηλία">Ἀυρηλίᾳ</name>
                     <lb n="2"/><name nymRef="Θεοδώρα">Θεοδώρᾳ</name></persName>
-                    <lb n="3"/><w lemma="ὁ">τῇ</w> <w>ϲωφρο<lb n="4" break="no"/>νεϲτάτῃ</w> <w>ϲυμβίῳ</w>
+                    <lb n="3"/><w lemma="ὁ">τῇ</w> <w lemma="σώφρων">ϲωφρο<lb n="4" break="no"/>νεϲτάτῃ</w> <w lemma="σύμβιος">ϲυμβίῳ</w>
                     <lb n="5"/><persName type="attested"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Σεκοῦνδος">Ϲεκοῦνδοϲ</name>
                     <lb n="6"/><w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w> <name nymRef="Πειρήνιος">Π<unclear>ει</unclear>ρήνιοϲ</name> </persName>
                     <w lemma="μνεία">μνεί<lb n="7" break="no"/>αϲ</w>
-                    <w>χάριν</w>
+                    <w lemma="χάρις">χάριν</w>
                     <lb n="8"/><w lemma="μήτηρ">μητρὶ</w> <w lemma="ἱππικός">ἱππι<lb n="9" break="no"/>κοῦ</w> <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
 </div>

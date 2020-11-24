@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -98,6 +97,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
       <change when="2011-07-21" who="CMR">added bibliography, modified text</change>
@@ -119,12 +119,8 @@
              <ab>
                     <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
                     <lb n="1"/><date ref="https://godot.date/id/mDha8ivFFUEeijcoAswNPW"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="9"><unclear>θ</unclear></num></date>
-                    <lb n="2"/><orig><unclear>ο</unclear></orig><gap reason="lost" quantity="3" unit="character"
-                    /><orig><unclear>λ</unclear>α<unclear>γ</unclear></orig><gap
-                        reason="lost" quantity="3" unit="character"/><orig>γα</orig> <space
-                            quantity="1" unit="character"/><orig>ι</orig>
-                    <lb n="3"/><date type="life-span" dur="P25Y"><w lemma="ἔτος">ἐτῶν</w> <w>εἰκοσιπ<lb
-                        n="4" break="no"/> <space extent="1"/><unclear>έν</unclear>τε</w></date>
+                    <lb n="2"/><orig><unclear>ο</unclear></orig><gap reason="lost" quantity="3" unit="character"/><orig><unclear>λ</unclear>α<unclear>γ</unclear></orig><gap reason="lost" quantity="3" unit="character"/><orig>γα</orig> <space quantity="1" unit="character"/><orig>ι</orig>
+                    <lb n="3"/><date type="life-span" dur="P25Y"><w lemma="ἔτος">ἐτῶν</w> <w lemma="εἰκοσιπέντε">εἰκοσιπ<lb n="4" break="no"/> <space extent="1"/><unclear>έν</unclear>τε</w></date>
                         <space extent="1"/>
                 </ab>
          </div>

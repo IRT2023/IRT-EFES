@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -99,6 +98,7 @@
          </textClass>
       <creation/></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
         <change when="2011-04-05" who="MGDA">fixed Goodchild bibliography</change>
@@ -118,11 +118,11 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
                <ab>   
-                   <lb n="1"/> <date><w>Ἐπ᾽</w><w>ἱερέοϲ</w> <w lemma="ὁ">τοῦ</w> <w>κτίστου</w>
-	 <lb n="2"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνοϲ</name></persName> <persName type="attested"><name nymRef="Πούφιος">Που
-	 <lb n="3" break="no"/>φίου</name> <name nymRef="Λοῦππος">Λούππου</name></persName></date> <w>ἔβρε
-	 <lb n="4" break="no"/>ξεν</w> <w>ὁ</w> <persName type="divine" key="zeus"><name nymRef="Ζεύς">Ζε<supplied reason="lost">ν</supplied><unclear>ὸ</unclear>ϲ</name></persName> <w>θεῶ</w> <w>οὐρα
-	 <lb n="5" break="no"/> <space extent="unknown" unit="character"/> <unclear>ν</unclear>όϲ</w>· <w>Ἀγαθὰ</w> <w>μα<unclear>ν</unclear><supplied reason="lost">τεία</supplied>
+                   <lb n="1"/> <date><w lemma="ἐπί">Ἐπ᾽</w><w lemma="ἱερεύς">ἱερέοϲ</w> <w lemma="ὁ">τοῦ</w> <w lemma="κτίστης">κτίστου</w>
+	 <lb n="2"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνοϲ</name></persName> <persName type="attested"><name nymRef="Πούφιος">Που<lb 
+	    n="3" break="no"/>φίου</name> <name nymRef="Λοῦππος">Λούππου</name></persName></date> <w lemma="βρέχω">ἔβρε<lb 
+	    n="4" break="no"/>ξεν</w> <w lemma="ὁ">ὁ</w> <persName type="divine" key="zeus"><name nymRef="Ζεύς">Ζε<supplied reason="lost">ν</supplied><unclear>ὸ</unclear>ϲ</name></persName> <w lemma="θεός">θεῶ</w> <w lemma="οὐρανός">οὐρα<lb 
+	    n="5" break="no"/> <space extent="unknown" unit="character"/> <unclear>ν</unclear>όϲ</w>· <w lemma="ἀγαθός">Ἀγαθὰ</w> <w lemma="μαντεία">μα<unclear>ν</unclear><supplied reason="lost">τεία</supplied>
 </w>                
             </ab>
              </div>
@@ -131,7 +131,7 @@
             <listApp>
                <app loc="4">
                   <rdg resp="#SEG">
-                     The drawing shows ΟΖΕΝΟϹ; the photo ΟΖΕ<gap reason="lost" extent="unknown" unit="character"></gap>
+                     The drawing shows ΟΖΕΝΟϹ; the photo ΟΖΕ<gap reason="lost" extent="unknown" unit="character"/>
                   </rdg>
                </app>
                <app loc="5">

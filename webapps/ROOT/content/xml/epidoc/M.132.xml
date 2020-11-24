@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -101,6 +100,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -122,10 +122,10 @@
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
-                    <lb n="1"/> <w><supplied reason="lost">μν</supplied>ημεῖο<supplied reason="omitted">ν</supplied></w>
+                    <lb n="1"/> <w lemma="μνημεῖον"><supplied reason="lost">μν</supplied>ημεῖο<supplied reason="omitted">ν</supplied></w>
                <gap reason="lost" quantity="9" unit="character" precision="low"/>
                     <lb n="2"/><persName type="attested"><name nymRef="Νικασίας"><supplied reason="lost">Νι</supplied>καϲία</name></persName>
-               <w>ἐτελ<supplied reason="lost">εύτηϲεν</supplied></w>
+               <w lemma="τελευτάω">ἐτελ<supplied reason="lost">εύτηϲεν</supplied></w>
                <supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w></supplied>
                 </ab>
          </div>

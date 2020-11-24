@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -44,7 +43,7 @@
                <history>
                   <origin>
                      <origPlace><placeName type="monuList" ref="https://www.slsgazetteer.org/988">Caesareum: Basilica</placeName>, on the entablature of the northern internal colonnade</origPlace>
-                     <origDate notAfter="0138" notBefore="0119"  evidence="reign">CE 119-138</origDate>
+                     <origDate notAfter="0138" notBefore="0119" evidence="reign">CE 119-138</origDate>
                   </origin>
                   
                      
@@ -90,6 +89,7 @@
          </textClass>
       <creation>Transcription (Reynolds).</creation></profileDesc>
       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-02-21" who="MLA">added Applebaum reference in bibliography</change>
@@ -131,17 +131,17 @@
          
          <div type="edition" xml:lang="la" xml:space="preserve">
 <ab>
-                    <lb n="1"/><persName type="emperor" key="hadrianus"><w><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w>
+                    <lb n="1"/><persName type="emperor" key="hadrianus"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w>
                     <name nymRef="Caesar"><supplied reason="lost"><expan><abbr>Caes</abbr><ex>ar</ex></expan></supplied></name>
-                    <persName type="emperor" key="traianus"><name nymRef="Traianus"><w><supplied reason="lost">diui</supplied></w> <supplied reason="lost">Traiani</supplied></name>
-                    <name nymRef="Parthicus"><supplied reason="lost">Parthici</supplied></name></persName> <w><supplied reason="lost"><expan><abbr>fil</abbr><ex>ius</ex></expan></supplied></w> 
-                    <persName type="emperor" key="nerva"><w><supplied reason="lost">diui</supplied></w> <name nymRef="Nerva"><supplied reason="lost">Nerv</supplied><milestone unit="block" n="1"/>ae</name> <w>nep<milestone unit="block" n="2"/><supplied reason="lost">os</supplied></w>
+                    <persName type="emperor" key="traianus"><name nymRef="Traianus"><w lemma="divus"><supplied reason="lost">diui</supplied></w> <supplied reason="lost">Traiani</supplied></name>
+                    <name nymRef="Parthicus"><supplied reason="lost">Parthici</supplied></name></persName> <w lemma="filius"><supplied reason="lost"><expan><abbr>fil</abbr><ex>ius</ex></expan></supplied></w> 
+                    <persName type="emperor" key="nerva"><w lemma="divus"><supplied reason="lost">diui</supplied></w> <name nymRef="Nerva"><supplied reason="lost">Nerv</supplied><milestone unit="block" n="1"/>ae</name> <w lemma="nepos">nep<milestone unit="block" n="2"/><supplied reason="lost">os</supplied></w>
                     <name nymRef="Traianus">Trai<unclear>a</unclear><supplied reason="lost">n</supplied><milestone unit="block" n="3"/>us</name> 
                     <name nymRef="Hadrianus">H<supplied reason="lost">adrianus</supplied></name><milestone unit="block" n="4"/> <name nymRef="Augustus">Augu<supplied reason="lost">stus</supplied></name></persName></persName>
-                    <w><supplied reason="lost"><expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied></w>
-                    <w><supplied reason="lost"><expan><abbr>max</abbr><ex>imus</ex></expan></supplied></w>
-                    <w><expan><abbr><supplied reason="lost">tribuni</supplied><milestone unit="block" n="5"/><unclear>c</unclear></abbr><ex>ia</ex></expan></w>
-                    <w><expan><abbr>p<supplied reason="lost">ot</supplied></abbr><ex>estate</ex></expan></w><gap quantity="3" unit="character" reason="lost"/><supplied reason="lost"/> <w><supplied reason="lost"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></supplied></w>
+                    <w lemma="pontifex"><supplied reason="lost"><expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied></w>
+                    <w lemma="maximus"><supplied reason="lost"><expan><abbr>max</abbr><ex>imus</ex></expan></supplied></w>
+                    <w lemma="tribunicius"><expan><abbr><supplied reason="lost">tribuni</supplied><milestone unit="block" n="5"/><unclear>c</unclear></abbr><ex>ia</ex></expan></w>
+                    <w lemma="potestas"><expan><abbr>p<supplied reason="lost">ot</supplied></abbr><ex>estate</ex></expan></w><gap quantity="3" unit="character" reason="lost"/><supplied reason="lost"/> <w lemma="consul"><supplied reason="lost"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></supplied></w>
                     <num value="3"><supplied reason="lost">I</supplied><milestone unit="block" n="6"/>II</num> <w lemma="basilica">basilic<milestone unit="block" n="7"/><supplied reason="lost">am</supplied></w>
                     <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>

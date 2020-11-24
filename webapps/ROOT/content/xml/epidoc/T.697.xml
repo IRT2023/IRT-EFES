@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -97,6 +96,7 @@
          </textClass>
       <creation>From previous publications (Reynolds)</creation></profileDesc>
        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
          <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
          <change when="2011-03-28" who="MGDA">Tagged header information</change>
@@ -120,11 +120,11 @@
 <ab>
                     <lb n="1"/><date ref="https://godot.date/id/yEf527kjuN868ne9nH3c6D"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
                         <num value="14">ιδ</num> 
-                        <rs type="month"  key="choiak"><w lemma="Χοιάκ">Χοιά<unclear>χ</unclear>ι</w></rs> 
+                        <rs type="month" key="choiak"><w lemma="Χοιάκ">Χοιά<unclear>χ</unclear>ι</w></rs> 
                         <num value="12"><unclear>β</unclear>ι</num></date>
                     <lb n="2"/><persName type="attested" key="lgpn:V1-60016"><name nymRef="Σαλώι">Σαλόι</name>
                     <lb n="3"/><persName type="attested" key="lgpn:V1-60022"><name nymRef="Καλλισθένης">Καλλ<supplied reason="lost">ι</supplied><unclear>σ</unclear>θένους</name></persName></persName>
-                    <lb n="4"/> <date ref="https://godot.date/id/Qf3guUiMRVUsk5Cy2t3nnF"><w><expan><abbr><am><unclear><g ref="symbols.xml#year"/></unclear></am></abbr><ex>ἔτους</ex></expan></w>
+                    <lb n="4"/> <date ref="https://godot.date/id/Qf3guUiMRVUsk5Cy2t3nnF"><w lemma="ἔτος"><expan><abbr><am><unclear><g ref="symbols.xml#year"/></unclear></am></abbr><ex>ἔτους</ex></expan></w>
                         <num value="12">ι<unclear>β</unclear></num> 
                         <gap reason="lost" extent="3" unit="character"/><orig>ΚΩ</orig>  
                         <num value="10">ι</num></date> <persName type="attested" key="lgpn:V1-60015"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>όπλιος</ex></expan></name>
@@ -166,7 +166,7 @@
                <supplied reason="explanation"><foreign xml:lang="la">P(ublius) Antonius</foreign></supplied> Ptolemaios, aged 48.</p></div></div>
          <div type="commentary">
             <head>Commentary</head>
-            <note></note><!-- December 8 -->
+            <note/><!-- December 8 -->
             <p>Line 2: The name may be Jewish.</p>
             <p>Line 4: Another possible reading might be (ἐτῶν) ιβ΄, aged 12, followed by [Φ]αωφὶ ι΄,  Ἀντώνιος Πτολεμαίο[υ].</p>
          </div>
