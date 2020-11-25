@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:name[@nymRef][ancestor::tei:div/@type='edition']" group-by="replace(translate(normalize-unicode(@nymRef,'NFD'), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')"> <!-- or "." -->
+      <xsl:for-each-group select="//tei:name[@nymRef][ancestor::tei:persName[@type='attested']][ancestor::tei:div/@type='edition']" group-by="replace(translate(normalize-unicode(@nymRef,'NFD'), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')"> <!-- or "." -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />

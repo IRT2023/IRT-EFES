@@ -29,7 +29,7 @@
                   select="distinct-values(tokenize(normalize-space($lemma-values), '\s+'))" />
     <add>
       <xsl:for-each select="$lemmata">
-        <xsl:variable name="lemma" select="." />
+        <xsl:variable name="lemma" select="concat(' ',.,' ')" />
         <xsl:variable name="w" select="$root//tei:w[ancestor::tei:div/@type='edition'][contains(concat(' ', @lemma, ' '), $lemma)]" />
         <doc>
           <field name="document_type">
@@ -40,7 +40,7 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="normalize-unicode($lemma,'NFD')" />
+            <xsl:value-of select="normalize-unicode(.,'NFD')" />
             <xsl:text> (</xsl:text><xsl:value-of select="count($w)" /><xsl:text>)</xsl:text>
           </field>
           <field name="language_code">
