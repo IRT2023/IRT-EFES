@@ -351,7 +351,7 @@
     </a>
   </xsl:template>
 
-  <xsl:template priority="1"  match="t:ref">
+  <xsl:template priority="1"  match="t:ref[not(@type='inscription')]">
     <a>
       <xsl:attribute name="href">
         <xsl:value-of select="@target"/>
@@ -360,6 +360,9 @@
       <xsl:apply-templates/>
     </a>
   </xsl:template>
+  
+  <xsl:template priority="1" match="t:ref[@n][@type='inscription']">
+    <a><xsl:attribute name="href"><xsl:value-of select="concat('./',@n,'.html')"/></xsl:attribute><xsl:attribute name="target"><xsl:value-of select="'_blank'"/></xsl:attribute><xsl:apply-templates/></a></xsl:template>
   
   <xsl:template name="navigation">
     <xsl:variable name="filename"><xsl:value-of select="//t:idno[@type='filename']"/></xsl:variable>
