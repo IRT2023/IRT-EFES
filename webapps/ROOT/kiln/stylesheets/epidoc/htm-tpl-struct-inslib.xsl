@@ -372,6 +372,10 @@
     </a>
   </xsl:template>
   
+  <xsl:template match="t:title[not(ancestor::t:titleStmt)]">
+    <i><xsl:apply-templates/></i>
+  </xsl:template>
+  
   <xsl:template priority="1" match="t:ref[@n][@type='inscription'][ancestor::t:origPlace|ancestor::t:provenance]" mode="inslib-placename">
     <a><xsl:attribute name="href"><xsl:value-of select="concat('./',@n,'.html')"/></xsl:attribute><xsl:attribute name="target"><xsl:value-of select="'_blank'"/></xsl:attribute><xsl:apply-templates/></a></xsl:template>
   
