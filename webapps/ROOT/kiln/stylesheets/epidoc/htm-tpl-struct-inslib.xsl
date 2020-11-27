@@ -372,7 +372,10 @@
     </a>
   </xsl:template>
   
-  <xsl:template priority="1" match="t:ref[@n][@type='inscription']">
+  <xsl:template priority="1" match="t:ref[@n][@type='inscription'][ancestor::t:origPlace|ancestor::t:provenance]" mode="inslib-placename">
+    <a><xsl:attribute name="href"><xsl:value-of select="concat('./',@n,'.html')"/></xsl:attribute><xsl:attribute name="target"><xsl:value-of select="'_blank'"/></xsl:attribute><xsl:apply-templates/></a></xsl:template>
+  
+  <xsl:template priority="1" match="t:ref[@n][@type='inscription'][not(ancestor::t:origPlace|ancestor::t:provenance)]">
     <a><xsl:attribute name="href"><xsl:value-of select="concat('./',@n,'.html')"/></xsl:attribute><xsl:attribute name="target"><xsl:value-of select="'_blank'"/></xsl:attribute><xsl:apply-templates/></a></xsl:template>
   
   <xsl:template name="navigation">
