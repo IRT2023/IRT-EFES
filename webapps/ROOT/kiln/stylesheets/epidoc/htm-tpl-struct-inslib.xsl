@@ -278,7 +278,9 @@
       </xsl:if>
    </xsl:template>
 
-   <xsl:template match="t:placeName|t:rs" mode="inslib-placename"> <!-- remove rs? -->
+  <xsl:template match="t:placeName|t:rs|t:repository" mode="inslib-placename"> <!-- remove rs? -->
+    <xsl:variable name="museum-ref" select="substring-after(@ref, '#')"/>
+    <xsl:variable name="museum-link" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/institution.xml'))//t:place[@xml:id=$museum-ref]//t:idno[@type][1]"/>
       <xsl:choose>
         <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
             <a>
@@ -289,6 +291,15 @@
                <xsl:apply-templates/>
             </a>
       </xsl:when>
+        <xsl:when test="starts-with(@ref,'institution.xml') and $museum-link">
+          <a>
+            <xsl:attribute name="href">
+              <xsl:value-of select="$museum-link"/>
+            </xsl:attribute>
+            <xsl:attribute name="target">_blank</xsl:attribute>
+            <xsl:apply-templates/>
+          </a>
+        </xsl:when>
          <xsl:otherwise>
             <xsl:apply-templates/>
          </xsl:otherwise>
@@ -351,7 +362,7 @@
     </a>
   </xsl:template>
 
-  <xsl:template priority="1"  match="t:ref[not(@type='inscription')]">
+  <xsl:template priority="1" match="t:ref[not(@type='inscription')][@target]">
     <a>
       <xsl:attribute name="href">
         <xsl:value-of select="@target"/>
