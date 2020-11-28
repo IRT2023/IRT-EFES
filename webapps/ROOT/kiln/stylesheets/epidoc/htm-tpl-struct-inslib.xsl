@@ -34,14 +34,14 @@
      <br />
      <b><i18n:text i18n:key="epidoc-xslt-inslib-letters">Letters</i18n:text>: </b>
      <xsl:if test="//t:handDesc/t:handNote/text()">
-       <xsl:value-of select="//t:handDesc/t:handNote"/>
+       <xsl:apply-templates select="//t:handDesc/t:handNote"/>
      </xsl:if>
      </p>
 
      <p><b><i18n:text i18n:key="epidoc-xslt-inslib-date">Date</i18n:text>: </b>
      <xsl:choose>
        <xsl:when test="//t:origin/t:origDate/text()">
-         <xsl:value-of select="//t:origin/t:origDate"/>
+         <xsl:apply-templates select="//t:origin/t:origDate"/>
          <xsl:if test="//t:origin/t:origDate[@type='evidence']">
            <xsl:text>(</xsl:text>
            <xsl:for-each select="tokenize(//t:origin/t:origDate[@evidence],' ')">
@@ -376,11 +376,16 @@
     <i><xsl:apply-templates/></i>
   </xsl:template>
   
+  <!-- there should be an easier way to make the links work everywhere -->
+  <xsl:template priority="1" match="t:ref[@n][@type='inscription'][not(ancestor::t:origPlace|ancestor::t:provenance)]">
+    <a><xsl:attribute name="href"><xsl:value-of select="concat('./',@n,'.html')"/></xsl:attribute><xsl:attribute name="target"><xsl:value-of select="'_blank'"/></xsl:attribute><xsl:apply-templates/></a></xsl:template>
+  
   <xsl:template priority="1" match="t:ref[@n][@type='inscription'][ancestor::t:origPlace|ancestor::t:provenance]" mode="inslib-placename">
     <a><xsl:attribute name="href"><xsl:value-of select="concat('./',@n,'.html')"/></xsl:attribute><xsl:attribute name="target"><xsl:value-of select="'_blank'"/></xsl:attribute><xsl:apply-templates/></a></xsl:template>
   
-  <xsl:template priority="1" match="t:ref[@n][@type='inscription'][not(ancestor::t:origPlace|ancestor::t:provenance)]">
+  <xsl:template priority="1" match="t:ref[@n][@type='inscription'][ancestor::t:support]" mode="inslib-dimensions">
     <a><xsl:attribute name="href"><xsl:value-of select="concat('./',@n,'.html')"/></xsl:attribute><xsl:attribute name="target"><xsl:value-of select="'_blank'"/></xsl:attribute><xsl:apply-templates/></a></xsl:template>
+  
   
   <xsl:template name="navigation">
     <xsl:variable name="filename"><xsl:value-of select="//t:idno[@type='filename']"/></xsl:variable>
