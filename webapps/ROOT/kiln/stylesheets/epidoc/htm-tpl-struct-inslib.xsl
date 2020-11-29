@@ -280,9 +280,9 @@
 
   <xsl:template match="t:placeName|t:rs|t:repository" mode="inslib-placename"> <!-- remove rs? -->
     <xsl:variable name="museum-ref" select="substring-after(@ref, '#')"/>
-    <xsl:variable name="museum-link" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/institution.xml'))//t:place[@xml:id=$museum-ref]//t:idno[@type][1]"/>
+    <xsl:variable name="museum-link" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/institution.xml'))//t:place[@xml:id=$museum-ref]//t:idno[1]"/>
       <xsl:choose>
-        <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
+        <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org') or contains(@ref,'ror.org') or contains(@ref,'wikidata.org')">
             <a>
                <xsl:attribute name="href">
                   <xsl:value-of select="@ref"/>
