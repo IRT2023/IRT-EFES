@@ -219,6 +219,13 @@
                </xsl:otherwise>
              </xsl:choose>
            </xsl:for-each>
+           
+           <p>
+             <xsl:for-each select="//t:facsimile//t:graphic//t:desc">
+             <br/><xsl:apply-templates select="." />
+           </xsl:for-each>
+           </p>
+           
          </xsl:when>
          <xsl:otherwise>
            <xsl:for-each select="//t:facsimile[not(//t:graphic)]">
