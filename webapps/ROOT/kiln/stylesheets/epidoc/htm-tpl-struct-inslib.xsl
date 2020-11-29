@@ -145,7 +145,7 @@
              <i18n:text i18n:key="epidoc-xslt-inslib-translation">translation</i18n:text></h4></xsl:if>
            <xsl:if test="@source">
              <xsl:variable name="source-id" select="substring-after(@source, '#')"/>
-             <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$source-id]"/>
+             <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
              <p><xsl:text>Translation source: </xsl:text> 
                <xsl:choose>
                  <xsl:when test="$source">
@@ -157,8 +157,8 @@
                    </xsl:attribute>
                    <xsl:attribute name="target">_blank</xsl:attribute>
                    <xsl:choose>
-                     <xsl:when test="$source//t:*[@type='abbrev']">
-                       <xsl:apply-templates select="$source//t:*[@type='abbrev']"/>
+                     <xsl:when test="$source//t:bibl[@type='abbrev']">
+                       <xsl:apply-templates select="$source//t:bibl[@type='abbrev'][1]"/>
                      </xsl:when>
                      <xsl:otherwise>
                        <xsl:apply-templates select="$source"/>
@@ -343,7 +343,7 @@
 
   <xsl:template match="t:ptr[@target]">
     <xsl:variable name="bibl-ref" select="@target"/>
-    <xsl:variable name="bibl" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$bibl-ref]"/>
+    <xsl:variable name="bibl" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$bibl-ref][not(@sameAs)]"/>
     <a>
       <xsl:attribute name="href">
         <xsl:text>../concordance/bibliography/</xsl:text>
@@ -352,8 +352,8 @@
       </xsl:attribute>
       <xsl:attribute name="target">_blank</xsl:attribute>
       <xsl:choose>
-        <xsl:when test="$bibl//t:*[@type='abbrev']">
-          <xsl:apply-templates select="$bibl//t:*[@type='abbrev']"/>
+        <xsl:when test="$bibl//t:bibl[@type='abbrev']">
+          <xsl:apply-templates select="$bibl//t:bibl[@type='abbrev'][1]"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates select="$bibl"/>
