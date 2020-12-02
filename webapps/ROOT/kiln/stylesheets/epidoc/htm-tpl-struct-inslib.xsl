@@ -27,7 +27,7 @@
      <b><i18n:text i18n:key="epidoc-xslt-inslib-text">Text</i18n:text>: </b>
      <xsl:choose>
        <xsl:when test="//t:layoutDesc/t:layout//text()">
-         <xsl:apply-templates select="//t:layoutDesc/t:layout"/>
+         <xsl:apply-templates select="//t:layoutDesc/t:layout" mode="inslib-dimensions"/>
        </xsl:when>
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text>.</xsl:otherwise>
      </xsl:choose>
