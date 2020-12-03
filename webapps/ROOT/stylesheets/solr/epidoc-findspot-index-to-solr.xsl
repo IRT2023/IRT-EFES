@@ -14,7 +14,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" group-by="concat(@ref,'-',following-sibling::tei:placeName[not(@type)][1]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][1]/@ref)">
+      <xsl:for-each-group select="//tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" group-by="concat(@ref,'-',following-sibling::tei:placeName[not(@type)][1]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][1]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][2]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][3]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][4]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][5]/@ref)">
         <xsl:variable name="place" select="."/>
         <xsl:variable name="place-n" select="document('../../content/xml/authority/places.xml')//tei:listPlace[descendant::tei:head=$place]/@n"/>
         <doc>
@@ -44,6 +44,22 @@
             <xsl:choose>
               <xsl:when test="following-sibling::tei:placeName[@type='monuList']">
                 <xsl:value-of select="following-sibling::tei:placeName[@type='monuList'][1]" />
+                <xsl:if test="following-sibling::tei:placeName[@type='monuList'][2]">
+                  <xsl:text>; </xsl:text>
+                  <xsl:value-of select="following-sibling::tei:placeName[@type='monuList'][2]" />
+                </xsl:if>
+                <xsl:if test="following-sibling::tei:placeName[@type='monuList'][3]">
+                  <xsl:text>; </xsl:text>
+                  <xsl:value-of select="following-sibling::tei:placeName[@type='monuList'][3]" />
+                </xsl:if>
+                <xsl:if test="following-sibling::tei:placeName[@type='monuList'][4]">
+                  <xsl:text>; </xsl:text>
+                  <xsl:value-of select="following-sibling::tei:placeName[@type='monuList'][4]" />
+                </xsl:if>
+                <xsl:if test="following-sibling::tei:placeName[@type='monuList'][5]">
+                  <xsl:text>; </xsl:text>
+                  <xsl:value-of select="following-sibling::tei:placeName[@type='monuList'][5]" />
+                </xsl:if>
               </xsl:when>
               <xsl:otherwise>
                 <xsl:text>-</xsl:text>
@@ -56,7 +72,7 @@
           <field name="index_external_resource">
             <xsl:choose>
               <xsl:when test="following-sibling::tei:placeName[@type='monuList']">
-                <xsl:value-of select="following-sibling::tei:placeName[@type='monuList'][1]/@ref" />
+                <xsl:value-of select="following-sibling::tei:placeName[@type='monuList']/@ref" />
               </xsl:when>
               <xsl:when test="following-sibling::tei:placeName[not(@type)]">
                 <xsl:value-of select="following-sibling::tei:placeName[not(@type)][1]/@ref" />
