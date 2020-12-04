@@ -67,7 +67,7 @@
             </xsl:choose>
           </field>
           <field name="index_item_sort_name">
-            <xsl:value-of select="$place-n" />
+            <xsl:value-of select="concat($place-n, following-sibling::tei:placeName[not(@type)][1], following-sibling::tei:placeName[@type='monuList'][1])" />
           </field>
           <field name="index_external_resource">
             <xsl:choose>
