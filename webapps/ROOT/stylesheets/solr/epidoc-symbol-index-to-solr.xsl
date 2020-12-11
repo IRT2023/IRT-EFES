@@ -27,14 +27,13 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:choose>
-              <xsl:when test="$ref//tei:localName[text()='glyph-display'][following-sibling::tei:value/text()]">
-                <xsl:value-of select="$ref//tei:value[preceding-sibling::tei:localName[text()='glyph-display']]" />
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="$ref//tei:value[preceding-sibling::tei:localName[text()='text-display']]" />
-              </xsl:otherwise>
-            </xsl:choose>
+            <xsl:value-of select="$ref//tei:value[preceding-sibling::tei:localName[text()='text-display']]" />
+            <xsl:if test="$ref//tei:localName[text()='glyph-display'][following-sibling::tei:value/text()]">
+              <xsl:text> (</xsl:text>
+              <xsl:value-of select="$ref//tei:value[preceding-sibling::tei:localName[text()='glyph-display']]" />
+              <xsl:text>)</xsl:text>
+            </xsl:if>
+            
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
