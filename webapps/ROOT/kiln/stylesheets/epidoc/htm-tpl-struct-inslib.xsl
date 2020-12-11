@@ -215,17 +215,18 @@
                  </div>
                </xsl:when>
                <xsl:otherwise>
-                 <xsl:number value="position()" format="1" /><xsl:text>. </xsl:text>
-                 <xsl:apply-templates select="." /><xsl:text> </xsl:text>
+                 <!--<xsl:number value="position()" format="1" /><xsl:text>. </xsl:text>-->
+                 <br/><br/><xsl:apply-templates select="." /><xsl:text> </xsl:text><span>&#160;</span>
+                 <strong><xsl:text>Fig. </xsl:text><xsl:number value="position()" format="1" /></strong><xsl:if test="t:desc"><xsl:text>. </xsl:text><xsl:apply-templates select="t:desc" /></xsl:if>
                </xsl:otherwise>
              </xsl:choose>
            </xsl:for-each>
            
-           <p>
+           <!--<p>
              <xsl:for-each select="//t:facsimile//t:graphic//t:desc">
                <br/><xsl:number value="position()" format="1" /><xsl:text>. </xsl:text><xsl:apply-templates select="." />
            </xsl:for-each>
-           </p>
+           </p>-->
            
          </xsl:when>
          <xsl:otherwise>
