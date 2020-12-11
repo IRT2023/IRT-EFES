@@ -215,14 +215,15 @@
                  </div>
                </xsl:when>
                <xsl:otherwise>
-                 <xsl:apply-templates select="." />
+                 <xsl:number value="position()" format="1" /><xsl:text>. </xsl:text>
+                 <xsl:apply-templates select="." /><xsl:text> </xsl:text>
                </xsl:otherwise>
              </xsl:choose>
            </xsl:for-each>
            
            <p>
              <xsl:for-each select="//t:facsimile//t:graphic//t:desc">
-             <br/><xsl:apply-templates select="." />
+               <br/><xsl:number value="position()" format="1" /><xsl:text>. </xsl:text><xsl:apply-templates select="." />
            </xsl:for-each>
            </p>
            
