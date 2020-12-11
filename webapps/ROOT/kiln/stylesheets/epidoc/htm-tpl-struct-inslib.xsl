@@ -216,8 +216,9 @@
                </xsl:when>
                <xsl:otherwise>
                  <!--<xsl:number value="position()" format="1" /><xsl:text>. </xsl:text>-->
-                 <br/><br/><xsl:apply-templates select="." /><xsl:text> </xsl:text><span>&#160;</span>
+                 <br/><xsl:apply-templates select="." /><xsl:text> </xsl:text><span>&#160;</span>
                  <strong><xsl:text>Fig. </xsl:text><xsl:number value="position()" format="1" /></strong><xsl:if test="t:desc"><xsl:text>. </xsl:text><xsl:apply-templates select="t:desc" /></xsl:if>
+                 <br/>
                </xsl:otherwise>
              </xsl:choose>
            </xsl:for-each>
