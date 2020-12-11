@@ -134,7 +134,7 @@
      <div id="translation">
          <xsl:variable name="editor" select="//t:teiHeader/t:fileDesc/t:titleStmt/t:editor"/>
          <xsl:for-each select="//t:div[@type='translation'][@xml:lang]">
-           <xsl:if test="@xml:lang"><h4 class="slimmer"><xsl:choose>
+           <xsl:if test="@xml:lang"><h3><xsl:choose>
              <xsl:when test="@xml:lang='en'"><xsl:text>English </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='fr'"><xsl:text>French </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='it'"><xsl:text>Italian </xsl:text></xsl:when>
@@ -142,7 +142,7 @@
              <xsl:when test="@xml:lang='la'"><xsl:text>Latin </xsl:text></xsl:when>
              <xsl:otherwise><xsl:value-of select="@xml:lang"/></xsl:otherwise>
            </xsl:choose>
-             <i18n:text i18n:key="epidoc-xslt-inslib-translation">translation</i18n:text></h4></xsl:if>
+             <i18n:text i18n:key="epidoc-xslt-inslib-translation">translation</i18n:text></h3></xsl:if>
            <xsl:if test="@source">
              <xsl:variable name="source-id" select="substring-after(@source, '#')"/>
              <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
@@ -186,7 +186,7 @@
      </div>
 
      <div id="commentary">
-       <h4 class="slimmer"><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text></h4>
+       <h3><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text></h3>
        <!-- Commentary text output -->
        <xsl:variable name="commtxt">
          <xsl:apply-templates select="//t:div[@type='commentary']//t:p"/>
@@ -203,7 +203,7 @@
      </p>
 
      <div id="images">
-       <h4 class="slimmer">Images</h4>
+       <h3>Images</h3>
        <xsl:choose>
          <xsl:when test="//t:facsimile//t:graphic">
            <xsl:for-each select="//t:facsimile//t:graphic">
@@ -216,9 +216,9 @@
                </xsl:when>
                <xsl:otherwise>
                  <!--<xsl:number value="position()" format="1" /><xsl:text>. </xsl:text>-->
-                 <br/><xsl:apply-templates select="." /><xsl:text> </xsl:text><span>&#160;</span>
+                 <xsl:apply-templates select="." /><xsl:text> </xsl:text><span>&#160;</span>
                  <strong><xsl:text>Fig. </xsl:text><xsl:number value="position()" format="1" /></strong><xsl:if test="t:desc"><xsl:text>. </xsl:text><xsl:apply-templates select="t:desc" /></xsl:if>
-                 <br/>
+                 <br/><br/>
                </xsl:otherwise>
              </xsl:choose>
            </xsl:for-each>
