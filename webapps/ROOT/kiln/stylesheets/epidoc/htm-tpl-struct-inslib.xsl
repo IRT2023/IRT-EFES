@@ -379,23 +379,26 @@
       </xsl:choose>
     </a>
   </xsl:template>
-
-  <xsl:template priority="1" match="t:ref[not(@type='inscription')][@target]">
-    <a>
-      <xsl:attribute name="href">
-        <xsl:value-of select="@target"/>
-      </xsl:attribute>
-      <xsl:attribute name="target">_blank</xsl:attribute>
-      <xsl:apply-templates/>
-    </a>
-  </xsl:template>
   
   <xsl:template match="t:title[not(ancestor::t:titleStmt)]">
     <i><xsl:apply-templates/></i>
   </xsl:template>
-  
+
   <!-- there should be an easier way to make the links work everywhere -->
-  <xsl:template priority="1" match="t:ref[@n][@type='inscription'][not(ancestor::t:origPlace|ancestor::t:provenance)]">
+  <xsl:template priority="1" match="t:ref[not(@type='inscription')][@target][not(ancestor::t:origPlace|ancestor::t:provenance|ancestor::t:support)]">
+    <a><xsl:attribute name="href"><xsl:value-of select="@target"/></xsl:attribute><xsl:attribute name="target">_blank</xsl:attribute><xsl:apply-templates/></a>
+  </xsl:template>
+  
+  <xsl:template priority="1" match="t:ref[not(@type='inscription')][@target][ancestor::t:origPlace|ancestor::t:provenance]" mode="inslib-placename">
+    <a><xsl:attribute name="href"><xsl:value-of select="@target"/></xsl:attribute><xsl:attribute name="target">_blank</xsl:attribute><xsl:apply-templates/></a>
+  </xsl:template>
+  
+  <xsl:template priority="1" match="t:ref[not(@type='inscription')][@target][ancestor::t:support]" mode="inslib-dimensions">
+    <a><xsl:attribute name="href"><xsl:value-of select="@target"/></xsl:attribute><xsl:attribute name="target">_blank</xsl:attribute><xsl:apply-templates/></a>
+  </xsl:template>
+  
+  
+  <xsl:template priority="1" match="t:ref[@n][@type='inscription'][not(ancestor::t:origPlace|ancestor::t:provenance|ancestor::t:support)]">
     <a><xsl:attribute name="href"><xsl:value-of select="concat('./',@n,'.html')"/></xsl:attribute><xsl:attribute name="target"><xsl:value-of select="'_blank'"/></xsl:attribute><xsl:apply-templates/></a></xsl:template>
   
   <xsl:template priority="1" match="t:ref[@n][@type='inscription'][ancestor::t:origPlace|ancestor::t:provenance]" mode="inslib-placename">
