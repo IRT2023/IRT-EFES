@@ -232,7 +232,7 @@
          </xsl:when>
          <xsl:otherwise>
            <xsl:for-each select="//t:facsimile[not(//t:graphic)]">
-             <xsl:text>None available (2020).</xsl:text>
+             <p><xsl:text>None available (2020).</xsl:text></p>
            </xsl:for-each>
          </xsl:otherwise>
        </xsl:choose>
