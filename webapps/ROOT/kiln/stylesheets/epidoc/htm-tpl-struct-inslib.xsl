@@ -191,8 +191,16 @@
        <xsl:variable name="commtxt">
          <xsl:apply-templates select="//t:div[@type='commentary']//t:p"/>
        </xsl:variable>
-       <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
-       <xsl:apply-templates select="$commtxt" mode="sqbrackets"/>
+       <xsl:choose>
+         <xsl:when test="//t:div[@type='commentary']//t:p//text()">
+           <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
+           <xsl:apply-templates select="$commtxt" mode="sqbrackets"/>
+         </xsl:when>
+         <xsl:otherwise>
+             <p><xsl:text>No comment (2020).</xsl:text></p>
+         </xsl:otherwise>
+       </xsl:choose>
+       
      </div>
 
      <p><b><i18n:text i18n:key="epidoc-xslt-inslib-bibliography">Bibliography</i18n:text>: </b>
