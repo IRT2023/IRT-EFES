@@ -140,7 +140,8 @@
              <xsl:when test="@xml:lang='it'"><xsl:text>Italian </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='de'"><xsl:text>German </xsl:text></xsl:when>
              <xsl:when test="@xml:lang='la'"><xsl:text>Latin </xsl:text></xsl:when>
-             <xsl:otherwise><xsl:value-of select="@xml:lang"/></xsl:otherwise>
+             <xsl:when test="@xml:lang='ar'"><xsl:text>Arabic </xsl:text></xsl:when>
+             <xsl:otherwise><xsl:value-of select="@xml:lang"/> </xsl:otherwise>
            </xsl:choose>
              <i18n:text i18n:key="epidoc-xslt-inslib-translation">translation</i18n:text></h3></xsl:if>
            <xsl:if test="@source">
@@ -339,13 +340,13 @@
 
    <xsl:template name="inslib-title">
      <xsl:choose>
-       <xsl:when test="//t:titleStmt/t:title/text() and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),2,5))">
+       <xsl:when test="//t:titleStmt/t:title and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),2,5))">
          <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()"/>
          <xsl:text>. </xsl:text>
-         <xsl:value-of select="//t:titleStmt/t:title"/>
+         <xsl:apply-templates select="//t:titleStmt/t:title"/>
        </xsl:when>
-       <xsl:when test="//t:titleStmt/t:title/text()">
-         <xsl:value-of select="//t:titleStmt/t:title"/>
+       <xsl:when test="//t:titleStmt/t:title">
+         <xsl:apply-templates select="//t:titleStmt/t:title"/>
        </xsl:when>
        <xsl:when test="//t:sourceDesc//t:bibl/text()">
          <xsl:value-of select="//t:sourceDesc//t:bibl"/>
