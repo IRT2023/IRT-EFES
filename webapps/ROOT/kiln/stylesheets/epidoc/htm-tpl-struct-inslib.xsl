@@ -180,7 +180,6 @@
            <!-- Translation text output -->
            <xsl:variable name="transtxt">
              <xsl:for-each select=".//t:p">
-               
                <xsl:choose>
                <xsl:when test="ancestor::t:div[@xml:lang='ar']">
                  <p class="arabic"><xsl:apply-templates select="node()"/></p>
@@ -189,7 +188,6 @@
                  <p><xsl:apply-templates select="node()"/></p>
                </xsl:otherwise>
                </xsl:choose>
-             
              </xsl:for-each>
            </xsl:variable>
            <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
