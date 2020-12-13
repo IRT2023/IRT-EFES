@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B06700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Asklepios and Hygeia</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">B.71</idno>
+            <idno type="ircyr2012">B06700</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two fragments of a <material>sandstone</material>
+                              <objectType>colonnette</objectType> (<dimensions><height>0.20</height></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on all four sides of the rectangular base.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height>0.015-0.018</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0300" notBefore="0201" precision="low" evidence="lettering">Dated by Oliverio in the third century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/910">Berenike</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/1090">Sabri</placeName>, near the
+                              Sudanese village (area of the site of Euhesperides); found in <date type="found">1915</date></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot (<date type="observed">1915</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" key="Benghazi">Benghazi</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>From publications (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2007-12-13" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="oliverio1916"/>, <citedRange>189</citedRange> and fig. 10 (drawing)</bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>9.770</citedRange></bibl>, 
+                    <bibl><ptr target="vitali1932"/>, <citedRange>126</citedRange></bibl>;
+               from these <bibl><ptr target="jmr1978"/>, <citedRange>20</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>28.1539</citedRange></bibl>; 
+               cited <bibl><ptr target="cdl1993"/>, <citedRange unit="page">33</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/>
+                    <persName type="attested" key="lgpn:V1-61883"><name nymRef="Χάροψ">Χάροψ</name></persName>
+                    <persName type="divine" key="asklepios"><name nymRef="Ἀσκληπιός">Ἀσκ<milestone unit="side"/><supplied reason="lost">λ</supplied>ηπίῳ</name></persName>
+                    <w lemma="καί">καὶ</w>
+                    <persName type="divine" key="hygia"><name nymRef="Ὑγεία">Ὑ<milestone unit="side"/>γίαι</name></persName>
+                    <w lemma="ἀνατίθημι">ἀνέθ<milestone unit="side"/>ηκε</w>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Charops dedicated <supplied reason="subaudible">this</supplied> to Asklepios and Hygeia</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

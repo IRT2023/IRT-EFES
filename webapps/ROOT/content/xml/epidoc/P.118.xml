@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P11900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> <rs type="textType">Dedication</rs> to Maximin, Constantine and Licinius</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.118</idno>
+            <idno type="ircyr2012">P11900</idno>
+            <idno type="JMR">332 a</idno>
+            <idno type="Excel">747-754</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+                <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository> <idno type="invNo">29, 35</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A composite panel of white, probably Greek island, <material>marble</material> 
+                               which must once have run across a large part of the façade of a monumental 
+                               <objectType>arch</objectType> built of local <material>sandstone</material>;
+                    <ref type="inscription" n="P.119">P.119</ref> is on the attic.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Fragments from at least four sections of the panel (each section originally
+                    <height unit="metre">0.63</height>)
+                            <rs type="execution" key="scalpro">inscribed</rs> within strongly marked guidelines, fragments a., b., and c. on both faces. The text on face A, taken here to be the first, draft,version, 
+                            is distinguished from the second by
+                            greater roughness and irregularity, vivid rubrication and the unweathered condition of the surface, suggesting that it was discarded and replaced by version B, on the exposed face. 
+                            Text A was preceded by a palm brach, and may have been followed by one. Text B was preceded by and followed by acclamations, texts 2.i and 
+                            2.ii, each enclosed in a <rs type="decoration">wreath</rs>.</layout><!-- Traces survive of a further text, 3.
+                            a. i-ii, top edge, traces of a palm
+                    branch belowcheck -->
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Fourth century: <height precision="low" unit="metre">0.09</height>, very rough;
+                   </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                         <ref target="https://www.slsgazetteer.org/1215">Arch of Constantine</ref>
+                     </origPlace>
+                     <origDate notAfter="0313" notBefore="0311" evidence="reign">CE 311-313 </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                               fallen from the <placeName type="monuList" ref="https://www.slsgazetteer.org/1215">Arch of Constantine</placeName>; found in <date type="found">1935</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2013-08-22" who="TW">Tagged name</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2011-04-06" who="MGDA">fixed Goodchild bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-20" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-03" who="GB">lang; fixed nesting of textparts</change>
+         <change when="2010-01-18" who="GB">checked place, date; description of monument</change>
+         <change when="2009-12-29" who="CMR">tagged keywords, dimensions</change>
+         <change when="2009-03-27" who="VA">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="P11900bi" decls="#photograph">
+         <desc>Text A, lines 2-3, fragments (Reynolds NS.XIII.20)</desc>
+      </graphic>
+      <graphic url="P11900bii" decls="#photograph">
+          <desc>Text B, lines 2-3, fragments (Reynolds NS.XIII.21)</desc>
+      </graphic>
+      <graphic url="P11900ci" decls="#photograph">
+          <desc>Text A, lines 1-2, 2-3, fragments (Reynolds NS.XIII.22)</desc>
+      </graphic>
+      <graphic url="P11900d" decls="#photograph">
+         <desc>Text B, lines 1-4</desc>
+      </graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="rgg1961"/>, <citedRange>2</citedRange> with drawings (1 A and B only),
+                   fig. 5</bibl>, whence <bibl><ptr target="AE"/> <citedRange>1963.141.1, 2</citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD017182">017182</ref></citedRange></bibl>; reprinted, <bibl>
+                       <ptr target="rgg-jmr1976"/>  <citedRange unit="page">219-225</citedRange>, fig. 70, p. 221</bibl>; mentioned <bibl><ptr target="kenrick2013"/>, <citedRange unit="page">71</citedRange>, <citedRange unit="page">103</citedRange></bibl>
+               
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            
+           
+
+       <div type="textpart" n="1">
+           <div subtype="face" n="A" type="textpart">
+               
+                
+               <ab>
+                    <lb n="1"/><supplied reason="lost"><space quantity="30" unit="character"/> </supplied> <w lemma="dominus"><supplied reason="lost">Domini</supplied>s</w>
+                        <w lemma="noster"><unclear>no</unclear>str<supplied reason="lost">is</supplied></w> <supplied reason="lost"> <w lemma="liberator">liberatoribus</w>
+                    <w lemma="orbis">orbis</w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma">Romani</placeName> 
+                    <w lemma="conseruator">conseruatoribus</w><space extent="unknown" unit="character"/> </supplied>
+                      
+                    <lb n="2"/><persName type="emperor" key="maximinus"><name nymRef="Galerius">Gal<supplied reason="lost">erio</supplied></name> 
+                        <supplied reason="lost"><name nymRef="Valerius">Valerio</name>
+                    <name nymRef="Maximinus">Maximino</name></supplied>
+                    <supplied reason="lost"><w lemma="pius">Pio</w> <w lemma="felix">Felici</w></supplied>
+                       <w lemma="inuictus"><expan><abbr><supplied reason="lost">in</supplied>u</abbr><ex>icto</ex></expan></w> 
+                        <name nymRef="Augustus"><expan><abbr>Au<supplied reason="lost">g</supplied></abbr><ex>usto</ex></expan></name></persName>
+                    <supplied reason="lost"><w lemma="et">et</w></supplied>  
+                  <persName type="emperor" key="constantinus1"><supplied reason="lost"><name nymRef="Flavius">Flauio</name>
+                    <name nymRef="Valerius">Valerio</name></supplied>
+             <supplied reason="lost">       <name nymRef="Constantinus">Constantino</name> </supplied>
+                    <w lemma="pius">Pio</w> <w lemma="felix">Fe<supplied reason="lost">lici</supplied></w> 
+                    <supplied reason="lost"><w lemma="inuictus">inuicto</w> 
+                        <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></supplied></persName>
+                        <supplied reason="lost"><w lemma="et">et</w></supplied>
+                    <lb n="3"/><persName type="emperor" key="licinius"><name nymRef="Valerius">Val<supplied reason="lost">erio</supplied></name> 
+                        <supplied reason="lost"><name nymRef="Licinianus">Liciniano</name>
+                    <name nymRef="Licinius">Licinio</name> 
+                    <w lemma="pius">Pio</w> <w lemma="felix">Felici</w> <w lemma="inuictus">inuicto</w> 
+                        <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></supplied></persName> 
+                    <supplied reason="lost"><w lemma="ciuitas">ciuitates</w>
+                    <w lemma="prouincia">prouinciae</w> </supplied>
+                    <placeName nymRef="#Libua Superior" ref="#libyasuperior"><supplied reason="lost">Libuae</supplied>
+                        Supe<supplied reason="lost">r</supplied>i<supplied reason="lost">oris</supplied></placeName> 
+                    <supplied reason="lost" cert="low"><w lemma="uel">uel</w> 
+                       <placeName nymRef="#Pentapolis" ref="#pentapolis">Pentapoleos</placeName></supplied> 
+                    <lb n="4"/><supplied reason="lost"><space quantity="3" unit="character"/>
+                    <w lemma="deuotus">deuotae</w> 
+                  <expan>  <w lemma="numen"><abbr>n</abbr><ex>umini</ex></w>
+                    <w lemma="maiestas"><abbr>m</abbr><ex>aiestati</ex></w><w lemma="que"><abbr>q</abbr><ex>ue</ex></w></expan>
+                    <w lemma="is">eorum</w> <space quantity="3" unit="character"/></supplied>
+            </ab>
+            </div>
+             
+           
+            <div subtype="face" n="B" type="textpart">
+               <ab>
+                    <lb n="1"/><supplied reason="lost"><space quantity="30" unit="character"/> <w lemma="dominus">Dominis</w>
+                        <w lemma="noster">nostris</w> <w lemma="liberator">liberatoribus</w>
+                    <w lemma="orbis">orbis</w></supplied> <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><supplied reason="lost">Roman</supplied>i</placeName> 
+                    <w lemma="conseruator">con<supplied reason="lost">ser</supplied>u<supplied reason="lost">atoribus</supplied></w>
+                    <supplied reason="lost"><w lemma="pax">pacis</w> <space extent="unknown" unit="character"/> </supplied>
+                    <lb n="2"/><persName type="emperor" key="maximinus"><supplied reason="lost"><del rend="erasure"><name nymRef="Galerius">Galerio</name> <name nymRef="Valerius">Valerio</name></del></supplied>
+                    <name nymRef="Maximinus"><supplied reason="lost"><del rend="erasure">Maximi</del></supplied><del rend="erasure">no</del></name>
+                    <supplied reason="lost"><w lemma="pius">Pio</w> <w lemma="felix">Felici</w> 
+                       <w lemma="inuictus"><expan><abbr>inu</abbr><ex>icto</ex></expan></w> 
+                        <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></supplied></persName>
+                    <supplied reason="lost"><w lemma="et">et</w></supplied> 
+                  <add place="overstrike"><orig>us</orig></add>
+                  <persName type="emperor" key="constantinus1"><name nymRef="Flavius">Fla<unclear>u</unclear>io</name> 
+                    <name nymRef="Valerius">Val<supplied reason="lost">erio</supplied></name>
+                    <name nymRef="Constantinus">Co<supplied reason="lost">nstantino</supplied></name> 
+                    <w lemma="pius"><supplied reason="lost">P</supplied>io</w> <w lemma="felix">Felic<supplied reason="lost">i</supplied></w> 
+                    <supplied reason="lost"><w lemma="inuictus">inuicto</w> 
+                        <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name>
+                        <w lemma="et">et</w></supplied></persName>
+                    <lb n="3"/><persName type="emperor" key="licinius"><supplied reason="lost"><del rend="erasure"><name nymRef="Valerius">Valerio</name> 
+                        <name nymRef="Licinianus">Liciniano</name></del></supplied>
+                    <name nymRef="Licinius"><supplied reason="lost"><del>Licin</del></supplied><del rend="erasure">io</del></name> 
+                    <supplied reason="lost"><w lemma="pius">Pio</w> <w lemma="felix">Felici</w></supplied> <w lemma="inuictus"><supplied reason="lost">i</supplied>n<supplied reason="lost">uicto</supplied></w> 
+                        <supplied reason="lost"><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></supplied></persName> 
+                    <w lemma="ciuitas"><supplied reason="lost">ci</supplied>uitates</w>
+                    <w lemma="prouincia">pro<supplied reason="lost">uin</supplied>c<supplied reason="lost">iae</supplied></w> 
+                    <placeName nymRef="#Libua Superior" ref="#libyasuperior"><supplied reason="lost">Libuae</supplied>
+                        <supplied reason="lost">Su</supplied>peri<unclear>ori</unclear><supplied reason="lost">s</supplied></placeName> 
+                    <w lemma="uel">ue<supplied reason="lost">l</supplied></w> 
+                       <supplied reason="lost" cert="low"><placeName nymRef="#Pentapolis" ref="#pentapolis">Pentapoleos</placeName></supplied> 
+                    <lb n="4"/><supplied reason="lost" cert="low"> <space quantity="3" unit="character"/></supplied>
+                    <w lemma="deuotus"><supplied reason="lost">de</supplied>u<supplied reason="lost">otae</supplied></w> 
+                  <expan>  <supplied reason="lost"><w lemma="numen"><abbr>n</abbr><ex>umini</ex></w></supplied>
+                    <w lemma="maiestas"><abbr>m</abbr><ex>aiestati</ex></w><w lemma="que"><abbr>q</abbr><ex>ue</ex></w></expan>
+                    <w lemma="is">eorum</w> <space quantity="3" unit="character"/> 
+            </ab>
+            </div>
+           </div>
+            
+               
+            <div subtype="part" n="2" type="textpart">
+                
+            <div subtype="part" n="i" type="textpart"><ab>
+                    <lb n="1"/><w lemma="uotum"><supplied reason="lost">uot</supplied>is</w>
+                    <lb n="2"/><supplied reason="lost"><num value="20">XX</num> </supplied>
+                </ab>
+              </div>
+            <div subtype="part" n="ii" type="textpart"><ab>
+                    <lb n="1"/><w lemma="multus">mu<supplied reason="lost">lt</supplied>is</w>
+                    <lb n="2"/><num value="30">XX<supplied reason="lost">X</supplied></num>
+                </ab></div>
+                </div>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1.B.1">
+                  <note>The spacing of the letters is much wider than in lines 2-4</note>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>Text 1, A with B</note>: For our masters [liberators and] preservers [of the Roman world], 
+         Gal[erius Valerius Maximi]nus, [pious fortunate] invincible Augustus, [and] Flavius Valerius Constantinus, pious fortunate [invincible Augustus, and] Val[erius Licinianus Licin]ius, 
+         [pious fortunate invincible Augustus]: the cities of the province of Libya Superior [also known as Pentapolis] <supplied reason="subaudible">dedicated this</supplied>, [being devoted to their divinity] and majesty.</p>
+         <p><note>2: i to the left</note>: For prayers: 20 years. <note>ii to the right</note>: For many <supplied reason="subaudible">years</supplied>: 30 years.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>1. The text honoured several members of an imperial house, <!-- (a, i) -->two of whom, 
+                given the order in which their partially surviving names appear in A <!-- (b, i) -->can be identified
+                    as Maximin Daia and the elder Licinius. <!-- It also contained a reference to the province 
+                    under its fourth century name of Libya Superior(c, i) --></p>
+             <p>Version A: The condition of the stone strongly 
+                    suggests that it was never exposed and the bad quality of the workmanship is the only 
+                    obvious, and indeed a sufficient, explanation for its rejection - the cutters, we suppose,
+                    being required to produce a better version on the reverse side of the panel.</p>
+             <p>Version B. The final version of the text, honouring several members of an imperial house (<!-- (d;) -->the space available, if the 
+                    emperors are correctly identified, allows for three only), of whom the first and the third names
+                    were subsequently erased, the space left by the first being overwritten<!-- (d, f line  2, and lines 1, 2)) -->. The 
+                    second, unerased, name which began Flavius Valerius (<!-- d -->line  2), must be either Constantius
+                    I or Constantine the Great, and if it is correct to take this as a repeat of the first text can only 
+                    be Constantine. The arch was then dedicated between the death of Galerius in May 311 
+                    and the outbreak of war between Maximinus and Licinius in March 313, when there 
+                    were three reigning Augusti, Maximin Daia, Constantine and the elder Licinius, whose
+                    names regularly appear in that order (cf. <title level="s">ILS</title> 663, 664). Possible occasions for the 
+                    erection of the arch are the initiation of the joint reign of the three Augusti after the death of 
+                    Galerius in May 311 and the defeat and death of Maxentius in October 312.</p>
+            <p>Line 1:  filled exempli gratia only; further formulae of this sort were no doubt written over the 
+                name of Maximin, erased after his defeat in 313.</p>
+            <p>Line 3 is incompletely filled if the province was 
+                    simply named Libya Superior; the gap disappears if Pentapoleos is added. In
+                    Diocletian's reorganisation of the province, the Pentapolis became Libya Superior; but the name Pentapolis also appears thereafter, even in official usage, 
+                    as e.g. in Anastasius' decree, <ref type="inscription" n="P.116">P.116</ref>, col. II, lines 52/3,<!-- (and see also the material collected by 
+                    Romanelli, <title>Cir. Rom.</title> 135f.) --> so that it would not be surprising if both names stood here. That 
+                    the cities of the province made their communal dedication to the emperors at Ptolemais 
+                    demonstrates that Ptolemais had now replaced Cyrene as the governor's seat; the change
+                    was probably made by Diocletian.
+                    <!-- No place has been found for the letters of a, ii, unless perhaps vel stood between Superioris
+                    and the conjectural Pentapoleos in line  3 or, conceivably the genitive Libuae was spelt Libue.  -->
+                    </p>
+             <p>Text 2: Probably flanking B to the left and right ; in ii the spacing demands the restoration of the third x. <!-- This implies a 
+                    similar flanking panel to the left containing the text: [uotis] / [xx].was the panel containing g. and h. on which a wreath surrounded 
+                    the text: Mu[lt]is / xx[x]. --></p>
+            <p>  Parallels for these acclamations
+                are almost entirely on coins but see e.g. for <foreign xml:lang="la">votis</foreign>  <title>AE</title> 1990, 343, (whence EDH <ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD016683">016683</ref>) <!-- CIL VI. 1139 = ILS 694, CIL VIII 8478 (all of 
+                    Constantine's reign) -->, and for <foreign xml:lang="la">multis</foreign> <title>AE</title> 2002, 1563, (whence EDH <ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD008139">008139</ref>).
+                On decennalian <foreign xml:lang="la">vota</foreign> in general see the collection and discussion 
+                    of the coin material by H. Mattingly, <title level="j">Proc. Brit. Acad</title>. XXXVI (1950) 155 f. (Pt. I), XXXVII 
+                    (1951) 219 f. (Pt. II), and on the particular formula used here add S.H.V. Sutherland, <title>The
+                    Roman Imperial Coinage</title> VI (London, 1967) 20, n. 7. The texts should mean that 
+                    vicennalian vows had been paid (or were about to be) and trecennalian promised - 
+                    with the implication that the trecennalia are foreseen as involving an increase in prosperity. 
+                    Coins show the occasional anticipations of payment of vows as e.g. Maximin in 307/8 
+                    (Mattingly, Pt. II, no. 59 b and note, p. 253), but neither Maximin nor Licinius ever issued 
+                    coins referring to trecennelia and Constantine not before 325/6 (Mattingly, Pt. II, no. 70 
+                    and note, p. 257) when in fact the vows for his vicennalia had been properly paid. It 
+                    seems probable then that the flanking inscriptions were added sometime after the main
+                    text was in position, perhaps in 325/6; this may also have been the occasion of the 
+                    erasure of the name of Licinius, who was defeated and disgraced in 324, unless it occurred 
+                    earlier during his war with Constantine in 314, and was never reversed.</p>
+            <!-- <p>On the arch see 
+                    Caputo, <title level="s">Atti del III Congresso di Studi Coloniali </title>(Florence, 1937) 133 f.; Romanelli, 
+                    <title>Cir. Rom.</title> 255; Kraeling, <title level="j">Quaderni</title> III (1954) 58 f.; Kraeling p. 74 f.</p> -->
+             <!-- div subtype="face" n="A" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="dominus"><supplied reason="lost">domini</supplied>s</w> 
+                        <w lemma="noster"><unclear>no</unclear>str<supplied reason="lost">is</supplied></w>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="ellipsis" extent="unknown" unit="character"/> <persName type="emperor">
+                        <w lemma="inuictus"><expan><abbr><supplied reason="lost">in</supplied>u</abbr><ex>icto</ex></expan></w> 
+                        <name><expan><abbr>Au</abbr><supplied reason="lost"><abbr>g</abbr><ex>usto</ex></supplied></expan></name></persName>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div><div subtype="face" n="ii" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>n</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>v e</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div></div><div subtype="fragment" n="b" type="textpart"><div subtype="face" n="i" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><persName type="emperor"><name>Gal<supplied reason="lost">erio</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><persName type="emperor"><name>Val<supplied reason="lost">erio</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/> <space quantity="1" unit="character"/>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div><div subtype="face" n="ii" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="pius"><supplied reason="lost">p</supplied>io</w> <w><unclear>f</unclear>e<unclear>l</unclear></w>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">su</supplied>peri</w> 
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <space quantity="1" unit="character"/>
+                    </ab></div></div><div subtype="fragment" n="c" type="textpart">
+                       <div subtype="face" n="i" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="pius"><unclear>pio</unclear></w>
+                        <w lemma="felix"><unclear>fe</unclear><supplied reason="lost">lici</supplied></w>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
+                        <w><unclear>s</unclear>up<unclear>e</unclear><supplied reason="lost">rioris</supplied></w>
+                    </ab></div><div subtype="face" n="ii" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="felix"><supplied reason="lost">fel</supplied><unclear>i</unclear>c<unclear>i</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">superi</supplied><unclear>ori</unclear><supplied reason="lost">s</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab></div></div><div subtype="fragment" n="d" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ico<supplied reason="undefined" evidence="previous-editor"><gap reason="lost" quantity="1" unit="character"/></supplied></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><add place="overstrike"><orig>vs</orig></add> 
+                        <persName type="emperor"><name>Fla<unclear>u</unclear>io</name>
+                            <name>Val<supplied reason="lost">erio</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">ci</supplied>uitates</w> <w lemma="prouincia">pro<supplied reason="lost">uinciae</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="numen"><expan><abbr>n</abbr><ex>umini</ex></expan></w></supplied>
+                        <w lemma="maiestas"><expan><abbr>m</abbr><ex>aiestati</ex></w><w lemma="que"><abbr>q</abbr><ex>ue</ex></expan></w>
+                        <w lemma="is">eorum</w> <space quantity="1" unit="character"/>
+                        <gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div><div subtype="fragment" n="e" type="textpart"><ab>
+                        <lb n="1"/><orig>v</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><orig>co</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><orig>c</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab></div><div subtype="fragment" n="f" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><del rend="erasure"><orig>no</orig></del><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><del rend="erasure"><orig>io</orig></del><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>v</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3a"/><gap reason="lost" quantity="1" unit="line"/>
+                </ab></div><div subtype="fragment" n="g" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><orig>mv</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><num atLeast="20"><orig>X<unclear>X</unclear></orig></num> <gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div><div subtype="fragment" n="h" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>is</orig>
+                    <lb n="1a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab> </div>
+            div subtype="fragment" n="ci" type="textpart">
+                  <ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="pius"><unclear>pio</unclear></w>
+                        <w lemma="felix"><unclear>fe</unclear><supplied reason="lost">lici</supplied></w>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
+                        <w><unclear>s</unclear>up<unclear>e</unclear><supplied reason="lost">rioris</supplied></w>
+                  </ab>
+               </div>
+             <div subtype="fragment" n="aii" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>n</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>v e</orig><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+            </div>-->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

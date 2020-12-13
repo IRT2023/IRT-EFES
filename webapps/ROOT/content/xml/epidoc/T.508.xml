@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T49700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.508</idno>
+            <idno type="ircyr2012">T49700</idno>
+            <idno type="JMR">201n</idno>
+            <idno type="Excel">1636</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType> inscribed on the façade,
+                               with <ref type="inscription" n="T.495">T.495</ref>,  <ref type="inscription" n="T.496">T.496</ref>,
+                               <ref type="inscription" n="T.497">T.497</ref>,  <ref type="inscription" n="T.498">T.498</ref>,  
+                               <ref type="inscription" n="T.499">T.499</ref>,  <ref type="inscription" n="T.500">T.500</ref>,  
+                               <ref type="inscription" n="T.501">T.501</ref>,  <ref type="inscription" n="T.502">T.502</ref>,  
+                               <ref type="inscription" n="T.503">T.503</ref>,  <ref type="inscription" n="T.504">T.504</ref>,  
+                               <ref type="inscription" n="T.505">T.505</ref>,  <ref type="inscription" n="T.506">T.506</ref>, 
+                               <ref type="inscription" n="T.507">T.507</ref>,  <ref type="inscription" n="T.508">T.508</ref>,
+                               <ref type="inscription" n="T.509">T.509</ref>,  
+                               <ref type="inscription" n="T.510">T.510</ref>,  <ref type="inscription" n="T.511">T.511</ref>,  
+                               <ref type="inscription" n="T.512">T.512</ref>,  <ref type="inscription" n="T.513">T.513</ref>,  
+                               <ref type="inscription" n="T.514">T.514</ref>,  <ref type="inscription" n="T.515">T.515</ref>;  
+                               there are also a number of illegible panels.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> within a sunk gabled panel outlined in relief, too high to measure, to the right of <ref type="inscription" n="T.501">T.501</ref>. 
+                           It appeared to be quite illegible but the photograph shows a last line.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>L for ἐτῶν; not measurable.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" evidence="lettering context">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>:  
+                                <placeName type="monuList" ref="https://www.slsgazetteer.org/1154">Quarry East XV</placeName>, South wall.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
+       <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-22" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-15" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-09-11" who="Pietro">Tokenized</change>
+         <change when="2009-02-10" who="VA">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNB12_008" decls="#photograph"><desc>View of the façade. From left:
+      First group: <ref type="inscription" n="T.489">T.489</ref>,  <ref type="inscription" n="T.490">T.490</ref>, <ref type="inscription" n="T.491">T.491</ref>, 
+      <ref type="inscription" n="T.492">T.492</ref>, ?<ref type="inscription" n="T.493">T.493</ref>,  ? <ref type="inscription" n="T.494">T.494</ref>; Second group:   
+      <ref type="inscription" n="T.499">T.499</ref> above <ref type="inscription" n="T.498">T.498</ref> above <ref type="inscription" n="T.495">T.495</ref>  and <ref type="inscription" n="T.496">T.496</ref>, 
+      <ref type="inscription" n="T.500">T.500</ref> above <ref type="inscription" n="T.497">T.497</ref>, <ref type="inscription" n="T.499">T.501</ref> above <ref type="inscription" n="T.502">T.502</ref>, 
+      <ref type="inscription" n="T.503">T.503</ref>, <ref type="inscription" n="T.504">T.504</ref>, <ref type="inscription" n="T.505">T.505</ref>, <ref type="inscription" n="T.506">T.506</ref>, 
+      <ref type="inscription" n="T.507">T.507</ref>, 
+      <ref type="inscription" n="T.509">T.509</ref> above <ref type="inscription" n="T.510">T.510</ref> above <ref type="inscription" n="T.511">T.511</ref>, 
+      <ref type="inscription" n="T.515">T.515</ref>  above<ref type="inscription" n="T.514">T.514</ref> above <ref type="inscription" n="T.513">T.513</ref> 
+      above <ref type="inscription" n="T.512">T.512</ref>.
+      (Reynolds XII.9)</desc></graphic>
+      </facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="jmr1983"/>, <citedRange>19.n</citedRange></bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>33.1431</citedRange></bibl>, <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324610">324610</ref></citedRange></bibl>
+            </p><!-- El Haddar 267 -->
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+           <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+   <lb n="1"/><date type="life-span" dur="P10Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="10">ι</num> </date>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#jmr1983" xml:lang="en"> <p> . . . aged 10.</p></div>
+         <div type="translation" resp="#cmr" xml:lang="en"> <p> . . . ] aged 10.</p></div> </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

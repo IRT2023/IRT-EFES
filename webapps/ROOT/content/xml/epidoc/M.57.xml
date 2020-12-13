@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B05800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Military</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.57</idno>
+            <idno type="ircyr2012">B05800</idno>
+            <idno type="JMR">10ii</idno>
+            <idno type="Excel">2026</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Ashlar</material> <objectType>block</objectType>s in the wall of the fortress; other blocks are inscribed with
+                              <ref type="inscription" n="M.56">M.56</ref>, <ref type="inscription" n="M.58">M.58</ref>, <ref type="inscription" n="M.59">M.59</ref>, <ref type="inscription" n="M.60">M.60</ref>, <ref type="inscription" n="M.61">M.61</ref>, <ref type="inscription" n="M.62">M.62</ref>, <ref type="inscription" n="M.63">M.63</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffiti</rs>, to the left of the door; several too high to measure</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a: lunate epsilon, lunate sigma, cursive omega, bar above the abbreviation; 
+                        b: lunate sigma, cursive omega; c: <height>0.05-0.08</height>, lunate sigma, lunate epsilon; d: capitals; e: lunate sigma; 
+                        f: <height>0.02-0.05</height>, lunate sigma; g: square sigma, lunate epsilon.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notAfter="0099" notBefore="0001" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1172">South of Berenike</placeName>:
+                        <placeName ref="https://www.slsgazetteer.org/1092">Zawyiet Msus</placeName>,  
+                        in the Roman fort, on the west wall of the tower; first recorded in <date type="found">1950</date> </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot (re-examined in 1969, 1970)</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/80623">Zāwiyat Masūs</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2011-04-06" who="MGDA">fixed Goodchild bibliography</change>
+         <change when="2011-02-24" who="GB">tagged apparatus</change>
+         <change when="2010-11-22" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-20" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-06-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="JMRNB09_093" decls="#photograph"><desc>Face (Reynolds IX.93, from negative)</desc></graphic>
+      <graphic url="B05800-B06400_002" decls="#photograph"><desc>View of the right side of the wall (Reynolds IX.93, from print)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               c, f, <bibl>
+                  <ptr target="rgg1953"/>  Appendix, <citedRange>9 and 4</citedRange>, p. 76</bibl>, whence
+                    <bibl>
+                  <ptr target="SEG"/> <citedRange>13.620</citedRange></bibl>; reprinted, <bibl>
+                  <ptr target="rgg-jmr1976"/>, <citedRange>207</citedRange></bibl>;
+               g, <bibl>
+                  <ptr target="jmr1971a"/>, <citedRange>9</citedRange></bibl>,
+               whence <bibl><ptr target="robertBE"/>, <citedRange>1976.794</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>26.1851</citedRange></bibl>,
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324742">324742</ref></citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>1974.685</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="section" n="a" type="textpart">
+               <ab>
+                        <lb n="1"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιοϲ</ex></expan></name>
+                           <name nymRef="Ἀντώνιος">Ἀντών<supplied reason="omitted">ε</supplied>ιοϲ</name>
+                           <name nymRef="Ῥωμανός">Ῥωμανὸϲ</name></persName> <w lemma="στρατιώτης">ϲτρατιώτηϲ</w>
+               </ab>
+            </div>
+            <div subtype="section" n="b" type="textpart">
+               <ab>
+                        <lb n="1"/><persName type="attested"><name nymRef="Τίτος"><expan><abbr><unclear>Τ</unclear></abbr><ex>ίτοϲ</ex></expan></name>
+                           <name nymRef="Πετρώνιος"><unclear>Π</unclear>ετρώνιοϲ</name></persName>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div subtype="section" n="c" type="textpart">
+               <ab>
+                        <lb n="1"/><persName type="attested"><name nymRef="Ἰούλιος">Ἰού<space quantity="1" unit="character"/>λιοϲ</name>
+                           <name nymRef="Ἐπαφρόδειτος"><unclear>Ἐπα</unclear>φρόδειτοϲ</name></persName> 
+                        <gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div subtype="section" n="d" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>αρχαια</orig><gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div subtype="section" n="e" type="textpart">
+               <ab>
+                        <lb n="1"/><persName type="attested"><name nymRef="Πόπλιος">Πόπλιοϲ</name> <name nymRef="Νίγερ"><unclear>Νίγ</unclear>ερ</name></persName> 
+                        <gap reason="lost" extent="unknown" unit="character"/>
+              </ab>
+            </div>
+            <div subtype="section" n="f" type="textpart">
+               <ab>
+                        <lb n="1"/><persName type="attested"><name nymRef="Ἰούλιος">Ἰούλιοϲ</name>
+                        <lb n="2"/><gap reason="lost" quantity="6" unit="character"/><name nymRef="-εῖνος"><seg part="F">εῖνοϲ</seg></name></persName>
+                        <lb n="3"/> <w lemma="ἱππεύς">ἱππεύϲ</w>
+               </ab>
+            </div>
+            <div subtype="section" n="g" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Ἰούλιος">Ἰούλιοϲ</name></persName> 
+                        <w lemma="ἱππεύς">ἱππεύϲ</w> <orig>το</orig><gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+         </div>
+         
+         <div type="apparatus">
+            <listApp>
+               <app loc="c">
+                  <rdg resp="#rgg1953">[Ἰ]ούλιος Τέρτιος ΤΥΡΤΙ [ . . /
+                  </rdg>
+                  <rdg resp="#SEG">Τορκ<supplied reason="lost">ουᾶτος</supplied>
+                  </rdg>
+               </app>
+            <app loc="f">
+                  <rdg resp="#rgg1953">Ἰούλιος ΑΜΑΥ [ . . .
+                  </rdg>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+           <div type="translation" resp="#cmr" xml:lang="en"><p> <note>a</note>: L(oukios) Antonios Romanos, soldier <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Antonius Romanus</foreign></supplied>; 
+              <note>b</note>: T(itos) Petronios <supplied reason="explanation"><foreign xml:lang="la">T(itus) Petronius </foreign></supplied> [ . . . ; 
+              <note>c</note>: Ioulios <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied> Epaphrodeitos [ . . . ; 
+              <note>d</note>: <note>Not usefully translatable</note>;
+            <note>e</note>: Poplios Niger <supplied reason="explanation"><foreign xml:lang="la">Publius Niger</foreign></supplied> [ . . .; 
+              <note>f</note>: Iolios  <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied> [. . -]einos, cavalryman; 
+              <note>g</note>: [ . . . ] Ioulios <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied>, cavalryman [ . . . ;</p></div>
+         </div>
+         
+         <div type="commentary">
+            
+            <p>For these inscriptions see further on <ref type="inscription" n="M.56">M.56</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C03600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">decree</rs> of <rs type="textType">honours</rs> by the <rs type="textType"><certainty cert="low" locus="value" match=".."/>Jewish</rs> politeuma</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.39</idno>
+            <idno type="ircyr2012">C03600</idno>
+            <idno type="JMR">622</idno>
+            <idno type="Excel">81</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjoining pieces of a <objectType>stele</objectType> of Attic <material>marble</material>, the left side 
+                              cut back to form a cornice (<dimensions><width>0.28</width> <height>0.82</height> <depth>0.21</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" key="scalpro">Inscribed</rs> on one face, of which the upper part and the greater
+                           part of the left side have been roughly re-dressed.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.01-0.015</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace> Unknown.</origPlace>
+                     <origDate notAfter="0014" notBefore="-0027" precision="low" evidence="lettering">Augustan</origDate>
+                  </origin><provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>, 
+                              Between <placeName type="monuList" ref="https://www.slsgazetteer.org/994">Theatre 3</placeName> and the <ref target="https://www.slsgazetteer.org/991">House of Jason Magnus</ref>, in the south theatre area;
+                   re-used as a lower moulding against the wall of a small shrine; found in <date type="found">1960</date>
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Shahat">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2007-11-06" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="Photos_0344" decls="#photograph"><desc>View (1961-05-26, Joyce Reynolds, II.17)</desc></graphic>
+      <graphic url="JMRNB02_016" decls="#photograph"><desc>Face (1961-05-26, Joyce Reynolds, II.16)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div subtype="editions" type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="antolini2010"/><citedRange></citedRange></bibl>, whence <!-- check -->
+               <bibl><ptr target="cdlBE"/>, <citedRange>2011.649</citedRange></bibl>,
+               <bibl><ptr target="SEG"/> <citedRange>60.1835</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                 <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>σ</unclear>τα</orig>   
+                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low"><w lemma="ἀναγράφω">ἀναγράψαι</w></supplied> <w lemma="αὐτός"><supplied reason="lost">αὐτὸ</supplied>ν</w> <w lemma="εἰς">εἰς</w> 
+                <lb n="3"/><w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί">καὶ</w> <w lemma="στεφανόω">στε<lb n="4" break="no"/><supplied reason="lost">φανοῦν</supplied></w> <w lemma="ὀνομαστί"><supplied reason="lost">ὀνομαστὶ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="κατά"><supplied reason="lost">καθ’</supplied></w> <w lemma="ἕκαστος"><supplied reason="lost">ἑκ</supplied>άστην</w> <space quantity="1" unit="character"/>
+                <lb n="5"/> <w lemma="σύνοδος"><supplied reason="lost">σύνοδον</supplied></w> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="νουμηνία"><supplied reason="lost">νουμηνίαν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="τε"><supplied reason="lost">τ</supplied>ε</w>
+                <w lemma="οὖν">οὖν</w> <w lemma="στέφανος">στε<lb n="6" break="no"/><supplied reason="lost">φάνῳ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἀρετή"><supplied reason="lost" cert="low">ἀρετῆς</supplied></w>
+                <w lemma="καί"><supplied reason="lost" cert="low">καὶ</supplied></w> 
+                <w lemma="εὔνοια"><supplied reason="lost">εὐ</supplied>νοίας</w> <w lemma="ἕνεκα">ἕνε<lb n="7" break="no"/><supplied reason="lost">κε</supplied></w> <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w> 
+                <supplied reason="lost" cert="low"><w lemma="πρός">πρὸς</w> <w lemma="ὁ">τὸ</w> <w lemma="πολίτευμα">πολίτευμα</w>· <w lemma="εἰμί">εἶναι</w> <w lemma="δέ">δὲ</w></supplied> <w lemma="αὐτός">αὐτῶι</w> <space quantity="4" unit="character"/>
+                <lb n="8"/><w lemma="ἀλειτουργησία"><supplied reason="lost" cert="low">ἀλειτουργησίαν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="ἄλλος">τἆλλα</w>
+                <space quantity="3" unit="character"/>
+                <lb n="9"/><supplied reason="lost" cert="low"><w lemma="ὅσος">ὅσα</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἄλλος">ἄλλοις</w> <w lemma="εὐεργέτης">εὐεργέταις</w></supplied>, <w lemma="ὁ"><supplied reason="lost">τοὺς</supplied></w> 
+                <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w> <w lemma="ἄρχων">ἄρχοντας</w> <space quantity="3" unit="character"/> 
+                <lb n="10"/> <w lemma="ἀναγράφω"><supplied reason="lost">ἀναγράψαντας</supplied></w> <w lemma="ὁ"><supplied reason="lost">τὸ</supplied></w> <w lemma="ψήφισμα"><supplied reason="lost">ψήφισμα</supplied></w> 
+                <w lemma="εἰς">εἰ<supplied reason="omitted">ς</supplied></w> <w lemma="στήλη">στήλην</w> <space quantity="2" unit="character"/>
+                <lb n="11"/> <w lemma="λίθος"><supplied reason="lost">λίθου</supplied></w> <placeName type="ethnic" nymRef="#Πάριος" ref="#paros"><unclear>Π</unclear><supplied reason="lost">αρ</supplied>ίου</placeName> <space quantity="3" unit="character"/> <w lemma="τίθημι">θεῖναι</w> <w lemma="εἰς">εἰς</w> <w lemma="ὅς">ὃν</w> <w lemma="ἐάν">ἂν</w>
+                <lb n="12"/><w lemma="βούλομαι"><supplied reason="lost" cert="low">βουληθ</supplied>ῶσιν</w>  
+                <space quantity="1" unit="character"/> <w lemma="ὁ">οἱ</w> <w lemma="ἄρχων">ἄρχοντας</w> <note>sic</note> <w lemma="τόπος">τόπον</w>
+            
+            </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <note>The restoations are by Reynolds, very similar to those by Antolini</note>
+            <listApp>
+               
+               <app loc="1"><rdg resp="#antolini2010">Σ+Α</rdg></app>
+               <app loc="5"><rdg resp="#antolini2010">. . . ]οῦν στε</rdg></app>
+               <app loc="11"><note>Antolini does not record the traces of Π</note></app></listApp> 
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>. . . ?inscribe (his name) ] on [ . . .  and to] crown [him by name at] each [sabbath and new moon . . . ] with a crown [  . . ] 
+            because of his [virtue] and goodwill [towards the community and for] him to have [?immunity from liturgies and] the other things [which are given to other benefactors] 
+            and the archons should inscribe the decree on a stele of Parian [marble] and should place it in whatever location the archons [wish].</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The end of an honorary decree, but the <foreign xml:lang="grc">κοινή</foreign> forms are
+               unlikely (cf. <ref type="inscription" n="C.276">C.276</ref>, <ref type="inscription" n="C.737">C.737</ref>, <ref type="inscription" n="C.416">C.416</ref>) and the use of the term 
+               ἀρχοντες surprising in a civic document,  
+               <!--(contrast 34, line  checkat Teucheira)-->while both would be appropriate in a decree of the Jewish 
+               politeuma at Cyrene (cf. <ref type="inscription" n="B.75">B.75</ref>, <ref type="inscription" n="B.76">B.76</ref> at Berenike and probably 
+               <ref type="inscription" n="P.57">P.57</ref> at Ptolemais, as well as <ref type="inscription" n="C.135">C.135</ref>). For a very full discussion see now Antolini, art.cit.</p>
+            <p>Line 2: For this suggested 
+               reconstruction, cf.  <ref type="inscription" n="B.76">B.76</ref>, 14.</p>
+            <p>Lines 3-5: for the reconstruction, with crowning at regular meetings, see <ref type="inscription" n="B.75">B.75</ref>, lines 23-24, 
+               <ref type="inscription" n="B.76">B.76</ref>, 15-17.</p>
+            <!-- <p><ref type="inscription" n="B.76">B.76</ref>, lines 13, 14, provides for the inscription of the honorand on a list whose 
+               name is lost; see <ref type="inscription" n="B.75">B.75</ref>, 11. 15 f. and <ref type="inscription" n="B.76">B.76</ref>, 11. 18 f. </p> -->
+           
+            <p>Line 8: See <ref type="inscription" n="B.76">B.76</ref>, lines 14 f. for exemption 
+                        from liturgies - which should mean that he was a member of the community which conferred the honour.</p>
+            <p>Line 10: So <ref type="inscription" n="B.75">B.75</ref>, line 25-26, <ref type="inscription" n="B.76">B.76</ref>, line 18.</p>
+            <p>Line 11: Parian marble - also in <ref type="inscription" n="B.75">B.75</ref>, line 26, <ref type="inscription" n="B.76">B.76</ref>, line 19.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

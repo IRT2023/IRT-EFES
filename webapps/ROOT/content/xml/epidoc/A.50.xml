@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A08900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Boundary</rs> marker</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.50</idno>
+            <idno type="ircyr2012">A08900</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Part of a brown <material>limestone</material> 
+                              <objectType>stele</objectType> 
+                    (<dimensions>
+                                 <width>0.25</width> 
+                                 <height>1.165</height> 
+                                 <depth>0.645</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the left face, broken above and sliced away on the right side, the
+                    surface badly damaged towards the bottom. <ref type="inscription" n="A.51">A.51</ref>
+                    is <rs type="execution" key="scalpro">inscribed</rs> on the face to the right.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE; <height>0.038</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0054" notAfter="0055" evidence="reign titulature">CE 54-55 </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: 
+                              reused in a modern house near the <placeName type="monuList" ref="https://www.slsgazetteer.org/927">Extra-Mural Church</placeName>; found in <date type="found">1956</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date> (since 1968).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-05" who="GB">Tagged place</change>
+         <change when="2010-02-25" who="MR">Tagged metadata</change>
+         <change when="2010-02-14" who="CMR">Title, translation, tags</change>
+         <change when="2009-07-15" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="DSC04505" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04500" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="jmr1971c"/>, <citedRange>3.a</citedRange></bibl>, whence 
+               <bibl><ptr target="AE"/> <citedRange>1974.684a</citedRange></bibl>,
+               <bibl><ptr target="SEG"/> <citedRange>26.1816</citedRange></bibl>, whence 
+              <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324711">324711</ref></citedRange></bibl>;
+               <bibl><ptr target="jmr1976"/>, <citedRange>59.a</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>27.1132</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>285</citedRange></bibl>.. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><persName type="emperor" key="nero"><persName type="emperor" key="claudius"><name nymRef="Τιβέριος"><unclear>Τι</unclear>βερίου</name> <name nymRef="Καῖσαρ"><supplied reason="lost">Καί</supplied><lb n="2" break="no"/>σαρος</name> <name nymRef="Σεβαστός">Σε<supplied reason="lost">βα</supplied><lb n="3" break="no"/>στοῦ</name> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w>
+                    <lb n="4"/><persName type="emperor" key="augustus"><w lemma="θεός">θεοῦ</w> <name nymRef="Σεβαστός">Σε<supplied reason="lost">βα</supplied><lb n="5" break="no"/>στ<space quantity="3" unit="character"/>οῦ</name></persName></persName> 
+                    <w lemma="ἔκγονος"><unclear>ἔ</unclear><supplied reason="lost">κγ</supplied><lb n="6" break="no"/><supplied reason="lost">ο</supplied>νος</w> <supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
+                    <lb n="7"/><date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE"><name nymRef="Σεβαστός">Σεβασ<supplied reason="lost">τὸς</supplied></name>
+                    <lb n="8"/><name nymRef="Γερμανικός"><expan><abbr>Γερμ<unclear>α</unclear><supplied reason="lost">ν</supplied></abbr><supplied reason="lost"><ex>ικὸς</ex></supplied></expan></name>
+                    <lb n="9"/> <w lemma="Αὐτοκράτωρ">Αὐτοκ<supplied reason="lost">ρά</supplied><lb n="10" break="no"/>τωρ</w></date></persName> <w lemma="διά"><supplied reason="lost">διὰ</supplied></w>
+                    <lb n="11"/><persName type="attested" key="pir2-a-0082"><name nymRef="Λούκιος">Λουκ<supplied reason="lost">ίου</supplied></name>
+                    <lb n="12"/><name nymRef="Ἀκίλιος">Ἀκιλί<supplied reason="lost">ου</supplied></name>
+                    <name nymRef="Στράβων"><supplied reason="lost">Στρά</supplied><lb n="13" break="no"/>βω<unclear>ν</unclear><supplied reason="lost">ος</supplied></name></persName>
+                    <w lemma="τις"><supplied reason="lost">τοῦ</supplied></w>
+                    <lb n="14"/><supplied reason="lost"><w lemma="ἴδιος">ἰδίου</w></supplied>
+                    <w lemma="πρεσβευτής"><supplied reason="lost">πρεσ</supplied><lb n="15" break="no"/><supplied reason="lost">βευτοῦ</supplied></w>
+                    <lb n="15a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#jmr" xml:lang="en"><p>. . . Nero Claudius] <ref target="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE">Augustus Germanicus, Emperor</ref>, [son 
+                  of deified Claudius, grandson of Germanicus Caesar], great grandson of Tiberius Caesar Augustus and of deified Augustus, 
+            by the action of Lucius Acilius Strabo [his personal envoy . . .
+            </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>A boundary stone marking the limits of <foreign xml:lang="la">ager publicus populi Romani</foreign>
+                    inherited by
+                    Rome from the last king of Cyrene and set up in the first year of Nero's reign
+                    by Lucius Acilius Strabo, who had been sent out by Claudius to reclaim such land from
+                    possessores (Tac. Ann. XIV, 18: see on <ref type="inscription" n="M.141">M.141</ref>). It is unlikely that the stone came from very far away and like <ref type="inscription" n="A.25">A.25</ref>,
+                    therefore, it implies the existence of <foreign xml:lang="la">ager publicus</foreign> very near the
+               city.  <ref type="inscription" n="A.51">A.51</ref> and <ref type="inscription" n="A.54">A.54</ref>. </p>
+            <p>The upper missing part of the text
+                     will have read Νέρων Κλαύδιος θεοῦ Κλαυδίου υἱὸς Γερμανικοῦ Καίσαρος
+                    υἱωνός; for the end see <ref type="inscription" n="A.25">A.25</ref>, lines 6 f. A Latin
+                    version of the text was no doubt cut on a lost front face.</p>
+            <p>Line 5:. The cutter has avoided a hole in the stone.</p>
+            <p>For Acilius Strabo see <title>PIR<hi rend="superscript">2</hi></title> A 0082, and <ref target="http://pir.bbaw.de/addenda/A/0082.html">addenda</ref>; he was active in Cyrenaica under Claudius and 
+               Nero: <ref type="inscription" n="A.25">A.25</ref>, <ref type="inscription" n="A.50">A.50</ref>, <ref type="inscription" n="A.68">A.68</ref>, 
+               <ref type="inscription" n="C.434">C.434</ref>,  <ref type="inscription" n="C.748">C.748</ref>, <ref type="inscription" n="M.125">M.125</ref>,  
+               <ref type="inscription" n="M.141">M.141</ref>, <ref type="inscription" n="M.143">M.143</ref>, 
+               <ref type="inscription" n="M.153">M.153</ref>, <ref type="inscription" n="M.172">M.172</ref>, <ref type="inscription" n="M.238">M.238</ref>,
+               <ref type="inscription" n="M.251">M.251</ref>, <ref type="inscription" n="M.275">M.275</ref>, and perhaps <ref type="inscription" n="M.68">M.68</ref>; 
+               for his appointment see on <ref type="inscription" n="M.141">M.141</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

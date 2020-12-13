@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B05600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Military</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.55</idno>
+            <idno type="ircyr2012">B05600</idno>
+            <idno type="JMR">9</idno>
+            <idno type="Excel">2027</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Left side of a <material>limestone</material> <objectType>stele</objectType>, broken below
+                              (<dimensions><width>0.21</width> <height>0.26</height> <depth>0.14</depth></dimensions>). Presumably one of a group of inscribed
+                              stones, otherwise lost:  <ref type="inscription" n="M.45">M.45</ref>, <ref type="inscription" n="M.46">M.46</ref>, <ref type="inscription" n="M.47">M.47</ref>, 
+                              <ref type="inscription" n="M.48">M.48</ref>, and <ref type="inscription" n="M.49">M.49</ref>. </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffiti</rs> on one face, the first line on a raised panel.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Very rough and difficult to read: lines 1-6, <height>ave. 0.025</height>, line 7, 
+                        <height>0.015</height>;
+                        lunate epsilon and sigma, cursive omega; strongly marked guide-lines except for lines 1,7, which may, therefore,
+                        represent separate texts<!-- xref, in a similar relation to one another as those of  -->.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0001" notAfter="0300" precision="low" evidence="context">First - third century CE</origDate>
+                  </origin>
+                  
+                     
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1172">South of Berenike</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1202">Esc-Sheleidima</placeName>;  perhaps one of the fragments 
+                     found and photographed by members of an Italian army unit in <date type="found">1927</date>.
+                  </p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82699">Ash Shulaydimah</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-22" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-06-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="B_033" decls="#photograph"><desc>Face (1961-05-26, Joyce Reynolds III.56)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <bibl>For the fort see <ptr target="rgg1953"/>, <citedRange unit="page">67</citedRange></bibl><p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" quantity="5" unit="character"/><orig>ω<unclear>γ</unclear>ρ<unclear>α</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><orig><unclear>αλ</unclear></orig><gap reason="lost" quantity="1" unit="character"/><orig><unclear>ακ</unclear>α<unclear>λιτ</unclear>ι<unclear>λ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="κουράτωρ"><unclear>κ</unclear>ουράτ<unclear>ω</unclear><supplied reason="lost">ρ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/> <w lemma="ἱππεύς"><supplied reason="lost">ἱ</supplied><unclear>π</unclear>πεὺϲ</w> 
+                    <w lemma="βιξιλλατίων">βιξ<supplied reason="lost">ιλλατίωνοϲ</supplied></w>
+                    <lb n="5"/><gap reason="lost" quantity="2" unit="character"/><orig><unclear>οη</unclear>μ<unclear>η</unclear>β</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="6"/><persName type="attested"><name nymRef="Λόγγος"><supplied reason="lost" cert="low">Λ</supplied>όγ<unclear>γου</unclear></name></persName> <orig><unclear>ι</unclear></orig><gap reason="lost" quantity="1" unit="character"/><orig><unclear>κ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="7"/><gap reason="lost" quantity="6" unit="character"/><orig>α<unclear>τι</unclear></orig><gap reason="lost" quantity="1" unit="character"/><orig><unclear>λλι</unclear>ρον<unclear>η</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ] curato[r . . . ] cavaryman [of the] vex[illation . . . L]ongos</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Lines 3-4 show that the texts are likely to be the graffiti of soldiers.</p>
+            <p>For another <foreign xml:lang="la">curator</foreign> see <ref type="inscription" n="M.49">M.49</ref>.vii; this may be a <foreign xml:lang="la">curator turmae</foreign>, 
+               although the vexillation of line 4 (if this is the correct interpretation) suggest a legionary detachment, and there are other military <foreign xml:lang="la">curatores</foreign>.</p> <!-- check -->
+            <p>Line 4: For another cavalry man at Sheleidima see <ref type="inscription" n="M.48">M.48</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

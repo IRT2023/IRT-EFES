@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C03700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">List</rs> of reserved <rs type="textType">place</rs>s</title>
+            <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+            <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor>
+            <editor role="translator" xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.23a</idno>
+            <idno type="ircyr2012">C03700</idno>
+            <idno type="JMR">634</idno>
+            <idno type="Excel">35</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a white <material>marble</material> 
+                              <objectType>stele</objectType> reconstructed from fragments, the upper left
+                    corner missing (<dimensions><width>0.30</width><height>0.465</height><depth>0.12</depth></dimensions>). 
+                              There is a cramp hole on top.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which is chipped, especially at the edges.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century C.E., perhaps Flavian; lines 1-2, <height unit="metre">0.012</height>; lines 3 ff., <height unit="metre">0.01</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" evidence="lettering" precision="low">First century C.E.</origDate>
+                     <precision match="//origDate/"/>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                               <placeName type="monuList" ref="http://www.slsgazetteer.org/1224">Theatre 2</placeName>; found in <date type="found">1962</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName type="monuList" ref="http://www.slsgazetteer.org/933">Cyrene Museum.</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Shahat">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Dobias-Lalou, Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2007-10-16" who="GB">tidied Greek; added description; changed validation to RNG</change>
+         <change when="2007-08-09" who="VA">created XML file</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_634front" decls="#photograph"><desc>Face (Joyce Reynolds, VIII.57)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="cdl2013"/> <citedRange unit="page">172-178</citedRange>, with photographs pp. 419-420</bibl>, 
+               whence <bibl><title>SEG</title> <citedRange>64.2028</citedRange></bibl>, <bibl><ptr target="cdlBE"/><citedRange>2014.536</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/>
+                    <gap reason="lost" quantity="11" unit="character"/><space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="2"/>
+                    <gap reason="lost" quantity="14" unit="character"/>
+                   <persName type="attested"><name nymRef="Νικηφόρος">Νικηφόρο<supplied reason="lost">υ</supplied></name></persName>
+                    <lb n="3"/>
+                    <gap reason="lost" quantity="11" unit="character"/><space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="4"/>
+                    <gap reason="lost" quantity="11" unit="character"/><space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="5"/>
+                        <gap reason="lost" quantity="10" unit="character"/> <persName type="attested"><name><seg part="F"><unclear>ς</unclear></seg></name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="6"/>
+                    <gap reason="lost" quantity="10" unit="character"/> <persName type="attested"><name><seg part="F"><unclear>ι</unclear>ω</seg></name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="7"/>
+                    <persName type="attested"><name nymRef="Εὐφράνωρ"><supplied reason="lost">Εὐφρ</supplied>άνορος</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="8"/>
+                    <persName type="attested"><name nymRef="Θεύδωρος"><supplied reason="lost">Θ</supplied><unclear>ε</unclear>υδώρω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="9"/>
+                    <persName type="attested"><name nymRef="Ἀριστέας">Ἀριστέα</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="10"/>
+                    <persName type="attested"><name nymRef="Πολυκλῆς">Πολυκλεῦς</name></persName> <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="11"/>
+                    <persName type="attested"><name nymRef="Βάκαλ">Βάκαλος</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w>
+                    <lb n="12"/>
+                    <persName type="attested"><name nymRef="Ξηνόφαντος">Ξηνοφάντω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w>
+                    <lb n="13"/>
+                    <persName type="attested"><name nymRef="Νίκαιος"><supplied reason="lost">Ν</supplied>ικαίω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπ<supplied reason="lost">ος</supplied></w>
+                    <lb n="14"/>
+                    <persName type="attested"><name nymRef="Μνάσων"><unclear>Μ</unclear>νασώνος</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w>
+                    <lb n="15"/>
+                    <persName type="attested"><name nymRef="Λύσιππος"><unclear>Λ</unclear>υσίππω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
+                    <lb n="16"/>
+                    <persName type="attested"><name nymRef="Δαμοσθένης"><unclear>Δ</unclear>αμοσθέν<unclear>ευ</unclear>ς</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπο<unclear>ς</unclear></w>
+                    <lb n="17"/>
+                    <persName type="attested"><name nymRef="Ἀντίπατρος">Ἀντιπάτρω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπο<unclear>ς</unclear></w>
+                    <lb n="18"/>
+                    <persName type="attested"><name nymRef="Φαίνιππος">Φαινίππω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπο<unclear>ς</unclear></w>
+                    <lb n="19"/>
+                    <persName type="attested"><name nymRef="Φίλιππος"><supplied reason="lost">Φι</supplied><unclear>λίππ</unclear>ω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπο<supplied reason="lost">ς</supplied></w>
+                    <lb n="20"/>
+                    <persName type="attested"><name nymRef="Ἠρίλοχος"><supplied reason="lost">Ἠρ</supplied><unclear>ι</unclear>λόχω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τό<unclear>π</unclear><supplied reason="lost"/>ος</w>
+                    <lb n="21"/>
+                    <persName type="attested"><name nymRef="Πρᾶτις"><supplied reason="lost">Π</supplied>ράτιος</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπ<supplied reason="lost"/>ος</w>
+                    <lb n="22"/>
+                    <persName type="attested"><name nymRef="Καλλίγνωτος"><unclear>Κ</unclear>αλλιγνώ<unclear>τ</unclear><supplied reason="lost">ω</supplied></name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπο<unclear>ς</unclear></w>
+                    <lb n="23"/>
+                    <persName type="attested"><name nymRef="Ἀλεξίμαχος">Ἀλεξιμάχω</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπο<unclear>ς</unclear></w>
+                    <lb n="24"/>
+                    <persName type="attested"><name nymRef="Εὔιππος">Εὐίππ<unclear>ω</unclear></name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="25"/>
+                    <persName type="attested"><name nymRef="Εὐμηλίδας">Εὐμηλίδα</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="26"/>
+                    <persName type="attested"><name nymRef="Νικομήδης">Νικομήδευς</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="27"/>
+                    <persName type="attested"><name nymRef="Δαμοσθένης">Δαμοσθένευ<unclear>ς</unclear></name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="28"/>
+                    <persName type="attested"><name nymRef="Πασικράτης">Πασικράτευς</name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="29"/>
+                    <persName type="attested"><name nymRef="Ἀπολλώνιος"><unclear>Ἀπο</unclear>λλ<unclear>ων</unclear><supplied reason="lost">ίω</supplied></name></persName>
+                    <space quantity="3" unit="character"/>
+                    <w lemma="τόπος">τόπος</w>
+                    <lb n="30"/>
+                    <gap reason="lost" quantity="15" unit="character"/>
+                    <w><unclear>τ</unclear>οπος</w>
+                    <lb n="31"/>
+                    <gap reason="lost" quantity="15" unit="character"/>
+                    <w lemma="τόπος"><supplied reason="lost">τό</supplied>πος</w>
+    <lb n="31a"/>
+                    <gap reason="lost" extent="unknown" unit="line"/>
+                    <w lemma="τόπος"><supplied reason="lost">τό</supplied>πος</w>
+                </ab>
+</div>
+         <div type="apparatus">
+            <listApp><app loc="14"><rdg resp="#jmr"><unclear>Ὠ</unclear>νασώνος</rdg></app>
+               <app loc="20"><rdg resp="#jmr">[Ἀνι]όχω</rdg></app></listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Place of ? [ . . . ] of Nikephoros; pace of ?; place of ? ; place of ? ; place of ? ; 
+            place of Euphranor; place of Theudoros; place of Aristeas; place of Polykles; place of Bakal; place of Xenophantes; place of Nikaios; 
+            place of Mnason; place of Lysippos; place of Damosthenes; place of Antipatros; place of Phainippos; place of Philippos; place of Erilochos; 
+            place of Pratis; place of Kallignotos; place of Aleximachos; place of Euippos; place of Eumelidas; place of Nikomeded; place of Damosthenes; 
+            place of Pasikrates; place of Apollonios; ; place of ?; place of ? [ . . .</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p><!-- check cdl  --></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

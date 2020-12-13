@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C04200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Caption</rs> for a statue of Melpomene</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.28</idno>
+            <idno type="ircyr2012">C04200</idno>
+            <idno type="JMR">636e</idno>
+            <idno type="Excel">40</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>One of a group of six <material>marble</material> <objectType>base</objectType>s for statues of the Muses, inscribed with 
+                              <ref type="inscription" n="C.24">C.24</ref>, <ref type="inscription" n="C.25">C.25</ref>, <ref type="inscription" n="C.26">C.26</ref>, 
+                              <ref type="inscription" n="C.27">C.27</ref>, <ref type="inscription" n="C.28">C.28</ref>, <ref type="inscription" n="C.29">C.29</ref>; a seventh is uninscribed.
+                              Approximately rectangular <objectType>base</objectType>, unmoulded, 
+                              (<dimensions><width atLeast="0045" atMost="0054">0.45 - 0.54</width> <height>0.10</height> <depth>0.36</depth></dimensions>) 
+                              carrying the figure of a muse complete except for the head, carrying a lyre.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the base.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second to third centuries. Atypical at Cyrene and possibly cut elsewhere; <height>0.05</height>; lunate epsilon, traces of rubrication.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Second to third centuries CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                        <placeName type="monuList" ref="https://www.slsgazetteer.org/1224">Theatre 2</placeName>; 
+                        found between <date type="found">1962</date> and <date type="found">1966</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2009-06-11" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="DSC04128" decls="#photograph"><desc>Statue, front (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04129" decls="#photograph"><desc>Plinth (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="menozzi1998"/><citedRange></citedRange></bibl>, whence <bibl><ptr target="cdlBE"/>, <citedRange>1999.611</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>48.2062</citedRange></bibl></p><p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="divine" key="melpomene"><name nymRef="Μελπομένη">Μελπομένη</name></persName>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Melpomene</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the statues see Menozzi, art.cit. For another group of the Muses, see on <ref type="inscription" n="C.60">C.60</ref>. The context of both sets was probably connected with the Gymnasium.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

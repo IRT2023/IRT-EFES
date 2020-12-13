@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C84800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile X: <rs type="textType">Milestone</rs> of Vespasian</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.199</idno>
+            <idno type="ircyr2012">C84800</idno>
+            <idno type="JMR">Z.20</idno>
+            <idno type="Excel">1176</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower part of a <material>limestone</material> <objectType>column</objectType>(<dimensions><height>0.48</height> <width>0.80</width></dimensions>), the surface in poor condition;</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face, which was in poor condition; the mason had to avoid holes in lines 6 and 7. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.045</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-pto" n="10">Cyrene-Ptolemais road: Mile X</rs>.</origPlace>
+                     <origDate notBefore="0077" notAfter="0078" evidence="reign">CE 77/78</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>, with <ref type="inscription" n="M.200">M.200</ref>, <ref type="inscription" n="M.201">M.201</ref>, 
+                     <ref type="inscription" n="M.202">M.202</ref>; found in <date type="found">1959</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/89055">Beida</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-30" who="AIO">tokenized</change>
+         <change when="2009-08-19" who="Paolo">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_Z_20_001" decls="#photograph"><desc>Left end of text (Department of Antiquities, F. 4371)</desc></graphic>
+      <graphic url="JMR_Z_20_002" decls="#photograph"><desc>Left end of text (Department of Antiquities, F. 4371)</desc></graphic>
+      <graphic url="JMR_Z_20_003" decls="#photograph"><desc>Right end of text (Department of Antiquities, F. 4370)</desc></graphic></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="vespasianus"><date ref="https://godot.date/id/37Ff4FJdwVNjdPAhvUwDVP"><w lemma="ἀρχιερεύς"><supplied reason="lost">ἀρχιε</supplied><lb n="2" break="no"/>ρε<supplied reason="lost">ὺ</supplied>ς</w> <w lemma="μέγιστος"><supplied reason="lost">μέγιστος</supplied></w> <w lemma="δημαρχικός"><supplied reason="lost">δ</supplied>η<lb n="3" break="no"/>μαρχικῆς</w> <w lemma="ἐξουσία"><unclear>ἐξουσίας</unclear></w>                   
+                    <lb n="4"/> <w lemma="ὁ">τὸ</w> <num value="9"><unclear>θ</unclear></num> <w lemma="ὕπατος">ὕπ<supplied reason="lost">ατο</supplied>ς</w> <w lemma="ὁ">τὸ</w> <num value="8">η</num> <w lemma="κένσωρ">κέν<unclear>σ</unclear>ορ</w>
+                    <lb n="5"/> <w lemma="Αὐτοκράτωρ">Αὐτοκρ<supplied reason="lost">άτ</supplied><unclear>ωρ</unclear></w></date> <w lemma="πατήρ">πατὴρ</w>                    
+                    <lb n="6"/> <w lemma="πατρίς">πατρ<supplied reason="lost"><space quantity="1" unit="character"/>ί</supplied>δος</w></persName> 
+                    <w lemma="ὁδός"><unclear>ὁ</unclear>δ<supplied reason="lost">ο</supplied>ὺς</w>                    
+                    <lb n="7"/> <w lemma="ἐπισκευάζω">ἐπισκευάσαι</w>  <w lemma="κελεύω">ἐ<space quantity="1" unit="character"/>κέλευ<lb n="8" break="no"/>σεν</w> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-m-0626"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <name nymRef="Μινίκιος">Μ<supplied reason="lost">ινι</supplied>κίου</name>                    
+                    <lb n="9"/><name nymRef="Ῥοῦφος">Ῥούφου</name></persName> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀ</supplied>ν<supplied reason="lost">θυπάτου</supplied></w>                    
+                    <lb n="9a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> . . . Vespasianus . .  ] high priest, holding tribunician power for the ninth time, consul for the eighth time, censor, 
+         father of the fatherland ordered the making of roads by the agency of L(ucius) Minicius Rufus, proconsul[ . . . </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p><!-- Line 4: Vespasian was trib. Pot. IX from 1st July 77 to 30th June and cos VIII from 1 st Jan. 77 to  --></p>
+           
+            <p>Line 8-9: Lucius Minicius Rufus <title>PIR<hi rend="superscript">2</hi></title>, M 626, was responsible for another milestone, <ref type="inscription" n="M.221">M.221</ref>;
+               For a Minicius Rufus with, apparently, the praenomen of Aulus see on <ref type="inscription" n="C.273">C.273</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

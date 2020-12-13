@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P07900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription for a Roman soldier</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.67</idno>
+            <idno type="ircyr2012">P07900</idno>
+            <idno type="JMR">297</idno>
+            <idno type="Excel">680</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              Block of <material>limestone</material>, trimmed away on either side for re-use.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on exposed face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second to third centuries CE; superscript bar above the figure in line 4; small triangular stops after each word.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate evidence="lettering" notBefore="0101" notAfter="0300" precision="low">Second to third centuries CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/942">West Church</placeName>; excavated in <date type="found">1935</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from the photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-03-30" who="CB">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_297_002" decls="#photograph"><desc>Close view (1971.6)</desc></graphic>
+      <graphic url="JMR_297_001" decls="#photograph"><desc>View (1971.5)</desc></graphic><!--Dept. Tolmeita, PBSR XXX (1962) 40f. and pl. XXLLLd. R.10. F.8--></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="rgg-jmr1962"/>, <citedRange>2.b</citedRange></bibl>, 
+               whence <bibl><ptr target="AE"/> <citedRange>1969/70.640</citedRange></bibl>, 
+               whence <bibl><title>EDH </title> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD012433">012433</ref></citedRange></bibl></p><p/>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                     <lb n="1"/><persName type="divine" key="manes"><supplied reason="lost"><w lemma="deus"><expan><abbr>D</abbr><ex>is</ex></expan></w></supplied> <space quantity="2" unit="character"/>
+                    <name nymRef="Manis"><expan><abbr>M</abbr><ex>anibus</ex></expan></name></persName> 
+                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-s"><seg part="F">s</seg></name> <g ref="symbols.xml#stop"/> <name nymRef="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <g ref="symbols.xml#stop"/>
+                    <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <g ref="symbols.xml#stop"/> <gap reason="lost" extent="unknown" unit="character"/>
+                     <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">us</w> <g ref="symbols.xml#stop"/>
+                    <w lemma="beneficiarius">be<supplied reason="lost">neficiarius</supplied></w>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w></supplied> 
+                    <num value="3"><supplied reason="lost">I</supplied>II</num> <g ref="symbols.xml#stop"/> <w lemma="Augusta"><expan><abbr>Au<supplied reason="lost">g</supplied></abbr><supplied reason="lost"><ex>ustae</ex></supplied></expan></w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="5"/><supplied reason="lost" cert="low"><w lemma="curo">curante</w></supplied> 
+                    <persName type="attested"><name nymRef="Claudius"><expan><abbr>Cl</abbr><ex>audio</ex></expan></name> <g ref="symbols.xml#stop"/>
+                    <name nymRef="Ai-"><seg part="I">A<unclear>i</unclear></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/> .
+                 
+        
+                </ab>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="4">
+                  <note>
+                     The superscript bar shows that the figure is incomplete at the left.
+                  </note>
+               </app>
+               <app loc="5">
+               <note>The final letter might be E, F</note>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>[To the Gods] of the dead. . . . son of P(ublius) . . . be[neficarius . . . of the] ?third Augustan [legion; the person responsible was] 
+            Claudius AI[ . . .</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 4: For another record of Legion III Augusta at Ptolemais see <ref type="inscription" n="P.201">P.201</ref></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -5,9 +5,10 @@ PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl:&lt;http://www.w3.org/2002/07/owl#>
 PREFIX so:&lt;http://schema.org/>
 
-CONSTRUCT { ?uri ?has_name ?name }
+CONSTRUCT { ?uri ?has_name ?name ?has_Thing ?Thing}
 WHERE {
-  ?uri ?has_name ?name .
+?uri ?has_name ?name ?has_Thing ?Thing .
   ?has_name rdfs:subClassOf* so:name .
+  ?has_Thing rdfs:subClassOf* so:Thing .
 }
 </query>

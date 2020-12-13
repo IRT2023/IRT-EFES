@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B12400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription on a relief</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">B.52</idno>
+            <idno type="ircyr2012">B12400</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1094">Benghazi Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Limestone</material> <objectType>stele</objectType> in the form of an
+                        aedicula, with reliefs of two male figures, hand-in-hand, within a
+                        niche (<dimensions><width>0.69</width> <height>1.15</height> <depth>0.23</depth></dimensions>).
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> (a) on the architrave, on a surface which is in very poor condition, (b) just below the capital of the righthand supporting column.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Greek capitals, first to second century CE<height unit="metre" precision="low">0.02;</height> L probably = ἐτῶν ; <!--symbol-->
+                    probably digamma. </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0050" notBefore="0049" precision="low" evidence="internal-date">49/50 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/910">Berenike</placeName>: 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1083">Mafluga</placeName>,  
+                              a little south-east of Sidi Hussein, in a tomb; recorded in <date type="found">1915</date>
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1094">Benghazi Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88319">Benghazi</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2008-08-19" who="VA">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Oliverio, cited by <bibl><ptr target="ghislanzoni1915"/>, <citedRange unit="page">76, 87</citedRange> and fig. 7</bibl>,
+               whence <bibl><ptr target="SEG"/> <citedRange>9.772</citedRange></bibl>;
+               <bibl>Reynolds in <ptr target="rosenbaum1960"/>, <citedRange>286</citedRange>, and plate cii.i.</bibl>,
+               whence <bibl><ptr target="SEG"/> <citedRange>20.774</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324524">324524</ref></citedRange></bibl>; 
+               revised <bibl><ptr target="jmr1978"/>, <citedRange>24</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>28.1539</citedRange></bibl>.<!-- check -->
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div n="a" type="textpart">
+               <ab>
+              <lb n="1"/> <persName type="attested" key="lgpn:V1-61888"><name nymRef="Ἴων">Ἴων</name> <persName type="attested" key="lgpn:V1-61887"><name nymRef="Ἀριστίων"><unclear>Ἀρ</unclear>ι<unclear>σ</unclear><supplied reason="lost">τίω</supplied><unclear>ν</unclear><supplied reason="lost">ος</supplied></name></persName></persName>
+            <gap reason="lost" extent="unknown" unit="character"/> <date type="life-span" dur="P30Y"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><w lemma="ἔτος"><ex>ἐτῶν</ex></w></expan> 
+               <num value="30"><unclear>λ</unclear></num> </date>
+               </ab>
+</div>
+                <div n="b" type="textpart"><ab>
+                    <lb n="1"/>
+                    <date ref="https://godot.date/id/XNJjYWuSgde5h5BrCvWgib"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><w lemma="ἔτος"><ex>ἔτους</ex></w></expan>
+                    <num value="6"><unclear>ϛ</unclear></num></date>
+                </ab>
+</div>
+            </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="a.1"><rdg resp="#ghislanzoni1915">Ἴων Ἀριστίων</rdg>
+                  <rdg resp="#rosenbaum1960">Ἴων Ἀριστί<unclear>ων ΡΙ</unclear></rdg></app> 
+            <app loc="b"><note>Not reported by Ghislanzoni or Reynolds in Rosenbaum</note></app></listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+           <div type="translation" resp="#edd" xml:lang="en"><p>(a) Ion <supplied reason="subaudible">son</supplied> of ?Aristion, [ . . . ] aged 30 </p>
+            <p><ref target="https://godot.date/id/XNJjYWuSgde5h5BrCvWgib">Year ?6</ref></p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <note>The material found in this tomb included a lamp with the stamp Auf. Fron. 
+               while in a neighbouring tomb were others with the stamps of Iunius Alexis Oppius. 
+               Assuming Oppius to be C. Oppius Restitutus, all three makers were producing largely in the last third of the first century CE and 
+               into the second century 
+               (information from D. Bailey of the British Museum).<!-- check Berenice iii.2 --></note>
+            <!-- check a: After the first four letters the reading seems to me to be very uncertain; there
+               should presumably be two persons named; the second was aged 30 at the time of
+               death. -->
+            <p>b: probably the date of death by a regnal year: 
+               If the number is correctly read, it would give year 70, <!-- check what is being read here? -->presumably the date by the Actian era = CE 49/50, which is a little early for the tomb material.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

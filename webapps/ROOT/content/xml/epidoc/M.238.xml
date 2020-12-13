@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C82200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Boundary</rs> marker</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.238</idno>
+            <idno type="ircyr2012">C82200</idno>
+            <idno type="JMR">Y 27</idno>
+            <idno type="Excel">1211</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Brown <material>limestone</material> <objectType>stele</objectType>, badly damaged 
+                              (<dimensions>
+                                 <width>0.70</width>
+                                 <height>1.85</height>
+                                 <depth>0.38</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on three faces; a, the front face, whose surface is almost completely lost; 
+                           b to the left of a; c, to the right of a, with two inscriptions (i and ii), the lower one erased. 
+                           The vacant spaces shown in c.i, lines 4 - 6 mark holes in the stone avoided by the mason.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.035-0.04</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0074" notAfter="0074" precision="high" evidence="prosopography">i: CE 74</origDate>;  
+                     <origDate notBefore="0054" notAfter="0068" precision="low" evidence="terminology">ii: CE 54-68</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>:
+                        <placeName ref="https://www.slsgazetteer.org/1684">Ras al-Hilal</placeName>; found in <date type="found">1961</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/83467">Ras el Hilal</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-16" who="AIO">tokenized</change>
+         <change when="2009-08-26" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="Photos_0158" decls="#photograph"><desc>Face c, text i</desc></graphic>
+      <graphic url="DSC04643" decls="#photograph"><desc>Face c, text i (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04644" decls="#photograph"><desc>Face c, all (2008, H.Walda)</desc></graphic><!--C. Dept. F. 4639--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="jmr1971c"/>, <citedRange>2</citedRange></bibl>, <!-- check -->
+               whence  <bibl><ptr target="SEG"/> <citedRange>26.1840</citedRange></bibl>,
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324731">324731</ref></citedRange></bibl>, <bibl>
+                  <ptr target="AE"/> <citedRange>1974.683</citedRange></bibl>; discussed <bibl><ptr target="struffolino2014"/>, <citedRange>363</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="face" n="a" type="textpart"><ab>
+                    <lb n="1"/><orig>σ</orig> 
+                </ab></div>
+            <div subtype="section" n="i" type="textpart">
+                   <div subtype="face" n="b" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <date ref="https://godot.date/id/HtNz9sYi93iJ5wNkgESLDn"><persName type="emperor" key="vespasianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐ</supplied><lb n="2" break="no"/><supplied reason="lost">τ</supplied>οκ<supplied reason="lost">ρ</supplied>άτωρ</w>
+                        <gap reason="lost" quantity="1" unit="character"/>
+                        <lb n="3"/> <w lemma="πατήρ"><supplied reason="lost">πατ</supplied>ὴρ</w> <w lemma="πατρίς">πατρί<lb n="4" break="no"/><supplied reason="lost">δο</supplied>ς</w> <w lemma="ὕπατος">ὕπατος</w> <num value="5">ε</num></persName></date> 
+                        <lb n="5"/> <w lemma="διά"><supplied reason="lost">δ</supplied>ιὰ</w> 
+                        <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>ουΐντου</ex></expan></name> <name nymRef="Πακώνιος">Πακωνί<lb n="6" break="no"/><supplied reason="lost">ου</supplied></name> <name nymRef="Ἀγριππῖνος">Ἀγριππείνου</name></persName>
+                        <lb n="7"/> <space quantity="3" unit="character"/>
+                    </ab></div><div subtype="face" n="c" type="textpart"><ab>
+                                <lb n="1"/> <w lemma="τις"><supplied reason="lost">το</supplied>ῦ</w> <w lemma="ἴδιος">ἰδίου</w> <w lemma="πρεσβευτής">πρ<supplied reason="lost">εσ</supplied><lb 
+                                   n="2" break="no"/><space quantity="3" unit="character"/>βευτοῦ</w>
+                                <w lemma="ἀγρός"><unclear>ἀ</unclear><supplied reason="lost">γ</supplied><lb n="3" break="no"/><supplied reason="lost">ρ</supplied>ῶν</w> <note>sic.</note> 
+                                <w lemma="βασιλικός">βασιλ<supplied reason="lost">ι</supplied><lb n="4" break="no"/>κῶν</w> <note>sic.</note> <space quantity="1" unit="character"/> 
+                             <expan>   <w lemma="δῆμος"><abbr>Δ</abbr><ex>ήμῳ</ex></w> 
+                                <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><abbr>Ῥ</abbr><ex>ωμαίων</ex></placeName> </expan>
+                                <lb n="5"/> <w lemma="ἀποκαθίστημι">ἀποκ<space quantity="1" unit="character"/>ατέ<unclear>σ</unclear><lb
+                                   n="6" break="no"/><space quantity="1" unit="character"/>τη<space quantity="1" unit="character"/>σεν</w> 
+                                <lb n="7"/> <space quantity="3" unit="character"/> 
+                            </ab></div>
+            </div><div subtype="section" n="ii" type="textpart"><ab>
+                                        <lb n="0"/><gap reason="lost" extent="unknown" unit="character"/>
+                                        <lb n="1"/><del> <w lemma="ἰδιώτης"><unclear>ἰ</unclear>δ<unclear>ιω</unclear>τ<supplied reason="lost">ῶ</supplied><unclear>ν</unclear></w> </del>
+                        <lb n="2"/><w lemma="δῆμος">Δήμῳ</w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥ<unclear>ω</unclear><lb n="3" break="no"/>μαίων</placeName> <w lemma="ἀποκαθίστημι">ἀ<unclear>πο</unclear><lb n="4" break="no"/>κατέστησ<lb n="6" break="no"/><supplied reason="lost">εν</supplied></w>
+                                   </ab></div></div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="a">
+                  <note>The surface is almost completely lost and this is the only legible letter.</note>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p> i: <note>b</note>  Vespasian . . . ] emperor, father of the fatherland, <ref target="https://godot.date/id/HtNz9sYi93iJ5wNkgESLDn">consul for the fifth time</ref>, by the action of Quintus Paconius Agrippinus 
+               <note>c</note> his personal envoy restored royal land to the Roman People.</p>
+            <p>ii: <note>c</note> . . . . Claudius or Nero . . ? land occupied by] private people restored to the Roman People.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            
+           
+            <p> b. line  4: Vespasian, presumably in the first half of 74, cf. <ref type="inscription" n="M.232">M.232</ref>,
+               <ref type="inscription" n="M.165">M.165</ref>, 
+               <ref type="inscription" n="M.229">M.229</ref></p>
+            <p>Q. Paconius Agrippinus, for whom see <title>PIR<hi rend="superscript">2</hi></title> P 0027, was active in Cyrenaica under Vespasian, 71-74 CE: see <ref type="inscription" n="C.147">C.147</ref>,
+               <ref type="inscription" n="C.428">C.428</ref>, <ref type="inscription" n="C.429">C.429</ref>, <ref type="inscription" n="C.430">C.430</ref>, 
+               <ref type="inscription" n="C.430">C.438</ref>, <ref type="inscription" n="C.747">C.747</ref>, <ref type="inscription" n="M.68">M.68</ref>,
+               <ref type="inscription" n="M.165">M.165</ref>, <ref type="inscription" n="M.229">M.229</ref>, <ref type="inscription" n="M.230">M.230</ref>, 
+               <ref type="inscription" n="M.232">M.232</ref>, <ref type="inscription" n="M.238">M.238</ref>, <ref type="inscription" n="M.239">M.239</ref>,
+               <ref type="inscription" n="P.397">P.397</ref>.</p>
+            <p>c. ii, line 3: In all known Vespasianic texts these words are abbreviated to  Δ. Ρ.
+               whereas in all known Claudian / Neronian ones they are written in full.
+               It threfore seems a likely inference that this is the only instance so far discovered
+               in which Q. Paconius Agrippinus demonstrably re-used a stone inscribed by Acilius Strabo.</p>
+            <p>For Acilius Strabo see <title>PIR<hi rend="superscript">2</hi></title> A 0082, and <ref target="http://pir.bbaw.de/addenda/A/0082.html">addenda</ref>; he was active in Cyrenaica under Claudius and 
+               Nero: <ref type="inscription" n="A.25">A.25</ref>, <ref type="inscription" n="A.50">A.50</ref>, <ref type="inscription" n="A.68">A.68</ref>, 
+               <ref type="inscription" n="C.434">C.434</ref>,  <ref type="inscription" n="C.748">C.748</ref>, <ref type="inscription" n="M.125">M.125</ref>,  
+               <ref type="inscription" n="M.141">M.141</ref>, <ref type="inscription" n="M.143">M.143</ref>, 
+               <ref type="inscription" n="M.153">M.153</ref>, <ref type="inscription" n="M.172">M.172</ref>, <ref type="inscription" n="M.238">M.238</ref>,
+               <ref type="inscription" n="M.251">M.251</ref>, <ref type="inscription" n="M.275">M.275</ref>, and perhaps <ref type="inscription" n="M.68">M.68</ref>; 
+               for his appointment see on <ref type="inscription" n="M.141">M.141</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

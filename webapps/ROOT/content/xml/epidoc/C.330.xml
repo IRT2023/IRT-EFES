@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C26460" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of an image of Ammon</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.330</idno>
+            <idno type="ircyr2012">C26460</idno>
+            <idno type="JMR">863 b</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Curved face of an engaged <objectType>half-column</objectType> of <material>marble</material>;
+                              <ref type="inscription" n="C.329">C.329</ref> was inscribed on the opposite, flat, face.</p><!-- check -->
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on a semi-dressed surface on the drum 
+                           (<dimensions><width>0.27</width> <height>0.57</height> <depth>0.57</depth></dimensions>); the 
+                           presentation in <title>CIG</title> suggests that the left side of the text (now missing) and the right 
+                           were separated by a space - or even a feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century CE <height atLeast="0.02" atMost="0.025">0.02 - 0.025</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0201" notAfter="0233" evidence="lettering prosopography" precision="low">Early third century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1287">Fountain of Apollo</placeName>, on the terrace below; 
+                              first recorded in <date type="found">1819</date>, before the left side was lost. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2011-04-04" who="MGDA">fixed CIG bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-26" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-14" who="GillianB">tokenized</change>
+         <change when="2009-08-27" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="Norton_038" decls="#photograph"><desc>Face (1911, Norton 38)</desc></graphic>
+            <graphic url="C26460b_002" decls="#photograph">
+               <desc>Face (Reynolds)</desc>
+            </graphic>
+            <graphic url="C26460b_001" decls="#photograph">
+               <desc>Text (Reynolds)</desc>
+            </graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>Copied in 1819 by Fr. Pacifico da Monte Cassiano, whose copy was passed to 
+                  Pietro Negri, the Sardinian consul in Tripoli, whence <ptr target="cigiii"/>, <citedRange>5142</citedRange>, p. 520,</bibl>, whence
+              <bibl><ptr target="SGDI"/>, <citedRange>4849</citedRange></bibl>; described, the left side being already lost, <bibl><ptr target="robinson1913"/>, from De Cou, <citedRange unit="page">193</citedRange></bibl>; from these 
+               <bibl><ptr target="vitali1932"/>, <citedRange>31</citedRange></bibl>; republished from these by <bibl><ptr target="laronde1985"/>, <citedRange>49-56</citedRange> <!-- check --></bibl>, whence <bibl><ptr target="cdlBE"/>, <citedRange>1988.1025</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>36.1464</citedRange></bibl>,
+              <bibl><ptr target="AE"/> <citedRange>1987.982</citedRange></bibl>;
+               republished <bibl><ptr target="mohamed-jmr-cdl2007"/>, <citedRange>Appendix II</citedRange>, pp. 46-48, and plate 17</bibl> 
+               on which <bibl><ptr target="cdlBE"/>, <citedRange>2008.603</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>57.2024</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>2007.1673</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/><gap reason="lost" quantity="14" unit="character" precision="low"/> <w lemma="ἱερεύς"><unclear>ἱα</unclear>ρεὺ<unclear>ς</unclear></w>
+                    <lb n="2"/> <supplied reason="lost" evidence="previouseditor"><w lemma="ὁ">τῶ</w> <persName type="divine" key="amun"><name nymRef="Ἄμμων">Ἄμμωνος</name></persName></supplied> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸ</w> <w lemma="ἄγαλμα"><supplied reason="lost">ἅ</supplied>γαλμα</w> 
+                    <lb n="3"/> <w lemma="ὁ">τῶ</w> <persName type="divine" key="amun"><name nymRef="Ἄμμων">Ἄμμωνος</name></persName> 
+                    <w lemma="ἀνθυπατεύω"><supplied reason="lost">ἀν</supplied>θυπατεύ<lb n="4" break="no"/><supplied evidence="previouseditor" reason="lost">οντος</supplied></w> <supplied reason="lost" evidence="previouseditor"><w lemma="καί">καὶ</w></supplied>
+                    <w lemma="ἀφιερόω"><supplied evidence="previouseditor" reason="lost">ἀφι</supplied><supplied reason="lost">ερ</supplied>ώσαντος</w>
+                    <lb n="5"/><persName type="attested" key="pir2-f-0346"><supplied reason="lost" evidence="previouseditor"><name nymRef="Φλάβιος">Φλαβίω</name></supplied> 
+                        <name nymRef="Πούδης"><supplied evidence="previouseditor" reason="lost">Πούδ</supplied><supplied reason="lost">εν</supplied><unclear>τ</unclear>ος</name> 
+                       <name nymRef="Πομπωνιανός">Πομπω<lb n="6" break="no"/><supplied reason="lost" evidence="previouseditor">νιανῶ</supplied></name></persName> <supplied reason="lost" evidence="previouseditor"><w lemma="ὁ">τῶ</w></supplied> 
+                    <w lemma="κράτιστος">κ<supplied reason="lost">ρατίστ</supplied>ω</w> <w lemma="ἀνθύπατος">ἀνθυπάτω</w>
+                </ab>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app>
+                  <note>
+                     The text on the left is based on the reading made in 1819, but since this was inaccurate at a number of points, 
+                     it has been corrected where necessary. The left side was missing by 1911.</note>
+               </app>
+               <app loc="1">
+                  <note>
+                     Nothing was read in this line in 1819. The letters are truncated, implying that another block once stood above this, carrying the opening lines of the text.
+                     They perhaps contained the name of the donor.
+                  </note>
+               </app>
+               <app loc="2"><rdg resp="#cigiii">τῶ Ἄμμωνος, [τ]ὸ ἄ[γ]αλμα</rdg>
+                  <rdg resp="#laronde1985">τῶ Ἄ[πό]<unclear>λλ</unclear>ωνος, [τ]ὸ ἄγαλμα</rdg>
+               </app>
+               <app loc="3"><rdg resp="#cigiii">τῶ Ἄμμωνος, ἐ[π]ι[σ]τατεύ</rdg>
+               </app>
+               <app loc="6"><rdg resp="#cigiii">νιανῶ τῶ κ[αλῶς ἀπο]θανό[ντος]</rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#vitali1932" xml:lang="it"><p>Dedica di una statua di Ammone, alla consacrazione della quale presiedette Flavio Pudente Pomponiano, 
+               che morì gloriosamente.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>. . . ] priest of ?Ammon, dedicated <supplied reason="subaudible">the statue</supplied> of Ammon, 
+               during the proconsulate of Flavius Pudens Pomponianus, most excellent proconsul, 
+               who consecrated <supplied reason="subaudible">the monument</supplied>. </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Laronde suggest that the name and titles of an emperor might have been in the lost upper lines, citing <ref type="inscription" n="C.299">C.299</ref> as an example.</p>
+             <p>Line 2: This would be the only evidence for a priest of Ammon in Cyrenaica; Laronde suggested that this is a prioest of Apollo, and that ΤΩ ΑΜΜΩΝΟΣ could be a dittography derived from line 3.</p>
+            <p>Lines 5-6: For this proconsul, <title>PIR<hi rend="superscript">2</hi></title> F 0346, see Laronde, art. cit., and 
+               Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.062; the date is proably Severan.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

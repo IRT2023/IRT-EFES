@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C25500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription for the Temple of Isis</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.298</idno>
+            <idno type="ircyr2012">C25500</idno>
+            <idno type="JMR">853</idno>
+            <idno type="Excel">1162</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three <material>limestone</material> <objectType>architrave</objectType> blocks from a Doric entablature
+                              (each originally <dimensions><width>1.72</width></dimensions> long).
+               The first is incomplete at the left end and the second and third are complete horizontally but damaged at top and bottom;
+               the third is also damaged on the face, at the right end.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century; <height>0.07</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notAfter="0138" notBefore="0117" precision="low" evidence="reign">CE 117-138</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1235">Temple of Isis</placeName> on the north façade; 
+                              found in <date type="found">1922</date>.
+                              </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot: inaccessible to close examination (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-02-28" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-25" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-09" who="GillianB">tokenized</change>
+         <change when="2009-07-06" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_853" decls="#photograph"><desc>View of the architrave (Department of Antiquities, F. 285)</desc></graphic>
+      <graphic url="DSC04889" decls="#photograph"><desc>Face, block a (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04888" decls="#photograph"><desc>Face, block b (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04887" decls="#photograph"><desc>Face, block c (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="SECir"/>, <citedRange>72</citedRange> fig. 63 (from T. XI 25)</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.562</citedRange></bibl>, 
+               <bibl><ptr target="vidman1969"/>, <citedRange>804</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>213</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><w lemma="ὑπέρ"><supplied reason="lost">ὑπὲρ</supplied></w> <supplied reason="lost"><w lemma="ὁ">τᾶς</w></supplied>
+                    <persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκ</supplied>ράτορος</w> <name nymRef="Τραιανός">Τραιανῶι</name> <g ref="symbols.xml#leaf"/> <name nymRef="Ἁδριανός">Ἁδ<supplied reason="lost" evidence="previouseditor">ρ</supplied>ιαν<supplied reason="lost" evidence="previouseditor">ῶ</supplied>ι</name> <name nymRef="Καῖσαρ">Καίσαρος</name> 
+                    <g ref="symbols.xml#leaf"/> <name nymRef="Σεβαστός">Σεβαστ<supplied reason="lost">ῶι</supplied></name></persName> <w lemma="ὑγίεια">ὑγιείας</w> <w lemma="καί">καὶ</w> <w lemma="διαμονή">διαμονᾶς</w> <g ref="symbols.xml#leaf"/> <persName type="attested"><name nymRef="Χα-"><seg part="I"/>Χα</name></persName><gap reason="lost" quantity="6" unit="character" precision="low"/>
+                    <lb n="2"/><gap reason="lost" quantity="12" unit="character" precision="low"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ὸν</w> <w lemma="ναός">ναὸν</w> <persName type="divine" key="isis"><name nymRef="Ἶσις">Εἴσιδος</name></persName> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τᾶν</w> <w lemma="ὁ">τῶ</w>
+                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> <w lemma="πρόσοδος">προσόδων</w> <w lemma="ἱαρετεύω">ἱαρειτεύων</w> 
+                    <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλων<supplied reason="lost">ος</supplied></name></persName>
+                </ab>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="1">
+                     <note>
+                     Oliverio supplied τῶ before Αὐτοκράτορος, reads the whole of Ἁδριανῶι, and completed Σεβαστ[ῶ].
+                     </note>
+               </app>
+                  <app loc="2">
+                     <lem>τᾶν</lem>
+                  <rdg resp="#SECir">[τ]ᾶν</rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>For the health and permaence of Enperor Trajan Hadrian Caesar Augustus, Cha[- ?built/restored] 
+            he temple of Isis, while serving as the priest of Apollo, from the income of Apollo.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>There were only three architrave blocks in all, and it is clear, from the requirements of the text, that the inscription impinged onto the end blocks of the side walls. </p>
+            <p>Line 1: 117-138. In view of the date, the work recorded may have been reconstruction after the Jewish Revolt of CE 115 but there is nothing in the text to 
+               show that it was not a completely new building. </p>
+            <p>Lines 1-2: The priest responsible is required here, e.g. Χα[ιρίλας] or Χα[ρικλῆς], followed by a patronymic.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P23300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Christian</rs> <rs type="textType">dedication</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.311</idno>
+            <idno type="ircyr2012">P23300</idno>
+            <idno type="JMR">408</idno>
+            <idno type="Excel">575</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>An <objectType>architrave</objectType> block of <material>sandstone</material> (<dimensions>
+                                 <width unit="metre">1.83</width> 
+                                 <height unit="metre">0.445</height> 
+                                 <depth unit="metre">0.66</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> to the left of the central feature, which is badly damaged. 
+               There is a Maltese cross at each end of the face, a third in the centre under an arch, 
+               and a palm tree to the right of the central feature.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Fifth - sixth century: <height unit="metre">0.02 - 0.03</height>;
+               cursive alpha, lunate and square epsilon, lunate sigma, cursive omega; scrolls for abbreviation marks in lines 1, 2; very irregular.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate evidence="lettering" precision="low" notBefore="0401" notAfter="0600">Fifth to sixth centuries CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/953">Village</placeName>, by the seashore; found in <date type="found">1968</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+            <!--Joyce M. Reynolds, J.B. Ward-Perkins and R.M. Goodchild , Christian Monuments of Cyrenaica, London, 2003, 199.3.--></sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-13" who="MLA">corrected jmr-jbwp-rgg reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-01" who="DT">Incorporated bibliography and notes from CMC</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="CMR">tagged description, corrected text</change>
+         <change when="2009-05-29" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_408_001" decls="#photograph"><desc>Face (Reynolds XII.81)</desc></graphic>
+      <graphic url="JMR_408_002" decls="#photograph"><desc>View (Reynolds XII.95.2)</desc></graphic>
+      <!--Dept. JR. III. 100.-->
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr-jbwp-rgg2003"/>, <citedRange>199.3</citedRange></bibl>, whence 
+               <bibl><ptr target="cdlBE"/>, <citedRange>2004.456</citedRange></bibl>, <bibl><ptr target="SEG"/> <citedRange>53.2062</citedRange></bibl>.
+              
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="plre:2-flaviusaquila2"><name nymRef="Φλάβιος"><expan><abbr>Φλάβ</abbr><ex>ιοϲ</ex></expan></name> <g ref="symbols.xml#scroll"/>
+                        <name nymRef="Ἀκύλας">Ἀκύλαϲ</name></persName> 
+                    <lb n="2"/><w lemma="κόμης"><expan><abbr>κό<space quantity="1" unit="character"/>μ</abbr><ex>ηϲ</ex></expan></w> <g ref="symbols.xml#scroll"/>
+                    <w lemma="εὔχομαι">εὐξάμε<lb n="3" break="no"/>νοϲ</w>
+                    <w lemma="ὁ">τὴν</w> <w lemma="εὐχή">εὐ<lb n="4" break="no"/>χὴν</w> 
+                    <lb n="5"/> <w lemma="τελειόω">ἐτε<lb n="6" break="no"/>λίωϲα</w>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="2">
+                  <note>The cutter has avoided a hole in the stone.</note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p>I, Flavius Aquila, count (<foreign xml:lang="la">comes</foreign>), having made a vow, paid my vow.</p></div>
+            </div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the donor, see <title>PLRE</title> II, Flavius Aquila 2, referring to this text</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

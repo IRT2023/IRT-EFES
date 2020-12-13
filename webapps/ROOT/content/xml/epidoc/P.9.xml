@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P01400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic<certainty cert="low" locus="value" match=".."/></rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+            
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.9</idno>
+            <idno type="ircyr2012">P01400</idno>
+            <idno type="JMR">269 2/b</idno>
+            <idno type="Excel">708</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Sandstone</material> 
+                              blocks, too high to measure, in the wall of the North Tower of the West Gate,
+                              inscribed, while in their present position, on the West wall, with 
+                              <ref type="inscription" n="P.8">P.8</ref>,
+                              <ref type="inscription" n="P.9">P.9</ref><ref type="inscription" n="P.10">P.10</ref>, 
+                              <ref type="inscription" n="P.11">P.11</ref>,
+                              <ref type="inscription" n="P.12">P.12</ref>,
+                              <ref type="inscription" n="P.13">P.13</ref>,
+                              <ref type="inscription" n="P.14">P.14</ref>,
+                              <ref type="inscription" n="P.15">P.15</ref>,
+                              <ref type="inscription" n="P.16">P.16</ref>.
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffito</rs> on two adjoining
+                              blocks, two courses below <ref type="inscription" n="P.8">P.8</ref>, and a third block
+               in the course below, immediately under the first. i. On the raised central area of the first block, continued on that of the second; ii. On the first block below i;
+               iii. On the lower inset of the first block below ii; iv. On the raised central area of the third block, below iii; 
+               v. On the raised central area.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>L for ἔτους; in i, ΗΡ in ligature, ΣΤΚ monogram for Κ; lunate sigma in ii only; six hands.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering context">First century BCE to first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/939">West Gate</placeName>, North tower, north wall.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-05-07" who="GB">metadata</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-07-16" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="PachoLXXIV" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXIV)</desc></graphic>
+      <graphic url="P_I_080" decls="#photograph"><desc><ref type="inscription" n="P.9">P.9</ref>, above right;  <ref type="inscription" n="P.10">P.10</ref>.i to the left, 
+         <ref type="inscription" n="P.13">P.13</ref> below (Joyce Reynolds, Tolmeita I.80)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>i, ii, iii, v, vi: <bibl><ptr target="pacho1827"/>, <citedRange unit="plate">LXXIV</citedRange></bibl>, whence
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5203</citedRange></bibl>, <bibl><ptr target="cigiii"/>, <citedRange>5218</citedRange></bibl>,
+               <bibl><ptr target="cigiii"/>, <citedRange>5230</citedRange></bibl>; <bibl><ptr target="oliverioDAI2"/>, <citedRange>494</citedRange> (18), fig.82</bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>9.378</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324227">324227</ref></citedRange></bibl>; discussed by <bibl><ptr target="marengo1988a"/><citedRange></citedRange></bibl>, whence <bibl><ptr target="cdlBE"/>, <citedRange>1990.837</citedRange></bibl>; 
+               iv: <bibl><ptr target="oliverioDAI2"/>, <citedRange>497</citedRange> (21)</bibl>, whence <bibl><ptr target="SEG"/> <citedRange>9.381</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324230">324230</ref></citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="fragment" n="i" type="textpart"><ab>
+                            <lb n="1"/><date ref="https://godot.date/id/uggB4UR8WuKoFkouddSKob"><hi rend="ligature"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                            <num value="8">η</num></hi></date> 
+                            <persName type="attested" key="lgpn:V1-61489"><name nymRef="Μνασικλῆς">Μνασι<supplied reason="lost">κλῆ</supplied>ς</name>
+                                <persName type="attested" key="lgpn:V1-61294"><name nymRef="Ἡρακλείδας"><hi rend="ligature">Ἡρ</hi>ακλίδα</name></persName></persName> 
+            <w lemma="σύγκοιτος"><expan><abbr><expan><abbr><am><g ref="symbols.xml#ΣΤΚ"/></am></abbr><ex>σύγκ</ex></expan></abbr><ex>οιτος</ex></expan></w>
+                        </ab></div>
+            <div subtype="fragment" n="ii" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w>
+                        <num value="12">ιβ</num></date> <persName type="attested" key="lgpn:V1-61466"><name nymRef="Μᾶρκος">Μᾶρκοϲ</name> 
+                        <persName type="attested" key="lgpn:V1-61465"><name nymRef="Μᾶρκος"><expan><abbr><hi rend="ligature">Μά</hi></abbr><ex>ρκω</ex></expan></name></persName></persName>
+                    </ab></div>
+            <div subtype="fragment" n="iii" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                        <num value="12">ιβ</num></date> <persName type="attested" key="lgpn:V1-61636"><name nymRef="Σῶσος">Σῶσος</name>
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-61385"><name nymRef="Κάρνις">Κάρνιος</name></persName></persName>
+                    </ab></div>
+            <div subtype="fragment" n="iv" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="12">ιβ</num></date> <persName type="attested" key="lgpn:V1-61586"><name nymRef="Σαβῖνος">Σαβεῖνος</name></persName>
+                    <lb n="2"/> <w lemma="φίλος"><expan><abbr>φί</abbr><ex>λος</ex></expan></w>
+                       <persName type="attested" key="lgpn:V1-61467"><name nymRef="Μᾶρκος"><expan><abbr>Μά</abbr><ex>ρκω</ex></expan></name></persName>
+                    
+                    </ab></div>
+            <div subtype="fragment" n="v" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="12">ιβ</num></date> <persName type="attested"><name nymRef="Μᾶρκος">Μᾶρκος</name>
+                        <persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μά</abbr><ex>ρκω</ex></expan></name></persName></persName>
+                    </ab></div>
+            <div subtype="fragment" n="vi" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                        <num value="12">ιβ</num></date> <orig>ΙΤ</orig>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp><app loc="i">
+                  <rdg resp="#cigiii">Μνασί[ας]</rdg>
+               </app>
+               <app loc="i">
+                  <rdg resp="#pacho1827">ΗΡΑΚΛΙΤΑ</rdg>
+               </app>
+               <app loc="ii">
+                  <lem>Μά(ρκω)</lem>
+                  <rdg resp="#pacho1827">Μ</rdg>
+                  <rdg resp="#cigiii">Μ[άρκω]</rdg>
+               </app>
+               <app loc="iii.i">
+                  <rdg resp="#pacho1827">LΙΒ</rdg> <note>so Oliverio</note>
+                 </app>
+               <app loc="iii.2">
+                  <note>Other editors read this line as line 1 of iv.</note>
+                  <rdg resp="#pacho1827">ΑΡΝΙΟΣ</rdg> <note>so Oliverio</note>
+                  
+               <rdg resp="#marengo1988a">Αἴνιος</rdg></app>
+                  <app loc="iv.2">
+                     <rdg resp="#pacho1827">Φ space  ΑΜ</rdg>
+                     <rdg resp="#cigiii">Φ space  ΑΛ</rdg>
+               </app> <app loc="v">
+                  <rdg resp="#pacho1827">ΜΑΚΟΣΜ</rdg></app>
+               <app loc="vi">
+                  <rdg resp="#oliverioDAI2">L ιβ΄Πυ -</rdg></app>
+               </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 8. Mnesicle di Eraclide. - Anno 12. Marco di Ma(rco?). - Anno 12. Soso. 
+            Enio. Anno 12. Sabino di Ma(rco). - Anno 12. Marco di Ma(rco?). </p></div>
+            <div type="translation" resp="#edd" xml:lang="en">
+               <p>i. <ref target="https://godot.date/id/uggB4UR8WuKoFkouddSKob">Year 8</ref>: Mnasikles (bed-fellow) of Heraklidas</p>
+            <p>ii. <ref target="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH">Year 12</ref>: Markos <supplied reason="explanation"><foreign xml:lang="la">Marcus</foreign></supplied>  
+               <supplied reason="subaudible">friend</supplied> of Markos <supplied reason="explanation"><foreign xml:lang="la">Marcus</foreign></supplied></p>
+            <p>iii. <ref target="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH">Year 12</ref>: Sosos <supplied reason="subaudible">friend</supplied> of Karnis</p>
+            <p>iv. <ref target="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH">Year 12</ref>: Sabeinos, friend of Markos <supplied reason="explanation"><foreign xml:lang="la">Marcus</foreign></supplied> </p>
+            <p>v. <ref target="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH">Year 12</ref>: Markos <supplied reason="explanation"><foreign xml:lang="la">Marcus</foreign></supplied>  
+               <supplied reason="subaudible">friend</supplied> of Markos <supplied reason="explanation"><foreign xml:lang="la">Marcus</foreign></supplied></p>
+            <p>vi. <ref target="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH">Year 12</ref>: IT...</p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>(i). السنة 8، مناسيكليس (شريك الفراش) مع هيراكليداس.
+(ii). السنة 12، ماركوس (صديق) لماركوس.
+(iii). السنة 12، سوسوس (صديق ل) كارنيس.
+(iv). السنة 12، سابينوس صديق لماركوس.
+(v). السنة 12، ماركوس (صديق ل) ماركوس
+(vi). السنة 12، إت ...
+</p></div>
+         </div>
+       
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For this group of texts see commentary on <ref type="inscription" n="P.1">P.1</ref>
+            </p>
+            <p> i. For the K in Heraklidas the cutter has used the monogram, ΣΤΚ, for which see on <ref type="inscription" n="P.3">P.3</ref></p>
+            <p>ii: Oliverio tentatively suggested Μά(ρκω) Ἀλεξανδρεὺς.</p>
+            <p>iv. 2: This is apparently an abbreviation of the word φίλος, another term used to link a pair of ephebes (e.g. <ref type="inscription" n="P.11">P.11</ref>, 
+               <ref type="inscription" n="P.12">P.12</ref>, <ref type="inscription" n="P.22">P.22</ref>, <ref type="inscription" n="P.70">P.70</ref>); the more common abbreviation is φιλ, expressed as a monogram: 
+               see on <ref type="inscription" n="P.26">P.26</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

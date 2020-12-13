@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C09300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">dedication</rs>
+            </title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.109</idno>
+            <idno type="ircyr2012">C09300</idno>
+            <idno type="JMR">676</idno>
+            <idno type="Excel">1066</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Augusteum, standing on the West wall</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Block of <material>limestone</material> with traces of moulding above, broken at the left side 
+                               and damaged above 
+                               (<dimensions>
+                                   <width>0.60</width>
+                                   <height>0.55</height>
+                                   <depth>0.27</depth>
+                               </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face. A faintly incised line down the left side suggests an attempt to define 
+                            the end of the text. <rs type="execution" key="scalpro">Inscribed</rs> 0.115-0.19 from top of the block.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1483">Augusteum</placeName>; found in <date type="found">1916</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/1483">Augusteum</placeName>, standing on the West wall.</p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-16" who="CMR">corrections</change>
+         <change when="2009-06-07" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_676" decls="#photograph"><desc>Stone in context (Joyce Reynolds, II.59.1)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="gasperini1965"/>, <citedRange>214</citedRange> and pl. XXXVI.6
+            also fig. opp. p. 212</bibl>, whence <bibl><ptr target="AE"/> <citedRange>1968.534</citedRange></bibl>, 
+               whence <bibl>
+                  <ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015557">015557</ref></citedRange></bibl>; 
+               <bibl> <ptr target="gasperini1967a"/>, <citedRange>30</citedRange> and fig. 213</bibl>
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="sacer">sacrum</w> <space quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="2"/> <space quantity="1" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>. . . . ] sacred [ . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>One of a series of dedications, C.106-C.109; see commentary on <ref type="inscription" n="C.106">C.106</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

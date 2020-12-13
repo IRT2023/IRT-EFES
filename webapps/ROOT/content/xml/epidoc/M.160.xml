@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C85100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile XI: Fragmentary <rs type="textType">milestone</rs> ?of Philip I</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.160</idno>
+            <idno type="ircyr2012">C85100</idno>
+            <idno type="JMR">Z. 23 a</idno>
+            <idno type="Excel">1179</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Part of a <material>limestone</material> <objectType>column</objectType> (<dimensions><width>0.38</width> <height>1.35</height></dimensions>), 
+                              inscribed on both sides with <ref type="inscription" n="M.160">M.160</ref> and <ref type="inscription" n="M.161">M.161</ref></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on a surface now very worn; there are traces of occasional letters above.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.025</height>, line 4 larger letters.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-pto" n="11">Cyrene-Ptolemais road, Mile XI</rs>.</origPlace>
+                     <origDate notBefore="0247" notAfter="0247" precision="high" cert="high" evidence="reign">247 CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     on the south verge of modern road,  approx. 1 km. W of <placeName ref="https://www.slsgazetteer.org/1267">Sidi Rafa</placeName> mosque; 
+                     found with <ref type="inscription" n="M.162">M.162</ref> and <ref type="inscription" n="M.163">M.163</ref>, in <date type="found">1960</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/81943">Sīdī Rāfi</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2013-09-25" who="TW">Edited photo info</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-07" who="GillianB">tokenized</change>
+         <change when="2009-08-20" who="Paolo">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_Z_23a" decls="#photograph"><desc>View (Department of Antiquities, F. 4368)</desc></graphic>
+      <graphic url="Photos_0213_3" decls="#photograph"><desc>6 milestones: from left <ref type="inscription" n="M.160">M.160</ref>, <ref type="inscription" n="M.201">M.201</ref>, Unidentified, 
+         <ref type="inscription" n="M.195">M.195</ref>, <ref type="inscription" n="M.196">M.196</ref>, Unidentified (1966, September)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> 
+                    <w lemma="restituo">res<supplied reason="lost">tituerunt</supplied></w>
+                    <lb n="2"/> <w lemma="ab"><supplied reason="lost">a</supplied></w> <placeName nymRef="#Cyrenae" ref="#cyrene"><supplied reason="lost">C</supplied>yren<supplied reason="lost">is</supplied></placeName>
+                    <lb n="2a"/> <space extent="unknown" unit="character"/>
+                    <lb n="3"/> <w lemma="milium"><expan><abbr>m</abbr><ex>ilia</ex></expan></w> <w lemma="passus"><expan><abbr>p</abbr><ex>assuum</ex></expan></w>
+                    <num value="11"><unclear>XI</unclear></num>
+                </ab>
+         </div>
+         
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ] they restored <supplied reason="subaudible">the road</supplied> from Cyrene. 11 miles.</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            
+            <p>Line 2: For the formula compare a milestone of Philip, <ref type="inscription" n="M.201">M.201</ref>, lines 11 - 13, which suggests the attribution of this milestone to Philip also; the other 
+               milestones of Philip on this road are <ref type="inscription" n="M.195">M.195</ref> and <ref type="inscription" n="M.197">M.197</ref>.
+            </p><p>Found with <ref type="inscription" n="M.162">M.162</ref> and <ref type="inscription" n="M.163">M.163</ref></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P36000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.259</idno>
+            <idno type="ircyr2012">P36000</idno>
+            <idno type="JMR">497</idno>
+            <idno type="Excel">456</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Rock</material>-cut <objectType>tomb</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the façade (no panel). 
+                           The inscription turns a right-angled corner as indicated.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century: 
+                    line 1<height unit="metre">0.075</height>; 
+                    lines 2, 4, <height unit="metre">0.10</height>;
+                    line 3, <height unit="metre">0.11</height>; 
+                    lunate epsilon, lunate sigma, cursive omega. Superscript bar above the abbreviated praenomen.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notAfter="0200" notBefore="0101" precision="low" evidence="lettering">Second century CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                        in the passage between <placeName type="monuList" ref="https://www.slsgazetteer.org/970">Quarry I.b.i</placeName> and Quarry I c, south wall; first recorded in <date type="found">1825</date></p>
+                  </provenance>
+                        <provenance type="observed">
+                            <p>Findspot.</p>
+                        </provenance>
+                     
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-13" who="CMR">tagged description, corrected text</change>
+         <change when="2009-05-13" who="MR">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXIX" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXVIII, numbered LXXIX)</desc></graphic>
+      <graphic url="JMR_497_002" decls="#photograph"><desc>Face (Joyce Reynolds, Tolmeita I (NB V). 87)</desc></graphic>
+      <graphic url="JMR_497_001" decls="#photograph"><desc>Left end of text (Joyce Reynolds, Tolmeita I (NB V). 88)</desc></graphic>
+      <graphic url="JMR_497_003" decls="#photograph"><desc>Right end of text (Joyce Reynolds, Tolmeita I (NB V). 70)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl>
+               <ptr target="pacho1827"/>  pl. <citedRange>LXXVIII</citedRange> (printed as LXXIX) and Letronne p.403</bibl>, 
+               whence <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5200</citedRange></bibl>; <bibl><ptr target="masson-jmr1978"/>, <citedRange>19</citedRange> copy by M.Guirand (1895) mentioned</bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-61241"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκοϲ</ex></expan></name> 
+                        <name nymRef="Οὔλπιος">Οὔλπιο<milestone unit="block" break="no"/>ϲ</name> 
+                        <name nymRef="Ἐπίνικος">Ἐπίνικος</name></persName> <w lemma="ἑαυτός">ἑαυτῷ</w> 
+                    <lb n="2"/><w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖϲ</w> <milestone unit="block"/> <w lemma="ἴδιος">ἰδίοιϲ</w> <w lemma="καί">καὶ</w> <persName type="attested" key="lgpn:V1-61014"><name nymRef="Οὐλπία">Ὀλπία</name> <note>sic</note>
+                        <lb n="3"/><name nymRef="Ἀθηναΐς">Ἀθηνα<milestone unit="block" break="no"/>ΐϲ</name></persName> <w lemma="ἑαυτός">ἑαυτῇ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖϲ</w> 
+                    <lb n="4"/><w lemma="ἴδιος">ἰδίοιϲ</w> 
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>M(arkos) Oulpios <supplied reason="explanation"><foreign xml:lang="la">Marcus Ulpius</foreign></supplied> Epinikos, 
+               for himself and his family and Olpia <supplied reason="explanation"><foreign xml:lang="la">Ulpia</foreign></supplied> Athenais for herself and her family.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Other inscriptions above the door have been erased.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

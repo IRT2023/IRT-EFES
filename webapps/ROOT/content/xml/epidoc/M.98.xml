@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G05100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.98</idno>
+            <idno type="ircyr2012">G05100</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1095">Tocra Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower part of a brown <material>limestone</material> 
+                              <objectType>stele</objectType>, reconstructed from four pieces (<dimensions><width>0.37</width> <height>0.40</height> <depth>0.095</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on one face within a panel defined on either side by a plain moulding. <!-- Very like 1971.1 ?G.52 --></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Average: <height unit="metre" precision="low">0.015</height>; lunate sigma and omega, probably epsilon; square sigma for digamma.  In line 1 
+                     there appears to be a horizontal bar above N; dots for stops.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" cert="low" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  
+                     
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>: 
+                           <placeName ref="https://www.slsgazetteer.org/1270">Ghot Jinoubl</placeName>. Found in <date type="found">1971</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1095">Tocra Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2007-11-12" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="G05100" decls="#photograph">
+         <desc>Monument</desc>
+      </graphic>
+      <surface/>
+   </facsimile><facsimile><graphic url="JMRNS14_024" decls="#photograph"><desc>Face (Reynolds 1971.1, NS.XIV.24)</desc></graphic></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+         </div>
+         
+         
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+               <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><g ref="symbols.xml#stop"/><num value="50">ν</num><g ref="symbols.xml#stop"/> <orig><unclear>ε</unclear></orig><gap reason="lost" quantity="2" unit="character"/><orig><unclear>α</unclear>ρ<unclear>ιι</unclear></orig><lb 
+                  n="2" break="no"/><persName type="attested"><name nymRef="-ος"><seg part="F">ος</seg></name> <name nymRef="Πινύτας">Π<supplied reason="lost">ι</supplied>νυ<lb n="3" break="no"/>ταϲ</name></persName>
+               <date type="life-span" dur="P26Y"><w lemma="ἔτος"><unclear>ἐ</unclear><supplied reason="lost">τ</supplied><unclear>ῶν</unclear></w>
+               <lb n="4"/> <space quantity="3" unit="character"/> <g ref="symbols.xml#stop"/> <num value="26">κϛ</num> </date> <space quantity="2" unit="character"/>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>? (Year)] 50 [ . . . ]os Pinytas, aged 26.</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1: The number (50) seems most likely to be a year. </p>
+            <p>Pinytas is attested as a masculine name <ref target="http://www.lgpn.ox.ac.uk/id/V5b-47410"><title>LGPN</title> V5b-47410</ref>; if it is the case here, 
+               then this man is presumably using a double name, or <foreign xml:lang="la">tria nomina</foreign>, as in <ref type="inscription" n="M.99">M.99</ref>. 
+               It is less likely that he is described using a matronymic.</p>
+               
+         </div>
+         
+      </body>
+   </text>
+</TEI>

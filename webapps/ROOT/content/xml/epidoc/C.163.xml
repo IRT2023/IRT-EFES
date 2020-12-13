@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dossier of <rs type="textType">imperial</rs> <rs type="textType">rescripts</rs> of Hadrian and Antoninus</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.163</idno>
+            <idno type="ircyr2012">C01710</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                  (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                  URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum, Casa Parisi</repository> <idno type="invNo">1640</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Eight fragments of a  white <material>marble</material> <objectType>stele</objectType>. 
+                              The principal fragment measures <dimensions><width>0.48</width> <height>0.89</height> <depth>0.26</depth></dimensions>;
+                              Goodchild reckoned that the complete stele must have been at least 
+                              <dimensions>
+                                 <width>0.72</width>
+                                 <height>1.42</height>
+                              </dimensions> (<bibl><ptr target="rgg1971"/>, <citedRange>139</citedRange></bibl>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face. From 1. 6 onwards the line length is variable, 
+                           since the letters are sometimes squeezed up against each other and sometimes strung out. 
+                           It apparently oscillates between sixty five and eighty letters.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century CE; line 1, <height>0.03</height>; lines 2-5, <height>0.015</height>; lines 6 ff, <height>0.0075</height>. <height/>; 
+                     lunate sigma, epsilon, omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                    First document: <origDate notAfter="0135" notBefore="0134" evidence="internal date">134-135 CE</origDate>
+                     Second document: <origDate notAfter="0154" notBefore="0153" evidence="internal date">153-4 CE</origDate></origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>, 
+                              main fragment found in the re-used 
+                              in the Byzantine paving of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1226">East Church</placeName>:   
+                              Goodchild found seven additional pieces of the stele, all re-used 
+                              in late buildings, the largest of them re-cut to serve as a column-base in the 
+                              sixth-century church on the south side of the street. Clearly the stone was broken up 
+                              and its elements dispersed by builders in the early Byzantine period.
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Cyrene Museum: Casa Parisi, no.1640</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Publications; transcription (Reynolds); notes from Fraser given to Reynolds.</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-08-23" who="Pietro">marked bibliography and apparatus</change>
+         <change when="2011-07-27" who="Pietro">entered and tagged commentary and metadata</change>
+         <change when="2011-07-22" who="Pietro">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMRNB08_036" decls="#photograph"><desc>1, upper left corner (Joyce Reynolds, VIII.36)</desc></graphic>
+      <graphic url="JMRNB08_035" decls="#photograph"><desc>Text 2 (all); Text 1, right ends of ines 1-7, 26-42, 9-14 (Joyce Reynolds, VIII.35)</desc></graphic>
+      <graphic url="JMRNB02_096" decls="#photograph"><desc>1. Lines 1-7, right end fragment (Joyce Reynolds, II.96)</desc></graphic>
+      <graphic url="JMRNB08_041" decls="#photograph"><desc>1, Lines 14-30 (Joyce Reynolds, VIII.41)</desc></graphic>
+      <graphic url="JMRNB02_093" decls="#photograph"><desc>1. Lines 26-42, right end fragment (Joyce Reynolds, II.93)</desc></graphic>
+      <graphic url="JMRNB02_095" decls="#photograph"><desc>1. Lines 26-42, right end fragment  (Joyce Reynolds, II.95)</desc></graphic>
+      <graphic url="JMRNB02_097" decls="#photograph"><desc>1. Lines 26-42, right end fragment  (Joyce Reynolds, II.97)</desc></graphic>
+      <graphic url="JMRNB08_038" decls="#photograph"><desc>1, Lines 32-47 (Joyce Reynolds, VIII.38)</desc></graphic>
+      <graphic url="JMRNB08_039" decls="#photograph"><desc>1, Lines 49-65 (Joyce Reynolds, VIII.39)</desc></graphic>
+      <graphic url="JMRNB08_037" decls="#photograph"><desc>1, Lines 65-85 (Joyce Reynolds, VIII.37)</desc></graphic>
+      <graphic url="JMRNB03_085" decls="#photograph"><desc>1. Lines 69-85  (Joyce Reynolds, III.85)</desc></graphic>
+      <graphic url="JMRNB08_040" decls="#photograph"><desc>1. Lines 69-85  (Joyce Reynolds, VIII.40)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>  
+               <bibl><ptr target="fraser1950"/>, <citedRange>77-90</citedRange></bibl>, whence
+               <bibl><ptr target="robertBE"/>, <citedRange>1950.243</citedRange></bibl>, <bibl><ptr target="AE"/> <citedRange>1951.122</citedRange></bibl>;
+               <bibl><ptr target="oliver1951"/>, <citedRange>32f</citedRange></bibl>, on which 
+               <bibl><author>C.B. <name type="surname">Welles</name></author>, <title level="j">American Journal of Archaeology</title> <citedRange>56</citedRange>, <citedRange>76</citedRange></bibl>; 
+                  <bibl><ptr target="larsen1952"/>, <citedRange>7f</citedRange></bibl>, whence  
+               <bibl><ptr target="robertBE"/>, <citedRange>1953.253</citedRange></bibl>,
+              <bibl><ptr target="AE"/> <citedRange>1953.120</citedRange></bibl>, 
+               <bibl><ptr target="oliver1970"/>, no. <citedRange>7</citedRange>, pp. 96-99</bibl>; republished 
+               <bibl><ptr target="jmr1978a"/>, <citedRange>113-5</citedRange></bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1979.655</citedRange></bibl>, 
+               <bibl><ptr target="oliver1979"/><citedRange></citedRange></bibl> <!-- check for readings -->,  whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1980.573</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>28.1566</citedRange></bibl>, <bibl><ptr target="AE"/> <citedRange>1979.636</citedRange></bibl>, 
+               <bibl><ptr target="oliver1989"/>, <citedRange>120-124</citedRange></bibl>; 
+               <bibl><ptr target="williams1982"/><citedRange></citedRange></bibl> whence <bibl><ptr target="robertBE"/>, <citedRange>1983.480</citedRange></bibl>;
+               <bibl><ptr target="jones1988"/><citedRange></citedRange></bibl>, <!-- check supplements -->
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>1999.614</citedRange></bibl>, <!-- check supplements -->
+              <bibl><ptr target="AE"/> <citedRange>1998.1500</citedRange></bibl>; see also discussion
+               by <bibl><ptr target="boatwright2000"/>, <citedRange>181-3</citedRange></bibl>, <bibl><ptr target="laronde2004"/><citedRange></citedRange></bibl>, 
+                and, with bibliography, <bibl><citedRange><ref target="http://judaism-and-rome.com/antoninus-pius-berenice-and-assize-centres-cyrenaica">A. Blanco Pérez</ref></citedRange> 
+                   in <ptr target="berthelot2018"/></bibl>.<!-- check -->
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div type="textpart" subtype="part" n="1"><ab>
+               <lb n="1"/> <space quantity="3" unit="character"/> 
+               <persName type="divine" key="theos"><name nymRef="Θεός">θεόϲ</name></persName> <space quantity="3" unit="character"/> <persName type="divine" key="agathetyche"><name nymRef="Τύχα">Τύχ<supplied reason="lost">ᾳ</supplied></name><supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
+                  <w lemma="ἀγαθός">Ἀγα<unclear>θ</unclear><supplied reason="lost">ᾷ</supplied></w></persName><supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
+               <lb n="2"/><date ref="https://godot.date/id/2AznLJfkN5gLWthxQUQSW7"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name> 
+                  <persName type="emperor" key="traianus"><w lemma="θεός">θεοῦ</w> 
+               <name nymRef="Τραιανός">Τρα<supplied reason="lost">ιανοῦ</supplied></name> 
+               <name nymRef="Παρθικός">Παρθικο<supplied reason="lost">ῦ</supplied></name></persName> 
+                  <supplied reason="lost"><w lemma="υἱός">υἱόϲ</w>,</supplied> 
+                  <persName type="emperor" key="nerva"><supplied reason="lost"><w lemma="θεός">θεοῦ</w></supplied>
+               <lb n="3"/><name nymRef="Νέρβα">Νέρουα</name></persName> <w lemma="υἱωνός">υἱωνόϲ</w>, 
+                  <name nymRef="Τραιανός">Τραιανὸϲ</name> <name nymRef="Ἁδριανός">Ἀδρια<unclear>ν</unclear><supplied reason="lost">ὸϲ</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Ϲεβα</supplied>ϲτόϲ</name>, <w lemma="ἀρχιερεύς">ἀρχιε<supplied reason="lost">ρεὺϲ</supplied></w> 
+                     <supplied reason="lost"><w lemma="μέγιστος">μέγιϲτοϲ</w></supplied>, 
+               <lb n="4"/> <w lemma="δημαρχικός">δημαρχικῆϲ</w> <w lemma="ἐξουσία">ἐξουϲίαϲ</w> <w lemma="ὁ">τὸ</w> <num value="19">ιθ</num>, 
+               <w lemma="ὕπατος">ὕπα<unclear>τ</unclear><supplied reason="lost">οϲ</supplied></w> 
+               <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> </supplied>, 
+               <w lemma="πατήρ">πατὴρ</w> <w lemma="πατρίς">πατ<unclear>ρ</unclear><supplied reason="lost">ίδοϲ</supplied></w></persName></date> 
+               <lb n="5"/> <space quantity="3" unit="character"/> <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene">Κυρηναίοιϲ</placeName> <space quantity="3" unit="character"/>
+               <w lemma="χαίρω">χαίρ<supplied reason="lost">ειν</supplied></w> 
+               <supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
+               <lb n="6"/> <w lemma="ὁ">ὁ</w> <w lemma="ἄρχων">ἄρχων</w> <w lemma="ὁ">τοῦ</w> 
+               <placeName nymRef="#Πανελλήνιον" ref="#panhellenion">Πανελληνίου</placeName> 
+               <w lemma="φθάνω">ἐφ<unclear>θ</unclear>άκει</w> <w lemma="ἐπιστέλλω">ἐπιϲτεῖλαί</w> 
+               <w lemma="ἐγώ">μοι</w> <w lemma="περί"><unclear>π</unclear><supplied reason="lost">ερὶ</supplied></w> 
+               <w lemma="ὁ"><supplied reason="lost">τῆϲ</supplied></w> 
+               <w lemma="ἀξίωσις"><supplied reason="lost">ἀ</supplied>ξιώϲεωϲ</w> 
+               <w lemma="σύ">ὑμῶ<supplied reason="lost">ν</supplied></w> 
+               <w lemma="σπουδάζω"><supplied reason="lost" cert="low">ϲπουδάζων</supplied></w> <gap reason="lost" quantity="13" precision="low" unit="character"/>
+               <lb n="7"/> <w lemma="ὁ">τὰ</w> <w lemma="δοκέω">δόξαντά</w> <w lemma="ἐγώ">μοι</w> 
+               <w lemma="ἀντιγράφω">ἀντ<unclear>έ</unclear>γραψα</w> <w lemma="καί">καὶ</w> 
+               <w lemma="σύ">ὑμεῖν</w> <w lemma="πέμπω">ἔπεμψα</w> <w lemma="ὁ">τὴν</w> <w lemma="πρόκειμαι">προ<unclear>κ</unclear><supplied reason="lost" cert="low">ειμένη</supplied>ν</w> 
+               <w lemma="ἀπόκρισις">ἀπό<unclear>κ</unclear><supplied reason="lost" cert="low">ριϲιν</supplied></w> <gap reason="lost" quantity="17" precision="low" unit="character"/> <persName type="attested"><name nymRef="Σαλούιος"><supplied reason="lost">Ϲαλούιοϲ</supplied></name>
+               <lb n="8"/><name nymRef="Κᾶρος">Κᾶροϲ</name></persName> <w lemma="ὁ">ὁ</w> 
+               <w lemma="κράτιστος">κράτιϲτοϲ</w> <w lemma="ἀνθύπατος">ἀνθύπατοϲ</w> <space quantity="7" unit="character"/>
+               <w lemma="εὐτυχέω">εὐτυχεῖ<supplied reason="lost">τε</supplied></w> 
+               <supplied reason="lost"> <space extent="unknown" unit="character"/>
+               </supplied> <gap reason="lost" atLeast="30" atMost="40" precision="low" unit="character"/>
+                <lb n="9"/> <w lemma="δέχομαι">δέχεϲθαι</w> <w lemma="δεῖ">δεῖ</w> <w lemma="οὐ">οὐ</w> 
+               <w lemma="μέντοι">μέντοι</w> <w lemma="δίκαιος">δίκαια</w> <w lemma="ἀξιόω">ἀξιοῦϲιν</w> <w lemma="ὁ">τῶν</w> <w lemma="αὐτός">αὐτ<unclear>ῶ</unclear><supplied reason="lost" cert="low">ν</supplied></w> <gap reason="lost" quantity="40" precision="low" unit="character"/> <w lemma="γένος">γέ<lb break="no" n="10"/>νοϲ</w> <placeName type="ethnic" nymRef="#Ἀχαιός" ref="#achaios">Ἀχαιὸν</placeName> 
+               <w lemma="καί">καὶ</w> <w lemma="ἀκριβής">ἀκρειβῶϲ</w> <placeName type="ethnic" nymRef="#Δώριος" ref="#dorios">Δώριον</placeName>
+               <w lemma="αὐτός">αὐτοὶ</w> <w lemma="δέ">δὲ</w> 
+               <w lemma="ἰθαγενής">ἰ<unclear>θα</unclear>γεν<unclear>ε</unclear><supplied reason="lost">ῖϲ</supplied></w> <gap reason="lost" quantity="36" unit="character"/><w part="F">ον</w>
+               <w lemma="δέ">δὲ</w>  
+               <lb n="11"/> <w lemma="προσκτάομαι">προϲεκτήϲαντο</w> <w lemma="ὁ">τὴν</w> <w lemma="προσαγορία">προϲαγορίαν</w> <w lemma="ἀπό">ἀπὸ</w> 
+               <w lemma="ὁ">τοῦ</w> <w part="I">ἐπικρα<supplied reason="lost">τ</supplied></w><gap reason="lost" quantity="35" unit="character" precision="low"/> <w lemma="ὁ"><supplied reason="lost">τὴ</supplied>ν</w> <w lemma="πόλις">πό<lb break="no" n="12"/>λιν</w> <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene">Κυρηναίων</placeName> 
+               <w lemma="δή">δὴ</w> <num value="2"><w lemma="δύο">δύο</w></num> 
+               <w lemma="σύνεδρος">ϲυνέδρουϲ</w> <w lemma="πέμπω">πεμπόντω<supplied reason="lost">ν</supplied></w> <gap reason="lost" quantity="40" unit="character" precision="low"/> <space extent="unknown" unit="character"/>
+               <lb n="13"/> <space quantity="20" unit="character"/> <w lemma="κεφάλαιον">Κεφάλαια</w> <w lemma="ἐκ">ἐξ</w> 
+               <w lemma="ἐπιστολή">ἐπιϲτολ<unclear>ῆ</unclear>ϲ</w> <persName type="emperor" key="hadrianus"><w lemma="θεός">θεοῦ</w> <name nymRef="Ἁδριανός">Ἁδριανοῦ</name></persName> 
+               <lb n="14"/> <w lemma="πρόσκειμαι">προϲκειμένου</w> <w lemma="δέ">δὲ</w> 
+               <persName type="attested"><name nymRef="Ἐπιτέλης">Ἐπιτέλουϲ</name></persName> <w lemma="εἷς">ἑνὶ</w> <w lemma="ὅτι">ὅτι</w> 
+               <w lemma="ἄρα">ἄρα</w> <w part="I">ἐπεθεϲ</w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="15"/> <w lemma="συμφέρω">ϲυμ<unclear>φ</unclear>έρειν</w> <w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w> 
+               <w lemma="προυποσυλλέγω">προυποϲυλλέγειν</w> <w lemma="αὐτός">αὐτὸν</w> <w part="I">ἐπι</w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="16"/> <w lemma="ἀνάμνησις">ἀνάμνηϲιν</w> <w lemma="ὁ">τῆϲ</w> <w lemma="παλαιός">παλαιᾶϲ</w> 
+               <w lemma="σύ">ὑμῶν</w> <w lemma="εὐγένεια">εὐγενείαϲ</w> <w part="I">διε<unclear>ϲ</unclear></w><gap reason="lost" extent="unknown" unit="character"/><lb 
+                  n="17" break="no"/><w part="F">θωθ<unclear>ή</unclear>ϲεϲθαι</w> <w lemma="δοκέω">δοκεῖ</w> <w lemma="ἐπιδίδωμι">ἐπέδωκέ</w> 
+               <w lemma="ἐγώ">μοι</w> <space quantity="1" unit="character"/> <g ref="symbols.xml#leaf"/> <space quantity="1" unit="character"/> <w lemma="νῦν">νῦν</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="18"/> <w lemma="πολυάνθρωπος">πολυανθρωποτάτην</w> <w lemma="καί">καὶ</w> <w lemma="καλός">καλλίϲτην</w> <w lemma="πόλις">πόλιν</w>
+               <w lemma="γένος">γένοϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="19"/> <w lemma="μητρόπολις">μητρόπολιϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὁ">τοὺϲ</w>
+               <placeName type="ethnic" nymRef="#Ἕλλην" ref="#hellas">Ἕλληναϲ</placeName> 
+               <w lemma="ἔργον">ἔργα</w> <w part="I">α<unclear>ι</unclear></w><gap reason="lost" atMost="45" atLeast="35" unit="character"/> <w lemma="γράφω"><supplied reason="lost">γέ</supplied><lb break="no" n="20"/>γραφα</w> <w lemma="ὅτι">ὅτι</w> <w lemma="καλός">καλὰ</w> <w lemma="καί">καὶ</w> <w lemma="πρέπω">πρέποντα</w> 
+               <w lemma="αὐτός">αὐτοῖϲ</w> <w lemma="εἰμί">ἐϲτιν</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="21"/> <w lemma="εἰμί">εἶναι</w> <w lemma="δίκαιος">δίκαιον</w> <w lemma="ὁ">τὸ</w> 
+               <w lemma="πρός">πρὸϲ</w> <w lemma="ὁ">τὴν</w> <w lemma="μητρόπολις">μητρόπολιν</w> <w part="I"><unclear>ευ</unclear></w><gap reason="lost" atMost="45" atLeast="35" unit="character"/> <w lemma="καθίστημι"><supplied reason="lost">κα</supplied><lb break="no" n="22"/>θεϲτῶταϲ</w> <w lemma="ὁ">τὴν</w> <w lemma="ἐπικουρία">ἐπικουρίαν</w> 
+               <w lemma="παρά">παρὰ</w> <w lemma="ὁ">τῶν</w> <placeName type="ethnic" nymRef="#Ἕλλην" ref="#hellas">Ἑλλ<unclear>ή</unclear><supplied reason="lost" cert="low">νων</supplied></placeName> 
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="23"/> <w lemma="ὡς">ὡϲ</w> <w lemma="μέν">μὲν</w> <w lemma="βούλομαι">βούλομαι</w> <w lemma="πλῆθος">πλῆθοϲ</w> <w lemma="ἀνήρ">ἀνδρῶν</w> 
+               <w lemma="παρά">παρὰ</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="24"/> <w lemma="πᾶς">πᾶν</w> <w lemma="γένος"><supplied reason="lost">γ</supplied><unclear>έ</unclear>νοϲ</w> 
+               <w lemma="καί">καὶ</w> <w lemma="πολύς">πολὺ</w> <w lemma="δή">δὴ</w> <w lemma="μᾶλλον">μᾶλλον</w> <w lemma="ὁ">τὴν</w> 
+               <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene">Κυρη<supplied reason="lost">ναίων</supplied></placeName> 
+               <w lemma="πόλις"><supplied reason="lost">πόλιν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+              <space quantity="1" unit="line"/>
+               <lb n="25"/> <space quantity="20" unit="character"/> <w lemma="κεφάλαιον">Κεφάλαιον</w> 
+               <w lemma="ἐκ">ἐκ</w> <w lemma="διάταγμα"><unclear>δ</unclear><supplied reason="lost">ιατάγματος</supplied></w> 
+               <supplied reason="lost"><persName type="emperor" key="hadrianus"><w lemma="θεός">θεοῦ</w> 
+                  <name nymRef="Ἁδριανός">Ἁδριανοῦ</name></persName> <space quantity="3" unit="character"/></supplied>
+               <lb n="26"/> <w lemma="βούλομαι">βουλοίμην</w> <w lemma="δέ">δ’</w><w lemma="ἄν">ἂν</w> <w lemma="σύ">ὑμᾶϲ</w> 
+               <w lemma="μή">μὴ</w> <w lemma="ὁ">τῷ</w> <w lemma="φόβος">φόβῳ</w> <w lemma="ὁ">τῶν</w> <orig>ε</orig><gap reason="lost" quantity="37" unit="character" cert="low"/><w part="F"><unclear>ωϲ</unclear></w> 
+               <w lemma="εἴ̓́κω">εἴξαν<lb break="no" n="27"/>ταϲ</w> <w lemma="καί">καὶ</w> <w lemma="ἀναμιμνήσκω">ἀναμνηϲθένταϲ</w> <w lemma="ὅτι">ὅτι</w> 
+               <w lemma="αἰσχρός">αἰϲχρόν</w> <w lemma="εἰμί">ἐϲτι</w> <gap reason="lost" quantity="20" unit="character" cert="low"/><supplied reason="lost"><w lemma="πόλις">πόλιν</w></supplied> 
+               <w lemma="διά"><supplied reason="lost">διὰ</supplied></w> <w lemma="χρησμός"><unclear>χ</unclear>ρηϲμοὺϲ</w> <w lemma="ὁ">τοῦ</w>
+               <lb n="28"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνοϲ</name></persName> 
+               <w lemma="οἰκίζω">ᾠκιϲμένην</w> <w lemma="ἀνάξιος">ἀναξίωϲ</w> <w lemma="καί">καὶ</w> 
+               <w part="I"><unclear>τ</unclear></w><gap reason="lost" quantity="28" unit="character" cert="low"/> <w lemma="ὁ">τῆϲ</w> <w lemma="παλαιός">παλαιᾶϲ</w> <w lemma="διάκειμαι">δια<lb break="no" n="29"/>κειμένην</w> <w lemma="συνέρχομαι">ϲυνελθεῖν</w> <w lemma="καί">καὶ</w> <w lemma="συναυξάνω">ϲυναυξῆϲαι</w> 
+               <w lemma="ὁ">τ<supplied reason="lost">ὴν</supplied></w> <supplied reason="lost"><w lemma="ὑμέτερος">ὑμετέραν</w> 
+                  <w lemma="πόλις">πόλιν</w> <w lemma="καί">καὶ</w> <w lemma="οὐ">οὐ</w> <w lemma="μόνος">μόνον</w></supplied> 
+               <w lemma="οἰκήτωρ"><supplied reason="lost">ο</supplied><unclear>ἰ</unclear>κήτοραϲ</w> <w lemma="ἀλλά">ἀλλὰ</w> 
+               <lb n="30"/> <w lemma="καί">καὶ</w> <w lemma="οἰκιστής">οἰκιϲτὰϲ</w> <w lemma="γίγνομαι">γενέϲθαι</w> <w lemma="ὁ">τῆϲ</w> 
+               <w lemma="πατρίς">πατρίδοϲ</w> <space quantity="1" unit="character"/><supplied reason="lost"> <space quantity="3" unit="character"/></supplied> <space quantity="3" unit="character"/>
+               <lb n="31"/> <w lemma="πυνθάνομαι">πυνθάνομαι</w> <w lemma="ὁ">τὸ</w> <w lemma="γυμνάσιον">γυμνάϲιον</w>
+               <w lemma="σύ">ὑμῶν</w> <w part="I">κα</w><gap reason="lost" quantity="35" unit="character" cert="low"/> <w lemma="μανθάνω"><supplied reason="lost">μα</supplied>ν<unclear>θ</unclear>άνων</w> <w lemma="πολύς">πολ<lb break="no" n="32"/>λοὺϲ</w> <w lemma="ἤδη">ἤδη</w> <w lemma="παῖς">παῖδαϲ</w> <w lemma="τρέφω">τρεφομένουϲ</w> <w lemma="καί">καὶ</w> 
+               <w lemma="αὐξάνω">αὐξ<supplied reason="lost">ανομένουϲ</supplied></w> <gap reason="lost" quantity="20" unit="character" cert="low"/><w part="F">ν</w> <w lemma="μή">μὴ</w> 
+               <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="κοινός">κοι<lb break="no" n="33"/>νῷ</w> <w lemma="γυμνάσιον">γυμναϲίῳ</w> <w lemma="συναναφύρομαι">ϲυναναφύρωνται</w> 
+               <w lemma="ὁ">τοῖϲ</w> <w part="I">α</w><gap reason="lost" quantity="30" unit="character" cert="low"/> <w lemma="ἐφηβικός"><supplied reason="lost">ἐ</supplied>φηβικὴν</w> <w lemma="ἴδιος">ἰδίᾳ</w>
+               <lb n="34"/> <w lemma="εἰς">εἰϲ</w> <w lemma="ὅς">ἣν</w> <w lemma="φοιτάω">φοιτῶντεϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰϲ</w> 
+               <w lemma="διατριβή">διατριβὰϲ</w> <w lemma="ποιέω">ποι<supplied reason="lost">ούμενοι</supplied></w> <gap reason="lost" quantity="14" unit="character" cert="low"/> <w lemma="δωρεά"><supplied reason="lost">δωρεᾶϲ</supplied></w> 
+               <w lemma="λαμβάνω">λήμψονται</w> <w lemma="ὁ"><unclear>τὰ</unclear>ϲ</w> 
+               <lb n="35"/> <w lemma="παρά">παρ’</w><w lemma="ἐγώ">ἐμοῦ</w> <w lemma="δίδωμι">διδομέναϲ</w> <space quantity="3" unit="character"/> <supplied reason="lost"> <space quantity="3" unit="character"/></supplied> <space quantity="3" unit="character"/> 
+               <lb n="36"/> <w lemma="ὅς">ὃ</w> <w lemma="μάλιστα">μάλιϲτα</w> <w lemma="ἀναγκαῖος">ἀνανκαῖον</w> <w lemma="εἰμί">ἦν</w> 
+               <w lemma="ὡς">ὡϲ</w> <w lemma="ἀξιόω">ἠξιώϲατ<supplied reason="lost">ε</supplied></w> 
+               <w lemma="σύ"><supplied reason="lost">ὑμεῖϲ</supplied></w> 
+               <w lemma="αὐτός"><supplied reason="lost" cert="low">αὐτοὶ</supplied></w> <gap reason="lost" quantity="13" cert="low" unit="character"/> <w lemma="νομοθεσία"><supplied reason="lost" cert="low">νομοθε</supplied><unclear>ϲ</unclear>ίαν</w> <w lemma="ποιέω">ἐποιη<supplied reason="lost">ϲ</supplied><unclear>ά</unclear><space quantity="1" unit="character"/><lb break="no" n="37"/>μην</w>, <w lemma="εἰμί">ἔϲτιν</w> <w lemma="δέ">δ’</w><w lemma="οὐδείς">οὐδὲν</w> <w lemma="νόμος">νόμῳ</w> 
+               <w lemma="πρό">πρὸ</w> <w part="I">ὑ<unclear>μ</unclear></w><gap reason="lost" quantity="44" cert="low" unit="character"/><w part="F"><unclear>ω</unclear>ν</w> <w lemma="ἀπό">ἀφ’</w><w lemma="οἷος">οἵων</w> <w lemma="σύ">ὑμεῖϲ</w> 
+               <lb n="38"/> <w lemma="κατοικίζω">κατοικιζομένην</w> <space quantity="1" unit="character"/> <w lemma="τις">τίνεϲ</w>
+               <w lemma="δέ">δ’</w><w lemma="ἄν">ἂν</w> <w part="I">νό<supplied reason="lost">μ</supplied></w><gap reason="lost" quantity="45" cert="low" unit="character"/> <placeName type="ethnic" nymRef="#Λακωνικός" ref="#lakonia"><supplied reason="lost">Λ</supplied>ακωνικῶν</placeName>
+               <lb n="39"/> <w lemma="καί">καὶ</w> <w lemma="τύχη">τύχῃ</w> <w lemma="τις">τινὶ</w> <w lemma="ἀγαθός">ἀγαθῇ</w> 
+               <w lemma="ὁ">τῆϲ</w> <placeName nymRef="#Κυρήνη" ref="#cyrene">Κυρήνη<unclear>ϲ</unclear></placeName> 
+               <gap reason="lost" quantity="42" cert="low" unit="character"/> 
+               <w lemma="ἐν"><supplied reason="lost">ἐ</supplied>ν</w> <w lemma="ὁ">τοῖϲ</w>  <placeName type="ethnic" nymRef="#Λακεδαιμόνιος" ref="#lakedaimonia">Λακεδαι<lb break="no" n="40"/><unclear>μ</unclear>ονίοιϲ</placeName> 
+               <w lemma="ἐπανορθόω">ἐπηνορθωκὼϲ</w> <w lemma="ὁ">τοὺϲ</w>
+               <gap reason="lost" quantity="44" cert="low" unit="character"/> <space quantity="3" unit="character"/>
+               <lb n="41"/><gap reason="lost" quantity="2" unit="character"/><orig><unclear>τηϲενϲ</unclear></orig><gap reason="lost" quantity="1" unit="character"/><orig><unclear>νχωρα</unclear></orig><gap reason="lost" quantity="4" unit="character"/><orig>ν</orig><gap reason="lost" quantity="54" cert="low" unit="character"/> <w lemma="τέσσαρες"><unclear>τ</unclear>έϲϲαρα</w> 
+               <space unit="character" extent="unknown"/>
+               <lb n="42"/><placeName type="ethnic" nymRef="#Δωριεύς" ref="#dorios">Δωριέων</placeName> <w lemma="γάρ">γὰρ</w> 
+               <w lemma="ἄνθρωπος">ἀνθρώπω<supplied reason="lost">ν</supplied></w> <gap reason="lost" quantity="56" cert="low" unit="character"/> 
+                <placeName type="ethnic" nymRef="#Λακωνικός" ref="#lakonia"><supplied reason="lost">Λα</supplied><unclear>κ</unclear>ωνικὴ</placeName>
+               <lb n="43"/> <w lemma="σωφροσύνη">ϲωφροϲύνη</w> <w lemma="καί">καὶ</w> 
+               <w lemma="ἄσκησις">ἄϲκ<unclear>η</unclear><supplied reason="lost">ϲιϲ</supplied></w>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="44"/> <w lemma="ὁράω"><unclear>Ὁ</unclear><supplied reason="lost">ρ</supplied>ῶ</w> 
+               <w lemma="γάρ">γὰρ</w> <w lemma="καί">καὶ</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὸ</w> 
+               <w part="I">γ<unclear>εν</unclear></w><gap reason="lost" extent="unknown" unit="character"/><lb n="45" 
+                  break="no"/><w part="F">ατω</w> <w lemma="ὁ">τῶν</w> 
+               <orig><unclear>εκϲϲου</unclear></orig><gap reason="lost" extent="unknown" unit="character"/><lb 
+                  n="46" break="no"/><w part="F">μην</w> <w part="I">ὑ<unclear>μ</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="47"/> <w lemma="καί">καὶ</w> <w part="I">τη</w><gap reason="lost" extent="unknown" unit="character"/> 
+               <lb n="48"/><orig><unclear>ν</unclear>ο<unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="49"/><gap reason="lost" quantity="1" unit="character"/><orig>κ</orig><gap reason="lost" atLeast="8" atMost="9" unit="character"/><w part="F">ον</w> 
+               <w lemma="πῶς"><unclear>π</unclear>ῶϲ</w> <w lemma="εἰμί">ἦν</w> <w part="I">τ</w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="50"/><gap reason="lost" atLeast="8" atMost="9" unit="character"/><w part="F">ϲύνη</w> <w lemma="ὁ">τοῦ</w> <w lemma="θεός">θεοῦ</w> 
+               <w lemma="ὁ">τῶ<unclear>ν</unclear></w> <gap reason="lost" extent="unknown" unit="character"/> 
+               <lb n="51"/><gap reason="lost" atLeast="7" atMost="8" unit="character"/><w part="F">ϲ</w> <w lemma="μόνος">μόνον</w> <w lemma="ἀλλά">ἀλλὰ</w> 
+               <w lemma="καί">καὶ</w> <w lemma="τις">το<unclear>ῦ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="52"/><gap reason="lost" atLeast="6" atMost="7" unit="character"/> <w lemma="σύ">ὑμεῖν</w> <w lemma="μή">μὴ</w> 
+               <w lemma="ἀποδέχομαι">ἀποδέ<unclear>χ</unclear><supplied reason="lost" cert="low">εϲθαι</supplied></w>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="53"/><gap reason="lost" atLeast="5" atMost="6" unit="character"/><w part="F">αζε</w> 
+               <w lemma="σπουδή">ϲπουδῇ</w> <gap reason="lost" extent="unknown" unit="character"/> 
+               <lb n="54"/><gap reason="lost" atLeast="5" atMost="6" unit="character"/><orig>υδιονι<unclear>λο</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="55"/> <w lemma="κατοικίζω"><supplied reason="lost">κατοι</supplied>κ<unclear>ίϲ</unclear>αν<supplied reason="lost" cert="low">τεϲ</supplied></w> 
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="56"/><gap reason="lost" atLeast="5" atMost="6" unit="character"/><orig><unclear>ο</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> 
+               <gap reason="lost" quantity="6" unit="line"/> 
+               <lb n="63"/> <w lemma="ἐγώ">κἀγὼ</w> <w lemma="πάνυ">πάνυ</w> <w lemma="ἡδέως">ἡδέωϲ</w> 
+               <w lemma="ἀνατίθημι">ἀνεθέ<unclear>μ</unclear><supplied reason="lost">ην</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="64"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="διά">δι’</w><w lemma="σύ">ὑμᾶϲ</w> 
+               <w lemma="ὑπάρχω">ὑπαρξάν<supplied reason="lost">των</supplied></w>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="65"/> <w lemma="ὅσος">ὅϲοι</w> <w lemma="ἄν">ἄν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῆϲ</w> <w lemma="ὑμέτερος">ὑμετέραϲ</w> 
+               <w lemma="πόλις">πό<supplied reason="lost">λεωϲ</supplied></w> <gap reason="lost" extent="unknown" unit="character"/><lb 
+                  n="66" break="no"/><w part="F">ται</w> <w lemma="παρά">παρ’</w><w lemma="σύ">ὑμεῖν</w> <w lemma="ἐργάζομαι">ἐργάϲονται</w> 
+               <orig><unclear>λ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="67"/> <w lemma="ὁ">τῷ</w> <w lemma="ἀνθύπατος">ἀνθυπάτῳ</w> <w lemma="ὅσος">ὅϲοι</w> <orig>αναλο</orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="68"/> <w lemma="θνήσκω">τε<unclear>θ</unclear>νάναι</w> <w lemma="δεσμός">δεϲμοῦ</w> 
+               <w part="I">πρόϲτε<unclear>ι</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="69"/> <space quantity="3" unit="character"/> <w lemma="κεφάλαιον">Κεφάλαια</w> 
+               <w lemma="ἐπιστολή">ἐπιϲ<supplied reason="lost">τολῶν</supplied></w> <w lemma="τις"><supplied reason="lost">τοῦ</supplied></w>
+               <w lemma="κύριος">κυρίου</w> <persName type="emperor" key="hadrianus"><name nymRef="Ἀντωνῖνος">Ἀντωνείν<supplied reason="lost">ου</supplied></name></persName><supplied reason="lost"> <space quantity="3" unit="character"/></supplied>
+               <lb n="70"/><placeName type="ethnic" nymRef="#Βερενικεύς" ref="#berenike">Βερνεικεῖϲ</placeName> 
+               <w lemma="ἀξιόω">ἠξίουν</w> <w lemma="καί">καὶ</w> 
+               <w lemma="ἀγορά">ἀγορ<unclear>ὰ</unclear><supplied reason="lost">ν</supplied></w> 
+               <w lemma="δίκη"><supplied reason="lost" cert="low">δικῶν</supplied></w> 
+               <w lemma="αὐτός"><supplied reason="lost">αὐτοῦ</supplied></w> 
+               <w lemma="ἄγω"><supplied reason="lost">ἀχθ</supplied><unclear>ῆναι</unclear></w> 
+               <w lemma="προστίθημι">προϲτεθῆναι</w> <w lemma="μέν">μὲν</w> <w lemma="οὖν">οὖν</w> <w lemma="ὁ">ταῖ<unclear>ϲ</unclear></w> 
+               <w lemma="ἀγοραῖος"><supplied reason="lost">ἀγοραί</supplied><lb break="no" n="71"/>οιϲ</w> <w lemma="πάνυ">πάνυ</w> <w lemma="ἐργώδης">ἐργῶδεϲ</w> <w lemma="εἰμί">εἶναί</w> <w lemma="ἐγώ">μοι</w> 
+               <w lemma="δοκέω"><unclear>ἔ</unclear><supplied reason="lost">δοξεν</supplied></w> 
+               <supplied reason="lost"><w lemma="ὁ">ὁ</w> <w lemma="γάρ">γὰρ</w></supplied> 
+                  <w lemma="ἀνθύπατος"><supplied reason="lost">ἀ</supplied>νθύπατοϲ</w> 
+               <w lemma="ὥσπερ">ὥϲπερ</w> <w lemma="οἶδα">ἴϲτε</w> 
+               <w lemma="καί">καὶ</w> <w lemma="σύ">ὑμεῖϲ</w> <w lemma="ἐπιμελέομαι">ἐπιμ<unclear>ε</unclear><supplied reason="lost">λούμε</supplied><lb break="no" n="72"/>νοϲ</w> <w lemma="ὁμοῦ">ὁμοῦ</w> <w lemma="ὁ">τῆϲ</w> <w lemma="τε">τε</w> 
+               <placeName ref="#creteandcyrene" nymRef="#Κρήτη καὶ Κυρήνη"><placeName nymRef="#Κρήτη" ref="#crete">Κρήτηϲ</placeName> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῆϲ</w> 
+               <placeName nymRef="#Κυρήνη" ref="#cyrene">Κυρήνηϲ</placeName></placeName> 
+               <w lemma="οὐ">οὐκ</w> <w lemma="εἰμί">ἔϲτιν</w> <w lemma="ἱκανός">ἱκανὸϲ</w> <w lemma="πλείων">πλείω</w> <w lemma="χρόνος">χρόνον</w> 
+               <w lemma="διάγω">διάγειν</w> <w lemma="ἐν">ἐν</w> <w lemma="σύ">ὑ<lb break="no" n="73"/>μεῖν</w> <w lemma="ἤ">ἢ</w> <w lemma="νῦν">νῦν</w> <w lemma="ποιέω">ποιεῖ</w> 
+               <space quantity="1" unit="character"/> 
+               <w lemma="ἀξιόω">ἀξιούντ<unclear>ω</unclear><supplied reason="lost">ν</supplied></w> 
+               <supplied reason="lost"><w lemma="οὖν">οὖν</w> <w lemma="ὁ">τῶν</w></supplied> 
+               <placeName type="ethnic" nymRef="#Βερενικεύς" ref="#berenike"><unclear>Β</unclear>ερνεικέων</placeName> 
+               <w lemma="παρά">παρὰ</w> <w lemma="μέρος">μέροϲ</w> <w lemma="ἄγω">ἄγεϲθαι</w> 
+               <w lemma="ὁ">τὴν</w> <w lemma="ἀγορά">ἀγ<unclear>ο</unclear><supplied reason="lost" cert="low">ρὰν</supplied></w> 
+               <lb n="74"/> <w lemma="ἐν">ἐν</w> <w lemma="ἕκαστος">ἑκάϲτῃ</w> <w lemma="πόλις">πόλει</w> <w lemma="ἀποκρίνω">ἀπεκριν<unclear>ά</unclear><supplied reason="lost">μην</supplied></w> <supplied reason="lost"><w lemma="ὅτι">ὅτι</w> <w lemma="ὁ">αἱ</w></supplied> 
+               <w lemma="νῦν"><supplied reason="lost" cert="low">ν</supplied><unclear>ῦ</unclear>ν</w> <w lemma="ὁ">τὴν</w> 
+               <w lemma="ἀγοραῖος">ἀγοραίαν</w> <w lemma="ἔχω">ἔχουϲαι</w> <w lemma="πόλις">πόλειϲ</w> <w lemma="ἄδηλος">ἄδηλόν</w> <w lemma="εἰμί">ἐϲτιν</w> 
+               <w lemma="ὡς"><supplied reason="lost">ὡϲ</supplied></w> 
+               <lb n="75"/> <w lemma="δέχομαι">δέξονται</w> <w lemma="ὁ">τὸ</w> <w lemma="μή">μὴ</w>
+               <w lemma="κατά">κατ’</w><w lemma="ἐνιαυτός">ἐνιαυ<unclear>τ</unclear><supplied reason="lost">ὸν</supplied></w> 
+               <w lemma="ἔχω"><supplied reason="lost">ἔχειν</supplied></w> 
+               <w lemma="ὥσπερ"><supplied reason="lost">ὥ</supplied>ϲπερ</w> <w lemma="ἔχω">εἶχον</w> 
+               <space quantity="1" unit="character"/> <w lemma="ἀφαιρέω">ἀφαιρεθῆναι</w> 
+               <w lemma="δέ">δὲ</w> <w lemma="ὁ">τοὺϲ</w> <w lemma="ἔχω">ἔχονταϲ</w> 
+               <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="τις"><unclear>τ</unclear><supplied reason="lost">οῦ</supplied></w> 
+               <lb n="76"/> <w lemma="δίδωμι">δοθῆναι</w> <w lemma="ὁ">τοῖϲ</w> <w lemma="οὐ">οὐκ</w> <w lemma="ἔχω">ἔχουϲιν</w> <w lemma="ἀδικέω"><supplied reason="lost" cert="low">ἀδικῆϲ</supplied><unclear>α</unclear>ί</w> <w lemma="ἐγώ">μοι</w> 
+               <w lemma="δοκέω">δοκεῖ</w> <w lemma="πλήν">πλὴν</w> <w lemma="εἰ">εἰ</w> <w lemma="μή">μὴ</w> <w lemma="ἄρα">ἄρα</w> 
+               <w lemma="σύ">ὑμεῖν</w> <w lemma="βούλομαι">βουλομένοιϲ</w> <w lemma="εἰμί">εἴη<unclear>ν</unclear></w>
+               <w lemma="ὁ"><unclear>τ</unclear><supplied reason="lost">ὸ</supplied></w>
+               <lb n="77"/> <w lemma="τοιοῦτος">τοιαύτην</w> <w lemma="κοινωνία">κοινωνίαν</w> 
+               <w lemma="καθίστημι"><unclear>κ</unclear>α<supplied reason="lost">ταϲτῆϲαι</supplied></w> 
+               <space extent="unknown" unit="character"/>
+               <lb n="78"/><date ref="https://godot.date/id/GzEUcSgJNtPCh89vHpPaeL"><persName type="emperor" key="antoninuspius"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name> 
+                 <persName type="emperor" key="hadrianus"><w lemma="θεός">θεοῦ</w> <name nymRef="Ἁδριανός">Ἁ<supplied reason="lost">δριανοῦ</supplied></name></persName> <w lemma="υἱός"><supplied reason="lost">υἱ</supplied>όϲ</w>, 
+               <persName type="emperor" key="traianus"><w lemma="θεός">θεοῦ</w> <name nymRef="Τραιανός">Τραιανοῦ</name> <name nymRef="Παρθικός">Παρθικοῦ</name></persName> 
+               <w lemma="υἱωνός">υἱωνόϲ</w>, <persName type="emperor" key="nerva"><w lemma="θεός">θεοῦ</w> <name nymRef="Νέρβα">Νέρουα</name></persName> 
+                  <w lemma="ἔγγονος">ἔγγ<supplied reason="lost">ο</supplied><lb break="no" n="79"/>νοϲ</w>, <name nymRef="Τίτος">Τίτοϲ</name> <name nymRef="Αἴλιος">Αἴλιοϲ</name> 
+                  <name nymRef="Ἁδριανός">Ἁδριαν<supplied reason="lost">ὸϲ</supplied></name> 
+               <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀντωνε</supplied>ῖνοϲ</name> <name nymRef="Σεβαστός">Ϲεβαϲτόϲ</name>, 
+               <w lemma="ἀρχιερεύς">ἀρχιερεὺϲ</w> <w lemma="μέγιστος">μέγιϲτοϲ</w> <w lemma="δημαρχικός">δημαρχικῆϲ</w> <w lemma="ἐξουσία">ἐξου<lb break="no" n="80"/>ϲίαϲ</w> <w lemma="ὁ">τὸ</w> <num value="17">ιζ</num>, 
+               <w lemma="Αὐτοκράτωρ">Αὐτοκράτω<supplied reason="lost">ρ</supplied></w> <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="2">β</num> </supplied>, 
+               <w lemma="ὕπατος"><supplied reason="lost">ὕπα</supplied>τοϲ</w> <w lemma="ὁ">τὸ</w> <num value="4">δ</num>, <w lemma="πατήρ">πατὴρ</w> <w lemma="πατρίς">πατρίδοϲ</w></persName></date>, 
+               <placeName type="ethnic" nymRef="#Πτολεμαιεύς" ref="#ptolemais">Πτολεμαιεῦϲι</placeName> 
+               <placeName type="ethnic" nymRef="#Βαρκαῖος" ref="#barke">Βαρκαίοι<supplied reason="lost">ϲι</supplied></placeName><supplied reason="lost"> <space extent="unknown" unit="character"/></supplied>
+               <lb n="81"/> <w lemma="χαίρω">χαίρειν</w> <space unit="character" quantity="3"/> <w lemma="θαυμάζω">θ<supplied reason="lost">αυμάζ</supplied>ω</w> <w lemma="ὅτι">ὅτι</w> 
+               <w lemma="μηδέποτε">μηδέποτε</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="ἔμπροσθεν">ἔμπροϲθεν</w> 
+               <w lemma="χρόνος">χρόνῳ</w> <w lemma="διαπέμπω">διαπέμψαν<supplied reason="lost">τεϲ</supplied></w> 
+               <supplied reason="lost"><w lemma="ἀλλά">ἀλλὰ</w></supplied> 
+               <lb n="82"/> <w lemma="συνθύω">ϲυνθύϲαντεϲ</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὁ">τὸν</w> 
+               <w lemma="ὁ">τ<unclear>ῶ</unclear><supplied reason="lost">ν</supplied></w> 
+                  <placeName type="ethnic" nymRef="#Κυρηναῖος" ref="#cyrene"><supplied reason="lost">Κυρην</supplied><unclear>α</unclear>ίων</placeName> 
+               <w lemma="ἀγών">ἀγῶνα</w> <w lemma="νῦν">νῦν</w> <w lemma="πρῶτος">πρῶτον</w> <w lemma="ἀποστέλλω">ἀπεϲτείλατε</w>, 
+               <w lemma="οὐ">οὐ</w> <w lemma="γάρ">γὰρ</w> <w lemma="ἀγνοέω">ἀγνοεῖ<supplied reason="lost">τε</supplied></w> <supplied reason="lost"><w lemma="ὅτι">ὅτι</w></supplied>
+               <lb n="83"/> <w lemma="ὁ">τὸ</w> <w lemma="ὁ">τὰ</w> <w lemma="τοιοῦτος">τοιαῦτα</w> 
+               <w lemma="καινοτομέω">καινοτο<unclear>μ</unclear><supplied reason="lost">εῖν</supplied></w> 
+               <w lemma="αἰτία"><supplied reason="lost" cert="low">αἰτί</supplied>αν</w> <w lemma="παρέχω">παρέχει</w> 
+               <w lemma="ὁ">ταῖϲ</w> <w lemma="πόλις">πόλεϲι</w> <w lemma="φιλονεικία">φιλονεικίαϲ</w> 
+               <space quantity="1" unit="character"/> <w lemma="γίγνομαι">ἐγένετο</w> 
+               <w lemma="τοίνυν">τοίνυ<supplied reason="lost">ν</supplied></w> 
+               <supplied reason="lost"><w lemma="ὁ">ἡ</w></supplied> 
+               <w lemma="συνθυσία"><supplied reason="lost">ϲυν</supplied><lb break="no" n="84"/>θυϲία</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἔθνος">ἔθνουϲ</w> <gap quantity="7" precision="low" unit="character" reason="lost"/><w part="F">ενα</w> 
+               <w lemma="πρεσβεύω">ἐπρέϲβευεν</w> <persName type="attested"><name nymRef="Οὐαλέριος">Οὐαλέριοϲ</name> 
+                  <name nymRef="Παυσανίας">Παυϲανίαϲ</name></persName> <w lemma="ὅς">ᾧ</w> <w lemma="ὁ">τὸ</w> 
+               <w lemma="ἐφόδιον">ἐφόδι<supplied reason="lost">ον</supplied></w> 
+               <w lemma="δίδωμι"><supplied reason="lost">δοθή</supplied><lb 
+                  break="no" n="85"/>τω</w> <w lemma="εἰ">εἰ</w> <w lemma="μή">μὴ</w> 
+               <w lemma="προίξ">προῖκα</w> <w lemma="ὑπισχνέομαι">ὑπ<unclear>έϲ</unclear><supplied reason="lost">χηται</supplied></w> 
+               <w lemma="εὐτυχέω"><supplied reason="lost">εὐτυ</supplied>χεῖτε</w> <space quantity="3" unit="character"/>
+            </ab>
+            </div>
+         <div type="textpart" subtype="part" n="2">
+            <ab>
+               <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>α</unclear></w> <w lemma="πρός">πρὸϲ</w>
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <space extent="unknown" unit="character"/> 
+               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ϲ</unclear>ε</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὁ">τὸ</w>
+               <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">δεύονται</w>
+               <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><supplied reason="lost">ι</supplied>ϲταμαι</w> 
+               <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><w part="M"><unclear>λ</unclear>ιπου<lb break="no" n="7"/><gap reason="lost" extent="unknown" unit="character"/></w> <space extent="unknown" unit="character"/>
+               <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><orig>ν</orig> 
+               <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ϲ</unclear></orig>
+               <lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
+            </ab>
+         </div></div>
+<div type="apparatus">
+   <note>
+      In compiling the following notes on the reading we omitted earlier proposals 
+      outdated by discovery of the new fragments. 
+   </note>
+   <listApp>
+      <app loc="6">
+      <lem>ἐφ<unclear>θ</unclear>άκει</lem>
+      <rdg resp="#fraser1950">ἐφελκει</rdg>
+      <rdg resp="#oliver1951a">ἐφολκεῖ</rdg>
+   </app>
+   <app loc="6">
+      <rdg resp="#oliver1951"><unclear>π</unclear><supplied reason="lost">ερὶ</supplied></rdg>
+      <rdg resp="#fraser1950">Ι<gap reason="lost" extent="unknown" unit="character"/></rdg>
+      <rdg resp="#oliver1951a"><unclear>π</unclear><supplied reason="lost">ροτιμῶν</supplied></rdg>
+      <rdg/>
+   </app>
+   <app loc="7">
+      <lem>προ<unclear>κ</unclear><supplied reason="lost" cert="low">ειμένη</supplied>ν</lem>
+      <rdg resp="#fraser1950">προ<gap reason="lost" extent="unknown" unit="character"/></rdg>
+      <note>; Fraser in notes,<orig>πρo</orig><g/> ?<orig>προμ</orig></note>
+   </app>
+   <app loc="9">
+      <lem>αὐτ<unclear>ῶ</unclear><supplied reason="lost" cert="low">ν</supplied></lem>
+      <rdg resp="#fraser1950">αυτ</rdg>
+     
+      <rdg resp="#oliver1951a">αὐτ<supplied reason="lost">οφυῶν</supplied></rdg>
+   </app>
+   <app loc="10">
+      <rdg resp="#fraser1950">Δῶρον</rdg>
+      <note>; Fraser, in notes, Δώριον</note>
+      <rdg resp="#oliver1951a">Δώρ<supplied reason="lost">ι</supplied>ον</rdg>
+   </app>
+   <app loc="10">
+      <lem>ἰ<unclear>θα</unclear>γεν<unclear>ε</unclear><supplied reason="lost">ῖϲ</supplied></lem>
+      <rdg resp="#fraser1950"><unclear>ἰθα</unclear>γεν<supplied reason="lost">εῖϲ</supplied></rdg>
+      <note>; Fraser, in notes,ἰθαγενε<supplied reason="lost">ῖϲ</supplied></note>
+   </app>
+   <app loc="11">
+      <lem>ἐπικρα<supplied reason="lost">τ</supplied></lem>
+      <rdg resp="#fraser1950">Ἐπικ<unclear>ρυ</unclear> [ . . .</rdg>
+      <rdg resp="#oliver1951">ἐπικ<unclear>ρυ</unclear> [ . . . <note>a form or derivative of <foreign xml:lang="grc">ἐπικρύπτεϲθαι</foreign></note>
+        </rdg>
+      <note>; Fraser, in notes,ἐπικρα<gap reason="lost" extent="unknown" unit="character"/></note>
+   </app>
+   <app loc="13">
+      <lem>ἐπιϲτολ<unclear>ῆ</unclear>ϲ</lem>
+      <rdg resp="#fraser1950">ἐπιϲτολ<supplied reason="lost">ῆϲ</supplied></rdg>
+      <note>; Fraser, in notes, ἐπιϲτολ<unclear>ῆ</unclear><supplied reason="lost">ϲ</supplied></note>
+   </app>
+   <app loc="14">
+      <rdg resp="#fraser1950">Ἐπιτέλουϲ</rdg>
+      <rdg resp="#oliver1951">ἐπὶ τέλουϲ</rdg>
+   </app>
+   <app loc="14">
+      <lem>ἐπεθεϲ<gap reason="lost" extent="unknown" unit="character"/></lem>
+      <rdg resp="#fraser1950">ἐπέθεϲ<supplied reason="lost">αν</supplied></rdg>
+      <note>; Fraser, in notes, ἐπέθεϲα<supplied reason="lost">ν</supplied></note>
+   </app>
+   <app loc="15">
+      <lem>προυποϲυλλέγειν</lem>
+      <rdg resp="#fraser1950">ϲυλλ<gap reason="lost" extent="unknown" unit="character"/>έγειν</rdg>
+      <note>; Fraser, in notes, ϲυλλ <space unit="character" quantity="1"/> έγειν</note>
+      <rdg resp="#oliver1951">ϲυ<unclear>μ</unclear><supplied reason="lost">φ</supplied>έρειν</rdg>
+   </app>
+   <app loc="16">
+      <lem>διε<unclear>ϲ</unclear></lem>
+      <rdg resp="#fraser1950">διε<gap reason="lost" extent="unknown" unit="character"/></rdg>
+   </app>
+  <app loc="17">
+      <lem>θωθ<unclear>ή</unclear>ϲεϲθαι</lem>
+      <rdg resp="#fraser1950">θωθ[ή]ϲεϲθαι</rdg>
+     <note>; Fraser, in notes, θωθήϲεϲθαι</note>
+      <rdg resp="#oliver1951a">θω θήϲεϲθαι</rdg><note> perhaps <foreign xml:lang="grc"><supplied reason="lost">ἐπ’ἀγα</supplied><lb/>θῷ</foreign> etc.</note>
+   </app>
+   <app loc="19">
+      <rdg resp="#fraser1950"><supplied reason="lost">ἄ</supplied>ρα <lb/> πλείϲτουϲ </rdg>
+      <note>; Fraser, in notes, καὶ τὰ εἰϲ τοὺϲ </note>
+   </app>
+   <app loc="19">
+      
+      <rdg resp="#fraser1950"><orig>εργλα</orig></rdg>
+      <note>; Fraser, in notes, ἔργα</note>
+   </app>
+   <app loc="21">
+      <note>Fraser, in notes, <unclear>ευ</unclear>, omitted by other editors.</note>
+   </app>
+   <app loc="22">
+      <lem>ἐπικουρίαν</lem>
+      <rdg resp="#fraser1950">ἐπ<supplied reason="lost">ικ</supplied>ουρίαν</rdg>
+      <note>; Fraser, in notes, ἐπι<unclear>κ</unclear>ουρίαν</note>
+   </app>
+   <app loc="22">
+      <lem>Ἑλλ<unclear>ή</unclear><supplied reason="lost" cert="low">νων</supplied></lem>
+      <rdg resp="#fraser1950">θ<gap reason="lost" extent="unknown" unit="character"/></rdg>
+      <note>; Fraser, in notes, Ἑλλη<gap reason="lost" extent="unknown" unit="character"/>, perhaps 
+      Ἑλλα<gap reason="lost" extent="unknown" unit="character"/> from a squeeze.</note>
+   </app>
+   <app loc="23">
+      <rdg resp="#fraser1950">βούλοιμι</rdg>
+      <note>; Fraser, in notes, βούλομαι</note>
+   </app>
+   <app loc="23">
+     
+      <rdg resp="#fraser1950">παρ<gap reason="lost" extent="unknown" unit="character"/></rdg>
+      <note>; Fraser, in notes, παρά</note>
+   </app>
+   <app loc="24">
+      <rdg resp="#fraser1950"><supplied reason="lost">γ</supplied><unclear>έ</unclear>νοϲ</rdg>
+      <note>; Fraser, in notes, γένοϲ</note>
+   </app>
+   <app loc="24">
+      <lem>πολὺ δὴ μᾶλλον</lem>
+      <rdg resp="#fraser1950">πολυδύναμον</rdg>
+   </app>
+   <app loc="24">
+      <lem>Κυρη<supplied reason="lost">ναίων</supplied></lem>
+      <rdg resp="#fraser1950">Κυρ<supplied reason="lost">ήνην</supplied></rdg>
+      <note>; Fraser, in notes, Κυρή<supplied reason="lost">νην</supplied></note>
+   </app>
+   <app loc="25">
+      <rdg resp="#fraser1950">ἐκ<gap reason="lost" extent="unknown" unit="character"/></rdg>
+   </app>
+   <app loc="26">
+     
+      <rdg resp="#fraser1950"><unclear>πα</unclear><supplied reason="lost" cert="low">ϲ</supplied>ῶ<supplied reason="lost">ν</supplied></rdg>
+      <note>; Fraser, in notes, ὑμᾶϲ <unclear>μ</unclear>ή</note>
+   </app>
+   <app loc="28">
+      <lem>καὶ <unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/></lem>
+      <rdg resp="#fraser1950">κα<unclear>ι</unclear><gap reason="lost" extent="unknown" unit="character"/></rdg>
+      <rdg resp="#fraser1950" cert="low">κα<unclear>τ</unclear><supplied reason="lost">εϲτραμμένην</supplied></rdg>
+      <note>; Fraser, in notes, κατ<unclear>ά</unclear></note>
+   </app>
+   <app loc="32">
+      <lem>αὐξ<supplied reason="lost">ανομένουϲ</supplied></lem>
+      <rdg resp="#fraser1950">α<unclear>υ</unclear><gap reason="lost" extent="unknown" unit="character"/></rdg>
+      <rdg>α<unclear>ὐ</unclear><gap reason="lost" extent="unknown" unit="character"/></rdg>
+   </app>
+   <app loc="36">
+      <rdg resp="#fraser1950"><unclear>ην</unclear></rdg>
+      <rdg resp="#frasernotes">μήν</rdg>
+   </app>
+   <app loc="36">
+      <!--<lem>?!?!?!</lem>-->
+      <rdg resp="#fraser1950">πρου<gap reason="lost" extent="unknown" unit="character"/></rdg>
+   </app>
+   <app loc="39">
+      <lem>Κυρήνη<unclear>ϲ</unclear></lem>
+      <rdg resp="#fraser1950">Κυρήνη<supplied reason="lost">ϲ</supplied> <gap reason="lost" extent="unknown" unit="character"/></rdg>
+   </app>
+   <app loc="40">
+      <lem><unclear>μ</unclear>ονίοιϲ</lem>
+      <rdg resp="#fraser1950"><supplied reason="lost">μ</supplied>ονίοιϲ</rdg>
+      </app>
+   <app loc="41">
+      <rdg resp="#fraser1950"><gap reason="lost" extent="unknown" unit="character"/><orig>ηο</orig><gap reason="lost" extent="unknown" unit="character"/><orig>ν</orig></rdg>
+   </app>
+   <app loc="44">
+      <lem>γ<unclear>εν</unclear></lem>
+      <rdg resp="#fraser1950">γρ<gap reason="lost" extent="unknown" unit="character"/></rdg>
+      <note>; Fraser, in notes, <orig>γ<unclear>ιν</unclear></orig><gap reason="lost" extent="unknown" unit="character"/></note>
+   </app>
+   <app loc="46">
+      <rdg resp="#fraser1950">τῶν<gap reason="lost" extent="unknown" unit="character"/>ου<gap reason="lost" extent="unknown" unit="character"/></rdg>
+      </app>
+   <app loc="47">
+      <rdg resp="#fraser1950">μην τ<gap reason="lost" extent="unknown" unit="character"/></rdg>
+   </app>
+   <app loc="49">
+      <rdg resp="#fraser1950"><gap reason="lost" extent="unknown" unit="character"/>ο<gap reason="lost" extent="unknown" unit="character"/></rdg>
+   </app>
+      <app loc="81"><lem>[ἀλλὰ]</lem>
+      <rdg resp="#oliver1979">[και]</rdg></app>
+     
+      <app loc="81"><lem>[Κυρην]αίων</lem>
+         <rdg resp="#oliver1979">[Καπετω]λιων</rdg></app>
+     
+      <app loc="81"><lem>[ . . . ]ενα</lem>
+         <rdg resp="√oliver1979">[ἀνὰ τὸν ἀ]γῶνα</rdg></app>
+   </listApp>
+</div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" source="#oliver1989" xml:lang="en"><p>
+            <note>Line 1-12</note> God. Good Fortune.
+    <ref target="https://godot.date/id/2AznLJfkN5gLWthxQUQSW7">Imperator Caesar Trajan Hadrian Augustus son of deified Trajan, Victor in Parthia, 
+     grandson of <supplied reason="lost">deified</supplied> Nerva, pontifex [maximus], 
+    tribunician power for the nineteenth time <note>134/5 CE</note>, consul [thrice], pater patriae</ref>, to the Cyrenaeans greetings.
+    The archon of the Panhellenion has already [had occasion] to write to me [concerning] 
+     your claim [ . . . ] I wrote back what I thought and for you I sent (a text of) the reply pertaining thereto, 
+      [which my friend ?Salvius] Carus the clarissimus proconsul [will give you]. Farewell.
+    [The Barkans? say that] one ought to accept [delegates also from them]. 
+    Their vindications, however, are not justified. [They aspire to] the same [rights as do 
+    the Cyrenaeans, whose] ancestry [away back was] pure Greek and specifically Dorian. 
+    They themselves [long ago were] aborigines [and not Hellenes for the most part. 
+    Rather] they acquired the classification from [ . . . ] city. With the Cyrenaeans sending two delegates [ . . .</p></div>
+    <div type="translation" resp="#cmr" xml:lang="en">
+            <p><note>Lines 13-24</note> . . . </p>
+            
+            <p><note>ll.25-68</note></p>
+            </div>
+           <div type="translation" source="#jmr1978a" xml:lang="en"> <p><note>Lines 69-77</note>: Chief points from letters of our lord Antoninus:
+The Bereniceans requested that an assize should be held in their city;
+but it seemed to me difficult to add to the number of court-days, for, as you know yourselves,
+the proconsul, having charge of Crete at the same time as of Cyrene, is unable to spend more time with you than he already does.
+Since the Bereniceans request that the assize should be held in each city in turn,
+I replied that it is not clear how the cities which already have an assize will take it if they do not have it annually as in the past;
+for those who have it to be deprived of it in order to give it to those who do not seems to me to inflict injustice,
+unless the establishment of such a rotation were made with your consent.</p>
+            <p><note>Lines 78-85</note>: <date ref="https://godot.date/id/GzEUcSgJNtPCh89vHpPaeL">The Emperor Caesar T. Aelius Hadrianus Antoninus Augustus,
+son of deified Hadrianus, grandson of deified Trajanus Parthicus, greatgrandson of deified Nerva,
+pontifex maximus, in the seventeenth year of his tribunician power</date> <note>153/4 CE</note>, hailed Imperator twice,
+consul for the fourth time, father of his country, greets the people of Ptolemais Barka.</p>
+            <p>I am surprised that after sending no earlier protest,
+but joining in the sacrifice for the games held by the Cyrenaeans,
+you have now for the first time despatched an ambassador;
+for you are not ignorant that this kind of innovation is a source of strife between cities;
+therefore common(?) sacrifice was established(?) for the whole province.
+Valerius Pausanias carried out the function of ambassador;
+travelling expenses should be paid to him unless he promised to pay them himself. Farewell.</p></div>
+            
+            <div type="translation" source="#oliver1979" xml:lang="en"> <p><note>Lines 78-85</note>: Imperator Caesar Titus Aelius Hadrian [Anton ]inus Augustus,
+[son] of divus [Hadrian], grandson of divus Trajan Parthicus, greatgrandson
+of divus Nerva, pontifex maximus, tribunician power for the
+seventeenth time, imperator [twice, consul] four times, pater patriae,
+to the Ptolemais-Barcans, greetings.</p>
+            <p>[I marvel] that you, who in all the time gone by have never sent
+a delegation or shared in the sacrifice, have now for the first time
+sent representation to the contest of the [Capitolia]. For you are not
+unaware that the making of such innovations brings upon the cities
+the [charge] of contentiousness. Well, [the joint] sacrifice in behalf of
+the region's population did take place [during the] contest.
+As ambassador Valerius Pausanias served, to whom let the travel
+money be paid unless he promised to go at his own expense.
+Farewell.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The original location of the monument remains a matter of conjecture. 
+               Its weight alone would suggest an original location not very far from the 
+                  Valley Street where its pieces were found. Moreover it is not the only 
+               stone found re-used in this area which is concerned with the koinon.
+               there is also a later inscription <!--(unpublished)--> referring specifically to provincial affairs. 
+               Goodchild inclined to think that in the fifth century CE there were provincial 
+               meetings focussed on the area of the Market Theatre, which in fact stands 
+               beside the Valley Street; but as far as I am aware he did not seriously consider where they may 
+               have taken place earlier. It seems worth suggesting that it was in the Caesareum, 
+               less than 200 yards away, from which stones were demonstrably brought for re-use 
+               in the later phases of the Valley Street buildings; it had been devoted to the cult 
+               of Rome (and no doubt the imperial house) at least from the time of Augustus (For the dedication 
+               of the Caesareum to Rome (presumably with Augustus) see <ref type="inscription" n="C.2">C.2</ref>); 
+               while its porticoes, great courtyard, basilica, temple and adjacent theatre were eminently 
+               suitable for the purposes of a provincial assembly. Only when the Caesareum was 
+               converted into a fort in the later third century was something else required 
+               <!-- (R. G. Goodchild, op. cit. (n. 2), 74 f.) -->.</p>
+            <p>Goodchild made a careful study of the pieces he found 
+               and drew a reconstruction of the whole stele (reproduced in Reynolds, op.cit. Pl. II) in which he located 
+               exactly all but one; this loose piece belonged, without doubt, in the area between 
+               lines 48 and 63 where too little of the text survives for any precision in interpretation.</p>
+            <p>P. M. Fraser (op. cit above published 
+               from a photograph a considerable but incomplete inscription 
+               comprising documents sent to the city of Cyrene by Hadrian (and possibly 
+               others during his reign). It seemed natural to relate them to the material and moral 
+               damage caused by the Jewish Revolt of CE 115-17, although Fraser thought that they
+               had been inscribed much later. Subsequent discussion was concentrated mainly 
+               on the opening sections, concerned with representation in the Panhellenion 
+               <!--(H. Oliver, Hesperia XX (1951), 32f. andHesperia 
+               Supp. xiii, 95 f., no. 7;   J. A. O. Larsen
+               Cl. Phil, xlvii (1952), 7 f.;   C. B.  Welles,   AJA
+               lvi   (1952),   76   f.;    J.   and   line    Robert,   Bulletin
+               Epigraphique  1950, no.  243 ;    1953, no.  255;   AE
+               1951, no. 122;   1953, no. 120)-->.</p>
+            <p>The fuller version was published by Reynolds, op.cit, above) in 1978. The documents that it contains turned out to be more numerous than originally appeared and although 
+               diverse in content are linked by the point that all demonstrate the superiority of Cyrene over the 
+               other cities of the province. She is a metropolis, the venue of the governors' assize courts, the site 
+               of the provincial imperial cult; and when her position was challenged both Hadrian and Pius 
+               maintained it, even, perhaps, enhanced it. Clearly the inscription was cut to demonstrate this — and 
+               points stressed in earlier discussions, such as the problems of Cyrene after the Jewish Revolt, the 
+               importance of the Gymnasium, the membership of Cyrenaican cities in the Panhellenion, are incidental
+               to the main purpose of the inscribing authority. In view of this it is extremely unlikely that the stele 
+               was ever erected in any gymnasium. It needed to be in an area frequented on those occasions when 
+               the citizens of other Cyrenaican cities assembled at Cyrene for meetings of the provincial koinon.</p>
+            <p>The first document, lines 1-78, is a letter of Hadrian to the people of Cyrene dated to CE 134/5, about two years after the foundation 
+               of the Panhellenion and, as Oliver (op.cit.) points out, at a stage when consideration of applications 
+               for membership must have taken up much of the time of its officers. Hadrian writes briefly to the Cyrenaeans on a subject on which he has been 
+               consulted by the&#x2028; archon of the Panhellenion, and apparently also, though later, by the 
+               Cyrenaeans themselves, though&#x2028; a Cyrenaean approach to the archon is probably implied as well. 
+               He has made a decision, incorporated in a rescript to the archon, sends an additional document 
+               to the Cyrenaeans and also refers to some action of the proconsul Salvius Carus.</p>
+            <p>The second document is a copy of a letter from Antoninus Pius to 
+               Ptolemais dated by his titles to 153/4. Again the general lines are absolutely clear. 
+               The Ptolemaeans, through their ambassador Valerius Pausanias, had asked for permission 
+               to hold an ἀγών in their city; Pius replied, apparently sarcastically, that they had hitherto 
+               been wisely satisfied to participate in the common sacrifice and ἀγών held at Cyrene, 
+               and were well aware that innovations of this sort carried the stigma of inter-city rivalry.   
+               The common sacrifice had been established for the whole province.
+            </p>
+            <p>The dossier as it now stands — for all the gaps in the first document — is the major piece 
+               of evidence for the history of Cyrenaica in the mid-second century. All three cities which figure 
+               in it had, undoubtedly, suffered in the Jewish Revolt; but by 153/4 were, as we now see, struggling 
+               for status in the same way as the rich cities of Asia. Berenice and Ptolemais must have been wealthy 
+               enough to make their pleas for privilege plausible. They 
+               presumably calculated also on a reduction in the resources of Cyrene, but the emperors backed 
+               Cyrene, the traditional capital, and she was vigorous enough to hit back at her rivals in the
+               publication of these documents.</p><p>It is also interesting for the light that it throws on provincial life and administration 
+               in a number of ways ; and not least because it includes two of the rare surviving instances of 
+               imperial decisions unfavourable to the applicants; cf. F. Millar, <title>The Emperor in the Roman 
+               World</title> (1977), 431 f., 436, 438 f., pointing out that the record provided by inscriptions is heavily
+               biassed. Unfavourable decisions are likely to have been inscribed only when it suited a rival 
+               to publicize them, as here and in the instances that Millar cites from Coronea in Boeotia,
+               <!-- check -->IG vn. 2870, no. 1, and Aphrodisias (IAph2007, <ref target="http://insaph.kcl.ac.uk/iaph2007/iAph080031.html">8.31</ref>, 
+                  <ref target="http://insaph.kcl.ac.uk/iaph2007/iAph080033.html">8.33</ref>).                     
+            </p>
+            
+           
+              
+            
+               <!-- <p>Line 5: The common formula used in addressing a city is ἄρχουσι βουλῇ δήμῳ τῶν δείνων 
+               and it may be  Κυρηναίοιϲ here represents a summary of this (so, tentatively, 
+               Dr. Wynne Williams in correspondence);  but the emperor's title is given in full so that a 
+               summary is surprising, and the phenomenon recurs  in the letter of Antoninus Pius to 
+               Ptolemais, 11. 78-80 below. An obvious parallel is in the imperial  
+               correspondence with Delphi which is addressed Δέλφων τῇ πόλει 
+               (cf. Fouilles de Delphes m. IV. 3, nos. 301, 302); presumably the emperor tended 
+               to pick up the description used by his correspondents  of themselves or by a third 
+               party, as here, no doubt, by the archon of the Panhellenion.
+            </p>
+            <p>Lines 6f:  In 1. 6 the 
+               reading ἐφ<unclear>θ</unclear>άκει (the crossbar of Α seems to me clear) 
+               antiquates much of the discussion of this line; for the use of φθάνω in this kind of context cf. 
+               the letter of an archon of the Panhellenion in 157/8 (OGIS 507 = Oliver, Hesperia Supp. XIII, 115, 
+               no. 30, line  4 f., φθάνομεν. . . ἠξιωκότεϲ). It needs to be complemented by a participle on which 
+               ἐπιστεῖλαι must depend. Something, perhaps, with the sense of 
+               σπουδάζων must be supposed later in the line — the archon had already been zealous 
+               to send to Hadrian on the subject on which the Cyrenaeans had made their request 
+               (for this sense of ἀξίωσιϲ see H. J. Mason, <title>Greek Terms for Roman Institutions</title> s.v.). 
+               It would appear from what follows that Cyrene was already a member of the Panhellenion and was asking for something more. 
+               Line  9 shows that one request was rejected as improper; 
+               since it is not rational to suppose that the Cyrenaeans would advertise the fact if it were theirs 
+               (and this argument is strengthened by the extended context into which the document 
+               must now be fitted), this should refer to an application for membership 
+               made by a rival of the Cyrenaeans. Line 6 should threfore mean that the Cyrenaean request was 
+               for the rejection of this application, which must have been indicated at the end of the line. 
+               We have no clue to the identity of the rejected group. In line 7, Hadrian states that he has replied as seemed right to him and 
+               sent something to the Cyrenaeans  as well. Thius seems likely to be 
+               a copy of his own rescript to the archon of the  Panhellenion and so, perhaps, something like
+               τὴν προκειμένην ἀπόκρισιν stood here (a word with  the sense of copy rather than of answer would
+               be more satisfying, but ἀπογραφή seems not to be attested  in this sense in the Roman 
+               period, cf. Mason, loc. cit. under 1. 6 f., and Preisigke, Worterbuch, s.v.). The link with 
+               Salvius could have been made by a phrase on the lines of ὡς προσδεῖταί μου, as Salvius  asked of me, 
+               implying, no doubt, that the Cyrenaean request was made through the proconsul and not 
+               directly to the emperor by means of an embassy. </p>
+          <p>ll. 8-12 continued then, I suggest, with the substance of Hadrian's reply to the archon rather than
+                of a letter either to or from the proconsul, or indeed of another letter from the emperor to Cyrene. 
+               It needed no new heading because it was already explained by Hadrian's statement in 
+               lines 7-8.  Unfortunately the new fragment adds little here and any reconstruction must be 
+               very tentative indeed.  I follow Oliver2 in thinking that the text refers first to a group whose 
+               claim to representation in the Panhellenion was in some way improper; 
+               and since line  10 clearly refers to true Greek descent,  I presume that it was in this matter that it failed, 
+               so that it was not entitled to representation in the Panhellenion at all, rather than that it was 
+               not entitled to as many representatives as Cyrene. With  Oliver2, therefore, I reject the proposal 
+               of Oliver1 for the end of line  8 (περὶ τῶν Κυρηναίων λεγόντων ὅτι)  for something such as he substitutes 
+               here—λέγουσιν ὅτι σύνεδρον καὶ ἐξ αὐτῶν , though I think that these  rejected claimants 
+               must have been named. In line  10, where Fraser and Oliver1 saw references to the  heroes 
+               Achaeus and Dorus, it is now clear that we have adjectives qualifying γένοσ; cf. διὰ τὸ γένος Ἑλληνικόν 
+               in the justification for allowing representation in the Panhellenion to Cibyra, Oliver, Hesperia Supp. xiii 95, 
+               no. 6. There can be no serious doubt that the Cyrenaeans are in question  here; 
+               but, as Fraser noted, ἀκρειβῶς presents difficulties and these do not seem to me to be solved 
+               completely by the translation of Oliver2, in the truest sense. 
+               It may be that the Theran dialect shows  affinities with Achaean as well as Laconian 
+               (Oliver quotes F. Kiechle, Lakonien und Sparta, Vestigia v (1963), 81-95 in this connection), 
+               implying two elements in the Theran population which the  Theran colonists of Cyrene will have 
+               brought with them; but the run of the sentence surely sug gests not two elements in Cyrene's 
+               original population but a wider definition narrowed down to a more precise one by ἀκρειβῶς. 
+               Could the phrase mean Greek and strictly Dorian (as suggested to me by Mrs. P. E. Easterling)?
+               Oliver restores lines 9-11 to give : δέχεσθαι δεῖ· οὐ μέντοι δίκαια 
+               ἀξιοῦσιν· τῶν αὐτ<supplied reason="lost">οφυῶν Κυρηναίων ἦν ἐκ παλαιοῦ τὸ 
+               γέ</supplied>νος Ἀχαιὸν καὶ ἀκρειβῶς Δώρ<supplied reason="lost">ι</supplied>ον· 
+               αὐτοὶ δὲ <unclear>ἰθα</unclear>γενε<supplied reason="lost">ῖς μᾶλλον ἢ Ἕλληνες τὰ 
+                  ἄνωθεν ὄντες</supplied> 
+                προσεκτήσαντο τὴν προσηγορίαν ἀπὸ τοῦ ἐπικρύ<supplied reason="lost" 
+                  cert="low">πτεσθαι</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+               The new fragment necessitates some alterations in this at the end of 1. 10 and before the 
+               break in 1. 11; but in addition to these it seems to me difficult to take ἰθαγενής in the
+               sense indigenous rather than true-born, with reference to the ysvos which has just been 
+               mentioned. If 81 is adversative then perhaps we should expect ἰθαγενεῖς οὐκ ὄντες; 
+               but I wonder whether this is so and would suggest, tentatively, that ocuTof might be 
+               the Cyrenaeans. The essential part of the statement made in 11. 9-10 would then be that 
+               Cyrene had been founded by Greeks and the Cyrenaeans themselves remained
+               of pure stock. I suggest for consideration something on the following lines, 
+               although I am conscious that it is not entirely satisfying, notably because it is 
+               not normal to speak of a race as despatching colonists:
+               δέχεσθαι δεῖ· οὐ μέντοι δίκαια ἀξιοῦσιν· τῶν αὐτῷ<supplied reason="lost">ν 
+               δεόμενοι ὧνπερ οἰ Κυρηναῖοι οὓς ἐξέπεμψε μὲν</supplied> γένος 
+               Ἀχαιὸν καὶ ἀκρειβῶς Δώρ<supplied reason="lost">ι</supplied>ον· 
+               αὐτοὶ δὲ <unclear>ἰθα</unclear>γενε<supplied reason="lost">ῖς ὄντες</supplied> <gap 
+                  reason="lost" extent="unknown" unit="character"/>
+               The new fragment suggests that a new sentence began near the end of line  10, 
+               perhaps with an adjective of two terminations qualifying προσηγορίαν in line  II, ? 
+               And they obtained in addition the glorious (?) title; 
+               thereafter, on the basis of Fraser's first reading, Oliver2 suggested some part of 
+               ἐπικρύπτεσθαι, and a reference to irregular infiltration into the Hellenic citizen body. 
+               With ἐπικρα<gap reason="lost" extent="unknown" unit="character"/>  for ἐπικρυ<gap reason="lost" extent="unknown" unit="character"/> we are more likely to have
+               ἐπικραεῖν = to prevail over, referring perhaps to a title derived from Cyrene's predominance 
+               in the region. In lines 19 and 21 there occurs the title μητρόπολις in which Cyrene took considerable 
+               pride in the second half of the second century, to judge by the number of times it appears in 
+               inscriptions. I would suggest the possibility that this is the title in question and that the word 
+               itself occurred in the missing part of line  10; while originally an expression of her claim to have 
+               founded the other cities of the territory, it also became, in the Roman context, a statement of 
+               her superior rank in the province.
+            </p><p>1. 12, Fraser and Oliver1 (no comment by Oliver 2), taking πεμπόντων 
+               as an imperative, seem to envisage translating let them send two synhedroi to the city 
+               of the Cyrenaeans, which can hardly be right. Larsen takes πόλιν as belonging to the 
+               preceeding phrase and πεμπόντων as a participle, which seems to be easier, 
+               with the Cyrenaeans ?accordingly (so Larsen) sending two synhedroi (sc. to the Panhellenion). 
+               It must be admitted that the reference to two representatives from Cyrene might 
+               suggest that the rivals were allowed to send one; although the stress may be wholly 
+               on πεμπόντων, with the figure added only as an incidental fact.
+            </p><p>1. 13 gives a new heading and it seems to me that this must introduce a new 
+               (and later) document, quite possibly on a new aspect of Cyrene's status.
+               The name of the writer of the letter which is summarized is lost; Fraser has proposed Hadrian, 
+               Oliver the governor and Welles the Cyrenaeans themselves. The last solution is ruled out, as 
+               Oliver2 has already noted, by ducov and not in lines 16, 17, demonstrating that a singular subject 
+               addresses a plural object; there is of course no objection, as supposed by Welles, 
+               to making excerpts from imperial letters and a clear instance of the practice occurs on this stele at line  64. 
+               In the context as we now have it the subject is overwhelmingly likely to have been an emperor 
+               and pretty certainly Hadrian whose name I have tentatively restored; the content seems to 
+               indicate that his letter was addressed to Cyrene.
+            </p><p>l. 14, I follow Fraser in reading Ἐπιτέλους, a personal name in the genitive case, 
+               and subject of προσκειμένου (Oliver preferred ἐπὶ τέλους, taking the subject to be the governor, 
+               and probably the Salvius Carus named in the previous document who was, in his view, 
+               the writer of this letter); and I suggest that Epiteles is as likely to have been a Cyrenaean 
+               ambassador as an archon of the Panhellenion (so Fraser). It remains far from clear what 
+               was the one thing on which he insisted. At the end of the line all editors have proposed
+               ἐπέθεσ<supplied reason="lost">αν</supplied>, but another possibility is ἐπεθέσ<supplied 
+                  reason="lost">πισεν</supplied>, with Apollo as subject. In lines 27, 28 there is a reference 
+               to the Apolline oracles on which the first founders of Cyrene acted;  they could also 
+               have formed the core of Epiteles' argument.
+            </p><p>l. 15, συμφέρειν, read by Oliver from the photograph, 
+               is certainly right. If an Apolline oracle was mentioned in 1. 14, the accusative and 
+               infinitive construction here must give part of its content and αὐτόν should be Battus. 
+               There is a difficulty in the suggestion of H. M. Last (ap. Fraser) that προυποσυλλέγειν = Latin sublegere, 
+               but there is no real need to look beyond the Greek sense of the word, to collect gradually in advance.
+            </p><p>ll. 16 f., too little survives for assured reconstruction and it is not easy to see how
+               ἐπέδωκέ μοι fits in; perhaps Epiteles gave Hadrian a document (? a Cyrenaean decree) 
+               which stressed preservation (cf. Fraser's διε<unclear>σ</unclear><supplied 
+                  reason="lost">ῶσθαι</supplied> in line  16) of the memory of the ancient nobility 
+               in a Cyrene founded in accordance with Apolline oracles, and made proposals for 
+               some reform (cf. Fraser's <supplied reason="lost">κατορ</supplied>θωθ<supplied 
+                  reason="lost">ή</supplied>σεσθαι in lines 16/17).
+            </p><p>ll. 17 f., a new sentence obviously begins at νῦν in line  17; but in lines 18/19 the 
+               writer may have returned to the past with descriptions of Cyrene as most populous 
+               and most beautiful and (although I have no explanation of how the change from 
+               accusative case to nominative occurred) as metropolis and probably benefactor of 
+               the Greeks (which recalls the city's donations of corn to Greek cities in the fourth century BCE, SEG ix. 2).
+               All this must be intended to explain why Hadrian has written to persons whose name is lost, 
+               pointing out what is honourable and fitting for them (l. 20), in fact probably urging on them 
+               the justice of behaving well to their metropolis (? τὸ πρὸς τὴν μητροπόλιν εὖ ποιεῖν may 
+               give the kind of sense in line  21). If that view is on the right lines, this document, 
+               like the earlier ones, may arise from a challenge, presumably from one of her daughter 
+               cities, to Cyrene's status.  But it is not clear why Hadrian should then refer to help 
+               from the Greeks (1. 22).  Fraser's               
+                  EΛΛA<gap reason="lost" extent="unknown" unit="character"/>, read from his squeeze, would solve this difficulty, giving, presumably, 
+               Ἑλλ<unclear>α</unclear><supplied reason="lost">δάρχων</supplied>, but I still feel that <orig><unclear>η</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+               is more like what I saw on the stone. If I am right, the occasion could perhaps be connected with 
+               a fragment of an approximately contemporary inscription in which Greeks (? other Cyrenaican Greeks 
+               rather than Greeks in general) are begged to save their ' mother Cyrene ', and there is a reference 
+               to gifts and to corn, followed by a list, which I take to be a list of subscribers, in which the 
+               first name is θεὸς Ἀδριανός (G. Oliverio, ASAA xxxix-xl (1961-2), 257, no. 68). 
+               Alternatively, coming after one reference to population (1. 18) and before another 
+               (l. 23), it may be that what was proposed was a voluntary ' colonization ' of Cyrene 
+               by her daughter cities. Colonists were sent to Cyrenaica from elsewhere immediately 
+               after the Jewish Revolt (Orosius VII. 12b and the inscription from Attaleia, Turk 
+               Tarih Belleten xi (1947), 101 f. quoted by Fraser, p. 84, n. 37). We do not know whether any 
+               of these went to Cyrene (but for a few possible traces of them see J. M. Reynolds, PCPS clxxxv 
+               (1959), 27). A second despatch of colonists in or after 134/5 is a possibility. line  23, being outspaced, 
+               may mark the start of a new paragraph (but see below under line  40); it seems to introduce 
+               the emperor's wishes in relation to size of population. It may be that he wished increase 
+               of population for every race and especially for Cyrene-—but there is very little space for any 
+               practical proposal (see above on line  20 f. for what he is known to have done).
+            </p><p> line  25 carries a new heading, indicating again an excerpt from a document which, like Fraser, 
+               I suppose to be described as an imperial edict, although its language is that of a letter. It appears 
+               to have continued to line  63, unless another heading stood in the lost area after line  56.
+            </p><p> lines 26 f., the emperor addresses a group who can, I believe, now be seen to be the 
+               Cyrenaeans themselves (cf. οἰκήτορας in line  29) rather than Greeks from elsewhere, 
+               whether the mainland or other parts of Cyrenaica, as originally suggested by Fraser. 
+               He apparently urges them to take initiatives themselves. The general line of his argument 
+               seems clear enough, despite the gaps in lines 26-8 : they should not yield to fear, but, remembering 
+               that it is disgraceful to allow a city founded in accordance with Apolline oracles to lie in ruins in 
+               a manner unworthy of its ancient fame, should become not simply residents but also founders of 
+               what is their own country. In line  26 the sense that I suppose in the  gap would be provided by 
+               something on the lines of τῶν ἐ<supplied reason="lost">πιτυχουσῶν ὑμῖν κακοπαθειῶν</supplied> ,
+               followed by one or more adverbs, 
+               such as <supplied reason="lost">ἀσθεν</supplied><unclear>ῶ</unclear>ς; 
+               in line  27 by <supplied reason="lost">πολίτας ὄντας ἀπολείπειν πόλιν</supplied> etc.; 
+               in line  28 by <unclear>τ</unclear><supplied reason="lost">αλαιπώρως καὶ ἄνευ τῆς δόξης</supplied> ; 
+               while in 1. 29 the formulae printed seem reasonably probable.
+            </p><p>What the new fragment has added here, besides the identity of those addressed, 
+               is, I suggest, a strong likelihood that the point is not now population, but public buildings, 
+               so that the difficulties over the gymnasium introduced in line  30 have a very straightforward 
+               context. Not all the restorations of buildings at Cyrene in this,period are dated, but there is 
+               a series from 118 and 119, when Hadrian himself was active and seems to show 
+               a preoccupation with official works (a road, the Caesareum and Basilica, the Baths which had 
+               been given to the city by Trajan); and then in 138 the city honours him in the dedication of 
+               a base in the temple commonly called the Capitolium where it describes itself as 
+               κοσμηθεῖσα ὑπ’αὐτοῦ (<ref type="inscription" n="C70800">C.91</ref>). That may indicate that towards the end of his reign 
+               Hadrian undertook a second programme to provide less essential but desirable κόσμος 
+               (see also Reynolds, op. cit. above under line  17). In the present document in fact Hadrian proceeds 
+               from urging activity on the Cyrenaeans to a promise of specific help from himself; typically he 
+               gives something connected with education. In line  31 he probably said that he hears that the gymnasium 
+               is lying in ruins (perhaps something like κα<supplied reason="lost">ταβληθῆναι ἐν τῷ
+               Ἰουδαίων πολέμῳ καὶ μα</supplied>νθάνων  stood here). It is now reasonably clear that his gift 
+               is not, as Fraser guessed, a training ground in which old and new citizens could mingle together, 
+               but one specifically for the young. Something was clearly in operation (τὸ κοινὸν γυμνάσιον in lines 32/3) 
+               and the emperor undertook to provide a new gymnasium for ephebes in which they would not have to rub 
+               shoulders with older men; frequenting this, so he argues, they would really appreciate the 
+               imperial generosity. The sense might be given by something like αὐξ<supplied reason="lost">ανομένους 
+               καὶ οὐκ ἀσκοῦντας τὴν γυμναστική</supplied>ν in line  32, ἄ<supplied reason="lost">νδρασι 
+               δίδωμι ὑμῖν καινὴν παλαίστραν ἐ</supplied>φηβικήν, in 
+               line  33, ποι<supplied reason="lost">ούμενοι καὶ ἀσκοῦντες δωρέας</supplied> in line  34.
+            </p><p>The gift was presumably the Hadrianic Gymnasium (Xystos) of Hermes and Herakles, 
+               whose outer wall, fronting the street which ran from the Caesareum to the Agora, has recently 
+               been re-erected by Professor Sandro Stucchi (S. Stucchi, Architettura Cirenaica (1975), 127 f. and fig. 109). 
+               lines 36 f. contain a new section, as the vacat at the end of 1. 35 followed by the outspacing of 1. 36 
+               shows, but it is very fragmentary despite the new additions. Hadrian seems to be referring to a 
+               benefit conferred earlier, at urgent Cyrenaean request, which may be the νομοθεσία that I have 
+               tentatively restored in 1. 36 (on the basis of SEGxvii. 80, dated to 128/9, in which Hadrian 
+               is honoured as νομοθέτης). If that is right, the following lines appear to be indicating that he 
+               took the Spartan code for a model, as being particularly appropriate in view of the Spartan connections 
+               of Cyrene's founders (for these see e.g. F. Kiechle, op. cit. (p. 116 above) on 1. 10, Josephus, BJ 11. 381 and 
+               Synesius, Epp. 57). An inscription discovered in 1977 by the expedition from the Museum of the 
+               University of Pennsylvania, working in the extra-mural temple of Demeter at Cyrene, also has a 
+               bearing on this, and I am able to mention it by the generosity of Professor Donald White, the Director 
+               of excavations:   its fragmentary lines contain the words ἀγωγὰν καὶ σοφίαν and παιδέας, followed,
+                     after a gap, by παρὰ Λακεδαιμο<supplied reason="lost">νίων</supplied>; 
+               the stone carries no date and its worn letters seem at first sight to be a good deal earlier 
+               than Hadrian; they perhaps indicate an earlier action of the same character as Hadrian's, 
+               but I may have misdated them. In 1. 38 there seems to be a rhetorical question which perhaps
+               made the same point.
+            </p><p>l. 40, the vacat at the end is odd unless the line contained the end of the paragraph; 
+               and it must be observed that line  41 is so badly damaged that it is impossible to be sure 
+               that it was not outspaced; in fact I think that it must have been. On the other hand there 
+               is a vacat, though a much smaller one, at the end of line  41 itself and line  42 is again outspaced. 
+               line  42, however, and each of the next two outspaced lines, 44 and 47, open with a phrase 
+               which is linked to the preceding lines by a particle or conjunction (yap in 11. 42, 44 and Kal in 1. 47), 
+               so that they are unlikely to start new sections. It seems possible that in this area of the stone 
+               outspacing was sometimes used for emphasis.
+            </p><p>The reading at the beginning of line  41 seems to me too uncertain for conjecture. 
+               The figure at the end may perhaps refer to four characteristic Spartan virtues which 
+               Hadrian hoped to inculcate by his code: the σωφροσύνη and ἄσκησις of line  43 and 
+               two more. In 1. 44 the first word before the break seems likely to have been γένος or γενέσθαι;
+               but by this point the text has become too defective for serious discussion. 
+               In line  50 the god is presumably Apollo and perhaps Hadrian spoke of his δικαιοσύνη—or could
+               there have been a reference (if so rather poetic in formulation) to the τρίπους μαντοσύνη?
+                In line  54 there may perhaps have been mention of the elder of the two Cyrenaeans 
+                named Ti. Claudius Jason Magnus whose family was prominent in the middle and 
+                later second century, the son becoming president of the Panhellenion in 157 
+                (see J. H. Oliver, Hesperia Supplement xiii, 115 f., and earlier discussion by 
+                line  Moretti, Epigraphica xxxi (1969), 139 f., line  Robert, Ἀρχ.-Ἐφ. 1969 (1970), 1 f.).
+            </p><p>l. 55 may have contained some part of the verb ὀικίζω.
+            </p><p>l. 63, the range of meanings of ἀνατίθεμαι seems too wide to allow any certainty 
+               about what the emperor gladly did.
+            </p><p>l. 65, being unlinked to line  64, perhaps starts a new section in which two groups 
+               are described, both introduced by ὅσοι ἄν. The first, stated to be from Cyrene (l. 65) and
+               apparently going to be active there (l. 66), is in some way related to the proconsul (l. 67); 
+               of the second, which may be from elsewhere but may also be from Cyrene, 
+               nothing can be said with any certainty; in line  68 I am not clear how to break up the letter 
+               groups (?τεθνάναι δὲ ἐμοῦ, τεθνάναι δεσμοῦ).
+            </p><p>Of the completely new documents the first is headed Chief points from 
+               correspondence of the lord Antoninus (1. 69). The emperor must be Pius 
+               (as also below in 11. 78 f., where his name and title are set out in full); he was presumably 
+               alive when this line was inscribed. The general sense is clear: the Bereniceans had asked 
+               that an assize court should be held in their city and when Pius refused to add to the burdens 
+               of the governor proposed that, in future, assizes should be held at each city in turn; but Pius 
+               was not prepared to accept the principle of rotation without the agreement of the cities whose 
+               privileges would be curtailed thereby.
+            </p><p> The summary falls into two clearly marked sections, in each of which a brief account 
+               of the request made by the Bereniceans (Βερνεικεῖς ἠξίουν..., line  70, ἀξιούντων οὖν τῶν Βερνεικέων..., line  73) 
+               is followed by the essentials of the emperor's reply, given in his own words. lines 70-3 are surely taken 
+               from a letter to the Bereniceans to whom the words ὥσπερ ἴστε καὶ ὑμεῖς are most naturally addressed. 
+               Obviously the emperor also wrote to the Bereniceans in reply to their second request (ll. 73 f.) 
+               but the ὑμεῖν of line  76 must be the cities which would lose their annual enjoyment of the court 
+               if the request were granted. The excerptor used two documents, therefore, one addressed to the 
+               Bereniceans and one to others, and it is necessary to 
+               restore <supplied reason="lost">ἐπιστολῶν</supplied> 
+               not ἐπισ<supplied reason="lost">τολῆς</supplied> in  line  69.
+            </p><p>The length of the supplements in the centre and at the right-hand ends of the lines is 
+               variable mainly because the surviving left-hand side of the stele is broken at the right on an 
+               oblique line and so preserves less of the text the lower it descends, while the central and right 
+               hand part has been recut to form a column base and so presents a circular edge; moreover in 
+               some lines there has been more extensive damage in the area of the break. For the central gap 
+               the supplements are certain (or virtually so) in lines 69 and 72, and for the right hand end 
+               in lines 71, 72, 75 and 76; it is possible from this evidence to calculate an average line length of 66 letters.
+            </p><p>l. 70, it is clear from lines 73, 74 that the object of the Berenicean request was that an 
+               assize court should be held in their city. On assize courts see the material collected by Mommsen 
+               (Ges. Schr. viii. 1. 534) and line  Robert, Rev. Phil, vn (1934), 277/8, Hellenica VII, 223 f., 
+               Bull. Ep. 1968, 462 together with the more recent discussions of the conventus/ assize system 
+               by Chr. Habicht, JRS lxv (1975), 64 f. and G. P. Burton, ibid., 92 f. (the latter drawing on the 
+               inscription published here); the advantages to the cities in which they were held were 
+               considerable, not only in the easy availability of justice but also, as indicated by Dio Chrysostom, 
+               Or. xxxv. 15, in the trade brought by visitors. For local jealousy of assize towns see Dio Chrysostom, 
+               XL. 35 and the discussion by Burton, op. cit., 100.   The standard description is ἀγορὰ δικῶν 
+               or ἡ ἀγοραίος (ἀγοραία); cf. the instances in
+               Mason, op. cit. under 1. 6 f., s.v. ἀγορὰ and ἀγοραίος, especially Modestinus, 
+               Dig. xxvii. 1.6.2, referring to a decision of Pius and dividing cities into 
+                τὰς μητροπόλεις τῶν ἐθνῶν, τὰς ἐχούσας ἀγορὰς δικῶν and τὰς λοιπάς; Josephus, Ant.Jud. xiv. 
+                10. 21, προσελθών μοι ἐν Τράλλεσιν τὴν ἀγοραῖον ἄγοντι ; and IGRR IV. 788 which gives both 
+                γυμνασιαρχήσαντα δι’ἀγοραίας and ἐν ᾗ καὶ ἡ ἀγοραῖος ἤχθη.
+            </p><p>The reading after the gap is uncertain, but is the result of independent examination by 
+               Goodchild and myself and consonant with usages just cited. At the end of the line 
+               ταῖς <supplied reason="lost">ἀγοραί</supplied>οις seems inevitable despite 
+               ἀγοραία in line  74, and is paralleled by IGRR iv, 788, in which both the two- and 
+               the three-termination forms of the adjective appear.
+            </p><p>For the sense by turns for παρὰ μέρος (imposed here by the reference to each city) 
+               see LSJ s.v. uepos 11. 2 (citing e.g. Plutarch, V. Fabii Maximi 10, 
+               . . . ὡς μέρους μόνος ἄρξων βέλτιον ἢ πάντων παρὰ μέρος).
+            </p><p>l. 73, ἀγο<supplied reason="lost">ραιαν</supplied> is also possible at the end, cf. line  74.
+            </p><p>l. 74, the supplement at the centre should include the article for 
+               πόλεις and an adverb; <supplied reason="lost">ν</supplied><unclear>ῦ</unclear>ν 
+               seems to give the best sense, though <supplied reason="lost">πρ</supplied>ίν 
+               is perhaps not impossible. At the end of the line a conjunction meaning how is wanted; 
+               there seems no room for more than ὡς.
+            </p><p>l. 75 makes it perfectly clear that in the assize towns of Crete and Cyrene at this 
+               time an annual session was the rule, as it is likely to have been in other provinces too, see
+               Burton, op. cit. under line  70, p. 97-9.
+            </p><p>The identification of the cities at which assizes were already held is uncertain. 
+               Since Pius stresses the pressures on the time that the proconsul could spend in Cyrenaica, 
+               the Cretan cities can presumably be excluded. Cyrene was certainly an assize town, being 
+               in any case the metropolis; it is also pertinent to remember Hadrian's swift reconstruction 
+               of its civil basilica after the Jewish Revolt, cf. E. M. Smallwood, JRS xlii (1952), 37 f.; but 
+               Apollonia, in view of its proximity to Cyrene, was surely not. On geographical grounds 
+               one might expect a second assize town west of the Wadi Cuf which cuts the territory in 
+               two, and since Berenice was clearly not one it should be either Teucheira or Ptolemais. Hadrian 
+               is known to have restored a basilica suitable for the purpose at Teucheira after the Jewish Revolt 
+               (unpublished inscription excavated by Goodchild), but there is nothing else there at present to 
+               indicate regular visits from the governor. At Ptolemais there are several inscriptions which are 
+               suggestive, although not conclusive, evidence that this was an assize town (note especially 
+               C. H. Kraeling, Ptolemais, 210, no. 11, a proconsul acting with assessors, as the word adhibitis 
+               implies, and J. M. Reynolds PBSR xxx (1962), 34 f., no. 2; xxxm (1965), 52 f. nos. a and b, vota 
+               pro salute principis recorded there); it may also be relevant that in Diocletian's reorganization it 
+               was Ptolemais which became the new provincial capital. Ptolemais and Teucheira are so close 
+               together that one would hardly expect an assize in both.
+            </p><p>The suggestion that the governor of Crete and Cyrene was worked to the reasonable limit 
+               is interesting and perhaps relevant to the possibility that in the early third century the two areas 
+               were, for a time, separated; see H. G. Pflaum, Annuaire de VF.cole Pratique des Hautes Etudes 
+               1974, 271 f., by whom, however, I am not quite convinced.
+            </p><p>ll. 75-7, the supplements seem reasonably clear; and if ἀδικῆσαι is not the right 
+               word it must surely give the right sense.
+            </p><p>The second document is a copy of a letter from Antoninus Pius to 
+               Ptolemais dated by his titles to 153/4 (1. 80). Again the general lines are absolutely clear. 
+               The Ptolemaeans, through their ambassador Valerius Pausanias, had asked for permission 
+               to hold an ἀγών in their city; Pius replied, apparently sarcastically, that they had hitherto 
+               been wisely satisfied to participate in the common sacrifice and ἀγών held at Cyrene, 
+               and were well aware that innovations of this sort carried the stigma of inter-city rivalry.   
+               The common sacrifice had been established for the whole province.
+            </p><p>l. 80, for the address of the letter to the citizens in this way, see on line  5 above; 
+               it was presumably  how the ambassador had described his city. It is also of interest that 
+               the citizens are described as Πτολεμαιεῖς Βαρκαῖοι. 
+               In the Greek period the city centre was at Barka and the site of Ptolemais was  simply its 
+               subordinate port; it was probably Ptolemy III who developed the port and named it for himself, 
+               reducing Barka to the position of subordinate (see Kraeling, op. cit. under 1. 74, 5 f. and 
+               line  Moretti, Riv. Fil. civ (1976), 186 f.). There are, however, several inscriptions of the Roman 
+               period  in which the name of Barka is linked with that of Ptolemais, none likely to be earlier 
+               than the second century CE but none precisely dated except this one (see J. M. Reynolds, Riv. 
+               Fil. forthcoming).
+            </p><p>ll. 81-2, the supplements seem obvious. For the sarcastic tone of the emperor cf. 
+               W. Williams,  JRS lxvi (1976), 74 f., arguing that this is a characteristic of Pius' epistolary style 
+               (see also V. Nutton, JRS lxi (1971), 56 for a good example). The common sacrifice and contest 
+               at Cyrene are presumably to be associated with the provincial cult conducted by the provincial 
+               koinon (cf. 1. 84 below); I have not found another example of the formula συνθύειν εἰς τὸν ἀγῶνα,
+               but the sense does not seem difficult to follow.
+            </p><p>l. 83, καινοτομεῖν with the implication of undesirable innovation is well attested. 
+               In the central gap αἰτίαν seems to give the sense needed in about the right number of letters. 
+               For φιλονεικία between cities at this period cf. Syll.3 849 (Ephesus and Smyrna),
+               with Dittenberger's references to Dio
+                     Chrysostom xxxiv. 48, Aelius Aristides xxm, and Cassius Dio lh. 37. 10; the issue in 
+                     these passages is often essentially one of titles, whereas here there is certainly some point 
+                     of substance involving celebration of a festival which, like the assize court, would bring 
+                     visitors and opportunities for profit. It will, no doubt, also have involved payment 
+                     of contributions by participating cities, as in the mid-third-century case of the Philadelphians 
+                     in relation to the organization of the koinon of Asia (SEG xvii. 528).
+            </p><p>ll. 83/4, it would seem natural to restore <supplied reason="lost">ἡ συν</supplied>θυσία , 
+               recalling the συνθυσία of Syll.3 849,line 11 which Dittenberger connected with the cult activities of the koinon 
+               of Asia; but if that is right I find it hard to envisage a restoration for the lost area at the centre of 
+               line  84. What survives there suggests a passive participle such as καθεσταμένα
+               which requires a neuter plural instead of a feminine singular subject; 
+               but LSJ offers no authority for <supplied reason="lost">τὰ</supplied> θύσια.
+            </p><p>l. 84. For ἔθνος = province see the passage of Modestinus quoted 
+               under 1. 70 and Mason, op. cit. under 1. 6 f., s.v.
+            </p><p>ll. 84/5, on the final formula see W. Williams, Historia xvi (1967), 470 f., 
+               arguing that under Hadrian and in the early years of Pius' reign the rider authorizing 
+               payment to ambassadors occurs only when the matter raised is substantial and that from 
+               c. 145 Pius insisted that superficial points should be forwarded via governors. The Ptolemaean 
+               case clearly rated as important. It is a little earlier than Williams' earliest case of authorization 
+               of payment by Pius after the change of procedure that he posits (SEG xiv. 479 of 155).
+            </p><p>The incident fits very well into our general picture of escalating civic rivalry, opposed by 
+                     the emperors, at this period. </p>-->
+            
+           
+         </div>
+      </body>
+   </text>
+</TEI>

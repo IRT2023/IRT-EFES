@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C70400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.82</idno>
+            <idno type="ircyr2012">C70400</idno>
+            <idno type="JMR">652 b</idno>
+            <idno type="Excel">1027</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>base</objectType> with writing on five faces and reliefs on two 
+                              (<dimensions><width>0.62</width> <height>0.62</height> <depth>0.355</depth></dimensions>). On the front is a relief of a man driving a quadriga, and,  
+                              on the left face, of a boy leading a horse; 
+                              inscribed on the front face with <ref type="inscription" n="C.76">C.76</ref>, <ref type="inscription" n="C.77">C.77</ref>, <ref type="inscription" n="C.78">C.78</ref>, 
+                              <ref type="inscription" n="C.79">C.79</ref>, <ref type="inscription" n="C.80">C.80</ref>, <ref type="inscription" n="C.81">C.81</ref>, on the left face with 
+                              <ref type="inscription" n="C.82">C.82</ref>, on the right with <ref type="inscription" n="C.84">C.84</ref>, on the top with <ref type="inscription" n="C.85">C.85</ref>,
+                              on the reverse with <ref type="inscription" n="C.83">C.83</ref>. A large square hole has been cut in the back which was only semi-dressed.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffito</rs> on the left face, above the relief; line 1 on the rim, lines 2 ff 
+                        on the face. Several different hands.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.015-0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0024" notAfter="0025" evidence="internal-date">24/25 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: <placeName type="monuList" ref="https://www.slsgazetteer.org/1001">House of Hesychios</placeName>. 
+                              Found in <date type="found">1934</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-21" who="AO">tokenized</change>
+         <change when="2009-06-11" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="SECir"/>, <citedRange>164.b</citedRange> and fig. 130 (from T. VI 1ff)</bibl>.</p>
+            
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-65122"><name nymRef="Νίκαιος"><unclear>Ν</unclear>είκαιοϲ</name> 
+                       <persName type="attested" key="lgpn:V1-64499"><name nymRef="Καλλίμαχος">Καλλιμάχου</name></persName></persName> 
+                    <lb n="2"/><date ref="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="55">νε</num></date> <persName type="attested" key="lgpn:V1-65667"><name nymRef="Σωγένης">Σωγένης</name> 
+               <persName type="attested" key="lgpn:V1-63919"><name nymRef="Εὐφράνωρ">Εὐφράνορος</name></persName></persName> 
+                    <lb n="3"/><date ref="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="55">νε</num></date> <persName type="attested" key="lgpn:V1-63700"><name nymRef="Ἐπικράτης">Ἐπικράτης</name></persName> 
+                    <lb n="4"/><orig>λ</orig> <space extent="3" unit="character"/> <orig>γ</orig> <space extent="3" unit="character"/> 
+                    <lb n="5"/><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <space extent="10" unit="character"/>  
+   <lb n="6"/> <space extent="10" unit="character"/> <orig>πιϲ</orig>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp><app loc="1"><note>Perhaps Κλ(αυδιος) Εἰκαιοϲ</note></app>
+               <app loc="2"><lem>Εὐφράνορος</lem>
+                  <rdg resp="#SECir">Εὐφράνορ̣(ος)</rdg></app>
+               <app loc="3"><lem>νεʹ</lem>
+                  <rdg resp="#SECir">τεʹ</rdg></app>
+               <app loc="4">
+                  <rdg resp="#SECir">ΛΓ</rdg></app>
+               </listApp>
+            <p/>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>?Neikaios <supplied reason="subaudible">son</supplied> of Kallimachos; 
+            <ref target="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H">Year 55</ref>, Sogenes <supplied reason="subaudible">son</supplied> of Euphranor; 
+            <ref target="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H">Year 55</ref>, Epikrates [ . . ] (year) [ . . .</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> line 1 Perhaps Κλ(αυδιος) Εἰκαιος. </p>
+            <p> lines 2-3 line 2 55 of the Actian era = CE 24/25.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C00800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription recording repairs to the Caesareum</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.9</idno>
+            <idno type="ircyr2012">C00800</idno>
+            <idno type="JMR">608</idno>
+            <idno type="Excel">343</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Caesareum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> <objectType>architrave</objectType> block, moulded above, from a Doric entablature.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE: a stop after the name in the form of a small <rs type="decoration">jug</rs>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/987">Caesareum</ref></origPlace>
+                     <origDate notAfter="0100" notBefore="0001" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/987">Caesareum</placeName>: external face of the South porch. 
+                              Found between <date type="found">1935</date> and <date type="found">1941</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/987">Caesareum</placeName>: replaced in its original position on the external face of the South porch,
+                        where it is not accessible to close examination.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-02-22" who="MLA">corrected Reynolds reference in bibliography</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-13" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-10" who="Pietro">Tokenized</change>
+         <change when="2009-06-11" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="DSC04940" decls="#photograph"><desc>View of monument (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_608front" decls="#photograph"><desc>View (1961, Joyce Reynolds, IV.77)</desc></graphic>
+      <graphic url="JMRNB03_077_001" decls="#photograph"><desc>View (joyce Reynolds III.77.1)</desc></graphic>
+      <graphic url="DSC04941" decls="#photograph"><desc>Text (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04942" decls="#photograph"><desc>Text, left end (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04943" decls="#photograph"><desc>Text, right end (2008, H.Walda)</desc></graphic>
+      <!--Dept. E. 2950 --></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned <bibl><title>Arch.Anz.</title> 1941, 702</bibl>, <bibl><author>E. Sjoqvist</author> <title>Opuscula Romana</title>, I (1954) <citedRange>99</citedRange></bibl>; published  
+               <bibl>
+                  <ptr target="jmr1958"/>, <citedRange>II.b</citedRange>, p. 168f</bibl>, whence 
+               <bibl>
+                  <ptr target="AE"/> <citedRange>1960.267</citedRange>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD019030">019030</ref></citedRange></bibl></bibl>; <bibl><ptr target="gasperini1971"/>, <citedRange>C.1</citedRange>, and figs. 3-6</bibl>, 
+               whence  <bibl><ptr target="demougin1978"/>, <citedRange>620</citedRange></bibl>, 
+               <bibl><ptr target="luni1992"/>, <citedRange>I,a</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>154</citedRange></bibl>.
+              <!--  see also <bibl>
+                  <ptr target="romanelli1943"/>, <citedRange>90</citedRange>, <citedRange>3</citedRange></bibl>
+                --> 
+               
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="pir2-s-0965" role="legatus"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name>
+                        <name nymRef="Sufenas">Sufenas</name> 
+                    <name nymRef="Proculus">Proculus</name></persName> <g ref="symbols.xml#jug"/> <w lemma="reficio"><expan><abbr>ref</abbr><ex>iciendum</ex></expan></w> 
+                    <w lemma="curo"><expan><abbr>cur</abbr><ex>auit</ex></expan></w>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Marcus Sufenas Proculus was responsible for the rebuilding.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the stop, cf. the jug used in <ref type="inscription" n="C.3">C.3</ref> and the ampulla in <ref type="inscription" n="C.418">C.418</ref>, 
+               suggesting that the same workman, or the same workshop, was employed in all three cases;
+               <title>Arch. Anz.</title> 1941, col. 702, confuses this text with <ref type="inscription" n="C.225">C.225</ref>.
+            </p><p>For M. Sufenas Proculus, <title>PIR<hi rend="superscript">2</hi></title>, S 965, see Demougin, art. cit., tracing his Italian family. 
+               He appears also in <ref type="inscription" n="C.118">C.118</ref>,
+               <ref type="inscription" n="C.225">C.225</ref> and <ref type="inscription" n="C.226">C.226</ref>, all cut between CE 4 and 14, and possibly <ref type="inscription" n="C.436">C.436</ref>, undated;
+               they confirm a chronological connection with the inscriptions recording repairs to the Caesareum by C. Rubellius Blandus, which must be a little earlier than CE 18,
+              see <ref type="inscription" n="C.4">C.4</ref>.
+               In <ref type="inscription" n="C.118">C.118</ref>, line  4, Proculus is described as <foreign xml:lang="la">praefectus cohortis Lusitanorum</foreign>, 
+               which may for a time have garrisoned Cyrene, but otherwise gives no title to indicate the authority with which he acted.
+               He may perhaps have been the garrison commander acting for an absent proconsul, or in a period in which no proconsul was appointed, 
+               cf. J. Desanges, <title><ref target="https://zenon.dainst.org/Record/000324532">Un drame africain</ref></title>. 
+               His concern with buildings devoted to the imperial cult is notable and in general terms might be official; but his special interest in the cult of Tiberius as Augustus' heir 
+               (<ref type="inscription" n="C.118">C.118</ref>, <ref type="inscription" n="C.225">C.225</ref> and <ref type="inscription" n="C.226">C.226</ref>) 
+               may point to a personal view more suitable to a private benefactor. For his nomen see Demougin, art. cit.; 
+               it does recur in Cyrenaica, probably at Teucheira (<ref type="inscription" n="T.308">T.308</ref>) and certainly at Ptolemais (<ref type="inscription" n="P.240">P.240</ref>).</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

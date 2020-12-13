@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C18700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">List</rs> of priests</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.222</idno>
+            <idno type="ircyr2012">C18700</idno>
+            <idno type="JMR">780 a i</idno>
+            <idno type="Excel">6</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Temple of Apollo</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Damaged <material>marble</material> <objectType>stele</objectType> consisting of two blocks
+                              standing on a base that is moulded on three sides
+                              (together, <dimensions><width>0.70</width> <height>1.05</height> <depth>0.83</depth></dimensions>); 
+                              also inscribed with <ref target="https://igcyr.unibo.it/gvcyr03000">GVCyr 30</ref>, below; <ref type="inscription" n="C.223">C.223</ref> is on the left face.
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on right face; each entry in a different hand. It is probable that originally there was another block on top, 
+                           so that the present line 1 was in fact the continuation of a running list of priests of Flavian date.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lines 1,2: First century CE, lines 3 ff: second to third century: lines 1-4, <height>0.035</height>; line 5, <height>0.05</height>, lines 6-8, <height>0.04-0.055</height>; 
+                        lunate epsilon, lunate sigma, in lines 4-6, 8; line 6-8 in a later hand. superscript bar above numerals, l.2, praenomen l.4.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>In the pronaos of the <ref target="https://www.slsgazetteer.org/1033">Temple of Apollo</ref> beside the entrance to the cella, on the left side.</origPlace>
+                     <origDate notAfter="0170" notBefore="0077" evidence="internal-dates" precision="low">77-170 CE</origDate>
+                  </origin>
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1227">Byzantine Baths</placeName>: found in <date type="found">1922</date>, re-used as a paving stone.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/1033">Temple of Apollo</placeName>: replaced in its original location (<date type="observed">2008</date>).</p>
+                        </provenance>
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-01" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-19" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-14" who="CB">Tidied and tokenised</change>
+         <change when="2009-07-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="320_doa" decls="#photograph"><desc>Face, with <ref target="https://igcyr.unibo.it/gvcyr03000">GVCyr 30</ref> 
+      (Department of Antiquities, E.320)</desc></graphic>
+      <graphic url="DSC04812" decls="#photograph"><desc>Face, with <ref target="https://igcyr.unibo.it/gvcyr03000">GVCyr 30</ref> (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04813" decls="#photograph"><desc>Face, with <ref target="https://igcyr.unibo.it/gvcyr03000">GVCyr 30</ref> (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned <bibl><ptr target="oliverio1929"/>, <citedRange>113</citedRange></bibl>, <bibl><ptr target="pernier1935"/> <citedRange unit="page">93 f</citedRange></bibl> on which see 
+                    <bibl><ptr target="robert1940a"/>, <citedRange>13</citedRange></bibl>, whence <bibl><ptr target="robertBE"/>, <citedRange>1941.179</citedRange></bibl>; published <bibl> 
+                       <ptr target="SECir"/>, <citedRange>9.b</citedRange>, fig. 11 (from T.XI 64); <bibl>
+                          <ptr target="gasperini2007"/> fig. <citedRange>3</citedRange></bibl>.</bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+            <lb n="0"/> <gap reason="lost" extent="unknown" unit="line" cert="low"/>         
+   <lb n="1"/><date ref="https://godot.date/id/sUrmR4N2WvYB4YYn7xQNXd"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied>
+                    <num value="108"><unclear>ρη</unclear></num></date> <persName type="attested" key="lgpn:V1-65792"><name nymRef="Τιμαγένης"><unclear>Τ</unclear>ειμαγένης</name>
+                    <persName type="attested" key="lgpn:V1-64158"><name nymRef="Θεόδωρος">Θεοδώρο<supplied reason="lost">υ</supplied></name></persName></persName>
+                    <lb n="2"/><date ref="https://godot.date/id/aVpbjf5X6RZgQhGAopy2x3"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="110">ρι</num></date> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-63927"><name nymRef="Εὐφράνωρ">Εὐφράνωρ</name> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-62940"><name nymRef="Ἀντίπατρος">Ἀντιπάτρω</name></persName></persName>
+                    <lb n="3"/> <space quantity="1" unit="character"/> <date><date ref="https://godot.date/id/jqcbNNX2MYRWDcmz8buaaB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="200">σ</num></date>, <date ref="https://godot.date/id/BeoPLDbL6DMRg5Mai23fxV"><num value="9">θ</num> <persName type="emperor" key="marcusaurelius"><name nymRef="Ἀντωνῖνος">Ἀντωνείνου</name> <w lemma="ὁ">τοῦ</w> <w lemma="κύριος">κυρίου</w></persName></date></date>
+                    <lb n="4"/> <space quantity="3" unit="character"/> <persName type="attested" key="lgpn:V1-62751"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊοϲ</ex></expan></name> <name nymRef="Κοράνιος">Κοράνιοϲ</name> <name nymRef="Ἄλεξις">Ἄλεξιϲ</name> <surplus>Ι</surplus>
+                    
+                    <name nymRef="Αἰλιανός">Αἰλιανόϲ</name>
+                    <lb n="5"/> <space quantity="3" unit="character"/> <w lemma="ἱερεύς">ἱερεὺϲ</w> <w lemma="καλλιέτης">καλλιέτηϲ</w>
+                    <lb n="6"/> <space quantity="3" unit="character"/> <persName type="attested"><name nymRef="Φιλόξενος">Φιλοξένου</name></persName></persName>
+                    <lb n="7"/><date><w lemma="ἐπί">ἐπὶ</w> <persName type="attested" key="lgpn:V1-64827"><name nymRef="Λούκιος">Λουκίω</name>
+                    <lb n="8"/> <space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-62752"><name nymRef="Ἄλεξις">Ἀλεξίδοϲ</name></persName></persName></date>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1"><lem>ρηʹ</lem>
+                  <note>So Oliverio and Gasperini: Reynolds is more cautious</note></app>
+               <app loc="1"><lem>Θεοδ</lem>
+                  <rdg resp="#SECir">Θευδ</rdg></app>
+               <app loc="3">
+                  <rdg>L ϹΘ</rdg>
+                  <rdg resp="#SECir">L σθʹ</rdg></app>
+            <app loc="4">
+               <rdg resp="#SECir">γʹ Κοράνιος Ἄλεξις Ἰαιλιανὸς</rdg></app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ? ] <ref target="https://godot.date/id/sUrmR4N2WvYB4YYn7xQNXd">Year 108</ref>, Teimagenes <supplied reason="subaudible">son</supplied> of Theodoros; Euphranor <supplied reason="subaudible">son</supplied> of Antipatros; 
+            <ref target="https://godot.date/id/aVpbjf5X6RZgQhGAopy2x3">Year 200</ref>, <ref target="https://godot.date/id/BeoPLDbL6DMRg5Mai23fxV"> 9th of the lord Antoninos</ref>, 
+               G(aios) <supplied reason="explanation"><foreign xml:lang="la">G(aius)</foreign></supplied> Koranios Alexis Ailianos, priest in a good year; in the time of Loukios <supplied reason="explanation"><foreign xml:lang="la">Lucius</foreign></supplied> Alexis.</p></div>
+         </div>
+         
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1: the bases of three uprights are visible above the figure - probably [(ἔτους)] ρη', 108 of the Actian era = CE 77/78 </p>
+            <p>Line 2: 110 of the Actian era = CE 79/80. </p>
+            <p>Line 3: The layout might suggest (ἔτους) σθ', 209 of the Actian era = CE 178/179 (so Oliverio), 
+               but if so there is no regnal figure and it is probably better to take it as suggested in the text, i.e. 
+               200/201 of the Actian era, the ninth year of M. Aurelius = CE 169/70. </p>
+            <p>Line 5: For the epithet καλλιέτης, used several times of priests at Cyrene, see Robert, <title>Hellenica</title> I, 11-13; II (1946) 14 ff; 
+               <title>Hellenica</title> XI-XII, 553-5.</p>
+            <p>Lines 7-8: Perhaps a previous informal text, since it seems to underlie the name of Philoxenos son of Alexis.<!-- check --> The hand is very like that of -]κιω  
+               in <ref type="inscription" n="C.266">C.266</ref>, l.7.</p>
+            <!--  <p> line 8 For an earlier Cyrenaean Philoxenos <supplied reason="subaudible">son</supplied> of Alexis see IG IV. 212.</p>-->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T00200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Monumental fragment</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.2</idno>
+            <idno type="ircyr2012">T00200</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p> 
+                              <material>Sandstone</material> 
+                              block (<dimensions><width precision="low">1.00</width> <height>0.60</height> <depth>0.37</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Latin capitals, <height unit="metre">0.25</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notAfter="0001" notBefore="0100" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1110">West Gate</placeName>, lying loose on the north side of the north bastion;
+                               found in <date type="found">1966</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Tocra">Tocra</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-08-06" who="Duncan Taylor">Tokenised</change>
+         <change when="2007-12-05" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="T00200" decls="#photograph">
+      <desc>Face</desc>
+   </graphic><!--D.J. Smith, 54/3 (= Plate 5?).--><surface/></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                <lb n="1"/>
+                    <gap reason="lost" extent="unknown" unit="character"/><orig>or</orig><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+</div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>Not usefully translatable</note></p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The size of the letters indicates a monumental text, probably containing parts of an imperial title.  If this block also comes from the title (rather than from a description of  a building or the name of the dedicating official) it suggests <foreign xml:lang="la">censor</foreign> (since <foreign xml:lang="la">imperator</foreign> is normally abbreviated) and should refer to Claudius, Vespasian or Domitian, see also <!--unfinished note-->.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

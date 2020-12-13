@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T02600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.30</idno>
+            <idno type="ircyr2012">T02600</idno>
+            <idno type="JMR">63c</idno>
+            <idno type="Excel">1564</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Sandstone</material> block 
+                              (<dimensions><width>0.88</width> <height>0.35</height> <depth>0.50</depth></dimensions>), from a group inscribed with  
+                              <ref type="inscription" n="T.28">T.28</ref>, <ref type="inscription" n="T.29">T.29</ref>, <ref type="inscription" n="T.30">T.30</ref>, 
+                              <ref type="inscription" n="T.31">T.31</ref>, <ref type="inscription" n="T.32">T.32</ref>, <ref type="inscription" n="T.34">T.34</ref>, 
+                              <ref type="inscription" n="T.33">T.33</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffiti</rs>: a, to left, in at least two hands; b, within a wreath, to the right, 
+                           was apparently never completed. 
+                           There are also some Arabic graffiti</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a, i, <height>0.135</height>; ii, <height>0.045-0.05</height>; square sigma. b, <height>0.04</height>; three sided square for digamma; L for ἔτους</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Gymnasium</origPlace>
+                     <origDate notBefore="0001" notAfter="0200" precision="low" evidence="lettering context">First to second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>:  
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1124">Gymnasium (later Byzantine Baths)</placeName>, loose on the street wall; found in <date type="found">1962</date>.
+                           </p></provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2013-07-26" who="JS">Jennifer Sarha corrected schematron errors. </change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-09-03" who="Duncan Taylor">Tokenised.</change>
+         <change when="2009-02-12" who="CB">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNS03_016" decls="#photograph"><desc>View of wall: above, from left, <ref type="inscription" n="T.30">T.30</ref>, <ref type="inscription" n="T.29">T.29</ref>, <ref type="inscription" n="T.31">T.31</ref>;
+      below, <ref type="inscription" n="T.27">T.27</ref> I and II (E. Alföldi-Rosenbaum, Reynolds Tocra II.4.16a, NS.III.16)</desc></graphic>
+      <graphic url="DSC05346" decls="#photograph"><desc>Centre of wall; <ref type="inscription" n="T.30">T.30</ref> above, <ref type="inscription" n="T.27">T.27</ref> below (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_63002" decls="#photograph"><desc><ref type="inscription" n="T.30">T.30</ref>, face (Joyce Reynolds, Tocra II.2.9A, NS.III.9)</desc></graphic></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="part" n="a" type="textpart"><div subtype="part" n="i" type="textpart"><ab>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                                <persName type="attested"><name nymRef="Πλάτων"><supplied reason="lost" cert="low">Π</supplied>λάτων</name></persName>
+                        </ab></div><div subtype="part" n="ii" type="textpart"><ab>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> 
+                                <persName type="attested"><name nymRef="Φλάβιος">Φλάβιοϲ</name></persName>
+                            <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
+                            <persName type="attested"><name nymRef="Πόπλιος">Πόπλιοϲ</name></persName>
+                        </ab></div>
+         </div><div subtype="part" n="b" type="textpart"><ab>
+                      <lb n="1"/><date ref="https://godot.date/id/XNJjYWuSgde5h5BrCvWgib"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="6">ϛ</num></date>                   
+                      <lb n="2"/><persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name> <name nymRef="Ἰου-"><seg part="I">Ἰου</seg></name> <space quantity="1" unit="character"/>                     
+                      <lb n="3"/><orig><unclear>π</unclear></orig></persName> <space quantity="3" unit="character"/> 
+                      <lb n="3a"/> <space extent="unknown" unit="line"/> 
+                    </ab>
+</div>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>a.i</note> Platon. <note>a.ii</note> Phlabios  <supplied reason="explanation"><foreign xml:lang="la">Flavius</foreign></supplied> [ . . . ] 
+               Poplios <supplied reason="explanation"><foreign xml:lang="la">Publius</foreign></supplied></p>
+               <p><note>b</note> <ref target="https://godot.date/id/XNJjYWuSgde5h5BrCvWgib">Year 6</ref>: M(arkos) <supplied reason="explanation"><foreign xml:lang="la">M(arcus)</foreign></supplied> Iou[-</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>b, line  2: Μ is rather smaller than the letters that follow, suggesting that the cutter has 
+                    left space for a superscript bar above it and therefore that it stands for 
+                    M(ᾶρκος). After ΙΟΥ, and apart from Π in line 3, 
+                    the condition of the stone suggests that nothing was ever inscribed until modern times - 
+                    in fact that this is an abandoned text.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

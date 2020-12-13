@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C54300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscriptions, Tomb N.66</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.562</idno>
+            <idno type="ircyr2012">C54300</idno>
+            <idno type="JMR">1119a</idno>
+            <idno type="Excel">280</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                  URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material>
+                              <objectType>stele</objectType>, with <ref type="inscription" n="C.562">C.562</ref> and <ref type="inscription" n="C.563">C.563</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the opposite
+                           face to <ref type="inscription" n="C.563">C.563</ref>; apparently in several hands.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE; lunate sigma in line 7</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0098" notBefore="0069" evidence="internal-dates">69-98 CE</origDate>
+                  </origin>
+
+
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: <placeName ref="https://www.slsgazetteer.org/1071">North Necropolis</placeName>, in the rock-cut tomb called the <placeName type="monuList" ref="https://www.slsgazetteer.org/1073">Kinissieh</placeName>, N.66; recorded in <date type="found">1850</date>.</p>
+                  </provenance>
+                  <provenance type="observed">
+                     <p>Findspot (<date type="observed">1850</date>)</p>
+                  </provenance>
+
+
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>From previous publications (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to
+            profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
+            elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc
+            RNG schema v. 8)</change>
+         <change when="2009-06-18" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+
+         <div type="bibliography">
+            <p><bibl><ptr target="vattier1850"/>, <citedRange>586</citedRange></bibl>.</p>
+             <p>For the tomb, <bibl><ptr target="cassels1955"/>, <citedRange>N.66</citedRange>, cf. 417</bibl>, <bibl><ptr target="thorn2009"/>, <citedRange>45</citedRange></bibl>.</p>
+         </div>
+
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><date ref="https://godot.date/id/haw7wcmiPEod7VXyu92BQB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                    <num value="128">ρκη</num></date>  <persName type="attested"><name nymRef="Ἀθην-"><seg part="I">Ἀθη<supplied reason="lost">ν</supplied></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><date type="life-span" dur="P68Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
+                    <num value="68"><unclear>ξ</unclear>η</num> </date>
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-63716"><name nymRef="Ἐπίστρατος">Ἐπίστρατος</name>
+                    <lb n="4"/><persName type="attested" key="lgpn:V1-65072"><name nymRef="Μουσαῖος">Μο<unclear>υ</unclear>σα<supplied reason="lost">ί</supplied><unclear>ω</unclear></name></persName> </persName>
+                    <lb n="5"/><date><date ref="https://godot.date/id/tEn8uirYcosgX6xNA6tui8"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                    <num value="109">ρθ</num></date> <date ref="https://godot.date/id/BNVE4ovPzbtqRAUA2npaQb"><w lemma="ὁ">τοῦ</w> <w lemma="καί">καὶ</w> <num value="8">η</num></date></date>
+                    <lb n="6"/> <persName type="attested" key="lgpn:V1-60937"><name nymRef="Ῥοδόκλεια">Ῥοδόκλεια</name> <persName type="attested" key="lgpn:V1-64275"><name nymRef="Θρασύμαχος">Θρα<lb n="7" break="no"/>ϲυμάχω</name></persName></persName> 
+            <date type="life-span" dur="P55Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="55">νε</num> </date>
+                    <lb n="8"/><g ref="symbols.xml#leaf"/> <date><date ref="https://godot.date/id/tEn8uirYcosgX6xNA6tui8"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                    <gap reason="lost" quantity="1" unit="character"/><num value="109">ρθ</num></date> <date ref="https://godot.date/id/RALf7THcGdiLSuts7J4Yab"><w lemma="ὁ">τοῦ</w> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w> 
+                        <supplied reason="lost"><num value="8">η</num></supplied></date></date> <persName type="attested" key="lgpn:V1-64679"><name nymRef="Κλευπάτρα">Κλευπάτρα</name>
+                    <lb n="9"/><persName type="attested" key="lgpn:V1-64894"><name nymRef="Λῦσις">Λύσιδ<unclear>ο</unclear>ς</name></persName></persName> 
+            <date type="life-span" dur="P40Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
+                    <num atLeast="40">μ</num> </date> <g ref="symbols.xml#leaf"/> 
+               <lb n="10"/><date ref="https://godot.date/id/nHDAniNEt2grnJc8Qw9CGn"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied> 
+                     <num atLeast="100">ρ<gap reason="lost" atLeast="1" atMost="2" unit="character"/></num></date> 
+                    <orig>ευη</orig><gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+         </div>
+
+         <div type="apparatus">
+            <listApp>
+               <app loc="2"><rdg resp="#vattier1850">LΣΗ</rdg></app>
+               <app loc="4"><rdg resp="#vattier1850">ΜΟΧ ΣΑΟ</rdg></app>
+               <app loc="5"><rdg resp="#vattier1850">LΡΘΙΤΟΥΚΑΙΗ</rdg></app>
+               <app loc="6"><rdg resp="#vattier1850">ΡΟΔΟΚΛΗΑΘΡΑ</rdg></app>
+               <app loc="7">
+                  <rdg resp="#vattier1850">Ϲ·ΥΜΑΧωLΝΕ</rdg></app>
+               <app loc="8">
+                  <rdg resp="#vattier1850">leaf LΡΡΘΤΟΥΚΜRΚΛΕΥΠΑΤΡΑ</rdg></app>
+               <app loc="10">
+                  <rdg resp="#vattier1850">ΖΡ. . ΕΥΗ . . .</rdg></app>
+            </listApp>
+         </div>
+
+         <div type="translation" xml:space="preserve">
+           <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/haw7wcmiPEod7VXyu92BQB">Year 128</ref>, Athen[ . . . aged 68.</p>
+               <p> Epistratos <supplied reason="subaudible">son</supplied> of Mousaios</p>
+              <p><ref target="https://godot.date/id/tEn8uirYcosgX6xNA6tui8">Year 109</ref>, also <ref target="https://godot.date/id/BNVE4ovPzbtqRAUA2npaQb">year 8</ref>, Rhodokleia <supplied reason="subaudible">daughter</supplied> of Thrasymachos, aged 55.</p>
+              <p><ref target="https://godot.date/id/tEn8uirYcosgX6xNA6tui8">Year 109</ref>, also [year 8], Kleupatra <supplied reason="subaudible">daughter</supplied> of Lysis, aged 40</p>
+              <p>Year <ref target="https://godot.date/id/nHDAniNEt2grnJc8Qw9CGn">10[0</ref>? . . . </p>
+           </div>
+         </div>
+
+         <div type="commentary">
+            <head>Commentary</head>
+           <!--  <p>Line 1 128 of the Actian era = CE 97/98</p>
+            <p>line 2 Aged 68; line 5 109 of the Actian era = CE 78/79, 8th year of Vespasian</p>
+            <p>100+ of the Actian era AD 69/70</p> --> 
+           
+         </div>
+
+      </body>
+   </text>
+</TEI>

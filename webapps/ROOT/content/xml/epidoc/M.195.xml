@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C84700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile IX: <rs type="textType">Milestone</rs> of Philip I</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.195</idno>
+            <idno type="ircyr2012">C84700</idno>
+            <idno type="JMR">Z.19 a</idno>
+            <idno type="Excel">1175</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><objectType>Column</objectType>, broken from its base and sliced in half vertically <dimensions><width>0.32</width> <height>0.97</height></dimensions>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No measurements</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-pto" n="9">Cyrene to Ptolemais Road: Mile IX</rs>.<!--check--></origPlace>
+                     <origDate notBefore="0247" notAfter="0247" evidence="reign">CE 247</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     near <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>; 
+                     found in <date type="found">1964</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/89055">Beida</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-30" who="AIO">tokenized</change>
+         <change when="2009-08-19" who="Paolo">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_Z19a" decls="#photograph"><desc>Face (Department of Antiquities, F. 4366)</desc></graphic>
+      <graphic url="JMRNB04_049" decls="#photograph"><desc>Face (Reynolds IV.49)</desc></graphic>
+      <graphic url="Photos_0213_3" decls="#photograph"><desc>6 milestones: from left <ref type="inscription" n="M.160">M.160</ref>, <ref type="inscription" n="M.201">M.201</ref>, Unidentified, 
+         <ref type="inscription" n="M.195">M.195</ref>, <ref type="inscription" n="M.196">M.196</ref>, Unidentified (1966, September)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="emperor" key="philippus1"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">C<supplied reason="lost">aesar</supplied></name> <supplied reason="lost"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name nymRef="Iulius"><expan><abbr>Iul</abbr><ex>ius</ex></expan></name></supplied>
+                    <lb n="2"/><name nymRef="Philippus">Philip<supplied reason="lost">pus</supplied></name> <w lemma="pius"><supplied reason="lost">Pius</supplied></w>
+                    <lb n="3"/><w lemma="felix"><unclear>Fe</unclear>lix</w> <w lemma="inuictus">I<supplied reason="lost">nuictus</supplied></w>
+                        <name nymRef="Augustus"><supplied reason="lost"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></supplied></name></persName>
+                    <lb n="4"/><w lemma="pontifex">ponti<supplied reason="lost">fex</supplied></w> <w lemma="maximus"><supplied reason="lost">maxi</supplied><lb n="5" break="no"/><unclear>mu</unclear>s</w> <expan><w lemma="tribunicius"><abbr>t<supplied reason="lost">rib</supplied></abbr><supplied reason="lost"><ex>unicia</ex></supplied></w>
+                        <supplied reason="lost"><w lemma="potestas"><abbr>pot</abbr><ex>estate</ex></w></supplied></expan> <supplied reason="lost"><w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w></supplied>
+                    <lb n="6"/> <w lemma="proconsul"><expan><abbr>proc</abbr><supplied reason="lost"><abbr>o</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></supplied></expan></w>
+                    <lb n="7"/><expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan> <w lemma="et">et</w> <persName type="emperor" key="philippus2"><name nymRef="Marcus"><expan><abbr><unclear>M</unclear></abbr><ex>arcus</ex></expan></name>
+                    <name nymRef="Iulius"><supplied reason="lost"><expan><abbr>Iul</abbr><ex>ius</ex></expan></supplied></name>
+                    <lb n="8"/><name nymRef="Philippus">Phili<supplied reason="lost">ppus</supplied></name> <w lemma="nobilis"><supplied reason="lost">no</supplied><lb n="9" break="no"/>bilis<supplied reason="lost">simus</supplied></w>
+                    <lb n="10"/><name nymRef="Caesar">Caes<supplied reason="lost">ar</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="10a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>Emperor Caesar [M(arcus) Iul(ius)] Philip, [Pious], Fortunate, I[nvincible, high priest], holding trib[unician power ? for the - time, 
+         consul], proconsul, father of the fatherland, and M(arcus) [Iul(ius)] Philip, most noble Caesar [ . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>One of three milestones of Philip on this road: <ref type="inscription" n="M.195">M.195</ref>, <ref type="inscription" n="M.197">M.197</ref>, <ref type="inscription" n="M.201">M.201</ref>, 
+               with probably <ref type="inscription" n="M.160">M.160</ref>.</p>
+             <p>Line 5: If the text was cut in the first year of the reign Philip was <foreign xml:lang="la">consul designatus</foreign>; 
+               if at the same time as <ref type="inscription" n="M.201">M.201</ref>, <foreign xml:lang="la">consul</foreign> is correct.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

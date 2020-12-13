@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Christian</rs> <rs type="textType">invocation</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.142</idno>
+            <idno type="ircyr2012">C84720</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p> <objectType>Wall</objectType> of a <material>rock</material>-cut feature consisting of two chambers.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="pictura">Painted</rs> to either side of a monogram cross; there are other monogram crosses on the wall of the outer 
+                           chamber to the right of the entrance (<dimensions><height>0.33</height></dimensions>) and on each of the two side wall (<dimensions><height>0.60</height></dimensions>
+                           and <dimensions><height>0.56</height></dimensions>)</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><dimensions><height>0.08</height></dimensions>; superscript bar over abbreviation, lunate sigma</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notAfter="0700" notBefore="0400" precision="low">Fourth-seventh century</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/2112">Siret el Giambi</placeName>, in a rock-cut 
+                              feature nearby consisting of two chambers; on the wall opposite the door of the smaller chamber; found in <date type="found">1981</date></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/84017">Qaşr al Maqdam</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-23" who="MLA">copied from CMC</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/><!--JR--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="mohamed-jmr2000"/>, <citedRange>8</citedRange>, 1495</bibl>, whence <bibl><ptr target="SEG"/> <citedRange>50.1650</citedRange></bibl>;
+               <bibl><ptr target="jmr-jbwp-rgg2003"/>, <citedRange>411</citedRange></bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>53.2067</citedRange></bibl>, cited <bibl> <ptr target="cinalli2016"/>, <citedRange>187</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+            <lb n="1"/><persName type="divine" key="kyrios"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>εὸ</ex><abbr>ϲ</abbr></expan></w></persName>
+            <w lemma="βοηθός">βοηθόϲ</w>
+                </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p> God <supplied reason="subaudible">our</supplied> help.</p>
+         </div>
+            </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

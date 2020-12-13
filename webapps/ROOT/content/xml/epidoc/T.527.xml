@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T51600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.527</idno>
+            <idno type="ircyr2012">T51600</idno>
+            <idno type="JMR">202l</idno>
+            <idno type="Excel">1637</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType> inscribed on the façade,
+                               with inscriptions <ref type="inscription" n="T.516">T.516</ref>, <ref type="inscription" n="T.517">T.517</ref>, 
+                               <ref type="inscription" n="T.518">T.518</ref>, <ref type="inscription" n="T.519">T.519</ref>, 
+                               <ref type="inscription" n="T.520">T.520</ref>, <ref type="inscription" n="T.521">T.521</ref>,
+                               <ref type="inscription" n="T.522">T.522</ref>, <ref type="inscription" n="T.523">T.523</ref>, 
+                               <ref type="inscription" n="T.524">T.524</ref>, <ref type="inscription" n="T.525">T.525</ref>, 
+                              <ref type="inscription" n="T.526">T.526</ref>, <ref type="inscription" n="T.527">T.527</ref>, <ref type="inscription" n="T.528">T.528</ref>,
+                               <ref type="inscription" n="T.529">T.529</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> within a roughly rectangular area, perhaps gabled (<dimensions><width>0.29</width> <height>0.42</height></dimensions>)
+                            below <ref type="inscription" n="T.526">T.526</ref> and to the left of <ref type="inscription" n="T.524">T.524</ref>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.04</height>; square sigma; L for ἔτους, ἐτῶν; from line 2 onwards,
+                         the lines slope sharply downwards.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" evidence="lettering context">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1154">Quarry East XV</placeName>, South wall.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-23" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-09-18" who="Pietro">tokenized</change>
+         <change when="2009-02-10" who="MR">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0348" decls="#photograph">
+      <desc>From left: Above, <ref type="inscription" n="T.526">T.526</ref> (part),<ref type="inscription" n="T.523">T.523</ref>;
+         <ref type="inscription" n="T.528">T.528</ref>, <ref type="inscription" n="T.527">T.527</ref>, <ref type="inscription" n="T.524">T.524</ref> (E. Alföldi-Rosenbaum, Tocra IX.3.24a, NS.X.24)</desc></graphic></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="jmr1983"/>, <citedRange>18.l</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>33.1423</citedRange></bibl>, 
+              <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324602">324602</ref></citedRange></bibl>.
+            </p><!-- El Haddar 277 -->
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/aQhZaLDLHRi9CVYbpgpGBB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="3">γ</num> 
+                   <rs type="month" key="thoth"><w lemma="Θώθ">Θώ<unclear>θ</unclear><lb n="2" break="no"/><supplied reason="lost">υ</supplied></w></rs> <num value="3">γ</num></date> <persName type="attested"><name nymRef="Ἁγησιτίμα" cert="low">Ἁ
+                    <lb n="3"/>γη<unclear>ϲ</unclear>ιτ<supplied reason="omitted">ί</supplied>μ<lb n="4" break="no"/>α</name> <persName type="attested"><name nymRef="Πτυλᾶς" cert="low">Πτυλᾶ</name></persName></persName> 
+                    <lb n="5"/><date type="life-span" dur="P71Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="71">οα</num> </date>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="4"><rdg resp="#jmr1983">Πτυλα</rdg>
+                  <note>for Πτολᾶς, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-60825">V1-60825</ref></note>
+               </app>
+               
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#jmr1983" xml:lang="en"><p>Year 3, Thoth 3, ?, daughter of Ptulas, aged 71.</p></div>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/aQhZaLDLHRi9CVYbpgpGBB">Year 3, Thoth 3</ref>, 
+            Hagesitima <supplied reason="subaudible">daughter</supplied> 
+               of Ptylas, aged 71.</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <!--<p>Line 4: The cutter was clearly in difficulty - the woman's name perhaps ended -τιμα and the man's may have been Πτύλμαιος.</p> August 29 -->
+            <p>Line 4: Πτυλᾶς, attested elsewhere as a short-form of Ptolemaios (Dobias-Lalou).</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

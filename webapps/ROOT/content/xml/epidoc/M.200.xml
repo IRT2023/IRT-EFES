@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C84900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile X: <rs type="textType">Milestone</rs> of Trajan</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.200</idno>
+            <idno type="ircyr2012">C84900</idno>
+            <idno type="JMR">Z.21</idno>
+            <idno type="Excel">1177</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of a <material>limestone</material> <objectType>column</objectType>: <dimensions><width>0.45</width> <height>0.69</height></dimensions>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> <height>0.045 - 0.05</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-pto" n="10">Cyrene-Ptolemais road, Mile X</rs>.</origPlace>
+                     <origDate notBefore="0100" notAfter="0100" precision="medium" evidence="titulature">CE 100</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>, with <ref type="inscription" n="M.199">M.199</ref>, <ref type="inscription" n="M.201">M.201</ref>, 
+                     <ref type="inscription" n="M.202">M.202</ref>; found in <date type="found">1959</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89055">Beida</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-30" who="AIO">tokenized</change>
+         <change when="2009-08-19" who="Paolo">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_Z_22_001" decls="#photograph"><desc>From left: <ref type="inscription" n="M.201">M.201</ref> (upper fragment); <ref type="inscription" n="M.200">M.200</ref> (Department of Antiquities, F. 4372)</desc></graphic>
+      <graphic url="JMR_Z_22_002" decls="#photograph"><desc>From left: <ref type="inscription" n="M.201">M.201</ref> (upper fragment); <ref type="inscription" n="M.200">M.200</ref>  (Department of Antiquities, F. 4372)</desc></graphic></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><persName type="emperor" key="traianus"><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> <!-- check from Transcription stage: A 
+                    square bracket is missing in the first line. --><supplied reason="lost"><name nymRef="Germanicus">Germanicus</name> <w lemma="pontifex"><expan><abbr>p</abbr><ex>ontifex</ex></expan></w> <w lemma="maximus"><expan><abbr>m</abbr><ex>aximus</ex></expan></w></supplied> <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w>
+                    <lb n="2"/> <w lemma="potestas"><expan><abbr>pot</abbr><ex>estate</ex></expan></w> <supplied reason="lost"><num value="4">IIII</num> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                        <num value="3">III</num> <expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan></supplied></persName> <w lemma="uia">uiam</w>
+                    <lb n="3"/> <w lemma="facio"><supplied reason="lost">fe</supplied>cit</w> <w lemma="per">pe<supplied reason="lost">r</supplied></w>
+                        <supplied reason="lost"><w lemma="tiro">tirones</w></supplied> <w lemma="lectus"><supplied reason="lost">l</supplied>ect<supplied reason="lost">os</supplied></w>
+                    <lb n="4"/><w lemma="in">in</w> <w lemma="prouincia">prou<supplied reason="lost">incia</supplied></w> <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene"><supplied reason="lost">Cyrenensi</supplied></placeName>
+                    <lb n="5"/><supplied reason="lost"> <space quantity="3" unit="character"/>
+                        <num value="10">X</num>  <space quantity="3" unit="character"/></supplied> 
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> . . . Trajan] Augustus [victor in Germania, high priest ] holding tribunician power for the [fourth time, consul for the third time, 
+            father of the fatherland] made the road by means of [recruits] raised in the Cyrenaean] province. 
+            [<supplied reason="subaudible">Mile</supplied> 10.] </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Restored on the basis of the text of <ref type="inscription" n="M.196">M.196</ref>; the dating elements are restored from that text, on the basis of the other phrasing.</p>
+            <p>For texts recording Trajan's work on the roads see, for the Cyrene to Ptolemais road see <ref type="inscription" n="M.196">M.196</ref> and <ref type="inscription" n="M.200">M.200</ref>; 
+               for the Cyrene to Apollonia Road, see <ref type="inscription" n="C.609">C.609</ref>, <ref type="inscription" n="M.222">M.222</ref>, 
+               <ref type="inscription" n="M.224">M.224</ref>, and, a later text, <ref type="inscription" n="M.227">M.227</ref>.</p> 
+           
+         </div>
+         
+      </body>
+   </text>
+</TEI>

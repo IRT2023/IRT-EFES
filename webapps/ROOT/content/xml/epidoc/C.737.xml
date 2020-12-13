@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C06500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary civic <rs type="textType">decree</rs> of <rs type="textType">honours</rs> for Alexis
+            </title>
+                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché, Catherine Dobias-Lalou</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.737</idno>
+            <idno type="ircyr2012">C06500</idno>
+            <idno type="JMR">1027</idno>
+            <idno type="Excel">1295</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Six fragments of a <material>marble</material> <objectType>stele</objectType> (a+b+c from the left side, together 
+                              <dimensions>
+                              <width>0.22</width>
+                              <height>0.48</height>
+                              <depth>c. 0.05</depth>
+                              </dimensions>; 
+                              d and e from the top right side, together
+                              <dimensions>
+                              <width>0.28</width>
+                              <height>0.795</height>
+                              </dimensions>; the original width, calculable from the line length, was <width precision="low">0.455</width>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which is badly worn in patches.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Augustan, <height>0.013</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="-0015" notAfter="0014" evidence="lettering internal-date titulature">Augustan, probably later than 15 BCE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              found in the excavations to the east of the Theatre: photographed in <date type="found">1928</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName type="monuList" ref="institution.xml#db933">Cyrene Museum.</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>From previous publications and transcription from photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-14" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-22" who="Lourdes Moya">Tokenized</change>
+         <change when="2009-07-06" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="Photos_0023" decls="#photograph"><desc>Front view (Department of Antiquities, D 558)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="SECir"/>, <citedRange>105</citedRange> and fig. 82 (from T. III 17 and a photograph), whence 
+                  <bibl><ptr target="robertBE"/>, <citedRange>1964.567</citedRange></bibl>; <bibl> <ptr target="marengo1991a"/>, <citedRange>503-512</citedRange></bibl>, 
+                  whence <bibl><ptr target="cdlBE"/>, <citedRange>1992.584</citedRange></bibl>, 
+                  <bibl><ptr target="SEG"/> <citedRange>41.1693</citedRange></bibl><!-- check --></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied> 
+                    <num><gap reason="lost" atLeast="1" atMost="3" unit="character"/></num>
+                    <date><date ref="https://godot.date/id/GBtCJH47HFmwiusYpUSkjV"><supplied reason="lost"><w lemma="ἐπί">ἐπὶ</w>
+                        <w lemma="ἱερεύς">ἱερέως</w> <w lemma="ὁ">τῶ</w> <w lemma="μέν">μὲν</w></supplied> 
+                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀπόλλων</supplied>ος</name></persName>
+                        <persName type="attested" key="lgpn:V1-62646"><name nymRef="Αἰγλάνωρ">Αἰγλάν<supplied reason="lost">ορος</supplied></name></persName></date>
+                    <lb n="2"/><date ref="https://godot.date/eponymous_office/Xjzq3894YE45FNuvbNvcr9/7KNZcLjwn8CTQRvN2vWcEi"><gap reason="lost" quantity="6" unit="character" precision="low"/>
+                        <persName type="emperor" key="augustus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτορος</supplied></w> 
+                        <w lemma="δέ"><supplied reason="lost">δὲ</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Kαίσα</supplied>ρος</name>
+                        <w lemma="θεός">θεῶ</w> <name nymRef="Σεβαστός">Σεβαστ<supplied reason="lost">ῶ</supplied></name></persName></date></date>
+                    <lb n="3"/><gap reason="lost" quantity="24" unit="character" precision="low"/><w part="F"><unclear>α</unclear>τα</w> 
+                    <w lemma="ἐκ">ἐξ</w> <w lemma="ἐπίσκοπος">ἐπισκόπω<unclear>ν</unclear></w>
+                    <lb n="4"/><gap reason="lost" quantity="23" unit="character" precision="low"/>
+                    <persName type="attested" key="lgpn:V1-64399"><name nymRef="Ἱππίας"><supplied reason="lost">Ἱ</supplied>ππίας</name> <persName type="attested" key="lgpn:V1-65541"><name nymRef="Πτολεμαῖος">Πτολεμαίω</name></persName></persName>                    
+                    <lb n="5"/><gap reason="lost" quantity="5" unit="character" precision="low"/> <supplied reason="lost"><w lemma="ἔφορος">ἐφόρων</w> <w lemma="καί">καὶ</w> <w lemma="γέρων">γερόντων</w></supplied> <w lemma="ἐπάγω"><supplied reason="lost">ἐ</supplied>παγόντων</w> <w lemma="ὁ">τᾶι</w> 
+                    <lb n="6"/><supplied reason="lost"><w lemma="βουλή">βωλᾶι</w> <w lemma="ὅδε">ἇδε</w>· <w lemma="ἐπεί">ἐπεὶ</w></supplied> <persName type="attested"><name nymRef="Ἄλεξις"><supplied reason="lost">Ἀλεξις</supplied></name> <persName type="attested" key="lgpn:V1-62727"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρω</name></persName></persName> 
+                    <lb n="7"/><gap reason="lost" quantity="19" unit="character" precision="low"/> <supplied reason="lost"><w lemma="ἀνήρ">ἀνὴρ</w></supplied>
+                        <w lemma="ἀγαθός"><supplied reason="lost">ἀ</supplied><unclear>γ</unclear>αθὸς</w> <w lemma="φαίνω">ἐφάνη</w> <w lemma="καί">καὶ</w>
+                    <lb n="8"/><gap reason="lost" quantity="24" unit="character" precision="low"/><w part="F">τωρ</w> <w lemma="γῆ">γῆς</w>
+                        <w lemma="δαπανάω">ἐδαπά<lb n="9" break="no"/><supplied reason="lost">νασε</supplied></w>
+               <supplied reason="lost"><w lemma="πολύς">πολλὰ</w> <w lemma="πρεσβεύω">πρεσβευόμενος</w> <w lemma="ἐν">ἐν</w></supplied> <w lemma="πρεσβεία">πρεσβείαις</w>
+                    <w lemma="ἀμισθί">ἀμι<unclear>σ</unclear><lb n="10" break="no"/><supplied reason="lost">θὶ</supplied></w>
+               <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῷ</w> <w lemma="πόλεμος">πολέμῳ</w> <w lemma="ὁ">τῷ</w></supplied> <placeName type="ethnic" nymRef="#Μαρμαρικός" ref="#marmarike"><supplied reason="lost">Μ</supplied>αρμαρισκῷ</placeName> 
+                    <w lemma="μεθαλίσκομαι">μ<unclear>ε</unclear><supplied reason="lost">τ</supplied><lb n="11" break="no"/><supplied reason="lost">ε</supplied>άλω</w> <space quantity="1" unit="character"/>
+                    <w lemma="καί"><unclear>κ</unclear><supplied reason="lost">αὶ</supplied></w> <supplied reason="lost" cert="low"><w lemma="ἀνήρ">ἀνὴρ</w> <w lemma="οὗτος">ταύτας</w> <w lemma="ὁ">τᾶς</w></supplied>
+                    <w lemma="ἐπαρχεία">ἐπαρχέας</w> <w lemma="πρῶτος">πρῶ<lb n="12" break="no"/><supplied reason="lost">τ</supplied>ος</w>
+                    <w lemma="ὑφίστημι">ὑπέσ<supplied reason="lost">τη</supplied></w> <supplied reason="lost"><w lemma="κίνδυνος">κινδύνος</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τᾶς</w></supplied>
+                   
+                    <w lemma="πατρίς"><supplied reason="lost">π</supplied><unclear>α</unclear>τρί<unclear>δ</unclear><supplied reason="lost">ο</supplied>ς</w>
+                    <w lemma="καί">κα<unclear>ὶ</unclear></w> <w lemma="ὁ">τᾶ<unclear>ν</unclear></w> 
+                    <lb n="13"/> <w lemma="ἄλλος"><supplied reason="lost">ἀ</supplied>λλᾶν</w> <w lemma="πόλις">π<supplied reason="lost">ολίων</supplied></w> <gap reason="lost" quantity="17" unit="character" precision="low"/><orig>νκλ<unclear>ευ</unclear>τετω</orig>
+                     <w lemma="ἰδιάζω">ἰδι<lb n="14" break="no"/><supplied reason="lost">ά</supplied>ζων</w> <orig>ω</orig><gap reason="lost" quantity="21" unit="character" precision="low"/> <w lemma="ὁ">τὸ</w>
+               <w lemma="ἀφειδής">ἀφει<supplied reason="lost">δέ</supplied>σ<supplied reason="lost">τ</supplied><lb n="15" break="no"/><supplied reason="lost">α</supplied>τον</w>
+               <w part="I">ἐμφ<supplied reason="lost" cert="low">αιν</supplied></w><gap reason="lost" quantity="14" unit="character" precision="low"/>
+               <w lemma="στρατιώτης"><supplied reason="lost">στρ</supplied><unclear>ατ</unclear>ιώτας</w> 
+                    <w lemma="δαπανάω">ἐδα<supplied reason="lost">π</supplied>άν<lb n="16" break="no"/><unclear>α</unclear>σε</w>
+               <space quantity="1" unit="character"/>
+                        <w part="I">πο</w><gap reason="lost" quantity="17" unit="character" precision="low"/><orig>λω<unclear>αν</unclear>ατο<unclear>λη</unclear>ω<unclear>ν</unclear></orig>
+                    <lb n="17"/><w part="I">πολλ</w><gap reason="lost" quantity="20" unit="character" precision="low"/><orig><unclear>υσαλλ</unclear>ων</orig> <orig>κ</orig><gap reason="lost" quantity="4" unit="character"/> 
+                    <lb n="18"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶι</w> <w lemma="σῶμα">σώ<supplied reason="lost">μ</supplied>ατι</w>
+               <w lemma="παραβάλλω">π<supplied reason="lost">α</supplied>ραβ<supplied reason="omitted" cert="low">αλόμ</supplied><supplied reason="lost">ενος</supplied></w> 
+                            <supplied reason="lost"><w lemma="καί">καὶ</w></supplied> <w lemma="ἄλλως"><supplied reason="lost">ἄ</supplied>λλως</w>
+               <w lemma="μελετάω">μ<unclear>ελε</unclear><lb n="19" break="no"/>τῶν</w> <w lemma="ἀποκτείνω">ἀ<unclear>π</unclear>έκτηνε</w> <w lemma="οὐ">οὐκ</w>
+               <w lemma="ὀλίγος">ὀ<supplied reason="lost">λί</supplied>γ<supplied reason="lost" cert="low">ος</supplied></w> 
+                    <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="αἱρέω">εἷλε</w></supplied> 
+               <w lemma="αἰχμάλωτος"><supplied reason="lost">αἰχ</supplied>μ<unclear>α</unclear>λώ<supplied reason="lost">τ</supplied>ος</w> 
+                    <gap reason="lost" quantity="2" unit="character"/>
+                    <lb n="20"/> <w lemma="πολλάκις"><supplied reason="lost">πολλ</supplied>άκις</w> <w lemma="τε">τε</w>
+               <w lemma="παρατάσσω" part="I">πα<supplied reason="lost">ρ</supplied>εταξα</w><gap reason="lost" quantity="11" unit="character" precision="low"/><w part="F"><supplied reason="lost">τ</supplied>ὸς</w>
+               <w lemma="πολέμιος">πολεμίο<supplied reason="lost">ς</supplied></w>
+                    <lb n="21"/> <w lemma="ἐγώ"><supplied reason="lost">ἡμᾶ</supplied>ς</w> <w lemma="τε">τε</w> <w lemma="ὅς">ὧν</w> <w lemma="εἰκῇ">εἰκῆ</w>
+               <w lemma="ἀγωνίζομαι">ἀ<unclear>γων</unclear><supplied reason="lost">ισάμεθα</supplied></w>
+               <w lemma="παραμυθέω"><supplied reason="lost">π</supplied>αραμύθ<unclear>η</unclear><supplied reason="lost">σας</supplied></w>
+                    <lb n="22"/> <w lemma="ἀγαθός"><supplied reason="lost">ἀγ</supplied>αθόμ</w> <w lemma="τε">τ’</w><w lemma="εἰς">ἐς</w> 
+               <w lemma="δαπάνη"><unclear>δ</unclear>απ<supplied reason="lost">άναν</supplied></w> <gap reason="lost" quantity="10" unit="character" precision="low"/><w part="F">οι</w> 
+               <w lemma="πληρόω">ἐπλη<unclear>ρ</unclear>ώθη<lb n="23" break="no"/><supplied reason="lost">σ</supplied>αν</w>
+               <w lemma="καθίστημι" part="I">καταστ<supplied reason="lost">α</supplied>θε<supplied reason="lost">σ</supplied></w><gap reason="lost" quantity="15" unit="character" precision="low"/><w part="F">ιος</w> <w lemma="ἡγεμών">ἁγεμὼν</w>
+                    <lb n="24"/> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="πᾶς">πᾶσαν</w> 
+                    <w lemma="ἐξουσία">ἐξου<unclear>σ</unclear><supplied reason="lost">ίαν</supplied></w> <gap reason="lost" quantity="10" unit="character" precision="low"/>
+               <w lemma="πολύς"><supplied reason="lost">π</supplied>όλλαν</w> <w lemma="ἐπιείκεια">ἐπεί<lb 
+                  n="25" break="no"/>κεαν</w> <w lemma="ἐνδείκνυμι">ἐνεδεῖξ<supplied reason="lost">ε</supplied></w> <gap reason="lost" quantity="10" unit="character"/> <w lemma="ὁ">τοῖς</w> <w lemma="στρατεύω">στρατευ<lb n="26" break="no"/>ομένοις</w>
+               <w lemma="καί">καὶ</w> <orig><unclear>π</unclear></orig><gap reason="lost" quantity="11" unit="character" precision="low"/>
+               <w lemma="δαπάνη"><supplied reason="lost">δαπ</supplied><unclear>ανῶ</unclear>ν</w> <w lemma="πολύς">πόλλαν</w> 
+                    <lb n="27"/> <w lemma="ἐπιείκεια">ἐπείκεαν</w> <w lemma="ἔνδεια">ἐνδ<unclear>ε</unclear><supplied reason="lost">ία</supplied></w>
+               <gap reason="lost" quantity="12" unit="character" precision="low"/> <w lemma="ὁ">τοῖς</w> <w lemma="στρατεύω">στρατευο<lb n="28" break="no"/>μένοις</w>
+               <w lemma="καί">καὶ</w> <w lemma="κήδομαι">κη<unclear>δ</unclear><supplied reason="lost">όμενος</supplied></w> <gap reason="lost" quantity="11" unit="character" precision="low"/><orig><unclear>ς</unclear></orig>
+                    <w lemma="ὁ"><unclear>τὸν</unclear></w> <w lemma="ὕπατος">ὕπα<lb n="29" break="no"/>τον</w> 
+               <w lemma="στρατεύω">στρατε<supplied reason="lost">υόμενον</supplied></w>
+               <gap reason="lost" quantity="14" unit="character" precision="low"/><orig><unclear>ε</unclear></orig>
+               <w lemma="πολύς">πoλ<lb n="30" break="no"/>λᾶν</w> <w lemma="δέ">δ’</w><w lemma="ἐπίκρισις">ἐπικρισ<supplied reason="lost">ίων</supplied></w> <supplied reason="lost" cert="low"><w lemma="ἄξιος">ἄξιος</w></supplied> <gap reason="lost" quantity="11" unit="character" precision="low"/><orig><unclear>σ</unclear></orig>
+               <w lemma="φαίνω">ἔφαν<lb n="31" break="no"/>ε</w> <w lemma="οὐ">οὐχ</w> <w lemma="ὡς">ὡς</w> <orig>λ</orig><gap reason="lost" quantity="24" unit="character" precision="low"/> <w lemma="ἀλλά">ἀλ<lb n="32" break="no"/>λὰ</w> <w lemma="καί">καὶ</w> <w lemma="πᾶς">π<supplied reason="lost">άσῃ</supplied></w> <w lemma="ἀρετή"><supplied reason="lost">ἀρετῇ</supplied></w> <w lemma="κοσμέω"><supplied reason="lost">κεκ</supplied>οσμ<supplied reason="lost">ημ</supplied>ένος</w> 
+                    <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ἐγγύς">ἐγ<lb n="33" break="no"/>γυτάτω</w> <w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w> <w lemma="κίνδυνος"><supplied reason="lost">κινδύ</supplied>νων</w> 
+                    <w lemma="γίγνομαι">γ<supplied reason="lost">ενόμε</supplied><unclear>ν</unclear>ος</w> <w lemma="αὐτοχειρία">αὐτοχε<unclear>ι</unclear><lb n="34" break="no"/>ρίαι</w> <w lemma="ὁ">τὸς</w> <gap reason="lost" quantity="8" unit="character" precision="low"/><w part="F">ος</w> <w lemma="ὁ">τῶν</w> 
+                    <placeName type="ethnic" nymRef="#Μαρμαρίδης" ref="#marmarike">Μ<supplied reason="lost">αρμαρι</supplied>δᾶν</placeName> <w lemma="φονεύω">ἐφ<unclear>όν</unclear><lb n="35" break="no"/>ευσε</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w> <gap reason="lost" quantity="7" unit="character" precision="low"/><orig>ολετε</orig> <w lemma="συλλέγω">σ<supplied reason="lost">υλλεγ</supplied>όμενος</w> <w lemma="ἐκ">ἐκ</w>
+               <lb n="36"/><w lemma="φρούριον">φρουρί<unclear>ω</unclear><supplied reason="lost">ν</supplied></w> <gap reason="lost" quantity="7" unit="character" precision="low"/><w part="F">σας</w> <w lemma="καί">καὶ</w> 
+                    <w part="I">ἐπεσ</w><gap reason="lost" quantity="3" unit="character"/><w part="F"><unclear>ι</unclear>ων</w>
+                    <w lemma="εἰς">ἐς</w> <gap reason="lost" quantity="3" unit="character"/> 
+                    <lb n="37"/> <w lemma="δοκέω">δεδόχ<supplied reason="lost">θαι</supplied></w> <w lemma="ἐπαινέω"><supplied reason="lost">ἐπαι</supplied>νέσαι</w> <w lemma="τε">τε</w> 
+                    <w lemma="αὐτός">αὐτ<supplied reason="lost">ὸν</supplied></w> <w lemma="δημόσιος"><supplied reason="lost">δ</supplied>αμοσία<supplied reason="lost">ι</supplied></w>
+                    <lb n="38"/> <w lemma="καί">καὶ</w> <w lemma="παρακαλέω">π<unclear>α</unclear><supplied reason="lost">ρακαλέσ</supplied>αι</w>  <w lemma="ὁ">τὸν</w> 
+                    <w lemma="αὐτός">αὐτὸν</w> <w lemma="ὁ"><supplied reason="lost">τᾶ</supplied><unclear>ι</unclear></w> <w lemma="εὔνοια">εὐνοία<supplied reason="lost">ι</supplied></w>
+                    <lb n="39"/> <orig><unclear>διαμ</unclear></orig><gap reason="lost" quantity="5" unit="character"/> <w lemma="εἰς"><supplied reason="lost">ἐς</supplied></w> <w lemma="ὁ"><supplied reason="lost">τὰν</supplied></w>
+                    <w lemma="πατρίς"><unclear>π</unclear>ατρίδα</w>, <w lemma="ἀνατίθημι">ἀνθέμε<supplied reason="lost">ν</supplied></w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτ<supplied reason="lost">ῷ</supplied></w>
+                    <lb n="40"/> <w lemma="εἰς"><supplied reason="lost">ἐς</supplied></w> <w lemma="ὁ"><supplied reason="lost">τὸν</supplied></w> 
+                        <w lemma="ἐπίσημος"><supplied reason="lost">ἐπισημό</supplied>τατον</w> <w lemma="ὁ">τᾶς</w> <w lemma="πόλις">πόλ<supplied reason="lost">ιο</supplied>ς</w> <w lemma="τόπος">τόπον</w> 
+                    <lb n="41"/> <w lemma="ὅπλον"><supplied reason="lost" cert="low">ὅπλον</supplied></w> <w lemma="ἐπίχρυσος"><supplied reason="lost">ἐπίχρυσ</supplied>ον</w>
+                    <w lemma="καί">καὶ</w> <w lemma="ἄγαλμα">ἄγαλμα</w> <placeName type="ethnic" nymRef="Πάρινος" ref="#paros">Π<unclear>ά</unclear><supplied reason="lost">ρινο</supplied><unclear>ν</unclear></placeName>
+                    <w lemma="καί">καὶ</w> <w lemma="ἄλλος">ἄ<supplied reason="lost">λ</supplied><lb n="42" break="no"/><supplied reason="lost">λο</supplied></w> <w lemma="χάλκεος"><supplied reason="lost" cert="low">χάλκεο</supplied>ν</w> 
+                    <w lemma="ἔχω">ἔχοντα</w> <w lemma="ἐπιγραφή">ἐπιγρα<unclear>φ</unclear><supplied reason="lost">ὰς</supplied></w>· <persName type="attested"><name nymRef="Ἄλεξις"><supplied reason="lost">Ἄλ</supplied>εξι<supplied reason="lost">ν</supplied></name></persName>
+                    <lb n="43"/><supplied reason="lost"><persName type="attested"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρω</name></persName></supplied> <w lemma="ἡγεμών"><supplied reason="lost">ἁγ</supplied>εμόνα</w> <w lemma="καί">καὶ</w> <orig>ταπ</orig><gap reason="lost" quantity="6" unit="character" precision="low"/><orig>κ</orig><gap reason="lost" quantity="1" unit="character"/>
+                    <lb n="44"/><gap reason="lost" quantity="9" unit="character" precision="low"/><w part="F">ι</w> 
+                    <w lemma="πᾶς">πάντας</w> <orig>υ<unclear>π</unclear></orig><gap reason="lost" quantity="15" unit="character" precision="low"/>
+                    <lb n="45"/><gap reason="lost" quantity="9" unit="character" precision="low"/> <w lemma="δέ">δὲ</w> 
+                    <w part="I">αὐτ</w><gap reason="lost" quantity="15" unit="character" precision="low"/>
+                    <lb n="46"/><gap reason="lost" quantity="9" unit="character" precision="low"/><orig>ορ<unclear>α</unclear></orig><gap reason="lost" quantity="17" unit="character" precision="low"/>
+                    <lb n="47"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1"><rdg resp="#SECir">[ἐπὶ τῶ δεῖνα ? ἐπειδὴ Ἀλεξί. . .]ος Αἰγλάν[ορος</rdg> <note>whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-62739">V1-62739</ref></note></app>
+               <app loc="2"><rdg resp="#SECir">ἱερατεύσας - - - Καίσα]ρος θεῶ Σεβαστ[ῶ]</rdg>
+               <rdg resp="#marengo1991a">Σεβαστ[ῶ]</rdg></app>
+               <app loc="4"><lem>Ἱ]ππίας</lem>
+                  <rdg resp="#SECir">[...]πιας</rdg></app>
+               <app loc="5-6"> <note>restorations by Marengo</note></app><!-- check -->
+               <app loc="7"><lem>ἀ]γαθὸς</lem>
+                  <rdg resp="#SECir">[ἀγ]αθὸς</rdg></app>
+               
+               <app loc="8"> <lem>τωρ γῆς ἐδαπά</lem>
+                  <rdg resp="#SECir">ἐφιλοσ]τώργησε (sic) δαπά</rdg></app>
+               <app loc="10"><rdg resp="#SECir"><unclear>Α</unclear>ΡΜΑΡΙΣΚΩ<unclear>Μ</unclear>[.]</rdg></app>
+               <app loc="11"><lem>ἐπαρχέας</lem>
+                  <rdg resp="#SECir">τᾶ]<unclear>ν</unclear> ἐπαρχεα<unclear>ν</unclear></rdg></app>
+               <app loc="12-13"><note>Restoration conjectured by Robert</note></app>
+               <app loc="13"><lem>ΝΚΛ<unclear>ΕΥ</unclear>ΤΕΤΩ ἰδι</lem>
+                  <rdg resp="#SECir"><unclear>Ν</unclear>ΜΛ<unclear>Ε</unclear>[.]ιΤΕΤΩΙΔΙ</rdg></app>
+               <app loc="14"><lem>τὸ ἀφει[δέ]σ[τ-]</lem>
+                  <rdg resp="#SECir">[.]<unclear>Τ</unclear>ΟΑΦΕΓ’’[...]</rdg></app> 
+               <app loc="15"><lem>στρ]<unclear>ατ</unclear>ιώτας ἐδα[π]άν-</lem>
+                  <rdg resp="#SECir">]τι<unclear>ώ</unclear>τας ἐδα<unclear>μν</unclear></rdg></app>
+               <app loc="16"><lem>ΛΩ<unclear>ΑΝ</unclear>ΑΤΟ<unclear>ΛΗ</unclear>Ω<unclear>Ν</unclear></lem>
+                  <rdg resp="#SECir">ΛΩΝ[. κ]ατ'ὀλίγον</rdg></app>
+               <app loc="17"><lem>πολλ</lem>
+                  <rdg resp="#SECir">[π]ολλ</rdg></app>
+               <app loc="17"><lem><unclear>ΥΣΑΛΛ</unclear>ΩΝ κ</lem>
+                  <rdg resp="#SECir">[...]ΣΛ[.]ΛΩΝΚ[...]</rdg></app>
+               <app loc="18"><lem>π[α]ραβ[αλ]όμ[ενος</lem>
+                  <rdg resp="#SECir"><unclear>π</unclear>[.]<unclear>Ρ</unclear>ΑΒΜΟΓ[..</rdg>
+               <note>The stone reads <unclear>Π</unclear>.ΡΑΒΜΟ</note></app>
+               <app loc="18"><lem> καὶ ἄ]λλως μ<unclear>ελε</unclear></lem>
+                  <rdg resp="#SECir">. .]Λ<unclear>ΛΟ</unclear>ΣΜ<unclear>Γ</unclear>Λ[..]</rdg></app>
+               <app loc="19"><lem> οὐκ ὁ[λί]γ[ος? καὶ εἷλε αἰχ]μ<unclear>α</unclear>λώ[τ]ος [..]</lem>
+                  <rdg resp="#SECir">]ΟΥΚΟΜ[5/6] αἰχ]μ<unclear>α</unclear>λώ<unclear>τ</unclear>ος</rdg></app>
+               <app loc="20"><lem>-τ]ὸς πολεμίο[ς]</lem>
+                  <rdg resp="#SECir"><unclear>τ</unclear>ος πολεμιο<unclear>ς</unclear></rdg></app>
+               <app loc="21"><rdg resp="#SECir">[..]ΣΤΕΩΝΕΙΚ[.]ΗΑ<unclear>ΙΟΦ</unclear>[......π]αρα<unclear>μ</unclear>υθία<unclear>ν</unclear></rdg></app>
+               <app loc="22"><rdg resp="#SECir">[..]ΑΘΟΜΤΕΣ[.]ΑΙ<unclear>Π</unclear>[...]<unclear>Ο</unclear>Ι ἐπλη⟨ρ⟩ωθη</rdg>
+               <note>The stone reads ΕΠΛΗΒΩΘΗ</note></app>
+               <app loc="24"><lem>[κ]αὶ</lem>
+                  <rdg resp="#SECir"><unclear>κ</unclear>αὶ </rdg></app> 
+               <app loc="25"><rdg resp="#SECir">κεαν ἐνέδειξ[ε ...]τ<unclear>ο</unclear>ν στρατευ</rdg></app> 
+               <app loc="26"><lem>δαπ]ανῶν πόλλαν </lem>
+                  <rdg resp="#SECir">...]...ν πόλλαν</rdg></app> 
+               <app loc="27"><rdg resp="#SECir">ἐπείκεαν ἐνδε[ιξας . . . ]ον στρατευο</rdg></app> 
+               <app loc="28"><lem>κη<unclear>δ</unclear></lem>
+                  <rdg resp="#SECir">κη<unclear>σ</unclear></rdg></app>
+               <app loc="28"><lem>-]<unclear>ς τὸν</unclear> ὕπα-</lem>
+                  <rdg resp="#SECir">]τον ὔπα-</rdg></app>
+               <app loc="29"><lem>]<unclear>Ε</unclear> πόλ-</lem>
+                  <rdg resp="#SECir">].ν πολ-</rdg></app> 
+               <app loc="30"><lem>]<unclear>Σ</unclear> ἔφαν-</lem><rdg resp="#SECir">[...]<unclear>Τ</unclear>ΕΦΑΝ</rdg></app> 
+               <app loc="31"> <rdg resp="#SECir"><unclear>Ε</unclear>ΟΥΧΩΣ<unclear>Λ</unclear>[...]<unclear>ο</unclear>ν ἀλ</rdg> <note>first letter could be Ξ</note></app> 
+               <app loc="32"><lem>]οσμ[</lem>
+                  <rdg resp="#SECir">]σμ[</rdg></app>
+               <app loc="35"><lem>ΟΛΕΤΕ σ[υλλεγ]όμενος ἐκ</lem>
+                  <rdg resp="#SECir">]<unclear>Π</unclear>ΟΛΕΤΕΣΥ[ . . .]μενος <unclear>ε</unclear>[</rdg></app> 
+               <app loc="36"><lem>φρουρί<unclear>ω</unclear>[ν</lem>
+                 <rdg resp="#SECir">φρουρι<unclear>ο</unclear>[</rdg></app>
+               <app loc="36"><lem>]<unclear>ι</unclear>ων ἐς [···]</lem>
+                 <rdg resp="#SECir">]ΩΝΕΣ[?]</rdg></app>
+               <app loc="39"><lem>διαμ[ένειν</lem>
+                  <rdg resp="#SECir"><unclear>ΛΙΛΛ</unclear></rdg></app>
+               <app loc="39"><lem>αὐτ[ῶ] </lem>
+                  <rdg resp="#SECir">α[ὐ]τῶ[ι]</rdg></app>
+               <app loc="42"><lem>Ἄλ]εξι[ν]</lem>
+                  <rdg resp="#SECir">Ἀλέξι-</rdg><note>whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-62739">V1-62739</ref></note></app> 
+               <app loc="43"><rdg resp="#SECir">ΤΑΠ[...]Κ</rdg></app>
+               </listApp> 
+         </div>
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>
+               [Year ?], when Aiglanor was priest of Apollo, [X was priest of Emperor Caes]ar divine Augustus 
+               [ . . . ] from supervisors [ . . . ] Hippias <supplied reason="subaudible">son</supplied> of Ptolemaios; [the ephors and gerontes ] introducing [to the council the following: since Alexis ] 
+               <supplied reason="subaudible">son</supplied> of Alexander [ . . . ] has been shown to be a good [man and  . . . ] of the land, spent [much acting as ambassador] on embassies without pay,
+               and took part in the Marmarican [War] and as first [man of this] province underwent [dangers on behalf of his] homeland and the other cities [ . . . ] as a private citizen (?) [ . . . ] 
+               unsparing spent [. . ? on] soldiers [ . . . ]
+               ?risking his body [ . . . ]  and making other efforts killed not a few and took prisoners, and often took position [in face of] the enemies, having encouraged us in our struggle, and 
+               ?contributing to the costs [ . . . ] they were fulfilled [ . . . ?when he ] was appointed leader [ of . . . ] and (had) all authority he showed moderation [ . . . towards] those 
+                on campaign [ . . . ] spending and much moderation ?in need [ . . . ] to those on campaign and caring [for. . . . ] the consul campaigning [ . . .  ?worthy] of many awards [ . . . ] 
+                he appeared not as [ . . . ] but adorned with all virtue and getting very close to the dangers; with his own hand he slew [ . . . ] of the Marmaridae and [ . . .  ?collecting] from fortresses 
+                [ . . . ]
+               So it has been decided to praise him publicly and to urge him the same ?with goodwill [ . . . ] ?towards the homeland, 
+               and to set up for him in the most prominent location in the city [a gilded shield] and an statue in Parian marble and another [in bronze], having the inscriptions:
+               Alexis [<supplied reason="subaudible">son</supplied> of Alexander] leader and [  . . .
+            </p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p> [السنة؟] ، عندما كان إيقلانور كاهناً لأبولو، [فلان كان كاهن الإمبراطور قيص] ر إلاه أغسطس [···] من المشرفين  [···]
+               هبياس (بن) بتوليمايوس؛ [الأيفوري والشيوخ] تقديم [للمجلس ما يلي: بما أن الكسيس] (بن) الإسكندر [···] تبين أنه [رجل خير و · ··]
+               للأرض، أنفق (أدى)[الكثير من العمل كسفير(ممثل)] في السفارات بدون أجر ، وشارك في [الحرب] المرمرايكية وكأول [رجل من هذا]
+               الإقليم تعرض [للمخاطر من أجل] وطنه والمدن الأخرى [. . . ] كمواطن عادي (؟) [. . . ] أنفق بسخاء [··؟ على]
+               الجنود [. . . ] مُخاطراً بجسده  [. . . ] وباذلاً جهود أخرى قاتلاً عدد ليس بالقليل وممسكاً بأسرى، وغالبًا ما اتخذ موقفًا [في مواجهة]
+               العدو، مشجعاً  لنا في نضالنا، و؟  مسهماً في التكاليف [····]  كانت كاملة أومستوفية (ربما الشروط) [·· ·؟عندما ]عين قائداً [ل···
+               ] و (امتلك كل السلطة  وأظهر الاعتدال (التوسط) [. . . نحو] أولئك المعسكرين[. . . ]  منفقأ مظهراً الكثير من االاعتدال؟ حقاً [. . . ]
+               أولئك الذين في الحملة والعناية [بــ (لأجل) ... ] حملة القنصل [. . . ؟ يستحق] العديد من الجوائز [. . . ]
+               لم يظهر كـ [. . . ] لكن تحلى بكل فضيلة وأصبح قريباً جدًا من المخاطر؛ بيده قتل [. . . ] من المارمريديين  و [. . . ؟ جمع]
+               من الحصون [. . . ] لذا فقد تقرر الثناء عليه بشكل علني وحثة على العمل بنفس الطريقة؟ ؟ مع النية الحسنة [···]
+               ؟ تجاه الوطن ، وأن يُنصب له في أبرز مكان في المدينة [درعًا مُذَهَّبًا]
+               وتمثالاً من الرخام الباري وأخر [من البرونز] تحمل (هذه) النقوش: الكسيس [(بن) الكسندر] قائد و [. . .</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> <!-- 1 Probably Ἀλεξιμαχος.For another Ἀιγλανόρος  but earlier, cf. SP18=GDI,4837=SECir,146.--> </p>
+            <p>l.2 cf. ἱερατεύσας τε δὶς Καισάρος τοῦ θεοῦ ἐκτενως καὶ φιλοτείμως, <ref type="inscription" n="C.416">C.416</ref></p>
+            <p>The ends of lines 1,2 recall the initial dating formula of <ref type="inscription" n="C.145">C.145</ref>, are restored accordingly; 
+               at the beginning of line 2 there is space for the 
+                    patronymic of the priest of Apollo, e.g. Καρνήδα (cf. Αἰγλάνωρ Καρνήδα in <ref type="inscription" n="C.247">C.247</ref>). 
+               For the priest of Augustus it is worth noting that in his title Augustus, who is simply Αὐτοκράτωρ Καῖσαρ Σεβαστός in  
+               <ref type="inscription" n="C.145">C.145</ref> of 16/15 BCE is now also θεός. </p>
+            <p>ll.3-6: We have no other preamble to a civic decree so that it is impossible 
+               to make much headway with the restoration; the sense of ἐξ ἐπισκόπων (? τὰ ἐξ [ . . . ]) is very obscure. 
+                        <!--  Hippias son of Ptolemaios had perhaps proposed the decree in the council and it was then brought before a larger 
+                        body--> </p>
+            <p> Line 6: The name is restored from line 42; it shows that, despite the similarities of this text and 
+               <ref type="inscription" n="C.416">C.416</ref>, they were concerned with two different people who had served Cyrene in something of the same way. </p>
+            <p> Line 8: Perhaps to be restored on the lines of [ἀεὶ γενόμενος ἡμετέρας φιλή]τωρ γῆς. </p>
+            <p>Lines 10 ff.: This is presumably the war in which Sulpicius Quirinus was involved.The text, like  
+               <ref type="inscription" n="C.416">C.416</ref> and perhaps <ref target="https://igcyr.unibo.it/gvcyr027">GVCyr 27</ref>, shows that Cyrene had to rely on 
+                            local initiative for her defence to a larger degree than might have been expected. </p>
+            <p> Line 18-19. The cutter misunderstood his draft. </p>
+            <p> Line 28: The reference to a consul is of some historical significance; it would presumably imply that he was on 
+                            the spot and therefore that the normal provincial administration was temporarily superceded. </p>
+            <p> <!-- perhaps ἐσύλησε --> 
+                            </p>
+            <p><!-- Presumably for Πόλει. --></p>
+            <p>Line 41: For ὅπλον ἐπιχρυσον, see <ref type="inscription" n="C.416">C.416</ref>, b, lines 4-5.</p>
+            <p>Line 41: For Parian marble in Cyrenaica see also <ref type="inscription" n="C.416">C.416</ref>, <ref type="inscription" n="B.76">B.76</ref>, <ref type="inscription" n="B.45">B.45</ref>, 
+               <ref type="inscription" n="B.75">B.75</ref>, with Robert, <title>Hellenica</title> XI-XII, p.119.</p>
+            <!-- LGPN, from SECir, restored Aleximachos, son of Aiglanor, in ll 1, 42/43 (key="lgpn:V1-62739" key="lgpn:V1-62646") Check-->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

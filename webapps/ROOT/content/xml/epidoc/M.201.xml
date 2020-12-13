@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C85000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile X: <rs type="textType">Milestone</rs> of Philip I</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.201</idno>
+            <idno type="ircyr2012">C85000</idno>
+            <idno type="JMR">Z.22</idno>
+            <idno type="Excel">1178</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> <objectType>column</objectType> reconstructed from three pieces 
+                              (<dimensions><dim type="diameter">0.43</dim> <height>2.09</height></dimensions>), the surface in poor condition.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.05-0.06</height>, irregularly cut. Traces of red paint.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-pto" n="10">Cyrene-Ptolemais road: Mile X</rs>.</origPlace>
+                     <origDate notBefore="0247" notAfter="0247" evidence="titulature">CE 247</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>, with <ref type="inscription" n="M.199">M.199</ref>, <ref type="inscription" n="M.200">M.200</ref>, 
+                     <ref type="inscription" n="M.202">M.202</ref>; found in <date type="found">1959</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2013-09-25" who="TW">Edited photo info</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-30" who="AIO">tokenized</change>
+         <change when="2009-08-19" who="Paolo">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="JMR_Z_22_003" decls="#photograph"><desc>Reconstructed Monument (Department of Antiquities, F. 4429)</desc></graphic>
+            <graphic url="JMR_Z_22_001" decls="#photograph"><desc>From left: <ref type="inscription" n="M.201">M.201</ref> (upper fragment); <ref type="inscription" n="M.200">M.200</ref> (Department of Antiquities, F. 4372)</desc></graphic>
+            <graphic url="JMR_Z_22_002" decls="#photograph"><desc>From left: <ref type="inscription" n="M.201">M.201</ref> (upper fragment); <ref type="inscription" n="M.200">M.200</ref>  (Department of Antiquities, F. 4372)</desc></graphic>
+            <graphic url="Photos_0213_2" decls="#photograph"><desc>6 milestones: from left <ref type="inscription" n="M.160">M.160</ref>; <ref type="inscription" n="M.201">M.201</ref>; Unidentified; 
+               <ref type="inscription" n="M.195">M.195</ref>; <ref type="inscription" n="M.196">M.196</ref>; Unidentified (1966, September)</desc></graphic>
+            <graphic url="Photos_0216_2" decls="#photograph"><desc>4 milestones: from left, <ref type="inscription" n="M.201">M.201</ref>;  Unidentified; 
+               <ref type="inscription" n="M.195">M.195</ref>; <ref type="inscription" n="M.196">M.196</ref> (1966, September)</desc></graphic>
+            <graphic url="C85000_DeptF4369" decls="#photograph"><desc>Middle part (lines 5-7) and lower (lines 8-13)  (Department of Antiquities, F 4369)</desc></graphic>
+         </facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="rgg1971a"/> <citedRange unit="page">170-71</citedRange></bibl>, whence <bibl><ptr target="AE"/> <citedRange>1973.561</citedRange></bibl>, 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD011633 ">011633</ref></citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><persName type="emperor" key="philippus1"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
+                    <name nymRef="Caesar"><expan><abbr>Cae</abbr><supplied reason="lost"><abbr>s</abbr><ex>ar</ex></supplied></expan></name>  <name nymRef="Marcus"><supplied reason="lost"><expan><abbr>M</abbr><ex>arcus</ex></expan></supplied></name> <name nymRef="Iulius"><expan><supplied reason="lost"><abbr>I</abbr></supplied><abbr>ul</abbr><ex>ius</ex></expan></name>
+                    <lb n="2"/><name nymRef="Philippus">Philippus</name> <w lemma="pius">pi<unclear>u</unclear><supplied reason="lost">s</supplied></w>
+                    <lb n="3"/> <w lemma="felix"><supplied reason="lost">Fe</supplied>lix</w> <w lemma="inuictus">inu<supplied reason="omitted">i</supplied>ctu<supplied reason="lost">s</supplied></w> <name nymRef="Augustus"><supplied reason="lost"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></supplied></name>
+                    <lb n="4"/> <w lemma="pontifex"><supplied reason="lost">pontifex</supplied></w> <w lemma="maximus">m<supplied reason="lost">a</supplied><lb n="5" break="no"/>ximus</w> <expan><w lemma="tribunicius"><supplied reason="lost"><abbr>trib</abbr><ex>unicia</ex></supplied></w>
+                    <lb n="6"/> <w lemma="potestas"><abbr>pot</abbr><supplied reason="lost"><ex>estate</ex></supplied></w></expan> 
+                    <w lemma="consul"><supplied reason="lost"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></supplied></w> <w lemma="proconsul"><supplied reason="lost"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></supplied></w>
+                    <lb n="7"/><expan><w lemma="pater"><supplied reason="lost"><abbr>p</abbr><ex>ater</ex></supplied></w> 
+                 <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan></persName> <w lemma="et"><supplied reason="lost">et</supplied></w> 
+                    <date><persName type="emperor" key="philippus2"><name nymRef="Marcus"><supplied reason="lost"><expan><abbr>M</abbr><ex>arcus</ex></expan></supplied></name> <name nymRef="Iulius"><supplied reason="lost"><expan><abbr>Iul</abbr><ex>ius</ex></expan></supplied></name>
+                    <lb n="8"/><name nymRef="Philippus">Philippus</name>
+                    <lb n="9"/><w lemma="nobilis">nobilissimus</w>
+                    <lb n="10"/><name nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ar</ex></expan></name> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                    <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name></persName></date>
+                    <lb n="11"/><w lemma="restituo">restituerunt</w>
+                    <lb n="12"/><w lemma="ab">a</w> <placeName nymRef="#Cyrenae" ref="#cyrene">Cyrenis</placeName>
+                    <lb n="12a"/> <space quantity="1" unit="line"/> 
+                    <lb n="13"/> <w lemma="milium"><expan><abbr>m</abbr><ex>ilia</ex></expan></w> 
+                    <w lemma="passus"><expan><abbr>p</abbr><ex>assuum</ex></expan></w> <num value="10">X</num>
+                </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Emperor Cae[sar M(arcus)] Jul(ius) Philippus, Pious, Fortunate, Invincible [Aug(ustus)?], high [priest, 
+             holding tribunician] power [for the - time, consul, proconsul, father] of the fatherland, [and M(arcus) Iul(ius)] Philip, most noble Caesar, consul, Aug(ustus): 
+             they restored <supplied reason="subaudible">the road</supplied> from Cyrene. 10 miles.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>One of three milestones of Philip on this road: <ref type="inscription" n="M.195">M.195</ref>, <ref type="inscription" n="M.197">M.197</ref>, <ref type="inscription" n="M.201">M.201</ref>, 
+               with probably <ref type="inscription" n="M.160">M.160</ref>; this is the fullest surviving text..</p>
+            <p>Line 3: The addition of Augustus lengthens the line surprisingly but seems necessary unless perhaps AVG in line 10 should be read AVGG - but that too would be unusual; for a similar problem see 
+               <ref type="inscription" n="M.197">M.197</ref>, the milestone of Philip at the eighth mile</p>
+            <p>Line 10: The young Philip became consul on 1st Jan. 247, Augustus in August 246 and consul II on 1st Jan. 248; 
+               assuming the text to have been drafted accurately it must belong to the second half of 247.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

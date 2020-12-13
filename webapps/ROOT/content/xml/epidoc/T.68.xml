@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T06500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.68</idno>
+            <idno type="ircyr2012">T06500</idno>
+            <idno type="JMR">67s</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>?<material>Sandstone</material> block</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Three texts, numbered from left to right, ii and iii <rs type="execution" key="litteris scariphatis">incised</rs>  within <rs type="decoration">wreath</rs>s. 
+                           There is a <rs type="decoration">caduceus</rs> to the right 
+                           of i.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i larger, ii smaller, iii smaller still. lunate sigmas; L for ἔτους; no measurements</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Gymnasium.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" cert="low" evidence="context">First century BCE-first century CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                        <placeName type="monuList" ref="https://www.slsgazetteer.org/1124">Gymnasium (later Byzantine Baths)</placeName>, probably North Wall (where similar texts are still in situ: 
+                        see on <ref type="inscription" n="T.75">T.75</ref>); recorded in <date type="found">1825</date>.</p>
+                  </provenance>
+                  <provenance type="observed">
+                     <p>Findspot (<date type="observed">1825</date>).</p>
+                  </provenance>
+                     
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+         <creation>From previous publications (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-08-06" who="Pietro">Tokenized</change>
+         <change when="2008-11-17" who="VA">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--JR 68.--><graphic url="PachoLXXXI" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXXI)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/> pl.<citedRange>LXXXI</citedRange></bibl>, whence 
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5262</citedRange></bibl>, 
+               <bibl><ptr target="marengo1988a"/><citedRange></citedRange></bibl>, 
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>1990.837</citedRange></bibl>
+             </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="fragment" n="i" type="textpart"><ab>
+                        <lb n="1"/><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w> <gap reason="lost" quantity="1" unit="character"/>
+                        <lb n="2"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιοϲ</ex></expan></name>
+                            <name nymRef="Ἰούλιος">Ἰούλι<lb n="3" break="no"/>ος</name> <name nymRef="Φόσκος">Φόϲ<lb n="4" break="no"/><unclear>κο</unclear>ϲ</name></persName>
+                    </ab></div>
+            <div subtype="fragment" n="ii" type="textpart"><ab>
+                    <lb n="1"/><date ref="https://godot.date/id/N2jReGYsmRSPdQWV8Dzakn"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w>
+                    <num value="25">ε<unclear>κ</unclear></num></date>
+                    <lb n="2"/><persName type="attested"><name nymRef="Τίτος"><expan><abbr>Τ</abbr><ex>ίτοϲ</ex></expan></name>
+                    <name nymRef="Ῥωμάνιος">Ῥωμά<lb n="3" break="no"/>νιοϲ</name> <name nymRef="Λουκιανός">Λ<lb n="4" break="no"/>ουκιανό<supplied reason="lost">ϲ</supplied></name></persName>
+                </ab></div>
+            <div subtype="fragment" n="iii" type="textpart"><ab>
+                    <lb n="1"/><date ref="https://godot.date/id/BkgWVm7TLw2Wdd7qjJbazB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w>
+                    <num value="22">κβ</num></date>
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-60037"><name nymRef="Ἀρίστιππος">Ἀρίϲτι<lb n="3" break="no"/>πποϲ</name> <persName type="attested" key="lgpn:V1-60036"><name nymRef="Δάχις">Δ<lb n="4" break="no"/>άχι<supplied reason="lost">οϲ</supplied></name></persName></persName>
+                </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="i.1">
+                  <rdg resp="#pacho1827">ΙΙ</rdg>
+                  <rdg resp="#cigiii">L ι΄</rdg>
+               </app>
+               <app loc="i.4">
+                  <rdg resp="#pacho1827">ΧΦϹ</rdg></app> 
+               <app loc="ii">
+                  <rdg resp="#cigiii">
+                     L ε΄ Χ[οιὰκ] . . . Μ[ά]νιος Λουκιανο[ῦ]
+                  </rdg>
+               </app>
+               <app loc="iii.3">
+                  <rdg resp="#cigiii">
+                     <note>Omits Δ</note>
+                  </rdg>
+               </app>
+               <app loc="iii.4">
+                  <rdg resp="#pacho1827">ΛΧΙΕ</rdg>
+                  <rdg resp="#cigiii">Omittted</rdg>
+                  <rdg resp="#marengo1988a">Δάχι[ος]</rdg>
+               </app>
+            </listApp>
+         </div>     
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note>. Year ?. G(aios) Ioulios Phoskos <supplied reason="explanation"><foreign xml:lang="la">G(aius) Julius Fuscus</foreign></supplied></p>
+            <p><note>ii</note>. <ref target="https://godot.date/id/N2jReGYsmRSPdQWV8Dzakn">Year 25</ref>. T(itos) Romanios Loukianos <supplied reason="explanation"><foreign xml:lang="la">T(itus) Romanius Lucianus</foreign></supplied></p>
+         <p><note>ii</note>. <ref target="https://godot.date/id/BkgWVm7TLw2Wdd7qjJbazB">Year 22</ref>. 
+            Aristippos <supplied reason="subaudible">son</supplied> of Dachis</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For this group of texts <ref type="inscription" n="T.50">T.50</ref>-<ref type="inscription" n="T.74">T.74</ref>, collected 
+               by Pacho, see on <ref type="inscription" n="T.50">T.50</ref>.</p><!--  (There are 3 other notes on report sheet to be noted): 
+               i) ? Delete Renigrated lines for Printer. ii) Alphabetic would be best. iii) ? return to such order as Pacho had. Text: ii) L1: Year 25. iii) L1: Year 22.-->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

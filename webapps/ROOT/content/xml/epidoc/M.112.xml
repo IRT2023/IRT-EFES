@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G02500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.112</idno>
+            <idno type="ircyr2012">G02500</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1288">Barke Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a funeral <objectType>stele</objectType>, probably of
+                                 <material>limestone</material>, with two incised lines on the
+                              moulding aparently in rough representation of a gable.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" key="scalpro">Inscribed</rs> on the face below,
+                           which is damaged at the lower right corner.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Irregular but deeply cut; cursive omega, sigma; superscript bars
+                        above the figures in line 5.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notBefore="0012" notAfter="0013" evidence="internal-date">12/13 CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>: 
+                     area of <placeName ref="https://www.slsgazetteer.org/1181">Barke</placeName>;
+                     photographed in <date type="found">1930</date></p>
+                  </provenance>
+                  <provenance type="observed">
+                     <p><placeName ref="https://www.slsgazetteer.org/1288">Barke Museum</placeName> (1930)</p>
+                  </provenance>
+
+
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription from photograph (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2013-09-25" who="TW">Edited photo info</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to
+            profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
+            elements</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc
+            RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2007-11-20" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="G02500_DeptE1404" decls="#photograph">
+         <desc>Face (detail from Department of Antiquities, E. 1404)</desc>
+      </graphic>
+      <graphic url="G02500-G02700_DeptE1404" decls="#photograph">
+         <desc>From left: <ref type="inscription" n="M.300">M.300</ref>(above), <ref type="inscription" n="M.113">M.113</ref> (below), <ref type="inscription" n="M.114">M.114</ref> and 
+            <ref type="inscription" n="M.112">M.112</ref> (Department of Antiquities, E. 1404)</desc>
+      </graphic>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+
+         <div type="bibliography">
+            <head>Bibliography</head>
+         </div>
+
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+               <lb n="1"/><date ref="https://godot.date/id/RH78AqhEWsUYZ7pbe6JFnL"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                  <num value="43">μγ</num></date>    <gap reason="lost" quantity="1" unit="character"/>
+               <lb n="2"/><persName type="attested"><name nymRef="Σῶσις">Ϲῶϲιϲ</name>
+               <lb n="3"/><persName type="attested"><name nymRef="Λεωνίδας">Λεωνί<lb n="4" break="no"/>δο<unclear>υ</unclear></name></persName></persName>
+                  <date type="life-span" dur="P25Y"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w></supplied>
+               <lb n="5"/><num value="25">κε</num> </date>
+            </ab>
+         </div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="1">
+                  <rdg> The traces of a final letter in this line were perhaps an abandoned attempt at Ϲ
+                  </rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/RH78AqhEWsUYZ7pbe6JFnL">Year 43</ref>: Sosis <supplied reason="subaudible">son</supplied> of Leonidas [aged] 25</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- <p>line 1, 43 of the Actian era = CE 12/13.</p> -->
+         </div>
+
+      </body>
+   </text>
+</TEI>

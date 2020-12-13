@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C02000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Claudia Arata</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.41</idno>
+            <idno type="ircyr2012">C02000</idno>
+            <idno type="JMR">623</idno>
+            <idno type="Excel">82</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower part of an engaged <material>marble</material> 
+                              <objectType>column</objectType> (<dimensions><width>0.59</width> <height>0.63</height> <depth>0.52</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" key="scalpro">Inscribed</rs> on the curved surface.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                      <handNote>First century CE; lines 1-3, 5, <height unit="metre">0.045</height>; line 4, 
+                         <height unit="metre">0.04</height>; stop for abbreviation, line 3.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace> Unknown, but presumably moved from the <ref target="https://www.slsgazetteer.org/995">Stoa of Hermes and Herakles</ref>
+                        or the so-called <ref target="https://www.slsgazetteer.org/991">House of Jason Magnus</ref>.</origPlace>
+                     <origDate notAfter="0200" notBefore="0101" precision="low" evidence="lettering prosopography">Second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/989">Temple of Aphrodite</placeName>.
+                               First recorded in <date type="found">1817</date> with <ref type="inscription" n="C.42">C.42</ref>; 
+                               seen "about 10 yards to the eastwards of the Temple" by Smith and Porcher, in 1861.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>  
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Shahat">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-03-10" who="MGDA">fixed CIG bibliography</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-14" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-10" who="Pietro">tokenized</change>
+         <change when="2007-11-05" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. F. 350, 351, 352-->
+      <graphic url="PachoLXIII" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXIII)</desc></graphic>
+      <graphic url="PachoLXIII_05" decls="#photograph"><desc>Transcription detail (1827, Pacho, plate LXIII.5)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="editions" type="bibliography">
+            <head>Bibliography</head>
+            <p> <bibl><ptr target="dellacella1819"/>, <citedRange>142</citedRange></bibl>;
+               <bibl><ptr target="pacho1827"/> <citedRange unit="plate"><ref target="https://gallica.bnf.fr/ark:/12148/btv1b85409935/f76.item#">LXIII.5</ref></citedRange>, with Letronne, p.394</bibl>; 
+               <bibl><ptr target="beechey1828"/>, <citedRange>545</citedRange></bibl>, 
+               from all of which and from a copy made in 1819 by Fr. Pacifico da Monte Cassiano and passed to Pietro Negri, the Sardinian consul in Tripoli,
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5132</citedRange>, p. 517</bibl>
+               whence 
+              <bibl><ptr target="SGDI"/>, <citedRange>4856</citedRange></bibl>;  mentioned, <bibl><ptr target="smith-porcher1864"/>, <citedRange unit="page">77</citedRange></bibl>;
+               republished <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">60</citedRange> (53), p. 96,  pl. XI, fig. 16</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>9.58</citedRange></bibl>; 
+               <bibl><ptr target="romanelli1943"/>, <citedRange>184</citedRange></bibl><!-- check -->.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                
+                <lb n="1"/><persName type="attested" key="lgpn:V1-63016"><name nymRef="Κλαυδία">Κλα<unclear>υ</unclear>δ<unclear>ι</unclear>αν</name> <name nymRef="Ἀράτα">Ἀ<supplied reason="lost" evidence="previouseditor">ράταν</supplied></name> 
+                <persName type="attested" key="lgpn:V1-65953"><name nymRef="Φιλίσκος"><supplied reason="lost" evidence="previouseditor">Φιλίσκω</supplied></name></persName></persName> 
+                <lb n="2"/><w lemma="θυγάτηρ">θυγατέρα</w> <w lemma="φύσις">φύσει</w> <w lemma="δέ">δὲ</w> <persName type="attested" key="lgpn:V1-63906"><name nymRef="Εὐφάνης">Εὐφάνευς</name></persName>
+                <lb n="3"/> <w lemma="μήτηρ">ματέρα</w> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-65211"><name nymRef="Κλαυδία"><expan><abbr>Κλ</abbr><ex>αυδίας</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Ὀλυμπιάς">Ὀλυμπιάδος</name></persName>
+                <lb n="4"/> <w lemma="αἰώνιος">αἰωνίω</w> <g ref="symbols.xml#stop"/> <w lemma="γυμνασιαρχίς"><unclear>γυμνασιαρχίδος</unclear></w> 
+                <lb n="5"/> <w lemma="ἀρετή">ἀρετᾶς</w> <w lemma="ἕνεκα">ἕνεκα</w> <g ref="symbols.xml#stop"/> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυραναῖοι</placeName>
+                
+            </ab>
+</div>
+         <div type="apparatus">
+            <listApp>
+                    <app loc="1">
+                  
+                  <rdg resp="#dellacella1819">ΚΛΑΙΔΙΑΝ</rdg><note>: the letters are truncated;</note>
+                  <note> Pacho, Beechey and Negri all reported the complete line.</note>
+               </app>
+                  <app loc="2">
+                       <rdg resp="#pacho1827">Εὐφανες
+                  </rdg>
+                  <rdg resp="#beechey1828">ΕΥΦΑΝΣΥΣ</rdg>
+               </app>
+                </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Claudia Arata (filia per adozione, adottiva) di Filisco, ma per natura (legittima) di Eufane, madre di Claudia Olimpiade, 
+               ginnasiarchide a vita, della sua virtù a causa, i Cirenei (onorarono - con questa statua?)</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Klaudia <supplied reason="explanation"><foreign xml:lang="la">Claudia</foreign></supplied> A[rata] daughter of <supplied reason="lost">Philiskos</supplied>, 
+               natural daughter of Euphanes, mother of Klaudia <supplied reason="explanation"><foreign xml:lang="la">Claudia</foreign></supplied> Olympia the perpetual gymnasiarch; the Cyrenaeans <supplied reason="subaudible">honoured her</supplied> because of her virtue</p></div>
+         </div>
+         <div type="translation" resp="#mh" xml:lang="ar"><p>كلوديا (كلوديا) أَ[راتا] ابنة [فيليسكوس]، ابنة طبيعية لإيفانيس، أُمًا لكلوديا ( كلوديا) أوليمبيا، مشرفة الجمنازيوم الدائمة؛ الكيرينيين (كرموها) لما تتصف به من فضيلة</p></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Probably recut, presumably because the monument was damaged in the Jewish War; for an originally first century date see below.</p>
+            <p>Line 1: Claudia Arata can hardly be other than a sister of Pausanias, Philiskos and Philoxenos, all natural sons of a Euphanes, adopted by a Philiskos, 
+               priests of Apollo in the Augustan period: Philiskos in 16/15 BCE (<ref type="inscription" n="C.95">C.95</ref>), Pausanias in CE 2 (<ref target="https://igcyr.unibo.it/gvcyr027">GVCyr 27</ref>, line 1; <ref type="inscription" n="C.48">C.48</ref>, lines 11-12; cf. <ref type="inscription" n="C.669">C.669</ref>, <ref type="inscription" n="C.716">C.716</ref>). 
+            Olympias, adopted daughter of a Philiskos, natural daughter of a gymnasiarch whose name is lost (<ref type="inscription" n="C.761">C.761</ref>), should be another sister.</p>
+            <p>Arata will have received citizenship from Claudius or Nero and the original inscription of this monument is likely to have been of mid first century date. 
+               The family certainly survived in the second century.Claudia Arata, priestess of Artemis in the late second or early third century (<ref type="inscription" n="C.221">C.221</ref>), 
+               may well be a descendant - which explains the presumed reinscription.</p>
+            <p> <!--For women gymnasiarchs see Oliverio and Romanelli, linescc.?? and for the perpetual gymnasiarchy, Robert.--></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

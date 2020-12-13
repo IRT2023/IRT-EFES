@@ -157,14 +157,24 @@
   </xsl:template>
 
   <xsl:template match="tei:repository[@ref]" mode="facet_source_repository">
+    <xsl:variable name="repo-id" select="substring-after(@ref,'#')"/>
+    <xsl:variable name="repository-id" select="document('../../../content/xml/authority/institution.xml')//tei:place[@xml:id=$repo-id]//tei:placeName"/>
     <field name="source_repository">
-      <xsl:value-of select="@ref"/>
+      <xsl:choose>
+        <xsl:when test="$repository-id">
+          <xsl:value-of select="$repository-id"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$repo-id"/>
+        </xsl:otherwise>
+      </xsl:choose>
     </field>
   </xsl:template>
 
-  <xsl:template match="tei:material[@ref]" mode="facet_support_material">
+  <xsl:template match="tei:material" mode="facet_support_material">
     <field name="support_material">
-      <xsl:value-of select="@ref" />
+      <xsl:value-of select="upper-case(substring(., 1, 1))" />
+      <xsl:value-of select="substring(., 2)" />
     </field>
   </xsl:template>
 
@@ -184,9 +194,10 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="tei:objectType[@ref]" mode="facet_support_object_type">
+  <xsl:template match="tei:objectType" mode="facet_support_object_type">
     <field name="support_object_type">
-      <xsl:value-of select="@ref" />
+      <xsl:value-of select="upper-case(substring(normalize-space(.), 1, 1))" />
+      <xsl:value-of select="substring(normalize-space(.), 2)" />
     </field>
   </xsl:template>
 
@@ -198,11 +209,17 @@
 
   <xsl:template match="text()" mode="facet_mentioned_people" />
 
-  <xsl:template match="tei:placeName[@ref]" mode="facet_found_provenance">
+  <xsl:template match="tei:placeName[@type='ancientFindspot']" mode="facet_found_provenance">
+    <field name="found_provenance">
+      <xsl:value-of select=".[1]" />
+    </field>
+  </xsl:template>
+  
+  <!-- <xsl:template match="tei:placeName[@ref]" mode="facet_found_provenance">
     <field name="found_provenance">
       <xsl:value-of select="@ref" />
     </field>
-  </xsl:template>
+  </xsl:template> -->
 
   <xsl:template match="tei:placeName[@ref] | tei:geogName[@ref]" mode="facet_mentioned_places">
     <field name="mentioned_places">
@@ -239,7 +256,7 @@
   </xsl:template>
 
   <xsl:template name="field_found_provenance">
-    <xsl:apply-templates mode="facet_found_provenance" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']" />
+    <xsl:apply-templates mode="facet_found_provenance" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" />
   </xsl:template>
 
   <xsl:template name="field_lemmatised_text">
@@ -261,11 +278,11 @@
   </xsl:template>
 
   <xsl:template name="field_source_repository">
-    <xsl:apply-templates mode="facet_source_repository" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:repository[@ref]"/>
+    <xsl:apply-templates mode="facet_source_repository" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:repository"/>
   </xsl:template>
 
   <xsl:template name="field_support_material">
-    <xsl:apply-templates mode="facet_support_material" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support/tei:material[@ref]" />
+    <xsl:apply-templates mode="facet_support_material" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support//tei:material" />
   </xsl:template>
   
   <xsl:template name="field_origin_date_evidence">
@@ -273,7 +290,7 @@
   </xsl:template>
 
   <xsl:template name="field_support_object_type">
-    <xsl:apply-templates mode="facet_support_object_type" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support/tei:objectType[@ref]" />
+    <xsl:apply-templates mode="facet_support_object_type" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support//tei:objectType" />
   </xsl:template>
 
   <xsl:template name="field_text">

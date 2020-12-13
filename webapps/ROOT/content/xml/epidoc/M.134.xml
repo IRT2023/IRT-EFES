@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G03900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Caption</rs>s for <rs type="textType">Christian</rs> mosaic
+               panels</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.134</idno>
+            <idno type="ircyr2012">G03900</idno>
+            <idno type="JMR">569</idno>
+            <idno type="Excel">1250</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                  URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1100">Gasr Leibia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Mosaic</material> <objectType>floor</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="tessellis">Mosaic</rs> lettering, within panels (each <dimensions>
+                                 <width>0.60</width>
+                                 <height>0.60</height>
+                        </dimensions>). i, in Row 10, panel 3; ii, in Row 5, panel 3; iii-v in Row 4, panels 2, 3, 4; vi-viii in Row 2, panels 2-4; 
+                           ix-xi in Row 1, panels 2, 3, 4.
+                           Texts vi, vii, viii, ix: written above the image; x: written on
+                           either side; i, iii, iv, v, xi : written at the side; ii: written
+                           within a <rs type="decoration">wreath</rs> (internal <dim type="diameter">0.41</dim>)</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Average <height>0.045</height>; lunate epsilon, sigma, omega; cursive delta in x; cursive lambda in iv, x; rho with
+                        slant stroke in i, ii, iii, v, x; scroll for abbreviation in ii.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>East end of the nave of the Church</origPlace>
+                     <origDate notBefore="0538" notAfter="0539" evidence="internal-date" precision="low">CE 539</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1618">Theodorias/Gasr Leibia</placeName>, in the 
+                     <placeName type="monuList" ref="https://www.slsgazetteer.org/1182">East Church</placeName>, on the floor of the nave; found in
+                                 <date type="found">1957</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/1100">Gasr Leibia Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/83860">Qasr Libiya</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2013-10-10" who="TW">Added picture code</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-09-01" who="GB">Fixed badly marked-up texts; updated bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc
+            RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-04" who="LM">turned to XML and tidied</change>
+         <change when="2010-02-01" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="JMR_569-11_013" decls="#photograph"><desc>Text i (Reynolds XIII.1)</desc></graphic>
+      <graphic url="JMRSB04_269" decls="#photograph"><desc>Text i (Reynolds, SB.IV.269)</desc></graphic>
+      <graphic url="G03900" decls="#photograph"><desc>Text ii</desc></graphic>
+      <graphic url="JMR_569-10_011" decls="#photograph"><desc>Text ii</desc></graphic>
+       <graphic url="JMR_569-10_012" decls="#photograph"><desc>Text ii (Reynolds XIII.4)</desc></graphic>
+      <graphic url="JMR_569-7_009" decls="#photograph"><desc>Text iii (Reynolds XIII.10)</desc></graphic>
+      <graphic url="JMR_569-9_010" decls="#photograph"><desc>Text v (Reynolds XIII.9)</desc></graphic>
+      <graphic url="JMR_569-4_007" decls="#photograph"><desc>Text ix above, vi below (Reynolds XIII.11)</desc></graphic>
+      <graphic url="JMR_569-5_008" decls="#photograph"><desc>Text vii (Reynolds XIII.5)</desc></graphic>
+      <graphic url="JMRSB04_266" decls="#photograph"><desc>Text vii (Reynolds, SB.IV.266)</desc></graphic>
+      <graphic url="JMR_569-1_001" decls="#photograph"><desc>Text ix (Reynolds XII.10.2</desc></graphic>
+      <graphic url="JMR_569-1_002" decls="#photograph"><desc>Text ix (Reynolds XIII.7)</desc></graphic>
+      <graphic url="JMRSB04_267" decls="#photograph"><desc>Texts ix and x (Reynolds, SB.IV.267)</desc></graphic>
+       <graphic url="JMR_569-2_003" decls="#photograph"><desc>Text x</desc></graphic>
+      <graphic url="JMRSB04_270" decls="#photograph"><desc>Texts x and xi (Reynolds, SB.IV.270)</desc></graphic>
+       <graphic url="JMR_569-3_005" decls="#photograph"><desc>Text xi (Reynolds XIII.6)</desc></graphic>
+       <graphic url="JMR_569-3_006" decls="#photograph"><desc>Text xi (Reynolds 12.10.1)</desc></graphic>
+      <graphic url="JMRSB04_268" decls="#photograph"><desc>Text xi (Reynolds, SB.IV.268)</desc></graphic>
+       </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p><bibl><ptr target="rgg1957"/><citedRange></citedRange>, with illustration</bibl>; i only <bibl><ptr target="rgg1961"/><citedRange></citedRange> with figure 1</bibl>; 
+               <bibl><ptr target="jmr1960"/> no. <citedRange>21.I</citedRange></bibl>, 
+               whence <bibl><ptr target="robertBE"/>, <citedRange>1961.835</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>18.768</citedRange>.a-j</bibl>, whence 
+              <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324465">324465</ref></citedRange></bibl>; 
+               described, <bibl><ptr target="stucchi1975"/>, <citedRange>400-403</citedRange></bibl>; 
+               <bibl><ptr target="jmr1980"/>, <citedRange unit="page"> 145, A</citedRange>, and plates</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>30.1787</citedRange>.A</bibl>, 
+               whence <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324535">324535</ref></citedRange></bibl>.
+               Republished in <bibl><ptr target="jmr-jbwp-rgg2003"/>, <citedRange>281.B</citedRange></bibl>; see also <bibl><ptr target="feisselBE"/>, <citedRange>2004.554</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>134</citedRange> and following</bibl>.</p>
+         </div>
+
+         
+
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div type="textpart" n="i">
+               <ab>
+                  <lb n="1"/><w lemma="ὁ">ὁ</w> <placeName nymRef="#Φάρος" ref="#pharos">Φά<lb break="no" n="2"/>ροϲ</placeName>
+               </ab>
+            </div>
+            <div type="textpart" n="ii">
+               <ab>
+                  <lb n="1"/> <w lemma="γίγνομαι">ἐγέ<lb break="no" n="2"/>νετο</w> <w lemma="καί">καὶ</w>
+                  <lb n="3"/> <w lemma="οὗτος">τοῦτο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔρ<lb break="no" n="4"/>γον</w>
+                 <date> <date ref="https://godot.date/eponymous_office/2LQmqZa54s6enn7LAuEGh4/UYwHR9QjSoPoV54337D9vC"><w lemma="ἐπί">ἐπὶ</w> <persName type="attested" key="lgpn:V1-60910"><name nymRef="Μακάριος">Μακαρί<lb break="no" n="5"/>ου</name></persName>
+                  <w lemma="ὁ">τοῦ</w> <w lemma="ὅσιος">ὁϲιωτά<lb break="no" n="6"/>του</w> <w lemma="ἐπίσκοπος"><expan><abbr>ἐπιϲκό</abbr><ex>που</ex></expan></w></date>
+                  <lb n="7"/><date ref="https://godot.date/id/K4kJUFbcNjmRxxGMVzLJEU"><w lemma="ἰνδικτιών"><expan><abbr>ἰνδ</abbr><ex>ικτιῶνος</ex></expan></w> <num value="3">γ</num></date></date>
+               </ab>
+            </div>
+            <div type="textpart" n="iii">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="euphrates"><placeName nymRef="#Εὐφράτης" ref="#euphrates">Εὐ<lb break="no" n="2"/>φρά<lb break="no" n="3"/>τη<unclear>ϲ</unclear></placeName></persName>
+               </ab>
+            </div>
+            <div type="textpart" n="iv">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="kastalia"><placeName nymRef="#Κασταλία" ref="#castalia">Καϲ<lb break="no" n="2"/>τα<lb break="no" n="3"/>λί<lb break="no" n="4"/>α</placeName></persName>
+               </ab>
+            </div>
+            <div type="textpart" n="v">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="tigris"><placeName nymRef="#Τίγρις" ref="#tigris">Τί<lb break="no" n="2"/>γριϲ</placeName></persName>
+               </ab>
+            </div>
+            <div type="textpart" n="vi">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="geon"><name nymRef="Γήων">Γή<g ref="symbols.xml#head"/>ων</name></persName>
+               </ab>
+            </div>
+            <div type="textpart" n="vii">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="ananeosis"><name nymRef="Ἀνανέωσις">Ἀνα<g ref="symbols.xml#conch"/>νέω<lb break="no" n="2"/><g ref="symbols.xml#conch"/>ϲιϲ</name></persName>
+               </ab>
+            </div>
+            <div type="textpart" n="viii">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="phison"><placeName nymRef="#Φίσων" ref="#phison">Φίϲων</placeName></persName>
+               </ab>
+            </div>
+            <div type="textpart" n="ix">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="kosmesis"><name nymRef="Κόσμησις">Κόϲμηϲιϲ</name></persName>
+               </ab>
+            </div>
+            <div type="textpart" n="x">
+               <ab>
+                  <lb n="1"/> <w lemma="πόλις">πόλιϲ</w> <w lemma="νέος">νέα</w>
+                  <lb n="2"/><placeName nymRef="#Θεοδωριάϲ" ref="#theodorias">Θεοδωριάϲ</placeName>
+               </ab>
+            </div>
+            <div type="textpart" n="xi">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="ktisis"><name nymRef="Κτίσις">Κτί<lb break="no" n="2"/>ϲιϲ</name></persName>
+               </ab>
+            </div>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p>i. The Pharos.</p>
+            <p>ii. This work too came into being <ref target="https://godot.date/eponymous_office/2LQmqZa54s6enn7LAuEGh4/UYwHR9QjSoPoV54337D9vC">in the time of Makarios the most holy bishop</ref> 
+               in <ref target="https://godot.date/id/K4kJUFbcNjmRxxGMVzLJEU">indiction year 3</ref>.</p>
+            <p>iii. Euphrates.</p>
+            <p>iv. Castalia.</p>
+            <p>v. Tigris.</p>
+            <p>vi. Geon.</p>
+            <p>vii. Renewal.</p>
+            <p>viii. Phison.</p>
+            <p>ix. Adornment.</p>
+            <p>x. The new city Theodorias.</p>
+            <p>xi. Foundation.</p></div>
+            </div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the building, and for a discussion of the texts, see Reynolds et al., loc cit above., 273-286.</p>
+            
+            <p>The new city, presumably the settlement at Gasr Leibia, is not otherwise attested and
+               must have been quite small. It was apparently named for the Empress Theodora, and was
+               probably therefore founded during her lifetime. The only year of her reign which was
+               the third of an indiction (see ii, line 7) was CE 539.<!-- see Feissel 2000 no. 70 + 73 CHECK, Modéran 1996 --></p>
+            
+            <!-- <p>This is the constructed of the two churches on the site and maybe the product of a schismatic group.
+               For the personifications of Κόσμησις, Κτίσις and Ἀνανέωσις cf. e.g. IGLC III, 750, 771, 1016, 1119 
+               from Antioch and the neighbourhood. In Cyrenaica see also at Ras el Hilal. </p>-->
+
+            <!-- ** More commentary in CMC. Anything to copy here, or just cite? ** -->
+            <!-- No. 1: Row 1, panel 2 containing a figure of a cloaked
+                              woman holding a censer, between two trees; No. 2: panel 3 contains
+                              representation of a city gate; No. 3: contains figure of a woman holding a censer  -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

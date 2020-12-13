@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P21900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Christian</rs> 
+               <rs type="textType">funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.327</idno>
+            <idno type="ircyr2012">P21900</idno>
+            <idno type="JMR">399</idno>
+            <idno type="Excel">742</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum<!-- check --></repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Marble</material> 
+                              <objectType>panel</objectType> recontructed from three pieces (
+               <width unit="metre">0.60</width> 
+                              <height unit="metre">0.59</height> 
+                              <depth unit="metre">0.12</depth>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably sixth century: 
+               lines 1, 4, 5, <height unit="metre">0.045</height>; 
+               lines 2, 3, <height unit="metre">0.05</height>; 
+               an ivy leaf on a stalk at the ends of lines 2 and 4; eta with a vertical stroke through the cross bar in line  5;
+               superscript bar above the abbreviation in line  5.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate evidence="lettering" precision="low" cert="low" notBefore="0501" notAfter="0600">Probably sixth century </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/953">modern village</placeName>, 
+                              in the area of the former military hospital; found before <date type="found">1936</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>.<!-- check --></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+            <!--Joyce M. Reynolds, J.B. Ward-Perkins and R.M. Goodchild , Christian Monuments of Cyrenaica, London, 2003, 199.4.--></sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
+         <change when="2011-02-22" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-01" who="DT">Incorporated bibliography and notes from CMC</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="CMR">tagged description, corrected text</change>
+         <change when="2009-04-23" who="CB">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_240front" decls="#photograph"><desc>Face (1961, Joyce Reynolds III.20)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p>
+               <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">534</citedRange> (58), p. 257,  pl. CVI, fig. 99</bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>9.408</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324257">324257</ref></citedRange></bibl>;
+               <bibl><ptr target="jmr1960"/>, <citedRange>16</citedRange></bibl>;
+               <bibl><ptr target="jmr-jbwp-rgg2003"/>, <citedRange>200.4</citedRange></bibl>; mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>103</citedRange></bibl>.
+            </p>
+         </div>
+         
+         
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><g ref="symbols.xml#crux"/> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="μνήμη">μνήμηϲ</w> 
+                    <lb n="2"/> <w lemma="κοίμησις">κοιμήϲεωϲ</w> <g ref="symbols.xml#leaf"/> <lb n="3"/><w lemma="καί">καὶ</w> <w lemma="ἀνάπαυσις">ἀναπαύϲεωϲ</w> 
+                    <lb n="4"/><w lemma="ὁ">τῆϲ</w> <w lemma="μακάριος">μακαρίαϲ</w> <g ref="symbols.xml#leaf"/> <lb n="5"/> <w lemma="δούλη">δούλης</w> <w lemma="ὁ">τοῦ</w> 
+                        <persName type="divine" key="kyrios"><w lemma="θεός"><expan><abbr>Θ</abbr><ex>εο</ex><abbr>ῦ</abbr></expan></w></persName> 
+                           <persName type="attested" key="lgpn:V1-61352"><name nymRef="Ἰουλία">Ἰουλίαϲ</name></persName>
+                </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Per la memoria, il (giusto) sonno ed il riposo (eterno) della, morta nella grazia 
+            del Signore, serva di Dio Giulia.</p></div>
+            <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p>For the memory, the rest and repose of the blessed servant of God, Julia.</p></div>
+            </div>
+        
+         <div type="commentary">
+            <p>The dating is not very secure.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

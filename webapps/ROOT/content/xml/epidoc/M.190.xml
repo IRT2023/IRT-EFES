@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C97700" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Dedication</rs> to Iatros and Iaso</title>
+                <editor xml:id="cdl">Catherine Dobias-Lalou</editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">M.190</idno>
+            <idno type="ircyr2012">C97700</idno>
+                <availability>
+                    <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+                    <p>All reuse or distribution of this work must contain somewhere a link back to the
+                        URL <ref>http://inslib.kcl.ac.uk/</ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p> Cylindrical plain <objectType>base</objectType> of white <material>marble</material>; on top, the beginning of a smaller
+                                        circular element is partially preserved in the middle and two holes for attachment, one still full of metal, face one another 
+                                        diametrically   
+                                        (<dimensions>
+                                            <height>0.56</height>
+                                            <dim type="diameter">0.30</dim>
+                                        </dimensions>).</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on one half of the outer surface </layout> 
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote><height min="0.045" max="0.05">0.045 to 0.05</height>, very carefully cut with small serifs; lunar epsilon mu, sigma, omega; 
+                            alpha with broken bar, pi with equal hastae and upper bar protruding on both sides.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot</origPlace>.
+                            <origDate evidence="lettering nomenclature" notBefore="0150" notAfter="0250" precision="low" cert="low">probably second half of second century
+                            or third century AD</origDate>
+                        </origin>
+                        
+                                <provenance type="found">
+                                    <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                                        <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>: 
+                                        no findspot reported.
+                                   </p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p>Seen by Dobias-Lalou in <date type="observed">1979</date> outside Casa Paris, in <date type="observed">1997</date> in the courtyard of the new Museum, both places
+                                        belonging to <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="InsLib">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://www.geonames.org/" key="Shahat">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription from stone (CDL)</creation></profileDesc>
+        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+            <change when="2014-11-14" who="cdl">created file and filled</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><!-- Photographs: there should be some in JMR's; also CD NB/79/X/19; also Macerata archive (see Marengo's publication): three snapshots allowing a full reading
+        of the circular surface-->
+        <graphic url="JMRNB03_064" decls="#photograph"><desc>View (Reynolds III.64)</desc></graphic>
+        <graphic url="JMRNB09_006" decls="#photograph"><desc>Face, left side (Reynolds IX.6)</desc></graphic>
+        <graphic url="Photos_0387" decls="#photograph"><desc>Face, right side (Reynolds IX.7)</desc></graphic>
+    </facsimile>
+    <text>
+        <body>
+            
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p>Mentioned <bibl><ptr target="SECir"/> note on <citedRange>165</citedRange>, p. 316</bibl>;
+                    lines 3-6 published <bibl><ptr target="cdl1993"/>, <citedRange>5</citedRange>, p. 34, (no image)</bibl>, whence
+                    <bibl><ptr target="SEG"/> <citedRange>43.1191</citedRange></bibl>;
+                    discussed <bibl><ptr target="cdl2000"/>, <citedRange>a</citedRange>, p. 225</bibl>;
+                    complete text published by <bibl><ptr target="marengo2003"/><citedRange></citedRange></bibl>, whence 
+                    <bibl><ptr target="cdlBE"/>, <citedRange>2004.453</citedRange></bibl>, 
+                    <bibl><ptr target="SEG"/> <citedRange>53.2052</citedRange></bibl>.
+                    </p>
+                
+            </div>
+          
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+                <head>Text</head>
+                <ab>
+                    <lb n="1"/><space quantity="2" unit="character"/> <persName type="divine" key="methusis"><name nymRef="Μεθύσις">Μεθύϲι</name></persName>,<space quantity="4" unit="character"/>
+                    <lb n="2"/><space quantity="2" unit="character"/> <persName type="divine" key="athena"><name nymRef="Μινέρβα">Μινέρβι</name></persName>, <space quantity="4" unit="character"/>
+                    <lb n="3"/><space quantity="1" unit="character"/> <persName type="divine" key="iatros"><name nymRef="Ἰατρός">Ἰατρῶι</name></persName> <persName type="divine" key="iaso"><name nymRef="Ἰασώ">Ἰαϲο͂ι</name></persName>, <space quantity="3" unit="character"/>
+                    <lb n="4"/> <w lemma="θεός">θεοῖϲ</w> <w lemma="ἐπήκοος">ἐπηκόοιϲ</w>,
+                    <lb n="5"/><persName type="attested"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Λύκος">Λύκοϲ</name></persName> <w lemma="εὐχή">εὐχὴν</w>
+                    <lb n="6"/><space quantity="2" unit="character"/> <w lemma="ἀνατίθημι">ἀνέθηκα</w> <space quantity="4" unit="character"/>
+                    <lb n="7"/><g ref="symbols.xml#leaf"/> </ab>
+            </div>
+          
+            
+            <div type="translation" xml:space="preserve"><head>Translation</head>
+                <div type="translation" resp="#cmr" xml:lang="en"><p>For Methysis, Minerva, Iatros, Iaso, gods who listen, I Kl(audios) <supplied reason="explanation"><foreign xml:lang="la">Cl(audius)</foreign></supplied> Lykos dedicated 
+                    <supplied reason="subaudible">this in fulfilment of</supplied> a vow</p></div>
+            <div type="translation" source="#cdl2000" xml:lang="fr"><p>À Methysis, Minerve, Iatros et Iasô, divinités bienveillantes, moi Klaudios Lykos, j'ai consacré (ce monument) en accomplissement d'un voeu.</p></div>
+         </div>
+           
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>For other texts associating Iatros and Iaso see <ref type="inscription" n="C.228">C.228</ref>, <ref type="inscription" n="M.185">M.185</ref>, <ref type="inscription" n="C.756">C.756</ref>, 
+                    <ref type="inscription" n="M.189">M.189</ref>, <ref type="inscription" n="M.191">M.191</ref>, and Dobias-Lalou, loc.cit. Iatros is the name of Asklepios in the sanctuary of Balagrae and in the city of Cyrene 
+                    (see in the fourth century BCE <ref target="https://igcyr.unibo.it/igcyr011600">igcyr011600</ref>). In the other dedications he is associated with his daughter Iaso, 
+                    mostly without καί. This is the only inscription 
+                   where the pair is associated with Methysis (Inebriation), usually a dangerous entity, and the Roman goddess Minerva, who is more usually considered a 
+                benevolent deity. For further comments see Marengo, loc. cit.</p>
+          	<p>As pointed by Marengo, Μεθύσι stands for Μεθύσει because of iotacism. This ending might
+          	have served as a model for the dative Μινέρβι, translating the Latin name <foreign xml:lang="la">Minerva</foreign>.</p>
+	<p>Line 4: ἐπήκοος 'listening to prayers' is used for benevolent or saviour gods.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C10800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">prayer</rs> for the safety of the Emperor</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.146</idno>
+            <idno type="ircyr2012">C10800</idno>
+            <idno type="JMR">691</idno>
+            <idno type="Excel">1044</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from the right side of a white <material>marble</material> <objectType>stele</objectType>
+                              (<dimensions><width>0.21</width> <height>0.20</height> <depth>0.175</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which has been badly and probably 
+                           deliberately defaced, possibly during the Jewish revolt of 115 CE, or perhaps by Christians.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE, <height>0.013</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" evidence="lettering" precision="low">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                             <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>; found before <date type="found">1941</date>, and  
+                              lying in the north eastern corner of the squarein <date type="found">1956</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-17" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2009-06-11" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0198" decls="#photograph"><desc>Face (Joyce Reynolds)</desc></graphic>
+      <graphic url="Photos_0219" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="Photos_0220" decls="#photograph"><desc>Face</desc></graphic><!--Dept. JR I 45.--></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl> <ptr target="jmr1962a"/>, <citedRange>1</citedRange></bibl>
+            </p>
+         </div>
+         
+<!--         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" quantity="1" unit="line"/> 
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <space quantity="1" unit="character"/>  
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>i</unclear></orig>
+                    <w lemma="nos">n<unclear>o</unclear>s</w> <w lemma = "sentio">sen</w> 
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
+            <w lemma="populus"><expan><abbr><unclear>p</unclear></abbr><ex>opuli</ex></expan></w> 
+                    <placeName type="ethnic"><expan><abbr>R</abbr><ex>omani</ex></expan></placeName> <name nymRef="Quirites">Quiritium</name> 
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
+            <w><supplied reason="lost">eue</supplied>ntum<expan><abbr>q</abbr><ex>ue</ex></expan></w> 
+                    <w lemma="bonus">bo<supplied reason="lost">nu</supplied>m</w> 
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> 
+                    <w lemma="Romanus">R</w> <gap reason="lost" quantity="5" unit="character"/> <w lemma = "astus">astu</w> 
+                    <w lemma="is"><unclear>e</unclear>a</w> <w lemma="ita">i<unclear>t</unclear>a</w> <w><unclear>f</unclear>axis</w> 
+                    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w><unclear>x</unclear>v</w> 
+                    <w lemma="tu"><supplied reason="lost">t</supplied>ibi</w> <w lemma= "datus">datum</w> <w lemma= "eo">iri</w> 
+            <w lemma= "voveo>uouemu<supplied reason="lost">s</supplied></w> 
+                    <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="qui">quod</w> <w lemma= "hodie">hodie</w>
+            <w lemma = "voveo">uouimus</w> 
+                    <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <space quantity="1" unit="character"/> 
+                    <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="qui">quod</w>
+                    <w lemma= "hodie">hodie</w> <w lemma = "voveo">uou<supplied reason="lost">imus</supplied></w> 
+                    <lb n="9a"/><gap reason="lost" quantity="1" unit="line"/>
+                </ab></div>-->
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="in">in</w> <w lemma="is">ea</w> <w lemma="uerbum">uerba</w> <w lemma="qui">quae</w> 
+                       <w lemma="infra">infra</w> <w lemma="scribo">scripta</w> <w lemma="sum">sunt</w></supplied> 
+                    <lb n="2"/><supplied reason="lost"><persName type="divine" key="zeus"><name nymRef="Iupiter">Iupiter</name> 
+                       <w lemma="optimus"><expan><abbr>O</abbr><ex>ptime</ex></expan></w> 
+                       <w lemma="maximus"><expan><abbr>M</abbr><ex>axime</ex></expan></w></persName> 
+                       <w lemma="si">si</w> <w lemma="imperator">imperator</w></supplied> 
+                    <gap reason="lost" extent="unknown" unit="character"/> 
+               <w lemma="qui"><supplied reason="lost">que</supplied><unclear>m</unclear></w> <w lemma="nos">nos</w> 
+                    <w lemma="sentio">sen<lb 
+                       n="3" break="no"/><supplied reason="lost">timus</supplied></w> 
+               <supplied reason="lost"><w lemma="dico">dicere</w> <w lemma="uiuo">uiuet</w> <w lemma="domus">domus</w><w lemma="que">que</w> 
+                  <w lemma="is">eius</w> <w lemma="incolumis">incolumis</w> <w lemma="sum">erit</w> 
+                        <w lemma="ante"><expan><abbr>a</abbr><ex>nte</ex></expan></w> 
+                  <w lemma="dies"><expan><abbr>d</abbr><ex>iem</ex></expan></w> <num value="3">III</num> 
+                    <w lemma="nonae"><expan><abbr>non</abbr><ex>as</ex></expan></w> 
+                  <rs type="month" key="ian"><w lemma="Ianuarius"><expan><abbr>Ian</abbr><ex>uarias</ex></expan></w></rs> 
+                  <w lemma="qui">quae</w> <w lemma="proximus">proximae</w> 
+                      <expan>  <w lemma="populus"><abbr>P</abbr><ex>opulo</ex></w> 
+                  <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName> </expan>
+                  <placeName type="ethnic" nymRef="#Quiris" ref="#roma">Quiritibus</placeName></supplied> 
+                        <w lemma="respublica"><supplied reason="lost"><expan><abbr>reip</abbr><ex>ublicae</ex></expan></supplied></w>  
+                  <expan>  <w lemma="populus"><abbr><unclear>P</unclear></abbr><ex>opuli</ex></w> 
+               <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omani</ex></placeName> </expan>
+               <placeName type="ethnic" nymRef="#Quiris" ref="#roma">Quiritium</placeName> 
+                    <lb n="4"/><supplied reason="lost"><w lemma="sum">erunt</w> <w lemma="sum">fuerint</w> 
+                       <w lemma="is">eum</w><w lemma="que">que</w> <w lemma="dies">diem</w> <w lemma="is">eos</w><w lemma="que">que</w> <w lemma="saluus">saluos</w> <w lemma="seruo">seruaueris</w> 
+                       <w lemma="ex">ex</w> <w lemma="periculum">periculis</w> <w lemma="si">si</w> 
+                    <w lemma="qui">qua</w> <w lemma="sum">sunt</w> <w lemma="sum">erunt</w><w lemma="ue">ue</w> <w lemma="ante">ante</w> <w lemma="is">eum</w> 
+                       <w lemma="dies">diem</w></supplied> <w lemma="eventum"><supplied reason="lost">eue</supplied>ntum</w><w lemma="que">que</w> 
+               <w lemma="bonus">bo<supplied reason="lost">nu</supplied>m</w> 
+                    <lb n="5"/><supplied reason="lost"><w lemma="ita">ita</w> 
+                       <w lemma="utor">uti</w> <w lemma="nos">nos</w> <w lemma="sentio">sentimus</w> 
+                       <w lemma="dico">dicere</w> <w lemma="do">dederis</w> <w lemma="is">eos</w><w lemma="que">que</w> <w lemma="in">in</w> <w lemma="is">eo</w> 
+                       <w lemma="status">statu</w> <w lemma="qui">quo</w> <w lemma="nunc">nunc</w> <w lemma="sum">sunt</w> 
+                       <w lemma="aut">aut</w> <w lemma="is">eo</w> <w lemma="bonus">meliore</w></supplied> 
+                        <w lemma="seruo"><supplied reason="lost">seruaue</supplied><unclear>r</unclear><supplied reason="lost">is</supplied></w> 
+                    <w lemma="astus">astu</w> <w lemma="is"><unclear>e</unclear>a</w> 
+               <w lemma="ita">i<unclear>t</unclear>a</w> <w lemma="facio"><unclear>f</unclear>axis</w> 
+                    <lb n="6"/><supplied reason="lost"><w lemma="tunc">tunc</w></supplied> 
+               <gap reason="lost" extent="unknown" unit="character"/> 
+                    <supplied reason="lost"><w lemma="donum">donum</w> <num>?</num> <w lemma="aurum">auri</w> 
+                       <w lemma="pondo"><expan><abbr>p</abbr><ex>ondo</ex></expan></w> 
+                        <num>?</num> <w lemma="argentum">argenti</w> 
+                       <w lemma="pondo"><expan><abbr>p</abbr><ex>ondo</ex></expan></w></supplied> <gap reason="lost" extent="unknown" unit="character"/><num value="15"><unclear>X</unclear>V</num>
+                    <w lemma="tu"><supplied reason="lost">t</supplied>ibi</w> <w lemma="do">datum</w> 
+               <w lemma="eo">iri</w> <w lemma="uoueo">uouemu<supplied reason="lost">s</supplied></w> 
+                    <lb n="7"/><supplied reason="lost"><persName type="divine" key="hera"><name nymRef="Iuno">Iuno</name> 
+                       <w lemma="regina">Regina</w></persName> <w lemma="qui">quae</w> 
+                       <w lemma="in">in</w> <w lemma="uerbum">uerba</w> <persName type="divine" key="zeus"><name nymRef="Iupiter">Ioui</name> 
+                       <w lemma="optimus"><expan><abbr>O</abbr><ex>ptimo</ex></expan></w> 
+                       <w lemma="maximus"><expan><abbr>M</abbr><ex>aximo</ex></expan></w></persName>  
+                       <w lemma="bos">boue</w> <w lemma="auro">aurato</w> <w lemma="uoueo">uouimus</w> <w lemma="sum">esse</w> 
+                       <w lemma="futurus">futurum</w></supplied> <w lemma="quod">quod</w> <w lemma="hodie">hodie</w> <w lemma="uoueo">uouimus</w> 
+                    <lb n="8"/><supplied reason="lost"><w lemma="astus">astu</w> <w lemma="is">ea</w> <w lemma="ita">ita</w> 
+                       <w lemma="facio">faxis</w> <w lemma="tunc">tunc</w> <w lemma="tu">tibi</w> <w lemma="in">in</w> <w lemma="idem">eadem</w> 
+                       <w lemma="uerbum">uerba</w> <w lemma="bos">boue</w> <w lemma="auro">aurato</w> <w lemma="uoueo">uouimus</w> <w lemma="sum">esse</w> 
+                       <w lemma="futurus">futurum</w></supplied> <space quantity="1" unit="character"/> 
+                    <lb n="9"/><supplied reason="lost"><persName type="divine" key="athena"><name nymRef="Minerua">Minerua</name></persName> 
+                       <w lemma="qui">quae</w> <w lemma="in">in</w> <w lemma="uerbum">uerba</w> 
+                       <persName type="divine" key="zeus"><name nymRef="Iupiter">Ioui</name> 
+                          <w lemma="optimus"><expan><abbr>O</abbr><ex>ptimo</ex></expan></w> 
+                       <w lemma="maximus"><expan><abbr>M</abbr><ex>aximo</ex></expan></w></persName> <w lemma="bos">boue</w> 
+                       <w lemma="auro">aurato</w> <w lemma="uoueo">uouimus</w> <w lemma="sum">esse</w> <w lemma="futurus">futurum</w></supplied> 
+               <space quantity="1" unit="character"/> 
+                    <lb n="10"/><supplied reason="lost"><w lemma="astus">astu</w> <w lemma="is">ea</w> <w lemma="ita">ita</w> 
+                       <w lemma="facio">faxis</w> <w lemma="tunc">tunc</w> <w lemma="tu">tibi</w> <w lemma="in">in</w> <w lemma="idem">eadem</w> 
+                       <w lemma="uerbum">uerba</w> <w lemma="bos">boue</w> <w lemma="auro">aurata</w> <w lemma="uoueo">uouemus</w> 
+                       <w lemma="sum">esse</w> <w lemma="futurus">futurum</w></supplied> <w lemma="quod">quod</w> <w lemma="hodie">hodie</w> <w lemma="uoueo">uouimus</w> 
+               <gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app><note>The hypothetical restorations of this small fragment are taken from what we know of this kind of prayer: see further below.</note></app>
+               
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>Too fragmentary for a useful translation</note></p></div>
+             <!-- <gap reason="lost" extent="unknown" unit="character"/> we feel <gap reason="lost" extent="unknown" unit="character"/> of the Roman people, of the Quirites<gap reason="lost" extent="unknown" unit="character"/>,
+               good outcome <gap reason="lost" extent="unknown" unit="character"/> you do thus [ . . . ] we have vowed 15 <gap reason="lost" extent="unknown" unit="character"/>
+               which today we have vowed [ . . .</p>
+           check for translation --></div>
+         <div type="commentary">
+       
+            <p>From a set of prayers formulated in terms similar to those used by Arval Brothers 
+                    for <foreign xml:lang="la">uota pro salute principis</foreign> and especially for the annual <foreign xml:lang="la">vota</foreign> on third January,
+               see  W. Henzen, <title>Acta fratrum Arvalium</title>, 
+               89f.  (available at <ref target="https://hdl.handle.net/2027/hvd.32044050775808?urlappend=%3Bseq=365">Hathi Trust</ref>); cf. also <ref type="inscription" n="P.97">P.97</ref>, 
+               <ref type="inscription" n="P.204">P.204</ref>, <ref type="inscription" n="P.339">P.339</ref> at Ptolemais.</p>
+            <p>By comparison with the Arval Formulae - see Henzen, loc.cit. 100f. (at <ref target="https://hdl.handle.net/2027/hvd.32044050775808?urlappend=%3Bseq=376">Hathi Trust</ref>) the text can be reconstructed as suggested.
+            </p>
+            <p>Line 1: the gap was filled by the name of the emperor for whom the vow was offered.</p>
+            <p>Line 5: there may have been a definition of the community making the vow, as in the 
+                     Arval prayer at this point: <foreign xml:lang="la">nomine collegi Fratrum Arvalium</foreign>.</p>
+            <p> Iupiter may have been promised a <foreign xml:lang="la">bos auratus</foreign>, 'gilded ox', as well as a <foreign xml:lang="la">donum</foreign>. In the Arval 
+                    Acta Iupiter is always promised an ox; and on two occasions, in 27 and in 38, when 
+               <foreign xml:lang="la">donum</foreign> is also recorded a separate prayer was made for each offering, the full 
+                    formula accompanying the offer of the ox, which was made first, and a condensed
+                    formula such as is used for <foreign xml:lang="la">Iuno Regina</foreign> etc. accompanying the offer of the <foreign xml:lang="la">donum</foreign>.
+                    It is probable that Iupiter was offered an ox here too, but since the full formula 
+                    accompanies the offer of the <foreign xml:lang="la">donum</foreign> either this was repeated twice, or the ox and
+               <foreign xml:lang="la">donum</foreign> were offered at the same time. </p>
+            <p> Apart from the texts at Ptolemais cited above above, the nearest provincial parallel to the text is the reference to the annual <foreign xml:lang="la">vota pro salute principis</foreign> 
+                            on the third January in the <foreign xml:lang="la">feriale Duranum</foreign> text, found in a papyrus from Dura Europus, P.Dura 54, 
+               available at <ref target="http://papyri.info/ddbdp/rom.mil.rec;1;117">Papyri.info</ref>; but that is in a purely military 
+                            context where the use of Latin and characteristically Roman ceremonial is natural 
+                            and in any case does not include a verbatim account of the proceedings. It may
+                            be that the Cyrenaican docuements should be connected with the small 
+                            Latin-speaking communities, presumably of Italian immigrants attested in
+                            Cyrene and Ptolemais in the first cent BCE and I cent CE.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T59000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription<!--  for Teleso daughter of Zeuxis --></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.633</idno>
+            <idno type="ircyr2012">T59000</idno>
+            <idno type="JMR">226e</idno>
+            <idno type="Excel">1592</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Rock</material>-cut <objectType>tomb</objectType> inscribed on the façade, which is partly damaged, a number of texts being quite illegible, 
+                              with <ref type="inscription" n="T.629">T.629</ref>,
+                              <ref type="inscription" n="T.630">T.630</ref>, <ref type="inscription" n="T.631">T.631</ref>, <ref type="inscription" n="T.632">T.632</ref>, <ref type="inscription" n="T.633">T.633</ref>, <ref type="inscription" n="T.634">T.634</ref>,
+               <ref type="inscription" n="T.635">T.635</ref>, <ref type="inscription" n="T.636">T.636</ref>, <ref type="inscription" n="T.637">T.637</ref>, <ref type="inscription" n="T.638">T.638</ref>, <ref type="inscription" n="T.639">T.639</ref>, 
+               <ref type="inscription" n="T.640">T.640</ref>, <ref type="inscription" n="T.641">T.641</ref>, <ref type="inscription" n="T.642">T.642</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> within a rectangular panel (<dimensions><width>0.45</width> <height>0.30</height></dimensions>) 
+                           the surface badly damaged, to the left of the door.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.035</height>; L for ἔτους, ἐτῶν.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate evidence="lettering context" precision="low" notBefore="0001" notAfter="0100">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                             <placeName type="monuList" ref="https://www.slsgazetteer.org/1154">Quarry East XV</placeName>, East Wall. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-28" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-28" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-21" who="CB">tidied</change>
+         <change when="2009-03-16" who="CB">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="JMRNS01_003" decls="#photograph"><desc>In the foreground, <ref type="inscription" n="T.625">T.625</ref>, and an unidentified text; in the background  <ref type="inscription" n="T.630">T.630</ref> 
+         <ref type="inscription" n="T.631">T.631</ref>, <ref type="inscription" n="T.632">T.632</ref>, <ref type="inscription" n="T.633">T.633</ref>, <ref type="inscription" n="T.634">T.634</ref>, 
+         <ref type="inscription" n="T.636">T.636</ref>, <ref type="inscription" n="T.637">T.637</ref> and <ref type="inscription" n="T.638">T.638</ref> behind (Reynolds NS.I.3)</desc></graphic>
+      <graphic url="JMRNS09_032" decls="#photograph"><desc><ref type="inscription" n="T.633">T.633</ref> to the left, 
+         <ref type="inscription" n="T.634">T.634</ref> to the right, <ref type="inscription" n="T.635">T.635</ref> above (Reynolds NS.IX.32)</desc></graphic>
+      <graphic url="JMRNS09_033" decls="#photograph"><desc><ref type="inscription" n="T.635">T.635</ref>, with <ref type="inscription" n="T.633">T.633</ref> below to the left, 
+         <ref type="inscription" n="T.634">T.634</ref> below to the right (Reynolds NS.IX.33)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="jmr1983"/>, <citedRange>23.e</citedRange></bibl> whence <bibl>
+                  <ptr target="SEG"/> <citedRange>33.1444</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324621">324621</ref></citedRange></bibl><!-- El Haddar 395 -->
+            </p>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+             
+            <ab>
+                    <lb n="1"/><date ref="https://godot.date/id/y8soJTNVnm6Gi3Gcg27SM8"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+            <num value="7">ζ</num> <rs type="month" key="choiak"><w lemma="Χοιάκ"><unclear>Χο</unclear>ιάχ<unclear>ι</unclear></w></rs> 
+                    <lb n="2"/><num value="8">η</num></date> <space quantity="3" unit="character"/> <persName type="attested" key="lgpn:V1-60829"><name nymRef="Τελεσώ"><supplied reason="lost">Τ</supplied>ελεσὼι</name> 
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-60799"><name nymRef="Ζεῦξις"><expan><abbr>Ζεύξι</abbr><ex>ο</ex><abbr>ς</abbr></expan></name></persName></persName> <space quantity="3" unit="character"/> 
+                    <lb n="4"/><date type="life-span" dur="P65Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+            <num value="65"><unclear>ξ</unclear>ε</num> </date>
+         </ab>
+         </div>
+         
+         
+         
+         <div type="translation" xml:space="preserve">
+            <head>Translations</head>
+            <div type="translation" source="#jmr1983" xml:lang="en"><p>Year 7, Choiaki 8, Teleso daughter of Zeuxis, aged 65.</p></div>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/y8soJTNVnm6Gi3Gcg27SM8">Year 7, Choiak 8</ref>, Teleso 
+               <supplied reason="subaudible">daughter</supplied> of Zeuxis, aged 65.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+           <!-- December 4th -->
+         </div>
+         
+         
+      </body>
+   </text>
+</TEI>

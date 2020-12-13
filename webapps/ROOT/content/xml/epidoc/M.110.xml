@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G02000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.110</idno>
+            <idno type="ircyr2012">G02000</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1288">Barke Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Funerary <objectType>stele</objectType>, probably of <material>limestone</material>, moulded above. 
+                              The two upper corners have been cut or broken away and there is a deep chip down the left front side.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on a badly worn face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First or second century CE; irregular but deeply cut; lunate omega, slightly square omicron; no measurements.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notAfter="0200" notBefore="0001" cert="low" evidence="lettering">First-second century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1181">Barke</placeName>; in the area between Barke and Ptolemais.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Photographed in the <placeName ref="https://www.slsgazetteer.org/1288">Barke Museum</placeName> in <date type="found">1926</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term><placeName type="modernFindspot" ref="http://sws.geonames.org/80505">El Marj</placeName></term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-21" who="CMR">added bibliography</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-10" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2007-11-19" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="JMR_548front" decls="#photograph"><desc>Face (Department of Antiquities, E. 654)</desc></graphic>
+            <graphic url="G02000_DeptE654" decls="#photograph"><desc>Detail (Department of Antiquities, E. 654)</desc></graphic>
+            <!-- Pietro: may be double, but could not find the original of JMR_548 ...) -->
+         </facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="SECir"/>, <citedRange>196</citedRange></bibl>, from a drawing by Oliverio, fig. 45 (drawing only), assigning it to Cyrene; 
+               republished, <bibl><ptr target="jmr-bacchielli1987"/> Catalogo <citedRange>32</citedRange> and fig. 67</bibl>, 
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>1989.839</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>37.1717</citedRange></bibl></p>
+         </div>
+         
+         
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+            <lb n="1"/><date ref="https://godot.date/id/P5Lqyyu6Qc8NHo4w5NeyEP"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+               <num value="3">γ</num></date>
+            <lb n="2"/><persName type="attested"><name nymRef="Ἀπολλόδωρος" key="lgpn:V1-61724">Ἀπολόδ<lb n="3" break="no"/>ωρος</name> <persName type="attested"><name nymRef="Ἐπαγαθιανός"><unclear>Ἐπ</unclear><lb 
+               n="4" break="no"/>αγαθί<lb 
+                  n="5" break="no"/>νοῦ</name></persName></persName>
+            <lb n="5a"/><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w></supplied>
+               <gap reason="lost" quantity="1" unit="line"/>
+         </ab>
+         </div>
+         
+         <div type="apparatus">
+            <listApp>
+               <app loc="3">
+                  <rdg resp="#SECir">Επ omitted</rdg>
+               </app>
+               <app loc="4,5">
+                  <rdg resp="#SECir">Ἀγα<unclear>θ</unclear>ίνου</rdg>
+                  <rdg resp="#jmr"><unclear>Ἐπ</unclear>αγαθι[α]νός</rdg> <note>whence LGPN  <ref target="http://www.lgpn.ox.ac.uk/id/V1-61725">V1-61725</ref></note>
+               <rdg resp="#cdlBE"><unclear>Ἐπ</unclear>αγαθίνου</rdg>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/P5Lqyyu6Qc8NHo4w5NeyEP">Year 3</ref>, Apol(l)odoros <supplied reason="subaudible">son</supplied> 
+               of Epagathianos [ . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>After line 5 the surface is too badly damaged to read what was probably a final line giving the man's age.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

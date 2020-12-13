@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C17000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">decree</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.203</idno>
+            <idno type="ircyr2012">C17000</idno>
+            <idno type="JMR">760</idno>
+            <idno type="Excel">1224</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Five fragments probably from the same <material>marble</material> 
+                              <objectType>panel</objectType>.
+                              a. <dimensions><width>0.22</width>  <height>0.27</height> <depth>0.55</depth></dimensions>; 
+                              b (two fragments): <dimensions><width>0.31</width>  <height>0.24</height>  <depth>0.07</depth></dimensions>; 
+                              c. <dimensions><width>0.09</width>  <height>0.21</height> <depth>0.055</depth></dimensions>; 
+                              d. <dimensions><width>0.07</width>  <height>0.10</height>  <depth>0.055</depth></dimensions>; <!-- check, add fifth --></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Fourth-fifth century. 
+                        a. lines 1,2, <height>0.03</height>; 
+                        lines3-6, 9-13, <height>0.012</height>; 
+                        lines 7,8, <height>0.015</height>, 
+                        square sigma, cursive omega, in line 2 Υ is cut over Ν; 
+                        b. <height>0.015</height>; 
+                        c. <height>0.04</height>; 
+                        d. <height>0.02</height>;
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0500" notBefore="0301" precision="low" evidence="lettering">Fourth-fifth century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1024">Valley Street</placeName>, north side: re-used in late buildings, modern Post Office and the Antonine Arch;
+                              found in <date type="found">1956</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+          <change when="2013-08-05" who="TW">persnamed incomplete name</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-11-24" who="CB">tidied</change>
+         <change when="2009-06-12" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0077" decls="#photograph"><desc>All fragments (Reynolds III.82.1)</desc></graphic>
+      <graphic url="Photos_0078" decls="#photograph"><desc>All fragments (Reynolds III.82.3)</desc></graphic>
+      <graphic url="Photos_0079" decls="#photograph"><desc>All fragments (Reynolds VIII.8)</desc></graphic>
+      <graphic url="DSC05244" decls="#photograph"><desc>All fragments (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05245" decls="#photograph"><desc>Fragment a (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05247" decls="#photograph"><desc>Fragments d and b (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05248" decls="#photograph"><desc>Fragment c (2008, H.Walda)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="a" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap> 
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἐπί"><supplied reason="lost" cert="low">ἐπὶ</supplied></w> <w lemma="ὕπατος"><supplied reason="lost" cert="low">ὑπάτω</supplied>ν</w> 
+                        <persName type="attested"><name nymRef="Φλάβιος">Φ<unclear>λαο</unclear><supplied reason="lost">υίου</supplied></name></persName>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>α</unclear>νοῦ</w> 
+                        <orig>ἐπιφ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/> <gap reason="lost" extent="unknown" unit="character"/><w part="F">ιν</w>
+                        <w lemma="ἔθνος">ἔθνοϲ</w> <w lemma="συνέρχομαι">ϲυνελθὸν</w><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">εν</w> <w lemma="ὁμοίως">ὁμοίωϲ</w> 
+                        <w lemma="προσήκω">προϲήκ<supplied reason="lost" cert="low">ειν</supplied></w>
+                        <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἄρχων"><supplied reason="lost">ἄρ</supplied>χοντα</w> <w lemma="ὁ">τῶ</w> 
+                        <w lemma="τε">τε</w> <w lemma="ἡμέτερος">ἡμετέ<supplied reason="lost">ρω</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="μήτε">μήτε</w> <w lemma="ὁ">τῶν</w> 
+                        <w lemma="παλαιός">παλαιῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">μον</w> <w lemma="ὡς">ὡϲ</w> 
+                        <w lemma="ἔχω">ἔχοι</w> <orig>λει</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ">τᾶϲ</w> <w lemma="τε">τε</w> 
+                        <w lemma="ἀνδραγαθία">ἀνδραγαθί<unclear>α</unclear><supplied reason="lost">ϲ</supplied></w>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">γκεϲ</w> <w lemma="ὅς">ὧν</w> 
+                        <w lemma="ὁ">τὰϲ</w> <w lemma="μέν">μὲν</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ο</unclear>ϲ</w> <w lemma="ὡς">ὡϲ</w> 
+                        <w lemma="μηδέ">μήδε</w> <w lemma="τις">τοῦ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ"><supplied reason="lost">το</supplied><unclear>ῦ</unclear></w> <w lemma="τε">τε</w> 
+                        <w lemma="ἄρχων">ἄρχοντο<unclear>ϲ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="εὐπρεπέστατος"  part="I"><supplied reason="lost">ε</supplied><unclear>ὐ</unclear>πρεπεϲτ<supplied reason="lost">ατ</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><orig>ρεπ</orig>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="13a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab></div>
+            <div subtype="section" n="b" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἐκ"><supplied reason="lost">ἐ</supplied><unclear>χ</unclear></w> 
+                        <w lemma="κακός">κακῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ϲ</unclear></w> 
+                       <w lemma="ποιέω">ποιεῖϲθ<supplied reason="lost">αι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἀγγέλλω"><supplied reason="lost">ἠ</supplied><unclear>ν</unclear>γγέλθαι</w> 
+                        <orig>λα</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="δέ">δὲ</w> <w lemma="ἐπί">ἐπὶ</w> 
+                        <w lemma="οὗτος">ταύταιϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="πάρειμι">παρούϲηϲ</w>
+                        <w lemma="πρεσβεία">πρεϲβείαϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="καθά"><supplied reason="lost">κα</supplied>θάπερ</w> <w lemma="ἐνθάδε">ἐνθάδε</w> <w lemma="καί">καὶ</w> 
+                        <w lemma="πάλαι">π<unclear>ά</unclear><supplied reason="lost">λαι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ι</unclear></orig> <w lemma="αὐτός">αὐτῆ</w> 
+                        <w lemma="ὁ">τὰ</w> <w lemma="πάρειμι">παρόντα</w> <w lemma="ψήφισμα">ψη<supplied reason="lost">φίϲματα</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="δῐκαιοσύνη"><supplied reason="lost" cert="low">δικα</supplied><unclear>ι</unclear>οϲύνηϲ</w> 
+                        <w lemma="ὁ">τῶ</w> <w lemma="τε">τε</w> <w lemma="ἄρχων">ἄρχοντει</w> <w lemma="ὁ">τῶ</w> <gap reason="lost" extent="unknown" unit="character"/>                  <note>sic</note>
+                        <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">την</w> <space quantity="1" unit="character"/> <w lemma="ὁ">τὴν</w> 
+                        <w lemma="πρεσβεία">πρεϲβίαν</w> <w lemma="στέλλω">ϲτελλομένου</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῆϲ</w> 
+                        <w lemma="στήλη">ϲτήληϲ</w> <w lemma="ἀξιόω">ἀξιοῦμεν</w> <w lemma="γίγνομαι">γενέ<supplied reason="lost">ϲθαι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ">τοῦ</w> <w lemma="ἔθνος">ἔθνουϲ</w> 
+                        <w lemma="πλήρωμα">πληρώματι</w> <w lemma="οὗτος">ταῦτ<supplied reason="lost">α</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἐφεξῆς"><unclear>ἐ</unclear>φεξῆϲ</w>
+                        <w lemma="λέγω">εἰπ<supplied reason="omitted">ε</supplied>ῖν</w> <w lemma="ἀνάγκη">ἀνάγκη</w> <w lemma="δέ">δὲ</w> <orig><unclear>ϲ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">πω</w>
+                        <w lemma="συλλαμβάνω">ϲυλλαβ<supplied reason="omitted">ε</supplied>ῖν</w> 
+                        <w lemma="οἷος">οἷον</w> <w part="I"><unclear>εϲ</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="14"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="δέ">δὲ</w>
+                        <orig>καθο</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="15"/><gap reason="lost" extent="unknown" unit="character"/><orig>νευδο</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>γ</unclear>ενε<unclear>ϲ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="17"/><gap reason="lost" extent="unknown" unit="character"/><orig>ον<unclear>υ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="17a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab></div>
+            <div subtype="section" n="c" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w part="I"><unclear>δ</unclear>ουλ<unclear>ι</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ϲ</unclear></w> <w lemma="εἰ">εἰ</w> 
+                        <w lemma="δέ">δὲ</w> <w lemma="ὁ">τῶ</w> <orig><unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="βοήθεια"><supplied reason="lost">βοη</supplied>θείαϲ</w> 
+                        <w lemma="τε">τ<unclear>ε</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">τοϲ</w>
+                        <w part="I">ϲυν<unclear>ι</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">οι</w> 
+                        <w lemma="δέ">δ’</w><w lemma="αὐτός">αὐτῶ<supplied reason="lost">ν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ"><unclear>τ</unclear>ὸ</w> <w lemma="δέ">δὲ</w> 
+                        <w lemma="πρός">πρὸϲ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>α</unclear>ιγει<unclear>λ</unclear>λομ<hi rend="superscript">ν</hi></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἅπας">ἁπάντων</w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>αϲ</unclear></w> <w lemma="εἰς">εἰϲ</w> 
+                        <w lemma="χύσις">χύϲ<supplied reason="lost" cert="low">ιν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>μ</unclear>α<unclear>δ</unclear>ειϲ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <w part="I"><supplied reason="lost">ἀ</supplied>ρχο<unclear>ν</unclear></w><gap reason="lost" extent="unknown" unit="character"/>                       
+                        <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">εϲθ<supplied reason="lost">αι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="12a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab></div><div subtype="section" n="d" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>π</unclear>ηϲα</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>ποτ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>ηνικ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>δ</unclear>η<unclear>μ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               
+            <app loc="a 3">
+                  <note>Probably the end (?) of an infinitive.</note>
+               </app>
+            <app loc="a 7">
+                  <note>γ could be square sigma, Π or E. </note>
+               </app>
+         
+            <app loc="d 1">
+                  <note>Π could be Ν</note>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#edd" xml:lang="en"><p><note>Not usefully translatable</note></p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- Text: Line 3, I cannot understand this text beginning with ἵν.  -->
+            <p>The text apparently opened with dating formulae, and is presumably a decree, perhaps of the provincial assembly; it appears to honour someone for his virtue (a.10). One of his eservices appears to have been to 
+               serve an an embassy (b.5, 9) presumably to the imperial court.</p>
+            <p>a.1: apparently a name, not identifiable. </p>
+            <p>a.2: presumably still part of the dating formula; perhaps the month Ἐπιφ or ἐπὶ Φ[...] </p>
+            <p>a.3, b.7: The document appears to be a decree of the provincial κοινόν, 
+               and ιt may be that the name of the chairman, probably called the Libyarch (as in <ref type="inscription" n="C.70">C.70</ref>, stood in the preceding line after ἐπί. </p>
+            <p>b. Lines 5 and 9: it is tempting but wholly conjectural to connect the embassy mentioned here with 
+               the embassy undertaken for the province by Synesius, cf. Περὶ Βασιλείας 2.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

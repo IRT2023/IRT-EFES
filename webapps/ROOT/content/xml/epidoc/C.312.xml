@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C74400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Acclamation</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.312</idno>
+            <idno type="ircyr2012">C74400</idno>
+            <idno type="JMR">879 eastern pillar a</idno>
+            <idno type="Excel">147</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Cave of the Priests</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>pillar</objectType>, inscribed on two faces, with <ref type="inscription" n="C.312">C.312</ref> on the inner face, 
+                              <ref type="inscription" n="C.313">C.313</ref> on the east face</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> in a stuccoed surface on the face; a carefully laid out, in straight lines; 
+                           b cut over an earlier text, of which the first far more roughly executed, with sloping lines badly spaced. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably third century: a: angled theta in line  3; omega with elaborate curling strokes, 
+                        standard sigma; line 1, <height>0.045-0.07</height>; lines 2-4, <height>0.05</height>; line 5, <height>0.06</height>; 
+                        c: Very irregular; L for ἔτους or ἐτῶν; 
+                        c: lunate sigma and cursive omega; line 1, <height>0.05-0.07</height>; lines 2-3, <height>0.06</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1060">Cave of the Priests</ref></origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low" cert="low" evidence="lettering">Probably third century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              east pier flanking the entrance to the so-called <placeName type="monuList" ref="https://www.slsgazetteer.org/1060">Cave of the Priests</placeName>: 
+                              Found in <date type="found">1934</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/1060">Cave of the Priests</placeName> (<date type="observed">2008</date>)</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-05-05" who="AO">tokenized</change>
+         <change when="2009-06-16" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="JMR_879a_002front" decls="#photograph"><desc>Face (Reynolds VIII.66)</desc></graphic>
+      <graphic url="JMR_879a_001front" decls="#photograph"><desc>Face (Reynolds VIII.67)</desc></graphic>
+      <graphic url="JMR_879a_003front" decls="#photograph"><desc>Face (Reynolds I.16)</desc></graphic>
+      <graphic url="DSC04902" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04903" decls="#photograph"><desc>Face, lower part (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04904" decls="#photograph"><desc>Texts a, b and c (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04905" decls="#photograph"><desc>Text a and b (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04906" decls="#photograph"><desc>Texts b and c (2008, H.Walda)</desc></graphic>
+      <!--Dept.(24045)--></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl>Barnett, in <ptr target="wright1957"/><citedRange></citedRange></bibl>, mentioned  <bibl><ptr target="robertBE"/>, <citedRange>1959.512</citedRange></bibl>; 
+               more fully, with readings by Reynolds, <bibl><ptr target="SEG"/> <citedRange>18.750</citedRange>.a, b</bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324452">324452</ref></citedRange></bibl>, 
+               mentioned <bibl><ptr target="jmr1959"/> <citedRange>note 14</citedRange></bibl>, discussed 
+               <bibl><ptr target="robert1960a"/>, <citedRange>553</citedRange> note 4</bibl>, 
+               whence <bibl><ptr target="robertBE"/>, <citedRange>1961.840</citedRange></bibl>;
+               <bibl><ptr target="SECir"/>, <citedRange>110</citedRange> and fig. 84</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.568</citedRange></bibl>;
+               discussed <bibl><ptr target="stucchi1981"/>, <citedRange>104-5</citedRange></bibl>, <!-- check -->
+               <bibl> <ptr target="gordon1976"/>, <citedRange>213-4</citedRange></bibl>, whence 
+               <bibl n="seg"><ptr target="SEG"/> <citedRange>26.1829</citedRange></bibl>,
+               <bibl><ptr target="robertBE"/>, <citedRange>1977.591</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>188</citedRange>, <citedRange>212</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+
+                    <div type="textpart" n="a">
+                       <ab><lb n="1"/><persName type="attested" key="lgpn:V1-65708"><name nymRef="Σωσίβιος">Σωσιβίῳ</name> <name nymRef="Ῥοῦφος">Ῥούφῳ</name></persName>
+                    <lb n="2"/> <space quantity="3" unit="character"/> <w lemma="νέος">νέῳ</w> <space quantity="3" unit="character"/>
+                    <lb n="3"/> <w lemma="ὁ">τῷ</w> <w lemma="ἀληθής">ἀληθῶς</w> <space quantity="1" unit="character"/>
+                    <lb n="4"/> <w lemma="καλλιέτης">καλλιέτει</w> <space quantity="1" unit="character"/>
+                    <lb n="5"/> <space quantity="1" unit="character"/> <w lemma="εὐτυχῶς">εὐτυχῶς</w> <space quantity="1" unit="character"/>
+                    <lb n="5a"/><gap reason="illegible" quantity="1" unit="line"/></ab></div>
+                    <div type="textpart" n="b">
+                       <ab><lb n="1"/> <orig>κοιρο</orig> <w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <lb n="2"/> <orig><unclear>επ</unclear>ά<unclear>ρ</unclear>ω</orig>
+                    <lb n="3"/> <gap reason="illegible" quantity="1" unit="line"/></ab></div>
+            <div type="textpart" n="c">
+                       <ab><lb n="1"/> <persName type="attested" key="lgpn:V1-64121"><name nymRef="Θεόδωρος">Θεοδώρῳ</name></persName>
+                    <lb n="2"/> <w lemma="ὁ">τῷ</w> <w lemma="ἀληθής">ἀληθῶϲ</w> <w lemma="καλλιέτης">καλλιέτει</w>
+                    <lb n="3"/> <space quantity="1" unit="character"/> <w lemma="εὐτυχής">εὐτυχῶϲ</w>  <space quantity="1" unit="character"/></ab></div>
+                
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="b.1"><rdg resp="#stucchi1981"><note>Stucchi detected traces of this line, perhaps Οὐαλ[ερίῳ, never completed or overwritten</note></rdg></app>
+                  <app loc="b.2"><note>The first word seems to have been deliberately erased. Perhaps ἐπ'[ἱ]αρῷ</note></app>
+               
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>For Sosibios Rouphos <supplied reason="explanation"><foreign xml:lang="la">Sosibius Rufus</foreign></supplied>  the young<supplied reason="subaudible">er</supplied>, 
+               truly <supplied reason="subaudible">priest</supplied> in a good year, with good fortune!</p>
+               <p><note>b</note>: <note>Not usefully translatable</note></p>
+            <p><note>c</note>For Theodoros, truly <supplied reason="subaudible">priest</supplied> in a good year, with good fortune!</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>On the cave see <bibl><ptr target="stucchi1981"/></bibl>.</p>
+            <p>Line a.1: Perhaps the son of the Sosibios Rouphos in <ref type="inscription" n="C.194">C.194</ref>, <ref type="inscription" n="C.195">C.195</ref>. </p>
+            <p>Lines a.4, b.2: For this epithet applied to priests at Cyrene, see commentary on <ref type="inscription" n="C.222">C.222</ref>; 
+               For the emphatic ἀληθῶς here, and in <ref type="inscription" n="C.314">C.314</ref>, see Robert, <title>Hellenica XI-XII</title>, loc.cit. </p>
+           <!-- Lines 5, 8 For the acclamation see.  --> <p/>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

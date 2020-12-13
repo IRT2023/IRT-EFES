@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fragmentary <rs type="textType">name</rs></title>
+                             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">C.550</idno>
+            <idno type="ircyr2012">C94560</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository>Findspot</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p>Fragment 
+                                        of a <material>limestone</material> <objectType>block</objectType>
+                                        (<dimensions>
+                                            <width>0.68</width>
+                                            <height>0.12</height>
+                                            <depth>0.74</depth>
+                                        </dimensions>) upper and perhaps lower edge surviving, broken to left and right.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Perhaps first century BCE – first century CE; line 1, <height>0.024</height>; line 2, <height>0.018</height>.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot.</origPlace>
+                            <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering" cert="low">First century BCE – first century CE</origDate>
+                        </origin>
+                        
+                            
+                                <provenance type="found">
+                                    <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                                        <placeName ref="https://www.slsgazetteer.org/1070">South Necropolis</placeName>, 
+                                        ?sanctuary of Ammon between Baggara and the 
+                                        south end of the Wadi el Aish, in a garden.
+                                    </p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p>Findspot.</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription (Reynolds).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2011-08-12" who="Pietro">entered and tagged text</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="JMRSB03_133" decls="#photograph"><desc>Face (Reynolds, SB.III.133)</desc></graphic>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p><bibl><ptr target="mohamed-jmr-cdl2007"/>, <citedRange>9</citedRange></bibl> whence <bibl><ptr target="SEG"/> <citedRange>57.2015</citedRange></bibl>, 
+                    <bibl><ptr target="cdlBE"/>, <citedRange>2008.603</citedRange></bibl></p>
+            </div>
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="Καρνεάδης">Καρνεά<supplied reason="lost">δης</supplied></name> <gap reason="lost" unit="character" extent="unknown"/>
+                <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/><persName type="attested"><name nymRef="Ἰσοκράτης">Ἰσοκράτο<unclear>υ</unclear><supplied reason="lost">ς</supplied></name></persName></persName> <gap reason="lost" unit="character" extent="unknown"/>
+            </ab>
+         </div>
+            <div type="translation" xml:space="preserve">
+            <div type="translation" source="#mohamed-jmr-cdl2007" xml:lang="en"><p>Karneades ? <supplied reason="subaudible">son</supplied> of Isokrates. </p></div>
+         </div>
+            <div type="commentary">
+                <head>Commentary</head>
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

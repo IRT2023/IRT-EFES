@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G02600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> fragment</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.113</idno>
+            <idno type="ircyr2012">G02600</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1288">Barke Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              Fragment, probably of <material>limestone</material>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Clear and regular, cursive omega. No measurements.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notAfter="0100" notBefore="0001" cert="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     area of <placeName ref="https://www.slsgazetteer.org/1181">Barke</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/1288">Barke Museum</placeName>, photographed in <date type="found">1930</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2013-09-25" who="TW">Edited photo info</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2007-11-20" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="G02600_DeptE1404" decls="#photograph">
+         <desc>Text (Department of Antiquities, E. 1404)</desc>
+      </graphic>
+      <graphic url="G02500-G02700_DeptE1404" decls="#photograph">
+         <desc>From left: <ref type="inscription" n="M.300">M.300</ref>(above), <ref type="inscription" n="M.113">M.113</ref> (below), <ref type="inscription" n="M.114">M.114</ref> and 
+            <ref type="inscription" n="M.112">M.112</ref> (Department of Antiquities, E. 1404)</desc>
+      </graphic><surface/></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ωχα"><seg part="F">ωχα</seg></name>
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-αμος"><seg part="F">αμω</seg></name></persName></persName>
+               <lb n="3"/><num atLeast="3"><gap reason="lost" extent="unknown" unit="character"/>γ</num> <space/>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>Not usefully translatable.</note></p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Lines 1-2: almost certainly the remains of two names, one feminine, in the nominative, the other, masculine, in the genitive.</p>
+            <p>Line 3: probably the age of the dead, of which only a digit, γ = 3, survives.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

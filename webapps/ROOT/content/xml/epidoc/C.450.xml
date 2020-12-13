@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Mnaso</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.450</idno>
+            <idno type="ircyr2012">C89200</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">77-1167</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><objectType>Panel</objectType> of medium-grained white <material>marble</material>  
+                              (<dimensions><width>0.310</width> <height>0.360</height> <depth>0.065</depth></dimensions>).
+                              Right-hand corner broken away, chipped along all edges.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Ιnscribed on the face. The occasionally uneven spacing of letters (note especially line 7)
+                           suggests that there were already chips on the face to be avoided when the text was cut.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Perhaps first century BCE - first century CE: not measured.
+                        Τhere are small serifs on many letters, mu has two slanting outer strokes and two short ones internally,
+                        the second upright of nu is a little shorter than the first,
+                        sigma normally has approximately straight strokes at top and bottom.</handNote><handNote/>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</ref>.</origPlace>
+                     <origDate evidence="lettering" cert="low" precision="low" notAfter="0100" notBefore="-0100">Perhaps 
+                        first century BCE - first century CE. </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:  
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>, found in <date type="found">1977</date> 
+                              during excavations: area C13,1,2.                               . 
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, Storeroom of the American excavations</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-03" who="Pietro">markup of text and metadata</change>
+         <change when="2010-08-14" who="CMR">created from JMR's notes</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="white829_IRCyrC450" decls="#photograph"><desc>Face (Donald White)</desc></graphic>
+      <graphic url="white831_IRCyrC450" decls="#photograph"><desc>Face (Donald White)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p> 
+               <bibl><ptr target="jmr2012"/>, <citedRange>A.23</citedRange></bibl>, whence <bibl><ptr target="cdlBE"/>, <citedRange>2013.480</citedRange></bibl>, 
+                <bibl><ptr target="SEG"/> <citedRange>62.1795.11</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                   
+                    <lb n="1"/><persName type="divine" key="demeter"><name nymRef="Δημήτηρ">Δάμ<supplied reason="lost">ατρι</supplied></name></persName>
+          <lb n="2"/> <w lemma="καί">καὶ</w> <persName type="divine" key="kore"><name nymRef="Κόρη">Κό<supplied reason="lost">ραι</supplied></name></persName>             
+            <lb n="3"/><persName type="attested"><name nymRef="Μνασώ">Μνασὼ</name> <persName type="attested"><name nymRef="Εὐκλείδας">Εὐκλε<supplied reason="lost">ίδα</supplied></name></persName></persName>             
+            <lb n="4"/> <w lemma="ὑπερδικέω">ὑπερδικήσαισαν</w>
+             <lb n="5"/> <w lemma="καί">καὶ</w> <w lemma="ἱερατεύω">ἱερατεύσαισαν</w>
+            <lb n="6"/><persName type="attested"><name nymRef="Ἀρίσταρχος">Ἀρίσταρχος</name> <persName type="attested"><name nymRef="Θεύχρηστος">Θευχρήστω</name></persName></persName>            
+            <lb n="7"/> <space quantity="1" unit="character"/> <w lemma="ὁ">τὰν</w> <w lemma="γυνή">γ<space quantity="1" unit="character"/>υναῖκα</w> <space quantity="2" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+           <div type="translation" source="#jmr2012" xml:lang="en"> <p>To Demeter and Kore: <supplied reason="subaudible">the statue of</supplied> Mnaso <supplied reason="subaudible">daughter</supplied> of Eukleidas who has been ?advocate
+            and priestess, his wife; Aristarchos <supplied reason="subaudible">son</supplied> of Theuchrestos <supplied reason="subaudible">dedicated</supplied></p>
+            <p/></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The personal names of the husband and wife and of their fathers
+               are all attested in Cyrene and the husband was probably identical with a homonym
+                said to be of the first century CE (see <ref type="inscription" n="C.48">C.48</ref>)
+               He was certainly a member of the city’s ruling class,
+               just as his wife was a leading figure in the cult of Demeter - that she had been a priestess needs no comment
+               but ὑπερδικήσαισα is an unusual term;
+               the verb also figures in a previously unpublished inscription from the Temple of Demeter at Teucheira  <ref type="inscription" n="T.25">T.25</ref>.
+               Liddell and Scott, referring to its use in the form ὁπερδικέω, in Boeotia (most recently <bibl><author>L. <name type="surname">Darmezin</name></author>, <title level="m">Les affranchisements par consécration en Béotie et dans le monde grec hellénistique</title>, Paris, 1999, 27,11</bibl>, whence <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/314287">314287</ref></citedRange></bibl>) translate ‘act as advocate for’;
+               could it be that she was charged with pleading the case for initiation of those who had presented themselves for the mysteries?  It is possible that she had died before the statue was erected
+              - she had certainly ceased to hold either of the offices with which she is credited.  </p>
+     
+         </div>
+         
+      </body>
+   </text>
+</TEI>

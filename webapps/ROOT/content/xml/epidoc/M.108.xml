@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G02300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.108</idno>
+            <idno type="ircyr2012">G02300</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1288">Barke Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <objectType>stele</objectType>, of redish stone, with a simple moulding above 
+                              (<dimensions><height>1.00, with base 1.35</height> <depth>0.10</depth></dimensions>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on the upper part of the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.025</height>; superscript bars above the figures in line 1, and above the L in lines 1, 4.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notAfter="0042" notBefore="0042" cert="low" evidence="internal-date">CE 42 </origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1181">Barke</placeName>, at the end of the former Viale Regina Elena 
+                              in connexion with a reticulate structure and along with a female half-statue of sandstone (so Oliverio's notes)</p><!-- check -->
+                        
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/1288">Barke Museum</placeName>; photographed in <date type="found">1927</date></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/80505">Marj</placeName>
+               </term>            </keywords>
+         </textClass>
+      <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-03-01" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-10" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2007-11-20" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="G02300_deptF1905" decls="#photograph">
+               <desc>Monument (Department of Antiquities, F. 1905)</desc>
+            </graphic></facsimile>
+   <text>
+      <body>
+    
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="SECir"/>, <citedRange>97</citedRange>, p.270</bibl>
+               (assigning it to Beida), whence <bibl n="seg">
+                  <ptr target="SEG"/> <citedRange>20.763</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324518">324518</ref></citedRange></bibl>; republished
+                <bibl><ptr target="gl-jmr1983"/>  <citedRange unit="entry">30</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+            <lb n="1"/><date ref="https://godot.date/id/Sgo5uniphT2CEmJJaZA4Ka"><w lemma="ἔτος"><expan><abbr><am><g/></am></abbr><ex>ἔτους</ex></expan></w>
+               <num value="72">οβ</num> <rs type="month" key="mechir"><w lemma="Μεχίρ">Μεχεὶρ</w></rs>
+               <num value="28">κη</num></date>
+            <lb n="2"/><persName type="attested" key="lgpn:V1-60898, lgpn:V1-61733"><name nymRef="Κλευπάτρα">Κλευπάτρα</name> 
+            <lb n="3"/><persName type="attested" key="lgpn:V1-60885, lgpn:V1-61728"><name nymRef="Θεύδοτος">Θευδότου</name></persName></persName>
+            <lb n="4"/> <space quantity="2" unit="character"/> <date type="life-span" dur="P30Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
+               <num value="30">λ</num> </date> <space quantity="3" unit="character"/>
+            </ab>
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp><app loc="1">
+               <lem>οβ</lem>
+               <rdg resp="#SECir">possibly ϲβ</rdg></app></listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 72, 20.Mocheir, Kleupatra des Theudotos, 30 (Jahre)</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/Sgo5uniphT2CEmJJaZA4Ka">Year 72, Mecheir 28</ref>: 
+            Kleupatra <supplied reason="subaudible">daughter</supplied> of Theodotos, aged 30.</p></div>
+       </div>
+       
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The name Theodotos may be Jewish.</p>
+            <p>Registered twice in LGPN: Θεύδοτος is also V1-61728; Kleupatra is also V1-61733 <!-- check with LGPN --></p>
+            <!--  42 CE, 23 February -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

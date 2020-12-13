@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile XV: <rs type="textType">Milestone</rs> of the First Tetrarchy</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.69</idno>
+            <idno type="ircyr2012">A12300</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><objectType>Half-column</objectType>, with flattened reverse face, of brown 
+                              <material>limestone</material>
+                               (<dimensions>
+                                 <height>1.45</height>
+                                 <dim type="diameter">0.50</dim>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.03-0.04</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-apo" n="15">Cyrene to Apollonia to Derna road, Mile XV</rs>.</origPlace>
+                     <origDate notBefore="0293" notAfter="0305" evidence="reign">CE 293-305</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>:
+                              Found near Apollonia,  with <ref type="inscription" n="A.70">A.70</ref>, 
+                              near the modern Christian cemetery, one Roman mile from mile-station XIV.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-10-10" who="PaolaPiliego">Entered and tagged text and data</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="unidentified_DeptE366" decls="#photograph"><desc>Face (Department E 366)</desc></graphic>
+      <graphic url="DSC04414" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04453" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04415" decls="#photograph"><desc>Face, upper part (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04451" decls="#photograph"><desc>Face, upper part (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04452" decls="#photograph"><desc>Face, upper part (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04416" decls="#photograph"><desc>Face, centre (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04417" decls="#photograph"><desc>Face, lower part (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04419" decls="#photograph"><desc>Left face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04420" decls="#photograph"><desc>Right face (2008, H.Walda)</desc></graphic>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned by <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="page">246</citedRange></bibl>; published by
+               <bibl><ptr target="rgg1950"/>, <citedRange unit="entry">10a</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>284</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab><lb n="1"/> <expan><w lemma="dominus"><abbr>D<am>D</am></abbr><ex>ominis</ex></w>
+               <w lemma="noster"><abbr>N<am><supplied reason="lost">N</supplied></am></abbr><ex>ostris</ex></w></expan>
+              <lb n="2"/><date><persName type="emperor" key="diocletianus"><name type="cognomen" nymRef="Diocletianus">Dioclet<supplied reason="lost">iano</supplied></name></persName>
+                 <lb n="3"/><w lemma="et">e<supplied reason="lost">t</supplied></w> <persName type="emperor" key="maximianus"><name type="cognomen" nymRef="Maximianus">Maximia<supplied reason="lost">no</supplied></name></persName>
+                   <lb n="4"/><w lemma="imperator">imperatori<supplied reason="lost">bus</supplied></w>
+                   <lb n="5"/><w lemma="et">et</w> <persName type="emperor" key="constantius1"><name type="cognomen" nymRef="Constantius">Constantio</name></persName>
+                   <lb n="6"/> <w lemma="et">et</w> <persName type="emperor" key="galerius"><name type="cognomen" nymRef="Maximianus">Maximiano</name>
+                   <lb n="7"/><name nymRef="Caesar">Caesari<supplied reason="lost">bus</supplied></name></persName></date>
+                   <lb n="8"/> <space quantity="3" unit="character"/><num value="15">XV</num> <space quantity="3" unit="character"/>
+            </ab>
+         </div>
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#jmr" xml:lang="en"><p>For our Lords, Diocletian and Maximian, Emperors, and Constantius and Maximian <note>Galerius</note>, Caesars: <supplied reason="subaudible">Mile</supplied> 15.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p/>
+         </div>
+      </body>
+   </text>
+</TEI>

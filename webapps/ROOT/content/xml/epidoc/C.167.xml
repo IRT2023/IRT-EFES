@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C71700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription for cisterns</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.167</idno>
+            <idno type="ircyr2012">C71700</idno>
+            <idno type="JMR">722b</idno>
+            <idno type="Excel">1052</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Standing in the nave of the East Church</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Re-used <material>marble</material>
+                              <objectType>stele</objectType> of a type commonly used for funerary
+                              texts (but also for some public texts), laid on its side (<dimensions>
+                                 <width>1.10</width>
+                                 <height>0.43 - 0.50</height>
+                                 <depth>0.23 - 0.25</depth>
+                              </dimensions>). The use as a threshold was its third usage - 
+                              no trace survives of its first as a stele; the inscriptions are the record of its second,
+                              when it perhaps stood in the place of a lintel above the door of a cistern.
+                              The previous bilingual version, <ref type="inscription" n="C.166">C.166</ref> was never completed or exposed; 
+                              this wholly Greek version was then cut on the reverse face.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on what must have been the exposed face, worn smooth in the upper right quarter;
+                           holes for three sockets later cut into the text.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century CE: lines 1-3, <height>0.035</height>; lines 4-8, <height>0.03</height>; line 9, <height>0.025</height>; lunate epsilon and sigma, 
+                        cursive mu, omega</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>The major public cisterns in this east area of the city lie not far SE of the East Church
+                        and this inscription is most likely to have come from them.</origPlace>
+                     <origDate notBefore="0165" notAfter="0169" precision="low" evidence="reign">165-169 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              Found in <date type="found">1956</date>, re-used  for a third time as a threshold in the south west entrance to the 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1226">East Church</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Standing in the nave of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1226">East Church</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-21" who="AO">tokenized</change>
+         <change when="2009-06-11" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_722b_004" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="JMR_722b_003" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="JMRNB06_024" decls="#photograph"><desc>Right end (Reynolds VI.24)</desc></graphic>
+      <graphic url="JMR_722b_002" decls="#photograph"><desc>Face (Reynolds III.93.1)</desc></graphic>
+      <graphic url="JMR_722b_005" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="JMRNB03_093_02" decls="#photograph"><desc>Lower right corner (Reynolds III.93.2)</desc></graphic><!--J.R--></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr1959"/>, <citedRange>3.b</citedRange>, fig. 4</bibl>, 
+               whence <bibl><ptr target="robertBE"/>, <citedRange>1960.437</citedRange></bibl>,
+               <bibl><ptr target="SEG"/> <citedRange>18.740</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324444">324444</ref></citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/> <w lemma="ὑπέρ">Ὑπὲρ</w> <w lemma="νίκη">νείκαϲ</w> <persName type="emperor"><supplied reason="lost"><w lemma="ὁ">τῶν</w> <w lemma="Αὐτοκράτωρ">Αὐτοκρατόρων</w> <name nymRef="Καῖσαρ">Καιϲάρων</name></supplied>
+                        <persName type="emperor" key="marcusaurelius"><supplied reason="lost"><name nymRef="Μᾶρκος">Μάρκω</name></supplied>
+                    <lb n="2"/><name nymRef="Αὐρήλιος">Αὐρηλίω</name> <supplied reason="lost"><name nymRef="Ἀντωνῖνος">Ἀντωνείνω</name></supplied></persName> <supplied reason="lost"><w lemma="καί">καὶ</w> <persName type="emperor" key="luciusverus"><name nymRef="Λούκιος">Λουκίω</name>
+                        <name nymRef="Αὐρήλιος">Αὐρηλίω</name> <name nymRef="Οὐῆρος">Οὐήρω</name></persName></supplied> 
+                    <name nymRef="Σεβαστός"><supplied reason="lost">Ϲε</supplied><lb n="3" break="no"/>βαϲτῶν</name>
+                    <name nymRef="Ἀρμενιακός">Ἀρμενιακῶν</name> <supplied reason="lost"><name nymRef="Παρθικός">Παρθικῶν</name> <w lemma="μέγιστος">μεγίϲτων</w>
+                        <name nymRef="Μηδικός">Μηδικῶν</name></supplied></persName> <supplied reason="lost"><w lemma="ὁ">ἁ</w></supplied> <w lemma="πόλις"><supplied reason="lost">πό</supplied><lb n="4" break="no"/>λιϲ</w> 
+                    <w lemma="ὁ">ἁ</w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυρα<supplied reason="lost">να</supplied>ίων</placeName> <w lemma="ὁ">ἁ</w>
+                    <w lemma="μητρόπολις">ματρόπ<supplied reason="lost">ο</supplied>λιϲ</w> <w lemma="ὁ">τᾶϲ</w> <supplied reason="lost" cert="low"><placeName nymRef="#Ἑξάπολις" key="#hexapolis">Ἑξαπόλιοϲ</placeName></supplied> 
+                       <supplied reason="lost" cert="low"><w lemma="ὁ">τὰ</w></supplied> <w lemma="ὑδροενδόχιον"><supplied reason="lost">ὑδρε</supplied><unclear>γ</unclear>δ<supplied reason="lost">ο</supplied><lb n="5" break="no"/>χία</w>  
+                    <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶ<supplied reason="lost">ν</supplied></w> <w lemma="δημόσιος"><supplied reason="lost">δα</supplied>μοϲίων</w> <w lemma="χρῆμα">χρημάτων</w>
+                    <w lemma="κατακεύω">κατε<supplied reason="lost">ϲ</supplied>κεύαϲεν</w>· <date><w lemma="ἐπί"><supplied reason="lost">ἐ</supplied>πὶ</w>
+                    <persName type="attested" key="pir2-p-0741"><name nymRef="Πομπώνιος">Πομπωνίω</name>
+                    <lb n="6"/><name nymRef="Ναιουϊανός">Ναιουανῶ</name> </persName>  <w lemma="ὁ">τῶ</w> <w lemma="κράτιστος">κρατίϲτωι</w> <w lemma="ἀνθύπατος">ἀνθυπάτωι</w></date> <w lemma="ἄρχω">ἀρξαμένωι</w>
+                    <w lemma="καί">καὶ</w> <w lemma="ὀρύσσω">ὀρύξαντοϲ</w> <w lemma="ἐκ">ἐκ</w>
+                    <lb n="7"/> <w lemma="θεμέλιος">θεμε<supplied reason="lost">λίων</supplied></w> <w lemma="κατά"><supplied reason="lost">κατ’</supplied></w><w lemma="αὐθεντεία"><supplied reason="lost">αὐ</supplied>θεντείαϲ</w> <w lemma="καί">καὶ</w> <w lemma="εὐεργεσία">εὐεργεσίαϲ</w> <w lemma="ὁ">τῶν</w> <w lemma="θεῖος">θειοτάτων</w> 
+                    <w lemma="Αὐτοκράτωρ">Αὐτο<lb n="8" break="no"/>κρατό<supplied reason="lost">ρων</supplied></w> <w lemma="καί"><supplied reason="lost">κα</supplied>ὶ</w>
+                    <w lemma="ἀφιερόω">ἀφιερώσαντοϲ</w> <w lemma="μετά">μετ<supplied reason="lost">ὰ</supplied></w>
+                    <persName type="attested"><name nymRef="Σίλιος"><supplied reason="lost">Ϲειλί</supplied>ωι</name> 
+                       <name nymRef="Πλαύτιος"><expan><abbr>Πλα</abbr><ex>υ</ex><abbr>τίωι</abbr></expan></name>
+                    <lb n="9"/> <space quantity="1" unit="character"/> <name nymRef="Ἁτεριανός"><unclear>Ἁ</unclear><supplied reason="lost">τεριαν</supplied>ῶι</name> 
+                   </persName> <w lemma="ὁ">τῶι</w> <w lemma="κράτιστος">κρατίϲτωι</w> 
+                    <w lemma="ταμίας">ταμία</w> 
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>On behalf of the victory of [the emperors Caesars Marcus] Aurelius [Antoninus and Lucius Verus] Augusti, victors in Armenia, 
+               [greatest victors in Parthia, victors in Media, the] city of the Cyrenaeans, the metropolis of [the six cities?] constructed [the] cisterns, 
+               from public funds, in the time of Pomponios Naiouianos <supplied reason="explanation"><foreign xml:lang="la">Pomponius Naevianus</foreign></supplied> the most excellent proconsul, who began and dug out 
+               <supplied reason="explanation">the cisterns</supplied> by the authority and generosity of the most divine emperors, and who 
+            consecrated <supplied reason="explanation">them</supplied> with Silios Plautios Haterianos  <supplied reason="explanation"><foreign xml:lang="la">Silius Plautius Haterianus</foreign></supplied> the most excellent quaestor.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 3: On the date of the imperial titles, see on <ref type="inscription" n="C.166">C.166</ref></p>
+               <p>Lines 4-5: The major public cisterns in this east area of the city lie not far south east of the East Church
+               and this inscription is most likely to have come from them.</p>
+            <p>Line 4: See <ref type="inscription" n="C.173">C.173</ref>, <ref type="inscription" n="C.307">C.307</ref> d.; this seems the most likely restoration</p>
+            <p>Line 5: Pomponius Naevianus (<title>PIR</title> 2, P 0741) is otherwise unknown</p>
+            <p>Line 8: For Silvius Plautius Haterianus see on <ref type="inscription" n="C.166">C.166</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

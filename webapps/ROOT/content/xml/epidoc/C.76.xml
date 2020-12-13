@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C69800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Hermes and Herakles</title>
+                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché, Catherine Dobias-Lalou</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.76</idno>
+            <idno type="ircyr2012">C69800</idno>
+            <idno type="JMR">652 a i</idno>
+            <idno type="Excel">1021</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>base</objectType> with writing on five faces and reliefs on two 
+                              (<dimensions><width>0.62</width> <height>0.62</height> <depth>0.355</depth></dimensions>). On the front is a relief of a man driving a quadriga, and,  
+                              on the left face, of a boy leading a horse; 
+                              inscribed on the front face with <ref type="inscription" n="C.76">C.76</ref>, <ref type="inscription" n="C.77">C.77</ref>, <ref type="inscription" n="C.78">C.78</ref>, 
+                              <ref type="inscription" n="C.79">C.79</ref>, <ref type="inscription" n="C.80">C.80</ref>, <ref type="inscription" n="C.81">C.81</ref>, on the left face with 
+                              <ref type="inscription" n="C.82">C.82</ref>, on the right with <ref type="inscription" n="C.84">C.84</ref>, on the top with <ref type="inscription" n="C.85">C.85</ref>,
+                              on the reverse with <ref type="inscription" n="C.83">C.83</ref>. A large square hole has been cut in the back which was only semi-dressed.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> formally on the front face, by the head of the man driving.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE - Augustan: <height>0.028</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0100" notAfter="0020" precision="low" evidence="lettering">First century BCE/Augustan</origDate>
+                  </origin><provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1001">House of Hesychios</placeName>; 
+                              found in <date type="found">1934</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-14" who="AO">tokenized</change>
+         <change when="2009-06-11" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="587_doa" decls="#photograph"><desc>Front face, with <ref type="inscription" n="C.76">C.76</ref>, <ref type="inscription" n="C.77">C.77</ref>, 
+         <ref type="inscription" n="C.78">C.78</ref>, <ref type="inscription" n="C.79">C.79</ref>, <ref type="inscription" n="C.80">C.80</ref> and <ref type="inscription" n="C.81">C.81</ref>
+         (Department of Antiquities, D.587)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="SECir"/>, <citedRange>164.a</citedRange> and fig. 129 (from T. VI 1ff)</bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>246</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-63855"><name nymRef="Εὐμηλίδας">Εὐμηλ<supplied reason="lost">ίδ</supplied><unclear>α</unclear>ς</name></persName> 
+                    <lb n="2"/><persName type="divine" key="hermes"><name nymRef="Ἑρμῆς">Ἑρμαῖ</name></persName> <persName type="divine" key="herakles"><name nymRef="Ἡρακλῆς">Ἡρακλεῖ</name></persName>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1"><rdg resp="#SECir">Εὐμη<unclear>λ</unclear>[ίδα]ς</rdg>
+               </app>
+               
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Eumelidas, for Hermes and Herakles</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the dedication to Hermes and Herakles see on <ref type="inscription" n="C.51">C.51</ref>; see also <ref type="inscription" n="C.51">C.51</ref>, <ref type="inscription" n="C.145">C.145</ref>, 
+               <ref type="inscription" n="C.131">C.131</ref>, <ref type="inscription" n="C.152">C.152</ref>). There seems no doubt that the monument originally stood in the nearby gymnasium, 
+               where it acquired the graffiti cf. <ref type="inscription" n="C.145">C.145</ref>, etc.</p>
+            <p> A Eumelidas, who may be identical, was Triakatiarches of the ephebes in 1 BCE, see <ref type="inscription" n="C.145">C.145</ref>, line 9. </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

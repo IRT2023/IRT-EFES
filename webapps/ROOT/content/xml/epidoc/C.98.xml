@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C08300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">List</rs> of nomophylakes</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.98</idno>
+            <idno type="ircyr2012">C08300</idno>
+            <idno type="JMR">665</idno>
+            <idno type="Excel">1266</idno>
+            <idno type="Excel">108</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">The surviving pieces are now in the Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>The greater part of a small <material>sandstone</material> <objectType>panel</objectType> 
+                               reconstructed from fragments, some of which are known only from a photograph.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> roughly and deeply on the face, between regular  marked guidelines.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE; <height>0.008-0.01</height>; L for ἔτους; bar above L, the figures in line 1 and the praenomen in line 6; 
+                        </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0059" notAfter="0061" precision="high" evidence="internal-date">CE 59-61 </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              probably from the <placeName type="monuList" ref="https://www.slsgazetteer.org/1006">Nomophylakeion</placeName>; 
+                               photographed as from the Agora in <date type="found">1925</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>The surviving pieces are now in the <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from stones and from photographs (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-08-24" who="Pietro">bibliography and apparatus</change>
+         <change when="2010-02-22" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-16" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-07-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_665" decls="#photograph"><desc>Face. (Department of Antiquities, E.310)</desc></graphic>
+      <graphic url="JMR_665and666front" decls="#photograph"><desc>Face (Department of Antiquities, F.1053)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="gpc1961"/>, <citedRange>2</citedRange>, p. 16, fig. 9</bibl> <!-- check layout -->, whence  
+               <bibl><ptr target="robertBE"/>, <citedRange>1962.363</citedRange></bibl>, and, with observations by
+               J.M. Reynolds, <bibl><ptr target="SEG"/> <citedRange>20.737</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324493">324493</ref></citedRange></bibl>;
+               <bibl><ptr target="appelbaum1964"/>, <citedRange>291f.<!-- check pp --></citedRange></bibl>, whence  
+               <bibl><ptr target="robertBE"/>, <citedRange>1967.680</citedRange></bibl>, 
+               <bibl><ptr target="jmr1972"/>, <citedRange>46</citedRange></bibl>;
+              <bibl><ptr target="gl-jmr1983"/>, <citedRange>8</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                        <lb n="1"/><space quantity="2" unit="character"/><date><date ref="https://godot.date/id/eynf7mg68dXkiavvTUXFhk"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="90">ϙ</num></date> <space quantity="1" unit="character"/>
+                    <w lemma="καί">καὶ</w> <date ref="https://godot.date/id/RvaJu3kZPpNLb9dMCnCgZm"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="91">ϙα</num></date> <space quantity="3" unit="character"/>
+                    <lb n="2"/><date><w lemma="ἐν">ἐν</w> <w lemma="ἱερεύς">ἱερεῖ</w> <persName type="attested" key="lgpn:V1-64441"><name nymRef="Ἴστρος">Ἴστρῳ</name></persName></date></date>
+               <date ref="https://godot.date/id/wD4kLRqFjQqGGTk9NjvkSK"><w lemma="εἰς">ἐς</w> 
+                    <lb n="3"/> <w lemma="ἱερεύς">ἱερέα</w> <persName type="attested" key="lgpn:V1-63296"><name nymRef="Ἄσκλαπος">Ἄσκλαπον</name> <w lemma="ὁ">τοὺς</w>
+                      <persName type="attested" key="lgpn:V1-63954"><name nymRef="Φιλίσκος">Φι<lb 
+                         n="4" break="no"/>λίσκου</name></persName></persName></date> <w lemma="ὁ">οἱ</w> <w lemma="συνάρχω">συνάρξαν<lb 
+                       n="5" break="no"/>τες</w> <w lemma="νομοφύλαξ">νομοφύλακες</w>
+                       <lb n="6"/><persName type="attested" key="lgpn:V1-64893"><name nymRef="Λῦσις">Λῦσις</name> <persName type="attested" key="lgpn:V1-63013"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>οπλίω</ex></expan></name> <name nymRef="Κοϊντίλιος">Κοιντιλίω</name>
+                       <name nymRef="Ἀπολλώς">Ἀπολ<lb 
+                          n="7" break="no"/> <space quantity="3" unit="character"/>λῶτος</name></persName></persName> <space quantity="5" unit="character"/> 
+                       <lb n="8"/><persName type="attested" key="lgpn:V1-63640"><name nymRef="Ἐλάζαρ">Ἐλάζα<supplied reason="lost">ρ</supplied></name> 
+                       <persName type="attested" key="lgpn:V1-64320"><name nymRef="Ἰάσων"><supplied reason="lost">Ἰ</supplied>άσονος</name></persName></persName> 
+                       <lb n="9"/><persName type="attested" key="lgpn:V1-63429"><name nymRef="Γέμελλος">Γέμε<unclear>λ</unclear><supplied reason="lost">λ</supplied>ος</name> 
+                       <persName type="attested" key="lgpn:V1-62783"><name nymRef="Ἀλώπηξ">Ἀλώπεκος</name></persName></persName> 
+                       <lb n="10"/><persName type="attested" key="lgpn:V1-63468"><name nymRef="Δᾶμις">Δᾶμις</name> <persName type="attested" key="lgpn:V1-63042"><name nymRef="Ἀρίμμαν"><supplied reason="lost">Ἀρ</supplied>ίμμαντος</name></persName></persName>
+                       <lb n="11"/><persName type="attested" key="lgpn:V1-64274"><name nymRef="Θρασύμαχος">Θρασύ<supplied reason="lost">μ</supplied><unclear>α</unclear>χος</name> 
+                      <persName type="attested" key="lgpn:V1-64869"><name nymRef="Λυσίμαχος">Λυσι<lb 
+                         n="12" break="no"/> <space quantity="1" unit="character"/>μά<unclear>χ</unclear><supplied reason="lost">ο</supplied>υ</name></persName></persName>
+                       <space quantity="6" unit="character"/>
+                    <lb n="13"/><gap reason="lost" quantity="5" unit="character" precision="low"/><persName type="attested"><name nymRef="-ος"><seg part="F"><unclear>ο</unclear>ς</seg></name> <persName type="attested" key="lgpn:V1-62636"><name nymRef="Αἰγλάνωρ">Αἰγλάνορος</name></persName></persName>
+                    <lb n="14"/><gap reason="lost" quantity="7" unit="character" precision="low"/> 
+                        <persName type="attested" key="lgpn:V1-65860"><name nymRef="Ὕρατθις">Ὑράτ<supplied reason="lost">θ</supplied>ιος</name></persName>
+            <lb n="15"/><gap reason="lost" quantity="6" unit="character"/>
+               <persName type="attested" key="lgpn:V1-65842"><name nymRef="Τιμῶναξ"><supplied reason="lost">T</supplied>ειμώ<supplied reason="lost">ν</supplied>α<lb 
+                  n="16" break="no"/><supplied reason="lost" cert="low"> <space quantity="3" unit="character"/>κτο</supplied>ς</name></persName>
+               <space quantity="5" unit="character"/> 
+                    <lb n="17"/><gap reason="lost" quantity="4" unit="character"/> <persName type="attested" key="lgpn:V1-62533"><name nymRef="Ἀγαθώνεμος"><supplied reason="lost">Ἀγ</supplied>αθωνέ<lb 
+                       n="18" break="no"/><supplied reason="lost">μο</supplied>υ</name></persName>
+               <space quantity="1" unit="character"/>
+                    </ab>
+         </div>
+         
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="13">
+                  <lem>. . . ]ος</lem>
+                  <rdg resp="#gpc1961">. . . ]ς</rdg>
+               </app>
+               <app loc="14">
+                  <rdg resp="#gpc1961">. . . ]ΥΡΑΙ[. . ]ος</rdg>
+                  <note> whence Appelbaum</note></app>
+               <app loc="15">
+                  <lem/>
+                  <rdg resp="#gpc1961">. . . ]Ξιμω[ . ]α</rdg>
+               </app>
+               <app loc="17">
+                  <rdg resp="#gpc1961">. .  ]αθωνε</rdg>
+                  <note> whence Appelbaum</note></app>
+               <app loc="18"><rdg resp="#gpc1961"> . . . ]υ</rdg> <note> whence Appelbaum</note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 90 und (Jahr) 91, in der Zeit des Priesters Istros bis zum Priester Asklapos, den (Söhnen) des 
+            Philiskos, die gemeinsam amtierenden Nomophylaken Lysis des P(ublius) Quintilius, Elazar des Jason, Gemellos des Alopex, Damis des Arimmas, Thrasymachos des 
+            Lysimachos, . . . . des Aiglanor, . . . . des Hyratthis, ? ?</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/eynf7mg68dXkiavvTUXFhk">Year 90</ref> and 
+               <ref target="https://godot.date/id/RvaJu3kZPpNLb9dMCnCgZm">year 91</ref>, in the priesthood of Istros and the priesthood of Asklapos, the <supplied reason="subaudible">sons</supplied> of Philiskos. The nomophylakes
+               who held office together, Lysis <supplied reason="subaudible">son</supplied> of P(ublius) Quintilius Apollos, Elazar <supplied reason="subaudible">son</supplied> of Jason, Gemellos <supplied reason="subaudible">son</supplied> of Alopex, 
+               Damis <supplied reason="subaudible">son</supplied> of Arimmas, Thrasymachos <supplied reason="subaudible">son</supplied> of Lysimachos, [ . . . ] <supplied reason="subaudible">son</supplied> of Aiglanor,
+               [ . . . ] <supplied reason="subaudible">son</supplied> of Hyratthis, [ . . . ] <supplied reason="subaudible">son</supplied> of Teimonax, [ . . . - ] <supplied reason="subaudible">son</supplied> of Agathonemos.
+         </p></div>
+       </div>
+         
+        
+         <div type="commentary">
+            <p>One of a series of lists recording nomophylakes: <ref type="inscription" n="C.93">C.93</ref>, <ref type="inscription" n="C.94">C.94</ref>, <ref type="inscription" n="C.96">C.96</ref>, <ref type="inscription" n="C.95">C.95</ref>, 
+               <ref type="inscription" n="C.97">C.97</ref>, <ref target="https://igcyr.unibo.it/gvcyr026">GVCyr 26</ref>, all describing a series of dedications, and another list, <ref type="inscription" n="C.98">C.98</ref>; 
+               cf also <ref type="inscription" n="C.99">C.99</ref>; see further on <ref type="inscription" n="C.93">C.93</ref>.</p>
+            <p>Line 1: 90 and 91 of the Actian Era = CE 59/60 and 60/61. The purpose of the document is unknown; Applebaum (l.c. 293) assumes that it was a dedication like the other lists, (all rather less modest than this) but is wrong to say that the stone is broken away below; 
+               if a divinity was named it was on another panel. </p>
+            <p>Line 4: For both priests see <ref type="inscription" n="C.219">C.219</ref> lines 5-8. The dating formula is new in Cyrenaica: Applebaum's belief that it means a record covering two consecutive years 
+               was based on an incorrect calculation of the number of names here. It appears to implythat the official year of the nomophylakes 
+               began during the course of, not contemporaneously with, that for the eponymous priests of Apollo; but an alternative possibility, pointed out by Dobias-lalou, 
+               is that for un unknown reason and under exceptional circumstances the nomophylakes were kept in charge for two consecutive years. 
+                </p>
+            <p>Lines 4-5: The board is of the normal size, but the formula used to describe it is new.</p>
+            <p>Line 8: Elazar is presumably a Jew, although the existence of the native name, Ἀλάζειρ, Herodotus IV.164 
+               (at <ref target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0016.tlg001.perseus-grc1:4.164.4">Perseus</ref>) should not be forgotten, 
+               and Applebaum suggests the possibility of descent from the Jason son of Eleazar of 1 Macc. 8.17, cf. II Macc 4.11. 
+               He argued from this case and that of the Jewish ephebes in <ref type="inscription" n="C.145">C.145</ref> a and b, 
+               <ref type="inscription" n="C.431">C.431</ref> col 2, line 2 that from the time of Augustus some Jews held full Cyrenaean citizenship 
+               (for Jews in municipal office cf. L.Robert, <ref target="https://zenon.dainst.org/Record/000209752"><title>Hellenica</title> X</ref>, p. 250, discussing <title>MAMA</title> VI, p. 116 from Akmonia in Phrygia - 
+               but this is much later in date). See the discussion by Lüderitz, op.cit.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

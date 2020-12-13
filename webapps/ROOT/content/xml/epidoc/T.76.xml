@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T07300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.76</idno>
+            <idno type="ircyr2012">T07300</idno>
+            <idno type="JMR">70</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Sandstone</material> blocks 
+                              (<dimensions><width>lengths varying</width> <height>0.36</height> <depth>0.50</depth></dimensions>), on which 
+                              formal inscriptions have been cut at irregular intervals along both courses, most of them within <rs type="decoration">wreath</rs>s of varying patterns. 
+                              The legible texts are 
+                              <ref type="inscription" n="T.75">T.75</ref>, <ref type="inscription" n="T.76">T.76</ref>, <ref type="inscription" n="T.77">T.77</ref>, 
+                              <ref type="inscription" n="T.78">T.78</ref>, <ref type="inscription" n="T.79">T.79</ref>, <ref type="inscription" n="T.80">T.80</ref>, 
+                              <ref type="inscription" n="T.81">T.81</ref>, <ref type="inscription" n="T.82">T.82</ref>. The equally numerous illegible ones 
+                              appear to have been deliberately erased presumably to make space.
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> on a block in the lower course, each text within a <rs type="decoration">wreath</rs>; 
+                           i to the left, ii to the right. There is an extensive space between i and ii, and the traces of other texts.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.02</height>; lunate epsilon and sigma; L for ἔτους</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="-0100" notAfter="0200" cert="low" evidence="context">First century BCE-second century CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                        <placeName type="monuList" ref="https://www.slsgazetteer.org/1124">Gymnasium (later Byzantine Baths)</placeName>, north wall, outer face, 
+                        two lower courses above the podium; first recorded in <date type="found">1825</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>Findspot</p>
+                        </provenance>
+                     
+                 
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-08-06" who="Pietro">Tokenized</change>
+         <change when="2008-07-14" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXX" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXX)</desc></graphic>
+      <graphic url="JMRSB05_303" decls="#photograph"><desc>Face (Reynolds SB.V.303)</desc></graphic>
+      <graphic url="JMRNS02_028" decls="#photograph"><desc>Face (Reynolds NS.II.28)</desc></graphic>
+      <graphic url="JMRNS02_036" decls="#photograph"><desc>Face (Reynolds NS.II.36)</desc></graphic>
+      <graphic url="JMRNS02_032" decls="#photograph"><desc>Text i (Reynolds NS.II.32)</desc></graphic>
+      <graphic url="JMRNS02_031" decls="#photograph"><desc>Text ii (Reynolds NS.II.31)</desc></graphic>
+      <graphic url="JMRNS02_029" decls="#photograph"><desc>From left <ref type="inscription" n="T.76">T.76</ref>.ii, 
+         <ref type="inscription" n="T.77">T.77</ref> (Reynolds NS.II.29)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/>, <citedRange unit="plate">LXXX</citedRange></bibl>, whence
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5270</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="section" n="i" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/WLbn4frt5A2AqqcAtRgroU"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                        <num value="20">κ</num></date>
+                        <lb n="2"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr><hi rend="supraline">Λ</hi></abbr><ex>ούκιοϲ</ex></expan></name>
+                        <name nymRef="Ἰούλιος">Ἰ<space quantity="1" unit="character"/>ούλι<lb n="3" break="no"/>οϲ</name> <name nymRef="Βαλέριος">Βαλέ<lb n="4" break="no"/><unclear>ρ</unclear>ιοϲ</name></persName>
+                    </ab></div><div subtype="section" n="ii" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/WLbn4frt5A2AqqcAtRgroU"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                        <num value="20"><unclear>κ</unclear></num></date>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-60056"><name nymRef="Λύκος">Λύκο<lb n="3" break="no"/>ϲ</name> 
+                        <persName type="attested" key="lgpn:V1-60055"><name nymRef="Ἰούλιος">Ἰουλί<lb n="4" break="no"/>ου</name></persName></persName>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="i 2">
+                  <rdg resp="#pacho1827">ΙΟΥΧΙ</rdg>
+               </app>
+                    <app loc="i 4">
+                  <rdg resp="#pacho1827">ΥΥΟϹ</rdg>
+               </app>
+                    <app loc="ii 1">
+                  <note>Pacho omits this line</note>
+               </app>
+                    <app loc="ii 2">
+                  <rdg resp="#pacho1827">ΛΥΧΟΧ</rdg>
+               </app>
+                    <app loc="ii 3">
+                  <rdg resp="#pacho1827">ϹΙΟΥΑ</rdg>
+               </app>
+                    <app loc="ii 4">
+                  <rdg resp="#pacho1827">ΟΥΛ</rdg>
+               </app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note>. <ref target="https://godot.date/id/WLbn4frt5A2AqqcAtRgroU">Year 20</ref>. 
+               L(oukios) Ioulios Balerios <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Julius Valerius</foreign></supplied> </p>
+         <p><note>ii</note>. <ref target="https://godot.date/id/WLbn4frt5A2AqqcAtRgroU">Year 20</ref>. Lykos <supplied reason="subaudible">son</supplied> of Ioulios 
+            <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied>.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For commentary see on <ref type="inscription" n="T.75">T.75</ref></p>
+            <!-- <p>Line 1: year 20. Implying a regnal year under Augustus or
+                    Tiberius if in the First century, under Trajan, Hadrian, Pius or Marcus if in the Second century</p> -->
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

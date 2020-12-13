@@ -7,7 +7,13 @@
 
   <xsl:import href="../prune-to-language.xsl" />
 
-  <xsl:template priority="10" match="tei:div[@type='edition']">
+  <xsl:template priority="10" match="tei:div[@type='edition']|tei:div[@type='edition']//tei:div[@type='textpart']|tei:div[@type='edition']//tei:ab">
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template priority="10" match="tei:div[@type='translation']">
     <xsl:copy>
       <xsl:apply-templates select="@*|node()"/>
     </xsl:copy>

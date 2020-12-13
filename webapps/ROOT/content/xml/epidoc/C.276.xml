@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C23700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Decree</rs>s in honour of Barkaios</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor>
+            <editor xml:id="hb">Hugues Berthelot</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.276</idno>
+            <idno type="ircyr2012">C23700</idno>
+            <idno type="JMR">832</idno>
+            <idno type="Excel">1116</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>White <material>marble</material> <objectType>stele</objectType> damaged above and at the right side 
+                              (<dimensions><width>0.58</width> <height>1.50</height> <depth>0.27</depth></dimensions>), 
+                              together with three fragments from the damaged area.</p><!-- check DAI for readimngs -->
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face. lines 1-4 contain the end of one decree, 
+                           lines 5 f. the whole of another; there is no distinguishable difference
+                           between the hands in which they are written and probably both were inscribed at the same time.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Augustan: <height>0.01</height>; line  5, <height>0.02</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="-0016" notBefore="-0017" evidence="offices">17/16 BCE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1033">Temple of Apollo</placeName>:
+                       found nearby in <date type="found" notAfter="1925" notBefore="1924">1924-5</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName> (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-02-17" who="MGDA">fixed bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-22" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-19" who="Pietro">Tokenized.</change>
+         <change when="2009-06-16" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0028" decls="#photograph"><desc>Text (Ufficio Scavi Cirene 1276)</desc></graphic>
+      <!--Dept. D. 24.-->
+      <graphic url="DSC05249" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05250" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="ferri1925"/>, <citedRange>26f</citedRange></bibl>, discussed , <bibl><ptr target="robert1927"/><citedRange></citedRange></bibl>;  <bibl><ptr target="robert1929"/><citedRange></citedRange></bibl>, 
+               mentioned,  <bibl><ptr target="vitali1932"/>, <citedRange>83, 217</citedRange></bibl>, <bibl><ptr target="robert1936"/>, <citedRange unit="page">134</citedRange></bibl>
+               revised edition, with new fragments,  
+                    <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">547</citedRange>, pp.269-276, pl. CXII, CXV, CXVI, Figs 110, 111, 111a</bibl>, <!-- check -->whence 
+               <bibl><ptr target="SEG"/> <citedRange>9.4</citedRange></bibl>, <bibl><ptr target="robertBE"/>, <citedRange>1938.565</citedRange></bibl>, 
+               and, with a fully revised text (lines 6-39) <bibl><ptr target="robert1939"/><citedRange></citedRange></bibl>, whence 
+
+               <bibl><ptr target="robertBE"/>, <citedRange>1939.559</citedRange></bibl>. Discussed, <bibl><ptr target="cordiano2009"/><citedRange></citedRange></bibl>, <bibl><ptr target="cdl2016a"/> <citedRange unit="page">46-47</citedRange></bibl>. 
+
+              <!--   Also >;check -->
+                    <!-- bibl>
+                  <author>J. Delorme</author></bibl> -->
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" quantity="1" unit="line"/> 
+                    <lb n="1"/><w lemma="δοκέω">δεδό<unclear>χθα</unclear><supplied reason="lost">ι</supplied></w> 
+                    <supplied reason="lost"><w lemma="ἐπαινέω">ἐπαινέσαι</w> <w lemma="τε">τε</w> <w lemma="αὐτός">αὐτὸν</w> 
+                        <w lemma="δημόσιος">δαμοσίαι</w> <w lemma="ὁ">τὰν</w> <w lemma="πόλις">πόλιν</w></supplied> 
+                    <lb n="2"/><w lemma="καί">καὶ</w> <w lemma="παρακαλέω">παρα<unclear>κ</unclear><supplied reason="lost">αλέ</supplied><unclear>σαι</unclear></w>
+                    <supplied reason="lost"><w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὰν</w> <w lemma="κοινός">κοινὰν</w> 
+                        <w lemma="ἑστία">ἑστίαν</w> <w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὸ</w> <w lemma="πρυτανεῖον">πρυτανεῖον</w></supplied> 
+                    <lb n="3"/> <w lemma="δίδωμι">δόμεν</w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτῶι</w> <w lemma="κατά">κατὰ</w> 
+                    <w lemma="ὁ"><unclear>τὰ</unclear></w> 
+                    <supplied reason="lost"><w lemma="πάτριος">πάτρια</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶι</w></supplied> 
+                        <persName type="emperor" key="augustus"><supplied reason="lost"><name nymRef="Σεβαστός">Σεβαστῶι</name></supplied> 
+                    <name nymRef="Καῖσαρ"><supplied reason="lost">Καίσα</supplied><lb n="4" break="no"/> <space quantity="3" unit="character"/> ρος</name></persName> <w lemma="ὁ">τὰν</w> 
+                    <w lemma="ἱερατεία">ἱερ<supplied reason="lost">ατείαν</supplied></w> <space quantity="3" unit="character"/> 
+   <lb n="4a"/><space quantity="1" unit="line"/>
+                    <lb n="5"/> <space quantity="2" unit="character"/> <date ref="https://godot.date/id/UyJESVqvsYT96izftTB5Km"><w lemma="ἐπί">ἐπὶ</w> 
+                    <space quantity="5" unit="character"/> <persName type="attested"><name nymRef="Πανταλέων">Πάντα<supplied reason="lost">λεοντος</supplied></name></persName> <w lemma="ἱερεύς">ἱερέως</w> 
+                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀπόλλωνος</supplied></name></persName></date> 
+                    <lb n="6"/><w lemma="ἐπεί"><supplied reason="lost">ἐ</supplied>πεὶ</w> <persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος">Βαρκαῖος</name> 
+                   <persName type="attested" key="lgpn:V1-64220"><name nymRef="Θεύχρηστος">Θευχρήστωι</name></persName> </persName>
+                    <w lemma="μεταλλάσσω">μετάλλ<supplied reason="lost">αχε</supplied></w> 
+                    <supplied reason="lost"><w lemma="ὁ">τὸν</w></supplied> <w lemma="βίος"><supplied reason="lost">βί</supplied>ον</w> <w lemma="καί">καὶ</w> 
+                    <lb n="7"/> <w lemma="καταλείπω"><unclear>κ</unclear>αταλέλοιπε</w>, <w lemma="συντηρέω">συντηρήσας</w> 
+                    <w lemma="ὁ">τὸ</w> <w lemma="ἀπό">ἀπὸ</w> 
+                    <supplied reason="lost"><w lemma="ὁ">τᾶς</w> <w lemma="πρῶτος">πράτας</w></supplied> <w lemma="ἡλικία"><supplied reason="lost">ἁλ</supplied>ικίας</w> 
+                    <lb n="8"/><w lemma="αὐτός">αὐτῶι</w> <w lemma="πρός">ποτὶ</w> <w lemma="ὁ">τὰν</w> 
+                    <w lemma="πατρίς">πατρίδα</w> <w lemma="φιλόστοργος">φιλόστοργον</w>, 
+                    <w lemma="ἀγρός"><unclear>ἀ</unclear><supplied reason="lost">γρὸν</supplied></w> 
+                   <w lemma="ὁ">τὸ</w> 
+                    <persName type="attested" key="lgpn:V1-65037"><name nymRef="Μνασέας">Μνα<lb n="9" break="no"/>σέα</name></persName> <persName type="divine" key="hermes"><name nymRef="Ἑρμῆς">Ἑρμᾶι</name></persName> <w lemma="καί">καὶ</w> <persName type="divine" key="herakles"><name nymRef="Ἡρακλῆς">Ἡρακλεῖ</name></persName> 
+                    <w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὸ</w> <w lemma="κοινός">κοινὸν</w> 
+                    <w lemma="ὁ">τῶ</w> <w lemma="δῆμος"><unclear>δ</unclear><supplied reason="lost">άμω</supplied></w> 
+                    <w lemma="ἄλειμμα"><supplied reason="lost">ἄλειμ</supplied>μα</w> <w lemma="καί">καὶ</w> 
+                    <lb n="10"/><w lemma="ἄλλος">ἄλλον</w> <w lemma="ἀγρός">ἀγρὸν</w> <w lemma="ἱερός">ἱαρὸν</w> <w lemma="ὁ">τὸ</w>
+                   <persName type="attested" key="lgpn:V1-63715"><name nymRef="Ἐπίστρατος">Ἐπιστράτω</name></persName> 
+                   <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπό<supplied reason="lost">λλωνι</supplied></name></persName> 
+                   <supplied reason="lost">
+                       <w lemma="καί">καὶ</w></supplied>  <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις"><supplied reason="lost">Ἀρτ</supplied>άμιτι</name></persName>
+                    <lb n="11"/><w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὰν</w> <w lemma="ὁ">τῶν</w> <w lemma="ἱερός">ἱαρέων</w> <w lemma="χρῆσις">χρῆσιν</w>, 
+                    <w lemma="διαδόχος">διαδόχος</w> <w lemma="ἐγώ">ἁμὲ</w> <w lemma="ὁ">τῶ<supplied reason="lost">ν</supplied></w> <supplied reason="lost"><w lemma="ἴδιος">ἰδίων</w></supplied>
+                    <w lemma="μετά"><supplied reason="lost">μετ</supplied>ὰ</w> 
+                        <w lemma="ὁ">τῶν</w> 
+                    <lb n="12"/> <w lemma="συγγενής">συγγενεστάτων</w> <w lemma="ἡγέομαι">ἁγησάμενος</w>, <w lemma="δέον">δέον</w> <w lemma="δέ">δέ</w> 
+                    <w lemma="εἰμί">ἐσ<supplied reason="lost">τι</supplied></w> <supplied reason="lost"><w lemma="ὁ">τοῖς</w> 
+                        <w lemma="ἐν">ἐν</w></supplied> <w lemma="ἀρετή"><supplied reason="lost">ἀ</supplied>ρετᾶι</w> 
+                    <lb n="13"/><w lemma="καί">καὶ</w> <w lemma="σωφροσύνη">σωφροσύναι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τᾶι</w> 
+                    <w lemma="πρός">ποτὶ</w> <w lemma="ὁ">τὰν</w> <w lemma="πατρίς">πατρίδα</w> <w lemma="φιλοτιμία"><supplied reason="lost">φιλοτιμί</supplied>αι</w>
+                    <lb n="14"/> <w lemma="βιόω">βιώσαισι</w> <w lemma="καί">καὶ</w> <w lemma="ζάω">ζῶσι</w>
+                    <w lemma="καί">καὶ</w> <w lemma="μεταλλάσσω">μεταλλάξαισι</w> <w lemma="ὁ">τὰς</w> 
+                    <w lemma="καθήκω">καθη<supplied reason="lost">κοίσας</supplied></w> 
+                   <gap reason="lost" quantity="6/8" unit="character"/><lb 
+                      n="15" break="no"/><w part="F">έμεν</w> <w lemma="ὁ">τὰν</w> <w lemma="πόλις">πόλιν</w> <w lemma="χάρις">χάριτας</w>· 
+                    <w lemma="δοκέω">δεδόχθαι</w> <w lemma="σύν">σὺν</w> 
+                    <w lemma="ὁ">ταῖς</w> <w lemma="προγίγνομαι">προ<supplied reason="lost">γεγονοίσαις</supplied></w> 
+                    <lb n="16"/><w lemma="αὐτός">αὐτῷ</w> <w lemma="τιμή">τειμαῖς</w> <w lemma="ἀκολουθέω">ἀκολουθῆσαι</w> 
+                    <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τᾶς</w> 
+                    <w lemma="ἐκφορά">ἐκφορᾶς</w> <w lemma="αὐτός">α<supplied reason="lost">ὐτῶι</supplied></w> 
+                    <supplied reason="lost"><w lemma="ὁ">τός</w> 
+                    <w lemma="τε">τε</w></supplied>
+                    <lb n="17"/> <w lemma="ἐλεύθερος">ἐλευθέρος</w> <w lemma="παῖς">παῖδας</w> 
+                    <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸς</w> <w lemma="γέρων">γέροντας</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> 
+                    <w lemma="συναρχία"><supplied reason="lost">συναρχί</supplied><lb n="18" break="no"/>ας</w> 
+                    <w lemma="πᾶς">παίσας</w>· <w lemma="βαστάζω">βαστάξαι</w> <w lemma="δέ">δὲ</w> <w lemma="ὁ">τὰν</w> <w lemma="ἐκφορά">ἐκφορὰν</w> <w lemma="αὐτός">αὐτῶι</w> 
+                    <w lemma="ὁ">τός</w> <w lemma="τε">τ<supplied reason="lost">ε</supplied></w> 
+                    <supplied reason="lost"><w lemma="ἔφηβος">ἔφηβος</w></supplied> 
+                    <lb n="19"/><w lemma="καί">καὶ</w> <w lemma="ὁ">τὸς</w> <w lemma="ἄλλος">ἄλλος</w> <w lemma="ὁ">τὸς</w> <w lemma="μετέχω">μετέχοντας</w> <w lemma="ὁ">τῶι</w> <w lemma="ἄλειμμα">ἀλείμματος</w> 
+                    <supplied reason="lost"> <w lemma="πᾶς">πάντας</w></supplied>· 
+                    <lb n="20"/><w lemma="στεφανόω">στεφανῶσαι</w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτὸν</w> 
+                    <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τᾶς</w> <w lemma="ἐκφορά">ἐκφορᾶς</w> <w lemma="ὁ">τὰν</w> <w lemma="πόλις"><unclear>π</unclear><supplied reason="lost">όλιν</supplied></w> 
+                   <supplied reason="lost"><w lemma="χρύσεος">χρυσέῳ</w></supplied> 
+                    <lb n="21"/><w lemma="στέφανος">στεφάνῳ</w> <w lemma="καί">καὶ</w> <w lemma="ὅπλον">ὅπλῳ</w> <w lemma="ἐπίχρυσος">ἐπιχρύσῳ</w> <w lemma="καί">καὶ</w> <w lemma="εἰκών">εἰκόνι</w> 
+                    <w lemma="γραπτός"><unclear>γ</unclear><supplied reason="lost">ραπτᾶι</supplied></w> <supplied reason="lost"><w lemma="καί">καὶ</w></supplied> 
+                    <w lemma="ἀνδριάς"><supplied reason="lost">ἀν</supplied><lb n="22" break="no"/>δριάντι</w> 
+                    <w lemma="χάλκεος">χαλκέωι</w>· <w lemma="ἀνατίθημι">ἀνθέμεν</w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτῶ<unclear>ι</unclear></w> 
+                    <supplied reason="lost"><w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὸ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName></supplied> 
+                    <lb n="23"/> <w lemma="ἱερός">ἱαρὸν</w> <w lemma="ὅπλον">ὅπλον</w> <w lemma="ἐπίχρυσος">ἐπίχρυσον</w> <w lemma="καί">καὶ</w>
+                    <w lemma="ἀνδριάς">ἀνδριάντ<supplied reason="lost">α</supplied></w> 
+                    <supplied reason="lost"><w lemma="χάλκεος">χάλκεον</w> <w lemma="ἔχω">ἔχοντας</w></supplied> 
+                    <lb n="24"/><w lemma="ὁ">τὰς</w> <w lemma="ἐπιγραφή">ἐπιγραφάς</w>· <persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος">Βαρκαῖον</name>
+                    <persName type="attested" key="lgpn:V1-64220"><name nymRef="Θεύχρηστος">Θευχρή<supplied reason="lost">στω</supplied></name></persName></persName>
+                    <supplied reason="lost"><w lemma="ὁ">τὰς</w> <w lemma="πρός">ποτὶ</w> 
+                        <w lemma="ὁ">τὰν</w></supplied> 
+                    <lb n="25"/><w lemma="πόλις">πόλιν</w> <w lemma="ἐκτενής">ἐκτενέας</w> <w lemma="χάρις">χάριν</w> <w lemma="ἀρετή">ἀρετᾶς</w>
+                    <w lemma="ἕνεκα">ἕνεκα</w> <space quantity="1" unit="character"/> 
+                    <supplied reason="lost" cert="low"><placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυραναῖοι</placeName></supplied>·
+                    <lb n="26"/> <w lemma="ἀνατίθημι">ἀνθέμεν</w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτῶ</w> <w lemma="καί">καὶ</w> 
+                    <w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὸ</w> <w lemma="γυμνάσιον">γυμνά<unclear>σ</unclear><supplied reason="lost">ιον</supplied></w> <supplied reason="lost"><w lemma="ὅπλον">ὅπλον</w> <w lemma="ἐπίχρυσος">ἐπίχρυσον</w></supplied> 
+                    <lb n="27"/><w lemma="ἔχω">ἔχον</w> <w lemma="ἐπιγραφή">ἐπιγραφάν</w>· <persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος">Βαρκαῖον</name> 
+                    <persName type="attested" key="lgpn:V1-64220"><name nymRef="Θεύχρηστος">Θευχρή<supplied reason="lost">στω</supplied></name></persName></persName> 
+                    <supplied reason="lost"><w lemma="ὁ">τᾶς</w> <w lemma="πρός">ποτὶ</w> <w lemma="ὁ">τὰν</w></supplied> 
+                    <w lemma="πόλις"><supplied reason="lost">πό</supplied><lb n="28" break="no"/>λιν</w> 
+                    <w lemma="ἐκτενής">ἐκτενέας</w> <w lemma="χάρις">χάριν</w> <w lemma="ἀρετή">ἀρετᾶς</w> <w lemma="ἕνεκα">ἕνεκα</w> 
+                    <supplied reason="lost"><placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυραναῖοι</placeName>.</supplied> 
+                        <w lemma="ἐπιθυμιάω"><supplied reason="lost">ἐπιθυμι</supplied>ᾶν</w> <supplied reason="lost"><w lemma="δέ">δὲ</w></supplied> 
+                    <persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος"><supplied reason="lost">Βαρκαί</supplied><lb n="29" break="no"/>ωι</name></persName> <w lemma="καί">καὶ</w> <w lemma="θύω">θύεν</w> 
+                    <w lemma="ὁ">τὸς</w> <w lemma="κατά">καθ’</w><w lemma="ἔτος">ἔτος</w> <w lemma="ἕκαστος">ἕκαστον</w> 
+                    <w lemma="γυμνασιάρχω">γυμ<supplied reason="lost">νασιαρχέντας</supplied></w>
+                    <w lemma="ὁ"><supplied reason="lost">τ</supplied>ᾶι</w> <w lemma="πέμπτος">πέ<supplied reason="lost">μ</supplied><lb n="30" break="no"/>πται</w> 
+                    <w lemma="ὁ">τῶι</w> <rs type="month" key="pachon"><w lemma="Παχών">Παχὼν</w></rs> <w lemma="μείς">μηνός</w>, <w lemma="ὅστις">ἅτις</w> <w lemma="εἰμί">ἐστὶ</w>
+                    <w lemma="γενέσιος">γε<unclear>ν</unclear><supplied reason="lost">έσιος</supplied></w> 
+                    <supplied reason="lost"><w lemma="αὐτός">αὐτῶι</w></supplied>  <w lemma="ἡμέρα">ἁμέρ<supplied reason="lost">α</supplied></w>·
+                    <lb n="31"/> <w lemma="ὁ">τὰν</w> <w lemma="δέ">δὲ</w> <w lemma="αὐτός">αὐτὰν</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸς</w>
+                    <w lemma="ἱερεύς">ἱαρὲς</w> <space quantity="1" unit="character"/> <w lemma="ὁ">τῶι</w> 
+                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλ<supplied reason="lost">λωνος</supplied></name></persName> <w lemma="εὐωχέω"><supplied reason="lost">εὐ</supplied>ωχέσ<lb n="32" break="no"/>θαι</w> 
+                    <w lemma="γενέσιος">γενέσιον</w> <w lemma="ἡμέρα">ἁμέραν</w> <w lemma="ἐπίκληρος">ἐπίκλαρόν</w> <w lemma="τε">τε</w> <supplied reason="lost"><w lemma="αὐτός">αὐτὸν</w> <w lemma="εἰς">ἐς</w></supplied>
+                        <w lemma="ὁ"><supplied reason="lost">τὸ</supplied>ς</w> <w lemma="ἱερεύς">ἱαρὲ<supplied reason="lost">ς</supplied></w> 
+                   <lb n="33"/><w lemma="ὁ">τῶι</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Απόλλωνος</name></persName> <space quantity="8" unit="character"/> 
+   <persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος">Βαρκ<supplied reason="lost">αίω</supplied></name></persName> <w lemma="πολεμάρχης"><supplied reason="lost" cert="low">πολεμά</supplied>ρχω</w>
+                  <lb n="33a"/><space quantity="1" unit="line"/>
+                    <lb n="34"/><w lemma="ὁ">τὸν</w> <w lemma="καταλείπω">καταλελειμμένον</w> <w lemma="ὑπό">ὑπὸ</w> 
+                    <persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος">Βαρκαίω</name> <supplied reason="lost"><w lemma="ὁ">τῶι</w></supplied>  <supplied reason="lost"><persName type="attested" key="lgpn:V1-64220"><name nymRef="Θεύχρηστος">Θευχρήστω</name></persName></supplied></persName>
+                   <lb n="35"/> <w lemma="ἀγρός">ἀγρὸν</w> <w lemma="ὁ">τὸ</w> <persName type="attested"><name nymRef="Ἐπίστρατος">Ἐπιστράτω</name></persName> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνι</name></persName> 
+                    <w lemma="καί">κ<unclear>α</unclear><supplied reason="lost">ὶ</supplied></w> <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις">Ἀρτάμ<supplied reason="lost">ιτι</supplied></name></persName> <supplied reason="lost"><w lemma="θεός">θεοῖς</w></supplied> 
+                    <w lemma="δαμοτελής"><supplied reason="lost">δα</supplied><lb n="36" break="no"/>μοτελέσιν</w> 
+                    <w lemma="εἰς">ἐς</w> <w lemma="κτῆσις">κτῆσιν</w>, <w lemma="εἰς">ἐς</w> <w lemma="χρῆσις">χρῆσιν</w> <w lemma="δέ">δὲ</w> 
+                    <w lemma="ὁ">τοῖς</w> <w lemma="ἱερεύς">ἱαρεῦσ<supplied reason="lost">ι</supplied></w>
+                        <supplied reason="lost"><w lemma="οὗτος">τοῦτον</w></supplied> <w lemma="εἰμί"><supplied reason="lost">ἦ</supplied><lb n="37" break="no"/>μεν</w> <w lemma="ἱερός">ἱαρόν</w>· <w lemma="μή">μὴ</w>
+                   <w lemma="ἔχω">ἔχεν</w> <w lemma="δέ">δὲ</w> <w lemma="ἐξουσία">ἐξουσίαν</w> <w lemma="μηδείς">μηθένα</w> <w lemma="πωλέω">πωλὲ<supplied reason="lost">ν</supplied></w> 
+                       <supplied reason="lost"><w lemma="μηδέ">μηδὲ</w></supplied> <w lemma="ὠνέομαι"><supplied reason="lost">ὠνέ</supplied><lb n="38" break="no"/>σθαι</w> <w lemma="μηδέ">μηδὲ</w> 
+                       <w lemma="κατατίθημι">καττιθὲν</w> <w lemma="μηδέ">μηδὲ</w> <w lemma="δωρέω">δωρέσθαι</w>, 
+                       <w lemma="μηδέ">μηδὲ</w> <w lemma="εἰς">ἐς</w> 
+                           <w lemma="μίσθωσις">μί<supplied reason="lost">σθωσιν</supplied></w> <w lemma="δωρεά"><supplied reason="lost">δωρε</supplied><lb n="39" break="no"/>ᾶς</w> <w lemma="χάρις">χάριν</w> <w lemma="δίδωμι">διδῶν</w> <w lemma="κατά">κατὰ</w> 
+                       <w lemma="μηδείς">μηθένα</w> <w lemma="τρόπος">τρόπον</w> 
+                       <w lemma="κατά">κα<supplied reason="lost">τὰ</supplied></w> <w lemma="ὁ">τὰ<supplied reason="lost">ν</supplied></w> 
+                           <w lemma="παρακατατίθεμαι"><supplied reason="lost">παρακαττε</supplied><lb n="40" break="no"/>θεῖσαν</w> <w lemma="διαθήκη">διαθήκαν</w>. <w lemma="ὁ">τῶν</w> <w lemma="δέ">δὲ</w> 
+                           <w lemma="παρά">παρὰ</w> <w lemma="οὗτος">ταῦτα</w> <w lemma="ποιέω">ποιησάν<supplied reason="lost">των</supplied></w> 
+                           <supplied reason="lost"><w lemma="ἄκυρος">ἄκυροι</w></supplied> <w lemma="εἰμί"><supplied reason="lost">ἔστω</supplied><lb n="41" break="no"/>σαν</w> <w lemma="ὁ">αἱ</w> <w lemma="οἰκονομία">οἰκονομίαι</w> <w lemma="καί">καὶ</w> 
+                               <w lemma="προσαποτίνω">προσαποτινέτωσαν</w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="42"/> <w lemma="ἀποτίνω"><del rend="erasure">ἀποτινέ<supplied reason="lost">τ</supplied>ωσαν</del></w> <w lemma="ἱερός">ἱαρὰς</w> <w lemma="ἀργύριον">ἀργυρίω</w> 
+                               <w lemma="δραχμή">δραχμὰς</w> <w lemma="χίλιοι">χ<supplied reason="lost" cert="low">ιλίας</supplied></w> <supplied reason="lost"><w lemma="κατά">κατὰ</w></supplied> 
+                    <lb n="43"/><w lemma="ὅδε">τάδε</w> <w lemma="καί">καὶ</w> <w lemma="ἀγρός">ἀγρὸν</w> <w lemma="ὁ">τὸ</w> <persName type="attested" key="lgpn:V1-65037"><name nymRef="Μνασέας">Μνασέα</name></persName>
+                               <w lemma="ὁ">τὸν</w> <w lemma="καταλείπω">καταλειφ<supplied reason="lost">θέντα</supplied></w>
+                               <w lemma="ὑπό"><supplied reason="lost">ὑπὸ</supplied></w> 
+                    <lb n="44"/><persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος">Βαρκαίω</name></persName> <space quantity="1" unit="character"/> 
+                               <persName type="divine" key="hermes"><name nymRef="Ἑρμῆς">Ἑρμᾶι</name></persName> <w lemma="καί"><unclear>κ</unclear>αὶ</w> 
+                               <persName type="divine" key="herakles"><name nymRef="Ἡρακλῆς"><unclear>Ἡρ</unclear>ακλεῖ</name></persName>
+                               <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶι</w> 
+                               <w lemma="δημόσιος">δαμοσίω<supplied reason="lost">ι</supplied></w> 
+                               <supplied reason="lost"><w lemma="γυμνάσιον">γυμνασίωι</w> <w lemma="καί">καὶ</w></supplied> 
+                                   <w lemma="οὗτος"><supplied reason="lost">τοῦ</supplied><lb n="45" break="no"/>τον</w> <w lemma="εἰμί">ἦμεν</w> 
+                                   <w lemma="ἱερός">ἱα<supplied reason="lost">ρὸ</supplied>ν</w> <w lemma="ὁ">τῶν</w> 
+                                   <w lemma="προγράφω">προγεγραμμένων</w> 
+                                   <w lemma="θεός">θε<supplied reason="lost">ῶν</supplied></w> <supplied reason="lost"><w lemma="καί">καὶ</w> 
+                                       <w lemma="ὁ">τὰς</w></supplied> <w lemma="πρόσοδος"><supplied reason="lost">προσόδ</supplied><lb n="46" break="no"/>ος</w> <w lemma="ὁ">τῶι</w> <w lemma="ἄλειμμα">ἀλείμματος</w>.
+                                   <w lemma="μή">μὴ</w> <w lemma="ἔχω">ἔχεν</w> <w lemma="δέ">δὲ</w> <w lemma="ἐξουσία">ἐξουσίαν</w> 
+                                   <supplied reason="lost"><w lemma="μηδείς">μηθένα</w> <w lemma="πωλέω">πωλὲν</w></supplied>
+                                   <w lemma="μηδέ"><supplied reason="lost">μη</supplied><lb n="47" break="no"/>δὲ</w> 
+                                   <w lemma="ὠνέομαι">ὠνέσθαι</w> <w lemma="μηδέ">μηδὲ</w> <w lemma="κατατίθημι">καττιθὲν</w> <w lemma="μηδέ">μηδὲ</w> 
+                                   <w lemma="δωρέω">δ<unclear>ω</unclear><supplied reason="lost">ρ</supplied><unclear>έσ</unclear><supplied reason="lost">θαι</supplied></w> <supplied reason="lost"><w lemma="μηδέ">μηδὲ</w> <w lemma="εἰς">ἐς</w></supplied>
+                                   <w lemma="μίσθωσις"><supplied reason="lost">μίσθω</supplied><lb n="48" break="no"/>σιν</w> 
+                                   <w lemma="δωρεά">δωρεᾶς</w> <w lemma="χάρις">χάριν</w> <w lemma="δίδωμι">διδῶν</w> <w lemma="κατά">κατὰ</w> 
+                    <w lemma="μηδείς">μηθ<unclear>έ</unclear><supplied reason="lost">να</supplied></w> 
+                                   <supplied reason="lost"><w lemma="τρόπος">τρόπον</w>. <w lemma="ὁ">τῶν</w> <w lemma="δέ">δὲ</w> <w lemma="παρά">παρὰ</w></supplied> 
+                    <lb n="49"/><w lemma="οὗτος">ταῦτα</w> <w lemma="ποιέω">ποιη<supplied reason="lost">σ</supplied>άντων</w> 
+                                   <w lemma="ἄκυρος">ἄκυροι</w> <w lemma="εἰμί">ἔστωσα<supplied reason="lost">ν</supplied></w>
+                                   <supplied reason="lost"><w lemma="ὁ">αἱ</w> <w lemma="οἰκονομία">οἰκονομίαι</w> <w lemma="καί">καὶ</w></supplied> 
+                    <w lemma="προσαποτίνω"><supplied reason="lost">προσ</supplied><lb n="50" break="no"/>αποτινέτωσαν</w> 
+                                   <w lemma="ἱερός">ἱαρὰς</w> <w lemma="ἀργύριον">ἀργυρίωι</w> 
+                                   <supplied reason="lost"><w lemma="δραχμή">δραχμὰς</w> <w lemma="χίλιοι">χιλίας</w>. <w lemma="ὁ">τὸ</w> <w lemma="δέ">δὲ</w></supplied> 
+                                   <w lemma="ψήφισμα"><supplied reason="lost">ψάφισ</supplied><lb n="51" break="no"/>μα</w> 
+                                   <w lemma="κύριος">κύριον</w> <w lemma="εἰμί">ἦμεν</w> <w lemma="εἰς">ἐς</w> <w lemma="πᾶς">πάντα</w> 
+                                   <w lemma="ὁ">τὸ<unclear>ν</unclear></w> <w lemma="χρόνος"><supplied reason="lost">χρόνον</supplied></w> 
+                    <lb n="52"/> <space extent="unknown" unit="line"/>
+               </ab>
+</div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="11"><rdg resp="#oliverioDAI2">τῶ[ν ἄγχιστα τῶν] </rdg></app>
+               <app loc="13"><rdg resp="#oliverioDAI2">[εὐνοίαι] <unclear>κ</unclear>αὶ </rdg></app>
+               <app loc="13"><rdg resp="#oliverioDAI2">τός τ[ε ἀλειφομένος]</rdg></app>
+               <app loc="14/15"><rdg resp="#oliverioDAI2">προστιθ]/έμεν</rdg></app>
+               <app loc="33"><rdg resp="#oliverioDAI2">τε [συνάγεν τὸ]ς ἱαρὲ[ς]</rdg></app>
+            </listApp>
+         </div> 
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div  type="translation" resp="#hb" xml:lang="fr"><p> . . . ] qu’il plaise: [que la cité lui décerne l’éloge à titre public] et l’invite 
+               [au foyer commun dans le prytanée]; qu’on lui confère conformément aux [lois ancestrales également] la prêtrise de César [Auguste].
+</p><p>Sous <supplied reason="subaudible">le prêtre</supplied> Panta[léon].</p><p>
+Attendu que Barkaios fils de Theuchrestos a quitté la vie et laissé, parce qu’il avait conservé depuis sa prime jeunesse de la tendresse pour sa patrie, 
+le champ dit “de Mnaséas” à Hermès et Héraclès pour l’onction commune du peuple et un autre champ consacré, dit “d’Épistratos”, à Apollon et Artémis pour l’usage 
+des prêtres, nous ayant considérés comme ses héritiers à l’égal de ses plus proches parents;</p><p>
+attendu que, à ceux qui ont passé leur vie dans le mérite, la modération et le dévouement à leur patrie, qu’ils soient vivants ou morts, la cité doit accorder les récompenses qui conviennent, 
+qu’il plaise:</p><p>
+que, avec ses honneurs antérieurs, suivent le convoi funèbre les jeunes gens de naissance libre, les gerontes et tous les magistrats; 
+que portent le corps ceux qui [fréquentent le gymnase] et tous les [étrangers] qui ont part à l’onction; que la cité le couronne, à l’occasion du convoi funèbre, 
+d’une couronne [d’or], et <supplied reason="subaudible">lui accorde</supplied> aussi un bouclier plaqué or, un portrait peint et une statue de bronze; qu’on lui érige 
+   [dans le sanctuaire d’Apollon] un bouclier plaqué or et une statue [plaquée or portant tous deux] l’inscription "[Les Cyrénéens] 
+   <supplied reason="subaudible">ont honoré</supplied> Barkaios fils de Theuchrestos, comme récompense de sa persévérance à l’endroit de la cité, en raison de son mérite"; 
+   qu’on lui érige également dans le gymnase un bouclier plaqué or portant l’inscription: "[Les Cyrénéens] <supplied reason="subaudible">ont honoré</supplied> 
+   Barkaios fils de Theuchrestos, comme récompense de sa persévérance à l’endroit de la cité, en raison de son mérite".</p><p>
+Que lui brûlent des parfums et procèdent à un sacrifice les gymnasiarques en fonction chaque année, le cinquième jour du mois de Pakhôn, jour de sa naissance; 
+que le même jour, les prêtres d’Apollon célèbrent magnifiquement le jour de sa naissance et que les prêtres d’Apollon [ . . . </p><p>
+Quant au champ dit “d’Épistratos”, laissé par Barkaios fils de Theuchrestos, en sorte qu’Apollon et Artémis, dieux civiques, en aient la propriété et les prêtres l’usage, 
+qu’il soit consacré et qu’il ne soit permis à personne de le vendre, de l’acheter, de le gager ou de l’offrir, ni de le proposer à la location à titre gratuit de 
+quelque manière que ce soit, conformément aux dispositions du testament.</p><p>
+Que les arrangements des contrevenants ne soient pas valides et qu’ils payent en outre à titre de compensation [ . . . ] <surplus>et qu’ils payent à titre de compensation</surplus>  
+mille drachmes d’argent qui seront consacrées.</p><p>
+Conformément à ces dispositions, que le champ dit “de Mnaséas” laissé par Barkaios à Hermès et Héraklès et au [gymnase] public soit lui aussi consacré aux dieux susdits 
+et que ses revenus reviennent à l’onction ; qu’il ne soit permis [à personne] de le vendre, de l’acheter, de le gager ou de l’offrir, ni de le proposer à la location à titre gratuit de quelque [manière que ce soit].
+Que les arrangements des contrevenants ne soient pas valides et qu’ils doivent en outre à titre de compensation [mille drachmes] d’argent qui seront consacrées.</p><p>
+Que le décret soit valide pour toujours.
+</p></div>
+            <!--  
+            <div type="translation" source="#cdl2016a" xml:lang="fr"><p><note>lines 6-9</note>: Attendu que Barkaios fils de Theukhrestos a quitté la vie et a légué (...) 
+               un terrain dit « de Mnaséas » à Hermès et Héraklès pour l’onction publique, <note>lines 22-28</note> (la cité décide) de lui dédier dans le sanctuaire d’Apollon un bouclier doré 
+               et une statue dorée portant les inscriptions suivantes: «Portrait de Barkaios fils de Theukhrestos offert en remerciement de son zèle envers la cité et en raison de 
+               sa valeur par les Cyrénéens»; et de dédier de lui au gymnase un bouclier doré portant l’inscription: « Portrait de Barkaios fils de Theukhrestos offert en remerciement de son zèle 
+               envers la cité et en raison de sa valeur par les Cyrénéens» <note>Lines 43-46</note> et que le terrain dit « de Mnaséas » légué par Barkaios à 
+               Hermès et Héraklès ainsi qu’au gymnase public, soit lui aussi consacré aux dieux sus-mentionnés et que ses revenus soient consacrés à l’onction publique</p></div>
+       -->  </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p><!--[NB, there are alternative versions of these notes and it is not clear which are most recent - Duncan]--> 
+                     </p>
+            <p>Lines 1, 2:, for the proposed reconstruction, cf. <ref type="inscription" n="C.737">C.737</ref> line  37, <ref type="inscription" n="C.416">C.416</ref>, line  20.</p>
+            <p>There are two documents here: the unnamed subject of the first decree was alive at the time of its passage, while that of the
+                    second, Barkaios son of Theuchrestos, was dead. Possibly honorary decrees relating to Barkaios 
+                    were collected after his death and inscribed on one stele (cf. the reference to earlier honours conferred 
+                    on him in the second decree,ll. 15, 16); but the absence of the introductory formulae, including the 
+                    date, at the head of the second decree here suggests that perhaps the stele contained several decrees
+                    passed on the same day and all arising out of the same situation, i.e. that created by Barkaios' death. 
+                    If that is so, lines 3, 4 indicate that he died during his year of office as priest of Augustus which
+                       is known from <ref type="inscription" n="C.95">C.95</ref> to have been in 17/16 BCE If the earlier decree refers to Barkaios himself it 
+                    must have been passed in 18/17 conferring the priesthood for the following year. </p>
+            
+            <p>Lines 31-2: For the restoration, see <bibl>
+               <ptr target="robert1940a"/>  <citedRange unit="page">13</citedRange> , whence <bibl><ptr target="robertBE"/>, <citedRange>1941.179</citedRange></bibl>;</bibl></p>
+            <!-- <p>On Barkaios as gymnasiarch, see check </p>-->
+         </div>
+         <pb/>
+         
+      </body>
+   </text>
+</TEI>

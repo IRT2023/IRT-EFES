@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C25300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription for a mosaic floor</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.307</idno>
+            <idno type="ircyr2012">C25300</idno>
+            <idno type="JMR">850</idno>
+            <idno type="Excel">1160</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Temple of Jason Magnus</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Damaged <material>mosaic</material> <objectType>floor</objectType> 
+                              (<dimensions><width precision="low">3.80</width> <height>1.54</height></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="tessellis">Mosaic</rs> lettering: a within a <rs type="decoration">tabella ansata</rs> 
+                           (<dimensions><width>2.84</width> <height>1.54</height></dimensions>), b, to the lefr of a: Line 1 above 
+                           a circle containing lines 2 and 3, lines 4 and 5 below. c: above the right ansa of a. <!-- check . --></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century; A: lines 1,2, <height>0.255</height>, 
+                        line 3, <height>0.235</height>; line 4, <height>0.23</height>; line 5, <height>0.24</height>. b. Line 1, <height>0.21</height>, 
+                        line 2,3, <height>0.09</height>,  line 4, <height>0.17</height>; line 5, <height>0.07</height>. c. Letters not measurable.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notAfter="0300" notBefore="0101" precision="low" evidence="lettering">Second to third centuries CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1054">Temple of Jason Magnus</placeName>, on the floor: 
+                              Found before <date type="found">1941</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/1054">Temple of Jason Magnus</placeName> (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-05" who="MGDA">fixed Goodchild bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-25" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-09" who="GillianB">tokenized</change>
+         <change when="2009-07-06" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      
+      <graphic url="JMR_850_002" decls="#photograph"><desc>Section a. right end of lines 1-4 (Reynolds VIII.23)</desc></graphic>
+      <graphic url="JMRNB08_024" decls="#photograph"><desc>a, lines 2-5 (Reynolds VIII.24)</desc></graphic>
+      <graphic url="JMR_850_004" decls="#photograph"><desc>a, left end of lines 2-5 (Reynolds VIII.21)</desc></graphic>
+      <graphic url="JMR_850_008" decls="#photograph"><desc>a, left end of lines 1-3 (Reynolds VIII.22)</desc></graphic>
+      <graphic url="JMRNB08_019" decls="#photograph"><desc>Section b, line 1 (Reynolds VIII.19)</desc></graphic>
+      <graphic url="JMR_850_005" decls="#photograph"><desc>b, lines 2-5 (Reynolds VIII.20)</desc></graphic>
+      <graphic url="JMR_850_006" decls="#photograph"><desc>Section c</desc></graphic>
+      <graphic url="JMR_850_001" decls="#photograph"><desc>Section c</desc></graphic>
+      <graphic url="DSC04786" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04787" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04788" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic>
+      <!--Dept.-->
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>a mentioned <bibl><ptr target="SECir"/>, <citedRange unit="page">143</citedRange></bibl>;
+               a and b described <bibl><ptr target="rgg1961"/>, <citedRange unit="page"> 87</citedRange>, fig.3, (incomplete)</bibl>;
+               on which 
+               <bibl><ptr target="robertBE"/>, <citedRange>1962.366</citedRange></bibl>; 
+               <bibl> <ptr target="venturini2013"/>, <citedRange>81</citedRange></bibl>, 
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>2014.539</citedRange></bibl>. 
+            </p><!-- check photo -->
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="section" n="a" type="textpart"><ab>
+                           
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-63920"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name> 
+                           <name nymRef="Αὐρήλιος">Α<unclear>ὐ</unclear><supplied reason="lost">ρή</supplied>λιος</name> 
+                           <name nymRef="Εὐφράνωρ"><supplied reason="lost">Ε</supplied><unclear>ὐ</unclear>φρά<lb n="2" break="no"/>νωρ</name> <w lemma="ἱερεύς">ἱ<supplied reason="lost">ερε</supplied>ὺς</w></persName> <persName type="divine" key="apollo"><w lemma="ὁ">τοῦ</w> <w lemma="κτίστης">κτίσ<lb n="3" break="no"/>του</w> <name nymRef="Ἀπόλλων">Ἀ<supplied reason="lost">πό</supplied>λλω<supplied reason="lost">ν</supplied>ος</name></persName>
+                   <lb n="4"/> <w lemma="ποιέω">ἐπ<supplied reason="lost">οί</supplied>ησεν</w> <w lemma="ἐκ">ἐκ</w> <surplus>κ</surplus> <w lemma="ὁ">τῶ<supplied reason="lost">ν</supplied></w> 
+                   <lb n="5"/><w lemma="ὁ">τοῦ</w> <w lemma="θεός"><supplied reason="lost">θ</supplied>εοῦ</w> 
+                          <w lemma="χρῆμα">χ<supplied reason="lost">ρ</supplied>ημάτω<supplied reason="lost">ν</supplied></w>
+                       
+                       </ab></div>
+            <div subtype="section" n="b" type="textpart"><ab> 
+                       
+                            <lb n="1"/><w lemma="εἰς"><supplied reason="omitted">ε</supplied>ἰϲ</w> <w lemma="αἰών"><unclear>ἐ</unclear>ῶνα</w>
+                        <lb n="1a"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><w lemma="ὁ"><unclear>τ</unclear>ὸ</w> <w lemma="κοινός">κοι<lb 
+                           n="3" break="no"/>ν<unclear>ὸ</unclear>ν</w>
+               <lb n="4"/><gap reason="lost" quantity="2" unit="character"/> <placeName nymRef="#Ἑξάπολις" key="#hexapolis"><supplied reason="lost">Ἑ</supplied>ξαπόλ<unclear>ε</unclear><lb n="5" break="no"/>ωϲ</placeName>
+                    
+                    </ab></div>
+            <div subtype="section" n="c" type="textpart"><ab> 
+                    
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ντ<unclear>η</unclear>ϲ</orig>
+                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ϲ</unclear></orig><space quantity="3" unit="character"/>
+               <lb n="2a"/> <gap reason="lost" extent="unknown" unit="line"/>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="b"><rdg resp="#robertBE"><note>Resolved the text as here</note></rdg>
+                     
+                        <!-- JMR read <supplied reason="lost">τ</supplied>ρο
+                        <supplied reason="lost">πο</supplied> / ΛΙΟ<supplied reason="lost">.</supplied> -->
+                        
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note> M(arkos) Aurelios <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Aurelius</foreign></supplied> Euphranor, priest of Apollo the Founder, made 
+            <supplied reason="subaudible">the floor</supplied> from the money of the god.</p>
+            <p><note>b</note>For ever, the koinon of the Six Cities!</p>
+            <p><note>c</note> <note>Not usefully translatable</note></p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>(أ) ماركوس أوريليوس إيفرانور، كاهن أبوللو المؤسس صنع (الأرضية) من مال المؤله (أي المال المخصص للانفاق من أجله). 
+( ب) إلى الأبد، اتحاد المدن الست! 
+(ج) (لا يمكن ترجمته بشكل مفهوم)
+</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>b: Εἰς εἰῶνα: for discussion of this acclamation, see Robert, loc.cit., suggesting this reading, 
+               with a reference to the title of Cyrene ἁ ματρόπολις τᾶς Ἑξαπόλεως, as in <ref type="inscription" n="C.167">C.167</ref>, <ref type="inscription" n="C.173">C.173</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

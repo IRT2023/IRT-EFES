@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A06000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> 
+               <rs type="textType">Funerary</rs> <rs type="textType">list</rs></title>
+            <editor>Joyce M. Reynolds</editor>
+            <editor xml:id="edd">Editors</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.39</idno>
+            <idno type="ircyr2012">A06000</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <objectType>Stele</objectType> of white <material>marble</material>, tapering towards the top, damaged above and along all edges: 
+                              <dimensions>
+                                 <width quantity="0.31">0.31-0.29</width>
+                                 <height>0.73</height>
+                                 <depth>0.25</depth>
+                              </dimensions>.
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which is very worn.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE. Line 1, <height>0.02</height>; line 2, <height>0.25</height>; 
+                        line 3 ff., <height>0.03</height>; cursive ε in lines 6, 9, 11; L for ἔτους, ἐτῶν; round stops
+                        in line 2, a slanting line in line 3; bar above the final figure in line 3.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Probably from the <ref  target="https://www.slsgazetteer.org/931">West Necropolis</ref></origPlace>
+                     <origDate notBefore="0060" notAfter="0070" precision="low" evidence="internal-dates">CE 60-70 </origDate>
+                  </origin>
+                  
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: 
+                        <placeName type="monuList" ref="https://www.slsgazetteer.org/921">Central Church</placeName>,
+                        in <date type="found">1940</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-08-19" who="Pietro">fixed apparatus</change>
+         <change when="2011-05-09" who="MGDA">Fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-12" who="GillianB">tagged bibliography</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-24" who="CB">Metadata tagging</change>
+         <change when="2010-02-14" who="CMR">Title, translation, tags</change>
+         <change when="2009-07-15" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMRNB02_050_001" decls="#photograph"><desc>Face (Reynolds, II.50.1)</desc></graphic>
+      <graphic url="DSC04468" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04469" decls="#photograph"><desc>Face, from above (2008, H.Walda)</desc></graphic>
+      <!--Dept. F. 3829.-->
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="applebaum1954"/>, <citedRange>20</citedRange>, p. 44</bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>17.819</citedRange></bibl> <!-- check -->, whence
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324427">324427</ref></citedRange></bibl>;
+               <bibl><ptr target="jmr1976"/>, <citedRange>48</citedRange></bibl>,  
+               whence <bibl><ptr target="SEG"/> <citedRange>27.1125bis</citedRange></bibl>,
+               <bibl><ptr target="gl-jmr1983"/>, <citedRange>2</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>285</citedRange></bibl>.. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-62091"><name nymRef="Ἰουδίων"><supplied reason="lost">Ἰου</supplied><unclear>δ</unclear>ίων</name>
+                       <persName type="attested" key="lgpn:V1-62140"><name nymRef="Φιλόξενος">Φιλο<lb n="2" break="no"/>ξένου</name></persName></persName> 
+            <date type="life-span" dur="P57Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="57">νζ</num> </date> 
+                    <lb n="3"/> <date ref="https://godot.date/id/qzmhQ2mCFEc5mUwJPkubBJ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="93">ϙγ</num>
+                    <rs key="hathyr" type="month"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs> <num value="2">β</num></date>
+                    <lb n="4"/><persName type="attested" key="lgpn:V1-62115"><name nymRef="Μάριον">Μάριον</name> 
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-62067"><name nymRef="Δωρόθεος">Δωρο<unclear>θέω</unclear></name></persName></persName>
+                    <lb n="6"/><date type="life-span" dur="P35Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="35">λε</num> </date>
+           <date ref="https://godot.date/id/YyiXejieQ9dgz48KjePXMf"> <w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="100">ρ</num> </date>
+                    <persName type="attested"><name nymRef="Σα-"><seg part="I"><unclear>Σα</unclear></seg></name></persName><lb 
+                       n="7" break="no"/><gap reason="lost" quantity="1" unit="character"/><orig>ιγ</orig><gap reason="lost" atLeast="5" atMost="6" unit="character"/>
+                    <lb n="8"/><gap reason="lost" quantity="3" unit="character"/><orig>ν<unclear>ι</unclear></orig><gap reason="lost" atLeast="4" atMost="5" unit="character"/>
+                    <lb n="9"/><gap reason="lost" quantity="3" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ου</seg></name></persName>
+            <date type="life-span" dur="P21Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+            <num value="21">κα</num> </date> 
+                    <lb n="10"/> <date ref="https://godot.date/id/YyiXejieQ9dgz48KjePXMf"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="100">ρ</num></date>
+            <persName type="attested"><name nymRef="Τι-"><seg part="I">Τι</seg></name></persName><gap reason="lost" atLeast="6" atMost="7" unit="character"/>
+                    <lb n="11"/><gap reason="lost" quantity="3" unit="character"/> 
+                    <persName type="attested" key="lgpn:V1-62068"><name nymRef="Εἰρήνη">Εἰρήνη</name></persName>
+                        <gap reason="lost" quantity="2" unit="character"/>
+                    <lb n="12"/><gap reason="lost" quantity="3" unit="character"/><orig>τ<unclear>αια</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="12a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+               <lem>
+                  [Ἰου]<unclear>δ</unclear>ίων
+               </lem>
+                  <rdg resp="#applebaum1954">
+                     [Πασ]ίων
+                  </rdg>
+                  <note>SEG XVII reads [Ἰο]<unclear>υδ</unclear>ίων
+                  </note>
+            </app>
+            <app loc="5">
+                  <rdg resp="#applebaum1954">
+                     Δωροθ[έου]
+                  </rdg>
+               <note> SEG XVII reads Δωροθέ[ου], but there is no room for ΟΥ</note>
+               </app>
+           <app loc="6">
+                  <rdg resp="#applebaum1954">
+                     ΛΑ<unclear>ΘΕΡ</unclear>[ . . .
+                  </rdg>
+               </app>
+            <app loc="7">
+                  <note>Applebaum does not have this line.</note>
+               </app>
+            <app loc="9">
+                  
+                  <rdg resp="#applebaum1954">
+                     ΛΚ[ . . .
+                  </rdg>
+               </app>
+            <app loc="10">
+                  <rdg resp="#applebaum1954"> . . . ]Η [ . . .
+                  </rdg>
+               <note> SEG XVII reads L ρ Τ +++
+                  </note>
+               </app>
+            <app loc="11">
+                  <note>Applebaum does not have any text from this line till the end.</note>
+               </app>
+            <app loc="11">
+               <note>SEG XVII reads  +++ Εἰρήνη
+                  </note>
+               </app>
+            <app loc="12">
+                  
+               <note> SEG XVII reads ++ ]Τ<unclear>ΑΙ</unclear> +++ ]
+                  </note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>Judion (?) des Philoxenos, 57 (Jahre); (Jahr) 93, 2.Hathyr, Marion des Dorotheos 35 (Jahre); (Jahr) 100. . . . 
+            21 (Jahre); (Jahr) 100, . . . Eirene . . . </p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p> . . . J]udion <supplied reason="subaudible">son</supplied> of Philoxenos, aged 57</p>
+            <p><ref target="https://godot.date/id/qzmhQ2mCFEc5mUwJPkubBJ">Year 93, Hathyr 2 </ref>: Marion <supplied reason="subaudible">daughter</supplied> of Dorotheos, aged 35</p>
+            <p><ref target="https://godot.date/id/YyiXejieQ9dgz48KjePXMf">Year 100</ref>: [ . . . ] aged 21</p>
+            <p><ref target="https://godot.date/id/YyiXejieQ9dgz48KjePXMf">Year 100</ref>: Ti[- . . . ] Eirene [ . . .</p></div>
+       </div>
+         
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>In view of the name in line 4 and possibly that in line 1, a Jewish funerary
+               stele, probably from the West Necropolis (see on <ref target="https://igcyr.unibo.it/gvcyr032">GVCyr 32</ref>).</p>
+            <p>line 1: Or Δίων,preceded by a date.</p>
+            <!-- <p>Line 4: <note>62 CE</note><note>29 October</note>
+            Lines 6, 10: <note>69/70 CE</note></p> -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

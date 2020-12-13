@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T08400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.120</idno>
+            <idno type="ircyr2012">T08400</idno>
+            <idno type="JMR">70.5</idno>
+            <idno type="Excel">1558</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjacent <material>sandstone</material> blocks (<dimensions><width>1.00</width> <height>0.45</height></dimensions> and 
+                              <dimensions><width>0.70</width> <height>0.65</height></dimensions>) from a group inscribed with <ref type="inscription" n="T.116">T.116</ref>, <ref type="inscription" n="T.117">T.117</ref>, <ref type="inscription" n="T.118">T.118</ref>, 
+                              <ref type="inscription" n="T.119">T.119</ref>, <ref type="inscription" n="T.120">T.120</ref>, <ref type="inscription" n="T.121">T.121</ref>, <ref type="inscription" n="T.122">T.122</ref>, 
+                              <ref type="inscription" n="T.123">T.123</ref>, <ref type="inscription" n="T.124">T.124</ref>, <ref type="inscription" n="T.125">T.125</ref>,
+                              <ref type="inscription" n="T.126">T.126</ref>, <ref type="inscription" n="T.127">T.127</ref>, <ref type="inscription" n="T.128">T.128</ref>, <ref type="inscription" n="T.129">T.129</ref>, 
+                              <ref type="inscription" n="T.130">T.130</ref>, <ref type="inscription" n="T.131">T.131</ref></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> on the face. Block a (i, ii, iii) 
+                           completed on block b (iv, v), the text cut over an earlier, illegible one.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.09</height>, <height>0.03</height>. In iii, line 2, letters are much smaller than line 1 and may not belong</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering context">First century BCE to first century CE</origDate>
+                  </origin>
+                  
+                     
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>:
+                        <placeName type="monuList" ref="https://www.slsgazetteer.org/1126">East Wall</placeName>, on the inner face just south of the East Gate; along third inscribed course, below <ref type="inscription" n="T.117">T.117</ref>. </p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-17" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-08-06" who="Pietro">Tokenized</change>
+         <change when="2008-08-20" who="VA">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="DSC05341" decls="#photograph"><desc>Group (2008, H.Walda)</desc></graphic>
+      <graphic url="JMRNS06_035" decls="#photograph">
+         <desc><ref type="inscription" n="T.120">T.120</ref>, with <ref type="inscription" n="T.117">T.117</ref> above, <ref type="inscription" n="T.123">T.123</ref> below (Reynolds, NS.VI.35)</desc>
+      </graphic>
+      <graphic url="JMRNS06_032" decls="#photograph">
+      <desc>Above: <ref type="inscription" n="T.120">T.120</ref>, left block (Reynolds, NS.VI.32)</desc>
+   </graphic>
+      <graphic url="JMRNS06_033" decls="#photograph">
+      <desc>Above: <ref type="inscription" n="T.120">T.120</ref>, right block, <ref type="inscription" n="T.121">T.121</ref> (left side); Centre: <ref type="inscription" n="T.123">T.123</ref> 
+         (Reynolds, NS.VI.33)</desc>
+   </graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverioDAI2"/>, <citedRange unit="entry">146</citedRange> (VII, 5, 6), p. 169</bibl>, whence 
+                <bibl>
+                   <ptr target="SEG"/> <citedRange>9.423</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324270">324270</ref></citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="part" n="i" type="textpart"><ab>
+                           <lb n="1"/><persName type="attested" key="lgpn:VI-60193"><name nymRef="Φιλόκωμος"><supplied reason="lost">Φι</supplied><unclear>λ</unclear><supplied reason="lost">ό</supplied>κωμος</name></persName>
+                       </ab></div>
+            <div subtype="part" n="ii" type="textpart"><ab>
+                           <lb n="1"/><persName type="attested" key="lgpn:VI-60192"><name nymRef="Πασικλῆς">Πασι<unclear>κ</unclear><supplied reason="lost">λ</supplied>ῇς</name></persName>
+                       </ab></div>
+            <div subtype="part" n="iii" type="textpart"><ab>
+                           <lb n="1"/><persName type="attested" key="lgpn:VI-60190"><name nymRef="Μελάντιος">Μελάντ<supplied reason="lost">ι</supplied><lb n="2" break="no"/>ος</name> 
+                               <name nymRef="Γ-"><seg part="I"><abbr>Γ</abbr></seg></name></persName>
+                       </ab></div>
+            <div subtype="part" n="iv" type="textpart"><ab>
+                           <lb n="1"/><persName type="attested" key="lgpn:VI-60189"><name nymRef="Ἀνδρότιμος">Ἀνδρό<lb n="2" break="no"/>τιμο<supplied reason="lost">ς</supplied></name></persName> 
+               <date ref="https://godot.date/id/aFMpYxvXxYJ2jYWrjL2K37"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="4">δ</num></date>
+                       </ab></div>
+            <div subtype="part" n="v" type="textpart"><ab>
+                            <lb n="1"/><persName type="attested" key="lgpn:VI-60191"><name nymRef="Ἀμμώνιος">Ἀμμώνιος</name></persName>
+                        </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="i">
+                  <rdg resp="#oliverioDAI2">κῶμος</rdg>
+               </app>
+                    <app loc="ii">
+                       <rdg resp="#oliverioDAI2">πᾶσι</rdg>
+               </app>
+               <app loc="iv.2"><lem><num>δ</num></lem>
+                  <rdg resp="#oliverioDAI2"><num>ϛ</num>
+                  </rdg>
+               </app>
+                    <app loc="v">
+                       <rdg resp="#oliverioDAI2">Ἀμ<unclear>ι</unclear>δόνιος<lb/>ιγ<gap reason="lost" quantity="2" unit="character"/>ν</rdg>
+               </app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Comos a tutti Melanzio ? Androtimo anno 6 Amidonio.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> Philokomos. <note>ii</note> Pasikles. <note>iii</note> Melantios. 
+              <note>iv</note> Androtimos, <ref target="https://godot.date/id/aFMpYxvXxYJ2jYWrjL2K37">year 4</ref>. 
+           <note>v</note> Ammonios</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G01100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.93</idno>
+            <idno type="ircyr2012">G01100</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1095">Tocra Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Brown <material>limestone</material> 
+                              <objectType>stele</objectType> with simple acroteria above flanking a broken projection which probably represented a crude head (<dimensions><width>0.31</width> <height>0.41</height> <depth>0.08</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on one face. The cutter has avoided a hole in the stone in line 2.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre" precision="low">0.025-0.03</height>; lunate epsilon, sigma, omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notBefore="0001" notAfter="0200" precision="low" evidence="lettering">First to second century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>: 
+                     Eshavo, south of <placeName ref="https://www.slsgazetteer.org/1205">Farzuga</placeName>; found in <date type="found">1968</date>, with <ref type="inscription" n="M.94">M.94</ref>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1095">Tocra Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term><term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/80505">Marj</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-07-21" who="CMR">added bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2007-11-13" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNS14_020" decls="#photograph"><desc>Face (Reynolds 1971, NS.XIV.20)</desc></graphic></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr-bacchielli1987"/> Catalogo <citedRange>43</citedRange> and fig. 77</bibl>,
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>1989.839</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>37.1728</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+            <lb n="1"/><date ref="https://godot.date/id/7oJSd5vPPUqY3jn2PkuP2e"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+            <num value="15">ει</num> <rs type="month" key="thoth"><w lemma="Θώθ">Θώθυ</w></rs>
+            <lb n="2"/><num value="29">θκ</num></date> <persName type="attested"><name nymRef="Ἀνσχαντος">Ἀν<unclear>ϲ</unclear>χαν<!-- check --><lb 
+               n="3" break="no"/>τος</name></persName> <date type="life-span" dur="P60Y"><w lemma="ἔτος">ἐτῶν</w>
+                  <num value="60"><unclear>ξ</unclear></num> </date>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/7oJSd5vPPUqY3jn2PkuP2e">Year 15, Thothy 29</ref>; Anschantos, aged ?60.</p></div>
+         </div>
+         <div type="apparatus">
+            <listApp><app loc="2"><note>Or <num>θ</num> Κάνσχαντος</note></app></listApp>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Lines 2, Thoth 29: but κ may be the inital of the name, giving Thoth 9.</p>
+            <p>Line 3: the numeral is unclear; aged 60, or perhaps 7.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

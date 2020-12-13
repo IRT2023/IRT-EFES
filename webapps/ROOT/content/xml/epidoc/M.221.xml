@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C95000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile IV: <rs type="textType">Milestone</rs> of Vespasian</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.221</idno>
+            <idno type="ircyr2012">C95000</idno>
+            <idno type="JMR">Z.18</idno>
+            <idno type="Excel">nn</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><p>
+                           Lower part of a <material>limestone</material> <objectType>column</objectType> with cubical base
+                           (<dimensions><dim type="diameter">0.59</dim> <height>0.35, + base 0.52</height></dimensions>).
+                        </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No description</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-pto" n="4">Cyrene-Ptolemais road, Mile IV</rs>.</origPlace>
+                     <origDate notBefore="0077" notAfter="0078" precision="low" evidence="prosopography">77/78 CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     Bir Sebil, where the <placeName ref="https://www.slsgazetteer.org/2091">old road from Cyrene to Beida</placeName> joins the modern highway; photographed in <date type="found">1928</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="institution.xml#db933"/>Cyrene Museum.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/89055">Beida</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation/></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+        <change when="2011-04-05" who="MGDA">fixed Goodchild bibliography</change>
+        <change when="2010-08-11" who="CMR">created from Goodchild and PHI</change>
+      </revisionDesc>
+   </teiHeader><facsimile> <graphic url="Photos_0018" decls="#photograph"><desc>Face</desc></graphic><surface/></facsimile>
+   <text>
+      <body>
+    
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="rgg1950"/>, <citedRange>18</citedRange>, pp. 83-91 5</bibl>, whence <bibl><ptr target="AE"/> <citedRange>1951.209</citedRange></bibl>,
+               <bibl><ptr target="SEG"/> <citedRange>13.619</citedRange></bibl>, <bibl><ptr target="robertBE"/>, <citedRange>1953.250</citedRange></bibl>
+               </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+               <ab>   
+                  <lb n="0"/> <gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><w lemma="κελεύω"><supplied reason="lost">ἐκέλ</supplied>ευ<supplied reason="lost">σεν</supplied></w> <supplied reason="lost"><w lemma="διά">διὰ</w></supplied>
+                    <lb n="2"/><persName type="attested" key="pir2-m-0626"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <name nymRef="Μινίκιος">Μινι<supplied reason="lost">κίου</supplied></name> <name nymRef="Ῥοῦφος">Ῥούφου</name></persName> 
+	      <lb n="3"/><gap reason="lost" quantity="2" unit="character"/> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀν</supplied>θυπάτου</w> <gap reason="lost" quantity="2" unit="character" cert="low"/>
+	      <lb n="4"/> <space quantity="6" unit="character"/> <num value="4">δ</num> <space quantity="6" unit="character"/>                 
+            </ab>
+             </div>
+
+<div type="apparatus">
+         <listApp>
+            <app loc="1"><note>or ἐπισκ]ευ[άσαι ἐκέλευσεν</note>
+            </app>
+           
+         </listApp>
+</div> 
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#cmr" xml:lang="en"><p> Emperor Vespasian . . . ]ordered [the making of roads by the agency of] L(ucius) Minicius Rufus, proconsul. Mile 4. </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the date and the formulae see <ref type="inscription" n="M.199">M.199</ref>, under the same proconsul, Lucius Minicius Rufus <title>PIR<hi rend="superscript">2</hi></title>, M 626;
+               for a Minicius Rufus with, apparently, the praenomen of Aulus see on <ref type="inscription" n="C.273">C.273</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

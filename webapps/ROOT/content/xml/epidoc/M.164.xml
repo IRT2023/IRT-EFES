@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G05800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.164</idno>
+            <idno type="ircyr2012">G05800</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Cut <objectType>block</objectType> of local <material>limestone</material>; 
+                              <dimensions><width>1.00</width> <height>0.63</height></dimensions>, 
+                              complete above and below but damaged above.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Average  <height>0.07</height>; crudely cut, with lunate and square forms of epsilon and omega; 
+                        L for ἔτους (line 1) and ἐτῶν (l.4) where the word is also written out in full. Superscript bar above 
+                        ζ in line 4.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" cert="low" evidence="lettering">First century BCE - first century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     in the fore-court of a rock-cut tomb to the south west of 
+                     <placeName ref="https://www.slsgazetteer.org/1262">Zāwiyat al Ḩanīyah</placeName>. 
+                     Recorded by Clermont-Ganneau in <date type="found">1895</date>; found again in <date type="found">1968</date>.</p></provenance>
+                        <provenance type="observed">
+                           <p> <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term><term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/86587">Zāwiyat al Ḩanīyah</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2007-10-24" who="GB">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept B.1098--><surface/></facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="masson-jmr1978"/>, <citedRange>3</citedRange></bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1979.653</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>27.1198</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+               <lb n="1"/><date><date ref="https://godot.date/id/aFMpYxvXxYJ2jYWrjL2K37"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w>
+                  <num value="4">δ</num></date> <date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς">ἱερέωϲ</w>
+               <lb n="2"/><persName type="attested" key="lgpn:V1-62705"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρω</name></persName></date></date>
+               <lb n="3"/><persName type="attested" key="lgpn:V1-63056"><name nymRef="Ἀριστανδρίδας">Ἀριϲτανδρίδαϲ</name>
+               <lb n="4"/><persName type="attested" key="lgpn:V1-65123"><name nymRef="Νίκαιος">Νικάω</name></persName></persName> <w lemma="ἔτος">ἐτῶν</w> 
+                    <date type="life-span" dur="P17Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="17">ι<unclear>ζ</unclear></num> </date>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/aFMpYxvXxYJ2jYWrjL2K37">Year 4</ref>, in the priesthood of Alexandros: Aristandridas <supplied reason="subaudible">son</supplied> of Nika(i)os, aged 17.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Clermont-Ganneau received this copy from M. Guiraud, who had received it from an Arab copyist;
+               he had copied the four lines of the text twice.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

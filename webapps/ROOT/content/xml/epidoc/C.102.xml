@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C08700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Hadrian</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.102</idno>
+            <idno type="ircyr2012">C08700</idno>
+            <idno type="JMR">670</idno>
+            <idno type="Excel">1060</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>White <material>marble</material> <objectType>panel</objectType> from the front of a base 
+                               or altar (<dimensions>
+                                   <width>1.33</width>
+                                   <height>0.78</height>
+                                   <depth>0.28</depth>
+                               </dimensions>) standing on a moulded base.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which is chipped at both upper corners and down the right side.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century CE; line 1, <height>0.06</height>; line 2, <height>0.03</height>; lines 3ff. <height>0.035</height>; 
+                         bars above the figures in line 3; stops for abbreviations, and between words in lines 1,3,5,6; ivy leaves in lines 3,4,5.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0118" notBefore="0118" evidence="titulature">CE 118</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                        <placeName type="monuList" ref="https://www.slsgazetteer.org/1327">Assembly Building</placeName>; found in <date type="found">1921</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot (<date type="observed">2008</date>)</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+          <change when="2013-08-01" who="TW">put word, placenames etc tags in</change>
+          <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change> 
+         <change when="2011-02-21" who="MLA">corrected Applebaum reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-16" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-06-05" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_670" decls="#photograph"><desc>Face (Department of Antiquities, F 360)</desc></graphic>
+      <graphic url="DSC05292" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05293" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05294" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned 
+               <bibl><ptr target="oliverio1928"/>, <citedRange>318</citedRange></bibl> and <bibl><ptr target="oliverio1931"/>, <citedRange>22</citedRange></bibl>; published <bibl> <ptr target="pernier1928"/>, <citedRange>222</citedRange> and fig 2 <!-- check --></bibl> whence mentioned, 
+               <bibl><ptr target="applebaum1950"/>, <citedRange>A.1</citedRange>, p.88</bibl>, on which also 
+               <bibl><ptr target="applebaum1951"/>, <citedRange>177</citedRange></bibl>; republished 
+               <bibl><ptr target="SECir"/>, <citedRange>55</citedRange> and fig. 51</bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><persName type="emperor" key="hadrianus"><w lemma="imperator"><expan><abbr><supplied reason="lost">I</supplied>mp</abbr><ex>eratori</ex></expan></w> 
+                     <name nymRef="Caesar">Caesari</name> <g ref="symbols.xml#stop"/> <persName type="emperor" key="traianus"><w lemma="diuus">diui</w> <g ref="symbols.xml#stop"/> <name nymRef="Traianus">Traiani</name> <name nymRef="Parthicus">Par<supplied reason="lost">thici</supplied></name></persName> 
+                    <lb n="2"/> <w lemma="filius">filio</w> <persName type="emperor" key="nerva"><w lemma="diuus">diui</w> <name nymRef="Nerva">Neruae</name></persName> <w lemma="nepos">nepoti</w> <name nymRef="Traianus">Traiano</name> <name nymRef="Hadrianus">Hadriano</name> 
+                    <lb n="3"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name> <w lemma="pontifex"><expan><abbr>pontif</abbr><ex>ici</ex></expan></w> 
+                    <w lemma="maximus"><expan><abbr>max</abbr><ex>imo</ex></expan></w> <date ref="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ"><w lemma="tribunicius"><expan><abbr>tri</abbr><ex>bunicia</ex></expan></w> 
+                    <w lemma="potestas"><expan><abbr>pot</abbr><ex>estate</ex></expan></w> <g ref="symbols.xml#leaf"/> <num value="2">II</num> <g ref="symbols.xml#leaf"/> 
+                       <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w> <g ref="symbols.xml#leaf"/> <num value="2">II</num></date></persName> <g ref="symbols.xml#leaf"/> 
+               <lb n="4"/><w lemma="ciuitas">ciuitas</w> <g ref="symbols.xml#leaf"/> <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene">Cyrenensium</placeName> <g ref="symbols.xml#leaf"/> 
+               <lb n="5"/><foreign xml:lang="grc"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορι</w> <g ref="symbols.xml#stop"/> <name nymRef="Καῖσαρ">Καίσαρι</name> <g ref="symbols.xml#stop"/> <persName type="emperor" key="traianus"><w lemma="θεός">θεῶ</w> <g ref="symbols.xml#stop"/> <name nymRef="Τραιανός">Τραιανῶ<surplus>ι</surplus></name> <g ref="symbols.xml#leaf"/> 
+                  <lb n="6"/><name nymRef="Παρθικός">Παρθικῶ<surplus>ι</surplus></name></persName> <g ref="symbols.xml#stop"/> <w lemma="υἱός">υἱῷ</w> <persName type="emperor" key="nerva"><name nymRef="Νέρβα">Νέρουα</name></persName> <w lemma="υἱωνός">υἱωνῷ</w> <g ref="symbols.xml#stop"/> <name nymRef="Τραιανός">Τραιαν<supplied reason="lost">ῶι</supplied></name> 
+                    <lb n="7"/><name nymRef="Ἁδριανός">Ἁδριανῶι</name></persName></foreign> <space quantity="3" unit="character"/>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <listApp>
+               <app loc="1"><rdg resp="#oliverio1928">Pa[rthici]</rdg></app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+           <div type="translation" resp="#edd" xml:lang="en"> <p><note>Latin</note>: For Emperor Caesar, son of deified Trajan victor in Parthia,
+               grandson of deified Nerva, Trajan Hadrian
+               Augustus, chief priest, <ref target="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ">holding tribunician power for the second time, consul for the second time</ref>,
+            the city of the Cyreneans <supplied reason="subaudible">dedicated this</supplied>.</p>
+            <p><note>Greek</note>: For Emperor Caesar, son of deified Trajan
+            victor in Parthia, grandson of deified Nerva,
+            Trajan Hadrian.</p> </div>
+         </div>
+         
+         <div type="commentary">
+            <p>Line 3: Tribunician power for the second time: 1 January - 30 December 118. </p>
+            <p>Line 4: It is noteworthy that the city of Cyrene was capable of such activity so soon after the Jewish Revolt.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

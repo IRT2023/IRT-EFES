@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T01500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Imperial</rs> <rs type="textType">building</rs> inscription by Hadrian</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.706</idno>
+            <idno type="ircyr2012">T01500</idno>
+            <idno type="JMR">51-?T.4</idno>
+            <idno type="Excel">1543</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1095">Block 1 is in Tocra Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Six pieces from a set of <material>sandstone</material> blocks (length varying, <dimensions><height precision="low">0.30</height> <depth>0.45</depth></dimensions>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century <height>0.055-0.075</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0122" notAfter="0123" evidence="titulature">122-123 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                              re-used in the <placeName type="monuList" ref="https://www.slsgazetteer.org/1116">East Church</placeName>; found in <date type="found">1959</date>.
+                    </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Block 1 is now in <placeName ref="https://www.slsgazetteer.org/1095">Tocra Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-09-04" who="Pietro">Copied straight into xml, tokenized, added figure references</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="T_071" decls="#photograph"><desc>Fragment 1, lines 1-2 (Reynolds NS.XI.12)</desc></graphic>
+      <graphic url="T_070" decls="#photograph"><desc>Fragment 2, lines 1-3</desc></graphic>
+      <graphic url="T_078" decls="#photograph"><desc>Fragment 2, lines 1-3</desc></graphic>
+      <graphic url="T_077" decls="#photograph"><desc>Fragment 3 and 4, lines 4-5 (Reynolds XII.40)</desc></graphic>
+      <graphic url="T_069" decls="#photograph"><desc>Fragment 4, lines 4-5</desc></graphic>
+      <graphic url="JMRNB12_051b" decls="#photograph"><desc>Fragment 5, lines 4-6 (Reynolds XII.51)</desc></graphic>
+      <graphic url="T_067" decls="#photograph"><desc>Fragment 5 and 6, lines 4-6</desc></graphic>
+      <graphic url="T_068" decls="#photograph"><desc>Fragment 6, lines 4-6 (Reynolds XII.33)</desc></graphic><!--Dept. JR III. 53, 54; G.D.B. Jones--></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p> Mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>55</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:space="preserve"><div xml:lang="la" type="textpart"><ab>
+                     
+                    <lb n="0"/><persName type="emperor" key="hadrianus"><supplied reason="lost"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
+                        <name nymRef="Caesar">Caesar</name> <persName type="emperor" key="traianus"><w lemma="diuus">diui</w> <name nymRef="Traianus">Traiani</name> 
+                       <name nymRef="Parthicus">Parthici</name></persName> <w lemma="filius"><expan><abbr>fil</abbr><ex>ius</ex></expan></w></supplied>
+                    <lb n="0a"/><supplied reason="lost"><persName type="emperor" key="nerva"><w lemma="diuus">diui</w> <name nymRef="Nerva">Neruae</name></persName> 
+                       <w lemma="nepos"><expan><abbr>nep</abbr><ex>os</ex></expan></w>
+                    <name nymRef="Traianus">Traianus</name> <name nymRef="Hadrianus">Hadrianus</name> <name nymRef="Augustus">Augustus</name></supplied>
+                    <lb n="1"/><supplied reason="lost"><w lemma="pontifex">pontifex</w> 
+                       <w lemma="maximus">maximus</w></supplied> <w lemma="tribunicius"><expan><abbr><supplied reason="lost">t</supplied>ribu<supplied reason="lost">nic</supplied></abbr><supplied reason="lost"><ex>ia</ex></supplied></expan></w>
+                    <supplied reason="lost"><w lemma="potestas"><expan><abbr>potest</abbr><ex>ate</ex></expan></w> 
+                        <num value="7">VII</num> </supplied>
+                    <lb n="2"/> <space quantity="1" unit="character"/> <w lemma="consul"><expan><supplied reason="lost"><abbr>co</abbr><ex>n</ex></supplied><abbr><unclear>s</unclear></abbr><ex>ul</ex></expan></w> 
+               <num value="3"><unclear>III</unclear></num> </persName>
+                    <supplied reason="lost" cert="low"><w lemma="ciuitas">ciuitati</w> <w lemma="do">dedit</w></supplied>
+               <lb n="2a"/> <space quantity="1" unit="line"/>
+                </ab></div>
+            <div xml:lang="grc" type="textpart"><ab>
+                    <lb n="3"/><date ref="https://godot.date/id/hegxMikdS9ZhwBNHDPRYAS"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Α</supplied><unclear>ὐ</unclear>τοκράτωρ</w>
+                       <name nymRef="Καῖσαρ">Καῖσαρ</name> <persName type="emperor" key="traianus"><w lemma="θεός"><unclear>θ</unclear><supplied reason="lost">εοῦ</supplied></w> 
+                       <supplied reason="lost"><name nymRef="Τραιανός">Τραιανοῦ</name> <name nymRef="Παρθικός">Παρθικοῦ</name></supplied></persName>
+                    <lb n="4"/> <w lemma="υἱός"><supplied reason="lost">υἱ</supplied>ός</w>, 
+                   <persName type="emperor" key="nerva"><w lemma="θεός">θεο<supplied reason="lost">ῦ</supplied></w> 
+                       <supplied reason="lost"><name nymRef="Νέρβα">Νέρβα</name></supplied></persName> 
+                   <w lemma="υἱωνός"><supplied reason="lost">υἱωνό</supplied>ς</w>, 
+                       <name nymRef="Τραιανός">Τραιαν<unclear>ὸ</unclear><supplied reason="lost">ς</supplied></name> 
+                       <name nymRef="Ἁδριανός">Ἀδρι<unclear>αν</unclear>ὸς</name> <name nymRef="Σεβαστός">Σεβαστός</name>,
+                   <space quantity="1" unit="character"/>
+                    <lb n="5"/><supplied reason="lost"> <space quantity="1" unit="character"/></supplied> 
+                   <w lemma="ἀρχιερεύς">ἀρχιερεὺ<supplied reason="lost">ς</supplied></w> 
+                   <supplied reason="lost"><w lemma="μέγιστος">μέγιστος</w></supplied> 
+                   <w lemma="δημαρχικός"><supplied reason="lost">δημα</supplied>ρχικῆς</w> 
+                  <w lemma="ἐξουσία"><unclear>ἐ</unclear><supplied reason="lost">ξ</supplied>ουσί<unclear>α</unclear>ς</w>  
+                   <g ref="symbols.xml#leaf"/><g ref="symbols.xml#leaf"/> <w lemma="ὁ">τὸ</w> <num value="7">ζ</num> 
+                   <space quantity="1" unit="character"/>
+                    <lb n="6"/><supplied reason="lost"> <space quantity="1" unit="character"/></supplied>
+                   <w lemma="ὕπατος"><supplied reason="lost">ὕ</supplied>πατ<supplied reason="lost">ος</supplied></w>
+                   <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> </supplied></persName></date><supplied reason="lost" cert="low"><w lemma="ὁ">τῇ</w> <w lemma="πόλις">πόλει</w></supplied>  
+                    <g ref="symbols.xml#leaf"/> <w lemma="δίδωμι">ἔδωκεν</w> <space quantity="1" unit="character"/>
+                </ab>
+                </div>
+          </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <p/>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>Latin</note>: [Emperor Caesar son of deified Trajan, victor in Parthia, 
+           grandson of deified Nerva, Trajan Hadrian Augustus, Chief Priest], holding tribunician [power for the seventh time,] consul for the third time [ ?gave to the city ] </p>
+         <p><note>Greek</note>: Emperor Caesar son of [deified Trajan, victor in Parthia, 
+           grandson] of deified [Nerva],  Trajan Hadrian Augustus, Chief Priest, <ref target="https://godot.date/id/hegxMikdS9ZhwBNHDPRYAS">holding tribunician power for the seventh time, consul [for the third time]</ref> gave [?to the city ] </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- 10th December 122 - 9th December 123 -->
+            <p>No doubt part of the programme of assistance to the province after the Jewish revolt; compare an inscription of the same year at Apollonia, 
+               <ref type="inscription" n="A.37">A.37</ref> and commentary there. 
+               It is possible that the building given was a basilica underlying the later church; see Boatwright (2000) 184, note 61.</p>
+         </div>
+         <!--   <lb n="1"/><foreign xml:lang="la"><orig>ribu</orig></foreign>
+                    </ab></div><div subtype="part" n="2" xml:lang="grc" type="textpart"><ab>
+                        <lb n="1"/> <space quantity="1" unit="character"/>    <gap reason="lost" quantity="2" unit="character"/><foreign xml:lang="la"><unclear>s</unclear> 
+                                <unclear>lll</unclear></foreign> <gap reason="lost" quantity="5" unit="character" precision="low"/>
+                        <space quantity="1" unit="character"/>
+                        <lb n="2"/><orig><unclear>υ</unclear>τοκρατωρκαισαρ<unclear>θ</unclear></orig>
+                    </ab></div><div subtype="part" n="3" xml:lang="grc" type="textpart"><ab>
+                        <lb n="1"/><orig>οσθεο</orig>
+                        <lb n="2"/><orig>αρχιερευ</orig>
+                        <lb n="3"/><orig>πατ</orig>
+                    </ab></div><div subtype="part" n="4" xml:lang="grc" type="textpart"><ab>
+                        <lb n="1"/><orig>στραιαν<unclear>ο</unclear></orig>
+                        <lb n="2"/><orig><unclear>ρ</unclear>χικησ<unclear>ε</unclear></orig>
+                    </ab></div><div subtype="part" n="5" xml:lang="grc" type="textpart"><ab>
+                        <lb n="1"/><orig>αδρ</orig>
+                        <lb n="2"/><orig>ουσι<unclear>α</unclear></orig> 
+                        <lb n="3"/><g ref="symbols.xml#leaf"/> </ab></div><div subtype="part" n="6" xml:lang="grc" type="textpart"><ab>
+                        <lb n="1"/><orig>ι<unclear>αν</unclear>ος σεβαστος</orig> <space quantity="1" unit="character"/>
+                        <lb n="2"/><orig><unclear>α</unclear>ς</orig> <g ref="symbols.xml#leaf"/><g ref="symbols.xml#leaf"/> <orig>το<hi rend="supraline">ζ</hi></orig> <space quantity="1" unit="character"/>
+                        <lb n="3"/><orig>εδωκεν</orig> <space quantity="1" unit="character"/>
+                    </ab>
+</div>
+</div>
+      <ab>  -->
+      </body>
+   </text>
+</TEI>

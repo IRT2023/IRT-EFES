@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">dedication</rs></title>
+            <editor>Joyce M. Reynolds</editor>             <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor role="translator" xml:id="jmr">Joyce M. Reynolds </editor> <editor role="translator" xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.443</idno>
+            <idno type="ircyr2012">C88500</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+                <msIdentifier><repository>Cyrene Museum</repository><idno type="invNo">71-106</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                            <p>Small piece of a white <material>limestone</material> <objectType>base</objectType>  
+                              (<dimensions>
+                                  <width>0.08</width>
+                                  <height>0.035</height>
+                                  <depth>0.06</depth>
+                              </dimensions>). Stained brown, broken away at both ends and the back.</p>
+                        </support> 
+                     </supportDesc>
+                     <layoutDesc>
+                         <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face which is badly worn. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                      <handNote><height>0.0175</height>; the circular letter a little smaller.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                      <origDate notAfter="-0001" notBefore="-0200" precision="low" cert="low" evidence="lettering">Perhaps
+                          second to first centuries B.C.E.</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="http://www.slsgazetteer.org/1381">Shrine of Demeter and Kore</placeName>: area E10, 2, 1. 
+                              </p>
+                        </provenance>
+                  <provenance type="observed">
+                     <p><placeName type="monuList" ref="http://www.slsgazetteer.org/933">Cyrene Museum</placeName> ><idno type="invNo">71-106</idno>.</p>
+                  </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc><encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Ljuba">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr2012"/> <citedRange>A.16</citedRange></bibl>, whence <bibl><title>SEG</title> <citedRange>2012.1795.8</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied reason="lost">ἀν</supplied>έθ<unclear>η</unclear><supplied reason="lost">κε</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>	
+            </ab>
+         </div>
+         <div type="translation" xml:space="preserve">
+            <p>. . . he/she dedicated . . .</p>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+             <p>Perhaps, but not necessarily, the end of the text.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

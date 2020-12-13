@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T54600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.557</idno>
+            <idno type="ircyr2012">T54600</idno>
+            <idno type="JMR">207h</idno>
+            <idno type="Excel">1641</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType> inscribed on the façade with texts 
+                               <ref type="inscription" n="T.550">T.550</ref>, <ref type="inscription" n="T.551">T.551</ref>, 
+                               <ref type="inscription" n="T.552">T.552</ref>, <ref type="inscription" n="T.553">T.553</ref>, 
+                              <ref type="inscription" n="T.554">T.554</ref>, <ref type="inscription" n="T.555">T.555</ref>, 
+                              <ref type="inscription" n="T.556">T.556</ref>, <ref type="inscription" n="T.557">T.557</ref>. There is an
+                              illegible panel above the door and above that a niche.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> within a gabled panel (<dimensions><width>0.28</width> <height>0.40</height></dimensions>) 
+                            outlined in relief, above <ref type="inscription" n="T.555">T.555</ref>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.035 - 0.04</height>; cursive omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0073" notAfter="0073" precision="high" evidence="internal-date">December 25, CE 73</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1154">Quarry East XV</placeName>, South side: RAF Tomb D. First recorded in <date type="found">1944</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+       <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-23" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-28" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-09-24" who="Pietro">tokenized</change>
+         <change when="2008-12-09" who="CB">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="B_061" decls="#photograph"><desc>From left: <ref type="inscription" n="T.557">T.557</ref> above 
+      <ref type="inscription" n="T.555">T.555</ref> above <ref type="inscription" n="T.554">T.554</ref> above <ref type="inscription" n="T.553">T.553</ref> 
+      (Joyce Reynolds, XII.28)</desc></graphic>
+      <graphic url="B_061e" decls="#photograph"><desc>Face; above <ref type="inscription" n="T.555">T.555</ref> (Joyce Reynolds, XII.28, detail)</desc></graphic></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="applebaum1954"/>, <citedRange>35</citedRange>, pp.46-47</bibl>;
+               <bibl><ptr target="gray1956"/>, <citedRange>12</citedRange></bibl>, whence, with readings from J. Reynolds, 
+               <bibl><ptr target="SEG"/> <citedRange>16.889</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324372">324372</ref></citedRange></bibl>; 
+               <bibl><ptr target="gl-jmr1983"/>  <citedRange unit="entry">57.h</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>33.1514</citedRange></bibl>, 
+              <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324689">324689</ref></citedRange></bibl>.
+            </p><!-- El Haddar 315 -->
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><ab><lb n="1"/><date ref="https://godot.date/id/Zwnk9tCWJN7iW4Qr6Q69bb"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="104">δρ</num>
+                        <rs type="month" key="tybi"><w lemma="Τυβί">Τυβὶ</w></rs> <num value="1"><unclear>α</unclear></num></date>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-60701"><name nymRef="Θευδώρα">Θευδώρα</name>
+                     <lb n="3"/><persName type="attested" key="lgpn:V1-60702"><name nymRef="Γέμελλος">Γεμέλω</name></persName></persName>
+                    <lb n="4"/><date type="life-span" dur="P50Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
+                    <num value="50">ν</num> </date>
+                    
+                    </ab>
+</div>
+         <div type="apparatus" xml:space="preserve"><head>Apparatus</head>
+            <listApp> <app loc="1">
+                  <rdg resp="#gray1956">LΔ  ΤΥΒΒΙ ΙΔ</rdg>
+                  <note>corrected by Reynolds in SEG 16.</note></app>
+                 
+            </listApp></div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gray1956" xml:lang="en"><p>Year 4, Tubbi 30th, Theodora, daughter of Gemelos, aged 50.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 104, 1.Tybi, Theudora des Gemellus, 50 (Jahre)</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/Zwnk9tCWJN7iW4Qr6Q69bb">Year 104, Tybi 1</ref>, 
+               Theudora <supplied reason="subaudible">daughter</supplied> of Gemelos <supplied reason="explanation"><foreign xml:lang="la">Gemellus</foreign></supplied>, aged 50. </p></div>
+       </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

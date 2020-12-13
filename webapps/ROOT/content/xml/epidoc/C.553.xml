@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">honours</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.553</idno>
+            <idno type="ircyr2012">C94400</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">3469</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><objectType>Base</objectType> of white <material>marble</material>, perhaps Thasian, with a rectangular trough
+                              hollowed out on the underside; there is a hole for an attachment on the top
+                              linked to the edge by a channel for pouring in metal.
+                              (<dimensions>
+                                 <width>0.45</width>
+                                 <height>0.205</height>
+                                 <depth>0.40</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, which is chipped on all edges and badly damaged below. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Third century CE; line 1, <height>0.04</height>, line 2, <height>0.037</height>, line 3, <height>0.03</height>, 
+                        line 4, <height>0.025</height>. Varying forms, lunate sigma, omega. In lines 1 and 2 letters are broad,
+                     and largely well spaced; in lines 3 and 4 they are narrow and more closely packed.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notAfter="0300" notBefore="0201" evidence="lettering">Probably third century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName ref="https://www.slsgazetteer.org/1071">North Necropolis</placeName>: near Tomb N.1; recorded in <date type="found">1974</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, inv. no. 3469</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-21" who="CMR">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="mohamed-jmr1997"/>, <citedRange>4</citedRange></bibl>,
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>1999.623</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>47.2199</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>1997.1573</citedRange></bibl>, </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab><lb n="1"/><persName type="attested"><name nymRef="Φλάβιος"><supplied reason="lost">Φ</supplied>λ<unclear>ά</unclear>βιον</name> <name nymRef="Ἀντωνινιανός">Ἀντωνι<lb n="2" break="no"/><supplied reason="lost" cert="low">ν</supplied>ιανὸν</name> <w lemma="υἱός">υἷα</w> <persName type="attested"><name nymRef="Κασιανός">Κασιανοῦ</name></persName></persName> 
+               <lb n="3"/><persName type="divine" key="androklos"><name nymRef="Ἀνδροκλος"><supplied reason="lost">Ἀν</supplied><unclear>δρ</unclear>οκλίης</name></persName> <placeName nymRef="#Ἔφεσος" ref="#ephesos">Ἐφέσου</placeName> <w lemma="φάος">φῶτα</w> <w lemma="κρατησίμαχος">κρα<lb 
+                  n="4" break="no"/><supplied reason="lost" cert="low">τησιμά</supplied>χον</w> <w lemma="ἐπίκλητος">ἐπίκλητον</w> <w lemma="τε">τε</w> <w lemma="οἰκήτης">οἰ<supplied reason="lost" cert="low">κήτην</supplied></w>
+               <lb n="5"/> <gap reason="lost" extent="unknown" unit="line"/>
+            </ab>
+         </div>
+         <div type="apparatus"><head>Apparatus</head>
+            <listApp>
+            <app loc="3-4"><note>Supplements by Dobias-Lalou</note></app>
+               <app loc="3">
+               <rdg resp="#mohamed-jmr1997">[κὲ] <unclear>Ἱ</unclear>αροκλίης</rdg> </app>
+               <app loc="4"><note>Perhaps <w>οἰ[κήτορα]</w> (CD-L)</note></app>  
+         </listApp></div>
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>Flavius Antoninianos son of Kasianos: A man of Ephesos, founded by Androklos, a strong fighter and an invited resident 
+               <supplied reason="explanation">of Cyrene</supplied> </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The text has metrical elements. </p>
+            <p>The same man in 
+               <ref type="inscription" n="C.599">C.599</ref>, Antonianos, also called Moros (the fool), an Ephesian.</p>
+            
+            <p>Line 3: The reference to Androklos as founder is typical at Ephesos, particularly in verse inscriptions, e.g <title>IEph</title> 2064 (whence <title>PHI</title> 
+               <ref target="https://epigraphy.packhum.org/text/249786">249786</ref>)</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C23300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Livia Augusta</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.272</idno>
+            <idno type="ircyr2012">C23300</idno>
+            <idno type="JMR">828</idno>
+            <idno type="Excel">1155</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Temple of Artemis: now standing beside the north-west corner</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>base</objectType>, damaged at both upper corners and at the lower left corner 
+                              (<dimensions><width>0.73</width> <height>0.23</height> <depth>0.52</depth></dimensions>). 
+                              There are sockets on top for a statue.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE: lines 1,2, <height>0.055</height>; line 3, <height>0.045</height>; stops between words.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0029" notBefore="0014" precision="low" evidence="reign">CE 14-29</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1033">Temple of Apollo</placeName>; first recorded in <date type="found">1850</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Temple of Artemis: now standing beside the north-west corner.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-04-05" who="MGDA">fixed CIG bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-22" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-19" who="Pietro">Tokenized.</change>
+         <change when="2009-06-16" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_828" decls="#photograph"><desc>Face (1925-26, Department of Antiquities, F. 430)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="letronne-bourville1848"/>, <citedRange>IV</citedRange></bibl>, and 
+               <bibl><ptr target="vattier1850"/>, <citedRange>584</citedRange></bibl>, whence 
+               <bibl>
+                  <ptr target="cigiii"/> <title>Addenda</title>, <citedRange>5136b</citedRange>, p. 1240</bibl>, 
+              <bibl><ptr target="CIL"/>, <citedRange>III.8a</citedRange></bibl>, 
+                   <bibl><ptr target="IGRR"/>, <citedRange>I.1033</citedRange></bibl>;
+               <bibl><ptr target="SECir"/>, <citedRange>53</citedRange> and fig. 49 (from T. II 53, XI 47).</bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="emperor" key="livia"><name nymRef="Iulia">Iuliae</name> <g ref="symbols.xml#stop"/> <name nymRef="Augusta">Augustae</name></persName>
+                    <lb n="2"/> <space quantity="1" unit="character"/> <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene">Cyrenenses</placeName> <space quantity="2" unit="character"/>
+                    <lb n="3"/><date><persName type="attested" key="pir2-o-0019"><name nymRef="Publius"><expan><abbr>P</abbr><ex>ublio</ex></expan> </name>
+                        <g ref="symbols.xml#stop"/> <name nymRef="Octauius">Octauio</name> <g ref="symbols.xml#stop"/> <w lemma="proconsul">pro <space quantity="1" unit="character"/> <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w></persName></date>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>For Julia Augusta, the Cyreneans <supplied reason="subaudible">set this up</supplied>, when Publius Octavius was proconsul.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1: Livia, from CE 14 to her death in CE 29. </p>
+            <p>Line 3: Publius Octavius: see <title>PIR<hi rend="superscript">2</hi></title>, O, 0019</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

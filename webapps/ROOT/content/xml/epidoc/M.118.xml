@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C49100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Christian</rs> <rs type="textType">dedication</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.118</idno>
+            <idno type="ircyr2012">C49100</idno>
+            <idno type="JMR">1085</idno>
+            <idno type="Excel">218</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933" cert="low">Cyrene Museum (?)</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from the lower part of a moulded <objectType>panel</objectType> 
+                              (<dimensions>
+                                 <width>0.24</width>
+                                 <height>0.18</height>
+                                 <depth>0.065</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face above the moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably fifth-sixth century; <height>0.015-0.03</height>; uncial alpha, lunate epsilon, lunate sigma, cursive omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0401" notAfter="0600" precision="low" evidence="lettering">Probably fifth or sixth century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1181">Barke</placeName>; found <date type="found">before 1941</date>, 
+                     seen by Ward-Perkins in the <ref target="https://www.slsgazetteer.org/1288">Barke Museum</ref> (1949).</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/87087">Al Marj</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-15" who="GillianB">tokenized</change>
+         <change when="2009-07-10" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_1085front" decls="#photograph"><desc>Face (Joyce Reynolds I. 21)</desc></graphic></facsimile>
+   
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="jmr1960"/>, <citedRange>7</citedRange>, p. 287 (as from Cyrene)</bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>18.756</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324457">324457</ref></citedRange></bibl>;
+               <bibl><ptr target="jmr-jbwp-rgg2003"/>, <citedRange>265.33</citedRange></bibl>. 
+               A further image available at the BSR, <ref target="http://www.bsrdigitalcollections.it/islandora/object/WP-LIBYA%3A4013">wplib-G24-051c</ref>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὑπέρ"><supplied reason="lost">ὑπὲρ</supplied></w> <w lemma="εὐχή"><supplied reason="lost">εὐ</supplied>χῆϲ</w> <w lemma="καί">καὶ</w> <w lemma="σωτηρία">ϲοτηρίαϲ</w>  <w lemma="ὁ">τῶν</w> <gap reason="lost" extent="unknown" unit="character"/>    <note>sic</note>
+                    <lb n="2"/><g ref="symbols.xml#crux"/> <persName type="attested"><name nymRef="Θέκλα">Θ<unclear>έ</unclear>κλαϲ</name></persName> <w lemma="καί">καὶ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p>. . . ] for the prayer and the salvation of [ . . . ]
+               Thekla and [ . . . </p></div>
+            </div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+           
+           
+         </div>
+         
+      </body>
+   </text>
+</TEI>

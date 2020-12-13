@@ -22,7 +22,7 @@ https://github.com/EpiDoc/EFES
 EFES Documentation home:
 ----
 
-https://github.com/EpiDoc/EFES/wiki/
+https://github.com/EpiDoc/EFES/wiki/ (Ctrl+click to open in new window)
 
 Kiln
 ----

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.468</idno>
+            <idno type="ircyr2012">C90900</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">77-1224</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower left-hand corner of fine-grained white <material>marble</material>
+                              <objectType>base</objectType> or <objectType>panel</objectType>
+                              (<dimensions>
+                                 <width>0.115</width>
+                                 <height>0.180</height>
+                                 <depth>0.032</depth>
+                              </dimensions>). Stained brown, chipped along all edges.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on encrusted face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lines 1,3, <height>0.025</height>; line 2, <height>0.03</height>; line 4, <height>0.02</height>; stop for abbreviation.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0200" notBefore="0101" precision="low" cert="low" evidence="lettering">Probably second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>: area C13, 1, in a posthole. 
+                             </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, Storeroom of the American excavations</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Ljuba">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="white782_IRCyrC468" decls="#photograph"><desc>Face (Donald White)</desc></graphic>
+      <graphic url="white789_IRCyrC468" decls="#photograph"><desc>Face (Donald White)</desc></graphic>
+      </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr2012"/>, <citedRange>A.40</citedRange></bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>62.1795.21</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ<am><g ref="symbols.xml#stop"/></am></abbr><ex>άϊος</ex></expan></name>
+                  <name nymRef="Ι-"><seg part="I">Ι</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/> <w lemma="καί">κα<unclear>ὶ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>	
+               <lb n="3"/><persName type="attested"><name nymRef="Κρίσπος"><seg part="I">Κρισ<unclear>π</unclear></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="4"/> <space quantity="1" unit="character"/> <w lemma="ἥρως" part="I">ἥρω</w><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" source="#jmr2012" xml:lang="en"><p>C(aius) I... ? and <supplied reason="subaudible" cert="low">dedicated a statue of</supplied>... ? Crispus... hero</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>It is not clear whether what survives of the text named one person or two; if one, then a man/boy is named in line 1, the name perhaps continuing in lines2-3,
+               and in line 4 he is described as a hero; if two, the first name, beginning in line 1 probably named as a hero the man or boy described by the second 
+               (whose beginning we cannot assess, but ΚΡΙΣΠ[- . . ., 
+               probably Crispus, is likely to be his cognomen).  
+            </p>
+            <p>For heroization in the Sanctuary cf. <ref type="inscription" n="C.466">C.466</ref>.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

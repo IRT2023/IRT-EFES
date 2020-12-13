@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">dedication</rs></title>
+            <editor>Joyce M. Reynolds</editor>             <editor role="translator" xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor role="translator" xml:id="jmr">Joyce M. Reynolds </editor> <editor role="translator" xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.441</idno>
+            <idno type="ircyr2012">C88300</idno>
+            <availability>
+               <p/> 
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Cyrene Museum</repository> <idno type="invNo">74-949</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                            <p>Right-hand end of low <objectType>base</objectType> of medium-grained white <material>marble</material> 
+                              (<dimensions>
+                                  <width>0.212</width>
+                                  <height>0.163</height>
+                                  <depth>0.051</depth>
+                              </dimensions> at base). Stained brown; chipped along all edges with traces of a hook clamp on top.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                         <layout><rs type="execution" key="scalpro">Inscribed</rs> on face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                      <handNote><height>0.016</height>; circular letters smaller.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                      <origDate notAfter="-0001" notBefore="-0200" precision="low" cert="low" evidence="lettering">Perhaps 
+                          second to first centuries B.C.E.</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="http://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="http://www.slsgazetteer.org/1381">Shrine of Demeter and Kore</placeName>: area C14, 1, 3. 
+                              </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Cyrene Museum (inventory no. 74-949)</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc><encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Ljuba">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr2012"/> <citedRange>A.14</citedRange></bibl>, whence <bibl><title>SEG</title> <citedRange>2012.1795.7</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name><seg part="F"><supplied reason="lost">π</supplied>ατρος</seg></name></persName> <space quantity="5" unit="character"/>
+                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name><seg part="F"><supplied reason="lost">ί</supplied><unclear>π</unclear>πω</seg></name></persName> 
+                <space quantity="5" unit="character"/>	
+                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w>ἀνέθηκε</w> <space quantity="1" unit="character"/>   
+            </ab>
+         </div>
+         <div type="translation" xml:space="preserve">
+            <p>- patros ?<supplied reason="subaudible">son</supplied> of - ippos dedicated 
+                <supplied reason="lost">?to Demeter and/or Kore</supplied></p>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+             <p>line 1 perhaps gives the end of the dedicator’s name (-<foreign xml:lang="grc">π</foreign> missing) rather than the genitive 
+                 case of the name of Demeter which would be without parallel in our texts; his patronymic 
+                 will then have appeared in line 2.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C13200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Regulations</rs> for the cult of Isis</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> 
+            <editor xml:id="cmr"> Charlotte Roueché</editor> <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.153</idno>
+            <idno type="ircyr2012">C13200</idno>
+            <idno type="JMR">711</idno>
+            <idno type="Excel">129</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">189</idno><idno type="invNo">301</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two fragments of a <material>marble</material> <objectType>panel</objectType>. a; no edges; b ; the lower left corner:
+                              <dimensions><width>90.15</width> <height>0.15</height> <depth precision="low">0.06</depth></dimensions>. 
+                              Inscribed on two faces: the inscription on the reverse is <ref target="https://igcyr.unibo.it/igcyr064500">IGCyr064500</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on a rather poorly dressed surface; 
+                           the upper part of b (with lines 1-3) is a little higher than the lower.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Small, and rather rough: <height>0.01</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref  target="https://www.slsgazetteer.org/1020">Sanctuary of Isis and Serapis</ref></origPlace>
+                     <origDate notAfter="0103" notBefore="0102" cert="low" precision="low" evidence="prosopography">102 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              presumably Acropolis, <placeName type="monuList" ref="https://www.slsgazetteer.org/1020">Sanctuary of Isis and Serapis</placeName>; 
+                              fragment b photographed in <date type="found">1925</date> as from the Agora.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (a and b: Dobias-Lalou, b: Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-02-22" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-11-08" who="Pietro">tokenized</change>
+         <change when="2009-06-14" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="JMR_711front" decls="#photograph"><desc>Face (Department of Antiquities, 802-27)</desc></graphic>
+      <!--Dept. H27.--></facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               a: Unpublished; dicovered and read by Catherine Dobias-Lalou; b: <bibl>
+                  <ptr target="gpc1961"/>  <!-- check -->
+                  <citedRange>10b</citedRange> p. 30, figs. 19-20</bibl>, whence  
+               <bibl><ptr target="robertBE"/>, <citedRange>1962.363</citedRange></bibl>, 
+               <bibl n="seg">
+                  <ptr target="SEG"/> <citedRange>20.721</citedRange></bibl>, <bibl>
+                     <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324482">324482</ref></citedRange></bibl>,  
+               <bibl><ptr target="vidman1969"/>, <citedRange>808</citedRange></bibl>, 
+               <bibl><ptr target="jmr1972"/>, <citedRange>47</citedRange></bibl></p>
+         </div><!-- check cdl version -->
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div type="textpart" n="a">
+               <ab> <lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/>
+                  <rs type="month" key="phamenoth"><w lemma="Φαμενώθ"><supplied reason="lost">Φ</supplied>αμενὼθ</w></rs>  <num value="14"><unclear>ι</unclear><supplied reason="lost">δ</supplied></num> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="8" unit="character"/> <num value="15">ιε</num><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/> <rs type="month" key="pharmuthi"><w lemma="Φαρμουθί">Φαρμοῦθ</w></rs> <num value="16">ιϛ</num> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="8" unit="character"/> <num value="17">ιζ</num> <gap reason="lost" extent="unknown" unit="character"/>   
+               <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/> <rs type="month" key="pachon"><w lemma="Παχών">Παχὼν</w></rs> <num value="18">ιη</num> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="8" unit="character"/> <num value="19">ιθ</num>   <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/> <rs type="month" key="pauni"><w lemma="Παϋνί">Παῦνι</w></rs> <num value="20">κ</num> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="8" unit="character"/> <num value="21">κα</num><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="4" unit="character"/> <supplied reason="lost"><rs type="month" key="epiphi"><w lemma="Ἐπιφί">Ἐπιφὶ</w></rs></supplied> <num value="22">κβ</num> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="8" unit="character"/> <num value="23">κ<supplied reason="lost">γ</supplied></num><gap reason="lost" extent="unknown" unit="character"/></ab>
+            </div>
+            <div type="textpart" n="b"> <ab>
+                    
+                    <lb n="0"/><gap reason="lost" quantity="1" unit="line"/> 
+                    <lb n="1"/><num value="17">ιζ</num> <w lemma="ἕως">ἕως</w> <w lemma="ὥρα"><expan><abbr>ὥ</abbr><ex>ρας</ex></expan></w> <num value="6">ϛ</num>
+                    <space quantity="1" unit="character"/> <num value="30">λ</num> <space quantity="1" unit="character"/> 
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                 <lb n="2"/><num value="18">ιη</num> <w lemma="ἕως">ἕως</w> <g ref="symbols.xml#stop"/> <g ref="symbols.xml#star"/> <g ref="symbols.xml#stop"/> 
+               <rs type="month" key="pauni"><w lemma="Παϋνί">Πα<unclear>ῦ</unclear><supplied reason="lost">νι</supplied></w></rs>  <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="3"/><num value="20">κ</num> <w lemma="ἕως">ἕως</w> <w lemma="ὥρα"><expan><abbr>ὥ</abbr><ex>ρας</ex></expan></w> <num value="10">ι</num>
+                    <space quantity="2" unit="character"/> <num value="3">γ</num> <space quantity="1" unit="character"/> 
+                    <w lemma="ἕως">ἕ<unclear>ω</unclear><supplied reason="lost">ς</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> 
+                <lb n="3a"/> <space extent="1" unit="line"/>
+                    <lb n="4"/><w lemma="ἐάν">ἐὰν</w> <w lemma="δέ">δέ</w> <w lemma="τις">τις</w> 
+                 <w lemma="ὁ">τῶν</w> <orig>ου<unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="διά">διὰ</w></supplied>
+                 <w lemma="ἴδιος"><supplied reason="lost">ἰ</supplied><lb n="5" break="no"/>δίας</w> <w lemma="αἰτία">αἰτίας</w> 
+                 <w lemma="νηστεία">νηστεία</w><gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="6"/><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ἕκαστος">ἑκάστου</w> <w lemma="μείς">μην<supplied reason="lost">ὸς</supplied></w> 
+                 <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="7"/><persName type="divine" key="isis"><name nymRef="Ἶσις">Ἴσιδι</name>
+                    <name nymRef="Μυρυώνυμος">Μυρυωνύμωι</name></persName> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="8"/><persName type="attested" key="lgpn:V1-62518"><name nymRef="Ἀγαθὸς Δαίμων"><unclear>Ἀ</unclear><supplied reason="lost">γαθ</supplied>ὸς Δ<unclear>α</unclear>ίμων</name></persName>
+                 <w lemma="ἱερεύς">ἱερε<unclear>ύ</unclear><supplied reason="lost">ς</supplied></w>
+                 <gap reason="lost" extent="unknown" unit="character"/>
+                </ab></div>
+         </div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="b.2">
+                  <rdg resp="#gpc1961">ΠΑΤ<unclear>Ρ</unclear></rdg>
+                  <note>Reynolds suggests ΠΑΤ<unclear>Ν</unclear>: the final letter  might be P (so previous editors), N (as here) a ligature or a symbol;
+                  Dobias-Lalou suggests Πα<unclear>υ</unclear>[νι</note>
+               </app>
+               <app loc="b.3">
+                  <note>The traces, omitted by earlier editors, of the letter that follows the final E are most like those of Ω suggesting a repetition of ἕως = until.</note></app>
+               <app loc="b.4">
+                  <lem>ΟΥΙ</lem>
+                  <rdg resp="#gpc1961">οἰν[οποτῶν ?</rdg>
+               </app></listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>: . . . ] Phamenoth 14 [. . .] 15 [. . .] Pharmouthi 16 [. . .] 17 [. . .] Pachon 18 [. . .] 19 
+               [. . .] Payni 20 [. . .] 21 [. . . Epiphi ] 22 [. . .] 23 [. . .</p>
+               <p><note>b</note>: . . . ] 17th, until the 6th hour, 30[. . .]; 18th until .  *  ?[. . .];  20th until the 10th hour, 3[. . .]. If anyone of the [. . .], 
+            private reason a fast [. . .] for each month [. . .] for thousand-named Isis [. . .] Agathos Daimon, priest [. . .]</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Fragment a provides a list of dates, apparently periods of time; the months are the first five months of the second semester of the Egyptian year. In fragment b there seems to be reference to periods of time within the day; Ω, with a superscript Ρ apparently for ὥ(ρα). 
+                    The figures at the beginning of b 1-2 must represent days of the month and are followed in each case by a formula indicating a period of time; 
+                    the symbols thereafter, probably figures, presumably refer to what must or must not be done during that period </p>
+            <p>Line b 2: the time limit expressed in hours is replaced by the sign *, apparently between dots (although the second one is oddly placed), which are probably interpuncts. 
+               It is unlikely to have the common sense of <foreign xml:lang="la">denarius</foreign>, or Χοῖνιξ 
+                    as probably in a graffito at Dura (<title>Excavations at Dura-Europos</title> II (Yale, 1931) 147); it seems better to see this as an astral symbol. 
+                    </p>
+            <p>Line b 5: The word used for a fast is one connected with the Cyrenean cult of Isis by Herodotus, IV.186 (at <ref target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0016.tlg001.perseus-eng1:4.186.2">Perseus</ref>). 
+               For fasts among worshippers of Isis, see Apuleius Metam.XI.23. Ferri, Studi e Materiali di Storia delle Religioni III (1927) 233 ff. 
+               argued that there was evidence for local features in the cult objects found in the 
+                    Iseum beside the Acropolis. <!-- out of date? --></p>
+            <p>Line b 8: perhaps to be identified with the priest of the same name in <ref target="https://igcyr.unibo.it/gvcyr041">GVCyr041</ref>, line 2, dated in 102/103 CE</p>
+            <p><!-- check  Pugliese Carratelli Miscellanea Rostagni (1963) 162 f, Maia 16 (1964) 108f.--> </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

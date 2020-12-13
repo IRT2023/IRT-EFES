@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P09700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary official <rs type="textType">letter</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.96</idno>
+            <idno type="ircyr2012">P09700</idno>
+            <idno type="JMR">316</idno>
+            <idno type="Excel">397</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Four fragments (two adjoining) from a <material>limestone</material>
+                              <objectType>panel</objectType>; a and b adjoining belong probably
+                    to the right side of the panel. Together they measure <dimensions>
+                                 <width unit="metre">0.29</width>
+                                 <height unit="metre">0.18</height>
+                                 <depth unit="metre">0.03</depth>
+                              </dimensions>. Fragment c has no edges and measures <dimensions>
+                                 <width unit="metre">0.095</width>
+                                 <height unit="metre">0.07</height>
+                                 <depth unit="metre">0.015</depth>
+                              </dimensions>.  Fragment d has also no edges and measures <dimensions>
+                                 <width unit="metre">0.65</width>
+                                 <height unit="metre">0.85</height>
+                                 <depth unit="metre">0.02</depth>
+                              </dimensions>
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face. In fragments c and d lines are closer together than in a+b.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Perhaps second century CE: <height unit="metre">0.01-0.015</height>;
+                    h-shaped H in fragment a, line  6.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0200" notBefore="0101" cert="low" precision="low" evidence="lettering">Perhaps second century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              at the south end of the Portico fronting the <placeName type="monuList" ref="https://www.slsgazetteer.org/945">Odeon</placeName>,
+                              some 30m from the <placeName type="monuList" ref="https://www.slsgazetteer.org/948">Square of the Cisterns</placeName>; found in <date type="found">1937</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2011-04-05" who="MGDA">fixed  Goodchild bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-18" who="GB">checked place, date; fixed dimensions</change>
+         <change when="2009-12-29" who="CMR">tagged keywords, dimensions</change>
+         <change when="2009-05-14" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_316_002" decls="#photograph"><desc>a, b and c with an unidentified fragment (Joyce Reynolds, Tolmeita 6A2)</desc></graphic>
+      <graphic url="JMR_316_001" decls="#photograph"><desc>a, b and c with an unidentified fragment </desc></graphic>
+      <graphic url="JMR_316_003" decls="#photograph"><desc>Fragments a, b, c. (Ispettorato Monumenti e Scavi - Bengasi, Serie A/718 Rullo 39, foto 28)</desc></graphic>
+      <graphic url="Photos_0331" decls="#photograph"><desc>Fragments a and b (1961-5-26, Joyce Reynolds III.15.2)</desc></graphic>
+      <graphic url="P09700ab_6A3" decls="#photograph"><desc>a, b and c with an unidentified fragment  (Joyce Reynolds 6A.3)</desc></graphic>
+      <graphic url="P09700ab_vasari26051961" decls="#photograph"><desc>Fragments d and c (Joyce Reynolds III.15.1)</desc></graphic>
+      <!--Dept. Tolmeita R 39, F 27.--></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="rgg1967"/>, <citedRange>a, b, c</citedRange>, p. 47, fig. I, p. 48</bibl>, whence 
+               <bibl><ptr target="AE"/> <citedRange>1967.533 a-c</citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015148">015148</ref></citedRange></bibl>, 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015151">015151</ref></citedRange></bibl>, 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015154">015154</ref></citedRange></bibl>
+               <bibl><ptr target="jmr1972"/>, <citedRange>46</citedRange></bibl>. Mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>92</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve"><div subtype="section" n="a+b" type="textpart"><ab>
+                            <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="instrumentum"><supplied reason="lost">i</supplied>nstrum<supplied reason="lost" cert="low">entum</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">as</w> <w lemma="noster">nostrarum</w>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="proprius"><supplied reason="lost">pr</supplied>oprium</w> <w lemma="negotium">negotium</w>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ut"><unclear>u</unclear>t</w> <w lemma="inspicio">inspiciant</w> <w lemma="et">et</w> <w lemma="fides">fid<unclear>e</unclear>m</w>
+                        <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">s</w> 
+                            <w lemma="de">de</w> <w lemma="is">is</w> <w lemma="qui">quae</w> <w lemma="aduersus">adversus</w>
+                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">int</w> <w lemma="hic">huius</w> 
+                            <w lemma="epistula">epistulae</w> <w lemma="in">in</w> <w lemma="forum">for<unclear>o</unclear></w>
+                        <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">tionibus</w>
+                            <w lemma="clarus">claris</w> <w lemma="littera">litteris</w>
+                        <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>r</unclear>um</w>
+                            <w lemma="quotiens">quotiens</w> <gap reason="lost" quantity="5" unit="character"/>
+                        <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>s</unclear></w>
+                            <w lemma="in">in</w> <w part="I"><unclear>po</unclear></w><gap reason="lost" quantity="10" unit="character"/>
+                        <lb n="9a"/><gap reason="lost" extent="unknown" unit="line"/>
+                        </ab></div>
+            <div subtype="fragment" n="c" type="textpart"><ab>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>e</unclear>xv</orig>
+                            <w lemma="implico" part="I">inplici</w><gap reason="lost" extent="unknown" unit="character"/> 
+                            <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>i</unclear>entes</w> 
+                            <w part="I">d</w><gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="notus"><unclear>n</unclear>oto</w> 
+                            <w part="I"><unclear>p</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                        </ab></div><div subtype="fragment" n="d" type="textpart"><ab>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>rumus</orig><gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">m</w> <w lemma="de">de</w>
+                            <w lemma="is">eo</w> <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w part="I">qu</w><gap reason="lost" extent="unknown" unit="character"/>
+                        </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="a+b 9">
+                  <note>S might be C, P might be B or R.</note>
+               </app>
+            </listApp>
+            <listApp>
+               <app loc="c 3">
+                  <note>N might be I, and P might be E or F.</note>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>
+               <note>a+b</note>: [ . . . ] document [ . . . ] of our [? affairs . . . ] own transactions [ . . . ] that they may examine and the trust [ . . . ]
+                    about those who might be against [ . . . ? publish a copy ]of this letter in the forum [ . . . ] in clear characters [ . . . ] as often as [ . . . ] 
+                    and in [ . . .</p>
+               <p>
+               <note>d</note>:  . . . ] ?15 [ . . .</p><p>
+               <note>d</note>: . . . ] about it [ . . . ] which [ . . .  </p>
+            </div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> The document is an official letter (fragment a+b, line 6);  it probably came from an emperor though possibly from a governor. 
+               <foreign xml:lang="la">i]nstrum[entum</foreign> standing for document is the most likely restoration.</p>
+      
+            <p> a+b, line 6: <foreign xml:lang="la">foro</foreign>: the writer no doubt used the word of the principal public place of any city and without reference to local usage at Ptolemais; of this we only know from Synesios, who has ἀγορά (Ep. 57.195c) as is to be expected. 
+               It is clear, however, that the text creates a strong presumption that earlier suggestions for the location of the agora should be rejected (so Goodchild). 
+               The findspot suggests the identification of the porticoed square, 30 metres away, with the principal public place of the city. On the area see Goodchild, loc.cit. 
+               <!--The presence of 280 ?? in the same area may be regarded as a further indication.  --> </p>
+            <p>Line  7: 'clear characters': Similar formulae providing for efficient display are common in analogous texts 
+               (see a collection of instances by <ref target="https://zenon.dainst.org/Record/000520329">M.W. Frederiksen (1965)</ref> p.184f.) but we have found no other instance of the wording used here.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

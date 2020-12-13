@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C35900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">list</rs> of ?priests</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.403</idno>
+            <idno type="ircyr2012">C35900</idno>
+            <idno type="JMR">900</idno>
+            <idno type="Excel">1079</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">b. Cyrene Museum; c. Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three fragments, probably from the same inscribed <material>marble</material> <objectType>stele</objectType>: a, From the left edge, 
+                              of lines 4-6;
+                              b, (<dimensions><width>0.41</width> <height>0.61</height> <depth>0.24</depth></dimensions>) 
+                    presumably with lower edge; c without edges. 
+                              <ref type="inscription" n="C.404">C.404</ref>, <ref type="inscription" n="C.405">C.405</ref>
+                    and  <ref type="inscription" n="C.406">C.406</ref> may be from the same stele.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face; each entry in a different hand.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first century CE; a and b: lines 1-7, <height atLeast="0.04" atMost="0.045">0.04-0.045</height>; 
+                        lines 8-11, <height atLeast="0.03" atMost="0.035">0.03-0.035</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" precision="low" evidence="lettering">Probably first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1228">Sanctuary of Apollo</placeName>; photographed in <date type="found">1926</date> 
+                              as from the Sanctuary.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>b. <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>; c. Findspot <date type="observed">1926</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>transcribed, a and c from the photograph, b from the stone. (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+          <change when="2013-08-13" who="TW">tagged names</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-03" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-08-01" who="CMR">corrections</change>
+         <change when="2010-06-14" who="GillianB">tokenized</change>
+         <change when="2009-06-23" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_900" decls="#photograph"><desc>Three stones, b, c, a i (Department of Antiquities, F. 782)</desc></graphic>
+      <graphic url="JMR_910_2" decls="#photograph"><desc>Fragment c (Department of Antiquities, F. 432)</desc></graphic>
+      <graphic url="JMR_910full" decls="#photograph"><desc>From left: <ref type="inscription" n="C.411">C.411</ref>, 
+         <ref type="inscription" n="C.399">C.399</ref>, <ref type="inscription" n="C.403">C.403.c</ref>, 
+         <ref target="https://igcyr.unibo.it/igcyr096660">IGCyr096660</ref> (Department of Antiquities, F.432) </desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>(b only): <bibl>
+                  <ptr target="SECir"/>, <citedRange>14</citedRange>, fig. 16.</bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="fragment" n="a+b" type="textpart"><ab>
+            <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>σ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>ο<unclear>σ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>σ</unclear>οε</orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="4"/><persName type="attested" key="lgpn:V1-64610"><name nymRef="Καρτισθένης">Καρ<supplied reason="lost">τισ</supplied>θέν<supplied reason="lost">η</supplied></name> <gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="5"/><persName type="attested" key="lgpn:V1-64427"><name nymRef="Ἰσοκράτης">Ἰσοκ<supplied reason="lost">ρ</supplied>άτευ<unclear>ς</unclear></name></persName></persName> <gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="6"/><persName type="attested"><name nymRef="Πάσων">Πάσ<supplied reason="lost">ων</supplied></name> <persName type="attested" key="lgpn:V1-62607"><name nymRef="Ἀγχίστρατος"><supplied reason="lost">Ἀγ</supplied>χιστρά<supplied reason="lost" cert="low">τω</supplied></name></persName></persName> <gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-64605"><name nymRef="Καρτισθένης"><supplied reason="lost">Κ</supplied>αρτισθέ<supplied reason="lost">ν</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-63292"><name nymRef="Ἄσκλαπος"><supplied reason="lost">Ἄσκ</supplied><unclear>λ</unclear>απος</name></persName> 
+            <gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ης"><seg part="F">ευς</seg></name></persName>
+            <orig>πα</orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-62606"><name nymRef="Ἀγχίστρατος"><seg part="I">Ἀγχισ<unclear>τ</unclear><supplied reason="lost">ρατ</supplied></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><orig>τωι<unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="11a"/><gap reason="lost" extent="unknown" unit="line"/>
+        </ab></div>
+            <div subtype="fragment" n="c" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>οσ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>σ</unclear>τι</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-κρατ-"><seg part="M"><supplied reason="lost">κ</supplied>ρατ</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig>σ<unclear>λ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="3">
+                  <note>Reynolds conjectured [Καρτι]<unclear>σθ</unclear>έ[ν ---]</note>
+               </app>
+               
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ] Kartisthenes [ . . . <supplied reason="subaudible">son</supplied> ] of Isokrates [ . . . ] 
+         Pas[on [?<supplied reason="subaudible">son</supplied> of An]chistratos, [ . . . ] Kartisthenes [ . . . ]  Asklapos [ . . . ]  Anchistratos [ . . . ] </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The different hands suggest that the text contained a running record of eponymous priests of Apollo.</p>
+            <p><!-- Ap. Ἀγχιστρατος Καρτισθενευς in SEG 183. --></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

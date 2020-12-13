@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C71600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription for cisterns</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.166</idno>
+            <idno type="ircyr2012">C71600</idno>
+            <idno type="JMR">722a</idno>
+            <idno type="Excel">1051</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Standing in the nave of the East Church</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Re-used <material>marble</material>
+                              <objectType>stele</objectType> of a type commonly used for funerary
+                              texts, but also for some public texts (<dimensions>
+                                 <width>1.10</width>
+                                 <height>0.43 - 0.50</height>
+                                 <depth>0.23 - 0.25</depth>
+                              </dimensions>).
+                              </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on what must have been a front face, which was never completed. 
+                           This face was never exposed, and is therefore in good condition.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century CE: Latin, <height atLeast="0.025" atMost="0.03">0.025 - 0.03</height>; Greek, <height>0.03</height>; lunate epsilon and
+                        sigma, cursive omega; a leaf at the end of line 5</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>The major public cisterns in this east area of the city lie not far SE of the East Church
+                        and this inscription is most likely to have come from them.</origPlace>
+                     <origDate notBefore="0165" notAfter="0169" precision="low" evidence="reign">165-169 CE</origDate>
+                  </origin><provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1226">East Church</placeName>, re-used  for a third time as a threshold in 
+                              the south west entrance; found in <date type="found">1956</date></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Standing in the nave of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1226">East Church</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-21" who="AO">tokenized</change>
+         <change when="2009-06-11" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_722a_004" decls="#photograph"><desc>Face (Reynolds VI.23)</desc></graphic>
+      <graphic url="JMR_722a_002" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="JMR_722a_003" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="JMR_722a_001" decls="#photograph"><desc>Face</desc></graphic><!--J.R.--></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr1959"/>, <citedRange>3.a</citedRange>, fig. 4</bibl>, whence <bibl><ptr target="SEG"/> <citedRange>18.740</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324444">324444</ref></citedRange></bibl>;
+               see also<bibl><ptr target="AE"/> <citedRange>1960.200</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:space="preserve"><div xml:lang="la" type="textpart"><ab>
+                    <lb n="1"/><w lemma="ex">ex</w> <w lemma="auctoritas">auctoritate</w> <w lemma="et">et</w> <w lemma="indulgentia">indulgentia</w> 
+                    <w lemma="optimus">optimorum</w> <w lemma="maximus">maximorum</w><w lemma="que">que</w> <date><w lemma="imperator">imperatorum</w> <date ref="https://godot.date/id/o8Vw6LGNn9GFpgHgj9DLHg"><persName type="emperor" key="marcusaurelius"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> 
+                    <name nymRef="Aurelius">Aureli</name> <name nymRef="Antoninus">An<lb n="2" break="no"/><space quantity="2" unit="character"/>tonini</name> 
+                    <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> <name nymRef="Armeniacus">Armeniaci</name></persName></date> <w lemma="et">et</w> 
+                    <date ref="https://godot.date/id/vBoHBCH7XoN7DW3DqD9QXi"><persName type="emperor" key="luciusverus"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name nymRef="Aurelius">Aureli</name> <name nymRef="Verus">Veri</name> <name nymRef="Armeniacus">Armeniaci</name> 
+                    <name nymRef="Parthicus"><expan><abbr>Parthi</abbr><ex>ci</ex></expan></name> <w lemma="maximus">Maximi</w></persName></date></date> <w lemma="receptaculum">recep<lb 
+                       n="3" break="no"/><space quantity="2" unit="character"/>tacula</w> 
+                    <w lemma="pecunia">pecunia</w> <w lemma="publicus"><expan><abbr>p</abbr><ex>ublica</ex></expan></w> <space quantity="40" unit="character"/>
+                    <lb n="3a"/> <space quantity="8" unit="line"/>
+                </ab></div><div xml:lang="grc" type="textpart"><ab>
+                    <lb n="4"/><persName type="attested"><name nymRef="Ναιουϊανός"><supplied reason="omitted">Ναι</supplied>υιανὸς</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="κράτιστος"><expan><abbr>κρ</abbr><ex>άτιστος</ex></expan></w> <space quantity="35" unit="character"/>
+                    <lb n="5"/> <w lemma="θεμέλιος">θεμελίων</w> <w lemma="κατασκευάζω">κατεσκεύασεν</w> <w lemma="καί">καὶ</w> <w lemma="ἀφιερόω">ἀφιέρωσεν</w> <w lemma="μετά">μετὰ</w> <persName type="attested"><name nymRef="Σίλιος">Σειλίου</name><g ref="symbols.xml#leaf"/> <lb n="6"/><name nymRef="Πλαύτιος">Πλαυτίου</name> <name nymRef="Ἁτεριανός">Ἀτεριανοῦ</name></persName> <w lemma="ὁ">τοῦ</w> <w lemma="κράτιστος">κρατίστου</w>
+                    <w lemma="ταμίας">ταμί<supplied reason="omitted">ου</supplied></w> <space quantity="15" unit="character"/>
+                </ab>
+</div>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>Latin</note> By the authority and generosity of the best and greatest emperors Marcus Aurelius Antoninus Augustus, 
+               victor in Armenia, and Lucius Aurelius Verus, victor in Armenia, greatest victor in Parthia, cisterns <supplied reason="explanation">were built</supplied>, from public funds.</p>
+            <p><note>Greek</note> -ouianus the most excellent . . .  of foundations constructed and consecrated, with Silius Plautius Haterianus, the most excellent quaestor.</p></div></div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The use as a threshold was its third usage - 
+               no trace survives of its first as a stele; the inscriptions are the record of its second,
+               when it perhaps stood in the place of a lintel above the door of a cistern. 
+               The cutter abandoned his work on this bilingual text uncompleted,
+               for the wholly Greek version, <ref type="inscription" n="C.167">C.167</ref>, on the reverse face.
+               That differs from this original Greek version in setting out the facts in a more elaborate form
+               and in using a quasi-Doric dialect instead of the κοινή.
+               It is possible also that between the drafting of the first and second versions
+               the imperial titles had altered; in the this first version only Verus is called Parthicus Maximus,
+               in the second (<ref type="inscription" n="C.167">C.167</ref>) the space available strongly suggests that Marcus was similarly described
+               and that both were also Medicus.
+               Verus held the title Parthicus Maximus from 165, Marcus from 166.</p>
+            <p>Line 3: For <foreign xml:lang="la">de/ex pecunia publica</foreign>  from public money, cf.  also <ref type="inscription" n="T.5">T.5</ref>). </p>
+            <p>Line 4: The name is restored from <ref type="inscription" n="C.167">C.167</ref>: the error is unusual.</p>
+            <p>Line 5: Silius Plautius Haterianus: only here and in <ref type="inscription" n="C.167">C.167</ref>, but he must belong to a family of Silii Plautii prominent at Lepcis Magna in the second and third centuries; 
+               see IRT <ref target="http://inslib.kcl.ac.uk/irt2009/IRT635.html">635</ref>, <ref target="http://inslib.kcl.ac.uk/irt2009/IRT632.html">632</ref>, 
+               <ref target="http://inslib.kcl.ac.uk/irt2009/IRT542.html">542</ref>.</p>
+               <!-- line 1  κρατιστος otherwise unknown
+                  line 3  -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

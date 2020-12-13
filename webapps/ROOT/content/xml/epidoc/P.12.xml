@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P01600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic<certainty cert="low" locus="value" match=".."/></rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+            
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.12</idno>
+            <idno type="ircyr2012">P01600</idno>
+            <idno type="JMR">269 2/d</idno>
+            <idno type="Excel">710</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Sandstone</material> 
+                              blocks, too high to measure, in the wall of the North Tower of the West Gate,
+                              inscribed, while in their present position, on the West wall, with 
+                              <ref type="inscription" n="P.8">P.8</ref>,
+                              <ref type="inscription" n="P.9">P.9</ref><ref type="inscription" n="P.10">P.10</ref>, 
+                              <ref type="inscription" n="P.11">P.11</ref>,
+                              <ref type="inscription" n="P.12">P.12</ref>,
+                              <ref type="inscription" n="P.13">P.13</ref>,
+                              <ref type="inscription" n="P.14">P.14</ref>,
+                              <ref type="inscription" n="P.15">P.15</ref>,
+                              <ref type="inscription" n="P.16">P.16</ref>.
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffito</rs> on the raised central area of a block immediately to 
+                           the right of <ref type="inscription" n="P.11">P.11</ref>. The second line is compressed; the monogram is larger than the letters, and sits at the end of the three lines.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> L for ἔτους; a large ΣΤΚ monogram for συγκοίτοι.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering context">First century BCE to first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/939">West Gate</placeName>, North tower, west wall. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-21" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-07-16" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXIV" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXIV)</desc></graphic>
+      <graphic url="JMRNB05_079" decls="#photograph"><desc><ref type="inscription" n="P.11">P.11</ref> to the left, <ref type="inscription" n="P.12">P.12</ref> 
+      to the right (Reynolds, Tolmeita I (NB V). 79</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/> <citedRange unit="plate">LXXIV</citedRange></bibl>, whence 
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5188</citedRange></bibl>;
+               <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">496</citedRange> (20), p. 248</bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>9.380</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324229">324229</ref></citedRange></bibl>; discussed by  
+               <bibl><ptr target="marengo1988a"/><citedRange></citedRange></bibl>, whence <bibl><ptr target="cdlBE"/>, <citedRange>1990.837</citedRange></bibl>.
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            
+               <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/wtdpMkHixnKf3paJYFzKXG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                         <num value="1"><unclear>α</unclear></num></date> <persName type="attested" key="lgpn:V1-61074"><name nymRef="Ἀμφικλῆς">Ἀμφικλῆς</name>
+                        <lb n="2"/> <persName type="attested"><name nymRef="Ἰαδινχαν">Ἰαδυγχαντος</name></persName></persName> <!-- check -->
+                    <lb n="3"/> <w lemma="φίλος">φίλος</w> <persName type="attested" key="lgpn:V1-61173"><name nymRef="Βλάνδος">Βλάνδου</name></persName> <w lemma="σύγκοιτος"><expan><abbr><expan><abbr><am><g ref="symbols.xml#ΣΤΚ"/></am></abbr><ex>σύγκ</ex></expan></abbr><ex>οιτοι</ex></expan></w>
+                    </ab>
+</div>
+
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                  <lem>α</lem>
+                  <rdg resp="#pacho1827">LA</rdg>
+                  <rdg resp="#oliverioDAI2">L δ΄</rdg>
+               </app>
+                    <app loc="2">
+                       <rdg resp="#pacho1827">LΑ ΔΥΓ ΑΝΤΟΣ</rdg>
+                       <rdg resp="#cigiii">L α΄ Δ[ιόφ]αντος</rdg>
+                  <rdg resp="#oliverioDAI2">L δ΄ Δύ(μ)αντος</rdg>
+                       <rdg resp="#jmr">L α΄ Αὐγλαντος <note>LGPN:V1-61158</note></rdg>
+                       <rdg resp="#marengo1988a">Ιαδυγχαντος</rdg>
+               </app>
+                    <app loc="3">
+                  <rdg resp="#pacho1827">ΦΙΛΟΣΒΛΑΚΔΟΥ</rdg>
+                  <rdg resp="#cigiii">Φιλοσ[τρ]α[τ]ου</rdg>
+                  <rdg resp="#oliverioDAI2">Φιλο λάγδου (?)
+                  </rdg>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 4. Anficles. - Anno 4. Di Dimas di Filolagdo ?</p></div>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Amphikles <supplied reason="subaudible">son</supplied> of Iadinchan, friend of Blandos: bed-fellows.</p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>أمفيكليس (بن)  أدياخان، صديق بلاندوس: شركاء الفراش.</p></div>
+         </div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For this group of texts see commentary on <ref type="inscription" n="P.1">P.1</ref>.</p>
+            <p>Line 2: for the name see <ref type="inscription" n="M.106">M.106</ref>, on which Marengo based her restoration here. The compression of the patronymic recalls the practice of 
+               writing the name within the letters of the son's name (as e.g. <ref type="inscription" n="P.11">P.11</ref>.iv, <ref type="inscription" n="P.13">P.13</ref>, <ref type="inscription" n="P.14">P.14</ref>).</p>
+            <p>For the monogram, see on <ref type="inscription" n="P.3">P.3</ref>: here it is placed in apposition to the text, clearly describing the pair; 
+               it must have a further significance than the simple φίλος.</p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

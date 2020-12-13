@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C16500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragments from a ?<rs type="textType">building</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.191</idno>
+            <idno type="ircyr2012">C16500</idno>
+            <idno type="JMR">754</idno>
+            <idno type="Excel">1219</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">a to f are in Cyrene Museum, the remainder on the site near findspots</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Seven <material>marble</material> <objectType>block</objectType>s. 
+                              a. <dimensions><width>0.51</width>  <height>0.81</height> <depth>0.27</depth></dimensions>; 
+                              b. <dimensions><width>0.45</width> <height>1.17</height> <depth>0.20</depth></dimensions>; 
+                              c. <dimensions><width>0.375</width> <height>1.18</height>  <depth>0.21</depth></dimensions>; 
+                              d. and e. <dimensions><width>0.83</width> <height>1.17</height> <depth>0.23</depth></dimensions>; 
+                              f. <dimensions><width>0.48</width> <height>0.745</height>  <depth>0.20</depth></dimensions>; 
+                              g. <dimensions><width>0.40</width> <height>1.23</height>  <depth>not measurable</depth></dimensions>; 
+                              h. <dimensions><width>0.47</width>  <height>1.18</height> <depth>0.31</depth></dimensions>;</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Each <rs type="execution" key="scalpro">inscribed</rs> on one face which is slightly concave, at <depth>0.03</depth> below the upper edge.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first century: <height>0.11</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>It is possible that all originally served as part of a balustrade in <ref target="https://www.slsgazetteer.org/994">Theatre 3</ref>.</origPlace>
+                     <origDate notAfter="0050" notBefore="0001" precision="low" evidence="lettering">Probably first century CE</origDate>
+                  </origin><provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              Valley Street: a-f photographed in <date type="found">1929</date>, apparently as found re-used in the 
+                              paving of <placeName type="monuList" ref="https://www.slsgazetteer.org/1340">Public Building E</placeName>. g found in <date type="found">1955</date>, 
+                              re-used as a stair-tread in the south entrance to the <placeName type="monuList" ref="https://www.slsgazetteer.org/1342">Central Church</placeName>. 
+                              h found in <date type="found">1958</date> in late buildings 
+                        behind the church.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>a to f are now in <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName> (<date type="observed">2008</date>), the remainder on 
+                        the site near findspots.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-11-19" who="CB">tidied</change>
+         <change when="2009-06-12" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="DSC04354" decls="#photograph"><desc>Face: a, c and b (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04353" decls="#photograph"><desc>Face: a (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04355" decls="#photograph"><desc>Face: c, b and e (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04352" decls="#photograph"><desc>Face: d, and part of a (2008, H.Walda)</desc></graphic>
+      <graphic url="JMRNB02_091_002" decls="#photograph"><desc>Face: h (Reynolds II.91.2)</desc></graphic>
+      <!--Dept. E 1172--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve"><div subtype="section" n="a" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="1" unit="character"/> 
+            <persName type="attested"><name nymRef="Cae-"><seg part="I">Cae</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+               </ab></div>
+            
+            <div subtype="section" n="b + d + e" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName>
+                        <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <g ref="symbols.xml#stop"/> 
+                           <name nymRef="Scaeva">Sc<supplied reason="lost">aev</supplied>a</name> <g ref="symbols.xml#stop"/> <name nymRef="Longus">Longu<supplied reason="lost">s</supplied></name></persName>
+            </ab></div>
+            
+            <div subtype="section" n="c" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+              <persName type="attested"> <name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uinti</ex></expan></name> <g ref="symbols.xml#stop"/> 
+               <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w></persName> <g ref="symbols.xml#stop"/> 
+               <gap reason="lost" extent="unknown" unit="character"/></ab></div>
+            
+            <div subtype="section" n="f" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ae</orig><gap reason="lost" extent="unknown" unit="character"/> 
+                       </ab></div>
+            <div subtype="section" n="g" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ius"><seg part="F">ius</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                       </ab></div>
+            <div subtype="section" n="h" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-sca"><seg part="F">sca</seg></name></persName> <space quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+                    </ab>
+</div>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>b + d + e</note>:  . . . ? ] Scaeva Longus, son of L(ucius) [ . . .</p>
+         <p><note>c</note>: . . . ] son of Q(uintus) [ . . . </p> <p>
+            <note>Remaining fragments not usefully translatable.</note></p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>a number of similar blocks, uninscribed, have been found in the Market Theatre. </p>
+            <p>Parts of at least two names are discernible.
+                    One of the missing nomina may have been e.g. <foreign xml:lang="la">Caesius</foreign> or <foreign xml:lang="la">Caesernius</foreign>, 
+               and one of the men perhaps had the cognomen <foreign xml:lang="la">Casca</foreign>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

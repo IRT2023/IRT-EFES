@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C48200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.117</idno>
+            <idno type="ircyr2012">C48200</idno>
+            <idno type="JMR">1077</idno>
+            <idno type="Excel">256</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>stele</objectType>, moulded above, 
+                              (<dimensions>
+                                 <width>0.24</width>
+                                 <height>0.61</height>
+                                 <depth>0.16</depth>
+                              </dimensions>); the lower left quarter of the stone has been cut away.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Average <height>0.02</height>; probably L for ἔτους, ἐτῶν  very rough and cut between deeply incised guide-lines; lunate epsilon, 
+                        lunate sigma, cursive omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0182" notAfter="0183" evidence="internal-date" resp="#cdl">182/3 CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1181">Barke</placeName>; found <date type="found">before 1941</date>, 
+                     findspot as recorded by Ward-Perkins (1949).</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/87087">Al Marj</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-03-01" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-08" who="GillianB">tokenized</change>
+         <change when="2009-07-10" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_1077front" decls="#photograph"><desc>Face (Reynolds, XII.13-14)</desc></graphic>
+      <!--III.62--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="SECir"/>, <citedRange>83</citedRange> p.264</bibl>, with 
+               <bibl><ptr target="cdlBE"/>, <citedRange>1988.1015</citedRange></bibl>
+               A further image available at the BSR, <ref target="http://www.bsrdigitalcollections.it/islandora/object/WP-LIBYA%3A3865">wplib-G24-051b</ref></p> 
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date><date ref="https://godot.date/id/8aizVxcfpDTC574QLFCHw4"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w>
+                    <num value="19"><unclear>τ</unclear>ιε</num></date> <date ref="https://godot.date/id/poqawGNwxo5sikRQ2YobEA"><w lemma="ἐπί">ἐφ’</w><w lemma="ἱερεύς">ἱε<unclear>ρέ</unclear><lb n="2" break="no"/>ωϲ</w> 
+   <persName type="attested" key="lgpn:V1-66080"><name nymRef="Φίλων">Φίλω<lb n="3" break="no"/>νοϲ</name> <w lemma="ὁ">το͂</w> <persName type="attested" key="lgpn:VI-62510"><name nymRef="Ἀγαθῖνος">Ἀγ<supplied reason="omitted">α</supplied><lb 
+      n="4" break="no"/>θίνο</name></persName></persName></date></date> <persName type="attested" key="lgpn:V1-62637"><name nymRef="Αἰγλάνωρ">Αἰγλά<lb 
+         n="5" break="no"/>νωρ</name> <persName type="attested" key="lgpn:V1-62976"><name nymRef="Ἀπολλόδωρος">Ἀπο<lb 
+            n="6" break="no"/><supplied reason="lost">λλ</supplied><unclear>ο</unclear>δώρ<unclear>ο</unclear></name></persName></persName>
+                    <lb n="7"/><date type="life-span" dur="P40Y"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w></supplied> <num value="40">μ</num> </date>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1"><rdg rend="#jmr"><unclear>ιθʹ</unclear></rdg>
+                  <note>dated to 64 CE in LGPN, so reading Ϙεʹ</note>
+                  <rdg resp="#SECir"><unclear>π</unclear>εʹ</rdg>
+               <rdg resp="#cdlBE">τιεʹ</rdg></app>
+               <app loc="3-4, 6"><rdg resp="#SECir">The misspellings are regularised</rdg></app>
+               </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/8aizVxcfpDTC574QLFCHw4">Year 315</ref>: in the priesthood of Philon the <supplied reason="subaudible">son</supplied> 
+         of Agathinos, Aiglanor <supplied reason="subaudible">son</supplied> of Apollodoros, aged 40</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            
+            <!-- <p>Line 3-4: for Ἀγαθίνω cf. CA 73 where an official of the ephebεs is Ἴστρος τῶ Ἀγαθίνου -->
+            
+               
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

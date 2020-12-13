@@ -1254,7 +1254,7 @@ blockquote p {
     text-decoration: underline; }
 
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: none !important;}
 
   abbr[title]:after {
     content: " (" attr(title) ")"; }
@@ -2941,7 +2941,7 @@ label.error {
     background: #090909;
     color: white; }
   .top-bar-section ul li.active > a {
-    background: #090909;
+    background: inherit;
     color: white; }
   .top-bar-section .has-form {
     padding: 15px; }

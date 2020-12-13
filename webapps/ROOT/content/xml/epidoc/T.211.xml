@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T17000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.211</idno>
+            <idno type="ircyr2012">T17000</idno>
+            <idno type="JMR">70.91</idno>
+            <idno type="Excel">1558</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Series of four <material>sandstone</material> blocks (b: <dimensions><width>1.31</width> <height>0.33</height></dimensions>; 
+                              c: <dimensions><width>0.30</width> <height>0.50</height></dimensions>) in the City Wall, in a group 
+                              which comprises <ref type="inscription" n="T.192">T.192</ref>, <ref type="inscription" n="T.193">T.193</ref>, <ref type="inscription" n="T.194">T.194</ref>, 
+                              <ref type="inscription" n="T.195">T.195</ref>, <ref type="inscription" n="T.196">T.196</ref>, <ref type="inscription" n="T.197">T.197</ref>, <ref type="inscription" n="T.198">T.198</ref>, 
+                              <ref type="inscription" n="T.199">T.199</ref>, <ref type="inscription" n="T.200">T.200</ref>, <ref type="inscription" n="T.201">T.201</ref>, <ref type="inscription" n="T.202">T.202</ref>, 
+                              <ref type="inscription" n="T.203">T.203</ref>, <ref type="inscription" n="T.204">T.204</ref>, <ref type="inscription" n="T.205">T.205</ref>, <ref type="inscription" n="T.206">T.206</ref>, 
+                              <ref type="inscription" n="T.207">T.207</ref>, <ref type="inscription" n="T.208">T.208</ref>, <ref type="inscription" n="T.209">T.209</ref>, <ref type="inscription" n="T.210">T.210</ref>, 
+                              <ref type="inscription" n="T.211">T.211</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> on the face, in different hands on the four blocks; 
+                           text i is <rs type="execution" key="scalpro">inscribed</rs> within a <rs type="decoration">wreath</rs>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i, <height>0.03</height>; ii, <height>0.18</height>; iii-iv, <height>0.05</height>; v, <height>0.06</height>; 
+                        lunate epsilon, lunate sigma, cursive omega in i, iii; L for ἔτους in i, iii-iv; square digamma in iii.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                      <origPlace>Findspot.</origPlace>
+                     <origDate evidence="internal-dating" notBefore="0018" notAfter="0019" precision="high">iv: 18/19 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1126">East Wall</placeName>: in situ on the inner face, the fifth group south of the east gate.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-16" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-08-13" who="Pietro">Tokenized</change>
+         <change when="2009-03-10" who="VA">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNB12_098_001" decls="#photograph"><desc>Text iii (Reynolds XII.98.1)</desc></graphic>
+      <!--JR III. 69.--></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>ii: <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">240</citedRange> (VII,116)</bibl>; iii, iv: <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">241</citedRange> (VII,117)</bibl>, whence
+               <bibl>
+                  <ptr target="SEG"/> <citedRange>9.501</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324348">324348</ref></citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<div n="i" type="textpart"><ab>
+                    <lb n="1"/><date ref="https://godot.date/id/P5Lqyyu6Qc8NHo4w5NeyEP"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w>
+                    <num value="3">γ</num></date>
+                    <lb n="2"/><persName type="attested"><name nymRef="Ἀριστέας">Ἀριστέ<lb n="3" break="no"/>αϲ</name> <persName type="attested"><name nymRef="Ποσειδώνιος">Ποϲε<lb n="4" break="no"/><supplied reason="lost">ι</supplied>δώνιο<hi rend="subscript">υ</hi></name></persName></persName>
+                </ab>
+</div>
+            <div n="ii" type="textpart"><ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost" evidence="previouseditor"><orig>φι</orig></supplied><gap reason="lost" quantity="3" unit="character"/><supplied reason="lost" evidence="previouseditor"><orig>ω</orig></supplied><gap reason="lost" extent="unknown" unit="character"/></ab>
+</div>
+         
+         <div n="iii" type="textpart"><ab>
+                            <lb n="1"/><date ref="https://godot.date/id/h3wYMhfe2R7ywp3zDrMySc"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                            <num value="26">ϛκ</num></date> <space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-60362"><name nymRef="Νίκαιος">Νί<lb n="2" break="no"/>καῖϲ</name> <persName type="attested" key="lgpn:V1-60361"><name nymRef="Νικίας"><unclear>Ν</unclear><supplied reason="lost">ι</supplied><lb n="3" break="no"/><unclear>κ</unclear>ία</name></persName></persName> <g ref="symbols.xml#palm"/> </ab></div>
+            <div n="iv" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/Zy5ZGTZPT3G8RbBYCLj4rm"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="49">μθ</num></date>
+                    </ab>
+</div>
+         <div n="v" type="textpart"><ab>
+                   <lb n="1"/><persName type="attested"><name nymRef="Ἀρχίδαμος"><supplied reason="lost">Ἀρ</supplied>χίδαμος</name></persName>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>α</orig><gap reason="lost" extent="unknown" unit="character"/> 
+                   <lb n="3"/><persName type="attested"><name nymRef="Θεόδοτος">Θεό<supplied reason="lost">δ</supplied>οτο<supplied reason="lost">ς</supplied></name></persName>
+                   <w lemma="φίλος"><expan><abbr><am><g ref="symbols.xml#ΦΙΛ"/></am></abbr><ex>φίλος</ex></expan></w> 
+                   <persName type="attested"><name nymRef="Πα-"><seg part="I"><hi rend="ligature">Πα</hi></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/></ab>
+         </div></div>
+         
+         <div type="apparatus">
+               <head>Apparatus</head>
+               <listApp>
+                  <app loc="ii"><note>Read by Oliverio, no longer visible to Reynolds.</note></app>
+                  <app loc="iii"><rdg resp="#oliverioDAI2">(Ἔτους) καʹ. Νι/καις [Νι]|κιαν[οῦ]</rdg></app>
+               </listApp>
+            </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>iii: Anno 21. Niceo di Niciano, di anni 49.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> <ref target="https://godot.date/id/P5Lqyyu6Qc8NHo4w5NeyEP">Year 3</ref>. Aristeas <supplied reason="subaudible">son</supplied> of Poseidonios. 
+              <note>ii</note> <note>Not usefully translatable</note>. 
+           <note>iii</note> <ref target="https://godot.date/id/h3wYMhfe2R7ywp3zDrMySc">Year 26</ref>. Nikaios <supplied reason="subaudible">son</supplied> of Nikias. 
+               <note>iv</note> <ref target="https://godot.date/id/Zy5ZGTZPT3G8RbBYCLj4rm">Year 49</ref>. <note>v</note> Archidamos [ . . . ] Theodotos, friend of Pa[-</p></div>
+         </div>
+         
+            <div type="commentary">
+               <head>Commentary</head>
+               <p>iii: Year 26: This should be an Actian year; but we need to clarify precisely how the reign of Tiberius is calculated.</p>
+              <!--  <p>iv. Year 49 of the Actian era = CE 18/19.</p> -->
+         </div>
+          
+      </body>
+   </text>
+</TEI>

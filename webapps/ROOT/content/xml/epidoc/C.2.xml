@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C00100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription of the Caesareum</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.2</idno>
+            <idno type="ircyr2012">C00100</idno>
+            <idno type="JMR">603</idno>
+            <idno type="Excel">337</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Restored on the external face of the south wall, at the west end, in the uppermost course where they are
+                        inaccessible to close examination</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three <material>limestone</material> <objectType>block</objectType>s.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" key="scalpro">Inscribed</rs> on the exposed face. The six blocks 
+                           immediately to the right of this are lost or damaged; the two blocks that follow survive and are uninscribed 
+                           so that only c.18 letters can be restored.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Large letters; probably Augustan.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0031" notAfter="0014" precision="low" evidence="lettering">Probably Augustan</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/987">Caesareum</placeName>: found in <date type="found">1941</date>, 
+                        </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Restored on the external face of the south wall, at the west end, in the uppermost course where they are
+                        inaccessible to close examination.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-13" who="CMR">corrections</change>
+         <change when="2009-10-10" who="Pietro">Tokenized</change>
+         <change when="2009-07-09" who="Pietro">created XML file</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="DSC04938" decls="#photograph"><desc>View of wall (2008, H.Walda)</desc></graphic>
+      <graphic url="Photos_0082" decls="#photograph"><desc>View, left end (BSR, 1643.18)</desc></graphic>
+      <graphic url="DSC04935" decls="#photograph"><desc>View, left end (2008, H.Walda)</desc></graphic>
+      <graphic url="Photos_0085" decls="#photograph"><desc>Text, left end</desc></graphic>
+      <graphic url="Photos_0083" decls="#photograph"><desc>Text, left end (BSR, 1643.19)</desc></graphic>
+      <graphic url="DSC04936" decls="#photograph"><desc>Text, left end (2008, H.Walda)</desc></graphic>
+      
+      <graphic url="Photos_0084" decls="#photograph"><desc>Text, right end (BSR, 1643.20)</desc></graphic>
+      <graphic url="DSC04937" decls="#photograph"><desc>Text, right end (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+                    <bibl>
+                  <ptr target="jmr1958"/>, <citedRange>I</citedRange>, p.159</bibl>, whence  
+               <bibl><ptr target="SEG"/> <citedRange>17.803</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324416">324416</ref></citedRange></bibl>, 
+              <bibl><ptr target="AE"/> <citedRange>1960.265</citedRange></bibl>; 
+               <bibl><ptr target="gasperini1971"/>, <citedRange>C.10</citedRange> and fig. 14</bibl>.
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/>
+                    <w lemma="ὑπέρ"><supplied reason="lost">ὑ</supplied><unclear>πὲ</unclear>ρ</w>
+                        <placeName nymRef="#Ῥώμη" ref="#roma">Ῥώ<unclear>μ</unclear>ας</placeName> 
+                    <gap reason="lost" quantity="18" unit="character" precision="low"/>
+                    
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                     <rdg resp="#jmr1958"><note>Perhaps </note><supplied reason="lost">αἱωνίας διαμονᾶς</supplied>
+                      <note> or </note>
+                      <supplied reason="lost">καὶ Σεβαστοῦ διαμονᾶς</supplied></rdg>
+                  
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>On behalf of Rome <gap reason="lost" extent="unknown" unit="character"/></p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            
+            <p> Since we know the building was called Caesareum, from <ref type="inscription" n="C.4">C.4</ref>, and cf. <ref type="inscription" n="C.7">C.7</ref>, 
+               this text perhaps included the name Caesar, e.g. 
+                [καὶ θεῶ Καίσαρος] or [καὶ Καίσαρος Σεβαστῶ] or, perhaps [καὶ Καίσαρος διαμονᾶς] on the analogy of <title>SEG</title> 11.923, lines 28f.
+                which prescribed sacrifices in the Caesareum at Gytheum and <title>IEph</title> 412 (available at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/247977">247977</ref>)
+                which gives the dedication of the Augusteum at Ephesus.
+                If the letter-forms are correctly dated this is the oldest inscription to survive from the Caesareum and may be a record of the original
+                dedication of the building as a centre of imperial cult. For another Caesareum in Cyrenaica, see <ref type="inscription" n="P.323">P.323</ref> at Ptolemais.</p>
+         </div>
+         <!-- <p> On this building see J.B. Ward Perkins and M.H. Ballance, <title>PBSR</title> XXVI (1958) 137f.; S.Stucchi <title>Architettura Cirenaica</title> (Rome, 1975).</p> -->
+      </body>
+   </text>
+</TEI>

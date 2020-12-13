@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P08100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">building</rs> <rs type="textType">dedication</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.80</idno>
+            <idno type="ircyr2012">P08100</idno>
+            <idno type="JMR">299</idno>
+            <idno type="Excel">380</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> <objectType>column</objectType>,
+                              moulded above and with another line of moulding below the text 
+                              (<dimensions><dim unit="metre" type="diameter">0.71</dim>
+                                 <height unit="metre">1.59</height></dimensions>). A second column from the left side of the door is so badly damaged that the inscription, 
+                              if it carried one, is completely lost.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the drum between the mouldings.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably second century: <height unit="metre">0.075</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate evidence="lettering" precision="low" cert="low" notBefore="0101" notAfter="0200">Probably second century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              in the street on the right side of the main door to the <placeName type="monuList" ref="https://www.slsgazetteer.org/944">Villa of the Four Seasons</placeName>; found in <date type="found">1957</date> </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot, seen by Adam Łajtar in <date type="observed">2009</date></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-04-17" who="MR">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_299front" decls="#photograph"><desc>Face (1957, The Oriental Institute - Chicago, 48689)</desc></graphic></facsimile>
+   <text>
+      <body>
+                <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="kraeling1962"/>, <citedRange>1</citedRange>, pl. LII B</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.589</citedRange></bibl>; dicussed, <bibl><ptr target="Łajtar2012"/>, <citedRange>267-269</citedRange></bibl>. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="divine" key="sebastoi"><w lemma="θεός">Θεοῖς</w> <name nymRef="Σεβαστός">Σεβασστοῖς</name></persName> <note>sic</note>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>For the deified Augusti</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> On the building, see Kraeling, 119 f., but his assumption 
+               of a connection between its foundation and the inscription is unsafe.</p>
+            <p> Θεοῖς Σεβαστοῖς is also found <ref type="inscription" n="P.168">P.168</ref> and 
+               <ref type="inscription" n="P.410">P.410</ref> at Ptolemais and <ref type="inscription" n="C.767">C.767</ref> at Cyrene. Kraeling argued that the closest datable 
+                    parallels are Neronian, but the cult might be expected at any time from the
+                    deification of Livia in CE 42 (and for its rapid development thereafter cf. the dedication
+                    <foreign xml:lang="la">Dis Augustis</foreign> at Lepcis Magna by the end of 43
+                    (<title>IRT</title> <ref target="http://inslib.kcl.ac.uk/irt2009/IRT273.html">273</ref>)
+              and the Claudian text from Aezani in Phrygia referring to a priesthood τῶν μεγάλων Θεῶν ὁμοβωμίων Σεβαστων 
+                    (<title>IGRR</title> IV. 584, whence <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/272646">272646</ref>);
+                there are anticipations of it in the Eastern Provinces at least, cf.
+                    <title level="s">MAMA</title> IV. 143, whence <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/269574">269574</ref>) from Apollonia in Galatia, [τοὺς κοινοὺς] καὶ ἰδίους Θεοὺς Σεβαστους, probably
+                    to be dated between CE 14 and 19). It is also the case that the cult certainly went on much later.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

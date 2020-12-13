@@ -19,7 +19,7 @@
           <meta content="width=device-width" name="viewport" />
           <meta content="IE=edge,chrome=IE8" http-equiv="X-UA-Compatible" />
           <title>
-            <kiln:block name="title">EFES: </kiln:block>
+            <kiln:block name="title">IRCyr: </kiln:block>
           </title>
           <kiln:block name="css">
             <link href="{$kiln:assets-path}/foundation/css/normalize.css"
@@ -29,10 +29,12 @@
             <link href="{$kiln:assets-path}/styles/base.css" rel="stylesheet"
                   type="text/css" />
             <link href="{$kiln:assets-path}/styles/site.css" rel="stylesheet"
-                  type="text/css" />
+              type="text/css" />
+            <link href="{$kiln:assets-path}/images/favicon.png" rel="shortcut icon" type="image/png"/>
           </kiln:block>
           <kiln:block name="js">
             <script src="{$kiln:assets-path}/foundation/js/vendor/custom.modernizr.js">&#160;</script>
+            <script src="{$kiln:assets-path}/scripts/cookieinfo.min.js" type="text/javascript" id="cookieinfo"></script>
           </kiln:block>
           <kiln:block name="head-extra"></kiln:block>
         </head>
@@ -40,12 +42,13 @@
       <kiln:block name="body">
         <body>
           <kiln:block name="navigation">
+            <!--<div class="text-left">-->
+              <h1 id="site-title">
+                <br/><span id="site-title-abbr">IRCyr</span> <span>&#160;&#160;&#160;</span> <span id="site-title-full">Inscriptions of Roman Cyrenaica</span></h1>
+            <!--</div>-->
             <nav class="top-bar">
               <kiln:block name="main-navigation">
                 <ul class="title-area">
-                  <li class="name">
-                    <h1><a href="{kiln:url-for-match('local-language-home-page', ($language), 0)}">EFES</a></h1>
-                  </li>
                   <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
                   </li>
@@ -55,14 +58,14 @@
                     <xsl:apply-templates mode="main-menu"
                                          select="/aggregation/kiln:nav" />
                   </ul>
-                  <ul class="right">
+                  <!--<ul class="right">
                     <li class="has-form search">
                       <form action="{kiln:url-for-match('local-search', ($language), 0)}" method="get">
                         <input name="q" placeholder="Search"
                                required="required" type="search" />
                       </form>
                     </li>
-                  </ul>
+                  </ul>-->
                 </section>
               </kiln:block>
             </nav>
@@ -83,8 +86,7 @@
           </kiln:block>
           <kiln:block name="footer">
             <footer>
-              <p>Powered by <a href="http://kcl-ddh.github.io/kiln/">Kiln</a></p>
-              <p>Theme by <a href="http://foundation.zurb.com/">Foundation</a></p>
+              <p>Powered by <a href="http://kcl-ddh.github.io/kiln/">Kiln</a>. Theme by <a href="http://foundation.zurb.com/">Foundation</a>.</p>
             </footer>
           </kiln:block>
           <kiln:block name="end-js">

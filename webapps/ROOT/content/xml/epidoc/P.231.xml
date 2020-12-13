@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P32500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscriptions</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.231</idno>
+            <idno type="ircyr2012">P32500</idno>
+            <idno type="JMR">474a</idno>
+            <idno type="Excel">554</idno>
+            <idno type="Excel">555</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Rock</material>-cut <objectType>tomb</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the façade which has been dressed to resemble masonry. </layout>
+                        <layout>a: Above the door.</layout> 
+                        <layout> b: To the left of the door.</layout> 
+                        <layout> c: To the right of the door.</layout> 
+                        <layout> d: To the left of the door, below (b).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first century CE: </handNote>
+                     <handNote>a: <height unit="metre">0.10</height>;  
+                    lunate sigma, cursive omega, square sigma for digamma; the carefully cut ivy-leaf in line 2 masks a crack in the rock.</handNote> 
+                     <handNote> b: <height unit="metre">0.05 - 0.06</height>; round omega; L for ἔτους, ἐτῶν; square sigma for digamma; roughly cut.</handNote> 
+                     <handNote> c: <height unit="metre">0.05 - 0.06</height>; lunate epsilon; L for ἔτους, ἐτῶν; roughly cut.</handNote> 
+                     <handNote> d: <height unit="metre">0.07</height>; lunate epsilon, lunate sigma, round omega; L for ἔτους; roughly cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering">Probably first century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/970">Quarry I.a.ii</placeName>; first recorded in <date type="found">1825</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-04" who="MGDA">fixed CIG bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-04" who="MR">amalgamated P326, P327, P328 into this file as all part of the same tomb</change>
+         <change when="2010-01-10" who="CMR">tagged description, corrected text</change>
+         <change when="2009-05-14" who="CB">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXIX" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXVIII, numbered LXXIX)</desc></graphic>
+      <graphic url="JMRNB05_092" decls="#photograph"><desc>Façade, showing all texts (Reynolds, Tolmeita I (NB V). 2</desc></graphic>
+      <graphic url="JMR_474(e-b)_001" decls="#photograph"><desc>Text c (Reynolds, Tolmeita I (NB V).91)</desc></graphic>
+      <graphic url="JMR_474(e-b)_002" decls="#photograph"><desc>Text b and d (Reynolds, Tolmeita I (NB V).93)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               a-c: <bibl><ptr target="pacho1827"/>  pl.<citedRange>LXXVIII</citedRange> (printed as LXXIX), with Letronne, p. 403</bibl>, whence <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5211</citedRange></bibl>,
+               <bibl><ptr target="cigiii"/>, <citedRange>5209</citedRange></bibl>, <bibl><ptr target="cigiii"/>, <citedRange>5210</citedRange></bibl>; 
+               a-d: <bibl><ptr target="kraeling1962"/>, <citedRange>48, 50, 49, 51</citedRange></bibl>; 
+               <bibl><ptr target="gl-jmr1983"/>, <citedRange>31</citedRange></bibl>, whence (b-d) <bibl><ptr target="SEG"/> <citedRange>33.1462</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324636">324636</ref></citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>33.1463</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324637">324637</ref></citedRange></bibl>
+               <bibl><ptr target="SEG"/> <citedRange>33.1464</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324638">324638</ref></citedRange></bibl>; tomb described 
+               <bibl><ptr target="kenrick2013"/>, <citedRange>99</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="a" type="textpart"><ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Αὖλος">Αὔλου</name> <name nymRef="Καρτίλιος">Καρτιλίου</name>
+                    <lb n="2"/> <space quantity="1" unit="character"/> <name nymRef="Καπίτων">Κα <g ref="symbols.xml#leaf"/> πίτωνοϲ</name></persName>
+                </ab></div>
+            <div subtype="section" n="b" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/UEy3SUAD4TzpgFDwt6XTp9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="6">ϛ</num> 
+                        <rs type="month" key="pachon"><w lemma="Παχών">Πα<unclear>χ</unclear><supplied reason="lost">ὼ</supplied>ν</w></rs> <num value="7">ζ</num></date> 
+                        <persName type="attested" key="lgpn:V1-61492"><name nymRef="Καρτιλία">Καρ<lb n="2" break="no"/>τιλία</name>
+                        <name nymRef="Μυρτώ">Μυ<unclear>ρ</unclear><lb n="3" break="no"/><supplied reason="lost">τ</supplied>ὼ</name> </persName>
+                        <date type="life-span" dur="P14Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="14">ιδ</num> </date>
+                    </ab></div>
+            <div subtype="section" n="c" type="textpart"><ab>
+                       <lb n="1"/><date ref="https://godot.date/id/DtM7JYCwas2KiPnjBodA9d"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                       <num value="12">ιβ</num> <rs type="month" key="choiak"><w lemma="Χοιάκ">Χοι<supplied reason="lost">ὰ</supplied><unclear>κ</unclear></w></rs> <num value="27">κζ</num></date>
+                        <lb n="2"/><persName type="attested"><name nymRef="Καρτιλία">Καρτιλ<supplied reason="lost">ί</supplied>α</name> 
+                            <name nymRef="Πετρωνία">Π<unclear>ε</unclear><lb n="3" break="no"/>τρωνία</name></persName> 
+                        <lb n="4"/> <space quantity="1" unit="character"/> 
+                       <date type="life-span" dur="P70Y"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w></supplied> 
+                        <num atLeast="70">ο<gap reason="lost" quantity="1" unit="character"/></num> </date>
+                    </ab></div>
+            <div subtype="section" n="d" type="textpart"><ab>
+                       <lb n="1"/><date ref="https://godot.date/id/JJ8a48mDtJr2eDgsWCwrrn"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="1"><unclear>α</unclear></num> <rs type="month" key="pauni"><w lemma="Παϋνί"><supplied reason="lost">Π</supplied>αῦνι</w></rs> <num value="5">ε</num></date>
+                       <lb n="2"/><persName type="attested" key="lgpn:V1-61587"><name nymRef="Σάρα">Ϲ<unclear>ά</unclear>ρα</name> 
+                          <persName type="attested"><name nymRef="Καρτίλιος">Καρτι<lb n="3" break="no"/>λίου</name></persName></persName> <date type="life-span" dur="P10Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="10">ι</num> </date>                      
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="b.1">
+                  <rdg resp="#pacho1827">LϚΠΑ<gap reason="lost" quantity="1" unit="character"/>ΛΥΣΕΑΡ</rdg>
+                  <rdg resp="#cigiii">L [ε] Πα[υνὶ ε Κ]αρ-</rdg>
+                  <rdg resp="#kraeling1962">]Ε ΠΑ[ ]Ν Ζ ΚΑΡ</rdg>
+               </app>
+            </listApp>
+            <listApp>
+               <app loc="b.2">
+                  <rdg resp="#pacho1827">ΜΥ <note>so Kraeling</note></rdg>
+                  <rdg resp="#cigiii">Μυ[ρτ]-</rdg></app>
+            </listApp>
+            <listApp>
+               <app loc="c.1">
+                  <rdg resp="#pacho1827">LIBΧΟΙ  ΛΚΕ</rdg>
+                  <rdg resp="#kraeling1962">LΙΕ ΧΟΙ[Α]Κ Ζ</rdg>
+               </app>
+            </listApp>
+            <listApp>
+               <app loc="c.2">
+                  <lem>ΠΕ</lem>
+                  <rdg resp="#pacho1827">ΤϹ</rdg></app>
+            </listApp>
+            <listApp>
+               <app loc="d.1">
+                  <rdg resp="#kraeling1962">.]<unclear>Λ</unclear>[. . ]<unclear>Ρ</unclear>ΥΝΙ Ε</rdg>
+               </app>
+            </listApp>
+            <listApp>
+               <app loc="d.2">
+                  <rdg resp="#kraeling1962">Ϲ[.]ΡΑ ΚΑΡΤΙ</rdg></app>
+            </listApp>
+            
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>a</note>: des Aulus Cartilius Capito. <note>b</note>: (Jahr) 6, 7.Pachon, Cartilia Myrto, 14 (Jahre). 
+            <note>c</note>: (Jahr) 12, 27.Choiak, Cartilia Petronia 70 (+?) (Jahre). <note>d</note>: (Jahr) 1, 5.Paüni, Sara des Cartilius, 10 (Jahre) </p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>
+            a) <supplied reason="subaudible">Tomb of</supplied> Aulos Kartilios Kapito.</p>
+            <p> b) <ref target="https://godot.date/id/UEy3SUAD4TzpgFDwt6XTp9">Year 6, Pachon 7</ref>, Kartilia Myrto, aged 14.</p>
+            <p> c) <ref target="https://godot.date/id/DtM7JYCwas2KiPnjBodA9d">Year 12, Choiak 27</ref>, Kartilia Petronia aged 70+.</p>
+            <p> d) <ref target="https://godot.date/id/JJ8a48mDtJr2eDgsWCwrrn">Year 1, Pauni 5</ref>, Sara <supplied reason="subaudible">daughter</supplied> of Kartilios, aged 10.</p></div>
+       </div>
+      
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The name Sara (d) suggests a Jewish family.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

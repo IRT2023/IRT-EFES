@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P12000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Imperial</rs> <rs type="textType">dedication</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.119</idno>
+            <idno type="ircyr2012">P12000</idno>
+            <idno type="JMR">332 b</idno>
+            <idno type="Excel">748-754 Dedication to emperors</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Seven damaged <material>limestone</material> blocks from the attic of a monumental
+                              <objectType>arch</objectType> built of local <material>sandstone</material>; 
+                              <ref type="inscription" n="P.118">P.118</ref> was inscribed on a marble panel on the façade. 
+                              Upper course: a., b., and c. together (<dimensions>
+                                 <width unit="metre">2.13</width>
+                              <height unit="metre">0.385</height>
+                              <depth unit="metre" precision="low">0.59</depth>
+                              </dimensions>). Lower  course: f. (<dimensions>
+                                 <width unit="metre">1.20</width>
+                                 <height unit="metre">0.39</height>
+                                 <depth unit="metre">0.54</depth>
+                              </dimensions>); g. (<dimensions>
+                                 <width unit="metre">0.90</width>
+                                 <height unit="metre">0.375</height>
+                                 <depth unit="metre">0.32</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face ; a-e are simply moulded above, f and g are plain and must have come from a lower course.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Perhaps fourth or fifth century: <height unit="metre">0.20</height>; D tapers at top; 
+                        very poorly designed and cut; traces of rubrication.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate cert="low" precision="low" notBefore="0301" notAfter="0400" evidence="titulature lettering">Perhaps fourth century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                              fallen from the <placeName type="monuList" ref="https://www.slsgazetteer.org/1215">Arch of Constantine</placeName>; found in <date type="found">1935</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-06" who="MGDA">fixed Goodchild bibliography</change>
+         <change when="2010-08-10" who="GB">Tidied text; date</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-20" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-03-30" who="VA">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0341" decls="#photograph"><desc>All blocks in findspot (part 1)</desc></graphic>
+      <graphic url="Photos_0342" decls="#photograph"><desc>All blocks in findspot (part 2)</desc></graphic>
+      <graphic url="Photos_0290" decls="#photograph"><desc>Block a. (Joyce Reynolds, Tolmeita II.28)</desc></graphic>
+      <graphic url="Photos_0329" decls="#photograph"><desc>View of block a and part of b in findspot (1961-5-26, Joyce Reynolds III.35.2)</desc>
+      </graphic><graphic url="Photos_0326" decls="#photograph"><desc>Block b. (1961-5-26, Joyce Reynolds III.39.2)</desc></graphic>
+      <graphic url="Photos_0293" decls="#photograph"><desc>Block d. (Joyce Reynolds V.2, Tolmeita II.29)</desc></graphic>
+      <graphic url="Photos_0328" decls="#photograph"><desc>Block e. (1961-5-26, Joyce Reynolds III.39.3)</desc></graphic>
+      <graphic url="JMRNB05_003" decls="#photograph"><desc>Block e. (Joyce Reynolds V.3, Tolmeita I.3)</desc></graphic>
+      <graphic url="Photos_0137" decls="#photograph"><desc>Blocks f. and e.</desc></graphic>
+      <graphic url="Photos_0324" decls="#photograph"><desc>Block f. (1961-5-26, Joyce Reynolds III.39.1)</desc></graphic>
+      <graphic url="JMRNB05_001" decls="#photograph"><desc>Block f. (Joyce Reynolds V.1, Tolmeita I.1)</desc></graphic>
+      <graphic url="Photos_0294" decls="#photograph"><desc>Block g. (Joyce Reynolds V.4, Tolmeita I.4)</desc></graphic>
+      <graphic url="Photos_0325" decls="#photograph"><desc>Block g (Reynolds III.39.4)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="rgg1961"/><citedRange></citedRange></bibl> whence <bibl><ptr target="AE"/> <citedRange>1963.141.3</citedRange></bibl>, 
+               whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD017188">017188</ref></citedRange></bibl>;
+               reprinted, <bibl><ptr target="rgg-jmr1976"/>, <citedRange unit="page">221-225</citedRange></bibl>; mentioned <bibl><ptr target="kenrick2013"/>, <citedRange unit="page">71</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <div type="textpart" n="1: Upper line"><div subtype="fragment" n="a-c" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="emperor" key="gratianus"><name nymRef="Gratianus"><supplied reason="lost" cert="low">Gratia</supplied>num</name></persName> 
+                        <w lemma="uictor">uic<supplied reason="lost">t</supplied>ores</w> <w lemma="ac">ac</w> 
+            <w lemma="triumfator"><supplied reason="lost">t</supplied>riumfatores</w> 
+               <w lemma="semper">semper</w> <persName type="emperor" key="anonymi"><name nymRef="Augustus"><seg>A<supplied reason="lost">ugustos</supplied></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+         </ab>
+         </div>
+            <div subtype="fragment" n="d-e" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ius"><seg part="F">ius</seg></name></persName>
+                        <w lemma="uir"><expan><abbr>u</abbr><ex>ir</ex></expan></w> 
+                        <w lemma="perfectissimus"><expan><abbr>p</abbr><ex>erfectissimus</ex></expan></w>
+                        <w lemma="praeses">pra<space quantity="1" unit="character"/>eses</w> 
+                        <w lemma="statuo">stat<space quantity="1" unit="character"/>uit</w> 
+                        <w lemma="et">e<supplied reason="lost">t</supplied></w><gap reason="ellipsis" extent="unknown" unit="character"/>
+            </ab>
+            </div></div>
+           <div type="textpart" n="2: Lower line"> <div subtype="fragment" n="f" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="numen">numini</w> 
+                           <w lemma="maiestas">maiestati</w><w lemma="que">que</w></supplied> <w lemma="is">eorum</w> <w lemma="semper">semper</w> <supplied reason="lost"><w lemma="dicatus">dicatus</w></supplied>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div subtype="fragment" n="g" type="textpart">
+                  <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="maximus"><supplied reason="lost" cert="low">max</supplied>imum</w> 
+                        <w lemma="dedico">dedic<supplied reason="lost">auit</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                  </ab>
+            </div></div>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head><listApp>
+                    <app loc="1, a-c"><rdg resp="#rgg1961">
+                  <note>: perhaps in aeter]num</note></rdg>
+               </app>
+                    <app loc="1, d-e">
+                  <note>The first vacat probably, and the second certainly mark points 
+                        at which the cutter was forced to avoid damage to the surface of the stone.</note>
+               </app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>Line 1</note>: ?Emperors Valens, Valentinian and Grat]ian victor and trimuphators and always A[ugusti . . .  -]ius , man of excellent status, governor, 
+         placed <supplied reason="subaudible" cert="low">their statues</supplied> and [ . . .</p>
+         <p><note>Line 2</note>: . . .  being devoted] always to their [divinity and majesty  . . . ] dedicated ?the greatest[ . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Kraeling, p. 78, n. 98, saw similarity with the cutting technique used in <ref type="inscription" n="P.136">P.136</ref> 
+                    (Arcadius and Honorius) and it is also possible to find points of comparison with
+                    that of <ref type="inscription" n="P.137">P.137</ref> (perhaps under Valens, Valentinian and Gratian).</p>
+            <p>a.-c. line  2: There seems to be no 
+                    attested formula in this position in an imperial title of which <foreign xml:lang="la">[...]num</foreign> could be part;
+                    it should therefore be taken as the end of the name of the last pair or group of 
+                    emperors and in fact can then only be Gratian in the group Valentinian, Valens 
+                    and Gratian (367-375) or the younger Valentinian in the group Valens, Gratian 
+                    and Valentinian (375-378). Gratian is to be preferred in view of the probable 
+                    activity of the earlier group in the Street of the Monuments (see perhaps <ref type="inscription" n="P.137">P.137</ref>, and cf <ref type="inscription" n="P.122">P.122</ref>). That implies that 
+                    the arch was embellished and rededicated during the late fourth century activity 
+                    in the street to which it gave access; the use of the accusative case for the 
+                    emperors' names strongly supports Kraeling's proposal that imperial statues 
+                    were erected on top.</p>
+            <p>f: From the formula of the type <foreign xml:lang="la">numini maiestatique eorum 
+               deuotus</foreign>, see <ref type="inscription" n="P.118">P.118</ref>,  1, line 4.</p>
+            <p>g:  No standard formula fits; the space available, if the 
+                    inscription ran across the whole width of the attic, would enable the praeses
+                    to describe other work besides that on the arch - perhaps e.g. the complete 
+                    operation in the Street of the Monuments; in that case there may have been a phrase
+                    on the lines of <foreign xml:lang="la">porticus opus maximum dedicauit</foreign>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

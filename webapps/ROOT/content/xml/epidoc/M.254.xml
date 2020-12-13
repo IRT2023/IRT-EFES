@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Funerary</rs> inscription</title>
+                             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">M.254</idno>
+            <idno type="ircyr2012">C64220</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">1519</idno> </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p>
+                                        ‘Anthropomorphic’ <material>limestone</material> 
+                                        <objectType>stele</objectType> with ‘head’, badly 
+                                        damaged, and roughly rectangular body, damaged above and to the right.
+                                        (<dimensions>
+                                            <width>0.18</width>
+                                            <height>0.26</height>
+                                            <depth>0.115</depth>
+                                        </dimensions>).</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on the ‘body’.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>First-second century CE; free hand, within  guidelines. 
+                                L for ἐτῶν; <height>0.02</height>.
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Unknown</origPlace>
+                            <origDate notBefore="0001" notAfter="0200" precision="low" evidence="lettering" cert="low">First - second century CE</origDate>                        </origin>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>: 
+                                <placeName ref="https://www.slsgazetteer.org/1276">Limnias</placeName>; 
+                                found in <date type="found">1959</date>.</p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/80503">Lamluda</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription (Reynolds).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2011-08-11" who="Pietro">entered and tagged text</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="JMRNB03_054" decls="#photograph"><desc>Face (Reynolds III.54)</desc></graphic>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p>
+                    <bibl><ptr target="jmr-bacchielli1987"/> Catalogo <citedRange>9</citedRange></bibl> and fig.47<bibl>, 
+                        whence <bibl><ptr target="cdlBE"/>, <citedRange>1989.839</citedRange></bibl>, 
+                        <ptr target="SEG"/> <citedRange>37.1691</citedRange></bibl></p>
+            </div>
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                <lb n="1"/> <space quantity="5" unit="character"/>
+                <date ref="https://godot.date/id/wtdpMkHixnKf3paJYFzKXG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                <num value="1"><unclear>α</unclear></num> </date>
+                <lb n="2"/><persName type="attested"><name nymRef="Ἰουλία">Ἰουλία</name>
+                <lb n="3"/><persName type="attested"><name nymRef="Δυρκάς">Δυρκ<unclear>άϲ</unclear></name></persName></persName>
+                <lb n="4"/><date type="life-span" dur="P68Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                        <num value="68">ξη</num> </date>
+            </ab>
+            </div>
+            <div type="apparatus">
+                <listApp>
+                    <app loc="1">
+                        <rdg>Or <num value="30">λ</num></rdg>
+                    </app>
+                    <app loc="2">
+                        <rdg resp="#jmr-bacchielli1987">Δυρ<unclear>ρα</unclear></rdg>
+                    </app>
+                </listApp>
+            </div>
+            <div type="translation" xml:space="preserve">
+           <div type="translation" resp="#edd" xml:lang="en"> <p><ref target="https://godot.date/id/wtdpMkHixnKf3paJYFzKXG">Year 1</ref>: Julia Durkas, aged 68.</p></div>
+         </div>
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>Line 3: presumably for Δορκάς. </p>
+            </div>
+        </body>
+    </text>
+</TEI>

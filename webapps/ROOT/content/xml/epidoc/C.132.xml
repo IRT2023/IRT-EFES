@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C11600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Cornelius Marcellinus</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.132</idno>
+            <idno type="ircyr2012">C11600</idno>
+            <idno type="JMR">699</idno>
+            <idno type="Excel">116</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                  URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Piece of a <material>marble</material>
+                              <objectType>panel</objectType>, <dimensions>
+                                 <width>0.18</width>
+                                 <height>0.19</height>
+                                 <depth>0.06</depth>
+                              </dimensions>, cut down for re-use.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on two faces at
+                           different periods; a fragment of the earlier text, <ref target="https://igcyr.unibo.it/igcyr023200">IGCyr 23200</ref>
+                           survives on the upper face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE; <height>0.02</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notAfter="-0001" notBefore="-0100" evidence="lettering" precision="low">First century BCE</origDate>
+                  </origin>
+
+
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>: found
+                        before <date type="found">1928</date>.</p>
+                  </provenance>
+                  <provenance type="observed">
+                     <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                  </provenance>
+
+
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to
+            profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
+            elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc
+            RNG schema v. 8)</change>
+         <change when="2010-04-20" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-11-08" who="Pietro">tokenized</change>
+         <change when="2008-07-21" who="...">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_664front" decls="#photograph"><desc>From left: <ref type="inscription" n="C.132">C.132</ref>, <ref type="inscription" n="C.97">C.97</ref>
+         and <ref target="https://igcyr.unibo.it/igcyr012700">IGCyr 12700</ref>; below, <ref type="inscription" n="C.134">C.134</ref>,fragment b. (Department of Antiquities, F31-378)</desc></graphic>
+      <graphic url="Photos_0007_2" decls="#photograph">
+         <desc>Face (Department of Antiquities, F31-378)</desc>
+      </graphic>
+   </facsimile>
+   <text>
+      <body>
+
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverio1929"/>, <citedRange>15</citedRange>, p.142, and fig 40</bibl>, whence <bibl>
+                  <ptr target="SEG"/> <citedRange>9.160</citedRange></bibl>, <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324011">324011</ref></citedRange></bibl>. Republished, <bibl>
+                  <ptr target="jmr1962"/>, <citedRange>3</citedRange></bibl>, mentioned <bibl n="seg">
+                  <ptr target="SEG"/> <citedRange>20.731</citedRange></bibl>, <bibl><ptr target="robertBE"/>, <citedRange>1964.560</citedRange></bibl>. </p>
+         </div>
+
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <!-- <div subtype="section" n="a" type="textpart"><ab><lb n="0"/> <gap reason="lost" extent="unknown" unit="character"/> <space extent="unknown" unit="character"/>
+        <lb n="1"/> <w lemma="ὁ">τοῖς</w> <w lemma="θεός">θε<supplied reason="lost">οῖς</supplied></w></ab>
+</div> <div subtype="section" n="b" type="textpart"></div>-->
+            
+                     <ab><lb n="1"/> <gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Κορνήλιος">Κορ<supplied reason="lost">νήλιος</supplied></name>
+                    <lb n="2"/> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="υἱός">υἱὸς</w> 
+                        <name nymRef="Λέντολος"><supplied reason="lost">Λέντολος</supplied></name>
+                    <lb n="3"/> <gap reason="lost" extent="unknown" unit="character"/> <space quantity="1" unit="character"/>
+                        <name nymRef="Μαρκελλῖνος">Μαρκελ<supplied reason="lost" cert="low">λῖνος</supplied><supplied reason="lost"> <space unit="character" extent="unknown"/></supplied></name></persName>
+                </ab>
+
+</div>
+        
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>. . . ] Cor[nelius], son  [of Publius, Lentulus] Marcellinus </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            
+            <p>Oliverio may have been right to identify the subject with Cn. Cornelius P.F. Lentulus
+               Marcellinus, Pompey's legate in Libya in 67 BCE (see <title>DPRR</title> <ref target="http://romanrepublic.ac.uk/person/2082">Corn2082</ref>), for whom 
+               see also <ref type="inscription" n="C.271">C.271</ref>, <ref type="inscription" n="C.280">C.280</ref>, <ref type="inscription" n="C.688">C.688</ref>; 
+               and if so, this text presumably antedates <ref type="inscription" n="C.271">C.271</ref> and <ref type="inscription" n="C.280">C.280</ref> in which he is described as
+               patron. It may be, however, that this is a different Marcellinus, possibly the
+               quaestor of 75 BCE, <title>DPRR</title> <ref target="http://romanrepublic.ac.uk/person/2071/">Corn2071</ref>; see further Reynolds, art.cit.</p>
+
+         </div>
+
+      </body>
+   </text>
+</TEI>

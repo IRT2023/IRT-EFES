@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C16900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Imperial</rs> <rs type="textType">honours</rs> for Antoninus Pius</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.201</idno>
+            <idno type="ircyr2012">C16900</idno>
+            <idno type="JMR">759</idno>
+            <idno type="Excel">1223</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of a <material>marble</material> <objectType>panel</objectType> 
+                              (<dimensions><width>0.58</width> <height>0.40</height> <depth>0.07</depth></dimensions>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century: line 1, <height>0.07</height>; lines 2,3, <height>0.05</height>; line 4, <height>0.04</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0161" notBefore="0138" evidence="reign">138-161 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1024">Valley Street</placeName>, north side, near modern Post Office and <ref target="https://www.slsgazetteer.org/1347">Antonine Arch</ref>, 
+                               in the same area as <ref type="inscription" n="C.202">C.202</ref>; 
+                              found in <date type="found">1959</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-11-19" who="CB">turned to XML and tidied</change>
+         <change when="2009-06-12" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_759_002" decls="#photograph"><desc>Face (Reynolds VI.3)</desc></graphic>
+      <graphic url="JMR_759_001" decls="#photograph"><desc>View (1961, Joyce Reynolds, II.73)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+               <lb n="1"/><persName type="emperor" key="antoninuspius"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w>
+                     <name nymRef="Caesar"><supplied reason="lost">Caesar</supplied></name> <persName type="emperor" key="hadrianus"><w lemma="diuus"><supplied reason="lost">diui</supplied></w> 
+               <name nymRef="Hadrianus"><supplied reason="lost">Hadriani</supplied></name></persName>
+                    <w lemma="filius"><expan><abbr>fil</abbr><ex>ius</ex></expan></w> 
+                  <persName type="emperor" key="traianus"><supplied reason="lost"><w lemma="diuus">diui</w></supplied> <name nymRef="Traianus"><supplied reason="lost">Traiani</supplied></name>
+                    <lb n="2"/><name nymRef="Parthicus"><supplied reason="lost">Parthici</supplied></name></persName> <w lemma="nepos"><supplied reason="lost"><expan><abbr>nep</abbr><ex>os</ex></expan></supplied></w>
+                  <persName type="emperor" key="nerva"><w lemma="diuus"><supplied reason="lost">diui</supplied></w> <name nymRef="Nerua"><supplied reason="lost">Ner</supplied>uae</name></persName> <w lemma="pronepos"><expan><abbr>pron</abbr><supplied reason="lost"><abbr>ep</abbr><ex>os</ex></supplied></expan></w> 
+                    <name nymRef="Titus"><supplied reason="lost"><expan><abbr>T</abbr><ex>itus</ex></expan></supplied></name> 
+                  <name nymRef="Aelius"><supplied reason="lost">Aelius</supplied></name>
+                   <lb n="3"/><name nymRef="Antoninus"><supplied reason="lost">Antoninus</supplied></name> <name nymRef="Pius"><supplied reason="lost">Pius</supplied></name> 
+                  <name nymRef="Augustus"><supplied reason="lost"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></supplied></name></persName> 
+                        <w lemma="pontifex"><supplied reason="lost"><expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied></w> 
+                  <w lemma="maximus"><expan><abbr><supplied reason="lost">m</supplied>ax</abbr><ex>imus</ex></expan></w>
+                    <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> 
+                  <w lemma="potestas"><expan><abbr>p<supplied reason="lost">ot</supplied></abbr><ex>estate</ex></expan></w> <supplied reason="lost"><num>. .</num></supplied>
+                    <w lemma="imperator"><supplied reason="lost" cert="low"><expan><abbr>imp</abbr><ex>erator</ex></expan></supplied></w> <num value="2"><supplied reason="lost" cert="low">II</supplied></num>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
+                       <supplied reason="lost"> <space quantity="1" unit="character"/> 
+                        <w lemma="per">per</w></supplied> <persName type="attested" key="pir2-i-0484a"><name nymRef="Quintus"><supplied reason="lost"><expan><abbr>Q</abbr><ex>uintum</ex></expan></supplied></name>
+                     <gap reason="lost" extent="unknown" unit="character"/><name nymRef="Iulius"><supplied reason="lost" cert="low">Iuliu</supplied>m</name> 
+                    <name nymRef="Potitus">Potitu<supplied reason="lost">m</supplied></name></persName> <w lemma="proconsul"><supplied reason="lost"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ulem</ex></expan></supplied></w>
+                </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>[Emperor Caesar] son [of deified Hadrian, grandson of deified Trajan, 
+               victor in Parthia,] great grandson of [deified] Nerva, [Titus Aelius Antoninus Pius Augustus, Chief Priest], 
+               holding tribunician p[ower for the ? time, acclaimed imperator ?  . . .  by ?Quintus Iuliu]s Potitus proconsul </p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+
+            <p>In this restoration, the use of the accusative case for the name of the proconsul strongly suggests that the text records a gift made by the emperor 
+               through the agency of the proconsul; hence the restoration of the nominative case for the emperor's name.</p> 
+                   <!-- In line 3, <foreign xml:lang="la">IMP II</foreign> is rightly added - and the spacing seems to require it - from 142. -->  
+               <p>Line 4: Probably Q. Iulius Potitus (<title>PIR<hi rend="superscript">2</hi></title> I 0484a ) who is mentioned also in 
+               <ref type="inscription" n="C.110">C.110</ref>. But he is not otherwise known.  </p>
+               <p>Line 4:  At the beginning  of this line there may have been a description of the object given, or a reference to the recipients, 
+                    but there is hardly room for the normal <foreign xml:lang="la">ciuitate Cyrenensium</foreign>.</p><!-- check -->
+         </div>
+         <!-- 
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>fil</orig>
+                    <g ref="symbols.xml#leaf"/> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F"><orig><unclear>v</unclear>ae</orig></w> 
+                    <g ref="symbols.xml#leaf"/> <w part="I"><orig>pron</orig></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F"><orig>ax</orig></w> 
+                    <orig>trib</orig> <w part="I"><unclear>p</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w part="F"><orig>m</orig></w> 
+                    <w part="I"><orig>potitu</orig></w> <gap reason="lost" extent="unknown" unit="character"/> -->
+         
+      </body>
+   </text>
+</TEI>

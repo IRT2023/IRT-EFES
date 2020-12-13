@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C75700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription for the <rs type="textType">restoration</rs> of the Temple of Zeus</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.420</idno>
+            <idno type="ircyr2012">C75700</idno>
+            <idno type="JMR">925b</idno>
+            <idno type="Excel">161</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Cyrene, Temple of Zeus</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Seven blocks of <material>limestone</material>, some fragmentary, 
+                              made by chiselling down the echinoi of the capitals of the interior colonnade of the 
+                              pre-Antonine temple.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century CE: c. <height>0.185</height>; rubricated.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace> <ref target="https://www.slsgazetteer.org/1066">Temple of Zeus</ref>: In view of the findspot within the pronaos,
+                        we originally assumed that these blocks had fallen from the wall above the entrance to the cella (see Goodchild et al., below),
+                        but on reconsideration we are now inclined to believe that they stood above the architrave of the Temple, 
+                        which ws inscribed with <ref type="inscription" n="C.419">C.419</ref>.</origPlace>
+                     <origDate notAfter="0175" notBefore="0172" evidence="titulature">CE 172-175</origDate>.
+                  </origin>
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1066">Temple of Zeus</placeName>: lying fallen in the pronaos. 
+                              Found between <date type="found" atLeast="1939" atMost="1956">1939 and 1956</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p> <placeName ref="https://www.slsgazetteer.org/1066">Temple of Zeus</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2011-04-05" who="MGDA">fixed Goodchild-Reynolds bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-05-19" who="AIO">tokenized</change>
+         <change when="2009-06-17" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="C75700_block1" decls="#photograph"><desc>Block 1</desc></graphic>
+      <graphic url="C75700_block3" decls="#photograph"><desc>Block 3</desc></graphic>
+      <graphic url="C75700_block6broken" decls="#photograph"><desc>Block 6 broken</desc></graphic>
+      <graphic url="C75700_block6joined" decls="#photograph"><desc>Block 6 mended</desc></graphic>
+      <graphic url="JMR_925abfront" decls="#photograph"><desc>Left end of line 7.</desc></graphic>   
+      <!--Dept. E 3206, 3188; F 3755, 3852. <graphic url="Photo" decls="#photograph"><desc>Blocks 3,4,5 containing the second part of lines 2-4. </desc></graphic>-->
+   </facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl> <ptr target="pesce1951"/>, <citedRange>5</citedRange> (three blocks only)</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1953.251</citedRange></bibl>, 
+              <bibl><ptr target="AE"/> <citedRange>1954.41 </citedRange></bibl>, 
+               reviewed by <bibl>J.Bingen, Chronique d'Egypte XXVIII (1953) 186</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1955.276</citedRange></bibl>; republished 
+               <bibl><ptr target="rgg-jmr-herington1958"/> vol. XXVI, no.<citedRange>A</citedRange>, p. 31-34, fig. 1, p. 32</bibl>;
+               whence <bibl><ptr target="AE"/> <citedRange>1960.260</citedRange></bibl>,  
+               <bibl><ptr target="SEG"/> <citedRange>17.800</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324413">324413</ref></citedRange></bibl>, 
+               <bibl><ptr target="gl-jmr1983"/>, <citedRange>22</citedRange></bibl>, 
+               discussed, with bibliography, <bibl><citedRange><ref target="http://judaism-and-rome.com/temple-zeus-cyrene-under-marcus-aurelius">A. Blanco Pérez</ref></citedRange> 
+                  in <ptr target="berthelot2018"/></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/> <w lemma="ὑπέρ"><supplied reason="lost">ὑ</supplied>πὲρ</w> <w lemma="ὁ">τᾶς</w> <persName type="emperor" key="marcusaurelius"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐ</supplied>το<supplied reason="lost">κρά</supplied>το<supplied reason="lost">ρος</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καίσ</supplied><unclear>α</unclear>ρος</name> 
+                    <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκω</ex></expan></name> <name nymRef="Αὐρήλιος">Αὐρηλίω</name> <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀν</supplied>τωνείν<supplied reason="lost">ω</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σεβαστῶ</supplied></name> <name nymRef="Ἀρμενιακός"><supplied reason="lost">Ἀρμενι</supplied><lb 
+                       n="2" break="no"/><supplied reason="lost">α</supplied>κῶ</name> <name nymRef="Παρθικός">Παρθ<supplied reason="lost">ικῶ</supplied></name> <name nymRef="Μηδικός"><supplied reason="lost">Μηδικῶ</supplied></name> <name nymRef="Γερμανικός"><supplied reason="lost">Γερ</supplied>μανικῶ</name> 
+                    <w lemma="τύχη">τύχας</w> <w lemma="καί">καὶ</w> <w lemma="νείκη">ν<supplied reason="lost">ε</supplied>ίκας</w> <w lemma="καί">καὶ</w> <w lemma="αἰώνιος">α<supplied reason="lost">ἰωνίας</supplied></w> <w lemma="διαμονή"><supplied reason="lost">διαμονᾶς</supplied></w></persName>
+                    <lb n="3"/> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ὁ">τῶ</w> <w lemma="σύμπας">σύνπαντος</w> <w lemma="αὐτός">ὠτῶ</w> <w lemma="οἶκος">οἴκω</w> <w lemma="καί">καὶ</w> <w lemma="ἱερός">ἱερᾶς</w> <w lemma="σύνκλητος">συ<unclear>ν</unclear>κλήτω</w> 
+                    <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="δῆμος"><supplied reason="lost">δάμω</supplied></w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><supplied reason="lost">Ῥωμαίων</supplied></placeName>
+                    <lb n="4"/> <w lemma="ὁ"><supplied reason="lost">ἁ</supplied></w> <w lemma="πόλις">πόλις</w> <w lemma="ὁ"><supplied reason="lost">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυ</supplied>ρανάων</placeName> <w lemma="ὁ">ἁ</w> <w lemma="μητρόπολις">ματρόπολις</w> 
+                    <w lemma="ὁ">τὸν</w> <w lemma="ναός">ν<supplied reason="lost">αὸν</supplied></w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="zeus"><name nymRef="Ζεύς"><supplied reason="lost">Διὸς</supplied></name></persName> <gap reason="lost" quantity="7" unit="character" precision="low"/> <w lemma="ὁ"><supplied reason="lost">τὸν</supplied></w>
+                    <lb n="5"/> <w lemma="καταβάλλω"><supplied reason="lost">κα</supplied>τ<supplied reason="lost">αβλ</supplied><unclear>η</unclear>θέντα</w> 
+                    <w lemma="ὁ">το͂ι</w> <placeName type="ethnic" nymRef="#Ἰουδαικός" ref="#ioudaios">Ἰουδ<supplied reason="lost">αικο͂ι</supplied></placeName> <w lemma="τάραχος"><supplied reason="lost">ταράχοι</supplied></w> <gap reason="lost" quantity="14" unit="character" precision="low"/>
+                    <lb n="6"/><gap reason="lost" quantity="9" unit="character" precision="low"/><orig><seg part="F">μα</seg></orig> <w lemma="ἀνίστημι">ἀνέστα<supplied reason="lost">σ</supplied>εν</w> <gap reason="lost" quantity="26" unit="character" precision="low"/>
+                            
+                </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>Lines 1-5</note>: Für das Glück (τύχη) und den Sieg und die ewige Dauer des Imperators Caesar M(arcus) Aurelius Antoninus 
+            Augustus Armeniacus Parthicus Medicus Germanicus und für sein gesamtes Haus und den heiligen Senat und das Volk der Römer hat die Stadt der Kyrener, die Metropolis, 
+            den Tempel des Zeus . . ., den im jüdischen Aufstand umgestürzten . . . wieder aufgestellet . . .</p></div>
+            <div type="translation" source="berthelot2018" xml:lang="en"><p>For the fortune, victory, and everlasting preservation of the emperor Caesar Marcus Aurelius Antoninus Augustus Armeniacus 
+               Parthicus Medicus Germanicus and all his house and the sacred Senate and People of the Romans, the city of the Cyreneans, 
+               the metropolis, the temple of [Zeus] seized in the Jewish riots [...] rebuilt.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>On behalf of the fortune and victory and [eternal endurance] of the Emperor M(arcus) Aurelius Antoninus [Augustus],
+               victor in [Armenia] victor in Parthia, [victor in Media], victor in Germania, and for his whole house, and 
+            the sacred senate [and the people of the Romans], the city of the Cyreneians, the metropolis, set up/restored the [temple] of [Zeus] which had been thrown down 
+            in the Jewish [revolt . . . </p></div>
+       </div>
+      
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For discussion and bibliography see A. Blanco Pérez., loc.cit. </p>
+            <!-- check <p>See also<ptr target="oliverio1931"/> 13</p>-->
+            <p>Line 2: between 172 when Marcus became Germanicus, and 175 when he became also Sarmaticus. </p>
+            <p>Line 4: at the end of the line there was very probably a cult title for Zeus.</p>
+            
+           <p>Line 6: Here there may have been a reference to the authority stimulating the Cyrenaeans to rebuild, e.g.  [...κατὰ τὸ Αὐτοκράτ] / [ορος διάταγ]μα ἀνέστα[σ]εν [...] 
+              or conceivably, to the cult statue, e.g. [... ἀνωκοδόμησεν] / [καὶ τὸ ἄγαλ]μα ἀνέστα[σ]εν [...] but as the statue was probably paid for privately 
+              this seems less likely. </p>
+           <!-- <p>Line 6: Here must have stood a phrase on the lines of [...ἀρξαμένως τᾶς ἀναστασέως]. </p> --> 
+            
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

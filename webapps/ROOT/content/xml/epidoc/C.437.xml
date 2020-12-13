@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C44110" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">building</rs> inscription</title>
+            <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="gp">G.Paci</editor>  <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.437</idno>
+            <idno type="ircyr2012">C44110</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>extramural Temple of Demeter</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three inscribed <material>marble</material> <objectType>epistyle</objectType> blocks, recomposed from fragments, from the five which made up the epistyle of the temple.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face in two lines</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE: Line 1 <height>0.14.</height>, line 2 <height>0.12</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1475">extramural Temple of Demeter</ref></origPlace>
+                     <origDate evidence="prosopography reign" notBefore="0004" notAfter="0014" precision="low" cert="low">4-14 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1475">Extramural Temple of Demeter</placeName>, lying fallen from the columns.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/1475">Extramural Temple of Demeter</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Publication (Roueché).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2017-03-03" who="CR">transcribed and created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="paci2010"/><citedRange></citedRange></bibl>; 
+            mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>230</citedRange></bibl>.</p> <!-- check for translation -->
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="pir2-s-0965"><supplied reason="lost"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name></supplied>
+                        <name nymRef="Sufenas"><supplied reason="lost">Sufen</supplied>as</name> <g ref="symbols.xml#stop"/> <name nymRef="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <g ref="symbols.xml#stop"/> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <g ref="symbols.xml#stop"/> <name nymRef="Proculus">Proculus</name></persName> <g ref="symbols.xml#stop"/> <w lemma="pro">pro</w> <g ref="symbols.xml#stop"/> <w lemma="legatus">lega<supplied reason="lost">tus</supplied></w><!-- check -->
+                    <lb n="2"/><persName type="emperor" key="augustus"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>eratore</ex></expan></supplied></w> <name nymRef="Augustus"><supplied reason="lost">Augus</supplied>to</name> <g ref="symbols.xml#stop"/> <name nymRef="Caesar">Caesare</name></persName> <supplied reason="lost"><g ref="symbols.xml#stop"/></supplied> <gap reason="lost" extent="4" unit="character"/><w part="F">itum</w> 
+   <w lemma="suus">suo</w><w lemma="que">qu<supplied reason="lost">e</supplied></w> <w lemma="nomen"><supplied reason="lost">no</supplied>mine</w> <g ref="symbols.xml#stop"/> <supplied reason="lost"><w lemma="facio"><expan><abbr>f</abbr><ex>aciendum</ex></expan></w> 
+                        <w lemma="curo"><expan><abbr>c</abbr><ex>urauit</ex></expan></w>
+</supplied>
+   
+   </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>[M(arcus) Sufen]as Proculus, son of M(arcus) legate <!-- check --> for Emperor Augustus Caesar [ . . .] and in his name was responsible for the construction.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For M. Sufenas Proculus, <title>PIR<hi rend="superscript">2</hi></title>, S.965, see commentary on <ref type="inscription" n="C.9">C.9</ref>. 
+               He appears also in <ref type="inscription" n="C.118">C.118</ref>,
+               <ref type="inscription" n="C.225">C.225</ref> and <ref type="inscription" n="C.226">C.226</ref>, all cut between CE 4 and 14, and possibly 
+               <ref type="inscription" n="C.436">C.436</ref>, undated</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

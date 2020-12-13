@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C18600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Artemis, with <rs type="textType">list</rs> of priestesses.</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.221</idno>
+            <idno type="ircyr2012">C18600</idno>
+            <idno type="JMR">779c</idno>
+            <idno type="Excel">5</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Reverse face of a <material>marble</material> <objectType>stele</objectType> 
+                              (<dimensions><width>0.43</width> <height>1.13</height> <depth>0.23</depth></dimensions>) inscribed with <ref type="inscription" n="C.219">C.219</ref>, <ref type="inscription" n="C.220">C.220</ref> 
+                              and <ref type="inscription" n="C.221">C.221</ref>. There is a hole on the top for the attachment of 
+                              another block during the period of the original use.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the reverse face, opposite <ref type="inscription" n="C.219">C.219</ref>. 
+                           The surface was already in poor condition when the text was cut.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lines 1, 2, 7, <height>0.025</height>; lines 3-6, <height>0.02</height>; line 8, <height>0.03</height>; 
+                        lines 9-11, <height>0.015</height>; lines 12-35, <height atLeast="0.015" atMost="0.02">0.015 - 0.02</height>; 
+                        cursive omega in lines 1-8; lunate epsilon, lunate sigma, cursive omega, in lines 9-27; 
+                        square sigma in line 22; dot for abbreviations</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown. Ferri states that it fits onto a fragment of marble at that time in the
+                        Temple of Artemis, proving that it stood there during the period of its
+                  second use; we were unable to check this.</origPlace>
+                     <origDate when="0180" precision="medium" evidence="prosopography nomenclature">c. 180 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1227">Byzantine Baths</placeName>, found in <date type="found">1922</date>, re-used as a paving stone.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName> garden, (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-17" who="MGDA">fixed bibliography</change>
+         <change when="2010-12-01" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-14" who="CB">tidy and tokenise</change>
+         <change when="2009-07-03" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. E. 839, 840, 841.-->
+      <graphic url="DSC04983" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04984" decls="#photograph"><desc>Face, upper part (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04985" decls="#photograph"><desc>Face, upper part (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04986" decls="#photograph"><desc>Face, lower part (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="ferri1925"/>, <citedRange>5</citedRange> p.29f.</bibl><!-- check -->, and <bibl><ptr target="ferri1923"/><citedRange></citedRange></bibl>;
+                    <bibl><ptr target="oliverioDAI1"/>, <citedRange unit="entry">49</citedRange> p.169, pl. XXXI, figs 47 and 48</bibl>, <!-- check -->whence
+                    <bibl><ptr target="SEG"/> <citedRange>9.176</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324027">324027</ref></citedRange></bibl>, 
+                   <bibl><ptr target="AE"/> <citedRange>1934.255</citedRange></bibl>;
+               see also <bibl><ptr target="vitali1932"/>, <citedRange>119</citedRange></bibl>;
+                    <bibl><ptr target="romanelli1943"/>, <citedRange>129</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><w lemma="ὁ">Τὴν</w> <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις">Ἄρτεμιν</name></persName>
+               <w lemma="ἐκ">ἐκ</w>
+                    <lb n="2"/><w lemma="ὁ">τῶν</w> <w lemma="ἀνάθημα">ἀναθημάτων</w>
+                    <lb n="3"/><w lemma="ὁ">τῶν</w> <w lemma="τίθημι">τεθέντων</w> <w lemma="αὐτός">αὐ<lb n="4" break="no"/>τῇ</w>
+               <persName type="attested" key="pir2-n-0211"><name nymRef="Νουμίσιος">Νουμίσιος</name> 
+                   <name nymRef="Μαρκελλιανός">Μαρ<lb n="5" break="no"/>κελλιανὸς</name></persName> <w lemma="ἀνθύπατος">ἀνθύ<lb n="6" break="no"/>πατος</w>
+               <w lemma="ἀφιερόω">ἀφιέρωϲεν</w>
+                    <lb n="7"/><w lemma="διά">διὰ</w> <w lemma="ἱερεύς">ἱερέος</w>
+               <persName type="attested" key="lgpn:V1-63395"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name>
+                    <name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name>
+                    <lb n="8"/><space quantity="7" unit="character"/> <name nymRef="Βάττος">Βάττου</name></persName>
+                    <lb n="9"/> <w lemma="παρίστημι">παραϲτήσαντοϲ</w> <w lemma="λίτρα"><expan><abbr>λ</abbr><ex>ίτρας</ex></expan></w> <!-- check -->
+                    <num value="17">ιζ</num> <g ref="symbols.xml#onchias"/> <num value="8">η</num> <persName type="attested"><name nymRef="Βάττος">Βάττῳ</name></persName>
+                    <lb n="10"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name>
+                       <name nymRef="Ἀντώνιος">Ἀντωνίου</name> 
+                    <name nymRef="Σεκοῦνδος">Ϲεκούνδου</name></persName> <w lemma="νεωκόρος">νεωκόρου</w> <w lemma="ἱέρεια">ἱερειῶν</w> 
+                   <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις">Ἀρτέμ<unclear>ι</unclear><lb 
+                      n="11" break="no"/><space quantity="12" unit="character"/>δοϲ</name></persName> <w lemma="ὅδε">τῶνδε</w> <space quantity="12" unit="character"/>
+                    <lb n="12"/><persName type="attested" key="lgpn:V1-63019"><name nymRef="Κλαυδία"><expan><abbr>Κλ</abbr><ex>αυδία</ex></expan></name>
+                       <name nymRef="Ἀράτα">Ἀράτα</name></persName> <space quantity="10" unit="character"/>
+                    <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="3">γ</num>
+                    <lb n="13"/><persName type="attested" key="lgpn:V1-63020"><name nymRef="Μουνατία">Μουνατία</name>
+                      <name nymRef="Ἀράτα">Ἀράτα</name></persName> <space quantity="7" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <orig><del rend="erasure">ε</del></orig> <num value="8">η</num>
+                    <lb n="14"/><persName type="attested" key="lgpn:V1-65208"><name nymRef="Ὀλυμπιάς">Ὀλυμπιὰ<unclear>ϲ</unclear></name>
+                       <persName type="attested" key="lgpn:V1-64539"><name nymRef="Καρνεάδης">Κ<unclear>α</unclear>ρνεάδου</name></persName></persName> <space quantity="5" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="5">ε</num> 
+                    <lb n="15"/><persName type="attested"><name nymRef="Ἀντωνία">Ἀντωνία</name> 
+                       <name nymRef="Πρόκλα">Πρό<supplied reason="lost">κ</supplied><unclear>λ</unclear>α</name></persName> <space quantity="8" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="6">ϛ</num> 
+                    <lb n="16"/><persName type="attested" key="lgpn:V1-65838"><name nymRef="Ἀνχαρήνα">Ἀνχαρήνα</name> <name nymRef="Τειμώ">Τειμὼ</name></persName> <space quantity="7" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="8">η</num> 
+                    <lb n="17"/><persName type="attested"><name nymRef="Κλαυδία"><expan><abbr>Κλ</abbr><ex>αυδία</ex></expan></name>
+                       <name nymRef="Φαυστεῖνα">Φαυϲτεῖνα</name></persName> <space quantity="7" unit="character"/>
+                    <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="6">ϛ</num> 
+                    <lb n="18"/><persName type="attested" key="lgpn:V1-65782"><name nymRef="Τελεσώ">Τελεσὼ</name>
+                       <persName type="attested" key="lgpn:V1-64011"><name nymRef="Ἡγησίας">Ἡγηϲίου</name></persName></persName> <space quantity="8" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="6">ϛ</num> 
+                    <lb n="19"/><persName type="attested" key="lgpn:V1-64453"><name nymRef="Ἀνχαρήνα">Ἀνχαρήνα</name> 
+                       <name nymRef="Καλλιβώλα">Κ<unclear>α</unclear>λιβώλα</name></persName> <space quantity="4" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="5">ε</num> 
+                    <lb n="20"/><persName type="attested"><name nymRef="Κλαυδία"><expan><abbr>Κλ</abbr><ex>αυδία</ex></expan></name>
+                       <name nymRef="Πρόκλα">Πρόκλα</name></persName> <space quantity="10" unit="character"/>
+                    <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="3">γ</num> 
+                    <lb n="21"/><persName type="attested" key="lgpn:V1-64950"><name nymRef="Μεγώ">Μεγὼ</name>
+                       <persName type="attested" key="lgpn:V1-639231"><name nymRef="Εὐφράνωρ"><unclear>Εὐ</unclear>φρανορο<supplied reason="lost">ϲ</supplied></name></persName></persName>
+                    <space quantity="7" unit="character"/> <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="5">ε</num> 
+                    <lb n="22"/><persName type="attested"><name nymRef="Κλαυδία"><expan><abbr>Κλ</abbr><ex>αυδία</ex></expan></name>
+                       <name nymRef="Φαυνίλλα">Φ<unclear>α</unclear>υνίλλ<unclear>α</unclear></name></persName> <space quantity="8" unit="character"/> 
+                    <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="6">ϛ</num>
+                    <w lemma="καί">καὶ</w> <w lemma="βοῦς">βῶϲ</w> <w lemma="ὀγκία"><expan><abbr>ὀν</abbr><ex>κίας</ex></expan></w> <num value="10">ι</num>
+                    <w lemma="λίτρα"><expan><abbr>λ</abbr><ex>ίτρας</ex></expan></w> <num value="4"><unclear>δ</unclear></num> 
+                    <lb n="23"/><persName type="attested" key="lgpn:V1-65209"><name nymRef="Ὀλυμπιάς">Ὀλυμπιὰϲ</name>
+                       <persName type="attested" key="lgpn:V1-64129"><name nymRef="Θεόφιλος">Θεοφίλου</name></persName></persName> <space quantity="5" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="3">γ</num> 
+                    <lb n="24"/><persName type="attested" key="lgpn:V1-62854"><name nymRef="Ἀναξώ">Ἀναξὼ</name>
+                       <persName type="attested" key="lgpn:V1-63930"><name nymRef="Εὐφράνωρ">Εὐφράνοροϲ</name></persName></persName> <space quantity="4" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="3">γ</num> 
+                    <lb n="25"/><persName type="attested"><name nymRef="Βηδία">Βη<unclear>δ</unclear>ία</name> 
+                       <name nymRef="Μαρεῖνα">Μαρεῖνα</name> <space quantity="9" unit="character"/>
+                    </persName> <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="3">γ</num>
+                    <lb n="26"/><persName type="attested"><name nymRef="Φλαβία">Φλαβία</name> <name nymRef="Κυδιμάχη">Κυδι<space quantity="2" unit="character"/>μάχη</name></persName>
+               <space quantity="3" unit="character"/> <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="4">δ</num>
+                    <lb n="27"/><persName type="attested" key="lgpn:V1-64652"><name nymRef="Ἰουλία">Ἰουλία</name> <name nymRef="Κλεομήδα">Κλεομ<space quantity="2" unit="character"/>ήδα</name></persName>
+               <space quantity="3" unit="character"/> <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="10">ι</num> 
+                    <lb n="28"/><persName type="attested" key="lgpn:V1-64949"><name nymRef="Μεγώ">Μεγὼ</name>
+                       <persName type="attested" key="lgpn:V1-63792"><name nymRef="Εὔβουλος">Εὐβούλου</name></persName></persName> <space quantity="6" unit="character"/>
+               <del rend="erasure"><orig>ο</orig></del> <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> 
+                    <num value="4">δ</num> 
+                    <lb n="29"/><persName type="attested" key="lgpn:V1-65144"><name nymRef="Φλαβία"><expan><abbr>Φλ</abbr><ex>αβία</ex></expan></name>
+                       <name nymRef="Νεικίππα">Νεικί<space quantity="2" unit="character"/>ππα</name></persName> <space quantity="4" unit="character"/>
+                    <del rend="erasure"><orig>ο</orig></del> <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="3">γ</num> 
+                    <lb n="30"/><persName type="attested"><name nymRef="Ἰουλία">Ἰουλία</name> <name nymRef="Φλακκίλλα">Φλακκίλλα</name></persName>
+               <w lemma="λίτρα"><expan><abbr>λ</abbr><ex>ίτραν</ex></expan></w> <num value="1">α</num> 
+                    <lb n="31"/><persName type="attested"><name nymRef="Φλαβία"><expan><abbr>Φλ</abbr><ex>αβία</ex></expan></name>
+                       <name nymRef="Ἰουστινίλλα">Ἰουϲτινίλλα</name></persName> <space quantity="3" unit="character"/> 
+                    <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="10">ι</num> 
+                    <lb n="32"/><persName type="attested"><name nymRef="Σηστία">Ϲηϲτία</name> <name nymRef="Φαυστίλλα">Φαυϲτίλλα</name></persName> 
+                    <space quantity="3" unit="character"/> <w lemma="ὀγκία"><expan><abbr>ὀ<supplied reason="lost">γ</supplied></abbr><ex>κίαϲ</ex></expan></w> 
+            <num value="5"><unclear>ε</unclear></num> 
+                    <lb n="33"/><persName type="attested" key="lgpn:V1-63401"><name nymRef="Βελυδρία">Βελυδρία</name></persName> <space quantity="10" unit="character"/>
+               <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w> <num value="10"><unclear>ι</unclear></num> 
+                    <lb n="34"/><persName type="attested" key="lgpn:V1-63395"><name nymRef="Βάττος">Βάττοϲ</name></persName>
+               <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τῆϲ</w> <w lemma="πόλις">πόλεωϲ</w> <w lemma="ὀγκία"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></w>
+                    <num value="6"><unclear>ϛ</unclear></num>
+                    <lb n="35"/><persName type="attested" key="lgpn:V1-62504"><name nymRef="Ἅβρολλα">Ἅβρο<unclear>λλ</unclear>α</name></persName>
+               <w lemma="ἔλαφος">ἔλα<unclear>φ</unclear>ον</w> <w lemma="καί">καὶ</w> <w lemma="κάδιον">κάδιν</w>
+               <w lemma="λίτρα"><expan><abbr>λ</abbr><ex>ίτραν</ex></expan></w> 
+                    <num value="1">α</num> <w lemma="ὀγκία"><supplied reason="lost"><expan><abbr>ὀγ</abbr><ex>κίαϲ</ex></expan></supplied></w> 
+                    <num value="8">η</num>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp><app loc="35"><rdg resp="#oliverioDAI2">ἄβρωμα ἔλαφον κ(α)ὶ κάδιν</rdg></app></listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#vitali1932" xml:lang="it"><p><note>Lines 1-8</note>: Un simulacro di Artemide, (acquistato) con le orerie per quello depositate, 
+               Numisio Marcelliano proconsole, dedicò, per mezzo del sacerdote Tiberio Claudio Batto, essendo stato assistito Batto da Lucio Antonio Secondo custode del tempio; 
+               sacerdotesse di Artemide le seguenti...</p></div>
+            <div type="translation" source="#oliverioDAI1" xml:lang="it"><p>La statua di Artemide (fatta) con gli ex-voto, che erano stati offerti ad essa, Numisio Marcelliano proconsole ha consacrata, per mano del sacerdote 
+            Tiberio Claudio Batto; avendo consegnato libbre 17 (ed oncie) 8 a Batto Lucio Antonio Secondo, neocoro (ottenute dagli ex-voto) dell sacerdotesse di 
+            Aretemide, che seguono: Claudia Arata on(cie) 3; Munazia Arata on(cie) 8; Olimpiade di Carneade on(cie) 5; Antonia Procla on(cie) 6; Ancherena Timó 
+            on(cie) 8; Claudia Faustina on(cie) 6; Telesó di Egesia on(cie) 6; Ancarena Callibola on(cie) 5; Claudia Procla on(cie) 3; Megó di Eufranore on(cie) 5; 
+            Claudia Faunilla on(cie) 6 e lo scudo on(cie) 10 libbre 4; Olimpiade ti Teofilo on(cie) 3; Anaxó di Eufranore on(cie)  3; Vedia Marina on(cie) 3; 
+            Flavia Cydimaca on(cie) 4;Giulia Cleomeda on(cie) 10; Megó di Eubulo on(cie) 4; Flavia Nicippa on(cie) 3; Giulia Flaccilla libbra 1; Flavia Giustinilla on(cie) 10; 
+            Sesta Faustilla on(cie) 5; Velidria on(cie) 10; Batto per (la salute del)la cittadinanza on(cie) 6; La stola, il cervo ed il cadisco on(cie) 8 libbra 1</p></div>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>The statue of Artemis, from the dedications which have been made to her, Numisius Marcellianus, proconsul, consecrated, through 
+            the agency of the priest Ti(berios) Kl(audios) <supplied reason="explanation"><foreign xml:lang="la">Ti(berius) Cl(audius)</foreign></supplied> Battos : L(oukios) Antonios Sekoundos <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Antonius Secundus</foreign></supplied>, neokoros provided to Battos 17 pounds, <supplied reason="explanation">litra</supplied> 8 ounces, from the following priestesses of Artemis: 
+               Kl(audia) <supplied reason="explanation"><foreign xml:lang="la">Cl(audia)</foreign></supplied> Arata, 3 
+            ounces; Mounatia <supplied reason="explanation"><foreign xml:lang="la">Munatia</foreign></supplied> Arata, 8 ounces; Olympias <supplied reason="subaudible">daughter</supplied> of Karnedas, 5 ounces; 
+               Antonia Prokla, 6 ounces; Ancharena Teimo, 8 ounces; Kl(audia) Phausteina <supplied reason="explanation"><foreign xml:lang="la">Cl(audia) Faustina</foreign></supplied>, 6 ounces; 
+               Teleso <supplied reason="subaudible">daughter</supplied> of Hegesias, 6 ounces; Ancharena Teimo, 5 ounces;
+               Kl(audia) <supplied reason="explanation"><foreign xml:lang="la">Cl(audia)</foreign></supplied> Prokla , 3 ounces; Mego 
+               <supplied reason="subaudible">daughter</supplied> of Euphranor 5 ounces; Kl(audia) Phaunilla <supplied reason="explanation"><foreign xml:lang="la">Cl(audia) Faunilla</foreign></supplied>, 6 ounces, and an ox, <!-- check --> 10 ounces, pounds <supplied reason="explanation">litra</supplied>; 
+               Olympias <supplied reason="subaudible">daughter</supplied> of Theophilos, 3 ounces; Anaxo <supplied reason="subaudible">daughter</supplied> of Euphranor, 3 ounces; 
+               Bedia <supplied reason="explanation"><foreign xml:lang="la">Vedia</foreign></supplied> Marina, 3 ounces; 
+               Phlabia <supplied reason="explanation"><foreign xml:lang="la">Flavia</foreign></supplied> Kudimacha, 4 ounces; Ioulia <supplied reason="explanation"><foreign xml:lang="la">Julia</foreign></supplied> Kleomeda, 10 ounces; 
+               Mego <supplied reason="subaudible">daughter</supplied> of Euboulos, 4 ounces; Phl(abia) <supplied reason="explanation"><foreign xml:lang="la">Fl(avia)</foreign></supplied> Neikippa, 3 ounces; 
+               Ioulia Phlakkilla <supplied reason="explanation"><foreign xml:lang="la">Julia Flaccilla</foreign></supplied>, 1 ounce; 
+               Phl(abia) Ioustinilla <supplied reason="explanation"><foreign xml:lang="la">Fl(avia) Justinilla</foreign></supplied>, 10 ounces; 
+               Sestia Phaustilla <supplied reason="explanation"><foreign xml:lang="la">Sestia Faustilla</foreign></supplied>, 5 ounces; Beludria, 10 ounces; Battos, on behalf of the city, 6 ounces; 
+               Habrolla a deer (?) and a jar, one pound, 8 [ounces].</p>
+            </div>
+         </div>
+         
+         <div type="commentary">
+            <p>Lines 6, 33: For the proconsul, Numisius Marcellianus, <title>PIR<hi rend="superscript">2</hi></title>, N211, see <ref type="inscription" n="C.143">C.143</ref>, <ref type="inscription" n="C.220">C.220</ref>, <ref type="inscription" n="C.221">C.221</ref>, <ref type="inscription" n="C.305">C.305</ref>, and <ref type="inscription" n="C.299">C.299</ref>, dated
+                    under a <foreign xml:lang="la">M. Aurelius Antoninus</foreign>; not known outside Cyrenaica. Oliverio placed his governorship under Caracalla, on the basis of the letter forms of the three 
+                    inscriptions; Romanelli, rightly we think, preferred M. Aurelius since a date before the <foreign xml:lang="la">constitutio Antoniniana</foreign> is indicated by the noticeable proportion of 
+                    priestess listed here without Roman <foreign xml:lang="la">gentilicia</foreign>. </p>
+            <p>Line 10: Antonius Secundus: His contribution, 17 litra 8 ounces, is the sum total of the contributions of the priestesses and 
+                the city - he was clearly the treasurer. </p>
+            <p>Line 35: Oliverio took the first word as ἄβρωμα which he interpreted as a robe, and the second as  ἔλαφον.
+               We believe this to be a misreading; Ferri read ἐλαίον which seems to 
+                    us a possible alternative to ἔλαφον.</p> <!-- check -->
+         <!--    <p>Line 8. Battos: Also in (824) <ref type="inscription" n="C25200">C.306</ref>, 
+                   line 4 and perhaps line 9, and <ref type="inscription" n="C25600">C.299</ref>, lines 5-6.</p>
+            <p>l.22 Perhaps also in 19. </p>
+            <p>line 17,24 one of these might be identified with <foreign lang="la">Claudia Fau[...]</foreign> in C2. </p>
+            <p> Perhaps also in 911, lines 1-2. </p> -->
+            <!-- Check Check  A Galimberti in Aevum 75 (2001) Can't find-->
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

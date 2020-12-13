@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A00700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">List</rs> of priests of Apollo</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.3</idno>
+            <idno type="ircyr2012">A00700</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Part of a <objectType>stele</objectType> of white <material>marble</material>, probably Attic, with traces of moulding above. 
+                              Perhaps associated with <ref type="inscription" n="A.5">A.5</ref>, <ref type="inscription" n="A.6">A.6</ref>. 
+                              It was subsequently cut down for reuse first as part of an inscribed <objectType>panel</objectType> of the fourth to fifth cent. CE 
+                              (<ref type="inscription" n="A.4">A.4</ref>)
+                        and later as an <objectType>impost block</objectType>, one of three with Christian decoration, in the sixth century church 
+                              (<dimensions><width>0.63</width> <height>0.925</height> <depth>0.27</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on three faces. 
+                           To the left of this one, on a surface almost entirely cut away, are illegible traces of another text, 
+                           probably a continuation of the priest-list. The third face bears a later inscription (<ref type="inscription" n="A.4">A.4</ref>).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE- first century CE; <height>0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering">First century BCE to first century CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: Baptistery in  the <placeName type="monuList" ref="https://www.slsgazetteer.org/914">East Church</placeName>;
+                        found in <date type="found">1920</date>.</p>
+                  </provenance>
+                  <provenance type="observed">
+                    <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds, Tupman).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-18" who="MR">added LGPN data in persName keys</change>
+         <change when="2010-02-23" who="GB">tidied</change>
+         <change when="2010-02-11" who="CMR">title, number</change>
+         <change when="2010-02-11" who="CMR">Title, number</change>
+         <change when="2010-02-11" who="MR">tagged metadata</change>
+         <change when="2009-07-13" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="1389_doa" decls="#photograph"><desc>Face (Department of Antiquities, E.1389)</desc></graphic>
+      <graphic url="DSC04431" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04432" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04433" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04454" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <!--Dept. E. 1391-->
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="SECir"/>, <citedRange>201a</citedRange> with illustration, fig. 147 (from the photograph)</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.582</citedRange></bibl>, 
+               <bibl><ptr target="jmr1972"/>, <citedRange>46</citedRange></bibl>;
+               <bibl><ptr target="jmr1976"/>, <citedRange>6.a</citedRange> and pl. LVIII</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>27.1128</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>285</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/>
+                    <date><persName type="attested" key="lgpn:V1-62052"><name nymRef="Διόδοτος"><supplied reason="lost">Δ</supplied><unclear>ι</unclear>όδοτος</name> 
+                        <persName type="attested" key="lgpn:V1-62095"><name nymRef="Καρνεάδης">Καρνεά<unclear>δ</unclear><supplied reason="lost">ου</supplied></name></persName></persName>
+                    <lb n="2"/> <w lemma="ἱερειτεύω"><supplied reason="lost">ἱ</supplied><unclear>ε</unclear>ρειτεύων</w>
+                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλ<supplied reason="lost">ωνος</supplied></name></persName></date>
+                    <lb n="3"/> <space quantity="1" unit="character"/> <persName type="divine" key="theos"><name nymRef="Θεός">Θεός</name></persName>. <space quantity="1" unit="character"/> <persName type="divine" key="agathetyche"><name nymRef="Τύχη">Τύχη</name> <space quantity="1" unit="character"/> <w lemma="ἀγαθός"><supplied reason="lost">Ἀγαθὴ</supplied></w></persName>
+                    <lb n="4"/><w lemma="ἱερεύς"><supplied reason="lost">ἱ</supplied>ερεῖς</w> <w lemma="ὁ">τοῦ</w>
+                       <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλ<unclear>ω</unclear><supplied reason="lost">νος</supplied></name></persName>
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-62052"><name nymRef="Διόδοτος">Διόδοτος</name> 
+                        <persName type="attested" key="lgpn:V1-62095"><name nymRef="Καρνεάδης">Καρνεά<supplied reason="lost">δου</supplied></name></persName></persName>
+                    <lb n="6"/><persName type="attested" key="lgpn:V1-62029"><name nymRef="Ἀπολλώνιος"><unclear>Ἀ</unclear>πολλώνιος</name>
+                        <persName type="attested" key="lgpn:V1-62035"><name nymRef="Ἄρειος">Ἀρη<supplied reason="lost">ίου</supplied></name></persName></persName>
+                    <lb n="7"/><persName type="attested" key="lgpn:V1-62037"><name nymRef="Ἀριστομένης">Ἀριστομένης</name> 
+                        <persName type="attested"><name nymRef="Ἀρίστων">Ἀρίσ<supplied reason="lost" cert="low">τωνος</supplied></name></persName></persName>
+                    <lb n="8"/><persName type="attested" key="lgpn:V1-62031"><name nymRef="Ἀπολλώνιος">Ἀπολλώνιος</name> 
+                        <persName type="attested" key="lgpn:V1-62030"><name nymRef="Ἀπολλώνιος"><seg part="I"><unclear>Ἀ</unclear>πολ</seg><gap reason="lost" extent="unknown" unit="character"/></name></persName></persName>
+                    <lb n="9"/><persName type="attested" key="lgpn:V1-62097"><name nymRef="Καρνεάδης">Καρνεάδης</name>
+                        <persName type="attested" key="lgpn:V1-62096"><name nymRef="Καρνεάδης">Καρνε<supplied reason="lost">άδου</supplied></name></persName></persName>
+                    <lb n="10"/><persName type="attested" key="lgpn:V1-62074"><name nymRef="Εὐφράνωρ">Εὐφράνωρ</name>
+                        <persName type="attested" key="lgpn:V1-62073"><name nymRef="Εὐφράνωρ">Εὐφράν<supplied reason="lost">ορος</supplied></name></persName></persName>
+                    <lb n="11"/><persName type="attested" key="lgpn:V1-62139"><name nymRef="Τυχάσιος">Τυχάσιος</name> 
+                        <persName type="attested" key="lgpn:V1-62063"><name nymRef="Διονύσιος">Διονυσί<supplied reason="lost">ου</supplied></name></persName></persName>
+                    <lb n="12"/><persName type="attested" key="lgpn:V1-62039"><name nymRef="Ἀριστόπολις">Ἀριστόπολις</name>
+                        <persName type="attested" key="lgpn:V1-62049"><name nymRef="Δημήτριος">Δημη<supplied reason="lost">τρίου</supplied></name></persName></persName>
+                    <lb n="13"/><persName type="attested" key="lgpn:V1-62041"><name nymRef="Ἀρίστων"><supplied reason="lost">Ἀ</supplied>ρ<supplied reason="lost">ί</supplied><unclear>στων</unclear></name> 
+                        <persName type="attested"><name nymRef="Ε-"><seg part="I">Ε</seg><gap reason="lost" extent="unknown" unit="character"/></name></persName></persName> 
+                    <lb n="13a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <listApp>
+               <app loc="3">
+                 <lem><supplied reason="lost">Ἀγαθὴ</supplied></lem>
+                 <rdg resp="#SECir">omitted</rdg>
+               </app>
+               <app loc="4">
+                 <lem><supplied reason="lost">ἱ</supplied>ερεῖς</lem>
+                 <rdg resp="#SECir"><supplied reason="lost">ἱε</supplied>ρεῖς</rdg>
+               </app>
+               <app loc="6">
+                 <lem>Ἀρη<supplied reason="lost">ίου</supplied></lem>
+                 <rdg resp="#SECir">Αρη<gap reason="lost" extent="unknown" unit="character"/></rdg>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" xml:lang="en" resp="#jmr"><p>Diodotos <supplied reason="subaudible">son</supplied> of Karneades, the acting priest of Apollo,
+               <supplied reason="subaudible">set this up</supplied>.
+                    The God and [Good] Fortune (be with us). The priests of Apollo are: Diodotos <supplied reason="subaudible">son</supplied> of Karneades, 
+               Apollonios <supplied reason="subaudible">son</supplied> of Areios, 
+               Aristomenes <supplied reason="subaudible">son</supplied> of ?Ariston, Apollonios <supplied reason="subaudible">son</supplied> of 
+                    Apol[l . . . ], Karneades <supplied reason="subaudible">son</supplied> of Karneades, Euphranor <supplied reason="subaudible">son</supplied> of Euphranor, Tychasios <supplied reason="subaudible">son</supplied> of Dionysios, Aristopolis <supplied reason="subaudible">son</supplied> of Deme<supplied reason="lost">trios</supplied>, 
+            Ariston <supplied reason="subaudible">son</supplied> of E[ . . .
+            </p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Goodchild was inclined to suspect that the three pieces bearing <ref type="inscription" n="A.3">A.3</ref>,
+               <ref type="inscription" n="A.5">A.5</ref> and <ref type="inscription" n="A.6">A.6</ref>, and possibly some other pieces found at Apollonia, 
+               were part of a consignment of material taken from decadent Cyrene for reuse in Apollonia in late antiquity; 
+               it seems more probable, however, that they originated in Apollonia, since their inscriptions lack dialect forms regular in contemporary texts in Cyrene 
+               (contrast e.g. <ref type="inscription" n="C.140">C.140</ref>) and a number of the names listed
+               are not attested at Cyrene (e.g. <ref type="inscription" n="A.3">A.3</ref>, line 11, Τυχάσιος, <ref type="inscription" n="A.5">A.5</ref>, line 3, 
+                    Ἄρειος, line 6, Διόφαντος, line 7, Καρτίμαχος, line 8, Τειμόνοθος).</p>
+            <p>Line 1: Diodotos set up a stele while priest of Apollo, to contain names of future
+                    priests, and he appears in line 5 as the first name in the list. It seems clear
+                    that the priesthood of Apollo in Apollonia was analogous to that in Cyrene where
+                    similar lists are common (e.g. <ref type="inscription" n="C.260">C.260</ref>, <ref type="inscription" n="C.140">C.140</ref>, 
+               <ref type="inscription" n="C.141">C.141</ref>, <ref type="inscription" n="C.393">C.393</ref>). There they are important
+                    to the community because the priests, who changed annually, were the eponymous
+                    civic officials whose names dated both public and private documents <!-- (see
+                    Romanelli, <title>Cyrenaica</title>, 215 f.) -->, although undoubtedly factors such as the piety
+                    and vanity of the priests (stressed by Pugliese-Carratelli in a brief discussion
+                    of the lists, <title>SECir</title>, p. 359) were also involved. In many of the Cyrene
+                    lists marked differences in letter styles and sizes from entry to entry
+                    demonstrate that the lists were running records; such differences cannot be
+                    detected confidently in this list, but are clear in <ref type="inscription" n="A.5">A.5</ref> and 
+               <ref type="inscription" n="A.6">A.6</ref>, while in <ref type="inscription" n="A.6">A.6</ref> b, line 14, 
+               one entry appears to be preceded by a formal date.</p>
+            <p>Line 3: The addition of the adjective is normal if not invariable and there is room for
+                    it on the assumption that the line was imperfectly centered.</p>
+            <p>l.7: Perhaps related to Ἀρίστων Ἀριστομένευς in
+                    <ref type="inscription" n="A.6">A.6</ref> a, line 10. For other
+                    probably related persons in the priesthood see note below and on <ref type="inscription" n="A.5">A.5</ref>,
+                     and <ref type="inscription" n="A.6">A.6</ref>; it is clear that at Apollonia, as at Cyrene
+                    (cf. Pugliese, loc.cit.), the priests tended to be drawn from a select group
+                    of families.</p>
+            <p>line 12: No doubt related to Δημήτριος Ἀριστοπόλιος, <ref type="inscription" n="A.5">A.5</ref>, line 5.</p>
+         </div>
+</body>
+   </text>
+</TEI>

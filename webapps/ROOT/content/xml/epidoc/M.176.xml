@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G10100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textype">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.176</idno>
+            <idno type="ircyr2012">G10100</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              Upper left corner of an inscribed <material>limestone</material> <objectType>stele</objectType>
+                            (<dimensions>
+                               <width>0.24</width>
+                               <height>0.37</height>
+                               <depth>0.14</depth>
+                            </dimensions>).
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on the frame (a) and on the field (b).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height atLeast="0.013" atMost="0.015">0.013-0.015</height>; L for ἔτους.
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>?Findspot </origPlace>
+                     <origDate notBefore="0098" notAfter="0099" evidence="internal-date">98/99 CE</origDate>
+                  </origin><provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     south of Balagrae, <placeName ref="https://www.slsgazetteer.org/1430">Wadi el Gehia</placeName>, cut into the bank of the Wadi; 
+                           Found in <date type="found">1991</date>, in a tomb which also contains <ref type="inscription" n="M.175">M.175</ref>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+        <change when="2012-03-26" who="AFS">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. J.R.--><surface/></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="mohamed-jmr2002"/>, <citedRange>2</citedRange></bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>52. 1842</citedRange></bibl>, <bibl><ptr target="AE"/> <citedRange>2002.1647</citedRange></bibl>
+            </p> 
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+          <div type="textpart" n="a">
+             <ab>
+             <lb n="1"/> <date><date ref="https://godot.date/id/9jMMKBvqDovSRop8tbbUq9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                <num value="129">ρκθ</num>, <date ref="https://godot.date/id/quWsarVBdUD637RSaeS5WK"><w lemma="ἐπί">ἐ<unclear>π</unclear><supplied reason="lost">ὶ</supplied></w>
+                <supplied reason="lost"><w lemma="ἱερεύς">ἱαρέως</w></supplied> <gap reason="lost" quantity="3" unit="character"/>, 
+                <rs type="month" key="epiphi"><w lemma="Ἐπιφί">Ἐπιφὶ</w></rs> <num value="8">η</num></date> </date></date>
+                <gap reason="lost" extent="unknown" unit="character"/>
+             </ab>
+          </div>
+         <div type="textpart" n="b">
+            <ab>
+              <lb n="1"/><orig>Ο</orig> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/> <gap reason="lost" quantity="1" unit="line"/>
+         </ab>
+             </div>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#mohamed-jmr2002" xml:lang="en"><p>
+            <note>a</note>. <ref target="https://godot.date/id/9jMMKBvqDovSRop8tbbUq9">Year 129</ref>, in the priesthood of [ . . . ], Epiphi 8.</p>
+           <p>
+              <note>b</note>. <note>Not usefully translatable</note></p></div>
+            <div type="translation" source="#AE" xml:lang="fr"><p><note>a</note>: L'an 129, sous la prêtrise de..., le 8 d'Epeiphi.</p></div>
+            
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!--  <note>98-99 CE</note> -->
+         </div>
+      </body>
+   </text>
+</TEI>

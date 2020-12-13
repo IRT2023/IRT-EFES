@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G00200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.72</idno>
+            <idno type="ircyr2012">G00200</idno>
+            <idno type="JMR">37</idno>
+            <idno type="Excel">2019</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A quarry with three <material>rock</material>-cut <objectType>tomb</objectType>s cut into a quarry, with inscriptions 
+                              <ref type="inscription" n="M.71">M.71</ref> is in the east wall, <ref type="inscription" n="M.72">M.72</ref> on the south wall, 
+                              <ref type="inscription" n="M.73">M.73</ref> on the west wall and 
+                              <ref type="inscription" n="M.74">M.74</ref> on the north wall.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the façade above the door within a sunk <rs type="decoration">tabella ansata</rs> 
+                           (<dimensions><width>1.21</width> <height>0.53</height></dimensions>).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century CE: <height>0.07</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" precision="low" evidence="lettering">Second century CE </origDate>
+                  </origin>
+                  
+                     
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1173">Sites between Berenike and Taucheira</placeName>:
+                     quarry-necropolis of <placeName ref="https://www.slsgazetteer.org/1204">Hadrianopolis</placeName>: above the entrance to the east tomb.
+                      
+                              Photographed in <date type="found">1924</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/87192">Driana</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-02-01" who="GillianB">turned to XML and tidied</change>
+         <change when="2010-02-01" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_037" decls="#photograph"><desc>Face</desc></graphic>
+      
+      <!--Dept. F.184--><surface/></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="gpc1961"/>, <citedRange>19.3</citedRange> and fig.34</bibl>, whence <bibl>
+                  <ptr target="SEG"/> <citedRange>20.772</citedRange>.c</bibl>, <bibl>
+                     <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324523">324523</ref></citedRange></bibl>; 
+               mentioned <bibl><ptr target="robertBE"/>, <citedRange>1962.367</citedRange></bibl>; republished <bibl>
+                  <ptr target="jones-little1971"/>, <citedRange>2</citedRange>, p.2 and pl.III, fig. 4</bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>26.1821</citedRange></bibl>,
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324716">324716</ref></citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+            <lb n="1"/> <w lemma="ἀπελεύθερος">ἀπελευθέρων</w> <persName type="attested" key="lgpn:V1-62149"><name nymRef="Εὐγένης">Εὐ<lb n="2" break="no"/>γένους</name></persName> <w lemma="καί">καί</w>  <w lemma="δοῦλος">δού<lb n="3" break="no"/>λων</w> <w lemma="αὐτός">αὐτοῦ</w>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><supplied reason="subaudible">Tomb</supplied> of the freedmen and slaves of Eugenes</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The tomb of the slaves and freedmen of the <foreign xml:lang="la">familia</foreign> of Eugenes, presumably a citizen of Hadrianopolis 
+               owning considerable property. There is no parallel to this formula in Cyrenaica.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

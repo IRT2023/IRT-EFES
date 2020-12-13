@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C11500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+             <title><rs type="textType">Ephebic</rs> <rs type="textType">list</rs></title>
+            
+             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.131</idno>
+            <idno type="ircyr2012">C11500</idno>
+            <idno type="JMR">698</idno>
+            <idno type="Excel">115</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+                <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+                <physDesc>
+                    <objectDesc>
+                        <supportDesc>
+                            <support>
+                                <p><material>Marble</material> <objectType>stele</objectType> tapering towards the top, moulded above, 
+                                    broken at the top, <dimensions><width>0.40 - 0.37</width> <height>1.25</height> <depth>0.31</depth></dimensions>.</p>
+                            </support>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout><rs type="execution" key="scalpro">inscribed</rs> on one face; lines 13-45 are in two columns.</layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+                        <handNote>Second century; lines 3,4,6, <height>0.02</height>; lines 5, 7-14, <height>0.015</height>; lines 13-45, <height>0.007</height>; lines 51-52; <height>0.02</height>; line  53, <height>0.035</height>.</handNote>
+                    </handDesc>
+                </physDesc>
+                <history>
+                    <origin>
+                        <origPlace>Unknown.</origPlace>
+                        <origDate notAfter="0169" notBefore="0161" evidence="reign">CE 161-169 </origDate>
+                    </origin>
+                    
+                    
+                    <provenance type="found">
+                        <p>
+                            <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>, probably in the Square: photographed in <date type="found">1929</date> as from the Agora.</p>
+                    </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+          <change when="2010-02-22" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-26" who="Pietro">tokenized</change>
+         <change when="2009-06-11" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_698front" decls="#photograph"><desc>Face (1929)</desc></graphic>
+       <graphic url="1166_doa" decls="#photograph"><desc>Face (Department of Antiquities, E.1166)</desc></graphic>
+       <graphic url="DSC04963" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04964" decls="#photograph"><desc>Face, upper part (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04965" decls="#photograph"><desc>Face, lower part (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04966" decls="#photograph"><desc>Face and right side (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl>
+                        <ptr target="gpc1961"/>, <citedRange>8</citedRange>, p.27 f. Fig 17</bibl>, whence  
+                <bibl><ptr target="robertBE"/>, <citedRange>1962.363</citedRange></bibl>, 
+                and a revised version by J. M. Reynolds, <bibl n="seg">
+                    <ptr target="SEG"/> <citedRange>20.742</citedRange></bibl>, <bibl>
+                        <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324498">324498</ref></citedRange></bibl>.<!-- checked: create apparatus -->
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+             <div type="textpart" n="a"><ab> <lb n="1a"/><supplied reason="lost"> <space quantity="7" unit="character"/> <persName type="divine" nymRef="Τύχη" key="tyche"><name nymRef="Τύχη">Τύχα</name>
+                        <w lemma="ἀγαθός">ἀγαθὰ</w></persName> <space quantity="7" unit="character"/></supplied> 
+                    <lb n="1"/><date><date ref="https://godot.date/id/LWdJCf6KsZY9oHSkNTqink"><supplied reason="lost" cert="low"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied>
+                        <gap extent="unknown" unit="character" reason="lost"/><supplied reason="lost" cert="low"><w lemma="ὁ">τῶ</w></supplied> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <num value="1"><unclear>α</unclear></num> 
+                    <persName type="emperor" key="marcusaurelius"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκρατόρων</supplied></w>
+                    <lb n="2"/><name nymRef="Καῖσαρ"><supplied reason="lost">Καισάρ</supplied>ων</name> 
+                        <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκω</ex></expan></name> 
+                    <name nymRef="Αὐρήλιος">Αὐρηλίω</name> <name nymRef="Ἀντωνῖνος">Ἀντ<unclear>ω</unclear><supplied reason="lost">νείνω</supplied></name></persName> 
+                    <lb n="3"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
+                 <persName type="emperor" key="luciusverus"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίω</ex></expan></name>
+                    <name nymRef="Αὐρήλιος">Αὐρηλίω</name> <name nymRef="Βῆρος">Βήρω</name> <name nymRef="Σεβαστός">Σεβαστῶ<unclear>ν</unclear></name></persName></date> 
+                    <lb n="4"/><date><w lemma="ἐπί"><supplied reason="lost">ἐ</supplied><unclear>π</unclear>ὶ</w> <w lemma="ἱερεύς">ἱαρέος</w> <w lemma="ὁ">τῶ</w>
+                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> 
+                    <persName type="attested"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>οπλίω</ex></expan></name> 
+                    <lb n="5"/><name nymRef="Ἀγαρῆνος"><supplied reason="lost">Ἀ</supplied>γαρήνω</name>
+                    <name nymRef="Σέκονδος">Σεκόνδω</name></persName></date></date>, <w lemma="ἐφήβαρχος">ἐφήβαρχος</w> 
+                    <lb n="6"/> <w lemma="τριακατιάρχας"><supplied reason="lost">τ</supplied><unclear>ρ</unclear>ιακατιάρχας</w> 
+                    <persName type="attested" key="lgpn:V1-63948"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιος</ex></expan></name>
+                        <name nymRef="Βαλέριος">Βαλέριος</name> 
+                    <lb n="7"/> <space quantity="2" unit="character"/> <name nymRef="Εὐφράτης">Εὐφράτης</name> <name nymRef="Φρετήνσιος">Φρετήνσιος</name></persName> <space quantity="2" unit="character"/> 
+                    <lb n="8"/> <w lemma="στρατηγός"><supplied reason="lost">σ</supplied><unclear>τ</unclear>ραταγοὶ</w> <w lemma="γυμνασιάρχω">γυμνασιαρχέντες</w> 
+                    <lb n="9"/><supplied reason="lost"><w lemma="καί">καὶ</w></supplied> <w lemma="δεκαδαρχέω">δε<unclear>κα</unclear>δαρχέντες</w> 
+                    <persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name>
+                        <name nymRef="Σήδιος">Σήδιος</name> 
+                    <lb n="10"/><name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀν</supplied><unclear>τ</unclear>ωνεῖνος</name></persName> <w lemma="καί">καὶ</w> 
+                    <persName type="attested" key="lgpn:V1-64367"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
+                        <name nymRef="Νόβιος">Νόβιος</name> <name nymRef="Ἰατρόδωρος">Ἰα<lb 
+                            n="11" break="no"/><supplied reason="lost">τρό</supplied>δωρος</name></persName>, <w lemma="ἀκαδήμαρχος">ἀκαδήμαρχος</w>
+                    <persName type="attested"><name nymRef="Τίτος"><expan><abbr>Τ</abbr><ex>ίτος</ex></expan></name> 
+                    <lb n="12"/><name nymRef="Φλάβιος"><supplied reason="lost">Φλ</supplied>άβιος</name> <name nymRef="Φλαβιανός">Φλαβιανός</name></persName> <g ref="symbols.xml#leaf"/>
+                 <lb n="13"/> <space quantity="7" unit="character"/> <w lemma="ἔφηβος">Ἔφηβοι</w> <space quantity="7" unit="character"/></ab>
+         </div>  
+                   <div type="textpart" subtype="text" n="b">
+                       <div type="textpart" subtype="column" n="i"><ab>
+                           <lb n="14"/><persName type="attested" key="lgpn:V1-65909"><gap reason="lost" quantity="4" unit="character"/> <name nymRef="Φιλήμων">Φιλήμων</name></persName>
+                    <lb n="15"/><persName type="attested"><gap reason="lost" extent="unknown" unit="character"/><name nymRef="-ιος"><seg part="F"><unclear>ι</unclear>ος</seg></name>
+                        <name nymRef="Μάρκελλος">Μάρκελλος</name></persName>
+                    <lb n="16"/><persName type="attested"><gap reason="lost" quantity="4" unit="character"/> <name nymRef="Ἀντώνιος">Ἀντώνιος</name>
+                       </persName>
+                    <lb n="17"/><persName type="attested"><gap reason="lost" extent="unknown" unit="character"/><name nymRef="-ς"><seg part="F">ς</seg></name>
+                        <name nymRef="Φῆλιξ">Φῆλιξ</name></persName> 
+                    <lb n="18"/><persName type="attested" key="lgpn:V1-63910"><gap reason="lost" extent="unknown" unit="character"/><name nymRef="-ος"><seg part="F">ος</seg></name>
+                        <name nymRef="Εὔφημος">Εὔφημος</name></persName>
+                    <lb n="19"/><persName type="attested" key="lgpn:V1-65588"><gap reason="lost" extent="unknown" unit="character"/><name nymRef="-ς"><seg part="F">ς</seg></name>
+                        <name nymRef="Σεραπόδωρος">Σεραπόδωρος</name></persName>
+                 <lb n="20"/><persName type="attested"><gap reason="lost" extent="unknown" unit="character"/><name nymRef="-λιος"><seg part="F"><unclear>λ</unclear>ιος</seg></name>
+                        <name nymRef="Βίκτωρ">Βίκτωρ</name></persName>
+                    <lb n="21"/><persName type="attested" key="lgpn:V1-65102"><gap reason="lost" quantity="1" unit="character"/> <name nymRef="Νόβιος">Νόβιος</name> 
+                        <name nymRef="Νήριτος">Νήριτος</name></persName>
+                    <lb n="22"/><persName type="attested"><gap reason="lost" quantity="1" unit="character"/> 
+                    <name nymRef="Πόλλιος"><expan><abbr>Πόλλι</abbr><ex>ο</ex><abbr>ς</abbr></expan></name> 
+                    <name nymRef="Σεκοῦνδος">Σεκοῦνδος</name></persName>
+                    <lb n="23"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name> <name nymRef="Κοίλιος">Κοίλιος</name>
+                        <name nymRef="Φῆλιξ">Φῆλιξ</name></persName> 
+                    <lb n="24"/><persName type="attested"><name nymRef="Αὖλος"><expan><abbr>Α</abbr><ex>ὖλος</ex></expan></name>
+                        <name nymRef="Ἄννιος">Ἄννιος</name> <name nymRef="Φλάκκος">Φλάκκος</name></persName> 
+                    <lb n="25"/><persName type="attested" key="lgpn:V1-64692"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name>
+                        <name nymRef="Οὔλπιος">Οὔλπιος</name> <name nymRef="Λέων">Λέων</name></persName> 
+                    <lb n="26"/><persName type="attested"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name>
+                        <name nymRef="Κλαύδιος">Κλαύ<unclear>δ</unclear>ιος</name> <name nymRef="Κάνδιδος">Κάνδιδος</name></persName>
+                    <lb n="27"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιος</ex></expan></name>
+                        <name nymRef="Ἰούλιος">Ἰούλιος</name> <name nymRef="Βιτάλις">Βειτάλις</name></persName>
+                    <lb n="28"/><persName type="attested"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>όπλιος</ex></expan></name>
+                        <name nymRef="Βαλέριος">Βαλέριος</name> <name nymRef="Πουπλιανός">Πουπλιανός</name></persName>
+                    <lb n="29"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
+                        <name nymRef="Κάσσιος">Κάσσιος</name> <name nymRef="Νατᾶλις">Νατᾶλις</name></persName>
+                    <lb n="30"/><persName type="attested" key="lgpn:V1-63267"><name nymRef="Πόπλιος"><supplied reason="lost"><expan><abbr>Π</abbr><ex>όπλιος</ex></expan></supplied></name> 
+                    <name nymRef="Ῥεῖος">Ῥεῖος</name> <name nymRef="Ἀρχέλαος">Ἀρχέλαος</name></persName>
+                    <lb n="31"/><persName type="attested"><gap reason="lost" quantity="1" unit="character"/>
+                        <name nymRef="Λικίνιος"><unclear>Λικ</unclear>ίνιος</name> <name nymRef="Ῥοῦφος">Ῥοῦφος</name></persName>
+                    <lb n="32"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr><unclear>Γ</unclear></abbr><ex>άιος</ex></expan></name>
+                        <name nymRef="Ῥοῦφος"><unclear>Ῥο</unclear>ῦφος</name> <name nymRef="Λικινιανός">Λικινιανός</name></persName>
+                    <lb n="33"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr><unclear>Γ</unclear></abbr><ex>άϊος</ex></expan></name> <name nymRef="Οὐαλέριος"><unclear>Ο</unclear>ὐαλέριος</name> 
+                        <name nymRef="Σατορνεῖνος"><unclear>Σατορ</unclear>νεῖνος</name></persName>
+                    <lb n="34"/><persName type="attested"><gap reason="lost" quantity="4" unit="character"/><name nymRef="-λιος"><seg part="F">λιος</seg></name> 
+                    <name nymRef="Λιβερᾶλιος">Λιβερᾶλιος</name></persName>
+                    <lb n="35"/><persName type="attested"><gap reason="lost" quantity="4" unit="character"/><name nymRef="-ος"><seg part="F">ος</seg></name>
+                        <name nymRef="Βλαίσιος">Βλαίσιος</name> <name nymRef="Νίγερ">Νίγερ</name></persName>
+                    <lb n="36"/><persName type="attested"><gap reason="lost" quantity="1" unit="character"/> <name nymRef="Φλάβιος"><supplied reason="lost">Φλ</supplied>άουιος</name>
+                    <name nymRef="Ἰουκοῦνδος">Ἰουκοῦνδος</name></persName> 
+                    <lb n="37"/><persName type="attested"><gap reason="lost" quantity="4" unit="character"/><name nymRef="-ούμιος"><seg part="F">ύμιος</seg></name>
+                    <persName type="attested"><name nymRef="Μασουῆτος">Μασουῆτος</name></persName></persName> 
+                    <lb n="38"/><persName type="attested" key="lgpn:V1-62791"><gap reason="lost" quantity="1" unit="character"/> <name nymRef="Οὔλπιος"><supplied reason="lost">Ο</supplied>ὔλπιος</name>
+                    <name nymRef="Ἀμμώνιος">Ἀμμώνιος</name></persName> 
+                    <lb n="39"/><persName type="attested"><name nymRef="Κλαύδιος">Κλαύδιος</name> <name nymRef="Πολλίων">Πο<supplied reason="lost">λλ</supplied>ίων</name></persName>
+                    <lb n="40"/><persName type="attested" key="lgpn:V1-63663"><name nymRef="Σταλάκκιος">Σταλάκκιος</name> <name nymRef="Ἐξάκων">Ἐξάκων</name></persName> 
+                    
+                    <lb n="41"/><persName type="attested"><name nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ήλιος</ex></expan></name> 
+                    <name nymRef="Μουνάτιος">Μουνάτις</name> <name nymRef="Σερῆνος">Σερῆνος</name></persName>
+                    <lb n="42"/><persName type="attested" key="lgpn:V1-62620"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name> 
+                    <name nymRef="Ἀντώνιος">Ἀντώνιος</name> <name nymRef="Ἀθηνόδωρος">Ἀθηνόδωρος</name></persName>
+                     
+                    <lb n="43"/><persName type="attested" key="lgpn:V1-63531"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name>
+                        <name nymRef="Κλαύδιος">Κλαύδιος</name> <name nymRef="Δημήτριος">Δημ<unclear>ή</unclear>τριος</name></persName>
+                    
+                    <lb n="44"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name>
+                        <name nymRef="Σερουίλιος">Σερουίλιος</name>
+                    <name nymRef="Ποστούμιος">Ποστούμιος</name></persName>
+                    <lb n="45"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιος</ex></expan></name>
+                    <name nymRef="Ἰούλιος">Ἰούλιος</name> <name nymRef="Φῆλιξ">Φῆλι<supplied reason="lost">ξ</supplied></name></persName>
+                    <lb n="46"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιος</ex></expan></name> <name nymRef="Ἰούλιος">Ἰούλιος</name>
+                    <name nymRef="Φοντέϊος">Φοντέϊος</name></persName>
+                    <lb n="47"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name> 
+                    <name nymRef="Ὤππιος"><unclear>Ὤ</unclear>ππιος</name> <name nymRef="Βαλέριος">Βαλέριος</name></persName>
+                    <lb n="48"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name>
+                    <name nymRef="Ἰούλιος">Ἰούλιος</name> <name nymRef="Ἰαμβάρις">Ἰαμβάρις</name></persName>
+                    <lb n="49"/><persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name> 
+                        <name nymRef="Ἀντώνιος">Ἀντώνιος</name> <name nymRef="Πρεῖμος">Πρεῖμος</name></persName>
+                    <lb n="50"/><persName type="attested" key="lgpn:V1-64368"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name>
+                        <name nymRef="Κλαύδιος">Κλαύδιος</name> <name nymRef="Ἰατρόδωρος">Ἰατρόδωρος</name></persName> </ab>
+         </div>
+             <div type="textpart" subtype="column" n="ii">
+             <ab><lb n="14"/><persName type="attested" key="lgpn:V1-62967"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name> 
+                    <name nymRef="Οὐαλέριος">Οὐαλέριος</name> <name nymRef="Ἀπολινάρις">Ἀπολινάρις</name></persName>  
+                    <lb n="15"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
+                    <name nymRef="Ἰούλιος">Ἰούλιος</name> <name nymRef="Σαβεῖνος">Σαβεῖνος</name></persName> 
+                    <lb n="16"/><persName type="attested"><name nymRef="Ἰούλιος">Ἰούλιος</name> <name nymRef="Δωνᾶτος">Δωνᾶτος</name></persName> 
+                    <lb n="17"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊος</ex></expan></name>
+                    <name nymRef="Ποστούμιος">Ποστούμιος</name> <name nymRef="Ὀπτᾶτος">Ὀπτᾶτος</name></persName> 
+                    <lb n="18"/><persName type="attested" key="lgpn:V1-64738"><name nymRef="Ἀντώνιος">Ἀντώνις</name>
+                    <name nymRef="Κτῆσιας">Κτησίας</name></persName> 
+                    <lb n="19"/><persName type="attested"><name nymRef="Πόπλιος"><expan><abbr>Π</abbr><ex>όπλιος</ex></expan></name>
+                    <name nymRef="Αἴλιος">Αἴλιος</name> <name nymRef="Λόππος">Λόππος</name></persName>
+                 <lb n="20"/><persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name>
+                    <name nymRef="Βονώνιος">Βονώνιος</name> <name nymRef="Φῆλιξ">Φῆλιξ</name></persName>
+                    <lb n="21"/><persName type="attested" key="lgpn:V1-63898"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></name>
+                    <name nymRef="Ἀντώνιος">Ἀντώνιος</name> <name nymRef="Εὐτύχης">Εὐτύχης</name></persName> 
+                    <lb n="22"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
+                        <name nymRef="Ἀράνιος">Ἀ<unclear>ρ</unclear>άνιος</name> <name nymRef="Κρίσπος">Κρίσπος</name></persName> 
+                    <lb n="23"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr><unclear>Λ</unclear></abbr><ex>ούκιος</ex></expan></name> 
+                    <name nymRef="Καικίλιος">Καικίλιος</name> <name nymRef="Φορτουνᾶτος">Φορτουνᾶτος</name></persName> <w lemma="γραμματεύς"><expan><abbr><unclear>γ</unclear></abbr><ex>ραμματεύς</ex></expan></w> 
+                    <lb n="24"/><persName type="attested" key="lgpn:V1-62978"><name nymRef="Ἀπολλοφάνης">Ἀπολλοφάνης</name>
+                        <persName type="attested" key="lgpn:V1-62793"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρω</name></persName></persName> 
+                    <lb n="25"/><persName type="attested" key="lgpn:V1-64831"><name nymRef="Λούκις">Λούκις</name>
+                        <persName type="attested" key="lgpn:V1-65780"><name nymRef="Τέλεσις">Τελεσίδος</name></persName></persName> 
+                    <lb n="26"/><persName type="attested" key="lgpn:V1-64829"><name nymRef="Λούκις">Λούκις</name>
+                       <persName type="attested" key="lgpn:V1-62659"><name nymRef="Αἰμίλιος">Αἰνιλίω</name></persName></persName>
+                    <lb n="27"/><persName type="attested" key="lgpn:V1-62701"><name nymRef="Ἀλέξανδρος">Ἀλέξανδρος</name> 
+                        <persName type="attested" key="lgpn:V1-63915"><name nymRef="Εὐφράνωρ">Εὐφράνορος</name></persName></persName> 
+                    <lb n="28"/><persName type="attested" key="lgpn:V1-64925"><name nymRef="Μάξιμος">Μάξιμος</name> 
+                        <persName type="attested" key="lgpn:V1-64940"><name nymRef="Μασουῆτος">Μασουήτω</name></persName></persName>
+                    <lb n="29"/><persName type="attested" key="lgpn:V1-63832"><name nymRef="Εὐκλείδης">Εὐκλείδης</name>
+                        <persName type="attested" key="lgpn:V1-63916"><name nymRef="Εὐφράνωρ">Εὐφράνορος</name></persName></persName> 
+                    <lb n="30"/><persName type="attested" key="lgpn:V1-63947"><name nymRef="Εὔφραξ">Εὔφραξ</name>
+                        <persName type="attested" key="lgpn:V1-66024"><name nymRef="Φιλόξενος">Φιλοξένω</name></persName></persName> 
+                    <lb n="31"/><persName type="attested" key="lgpn:V1-63425"><name nymRef="Γάϊς">Γάϊς</name>
+                        <persName type="attested" key="lgpn:V1-62700"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρω</name></persName></persName> 
+                    <lb n="32"/><persName type="attested" key="lgpn:V1-64692"><name nymRef="Κλήμης">Κλήμης</name>
+                        <persName type="attested" key="lgpn:V1-65486"><name nymRef="Πρῖμος">Πρείμω</name></persName></persName> 
+                    <lb n="33"/><persName type="attested" key="lgpn:V1-63427"><name nymRef="Γάϊς">Γάϊς</name>
+                        <persName type="attested" key="lgpn:V1-65412"><name nymRef="Πόπλιος">Ποπλίω</name></persName></persName> 
+                    <lb n="34"/><persName type="attested" key="lgpn:V1-63426"><name nymRef="Γάϊς">Γάϊς</name>
+                        <persName type="attested" key="lgpn:V1-64989"><name nymRef="Μέμμιος">Μεμμίω</name></persName></persName> 
+                    <lb n="35"/><persName type="attested"><name nymRef="Ἰατρόδωρος">Ἰατρόδωρος</name> 
+                        <persName type="attested" key="lgpn:V1-64875"><name nymRef="Λύσιππος">Λυσίππω</name></persName></persName> 
+                    <lb n="36"/><persName type="attested" key="lgpn:V1-62500"><name nymRef="Ἀβάσκαντος">Ἀβάσκαντος</name> <persName type="attested" key="lgpn:V1-64619"><name nymRef="Κατόλιος"><unclear>Κ</unclear>ατολίω</name></persName></persName> 
+                    <lb n="37"/><persName type="attested" key="lgpn:V1-66130"><name nymRef="Φρόντων">Φροντων</name> 
+                        <persName type="attested" key="lgpn:V1-66129"><name nymRef="Φρόντων">Φρόντωνος</name></persName></persName> 
+                    <lb n="38"/><persName type="attested" key="lgpn:V1-63698"><name nymRef="Ἐπίκουρος">Ἐπίκουρος</name> <persName type="attested" key="lgpn:V1-63532"><name nymRef="Δημήτριος">Δημητρίω</name></persName></persName> 
+                    <lb n="39"/><persName type="attested" key="lgpn:V1-64824"><name nymRef="Λόγγος">Λόγγος</name>
+                        <persName type="attested" key="lgpn:V1-64823"><name nymRef="Λόγγος">Λογγου</name></persName></persName> 
+                    <lb n="40"/><persName type="attested" key="lgpn:V1-64293"><name nymRef="Ἰάσων">Ἰάσων</name>
+                        <persName type="attested" key="lgpn:V1-64292"><name nymRef="Ἰάσων">Ἰάσονος</name></persName></persName> 
+                    <lb n="41"/><persName type="attested" key="lgpn:V1-64000"><name nymRef="Ζήνων">Ζήνων</name>
+                        <persName type="attested" key="lgpn:V1-64112"><name nymRef="Θεόδωρος">Θεοδώρω</name></persName></persName> 
+                    <lb n="42"/><persName type="attested" key="lgpn:V1-64874"><name nymRef="Λύσιππος">Λύσιππος</name> 
+                        <persName type="attested" key="lgpn:V1-64873"><name nymRef="Λύσιππος">Λυσίππου</name></persName></persName> 
+                    <lb n="43"/><persName type="attested"><name nymRef="Ἡρακλῆς">Ἡρακλῆς</name> 
+                        <persName type="attested" key="lgpn:V1-62750"><name nymRef="Ἄλεξις">Ἀλεξιδος</name></persName></persName> 
+                    <lb n="44"/><persName type="attested" key="lgpn:V1-64830"><name nymRef="Λούκις">Λούκις</name>
+                        <persName type="attested" key="lgpn:V1-64932"><name nymRef="Μᾶρκος">Μάρκω</name></persName></persName> 
+                    <lb n="45"/><space quantity="1" unit="line"/>
+                    <lb n="46"/><space quantity="1" unit="line"/>
+                    <lb n="47"/><orig>γ <space quantity="10" unit="character"/> ι</orig> 
+                    <lb n="48"/><w lemma="ἐπιστατέω">ἐπιστατέντος</w> <w lemma="καί">καὶ</w>
+                    <w lemma="παιδονομέω">παιδονο<supplied reason="lost">μέν</supplied><unclear>τ</unclear><supplied reason="lost">ος</supplied></w>
+
+                    <lb n="49"/><persName type="attested"><name nymRef="Αἴλιος">Αἴλιος</name> 
+                        <persName type="attested" key="lgpn:V1-63674"><name nymRef="Ἐπαφρόδιτος">Ἐπαφροδεῖτος</name></persName></persName>
+                    <lb n="50"/><space quantity="1" unit="line"/></ab>
+         </div>
+         </div>
+                    <div type="textpart" n="c"><ab><lb n="51"/><persName type="attested" key="lgpn:V1-63948"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιος</ex></expan></name>
+                        <name nymRef="Οὐαλέριος">Οὐαλέριος</name> <name nymRef="Εὐφράτης">Εὐφράτης</name> 
+                    <lb n="52"/><name nymRef="Φρετήνσιος">Φρετήνσιος</name></persName> <w lemma="ἐφηβαρχέω">ἐφηβαρχῶν</w>
+                    <lb n="53"/><persName type="divine" key="hermes"><name nymRef="Ἑρμῆς">Ἑρμαῖ</name></persName>
+                    <persName type="divine" key="herakles"><name nymRef="Ἡρακλῆς">Ἡρακλεῖ</name></persName>
+                </ab></div>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+             
+             <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>[With Good Fortune. Year ? ]also year 1 of the [Emperors] Caesars M(arcus) Aurelius Antoninus and L(ucius) Aurelius Verus, Augusti, when the priest of Apollo was Poplios Agarenos Sekondos. 
+                 The ephebarch and triankatiarch was G(aios) Balerios Euphrates Phretensios <supplied reason="explanation"><foreign xml:lang="la">G(aius) Valerius Euphrates Fretensius</foreign></supplied>; 
+                 he generals, acting as gymnasirachs and dekadarchs 
+                 were G(aios) Sedios Antoneinos <supplied reason="explanation"><foreign xml:lang="la">G(aius) Sedius Antoninus</foreign></supplied> and 
+                 L(oukios) Nobios <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Novius</foreign></supplied>
+                 Iatrodoros; the akademarch was T(itos) Phlabios Phlabianos <supplied reason="explanation"><foreign xml:lang="la">T(itus) Flavius Flavianus</foreign></supplied>. The ephebes were:</p>
+                 
+                 <p><note>b: Column i</note>; [ . . .] Philemon, [ . . -]ios Markellos  <supplied reason="explanation"><foreign xml:lang="la">Marcellus</foreign></supplied>, 
+                     [ . . .] Antonios <supplied reason="explanation"><foreign xml:lang="la">Antonius</foreign></supplied>, 
+                     [ . . .] Phelix <supplied reason="explanation"><foreign xml:lang="la">Felix</foreign></supplied>, [ . . . -]os Euphemos, [ . . .] Serapodoros, 
+                     [ . . .-]lios Biktor <supplied reason="explanation"><foreign xml:lang="la">-lius Victor</foreign></supplied>, 
+                     [ .] Nobios <supplied reason="explanation"><foreign xml:lang="la">Novius</foreign></supplied> Neritos, 
+                     [ . . .] Pollios Sekoundos <supplied reason="explanation"><foreign xml:lang="la">Pollius Secundus</foreign></supplied>, 
+                     G(aios) Koilios Phelix <supplied reason="explanation"><foreign xml:lang="la">G(aius) Coelius Felix</foreign></supplied>, 
+                     A(ulos) Annios Phlakkos <supplied reason="explanation"><foreign xml:lang="la">A(ulus) Anniuis Flaccus</foreign></supplied>, 
+                     M(arkos) Oulpios Leon <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Ulpius Leo</foreign></supplied>, 
+                     Ti(berios) Klaudios Kandidos <supplied reason="explanation"><foreign xml:lang="la">Ti(berius) Claudius Candidus</foreign></supplied>, 
+                     G(aios) Ioulios Beitalis <supplied reason="explanation"><foreign xml:lang="la">G(aius) Iuluius Vitalis</foreign></supplied>, 
+                     P(oplios) Balerios Poulpianos <supplied reason="explanation"><foreign xml:lang="la">P(ublius) Valerius Publianus</foreign></supplied>, 
+                 L(oukios) Kassios Natalis <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Cassius Natalis</foreign></supplied>, 
+                     [P(oplios)] Reios <supplied reason="explanation"><foreign xml:lang="la">P(ublius) Reius</foreign></supplied> Archelaos, 
+                     [ . ] Likinios Rouphos <supplied reason="explanation"><foreign xml:lang="la">Licinius Rufus</foreign></supplied>, 
+                     G(aios) Rouphos Likinianos <supplied reason="explanation"><foreign xml:lang="la">G(aius) Rufus Licinianus</foreign></supplied>, 
+                     G(aios) Oualerios Satorneinos <supplied reason="explanation"><foreign xml:lang="la">G(aius) Valerius Satorninus</foreign></supplied>, 
+                     [ . . . -]lios Liberalios <supplied reason="explanation"><foreign xml:lang="la">Liberalis</foreign></supplied>, 
+                     [ . . . -]os Blaisios Niger <supplied reason="explanation"><foreign xml:lang="la">Baesius Niger</foreign></supplied>, 
+                 [ . . Phl]aouios Ioukoundos <supplied reason="explanation"><foreign xml:lang="la">Flavius Iucundus</foreign></supplied>, 
+                     [ . . . -]unios Masouetos, [ . . . O]ulpios <supplied reason="explanation"><foreign xml:lang="la">Ulpius </foreign></supplied> Ammonios, 
+                     Klaudios Pollion <supplied reason="explanation"><foreign xml:lang="la">Claudius Pollio</foreign></supplied>, 
+                     Stalakkios <supplied reason="explanation"><foreign xml:lang="la">Stalaccius</foreign></supplied> Hexakon, 
+                     Aur(elios) Monatis Serenos <supplied reason="explanation"><foreign xml:lang="la">Aur(elius) Manatius Serenus</foreign></supplied>, 
+                 G(aios) Antonios <supplied reason="explanation"><foreign xml:lang="la">G(aius) Antonius</foreign></supplied> Athenodoros,
+                     Ti(berios) Klaudios <supplied reason="explanation"><foreign xml:lang="la">Ti(berius) Claudius</foreign></supplied> Demetrios, 
+                 G(aios) Serouiloios Postoumios <supplied reason="explanation"><foreign xml:lang="la">G(aius) Servilius Postumius</foreign></supplied>, 
+                     G(aios) Ioulios Phelix <supplied reason="explanation"><foreign xml:lang="la">G(aius) Julius Felix</foreign></supplied>, 
+                     G(aios) Ioulios Phonteios <supplied reason="explanation"><foreign xml:lang="la">G(aius) Julius Fonteius</foreign></supplied>, 
+                     G(aios) Oppios Balerios<supplied reason="explanation"><foreign xml:lang="la">G(aius) Oppius Valerius</foreign></supplied>, 
+                     G(aios) Ioulios <supplied reason="explanation"><foreign xml:lang="la">G(aius) Julius Iambaris</foreign></supplied>, 
+                     M(arkos) Antonios Preimos <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Antonius Primus</foreign></supplied>, 
+                     Ti(berios) Klaudios <supplied reason="explanation"><foreign xml:lang="la">Ti(berius) Claudius</foreign></supplied> Iatrodoros.</p>
+             
+             
+             <p><note>b: Column ii</note> M(arkos) Oualerios Apolinaris <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Valerius Apolinaris</foreign></supplied>, 
+                 L(oukios) Ioulios Sabeinos <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Julius Sabinus</foreign></supplied>, Ioulios Donatos, 
+                 G(aios) Postoumios Optatos <supplied reason="explanation"><foreign xml:lang="la">G(aius) Postumius Optatus</foreign></supplied>, 
+                 Antonis <supplied reason="explanation"><foreign xml:lang="la">Antonius</foreign></supplied> Ktesias, 
+                 P(oplios) Ailios Loppos <supplied reason="explanation"><foreign xml:lang="la">Publius Aelius Lupus</foreign></supplied>, 
+             M(arkos) Bononios Phelix <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Bononius Felix</foreign></supplied>, 
+                 M(arkos) Antonios <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Antonius</foreign></supplied> Eutyches, 
+                 L(oukios) Aranios Krispos <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Aranius Crispus</foreign></supplied>, 
+                 L(oukios) Kaikilios Phortounatos <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Caecilius Fortunatus</foreign></supplied>, 
+                 Secretary, Apollophanes <supplied reason="subaudible">son</supplied> of Alexandros, 
+             Loukis <supplied reason="subaudible">son</supplied> of Telesis, Loulis <supplied reason="subaudible">son</supplied> of Ainilios, Alexandros <supplied reason="subaudible">son</supplied> of Euphranor, 
+             Maximos <supplied reason="subaudible">son</supplied> of Masouetos, Eukleides <supplied reason="subaudible">son</supplied> of Euphranor, Euphrax <supplied reason="subaudible">son</supplied> of Philoxenos, 
+             Gais <supplied reason="subaudible">son</supplied> of Alexandros, Klemes <supplied reason="subaudible">son</supplied> of Primos, Gais <supplied reason="subaudible">son</supplied> of Poplios, 
+             Gais <supplied reason="subaudible">son</supplied> of Memmios, Iatrodoros <supplied reason="subaudible">son</supplied> of Lysippos, Abaskantos <supplied reason="subaudible">son</supplied> of Katolios, 
+             Phronton <supplied reason="subaudible">son</supplied> of Phronton, Epikouros <supplied reason="subaudible">son</supplied> of Demetrios, Longos <supplied reason="subaudible">son</supplied> of Longos, 
+             Iason <supplied reason="subaudible">son</supplied> of Iason, Zenon <supplied reason="subaudible">son</supplied> of Theodoros, Lysippos <supplied reason="subaudible">son</supplied> of Lysippos, 
+                 Herakles<supplied reason="subaudible">son</supplied> of Alexis, Loukis <supplied reason="subaudible">son</supplied> of Markos. G . . I acting as overseer and paidonomos. 
+                 Ailios <supplied reason="explanation"><foreign xml:lang="la">Aelius</foreign></supplied> Epaphrodeitos.</p>
+            
+             <p><note>c</note> G(aios) Oualerios Euphrates Phretensios <supplied reason="explanation"><foreign xml:lang="la">G(aius) Valerius Euphrates Fretensius</foreign></supplied>, serving as Ephebarch. For Hermes and Herakles.</p></div>
+                 
+             
+             
+             
+         </div>
+         
+          <div type="commentary">
+            <head>Commentary</head>
+            <p>ll. 1-4 Dated by the emperors, between their accession in 161 and the death of Verus, in 169.</p>
+            <p>Lines 6-13:  It may be noted that dialect words and forms are mantained here among 
+                    the titles of the offices, although the organization has clearly undergone modification 
+                    since the Augustan period. The <foreign xml:lang="grc">Ἀκαδημαρχος</foreign>  and the ἐπιστατεις 
+                    και παιδονομεις are quite new features. An Ἀκαδημαρχος  appears also in two mid second century texts 
+                    cent inscription from Ptolemais (<ref type="inscription" n="P.54">P.54</ref>, <ref type="inscription" n="P.55">P.55</ref>) and may have been introduced in the period of recovery
+                    from the Jewish revolt, after which the ephebic training lapsed for a
+                    time in Cyrene.</p>
+            <p>Lines a 7/8, c: G. Valerius Euphrates Fretensius:  this name 
+                        suggests a connection with Legio X Fretensis at a time when it was stationed on the 
+                        Euphrates, i.e. before 66 CE; the man may have been a descendant of one of the military
+                        colonists sent by Trajan and Hadrian to repopulate Cyrenaica after the Jewish revolt. For a local veteran of the legion see <ref type="inscription" n="C.168">C.168</ref>.</p>
+            <p>Line b.47: The letters are unexplained.  </p>
+              <!-- for the Ephebic monument at Cyrene, see 22, 26, ?31, 34, 
+                    50, 76, 89, 90 (see especially 76) -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

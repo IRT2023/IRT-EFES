@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Asklepios</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.192</idno>
+            <idno type="ircyr2012">G06000</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>White <material>marble</material> <objectType>colonnette</objectType>; no measurements.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, below moulding.
+                           Below the text a crudely cut <rs type="decoration">palm branch</rs> and a <rs type="decoration">wreath</rs> with pendent ribbons.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lightly <rs type="execution">incised</rs> letters, in a careful common hand, perhaps third century; no measurements. dots for stops.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low" evidence="lettering">Third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>; 
+                              seen and photographed in <date type="found">1917</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot (<date type="observed">1917</date>).</p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/89055">Al Baida</placeName>
+               </term> </keywords>
+         </textClass>
+      <creation>Transcription from photograph (Reynolds)</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-21" who="CMR">created from publication</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0022a" decls="#photograph"><desc>Face (Department of Antiquities, E.720) </desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p><bibl><ptr target="jmr1971b"/>, <citedRange>2</citedRange></bibl>, <bibl><ptr target="AE"/> <citedRange>1974.681</citedRange></bibl>
+               whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD011694">011694</ref></citedRange></bibl>.</p>
+         </div>
+         
+         
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+          <lb n="1"/><persName type="attested"><name nymRef="Aelia"><expan><abbr>Ael</abbr><ex>ia</ex></expan></name> <g ref="symbols.xml#stop"/>
+             <persName type="attested"><name nymRef="Titus"><expan><abbr>T</abbr><ex>iti</ex></expan></name></persName> <g ref="symbols.xml#stop"/>
+             <w lemma="filia"><expan><abbr>f</abbr><ex>ilia</ex></expan></w>  <g ref="symbols.xml#stop"/> <name nymRef="Palatina">Palatina</name></persName>
+            <lb n="2"/><persName type="attested"><name nymRef="Iulius"><expan><abbr>Iul</abbr><ex>ius</ex></expan></name> <g ref="symbols.xml#stop"/>
+               <name nymRef="Democritus">Democritus</name>
+            <lb n="3"/> <w lemma="eques"><expan><abbr>eq</abbr><ex>ues</ex></expan></w> 
+               <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><expan><abbr>R</abbr><ex>omanus</ex></expan></placeName></persName> <g ref="symbols.xml#stop"/>
+               <w lemma="pro">pro</w> <w lemma="salus">salute</w>
+            <lb n="4"/><persName type="attested"><name nymRef="Iulius"><expan><abbr>Iulior</abbr><ex>um</ex></expan></name> <g ref="symbols.xml#stop"/>
+               <name nymRef="Saturninus">Saturnini</name></persName>
+            <lb n="5"/><w lemma="et">et</w> <persName type="attested"><name nymRef="Iulius"><!-- see l. 4 --></name> <name nymRef="Catullinus">Catullini</name></persName> <w lemma="filius"><expan><abbr>filior</abbr><ex>um</ex></expan></w>
+            <lb n="6"/><w lemma="suus">suorum</w> <g ref="symbols.xml#stop"/> <persName type="divine" key="asklepios"><name nymRef="Asculapius">Aesculapio</name></persName>
+            <lb n="7"/><w lemma="et">et</w> <persName type="divine" key="hygia"><name nymRef="Hygia">Hygiae</name></persName>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>Aelia Palatina, daughter of Titus (and) Julius Democritus, Roman Knight,
+               for the safety of their sons, Julius Saturninus and Julius Catullinus <supplied reason="subaudible">dedicated this</supplied> 
+               to Aesculapius and Hygia.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>For another dedication at Balagrae to Asklepios see <ref type="inscription" n="M.193">M.193</ref>, where he also has his other name of Iatros.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

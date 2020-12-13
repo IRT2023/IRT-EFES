@@ -73,12 +73,14 @@ function prepare_form(form, slider, inputs=[], checked_inputs=[]) {
     form.on("submit", function(e) {
         e.preventDefault();
         for (i = 0; i < inputs.length; i++) {
-            params[inputs[i]] = $("*[name=" + inputs[i] + ']').val();
+            params[inputs[i]] = $("*[name=" + inputs[i] + ']').last().val();
         }
         for (i = 0; i < checked_inputs.length; i++) {
-            values = $("*[name=" + checked_inputs[i] + ']').map(
-                function() { return $(this).val(); });
-            params[checked_inputs[i]] = values;
+            var checked_values = [];
+            $("*[name=" + checked_inputs[i] + ']:checked').each(
+                function() { checked_values.push($(this).val()); }
+            );
+            params[checked_inputs[i]] = checked_values;
         }
         document.location.href = "?" + URI.buildQuery(params);
     });

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P31000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Gladiator</rs> memorial</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.215</idno>
+            <idno type="ircyr2012">P31000</idno>
+            <idno type="JMR">463</idno>
+            <idno type="Excel">799</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Limestone</material> <objectType>stele</objectType>, damaged above (<dimensions>
+                                 <width unit="metre">0.59</width> 
+                                 <height unit="metre">1.20</height> 
+                                 <depth unit="metre">0.22</depth>
+                              </dimensions>); the face is largely occupied by a round-headed niche with flanking columns in relief, the right one very damaged; within the niche a relief of a gladiator (a retiarius).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> above (text a) and below (text b) the niche. Text a has four incised <rs type="decoration">palm branch</rs>es to the left and five to the right.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century <height unit="metre">0.03 – 0.035</height>; square sigma, square phi, cursive omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Probably from a gladiator cemetery</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Second to third centuries CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                              near the <placeName type="monuList" ref="https://www.slsgazetteer.org/965">Amphitheatre</placeName>, with <ref type="inscription" n="P.216">P.216</ref>; 
+                              found before <date type="found" atMost="1915">1915</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-09" who="CMR">tagged description, corrected text</change>
+         <change when="2009-05-14" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0115" decls="#photograph"><desc>View of the monument (Reynolds III.48)</desc></graphic><!--Dept. E. 101--></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <p>
+               <bibl><ptr target="ghislanzoni1915"/>, <citedRange>122</citedRange> and fig.27a</bibl>, whence  
+              <bibl><ptr target="AE"/> <citedRange>1915.107</citedRange></bibl>, whence               
+               <bibl><ptr target="robert1940"/>, <citedRange>67</citedRange></bibl>;
+               <bibl><ptr target="robert1946"/>, <citedRange>140</citedRange> f. and pl. IX</bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>104</citedRange></bibl>.
+            </p>
+         </div>
+
+         
+
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="section" n="a" type="textpart">
+               <ab>
+                  <lb n="1"/><persName type="attested"><name nymRef="Ἑρμῆς">Ἑρμῆϲ</name></persName>
+               </ab>
+            </div>
+            <div subtype="section" n="b" type="textpart">
+               <ab> 
+                   <lb n="1"/><persName type="attested"><name nymRef="Ἑρμῆς">Ἑρμῆϲ</name> <w lemma="ὁ">ὁ</w>
+                   <w lemma="πρίν">πρὶν</w>
+                   <lb n="2"/> <space quantity="2" unit="character"/> <name nymRef="Φίλων">Φίλων</name></persName> <space quantity="2" unit="character"/> 
+               </ab>
+            </div>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>
+               <note>a</note> Hermes</p><p>
+               <note>b</note> Hermes, who was formerly Philon</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>Approximately a pair with <ref type="inscription" n="P.216">P.216</ref>. Re-used as the cover of a late tomb.</p>
+            <p>The palm branches indicates nine victories - the same number as Hippomedon in <ref type="inscription" n="P.216">P.216</ref></p>
+            <p>On double names for gladiators see Robert, <title><ref target="https://zenon.dainst.org/Record/AR010190056">Gladiateurs</ref></title>, p. 297. 
+               Neither the original name here nor the “stage-name” (which recurs among gladiators, Robert p.109) are at all innovative.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

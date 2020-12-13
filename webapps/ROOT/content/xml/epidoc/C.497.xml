@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C37300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of a statue of Parthenos and a shrine</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.497</idno>
+            <idno type="ircyr2012">C93900</idno>
+            <idno type="JMR">919</idno>
+            <idno type="Excel">77</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Major part of white <material>marble</material> <objectType>base</objectType>, with a circular depression on top, 
+                              broken above, moulded below, damaged along all edges 
+                              (<dimensions><width>0.50</width> <height>0.24</height> <depth>0.40</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First-second century. Letters, apparently drawn freehand, with ovals for the circles:
+                        line 1, <height>0.03</height>; lines 2,4, <height>0.02</height>; line 3, <height>0.025</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</ref></origPlace>
+                     <origDate notAfter="0200" notBefore="0101" precision="low" evidence="lettering prosopography">Second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              very probably the <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Extramural Sanctuary of Demeter and Kore</placeName>;
+                              recorded in <date type="found">1916</date>.
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">upadated from C37300 acording to text C.5 in Joyce2(text)-2.xcoded.doc</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_919front" decls="#photograph"><desc>Face (Reynolds VIII.17)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+                <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">71</citedRange> (63), pl. XIX, fig 26</bibl>,
+                whence <bibl><ptr target="SEG"/> <citedRange>9.163</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324014">324014</ref></citedRange></bibl>;
+                <bibl><ptr target="jmr2012"/>, <citedRange>B.5</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Κλαυδία"><expan><abbr><supplied reason="lost">Κ</supplied>λ</abbr><ex>αυδία</ex></expan></name> 
+                       <g ref="symbols.xml#stop"/> <name nymRef="Βενόστα"><unclear>Βε</unclear>νόσ<unclear>τ</unclear>α</name> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-64602"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αυδίου</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Καρτισθένης">Κ<supplied reason="lost">αρ</supplied><lb n="2" break="no"/><unclear>τ</unclear>ισθένους</name></persName> 
+                     <w lemma="θυγάτηρ">θυγάτηρ</w></persName> <g ref="symbols.xml#stop"/> <w lemma="ὁ">τ<unclear>ὰ</unclear><supplied reason="lost">ν</supplied></w>
+                    <lb n="3"/><persName type="divine" key="parthenos"><name nymRef="Παρθένος">Παρθένον</name></persName> <g ref="symbols.xml#stop"/> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w>
+                    <lb n="4"/> <space quantity="4" unit="character"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w> <g ref="symbols.xml#leaf"/> <space quantity="6" unit="character"/></ab>
+         </div>
+         
+         <div type="apparatus">
+            <p/>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" xml:lang="it" source="#oliverioDAI2"><p>
+               Claudia Venosta, di Claudio Cartistene figlia la (statua della) Vergine, a proprie spese, ed il tempio (consacrò)</p></div>
+         </div>
+         <div type="translation" xml:lang="en" source="#jmr2012"><p>
+               Claudia Venusta, daughter of Claudius Kartisthenes, gave the Parthenos from her own funds, and the temple.
+            </p></div>
+         <div type="translation" xml:lang="en" resp="#cmr"><p>Kl(audia) Benosta 
+            <supplied reason="explanation"><foreign xml:lang="la">Cl(audia) Venusta</foreign></supplied>, daughter of Kl(audios) <supplied reason="explanation"><foreign xml:lang="la">Cl(audius)</foreign></supplied> 
+            Kartisthenes <supplied reason="subaudible">gave</supplied> the Parthenos from her own funds, and the temple.
+         </p></div>
+
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Claudia Venusta and her father also figure in <ref type="inscription" n="C.495">C.495</ref>, <ref type="inscription" n="C.456">C.456</ref>, 
+               <ref type="inscription" n="C.497">C.497</ref> and <ref type="inscription" n="C.498">C.498</ref> which record other dedications that she made, almost certainly 
+               in this Sanctuary. See further on <ref type="inscription" n="C.456">C.456</ref>. Mohamed and Reynolds questioned the normally proposed identity of 
+               Kore and Parthenos, suggesting that Parthenos was Athena, but I have come to feel that rash. Mohamed and Reynolds questioned the normally proposed identity of 
+               Kore and Parthenos, suggesting that Parthenos was Athena, but I have come to feel that rash. </p>
+            <!-- line 1 also in 917 line 1, 918 line 1, 920 line 1</p>
+                <p> line 2 also in 917, lines 1-2; 918, lines 1-2; 920, lines 1-2; and probably 822d </p>
+                <p> line 4 See also 919, lines2-3 for a Kore offered by the same dedicant.</p> -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

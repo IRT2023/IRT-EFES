@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T12500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s
+            </title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.163</idno>
+            <idno type="ircyr2012">T12500</idno>
+            <idno type="JMR">70.46</idno>
+            <idno type="Excel">1558</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three adjacent <material>sandstone</material> blocks( a: <dimensions><width>72</width> <height>56</height></dimensions>; b: <dimensions><width>75</width> <height>56</height></dimensions>;
+                              c: <dimensions><width>70</width> <height>57</height></dimensions>) in the City Wall, in a group which comprises 
+                              <ref type="inscription" n="T.163">T.163</ref>, <ref type="inscription" n="T.164">T.164</ref>, <ref type="inscription" n="T.165">T.165</ref>,
+                              <ref type="inscription" n="T.166">T.166</ref>, <ref type="inscription" n="T.168">T.168</ref>, <ref type="inscription" n="T.169">T.169</ref>, <ref type="inscription" n="T.170">T.170</ref>, 
+                              <ref type="inscription" n="T.171">T.171</ref>, <ref type="inscription" n="T.172">T.172</ref>, <ref type="inscription" n="T.173">T.173</ref>, <ref type="inscription" n="T.174">T.174</ref>, <ref type="inscription" n="T.175">T.175</ref>. 
+                              In the second inscribed course.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> on the face: i: on block a, continued onto block b and completed on block c; ii.-iii: on block a; iv: on block b.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i, <height>0.43</height>; ii, iii, <height>0.07</height>; iv, <height>0.05</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0008" notAfter="0009" evidence="internal-date">iii: 9/10 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>:  
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1126">East Wall</placeName>: in situ on the inner face, the third group south of the east gate.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-16" who="MGDA">Tagged header information</change>
+         <change when="2011-03-10" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-08-11" who="Pietro">Tokenized</change>
+         <change when="2009-02-17" who="VA">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNB12_093_002" decls="#photograph"><desc>Blocks a and b, with <ref type="inscription" n="T.170">T.170</ref>.c 
+      below (Reynolds XII.93.2)</desc></graphic></facsimile><!-- check image -->
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverioDAI2"/>, <citedRange unit="entry">167</citedRange> (VII,30, 31, 71), p. 173</bibl>, whence 
+                    <bibl>
+                  <ptr target="SEG"/> <citedRange>9.439</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324286">324286</ref></citedRange></bibl>, <bibl>
+                  <ptr target="applebaum1958"/>, <citedRange>74</citedRange></bibl>, 
+               whence <bibl><ptr target="robertBE"/>, <citedRange>1960.440</citedRange></bibl>, <bibl>
+                  <ptr target="SEG"/> <citedRange>16.875</citedRange></bibl>; discussed <bibl><ptr target="gl-jmr1983"/>, <citedRange>41.c</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>33.1474</citedRange></bibl>, <bibl>
+                           <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324648">324648</ref></citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="fragment" n="i" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60228"><name nymRef="Μένης">Μένης</name></persName>
+                    </ab></div>
+            <div subtype="fragment" n="ii" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-60227"><name nymRef="Ἀρίσαν">Ἀρί<unclear>σαν</unclear></name></persName>
+                    </ab></div>
+            <div subtype="fragment" n="iii" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/puESXHZfTKfs9yv8eWsbnh"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                        <num value="40">μ</num></date> <persName type="attested"><name nymRef="Φιλ-"><seg part="I">Φιλ</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div>
+            <div subtype="fragment" n="iv" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/ouhBTeRAKRdAYWYa6u7KKT"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="14">ιδ</num></date> <persName type="attested" key="lgpn:V1-60226"><name nymRef="Ἀριστέας">Ἀριστέας</name></persName>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="i.1"><rdg resp="#oliverioDAI2">Μένι(ο)ς? / --ν</rdg> </app>
+               <app loc="ii.1"><rdg resp="#oliverioDAI2">Ἀρί<unclear>β</unclear>α(ι)[ος ?</rdg> 
+                  <rdg resp="#SEG">Ἀριβαῖ[ος?].</rdg></app>
+               <app loc="iii.1"><lem><num value="40">μ</num></lem><rdg resp="#oliverioDAI2"><num value="10">ι</num></rdg> </app>
+              
+                  
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Menio? Aribeo ? Anno 10 Fil- Anno 14 Aristeas</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> Menes. <note>ii</note> Arisan. 
+               <note>iii</note> <ref target="https://godot.date/id/puESXHZfTKfs9yv8eWsbnh">Year 40</ref>, Phil[-. 
+               <note>iv</note> <ref target="https://godot.date/id/ouhBTeRAKRdAYWYa6u7KKT">Year 14</ref>, Aristeas.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            
+            <p>ii: Applebaum following Oliverio's reading 'Αριβα took it as part of an ethnic 'Αριβαῖος which 
+                    he derived from Kephar Haribah and explained as referring to a Jewish émigré of the time of the
+                    Maccabees; whatever the reading it seems more probable that this is a personal name; see Lüderitz op.cit.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

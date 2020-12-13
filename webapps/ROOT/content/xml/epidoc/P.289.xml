@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P39100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.289</idno>
+            <idno type="ircyr2012">P39100</idno>
+            <idno type="JMR">470c</idno>
+            <idno type="Excel">801</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType>, on the façade with 
+                              <ref type="inscription" n="P.287">P.287</ref>, <ref type="inscription" n="P.288">P.288</ref> and <ref type="inscription" n="P.289">P.289</ref>.
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> below <ref type="inscription" n="P.288">P.288</ref>, 
+                           within a rectangular panel outlined by an incised line (<dimensions>
+                              <width unit="metre">0.28</width> 
+                              <height unit="metre">0.28</height>
+                           </dimensions>). 
+                    A crack in the rock cuts across lines 1 and 2.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Very rough: lunate epsilon, lunate sigma, cursive omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate evidence="lettering" precision="low" notBefore="0001" notAfter="0100">First century A.D </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/972">Quarry III</placeName>, south wall; 
+                              first recorded in <date type="found">1825</date>.</p>
+                         </provenance>
+                        <provenance type="observed">
+                            <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+          <change when="2013-08-05" who="TW">tagged a word</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-01-23" who="CMR">tagged description, corrected text</change>
+         <change when="2009-09-02" who="Pietro">copied straight into xml and marked.</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXV" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXV)</desc></graphic>
+      <graphic url="JMR_470_004" decls="#photograph"><desc>Text (Joyce Reynolds V.34, Tolmeita I.34)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/> <citedRange unit="plate">LXXV</citedRange></bibl>, whence 
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5189</citedRange></bibl>;  <bibl><ptr target="masson-jmr1978"/>, <citedRange>19</citedRange> copy by M.Guirand (1895) mentioned</bibl>;
+                    <bibl><ptr target="robinson1913"/>, from Norton, <citedRange>85</citedRange> (lines 3 and 4 only)</bibl>
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-61307"><name nymRef="Θασσα">Θ<unclear>αϲϲα</unclear></name>
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-61075"><name nymRef="Ἀμωνέας"><unclear>Ἀ</unclear>μων<lb n="3" break="no"/>έαϲ</name></persName></persName> <space quantity="1" unit="character"/>
+                    <lb n="4"/><date type="life-span" dur="P25Y"><w lemma="ἔτος">ἐτῶν</w> 
+                    <lb n="5"/> <space quantity="1" unit="character"/> 
+                    <num value="25">κε</num> <space quantity="3" unit="character"/></date>
+                 </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="1">
+                       <rdg resp="#pacho1827">ΘΛΕΙΧΑ</rdg>
+                       <rdg resp="#cigiii">[L] θ΄ Λείχα[ς]</rdg>
+                       <note>Robinson omits lines 1 and 2</note></app>
+                
+                    <app loc="2">
+                        <rdg resp="#pacho1827">ΑΜWΝ</rdg>
+                       <rdg resp="#cigiii">Ἀμ[μ]ων[ίου ἐτ-</rdg>
+                    </app>
+               <app loc="3">
+                        <rdg resp="#pacho1827">ΕΛC</rdg>
+                  <rdg resp="#cigiii">ελ[εύτησεν</rdg>
+                  <rdg resp="#robinson1913">ϹΑϹ</rdg></app>
+                    <app loc="4">
+                        <rdg resp="#pacho1827">ETIIIN</rdg></app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" xml:lang="en" resp="#edd"><p>Thassa (?) <supplied reason="subaudible">daughter</supplied> of Amonea, aged 25.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1: The reading is very uncertain; but it appears that Thassa is identified by the name of her mother, Amonea, strongly suggesting that she was a slave.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

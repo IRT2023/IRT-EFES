@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G01400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">List</rs> of <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.96</idno>
+            <idno type="ircyr2012">G01400</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1095">Tocra Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Sandstone</material>
+                              <objectType>stele</objectType> (<dimensions><width>0.44</width> <height>1.46</height> <depth>0.23-0.215</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" key="scalpro">Inscribed</rs> on one face which is chipped along
+                           all edges and intermittently pitted on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Letter heights very variable: <height unit="metre" precision="low"><!--check measurements--></height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown
+                     </origPlace>
+                     <origDate notAfter="0100" notBefore="0001" cert="low" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     Gasr Hmeda near <placeName ref="https://www.slsgazetteer.org/1249">El Hmeda</placeName>; found in <date type="found">1969</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1095">Tocra Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://www.geonames.org/82178">Sidi Humayyid</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc
+            RNG schema v. 8)</change>
+         <change when="2007-11-14" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="JMRNS01_024" decls="#photograph"><desc>Face (Reynolds NS.I.24)</desc></graphic>
+      <graphic url="JMRNS01_025" decls="#photograph"><desc>Face (Reynolds NS.I.25)</desc></graphic>
+      <graphic url="JMRNS01_026" decls="#photograph"><desc>Face (Reynolds NS.I.26)</desc></graphic></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned, <bibl><ptr target="masson1976"/>, <citedRange>57-58</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab><!--this text seems not to be in its definitive form - check with JMR-->
+            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ι</unclear>κ</orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="2"/><persName type="attested"><name nymRef="Σωσικράτης"><supplied reason="lost">Σ</supplied>ωσικρά<supplied reason="lost">της</supplied></name>
+              <persName type="attested"><name nymRef="Σωσικράτης"><unclear>Σω</unclear>σικρά<supplied reason="lost">τους</supplied></name></persName></persName> 
+            <lb n="3"/><persName type="attested"><name nymRef="Δᾶμις"><unclear>Δᾶ</unclear>μις</name>
+               <persName type="attested"><name nymRef="Σα-"><seg part="I">Σ<unclear>α</unclear></seg><gap reason="lost" quantity="1" unit="character"/><seg part="F"><unclear>α</unclear>ιω</seg></name></persName></persName>
+               <space/>
+            <lb n="4"/><persName type="attested" key="lgpn:V1-61712"><name nymRef="Χιμαλυαν"><unclear>Χ</unclear>ι<unclear>μ</unclear>αλυαν</name>
+               <persName type="attested"><name nymRef="Ἀριμμαλυνος">Ἀριμμα<unclear>λ</unclear>υνω</name></persName></persName>
+            <lb n="5"/><persName type="attested"><name nymRef="Ἀρίμμας">Ἀρί<supplied reason="lost">μ</supplied>μας</name>
+              <persName type="attested"><name nymRef="Ἀρίσαν">Ἀ<unclear>ρι</unclear> <space/>σαν<supplied reason="lost">τος</supplied></name></persName></persName> 
+            <lb n="6"/><persName type="attested"><gap reason="lost" quantity="1" unit="character"/><name nymRef="-οιριων"><seg part="F"><unclear>οι</unclear>ριων</seg></name>
+               <space/> <persName type="attested"><name nymRef="Ἰάσων">Ἰάσονο<unclear>ς</unclear></name></persName></persName> 
+            <lb n="7"/><persName type="attested"><name nymRef="Παυσανίας"><supplied reason="lost">Π</supplied><unclear>αυσ</unclear>ανίας</name>
+              <persName type="attested"><name nymRef="Ἰάσων">Ἰάσο<unclear>ν</unclear>ος</name></persName></persName> 
+            <lb n="8"/><persName type="attested"><name nymRef="Ἀρίμμας">Ἀρίμμας</name> 
+               <persName type="attested"><name nymRef="Ἀντιδ-"><seg part="I">Ἀντ<unclear>ιδ</unclear></seg><gap reason="lost" quantity="3" unit="character"/><seg part="F">ω</seg></name></persName></persName>
+            <lb n="9"/><persName type="attested" key="lgpn:V1-60782"><name nymRef="Ἀτθυμάλλας"><unclear>Ἀτθ</unclear>υμάλλας</name>
+               <orig>ω</orig> <persName type="attested"><name nymRef="Ὕρατθις">Ὑράτθιος</name></persName></persName> 
+            <lb n="10"/><persName type="attested"><gap reason="lost" quantity="1" unit="character"/><name nymRef="-ατων"><seg part="F">α<unclear>τ</unclear>ων</seg></name>
+                <space/> <persName type="attested"><name nymRef="Θεόδοτος">θε<unclear>ο</unclear>δ<unclear>ό</unclear>του</name></persName></persName>
+            <lb n="11"/><persName type="attested"><name nymRef="Ἀνύσσαν"><unclear>Ἀνύ</unclear>σσαν</name>  <space/> 
+              <persName type="attested"><name nymRef="Αὐταρνις">Α<unclear>ὐτ</unclear>α<unclear>ρν</unclear>ιος</name></persName></persName> 
+            <lb n="12"/><persName type="attested"><name nymRef="Θεόχρηστος"><supplied reason="lost">θ</supplied><unclear>εόχρηστ</unclear>ος</name>
+              <persName type="attested"><name nymRef="Δαριων">Δ<unclear>αρ</unclear>ιωνος</name></persName></persName>  
+            <lb n="13"/><persName type="attested"><name nymRef="Ἀρίμμας">Ἀρίμμας</name> <space/> 
+               <persName type="attested"><name nymRef="Ν-"><seg part="I">Ν</seg><gap reason="lost" quantity="2" unit="character"/><seg part="F">ωνος</seg></name></persName></persName> 
+            <lb n="14"/><orig>φ</orig><gap reason="lost" quantity="2" unit="character"/><orig>μ</orig><gap reason="lost" quantity="1" unit="character"/><orig><unclear>να</unclear>κις</orig><gap reason="lost" quantity="1" unit="character"/><orig>μ</orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="15"/><persName type="attested"><name nymRef="Δαιλισος"><unclear>Δαιλισος</unclear></name>
+              <persName type="attested"><name nymRef="Ἄνιος">Ἄ<unclear>ν</unclear>ιω</name></persName></persName>
+            <lb n="16"/><persName type="attested"><name nymRef="Ἀπολλώνιος">Ἀπολλών<unclear>ιος</unclear></name>
+               <persName type="attested"><name nymRef="Φιλόξενος">Φιλοξένω</name></persName></persName>
+            <lb n="17"/><persName type="attested"><name nymRef="Δάχις">Δάχις</name>
+               <persName type="attested" key="lgpn:V1-60782"><name nymRef="Ἀτθυμάλλας"><supplied reason="lost">Ἀτ</supplied><unclear>θυμ</unclear>ά<unclear>λ</unclear>λ<unclear>α</unclear></name></persName></persName> 
+            <lb n="18"/><persName type="attested"><name nymRef="Θεογένης">Θεογένη<unclear>ς</unclear></name> 
+               <persName type="attested"><name nymRef="Δάχις"><unclear>Δ</unclear>ά<unclear>χ</unclear>ι<unclear>ο</unclear>ς</name></persName></persName> <space quantity="2" unit="character"/>
+            <lb n="19"/><persName type="attested"><name nymRef="Σ-"><seg part="I"><unclear>Σ</unclear></seg><gap reason="lost" quantity="3" unit="character"/><seg part="F"><unclear>ο</unclear>ς</seg></name>
+               <persName type="attested"><name nymRef="Πράξων"><unclear>Π</unclear><supplied reason="lost">ρ</supplied><unclear>άξ</unclear>ωνος</name></persName></persName> 
+            <lb n="20"/><gap reason="lost" quantity="4" unit="character"/><persName type="attested"><name nymRef="-δαμος"><seg part="F">δαμος</seg></name>
+               <persName type="attested"><name nymRef="Ἀριμμασπ-"><seg part="I">Ἀριμμασπ</seg><gap reason="lost" quantity="1" unit="character"/></name></persName></persName>
+            <lb n="21"/><persName type="attested"><gap reason="lost" quantity="4" unit="character"/><name nymRef="-ατθις"><seg part="F"><supplied reason="lost">α</supplied>τθις</seg></name>
+               <persName type="attested"><name nymRef="Παυσανίας">Π<unclear>α</unclear>υσανία</name></persName></persName>
+            <lb n="22"/><persName type="attested"><gap reason="lost" quantity="5" unit="character"/><name nymRef="-σαν"><seg part="F">σαν</seg></name>
+               <persName type="attested"><name nymRef="Λεπτῖνος"><unclear>Λ</unclear>επ<unclear>τίν</unclear>ω</name></persName></persName>
+            <lb n="23"/><gap reason="lost" quantity="6" unit="character"/> <space/> 
+               <persName type="attested"><name nymRef="Μιττις"><unclear>Μ</unclear>ιττιος</name></persName> 
+            <lb n="24"/><persName type="attested"><gap reason="lost" quantity="5" unit="character"/><name nymRef="-τας"><seg part="F">τας</seg></name> 
+              <persName type="attested"><name nymRef="Θεόδωρος">Θεοδ<unclear>ώρ</unclear>ου</name></persName></persName>
+            <lb n="25"/><persName type="attested"><gap reason="lost" quantity="6" unit="character"/><name nymRef="-λυσας"><seg part="F"><unclear>λ</unclear>υσας</seg></name>
+               <persName type="attested"><orig><unclear>ιιλολω</unclear>τα</orig></persName></persName>
+            <lb n="26"/><gap reason="lost" quantity="14" unit="character"/><orig>α</orig><gap reason="lost" quantity="5" unit="character"/>
+            <lb n="27"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>οσλ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="28"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>κ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="29"/><persName type="attested"><gap reason="lost" quantity="3" unit="character"/><name nymRef="-ις"><seg part="F"><unclear>ι</unclear>ς</seg></name>
+               <persName type="attested"><name nymRef="Ὕρατθις">Ὑρ<unclear>άτθ</unclear>ιος</name></persName></persName>  <space/>
+            <lb n="30"/><persName type="attested"><name nymRef="-"><gap reason="lost" extent="unknown" unit="character"/><seg part="F"><orig>λλλ</orig><gap reason="lost" quantity="1" unit="character"/><orig>ς</orig></seg></name>
+               <persName type="attested"><name nymRef="Απ-"><seg part="I">Απ</seg><gap reason="lost" quantity="2" unit="character"/><seg part="F">ολω</seg></name></persName></persName>
+            <lb n="31"/><persName type="attested"><gap reason="lost" quantity="3" unit="character"/><name nymRef="-ος"><seg part="F">τ<unclear>ο</unclear>ς</seg></name>
+               <persName type="attested" key="lgpn:V1-60782"><name nymRef="Ἀτθυμάλλας">Ἀτθυμάλλα</name></persName></persName>
+            <lb n="32"/><persName type="attested"><gap reason="lost" quantity="6" unit="character"/><name nymRef="-ος"><seg part="F">ος</seg></name>
+              <persName type="attested"><name nymRef="Πεντάριστος">Π<unclear>ε</unclear>νταρίστ<unclear>ω</unclear></name></persName></persName>
+            <lb n="33"/><persName type="attested"><gap reason="lost" quantity="3" unit="character"/><name nymRef="-όδωρος"><seg part="F"><unclear>ό</unclear>δωρος</seg></name>
+               <persName type="attested"><name nymRef="Ἀντισθένης">Ἀντισθένου<supplied reason="lost">ς</supplied></name></persName></persName> 
+            <lb n="34"/><gap reason="lost" quantity="5" unit="character" precision="low"/>
+               <persName type="attested"><name nymRef="Ἰτθαννυρας"><unclear>Ἰτ</unclear>θαννυρας</name></persName>
+               <orig><unclear>χυλ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+           <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ] Sosikrates <supplied reason="subaudible">son</supplied> of Sosikrates; Damis 
+           <supplied reason="subaudible">son</supplied> of S-aios?; Chimaluan <supplied reason="subaudible">son</supplied> of Arimmalynos; Arimmas 
+           <supplied reason="subaudible">son</supplied> of Arisan; -rion <supplied reason="subaudible">son</supplied> of Iason; Pausanoas <supplied reason="subaudible">son</supplied> of Iason; 
+           Arimmas <supplied reason="subaudible">son</supplied> of Antid- ; Atthymallas <supplied reason="subaudible">son</supplied> of Hyratthis; -aton 
+              Theodotos; Anyssan <supplied reason="subaudible">son</supplied> of Autarnis; Theochretos <supplied reason="subaudible">son</supplied> of Darion; Arimmas 
+              <supplied reason="subaudible">son</supplied> of N[- ; [ . . . ] Dailisos <supplied reason="subaudible">son</supplied> of Anios; Apollonios <supplied reason="subaudible">son</supplied> of 
+           Philoxenos; Dachis <supplied reason="subaudible">son</supplied> of Atthymallas; Theogenes <supplied reason="subaudible">son</supplied> of Dachis; [ . . . ] 
+           <supplied reason="subaudible">son</supplied> of Praxon; -damos <supplied reason="subaudible">son</supplied> of Arimmasp[os]; -atthis <supplied reason="subaudible">son</supplied> of 
+           Pausanias; -san <supplied reason="subaudible">son</supplied> of Leptinos; ? <supplied reason="subaudible">son</supplied> of Mittis; -tas <supplied reason="subaudible">son</supplied> of 
+           Theodoros; -lysas [ . . . 3 lines . . . ] <supplied reason="subaudible">son</supplied> of Hyratthis; [ . . . ] -tos <supplied reason="subaudible">son</supplied> of Atthymallas; 
+           -os <supplied reason="subaudible">son</supplied> of Pentaristos; -odoros <supplied reason="subaudible">son</supplied> of Antisthenes; Itthannyras <supplied reason="subaudible">son</supplied> of ?.</p></div>
+         </div>
+         
+         <div type="commentary">
+            
+            <p>This is an elaborate inscription for a country site so far off the main road system.
+               <!--unfinished note could be added if completed. What is V1-61156--> 
+               The purpose of the list of names
+               is uncertain, but possibly they were men capable of military service or members of a
+               confraternity of some sort (but the numbers seem large for that). The number of Greek
+               names listed is perhaps as interesting, given the findspots, as the number of native
+               ones.</p>
+            <p>The variable letter sizes suggests that the names were not all cut at once, in which
+               case this might possibly be a list of magistrates.</p>
+         </div>
+
+      </body>
+   </text>
+</TEI>

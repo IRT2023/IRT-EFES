@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M.300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> fragment
+            </title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.300</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1288">Barke Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from the left side of a <material>sandstone</material> <objectType>stele</objectType> (no measurements)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face within a sunk area between broad flanking borders.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Perhaps first century CE, well cut and aligned: no measurements.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" precision="low" cert="low" evidence="lettering">Perhaps first century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     in the area of <placeName ref="https://www.slsgazetteer.org/1181">Barke</placeName>;
+                              photographed in the museum in <date type="found">1930</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/1288">Barke Museum</placeName> (<date type="observed">1930</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/80505">Marj</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from the photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2019-07-04" who="CMR">created from notes</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="G02500-G02700_DeptE1404" decls="#photograph">
+      <desc>From left: <ref type="inscription" n="M.300">M.300</ref>(above), <ref type="inscription" n="M.113">M.113</ref> (below), <ref type="inscription" n="M.114">M.114</ref> and 
+         <ref type="inscription" n="M.112">M.112</ref> (Department of Antiquities, E. 1404)</desc>
+   </graphic></facsimile>
+   
+   <text>
+      <body>
+         <div type="bibliography">
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1a"/><gap reason="lost" unit="line" quantity="1"/><lb 
+                       n="1" break="no"/><persName type="attested"><name nymRef="-λος"><seg part="F">λοϲ</seg></name></persName> <persName type="attested"><name nymRef="Ἵππαλος">Ἱππάλ<unclear>ω</unclear></name></persName> <gap reason="lost" cert="low" extent="unknown" unit="character"/>
+                    <lb n="2"/> <space quantity="3" unit="character"/><orig>εξη</orig><space quantity="3" unit="character"/>
+                    
+                </ab>
+         </div>
+         
+
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" xml:lang="en" resp="#edd">
+               <p>[? Year X, ?Hippa]los <supplied reason="subaudible">son</supplied> of Hippalos</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>Line 1: The missing name might be Ἵππα]λος</p>
+               <p>Line 2 presumably gives the age at death. It is possible that a year sign has been lost at the end of line 1, in which case line 2 would 
+               contain a number, ?ἑξή(κοντα), sixty; but this is not a common abbreviation. An alternative abbreviation, also unusual, would be 
+               ἐ(τῶν) ξη΄, aged 68.</p>
+              
+         </div>
+         
+      </body>
+   </text>
+</TEI>

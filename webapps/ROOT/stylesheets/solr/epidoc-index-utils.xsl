@@ -57,6 +57,7 @@
         </xsl:if>
       </xsl:for-each>
       <xsl:text>#</xsl:text>
+      <xsl:if test="ancestor::tei:div[@type='edition']">
       <xsl:value-of select="preceding::tei:lb[1]/@n" />
       <xsl:text>#</xsl:text>
       <xsl:choose>
@@ -67,6 +68,7 @@
           <xsl:text>0</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
+      </xsl:if>
     </field>
   </xsl:template>
 

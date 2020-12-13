@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C81000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Boundary</rs> marker</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.147</idno>
+            <idno type="ircyr2012">C81000</idno>
+            <idno type="JMR">Y 15</idno>
+            <idno type="Excel">1200</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of a brown <material>limestone</material> <objectType>stele</objectType> 
+                              (<dimensions>
+                                 <width>0.42</width>
+                                 <height>0.39</height>
+                                 <depth>0.60</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the surviving face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Average <height>0.04</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notAfter="0071" notBefore="0071" evidence="titulature">71 CE, second half</origDate>
+                  </origin><provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              rre-used in the area of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>; 
+                              found in <date type="found">1916</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription, supplemented from the photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-16" who="AIO">tokenized</change>
+         <change when="2009-08-25" who="Paolo">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. F. 361 taken when the stone was in better condition than now.--><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="ghislanzoni1916a"/>, <citedRange>176</citedRange> with illustration, fig. 5</bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>9.167</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324018">324018</ref></citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/> <gap reason="lost" quantity="3" unit="character"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><supplied reason="lost"><w lemma="δημαρχικός">δημαρ<lb 
+                       n="2" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w></supplied>
+                    <lb n="3"/> <w lemma="ὁ"><unclear>τ</unclear>ὸ</w> 
+                    <num value="3"><unclear>γ</unclear></num> <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτωρ</supplied></w>
+                    <lb n="4"/> <w lemma="ὁ"><unclear>τ</unclear>ὸ</w> <num value="8">η</num> 
+                    <w lemma="πατήρ">πα<unclear>τὴρ</unclear></w>
+                     <w lemma="πατρίς"><unclear>π</unclear><supplied reason="lost">ατρί</supplied><lb n="5" break="no"/><supplied reason="lost">δ</supplied>ος</w>
+                    <w lemma="ὕπατος">ὕπατος</w> <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> </supplied>
+                    <lb n="6"/> <w lemma=""><supplied reason="lost">δ</supplied>εδειγμένος</w> <w lemma="ὁ">τ<supplied reason="lost">ὸ</supplied></w> <supplied reason="lost"><num value="4">δ</num> </supplied></date>
+                    <lb n="7"/> <w lemma="διά"><supplied reason="lost">δ</supplied>ιὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> 
+                    <name nymRef="Πακώνιος">Πακω<unclear>ν</unclear><supplied reason="lost">ίου</supplied></name>
+                    <lb n="8"/><name nymRef="Ἀγριππῖνος"><supplied reason="lost">Ἀ</supplied>γριππείνο<supplied reason="lost">υ</supplied></name></persName> <w lemma="ἴδιος"><supplied reason="lost">ἰδί<lb 
+                       n="9" break="no"/>ου</supplied></w> <w lemma="πρεσβευτής"><supplied reason="lost">π</supplied>ρεσβευτο<supplied reason="lost">ῦ</supplied></w> <gap reason="lost" quantity="3" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA">[Emperor Caesar Vespasian, holding tribunician power] for the third time, [acclaimed imperator] for the 8th time, father of the country, 
+            consul [three times], designated consul [for the fourth time]</ref>: through Quintus Paconius Agrippinus [his own] envoy [ . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> Although it is possible, it cannot be taken as certain that the land concerned lay within the city wall; 
+               broken as it is, the stone could have been brought from outside with comparative ease. </p>
+            <p>In line 3 γ is the only figure that corresponds with surviving traces; 
+               the date is presumably the second half of 71 as in <ref type="inscription" n="C.429">C.429</ref>.
+            </p>
+            <p>Q. Paconius Agrippinus, for whom see <title>PIR<hi rend="superscript">2</hi></title> P 0027, was active in Cyrenaica under Vespasian, 71-74 CE: see <ref type="inscription" n="C.147">C.147</ref>,
+               <ref type="inscription" n="C.428">C.428</ref>, <ref type="inscription" n="C.429">C.429</ref>, <ref type="inscription" n="C.430">C.430</ref>, 
+               <ref type="inscription" n="C.430">C.438</ref>, <ref type="inscription" n="C.747">C.747</ref>, <ref type="inscription" n="M.68">M.68</ref>,
+               <ref type="inscription" n="M.165">M.165</ref>, <ref type="inscription" n="M.229">M.229</ref>, <ref type="inscription" n="M.230">M.230</ref>, 
+               <ref type="inscription" n="M.232">M.232</ref>, <ref type="inscription" n="M.238">M.238</ref>, <ref type="inscription" n="M.239">M.239</ref>,
+               <ref type="inscription" n="P.397">P.397</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

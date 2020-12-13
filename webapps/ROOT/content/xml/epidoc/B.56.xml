@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Funerary</rs> inscription</title>
+                             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">B.56</idno>
+            <idno type="ircyr2012">B07951</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository>Findspot</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p><material>Rock</material>-cut <objectType>tomb</objectType>, with <ref type="inscription" n="B.54">B.54</ref> 
+                                        on the façade, <ref type="inscription" n="B.56">B.56</ref>, <ref type="inscription" n="B.57">B.57</ref>, <ref type="inscription" n="B.58">B.58</ref>, 
+                                        <ref type="inscription" n="B.59">B.59</ref>, <ref type="inscription" n="B.60">B.60</ref>, <ref type="inscription" n="B.61">B.61</ref>, 
+                                        <ref type="inscription" n="B.62">B.62</ref>, <ref type="inscription" n="B.63">B.63</ref>, <ref type="inscription" n="B.64">B.64</ref>, 
+                                        <ref type="inscription" n="B.65">B.65</ref>, <ref type="inscription" n="B.66">B.66</ref>. <ref type="inscription" n="B.67">B.67</ref>, 
+                                        <ref type="inscription" n="B.68">B.68</ref> on the interior walls.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on an internal wall.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>No description</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot.</origPlace>
+                            <origDate notBefore="-0200" notAfter="0100" precision="low" evidence="lettering" cert="low">Hellenistic or early Roman </origDate>
+                        </origin>
+                        
+                            
+                                <provenance type="found">
+                                    <p>
+                                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/910">Berenike</placeName>, 
+                                        <placeName type="monuList" ref="https://www.slsgazetteer.org/1214">Ain es-Selmani</placeName>; recorded in <date type="found">1860</date>.</p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p>Findspot (<date type="observed">1860</date>).</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+            <creation>Transcription from previous publication (Reynolds).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2011-08-12" who="Pietro">entered and tagged text</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p>
+                    Copied by F.H. Crowe in 1860, whence  
+                    <bibl><ptr target="bailey1988"/>, <citedRange>92</citedRange> and fig. 5</bibl>, 
+                    whence <bibl><ptr target="jmr2002"/>, <citedRange>2</citedRange></bibl>,
+                    whence <bibl><ptr target="cdlBE"/>, <citedRange>2004.439</citedRange></bibl>, <bibl><ptr target="SEG"/> <citedRange>52.1821</citedRange></bibl>.
+                </p>
+            </div>
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+                <ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Κλαυδία">Κλα<supplied reason="lost">υδί</supplied>α</name> 
+                    <lb n="2"/><name nymRef="Μεγιλλώ">Με<unclear>γ</unclear>ι<unclear>λλ</unclear>ω</name></persName>
+                </ab>
+            </div>
+            <div type="apparatus">
+                <head>
+                    Apparatus
+                </head>
+                <listApp><app><note>Crowe reported  ΚΛΑ AMETIANΩ</note></app>
+                </listApp>
+                </div>
+            <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>Klaudia <supplied reason="explanation"><foreign xml:lang="la">Claudia</foreign></supplied> (or Kal-) Megillo? or <supplied reason="subaudible">daughter</supplied> of Megillos</p></div>
+         </div>
+            <div type="commentary">
+                <head>Commentary</head>
+                 <p>For the tomb see Bailey, art. cit. Probably Κλαυδία, whether given in full or abbreviated to Κλα; if used as a Roman nomen, 
+                    a personal name (perhaps Μεγιλλώ) is likely to follow; if used as a personal name, a patronymic (possibly Μεγίλλω) is likely. 
+                    Alternatively, the first name may have begun Καλ-: note, in addition to the many Greek names of this type, the Libyan name Καλαμερα.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

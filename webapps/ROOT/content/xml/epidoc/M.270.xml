@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C64700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.270</idno>
+            <idno type="ircyr2012">C64700</idno>
+            <idno type="JMR">(UNS) 43</idno>
+            <idno type="Excel">1335</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Tapered <objectType>stele</objectType> of white <material>marble</material>, probably Attic, moulded above, but broken at the top 
+                              and chipped along all edges 
+                              (<dimensions>
+                                 <width>0.39</width>
+                                 <height>1.16</height>
+                                 <depth>0.23</depth>
+                              </dimensions>). Inscribed on three other faces, with <ref target="https://igcyr.unibo.it/igcyr033100">IGCyr033100</ref></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face; each entry in a different hand.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Freehand letters, first century BCE-first cent CE; varying heights, <height>0.025-0.04</height>; L for ἔτους, ἐτῶν.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0016" notAfter="-0014" evidence="internal-dates">16-14 BCE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>:  
+                        <placeName ref="https://www.slsgazetteer.org/1638">El-Gubba</placeName>; found in <date type="found">1930</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/88835">Al Qubbah</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-17" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-20" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2009-07-08" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. F. 1722, E. 1480.--><graphic url="cdlM270" decls="#photograph"><desc><ref type="inscription" n="M.270">M.270</ref> 
+      (C. Dobias-Lalou, 1979: MFA 79/III/20)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverioDAI2"/>, <citedRange unit="entry">134</citedRange>, p. 126, pl. XL, fig 95</bibl>, whence <bibl>
+                     <ptr target="SEG"/> <citedRange>9.349</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324198">324198</ref></citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date><date ref="https://godot.date/id/MKvpSxXFU2U4Pacfo3wBmg"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="15">ει</num></date>
+                    <lb n="2"/> <date ref="https://godot.date/id/5H5gZigQeHgNXSJRkgde97"><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς">εἱερέως</w> 
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-65953"><name nymRef="Φιλίσκος">Φιλίσκου</name> 
+                    <lb n="4"/> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-63908"><name nymRef="Εὐφάνης">Εὐφάνο<lb n="5" break="no"/>υ</name></persName></persName></date></date> <persName type="attested" key="lgpn:V1-62207"><name nymRef="Διδύμη">Διδύμη</name> 
+                    <lb n="6"/><persName type="attested" key="lgpn:V1-62228"><name nymRef="Εὐφράνωρ">Εὐφράνορος</name></persName></persName> 
+                    <lb n="7"/><space unit="character" extent="2"/> <date type="life-span" dur="P18Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="18">ιη</num> </date>
+                     <lb n="7a"/> <space unit="line" extent="2"/>
+                    <lb n="8"/><date ref="https://godot.date/id/BFzSjBZC9UehiFNbqYrmdZ"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="16">ιϛ</num> <date ref="https://godot.date/id/EcfEQPopbxSYmSwVVkz4nW"><w lemma="ἐπί">ἐπὶ</w> <persName type="attested" key="165"><name nymRef="Νικόστρατος">Νεικοστράτου</name></persName></date></date> 
+                    <lb n="9"/><persName type="attested" key="lgpn:V1-62203"><name nymRef="Βρισηΐς">Βρεισηὶς</name> <persName type="attested" key="lgpn:V1-62219"><name nymRef="Εὐάγγελος">Εὐανγέ<lb n="10" break="no"/>λου</name></persName></persName> 
+                     <date type="life-span" dur="P45Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <num value="45">με</num> </date>
+                </ab>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="6">
+                  <note>
+                  Cut over an erasure.
+                  </note>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 15 (= 16 a.). Durante la carica del sacerdote Filisco di Eufane. Didima di Eufranore, 
+            di anni 18. Anno 16 (= 15 a.). Sotto (durante la carica del sacerdoto) Nicostrato. Briseide di Euangelo, di anni 45.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p> <ref target="https://godot.date/id/MKvpSxXFU2U4Pacfo3wBmg">Year 15</ref>, in the priesthood of Philiskos <supplied reason="subaudible">son</supplied> of Euphanes: 
+            Didume <supplied reason="subaudible">daughter</supplied> of Euphranor, aged 18.</p>
+            <p><ref target="https://godot.date/id/BFzSjBZC9UehiFNbqYrmdZ">Year 16</ref>, in (the priesthood) of Nikostratos: Briseis <supplied reason="subaudible">daughter</supplied> of Euangelos, aged 45.</p></div>
+            </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The stone was used in Hellenistic times, for a public list, <ref target="https://igcyr.unibo.it/igcyr033100">IGCyr033100</ref>. 
+               By the Roman period it had been converted into a tombstone. </p>
+            <p>Line 5: 15 of the Actian Era = 16/15 BCE; the date appears from  <ref type="inscription" n="C.140">C.140</ref> in which the same eponymus priest is named in an inscription which is certainly Augustan.
+                The use of the Cyrenaean priest of Apollo for dating here shows that Gubba was in the territory of Cyrene. </p>
+          <!-- <p>Line 8: 16 of the Actian era = 15/14 BCE </p> -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C26400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> on behalf of Augustus</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.319</idno>
+            <idno type="ircyr2012">C26400</idno>
+            <idno type="JMR">862</idno>
+            <idno type="Excel">1171</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Curved <material>marble</material> statue <objectType>base</objectType> with traces of moulding above 
+                              (<dimensions><width>across chord 1.44</width> <height>0.26</height> <depth>0.54</depth></dimensions>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the concave face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Augustan: <height>0.036</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="-0010" notBefore="-0012" cert="low" precision="low" evidence="titulature">12-10 BCE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1058">Fountain Terrace</placeName> at the foot of the retaining wall; first recorded in <date type="found">1825</date>, 
+                              again in <date type="found">1932</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-22" who="MGDA">fixed bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-14" who="GillianB">tokenized</change>
+         <change when="2009-07-06" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. F. 2957.-->
+      <graphic url="PachoLXIII" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXIII)</desc></graphic>
+      <graphic url="PachoLXIII_10" decls="#photograph"><desc>Transcription detail (1827, Pacho, plate LXIII.10)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="letronne1828"/> pp. <citedRange>264-5</citedRange></bibl>, 
+               <bibl><ptr target="pacho1827"/>, <citedRange unit="plate"><ref target="https://gallica.bnf.fr/ark:/12148/btv1b85409935/f76.item#">LXIII.10</ref></citedRange> with comments by Letronne, p. 393</bibl>; 
+               from these and from a  copy made in 1819 by Fr. Pacifico da Monte Cassiano and passed to Pietro Negri, the Sardinian consul in Tripoli,
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5136</citedRange></bibl>, whence <bibl>
+                  <ptr target="IGRR"/>, <citedRange>I.1032</citedRange></bibl>, 
+               <bibl>
+                  <ptr target="SGDI"/>, <citedRange>4844</citedRange></bibl>; 
+               <bibl><ptr target="ghislanzoni1925"/>, <citedRange>409</citedRange></bibl>; 
+               <bibl>
+                  <ptr target="oliverioDAI1"/>, <citedRange>55</citedRange>, p. 182, pl. XXXII, fig. 56]69</bibl>; 
+               from these <bibl>
+                  <ptr target="SEG"/> <citedRange>9.96</citedRange></bibl>; mentioned 
+               <bibl><ptr target="robert1940a"/>
+                  p.<citedRange>13</citedRange> and note 7</bibl>, whence <bibl><ptr target="robertBE"/>, <citedRange>1941.179</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><supplied reason="lost"><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τᾶς</w> <persName type="emperor" key="augustus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορος</w> <name nymRef="Καῖσαρ">Καίσαρος</name> <w lemma="θεός">θεῶ</w></persName></supplied> 
+                    <persName type="emperor" key="augustus"><w lemma="υἱός"><supplied reason="lost">υ</supplied><unclear>ἱ</unclear>ῶ</w> <name nymRef="Σεβαστός">Σεβαστῶ</name> <w lemma="ἀρχιερεύς">ἀρχιερέως</w></persName> <w lemma="σωτηρία">σωτηρίας</w> <persName type="attested" key="pir2-l-0348"><name nymRef="Κόϊντος">Κόϊντος</name>
+                    <name nymRef="Λουκάνιος">Λουκάνιο<supplied reason="lost">ς</supplied></name></persName>
+                    <lb n="2"/><supplied reason="lost"><persName type="attested" key="pir2-l-0348"><name nymRef="Κόϊντος">Κόϊντω</name></persName> <w lemma="υἱός">υἱὸς</w>
+                        <persName type="attested"><name nymRef="Πρόκουλος">Πρόκουλος</name></persName></supplied> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀνθύπα</supplied>τος</w> 
+                    <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τᾶς</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> <w lemma="ἱερεύς">ἱερέων</w> <w lemma="ἐπίδοσις">ἐπιδόσιο<supplied reason="lost">ς</supplied></w>
+                    <lb n="3"/><supplied reason="lost"> <space quantity="24" unit="character"/></supplied>  <w lemma="ἀνατίθημι"><supplied reason="lost">ἀ</supplied><unclear>ν</unclear>έθηκεν</w>  
+                    <space quantity="24" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#oliverioDAI1" xml:lang="it"><p>Per la salute dell'Imperatore Cesare <note>divi filius?</note> Augusto pontifice Quinto Lucanio, figlio di Quinto, 
+               proconsole da(col, -servendosi de)l contributo dei sacerdoti di Apollo ha offerto.</p></div>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>For the safety of [Emperor Caesar], son of [a god], Augustus, pontifex maximus, 
+            Quintus Lucanius [Proculus, son of Quintus], proconsul, dedicated <supplied reason="subaudible">the statue</supplied> from the contribution of the priesrts of Apollo.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>There are marks for the feet of a statue on the top and more for two, possibly three, statues on the bottom: the base was clearly used twice but there is no indication whether the Augustan use is primary or secondary. </p>
+            <p>Line 1: Σεβαστός/Augustus, so in or after 12 BCE, see also <ref type="inscription" n="C.151">C.151</ref>, line 1; it is possible that the selection of this one title for use in both these texts indicates that it was recently conferred when they were cut. Ἀρχιερεύς for ἀρχιερεύς μέγιστος is not uncommon in Greek inscriptions, cf. IGRR I, 1055, 1056. </p>
+            <p>Line 2: Q(uintus) Lucanius Proculus, <!-- De Laet, 230, and --> <title>PIR<hi rend="superscript">2</hi></title> L 0348; see also in <ref type="inscription" n="C.273">C.273</ref>, line 2, but not otherwise known. </p>
+            <p> The only surviving instance of this formula at Cyrene - presumably indicating that the money was raised by contributors from the personal funds of the priests.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

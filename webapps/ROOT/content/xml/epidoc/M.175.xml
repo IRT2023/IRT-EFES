@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G10000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.175</idno>
+            <idno type="ircyr2012">G10000</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType>, with two chambers, which also contains <ref type="inscription" n="M.176">M.176</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Incised</rs> <rs type="decoration">tabella ansata</rs>, under the first two niches of the outer chamber; the surface has been damaged.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Moderately well-cut, <height>0.045</height>, square sigma, lunate omega, L for ἔτους, ἐτῶν; superscript bar above figures; traces of blue paint in tranches.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0069" notAfter="0070" evidence="internal-date">69/70 A. D.</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     south of Balagrae, <placeName ref="https://www.slsgazetteer.org/1430">Wadi el Gehia</placeName>, cut into the bank of the Wadi;
+                     recorded in <date type="found">1991</date>, in a tomb which also contains <ref type="inscription" n="M.176">M.176</ref>.
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-03-28" who="SS">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. J.R.--><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="mohamed-jmr2002"/>, <citedRange>1</citedRange></bibl>,
+               <bibl><ptr target="cdlBE"/>, <citedRange>2004.451</citedRange></bibl>,  
+               <bibl><ptr target="SEG"/> <citedRange>52.1841</citedRange></bibl>, 
+              <bibl><ptr target="AE"/> <citedRange>2002.1646</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+            <lb n="1"/><date><date ref="https://godot.date/id/7xbKfrMbpCmjusQH2j4Ega"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>Ἔτουϲ</ex></expan></w>
+               <num value="100"><unclear cert="low">ρ</unclear></num>, <date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς"><unclear>ἱ</unclear>αρέ<lb 
+                  n="2" break="no"/><unclear>ω</unclear>ϲ</w> <persName type="attested"><name nymRef="Μάξιμος">Μαξίμω</name></persName>,
+            <lb n="3"/><rs type="month" key="choiak"><w lemma="Χοιάκ">Χυάκι</w></rs> <num value="26">ϛκ</num></date></date></date> 
+            <lb n="4"/><persName type="attested"><name nymRef="Λύων"><unclear>Λύ</unclear>ων</name>
+               <persName type="attested"><name nymRef="Ἀνδροκλῆς">Ἀν<lb n="5" break="no"/>δροκλεῦϲ</name></persName></persName>
+            <lb n="6"/> <space extent="unknown" unit="character"/>
+               <date type="life-span" dur="P87Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                  <num value="21">ακ</num> </date>
+            </ab>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1"><note><num><unclear cert="low">ρ</unclear></num> could be <num><unclear cert="low">π</unclear></num> or <num><unclear cert="low">πι</unclear></num>  </note></app>
+               <app loc="3"><rdg resp="#mohamed-jmr2002">Χυαχὶ</rdg>
+                  <rdg resp="#cdlBE">Χυάκι</rdg></app>
+               <app loc="6"><rdg resp="#mohamed-jmr2002">κα</rdg>
+                  <rdg resp="#cdlBE">ακ</rdg></app>
+               
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" source="#mohamed-jmr2002" xml:lang="en"><p><ref target="https://godot.date/id/7xbKfrMbpCmjusQH2j4Ega">Year ?100</ref>, in the priesthood of Maximus, Choiak 26, ?Lyon 
+            <supplied reason="subaudible">son</supplied> of Androkles, aged 21.</p></div>
+            <div type="translation" source="#AE" xml:lang="fr"><p>L'an 100, sous la prêtrise de Maximus, le 26 Choiak, Lyon, fils d'Androkles, âgé de 21 ans.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1: Year 100 (69/70 CE), on the assumption that ρ΄ is the correct reading.</p>
+            <p>Line 2: The eponymous priest of Apollo at Cyrene; a Maximus (Μ(ᾶρκος) Ἀντώνιος Μάξιμος) is known in this function in the first century CE </p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

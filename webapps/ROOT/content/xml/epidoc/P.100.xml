@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P10100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">decree</rs> or ruling by Gn. Cornelius Lentulus Marcellinus </title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.100</idno>
+            <idno type="ircyr2012">P10100</idno>
+            <idno type="JMR">317</idno>
+            <idno type="Excel">651</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment from the left side of a <objectType>stele</objectType> of Attic
+                    <material>marble</material> (<dimensions>
+                                 <width unit="metre">0.13</width>
+                                 <height unit="metre">0.11</height>
+                                 <depth unit="metre">0.08</depth>
+                              </dimensions>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, which is partly damaged. Closely related to <ref type="inscription" n="P.101">P.101</ref>, 
+                           which may have been inscribed on the same panel or on a similar one displayed nearby.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE: <height unit="metre">0.005</height>; not quite even in size nor in their relation to the guide-lines; 
+                        stops between words are frequent, but do not always seem purposive. The symbol 3 in line 10 probably means (approximately) an acre. <!--  *symbol*  --></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0067" notAfter="-0061" precision="low" evidence="prosopography">67-61 BCE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p> <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/948">Square of the Cisterns</placeName>, with <ref type="inscription" n="P.101">P.101</ref>; 
+                              excavated in <date type="found">1935</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-20" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2010-01-20" who="GB">tweaked bibliography</change>
+         <change when="2010-01-18" who="GB">checked place, date; bibliography; commentary</change>
+         <change when="2009-12-29" who="CMR">tagged keywords, dimensions</change>
+         <change when="2009-09-09" who="Pietro">marged best bits with killed double of it C12900</change>
+         <change when="2009-03-30" who="CB">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="Photos_0092" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="JMR_318" decls="#photograph"><desc>From left: <ref type="inscription" n="P.100">P.100</ref> and <ref type="inscription" n="P.101">P.101</ref></desc></graphic>
+      <graphic url="JMR_318a" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="Photos_0304" decls="#photograph"><desc><ref type="inscription" n="P.100">P.100</ref> and 
+         <ref type="inscription" n="P.101">P.101</ref> resting on <ref type="inscription" n="C.555">C.555</ref> (Photographic Archive B-24).</desc></graphic>
+      <graphic url="Photos_0306" decls="#photograph"><desc>View</desc></graphic>
+      <graphic url="Photos_0330" decls="#photograph"><desc>Squeeze (M.H. Ballance)</desc></graphic>
+      <!--Dept. JR.-->
+   </facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <p>
+               <bibl><ptr target="jmr1962"/>, <citedRange>7</citedRange> Pl. XV</bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>iei</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" quantity="12" unit="character" precision="low"/><w part="F">ssunt</w> <g ref="symbols.xml#stop"/> <w part="I" lemma="deduco">deduca</w><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="dprr:2082"><supplied reason="lost"><name nymRef="Cnaeus"><expan><abbr>Cn</abbr><ex>aeus</ex></expan></name> <name nymRef="Cornelius">Cornelius</name></supplied>
+                    <lb n="3"/><name nymRef="Lentulus"><supplied reason="lost">Lent</supplied>ulus</name> <g ref="symbols.xml#stop"/> <name nymRef="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name> <g ref="symbols.xml#stop"/>
+                    <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <name nymRef="Marcelleinus">Marcelleinus</name></persName> <space quantity="1" unit="character"/> <w lemma="legatus">le<supplied reason="lost">gatus</supplied></w> <supplied reason="lost"><w lemma="propraetor">pro <expan><abbr>pr</abbr><ex>aetore</ex></expan></w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+                    <supplied reason="lost"><persName type="attested" key="dprr:1976"><name nymRef="Cnaeus"><expan><abbr>Cn</abbr><ex>aei</ex></expan></name> <name nymRef="Pompeius">Pompeii</name> <name nymRef="Magnus" cert="low">Magni</name></persName></supplied>
+                    <lb n="4"/><supplied reason="lost"/><w lemma="imperator"><supplied reason="lost">im</supplied>peratoris</w> <g ref="symbols.xml#stop"/> 
+                    <w lemma="tertius"><unclear>terti</unclear>o</w>
+                    <space quantity="1" unit="character"/> <w lemma="praedium">praedia</w> <g ref="symbols.xml#stop"/> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="5"/><persName type="attested"><name nymRef="Iason"><unclear>I</unclear>asoni</name> <persName type="attested"><name nymRef="Antiochus">Antio<supplied reason="lost">chi</supplied></name></persName> 
+                    <w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w> <placeName type="ethnic" nymRef="#Aegeates" ref="#aegeae">Aegeati</placeName></persName> <g ref="symbols.xml#stop"/> <w lemma="praedium">pr<unclear>a</unclear><supplied reason="lost">edia</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="6"/><w lemma="sum">sunt</w> <gap reason="lost" atLeast="7" atMost="8" unit="character"/> 
+                    <w lemma="ad">ad</w> <g ref="symbols.xml#stop"/> <persName type="attested"><name nymRef="Palaerius">Palaeri<unclear>o</unclear></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="7"/><persName type="attested" key="lgpn:V1-61133"><name nymRef="Arimmas"><seg part="I">Arim<supplied reason="lost">ma</supplied></seg></name></persName><gap reason="lost" quantity="4" unit="character"/> 
+                    <persName type="attested"><name nymRef="Acchavo"><seg part="I"><supplied reason="lost">Ac</supplied><unclear>c</unclear>hauon</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="8"/> <w lemma="quod">quod</w> <w lemma="sum">es<supplied reason="lost" cert="low">t</supplied></w> <gap reason="lost" quantity="8" unit="character" precision="low"/><w part="F"><unclear>i</unclear>um</w> <gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="9"/><persName type="attested"><name nymRef="Acchavo">Acchauoni<supplied reason="lost">s</supplied></name></persName> <gap reason="lost" quantity="4" unit="character"/><orig><unclear>i</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="10"/> <w lemma="censeo">censum</w> <w lemma="sum">est</w> <w lemma="centuria"><expan><abbr><am><g ref="symbols.xml#centuria"/></am></abbr><ex>centuriae</ex></expan></w> <orig><unclear>u</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="11"/><persName type="attested"><name nymRef="Chrysippus">Chrysippo</name> <g ref="symbols.xml#stop"/> <persName type="attested"><name nymRef="Icarus"><unclear>I</unclear>ca<unclear>r</unclear><supplied reason="lost">i</supplied></name></persName></persName> <supplied reason="lost"><w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="12"/><w lemma="praedium">praedio</w> <w part="I">s<unclear>u</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="13"/><persName type="attested" key="lgpn:V1-61134"><name nymRef="Arimmas"><seg part="I">A<unclear>rim</unclear><supplied reason="lost">ma</supplied></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="13a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app><note>Line lengths remain uncertain, since we cannot be sure whether Marcellinus' title (line 3) was abbreviated, or whether Pompey was entitled Magnus.</note></app>
+               <app loc="2"><note>The two letters s are not quite certain: if they are accepted the reading should be  <foreign xml:lang="la">po]ssunt</foreign> (with which the very 
+                  faint traces of the bases of letters before the first s would be consistent) or <foreign xml:lang="la">. . . ]s sunt</foreign></note></app>
+                  <app loc="4"><rdg resp="jmr1962"> [ . . . . ]io</rdg><note> All the letters of tertio seem now legible, if incomplete.</note></app>
+               <app loc="5"><rdg resp="jmr1962"> <unclear>B</unclear>asoni</rdg><rdg resp="jmr1962"> pra<unclear>e</unclear>[dia]</rdg></app>
+               <app loc="8"><rdg resp="jmr1962"> es<unclear>t</unclear></rdg></app>
+               <app loc="9"><rdg resp="jmr1962"> Acchauoni<unclear>s</unclear></rdg></app>
+               <app loc="9"><rdg resp="jmr1962"> Cas<unclear>s</unclear></rdg></app>
+               <app loc="10"><lem>censum</lem> <note>M. H. Crawford suggests [re]censum</note></app>
+               <app loc="12"><rdg resp="jmr1962"> s<unclear>u</unclear>[ . . </rdg> <note>M.H. Crawford suggests s<unclear>u</unclear>[prascripto]</note></app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>[ . . .] may lead 
+               <gap reason="lost" extent="unknown" unit="character"/> . . . ] bring in [ . . .  Gn(aeus) Cornelius Len]tulus Marcelleinus, son of Publius, [propraetorian] le[gate} of
+            [Gnaeus Pompeius Magnus] acclaimed imperator for the third time [ . . . . ]. Properties [ . . .  ] to Iason son of Antiochos Aegeatos properties [ . . .  ] are 
+               [ . . .  ] to ?Palaerius [ . . .  ] Arimmas [ . . .  ] Acchavo [ . . .  ] which is [ . . .  ] of Acchavo [ . . .  ] is approved five centuriae [ . . .  ] 
+               for Chrysippus [son] of Icarus [ . . .  ] property [ . . .  ] Arimmas [ . . .</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- <p>(For the square see Caputo,
+               <title level="j">Quaderni</title> III (1954) 51f.; Kraeling, p.62f.)</p> -->
+            <p>The text is probably a Latin version of <ref type="inscription" n="P.101">P.101</ref> 
+            </p>
+            <p>For Marcellinus, legate of Pompey in 67 BCE, see Reynolds, art. cit. and <title>DPRR</title> <ref target="http://romanrepublic.ac.uk/person/2082">Corn2082</ref>.
+                For his title, see on line 4 below.</p>
+            <p>Line 3: The reading is clear and imposes the present subjunctive of <foreign xml:lang="la">deducere</foreign> - e.g. 
+                <foreign xml:lang="la">deducat, deducantur</foreign>; it indicates the establishment of colonists (see on line 5). </p>
+            <p>Line 4: In the context <foreign xml:lang="la">Imperator</foreign> can only refer to Pompey, <title>DPRR</title> <ref target="http://romanrepublic.ac.uk/person/1976">Pomp1976</ref>, 
+               who was acclaimed for his victory
+                    over the pirates in the summer of 67 and would continue to hold the title until his triumph.
+                    Its appearance dates the text after that victory. The use of Pompey's name in the genitive
+                    could be explained either as depending on some word or phrase like <foreign xml:lang="la">iussu</foreign>
+                    or <foreign xml:lang="la">ex decreto</foreign>, <foreign xml:lang="la">ex dicto</foreign> or as
+                    part of Marcellinus' title. If the latter were correct, this would seem to be the first known instance of a
+                    legate naming his senior officer in his title and the only known instance before the legates of Augustus.
+                    Pompey's name does not occur in Marcellinus' title as it appears in <ref type="inscription" n="C.280">C.280</ref>, 
+               <ref type="inscription" n="C.271">C.271</ref>,  but there is no need
+                    there, as there clearly seemed to be here, to stress the source of his authority.</p>
+            <p>Line 4: Pompey's acclamation for the Pirate War was probably his third (cf. at Miletopolis he is 
+               Αὐτοκράτορα τὸ τρίτον, πάτρωνα καὶ εὐεργέτην: <ref target="https://zenon.dainst.org/Record/000948649"><title>IK</title>.26</ref>, 24, at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/289495">289495</ref>,
+               and similarly at Miletus, <ref target="https://zenon.dainst.org/Record/000892358"><title>Milet</title> 1</ref>.7, at PHI <ref target="https://epigraphy.packhum.org/text/252484">252484</ref>).</p>
+            <p>Lines 5 and 11: The names in the dative suggest recipients whose parcels of land are then defined, first geographically and then
+                        by value. Since all the known recipients here and in <ref type="inscription" n="P.101">P.101</ref>
+                        are non-Roman, and since the ethnic of the first might refer to Aegeae in Cilicia, Reynolds suggested in 1962 that
+                        they had been pirates, defeated in the campaign of 67 BCE, whom it was Pompey's policy to settle as farmers (e.g. Livy, <title>Epitome</title> 99, 
+               at <ref target="http://data.perseus.org/citations/urn:cts:latinLit:phi0914.phi001fr.perseus-lat1:99">Perseus</ref>); 
+                        but a number of their names are notably well attested in Cyrenaica, so that unless a number of Cyrenaicans had been pirates (not otherwise attested), 
+                        this may in fact not represent a allocation of land, but possibly a census list of landowners. On balance, however, the use of the dative suggests a distribution.</p>
+            <p>Lines: 7 and 9: The name Acchavo occurs in Italy, cf. CIL VI, 10 476 and is associated by W.Schulze, 
+               <title><ref target="https://zenon.dainst.org/Record/000205459">Zur Geschichte Lateinischer Eigennamen</ref></title> pp. 47, 343, 409, with a group of names especially popular in 
+               Paelignum and possibly Illyrican in origin. It would be reasonable to take Arimman and Acchavo as pre-existing holders of property who were left in possession, 
+               their boundaries being used to define the parcel of their new neighbours - in which the name Acchavo seems to indicate some pre-Roman immigration from Italy or Illyricum into Cyrenaica; 
+               but it is also possible that they are new settlers too, in which case the names indicate something of the range of racial origins of the pirates.</p>
+            <p>Line 8: From Arimman, a name common in Cyrenaica and presumably of native origin.</p>
+            <p>Line 10: The sign 3 is perhaps a variant of one in the Orange cadaster and if so the line
+                    may be explained as giving a statement of charges due on the land, at the rate of half a denarius per
+                    iugerum, cf. C.E Stevens, <title>JRS</title> XXXII (1942) 73 f.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

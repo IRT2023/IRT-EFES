@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P12200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.120</idno>
+            <idno type="ircyr2012">P12200</idno>
+            <idno type="JMR">333</idno>
+            <idno type="Excel">755</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Limestone</material> 
+                              <objectType>paving slab</objectType> 
+                              (<dimensions><width unit="metre">0.63</width> <height unit="metre">0.92</height></dimensions> x depth not measurable).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the exposed face of the paving slab.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Fifth to sixth century: <height precision="low" unit="metre">0.035</height>; cursive alpha, lunate epsilon, lunate sigma and cursive omega; the second ο in line 2 is written small.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0501" notAfter="0700" precision="low" evidence="titulature">Fifth to sixth century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/979">House of Paulus</placeName>, in situ in room 1; found in <date type="found">1957</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+            
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-03-30" who="VA">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0151" decls="#photograph"><desc>Face (1954, The Oriental Institute - Chicago, 44391)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+                  <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="kraeling1962"/>, <citedRange>14</citedRange>, and pl.LIII B</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.589</citedRange></bibl>; mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>72</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><w lemma="εὐτυχής">εὐτυχῶς</w> <date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τοῦ</w> 
+                    <lb n="2"/> <w lemma="μεγαλοπρεπής">μεγαλοπρεπεϲτάτου</w> 
+                    <lb n="3"/><persName type="attested" key="plre:2-paulus14"><name nymRef="Παῦλος">Παύλου</name></persName> <w lemma="ὑπατικός">ὑπατικοῦ</w></date> 
+   <w lemma="γίγνομαι">ἐγέ<lb n="4" break="no"/>νετο</w> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <w lemma="οὗτος">τοῦτο</w>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>With good fortune. Under the most magnificent Paulos, consularis, this work took place.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- <p>On the building see Kraeling, p.140f. </p> -->
+            <p>Line 3: Paulus (<title>PLRE</title> II, Paulus 14) is described as a <foreign xml:lang="la">consularis</foreign>,which sometime describes a provincial governor, 
+               but is not recorded for governors of Pentapolis, unless Paulus' 
+               appointment was extraordinary; see the discussion by Kraeling loc. cit. Otherwise he must have been a distinguished local citizen; 
+               the phrasing, 'ἐπί, under' implies that he was holding an official position.. 
+               His rank, <foreign xml:lang="la">magnificentissimus</foreign>, indicates a date in 
+               the later fifth or sixth century (see discussion at <title>ALA</title> <ref target="http://insaph.kcl.ac.uk/ala2004/narrative/sec-VI.html#VI.26">VI.26</ref>). Kraeling assigned 
+                    him responsibility for very considerable reorganisation of the building and notes that this would 
+                    be surprising if he held office after the seat of government was moved from Ptolemais to Apollonia in the sicth century; 
+                    it is probably better to suppose that his responsibility was limited to a "redecoration" which included 
+                    laying the surviving pavement in which the inscription is embedded.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

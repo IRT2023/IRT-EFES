@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C10600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Libya</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.126</idno>
+            <idno type="ircyr2012">C10600</idno>
+            <idno type="JMR">689</idno>
+            <idno type="Excel">1042</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Standing in the Agora Square</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Circular <objectType>base</objectType> of white <material>marble</material>, 
+                              consisting of three drums
+                              (<dimensions><dim type="diameter">0.78</dim> <height>1.39</height></dimensions>). The top and 
+                           bottom drums have a moulding and the face divided into two fasciae.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the two upper drums: line 1 on the upper fascia of the upper drum and 
+                           lines 2-3 on its lower fascia; lines 4-5 on the lower drum.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE: line 1, <height>0.075</height>; line 2, <height>0.06</height>;
+                        line 3 <height>0.065</height>; line 4, <height>0.055</height>; <!-- check -->*symbol* for Manius in line 4.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>,
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>;  found in <date type="found">1916</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Standing in the Agora Square near <ref type="inscription" n="C.145">C.145</ref>, <ref type="inscription" n="C.125">C.125</ref>. 
+                           (<date type="observed">2008</date>)</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-17" who="CMR">corrections</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2009-06-11" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="Photos_0193" decls="#photograph"><desc>Monument (Department of Antiquities, E. 751)</desc></graphic>
+      <graphic url="DSC05287" decls="#photograph"><desc>Monument (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05285" decls="#photograph"><desc>Face, centre (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05286" decls="#photograph"><desc>Face, right side (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned <bibl><author>Ghislanzoni</author>, <title>Notiz. Arch.</title> IV (1927) 200</bibl>;
+                <bibl><ptr target="ferri1923"/>, <citedRange>8</citedRange>, <citedRange>7</citedRange></bibl>, whence
+               <bibl><ptr target="vitali1932"/>, <citedRange>241</citedRange></bibl>
+               <bibl><ptr target="romanelli1961"/>, <citedRange></citedRange> with fig 1</bibl>,<!-- check -->
+                 whence <bibl><ptr target="AE"/> <citedRange>1963.142</citedRange></bibl>.
+            </p>
+         </div>
+         
+         
+   
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+                    <lb n="1"/> <space quantity="3" unit="character"/>
+               <persName type="divine" key="libya"><placeName nymRef="#Libua" ref="#libya">Libuae</placeName></persName>
+               <w lemma="sacer">sacrum</w> <space quantity="3" unit="character"/> 
+                    <lb n="1"/><w lemma="pro">pro</w> <w lemma="salus">salute</w>
+               <persName type="attested" key="pir2-p-0756"><name nymRef="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name>
+                  <name nymRef="Pomponius">Pomponi</name> <name nymRef="Secundus">Secundi</name></persName> 
+                    <lb n="1"/> <space quantity="3" unit="character"/>
+              <w lemma="proconsul"><expan><abbr>pro<space quantity="1" unit="character"/>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulis</ex></expan></w>
+               <space quantity="3" unit="character"/> 
+                    <lb n="1"/><persName type="attested"><name nymRef="Manius"><expan><abbr>M</abbr><ex>anius</ex></expan></name>
+                       <name nymRef="Messius">Messius</name> <name nymRef="Atticus">Atticus</name></persName> <w lemma="cliens">cliens</w>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <p/>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>Sacred to Libya. For the safety of Publius Pomponius Secundus, proconsul,
+           M(anius) Messius Atticus, his client <supplied reason="explanation">dedicated this</supplied>.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>Romanelli believed that the letters cannot be much later than mid first century CE;
+               we do not feel confident that they can be so precisely dated. </p>
+            <p> Publius Pomponius Secundus, <title>PIR<hi rend="superscript">2</hi></title>, P 756, Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.019.</p>
+            <p>Line 4: Pehaps the Attikos of <ref type="inscription" n="C.150">C.150</ref>;
+               in any case, no doubt, resident in Cyrene and in view of his use of Latin likely to be of an italian immigrant family;
+               he had presumably received favours from the proconsul.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

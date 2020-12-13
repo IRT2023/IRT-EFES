@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C24300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription for the temple of Hekate</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.293</idno>
+            <idno type="ircyr2012">C24300</idno>
+            <idno type="JMR">838</idno>
+            <idno type="Excel">1122</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Temple of Hekate</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Left side of a <material>marble</material> block with socket hole on top
+                              (<dimensions><width>0.69</width> <height>0.29</height> <depth>0.115</depth></dimensions>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First-second century: lines 1-4, <height>0.04</height>; lines5-8, <height atLeast="0.025" atMost="0.03">0.025 -0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0107" notBefore="0106" precision="low" evidence="prosopography">CE 106-7</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                               Found in <date type="found">1927</date>, during the excavations of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1052">Temple of Hekate</placeName> 
+                              and the Portico in front of it.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1052">Temple of Hekate</placeName>: 
+                              standing on the north wall of the cella (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-05" who="MGDA">fixed bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-10" who="Pietro">Tokenized.</change>
+         <change when="2009-06-24" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="944_doa" decls="#photograph"><desc>Face (Department of Antiquities, E.944)</desc></graphic>
+      <graphic url="DSC05229" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05230" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05231" decls="#photograph"><desc>View of block (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverio1929"/>, <citedRange>1</citedRange>, 113f., fig. 3w</bibl>, whence <!-- check -->
+                   <bibl><ptr target="AE"/> <citedRange>1929.8</citedRange></bibl>, <bibl><ptr target="SEG"/> <citedRange>9.101</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323955">323955</ref></citedRange></bibl>, 
+               with <bibl> <ptr target="robert1940a"/>  <citedRange unit="page">12</citedRange></bibl>, 
+               whence <bibl><ptr target="robertBE"/>, <citedRange>1941.179</citedRange></bibl>; discussed <bibl> <ptr target="oliverio1931"/>  <citedRange unit="page">52</citedRange></bibl>
+               <bibl><ptr target="romanelli1943"/>, <citedRange>104</citedRange></bibl>, <bibl><ptr target="serafini2014"/>, <citedRange>107-109</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>207</citedRange></bibl>.
+                    
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνι</name></persName> <w lemma="καί">καὶ</w> <persName type="divine" key="artemis"><name nymRef="Ἄρτεμις">Ἀρτ<supplied reason="lost">άμιδι</supplied></name></persName> <gap reason="lost" quantity="19" unit="character" precision="low"/> <supplied reason="lost"><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τᾶς</w> <w lemma="ὁ">τῶ</w></supplied> 
+                    <lb n="2"/><persName type="emperor" key="traianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορος</w> <name nymRef="Νέρβα">Νέρβα</name> <name nymRef="Τραιανός">Τρ<supplied reason="lost">αιανῶ</supplied></name> 
+                    <supplied reason="lost"><name nymRef="Καῖσαρ">Καίσαρος</name> <name nymRef="Σεβαστός">Σεβαστῶ</name> 
+                        <name nymRef="Γερμανικός">Γερμανικῶ</name></supplied> <name nymRef="Δακικός"><supplied reason="lost">Δακι</supplied><lb n="3" break="no"/>κῶ</name></persName> <w lemma="σωτηρία">σωτηρίας</w> <w lemma="καί">καὶ</w> <w lemma="διαμονή">διαμ<supplied reason="lost">ονᾶς</supplied></w> 
+                    <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ὁ">τῶ</w> <w lemma="σύμπας">σύνπαντος</w> 
+                        <w lemma="αὐτός">αὐτῶ</w> <w lemma="οἶκος">οἴκω</w> <w lemma="ὁ">τὸν</w> <w lemma="ναός">ναὸν</w></supplied> 
+                    <lb n="4"/><w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="στοά">στοὰς</w> <w lemma="ἐκτός">ἐκτὸς</w> <w lemma="ὁ">τῶ</w> 
+                    <gap reason="lost" quantity="33" unit="character" precision="low"/><lb 
+                       n="5" break="no"/><w part="F">τω</w> <w lemma="ὁ">οἱ</w> <w lemma="ἱερεύς">ἱαρὲς</w> <w lemma="ἐκ">ἐκ</w> 
+                    <w lemma="ὁ">τᾶν</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπ<supplied reason="lost">όλλωνος</supplied></name></persName> 
+                    <supplied reason="lost"><w lemma="πρόσοδος">προσόδων</w></supplied> <gap reason="lost" quantity="17" unit="character"/> <w lemma="ἐπισκευάζω"><supplied reason="lost">ἐ</supplied><lb n="6" break="no"/>πεσκεύασαν</w> <w lemma="διά">διὰ</w> <persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊω</ex></expan></name> 
+                    <name nymRef="Ποστόμιος">Ποστο<supplied reason="lost">μίω</supplied></name> 
+                    <supplied reason="lost"><name nymRef="Ὀπτᾶτος">Ὀπτάτω</name></supplied></persName> 
+                    <supplied reason="lost"><w lemma="ἱερεύς">ἱαρεῦς</w> <persName type="attested"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> 
+                        <w lemma="καλλιέτης">καλλιέτευς</w></supplied> 
+                    <lb n="7"/><w lemma="ἐπί">ἐφ’</w><w lemma="ὅς">ᾧ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">ὁ</w> <w lemma="κύριος">κύριος</w> <persName type="emperor" key="traianus"><name nymRef="Νέρβα">Νέρβας</name> 
+                    <name nymRef="Τραιανός">Τ<supplied reason="lost">ραιανὸς</supplied></name> <!-- check -->
+                    <name nymRef="Σεβαστός"><supplied reason="lost">σεβαστὸς</supplied></name></persName> <gap reason="lost" quantity="12" unit="character"/> <w lemma="μονάρχος"><supplied reason="lost" cert="low">μονάρ</supplied><lb 
+                       n="8" break="no"/>χον</w> <persName type="attested"><name nymRef="Δεκίβαλλος">Δεκίβαλλον</name></persName> <w lemma="λαμβάνω">ἔλαβε</w> <gap reason="lost" extent="unknown" unit="character"/>
+   <lb n="8a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="3"><lem>ναὸν</lem>
+                  <note>Oliverio cautiously suggested Ἑκάτιον, but we think that this would lengthen the line unduly.</note>
+               </app>
+               <app loc="4">
+                  <rdg resp="#oliverio1929" cert="low">ἐκτὸς τῶ [καθ'ἕτερον τοῖχον προβεβλημένω δρυφάκ]/τω. </rdg>
+               </app>
+               <app loc="8">
+                  <rdg resp="#oliverio1929">
+                     [τὸν τῶν Δακῶν πολεμάρ]/χον or [μονάρ]/χον</rdg>
+                  <note>the last seems the more suitable.</note>
+               </app>
+            </listApp>
+            
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>To Apollo and Artemis [ . . . ] For the safety and permanence of the Emperor Nerva Trajan [Caesar Augustus, victor in Germany, victor in Dacia, 
+            and his whole household] the priests built from the [income] of Apollo the temple and the stoa outside the [ . . .], through the agency of G(aios) Postomios [Optatus <supplied reason="explanation"><foreign xml:lang="la">G(aius) Postumius [Optatus</foreign></supplied>, 
+            priest of Apollo in a good year], in whose time that the lord Nerva Trajan Augustus [ . . . .] capured Decebalus, the [?monarch of  . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the buildings, see Oliverio, loc.cit.</p>
+            <p>Line 1: Oliverio proposed the title <foreign xml:lang="grc">Ἑκάται</foreign> after <foreign xml:lang="grc">Ἀρτάμιδι</foreign>. 
+               <!-- (Cf. <foreign xml:lang="grc">Θεοις δαμοτελευς</foreign>  as in <ref type="inscription" n="C83200">M.271</ref>, 35-6). --> </p>
+            <p>Line 6: Gaius Postumius Optatus also in <ref type="inscription" n="C.223">C.223</ref>, lines 15ff. where his priesthoood is dated 106/107; there also 
+               he has the same epithet, applied to priests at Cyrene, for which see commentary on <ref type="inscription" n="C.222">C.222</ref>.</p>
+            <p>Line 8: For Trajan's defeat of the Dacian king Decebalus, in 106 CE see Cassius Dio,<title> Historiae Romanae</title> 68.14 (at <ref target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0385.tlg001.perseus-grc1:68.14.1">Perseus</ref>)</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

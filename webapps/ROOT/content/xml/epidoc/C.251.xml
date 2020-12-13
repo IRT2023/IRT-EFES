@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C21400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscriptions from the Temple of Apollo</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.251</idno>
+            <idno type="ircyr2012">C21400</idno>
+            <idno type="JMR">806</idno>
+            <idno type="Excel">1132</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>a. in front of the Temple of Hekate. 
+                               Ob.i just west of the Peristyle at the West end: only ΔΟΜΙΤ survives, the remainder is read from the photograph.
+                              b.ii. on the steps of the peristyle, b.iii. among Byzantine houses to the west of the Temple, b.iv. on the terrace in front of the cave of the priests</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Broken <material>limestone</material> <objectType>architrave</objectType>fragments, some with mouldings surviving above
+                              (each originally <dimensions><width>3.50</width> <height>0.84</height> <depth>0.43</depth></dimensions>). 
+                              Some pieces in a very bad condition. </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face. b. is made of four legible pieces.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century; a. <height>0.29</height>; b. <height>0.24</height>. in b.i there is a large ivy leaf after the first M.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <ref target="https://www.slsgazetteer.org/1033">Temple of Apollo</ref>: from the  architrave - a.from the east end, b. from the west end.</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" precision="low" evidence="lettering">Second century CE</origDate>
+                  </origin>
+                   <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1033">Temple of Apollo</placeName>:
+                              a. Found between <date type="found">1925</date> and <date type="found">1934</date>. 
+                              b.i, ii, iv, were found between <date type="found">1925</date> and 
+                              <date type="found">1934</date>, b.iii in <date type="found">1957</date>. 
+                       Blocks have been found in front of the east and west faces, b.i found at the 
+                       south-west angle. b.iii was found when the Temple was damaged by an earthquake.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>a. in front of the <placeName ref="https://www.slsgazetteer.org/1052">Temple of Hekate</placeName>. 
+                               Ob.i just west of the Peristyle at the West end: only ΔΟΜΙΤ survives, the remainder is read from the photograph.
+                              b.ii. on the steps of the peristyle, b.iii. among Byzantine houses to the west of the Temple, b.iv. on the terrace in front of the cave of the priests.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from surviving stones, from photographs and from notes by Oliverio (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-01" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-20" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-11-22" who="Pietro">tokenized</change>
+         <change when="2009-06-15" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="DSC04790" decls="#photograph"><desc>Text fragment a,i, view (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_806_007" decls="#photograph"><desc>Text fragment a.i (Department of Antiquities, <!-- F. 467 -->)</desc></graphic>
+      <graphic url="DSC04789" decls="#photograph"><desc>Text fragment a.i (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04154" decls="#photograph"><desc>Text fragment a.i left end (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04155" decls="#photograph"><desc>Text fragment a.i right end (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_806_005" decls="#photograph"><desc>Text fragment a. vi and v in the order (Department of Antiquities, F. 412)</desc></graphic>
+      <graphic url="JMR_806_004" decls="#photograph"><desc>Text fragment a.iv (Department of Antiquities, F.476)</desc></graphic>
+      <graphic url="JMR_806_008" decls="#photograph"><desc><ref type="inscription" n="C.251">C.251</ref> a.vii above; 
+         <ref type="inscription" n="C.261">C.261</ref> below (Department of Antiquities, F. 411)</desc></graphic>
+      <graphic url="JMR_806_002" decls="#photograph"><desc>Text fragment b.i</desc></graphic>
+      <graphic url="cdlC251b_i" decls="#photograph"><desc>Text fragment b.i (C. Dobias-Lalou, 1983: MFA)</desc></graphic>
+      <graphic url="JMR_806_006" decls="#photograph"><desc>Text fragment b.i and a.iii (Department of Antiquities, F. 410)</desc></graphic>
+      <graphic url="JMR_806_003" decls="#photograph"><desc>Text fragment b.ii (Department of Antiquities, F. 466)</desc></graphic>
+      <graphic url="cdlC251b_iii" decls="#photograph"><desc> Text fragment b.iii (C. Dobias-Lalou, 1983: MFA diapo C000008)</desc></graphic>
+      <graphic url="JMR_806_001" decls="#photograph"><desc>Text fragment b.iv (Department of Antiquities, E. 2056)</desc></graphic>
+      <!--Dept. D 133 --></facsimile><!-- image - add from pernier? -->
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>a.i, b.i, io: <ptr target="pernier1935"/>, <citedRange>113,140f., Fig. 106 </citedRange></bibl>
+            </p>
+         </div>
+         
+         <!--<div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="a" type="textpart"><div subtype="fragment" n="i" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτ</supplied>ορος</w>
+                        <persName type="emperor"><name>Κα<supplied reason="lost">ισαρος</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div><div subtype="fragment" n="ii" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor"><name><seg part="F">νικ<supplied reason="lost">ου</supplied></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div><div subtype="fragment" n="iii" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>αρμ</w> <milestone unit="block"/> 
+                        <gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div><div subtype="fragment" n="iv" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <orig><unclear>λ</unclear></orig><milestone unit="block"/><gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div><div subtype="fragment" n="v" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ιι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div><div subtype="fragment" n="vi" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ν</unclear>ο</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div><div subtype="fragment" n="vii" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>γ</orig><g ref="symbols.xml#stop"/><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div>
+                    </div>-->
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+               <div type="textpart" subtype="section" n="a"><ab>    
+                    <supplied reason="lost"><w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="νίκη">νείκης</w></supplied> 
+                        <persName type="emperor" key="commodus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτ</supplied><milestone unit="block" n="i"/>ορος</w> 
+                  <name nymRef="Καῖσαρ">Κα<supplied reason="lost">ίσαρος</supplied></name> 
+                  <name nymRef="Μᾶρκος"><supplied reason="lost"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></supplied></name>
+                            <name nymRef="Αὐρήλιος"><expan><abbr><milestone unit="block" n="ii"/><supplied reason="lost">Αὐρη</supplied><unclear>λ</unclear></abbr><supplied reason="lost"><ex>ίου</ex></supplied></expan></name>
+                    <name nymRef="Ἀντωνῖνος"><milestone unit="block" n="iii"/><supplied reason="lost">Ἀν</supplied>τ<supplied reason="lost">ωνεί</supplied><milestone unit="block" n="iv"/>νο<supplied reason="lost">υ</supplied></name>
+         <supplied reason="lost"><name nymRef="Σεβαστός"><expan><abbr>Σεβ</abbr><ex>αστοῦ</ex></expan></name></supplied> 
+                        <name nymRef="Γερμανικός"><supplied reason="lost" cert="low">Γερμα<milestone unit="block" n="v"/></supplied>νικ<supplied reason="lost">οῦ</supplied></name> 
+                        <name nymRef="Σαρματικός"><milestone unit="block" n="vi"/><supplied reason="lost" cert="low">Σ</supplied>αρμ<milestone unit="block"/><supplied reason="lost">ατικοῦ</supplied></name>
+                    <milestone unit="block" n="vii"/><w lemma="μέγιστος"><expan><abbr><supplied reason="lost" cert="low">με</supplied>γ</abbr><ex>ίστου</ex></expan></w><g ref="symbols.xml#stop"/></persName>
+               </ab></div>
+               
+         <div subtype="section" n="b" type="textpart">
+                  <div subtype="fragment" n="i" type="textpart"><ab>
+                     <lb n="1"/><milestone unit="block"/> <persName type="attested"><name nymRef="Μᾶρκος"><supplied reason="lost"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></supplied></name> <g ref="symbols.xml#leaf"/>
+                       <name nymRef="Δομίτιος">Δομίτ<supplied reason="lost">ι</supplied>ο<supplied reason="lost" cert="low">ς</supplied></name></persName><milestone unit="block"/>
+                    </ab></div>
+                  <div subtype="fragment" n="ii" type="textpart"><ab>
+                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ων</w> <g ref="symbols.xml#stop"/> <w part="I">μ</w><gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div>
+                  <div subtype="fragment" n="iii" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>α</orig><milestone unit="block"/>
+                        <gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div>
+                  <div subtype="fragment" n="iv" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ων</w> <w part="I">πι</w><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab>
+                    </div>
+            </div></div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+            <app loc="a ii">
+                  <note> Λ could also be Δ</note>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>. [?On behalf of the victory] of Emperor Caesar [Marcus Aure]l[ius Antoni]nus [Augustus], 
+               victor in [Germany], ?greatest victor in ?Sarmatia </p>
+         <p><note>b</note>. M(arcus) Domitius [ . . .]  </p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The work is clearly connected with the restoration of the temple after its destruction in the
+               Jewish Revolt of 115; see also <ref type="inscription" n="C.651">C.651</ref>, <ref type="inscription" n="C.250">C.250</ref>. Pernier, loc.cit. suggested that the 
+                    inscription was cut on at least three sides of the new peristyle "<foreign xml:lang="it">a giudicare da 
+                    luogo del ritrovamento</foreign>". but Reynolds and Goodchild examined some of the blocks on the south
+                    side which still lie as fallen, without finding any trace of a text cut there, nor could 
+                    they see any indication of a text on the blocks collected by the excavators on the 
+                    north side. Provisionally, therefore, it appears that only the East and West 
+                    faces were inscribed, although it must be admitted that this gives uncomfortably
+                    little space for the full titles of the Emperor. </p>
+            <p>a, the inscription from the east side, is made of a number of pieces, of which five surviving bear legible text; a. iv and vii are known only from photographs (F  476, 467) and probably
+                belong to this group. </p>
+            <p>a.iv. is probably to be identified with one read by Oliverio as OM. </p>
+            <p>a.vii. probably to be identified wth one read by Oliverio (notes) as Γ and 
+                    taken by him to be the inital of Γερμανικός; a stop after the letter seems
+                    to be clear. It is presumably either the last letter of an abbreviated word, 
+                    or a figure or an abbreviated praenomen. </p>
+            <p> b.i: Pernier, believing the text to be Severan, suggested that this was M. Domitius Aristaeus Arabianus (<title>PIR<hi rend="superscript">2</hi></title> D 0134), acting as proconsul.</p>
+            <p> b.iii belongs to the right end of b.ii </p>
+            <p>b.iv was wrongly taken by Oliverio to belong to the portico on the terrace in front of the cave of the priests. </p>
+            <p> Since there were five architrave blocks on the East front it is possible to calculate the approximate length of
+                        the text and to propose, very provisionally, the restoration of a.  An alternative explanation of fragment vii would be 
+                        that the text began  (ἔτους) γ' (ιγ'), cf. the related <ref type="inscription" n="C.250">C.250</ref>, line 1 or, if the 
+                        inscription did in fact continue onto the north face giving space for the full
+                        imperial title, that it was part of the figure of the tribunician power, consulates
+                        or imperial salutations. It is relevant to note that it does not seem to have been 
+                        usual in this inscription to use stops between words - the only other that occurs
+                        is after the abbreviated praenomen in b.i. Major defects in the proposal are the 
+                        κοινή forms imposed by this interpretation of the fragment vi and the heavy 
+                        abbreviation of the names and titles of the emperor which are rare in Cyrene. </p>
+            <p> For the text on the West front even the most provisional restoration is impossible,
+                but it is likely that the dedication of the building by the proconsul was recorded there. </p>
+            <p>a.v:  ΝΙΚ is from a victory title: either [Γερμα]νικ[οῦ, Βρεταν]νικ[ου or Ἀδιαβη]νικ[οῦ</p>
+            <p>a:vi: The letters ΑΡΜ are from  either [Σ]αρμ[ατικοῦ] or Ἀρμ[ενιακοῦ. The title <foreign xml:lang="la">Sarmaticus</foreign> could refer to M. Aurelius or Commodus, 
+               <foreign xml:lang="la">Armeniacus</foreign> only to M. 
+                    Aurelius; but the emperor concerned is more likely to be Commodus in view of his 
+                    appearence in the related <ref type="inscription" n="C.250">C.250</ref>, line 1. Oliverio (notes) interpreted b.ii as [Αὐτοκρατόρ]ων 
+                    Μ[...] which would seem to indicate the joint reign of Aurelius and Commodus. This
+                    is presumably why Pernier, loc.cit. 140f., speaks of blocks containing the names of two
+                    emperors although he took them to be Severus and Caracalla (arguing that <ref type="inscription" n="C.250">C.250</ref> 
+                    records the completion of the cella under Commodus while the peristyle remained
+                    unfinished until the next reign); but the presence of the title <foreign xml:lang="la">Sarmaticus</foreign> or
+                    <foreign xml:lang="la">Armeniacus</foreign> in a.iii rules out the Severan dynasty and since the cella was only 
+                    completed in the sole reign of Commodus the peristyle could have been dedicated at 
+                    an earlier date as would be implied by the presence of a pair of emperors with the 
+                    title <foreign xml:lang="la">Sarmaticus</foreign>. </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

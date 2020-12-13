@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C25700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Luna</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.300</idno>
+            <idno type="ircyr2012">C25700</idno>
+            <idno type="JMR">855</idno>
+            <idno type="Excel">1164</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Temple of Isis</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> <objectType>altar</objectType>, moulded above and below, 
+                              recomposed from two pieces, (<dimensions><width>0.33</width> <height>0.96</height> <depth>0.33</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First-second century: <height>0.06</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate evidence="lettering" notAfter="0200" notBefore="0101" precision="low">First to second centuries CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1235">Temple of Isis</placeName>; photographed in <date type="found">1924</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/1235">Temple of Isis</placeName>: standing against the east internal wall beside <ref type="inscription" n="C.301">C.301</ref> (<date type="observed">2008</date>). 
+                              </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-26" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-07" who="GillianB">tokenized</change>
+         <change when="2009-07-06" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_855" decls="#photograph"><desc><ref type="inscription" n="C.300">C.300</ref>, left and 
+      <ref type="inscription" n="C.301">C.301</ref>, right</desc></graphic>
+      <graphic url="JMR_856_855_857" decls="#photograph"><desc><ref type="inscription" n="C.300">C.300</ref>, <ref type="inscription" n="C.301">C.301</ref> 
+         and <ref type="inscription" n="C.302">C.302</ref> (Department of Antiquities, F.284)</desc></graphic>
+      <graphic url="DSC04875" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04876" decls="#photograph"><desc>Text (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04877" decls="#photograph"><desc>Text (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04878" decls="#photograph"><desc>Monument (2008, H.Walda)</desc></graphic></facsimile>
+   
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="SECir"/>, <citedRange>78</citedRange> and fig. 66 (from T.XI 27)</bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="divine" key="luna"><name nymRef="Luna">Lunae</name></persName>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><supplied reason="subaudible">Altar</supplied> of Luna</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>See also <foreign xml:lang="la">Martis</foreign> in <ref type="inscription" n="C.301">C.301</ref>. 
+               Clearly from a series dedicated to the gods of the seven planets and days of the week, see P. Duval, 'Les Dieux de la semaine' in 
+               <title><ref target="https://zenon.dainst.org/Record/000210382">Travaux sur la Gaule</ref></title> (1989) at 
+               <ref target="www.persee.fr/doc/efr_0000-0000_1989_ant_116_1_3671">Persée</ref>
+               <!-- cf. CIL V 5051 f. From Vervo' in Latina and            in Greek and for other monuments of the seven planets see P.W.  S.v. Planeten, Maass, 
+                  Tagesgotter and H Stern, Le Calendier de 354, pl.       cfr. also Duval P. Les Dieux de la semaine, Gallia XI (1953) 282f.; 
+                  J.s. Craeghan  Vitalis Sepulcri (Princeton 1951 resume' in DA XV 1955, 1050/1); W. Schweiermacher  Germanica XXXII 91954) 326. --> </p>
+            <p> The use of Latin on a monument in the sanctuary of Apollo is most unusual. </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

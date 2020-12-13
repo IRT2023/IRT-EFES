@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C75400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Hermes and Herakles</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.432</idno>
+            <idno type="ircyr2012">C75400</idno>
+            <idno type="JMR">923 b</idno>
+            <idno type="Excel">157</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower part of a <material>marble</material> base, moulded below, broken in three pieces, (<dimensions>
+                              <width unit="metre">1.03</width> 
+                              <height unit="metre">0.47</height> 
+                              <depth unit="metre">0.285</depth>
+                           </dimensions>),and inscribed apparently on 3 occasions: firstly (perhaps) with this dedication; 
+                              then with the list <ref type="inscription" n="C.431">C.431</ref>; then overcut with graffiti, <ref type="inscription" n="C.433">C.433</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>A formal text <rs type="execution" key="scalpro">inscribed</rs> on the moulding below <ref type="inscription" n="C.431">C.431</ref></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE - Augustan: <height>0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Given the findspot it is no doubt presumably a stray from the Gymnasium beside the Caesareum.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0014" precision="low" evidence="lettering">First century BCE - Augustan</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              about 150m from the <placeName type="monuList" ref="https://www.slsgazetteer.org/1240">City wall</placeName>, south west of the Agora on the road to Beida (so Oliverio, notes);
+                              found in <date type="found">1915</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2013-09-25" who="TW">Edited photo info</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-02-22" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-05-19" who="AO">tokenized</change>
+         <change when="2009-06-17" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_923abc_front_2" decls="#photograph"><desc>Face, showing <ref type="inscription" n="C.431">C.431</ref>, 
+      <ref type="inscription" n="C.432">C.432</ref> and <ref type="inscription" n="C.433">C.433</ref>  (Department of Antiquities, E 294)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="gpc1961"/>, <citedRange>6</citedRange>, p. 19</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>20.740</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324496">324496</ref></citedRange></bibl>, 
+               <bibl><ptr target="robertBE"/>, <citedRange>1962.363</citedRange>, p. 218</bibl>;
+               <bibl><ptr target="gl-jmr1983"/>, <citedRange>6</citedRange></bibl>. Discussed, <bibl> <ptr target="gasperini1985"/>, <citedRange>174</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-658074"><name nymRef="Τίμαρχος">Τίμαρχος</name> <space quantity="1" unit="character"/>
+                       <persName type="attested" key="lgpn:V1-63974"><name nymRef="Ζευξίμαχος">Ζευξιμάχω</name></persName></persName>
+                    <lb n="2"/><persName type="divine" key="hermes"><name nymRef="Ἑρμῆς">Ἑρμαι</name></persName> <space quantity="7" unit="character"/>
+               <persName type="divine" key="herakles"><name nymRef="Ἡρακλῆς">Ἡρακλεῖ</name></persName>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <p/>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Timarchos <supplied reason="subaudible">son</supplied> of Zeuximachos, to Hermes and Herakles</p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>تيمارخوس (بن) زيفكسيماخوس، (إهداء) لهرمس و هيراكليس</p></div>
+       </div> 
+       
+         <div type="commentary">
+            <p>This text may have accompanied the list <ref type="inscription" n="C.431">C.431</ref>, or preceded it.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P.28" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Boundary</rs> 
+                ruling</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.28</idno>
+            <idno type="ircyr2012">P03100</idno>
+            <idno type="JMR">268</idno>
+            <idno type="Excel">744</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Roughly rectangular <material>sandstone</material> 
+                              <objectType>stele</objectType>
+                    (<dimensions>
+                                 <width unit="metre">0.62</width>
+                                 <height unit="metre">0.80</height>
+                                 <depth unit="metre">0.35</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.04</height>; superscript bars above the figures in line  3.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notAfter="0089" notBefore="0088" evidence="reign titulature">13th September 88 - 12th September 89</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/939">West Gate</placeName>, South Tower, in situ against the extra-urban wall; found in <date type="found">1936</date>,
+                       .</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-04-05" who="MGDA">fixed Caputo bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-10" who="CMR">corrections</change>
+         <change when="2010-04-20" who="GB">metadata</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="GB">dimensions, date</change>
+         <change when="2009-12-29" who="CMR">tagged monument, date, corrected keywords</change>
+         <change when="2009-07-26" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_268_001" decls="#photograph"><desc>Front view.</desc></graphic>
+      <graphic url="JMR_268_002" decls="#photograph"><desc>Text (no focus)</desc></graphic><!--Dept. Tolmeita archive Rm 24, F20, 463 neg. 42A.--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="romanelli1943"/>, <citedRange>102</citedRange>, n. 3</bibl> (text only); <!-- check -->
+               <bibl>
+                  <ptr target="caputo1954"/>  vol. III, p.<citedRange unit="page">51</citedRange>, fig. 27 (illustration only)</bibl>;
+                from these,  
+              <bibl><ptr target="AE"/> <citedRange>1954.188</citedRange></bibl>, <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD018137">018137</ref></citedRange></bibl>;
+               <bibl><ptr target="kraeling1962"/>  <citedRange>pl. VI A</citedRange></bibl> (illustration only; not legible); 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>104</citedRange></bibl>.
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><w lemma="iussus">Iussu</w> <date ref="https://godot.date/id/iqLe6kfhiR4t9LvSbKKiXH"><persName type="emperor" key="domitianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratoris</ex></expan></w> 
+                              <name nymRef="Domitianus">Domitiani</name> <name nymRef="Caesar">Cae<lb 
+                                 n="2" break="no"/>saris</name> <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> 
+                               <name nymRef="Germanicus"><expan><abbr>Germ</abbr><ex>anici</ex></expan></name> 
+                              <expan><w lemma="pontifex"><abbr>pont</abbr><ex>ificis</ex></w></expan> <w lemma="maximus">m<unclear>a</unclear><lb 
+                                 n="3" break="no"/>ximi</w> <expan><w lemma="tribunicius"><abbr>trib</abbr><ex>unicia</ex></w> 
+                               <w lemma="potestas"><abbr>pot</abbr><ex>estate</ex></w></expan> <num value="8">VIII</num>
+                             <expan>  <w lemma="pater"><abbr>p</abbr><ex>atris</ex></w> 
+                               <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan>
+                               <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr><unclear>s</unclear></abbr><ex>ulis</ex></expan></w>
+                               <hi rend="supraline"><num value="14"><unclear>X</unclear><supplied reason="lost">II</supplied>I<unclear>I</unclear></num> </hi>
+                    <lb n="4"/><w lemma="censor"><expan><abbr>cens</abbr><ex>oris</ex></expan></w> <w lemma="perpetuus">perpetui</w> </persName></date>
+                              <persName type="attested" key="pir2-0-0716"><name nymRef="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name nymRef="Pomponius">Pomponi<lb 
+                                 n="5" break="no"/>us</name> <name nymRef="Gallus">Gallus</name> <name nymRef="Didius">Didius</name> <name nymRef="Rufus">Rufus</name></persName> 
+                    <lb n="6"/><w lemma="proconsul"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> 
+                    <w lemma="locus">locum</w>  <w lemma="possideo">pusses<lb n="7" break="no"/>sum</w> <w lemma="ab">a</w> <w lemma="priuatus">priuatis</w> <w lemma="ciuitas">ciuitati</w> 
+                    <lb n="8"/><placeName type="ethnic" nymRef="#Ptolemaensis" ref="#ptolemais">Ptolemaensium</placeName> <w lemma="restituo">res<lb n="9" break="no"/>tituit</w> <space quantity="3" unit="character"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="3">
+                  <rdg resp="#romanelli1943">[XIV]</rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>By the command of the Emperor Domitianus Caesar Augustus Germanicus, Pontifex Maximus, 
+                    <ref target="https://godot.date/id/iqLe6kfhiR4t9LvSbKKiXH">holding tribunician power for the eighth time, Father of the fatherland, consul for the fourteenth time</ref>, 
+                    perpetual censor: C. Pomponius Gallus Didius Rufus, the proconsul, restored this place, which had been occupied
+                    by private individuals, to the city of Ptolemais.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- <p>l. 3, 13th September 88 - 12th September 89</p> -->
+            <p>Line 5: C. Pomponius Gallus Didius Rufus, <title>PIR<hi rend="superscript">2</hi></title>, P 0716, 
+               Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.032.</p>
+            <p>Kraeling, pp. 10, 58, 113, 115, confused this stele with <ref type="inscription" n="P.397">P.397</ref>, and infered from it the existence of a 
+               royal estate to the west of the city, which cannot be accepted on this evidence.
+               </p>
+            <p>The text shows Domitian pursuing the policy of restoration of city lands of his predecessors; cf also <ref type="inscription" n="C.16">C.16</ref>.
+                    <!-- , cf. F. Castagnoli, <title level="j">Riv. Fil. Class</title>. XXVI (1948) 280 f.well documented under Vespasian --></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

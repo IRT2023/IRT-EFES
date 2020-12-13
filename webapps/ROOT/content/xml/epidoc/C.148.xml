@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C97800" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Dedication</rs> by the ephoroi</title>
+                <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+                <editor xml:id="cdl">Catherine Dobias-Lalou</editor> <editor xml:id="ab">Alice Bencivenni</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority/>
+                <idno type="filename">C.148</idno>
+            <idno type="ircyr2012">C97800</idno><!--IGCyr116200 passed on to IRCyr; Marengo's edition -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum, storeroom of the Italian missions</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                   <p>Rectangular <objectType>panel</objectType> of white <material>marble</material>, carefully smoothened on front face                                       (<dimensions>
+                                           <width>0.29</width>
+                                           <height min="0.269" max="0.273">0.269-0.273</height>
+                                           <depth min="0.3" max="0.57">0.3-0.57</depth>
+                                       </dimensions>).
+                                   </p> </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed on front with axial layout, lines 3-8 with a variable space between name and father's name.</rs></layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote><height min="0.014" max="0.024">0.014-0.024</height>; serifs, xi with vertical central stroke, pi with projecting upper bar,
+                                tall non-slanting sigma, phi with tall vertical stroke and small oval loop; traces of red in the letters.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="http://pleiades.stoa.org/places/373778 https://www.slsgazetteer.org/909">Cyrene</origPlace>.
+                            <origDate evidence="lettering" precision="low" notBefore="-0100" notAfter="-0001">First century BCE</origDate>
+                        </origin>
+                       
+                        <provenance type="found" when="1963-08-04">
+                           <p>Found in 04-08-1963 in <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                               reused in a wall to the south of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>, near <ref type="inscription" n="C.149">C.149</ref>.
+                           </p>
+                         </provenance>
+                        <provenance type="observed">
+                            <p><placeName type="monuList" ref="https://www.slsgazetteer.org/1484">Cyrene Museum, storeroom of the Italian missions</placeName>.</p>
+                        </provenance>
+                  
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+     <profileDesc>
+          <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="InsLib">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://www.geonames.org/" key="Shahat">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+         <creation>Transcription (Marengo) checked from photograph and editor's archive (Dobias-Lalou).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2020-11-24" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
+            <change when="2013-07-18" who="Ljuba">Checked and, in case, corrected the tagging of the whole file</change>
+            <change when="2013-07-15" who="Lab Unibo">Modified lemma, bibliography, text tagging, commentary</change>
+            <change when="2013-07-14" who="Simone Lab Unibo">File created: lemma, text markup, translation, commentary</change>
+            <change when="2013-07-16" who="Marengo">lemma, text finished, commentary</change>
+            <change when="2014-03-19" who="CDL">final check and slight changes before passing on to IRCyr</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><surface><!--Photographic archive of Macerata--></surface></facsimile>
+    <text>
+       <body>
+           
+           <div type="bibliography">
+               <head>Bibliography</head>
+               <p>
+                  <bibl><ptr target="gasperini1967a"/>, <citedRange>23</citedRange>, pp.170-71 and fig. 207</bibl>, whence
+                   <bibl><ptr target="robertBE"/>, <citedRange>1972.622a</citedRange></bibl>
+                   (again <bibl><ptr target="gasperini2008"/>, <citedRange>23</citedRange>, pp.85-6 and fig. 23</bibl>). 
+                   Cf. <bibl><ptr target="fraser1958"/>, <citedRange>3</citedRange>, pp.108-111</bibl>;
+                   discussed, <bibl><ptr target="ottone2000"/> <citedRange></citedRange></bibl>, whence 
+                   <bibl><ptr target="SEG"/> <citedRange>50.1629</citedRange></bibl>
+                   and <bibl><ptr target="robertBE"/>, <citedRange>2002.563</citedRange></bibl>;
+                  discussed <bibl><ptr target="ottone2002"/> pp. <citedRange>187-9</citedRange></bibl>, <!-- check -->
+                  <bibl><ptr target="chevrollier2010"/> pp. <citedRange>132-3</citedRange></bibl>.</p>
+           </div>
+           
+           
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+                
+                <ab>
+                    <lb n="1"/> <w lemma="ἔφορος">Ἔφοροι</w> <space quantity="1" unit="character"/> <w lemma="ὁ">οἱ</w> <date ref="https://godot.date/id/Mjs3Vt25ydaTn9HDDUqxkk"><w lemma="ἐπί">ἐφ’</w><w lemma="ἱερεύς">ἱαρεῦς</w>
+                    
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-63835"><name nymRef="Εὐκλῆς">Εὐκλεῦς</name> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-62629"><name type="patronymic" nymRef="Αἰγλάνωρ">Αἰγλάνορος</name></persName></persName></date>
+                    
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-66003"><name nymRef="Φιλόκωμος">Φιλόκωμος</name> <space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-63172"><name type="patronymic" nymRef="Ἀριστοτέλης">Ἀριστοτέλευς</name></persName></persName>
+                    
+                    <lb n="4"/><persName type="attested" key="lgpn:V1-65107"><name nymRef="Νίκαιος">Νίκαιος</name> <space quantity="3" unit="character"/> <persName type="attested" key="lgpn:V1-63324"><name type="patronymic" nymRef="Αὔξιμος">Αὐξίμω</name></persName></persName>
+                    
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-62969"><name nymRef="Ἀπολλόδωρος">Ἀπολλόδωρος</name> <space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-62985"><name type="patronymic" nymRef="Ἀπολλωνίδης">Ἀπολλωνίδα</name></persName></persName>
+                    
+                    <lb n="6"/><persName type="attested" key="lgpn:V1-63565"><name nymRef="Διόδωρος">Διόδωρος</name> <space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-62979"><name type="patronymic" nymRef="Ἀπολλοφάνης">Ἀπολλοφάνευς</name></persName></persName>
+                    
+                    <lb n="7"/><persName type="attested" key="lgpn:V1-63075"><name nymRef="Ἀριστέας">Ἀριστέας</name> <space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-62771"><name nymRef="Ἁλιόδωρος">Ἁλιοδώρω</name></persName></persName>
+                    
+                    <lb n="8"/><persName type="attested" key="lgpn:V1-65930"><name nymRef="Φίλιππος">Φίλιππος</name> <space quantity="3" unit="character"/> <persName type="attested" key="lgpn:V1-65929"><name type="patronymic" nymRef="Φίλιππος">Φιλίππω</name></persName></persName>
+                    
+                    <lb n="8a"/> <space quantity="1" unit="line"/>
+                    
+                    <lb n="9"/> <w lemma="ὁ">τὰν</w> <persName type="divine" key="agathetyche"><w lemma="ἀγαθός">Ἀγαθὰν</w> <name nymRef="Τύχα">Τύχαν</name></persName>.
+                
+                </ab>
+            </div>
+           
+           
+            
+            
+           <div type="translation" xml:space="preserve"><head>Translations</head>
+                <div type="translation" xml:lang="en" resp="#cdl"><p>The ephoroi in office in the year of the priest <supplied reason="subaudible">of Apollo</supplied> Eukles son of Aiglanor, Philokomos son of Aristoteles, Nikaios son of Auximos, 
+                    Apollodoros son of Apollonidas, Diodoros son of Apollophanes, Aristeas son of Haliodoros, Philippos son of Philippos <supplied reason="subaudible">dedicate</supplied> the 
+                    statue of the Good Fortune.</p></div>
+            </div>
+           
+          
+                <div type="translation" xml:lang="it" resp="#ab"><p>Gli efori in carica nell’anno del sacerdote <supplied reason="subaudible">di Apollo</supplied> Eukles figlio di Aiglanor, Philokomos figlio di Aristoteles, Nikaios figlio di Auximos, 
+                    Apollodoros figlio di Apollonidas, Diodoros figlio di Apollophanes, Aristeas figlio di Haliodoros, Philippos figlio di Philippos <supplied reason="subaudible">dedicano</supplied> la 
+                    statua della Agatha Tycha.</p></div>
+            
+           
+                <div type="translation" xml:lang="fr" resp="#cdl"><p>Les éphores en charge l'année du prêtre <supplied reason="subaudible">d'Apollon</supplied> Euklès fils d'Aiglanôr, Philokômos fils d'Aristotélès, Nikaios fils d'Auximos, 
+                    Apollodoros fils d'Apollonidas, Diodoros fils d'Apollophanès, Aristéas fils d'Haliodôros, Philippos fils de Philippos <supplied reason="subaudible">dedient</supplied> la 
+                    statue de la Bonne Fortune.</p></div>
+            
+          
+           <div type="commentary">
+                <p>The number of ephors, six instead of five as in <ref target="https://igcyr.unibo.it/igcyr010800">igcyr010800</ref> lines 33 and 82-4, testifies to a constitutional reform; 
+                    on the basis of <ref target="https://igcyr.unibo.it/igcyr063800">igcyr063800</ref>, this reform may precede the second half of the second century BCE The question was discussed by
+                    Fraser, Gasperini, Ottone and Chevrollier.
+                </p>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

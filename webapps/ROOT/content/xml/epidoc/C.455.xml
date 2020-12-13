@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Ceres</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.455</idno>
+            <idno type="ircyr2012">C89700</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">3480</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>base</objectType>, inscribed at different periods on three different faces with <ref target="https://igcyr.unibo.it/igcyr081800">IGCyr081800</ref>, 
+                           <ref type="inscription" n="C.455">C.455</ref> and <ref type="inscription" n="C.456">C.456</ref>. 
+                              (<dimensions>
+                                 <width>0.97</width>
+                                 <height>0.35</height>
+                                 <depth>0.23</depth>
+                              </dimensions>). An area has been hollowed 
+                              out on top for the insertion of a statue.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, which measures <dimensions><width>0.97</width>
+                           <height>0.35</height> <dim type="diameter">0.33</dim></dimensions> and is finely polished. <!-- check position --></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lines 1, 3, 4, <height>0.05</height>, line 2, <height>0.06</height>; there are stops between the words in approximately the shape of a 
+                        comma and acute accents above some vowels.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0033" notBefore="0001" precision="low" cert="low" evidence="lettering">Probably early first century CE.</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>: found in 1987 by Mr Ramadan Gwaider of the Department 
+                              of Antiquities at Cyrene, exposed by the combined action of burrowing foxes and winter rain, low down on the site, near the lower wall.  
+                              </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName> </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc><encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Ljuba">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned <bibl> <ptr target="mohamed-jmr1992"/>, <citedRange>115-6</citedRange></bibl>; published
+               <bibl><ptr target="mohamed-jmr1994"/>, <citedRange>1</citedRange></bibl>, whence 
+                <bibl><ptr target="cdlBE"/>, <citedRange>1995.683</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>44.1538</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>1994.1820b</citedRange></bibl> whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD051935">051935</ref></citedRange></bibl>;
+               <bibl><ptr target="jmr2012"/>, <citedRange>A.28.2</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab><lb n="1"/> <space quantity="3" unit="character"/> <persName type="divine" key="demeter"><name nymRef="Ceres">Cereri</name> <name nymRef="Augusta">August<hi rend="apex">a</hi>e</name></persName>
+               <space quantity="3" unit="character"/>
+               <lb n="2"/> <space quantity="5" unit="character"/> <w lemma="ex">ex</w> <w lemma="uotum">uoto</w> <space quantity="5" unit="character"/>
+               <lb n="3"/> <space quantity="1" unit="character"/> <persName type="attested"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> 
+                    <name nymRef="Romanius">R<hi rend="apex">o</hi>m<hi rend="apex">a</hi>nius</name> 
+                    <persName type="attested"><name nymRef="Servius"><expan><abbr>Ser</abbr><ex>vi</ex></expan></name> 
+                   <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <name type="tribe" key="Voltinia"><expan><abbr>Vol</abbr><ex>tinia</ex></expan></name> <supplied reason="subaudible"><w lemma="tribus">tribu</w></supplied></persName>
+                    <name nymRef="Epulo"><hi rend="apex">E</hi>pulo</name></persName> <space quantity="1" unit="character"/>
+              <lb n="4"/> <space quantity="3" unit="character"/>  <w lemma="pro">pr<hi rend="apex">o</hi></w> <w lemma="magister"><expan><abbr>mag</abbr><ex>ister</ex></expan></w> 
+               <w lemma="publicus">publici</w> <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene">Cyren<hi rend="apex">e</hi>nsis</placeName> <space quantity="3" unit="character"/>
+            </ab>
+         </div>
+         <div type="translation" xml:space="preserve">
+            <div type="translation" source="#jmr2012" xml:lang="en"><p>To Ceres Augusta, in accordance with a vow, M(arcus) Romanius Epulo, son of Ser(vius), tribe Vol(tinia), acting head of the 
+               company <supplied reason="explanation">collecting</supplied> public revenue in Cyrene.
+               </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The goddess is here addressed in her Roman form associated with the Roman imperial house by her title.  This is unique in the record 
+               from the site so far, and it might seem more rational to place such a record in the Temple of Demeter in the Agora rather than here in the Wadi 
+               Bel Gadir.  On the other hand, the Wadi Bel Gadir had manifestly been the location of personal dedications to the goddesses for many years and 
+               this is a personal dedication, if by a Roman in an official position of a kind.  In any case, the base was certainly in the Wadi Bel Gadir for its third 
+               use (see <ref type="inscription" n="C.456">C.456</ref>) and it is hard to believe that this earlier dedication to the same deity was not set up in the same sanctuary.  If that is accepted the 
+               text throws new light on the importance of the cult, which clearly had a public character beyond what any of the earlier texts might lead one to 
+               suppose.  That helps to explain the appearance of civic dedications (<ref type="inscription" n="C.445">C.445</ref>, 
+               <ref type="inscription" n="C.446">C.446</ref>, <ref type="inscription" n="C.447">C.447</ref>)
+               on the site. </p>
+            <p> Romanius Epulo is otherwise unknown but may have been related to the Romanius Hispo (<title>PIR<hi rend="superscript">2</hi></title> R 0081) of Tacitus, <title>Annales</title> 1.74 
+               (available at <ref target="http://data.perseus.org/citations/urn:cts:latinLit:phi1351.phi005.perseus-lat1:1.74">Perseus</ref>, see also R. Syme, 'Personal Names in Annals I-VI', JRS 39, 1949, 6-18, 14-15), 
+                 a man described as of obscure origins who was among the first to make a career of charging public men with treason against the emperor.  Epulo 
+                 names himself as senior representative of the company of publicani collecting public revenue for Rome in Cyrenaica.  A good harvest would of 
+                 course increase the amount of tax collectable, which explains his dedication and points to the major function of the goddesses.
+                 See further the discussion by Fadel Ali Mohamed and J. M. Reynolds, cited above.
+            </p>
+         </div>
+      </body>
+   </text>
+</TEI>

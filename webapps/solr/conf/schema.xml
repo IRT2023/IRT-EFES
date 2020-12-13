@@ -150,7 +150,13 @@
    <field name="mentioned_people" type="string" indexed="true"
           multiValued="true" stored="true" required="false" />
    <field name="source_repository" type="string" required="false"
-          multiValued="true" stored="true" indexed="true" />
+     multiValued="true" stored="true" indexed="true" />
+   <field name="text_type" type="string" required="false"
+     multiValued="true" stored="true" indexed="true" />
+   <field name="language" type="string" required="false"
+     multiValued="true" stored="true" indexed="true" />
+   <field name="ordered_id" type="string" required="false"
+     multiValued="false" stored="true" indexed="false" /> 
    <!-- User index fields. -->
    <field name="index_item_name" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />
@@ -164,6 +170,20 @@
           multiValued="false" required="false" type="string" />
    <field name="origin_date_evidence" required="false" indexed="true"
           multiValued="true" stored="true" type="string" />
+   <field name="index_item_sort_name" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_item_sort_dur" stored="true" indexed="true"
+     multiValued="false" required="false" type="string" />
+   <field name="index_external_resource" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
+   <field name="index_ethnic" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
+   <field name="index_findspot_upper_level" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
+   <field name="index_findspot_intermediate_level" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
+   <field name="index_findspot_lower_level" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
    <!-- Concordance fields. -->
    <field name="concordance_bibliography_ref" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />

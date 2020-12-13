@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Curse</rs> tablet mentioning Euboul- and Eucha-</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.489</idno>
+            <idno type="ircyr2012">C93000</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">74-299</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Lead</material> <objectType>plaque</objectType>  
+                              (<dimensions>
+                                 <width>0.052</width>
+                                 <height>0.60</height>
+                                 <depth>0.002</depth>
+                              </dimensions>). Bent and corroded, with a hole pierced through it at approximately the centre of the top. </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on both sides, i. on inside, ii. on outside.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>not dated; they include some cursive forms.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0300" precision="low" evidence="context">First century BCE - third century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>: area F12, 1, 2.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, Storeroom of the American excavations </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Ljuba">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned by <bibl><ptr target="jordan1985"/> p.187 under no. <citedRange>150</citedRange></bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>35.1727</citedRange></bibl>;
+               <bibl><ptr target="jmr2012"/>, <citedRange>A.61</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>62.1798</citedRange></bibl>.</p>
+         </div>
+         
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div type="textpart" subtype="face" n="i">
+               <ab><lb n="1"/><persName type="attested"><name nymRef="Εὐβου-"><seg part="I">Εὐβου<supplied reason="lost" cert="low">λ</supplied></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/><orig>λ</orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2a"/><gap reason="lost" quantity="2" unit="line"/>
+                  <lb n="3"/><gap reason="lost" quantity="3" unit="character"/><orig><unclear>γ</unclear>η</orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="4"/><orig>ε</orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>         
+               </ab>
+            </div>
+            <div type="textpart" subtype="face" n="ii">
+               <ab><lb n="1"/><persName type="attested"><name nymRef="Εὐχα-"><seg part="I"><unclear>Ε</unclear>ὐχα</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                  <lb n="2"/><orig>κιου<unclear>θο</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>                  
+                  <lb n="3"/><persName type="attested"><name nymRef="Ἀχ-"><seg part="I">Ἀχ</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                  <lb n="3a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+            </div>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" source="#jmr2012" xml:lang="en"><p>i. Eubou[l]-</p>
+            <p>ii. Eucha-</p></div>
+         </div>
+         
+         <div type="commentary">  
+            <p>Jordan, who only saw a photograph, reported two illegible lines followed by Εὐβοι/ος[ . . . . ] 
+               Reynolds suggests that, with time and good lighting of the tablet more might be read. The discovery of two curse tablets in 
+               the Sanctuary is paralleled, see e.g. R. Stroud, <title level="a">Curses from Corinth</title>, AJA 77 (1973) 228 f. for 14 curse tablets of the Roman period found in the Sanctuary 
+               of Demeter and Kore on Akrocorinth (reference from Jordan, loc.cit. p.166), and N. Bookidis, <ref target="https://zenon.dainst.org/Record/000362556">Cursing in the sanctuary of Demeter and Kore at Ancient Corinth</ref> (1993).</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

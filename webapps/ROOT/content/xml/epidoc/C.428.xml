@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C80800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Boundary</rs> marker</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.428</idno>
+            <idno type="ircyr2012">C80800</idno>
+            <idno type="JMR">Y 13</idno>
+            <idno type="Excel">1198</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                  URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Brown <material>limestone</material>
+                              <objectType>stele</objectType> (<dimensions><width>0.65</width> <height>1.45</height> <depth>0.45</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on two
+                           faces, Latin on one face and Greek on the other face, to the left. 
+                           The surface, originally rough, has been smoothed for the inscription.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.045-0.05</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notAfter="0071" notBefore="0071" evidence="titulature">71 CE, second half</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: <placeName ref="https://www.slsgazetteer.org/1069">East Necropolis</placeName>, between the hill of <placeName type="monuList" ref="https://www.slsgazetteer.org/1375">Eluet Gassam</placeName> and the <ref target="https://www.slsgazetteer.org/1066/">Temple of Zeus</ref>, not far from <ref type="inscription" n="C.429">C.429</ref>, <ref type="inscription" n="C.430">C.430</ref>; found in <date type="found">1916</date>
+                        and photographed when complete.</p>
+                  </provenance>
+                  <provenance type="observed">
+                     <p>Two fragments have been identified in <placeName type="monuList" ref="institution.xml#db933">Cyrene
+                           Museum</placeName>.</p>
+                  </provenance>
+
+
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to
+            profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
+            elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-04-01" who="MGDA">fixed Ghislanzoni bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc
+            RNG schema v. 8)</change>
+         <change when="2010-06-16" who="AIO">tokenized</change>
+         <change when="2009-08-25" who="Paolo">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><!--Dept. no. 2068. --><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="ghislanzoni1916a"/>, <citedRange>173</citedRange>, with illustration, figs. 3, 4, pp. 174, 175</bibl>, whence <bibl><ptr target="SEG"/> <citedRange>9.166</citedRange>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324017">324017</ref></citedRange></bibl>, 
+              <bibl><ptr target="AE"/> <citedRange>1919.93</citedRange></bibl>, whence 
+              <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD026847">HD026847</ref></citedRange></bibl>, <!-- check --></bibl>, <ref target="https://zenon.dainst.org/Record/000228551">McCrum/Woodhead (1961)</ref> no. 435; see also
+               <bibl><ptr target="ferri1923"/>, <citedRange>12</citedRange> n. 11</bibl>. Discussed, ; discussed <bibl><ptr target="struffolino2014"/>, <citedRange>363-4</citedRange></bibl>, 
+               <bibl><ptr target="cdl2016a"/>, <citedRange>53-59</citedRange></bibl></p>
+         </div>
+
+         <div type="edition" xml:space="preserve"><div xml:lang="la" type="textpart" subtype="face" n="a"><ab>
+                    <lb n="1"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><persName type="emperor" key="vespasianus"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w> <name nymRef="Caesar"><supplied reason="lost">Caesar</supplied></name>
+                    <lb n="2"/><name nymRef="Vespasianus"><supplied reason="lost">Vespasianus</supplied></name>
+                    <lb n="3"/><name nymRef="Augustus"><expan><abbr><supplied reason="lost">Au</supplied><unclear>g</unclear></abbr><ex>ustus</ex></expan></name></persName> <w lemma="pontifex"><expan><abbr>punt</abbr><ex>ifex</ex></expan></w> <note>sic</note>
+                    <w lemma="maximus"><expan><abbr>max</abbr><ex>imus</ex></expan></w>
+                    <lb n="4"/><w lemma="tribunicius"><expan><abbr>tribunic</abbr><ex>ia</ex></expan></w>
+                    <w lemma="potestas"><expan><abbr>put</abbr><ex>estate</ex></expan></w> <num value="3">III</num> <note>sic</note>
+                    <lb n="5"/> <w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w>
+                    <num value="8">VIII</num>
+                   <w lemma="pater"><expan><abbr>p</abbr><ex>ater</ex></expan></w> <w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w>
+                    <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                    <lb n="6"/><num value="3">III</num>, <w lemma="designatus"><expan><abbr>desig</abbr><ex>natus</ex></expan></w>
+                    <num value="4">IV</num></date> <w lemma="per">per</w>
+                    <lb n="7"/><persName type="attested" key="pir2-p-0027"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintum</ex></expan></name> <name nymRef="Paconius">Paconium</name> <name nymRef="Agrippinus">A<lb n="8" break="no"/>grippeinum</name></persName> <w lemma="legatus">le<lb n="9" break="no"/>gatum</w>
+                    <w lemma="suus">suum</w>
+            <lb n="10"/><w lemma="populus">Populo</w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><expan><abbr>R</abbr><ex>omano</ex></expan></placeName>
+                    <lb n="11"/><placeName nymRef="#Ptolmaeum" ref="#ptolomeon">Ptolmaeum</placeName> <w lemma="restituo">restituit</w>
+                </ab></div>
+            <div xml:lang="grc" type="textpart" subtype="face" n="b"><ab>
+                    <lb n="1"/><date ref="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA"><persName type="emperor" key="vespasianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτωρ</supplied></w>
+                    
+                    <lb n="2"/><name nymRef="Καῖσαρ"><supplied reason="lost">Καῖσαρ</supplied></name> <name nymRef="Οὐεσπασιανός"><supplied reason="lost">Οὐεσπα</supplied><lb 
+                       n="3" break="no"/>σιανὸς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιε<supplied reason="lost">ρεὺς</supplied></w> 
+                       <lb n="4"/><w lemma="μέγιστος">μέγιστος</w>, <w lemma="δημαρχικός">δημ<supplied reason="lost">αρ</supplied><lb 
+                          n="5" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w>
+                       <lb n="6"/><w lemma="ὁ">τὸ</w> <num value="3">γ</num>, <w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> 
+                       <lb n="7"/><w lemma="ὁ">τὸ</w> <num value="8">η</num>, <w lemma="πατήρ">πατὴρ</w> <w lemma="πατρίς">πα<lb 
+                          n="8" break="no"/>τρίδος</w>, <w lemma="ὕπατος">ὕπατος</w> <w lemma="ὁ">τὸ</w> <num value="3">γ</num>, 
+                       <lb n="9"/> <w lemma="ἀποδείκνυμι">ἀποδεδειγμένος</w> 
+                       <lb n="10"/> <w lemma="ὁ">τὸ</w> <num value="4">δ</num></date> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οΐντου</ex></expan></name> <name nymRef="Πακώνιος">Πακωνί<lb
+                          n="11" break="no"/>ου</name><name nymRef="Ἀγριππῖνος">Ἀγριππείνου</name></persName> <w lemma="ἴδιος">ἰ<lb n="12" break="no"/>δίου</w> <w lemma="πρεσβευτής">πρεσβευτοῦ</w>
+               <lb n="11"/> <w lemma="δῆμος"><expan><abbr>Δ</abbr><ex>ήμῳ</ex></expan></w>
+                    <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαίων</placeName> <w lemma="ὁ">τὸ</w> <placeName ref="#ptolomeon" nymRef="#Πτυλυμαῖον">Πτυλυμαῖ<lb n="13" break="no"/>ου</placeName> <w lemma="ἀποκαθίστημι">ἀποκατέστη<lb n="13" break="no"/>σεν</w> <space quantity="3" unit="character"/>
+                </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="4, 6"><note>The mason has had to correct letters</note>
+               </app>
+            </listApp>
+            <!--<p>L. 10 [erasure of two letters], RE ?</p>-->
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>a: <note>Latin</note>: [Emperor Caesar Vespasian Au]gustus, pontifex maximus, 
+            <ref target="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA">holding tribunician power for the third time, acclaimed imperator for the eighth time, father of the fatherland, consul three times, 
+            designated for a fourth time</ref>, through his personal envoy Q(uintus) Paconius Agrippinus restored the Ptolemaion to the Roman People.</p>
+            <p>b: <note>Greek</note>: [Emperor Caesar Ve]spasian, pontifex maximus, 
+            <ref target="https://godot.date/id/Wjo2fnpKKTCiSSxPiDASUA">holding tribunician power for the third time, acclaimed imperator for the eighth time, father of the fatherland, consul three times, 
+            designated for a fourth time</ref>, through his personal envoy K(ointos) Pakonios Agrippeinos restored the Ptolemaion to the Roman People.</p></div>
+            <div type="translation" source="#cdl2016a" xml:lang="fr"><p>l’empereur César Vespasien Auguste, grand pontife, revêtu de la puissance tribunicienne pour la troisième fois, 
+               salué empereur pour la huitième fois, père de la patrie, consul pour la troisième année et désigné pour la quatrième, par l’intermédiaire de son légat Quintus Paconius Agrippinus 
+               a fait restituer au peuple romain le Ptolmaeum.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Cf. <ref type="inscription" n="C.429">C.429</ref>, <ref type="inscription" n="C.430">C.430</ref> from
+               the same area </p>
+            <p> A moderately competent letterer produced reasonable monumental lettering but had
+               problems with spelling; he was clearly not adept at Latin.  </p>
+            <p> The second half of 71, see on <ref type="inscription" n="C.429">C.429</ref>.</p>
+            <p>Q. Paconius Agrippinus, for whom see <title>PIR<hi rend="superscript">2</hi></title> P 0027, was active in Cyrenaica under Vespasian, 71-74 CE: see <ref type="inscription" n="C.147">C.147</ref>,
+               <ref type="inscription" n="C.428">C.428</ref>, <ref type="inscription" n="C.429">C.429</ref>, <ref type="inscription" n="C.430">C.430</ref>, 
+               <ref type="inscription" n="C.430">C.438</ref>, <ref type="inscription" n="C.747">C.747</ref>, <ref type="inscription" n="M.68">M.68</ref>,
+               <ref type="inscription" n="M.165">M.165</ref>, <ref type="inscription" n="M.229">M.229</ref>, <ref type="inscription" n="M.230">M.230</ref>, 
+               <ref type="inscription" n="M.232">M.232</ref>, <ref type="inscription" n="M.238">M.238</ref>, <ref type="inscription" n="M.239">M.239</ref>,
+               <ref type="inscription" n="P.397">P.397</ref>.</p>
+            <p>On Ptolmaeum/Πτυλυμαῖον see on <ref type="inscription" n="C.429">C.429</ref>, and C. Dobias-Lalou, art.cit.: 
+               the name must describe one of the royal estates claimed for the <foreign xml:lang="la">Populus Romanus</foreign>.</p>
+         </div>
+
+      </body>
+   </text>
+</TEI>

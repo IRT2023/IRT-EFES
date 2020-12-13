@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="../schema/menu/menu.rng" type="xml"?>
 <root xmlns="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
-      xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
-  <menu label="Texts" match="local-tei-index-display" i18n:key="menu-texts" />
-  <menu label="Inscriptions" match="local-epidoc-index-display"
-        i18n:key="menu-inscriptions" />
-  <menu label="Concordances" i18n:key="menu-concordances">
-    <item label="Bibliographic" match="local-concordance-bibliography"
-          i18n:key="menu-concordance-bibliography" />
+  xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+
+  <menu label="Home"  i18n:key="home" match="local-home-page">
+    <item label="About" i18n:key="menu-about" match="local-tei-display-html" params="about"/>
+    <item label="The team" i18n:key="menu-team" match="local-tei-display-html" params="team"/>
+    <item label="Sponsors" i18n:key="menu-sponsors" match="local-tei-display-html" params="sponsors"/>
+    <item label="Contact" i18n:key="menu-contact" match="local-tei-display-html" params="contact"/>
   </menu>
-  <menu label="Search" match="local-search" i18n:key="menu-search" />
-  <menu label="Admin" language="" match="local-admin-home-page" i18n:key="menu-admin" />
+  <menu label="Inscriptions" match="local-epidoc-index-display" i18n:key="menu-inscriptions" />
+  <menu i18n:key="menu-search" label="Search" match="local-search" />
+  <menu label="Indices" match="local-indices-type-display" i18n:key="menu-indices-epidoc" params="epidoc">
+    <item label="Abbreviations" match="local-index-display-html" params="epidoc abbreviation" i18n:key="menu-index-abbreviation"/>
+    <item label="Age at death" match="local-index-display-html" params="epidoc death" i18n:key="menu-index-death"/>
+    <item label="Divine beings" match="local-index-display-html" params="epidoc divine_beings" i18n:key="menu-index-divine_beings"/>
+    <item label="Emperors and Imperial family" match="local-index-display-html" params="epidoc emperors" i18n:key="menu-index-emperors"/>
+    <item label="Findspots" match="local-index-display-html" params="epidoc findspot" i18n:key="menu-index-findspots"/>
+    <item label="Fragments of text" match="local-index-display-html" params="epidoc fragment" i18n:key="menu-index-fragment"/>
+    <item label="Months" match="local-index-display-html" params="epidoc months" i18n:key="menu-index-months"/>
+    <item label="Numerals" match="local-index-display-html" params="epidoc numeral" i18n:key="menu-index-numeral"/>
+    <item label="People" match="local-index-display-html" params="epidoc persons" i18n:key="menu-index-persons"/>
+    <item label="Personal names" match="local-index-display-html" params="epidoc person_name" i18n:key="menu-index-person_name"/>
+    <item label="Places" match="local-index-display-html" params="epidoc mentioned_places" i18n:key="menu-index-places"/>
+    <item label="Symbols" match="local-index-display-html" params="epidoc symbol" i18n:key="menu-index-symbol"/>
+    <item label="Words" match="local-index-display-html" params="epidoc lemma" i18n:key="menu-index-word"/>
+    <!--<item label="Words" match="local-index-display-html" params="epidoc word" i18n:key="menu-index-word"/>-->
+  </menu>
+  <menu label="Bibliographic concordance" match="local-concordance-bibliography" i18n:key="menu-concordance-bibliography"/>
+  <!--<menu i18n:key="menu-admin" label="Admin" language="" match="local-admin-home-page" />-->
 </root>

@@ -29,7 +29,7 @@
         <div class="large-12 columns">
           <ul>
             <xsl:apply-templates mode="bibl-list"
-                                 select="/aggregation/response/result/doc" />
+              select="/aggregation/response/result/doc[str[@name='concordance_bibliography_ref'][not(text() = ancestor::doc/preceding-sibling::doc/descendant::str[@name='concordance_bibliography_ref'])]]"><xsl:sort select="lower-case(translate(./id(str[@name='concordance_bibliography_ref']), 'Ł', 'L'))"/></xsl:apply-templates>
           </ul>
         </div>
       </div>

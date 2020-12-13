@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>?Mile XIV: <rs type="textType">Milestone</rs> of Trajan</title>
+                             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">M.227</idno>
+            <idno type="ircyr2012">G10700</idno>
+                <idno type="JMR">Z.9</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository>Findspot</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p>
+                                        Upper part of a limestone <objectType>column</objectType>, whose surface is in bad condition.
+                                        (<dimensions>
+                                            <dim type="diameter">0.50</dim>
+                                            <height>0.90</height>
+                                        </dimensions>).</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on the shaft.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Very irregular: <height atLeast="0.05" atMost="0.08">0.05-0.08</height>.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace><rs type="milestone" key="cyr-apo" n="15">Cyrene to Apollonia Road, Mile 15</rs>.</origPlace>
+                            <origDate notBefore="0104" notAfter="0105" evidence="reign">10 December 104 - 9 December 105 CE</origDate>
+                        </origin>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>:
+                                <placeName ref="https://www.slsgazetteer.org/1269">Cyrene to Apollonia road</placeName>, 
+                                350 m. east of the bridge (Ponte Latini) over the Wadi Bu Feri, 
+                                and 150 m. south of the modern road, with <ref type="inscription" n="M.226">M.226</ref>, <ref type="inscription" n="M.228">M.228</ref>;
+                                found in <date type="found">1959</date>.</p>
+                        </provenance>
+                                <provenance type="observed">
+                                    <p>Findspot</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription (Reynolds).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2012-06-29" who="SS">created from template</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><!--?-->
+        <surface/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p>Unpublished.</p>
+            </div>
+            
+            <div type="edition" xml:space="preserve">
+        	<div type="textpart" xml:lang="la">
+               <ab>
+                    <lb n="1"/><date ref="https://godot.date/id/6tBACuJwiQQ8yPwoRB7st6"><persName type="emperor" key="traianus"><supplied reason="lost"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w></supplied> 
+                                        <supplied reason="lost"><name nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ar</ex></expan></name></supplied> <persName type="emperor" key="nerva"><w lemma="diuus">diui</w> <name nymRef="Nerva">Ner<lb 
+                                            n="2" break="no"/><supplied reason="lost">vae</supplied></name></persName> <supplied reason="lost"><w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w></supplied> <name nymRef="Nerva"><supplied reason="lost">Nerv</supplied>a</name> 
+                                        <name nymRef="Traianus">Traianus</name> <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name>
+                    <lb n="3"/><name nymRef="Germanicus"><supplied reason="lost">Germanicus</supplied></name> <name nymRef="Dacicus">D<unclear>a</unclear><supplied reason="lost">c</supplied>icus</name> 
+                                        <w lemma="pontifex"><expan><abbr>p</abbr><ex>ontifex</ex></expan></w> <w lemma="maximus"><expan><abbr>m</abbr><ex>aximus</ex></expan></w>
+                    <lb n="4"/><supplied reason="lost"><w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w></supplied> <supplied reason="lost"><w lemma="potestas"><expan><abbr>pot</abbr><ex>estate</ex></expan></w></supplied> 
+                                        <num value="9">VIIII</num> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> <num value="5">V</num> </persName></date>
+                    <lb n="5"/><supplied reason="lost" cert="low"><w lemma="per">per</w></supplied> <w lemma="miles"><supplied reason="lost">milite</supplied>s</w> <w lemma="dimitto">dimiss<lb 
+                        n="6" break="no"/><supplied reason="lost">os</supplied></w> <w lemma="ex"><supplied reason="lost">ex</supplied></w> <w lemma="legio"><supplied reason="lost">legio</supplied>nibu<supplied reason="lost">s</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+                   </ab>
+        	</div>
+     </div>
+            <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>[Emperor Caesar son] of deified Nerva, Nerva Trajan Augustus, [victor in Germania], victor in Dacia, pontifiex maximus, [holding tribunician power] for the eighth time, 
+            consul for the fifth time, [by means of soldiers] retired from [the legions  . . .</p></div>
+         </div>
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>The date is between 10 December 104 and 9 December 105.</p>
+                <p>For the use of veterans in building works cf. <ref type="inscription" n="C.117">C.117</ref>.</p>
+                <p>For texts recording Trajan's work on the roads see, for the Cyrene to Apollonia Road, <ref type="inscription" n="C.609">C.609</ref>, <ref type="inscription" n="M.222">M.222</ref>, 
+                    <ref type="inscription" n="M.224">M.224</ref>, all using conscripts; this text is later than those. 
+                    For the Cyrene to Ptolemais road see <ref type="inscription" n="M.196">M.196</ref> and <ref type="inscription" n="M.200">M.200</ref>.</p> 
+            </div>
+        </body>
+    </text>
+</TEI>

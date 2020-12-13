@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B08000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+            <editor>Catherine Dobias-Lalou, Joyce M. Reynolds</editor>
+            <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">B.69</idno>
+            <idno type="ircyr2012">B08000</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1097">Louvre</repository> <idno type="invNo">MA 4256</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Eight adjacent fragments of a <objectType>panel</objectType> of white <material>marble</material> 
+                              with grey veins; its shape resembles a stele with pediment, the triangle of which is
+                              separated from the nearly square lower part by a horizontal lightly engraved line(<dimensions>
+                                 <width>0.242</width>
+                                 <height>0.355</height>
+                                 <depth>0.01</depth>
+                              </dimensions>); the fragments are now pasted onto a square marble slab, the shape and dimensions of which
+                              are not quite fitting.
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> inside the square area 
+                           (<dimensions><width>0.242</width> <height>0.245</height></dimensions>). It is clear from Barth's copy 
+                           that he saw the stone still complete, whereas it is now broken into many pieces, part of which have been lost.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Careful but not quite clear cutting, light serifs at end of straight lines, lunate epsilon, 
+                        sigma and omega, projecting crossing lines on top of alpha and lambda, beta with larger lower loop;
+                        line 1 <height>0.033</height>; lines 2-4 <height>0.03</height>.
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" cert="low" precision="low" evidence="lettering">Probably not earlier than the second century AD (Reynolds)</origDate>
+                  </origin>
+                  <provenance type="found">
+                           <p>Copied by Barth in <date type="found">1847</date> in 
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/910">Berenike</placeName>,
+                              in a Necropolis that was probably : 
+                              <placeName ref="https://www.slsgazetteer.org/1077">Sidi Khrebish</placeName> 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1086">Necropolis</placeName>.
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="institution.xml#db1097">Louvre Paris</placeName>; observed by Catherine Dobias-Lalou in <date type="observed">2014</date>.
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88319">Benghazi</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Dobias-Lalou).</creation></profileDesc>
+      
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+
+         <change when="2014-04-14" who="CDL">created to confront file B08000 prepared from Joyce's archive and publication</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic  url="cdlB69" decls="#photograph"><desc><ref type="inscription" n="B.69">B.69</ref> 
+      (Musée Louvre: Ma4256_20090505_01)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="barth1849"/> <citedRange unit="page">387</citedRange> and n. 17 p. 483 (drawing)</bibl>, whence 
+               <bibl><ptr target="jmr1978"/>, <citedRange>26</citedRange></bibl>, whence  
+               <bibl><ptr target="SEG"/> <citedRange>28.1544</citedRange></bibl>;
+               rediscovered and republished <bibl><ptr target="cdl2012c"/>, <citedRange>153-154</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-61923"><name nymRef="Φλάβιος"><supplied reason="undefined" evidence="previouseditor">Φ</supplied><unclear>λ</unclear>άβιοϲ</name> 
+                    <lb n="2"/><name nymRef="Εὐέτης"><supplied reason="undefined" evidence="previouseditor">Εὐ</supplied>έτηϲ</name></persName>
+                    <lb n="3"/> <w lemma="ἔτος">ἐτῶν</w>
+                    <lb n="4"/><num value="21">κα</num> <unclear><g ref="symbols.xml#leaf"/></unclear>
+         </ab>
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1-2"><note>When Barth transcribed the text it was complete.</note></app>
+            </listApp>
+         </div>
+         
+        <div type="translation" xml:space="preserve"> <head>Translations</head> 
+           <div type="translation" resp="#cdl" xml:lang="en">
+            <p>Flavius Euetes <supplied reason="subaudible">died</supplied> aged 21.</p>
+         </div>
+         <div type="translation" resp="#cdl" xml:lang="fr">
+            <p>Flavius Euetès <supplied reason="subaudible">mort</supplied> à 21 ans.</p>
+         </div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>It is clear from Barth's copy that he saw the stone still complete, whereas it is now broken into many pieces, part of which have been lost.</p>
+            <p>For the inscription being amongst the marbles acquired from Vattier de Bourville and now in the Louvre, see Dobias-Lalou, op.cit.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

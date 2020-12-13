@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C98100" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Dedication</rs> to Iatros and Iaso</title>
+                <editor xml:id="cdl">Catherine Dobias-Lalou</editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">M.191</idno>
+            <idno type="ircyr2012">C98100</idno>
+                <availability>
+                    <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+                    <p>All reuse or distribution of this work must contain somewhere a link back to the
+                        URL <ref>http://inslib.kcl.ac.uk/</ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">F2590</idno></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p>Small <objectType>altar</objectType> of white <material>marble</material> with mouldings above and below
+                                        (<dimensions>
+                                            <width>0.17</width>
+                                            <height>0.20</height>
+                                            <depth>0.17</depth>
+                                        </dimensions>).</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> in two lines on one face between the mouldings 
+                                (<dimensions><width>0.12</width> <height>0.09</height> <depth>0.14</depth></dimensions>).</layout> 
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote><height min="0.01" max="0.012">0.01 to 0.012</height>; serifs, alpha with broken bar, non slanting sigma.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot</origPlace>.
+                            <origDate evidence="lettering" precision="low" cert="low" notBefore="0001" notAfter="0200">probably first or second century AD</origDate>
+                        </origin>
+                        
+                                <provenance type="found">
+                                    <p> Probably <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                                        <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>: 
+                                        no findspot reported; first photographed 20 March <date type="found">1917</date>.
+                                   </p>
+                                </provenance>
+                                <provenance type="observed" when="1977" resp="#cdl">
+                                    <p>Seen by Dobias-Lalou in former Sculpture Museum at Cyrene in <date type="observed">1977</date></p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="InsLib">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://www.geonames.org/" key="Shahat">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription from stone (CDL)</creation></profileDesc>
+        <revisionDesc>
+            <change when="2014-11-13" who="cdl">file created and filled for IRCyr</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><graphic url="Photos_0393" decls="#photograph"><desc>Face (Department of Antiquities, E.720) </desc></graphic>
+        <graphic url="JMRNB02_058_002" decls="#photograph"><desc>Face (Reynolds II.58.2)</desc></graphic>
+        <!-- Photographs CDNB 76/III/3 (not clear); Fabbricotti, fig. 9  -->
+    </facsimile>
+    <text>
+        <body>
+            
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p>Mentioned <bibl><ptr target="SECir"/> note on 165, <citedRange unit="page">316</citedRange></bibl>; 
+                    published <bibl><ptr target="cdl1993"/>, <citedRange>3</citedRange>, p. 34 (no image)</bibl>, whence
+                <bibl><ptr target="SEG"/> <citedRange>43.1189</citedRange></bibl>;
+                    <bibl><ptr target="fabbricotti2007"/>, <citedRange>9</citedRange>, p. 272 and fig.9</bibl>, whence
+                    <bibl><ptr target="cdlBE"/>, <citedRange>2008.601</citedRange></bibl>, <bibl><ptr target="AE"/> <citedRange>2007.1676</citedRange></bibl>, 
+                    <bibl><ptr target="SEG"/> <citedRange>57.2017.3</citedRange></bibl> 
+                    </p>
+            </div>
+          
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+                <head>Text</head>
+                <ab>
+                    <lb n="1"/><persName type="divine" key="iatros"><name nymRef="Ἰατρός">Ἰατρῶι</name></persName> <persName type="divine" key="iaso"><name nymRef="Ἰασώ">Ἰασο͂ι</name></persName>
+                    <lb n="2"/><persName type="attested"><name nymRef="Πέλεα"><unclear>Π</unclear>έλεα</name> <persName type="attested"><name nymRef="Φιλόξηνος">Φιλοξήν<supplied reason="lost">ω</supplied></name></persName></persName>
+	 </ab>
+            </div>
+          
+            <div type="apparatus" xml:space="preserve">
+            <head>Apparatus</head>
+                <p>
+                    <app loc="2"><lem><unclear>Π</unclear>έλεα</lem>
+                    <rdg resp="#SECir">Πέλεα</rdg>
+                    <rdg resp="#fabbricotti2007"><orig>ΕΛΕΑ</orig></rdg></app>
+                </p>
+            </div>
+            
+            <div type="translation" xml:lang="fr" resp="#cdl">
+            <p><supplied reason="subaudible">Consacré </supplied> à Iatros et Iasô par Pelea <supplied reason="subaudible">fille</supplied> de Philoxènos.</p>
+         </div>
+            <div type="translation" xml:lang="en" resp="#cdl">
+            <p><supplied reason="subaudible">Dedicated</supplied> to Iatros and Iaso by Pelea <supplied reason="subaudible">daughter</supplied> of Philoxenos.</p>
+         </div>
+           
+            <div type="commentary">
+                <head>Commentary</head>
+               <p>Fabbricotti gave a full description of this stone in a catalogue of miniature altars. She also published the first photograph.</p>
+                <p>For other texts associating Iatros and Iaso see <ref type="inscription" n="C.228">C.228</ref>,<ref type="inscription" n="M.185">M.185</ref>, <ref type="inscription" n="C.756">C.756</ref>, 
+                    <ref type="inscription" n="M.189">M.189</ref>,  
+                    <ref type="inscription" n="M.190">M.190</ref></p>
+	<p/>
+	<p/>
+            </div>
+        </body>
+    </text>
+</TEI>

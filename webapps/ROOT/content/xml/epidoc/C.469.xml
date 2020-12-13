@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of a statue of Kore</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.469</idno>
+            <idno type="ircyr2012">C91000</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">77-940</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular <objectType>base</objectType> of medium-grained white <material>marble</material> carrying a statue of draped woman; base made
+                              in one piece with its statue
+                              (base <dimensions>
+                                 <width precision="low">0.585</width>
+                                 <height precision="low">0.105</height>
+                                 <depth>0.040</depth>
+                           </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on forward face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Line 1, ave. <height>0.05</height>; lines 2-3, <height>0.02</height>; lunate epsilon and sigma; somewhat poor quality lettering 
+                        (it is possible that it was not cut by a professional letterer but by the sculptor or his assistant); unconventional 
+                        (though common) spelling in lines 1,3; and unconventional grammar in line 3.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</ref>.</origPlace>
+                     <origDate notAfter="0233" notBefore="0168" precision="low" evidence="lettering">Late second to early third centuries CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>: from south ring wall, E14 mound (S29). 
+                            </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, Storeroom of the American excavations </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Ljuba">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="white780_IRCyrC469" decls="#photograph"><desc>Face (Donald White)</desc></graphic>
+      </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="white1981"/>, <citedRange>23-4</citedRange> (the statue)</bibl>; 
+               <bibl><ptr target="kane-jmr1985"/>, 455-6 (the statue), <citedRange>462-3</citedRange> (the text)</bibl>;
+               <bibl><ptr target="SEG"/> <citedRange>35.1721</citedRange></bibl>, <bibl><ptr target="AE"/> <citedRange>1985.844</citedRange></bibl>;
+               <bibl><ptr target="jmr2012"/>, <citedRange>A.41</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab><lb n="1"/><persName type="attested"><name nymRef="Ἑλβία">Ἑλβία</name> <name nymRef="Τειμαρέτα">Τειμαρέτα</name></persName> <w lemma="κατά">κατ’</w><w lemma="ὄναρ">ὄναρ</w> <g ref="symbols.xml#leaf"/>
+               <lb n="2"/> <w lemma="χρησμός">χρηϲμόν</w> <w lemma="λαμβάνω">λαβοῦϲα</w> <w lemma="ἀνατίθημι">ἀνέθηκε</w> <persName type="divine" key="demeter"><name nymRef="Δημήτηρ">Δήμητρι</name></persName> <w lemma="καί">καὶ</w>
+               <persName type="divine" key="kore"><name nymRef="Κόρη">Κό<lb 
+                  n="3" break="no"/>ρηι</name></persName> <persName type="divine" key="kore"><name nymRef="Κόρη">Κόρηϲ</name></persName> <w lemma="ἄγαλμα">ἄγαλμα</w> <w lemma="ὁ">τὴν</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τοῦ</w> <w lemma="σῖτος">ϲείτου</w> 
+               <space quantity="7" unit="character"/>
+            </ab>
+         </div>
+         <div type="translation" xml:space="preserve">
+            <div type="translation" source="#jmr2012" xml:lang="en"><p>Helvia Timareta, having received an oracle in a dream, dedicated to Demeter and Kore the statue of Kore, 
+               the Kore who presides over the wheat</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Helvia Timareta probably belonged to the family of Helvius Rufus, a clerk of the city of Cyrene who died in CE 89-90 (<ref type="inscription" n="C.607">C.607</ref>);
+               the family may be one of Italian immigrants to Cyrene but could, alternatively, be Greek recipients of Roman citizenship at a comparatively early date.
+               She uses the koine dialect normal in the city by the mid second century CE</p>
+           <p>The receipt of divine instructions in dreams is a quite common feature in the ancient world.  Also common is the dedication of a 
+            statue of one deity to another.  It was more normal to regard Demeter as the Goddess who presided over the corn than Kore (although she
+            is of course widely associated with corn).  The formula used for her position is not a common one and recalls the Greek title of the Roman
+            <foreign xml:lang="la">praefectus annonae</foreign> (ὁ ἐπὶ τοῦ σίτου).</p>
+            <p>The reason for the dedication is not stated but might well be the occasion of an especially good harvest.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

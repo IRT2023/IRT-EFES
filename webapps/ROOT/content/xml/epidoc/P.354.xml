@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P25900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.354</idno>
+            <idno type="ircyr2012">P25900</idno>
+            <idno type="Excel">535</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of a moulded <material>marble</material> 
+                              <objectType>base</objectType> (<dimensions>
+                                 <width unit="metre">0.25</width> 
+                                 <height unit="metre">0.12</height>  
+                                 <depth unit="metre">0.17</depth>
+                              </dimensions>) </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> i on a lower moulding, below a dressed face; ii on the opposite face. 
+                           On the dressed face above i almost nothing survives but the base of a K in the last line.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i, clear but irregular; ii, <height unit="metre">0.025</height> deeply cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Probably from the gymnasium</origPlace>
+                     <origDate notBefore="-0100" notAfter="0300" precision="low" evidence="lettering type of text">First century BCE to second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              original findspot unrecorded.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="CMR">tagged description, corrected text</change>
+         <change when="2008-07-14" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_433_003" decls="#photograph"><desc>Face i (Joyce Reynolds, Tolmeita I (NB V.53)</desc></graphic>
+      <graphic url="JMR_433_001" decls="#photograph"><desc>Face i (1961-05-26, Joyce Reynolds, III.3)</desc></graphic>
+      <graphic url="JMR_433_002" decls="#photograph"><desc>Face ii (1961-05-26, Joyce Reynolds, III.2)</desc></graphic>
+      <graphic url="JMRNB05_052" decls="#photograph"><desc>Face ii (Joyce Reynolds, Tolmeita I (NB V.52)</desc></graphic><!--Dept.--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="face" n="i" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Δημήτριος"><seg part="I"><supplied reason="lost">Δ</supplied>ημήτριο</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div>
+            <div subtype="face" n="ii" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Κέφαλος"><supplied reason="lost">Κ</supplied>εφάλω</name></persName> <gap reason="lost" extent="unknow" unit="character"/>
+                        <lb n="2"/><date ref="https://godot.date/id/dFvHipwoLB8gihLbUGw5Nb"><w lemma="ἔτος"><supplied reason="lost" cert="low"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w> <num value="2">β</num></date> <persName type="attested"><name nymRef="Πτολεμαῖος">Πτο<supplied reason="lost">λεμαῖος</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    </ab>
+</div>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>a</note>: . . . D]emetrio[s . . .</p>
+              <p><note>b</note>: . . . of K]ephalos [ . . . ] <ref target="https://godot.date/id/dFvHipwoLB8gihLbUGw5Nb">?Year 2</ref> Pto[lemaio- . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Since the lettering of both i and ii is rough enough to suggest informal texts, the stone probably came from the gymnasium, 
+               and bore a formal text, now missing, which may well have been an ephebic dedication to Hermes and Herakles.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

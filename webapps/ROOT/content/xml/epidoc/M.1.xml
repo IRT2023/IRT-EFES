@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B00100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Imperial</rs> <rs type="textType">honours</rs>, for Diocletian</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.1</idno>
+            <idno type="ircyr2012">B00100</idno>
+            <idno type="JMR">1</idno>
+            <idno type="Excel">2032</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> <objectType>column drum</objectType>, with a stuccoed surface, later plastered over, 
+                              presumably during a reorganisation of the monument (see on <ref type="inscription" n="M.2">M.2</ref>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the stuccoed surface, now damaged; some of the letters cut into the stone under the plaster.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.07-0.08</height> freehand capitals; high, widely spaced and reasonably regular.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0284" notAfter="0305" precision="low" evidence="reign">CE 284-305</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1172">South of Berenike</placeName>:
+                        <placeName ref="https://www.slsgazetteer.org/1211">Arae Philaenorum</placeName>; reused to 
+                        form part of the west side of enclosure C; found in <date type="found">1951</date></p>
+                          </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/2213641">Qasr at Turab</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-06" who="MGDA">fixed Goodchild bibliography</change>
+         <change when="2010-11-22" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-19" who="CMR">added bibliography</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-17" who="GB">tagged dimensions/date</change>
+         <change when="2009-06-03" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="rgg1952"/>  <citedRange>99f</citedRange> and <citedRange>109 ff</citedRange> with illustration fig 5A (drawing)</bibl>, 
+               whence <bibl><ptr target="AE"/> <citedRange>1954.184a</citedRange></bibl>, whence <ptr target="EDH"/> <ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD018131">018131</ref>, 
+               <bibl><ptr target="salama1965"/>, <citedRange>41</citedRange> n.14</bibl>, 
+               <bibl> <author>U. Gehn</author> <title>Last Statues of Antiquity</title> <citedRange><ref target="http://laststatues.classics.ox.ac.uk/database/detail-base.php?record=LSA-2832">2832</ref></citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+             <ab>
+                    <lb n="1"/> <space quantity="4" unit="character"/> <w lemma="dominus"><supplied reason="lost">Domino</supplied></w> <w lemma="noster">nostro</w> 
+                    <lb n="2"/><persName type="emperor" key="diocletianus"><name nymRef="Diocletianus">Diocletiano</name> <w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w></persName>
+             </ab>
+         </div>
+          
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="2"><rdg resp="#rgg1952"><expan><abbr>imp</abbr><ex>eratore</ex></expan></rdg></app>
+            </listApp>
+         </div>
+          
+         <div type="translation" xml:space="preserve">
+             <div type="translation" resp="#cmr" xml:lang="en"><p>For out Lord Diocletian, emperor</p></div>
+         </div>
+          
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> On the site see Goodchild, op.cit., 94f. </p>
+            <p>Derived from one of four columns adapted to carry statues, apparently of the tetrarchs, and intended as frontier markers; 
+               for a parallel see  D. Schlumberger, "Bornes frontières de la Palmyrène" (1939), available at <ref target="https://www.persee.fr/doc/syria_0039-7946_1939_num_20_1_4166">Persée</ref>
+               For other groups of four tetrarchic columns in Egypt see now Thiel, <ref target="https://zenon.dainst.org/Record/000741240">Die "Pompeius-Säule" in Alexandria</ref> (2006).</p>
+           
+            <p> The use of Latin originally suggested that this was a monument of Tripolitania; but it is now known that Latin was common in official texts of early 
+                fourth century Ptolemais, so that there is no strong reason against associating it with the much nearer Cyrenaica. </p>
+            <p> The text was plastered over in antiquity, presumably in a post-Diocletianic reorganisation of the monument; cf on <ref type="inscription" n="M.2">M.2</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

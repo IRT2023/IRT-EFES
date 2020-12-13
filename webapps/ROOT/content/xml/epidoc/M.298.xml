@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Funerary</rs> inscription </title>
+                             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">M.298</idno>
+            <idno type="ircyr2012">C86334</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository>Findspot</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p>Badly damaged limestone cornice block 
+                                        (<dimensions>
+                                            <width>1.17</width>
+                                            <height>0.40</height>
+                                            <depth>0.29</depth>
+                                        </dimensions>). There is a cut edge at the left side; broken away at the right.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face, where part of the moulding has been cut back to accommodate it. 
+                                    Extremely difficult to read.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Line 1, <height>0.05</height>; line 2, <height>0.035</height>; square and lunate omega; late antique.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Unknown.</origPlace>
+                            <origDate notBefore="0300" notAfter="0700" precision="low" evidence="lettering" cert="low">Late Roman</origDate>
+                        </origin>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>: 
+                                <placeName ref="https://www.slsgazetteer.org/1427">Martuba</placeName>,
+                                ca. 20 km. east of Darnah, re-used in a dam. 
+                                    </p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p>Findspot.</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/85074">Martuba</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription (Reynolds).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2011-08-12" who="Pietro">entered and tagged text</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="cdlM298left" decls="#photograph"><desc>Left end (C. Dobias-Lalou, 1983: MFA 83/IV/13)</desc></graphic>
+        <graphic url="cdlM298centre" decls="#photograph"><desc>Centre (C. Dobias-Lalou, 1983: MFA 83/IV/14)</desc></graphic>
+        <graphic url="cdlM298right" decls="#photograph"><desc>Right end (C. Dobias-Lalou, 1983: MFA 83/IV/15)</desc></graphic>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p><bibl><ptr target="mohamed-jmr1996"/>, <citedRange>2.b</citedRange></bibl> 
+                    whence <bibl><ptr target="SEG"/> <citedRange>46.2213</citedRange></bibl>; 
+                    mentioned <bibl><ptr target="mohamed-jmr2000"/>, <citedRange>138</citedRange></bibl></p>
+            </div>
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                <lb n="1"/><gap reason="lost" quantity="4" unit="character"/><orig><unclear>λη</unclear></orig> 
+                <w lemma="τόπος">τόπῳ</w> <w lemma="καλός">κ<unclear>άλῳ</unclear></w> <gap reason="lost" quantity="3" unit="character"/>
+	<lb n="2"/><gap reason="lost" quantity="2" unit="character"/><w part="F"><unclear>αν</unclear>γελου</w> 
+                <gap reason="lost" quantity="1" unit="character"/><orig>εχων<unclear>ι</unclear></orig><gap reason="lost" quantity="2" unit="character"/>
+	<lb n="3"/><gap reason="lost" quantity="2" unit="character"/><orig><unclear>κ</unclear>α</orig><gap reason="lost" quantity="2" unit="character"/><orig>μ<unclear>ιι</unclear></orig><gap reason="lost" quantity="3" unit="character"/><orig>να</orig> 
+                <w lemma="κεῖμαι">κῖνται</w> <orig>οπ<unclear>ο</unclear></orig><gap reason="lost" quantity="2" unit="character"/>
+            </ab>
+            </div>
+            <div type="apparatus">
+                <head>Apparatus</head>
+                <listApp><app loc="1"><rdg><orig>τοπ</orig>ω<orig>κ</orig><orig><unclear>αλο</unclear></orig></rdg></app></listApp>
+            </div>
+            <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>Not usefully translatable</note></p></div>
+         </div>
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>Line 1· Perhaps the words τόπῳ καλῷ, 'in a fair place'.</p>
+                <p>Line 2: a name, Εὐ]α̣ν̣γέλου, or a reference to messengers or angels?</p>
+                <p>Given the uncertainties of interpretation, the main value of this text is to show that at Martuba there were people who 
+                    continued to inscribe in Greek much later than the community at Kharsa is known to have done. </p>
+            </div>
+        </body>
+    </text>
+</TEI>

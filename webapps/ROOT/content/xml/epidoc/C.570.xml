@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C56500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription, Tomb N.171</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.570</idno>
+            <idno type="ircyr2012">C56500</idno>
+            <idno type="JMR">1130b</idno>
+            <idno type="Excel">290</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> block (<dimensions><width>1.05</width> <height>1.45</height> <depth>0.25</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face; each entry in a different hand. The letters of ii retain red paint.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first-second century CE; i, line 1, <height>0.045</height>, line 2, <height>0.04-0.05</height>; ii, lines 1-2 <height>0.035-0.05</height>; 
+                        iii, line 1 <height>0.05-0.065</height>, line 2, <height>0.10</height>; iv, <height>0.08</height>; lunate sigma in i and ii.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notAfter="0200" notBefore="0001" evidence="lettering" precision="low">Probably first to second centuries.</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/1071">North Necropolis</placeName>, <placeName type="monuList" ref="https://www.slsgazetteer.org/1055">tomb of the Mnesarchoi</placeName>, N.171, 
+                              used to close a loculus in the wall opposite the door in Chamber 4.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-06" who="MGDA">fixed Cassels bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-15" who="GillianB">tokenized</change>
+         <change when="2009-06-18" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="JMR_1130_004front" decls="#photograph"><desc>Face, i-iii (Reynolds VIII.43)</desc></graphic>
+      <graphic url="JMR_1130_001front" decls="#photograph"><desc>Face, iv (Reynolds VIII.46)</desc></graphic>
+      </facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverioDAI2"/>, <citedRange unit="entry">120</citedRange> (112), pl. LI, fig. 76 (drawing only)</bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>9.232</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324082">324082</ref></citedRange></bibl>; discussed <bibl><ptr target="robert1968"/>, <citedRange>447</citedRange></bibl>;
+               <bibl><ptr target="cassels1955"/>, <citedRange unit="page"> 10</citedRange> note 13</bibl>, whence <bibl><ptr target="robertBE"/>, <citedRange>1958.540</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>16.870</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324355">324355</ref></citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324356">324356</ref></citedRange></bibl>. 
+               Discussed <bibl><ptr target="cdl2013"/>, <citedRange>183-4</citedRange></bibl></p> <!-- check -->
+             <p>For the tomb see <bibl>
+               <ptr target="cassels1955"/>, <citedRange>171</citedRange></bibl>,   
+               <bibl><ptr target="thorn2009"/>, <citedRange unit="page">65-69</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<div type="textpart" n="i"><ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Ἰάσων"><unclear>Ἰ</unclear>άϲω<unclear>ν</unclear></name></persName> <del rend="erasure"><persName type="attested" key="lgpn:V1-64998"><name nymRef="Μενάρης">Μ<unclear>ε</unclear>νάρηϲ</name></persName></del>
+                    <lb n="1a"/> <space quantity="1" unit="line"/>
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-65029"><name nymRef="Μνάσαρχος">Μνάϲαρχος</name> <persName type="attested" key="lgpn:V1-64288"><name nymRef="Ἴασις">Ἴασις</name></persName></persName></ab></div>
+             <div type="textpart" n="ii"><ab><lb n="1"/><persName type="attested" key="lgpn:V1-64694"><name nymRef="Κληνάτα">Κληνάτα</name> <persName type="attested" key="lgpn:V1-63193"><name nymRef="Ἀριστοτέλης">Ἀριϲτοτέλευϲ</name></persName></persName>
+                    <lb n="2"/> <space quantity="5" unit="character"/> <w lemma="ἱέρεια">ἱάρεια</w> <persName type="divine" key="hera"><name nymRef="Ἥρα">Ἥρας</name></persName></ab></div>
+                    <div n="iii" type="textpart"><ab>
+                       <lb n="1"/><persName type="attested" key="lgpn:V1-64743"><name nymRef="Κυδιμάχα">Κυδιμάχα</name> <persName type="attested" key="lgpn:V1-64237"><name nymRef="Θεύχρηστος">θευχρήστω</name></persName></persName>
+                    <lb n="2"/> <space quantity="4" unit="character"/> <w lemma="ἱέρεια">ἱάρεια</w>
+                    <lb n="2a"/> <space quantity="1" unit="line"/></ab></div>
+                    <div type="textpart" n="iv"><ab>
+                       <lb n="1"/><w lemma="πλήρης">Πλήρης</w></ab></div>
+                </div>
+            <div type="apparatus">
+                   <listApp>
+                      <app loc="i.1"><rdg resp="#oliverioDAI2">--<unclear>υς</unclear> ?</rdg>
+                         <rdg resp="#cassels1955">[----<unclear>α</unclear>ρης]</rdg>
+                         <note>The marked letters have been erased; the name was perhaps Χενάρης</note>
+                      </app>
+                      <app loc="i.2"><rdg resp="#oliverioDAI2">Μνάσαρχος (Ἀριστοτέ)λευς</rdg>
+                         </app>
+                      <app loc="ii">
+                         <note>The whole entry was cut partly over i and is rubricated, in order to distinguish it.</note>
+                      </app>
+                   </listApp>
+                </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>- di -. Clenata di Aristotile, sacerdotessa; Mnesarco di Aristotile; 
+            Cidimaca di Teocresto, sacerdotessa. Completo (il loculo)</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>i. Iason ?Menares. Mnasarchos ?<supplied reason="subaudible">son</supplied> of Iasis.</p>
+               <p>ii. Klenata <supplied reason="subaudible">daughter</supplied> of Aristoteles,
+               priestess of Hera.</p>
+               <p>iii. Kυdimacha <supplied reason="subaudible">daughter</supplied> of 
+            Theochrestos, priestess.</p>
+            <p>iv. <supplied reason="subaudible">The tomb is</supplied> full.</p>
+            </div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For other inscriptions from this tomb see <ref target="https://igcyr.unibo.it/igcyr007800">IGCyr007800</ref>, 
+            <ref target="https://igcyr.unibo.it/igcyr027100">IGCyr027100</ref>, 
+            <ref target="https://igcyr.unibo.it/igcyr027200">IGCyr027200</ref>, <ref target="https://igcyr.unibo.it/igcyr027300">IGCyr027300</ref>,
+            <ref target="https://igcyr.unibo.it/igcyr027400">IGCyr027400</ref>, <ref target="https://igcyr.unibo.it/igcyr027500">IGCyr027500</ref>, 
+            <ref type="inscription" n="C.569">C.569</ref></p>
+            <p>iv: For this expression see Robert loc. cit.; again P.J. Sijpestein, <title>ZPE</title> 88 (1991), 24, whence 
+                  <title>SEG</title> 41.1699.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C02100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">dedication</rs> of a statue - of the Graces?</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.42</idno>
+            <idno type="ircyr2012">C02100</idno>
+            <idno type="JMR">624</idno>
+            <idno type="Excel">83</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Marble</material> 
+                              <objectType>base</objectType>, flanged outwards at the lower edge on three sides, 
+                               with a dowel hole on top for the attachment of another block 
+                               (<dimensions>
+                                  <width>0.79-0.62</width>
+                                  <height>0.73</height>
+                                  <depth>0.60</depth>
+                               </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.035</height>; line 3 is a monogram, <height unit="metre">0.075</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace> Unknown.</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>, 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/989">Temple of Aphrodite</placeName>:
+                               First recorded in <date type="found">1817</date> with <ref type="inscription" n="C.41">C.41</ref>; 
+                               seen "about 10 yards to the eastwards of the Temple " (Smith and Porcher, 1861).</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Shahat">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+           <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-14" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2007-11-05" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="PachoLXIII" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXIII)</desc></graphic>
+      <graphic url="PachoLXIII_07" decls="#photograph"><desc>Transcription detail (1827, Pacho, plate LXIII.7)</desc></graphic>
+         <graphic url="JMR_624front" decls="#photograph"><desc>Text (Department of Antiquities, H.31)</desc></graphic>
+         <graphic url="JMRNB02_008" decls="#photograph"><desc>Face (Reynolds II.8)</desc></graphic>
+      <graphic url="JMR_899" decls="#photograph"><desc><ref type="inscription" n="C.402">C.402</ref> standing above 
+         <ref type="inscription" n="C.42">C.42</ref></desc></graphic>
+      
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p><bibl><ptr target="dellacella1819"/>, <citedRange>142</citedRange></bibl>;
+               <bibl><ptr target="pacho1827"/> <citedRange unit="plate"><ref target="https://gallica.bnf.fr/ark:/12148/btv1b85409935/f76.item#">LXIII.7</ref></citedRange> with Letronne, p.395</bibl>; 
+               <bibl><ptr target="beechey1828"/>, <citedRange>545</citedRange></bibl>; from all of which and from a 
+               copy made in 1819 by Fr. Pacifico da Monte Cassiano and passed to Pietro Negri, the 
+                    Sardinian consul in Tripoli, <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5132</citedRange></bibl>;
+                     mentioned, <bibl><ptr target="smith-porcher1864"/>, <citedRange unit="page">77</citedRange></bibl>;
+               <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">62</citedRange> (55), fig. 18 pl. XII</bibl>
+               whence <bibl><ptr target="SEG"/> <citedRange>9.60</citedRange></bibl>;
+                    <bibl><ptr target="gray1956"/>, <citedRange unit="page">59</citedRange></bibl>, on which see
+               <bibl><ptr target="jmr-rgg1957"/>, <citedRange>273</citedRange></bibl>, whence  
+               <bibl><ptr target="robertBE"/>, <citedRange>1959.511</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>17.811</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324421">324421</ref></citedRange></bibl>.</p>
+         </div>
+
+         
+
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>    
+                <lb n="0"/><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="1"/> <w lemma="ὁ"><supplied reason="lost">τᾶς</supplied></w> <w lemma="εἰς">εἰς</w>
+                     <w lemma="αὐτός">αὐτὰ<supplied reason="lost">ν</supplied></w>  
+                <lb n="2"/> <space quantity="2" unit="character"/> <w lemma="εὔνοια">ε<unclear>ὐν</unclear>οίας</w> <space quantity="2" unit="character"/>
+                <lb n="3"/> <space quantity="5" unit="character"/>
+                     <persName type="divine" key="charites"><name nymRef="Χάρις"><abbr>Χαρίτων</abbr></name></persName>
+                     <space quantity="5" unit="character"/>
+            </ab>
+         </div>
+         <div type="apparatus"><listApp>
+            <app loc="3"><rdg resp="#jmr-rgg1957">Χαρίτων</rdg>
+               <note>The monogram was resolved by all previous editors as χάριν.</note>
+            </app>
+         </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>- della sua benevolenza verso di essa, in grazia.</p></div>
+               <div type="translation" resp="#edd" xml:lang="en"><p>. . . in gratitude for] 
+               <supplied reason="subaudible">his/her/their</supplied> kindness to her <supplied reason="subaudible">gave ?the statue of</supplied> the Graces.</p></div>
+            
+         </div>
+         
+         <div type="commentary">
+            <p>There is space above on the block for one more line at most; it seems probable that part of the text was
+               inscribed on the block above.</p>
+            <p>The city, or less probably a lady, is clearly honouring a benefactor or benefactress.</p>
+            <p>The monogram in line 3 was read by previous editors as representing χάριν 'thanks for', 
+               to be taken with the preceding genitive; but as Reynolds pointed out (art. cit.) this does not explain all the letters, 
+            which are better interpreted as referring to the Graces, to whom the monument was presumably dedicated - 
+            perhaps being a representation of them. This might be related to the dedication of one of the small unnamed temples in the area.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

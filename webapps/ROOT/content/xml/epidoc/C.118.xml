@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C10100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Tiberius</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.118</idno>
+            <idno type="ircyr2012">C10100</idno>
+            <idno type="JMR">684</idno>
+            <idno type="Excel">1037</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>panel</objectType> (original measurements, <dimensions>
+                              <width precision="low">0.85</width>
+                              <height>0.85</height>
+                           </dimensions>), later cut down to form a base for an octagonal <objectType>altar</objectType>
+                              (max width <dimensions>
+                                 <width>0.77</width>
+                                 <height>0.76</height></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE; line 1, <height>0.075</height>; lines 2, 3, <height>0.055</height>; line 4, <height>0.05</height>; 
+                        dot for stops; apices above E in line 3 and V, A and the first o in line 4.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0014" notBefore="0004" evidence="titulature">CE 4-14</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              Agora, <placeName type="monuList" ref="https://www.slsgazetteer.org/1012">North Stoa</placeName>; found in <date type="found">1917</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+          <change when="2013-08-05" who="TW">added cert=low</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-17" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2009-06-09" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="DSC05289" decls="#photograph"><desc>Monument (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_684" decls="#photograph"><desc>Face (Department of Antiquities, E. 496)</desc></graphic>
+      <graphic url="DSC05288" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05290" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>L. Gasperini in
+               <bibl> <ptr target="gasperini1965"/>, <citedRange>327</citedRange> and pl. LIX. 7-8</bibl>; <bibl><ptr target="gasperini1967a"/> 173-174, <citedRange>33</citedRange>, fig. 216</bibl>;
+               <!-- check --><bibl><ptr target="demougin1978"/>, <citedRange>620</citedRange></bibl>, whence <bibl>
+                  <ptr target="AE"/> <citedRange>1978.830</citedRange></bibl>, 
+               whence <bibl>
+                  <ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD004639">004639</ref></citedRange></bibl>; 
+               see most recently <bibl><ptr target="zucca2007"/> <citedRange></citedRange></bibl>
+            </p>
+         </div>
+         
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    
+                    <lb n="1"/><persName type="emperor" key="tiberius"><name nymRef="Tiberius"><expan><abbr><supplied reason="lost">T</supplied><unclear>i</unclear></abbr><ex>berius</ex></expan></name>
+                    <name nymRef="Iulius"><unclear>I</unclear>ulius</name> <g ref="symbols.xml#stop"/> <persName type="emperor" key="augustus"><name nymRef="Augustus">Aug<supplied reason="lost">usti</supplied></name>
+                    <supplied reason="lost"><name nymRef="Caesar">Caesaris</name></supplied></persName>  <supplied reason="lost"><w lemma="filius">filius</w></supplied> 
+                    <lb n="2"/> <space quantity="1" unit="character"/> <g ref="symbols.xml#stop"/> <w lemma="diuus">diui</w> <g ref="symbols.xml#stop"/> <w lemma="nepos">nepos</w> <g ref="symbols.xml#stop"/> 
+                    <persName type="emperor" key="juliuscaesar"><name nymRef="Caesar">Ca<supplied reason="lost">esaris</supplied></name></persName></persName> <gap reason="lost" quantity="12" unit="character" precision="low"/>
+                    <lb n="2a"/> <space quantity="2" unit="line"/> 
+                    <lb n="3"/> <space quantity="1" unit="character"/> <persName type="attested" key="pir2-s-0965"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Sufenas">Sufenas</name> 
+                    <g ref="symbols.xml#stop"/> <persName type="attested"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name></persName> <g ref="symbols.xml#stop"/> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <g ref="symbols.xml#stop"/>
+                    <name nymRef="Proculus">P<supplied reason="lost">roculus</supplied></name></persName>
+                    <supplied reason="lost" cert="low"><w lemma="praefectus"><expan><abbr>praef</abbr><ex>ectus</ex></expan></w></supplied> 
+                    <space quantity="1" unit="character"/>
+                    <lb n="4"/> <space quantity="1" unit="character"/>  
+                    <w lemma="cohors"><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> <g ref="symbols.xml#stop"/> <placeName type="ethnic" nymRef="#Lusitanus" ref="#lusitania">Lusitanor<unclear>u</unclear><supplied reason="lost">m</supplied></placeName> 
+                    <supplied reason="lost" cert="low"><placeName type="ethnic" nymRef="#Cyrenaicus" ref="#cyrenaica">Cyrenaicae</placeName></supplied> <space quantity="1" unit="character"/>
+         </ab>
+</div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+               <listApp><app loc="1">
+                  <rdg resp="#gasperini1965">Aug[usti filius]
+                  </rdg>
+               </app>
+               <app loc="3">
+                  <rdg resp="#gasperini1965"><unclear>P</unclear>[roculus . . .]
+                  </rdg>
+               </app></listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Tiberius Julius [son of] Aug[ustus Caesar], grandson of deified Ca[esar . . . ]
+               Marcus Sufenas son of Marcus, P[roculus, prefect?] of the cohort of the Lusitanians [?of Cyrenaica] <supplied reason="subaudible">honoured him</supplied>.</p></div></div>
+
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> <!-- On the area, "l'ambiente con bancone", see Stucchi, <title>Agora</title> 326f. Applebaum is probably 
+                    right to associate the re-use with restoration after the Jewish revolt of CE 115check --> .</p>
+            <p>Line 1: The line length is established by line 3 and seems to us to impose a longer supplement 
+                        than Gasperini's<!-- ; for the order of names proposed cf. ILS 139, line 6. --> The date is CE 4-14, after Tiberius
+                        was adopted by Augustus and before the latter's death. </p>
+            <p>Line 2: <foreign xml:lang="la">Perhaps co(n)s(ul) imp(erator) II trib(unicia) pot(estate)</foreign>, although the order of titles may have varied.  </p>
+            <p>Line 3: M. Sufenas Proculus: Also in <ref type="inscription" n="C.9">C.9</ref>, <ref type="inscription" n="C.225">C.225</ref>, 
+               <ref type="inscription" n="C.226">C.226</ref> and perhaps <ref type="inscription" n="C.436">C.436</ref>, in the first three without title, 
+               in all concerned with buildings for the imperial cult and in <ref type="inscription" n="C.225">C.225</ref>, 
+               <ref type="inscription" n="C.226">C.226</ref>, as here, with the cult of Tiberius as heir. Reynolds suggested that the absence of title might suggest that he was a 
+               local, of Italian immigrant descent;  Demougin, art.cit., examined his Italian family. Alternatively, as Reynolds pointed out, the absence of his title is simply due 
+               to tactful unwillingness to stress the military basis of his authority</p>
+            <p>Line 4:  Strictly, as Gasperini notes, the title
+                                might be <foreign xml:lang="la">trib.coh.</foreign> but it is very unlikely since there is no evidence that this cohort was of 
+               <foreign xml:lang="la">milliaria</foreign> strength - so c.800 men, the level commanded by a tribune.  Demougin suggested the addition of the cohort's title <foreign xml:lang="la">Cyrenaica</foreign> here, 
+               since this is presumably the cohort known as <foreign xml:lang="la">cohors I Lusitanorum Cyrenaica</foreign>, attested in several diplomata, at Philippopolis  (CIL XVI.45 of CE 99),  
+               and in Moesia Inferior 
+               (<title>AE</title> 1977.0747 from which EDH <ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD020722">020722</ref>). The title implies that it had at one stage been
+                                stationed in Cyrenaica - presumably during the Marmaric War which terminated in 
+                                CE 2; see <ref target="https://igcyr.unibo.it/gvcyr027">GV Cyr27</ref> and 
+               J. Desanges, <title><ref target="https://zenon.dainst.org/Record/000324532">Un drame africain</ref></title> (1968). <!-- Proculus, 
+                                whether or not he had local connections, may have become commander of the cohort
+                                there --></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

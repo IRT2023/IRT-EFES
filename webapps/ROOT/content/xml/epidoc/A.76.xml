@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A09800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.76</idno>
+            <idno type="ircyr2012">A09800</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              Triangular-headed and tapering <objectType>stele</objectType> of white <material>marble</material>, 
+                              probably Attic:  <dimensions>
+                                 <width>0.17</width>
+                                 <height>0.58</height>
+                                 <depth>0.09-0.06</depth>
+                              </dimensions>.
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face. There is a <rs type="decoration">wreath</rs> with pendent ribbons in the triangle
+                           above the text.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first century CE; <height precision="low">0.02</height>; lunate epsilon and sigma, cursive omega; there is a stop after each word.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Probably from the <ref target="https://www.slsgazetteer.org/931">West Necropolis</ref>.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering content">Probably first century CE </origDate>
+                  </origin>
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>:
+                              Unrecorded. Found probably before <date type="found">1935</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-09" who="MGDA">Fixed bibliography</change>
+         <change when="2010-03-01" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-03" who="CB">Metadata tags</change>
+         <change when="2010-02-21" who="CMR">Title, translation, tags</change>
+         <change when="2009-07-17" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="DSC04446" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04447" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic><!--Dept. G. 57.--></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+                <bibl>
+                  <ptr target="applebaum1954"/>, <citedRange>19</citedRange>44</bibl>, whence <bibl>
+                  <ptr target="SEG"/> <citedRange>17.818</citedRange></bibl>,  
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324426">324426</ref></citedRange></bibl>; <bibl>
+                  <ptr target="SECir"/>, <citedRange>95</citedRange> p. 269 and fig. 74</bibl>, whence  <bibl>
+                  <ptr target="robertBE"/>, <citedRange>1964.583</citedRange></bibl>; <bibl>
+                  <ptr target="jmr1976"/>, <citedRange>67</citedRange></bibl>, whence 
+               <bibl>
+                  <ptr target="gl-jmr1983"/>, <citedRange>1</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>284-5</citedRange></bibl>. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-62130"><name nymRef="Σαλώ">Ϲαλὼ</name>
+                        <persName type="attested" key="lgpn:V1-62021"><name nymRef="Ἀλέξανδρος">Ἀλεξάν<lb n="2" break="no"/>δρου</name></persName></persName>
+             <date type="life-span" dur="P45Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="45">με</num> </date>
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-62090"><name nymRef="Ἰησοῦς">Ἰηϲοῦϲ</name> 
+                        <persName type="attested" key="lgpn:V1-62021"><name nymRef="Ἀλέξανδρος">Ἀλε<lb n="4" break="no"/>ξάνδρου</name></persName></persName>
+             <date type="life-span" dur="P8Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="8">η</num> </date>
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-62114"><name nymRef="Μάριν">Μάριν</name>
+                        <persName type="attested" key="lgpn:V1-62138"><name nymRef="Τρύφων">Τρύφω<lb n="6" break="no"/>νοϲ</name></persName></persName>
+             <date type="life-span" dur="P87Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="87">πζ</num> </date>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>Salo des Alexander, 45 (Jahre); Jesus des Alexander, 8 (Jahre); Marin des Tryphon, 87 (Jahre). </p></div>
+            <div type="translation" resp="#jmr" xml:lang="en"><p>Salo <supplied reason="subaudible">daughter</supplied> of Alexandros, aged 45; Jesus <supplied reason="subaudible">son</supplied> of Alexandros, aged 8; 
+               Marin <supplied reason="subaudible">daughter</supplied> of Tryphon, aged 87.</p></div>
+       </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The names indicate a Jewish family whose stele may, therefore, have originally
+                    stood in the West Necropolis, see on <ref type="inscription" n="A.55">A.55</ref>. 
+                For a detailed discussion see Lüderitz. The date is unlikely to be
+                    later than the Jewish Revolt of CE 115.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

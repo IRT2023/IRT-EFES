@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C80600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Boundary</rs> marker</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.275</idno>
+            <idno type="ircyr2012">C80600</idno>
+            <idno type="JMR">Y 11 a</idno>
+            <idno type="Excel">1184</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Brown <material>limestone</material> <objectType>stele</objectType>, tapering a little towards the top, 
+                              reconstructed from several pieces 
+                              (<dimensions>
+                                 <width>0.685-0.62</width>
+                                 <height>1.83</height>
+                                 <depth>0.42</depth>
+                              </dimensions>). 
+                              Fragment c: from the right side of the stele 
+                              (<dimensions>
+                                 <width>0.53</width>
+                                 <height>0.41</height>
+                                 <depth>0.06</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on three sides. The stone is of poor quality and the inequalities of the stone which made cutting difficult 
+                           or impossible in many places have imposed an odd layout. a: The front face, very badly worn. 
+                           b: The reverse face, on a prepared surface, which is considerably worn. c. The left side of the stele.</layout><!-- check -->
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a: Average <height>0.04</height>. c. Average <height>0.045-0.05</height>. 
+                        b: Average <height>0.04</height>; ΟΣ at the of line  4 and Σ at the end of line  8 distinctly smaller; superscript bar above the figure line  7. 
+                        </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0053" notAfter="0053" precision="high" evidence="titulature">CE 53</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>
+                              <placeName ref="https://www.slsgazetteer.org/1201">Beit Tamer</placeName>:  
+                              found in <date type="found">1952</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/87897">Bu ath Thamir</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-31" who="SS">added C.805 as fragment C</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-16" who="AIO">tokenized</change>
+         <change when="2009-08-20" who="Paolo">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+                     <facsimile>
+                        <graphic url="Photos_0157" decls="#photograph"><desc>Face b, at the time of discovery, with fragments of upper left corner missing</desc></graphic>
+                        <graphic url="C80500_DeptF4661" decls="#photograph"><desc>Face b (Department of Antiquities, F 4661)</desc></graphic>
+                        <graphic url="C80500" decls="#photograph"><desc>Face b</desc></graphic>
+                        
+                        <!--  Dept. F. 4660 (face A)???; no photo of face C? -->
+                       
+                     </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>Faces b and a: 
+                  <ptr target="jmr1971c"/>, <citedRange>1</citedRange></bibl>, whence (a)<bibl><ptr target="AE"/> <citedRange>1974.682</citedRange></bibl>, 
+               and<bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD011697">HD011697</ref></citedRange></bibl>,
+               whence also <bibl><ptr target="SEG"/> <citedRange>26.1819</citedRange></bibl>,
+               whence <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324714">324714</ref></citedRange></bibl>.  <!-- Check face C -->
+            </p>
+         </div>
+         
+         <div type="edition" xml:space="preserve">
+            <div subtype="face" n="a" xml:lang="la" type="textpart">
+               <ab>
+                       <lb n="1"/><persName type="emperor" key="claudius"><name nymRef="Tiberius"><supplied reason="lost"><expan><abbr>Ti</abbr><ex>berius</ex></expan></supplied></name> <name nymRef="Claudius"><supplied reason="lost">Claudius</supplied></name>
+                       <lb n="2"/><name nymRef="Caesar"><unclear>C</unclear>aesa<supplied reason="lost">r</supplied></name> <name nymRef="Augustus"><supplied reason="lost">Augustus</supplied></name>
+                       <lb n="3"/><name nymRef="Germanicus">Ge<unclear>r</unclear><supplied reason="lost">manicus</supplied></name></persName>
+                       <lb n="4"/><gap reason="illegible" quantity="5" unit="line"/>
+                       <lb n="5"/><w lemma="per">per</w> <persName type="attested" key="pir2-a-0082"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucium</ex></expan></name> <name nymRef="Acilius">Ac<supplied reason="lost">ili</supplied>um</name> <name nymRef="Strabo">Str<supplied reason="lost">a</supplied><lb 
+                          n="6" break="no"/>b<unclear>o</unclear>nem</name></persName> <w lemma="legatus"><unclear>l</unclear><supplied reason="lost">e</supplied><unclear>gat</unclear>u<unclear>m</unclear></w> <w lemma="suus">suum</w>
+                  <w lemma="praedium"><unclear>pr</unclear>ae<unclear>dia</unclear></w> <w lemma="ab"><supplied reason="lost">a</supplied></w> <w lemma="priuatus"><unclear>priuatis</unclear></w>
+                       <lb n="7"/><w lemma="possideo">poss<space quantity="1" unit="character"/>es<supplied reason="lost">sa</supplied></w> <supplied reason="lost"><expan><w lemma="populus"><abbr>P</abbr><ex>opulo</ex></w> <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName></expan></supplied> <w lemma="restituo">res<space quantity="1" unit="character"/>ti<lb n="7" break="no"/><space quantity="3" unit="character"/>tuit</w> <space quantity="3" unit="character"/>
+                  </ab><!-- check supplied -->
+               </div>
+            <div subtype="face" n="b" xml:lang="grc" type="textpart">
+               <ab>
+                    <lb n="1"/><date ref="https://godot.date/id/CqLo7ugF827o8WUiBwt488"><persName type="emperor" key="claudius"><name nymRef="Τιβέριος"><supplied reason="lost"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></supplied></name> <name nymRef="Κλαύδιος">Κλαύδιος</name> <space quantity="1" unit="character"/>
+                    <lb n="2"/><supplied reason="lost" cert="low"> <space quantity="1" unit="character"/></supplied> <name nymRef="Κλαύδιος"><supplied reason="lost">Κ</supplied><unclear>α</unclear>ῖσαρ</name> <name nymRef="Σεβαστός">Σεβαστὸς</name>
+                    <lb n="3"/><supplied reason="lost" cert="low"> <space quantity="3" unit="character"/></supplied> <name nymRef="Γερμανικός">Γερμαν<supplied reason="lost">ι</supplied>κὸς</name></persName> <space quantity="1" unit="character"/>
+                    <lb n="4"/><supplied reason="lost" cert="low"> <space quantity="3" unit="character"/></supplied> <w lemma="ἀρχιερεύς"><supplied reason="lost">ἀρχ</supplied><unclear>ι</unclear>ερεὺς</w> <w lemma="μέγιστος">μέγιστος</w>
+                    <lb n="5"/> <space quantity="1" unit="character"/> <w lemma="δημαρχικός">δη<unclear>μα</unclear>ρ<supplied reason="lost">χικῆ</supplied>ς</w> <w lemma="ἐξουσία">ἐξου<lb n="6" break="no"/>σ<supplied reason="lost">ία</supplied>ς</w> <w lemma="ὁ">τὸ</w> <num value="13"><unclear>ιγ</unclear></num> <w lemma="Αὐτοκράτωρ"><unclear>Αὐ</unclear>τοκρά<lb n="7" break="no"/><unclear>τ</unclear><supplied reason="lost">ω</supplied><unclear>ρ</unclear></w> <w lemma="ὁ">τὸ</w> <num value="27">κζ</num> <w lemma="πατήρ"><unclear>π</unclear>α<unclear>τ</unclear><supplied reason="lost">ὴρ</supplied></w>
+                    <lb n="8"/> <w lemma="πατρίς">π<unclear>α</unclear>τρ<space quantity="1" unit="character"/>ίδος</w> <w lemma="τιμητής">τιμητὴς</w>
+                    <lb n="9"/><supplied reason="lost" cert="low"> <space quantity="3" unit="character"/></supplied> <w lemma="ὕπατος"><supplied reason="lost">ὕπα</supplied><unclear>τ</unclear>ος</w> <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="5">ε</num> </supplied></date>
+                    <lb n="10"/> <w lemma="διά">διὰ</w> <persName type="attested" key="pir2-a-0082"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ευκὶου</ex></expan></name> <name nymRef="Ἀκίλιος">Ἀ<unclear>κ</unclear><supplied reason="lost">ιλίο</supplied>υ</name> <space quantity="1" unit="character"/>
+                    <lb n="11"/><name nymRef="Στράβων"><unclear>Στράβ</unclear> <space quantity="5" unit="character"/><lb n="12" break="no"/><unclear>ωνος</unclear></name></persName> <w lemma="ὁ">τοῦ</w> <space quantity="3" unit="character"/>
+                    <lb n="13"/> <w lemma="ἴδιος">ἰδίου</w> <w lemma="πρεσβευτής">πρεσβ<unclear>ευ</unclear>τοῦ</w> 
+                    <lb n="14"/> <w lemma="χωρίον">χωρία</w> <w lemma="ὑπό">ὑπὸ</w> <w lemma="ἰδιώτης">ἰδιωτῶν</w> <space quantity="1" unit="character"/>
+                    <lb n="15"/> <space quantity="1" unit="character"/> <w lemma="κατέχω">κατεχόμενα</w> <w lemma="δῆμος">Δήμῳ</w>
+                    <lb n="16"/> <space quantity="1" unit="character"/> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαίων</placeName> <w lemma="ἀποκαθίστημι">ἀπο<space quantity="3" unit="character"/><lb 
+                       n="17" break="no"/><space quantity="1" unit="character"/>κατέστησε</w> <space quantity="3" unit="character"/> 
+              </ab>
+            </div>
+            
+            <div subtype="face" n="c" xml:lang="grc" type="textpart">
+                        <ab>
+                            <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <date ref="https://godot.date/id/o34w6R7W9RBAG9PAnnwnWY"><persName type="emperor" key="claudius"><name nymRef="Κλαύδιος">Kλαύδ<unclear>ι</unclear>ος</name>
+                                <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="2"/><name nymRef="Καῖσαρ"><supplied reason="lost">Κ</supplied>αῖσα<supplied reason="lost">ρ</supplied></name> <name nymRef="Σεβαστός">Σεβαστὸς</name>
+                            <lb n="3"/><name nymRef="Γερμανικός"><supplied reason="lost">Γ</supplied>ερμ<supplied reason="lost">ανι</supplied>κὸς</name></persName>
+                            <lb n="4"/><gap reason="lost" quantity="3" unit="character"/> <w lemma="ἀρχιερεύς">ἀρχ<space quantity="1" unit="character"/>ιερεὺς</w> <w lemma="μέγιστος">μέγιστος</w>
+                            <lb n="5"/><gap reason="lost" quantity="3" unit="character"/> 
+                            <w lemma="δημαρχικός"><unclear>δη</unclear>μαρ<unclear>χ</unclear><supplied reason="lost">ικ</supplied><unclear>ῆ</unclear>ς</w> <w lemma="ἐξουσία">ἐξου<lb 
+                               n="6" break="no"/><gap reason="lost" quantity="3" unit="character"/>σ<supplied reason="lost">ία</supplied>ς</w> <w lemma="ὁ">τὸ</w> 
+                                    <num value="8"><unclear>η</unclear></num> <w lemma="Αὐτοκράτωρ">Αὐτοκρά<lb n="7" break="no"/><supplied reason="lost">τωρ</supplied></w> <w lemma="ὁ">τὸ</w>
+                                    <num value="27">κζ</num> <w lemma="πατήρ">πα<unclear>τ</unclear><supplied reason="lost">ὴρ</supplied></w>
+                            <lb n="8"/> <w lemma="πατρίς"><supplied reason="lost">πατρ</supplied>ίδος</w> <w lemma="τιμητής">τιμητὴς</w>
+                            <lb n="9"/><w lemma="ὕπατος"><supplied reason="lost">ὕπατ</supplied>ος</w> <supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="5">ε</num> </supplied></date>
+                            <lb n="9a"/> <space quantity="1" unit="line"/>
+                            <lb n="10"/> <w lemma="διά">διὰ</w> <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ευκὶου</ex></expan></name> <name nymRef="Ἀκίλιος">Ἀ<unclear>κ</unclear><supplied reason="lost">ιλίου</supplied></name> 
+                            <lb n="10a"/> <space quantity="1" unit="line"/>
+                            <lb n="11"/><name nymRef="Στράβων"><supplied reason="lost">Στράβωνο</supplied>ς</name></persName> <w lemma="ὁ">τοῦ</w>
+                            <lb n="11a"/> <space quantity="1" unit="line"/>
+                            <lb n="12"/> <w lemma="ἴδιος">ἰδίου</w> <w lemma="πρεσβευτής"><unclear>πρε</unclear>σ<unclear>βε</unclear><supplied reason="lost">υτ</supplied>οῦ</w>
+                            <lb n="13"/> <orig>χο<unclear>μ</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/> <orig>ο</orig>
+                            <lb n="14"/><orig>ενα<unclear>λ</unclear>ω</orig>
+                            <lb n="15"/><orig>οκα</orig>
+                            <lb n="16"/> <w lemma="καθίστημι">κατέστησε<unclear>ν</unclear></w>
+                        </ab>
+            </div>
+            </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>Latin</note>: [Ti(berius)] Claudius Caesar Augustus Germanicus, pontifex maximus, 
+            <ref target="https://godot.date/id/CqLo7ugF827o8WUiBwt488">holding tribunician power for the thirteenth time, acclaimed imperator for the twenty-seventh time, father of the fatherland, censor, consul 
+               [for the fifth time]</ref>; by the action of L(ucius) Ac[ili]us Strabo, his personal envoy, 
+            he restored [to the Roman People] properties which had been occupied by private persons.</p>
+         <p><note>Greek: face b</note>: [Ti(berius) Claudius] Caesar [Augustus] Germanicus, high priest <supplied reason="explanation"><foreign xml:lang="la">pontifex maximus</foreign></supplied>, 
+            <ref target="https://godot.date/id/CqLo7ugF827o8WUiBwt488">holding tribunician power for the thirteenth time, acclaimed imperator for the twenty-seventh time</ref>, father of the fatherland, censor  consi=ul [for the fifth time]; 
+            by the action of L(ucius) Ac[iliu]s Strabo, his personal envoy, he restored to the Roman People properties which had been occupied by private persons.</p>
+         <p><note>Greek: face c</note>: [Ti(berius)] Claudius Caesar [Augustus] Ger[manicus high priest <supplied reason="explanation"><foreign xml:lang="la">pontifex maximus</foreign></supplied>, 
+            <ref target="https://godot.date/id/o34w6R7W9RBAG9PAnnwnWY">holding tribunician power for the eighth time, acclaimed imperator for the twenty-seventh time</ref>, 
+            father of the fatherland, censor [ . . . ]; by the action of L(ucius) Ac[iliu]s Strabo, his personal envoy, 
+            he restored [ . .]</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>a, the principal text, is in worse condition; b gives the fuller text and enables the restorations. c appears to represent a first attempt at inscribing b, on an unsatisfactory surface.</p>
+            <p>Claudius became <foreign xml:lang="la">pater patriae</foreign> in January 42, censor in 47, consul for the 5th and last time in 51, imperator for the 27th and last time in 52 and 
+               held the tribunician power for the 13th time from January 53 - January 54.
+               Although Tac. Ann. XIV. 18 (available at <ref target="http://data.perseus.org/citations/urn:cts:latinLit:phi1351.phi005.perseus-lat1:14.18">Perseus</ref>) states that Acilius Strabo was commissioned by 
+               Claudius this, with <ref type="inscription" n="M.141">M.141</ref> and <ref type="inscription" n="M.238">M.238</ref>, currently provide the only epigraphic evidence for his activity before the accession of Nero.
+              <!-- This suggests that Strabo began his work in the country districts on the Gebel, at some distance from Cyrene --> .</p>
+            <p>For Acilius Strabo see <title>PIR<hi rend="superscript">2</hi></title> A 0082, and <ref target="http://pir.bbaw.de/addenda/A/0082.html">addenda</ref>; he was active in Cyrenaica under Claudius and 
+               Nero: <ref type="inscription" n="A.25">A.25</ref>, <ref type="inscription" n="A.50">A.50</ref>, <ref type="inscription" n="A.68">A.68</ref>, 
+               <ref type="inscription" n="C.434">C.434</ref>,  <ref type="inscription" n="C.748">C.748</ref>, <ref type="inscription" n="M.125">M.125</ref>,  
+               <ref type="inscription" n="M.141">M.141</ref>, <ref type="inscription" n="M.143">M.143</ref>, 
+               <ref type="inscription" n="M.153">M.153</ref>, <ref type="inscription" n="M.172">M.172</ref>, <ref type="inscription" n="M.238">M.238</ref>,
+               <ref type="inscription" n="M.251">M.251</ref>, <ref type="inscription" n="M.275">M.275</ref>, and perhaps <ref type="inscription" n="M.68">M.68</ref>; 
+               for his appointment see on <ref type="inscription" n="M.141">M.141</ref>.</p>
+            <!-- <p>C. line  12 ὁρους κατεχομενους / ὑπὸ ιδιωτων δημῳ / Ῥωμαίων.</p> -->
+            
+            <!-- check app -->
+            <!-- <note>In 1993 lines 6 f</note> PRAEDIA PRIS(C)VATIS / APOSSESSOR…SRESTI / T vac. TVIT λ </rdg></app>
+               <app><rdg><note>In 1993 lines 6</note> PRAEDIA CUPATIS</rdg></app></listApp> -->
+            <!-- check: does sdie c exist? or is this a different stone? -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

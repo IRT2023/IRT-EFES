@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G03200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.128</idno>
+            <idno type="ircyr2012">G03200</idno>
+            <idno type="JMR">562</idno>
+            <idno type="Excel">792</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> herm, the head lost and the base broken away (<dimensions><width>0.285</width> <height>0.82</height> <depth>0.245</depth></dimensions>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face below the bust.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century CE: lines 1, 3-5, <height>0.035</height>; 1.2, <height>0.03</height>; lunate epsilon, lunate sigma, omega; superscript bars above the abbreviated praenomina and nomina.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Second to third centuries CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>: 
+                        <placeName ref="https://www.slsgazetteer.org/1183">Batta</placeName> (formerly Oberdan), about 300m. 
+                        from the village square with <ref type="inscription" n="M.129">M.129</ref>, <ref type="inscription" n="M.130">M.130</ref>, 
+                        <ref type="inscription" n="M.131">M.131</ref> and 
+                        <ref type="inscription" n="M.132">M.132</ref>; found in <date type="found">1938</date></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/88205">Battah</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-02-01" who="GillianB">turned to XML and tidied</change>
+         <change when="2010-02-01" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="JMRNB02_084" decls="#photograph"><desc>Face (Reynolds II.84)</desc></graphic>
+      <graphic url="JMR_562front" decls="#photograph"><desc>Face</desc></graphic><!--Dept. J.R.--><surface/></facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιον</ex></expan></name> <name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name> <name nymRef="Οὐαλεριανός">Οὐαλερια<lb 
+                       n="2" break="no"/>νὸν</name> <name nymRef="Νεμωνιανός">Νεμωνι<lb n="3" break="no"/><supplied reason="lost">α</supplied>νόν</name></persName>
+                    <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πα<lb n="4" break="no"/>τὴρ</w> <persName type="attested"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άιος</ex></expan></name> <name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιος</ex></expan></name>
+                    <name nymRef="Ἀκύλας">Ἀκύ<lb n="5" break="no"/>λαϲ</name> <name nymRef="Νίκαιος">Νίκαιοϲ</name></persName>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>G(aios) Kl(audios) Oualerianos Nemonianos <supplied reason="explanation"><foreign xml:lang="la">G(aius) Cl(audius) Valerianus Nemonianus</foreign></supplied>: 
+            his father G(aios) Kl(audios) Akulas <supplied reason="explanation"><foreign xml:lang="la">G(aius) Cl(audius) Aquila</foreign></supplied> Nikaios <supplied reason="subaudible">set this up</supplied></p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

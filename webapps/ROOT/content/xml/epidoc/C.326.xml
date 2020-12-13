@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C27000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of an altar</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.326</idno>
+            <idno type="ircyr2012">C27000</idno>
+            <idno type="JMR">869</idno>
+            <idno type="Excel">138</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>This altar has fallen face downwards into a deep channel and is not accessible to examination</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> <objectType>altar</objectType>, moulded above and below 
+                              (<dimensions><width>0.47</width> <height>1.00</height> <depth>0.35</depth></dimensions>); 
+                              one of a set of six altars, <ref type="inscription" n="C.323">C.323</ref>, <ref type="inscription" n="C.324">C.324</ref>, <ref type="inscription" n="C.325">C.325</ref>, 
+                              <ref type="inscription" n="C.326">C.326</ref>, <ref type="inscription" n="C.327">C.327</ref>, <ref type="inscription" n="C.328">C.328</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face. Lines 1 and 2 are on the upper moulding, 3 on the face below.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably second century, <height>0.08</height>; lunate epsilon.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate cert="low" precision="low" notAfter="0200" notBefore="0101" evidence="lettering">Probably second century</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1058">Fountain Terrace</placeName>: Found probably in <date type="found" cert="low">1931</date>, 
+                              collected together, the inscriptions were turned face inwards, near the rock face, beside the Byzantine lime kilns.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>This altar has fallen face downwards into a deep channel and is not accessible to examination.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-14" who="GillianB">tokenized</change>
+         <change when="2009-06-15" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_871_002" decls="#photograph"><desc><ref type="inscription" n="C.325">C.325</ref> and 
+      <ref type="inscription" n="C.326">C.326</ref> (Department of Antiquities, D 430)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="SECir"/>, <citedRange>156.1</citedRange>, fig 115 (drawing only, from T. XXI, 7-10)</bibl>; 
+               <bibl><ptr target="cdl2000"/><citedRange></citedRange></bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>50.1637</citedRange></bibl>;
+               <bibl><ptr target="catani2007"/>, <citedRange>1</citedRange></bibl> <!-- check --> whence
+               <bibl><ptr target="SEG"/> <citedRange>57.2018</citedRange></bibl>, <bibl><ptr target="cdlBE"/>, <citedRange>2008.604</citedRange></bibl>.<!-- check Stucchi -->
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                            
+                            <lb n="1"/> <persName type="divine" key="arretos"><w lemma="ὁ"><supplied reason="lost">τ</supplied>ῷ</w>
+                            <lb n="2"/><w lemma="θεός">θεῶν</w>
+                        
+                            
+                            <lb n="3"/> <w lemma="ἄρρητος">ἀρ<lb n="2" break="no"/><unclear>ρή</unclear><lb n="3" break="no"/>τ<unclear>ῳ</unclear></w></persName>
+                            
+                        </ab>
+
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="1">
+                  <rdg resp="#SECir">? [θε]ῷ</rdg>
+                  <rdg resp="#cdl2000">[τ]ῷ</rdg>
+                  <rdg resp="#catani2007">[Ἑρ]ῷ</rdg>
+               </app>
+               <app loc="3">
+                  <rdg resp="#catani2007">ἀρ[ι]φήτῳ</rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>For the Unspoken of the Gods.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>All the altars in this set that can be legible contain unusual elements. There is a discussion by <ref target="https://zenon.dainst.org/Record/000322645">Pugliese-Carratelli (1963)</ref>.</p>
+            <p>a.l.2 Perhaps [θε]ῷ θεῶν; an inscription from Yarsuvat in Cilicia, θεῷ θεῶν / Διὶ / μεγίστωι <title>JHS</title> (1898) 310 (at <title>PHI</title> 
+               <ref target="https://epigraphy.packhum.org/text/285771">285771</ref>, or Macr.Sat. 1.9.16 
+               (available at <ref target="https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Macrobius/Saturnalia/1*.html">Penelope</ref>) where Janus is described as <foreign xml:lang="la">quasi deorum deum</foreign>. </p>
+            <p> b.l.3 The idea of the ἄρρητος θεός and of ἄρρητα τέλεα is especially associated with mystery cults cf. e.g. Eurip. fr. 63 of Κορε or Plut, Περι Ἰσ. καὶ Ὀσ., 25.360f. of Isis, 
+               in connection with Ares. αἱ δε Ἀρεως εἰσι πρακτικαι θαλασσομαχοι ἀφηγηται καὶ εὐψυχεις, περὶ ἀρρητα ποιητικαι; 
+               but here the explanation might be that there is an easy transition from the selection of one god as the highest to the thought, 
+               perhaps originally due to Jewish influence, that his name must not be spoken. For another instance of this in Cyrene - but in a christian context - cf. Synesius, Hymn IV (II) 226, 
+               πάτερ ἄγνωστε, πάτερ ἄρρητε, ἄγνωστε νόω, ἄρρητε λόγω, νόος ἐσσί νο/ων, ψυχᾶν ψυχά, φύσις εἰ φυσίων.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

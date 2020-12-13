@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A00800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Imperial</rs> 
+               <rs type="textType">honours</rs> for plural emperors.
+            </title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.4</idno>
+            <idno type="ircyr2012">A00800</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              Part of a <objectType>stele</objectType> of white <material>marble</material>, probably Attic, with traces of moulding above 
+                              (<dimensions><width>0.74</width> <height>0.51</height></dimensions>). Originally inscribed with <ref type="inscription" n="A.3">A.3</ref>, 
+                              it was subsequently cut down for reuse for this text, and 
+                              later reused again as an impost block in the sixth century church. Damaged to the right and below.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on three faces. 
+                           This inscription is on the reverse face from <ref type="inscription" n="A.3">A.3</ref>. 
+                           Roughly incised <rs type="decoration">palm branch</rs>es at the ends of lines 2 and 4.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Fourth-fifth century CE: 
+                        lines 1,3: <height>0.09</height>; 
+                        lines 2,4: <height>0.10</height>; 
+                        line 5: <height>0.04-0.05</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0301" notAfter="0500" precision="low" evidence="lettering context">Fourth to fifth centuries CE</origDate>
+                  </origin>
+                  
+                  
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>:
+                        Baptistery in the <placeName type="monuList" ref="https://www.slsgazetteer.org/914">East Church</placeName>; found in <date type="found">1920</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-12" who="GillianB">tagged bibliography</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-23" who="GB">tidied</change>
+         <change when="2010-02-11" who="CMR">Title, number</change>
+         <change when="2010-02-11" who="MR">tagged metadata</change>
+         <change when="2009-07-13" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="DSC04426" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04427" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04428" decls="#photograph"><desc>Left side (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04429" decls="#photograph"><desc>Right side (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04430" decls="#photograph"><desc>Right side (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04459" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <!--Dept. E. 342 (right-hand inscription)--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p>
+                    <bibl><ptr target="SECir"/>, <citedRange>201b</citedRange> with illustration, fig. 148</bibl>, whence
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.582</citedRange></bibl>; 
+               <bibl><ptr target="jmr1976"/>, <citedRange>6.c</citedRange> and pl. LVIII</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>27.1136</citedRange></bibl>. Discussed by <bibl> <ptr target="roques1987"/> <citedRange></citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>38.1867</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>285</citedRange></bibl>. 
+             </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                  <persName type="emperor" key="anonymi"><w lemma="ὑπό"><supplied reason="lost">ὑ</supplied>φ᾽</w><w lemma="ἥλιος">ἡλίῳ</w>
+                      <w lemma="δεσπότης">δεϲπόται</w>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <w lemma="εὐτυχής"><supplied reason="lost">εὐ</supplied>τυχεῖϲ</w> 
+                        <name nymRef="Σεβαστός">Ϲεβαϲτοί</name></persName> <g ref="symbols.xml#palm"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <w lemma="ὁ"><supplied reason="lost">τῇ</supplied></w> <w lemma="πόλις">πόλει</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="εὐτυχία">εὐτυχίαϲ</w>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>τ</unclear>ουϲ</w> <w lemma="ἑαυτός">αὑτῶν</w> <g ref="symbols.xml#palm"/>
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <supplied reason="lost"><w lemma="ὁ">τοῦ</w></supplied>
+                    <w lemma="λαμπρός"><supplied reason="lost">λαμ</supplied>προτάτου</w>
+                    <lb n="6"/><supplied reason="lost" cert="low"> <space quantity="3" unit="character"/>
+                        <w lemma="ἡγεμών">ἡγεμόνοϲ</w> <space quantity="3" unit="character"/></supplied>
+                </ab>
+         </div>
+         <div type="apparatus">
+            <listApp>
+                <app loc="4">
+                  <lem><gap reason="lost" extent="unknown" unit="character"/><unclear>τ</unclear>ους αὑτῶν</lem>
+                  <rdg resp="#SECir"><gap reason="lost" extent="unknown" unit="character"/>ους αὐτῶν</rdg>
+              </app>
+              <app loc="5">
+                  <lem><supplied reason="lost">λαμ</supplied>προτάτου</lem>
+                  <rdg resp="#SECir"><supplied reason="lost">ἰε</supplied>ροτάτου</rdg>
+               </app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve">
+           <div type="translation" xml:lang="en" resp="#jmr"> <p>. . . ] lords [of the earth] under the sun [ . . . ] fortunate, Augusti [ . . . gave?] to the city to further its prosperity [ . . . ] of themselves [ . . .
+               by action of?  . . .] the distinguished [governor]
+            </p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>The style recalls <ref type="inscription" n="P.136">P.136</ref> of the
+                    joint reign of Arcadius and Honorius (395-408) to whom perhaps this text also
+                    refers. The emperors had apparently made some gift to the city; and it may be that this
+                    should be connected with the embassy of Synesius to Constantinople to ask
+                    Arcadius for imperial aid for the province; cf. Περὶ βασιλείας 1100 c for a
+                    reference to restoration of buildings. See further Roques, <title><ref target="https://zenon.dainst.org/Record/000257259">Synésios de Cyrène et la Cyrénaïque du Bas-Empire</ref></title>  (1987). 
+               <!--<xref>Should we have an n xref to the translation, http://www.livius.org/su-sz/synesius/synesius_monarchy_17.html</xref>--></p>
+            <p>Line 1: For the formula cf. e.g. <title><ref target="https://zenon.dainst.org/Record/001589000">Aphrodisias in Late Antiquity</ref></title> (2004) <ref target="http://insaph.kcl.ac.uk/ala2004/inscription/eAla025.html">, 
+               25</ref>, <ref target="http://insaph.kcl.ac.uk/ala2004/inscription/eAla026.html">26</ref>, <ref target="http://insaph.kcl.ac.uk/ala2004/inscription/eAla027.html">27</ref>.</p>
+           
+            <p>Line 5: The title of the imperial agent, probably the praeses, who carried out the work or dedicated it.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

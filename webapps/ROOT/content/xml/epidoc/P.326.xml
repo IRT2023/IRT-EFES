@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P21800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Military</rs> <rs type="textType">funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.326</idno>
+            <idno type="ircyr2012">P21800</idno>
+            <idno type="JMR">398</idno>
+            <idno type="Excel">483</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Limestone</material> 
+                              <objectType>stele</objectType>, cut above to resemble two very rudimentary acroteria, damaged below (<dimensions>
+                                 <width unit="metre">0.37</width> 
+                                 <height unit="metre">0.50</height> 
+                                 <depth unit="metre">0.08</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Too crude to date: <height unit="metre">0.045</height>; capital A without a cross bar; very lightly and crudely incised.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0100" notAfter="0400" precision="low" evidence="lettering">First - fourth century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/953">modern village</placeName>, 
+                              in the area of the former military hospital; found before <date type="found">1936</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-22" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="CMR">tagged description, corrected text</change>
+         <change when="2009-04-22" who="CB">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_398" decls="#photograph"><desc>From left: <ref type="inscription" n="P.326">P.326</ref>, <ref target="https://igcyr.unibo.it/gvcyr002"/>, GVCyr002 (Department of Antiquities, F.2865)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverioDAI2"/>, <citedRange>535</citedRange> (59), p. 257,  pl. CVI, fig. 100</bibl>, whence  
+              <bibl><ptr target="AE"/> <citedRange>1939.279</citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD023046">HD023046</ref></citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name> <name nymRef="Aemilius">Aemili<lb n="2" break="no"/>us</name>
+                    <name nymRef="Valens">Vale<supplied reason="omitted">n</supplied>s</name></persName> 
+                    <lb n="3"/> <w lemma="ueteranus"><expan><abbr>uet</abbr><ex>eranus</ex></expan></w> <w lemma="cohors"><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> 
+                    <lb n="4"/><num value="3">III</num> <orig>E H M</orig>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Quinto Emilio Valente, veterano della coorte terza, regolarmente congedato (dopo aver 
+            servito con fedeltà ed onore) (?)</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Q(uintus) Aemilius Valens, a veteran of the 3rd cohort ?of the Hemesian cavalry.</p></div>
+            </div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>l.4. No definite solution has been found. Oliverio proposed <foreign xml:lang="la">e(x) h(onesta) m(issione)</foreign>. 
+               Prof. E. Birley has suggested a cutter's error for <foreign xml:lang="la">Hem(esenorum)</foreign> or for 
+                    <foreign xml:lang="la">e(quitatae) h(oc) m(onumentum) h(eredem) n(on) s(equetur)</foreign> but the latter seems much too sophisticated for this monument and is otherwise unattested in the province.
+                    We suggest, very tentatively, <foreign xml:lang="la">e(quitum) H(e)m(esenorum)</foreign>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

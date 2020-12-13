@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Christian</rs> <rs type="textType">invocation</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.203</idno>
+            <idno type="ircyr2012">C76810</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Mosaic <objectType>floor</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="tessellis">Mosaic</rs> lettering, in pebbles of two colours. i preceded by a circle 
+                           enclosing a framed image of what seems to be an orans. To the right, ii,  arranged around a monogram cross, and contained with a <rs type="decoration">wreath</rs>; 
+                           further to the right a palm-tree, and then traces of another <rs type="decoration">wreath</rs>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Not described</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>In the <foreign xml:lang="la">cella vinaria</foreign> of a fortified agricultural villa.</origPlace>
+                     <origDate notBefore="0468" notAfter="0700" precision="low" evidence="context">End of fifth to seventh centuries CE</origDate>
+                  </origin>
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                              <placeName ref="https://www.slsgazetteer.org/1261">Siret al-Jamil</placeName>, 
+                               near Beida. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/89055">Beida</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-23" who="MLA">copied from CMC</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><surface/><!--JR--></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <p><bibl><ptr target="catani1978"/><citedRange></citedRange></bibl>; <!-- check -->
+               reported by <bibl><ptr target="jmr-jbwp-rgg2003"/>, <citedRange>413</citedRange></bibl>.</p>
+         </div>
+
+         
+
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+                <div type="textpart" n="i"><ab><lb n="1"/><persName type="divine" key="iesous"><name nymRef="Ἐμμανουήλ">Ἐμμανουήλ</name></persName></ab></div>
+                <div type="textpart" n="ii"><ab><lb n="1"/><w lemma="ἄλφα"><expan><abbr>Ἄ</abbr><ex>λφα</ex></expan></w> <space quantity="4" unit="character"/> <w lemma="ὠμέγα"><expan><abbr>Ὠ</abbr><ex>μέγα</ex></expan></w>
+                <lb n="2"/> <g ref="symbols.xml#chi-rho"/>
+                    <lb n="3"/><persName type="divine" key="iesous"><name nymRef="Χριστός"><expan><abbr>Χ</abbr><ex cert="low">ριστὸν</ex></expan></name></persName> 
+                   <persName type="divine" key="maria"><name nymRef="Μαρία"><expan><abbr>Μ</abbr><ex cert="low">αρία</ex></expan></name></persName> <w lemma="γεννάω"><expan><abbr>γ</abbr><ex cert="low">εννᾷ</ex></expan></w></ab></div>
+            
+         </div>
+         
+        
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p>Emmanuel <supplied reason="explanation">God with us</supplied></p>
+            <p>Alpha and Omega</p>
+            <p>?M(ary) b(ore) Ch(rist)</p></div>
+            </div>
+        
+         <div type="commentary">
+            <p>Stucchi believed that Emmanuel was the name of the owner; but Emmanuel is rare as a name
+               in the epigraphic record of the appropriate date. Instead, it is explained as having its biblical meaning, "God with us", μεθ’ ἡμῶν ὁ θ(εό)ς in several texts: e.g. 
+               <title><ref target="https://zenon.dainst.org/Record/000292794">RIChrM</ref></title>  274, available at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/151678">151678</ref>
+               <title><ref target="https://zenon.dainst.org/Record/000976362">TAM IV,1</ref></title> 369, available at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/279191">279191</ref>, with Feissel in <title>BullEp</title> 1996.606.
+               it is more usual for an inscription in this kind of position to be apotropaic and that is how it is interpreted by Catani.
+               For a very full discussion see Catani, art.cit.
+            </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

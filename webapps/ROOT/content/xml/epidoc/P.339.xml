@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P24200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">prayer<certainty cert="low" locus="value" match=".."/></rs> for the safety of the Emperor</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.339</idno>
+            <idno type="ircyr2012">P24200</idno>
+            <idno type="JMR">417</idno>
+            <idno type="Excel">582</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two <material>limestone</material> fragments probably from a  <objectType>panel</objectType> (a. <dimensions>
+                                 <width unit="metre">0.08</width> 
+                                 <height unit="metre">0.05</height> 
+                                 <depth unit="metre">0.065</depth>
+                              </dimensions>, b. <dimensions>
+                                 <width unit="metre">0.08</width> 
+                                 <height unit="metre">0.04</height> 
+                                 <depth unit="metre">0.065</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century: <height precision="low" unit="metre">0.009</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notAfter="0079" notBefore="0069" evidence="reign">CE 69-79
+                     </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  Findspot unrecorded. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2013-10-03" who="TW">edited image information</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="CMR">tagged description, corrected text</change>
+         <change when="2009-05-29" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_425_001" decls="#photograph"><desc>From left, <ref type="inscription" n="P.347">P.347</ref> and <ref type="inscription" n="P.339">P.339</ref> (1961-05-26, Joyce Reynolds III.16)</desc></graphic>
+      <graphic url="JMR_425_001a" decls="#photograph"><desc>Face (1961-05-26, Joyce Reynolds III.16)</desc></graphic>
+      <graphic url="Photos_0302_2" decls="#photograph"><desc>Face</desc></graphic><!--JR. (photo of a squeeze).--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="jmr1965a"/>, <citedRange>2.a</citedRange>. and pl. X a. (a. only)</bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve"><div subtype="section" n="a" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/> 
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>o</unclear></w>
+                        <persName type="emperor" key="titus"><name nymRef="Titus">Tito</name> <name nymRef="Caesar"><unclear>C</unclear><supplied reason="lost">aesar</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/> 
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="populus"><unclear>p</unclear>opuli</w> 
+                        <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><unclear>R</unclear>omani</placeName> <gap reason="lost" extent="unknown" unit="character"/> 
+                        <lb n="2a"/><gap reason="lost" extent="unknown" unit="line"/> 
+                </ab></div><div subtype="section" n="b" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ouc</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>pro</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab>
+</div>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>a</note> . . . ] for Titus C[aesar . . .  of the Roman people [ . . .
+            </p><p><note>b</note>. Not translatable</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>
+               <note>a</note>   Since Titus is not given the praenomen <foreign xml:lang="la">imperator</foreign> the date is before the death of Vespasian in 79. 
+               The fragment should be from a record of prayers offered on behalf of the emperor and his family, see also <ref type="inscription" n="P.97">P.97</ref>, 
+               <ref type="inscription" n="P.204">P.204</ref>, and, at Cyrene, <ref type="inscription" n="C.146">C.146</ref>.</p>
+            <p>It may be part of a prayer formula of the type offered by the Arval Brothers at sacrifices to the Dea Dia: cf. Henzen, <title>Acta fratrum Arvalium</title>, p. 8, 
+               avaiable at <ref target="https://hdl.handle.net/2027/hvd.32044050775808?urlappend=%3Bseq=280">Hathi Trust</ref>,  and used also on the <foreign xml:lang="la">ara numinis Augusti</foreign> at Narbonne (ILS 112): [<foreign xml:lang="la">Quod bonum faustum felix fortunatum salutareque sit] / [Imp(eratori) Vespasiano Caes(ari) Aug(usto) pontifici maxim]o Tito C[aeari]</foreign>.</p>
+            <p>Alternatively it might be from an account of the ceremony in which the wording was similar to that of the Arval Acta for 3rd January, 78 (Henzen, p. ci, available at <ref target="https://hdl.handle.net/2027/hvd.32044050775808?urlappend=%3Bseq=123">Hathi Trust</ref>): 
+               <foreign xml:lang="la">[item pr]o 
+               Tito C[aesare Aug(usti) f(ilio) Vespasiano imp(eratore) Ioui] / [o(ptimo) m(aximo) b(ouem) m(arem) Iunoni uacc(am) Mineruae uacc(am) Saluti] / [Publicae] populi R[omani uacc(am) ...]</foreign> </p>
+            <p>
+               <note>b</note> Cannot be located within the possible texts.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Milestone</rs> of Elagabalus</title>
+                             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">M.198</idno>
+            <idno type="ircyr2012">G05950</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db1179">Balagrae Museum</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p>A <material>limestone</material> <objectType>column</objectType>ar milestone in three pieces, of which two join; 
+                                        the third piece belongs to the base of the column.
+                                       <dimensions>
+                                            <width>0.32-0.37</width>
+                                            <height>0.94 (column) 0.29 (base)</height>
+                                        </dimensions></p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face with a carefully planned layout; 
+                                    names are a little higher than the other words, and the emperor's name is taller than the Caesar's.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Lunate and angular epsilon, lunate and square sigma, lunate omega; 
+                                superscript bars on the abbreviated praenomina in lines 2 and 7; lines 1, 2: <dimensions>
+                                    <height>0.045</height></dimensions>; lines 3, 6, 8, 9: <dimensions>
+                                        <height>0.04</height></dimensions>; line 7, <dimensions>
+                                            <height>0.042</height></dimensions>; line 10, <dimensions>
+                                                <height>0.03</height></dimensions>.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace><rs type="milestone" key="cyr-pto">Cyrene to Ptolemais Road</rs>.</origPlace>
+                            <origDate notAfter="0221" notBefore="0222" precision="low" evidence="internal-date">CE 221/222.</origDate></origin>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                            <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>, 
+                                        area of Eshiem, found on the surface of an ancient rock-cut road.</p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p><placeName ref="https://www.slsgazetteer.org/1179">Balagrae Museum</placeName>.</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription (Reynolds).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2011-08-11" who="Pietro">entered and tagged text</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="Photos_0174" decls="#photograph"><desc>Face</desc></graphic>
+        <graphic url="Photos_0176" decls="#photograph"><desc>Face</desc></graphic>
+        <graphic url="Photos_0177" decls="#photograph"><desc>Face</desc></graphic>
+        <graphic url="Photos_0179" decls="#photograph"><desc>Face, lower part</desc></graphic>
+        <graphic url="Photos_0173" decls="#photograph"><desc>Face, right end</desc></graphic>
+        <graphic url="Photos_0175" decls="#photograph"><desc>Face, close up</desc></graphic>
+        <graphic url="Photos_0178" decls="#photograph"><desc>Face, close up</desc></graphic>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p><bibl><ptr target="mohamed-jmr2004"/>, <citedRange>1</citedRange></bibl>, whence 
+                    <bibl><ptr target="SEG"/> <citedRange>54.1777</citedRange></bibl>, 
+                    <bibl><ptr target="AE"/> <citedRange>2004.1661</citedRange></bibl>,
+                    <bibl><ptr target="cdlBE"/> <citedRange>2005.625</citedRange></bibl></p>
+            </div>
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                <lb n="1"/><persName type="emperor" key="elagabalus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορι</w> <name nymRef="Καῖσαρ">Καίϲαρι</name>
+	<lb n="2"/><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκῳ</ex></expan></name> 
+                <name nymRef="Αὐρήλιος">Αὐρηλίῳ</name> 
+                <name nymRef="Ἀντωνῖνος"><del rend="erased">Ἀ<supplied reason="lost">ντω</supplied>νεί<supplied reason="lost">ν</supplied></del></name>
+	<lb n="3"/> <w lemma="εὐεβής">Εὐϲεβεῖ</w> <w lemma="εὐτυχής">Εὐτυχεῖ</w> <name nymRef="Σεβαστός">Ϲεβαϲτῷ</name>,
+<lb n="4"/><persName type="emperor" key="caracalla"><w lemma="θεός">Θεοῦ</w> 
+                <name nymRef="Ἀντωνῖνος">Ἀντω<supplied reason="lost">νε</supplied>ίνο<supplied reason="lost">υ</supplied></name> 
+                <w lemma="υἱός">υἱῷ</w></persName>, <persName type="emperor" key="septimiusseverus"><w lemma="θεός">Θεοῦ</w>
+<lb n="5"/><name nymRef="Σεουῆρος">Ϲευήρου</name> 
+                <w lemma="ἔγγονος">ἐγγ<supplied reason="lost">ό</supplied>ν<supplied reason="lost">ῳ</supplied></w></persName>,
+                <w lemma="ἀρχιερεύς">ἀρχιερεῖ</w> <w lemma="μέγιστος"><supplied reason="lost">μεγίϲτῳ</supplied></w>,
+<lb n="6"/> <w lemma="δημαρχικός">δημαρχικῆς</w> <w lemma="ἐξουσία">ἐξ<supplied reason="lost">ου</supplied>ϲίαϲ</w>,
+                <w lemma="ὕπατος">ὑπάτῳ</w> <supplied reason="lost" cert="low"><w lemma="ὁ">τὸ</w> 
+                    <num value="4">δ</num> </supplied></persName>
+<lb n="7"/> <w lemma="καί">καὶ</w> <date><persName type="emperor" key="severusalexander"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκῳ</ex></expan></name> 
+                <name nymRef="Αὐρήλιος">Αὐρηλίῳ</name> 
+                <name nymRef="Ἀλέξανδρος">Ἀλεξάνδρῳ</name> <w lemma="ἐπιφανής"><supplied reason="lost" cert="low">ἐπιφανεϲτάτῳ</supplied></w>
+<lb n="8"/> <name nymRef="Καῖσαρ"><supplied reason="lost">Κ</supplied>αίσαρι</name> 
+                <w lemma="υἱός">υἱῷ</w> <w lemma="ὁ">τοῦ</w> <w lemma="κύριος">κυρίου</w> 
+               <name nymRef="Σεβαστός">Ϲεβα<supplied reason="lost">ϲτοῦ</supplied></name></persName></date>
+                <supplied reason="lost"><w lemma="καί">καὶ</w></supplied>
+<lb n="9"/><persName type="emperor" key="juliamaesa"><name nymRef="Ἰουλία">Ἰουλίᾳ</name> <name nymRef="Μαέσα">Μαέσῃ</name> 
+                <name nymRef="Σεβαστός">Ϲεβ<supplied reason="lost">α</supplied><unclear>ϲτ</unclear>ῇ </name></persName>
+                <w lemma="μητρομήτωρ">μ<unclear>η</unclear><supplied reason="lost" cert="low">τρομήτορι</supplied></w>
+<lb n="10"/>	<w lemma="καί"><unclear>κ</unclear><supplied reason="lost">αὶ</supplied></w>
+                <persName type="emperor" key="juliasoemias"><name nymRef="Ἰουλία"><supplied reason="lost">Ἰουλίᾳ</supplied></name> 
+                <name nymRef="Σοαιμίς"><supplied reason="lost">Ϲοαιμίδ</supplied>ι </name>
+              <name nymRef="Σεβαστός">Ϲεβαϲ<supplied reason="lost">τῇ</supplied></name> 
+                <w lemma="μήτηρ"><supplied reason="lost">μητρὶ</supplied></w>
+<lb n="10α"/>	<supplied reason="lost"><w lemma="ὁ">τοῦ</w> <w lemma="κύριος">κυρίου</w> 
+    <name nymRef="Σεβαστός">Ϲεβαϲτοῦ</name> </supplied></persName> <gap reason="lost" extent="unknown" unit="line"/>
+            </ab>
+         </div>
+            <div type="apparatus">
+                <head>Apparatus</head>
+                <listApp><app loc="10"><note>Σοαίμιδ]ι: Σοαιμιάδ]ι, D.-L.</note></app></listApp><!-- check -->
+            </div>
+            <div type="translation" xml:space="preserve">
+            <div type="translation" source="#mohamed-jmr2004" xml:lang="en"><p>For the Emperor Marcus Aurelius [Antoninus] Pious Felix Augustus, 
+                son of the deified Antoninus, grandson of the deified Severus, [high] priest, holder of tribunician power,
+                consul [for the fourth time?]; and for Marcus Aurelius Alexander [most splendid?] Caesar, son of the Lord Augustus, 
+                and for Julia Maesa Augusta [grandmother? and for Julia Soemias] Augusta, [mother of the Lord Augustus . . .</p></div>
+         </div>
+            
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>The road from which this milestone comes runs east-westward, from Cyrene to Ptolemais at Barca.</p>
+                <p>Date: between June 221 CE, when Heliogabalus (lines 1-3) adopted his cousin as son and Caesar (lines 7/8), and March 222 CE, when he was murdered.</p>
+                    <p>Lines 4-5: ἔγγονος = υἱωνός: grandson of Septimius Severus; ‘pourrait-on ajouter qu’ἔγγονος a été choisi parce qu’en absence de filiation paternelle, 
+                        il n’y avait même pas eu d’adoption?’ (Dobias-Lalou, loc.cit.).</p>
+                <p>Line 6: Heliogabalus was consul for the fourth (and last) time in 221 CE.</p>
+                    <p>Line 7: [ἐπιφανεστάτῳ]; in Latin milestones Alexander is regularly called <foreign xml:lang="la">nobilissimus Caesar</foreign>.</p>
+                <p>Line 9: Iulia Maesa was the grandmother of Heliogabalus: in Latin texts she is called <foreign xml:lang="la">avia</foreign> and  in <title>IGR</title> III 1228 (Kanatha) 
+                        this is translated as τήθη τοῦ Σεβαστοῦ, but τήθη is not consistent with the traces in line  9. 
+                        μητρομήτορι is not common in inscriptions; but ‘la restitution . . . est tout à fait plausible’, (Dobias-Lalou, loc.cit.).</p>
+                    <p>Lines 9-11: The mention of the two imperial ladies is not paralleled in Latin milestone-texts; this milestone was designed to honour the emperor and his family 
+                        rather than to record his deeds.</p>
+                    <p>Line 10: Σοαίμιδ]ι: Σοαιμιάδ]ι, D.-L.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Boundary</rs> marker</title>
+                
+                <editor xml:id="jmr">Joyce M. Reynolds</editor> <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">A.68</idno>
+            <idno type="ircyr2012">A12210</idno>
+                <availability>
+                    <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+                    <p>All reuse or distribution of this work must contain somewhere a link back to the
+                        URL <ref>http://inslib.kcl.ac.uk/</ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p> <material>Limestone</material> <objectType>stele</objectType> (<dimensions><width>0.39</width> <height>1.89</height> <depth>0.25</depth></dimensions>)</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on two faces, b to the left of a; text on side a ends 0.77 from the lower edge; text on side b ends 1.21 from lower edge. 
+                                    There is one large hole in the middle of side a and many other smaller holes, which created several irregularities 
+                                    in the inscription, and in particular the space between lines 22 and 23 of side a. </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote><height unit="metre">0.04-0.05</height>.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Unknown</origPlace>
+                            <origDate notBefore="0056" notAfter="0056" evidence="reign">56 CE</origDate>
+                        </origin>
+                        
+                            
+                                <provenance type="found">
+                                    <p>
+                                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>, to the west; found by Breyek Mufta Kuainin in <date type="found">1990.</date></p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p><placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, (<date type="observed">1997</date>)  near the French dighouse.</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass/>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" key="...">Marsa Susa</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+            <creation>Transcription from photograph (Reynolds), from stone (Dobias-Lalou).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+            <change when="2011-08-02" who="CMR">created from publication</change>
+        </revisionDesc>
+    </teiHeader><facsimile><graphic url="Photos_0161" decls="#photograph"><desc>Face a</desc></graphic>
+        <graphic url="Photos_0217" decls="#photograph"><desc>Face a</desc></graphic>
+        <graphic url="A_68a" decls="#photograph"><desc>Face a</desc></graphic>
+        <graphic url="A_68b" decls="#photograph"><desc>Face b</desc></graphic></facsimile>
+    <text>
+        <body>
+            
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p><bibl> <ptr target="mohamed1996"/>, <citedRange>129-30</citedRange></bibl>, 
+                    whence <bibl><ptr target="SEG"/> <citedRange>46.2189</citedRange></bibl>, 
+                    <bibl><ptr target="AE"/> <citedRange>1995.1633</citedRange></bibl>, 
+                    whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD051511">051511</ref></citedRange></bibl>
+                    <bibl><ref type="external" target="http://pir.bbaw.de/addenda//A/0082.html">PIR addenda</ref></bibl>.
+                </p>
+            </div>
+            
+            <div type="edition" xml:space="preserve">
+                <div type="textpart" n="a">
+                    <ab xml:lang="la">
+                    <lb n="1"/><persName type="emperor" key="nero"><name nymRef="Nero">Nero</name> 
+                <name nymRef="Claudius">Claudius</name>
+<lb n="2"/><persName type="emperor" key="claudius"><name nymRef="Claudius">Claudi</name></persName> 
+    <name nymRef="Caesar">Caesaris</name>,
+ <lb n="3"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> 
+                <name nymRef="Germanicus">Germanici</name> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w>
+                        <lb n="4"/><persName type="emperor" key="germanicus"><name nymRef="Germanicus">Germanici</name> <space quantity="1" unit="character"/> <name nymRef="Caesar">Cae<lb 
+                            break="no" n="5"/>saris</name></persName> <w lemma="nepos"><expan><abbr>n</abbr><ex>epos</ex></expan></w>, 
+                <persName type="emperor" key="tiberius"><name nymRef="Tiberius"><expan><abbr>Ti</abbr><ex>beri</ex></expan></name> 
+                <name nymRef="Caesar"><supplied reason="lost">C</supplied>aesa<supplied reason="lost">ris</supplied></name>
+<lb n="6"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> 
+                <w lemma="pronepos"><expan><abbr>pron</abbr><ex>epos</ex></expan></w>, 
+                <persName type="emperor" key="augustus"><w lemma="diuus"><unclear>diu</unclear><supplied reason="lost">i</supplied></w>
+<lb n="7"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> 
+                <w lemma="abnepos"><expan><abbr>abn</abbr><ex>epos</ex></expan></w>,
+                <date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE"><name nymRef="Caesar">Caes<supplied reason="lost">ar</supplied></name>
+<lb n="8"/><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> 
+                <name nymRef="Germanicus">Germani<supplied reason="lost">cus</supplied></name>
+<lb n="9"/> <w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w></date></persName> <w lemma="per">per</w> 
+                <persName type="attested" key="pir2-a-0082"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucium</ex></expan></name> 
+                <name nymRef="Acilius">Acil<supplied reason="lost">ium</supplied></name>
+<lb n="10"/><name nymRef="Strabo">Strabonem</name></persName> <w lemma="legatus">l<supplied reason="lost">egatum</supplied></w>
+<lb n="11"/><w lemma="suus">suum</w> <w lemma="finis">fines</w> <w lemma="occupo"><supplied reason="lost">oc</supplied><lb break="no" n="12"/>cupatos</w> <w lemma="ab">a</w> <w lemma="priuatus">pr<unclear>iua</unclear><supplied reason="lost">tis</supplied></w>
+<lb n="13"/><expan><w lemma="populus"><abbr>P</abbr><ex>opulo</ex></w> 
+                <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName> </expan>
+                <w lemma="restituo">restitui<supplied reason="lost">t</supplied></w>
+<lb n="13a"/> <space quantity="1" unit="line"/>
+                    </ab>
+                    <ab xml:lang="grc">
+                <lb n="14"/><persName type="emperor" key="nero"><name nymRef="Νέρων">Νέρων</name> 
+                <name nymRef="Κλαύδιος">Κλαύδιος</name>,
+<lb n="15"/><persName type="emperor" key="claudius"><name nymRef="Κλαύδιος">Κλ<unclear>α</unclear>υδίου</name> 
+                <name nymRef="Καῖσαρ">Καί<lb 
+                    break="no" n="16"/>σαρος</name> <name nymRef="Σεβαστός">Σεβαστοῦ</name>
+<lb n="17"/><name nymRef="Γερμανικός">Γερμανικοῦ</name></persName> <w lemma="υἱός">ὑὸς</w>,
+<lb n="18"/><persName type="emperor" key="germanicus"><name nymRef="Γερμανικός">Γερμανικοῦ</name> 
+                <name nymRef="Καῖσαρ">Καί<lb 
+                    break="no" n="19"/>σαρος</name></persName> <w lemma="ὑωνός">ὑωνός</w>, 
+                <persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βερίου</ex></expan></name>
+<lb n="20"/><name nymRef="Καῖσαρ"><unclear>Καί</unclear>σσαρος</name> <name nymRef="Σεβαστός">Σεβα<lb 
+    break="no" n="21"/>στοῦ</name></persName> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w> <persName type="emperor" key="augustus"><w lemma="θεός"><supplied reason="lost">θ</supplied>εο<lb n="22" break="no"/>ῦ</w> <name nymRef="Σεβαστός">Σεβ<supplied reason="lost">ασ</supplied>τοῦ</name></persName>
+                     <lb n="22a"/> <space quantity="1" unit="line"/>
+        <lb n="23"/>        <w lemma="ἔκγονος">ἔκγονος</w></persName>
+                        <lb n="23a"/> <space extent="unknown" unit="line"/>
+                    </ab>
+                </div>
+                <div type="textpart" xml:lang="grc" n="b">
+                <ab>
+                 <lb n="24"/> <persName type="emperor" key="nero"><name nymRef="Καῖσαρ"> Κα<supplied reason="omitted">ῖ</supplied>σ<supplied reason="lost">αρ</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σε</supplied><lb 
+                     n="25" break="no"/>βαστὸς</name> <name nymRef="Γερμανικός"><supplied reason="lost">Γε</supplied><lb 
+                     n="26" break="no"/><supplied reason="lost">ρ</supplied>μανικ<supplied reason="lost">ος</supplied></name>
+                     <lb n="27"/><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Α</supplied>ὐτο<lb n="28" break="no"/><supplied reason="lost">κ</supplied>ράτωρ</w></persName> <w lemma="διά">διὰ</w>
+        <lb n="29"/><persName type="attested" key="pir2-a-0082"><supplied reason="lost"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name></supplied> <name nymRef="Ἀκίλιος">Ἀκιλίου</name>
+               
+    <lb n="30"/><name nymRef="Στράβων"><supplied reason="lost">Σ</supplied>τράβωνος</name></persName>				
+    <lb n="31"/><w lemma="τις"><supplied reason="lost">τ</supplied>οῦ</w> <w lemma="ἴδιος">ἰδίου</w>
+    <lb n="32"/><w lemma="πρεσβευτής">πρεσβευ<lb n="33" break="no"/><unclear>τ</unclear>οῦ</w> <w lemma="ὅρος">ὅρους</w>
+    <lb n="34"/><w lemma="διακατέχω">διακατεχο<lb n="35" break="no"/>μένους</w> <w lemma="ὑπό">ὑπὸ</w>				
+    <lb n="36"/><w lemma="ἰδιώτης">ἰδιωτῶν</w> <w lemma="δῆμος">Δή<lb n="37" break="no"/>μῳ</w> <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥωμαίω<lb 
+        n="38" break="no"/>ν</placeName> <w lemma="ἀποκαθίστημι">ἀποκατέ<lb n="39" break="no"/>στησεν</w>
+<lb n="39a"/> <space extent="unknown" unit="line"/>
+</ab>
+                </div>
+            </div>
+           <div type="apparatus">
+               <listApp><app><note>The first three lines of a, and the text on b were not recorded in the earlier edition.</note></app>
+                   <app loc="7"><rdg resp="#mohamed1996">G<unclear>s</unclear>ermanicus</rdg> <note>the unexpected S is actually a hole in the surface.</note></app></listApp>
+           </div> 
+            
+            <div type="translation" xml:space="preserve"><head>Translation</head>
+             <div type="translation" resp="#jmr" xml:lang="en"><p> <note>Latin</note>: <ref target="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE">Nero Claudius son of Claudius, Caesar Augustus Germanicus, grandson of Germanicus Caesar, 
+                 great grandson of [Tiberius Caesar] Augustus, 
+                 great-great grandson of deified Augustus, Caesar Augustus Germanicus, accalimed imperator</ref>, by <supplied reason="subaudible">the action of</supplied> Lucius Acilius Strabo his personal envoy, 
+                 restored to the Roman People the boundaries <supplied reason="explanation">of the estates</supplied> which had been occupied by private persons.</p> 
+<p><note>Greek</note>: <ref target="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE">Nero Claudius son of Claudius, Caesar Augustus Germanicus, grandson of Germanicus Caesar, 
+                 great grandson of [Tiberius Caesar] Augustus, 
+                 and great-great grandson of deified Augustus, Caesar Augustus Germanicus, acclaimed imperator</ref>, by <supplied reason="subaudible">the action of</supplied> Lucius Acilius Strabo his personal envoy, 
+                 restored to the Roman People the boundaries <supplied reason="explanation">of the estates</supplied> which had been occupied by private persons.</p></div>
+                 
+
+</div>
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>For Acilius Strabo see <title>PIR<hi rend="superscript">2</hi></title> A 0082, and <ref target="http://pir.bbaw.de/addenda/A/0082.html">addenda</ref>; he was active in Cyrenaica under Claudius and 
+                    Nero: <ref type="inscription" n="A.25">A.25</ref>, <ref type="inscription" n="A.50">A.50</ref>, <ref type="inscription" n="A.68">A.68</ref>, 
+                    <ref type="inscription" n="C.434">C.434</ref>,  <ref type="inscription" n="C.748">C.748</ref>, <ref type="inscription" n="M.125">M.125</ref>,  
+                    <ref type="inscription" n="M.141">M.141</ref>, <ref type="inscription" n="M.143">M.143</ref>, 
+                    <ref type="inscription" n="M.153">M.153</ref>, <ref type="inscription" n="M.172">M.172</ref>, <ref type="inscription" n="M.238">M.238</ref>,
+                    <ref type="inscription" n="M.251">M.251</ref>, <ref type="inscription" n="M.275">M.275</ref>, and perhaps <ref type="inscription" n="M.68">M.68</ref>; 
+                    for his appointment see on <ref type="inscription" n="M.141">M.141</ref>.</p>
+                <p/>
+            </div> 
+        </body>
+    </text>
+</TEI>

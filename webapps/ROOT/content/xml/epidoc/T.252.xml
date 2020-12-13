@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T24700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.252</idno>
+            <idno type="ircyr2012">T24700</idno>
+            <idno type="JMR">81b</idno>
+            <idno type="Excel">1575</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1095">i, ii Findspot; iii: Tocra Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Sandstone</material> <objectType>block</objectType>, now broken: surviving fragment from the right end of the block, with text iii,  <dimensions><width>0.37</width> <height>0.35</height>
+                               <depth>0.50</depth></dimensions>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> on the face, i within a <rs type="decoration">wreath</rs>, 
+                           iii also within a <rs type="decoration">wreath</rs>, not drawn by Pacho and only faintly visible on the photograph.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>iii: <height>0.05</height>; i and ii are smaller. L for ἔτους, lunate sigma, omega. </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Gymnasium</origPlace>
+                     <origDate evidence="lettering context" notBefore="-0050" notAfter="0150" precision="low">Late first century BCE - early second century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1133">Turkish castle</placeName>; first found in <date type="found">1825</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>i, ii Findspot (<date type="observed">1825</date>); iii: <placeName type="monuList" ref="institution.xml#db1095">Tocra Museum.</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (iii) and previous publications (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+          <change when="2011-03-17" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-09-18" who="Pietro">tokenized</change>
+         <change when="2009-09-17" who="Lourdes">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXXI" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXXI)</desc></graphic>
+      <graphic url="JMR_81_003" decls="#photograph"><desc>From left to right:  <ref type="inscription" n="T.254">T.254</ref> (upside down), <ref type="inscription" n="T.251">T.251</ref>, 
+         <ref type="inscription" n="T.252">T.252</ref>.iii, <ref type="inscription" n="T.253">T.253</ref> (upside down), <ref type="inscription" n="T.708">T.708</ref> (above) 
+         (Department of Antiquities, F. 1069)</desc></graphic>
+      <graphic url="JMR_81_003b" decls="#photograph"><desc>iii, face (Department of Antiquities, F. 1069)</desc></graphic>
+      <graphic url="JMRNS14_007" decls="#photograph"><desc>iii, face (Reynolds 1971, NS.XIV.7)</desc></graphic></facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>i-iii <bibl><ptr target="pacho1827"/> pl.<citedRange>LXXXI</citedRange></bibl>, whence 
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5277</citedRange></bibl>; iii: 
+                    <bibl>
+                        <ptr target="oliverioDAI2"/>, <citedRange unit="entry">477</citedRange> (347),  pl. LXXXVIII, fig.59</bibl>, whence
+                    <bibl>
+                  <ptr target="SEG"/> <citedRange>9.555</citedRange></bibl>
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="wreath" n="i" type="textpart"><ab>
+                    <lb n="1"/><date ref="https://godot.date/id/UGsKBAis8vjkqQEseo4oyG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w><gap unit="character" extent="2" reason="lost"/></date> 
+                    <lb n="2"/><orig>γαη</orig>
+                    <lb n="3"/><orig>θηπ<unclear>τ</unclear></orig>
+               <lb n="4"/><orig>δ</orig><gap unit="character" extent="2" reason="lost"/><orig>ε</orig></ab>
+</div>
+            <div subtype="wreath" n="ii" type="textpart"><ab>
+                    <lb n="1"/><date ref="https://godot.date/id/PdyuasiMxoqYzoe7MfHeCB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                    <num value="10"><unclear>ι</unclear></num></date> <orig>φ</orig>
+               <lb n="2"/><gap unit="character" extent="3" reason="lost"/><orig>ιλι</orig>
+                    <lb n="3"/><orig>διφυω</orig>
+               <lb n="4"/><orig>δϲ</orig> </ab>
+</div>
+            <div subtype="wreath" n="iii" type="textpart"><ab>
+                <lb n="1"/><date ref="https://godot.date/id/2kJ6Xzg5XNTahp89WC8CGL"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτουϲ</ex></expan></w>  <num value="15">ιε</num></date>
+                    <lb n="2"/><persName type="attested"><name nymRef="Τίτος"><expan><abbr>Τ</abbr><ex>ίτοϲ</ex></expan></name>
+                        <name nymRef="Σήστιος">Ϲήστιοϲ</name>
+                <lb n="3"/><name nymRef="Δομίτιος">Δομίτι<lb n="4" break="no"/>οϲ</name></persName> <w lemma="γραμματεύς"><expan><abbr>γραμ</abbr><ex>ματεὺϲ</ex></expan></w>
+                </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="i.2-4">
+                  <rdg resp="#cigiii">[Φ]α[μενὼ]/θ η΄ ? . . .</rdg>
+               </app>
+               <app loc="ii"><rdg resp="#cigiii">L ι΄Φ/α[μενὼθ]. ./Δίφ[ιλ/ο]ϲ</rdg>
+               </app>
+                    <app loc="iii.2"><note>Τ(ίτος) omitted by Oliverio and SEG.</note></app>
+                </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>iii: Anno 15. Sestio Domizio segretario.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note> <ref target="https://godot.date/id/UGsKBAis8vjkqQEseo4oyG">Year ?</ref> . . . </p>
+               <p><note>ii</note> <ref target="https://godot.date/id/PdyuasiMxoqYzoe7MfHeCB">Year 10</ref> . . .</p> 
+               <p><note>iii</note> <ref target="https://godot.date/id/2kJ6Xzg5XNTahp89WC8CGL">Year 15</ref>, T(itos) Sestios Domitios, <supplied reason="explanation"><foreign xml:lang="la">T(itus) Sestius Domitius</foreign></supplied> Secretary.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>iii: Secretary to the ephebes: see on <ref type="inscription" n="T.27">T.27</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

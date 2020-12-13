@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T66900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="cdl">Catherine Dobias-Lalou </editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.688</idno>
+            <idno type="ircyr2012">T66900</idno>
+            <idno type="JMR">243</idno>
+            <idno type="Excel">1626</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType> inscribed on the façade.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> within a gabled panel (<dimensions><width>0.23</width> <height>0.40</height></dimensions>) 
+                            outlined in relief.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.30</height>; square sigma, cursive omega; 
+                    L for ἔτους, ἐτῶν.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate evidence="lettering context" precision="low" notBefore="0001" notAfter="0100">Probably first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1155">Quarry East XVII</placeName>, west wall. First recorded in <date type="found">1825</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-28" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-04" who="DT">Tokenised.</change>
+         <change when="2009-05-18" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXXIV" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXXIV)</desc></graphic>
+      <graphic url="B_043" decls="#photograph"><desc>Face (Reynolds NS.VII.11)</desc></graphic></facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/> <citedRange unit="plate">LXXXIV</citedRange></bibl>, whence `
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5327</citedRange></bibl>.</p><!-- El Haddar 441 -->
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/2PHNx6qgGAcvWexzzsgv4V"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="10">ι</num> 
+                        <rs type="month" key="hathyr"><w lemma="Ἁθύρ">Ἁθὺρ</w></rs> <num value="15">ει</num></date> 
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-60099"><name nymRef="Νυμφόδωρος">Νυμφόδ<lb n="3" break="no"/>ωροϲ</name> 
+                       <persName type="attested"><name nymRef="Κοιδίκιος">Κοι<lb n="4" break="no"/><unclear>δ</unclear><supplied reason="lost">ι</supplied>κίω</name></persName></persName> 
+                    <date type="life-span" dur="P18Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
+                        <num value="18">ιη</num> </date>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="1">
+                  <rdg resp="#pacho1827">ΑΟΕΡΕΙ</rdg></app>
+                <app loc="2">
+                  <rdg resp="#pacho1827">ΝΥΜΑΟΔ</rdg></app>
+                <app loc="3">
+                  <rdg resp="#pacho1827">ΟΕΟΡΚΟΙ</rdg>
+                   <rdg resp="#cigiii">-[ωρ]ο[ς] Kοι</rdg>
+                   <rdg resp="#jmr">-[ωρ]ο[ς] Kει</rdg><note>, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=VI-60098">VI-60098</ref>, Κειδίκιος?</note>
+                </app></listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/2PHNx6qgGAcvWexzzsgv4V">Year 10, Hathyr 15</ref>, Nymphodoros 
+               <supplied reason="subaudible">son</supplied> of Koidikios <note>Kudikios</note>, aged 18.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Lines 3/4: The patronymic is confirmed by Dobias-Lalou from an excellent photograph by Elhaddar. </p>
+            <!-- November 11 -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

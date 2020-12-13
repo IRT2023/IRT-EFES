@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C56400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">funerary</rs> inscription, Tomb N.171</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.569</idno>
+            <idno type="ircyr2012">C56400</idno>
+            <idno type="JMR">1130a</idno>
+            <idno type="Excel">290</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two pieces from the right side of a <material>limestone</material> block.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Perhaps first century CE: <height>0.10</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" evidence="lettering" precision="low">Perhaps first century.</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName ref="https://www.slsgazetteer.org/1071">North Necropolis</placeName>, <placeName type="monuList" ref="https://www.slsgazetteer.org/1055">tomb of the Mnesarchoi</placeName>, N.171,
+                              used to close the first loculus to the left of the entrance in Chamber 4. 
+                              For other inscriptions from this tomb see <ref target="https://igcyr.unibo.it/igcyr007800">IGCyr 78</ref>, 
+                              <ref target="https://igcyr.unibo.it/igcyr027100">IGCyr 271</ref>, 
+                              <ref target="https://igcyr.unibo.it/igcyr027200">IGCyr 272</ref>, <ref target="https://igcyr.unibo.it/igcyr027300">IGCyr 273</ref>,
+                              <ref target="https://igcyr.unibo.it/igcyr027400">IGCyr 274</ref>, <ref target="https://igcyr.unibo.it/igcyr027500">IGCyr 275</ref>, 
+                              <ref type="inscription" n="C.570">C.570</ref></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-06" who="MGDA">fixed Cassels bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-15" who="GillianB">tokenized</change>
+         <change when="2009-06-18" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_1130_003front" decls="#photograph"><desc>Upper block (Reynolds VIII.45)</desc></graphic>
+      <graphic url="JMR_1130_002front" decls="#photograph"><desc>Lower block (Reynolds VIII.45)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+             <p>For the tomb see 
+               <bibl>
+                  <ptr target="cassels1955"/>, <citedRange>171</citedRange></bibl>, whence <bibl><ptr target="robertBE"/>, <citedRange>1958.540</citedRange></bibl>;  
+               <bibl><ptr target="thorn2009"/>, <citedRange unit="page">65-69</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ε</unclear>υχ<unclear>η</unclear></orig>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ε</unclear>ια</orig> <space quantity="3" unit="character"/>
+                    <lb n="2a"/> <space quantity="1" unit="line"/>
+                    <lb n="3"/> <w lemma="πλήρης">Πλήρης</w>
+                </ab>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="2">
+                  <rdg>
+                  Perhaps <supplied reason="lost" cert="low">ἰαρ</supplied>εια
+                  </rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>Traces of a name, perhaps a priestess</note>. <supplied reason="subaudible">The tomb is</supplied> full</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            
+           <p> Chamber 3 of this tomb has also yielded inscriptions, but these are of pre-Roman date, (see references above). 
+              For the family whom the tomb belonged see also <ref type="inscription" n="C.570">C.570</ref>. </p>
+            <p>Line 1: Probably part of a name</p>
+            <p>Line 2: Perhaps ἰάρ]εα, 'priestess'; cf <ref type="inscription" n="C.570">C.570</ref></p>
+            <p>Line 3: Again in <ref type="inscription" n="C.570">C.570</ref>, where see discussion.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

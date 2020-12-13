@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P11700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary ?<rs type="textType">building</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.115</idno>
+            <idno type="ircyr2012">P11700</idno>
+            <idno type="JMR">328</idno>
+            <idno type="Excel">746</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Limestone</material> 
+                              block (<dimensions><width unit="metre">1.40</width> <height unit="metre">0.60</height></dimensions> x depth not measurable).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the exposed face of the block.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First-second century, with a broad trench: line  1, <height unit="metre">0.016</height>; line  2, <height unit="metre">0.010</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate evidence="lettering" precision="low" notBefore="0001" notAfter="0200">First-second century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: <date type="found">1910-11</date>,
+                              in the west wall of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1689">large reservoir</placeName>, north-east of the Square of the Cisterns.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-03-27" who="VA">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_328" decls="#photograph"><desc>Detail (Reynolds XII.60)</desc></graphic>
+      <graphic url="JMRNB12_060" decls="#photograph"><desc>View (Reynolds XII.60)</desc></graphic><!--Dept. F. 1093.--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="robinson1913"/>, from Norton, <citedRange>75</citedRange></bibl>; 
+               <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">508</citedRange> (32), and pl. CI, fig. 88</bibl>;
+               discussed <bibl><ptr target="kraeling1962"/>, <citedRange unit="page">73</citedRange></bibl>.
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="aedifico"><supplied reason="lost">a</supplied>edificandas</w> <w lemma="et">e<unclear>t</unclear></w> 
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="et"><supplied reason="lost">e</supplied>t</w> <w lemma="ualuae">ualuas</w> <w lemma="et">et</w> <w lemma="hydragogia">hyd<unclear>r</unclear><supplied reason="lost">agogias</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                  <lem>et</lem>
+                  <rdg resp="#robinson1913">e[t</rdg>
+               </app>
+               <app loc="2">
+               <rdg resp="#robinson1913">hydr[agogium</rdg>
+               <note>So Oliverio, and Knudsen in Kraeling.</note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>(fece) edificare e - e le porte (le chiuse ?) e l'acquedotto -</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p> . . . ] the building of [ . . . ] and double water-gates and conduit[s . . . </p></div>
+         </div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Clearly recording construction of an aqueduct and associated installations; 
+               for a full description of the known arrangements for water-supply and water-storage at Ptolemais, 
+               see Knudsen in Kraeling, 68 f., but he is wrong to argue that the use of Latin in this text implies a late date for it<!-- , see introduction, XXX -->.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

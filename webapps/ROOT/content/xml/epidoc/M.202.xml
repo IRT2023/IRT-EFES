@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mile X: <rs type="textType">Milestone</rs> of ?Nero</title>
+                             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">M.202</idno>
+            <idno type="ircyr2012">G11000</idno>
+                <idno type="JMR">Z.19</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p>
+                                        Upper part of a <material>limestone</material> <objectType>column</objectType>.
+                                        (<dimensions>
+                                            <dim type="diameter">0.50</dim>
+                                            <height>0.65</height>
+                                        </dimensions>).</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on the shaft; the text has been deliberately and completely erased, except for the end of line 1.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote> <height>0.14</height>.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace><rs type="milestone" key="cyr-pto" n="10">Cyrene to Ptolemais Road: Mile 10</rs>.</origPlace>
+                            <origDate atLeast="0054" atMost="0055" evidence="reign">CE 54-55</origDate>
+                        </origin>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                            <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>, with <ref type="inscription" n="M.199">M.199</ref>, <ref type="inscription" n="M.200">M.200</ref>, 
+                                        <ref type="inscription" n="M.201">M.201</ref>; found in <date type="found">1955</date>.</p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription (Reynolds).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2012-07-03" who="GB">improved text</change>
+            <change when="2012-06-29" who="SS">created from template</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+            </div>
+            
+            <div type="edition" xml:space="preserve" xml:lang="la">
+               <ab>
+                    <lb n="1"/><del rend="erasure"><gap reason="lost" extent="unknown" unit="character"/></del>
+                   <persName type="emperor" key="nero" cert="low"><name nymRef="Nero"><del rend="erasure">Nero</del></name>
+                   <name nymRef="Claudius"><del rend="erasure">Clau</del><unclear>di</unclear>us</name></persName>
+                    <lb n="2"/><del rend="erasure"><gap reason="lost" extent="unknown" unit="line"/></del>
+               </ab>
+            </div>
+            <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#cmr" xml:lang="en"><p>[Nero Clau]dius [ . . .</p></div>
+         </div>
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>The unusual size of the letters is paralleled in <ref type="inscription" n="M.225">M.225</ref>, 
+                    suggesting an attribution to Nero, and a similar date.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

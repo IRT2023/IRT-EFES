@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G04200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Christian</rs> <rs type="textType">building</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.137</idno>
+            <idno type="ircyr2012">G04200</idno>
+            <idno type="JMR">571</idno>
+            <idno type="Excel">1252</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Relaid in the West Church</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Mosaic</material> <objectType>floor</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="tessellis">Mosaic</rs> lettering in a roundel (internal diameter c.<dim type="diameter">0.56</dim>); 
+                           the right half has been destroyed by the construction of an altar and the left half is in poor condition.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.07</height>; square sigma, lunate omega</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Found in the apse of the church</origPlace>
+                      <origDate notBefore="0501" notAfter="0600" evidence="lettering" precision="low">Sixth century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1618">Theodorias/Gasr Leibia</placeName>,  
+                     in the <placeName type="monuList" ref="https://www.slsgazetteer.org/1182">East Church</placeName>, on the floor of the chancel; found in <date type="found">1957</date></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Relaid in the <placeName type="monuList" ref="https://www.slsgazetteer.org/1584">West Church</placeName></p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/83860">Qasr Libiya</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2013-10-10" who="TW">Added pic code</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-02-08" who="GillianB">turned to XML and tidied</change>
+         <change when="2010-02-01" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+       <graphic url="JMR_571" decls="#photograph"><desc>View of the left end</desc></graphic>
+       <surface/>
+   </facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="rgg1957"/><citedRange></citedRange></bibl>;
+               <bibl> <ptr target="jmr1960"/>  no. <citedRange>21.II</citedRange></bibl>, 
+               whence <bibl><ptr target="robertBE"/>, <citedRange>1961.835</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>18.768</citedRange>.l</bibl>, whence 
+              <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324465">324465</ref></citedRange></bibl>;
+               <bibl><ptr target="jmr1980"/>, <citedRange unit="page">146, B</citedRange></bibl>. 
+               whence <bibl><ptr target="SEG"/> <citedRange>30.1787</citedRange>.B</bibl>
+               whence <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324535">324535</ref></citedRange></bibl>;
+               <bibl><ptr target="jmr-jbwp-rgg2003"/> <citedRange unit="page">284.D</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/> <w lemma="γίγνομαι"><supplied reason="lost">ἐγέ</supplied><lb n="2" break="no"/><supplied reason="lost">νετο</supplied></w>
+               <w lemma="οὗτος"><supplied reason="lost">τοῦτο</supplied></w>
+                    <lb n="3"/> <w lemma="ὁ">τὸ</w> <w lemma="ἔργον">ἔργον</w> <date ref="https://godot.date/eponymous_office/2LQmqZa54s6enn7LAuEGh4/uxzkrCdToCGgi44QhLGn5C"><w lemma="ἐπί">ἐπ<supplied reason="lost">ὶ</supplied></w>
+               <persName type="attested" key="lgpn:V1-60882"><supplied reason="lost" cert="low"><w lemma="ὁ">τοῦ</w> <w lemma="ὅσιος"><expan><abbr>ὁϲιω</abbr><ex>τάτου</ex></expan></w></supplied>
+                    <lb n="4"/> <w lemma="καί">κὲ</w> <w lemma="θεοσεβής">θεοϲεβ<supplied reason="lost">εϲτάτου</supplied></w>
+                    <lb n="5"/> <w lemma="ἐπίσκοπος">ἐπιϲκόπ<supplied reason="lost">ου</supplied></w>
+               <name nymRef="Θεόδωρος"><supplied reason="lost">Θεο</supplied><lb 
+                  n="6" break="no"/>δώ<supplied reason="lost">ρου</supplied></name></persName></date>
+                </ab>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p>[This] work [too came into being] <ref target="https://godot.date/eponymous_office/2LQmqZa54s6enn7LAuEGh4/uxzkrCdToCGgi44QhLGn5C">in the time of [the very holy] and 
+            pious bishop Theodorus</ref></p></div>
+            </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 5: Theodoros: see also <ref type="inscription" n="M.135">M.135</ref>, b.</p>
+            <p>For a more precise date see <ref type="inscription" n="M.134">M.134</ref>, with <ref type="inscription" n="M.135">M.135</ref></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

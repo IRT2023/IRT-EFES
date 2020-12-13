@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C89500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Octavia</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.453</idno>
+            <idno type="ircyr2012">C89500</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">71.800</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><objectType>Base</objectType> of medium-grained white <material>marble</material> 
+                              (<dimensions><width>0.645</width> <height>0.415</height> <depth>0.875</depth></dimensions>). 
+                              Stained brown, moulded above and below.
+                              The lower front moulding is badly damaged and there are chips along the upper one.
+                              There are two holes in the top for the feet of the statue and a third smaller one.
+                         </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Ιnscribed on the face which is cracked and encrusted with lime.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE - first century CE: line 1, <height>0.04</height>; lines 2-3, <height>0.035</height>;
+                        dots on either side of iota in the name, in Καίσαρος and in Κυραναῖοι.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</ref>.</origPlace>
+                     <origDate notBefore="-0027" notAfter="0004" evidence="prosopography" precision="low">27 BCE to CE 4</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>, excavated in <date type="found">1971</date> 
+                              during excavations: area D12/D13,A,2.                             . 
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, Storeroom of the American excavations</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-12-03" who="Pietro">marked up text and metadata</change>
+         <change when="2010-08-14" who="CMR">created from JMR's notes</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="Photos_0104" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="Photos_0105" decls="#photograph"><desc>Face</desc></graphic>
+      <graphic url="white802_IRCyrC453" decls="#photograph"><desc>Face (Donald White)</desc></graphic>
+      <graphic url="white832_IRCyrC453" decls="#photograph"><desc>Right side (Donald White)</desc></graphic>
+      </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="white1972"/>, <citedRange>185</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>26.1824</citedRange></bibl>,
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324719">324719</ref></citedRange></bibl>, 
+               <bibl><ptr target="jmr2012"/>, <citedRange>A.26</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                <lb n="1"/><persName type="emperor" key="octavia"><name nymRef="Ὀκταΐα">Ὀκταΐαν</name> <w lemma="ὁ">τὰν</w> 
+               <persName type="emperor" key="augustus"><name nymRef="Καῖσαρ">Καίσαρος</name>
+                <lb n="2"/> <w lemma="ὁ">τῶ</w> <name nymRef="Σεβαστός">Σεβάστω</name></persName> <w lemma="ἀδελφή">ἀδελφὰν</w></persName>
+                <lb n="3"/> <space quantity="3" unit="character"/> 
+               <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κ</supplied>υραναῖοι</placeName>            
+            </ab>
+         </div>
+         
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#jmr2012" xml:lang="en"><p> Octavia the sister of Caesar Augustus <supplied reason="subaudible">set up by</supplied> the Cyrenaeans
+</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>This is the full sister of Augustus (<title>PIR<hi rend="superscript">2</hi></title> O, 0066), mother of Marcellus who was his natural heir in the twenties BCE, sometime wife of M. Antonius.
+               She was highly honoured in Rome (cf Dio Cassius XLIX.38.1, available at <ref target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0385.tlg001.perseus-grc1:49.38.1">Perseus</ref>) but comparatively few memorials to her have come to light in the provinces,
+               although the mention of her at Mytilene (IG XII.2.58.b, line 25, available at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/74715">74715</ref>) suggests that she would figure in any representation of the imperial family.
+               </p>
+     <p>This monument cannot be earlier than 27 BCE when the title of Augustus was conferred
+        and perhaps not later than 4 BCE when she died (although that is an insecure proposal).
+        There is no obvious clue to the reason for it and no certain evidence for other imperial monuments in this sanctuary
+        unless <ref type="inscription" n="C.499">C.499</ref> (for Livia in or after CE 14) belongs there, which is not certain.
+     </p>
+            <p>The spelling of Octavia’s nomen in Greek at Cyrene is variable.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

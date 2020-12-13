@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Demeter and Kore</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.494</idno>
+            <idno type="ircyr2012">C93600</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p> Small <material>limestone</material> <objectType>altar</objectType> with a hollow in the top for a statue base.  
+                              (<dimensions>
+                                 <width/>
+                                 <height>0.125.</height>
+                                 <depth precision="low">0.07</depth>
+                              </dimensions>).
+                              Moulded above and below; damaged on the back.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Originally <rs type="execution" key="scalpro">inscribed</rs> on all four sides, but the text on the back is now lost.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Perhaps first - second centuries CE: <height>0.012</height>; lunate sigma and omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><!--original location--></origPlace>
+                     <origDate notAfter="0001" notBefore="0200" precision="low" evidence="lettering">First - second centuries CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>: Found in the Wadi Bel Gadir (so Ghislanzoni).
+                              <!-- findspot --></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="cdlC494a" decls="#photograph"><desc>Face a (C. Dobias-Lalou, 1997: 97/II/7)</desc></graphic>
+      <graphic url="cdlC494b" decls="#photograph"><desc>Face b (C. Dobias-Lalou, 1997: 97/II/8)</desc></graphic>
+      <graphic url="cdlC494c" decls="#photograph"><desc>Face c (C. Dobias-Lalou, 1997: 97/II/9)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="ghislanzoni1915"/>, <citedRange>218</citedRange>, fig.74</bibl>, supplements by 
+            Oliverio, whence
+               <bibl><ptr target="SEG"/> <citedRange>9.105</citedRange></bibl>, <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323959">323959</ref></citedRange></bibl>. 
+               Republished <bibl><ptr target="fabbricotti2007"/>, <citedRange>8</citedRange></bibl>, whence
+               <bibl><ptr target="cdlBE"/>, <citedRange>2008.601</citedRange></bibl>, <bibl><ptr target="AE"/> <citedRange>2007.1675</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>57.2017.2</citedRange></bibl>;  
+               <bibl><ptr target="jmr2012"/>, <citedRange>B.2</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>62.1797</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            
+            
+               <div type="textpart" n="a"><ab><lb n="1"/><persName type="attested"><name nymRef="Δέξων" cert="low"><supplied reason="lost" cert="low">Δέ</supplied>ξων</name></persName></ab></div>
+                
+               <div type="textpart" n="b"><ab><lb n="1"/><persName type="attested" key="lgpn:V1-64916"><name nymRef="Λύων"><seg part="I">Λύοντ</seg></name></persName></ab></div>
+            
+            <div type="textpart" n="c"><ab><persName type="attested"><name><seg part="F">οϲ</seg></name></persName>
+               <persName type="divine" xml:id="demeter" key="demeter"><name nymRef="Δημήτηρ"><seg part="I">Δή</seg></name></persName></ab></div>
+            
+               <div type="textpart" n="d"><ab><lb n="1"/><persName type="divine"><name><seg part="F"><supplied reason="lost">μητρι</supplied></seg></name></persName>
+               <lb n="2"/><persName type="divine" key="kore"><name nymRef="Κόρη"><supplied reason="lost">Κ</supplied>όραι</name></persName></ab></div>
+               
+            
+             
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1-2">
+                  <rdg resp="#ghislanzoni1915">[Πρά]ξων Λύοντος Δή[μητρι | καὶ Κ]όραι</rdg> <note> whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=VI-65452">VI-65452</ref>;
+                  But there is insufficient space.</note>
+               </app>
+               <app><rdg resp="#fabbricotti2007">[Λ]έων | Λύοντ|ος Δή[μ|ητρι | Κ]όραι</rdg></app>
+            </listApp>
+            
+         </div><div type="translation" xml:space="preserve">
+            <div type="translation" source="#AE" xml:lang="fr"><p>Léon, fils de Lyon, à Déméter et Koré</p></div>
+            <div type="translation" source="#jmr2012" xml:lang="en"><p>?Dexon <supplied reason="subaudible">son</supplied> of Lyon to Demeter <supplied reason="subaudible">and</supplied> Kore.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Perhaps καὶ should be restored at the end of d.1.</p>
+         </div>
+         
+         
+      </body>
+   </text>
+</TEI>

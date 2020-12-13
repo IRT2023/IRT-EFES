@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C10000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.117</idno>
+            <idno type="ircyr2012">C10000</idno>
+            <idno type="JMR">683</idno>
+            <idno type="Excel">1036</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                  URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Standing at the East end of the row of tabernae under the northern Portico</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> block, probably the right half of a
+                              composite <objectType>stele</objectType>, broken above and on all
+                              edges (<dimensions>
+                                 <width>0.53</width>
+                                 <height>0.92</height>
+                                 <depth>0.66</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which
+                           is damaged at many points.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first century CE; line 2 <height>0.095</height>; lines 3-4,
+                           <height>0.07</height>; stops between the words.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>North Stoa, probably from the balustrade of the stair leading
+                        downwards, to the north of the stoa.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" precision="low" cert="low" evidence="lettering">Probably first century CE</origDate>
+                  </origin>
+
+
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: Agora, <placeName type="monuList" ref="https://www.slsgazetteer.org/1012">North
+                              Stoa</placeName>; photographed in <date type="found">1936</date>.</p>
+                  </provenance>
+                  <provenance type="observed">
+                     <p>Standing at the East end of the row of tabernae under the northern
+                        Portico.</p>
+                  </provenance>
+
+
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Reynolds).</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to
+            profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance
+            elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc
+            RNG schema v. 8)</change>
+         <change when="2010-07-16" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-06-09" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_683_001" decls="#photograph">
+         <desc>Face (Department of Antiquities, E.2504)</desc>
+      </graphic>
+      <graphic url="JMR_683_002" decls="#photograph">
+         <desc>Face</desc>
+      </graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl>
+                  <ptr target="gasperini1965"/>, <citedRange>230-231</citedRange> and pl. XXXIX.3</bibl>, whence <bibl><ptr target="AE"/> <citedRange>1968.538</citedRange></bibl>, whence <bibl>
+                  <ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015566">015566</ref></citedRange></bibl>; <bibl>
+                  <ptr target="gasperini1967a"/>, <citedRange>35</citedRange> and fig. 218</bibl>
+            </p>
+         </div>
+
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" quantity="1" unit="line"/> 
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>li</orig><gap reason="lost" quantity="1" unit="character"/> 
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="proconsul"><supplied reason="lost">p</supplied>ro<expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> 
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="per"><supplied reason="lost">per</supplied></w> <w lemma="ueteranus"><supplied reason="lost">ueter</supplied>anos</w> 
+                    <persName type="emperor" key="anonymus"><name nymRef="Augustus">Augus<unclear>t</unclear><supplied reason="lost">i</supplied></name></persName> 
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> 
+                    <w lemma="facio"><expan><abbr>fac</abbr><ex>iendum</ex></expan></w> <w lemma="curo"><expan><abbr>cur</abbr><ex>auit</ex></expan></w>
+                </ab>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="1">
+                  <note>L might be E and I is very uncertain. </note>
+               </app>
+               <app loc="1-2">
+                  <rdg resp="#gasperini1965">[C.Clodius C.F. Vesta]li[s /praet(or) p]roco(n)s(ul)</rdg><!-- check linebreaks -->
+               </app>
+               <app loc="3">
+                  <rdg resp="#gasperini1965">per ueter]anos August<supplied reason="lost">i</supplied><!-- check: NB error in EDH - ?AE -->
+                  </rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>. . . ]LI [ . . .] proconsul [ . . . by veter]ans of Augustus [ . . .] was responsible for the construction.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!--  <p>Stucchi (Agora, 228f.) describing the stair mentions this inscription. </p> -->
+            <p> line 2 Gasperini's restoration of the name and title of C. Clodius Vestalis, for whom
+               see commetary on <ref type="inscription" n="C.113">C.113</ref>, is very attractive, but not quite certain;
+               among difficulties in his version are omission of the filiation from the name
+               (contrast <ref type="inscription" n="C.322">C.322</ref>) and the unusual addition of the title
+               <foreign xml:lang="la">praet(or)</foreign> before p]roco(n)s(ul). This is not adequately
+               justified by comparison with <title>IRT</title> <ref target="http://inslib.kcl.ac.uk/irt2009/IRT338.html">338</ref>'
+                lines 13-15 which may well have been drafted by a Lepcitanian ignorant of
+               procedure, whereas the Cyrene text should have originated in the proconsul's office).
+               Tt might be possible to obviate both, by restoring: <foreign xml:lang="la">[C. Clodius C.F. V]e[s]/[talis p]oco(n)s(ul) </foreign>, but the division of the cognomen is
+               unhappy. </p>
+            <p> line 3 the only obvious supplement seems to be <foreign xml:lang="la">[per veter]anos
+                  August[i]</foreign>, and for the use of veterans on public works in Cyrenaica see <ref type="inscription" n="M.227">M.227</ref>,  under Trajan. There is no independent evidence for the
+               presence and use of veterans in Cyrenaica in the first century CE;, but it would not be
+               unlikely if the governor were carrying out repairs and extensions of public buildings
+               in the aftermath of the Marmaric War.</p>
+         </div>
+
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P30600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">regulations</rs> for a cult</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.165</idno>
+            <idno type="ircyr2012">P30600</idno>
+            <idno type="JMR">56</idno>
+            <idno type="Excel">584</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Five fragments of a <objectType>panel</objectType> of Phrygian blue-streaked <material>marble</material>. Fragment a is made of two fragments
+                    stuck together (<dimensions>
+                                 <width unit="metre">0.21</width> 
+                                 <height unit="metre">0.135</height> 
+                                 <depth unit="metre">0.018</depth>
+                              </dimensions>);
+                    fragment b measures <dimensions>
+                                 <width unit="metre">0.10</width> 
+                                 <height unit="metre">0.10</height> 
+                                 <depth unit="metre">0.015</depth>
+                              </dimensions>;
+                    fragment c <dimensions>
+                                 <width unit="metre">0.12</width> 
+                                 <height unit="metre">0.11</height> 
+                                 <depth unit="metre">0.015</depth>
+                              </dimensions>;
+                    fragment d <dimensions>
+                                 <width unit="metre">0.05</width> 
+                                 <height unit="metre">0.065</height> 
+                                 <depth unit="metre">0.015</depth>
+                              </dimensions>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc><layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout></layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.02</height>; cursive omega, cursive mu, lunate sigma,  lunate epsilon.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low" evidence="lettering">Third to fourth centuries CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/986">Street of the Monuments</placeName>; found in <date type="found">1935</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2020-05-13" who="CMR">Added P.169</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-14" who="CB">Making CMR's corrections</change>
+         <change when="2010-01-09" who="CMR">tagged description, corrected text</change>
+         <change when="2009-09-14" who="Pietro">megerd best bits from P18100 which was a double of this, in worst condition, and therefore was killed.</change>
+         <change when="2009-05-28" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="Photos_0308" decls="#photograph"><desc>From left: <ref type="inscription" n="P.165">P.165</ref>.a, <ref type="inscription" n="P.204">P.204</ref>, 
+         <ref type="inscription" n="P.54">P.54</ref> (Joyce Reynolds)</desc></graphic>
+      <graphic url="P30600bac" decls="#photograph">
+         <desc><ref type="inscription" n="P.165">P.165</ref>, fragments from left to right: b, a, c (Reynolds III.19)</desc>
+      </graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="a" type="textpart"><ab>
+            <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ν<unclear>ιϲο</unclear></orig><gap reason="lost" extent="unknown" unit="character"/> 
+                            <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="πλημμελέω" part="I"><supplied reason="lost">πλ</supplied>ημμελουμεν</w><gap reason="lost" extent="unknown" unit="character"/> 
+                            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>τ</unclear>ι</orig> <w lemma="ὁ">τὰϲ</w> <w lemma="μέν">μὲν</w> <w lemma="θρησκεία">θρηϲκε<unclear>ία</unclear><supplied reason="lost">ϲ</supplied></w>
+                            <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><persName type="emperor" cert="low"><name nymRef="-ανος"><seg part="F"><del><unclear>αν</unclear>ου</del></seg></name></persName> <w lemma="καί">καὶ</w> <w lemma="εἷς">ἑνὸϲ</w> <w lemma="ἕκαστος">ἑκάϲ<unclear>τ</unclear><supplied reason="lost">ου</supplied></w>
+                            <w part="I">καϲ<unclear>ι</unclear></w><gap reason="lost" extent="unknown" unit="character"/> 
+                            <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="πᾶς">πάνταϲ</w> <w lemma="ὁ">τοῖϲ</w> <space quantity="5" unit="character"/>
+                            <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ι</unclear></orig><gap reason="lost" quantity="3" unit="character"/><orig><unclear>ι</unclear>ον</orig> <w part="I">βου</w><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="6a"/><gap reason="lost" extent="unknown" unit="line"/>
+         </ab></div>
+            <div subtype="section" n="b" type="textpart"><ab>
+            <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ου</w> <w lemma="λοιπός" part="I">λοιπ<unclear>ο</unclear><supplied reason="lost">υ</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
+                            <w part="I">ϲυνωμ<unclear>ο</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ϲα</w> <w lemma="ὅς">ὅ</w> <w lemma="τις">τι</w> <w lemma="ἄν">ἂν</w> <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="M"><unclear>υ</unclear>κτο</w><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>
+                        </ab></div><div subtype="section" n="c" type="textpart"><ab>
+                           <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                            <orig><unclear>ι</unclear>αναμ<unclear>ιζ</unclear></orig>
+                            <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>ϲ</orig> <w lemma="ἱλάσκομαι">ἱλάϲκεϲθα<supplied reason="lost">ι</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">θαι</w> <w lemma="ὁ">τοὺϲ</w> <w lemma="θεός">θ<unclear>ε</unclear><supplied reason="lost" cert="low">ούϲ</supplied></w>
+                            <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>μ</unclear>ένων</w> <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>
+                        </ab></div><div subtype="section" n="d" type="textpart"><ab>
+                           <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>μ</unclear>ω<unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                         <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="M">ταγμ</w><gap reason="lost" extent="unknown" unit="character"/>
+                         <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>ωνα</orig><gap reason="lost" extent="unknown" unit="character"/>
+                         <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>α</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                           <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>
+                     </ab>
+</div>
+            <div subtype="section" n="e" type="textpart"><ab>
+                           <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>λεϲα</orig><gap reason="lost" extent="unknown" unit="character"/>
+                         <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>ϲυνκι</orig><gap reason="lost" extent="unknown" unit="character"/>
+                         <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>ινιϲϲ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                         <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">λων</w> <w lemma="πλημμελέω">πλημμελουμέν<supplied reason="lost" cert="low">ων</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                           <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>
+                     </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="a.1"><note>ϲ might be ε; ο might be ϲ, ε</note></app>
+            
+               <app loc="b 1"><rdg>
+                     <note>Perhaps δ]οῦλοι or  τ]οῦ λοιπο[ῦ</note>
+                  </rdg>
+               </app>
+               <app loc="b 2">
+                  <rdg>
+                     <note>Perhaps ϲυνωμο[σία] or συνωμό[ται</note>
+                  </rdg>
+               </app>
+            
+               <app loc="c 1">
+                  <rdg>
+                     <note>The final letter might be Ξ</note></rdg>
+               </app>
+            
+               
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> <note>a</note>: . . . ] having been damaged [ . . . ] of the worship [ . . . ] and of each one [ . . . ] all to the [ . . . 
+         <note>b</note>: . . . ]remainder [ . . . ] ?association  [ . . . ] whatever [ . . .. <note>c</note>: . . . ] to expiate [ . . . ] ?the gods [ . . . 
+            <note>d</note>: <note>Not usefully translatable</note>. <note>e</note>: . . . ] damaged [ . . . </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The script looks to be third or fourth century, perhaps rather better formed than that of <ref type="inscription" n="M.177">M.177</ref>, the religious regulations from Balagrae. 
+               This document, unfortunately fragmentary and not precisely connected with any
+                    building, appears to be a formal instruction concerned with the proper and
+                    respectful organisation of pagan cults (a.3, θρησκεία: on the sense see Robert, <title><ref target="https://zenon.dainst.org/Record/AR010190053">Études épigraphiques et philologiques</ref></title>, p.
+               226 f., perhaps after desecration (a.2,, e.4 πλημμελουμεν[ . . . . Expiatory
+                    offerings were apparently involved (c.2, ἱλάσκεσθαι) 
+            A name has been erased (a.4), ending in -anos, and it is of course tempting to think of the emperor Julian; but the rest of the text is undisturbed, 
+            while an erasure of Julian's name might be expected to be accompanied by erasure of references to pagan practices.</p>
+         
+           
+            
+         <!-- Not clear to what this refers. Are there missing fragmetns? Some references don't make sense: 
+            <p>b:  The  συνωμοσίαι are obscure.</p>
+            <p>After c, may be there was a index of Gods. </p>
+            app loc a 2 The last unclear epsilon can also be read unclear omega
+            <app loc="c 1"> <rdg><note>Perhaps καθαιρεῖ τα<unclear>ν</unclear>[ . . .</note></rdg>
+               </app>
+            Notes also refer to πλημμελουμεν[ . as frag. a
+               mention purification (cf. καθαιρειται in fr. c.) and ιλασκέσθαι as in frag a.
+                  <rdg>
+                    In d.2 <note>may suggest that this is from a composite panel, the lines beginning on another section to the left - in which case</note>
+                    
+                        <supplied reason="lost">Δι</supplied>ονυσο<supplied reason="lost">ς</supplied>
+                     </foreign>
+                     <gap reason="lost" extent="unknown" unit="character"/>
+                  </rdg>
+                  <note> may have stood here.</note>
+               </app> <p>An obvious occasion for such a measure would be the Jewish Revolt of CE 115,
+                    but the lettering looks too late; a roman inroad in the third or
+                    fourth century would provide an alternative.</p--></div>
+         
+      </body>
+   </text>
+</TEI>

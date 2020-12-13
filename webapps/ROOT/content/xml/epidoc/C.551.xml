@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C53900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">honours</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.551</idno>
+            <idno type="ircyr2012">C53900</idno>
+            <idno type="JMR">1114</idno>
+            <idno type="Excel">276</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> block, broken at the left edge, <dimensions><width>91.10</width> <height>0.38</height> <depth>0.45</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, which is very worn.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first century CE; line 1, <height>0.12</height>; line 2, <height>0.09</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" evidence="lettering" precision="low">Probably first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/1071">North Necropolis</placeName>, beside the Apollonia Road, near the circular Tomb (Cassels N.1); 
+                              found before <date type="found">1915</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-06-18" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. F. 1733.--><surface/></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="ghislanzoni1915"/>, <citedRange>179</citedRange></bibl>, whence 
+              <bibl><ptr target="AE"/> <citedRange>1915.110</citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD029457">HD029457</ref></citedRange></bibl>; 
+               <bibl><ptr target="rowe1956"/> <citedRange>10, n.1</citedRange></bibl>;
+               mentioned <bibl><ptr target="applebaum1951"/> <citedRange>181f</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="pontifex"><expan><abbr><supplied reason="lost">p</supplied>ont</abbr><ex>ifici</ex></expan></w> 
+            <w lemma="augur">auguri</w> <w lemma="consul"><expan><abbr>co</abbr><supplied reason="lost"><ex>n</ex><abbr>s</abbr><ex>uli</ex></supplied></expan></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Mamilianus">Mamilianum</name></persName> 
+            <w lemma="proconsul"><expan><abbr>pro<unclear>c</unclear></abbr><supplied reason="lost"><abbr>o</abbr><ex>n</ex><abbr>s</abbr><ex>ulem</ex></supplied></expan></w> <gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp><app loc="1"><note>Applebaum preferred co[loniae</note></app>
+               <app loc="2"><rdg resp="#AE">mam Pinianum proc(uratorem)</rdg></app></listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>. . .  for so-and-so, priest, augur, co[nsul . . .  by meansd of] Mamiianus, proc[onsul . . . </p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Probably re-used in the Circular Tomb. The text is more likely to be honorary than funerary. </p>
+            <p>Line 1: Probably co[(n)s(uli)]; if so, in view of the eminence of the agent employed to produce the monument, 
+               the honorand might very well be a member of the imperial family e.g. Caius Caesar, Germanicus, or Drusus or Tiberius Caesar. 
+               Applebaum preferred co[loniae, dated the text in the second century and suggested a reference to the arrangements made for the repopulation of Cyrene after 
+               Jewish Revolt<!-- , see Introduction, p -->. </p>
+            <p>Line 2 Probably pro[co(n)s(ulem)] rather than pro[curatorem], since there is no other evidence for the presence of a procurator 
+               in Cyrenaica before the reign of Septimius Severus (<ref type="inscription" n="C.183">C.183</ref>).</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

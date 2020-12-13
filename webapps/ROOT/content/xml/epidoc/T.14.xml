@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T01600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.14</idno>
+            <idno type="ircyr2012">T01600</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Standing in the outer wall of the Church</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Sandstone</material> 
+                              block, stepped back once at the lower edge, damaged at the left side 
+                              (<dimensions><width>1.45</width> <height>0.325</height> <depth>0.44</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs>, i, ii and iii on the face, iv on the recesed lower rim; each entry in a different hand.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Very irregular and rough. i, ii, iii, <height unit="metre" precision="low">0.05</height>; iv, <height unit="metre" precision="low">0.02</height>; lunate sigma in iv, cursive omega in iii, ligature in i.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown. </origPlace>
+                     <origDate notBefore="-0100" notAfter="0300" precision="low" evidence="lettering">First century BCE - third century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1116">East Church</placeName>, lying loose near the south-east angle; found in <date type="found">1959</date>. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Standing in the outer wall of the Church</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Tocra">Tocra</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-08-27" who="Duncan Taylor">Tokenised.</change>
+         <change when="2007-12-10" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="T01600" decls="#photograph">
+      <desc>Face</desc>
+   </graphic><graphic url="JMRNB12_092_002" decls="#photograph"><desc>Face (Reynolds XII.92.2)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="i" type="textpart"><ab>
+                    <lb n="1"/> <space quantity="3" unit="character"/> 
+                    <persName type="attested"><name nymRef="Σωσίστρατος">Σωσίστρ<unclear>α</unclear><supplied reason="lost">το</supplied>ς</name></persName> 
+                     <w lemma="φίλος"><expan><abbr><am><g ref="symbols.xml#ΦΙΛ"/></am></abbr><ex>φίλος</ex></expan></w>
+                </ab></div><div subtype="section" n="ii" type="textpart"><ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-οαξ"><seg part="F"><unclear>ο</unclear>αξ</seg></name></persName> 
+                    <space quantity="3" unit="character"/>
+                </ab></div><div subtype="section" n="iii" type="textpart"><ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Σώτεχνος">Σωτέχνοι</name></persName> <space quantity="3" unit="character"/>
+                </ab></div><div subtype="section" n="iv" type="textpart"><div subtype="fragment" n="a" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>αϲ</orig><gap reason="lost" quantity="3" unit="character" precision="low"/><orig>οϲ</orig>
+                    </ab></div><div subtype="fragment" n="b" type="textpart"><ab>
+                         <lb n="1"/><persName type="attested"><name nymRef="Ἀρίμμας">Ἀρίμμα</name></persName> 
+                         <space quantity="3" unit="character"/>
+                     </ab></div></div></div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                        <app loc="ii 1">
+                  <note><unclear>θ</unclear>αξ is possible but cf. Οἴαξ in <ref type="inscription" n="T.180">T.180</ref>.</note>
+               </app>
+                       <!-- <app loc="iii 1">
+                  <note>T</note>
+               </app> --> 
+                    </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>i</note> Sosistratos friend [of ? . . . .
+         <note>ii and iv.a</note> <note>Not usefully translatable</note>. <note>iii</note> . . . ] for Sotechnos. <note>iv.b</note> . . . ] of Arimmas.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Certainly graffiti; probably the block originally belonged in the gymnasium and was inscribed by ephebes.</p>
+            <p>i: The monogram is common in ephebic texts at Ptolemais and Teucheira; see on <ref type="inscription" n="P.26">P.26</ref>.</p>
+            <p>iii: For the name see <ref type="inscription" n="P.79">P.79</ref>. The dative case in an ephebic context suggests a preceding name in the nominative; 
+               the two may have been linked by ἔθος, ἔθει, ἔθη or by φίλος: see on <ref type="inscription" n="T.27">T.27</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

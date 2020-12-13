@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B08800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Decree</rs> honouring Apollodorοs <supplied reason="subaudible">son</supplied> of Pankrates</title>
+            <editor>Joyce M. Reynolds</editor>
+            <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
+            <editor xml:id="cmr">Charlotte Roueché</editor>
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">B.1</idno>
+            <idno type="ircyr2012">B08800</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1094">Benghazi Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              Upper part of a slightly tapered <material>marble</material> <objectType>stele</objectType>
+                              with a simple moulding on all sides at about 15 cm from the top  (<dimensions>
+                                 <width atLeast="0.46" atMost="0.47">0.47-0.46</width>
+                                 <height>0.97</height>
+                                 <depth>0.19</depth>
+                              </dimensions>).
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on one face which is chipped in the lower part, badly worn, especially the central area,
+                           and pitted and cracked as well, especially in the lower part, perhaps following an
+                    attempt to break it up.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Greek capitals of the first century; <height unit="metre" precision="low">0.012</height>; L for ἔτους.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0062" notAfter="-0061" evidence="internal-date">?62-61 BCE</origDate> or 
+                     <origDate notBefore="0032" notAfter="0004" evidence="internal-date">3-4 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/910">Berenike</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/1077">Sidi Khrebish</placeName>, 
+                              in the <placeName type="monuList" ref="https://www.slsgazetteer.org/1087">Church</placeName>, re-used as a paving stone with the inscribed face upwards</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1094">Benghazi Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term> 
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88319">Benghazi</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2008-08-15" who="VA">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="Photos_0148" decls="#photograph"><desc>View of the monument</desc></graphic>
+            <graphic url="B08800_squeeze" decls="#photograph"><desc>Squeeze</desc></graphic>
+            <graphic url="Photos_0149" decls="#photograph"><desc>Text detail lines 1-10</desc></graphic>
+            <graphic url="Photos_0147" decls="#photograph"><desc>Text detail lines 5-21</desc></graphic>
+            <graphic url="B08800_001" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_002" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_003" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_004" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_005" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_006" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_007" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_008" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_009" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_010" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_011" decls="#photograph"><desc>Text</desc></graphic>
+            <graphic url="B08800_012" decls="#photograph"><desc>Text</desc></graphic>
+         </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr1973-1974a"/>, <citedRange>1</citedRange></bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1976.792</citedRange></bibl>, mentioned 
+               <bibl><ptr target="AE"/> <citedRange>1973.563</citedRange></bibl>; 
+               <bibl> <ptr target="moretti1976a"/> n. <citedRange>3</citedRange></bibl>, 
+               whence <bibl><ptr target="robertBE"/>, <citedRange>1978.562</citedRange></bibl>; <bibl>
+                  <ptr target="jmr1978"/>, <citedRange>3</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>28.1540</citedRange></bibl>.
+               Republished, <bibl><ptr target="laronde1987"/>, pp. <citedRange>463-72</citedRange></bibl>, 
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>1988.1012</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>38.1869</citedRange></bibl>. <!-- check--></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/> <space quantity="1" unit="character"/> <date><date ref="https://godot.date/id/BdUqPRET4VMVYUSUKY66w9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="34">λδ</num></date> 
+                    <date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς">ἱερέως</w> <w lemma="ὁ">τοῦ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName> <persName type="attested" key="lgpn:V1-61814"><name nymRef="Λῦσις">Λύσιος</name></persName></date></date> <space quantity="3" unit="character"/>
+                    <lb n="2"/> <space quantity="5" unit="character"/> <w lemma="ἅδημα">ἁδήματος</w> <w lemma="ἀντίγραφον">ἀντίγραφον</w> <space quantity="5" unit="character"/>
+                    <lb n="3"/><w lemma="ἐπεί">ἐπειδὴ</w> <persName type="attested" key="lgpn:V1-61920"><name nymRef="Ἀπολλόδωρος">Ἀπολλόδωρος</name> <persName type="attested" key="lgpn:V1-61919"><name nymRef="Παγκράτης">Παγκράτευς</name></persName></persName> <w lemma="ὁ">τῶν</w> <w lemma="πολίτης">πολιτᾶν</w>
+                    <lb n="4"/><w lemma="ὕπαρχος">ὑπάρχων</w> <w lemma="ἀπό">ἀπὸ</w> <w lemma="πρόγονος">προγόνων</w> <w lemma="ἐκ">ἐξ</w> <w lemma="ἀρχή">ἀ<unclear>ρχ</unclear>ᾶ<unclear>ς</unclear></w> <w lemma="γνήσιος">γνησίων</w> <w lemma="καί">καὶ</w>
+                    <w lemma="αὐτός">αὐ<lb n="5" break="no"/>τὸς</w> <w lemma="προσφέρω">ποτιφέρεται</w> <w lemma="πρός">ποτὶ</w> <w lemma="ὁ">τὰν</w> <w lemma="πατρίς">πα<unclear>τρί</unclear>δα</w> <w lemma="ἐν"><unclear>ἐν</unclear></w> <w lemma="πᾶς">παντὶ</w> <w lemma="καιρός">καιρῶι</w>
+                    <lb n="6"/> <w lemma="πρῶτος">πρᾶτον</w> <w lemma="μέν">μὲν</w> <w lemma="εὐθέως">εὐθέως</w> <w lemma="μετά">μετὰ</w> <w lemma="ὁ">τὰν</w> <w lemma="ὁ">τῶ</w> <w lemma="βασιλεύς">βασιλεῦς</w> 
+                    <w lemma="τελευτή">τελευ<lb n="7" break="no"/>τὰν</w> <w lemma="οὐ">οὐ</w> <w lemma="κατά">κατὰ</w> <w lemma="μικρός">μικρὸν</w> <placeName nymRef="#Βερενίκη" ref="#berenike">Β<unclear>ερενί</unclear>κας</placeName> <w lemma="πολιορκέω">πολιορκειμένας</w> <w lemma="ὑπό">ὑπὸ</w>
+                    <lb n="8"/><w lemma="ὁ">τῶν</w> <w lemma="κακοῦργος">κακούργων</w> <w lemma="διά">διὰ</w> <w lemma="ὁ">τὰν</w> <w lemma="ὑπάρχω">ὑπαρχοῖσαν</w> <w lemma="ἀναρχία">ἀναρχίαν</w> 
+                    <w lemma="παρακαλέω">πα<lb n="9" break="no"/>ρακληθὲς</w> <w lemma="ἀφηγέομαι">ἀφαγήσασθαι</w> <w lemma="ὁ">τῶν</w> <w lemma="νεανίσκος"><unclear>νε</unclear>ανίσκων</w> <w lemma="καί">καὶ</w> 
+                    <w lemma="πᾶς">πάν<lb n="10" break="no"/>τα</w> <w lemma="κίνδυνος">κίνδυνον</w> <w lemma="ἀναδέχομαι">ἀνα<unclear>δ</unclear>εξάμενος</w> <w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὰν</w> <w lemma="μέγιστος">μεγίσταν</w> 
+                    <w lemma="εἰρήνη">εἰρ<unclear>ή</unclear><lb n="11" break="no"/>ναν</w> <w lemma="ὁ">τὰ</w> <w lemma="πρᾶγμα">πράγματα</w> <w lemma="καθίστημι">κατέστ<unclear>α</unclear>σε</w> <w lemma="καί"><unclear>καὶ</unclear></w> <w lemma="ὁ"><unclear>τ</unclear>ὰ</w>
+                    <w lemma="ὁ">τᾶς</w> <w lemma="πόλις">πόλιος</w> 
+                    <w lemma="εὐχαριστία">εὐχα<lb n="12" break="no"/>ριστία</w> <w lemma="παραχρῆμα">παραχρῆμα</w> <w lemma="ὁ">τὰς</w> <w lemma="πρότερος">προ<unclear>τ</unclear>έ<unclear>ρας</unclear></w> <w lemma="ὁ">τῶ</w> 
+                    <w lemma="δῆμος"><unclear>δ</unclear><supplied reason="lost">ά</supplied><unclear>μ</unclear>ω</w> <w lemma="τιμάω">τίμας</w> 
+                    <w lemma="ἀπονέμω">ἀπέ<lb n="13" break="no"/>νημε</w> <space quantity="1" unit="character"/> <w lemma="μετά">μετὰ</w> <w lemma="δέ">δὲ</w> <w lemma="οὗτος">ταῦτα</w> <w lemma="ὁ">τᾶς</w> <w lemma="πόλις">πόλι<unclear>ος</unclear></w> 
+                    <w lemma="ὑπάρχω">ὑ<unclear>πα</unclear>ρχοίσας</w> 
+                    <w lemma="ἀτείχιστος">ἀτιχίσ<lb n="14" break="no"/>τω</w> <w lemma="καί">καὶ</w> <w lemma="δίς">δὶς</w> <w lemma="ἠδή"><unclear>ἠδὴ</unclear></w> <w lemma="πορθέω">πεπορ<unclear>θημ</unclear>ένας</w> <w lemma="ὑπό">ὑπὸ</w> 
+                    <w lemma="ὁ">τῶ<unclear>ν</unclear></w> 
+                    <w lemma="ἐπιπλέω">ἐ<unclear>π</unclear><supplied reason="lost">ι</supplied><unclear>πλ</unclear>ευσάν<lb n="15" break="no"/>των</w> 
+                    <w lemma="πειρατικός">πιρατικῶν</w> <w lemma="στόλος">στόλων</w> <orig><unclear>α</unclear>υ<unclear>τ</unclear>οκ<unclear>ρατε</unclear>ν</orig> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τᾶς</w> 
+                    <w lemma="πόλις">πόλι<lb n="16" break="no"/>ος</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τᾶς</w> <w lemma="χώρα">χώρας</w> <w lemma="ἐπιτάσσω">ἐπι<unclear>τετα</unclear>γ<unclear>μένος</unclear></w> 
+                    <w lemma="περί"><unclear>π</unclear>ερὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="καθόλου">καθόλω</w>
+                    <lb n="17"/><w lemma="πρᾶγμα">πραγμάτων</w> <w lemma="ὁ">τὰν</w> <w lemma="ὁ"><unclear>τ</unclear>ᾶ<supplied reason="lost">ς</supplied></w> 
+                    <w lemma="πόλις"><unclear>π</unclear>ό<unclear>λ</unclear><supplied reason="lost">ι</supplied>ος</w> <orig>συμφο<unclear>ιιιτα</unclear>ς</orig> <w lemma="ὁμόνοια">ὁμονοίαν</w>
+                    <lb n="18"/> <w lemma="διατηρέω">διετήρησε</w> <w lemma="δίκαιος">δικαί<unclear>α</unclear>ν</w> <w lemma="κρίσις"><unclear>κρ</unclear>ί<unclear>σ</unclear>ι<unclear>ν</unclear></w>  <w lemma="εἰς">ἐ<unclear>ς</unclear></w>
+                    <w lemma="ἅπας"><supplied reason="lost">ἅπ</supplied>α<unclear>ν</unclear>τας</w> 
+                    <w lemma="εἰσφέρω">ἐσφερόμε<lb n="19" break="no"/>νος</w> <space quantity="1" unit="character"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰς</w> <w lemma="ὁ">τῶν</w> 
+                    <orig><unclear>υιρ</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>κποιω</unclear><gap reason="lost" quantity="3" unit="character"/>νως</orig> 
+                    <w lemma="διατιχεύω">διατ<unclear>ιχ</unclear>εύσ<supplied reason="lost">ας</supplied></w>
+                    <lb n="20"/><w lemma="ὁ">τά</w> <w lemma="μέν">μὲν</w> <w lemma="δέχομαι">δεχόμενος</w> 
+                    <gap reason="lost" quantity="11" unit="character" precision="low"/> <orig>σ<unclear>ι</unclear>δ<unclear>ια</unclear></orig>
+                    <lb n="21"/><orig>τον</orig> <w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὸν</w> <w lemma="πᾶς">πάντα</w> <w lemma="χρόνος">χ<unclear>ρόνον</unclear></w> 
+                    <gap reason="lost" quantity="14" unit="character" precision="low"/> <w lemma="ὁ"><unclear>τ</unclear>ᾶι</w> <w lemma="πατρίς"><unclear>πα</unclear>τρίδι</w> 
+                    <w lemma="δόξα">δό<lb n="22" break="no"/>ξ<unclear>α</unclear>ν</w> <w lemma="ὁ">τὸν</w> <w lemma="κοινός">κοινὸν</w> <w lemma="κατά"><unclear>κ</unclear>α<unclear>θ’</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="23"/><orig>επωι</orig> <w lemma="πλείων">πλεόνας</w> <w lemma="σύν">σὺ<unclear>ν</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="24"/><w lemma="κατά">κατὰ</w> <w lemma="γῆ">γᾶν</w> <w lemma="καί">καὶ</w> <w lemma="θάλασσα">θάλα<supplied reason="lost">σσαν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="25"/><orig><unclear>κα</unclear>ν</orig> <w lemma="ἐκ">ἐξ</w> <w lemma="ἔφοδος">ἐφόδω</w> <w lemma="καί">καὶ</w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="26"/> <w lemma="κοινός">κοινὰν</w> <w lemma="ἐλπίς">ἐλπίδα</w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="27"/><w lemma="ὁ">τάς</w> <w lemma="τε">τε</w> <w lemma="κατά">κατὰ</w> <w lemma="ὁ">τὰν</w> <w lemma="χώρα">χώραν</w> <gap reason="lost" quantity="10" unit="character" precision="low"/> 
+                    <orig><unclear>ιιιι</unclear><gap reason="lost" quantity="1" unit="character"/>ο<unclear>ι</unclear>ν</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="28"/><orig>σταισας</orig> <w lemma="πλέω">πλεύσας</w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="29"/> <w lemma="πόλις">πόλιος</w> <w lemma="καί">καὶ</w> <w lemma="πολύς">πολὺ</w> <w lemma="ἔτι">ἔτι</w> <w lemma="μᾶλλον"><unclear>μ</unclear><supplied reason="lost" cert="low">ᾶλλον</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="30"/> <w lemma="ἀφίημι"><unclear>ἀ</unclear><supplied reason="lost">φ</supplied>ειμένοις</w> <orig><unclear>παι</unclear>σ<unclear>τ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/><lb 
+                       n="31" break="no"/><w part="F">μ<supplied reason="lost">έ</supplied>νας</w> <w lemma="ὁ">τάν</w> <w lemma="τε">τε</w> <orig><unclear>ται</unclear>ο<unclear>σ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="32"/> <w lemma="ὁ">τὰν</w> <w lemma="σύνκλητος">σύγκλητον</w> <orig><unclear>λι</unclear><gap reason="lost" quantity="2" unit="character"/><unclear>ι</unclear>ο</orig><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἀποδοχή"><supplied reason="lost">ἀπο</supplied><lb n="33" break="no"/>δοχᾶς</w> <w lemma="καί">καὶ</w> <w lemma="πίστις">πίστ<unclear>ε</unclear><supplied reason="lost">ως</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="34"/> <w lemma="πράσσω">πραξάμενος</w> <w lemma="ἀγαθός"><unclear>ἀγαθὰ</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="35"/><w lemma="πατρίς">πατρίδα</w>  <space quantity="1" unit="character"/> <w lemma="τότε">τότ<unclear>ε</unclear></w> <w part="I" lemma="πρεσβεύω">ἐπρεσβ<unclear>ε</unclear><supplied reason="lost">υ</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="36"/><orig>νω</orig> <w lemma="μεθόδιον">μ<supplied reason="lost">ε</supplied>θόδιον</w> <w lemma="ἀποδίδωμι">ἀποδιδόμε<unclear>ν</unclear><supplied reason="lost">ος</supplied></w> 
+                    <gap reason="lost" quantity="10" unit="character" precision="low"/><w part="F">αν</w> <space quantity="3" unit="character"/>
+                    <lb n="37"/><w lemma="ὁ">τὸν</w> <w lemma="μέν">μὲν</w> <w lemma="ἴδιος">ἴδιον</w> <w lemma="βίος">βίον</w> <w lemma="ὑπέρ"><unclear>ὑπὲρ</unclear></w> <w lemma="ὁ">τᾶ<supplied reason="lost">ς</supplied></w> <gap reason="lost" quantity="3" unit="character"/><orig><unclear>Α</unclear></orig><gap reason="lost" atLeast="5" atMost="6" unit="character"/><w part="F">ατα</w> <space quantity="3" unit="character"/>
+                    <lb n="38"/> <w lemma="πόλις">πόλιος</w> <w lemma="ἐπαυξάνω">ἔπαυ<unclear>ξ</unclear>εν</w> <w lemma="προαιρέω">προαιρείμενος</w> <gap reason="lost" quantity="4" unit="character"/> 
+                    <w lemma="ὑπογράφω">ὑπογρά<lb n="39" break="no"/>φων</w> <w lemma="ὅτι">ὅτι</w> <w lemma="χρῆμα">χρημάτων</w> <w lemma="μέν">μὲν</w> <w lemma="κτῆσις">κτῆσ<supplied reason="lost">ιν</supplied></w> <w lemma="ἀβέβαιος">ἀ<unclear>βέ</unclear>βα<unclear>ι</unclear>ον</w> 
+                    <w lemma="ἐπέχω">ἐπέχ<supplied reason="lost">ει</supplied></w>
+                    <lb n="40"/> <w lemma="κτῆσις">κτῆσιν</w> <w lemma="διατελέω"><unclear>δι</unclear>έτ<unclear>ε</unclear>λε</w> <w lemma="γάρ">γὰρ</w> <w lemma="ἅπας">ἅπασ<unclear>ιν</unclear></w> 
+                    <w lemma="ἄνθρωπος"><supplied reason="lost">ἀν</supplied>θρώποις</w> <w lemma="ἀθάνατος">ἀθάνα<unclear>τ</unclear><supplied reason="lost">ον</supplied></w>
+                    <lb n="41"/> <w lemma="ἀπόδειξις">ἀπόδει<supplied reason="lost">ξιν</supplied></w> <gap reason="lost" quantity="4" unit="character"/><w part="F">τος</w> <w lemma="τε">τε</w> <w part="I">παρα</w><gap reason="lost" quantity="8" unit="character" precision="low"/> <w lemma="εἰς">ἐς</w> <w lemma="ὁ">τὰς</w> <w lemma="ἐπί">ἐπὶ</w>
+                    <lb n="42"/><gap reason="lost" quantity="11" unit="character" precision="low"/><orig><unclear>ιτ</unclear>ο<unclear>στι</unclear></orig><gap reason="lost" quantity="7" unit="character" precision="low"/><orig><unclear>ιιι</unclear>ος</orig>
+                    <lb n="42a"/><gap reason="lost" extent="1 line" unit="character"/>
+                </ab>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="4">
+                  <rdg resp="#jmr1973-1974a">ἐξ <unclear>ἀρχ</unclear>α<unclear>ς</unclear></rdg>
+                  <rdg resp="#laronde1987">ἐ<unclear>ν</unclear>δ<unclear>ό</unclear>[ξω]ν</rdg>
+               </app> 
+               <app loc="7">
+                  <rdg resp="#jmr1973-1974a">Β<unclear>ερενί</unclear>κας</rdg>
+                  <rdg resp="#laronde1987">τὰς χώ[ρ]ας</rdg>
+               </app>
+               <app loc="7">
+                  <rdg resp="#jmr1973-1974a"><unclear>καὶ</unclear> <unclear>τ</unclear>ὰ 
+                     τᾶς πόλιος</rdg>
+                  <rdg resp="#laronde1987">κα[ὶ πᾶ]σα τᾶς πόλιος</rdg>
+               </app>
+               
+               <app loc="12">
+                  <rdg resp="#jmr1973-1974a">ΤΩΙΑ . <unclear>Ι</unclear>Ω?, τῶι α[ύ]τῶι</rdg>
+                  <rdg resp="#laronde1987">τὰς προ<unclear>κ</unclear>ει<unclear>μ</unclear>ε[να]ς αὐτῶι</rdg>
+                  <rdg resp="#moretti1976a">προτερας τῶ [δ]άμω</rdg>
+               </app>
+            <app loc="14">
+                  <rdg resp="#jmr1973-1974a">
+                     [ . . ]<unclear>Ι</unclear>
+                        <note>ἠδή proposed after study of the squeeze by Y. Garlan.</note>
+                  </rdg>
+               </app>
+            <app loc="15">
+                  <rdg resp="#jmr1973-1974a"><unclear>ΑΥΛ</unclear>Ο<unclear>ΤΙΑΙΡΕ</unclear>Ν</rdg>
+                  <rdg resp="#moretti1976a">αὐτο<unclear>κ</unclear>ρ[ά]τ<unclear>ω</unclear>ρ</rdg>
+               <rdg resp="#laronde1987">αύ[τ]οκρά[τωρ]</rdg>
+                    <note>but squeeze and photograph still seem to show a clear Ν as the last letter.</note>
+                  
+               </app>
+            <app loc="16">
+                  <rdg resp="#jmr1973-1974a">
+                     ΕΠ<unclear>ΙΙΤΟΝ</unclear>Α<unclear>ΛΛ</unclear>[ . . ]<unclear>Ω</unclear>
+                  </rdg>
+               <rdg resp="#laronde1987">ἐπ[ιτ]εταγ<unclear>μ</unclear>έ[ν]ος</rdg>
+                  <rdg resp="#moretti1976a">ἐπιτε<supplied reason="lost">ταγμένος</supplied>
+                  </rdg>
+               </app>
+           <app loc="17">
+                  <rdg resp="#jmr">συμφορητας<note> suggested by J. Killen in discussion</note>
+                  </rdg>
+                  <rdg resp="#laronde1987">συ[μφ]ω[νε]ίσας<note> suggested by Dobias-Lalou after study of the squeeze, but it seems a little long for the space available.</note>
+                  </rdg>
+               </app>
+            <app loc="19">
+                  <rdg resp="#jmr1973-1974a">[ . . . ]ΝΟΣ</rdg>
+               <rdg resp="#laronde1987">τῶν [- - - - - -]ΩΣ</rdg>
+               <note>[ . . . ]ΝΩΣ read by C. Dobias-Lalou from the squeeze</note>
+               </app>
+            <app loc="19">
+                  <lem>διατιχεύσ[ας]</lem>
+                  <rdg>διατ<unclear>ελ</unclear>εύσ[ας] <note>may be possible</note>
+                  </rdg>
+               </app>
+               <app loc="20">
+                  <rdg resp="#laronde1987">δεχόμεν[ος - - - - -] </rdg>
+               </app>
+            <app loc="21">
+                  <rdg resp="#jmr1973-1974a">τᾶι <note>omitted.</note></rdg>
+               <rdg resp="#laronde1987">χρ[όνον - - - - - - δ]ό-</rdg>
+               </app>
+            <app loc="22">
+                  <rdg resp="#jmr1973-1974a">ΚΑ<unclear>Ι</unclear></rdg>
+               <rdg resp="#laronde1987">καὶ</rdg>
+               </app>
+               <app loc="23">
+                  <rdg resp="#laronde1987">ΕΠΩΙΠΛΕΟΝ[ - -</rdg>
+                  <note>J. Bingen suggested ἐφ’ὧι</note>
+               </app>
+               <app loc="24">
+                  <rdg resp="#laronde1987">θά[λασσαν παντὶ σθένει - -</rdg>
+               </app>
+               <app loc="27">
+                  <rdg resp="#laronde1987">χώραν[ - - ]πολ[- -</rdg>
+               </app>
+            <app loc="29">
+                  <rdg resp="#jmr1973-1974a">
+                     Κ<unclear>Ε</unclear>[ . . . </rdg>
+               </app>
+            <app loc="30">
+                  <rdg resp="#jmr1973-1974a">δ[.]ειμένοις π<unclear>λιστ</unclear>[ . . .</rdg>
+               <rdg resp="#laronde1987">ἀ[φ]ειμενοις παισὶ[ . . . </rdg>
+               </app>
+               <app loc="31">
+                  <rdg resp="#laronde1987">τε τᾶς[ ---</rdg>
+               </app>
+            <app loc="32">
+               <rdg resp="#laronde1987">τὰν σύγκλητον[- - -</rdg>
+               <note>the further traces here are in fact consistent with δῆμου Ῥωμαίων.</note></app>
+               <app loc="32-33">
+                  <rdg resp="#moretti1976a"> - - - ἀπο]δοχᾶς</rdg>
+                  <rdg resp="#laronde1987"> - - - μεγαλᾶς ἀπο]δοχᾶς <note>following a suggestion by Moretti</note></rdg>
+               </app>
+            <app loc="33">
+                  <rdg resp="#jmr1973-1974a">πίστ[- . . .</rdg>
+               <rdg resp="#moretti1976a">πίστ<unclear>ε</unclear>[ως  - - -</rdg>
+                     <rdg resp="#laronde1987"> πισ[τέως ἀξιωθείς <note>following a suggestion by Moretti</note></rdg>
+               </app>
+               <app loc="34">
+                  <rdg resp="#laronde1987">πραξάμενος ἀναθ[ - - -</rdg>
+               </app>
+            <app loc="35">
+                  <rdg resp="#jmr1973-1974a">τότε ἐπρεσ[βευε- - -</rdg>
+                  <rdg resp="#moretti1976a">τοῖς τε πρεσ[βευσαμενοις - - -</rdg>
+                     <rdg resp="#laronde1987">τοῖς τε πρεσ[βευσαμένοις διὰ παντὸς τῶ χρό]|νω</rdg>
+                    <note>but squeeze and photographs seem against τοῖς</note>
+               </app>
+               <app loc="37">
+                  <rdg resp="#laronde1987">τᾶ[ς - - - ]ΑΤΑ</rdg>
+               </app>
+            <app loc="39">
+               <rdg resp="#jmr1973-1974a">κτησ[ . . .]ΑΦΕΒ[.]ΟΝ ἔπεχ[ε]</rdg>
+                     <rdg resp="#laronde1987">κτησ[ίμ]α βεβαιον ἐπέχ[.]</rdg>
+               </app>
+               <app loc="41">
+                  <rdg resp="#laronde1987">ἀποδει[ξ - - -</rdg>
+                  <rdg resp="#laronde1987">ἐς τὰν ἐπ[.]</rdg>
+               </app>
+               <app loc="42">
+                  <rdg resp="#laronde1987">[- - -]ΤΩΣΤΕ[- - - - -] ΠΟΤ [- - ]</rdg>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <head>Translations</head>
+            <div type="translation" source="#laronde1987" xml:lang="fr"><p>Année 34. Sous le prêtre d'Apollon Lysis. Exemplaire du décret.
+Attendu qu'Apollodôros fils de Pankratès, qui fait partie des citoyens issus d'ancêtres illustres, se comporte
+lui aussi d'une façon noble envers la patrie en toute circonstance difficile, et que d'abord aussitôt après la mort
+du roi alors que la chôra était assiégée par les brigands en raison de l'absence des magistrats, comme il avait été
+invité à prendre le commandement des néaniskoi, et comme il avait assumé tous les dangers, il rétablit nos affaires
+dans le plus grand état de paix, et toute la gratitude de la cité lui accorda sur le champ les honneurs prévus pour
+lui ; après cela, comme la cité était en difficulté, dépourvue de rempart et que, déjà, elle fut ravagée à deux reprises
+par les flottes des pirates qui avaient fait une attaque contre elle, comme il avait été commis avec les pleins
+pouvoirs de la cité et de la chôra, pour l'ensemble des affaires il a conservé fidèlement la concorde de toute la
+cité en apportant à tous un jugement équitable, ... </p></div>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/BdUqPRET4VMVYUSUKY66w9">Year 34</ref>. While Lysis was priest of Apollo. Copy of decree.
+Since Apollodoros, who is among the true citizens by original descent, also also contributes to the fatherland in every 
+time of difficulty: firstly, when shortly after the death of the King, Berenike was besieged by brigands 
+because of the prevailing state of anarchy, summoned to take command of the young men and confronting every danger 
+he brought matters to profound peace and the thanks of the city awarded him the directly the prime honours of the people. 
+After that, the city being without fortifications, and having twice already been ravaged by the attacks of pirate fleets, 
+?being entrusted with authority on behalf of the city and the territory over all matters, he ensured the concord of ? the city, 
+providing just judgement to everyone. <note>From here a series of fragmentary phrases</note> And having . . . built a wall round ? 
+               . . . receiving . .  for all time . . glory for the homeland the common . . . by land and sea . . . common hope . . .
+               Having sailed . . . the Senate  . . . then going on an embassy hehaving given back the expenses . . . his own life . . .
+               preferring to enhance ?the affairs of the city, writing that possession of money is insecure,
+               yet for all men <supplied reason="explanation">honour? Good conduct?</supplied> brings an immortal possession . . . 
+            </p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>السنة 34. بينما كان ليسيس كاهنًا لأابوللو. نسخة من المرسوم. نظرًا لأن أبوللودوروس، الذي هو من بين المواطنين الحقيقيين من
+               السلالة الأصلية، ويسهم من أجل الوطن الأم في كل وقت عصيب: أولاً، بعد وقت قصير من وفاة الملك ، حاصر قطاع الطرق برنيكي بسبب حالة الفوضى السائدة، واستدعى
+               (أو تطوع)  لتولي قيادة الشباب ومواجهة كل خطر، هدأ الأمور(جلب) السلام العميق والشكر للمدينة التي منحته بشكل مباشر التكريم الكبير من الشعب.  بعد ذلك
+               ، كانت المدينة بدون تحصينات، وبعد أن تعرضت بالفعل مرتين لهجمات من أساطيل القراصنة؟  حيث أوكلت إليه السلطة نيابة عن المدينة والأرياف 
+               (الاقليم) في جميع الأمور، كلف بضبط (إدارة)؟ المدينة؟ ، لتقديم حكم عادل للجميع. (من هنا سلسلة من العبارات المتقطعة) وامتلاك. . . بنى جدارًا حول؟ . . . استلام . . في كل الأوقات. . 
+               المجد لأارض الوطن المشترك. . . عن طريق البر والبحر. . . أمل مشترك. . . بعد أن أبحر. . . مجلس الشيوخ . . . ثم الذهاب إلى السفارة بعد إعادة النفقات. . . حياته الخاصة
+               . . . مفضلاً التحسين؟  قضايا المدينة، كاتباً (مشيراً) أن حيازة المال غير آمنة، الآن لجميع الرجال (أو الشرف؟  السلوك الجيد؟) يجلب ملكية خالدة. . .</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1 gives the date by a local era and by the name of an eponymous priest of Apollo (not identifiable); line 6 refers to the death of a king, who must be Ptolemy Apion, the last king of Cyreanica, who died in 96 BCE.
+               Reynolds considered that the era must be one which began from the death of the king,  so that year 34 would be 62/1 BC. Such an era is not otherwise attested or paralleled, and Laronde read this as an Actian date, 3/4 CE.</p>
+            <p>This is the only long document so far known from Berenike to give the language of the full citizens of the city. It shows institutions (the eponymous priest of Apollo),
+               dialect forms and local usages (e.g. ἅδημα) preserved from the earlier city of Euhesperides and, in many cases at least, shared with Cyrene (which always claimed to be the
+               mother-city of this colony), despite its Hellenistic refoundation under the patronage of the Ptolemies.</p>
+            <p>Line 2 describes the document as a copy of a decree, using for decree a word otherwise only attested in Hesychios: ἅδημα, ἅδος· ψήφισμα, δόγμα; the related
+               verb ἁνδάνω, however was used for the act of making a decree in Euhesperides (<ref target="https://igcyr.unibo.it/igcyr064000">IGCyr064000</ref>). The copy omits the preamble so that
+                we have no information about the organs of civic government.</p>
+            <p>The decree honours Apollodoros son of Pankrates, for services to his city, particularly during a period that began shortly after the death of Ptolemy Apion (lines 6/7) when
+                the Romans inherited the kingdom but left the Greek cities free. In Cyrene the literary sources indicate that civil strife, intervention by Libyan tribesmen and quarrels with other
+                Greeks followed; it is now clear that something similar occurred at Berenike (lines 7/8). From c. 90 BC pirates, encouraged by Mithridates of Pontus, organised themselves into fleets 
+                whose actions led eventually to the appointment of Cn. Pompeius and the Pirate War of 67 BC; Pompey is known to have sent a legate to Cyrenaica during this war and piratical
+                attacks there were, in consequence, deducible, but this is the first clear proof (lines 14/15).  Probably in 75 BC the Romans decided to establish closer control over Cyrenaica, 
+                although whatever was done at this date was seriously overhauled and extended by Pompey's legate in the aftermath of the Pirate War; the process of annexation therefore 
+                falls within the period of Apollodoros' activity, which very probably involved, at its latter end, negotiations with the Romans (line 32). See Laronde (op cit), 468-9</p>
+            
+            <p>A detailed commentary on the language and restorations is not given here, but the following points should be observed:</p>
+            <p>Line 7 gives the city name in the form Βερενίκα.</p>
+            <p>Line 8: κακοῦργοι is an imprecise term; Robert opts for 'brigands', but this is in itself imprecise - perhaps hostile Libyan tribesmen?; 
+                    a dissident Jewish group would presumably be named but a faction within the city remains a possibility, for the ἀναρχια should surely indicate that no regular
+                    magistrates had been elected and suggests a context of civil strife, requiring the re-establishment of ὁμονοία (Line 17).</p>
+            <p>Line 9: We are not told who invited Apollodoros to intervene. The young men whom he led should be ex-ephebes and the reference is evidence for the existence of an ephebic
+               system at Berenike, as also for a genuine military purpose in the training provided (see C. A. Forbes, <title><ref target="https://zenon.dainst.org/Record/000153394">ΝΕΟΙ</ref></title> (1933) 61 f., Laronde, op.cit., 467). These young men might 
+                be expected to have an oligarchic bias while Apollodoros himself was clearly of the old aristocracy of the city (lines 3/4); so the opposition may have been 
+                proposing democracy or a popularly supported tyranny.</p>
+            <p>Line 13: The unwalled state of the city is surprising.</p>
+            <p>Line 15: The pirates are described in terms hitherto known only from the much later Appian, Mith.9. 63, στόλοις ἐοικότα μᾶλλον ἢ λῃσταῖς,
+               at <ref target="urn:cts:greekLit:tlg0551.tlg014.perseus-grc2:9.63">Perseus</ref>.</p>
+            <p>Lines 15-16: Moretti must be right in seeing here an appointment with absolute powers; but exactly what Apollodoros did is obscure, though it apparently involved just
+                judgements and led to civic harmony.</p>
+            <p>Line 19 may indicate that he built a city wall, but the reading is uncertain.</p>
+            <p>Lines 20 ff. are so fragmentary as to give little clear information. Line 28 suggests that Apollodoros went on a voyage; 
+               line 32 that he was in touch with the senate at Rome (for if a local institution were intended the form used would surely be the Doric σύγκλατος); 
+                    Moretti's [μεγάλας ἀπο]/δοχᾶς καί πίστ[εως ἀξιωθείς for the end of this line is very attractive; 
+                    line 35 certainly refers to an embassy and while the reading remains uncertain in detail, Moretti is likely to be right with the sense 
+                of his τοῖς τε πρεσ[βευσαμένοις διὰ παντὸς τῶ χρό]/νω μεθόδιον ἀποδιδόμενος: μεθόδιον - the money provided for his travel expenses.. 
+               In lines 37 ff  the thought was perhaps that he chose to increase his personal income for the purpose of assisting the city, for he regarded the possession of money as an 
+                unstable possession (for ἀβέβαιος ἡ κτῆσις see, e.g. John Chrysostom) and continued to give an immortal example of civic virtue in lavish public expenditure.</p>
+            <p>We have no means of telling how much is lost by the mutilation of the stone below, but perhaps not very much more than the instruction to copy the decree
+                on stone and erect it in a prominent public place.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

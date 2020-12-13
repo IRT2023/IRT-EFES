@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P39900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.295</idno>
+            <idno type="ircyr2012">P39900</idno>
+            <idno type="JMR">522</idno>
+            <idno type="Excel">422</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjoining pieces of <material>limestone</material> simply moulded above and below, probably from a <objectType>sarcophagus</objectType> front.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face; the left end has been lost since Pacho transcribed the text.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century: <height unit="metre">0.05</height>, lunate epsilon, lunate sigma, cursive omega, mu; six pointed symbol for denarii.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate evidence="lettering" notBefore="0101" notAfter="0300" precision="low">Second to third centuries CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                               <placeName ref="https://www.slsgazetteer.org/976">Wadi Ziwana</placeName>, west bank, south of the Bridge, lying with several damaged sarcophagi. 
+                            First found in <date type="found">1825</date></p> 
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-23" who="CMR">tagged description, corrected text</change>
+         <change when="2009-04-28" who="CB">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="PachoLXXIXbis" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXIXbis)</desc></graphic>
+      <graphic url="JMR_522" decls="#photograph"><desc>View</desc></graphic>
+      <!--Dept. Tolmeita R. 22, F. 16.-->
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/> <citedRange unit="plate">LXXIX</citedRange> and Letronne p.402</bibl>, whence <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5241</citedRange></bibl>, 
+               whence <bibl><ptr target="IGRR"/>, <citedRange>I.1027</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+               <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><supplied reason="lost" evidence="previouseditor"><w lemma="καί">καὶ</w> <persName type="attested"><name nymRef="Γαΐα">Γαΐᾳ</name></persName> <orig><unclear>ιι</unclear>ο<unclear>ιι</unclear>α</orig>
+                         <w lemma="σύμβιος">ϲυνβίῳ</w></supplied>
+                    <w lemma="ἐγώ">μου</w> <w lemma="ἀπαγορεύω">ἀπαγορεύω</w> <w lemma="δέ">δὲ</w> <w lemma="ἕτερος">ἕτερόν</w> <w lemma="τις">τι<space quantity="3" unit="character"/><lb 
+                       n="2" break="no"/><supplied reason="lost" evidence="previouseditor">να</supplied></w> <supplied reason="lost" evidence="previouseditor"><w lemma="μή"><unclear>μ</unclear>ὴ</w> <w lemma="ἀνοίγνυμι">ἀνῦξαι</w> <w lemma="μηδέ">μ<supplied reason="lost">η</supplied>δὲ</w> 
+                        <w lemma="θάπτω">θά<unclear>ψ</unclear>αι</w></supplied> 
+                    <w lemma="ἐκτός">ἐκτὸϲ</w> 
+                    <w lemma="εἰ">εἰ</w> <w lemma="μή">μὴ</w> <w lemma="παῖς">παιδὶ</w> <w lemma="ἑαυτός">αὑτ<supplied reason="lost">ο</supplied>ῦ</w>· 
+                    <w lemma="εἰ"><unclear>ε</unclear>ἰ</w> <w lemma="δέ">δ’</w><w lemma="οὖν">οὖν</w> <w lemma="ἐκτείνω">ἐκτε<supplied reason="lost">ί</supplied><lb 
+                       n="3" break="no"/><space quantity="3" unit="character"/><supplied reason="lost" evidence="previouseditor">ϲει</supplied></w> <supplied reason="lost" evidence="previouseditor"><w lemma="ὁ">τῷ</w></supplied> 
+                    <w lemma="ταμεῖον"><supplied reason="lost" evidence="previouseditor">ταμεί</supplied>ῳ</w> 
+                    <w lemma="δενάριον"><expan><abbr><am><g ref="symbols.xml#denarius"/></am></abbr><ex>δενάρια</ex></expan></w> <num value="1500">αφ</num><space unit="character" quantity="7"/> <g ref="symbols.xml#leaf"/>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                  <rdg resp="#pacho1827">ΓΑΙΑΙΙ ΟΙΛΙ</rdg>
+                  <rdg resp="#cigiii">Γαίᾳ [Ἰ]ο[υλίᾳ]</rdg> <note>whence IGRR</note>
+               </app>
+               <app loc="2">
+                  <lem>μὴ</lem>
+                  <rdg resp="#pacho1827">UΗ</rdg>
+               </app>
+               <app loc="2">
+                  <rdg resp="#pacho1827">U.ΔΕΘΑΥΑΙ</rdg>
+               </app>
+               <app loc="2">
+                  <rdg resp="#pacho1827">ΑΥΤΥϹΙΔΟΥ</rdg>
+               </app>
+               <app loc="3">
+                  <rdg resp="#pacho1827">ΓΑΙΑΙΙ ΟΙΛΙ</rdg>
+                  <rdg resp="#cigiii">Γαίᾳ [Ἰ]ο[υλίᾳ]</rdg> <note>whence IGRR</note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p>
+               <gap reason="lost" extent="unknown" unit="character"/> and for Gaia my wife,
+               I forbid any one else to open (the tomb) or to bury anyone except <supplied reason="subaudible">my</supplied> own son;
+               Consequently, if <supplied reason="subaudible">someone does</supplied>, he will pay to the Treasury 1,500 denarii.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>Line 1: there is no space for another line above this, so that the husband's name must have been inscribed on the sarcophagus lid.</p>
+            <p>Line 2-3: for another injunction against reuse see <ref type="inscription" n="P.266">P.266</ref>; it is rare in Cyrenaica but especially common in Asia Minor and 
+               here may indicate a family of immigrants who came from Asia Minor to Cyrenaica after the Jewish Revolt<!--, see Introduction, p. -->.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

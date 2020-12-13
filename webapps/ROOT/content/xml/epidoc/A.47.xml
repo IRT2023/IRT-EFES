@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A06900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Ephebic<certainty cert="low" locus="value" match=".."/></rs> list of names</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.47</idno>
+            <idno type="ircyr2012">A06900</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Water-worn fragment of a <objectType>panel</objectType> of white <material>marble</material> 
+                              (<dimensions>
+                                 <width unit="metre">0.08</width>
+                                 <height unit="metre">0.09</height>
+                                 <depth unit="metre">0.035</depth></dimensions>).
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century CE: 
+                        <height unit="metre" precision="low">0.007;</height> 
+                        cursive epsilon and lunate sigma; poorly cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Second-third century CE</origDate>
+                  </origin>
+                  
+                  
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: Loose on the <placeName ref="https://www.slsgazetteer.org/925">sea shore</placeName>;
+                        found in <date type="found">1962</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName type="monuList" ref="institution.xml#db932">Apollonia Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-05" who="GB">Tagged place</change>
+         <change when="2010-02-25" who="DT">Tagged metadata</change>
+         <change when="2010-02-14" who="CMR">Title, translation, tags</change>
+         <change when="2009-07-15" who="pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNB09_037" decls="#photograph"><desc>Face (E.Alföldi-Rosenbaum: Reynolds IX.37)</desc></graphic>
+      <graphic url="DSC04676" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04677" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="jmr1976"/>, <citedRange>56</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>27.1135</citedRange></bibl>. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Καικίλιος"><supplied reason="lost">Και</supplied><unclear>κί</unclear>λ<unclear>ι</unclear><supplied reason="lost">οϲ</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
+                        <persName type="attested"><name type="gentilicium" nymRef="Ἄννιος">Ἄννιοϲ</name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> 
+                        <persName type="attested"><name type="praenomen" nymRef="Τίτος"><expan><abbr><unclear>Τ</unclear></abbr><ex>ίτοϲ</ex></expan></name> <name type="gentilicium" nymRef="Φλάβιος">Φλάουιοϲ</name></persName> 
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name type="praenomen" nymRef="Τίτος"><expan><abbr>Τ</abbr><ex>ίτοϲ</ex></expan></name> <name type="gentilicium" nymRef="Φλάβιος">Φλάουιοϲ</name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name type="praenomen" nymRef="Τίτος"><expan><abbr><unclear>Τ</unclear></abbr><ex>ίτοϲ</ex></expan></name> <name type="gentilicium" nymRef="Φλάβιος">Φλάουιοϲ</name></persName> 
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <persName type="attested"><name type="gentilicium" nymRef="Γερελλανός">Γερελ<unclear>λ</unclear>αν<unclear>ό</unclear><supplied reason="lost">ϲ</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> 
+                        <persName type="attested"><name type="gentilicium" nymRef="Ἄννιος">Ἄννιοϲ</name></persName> 
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="8"/><orig><unclear>μ</unclear>ο</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="8a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="1">
+                  <rdg>or possibly . . . Ἀ]κίλι[οϲ . . .</rdg>
+               </app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#jmr" xml:lang="en"><p>. . . Cae]cilius 
+                    <note>or [A]cilius</note> 
+                    [ . . . ] Annius 
+                    [ . . . ] 
+                  T(itus) Flavius [ . . . ] 
+                  T(itus) Flavius  [ . . . ] 
+                 T(itus) Flavius  [ . . . ]  Gerellanus [ . . . ]  Annius  [ . . . ] 
+            </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>A list of names which, from the letter-sizes and the poor style of cutting, is
+                    more likely to refer to ephebes than to priests or other officials. The number
+                    of T. Flavii suggests that there was a distinct increase in the number of
+                    Apolloniates with Roman citizenship during the Flavian period.</p>
+            <p>l.6: The nomen
+                    <foreign xml:lang="la">Gerellanus</foreign> is originally south-east Italian and was introduced to the Greek world by
+                    Italian <foreign xml:lang="la">negotiatores</foreign> in the Republic, cf. J. Hazfeld, <title><ref target="https://zenon.dainst.org/Record/001461618">Les trafiquants italiens</ref></title> (1919) 392, 
+               A.J.N. Wilson, <title><ref target="https://zenon.dainst.org/Record/000178524">Emigration
+                    from Italy in the Republican Age of Rome</ref></title> (1966) 153; its presence
+                    seems to indicate connection between the trading family and Cyrenaica.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

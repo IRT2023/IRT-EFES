@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C01300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Hadrian</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.14</idno>
+            <idno type="ircyr2012">C01300</idno>
+            <idno type="JMR">613</idno>
+            <idno type="Excel">348</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Seven fragments from <material>marble</material> 
+                              <objectType>panel</objectType>ling. 
+                              (originally <dimensions><width>0.50</width> <height>0.45</height> <depth>0.13</depth></dimensions>). Two fragments, with the centre of the text, are substial; 
+                              two small fragments survive from the left end, and three from the right<!--check--></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" key="scalpro">Inscribed</rs> on one face, across two panels.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century; line 1, <height unit="metre" precision="low">0.07</height>; line 2, <height unit="metre">0.055</height>; 
+                        lines 3-5, <height unit="metre">0.05</height>. Dash for stop.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace cert="low"><ref  target="https://www.slsgazetteer.org/987">Caesareum</ref></origPlace>
+                     <origDate notAfter="0129" notBefore="0128" evidence="titulature">10th Dec. CE 128 - 9th Dec. 129</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              Found between <date type="found">1935</date> and <date type="found">1960</date>, in the 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/987">Caesareum</placeName> and the <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName> (Oliverio). 
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Shahat">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2011-03-03" who="MLA">added Fraser reference in bibliography</change>
+         <change when="2011-02-22" who="MLA">corrected Reynolds reference in bibliography</change>
+         <change when="2011-02-21" who="MLA">corrected Applebaum reference in bibliography</change>
+         <change when="2011-02-18" who="MGDA">fixed bibliography</change>
+         <change when="2010-11-30" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-13" who="CMR">corrections</change>
+         <change when="2010-04-20" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-10" who="Pietro">tokenized</change>
+         <change when="2007-11-08" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="JMR_613_001front" decls="#photograph"><desc>Second central block (1935 July 1, Department of Antiquities, 2740)</desc></graphic>
+            <graphic url="C01300b_Hadrian" decls="#photograph"><desc>Two central blocks (light 1)</desc></graphic>
+            <graphic url="C01300b" decls="#photograph"><desc>Two central blocks (light 2)</desc></graphic>
+            <graphic url="JMRNB01_049_001" decls="#photograph"><desc>Two central blocks (Joyce Reynolds, I.49.1)</desc></graphic>
+            <graphic url="JMR_613_002front" decls="#photograph"><desc>Right end piece (1935 September 10, Department of Antiquities, 2789)</desc></graphic>
+            <graphic url="JMR_613_003front" decls="#photograph"><desc>Right and left end fragments</desc></graphic>
+            <!--Dept. F.1717, J.R.--></facsimile>
+   <text>
+      <body>
+         <div subtype="editions" type="bibliography">
+            <head>Bibliography</head>
+            <p>One central fragment: <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">76</citedRange> (68), p. 108, pl. XXI, fig 31</bibl>, whence
+                    <bibl><ptr target="SEG"/> <citedRange>9.54</citedRange></bibl>; two central fragments:  
+               <bibl><ptr target="applebaum1950"/>, <citedRange>A.3</citedRange></bibl>, whence <bibl><ptr target="robertBE"/>, <citedRange>1951.244</citedRange></bibl>; 
+               four fragments:
+                    <bibl><ptr target="jmr1958"/>, <citedRange>VI.c</citedRange>, p. 164 and fig. 21 all surviving fragments</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1960.438</citedRange></bibl>,
+               <bibl><ptr target="SEG"/> <citedRange>17.809</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324420">324420</ref></citedRange></bibl>; 
+              <bibl><ptr target="gasperini1971"/>, <citedRange>B.5</citedRange></bibl>, 
+               see also <bibl><ptr target="robertBE"/>, <citedRange>1960.438</citedRange></bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>18.731</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324435">324435</ref></citedRange></bibl>. 
+               Discussed, <bibl><ptr target="cdl1994b"/> <citedRange></citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>44.1536</citedRange></bibl>; by <bibl><ptr target="boatwright2000"/>, <citedRange>181</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                <lb n="1"/><date ref="https://godot.date/id/YL4ai9sQ6pZda27hDDkk53"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ"><unclear>Α</unclear>ὐ<unclear>τ</unclear><supplied reason="lost">οκράτορα</supplied></w>
+                <name nymRef="Καῖσαρ"><supplied reason="lost">Καί</supplied>σαρα</name> <g ref="symbols.xml#stop"/> <persName type="emperor" key="traianus"><w lemma="θεός">θεῶ</w> <name nymRef="Τραιανός">Τραιανῶ</name> <name nymRef="Παρθικός"><unclear>Π</unclear>αρ<unclear>θ</unclear><supplied reason="lost">ι</supplied><milestone unit="panel"/>κῶ</name></persName>
+                <w lemma="υἱός">υ<supplied reason="lost">ἱὸν</supplied></w>
+                <lb n="2"/><persName type="emperor" key="nerva"><w lemma="θεός"><unclear>θε</unclear><supplied reason="lost">ῶ</supplied></w>
+                <name nymRef="Νέρβα"><supplied reason="lost">Νέρ</supplied><unclear>ο</unclear><supplied reason="lost">υα</supplied></name></persName> <w lemma="υἱωνός"><supplied reason="lost">υἱων</supplied><unclear>ὸ</unclear>ν</w> <g ref="symbols.xml#stop"/> <name nymRef="Τραιανός">Τραιανὸν</name> <g ref="symbols.xml#stop"/> <name nymRef="Ἁδριανός">Ἁδριανὸν</name> <g ref="symbols.xml#stop"/> <name nymRef="Σεβαστός">Σε<milestone unit="panel"/>βασ<supplied reason="lost">τὸν</supplied></name>
+                <lb n="3"/><supplied reason="lost"><w lemma="ἀρχιερεύς">ἀρχιερῆ</w> <w lemma="μέγιστος">μέ<supplied reason="lost">γιστον</supplied></w></supplied> <w lemma="δημαρχικός">δαμαρχικᾶς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <g ref="symbols.xml#stop"/> <w lemma="ὁ">τὸ</w>
+                <num value="13">ιγ</num><g ref="symbols.xml#stop"/> <milestone unit="panel"/><w lemma="ὕπατος">ὕπα<supplied reason="lost">τον</supplied></w>
+                <lb n="4"/><supplied reason="lost"><w lemma="ὁ">τὸ</w> <num value="3">γ</num> <w lemma="πατήρ">πατέρα</w></supplied> <w lemma="πατρίς"><supplied reason="lost">πατρί</supplied><unclear>δ</unclear>ος</w></persName></date> <g ref="symbols.xml#stop"/> <w lemma="κτίστης">κτίσταν</w> <g ref="symbols.xml#stop"/> <w lemma="καί">καὶ</w> <w lemma="τροφεύς">τροφ<supplied reason="lost">ῆ</supplied></w> 
+   <w lemma="καί"><supplied reason="lost">καὶ</supplied></w><milestone unit="panel"/> <w lemma="νομοθέτης">νομο<supplied reason="lost">θέ</supplied><lb n="5" break="no"/><supplied reason="lost">ταν</supplied></w> <supplied reason="lost"> <space quantity="1" unit="character"/></supplied> <w lemma="ὁ"><supplied reason="lost">ἁ</supplied></w> <w lemma="πόλις"><supplied reason="lost">πόλ</supplied><unclear>ι</unclear>ς</w> <g ref="symbols.xml#stop"/> <w lemma="ὁ">ἁ</w>
+                <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυραναίων</placeName> <space quantity="14" unit="character"/>
+            </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <note>The first edition to make use of all the fragments was Gasperini</note>
+            <listApp>
+                
+               <app loc="4"><rdg resp="#jmr1958">τροφ[έα]</rdg>
+                  <rdg resp="#cdl1994">τροφ[ῆ]</rdg></app></listApp> 
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" xml:lang="it" source="#oliverioDAI2"><p>L'imperatore Cesare del divino Traiano partico figlio, del divino 
+            Nerva nipote, Traiani Adriano Augusto, pontefice massimo, investito della potestà tribunizia per la [13a] volta, console per la 3a volta, 
+            padre della patria, fondatore e salvatore la cittadinanza dei Cirenei (ha onorato).</p></div>
+            <div type="translation" xml:lang="en" resp="#edd"><p>Emperor Caesar, son of deified Trajan victor in Parthia, grandson of deified Nerva, 
+            Trajan Hadrian Augustus, chief priest, <ref target="https://godot.date/id/YL4ai9sQ6pZda27hDDkk53">holding tribunician power for the thirteenth time</ref>, consul for [the third time, 
+            father] of the country, founder and nourisher and lawgiver: the city of the Cyrenaeans (<supplied reason="explanation">set up his statue</supplied>).</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the titles in line 4 applied to Hadrian elsewhere, cf. <title>IG</title> VII.70-72
+               (at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/143546">143546</ref>, <ref target="https://epigraphy.packhum.org/text/143547">143547</ref>,
+               <ref target="https://epigraphy.packhum.org/text/143548">143548</ref>) <!-- check link -->
+               from Megara. Here they clearly refer 
+                    to help given to Cyrene in the years after the Jewish Revolt.  There is no other record of Hadrianic lawgiving 
+                    at Cyrene.</p>
+            <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

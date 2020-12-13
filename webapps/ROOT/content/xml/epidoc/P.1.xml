@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P00600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic<certainty cert="low" locus="value" match=".."/></rs> <rs type="textType">date</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.1</idno>
+            <idno type="ircyr2012">P00600</idno>
+            <idno type="JMR">269 1/a</idno>
+            <idno type="Excel">701</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Sandstone</material> 
+                              blocks, too high to measure, in the North Tower of the West Gate,
+                              inscribed, while in their present positions, on the North wall: <ref type="inscription" n="P.1">P.1</ref>, <ref type="inscription" n="P.2">P.2</ref>, 
+                              <ref type="inscription" n="P.3">P.3</ref>, <ref type="inscription" n="P.4">P.4</ref>, <ref type="inscription" n="P.5">P.5</ref>, 
+                              <ref type="inscription" n="P.6">P.6</ref>, 
+                              <ref type="inscription" n="P.7">P.7</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffito</rs> on the raised central area of a block near the East corner, to the left of <ref type="inscription" n="P.2">P.2</ref>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>L for ἔτους; ligature in ii; two hands.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering context">First century BCE to first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/939">West Gate</placeName>, North Tower, in situ in the north wall.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+          <change when="2013-08-13" who="TW">tagged 'year' as word</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-22" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-10" who="CMR">corrections</change>
+         <change when="2010-04-20" who="GB">metadata</change>
+         <change when="2010-01-07" who="GB">findspot</change>
+         <change when="2009-12-29" who="CMR">tagged monument, date, corrected keywords</change>
+         <change when="2009-07-16" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. JR.--><graphic url="JMRNS12_004" decls="#photograph"><desc><ref type="inscription" n="P.1">P.1</ref>, <ref type="inscription" n="P.2">P.2</ref> above, 
+      <ref type="inscription" n="P.6">P.6</ref> two courses lower (Reynolds NS.XII.4)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverioDAI2"/>, <citedRange unit="entry">507</citedRange> (31), p. 249</bibl>;
+                <bibl>
+                   <ptr target="SEG"/> <citedRange>9.390</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324239">324239</ref></citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="fragment" n="i" type="textpart">
+               <ab>
+                            <lb n="1"/><date ref="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                            <num value="12">ιβ</num> </date>
+         </ab>
+         </div>
+            <div subtype="fragment" n="ii" type="textpart">
+            <ab>
+                        <lb n="1"/><orig><hi rend="ligature">Πρ</hi></orig>
+                        </ab>
+                        </div>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="i">
+                  <note>Oliverio does not distinguish the hands, reads Π- after 
+                            the date and below it -ΑΝΙ- which we do not see.
+                        </note>
+               </app>
+                </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 12. P-</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>i: <ref target="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH">Year 12</ref>. ii: Pr- ?</p></div>
+         </div>
+       
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>This group of informal texts were found in situ in the walls of the towers of the West gate. North tower, North wall: <ref type="inscription" n="P.1">P.1</ref>, <ref type="inscription" n="P.2">P.2</ref>, <ref type="inscription" n="P.3">P.3</ref>, <ref type="inscription" n="P.4">P.4</ref>, <ref type="inscription" n="P.5">P.5</ref>, 
+               <ref type="inscription" n="P.6">P.6</ref>, 
+               <ref type="inscription" n="P.7">P.7</ref>,
+               <ref type="inscription" n="P.8">P.8</ref>,
+               <ref type="inscription" n="P.9">P.9</ref>; West wall: <ref type="inscription" n="P.10">P.10</ref>,
+               <ref type="inscription" n="P.11">P.11</ref>,
+               <ref type="inscription" n="P.12">P.12</ref>,
+               <ref type="inscription" n="P.13">P.13</ref>,
+               <ref type="inscription" n="P.14">P.14</ref>,
+               <ref type="inscription" n="P.15">P.15</ref>,
+               <ref type="inscription" n="P.16">P.16</ref>;
+               South wall: <ref type="inscription" n="P.17">P.17</ref>, 
+               <ref type="inscription" n="P.18">P.18</ref>,
+               <ref type="inscription" n="P.19">P.19</ref>,
+               <ref type="inscription" n="P.20">P.20</ref>,
+               <ref type="inscription" n="P.21">P.21</ref>,
+               <ref type="inscription" n="P.22">P.22</ref>,
+               <ref type="inscription" n="P.23">P.23</ref>, 
+               <ref type="inscription" n="P.24">P.24</ref>;  South tower: <ref type="inscription" n="P.24">P.24</ref>, <ref type="inscription" n="P.24">P.24</ref>, <ref type="inscription" n="P.24">P.24</ref></p>
+            <p>They have sometimes been regarded as the work of soldiers on garrison duty, 
+                    but they are indistinguishable from those of ephebes (e.g. <ref type="inscription" n="P.35">P.35</ref> etc.). Since they 
+                    contain no specific military title but do employ certain formulae which seem to be ephebic, e.g. φίλος and σύγκοιτος, 
+                    linking pairs of names (see on <ref type="inscription" n="P.3">P.3</ref>, <ref type="inscription" n="P.9">P.9</ref>) it seems likely that they
+               are in fact ephebic. For other groups of such texts see discussion at <ref type="inscription" n="P.35">P.35</ref> and at <ref type="inscription" n="T.27">T.27</ref>. One challenge with all 
+            these groups of ephebic names is to determine when one name in the nominative and one in the genitive represent name and patronymic (as in the formal ephebic lists) and 
+            when they indicate the names of a pair of friends.</p>
+            <p>Since the gymnasium was probably close to the Gate (see <ref type="inscription" n="P.29">P.29</ref>) the
+                    cutters may have been ephebes at leisure, but it is also possible that they were on 
+                    duty, cf. the function of ephebes to garrison the walls at Athens (PW V, s.v. Ἐφηβία, col. 2738).<!-- check -->
+                    Their date is uncertain, since there is normally no means of deciding whether the year named
+                    in some is a regnal or an Actian year, and if regnal to what reign each refers, though 
+               one obscure text, <ref type="inscription" n="P.7">P.7</ref>, appears to mention year 100, CE 69/70. The letter-forms of such texts are peculiarly insecure evidence, but 
+                    it should be noted that among the more carefully cut, the graffito of the Rhodian Hippomachus
+                    <ref type="inscription" n="P.20">P.20</ref>.ii) suggests 1st - 2nd century BCE, but could be later, while several recall the forms of
+                    Augustan and early Julio-Claudian lettering<!--xref (e.g. 29a 2/g-->. The only unequivocal evidence is
+                    the number of Latin names <ref type="inscription" n="P.2">P.2</ref>, <!--(1/d)--> <ref type="inscription" n="P.4">P.4</ref>, <!--(1/e)-->
+               <ref type="inscription" n="P.5">P.5</ref>, <!-- (2/b)  --><ref type="inscription" n="P.9">P.9</ref>, <ref type="inscription" n="P.10">P.10</ref>, <!-- (2/d) -->
+               <ref type="inscription" n="P.12">P.12</ref>) which is unlikely before the Augustan 
+               period. See also ον <ref type="inscription" n="P.35">P.35</ref>. In addition to the informal inscriptions presented here there are a number of isolated 
+                    letters, some monograms which might be mason's marks, or the marks of ephebic groupings,  some Arabic and some Italian graffiti, all of which we 
+                    have ignored.<!-- On the gate see Caputo, <title level="j">Quaderni</title> III (1954) 49 f. and Kraeling, 58 f. 
+               (wrongly describing it as the Teuchira Gate; in fact it must have opened onto the Barke road) --></p>
+           
+         </div>
+         
+      </body>
+   </text>
+</TEI>

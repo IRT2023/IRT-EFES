@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P15100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>i: <rs type="textType">Dedication</rs> of a statue; ii: sculptor's <rs type="textType">signature</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.176</idno>
+            <idno type="ircyr2012">P15100</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Marble</material> 
+                              <objectType>base</objectType> and <objectType>statue</objectType> of Herakles.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>i. <rs type="execution" key="scalpro">inscribed</rs> on the plinth 
+                           (die, <width unit="metre">0.83</width> x<height unit="metre">0.11</height>), and ii. on the tree stump to the left of the figure.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i. <height unit="metre">0.035</height>; lunate epsilon, sigma; cursive omega. 
+                        ii. <height unit="metre">0.015</height>; lunate sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notAfter="0300" notBefore="0101" precision="low" evidence="lettering">Second to third centuries CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1442">Late Baths</placeName>, Frigidarium, in Niche D on the east side; 
+                              found in <date type="found">1957</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>.
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Tolmeita">Tolmeita</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-07-23" who="GF">tag words and names</change>
+         <change when="2008-01-17" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0117" decls="#photograph"><desc>i: face (1957, Kraeling, The Oriental Institute - Chicago, 48742)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="kraeling1962"/>, <citedRange>37, 38</citedRange>, pl. XLV</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.589</citedRange></bibl>; republished 
+               <bibl><ptr target="fabbricotti1985"/><citedRange></citedRange></bibl> whence <bibl><ptr target="cdlBE"/>, <citedRange>1988.1028</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>35.1728</citedRange></bibl>. ii only: <bibl><ptr target="rosamilia2014"/>, <citedRange unit="entry">14</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><head xml:lang="en">Text
+                       </head><div subtype="section" n="i" type="textpart"><ab>
+                <lb n="1"/><persName type="attested"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκοϲ</ex></expan></name> <name nymRef="Οὔλπιος">Οὔλπιοϲ</name> <name nymRef="Κομίνιος">Κομίνιοϲ</name></persName> 
+                <space quantity="3" unit="character"/>
+                <lb n="2"/> <space quantity="1" unit="character"/> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="ἴδιος">ἰδίων</w> <w lemma="ὁ">τῇ</w> <w lemma="πατρίς">πατρίδι</w></ab></div>
+            <div subtype="section" n="ii" type="textpart"><ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V2-11025"><name nymRef="Ἀσκληπιάδης">Ἀσκλεπιάδηϲ</name> <note>sic</note>
+                    <lb n="2"/><placeName type="ethnic" nymRef="#Ἀθηναῖος" ref="#athens">Ἀθη<unclear>ναῖ</unclear>οϲ</placeName></persName> <w lemma="ποιέω">ἐποίε</w></ab>
+</div>
+</div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="ii.2">
+                  <rdg resp="#kraeling1962">ΑΘΗΝ[ΑΙ]ΟϹ</rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>a: M(arkos) Oulpios Kominios <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Ulpius Cominius</foreign></supplied> from his private means for the Fatherland.</p>
+            <p>b. Asklepiades, Athenian, made it.</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For a description and discussion of the statue and the sculptor see Brinkerhoff ap. 
+               Kraeling, 183, 196.12 and, more recently, see Fabbricotti, loc.cit.; for the sculptor see also Rosamilia, loc.cit.
+            </p>
+            <p>It is possible that the statue originally stood in 
+               the Odeon where three further dedications by Kominios were found, <ref type="inscription" n="P.92">P.92</ref>,  <ref type="inscription" n="P.98">P.98</ref>, <ref type="inscription" n="P.99">P.99</ref>. 
+               </p>
+           
+           
+         </div>
+         
+      </body>
+   </text>
+</TEI>

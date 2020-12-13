@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C14900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">imperial</rs> <rs type="textType">honours<certainty cert="low" locus="value" match=".."/></rs> for a Flavian emperor</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor>
+            <editor xml:id="cdl">Catherine Dobias-Lalou</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.178</idno>
+            <idno type="ircyr2012">C14900</idno>
+            <idno type="JMR">734</idno>
+            <idno type="Excel">177</idno>
+            <!-- <idno type="filename">C.670</idno>
+            <idno type="ircyr2012">C40900</idno>
+            <idno type="JMR">1005</idno>
+            <idno type="Excel">1303</idno> -->
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjoining fragments of <material>marble</material> a:, traces of burning, <dimensions><width>0.19</width> <height>0.135</height> <depth>0.033</depth></dimensions>; 
+                              b: (<dimensions><width>0.20</width> <height>0.145</height> <depth>0.03</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face; there is a guideline above the letters.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE; <height>0.05-0.055</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" evidence="lettering" precision="low">First century CE</origDate>
+                  </origin><provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                             a:  Valley Street, near <placeName type="monuList" ref="https://www.slsgazetteer.org/1340">Public Building E</placeName>; found in <date type="found">1957</date>; 
+                              b: found before <date type="found">1941</date>; findspot unrecorded..</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-03-10" who="CMR">cobined with C.670</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-11-08" who="Pietro">tokenized</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+         
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_734front" decls="#photograph"><desc>a and b 
+   (Reynolds VI.20)</desc></graphic>
+      <graphic url="JMR_780_002" decls="#photograph"><desc>From left: <ref type="inscription" n="C.723">C.723</ref>, <ref type="inscription" n="C.178">C.178.b</ref> and unidentified fragment</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor" key="domitianus"><name nymRef="Οὐεσπασιανός"><seg part="I">Οὐεσ<supplied reason="lost">πα</supplied>σιανο</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="ἀρχιερεύς" part="I"><supplied reason="lost">ἀρχ</supplied><unclear>ιερ</unclear><supplied reason="lost">ε</supplied></w><w lemma="μέγιστος" part="I"><supplied reason="lost">μ</supplied><unclear>εγι</unclear><supplied reason="lost">στ</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2a"/><gap reason="lost" quantity="1" unit="line"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>. . . ] Ves[pa]sian  . . . ] high priest <supplied reason="explanation"><foreign xml:lang="la">pontifex maximus</foreign></supplied> [ . . .</p> </div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Vespasian, Titus, or Domitian. </p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

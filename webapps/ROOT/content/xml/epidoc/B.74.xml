@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B08400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">B.74</idno>
+            <idno type="ircyr2012">B08400</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Triangular-headed <objectType>stele</objectType> 
+                              (<dimensions><width precision="low">0.31</width> <height>0.58</height> <depth>0.10</depth></dimensions>). 
+                              Above the text, in a prepared area which includes the triangle, is a relief of an ivy leaf, point upwards,
+                              standing on a <rs type="decoration">wreath</rs> which appears to consist of a band tied with a Isiac knot ("guet") below and which encircles a trisceles.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Ave. <height>0.035</height>; lunate sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0104" notBefore="0103" precision="high" evidence="internal-date">CE 103-4</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/910">Berenike</placeName>: <ref target="https://www.slsgazetteer.org/1415">Benghazi</ref>, 
+                              precise findspot unknown; seen and photographed by Thomas Ashby in the British Vice-Consulate garden in <date type="found">1910</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName> (2001).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Benghazi">Benghazi</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2008-01-10" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_034" decls="#photograph"><desc>Face on the right (Department of Antiquities, F. 672)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="robinson1913"/>, from De Cou, <citedRange>105</citedRange>, fig. 39</bibl>, whence
+               <bibl><ptr target="Sammelbuch"/>, <citedRange>I.5929</citedRange></bibl>; <bibl>
+                  <ptr target="SECir"/>, <citedRange>288</citedRange></bibl>; republished 
+               <bibl><ptr target="jmr1978"/>, <citedRange>30</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>28.1539</citedRange></bibl>.
+               See also <bibl><ptr target="marengo1985"/>, <citedRange>151-2</citedRange></bibl>, whence 
+               <bibl><ptr target="cdlBE"/>, <citedRange>1988.1011</citedRange></bibl>.</p>
+            <p> 
+               For the monument see <bibl><ptr target="fabbricotti2001"/>, <citedRange>120-21</citedRange> and plates</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>53.2032</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                <lb n="1"/><date ref="https://godot.date/id/JY2kjv8QF5U5xsLXbtNkQn"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <g ref="symbols.xml#stop"/> <num value="134">ρλδ</num></date>
+               
+                   <lb n="2"/> <persName type="attested" key="lgpn:V1-61895"><name nymRef="Καλλοῦς">Καλλοῦϲ</name>
+                <lb n="3"/><persName type="attested" key="lgpn:V1-66053"><name nymRef="Φιλόστρατος">Φιλόϲτρα<lb n="4" break="no"/>τοϲ</name></persName></persName> 
+            <date type="life-span" dur="P23Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <g ref="symbols.xml#stop"/> <num value="23">κγ</num> </date>
+            </ab>
+</div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/JY2kjv8QF5U5xsLXbtNkQn">Year 134</ref>. Kallous (? or of Kallo) Philostratos aged 23. </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>line 1: 134 of the Actian era = CE 103/4.</p>
+            <p>ll.2-3: If the case of Καλλοῦϲ is nominative either the subject had two names or there is an error for 
+                    Φιλοϲτράτου in line 4; 
+                    if it is genitive, and so from a woman's name, De Cou suggested that Philostratos was Kallo's slave - 
+                    but such an inversion of the normal order of names is unlikely.</p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

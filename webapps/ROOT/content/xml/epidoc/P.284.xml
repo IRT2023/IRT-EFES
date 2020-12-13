@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P38600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.284</idno>
+            <idno type="ircyr2012">P38600</idno>
+            <idno type="JMR">512</idno>
+            <idno type="Excel">443</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Rock</material>-cut  <objectType>tomb</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the façade above the door within a prepared area (<dimensions>
+                              <width unit="metre">2.21</width> 
+                              <height unit="metre">0.14</height>
+                        </dimensions>). The cutter has had to leave spaces to avoid holes in the stone.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century: <height unit="metre">0.06</height>; 
+                        lunate epsilon and lunate sigma only in the final word, which is in a different hand. </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate evidence="lettering" notBefore="0101" notAfter="0200" precision="low">Second century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/972">Quarry III</placeName>, south wall; first recorded in <date type="found">1825</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                            <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-13" who="CMR">tagged description, corrected text</change>
+         <change when="2009-05-14" who="MR">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXIX" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXVIII, numbered LXXIX)</desc></graphic>
+      <graphic url="JMR_512" decls="#photograph"><desc>Face (Joyce Reynolds, Tolmeita I. 35)</desc></graphic>
+      <!-- check - <graphic url="P38600" decls="#photograph"><desc>Text</desc></graphic> what is this image? -->
+      <!--Dept. F. 120;--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl>
+               <ptr target="pacho1827"/>pl. <citedRange>LXXVIII</citedRange> (printed as LXXIX) and Letronne p. 402</bibl> whence
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5208</citedRange></bibl>; <bibl><ptr target="masson-jmr1978"/>, <citedRange>19</citedRange> copy by M.Guirand (1895) mentioned</bibl>; 
+               <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">483</citedRange> (7), pl. XCII, fig. 71 (only partially legible)</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>9.370</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324219">324219</ref></citedRange></bibl>; see also <bibl><ptr target="laronde2004"/><citedRange></citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/mDha8ivFFUEeijcoAswNPW"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="9"><unclear>θ</unclear></num></date> <gap reason="lost" quantity="1" unit="character"/>
+                    <persName type="attested" key="lgpn:V1-61388"><name nymRef="Σήστιος">Σήσ<space quantity="1" unit="character"/>τιος</name> <name nymRef="Κάρπος">Κά<space quantity="1" unit="character"/>ρπος</name></persName> 
+                    <w lemma="καί">καὶ</w> <persName type="attested" key="lgpn:V1-61446"><name nymRef="Σηστία">Σηστία</name> <name nymRef="Λυχνὶς">Λυχνίς</name></persName> <w lemma="ποιέω">ἐποίησαν</w> 
+                    <lb n="2"/> <space quantity="3" unit="character"/> <w lemma="ἑαυτός">ἑατο<space quantity="1" unit="character"/>ῖς</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοῖς</w> 
+                    <w lemma="ἴδιος">ἰδί<space quantity="1" unit="character"/>οις</w> <w lemma="τέκνον">τέκνοιϲ</w>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head><listApp>
+               <app loc="1">
+                  <lem>θ</lem>
+                  <note>Not reported by other editors.</note>
+               </app>
+               <app loc="1">
+                  <lem>Σηστία Λυχνίς</lem>
+                  <rdg resp="#pacho1827">ΣΤΙΑΛΥΥΝΙΣ</rdg>
+               </app>
+               <app loc="2">
+                  <rdg resp="#pacho1827">ΕΑΤΟΚΙΣΚΑΙΤΟΙΣΙΔΚΟιΣ</rdg>
+               </app>
+            </listApp>
+           </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Sestio Carpo e Sestia Lichnìs fecero per sè e per i propri figli</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/mDha8ivFFUEeijcoAswNPW">Year 9</ref>, Sestios Karpos and Sestia Lychnis made this for themselves and their own children.</p></div>
+         </div>
+       
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            
+            <p>Line 1: There is room for a praenomen and damage to the stone here which may have destroyed it.</p>
+            <p>Line 2: The original text ended with 'for their own'; 'children' was then added in a later hand.</p>
+           </div>
+         
+      </body>
+   </text>
+</TEI>

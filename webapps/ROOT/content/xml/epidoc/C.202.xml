@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C72300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary ?<rs type="textType">honours</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.202</idno>
+            <idno type="ircyr2012">C72300</idno>
+            <idno type="JMR">761 a/b/c/d</idno>
+            <idno type="Excel">1225</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Four pieces of limestone, probably from the same monument. 
+                              a: <dimensions><width>0.27</width> <height>0.23</height> <depth>c. 0.07</depth></dimensions>; 
+                              b: <dimensions><width>0.30</width> <height>0.30</height>  <depth>0.14</depth></dimensions>; 
+                              c: <dimensions><width>0.33</width> <height>0.20</height> <depth>c. 0.16</depth></dimensions>; 
+                              d: <dimensions><width>0.24</width> <height>0.35</height> <depth>c. 0.11</depth></dimensions>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face. On each there is a raised panel on the upper part of 
+                           the face; a and b are <rs type="execution" key="scalpro">inscribed</rs> on this panel, c and d below it.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably second century: <height>0.05 - 0.055</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" precision="low" cert="low" evidence="lettering">Probably second century</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1024">Valley Street</placeName>, north side, modern Post Office and <placeName type="monuList" ref="https://www.slsgazetteer.org/1347">Antonine Arch</placeName>, in the same area as <ref type="inscription" n="C.201">C.201</ref>; 
+                              found in <date type="found">1957</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-21" who="AO">tokenized</change>
+         <change when="2009-06-12" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_761_002" decls="#photograph"><desc>Fragments b and a (Reynolds VIII.33)</desc></graphic>
+      <graphic url="JMR_761_003" decls="#photograph"><desc>Fragments c and d (Reynolds VIII.34)</desc></graphic>
+      <graphic url="JMR_761_001" decls="#photograph"><desc>View of all fragments (Reynolds III.86)</desc></graphic><!--JR.--></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="a" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>λοσ</orig><gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div><div subtype="section" n="b" type="textpart"><ab>    
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>αρη</orig><gap reason="lost" extent="unknown" unit="character"/> 
+                    </ab></div><div subtype="section" n="c" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἀνθύπατος" part="I"><supplied reason="lost">ἀν</supplied><unclear>θ</unclear>υπα<unclear>τ</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div><div subtype="section" n="d" type="textpart"><ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>α</unclear>τ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab>
+</div>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>a and d</note>: <note>Not usefully translatable</note>. <note>b</note>: . . . ]?serving as a priest [ . . . 
+            <note>c</note>:  . . . ] proconsul[ . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>b. Perhaps [...ἱ]αρη[τευ-...], although this title is less appropriate here than it would be in the Sanctuary. </p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

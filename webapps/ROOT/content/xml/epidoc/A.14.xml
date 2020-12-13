@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A02600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">imperial</rs> <rs type="textType">titulature</rs></title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.14</idno>
+            <idno type="ircyr2012">A02600</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                     (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                  URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db934">Cyrene Sculpture Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Block of <material>sandstone</material>
+                              (<dimensions><width unit="metre">1.25</width> <height unit="metre">0.47</height> <depth unit="metre">0.53</depth></dimensions>). </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face whose surface is badly damaged.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century CE, <height unit="metre">0.08.</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Second to third centuries CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: photographed in <date type="found">1930</date>. Unrecorded but
+                        probably the <placeName type="monuList" ref="https://www.slsgazetteer.org/914">East Church</placeName>, the only area being excavated at the time of recording.</p>
+                  </provenance>
+                  <provenance type="observed">
+                     <p>Outside the <placeName ref="https://www.slsgazetteer.org/934">Cyrene Sculpture Museum</placeName>.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDocRNG schema v. 8)</change>
+         <change when="2009-07-13" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. F. 1883.-->
+      <graphic url="cdlA14" decls="#photograph"><desc>Face (C. Dobias-Lalou, 2004: MFA diapo 04.302)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="jmr1976"/>, <citedRange>19</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>27.1134</citedRange></bibl>. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><persName type="emperor" key="anonymus"><gap reason="lost" extent="unknown" unit="character"/><w part="F">ν</w> 
+                    <name nymRef="Μᾶρκος"><expan><abbr><unclear>Μ</unclear></abbr><ex>άρκου</ex></expan></name>
+                        <name nymRef="Αὐρήλιος">Αὐρηλίου</name> <name nymRef="Ἀντωνῖνος">Ἀ<unclear>ν</unclear><supplied reason="lost">τωνείνου</supplied></name></persName>
+               <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>Ι</unclear></orig><gap reason="lost" quantity="2" unit="character"/><orig><unclear>ιμε</unclear>νοσ<unclear>το</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" xml:space="preserve" xml:lang="en" resp="#jmr"><p>
+               . . . ] of Marc- Aureli- Antonin- [ . . . </p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> Line 1: Either a single emperor, τοῦ κυρίου ἡμῶ]ν or plural emperors, Αὐτοκρατόρων Καισάρω]ν; if the former the emperor is
+               probably Marcus Aurelius or Caracalla, if the latter, the choice lies between
+               Aurelius and Verus, Aurelius and Commodus and Caracalla and Geta.</p>
+            <p>Line 2: Possibly τ[ὸ τ]εμενος το[ῦ . . . the traces are not compatible with δεδειγμένος.</p>
+         </div>
+</body>
+   </text>
+</TEI>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C86800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile I: <rs type="textType">Milestone</rs> of Trajan</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.609</idno>
+            <idno type="ircyr2012">C86800</idno>
+            <idno type="JMR">Z.2</idno>
+            <idno type="Excel">nn</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <objectType>column</objectType>ar milestone.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No measurements; the numeral (line 9) is "molto grande".</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-apo" n="1">Cyrene-Apollonia Road, mile I</rs>.</origPlace>
+                     <origDate notBefore="0100" notAfter="0100" precision="high" cert="high" evidence="titulature">CE 100</origDate>
+                  </origin>
+                        <provenance type="found">
+                           <p>Found in <date type="found">1913</date>. 
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              at the bend of the road below the former sculpture museum.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Goodchild).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-01-08" who="SS">improved mark up</change>
+        <change when="2011-04-05" who="MGDA">fixed Goodchild bibliography</change>
+        <change when="2010-08-11" who="CMR">created from Goodchild and PHI</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="31_doa" decls="#photograph"><desc>View (Department of Antiquities, E.18)</desc></graphic></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="ghislanzoni1915"/>, <citedRange>175-6</citedRange> and fig. 55</bibl>, whence <bibl><ptr target="SEG"/> <citedRange>9.251</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324101">324101</ref></citedRange></bibl>;
+               revision, with comment by M. N. Tod, by <bibl><ptr target="rgg1950"/>, <citedRange>6</citedRange></bibl>, on which <bibl><ptr target="robertBE"/>, <citedRange>1953.250</citedRange></bibl>;
+               whence (part) <bibl><ptr target="SEG"/> <citedRange>13.619</citedRange>.b</bibl>, <bibl><ptr target="AE"/> <citedRange>1951.210</citedRange></bibl>,
+               at <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021427">021427</ref></citedRange></bibl> </p>
+         </div>
+         
+         <div type="edition" xml:space="preserve">
+            <div type="textpart" xml:lang="la">
+               <ab>   
+                    <lb n="1"/><persName type="emperor" key="traianus"><date ref="https://godot.date/id/iUpE9BxbsWUJW5QaG5Lgba"><w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w> <name nymRef="Caesar">Caesa<supplied reason="lost">r</supplied></name>, <persName type="emperor" key="nerva"><w lemma="diuus"><supplied reason="lost">diui</supplied></w>
+                    <lb n="2"/><name nymRef="Nerva">Nerva<supplied reason="lost">e</supplied></name></persName> <w lemma="filius"><expan><abbr><supplied reason="lost">fil</supplied></abbr><ex>ius</ex></expan></w>, <name nymRef="Nerva">Ner<supplied reason="lost">va</supplied></name>
+                    <lb n="3"/><name nymRef="Traianus">Traian<supplied reason="lost">us</supplied></name> <name nymRef="Augustus"><expan><abbr><supplied reason="lost">Aug</supplied></abbr><ex>ustus</ex></expan></name> <name nymRef="Germanicus"><expan><abbr><supplied reason="lost">Ger</supplied><lb n="4" break="no"/>man</abbr><ex>icus</ex></expan></name>, <expan><w lemma="pontifex"><abbr>pon<supplied reason="lost">t</supplied></abbr><ex>ifex</ex></w> <w lemma="maximus"><abbr><supplied reason="lost">max</supplied></abbr><ex>imus</ex></w></expan>, 
+                    <expan>   <w lemma="tribunicius"><abbr><supplied reason="lost">trib</supplied></abbr><ex>unicia</ex></w> <w lemma="potestas"><abbr>pot</abbr><ex>estate</ex></w></expan> <num value="4">IIII</num>,
+                    <lb n="5"/><w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w> <num value="11">XI</num>   
+                    <lb n="6"/> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> <num value="3">III</num></date>, 
+                     <expan> <w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan></persName>, <supplied reason="lost"><w lemma="uia">uiam</w></supplied> <w lemma="facio"><supplied reason="lost">fe</supplied>cit</w> <w lemma="per">per</w> 
+                    <lb n="7"/><w lemma="tiro">tirones</w> <w lemma="lectus"><supplied reason="lost" precision="low">lectos</supplied></w> <w lemma="ex"><supplied reason="lost">ex</supplied></w> <placeName nymRef="#Cyrenaica" ref="#cyrenaica"><w lemma="prouincia"><supplied reason="lost">pro</supplied><lb 
+                       n="8" break="no"/>uinci<supplied reason="lost">a</supplied></w> <supplied reason="lost">Cyrenaica</supplied></placeName>
+                    <lb n="9"/><space extent="8" unit="character"/> <num value="1">A</num> <space extent="8" unit="character"/>
+            </ab>
+            </div>
+             <div type="textpart" xml:lang="grc">
+            <ab>
+            <lb n="10"/> <persName type="emperor" key="traianus"><date ref="https://godot.date/id/JhByzVUCEkh7UhUPgkgFxi"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καῖ</supplied>σαρ</name>, <persName type="emperor" key="nerva"><w lemma="θεός">θεοῦ</w>
+            <lb n="11"/> <name nymRef="Νέρβα">Νέρβα</name></persName> <w lemma="υἱός">υἱός</w>, <name nymRef="Νέρβα">Νέρβα</name> <name nymRef="Τραιανός">Τρ<supplied reason="lost">αϊανὸς</supplied></name>
+            <lb n="12"/><name nymRef="Σεβαστός">Σεβαστὸς</name> <name nymRef="Γερμανικός">Γερμ<supplied reason="lost">ανικός</supplied></name>, <w lemma="ἀρχιερεύς"><supplied reason="lost">ἀρχιερεὺς</supplied></w>
+<lb n="13"/> <w lemma="μέγιστος">μέγιστος</w>, <w lemma="δημαρχικός">δημ<supplied reason="lost">αρχικῆς</supplied></w> <w lemma="ἐξουσία"><supplied reason="lost">ἐξουσίας</supplied></w>
+<lb n="14"/> <w lemma="ὁ">τὸ</w> <num value="4">δ</num>, <w lemma="ὕπατος">ὕπατος</w> <num value="3">γ</num></date>, <w lemma="πατήρ"><supplied reason="lost">πατὴρ</supplied></w> <w lemma="πατρίς"><supplied reason="lost">πατρίδος</supplied></w></persName>, <w lemma="ὁ"><supplied reason="lost">τὴν</supplied></w>
+<lb n="15"/> <w lemma="ὁδός">ὁδὸν</w> <w lemma="ποιέω">ἐπο<supplied reason="lost">ίησεν</supplied></w> <w lemma="διά"><supplied reason="lost">διὰ</supplied></w> <w lemma="ὁ"><supplied reason="lost">τῶν</supplied></w>
+<lb n="16"/> <w lemma="καταλέγω">καταλεχθ<supplied reason="lost">έντων</supplied></w> <w lemma="ἐκ"><supplied reason="lost">ἐκ</supplied></w> <w lemma="ὁ"><supplied reason="lost">τῆς</supplied></w> <placeName nymRef="#Κυρηναϊκή" ref="#cyrenaica"><supplied reason="lost">Κυρη</supplied><lb 
+   n="17" break="no"/>ναϊκῆς</placeName> <w lemma="ἐπαρχεία"><supplied reason="lost">ἐπαρχίας</supplied></w> <w lemma="τίρων"><supplied reason="lost">τιρώνων</supplied></w>
+            </ab>
+             </div>
+         </div>
+         
+         
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>Latin</note>: Emperor Caesar, son of the deified Nerva, Nerva Trajan, Augustus, victor in Germania, 
+               Chief Priest, holding tribunician power for the fourth time, acclaimed victor eleven times, 
+               consul for the third time, father of the country, made [the road] using recruits [raised] in the province of Cyrenaica. </p>
+            <p><note>Greek</note>: Emperor Caesar, son of the deified Nerva, Nerva Trajan, Augustus, victor in Germania, 
+               [Chief Priest], holding tribunician [power] for the fourth time, acclaimed victor eleven times, 
+               consul for the third time, [father of the country], made the road using [recruits] raised in the [province] of Cyrenaica</p></div>
+
+
+
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>This is the first mile on the road from Cyrene to Apollonia.</p>
+            <p>For texts recording Trajan's work on the roads see, for the Cyrene to Apollonia Road, <ref type="inscription" n="C.609">C.609</ref>, <ref type="inscription" n="M.222">M.222</ref>, 
+               <ref type="inscription" n="M.224">M.224</ref>, and, a later text, <ref type="inscription" n="M.227">M.227</ref>; 
+               for the Cyrene to Ptolemais road see <ref type="inscription" n="M.196">M.196</ref> and <ref type="inscription" n="M.200">M.200</ref>.</p> 
+               <!-- for type and comment see <ref type="inscription" n="M.224">M.224</ref> -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

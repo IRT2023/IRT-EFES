@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P00700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic<certainty cert="low" locus="value" match=".."/></rs> <rs type="textType">name</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+            
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.2</idno>
+            <idno type="ircyr2012">P00700</idno>
+            <idno type="JMR">269 1/b</idno>
+            <idno type="Excel">702</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Sandstone</material> 
+                              blocks, too high to measure, in the North Tower of the West Gate,
+                              inscribed, while in their present positions, on the North wall: <ref type="inscription" n="P.1">P.1</ref>, <ref type="inscription" n="P.2">P.2</ref>, 
+                              <ref type="inscription" n="P.3">P.3</ref>, <ref type="inscription" n="P.4">P.4</ref>, <ref type="inscription" n="P.5">P.5</ref>, 
+                              <ref type="inscription" n="P.6">P.6</ref>, 
+                              <ref type="inscription" n="P.7">P.7</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffito</rs> on the raised central area of the block immediately to the right of <ref type="inscription" n="P.1">P.1</ref>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>L for ἔτους; ligature in ii; two hands.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering context">First century BCE to first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/939">West Gate</placeName>, North Tower, north wall. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-22" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-20" who="GB">metadata</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-07" who="GB">dimensions, date</change>
+         <change when="2009-12-29" who="CMR">tagged monument, date, corrected keywords</change>
+         <change when="2009-07-16" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXIV" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXIV)</desc></graphic>
+      <graphic url="JMRNS12_004" decls="#photograph"><desc><ref type="inscription" n="P.1">P.1</ref>, <ref type="inscription" n="P.2">P.2</ref> above, 
+      <ref type="inscription" n="P.6">P.6</ref> two courses lower (Reynolds NS.XII.4)</desc></graphic>
+      <graphic url="JMRNS12_005" decls="#photograph"><desc><ref type="inscription" n="P.2">P.2</ref> above, 
+         <ref type="inscription" n="P.6">P.6</ref> two courses lower (Reynolds NS.XII.5)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+                    <bibl><ptr target="pacho1827"/> <citedRange unit="plate">LXXIV</citedRange></bibl> 
+                whence <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5193</citedRange></bibl>;
+                   <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">505</citedRange> (29), p. 249</bibl>;
+               whence <bibl><ptr target="SEG"/> <citedRange>9.388</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324237">324237</ref></citedRange></bibl>.
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="fragment" n="i" type="textpart"><ab>
+                            <lb n="1"/><hi rend="ligature"><orig>νγ</orig></hi>
+                        </ab></div>
+            <div subtype="fragment" n="ii" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                        <num value="12">ιβ</num></date> <persName type="attested" key="lgpn:V1-61160"><name nymRef="Αὖλος">Αὖλος</name>
+                            <persName type="attested" key="lgpn:V1-61545"><name nymRef="Πελίδας">Πελί<unclear>δ</unclear>α</name></persName></persName>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="i">
+                  <rdg resp="#pacho1827">N</rdg><note>, so CIG; omitted by Oliverio and consequently SEG.</note>
+               </app>
+                <app loc="ii">
+                  <rdg resp="#pacho1827">ΑΥΑΟΣ</rdg></app> 
+                    <app>
+                  <note>The patronymic, which  is written in small letters between and within those of the name, was omitted by Pacho and Oliverio.</note>
+               </app> 
+                    </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p><note>ii</note>. Anno 12. Aulo</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>ii</note>. <ref target="https://godot.date/id/y5b7k2Kd5Tg6QKS8nHj7QH">Year 12</ref>: Aulus <supplied reason="subaudible">son</supplied> of Pelidas.</p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>(ii) السنة 12، أيوليوس (بن) بليداس.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For this group of texts see commentary on <ref type="inscription" n="P.1">P.1</ref>
+            </p>
+            <p>For the patronymic written in small letters within and between the letters of the names, typical of ephebic inscriptions, see <ref type="inscription" n="C.61">C.61</ref>, 
+               <ref type="inscription" n="C.123">C.123</ref>, <ref type="inscription" n="C.124">C.124</ref>, and many examples at Ptolemais: <ref type="inscription" n="P.2,">P.2,</ref> <ref type="inscription" n="P.11">P.11</ref>, 
+               <ref type="inscription" n="P.13">P.13</ref>, <ref type="inscription" n="P.14">P.14</ref>, <ref type="inscription" n="P.69">P.69</ref>, <ref type="inscription" n="P.91">P.91</ref>, 
+               <ref type="inscription" n="P.124">P.124</ref>, <ref type="inscription" n="P.133">P.133</ref>, <ref type="inscription" n="P.134">P.134</ref>, 
+               <ref type="inscription" n="P.178">P.178</ref>, <ref type="inscription" n="P.182">P.182</ref>, <ref type="inscription" n="P.185">P.185</ref>, <ref type="inscription" n="P.190">P.190</ref>, 
+               and compare <ref type="inscription" n="P.200">P.200</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

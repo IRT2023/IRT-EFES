@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mile XV: <rs type="textType">Milestone</rs> of the Second Tetrarchy</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.70</idno>
+            <idno type="ircyr2012">A12400</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper part of a <objectType>column</objectType> of brown 
+                              <material>limestone</material>
+                              (<dimensions><height>0.49</height> <dim type="diameter">0.41</dim></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the column.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.05-0.06</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><rs type="milestone" key="cyr-apo" n="15">Cyrene to Apollonia to Derna road, Mile XV</rs>.</origPlace>
+                     <origDate notBefore="0305" notAfter="0306" evidence="reign">CE 305-306</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>:
+                              Found near Apollonia  with <ref type="inscription" n="A.69">A.69</ref>, near the modern Christian cemetery, 
+                              one Roman mile from mile-station XIV.</p>
+                              </provenance>
+                              <provenance type="observed">
+                                 <p><placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds, Tupman).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-11" who="GB">Fixed abbreviations and names in text</change>
+         <change when="2011-10-11" who="PaolaPiliego">Entered and tagged text and data</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><graphic url="unidentified_milestones" decls="#photograph"><desc>Face (Reynolds)</desc></graphic>
+      <graphic url="DSC04641" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04642" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned by <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="page">246</citedRange></bibl>; published by
+               <bibl><ptr target="rgg1950"/>, <citedRange>10b</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+                <ab><lb n="1"/><expan><w lemma="dominus"><abbr>D<am>D</am></abbr><ex>ominis</ex></w>
+               <w lemma="noster"><abbr>N<am>N</am></abbr><ex>ostris</ex></w></expan>
+               <lb n="2"/><date><persName type="emperor" key="constantius1"><name type="cognomen" nymRef="Constantius">Cons<supplied reason="lost">ta</supplied>ntio</name></persName>
+               <lb n="3"/><w lemma="et">et</w> <persName type="emperor" key="galerius"><name type="cognomen" nymRef="Maximianus">Max<supplied reason="lost">im</supplied>iano</name> 
+               <lb n="4"/> <w lemma="imperator"><expan><abbr>imp<am>p</am></abbr><ex>eratoribus</ex></expan></w></persName> <w lemma="et"><supplied reason="lost">e</supplied>t</w> <persName type="emperor" key="severus2"><name type="cognomen" nymRef="Severus">Severo</name></persName>
+               <lb n="5"/> <w lemma="et">et</w> <persName type="emperor" key="maximinus"><name type="cognomen" nymRef="Maximinus">Maximino</name>
+               <lb n="6"/><w lemma="nobilis">nobi<supplied reason="lost">l</supplied>issimis</w>
+               <lb n="7"/><name nymRef="Caesar"><supplied reason="lost">Caesaribus</supplied></name></persName></date>
+               <lb n="8"/><gap reason="lost" quantity="1" unit="line"/>                  
+            </ab>
+         </div>
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#jmr" xml:lang="en"><p>For our Lords Constantius and Maximianus, Emperors, and Severus and Maximinus,
+               most noble [Caesars].</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>This is dated under the second tetrarchy, so between May 305, when Diocletian and Maximian retired and the death of Constantius, in July 306.</p><p/>
+         </div>
+      </body>
+   </text>
+</TEI>

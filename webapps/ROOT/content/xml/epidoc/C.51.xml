@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C02300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of ephebic monument to Hermes and
+                    Herakles</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.51</idno>
+            <idno type="ircyr2012">C02300</idno>
+            <idno type="JMR">626 i a</idno>
+            <idno type="Excel">85</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>The greater part of a moulded <material>marble</material>
+                              <objectType>base</objectType>, recomposed from four pieces 
+                               (together, <dimensions><width>0.62</width> <height>0.33</height> 
+                                  <depth precision="low">0.34</depth></dimensions>), with texts on three faces. Front face, 
+                              <ref type="inscription" n="C.51">C.51</ref>, <ref type="inscription" n="C.52">C.52</ref> and <ref type="inscription" n="C.53">C.53</ref>; 
+                              left face, <ref type="inscription" n="C.54">C.54</ref>; 
+                              reverse face, <ref type="inscription" n="C.55">C.55</ref> and <ref type="inscription" n="C.56">C.56</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <rs type="execution" key="scalpro">Inscribed</rs> on  the front face</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height unit="metre">0.03</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin><provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/991">House of Jason Magnus</placeName>, precise findspot unrecorded, apparently to the East;
+                               found before <date type="found">1941</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p> 
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrenaica">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" key="Shahat">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+       <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+           <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2007-11-05" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_626abc_001" decls="#photograph"><desc>Face (Joyce Reynolds I.87.4)</desc></graphic>
+      <graphic url="JMR_626abc_002" decls="#photograph"><desc>Face (Joyce Reynolds I.87.5)</desc></graphic>
+      <graphic url="JMR_626(abc)_001a" decls="#photograph"><desc>Detail</desc></graphic>
+      <graphic url="JMR_626abc_004" decls="#photograph"><desc>Monument (Department of Antiquities)</desc></graphic>
+      <graphic url="JMR_626abc_005" decls="#photograph"><desc>Monument (Department of Antiquities)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div subtype="editions" type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="luni1976"/> p.241 no.<citedRange>9bis</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>32.1607</citedRange></bibl>,
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324552">324552</ref></citedRange></bibl>.
+               </p>
+          
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+             
+            <ab>
+               <lb n="1"/><persName type="attested" key="lgpn:V1-64435"><name nymRef="Ἴστρος">Ἴστρος</name> <persName type="attested" key="lgpn:V1-65582"><name nymRef="Σεραπίων">Σεραπίωνος</name></persName></persName> 
+               <lb n="2"/><persName type="divine" key="hermes"><name nymRef="Ἑρμῆς">Ἑρμαῖ</name></persName> <space quantity="3" unit="character"/> 
+               <persName type="divine" key="herakles"><name nymRef="Ἡρακλῆς">Ἡρακλεῖ</name></persName> <space quantity="3" unit="character"/>
+            </ab>
+         </div>
+         
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p>Istros <supplied reason="subaudible">son</supplied> of Serapion, for Hermes and Herakles</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>This, the original dedication on the stone, indicates an ephebic monument; for Hermes and Herakles as gods
+               of the gymnasium see H. Siska, <title><ref target="https://zenon.dainst.org/Record/000778900">De Mercurio ceterisque deis ad artem gymnicam
+                    pertinentibus</ref></title> (1933) esp. p. 3 f. and 38f.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

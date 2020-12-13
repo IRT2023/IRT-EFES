@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A04600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+             <title>Fragments of <rs type="textType">imperial</rs> <rs type="textType">edict</rs> of Anastasios I</title>
+            
+             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.30</idno>
+            <idno type="ircyr2012">A04600</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+                <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+                <physDesc>
+                    <objectDesc>
+                        <supportDesc>
+                            <support>
+                                <p>10 fragments of at least two   
+                                    <objectType>panel</objectType>s of coarse-grained white <material>marble</material> (average <depth>0.05</depth>). 
+                                    a: <dimensions><width>0.04</width> <height>0.07</height></dimensions>, 
+                                    b: <dimensions><width>0.03</width> <height>0.115</height></dimensions>, 
+                                    c: <dimensions><width>0.07</width> <height>0.08</height></dimensions>, 
+                                    d: <dimensions><width>0.065</width> <height>0.19</height></dimensions>, 
+                                    e (2 joined fragments): <dimensions><width>0.34</width> <height>0.71</height></dimensions>, 
+                                    f: <dimensions><width>0.08</width> <height>0.16</height></dimensions>, 
+                                    g: <dimensions><width>0.075</width> <height>0.14</height></dimensions>, 
+                                    h: <dimensions><width>0.09</width> <height>0.10</height></dimensions>, 
+                                    i: <dimensions><width>0.09</width> <height>0.15</height></dimensions>, 
+                                    
+                                </p>
+                            </support>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout>Carefully <rs type="execution" key="scalpro">inscribed</rs> in columns on at least two separate panels; 
+                                paragraph 9 concludes on a lower edge, and section 10 begins at an upper edge. In contrast to the copies at Ptolemais and Teucheira, 
+                                it appears to have begun each paragraph on a new line, 
+                                the first word of the paragraph being set one or two spaces out from the normal margin.</layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+                        <handNote>Late fifth/early sixth century. <height>0.017-0.02</height>; fragment i has smaller letters, <height>0.01- 0.014</height>. Cursive epsilon and omega, 
+                            lunate sigma; abbreviation marks in the form ς; superscript bars above letters marking abbreviation.</handNote>
+                    </handDesc>
+                </physDesc>
+                <history>
+                    <origin>
+                        <origPlace>Findspot.</origPlace>
+                        <origDate notBefore="0491" notAfter="0518" evidence="reign">CE 491-518</origDate>
+                    </origin>
+                    
+                    
+                    <provenance type="found">
+                        <p>
+                            <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>:
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/918">'Palace of the Dux'</placeName>; the majority found in
+                            <date type="found">1954</date> during Professor Montet's excavation, the remainder in
+                            <date type="found">1961</date>.</p>
+                    </provenance>
+                        <provenance type="observed">
+                           <p>
+                               <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds, Tupman).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-24" who="CB">Metadata tagging</change>
+         <change when="2010-02-13" who="CMR">Title, translation, tags</change>
+         <change when="2009-07-15" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+       
+       <graphic url="JMRNB09_035" decls="#photograph"><desc>Fragments (E.Alföldi-Rosenbaum: Reynolds IX.35)</desc></graphic>
+       <graphic url="DSC04471" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04472" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04473" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04474" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04475" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04476" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+       <graphic url="DSC04477" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+       <!--Dept. B. 653 (incomplete), F. 4767.--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+             <p>Described, <bibl><ptr target="chamoux1955"/>, whence 
+                 <bibl><ptr target="SEG"/> <citedRange>17.815</citedRange></bibl>; 
+                 published</bibl>, <bibl><ptr target="jmr1976"/>, <citedRange>37</citedRange> and plate LXVI, with unpublished observations by Chamoux</bibl>, whence 
+                <bibl><ptr target="SEG"/> <citedRange>27.1139</citedRange></bibl>. 
+                 For the full bibliography of the text, see on <ref type="inscription" n="P.116">P.116</ref>. 
+                 Mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>242</citedRange>, <citedRange>285</citedRange></bibl>.
+            </p>
+         </div>
+         
+          
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+                 <div type="textpart"><ab>
+                        <lb n="1"/><persName type="emperor" key="anastasius"><supplied reason="lost"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖϲαρ</name>
+                            <name nymRef="Φλάβιος"><expan><abbr>Φλ</abbr><ex>άβιοϲ</ex></expan></name> 
+                            <name nymRef="Ἀναστάσιος">Ἀναϲτάϲιοϲ</name> <w lemma="νικητής">νικητὴϲ</w> <w lemma="εὐεβής">Εὐϲεβὴϲ</w> <w lemma="εὐτυχής">Εὐτυχὴϲ</w> </supplied>
+                        <lb n="2"/><supplied reason="lost"><w lemma="τροπαιοῦχος">τροπαιοῦχοϲ</w> 
+                            <w lemma="ἀεισέβαστος">ἀειϲέβαϲτοϲ</w> <name nymRef="Αὔγουστος">Αὔγουϲτοϲ</name></supplied></persName>
+                            <supplied reason="lost"><w lemma="δίδωμι">δέδωκε</w> <w lemma="ὁ">τοὺϲ</w> <w lemma="καινός">καινοὺϲ</w></supplied>
+                        <lb n="3"/><supplied reason="lost"><w lemma="θεῖος">θείουϲ</w> <w lemma="τύπος">τύπουϲ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τοῦ</w> 
+                            <w lemma="περίβλεπτος"><expan><abbr>περιβλ</abbr><ex>έπτου</ex></expan></w>
+                            <w lemma="κόμης"><expan><abbr>κόμιτ</abbr><ex>οϲ</ex></expan></w> 
+                            <w lemma="καί">καὶ</w> <w lemma="δούξ">δουκὸϲ</w> <persName type="attested"><name nymRef="Δανιήλ" key="plre:2-danielus4">Δανιήλ</name></persName></supplied> 
+                        <lb n="4"/><note>1</note> <supplied reason="lost"><w lemma="ὥστε">Ὥϲτε</w> <w lemma="ὁ">τοὺϲ</w> <w lemma="νῦν">νῦν</w> <w lemma="καί">καὶ</w> 
+                            <w lemma="κατά">κατὰ</w> <w lemma="καιρός">καιρὸν</w> <w lemma="δουκικός">δουκικοὺϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τοὺϲ</w> <w lemma="οὗτος">ταύτην</w></supplied>
+                         <lb n="5"/><supplied reason="lost"> <w lemma="πληρόω">πληρώϲανταϲ</w> <w lemma="ἤ">ἢ</w> <w lemma="πληρόω">πληροῦνταϲ</w></supplied> <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear>ὴ</unclear>ν</w>
+                        <supplied reason="lost"><w lemma="στρατία">ϲτρατίαν</w> <w lemma="μήτε">μήτε</w> <w lemma="στρατιωτικός">ϲτρατιωτικὰ</w></supplied>
+                        <lb n="6"/><supplied reason="lost"><w lemma="κομίζω">κομίζεϲθαι</w> <w lemma="σιτηρέσιον">ϲιτηρέϲια</w> <w lemma="μήτε">μήτε</w> <w lemma="εἰς">εἰϲ</w></supplied> 
+                        <w lemma="μάτρικος"><supplied reason="lost">μ</supplied>άτρικ<unclear>α</unclear><supplied reason="lost">ϲ</supplied></w>
+                        <supplied reason="lost"><w lemma="στρατιωτικός">ϲτρατιωτικὰϲ</w> <w lemma="ἀναφέρω">ἀναφέρεϲθαι</w></supplied> 
+                        <lb n="7"/><note>2</note> <supplied reason="lost"><w lemma="ὥστε">Ὥϲτε</w> <w lemma="εἰμί">εἶναι</w> 
+                            <w lemma="ὁ">τοὺϲ</w> <w lemma="δουκικός">δουκικοὺϲ</w> <w lemma="ἀεί">αἰεὶ</w></supplied>
+                        <w lemma="τεσσαράκοντα"><supplied reason="lost">τεϲϲε</supplied><unclear>ρ</unclear>άκοντ<unclear>α</unclear></w> 
+                        <supplied reason="lost"><w lemma="μόνος">μόνουϲ</w> <w lemma="καί">καὶ</w> <w lemma="μόνος">μόναϲ</w> <w lemma="ὁ">τὰϲ</w></supplied> 
+                        <lb n="8"/><supplied reason="lost"><w lemma="τεσσαράκοντα">τεϲϲεράκοντα</w> <w lemma="ἀννώνη">ἀνώναϲ</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τὰ</w></supplied> 
+                       <w lemma="τεσσαράκοντα"><supplied reason="lost">τεϲϲερά</supplied>κοντα</w> 
+                        <supplied reason="lost"><w lemma="κάπιτον">κάπιτα</w> <w lemma="ὁ">τὰ</w></supplied>
+                        <lb n="9"/><supplied reason="lost"><w lemma="ἐκτάσσω">ἐκταττόμενα</w> <w lemma="αὐτός">αὐτοῖϲ</w> <w lemma="παρά">παρὰ</w> <w lemma="ὁ">τῶν</w></supplied> 
+                        <w lemma="ἔνδοξος"><supplied reason="lost">ἐνδοξοτ</supplied>άτω<unclear>ν</unclear></w> <supplied reason="lost"><w lemma="ἔπαρχος">ἐπάρχων</w> <w lemma="ἐν">ἐν</w></supplied> 
+                        <lb n="10"/><supplied reason="lost"><w lemma="ὁ">ταῖϲ</w> <w lemma="κατά">καθ’</w><w lemma="ἔτος">ἔτοϲ</w> <w lemma="δηληγατίων">δηληγατίοϲιν</w></supplied> 
+                        <w lemma="κομίζω"><supplied reason="lost">κομίζεϲ</supplied>θ<unclear>α</unclear><supplied reason="lost">ι</supplied></w>
+                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="μεταξύ">μεταξὺ</w></supplied> 
+                        <lb n="11"/><supplied reason="lost"><w lemma="ἑαυτός">ἑαυτῶν</w> <w lemma="ὡς">ὡϲ</w> <w lemma="ἐάν">ἂν</w> <w lemma="βούλομαι">βούλοιντο</w> 
+                            <w lemma="διανέμω">διανῖμαι</w>, <w lemma="ὀφείλω">ὀφίλονταϲ</w> <w lemma="πᾶς">πάνταϲ</w></supplied> 
+                        <lb n="12"/><supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="προσκαρτερέω">προϲκαρτερεῖν</w> 
+                            <w lemma="ὁ">ταῖϲ</w> <w lemma="δικαστικός">δικαϲτικαῖϲ</w> <w lemma="καί">καὶ</w></supplied> 
+                        <w lemma="δημόσιος"><supplied reason="lost">δημοϲίαι</supplied><unclear>ϲ</unclear></w> 
+                        <lb n="13"/><supplied reason="lost"><w lemma="ὑπηρεσία">ὑπηρεϲίαιϲ</w> <w lemma="καί">καὶ</w> 
+                            <w lemma="τρέφω">τρέφεϲθαι</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶν</w> <w lemma="οἰκεῖος">οἰκίων</w></supplied>
+                        <w lemma="σιτηρέσιον"><expan><abbr><supplied reason="lost">ϲιτ</supplied>ηρ</abbr><ex>εϲίων</ex></expan></w>
+                        <lb n="14"/><supplied reason="lost"><w lemma="οὐδέ">οὐδὲ</w> <w lemma="γάρ">γὰρ</w> <w lemma="ἡγέομαι">ἡγούμεθα</w> 
+                            <w lemma="πλείων">πλιόνων</w> <w lemma="δέω">δεῖϲθαι</w> <w lemma="ὁ">τὸ</w> <w lemma="πρᾶγμα">πρᾶγμα</w></supplied> 
+                        <w lemma="οὗτος"><supplied reason="lost">τ</supplied>ού<lb n="15" break="no"/><supplied reason="lost">των</supplied></w> <supplied reason="lost"><w lemma="παραμένω">παραμενώντων</w>
+                            <w lemma="ὁ">τῇ</w> <w lemma="ἴδιος">ἰδίᾳ</w> <w lemma="στρατία">ϲτρατίᾳ</w> 
+                            <space extent="unknown"/> </supplied> <space extent="unknown"/>
+                        <lb n="16"/><note>3</note> <supplied reason="lost"><w lemma="ὥστε">Ὥϲτε</w> <w lemma="κρατέω">κρατεῖν</w>
+                            <w lemma="ὁ">τὰϲ</w> <w lemma="μάτρικος">μάτρικαϲ</w> <w lemma="ὁ">τὰϲ</w> <w lemma="παρά">παρὰ</w> <persName type="attested" key="plre:2-danielus4"><name nymRef="Δανιήλ">Δανιὴλ</name></persName></supplied> 
+                        <w lemma="ὁ"><supplied reason="lost">το</supplied>ῦ</w> <w lemma="περίβλεπτος"><expan><abbr>πε<unclear>ρ</unclear><supplied reason="lost">ι</supplied>βλ</abbr><ex>έπτου</ex></expan></w>
+                        <lb n="17"/> <supplied reason="lost"><w lemma="κόμης">κόμιτοϲ</w> <w lemma="καί">καὶ</w> <w lemma="δούξ">δουκὸϲ</w> <w lemma="συντάσσω">ϲυνταγείϲαϲ</w> <space extent="unknown"/> </supplied> <space extent="unknown"/>
+                        <lb n="18"/><note>4</note> <supplied reason="lost"><w lemma="ὥστε">Ὥϲτε</w> <w lemma="μή">μὴ</w> <w lemma="ἔξεστι">ἐξεῖναι</w> <w lemma="ὁ">τῷ</w>
+                             <w lemma="κατά">κατὰ</w> <w lemma="καιρός">καιρὸν</w> <w lemma="δούξ">δουκὶ</w> <w lemma="κομίζω">κομίζεϲθαί</w> <w lemma="τις">τι</w></supplied>
+                        <w lemma="παρά"><unclear>π</unclear>αρὰ</w> <w lemma="ὁ"><unclear>τ</unclear><supplied reason="lost">ῶν</supplied></w>
+                        <lb n="19"/><supplied reason="lost"><w lemma="στρατιώτης">ϲτρατιωτῶν</w> <w lemma="ὑπέρ">ὑπὲρ</w> <w lemma="ὁ">τῆϲ</w>
+                            <w lemma="καλέω">καλουμένηϲ</w> <w lemma="μέν">μὲν</w> <w lemma="εὐμενεία">εὐμενίαϲ</w></supplied>,
+                        <w lemma="εἰμί"><supplied reason="lost">οὔϲ</supplied>ηϲ</w> <supplied reason="lost"><w lemma="δέ">δὲ</w> <w lemma="ἐκ">ἐξ</w></supplied> 
+                        <lb n="20"/><supplied reason="lost"><w lemma="ἔθος">ἔθουϲ</w> <w lemma="οὐ">οὐκ</w> <w lemma="ἀγαθός">ἀγαθοῦ</w> <w lemma="κακός">κακῆϲ</w></supplied> 
+                        <w lemma="συνηθεία"><supplied reason="lost">ϲυν</supplied><unclear>η</unclear><supplied reason="lost">θίαϲ</supplied></w> 
+                        <supplied reason="lost"><space extent="unknown"/> </supplied> <space quantity="1" unit="character"/>
+                        <supplied reason="lost"> <space extent="unknown"/> </supplied> 
+                        <lb n="21"/> <note>5</note> <supplied reason="lost"><w lemma="ὥστε">Ὥϲτε</w> <w lemma="μή">μὴ</w> <w lemma="ἔξεστι">ἐξεῖναι</w>
+                            <w lemma="ὁ">τοῖϲ</w> <w lemma="νῦν">νῦν</w> <w lemma="ἤ">ἢ</w> <w lemma="κατά">κατὰ</w></supplied>
+                        <w lemma="καιρός"><supplied reason="lost">κ</supplied><unclear>α</unclear>ιρὸν</w> 
+                        <supplied reason="lost"><w lemma="νουμεράριος">νουμεραρίοιϲ</w> <w lemma="ἤ">ἢ</w></supplied> 
+                        <lb n="22"/><supplied reason="lost"><w lemma="πριμισκρίνιος">πριμιϲκρινίοιϲ</w> <w lemma="κομίζω">κομίζεϲθαί</w> <w lemma="τις">τι</w></supplied>
+                        <w lemma="παρά"><supplied reason="lost">π</supplied>αρὰ</w> <w lemma="ὁ">τῶ<unclear>ν</unclear></w> 
+                        <supplied reason="lost"><w lemma="στρατιώτης">ϲτρατιωτῶν</w></supplied> 
+                        <lb n="23"/><supplied reason="lost"><w lemma="ὁ">τῶν</w> <w lemma="πέντε">πέντε</w> <w lemma="ἀριθμός">ἀριθμῶν</w> <w lemma="λόγος">λόγῳ</w></supplied>
+                        <w lemma="χαρτατικός"><supplied reason="lost">χαρτ</supplied><unclear>α</unclear>τικῶ<unclear>ν</unclear></w> 
+                        <supplied reason="lost"> <space extent="unknown"/> </supplied> 
+                        <lb n="24"/><note>6</note> <supplied reason="lost"><w lemma="ὥστε">Ὥϲτε</w> <w lemma="ὁ">τὴν</w> <w lemma="δωδέκατος">δωδεκάτην</w> <w lemma="μοῖρα">μοῖραν</w> 
+                            <w lemma="μή">μὴ</w> <w lemma="ἐκ">ἐκ</w></supplied> <w lemma="ὁ"><unclear>τ</unclear>ῶν</w> <w lemma="πρότερος">πρ<supplied reason="lost">οτέρων</supplied></w> 
+                        <w lemma="δίδωμι"><supplied reason="lost">διδο</supplied><lb n="25" break="no"/><supplied reason="lost">μένων</supplied></w> <supplied reason="lost"><w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τοῦ</w>
+                            <w lemma="δημόσιος">δημοϲίου</w> <w lemma="πᾶς">πᾶϲαν</w></supplied> <w lemma="παρακατέχω"><supplied reason="lost">παρα</supplied>κατέ<supplied reason="lost">χεϲθαι</supplied></w> <supplied reason="lost"><w lemma="ἀλλά">ἀλλὰ</w></supplied>
+                        <lb n="26"/><supplied reason="lost"><w lemma="αὐτός">αὐτῶν</w> <w lemma="ὁ">τῶν</w> <w lemma="κατά">κατὰ</w>
+                            <w lemma="μέρος">μέροϲ</w> <w lemma="δίδωμι">διδομένων</w> <w lemma="ὁ">τὴν</w> <w lemma="μέν">μὲν</w> <w lemma="δωδέκατος">δωδεκάτην</w></supplied>
+                        <lb n="27"/><supplied reason="lost"><w lemma="κατά">κατὰ</w> <w lemma="ἀναλογία">ἀναλογίαν</w> <w lemma="ἔχω">ἔχειν</w> 
+                            <w lemma="ἕκαστος">ἕκαϲτον</w> <w lemma="ὁ">τῶν</w> <w lemma="πρόσωπον">προϲώπων</w> <w lemma="ὅς">οἷϲ</w> <w lemma="ὁ">ἡ</w></supplied>
+                        <lb n="28"/> <w lemma="τοιοῦτος"><supplied reason="lost">τοιαύτη</supplied></w> 
+                        <w lemma="ἀφωρίζω"><supplied reason="lost">ἀφώριϲτα</supplied><unclear>ι</unclear></w>
+                       <w lemma="παραμυθία">π<unclear>α</unclear><supplied reason="lost">ραμυθία</supplied></w> <supplied reason="lost"><w lemma="ὁ">τὰ</w> 
+                           <w lemma="δέ">δὲ</w> <w lemma="λοιπός">λοιπὰ</w> <w lemma="μέρος">μέρη</w> <w lemma="ὁ">τοὺϲ</w></supplied> 
+                        <w lemma="γενναῖος"><supplied reason="lost">γενναιο</supplied><lb n="29" break="no"/><supplied reason="lost">τάτουϲ</supplied></w> <w lemma="κομίζω"><supplied reason="lost">κομίζεϲθ</supplied>αι</w>
+                        <w lemma="στρατιώτης">ϲ<supplied reason="lost">τρατιώταϲ</supplied></w> 
+                        <supplied reason="lost"><w lemma="ὁμοίως">ὁμοίωϲ</w> <w lemma="ἕκαστος">ἑκάϲτουϲ</w></supplied>
+                        <lb n="30"/><supplied reason="lost"><w lemma="οὗτος">τούτων</w> <w lemma="κατά">κατὰ</w></supplied> <w lemma="ἀναλογία"><supplied reason="lost">ἀναλ</supplied>ογί<unclear>α</unclear><supplied reason="lost">ν</supplied></w> 
+                        <supplied reason="lost"><w lemma="ὁ">τῶν</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τοῦ</w> <w lemma="δημόσιος">δημοϲίου</w> <w lemma="δίδωμι">δοθέντων</w></supplied>
+                        <lb n="31"/><w lemma="καί"><supplied reason="lost">καὶ</supplied></w> <w lemma="κομίζω"><supplied reason="lost">κομιζομέν</supplied><unclear>ο</unclear>υ<supplied reason="omitted">ϲ</supplied></w> <w lemma="καί">κα<unclear>ὶ</unclear></w> <supplied reason="lost"><w lemma="μή">μὴ</w> 
+                                <w lemma="ὁ">τοὺϲ</w> <w lemma="μέν">μὲν</w></supplied> <w lemma="ἀποπληρόω"><supplied reason="lost">ἀποπλ</supplied>ηρο<unclear>ῦ</unclear><lb n="32" break="no"/><supplied reason="lost">ϲθαι</supplied></w> 
+                        <supplied reason="lost"><w lemma="ὁ">τὴν</w> <w lemma="αὐτός">αὐτῶν</w></supplied> 
+                        <w lemma="παραμυθία"><supplied reason="lost">παρα</supplied><unclear>μ</unclear>υθ<unclear>ί</unclear>αν</w>,
+                        <supplied reason="lost"><w lemma="ὁ">τοὺϲ</w> <w lemma="δέ">δὲ</w></supplied>
+                        <w lemma="στρατιώτης"><supplied reason="lost">ϲτρατιώτ</supplied>αϲ</w> <space quantity="1" unit="character"/>
+                        <lb n="33"/><supplied reason="lost"><w lemma="χρεωτιζω">χρεωϲτῖϲθαι</w> <space extent="unknown"/> 
+                        </supplied> <space extent="unknown"/>
+                        <supplied reason="lost"> <space extent="unknown"/></supplied> <space extent="unknown"/>
+                        <lb n="34"/><note>7</note> <w lemma="ὥστε"><supplied reason="lost">Ὥ</supplied>ϲ<supplied reason="lost">τε</supplied></w>
+                        <supplied reason="lost"><w lemma="ἴνσπεκτος">ἰνϲπέκτου</w></supplied>
+                        <w lemma="γίγνομαι"><supplied reason="lost">γε</supplied><unclear>ν</unclear>ομένου</w>
+                        <supplied reason="lost"><w lemma="μή">μὴ</w></supplied>
+                        <w lemma="καταζητίζω"><supplied reason="lost">καταζητῖ</supplied>ϲθαι</w> 
+                        <lb n="35"/><w lemma="ὡς">ὡ<unclear>ϲ</unclear></w> <w lemma="ἀσθενής"><unclear>ἀ</unclear><supplied reason="lost">ϲθενεῖϲ</supplied></w> 
+                        <w lemma="ὁ"><supplied reason="lost">τ</supplied>οὺϲ</w>
+                        <w lemma="πρῶτος">πρώτο<supplied reason="lost">υϲ</supplied></w> <supplied reason="lost"><w lemma="ἕκαστος">ἑκάϲτου</w></supplied>
+                        <w lemma="ἀριθμός"><supplied reason="lost">ἀρι</supplied>θμοῦ</w>
+                        <lb n="36"/><w lemma="καί">καὶ</w> <w lemma="κάστρον"><unclear>κά</unclear><supplied reason="lost">ϲτρου</supplied></w> <w lemma="οὗτος"><supplied reason="lost">τουτέϲ</supplied>τι<supplied reason="lost">ν</supplied></w> 
+                        <w lemma="εἰ"><supplied reason="lost">ε</supplied>ἰ</w> <w lemma="μέν">μὲ<supplied reason="lost">ν</supplied></w> 
+                        <supplied reason="lost"><w lemma="ἕκατον">ἕκατον</w>
+                            <w lemma="εἰμί">εἶεν</w></supplied> <w lemma="ἀνήρ"><expan><abbr><supplied reason="lost">ἄν</supplied>δρ</abbr><ex>εϲ</ex></expan></w> <!-- check -->
+                        <lb n="37"/><w lemma="ὁ">τοὺϲ</w> <w lemma="πρῶτος">π<supplied reason="lost">ρώτουϲ</supplied></w>
+                        <w lemma="πέντε"><supplied reason="lost">πέν</supplied><unclear>τ</unclear>ε</w> 
+                        <w lemma="εἰ">εἰ</w> <w lemma="δέ">δὲ</w> <w lemma="καί">κα<supplied reason="lost">ὶ</supplied></w> 
+                        <supplied reason="lost"><w lemma="διακόσιοι">διακόϲιοι</w> <w lemma="ὁ">τοὺϲ</w></supplied>
+                       <w lemma="πρῶτος"><supplied reason="lost">πρώτουϲ</supplied></w> 
+                        <lb n="38"/><w lemma="δέκα">δέκα</w> <w lemma="ὁ">τὴ<unclear>ν</unclear></w> <supplied reason="lost"><w lemma="δέ">δὲ</w></supplied> 
+                        <w lemma="αὐτός"><supplied reason="lost">αὐτ</supplied><unclear>ὴ</unclear>ν</w> 
+                        <w lemma="ἀναλογία">ἀνα<unclear>λ</unclear><supplied reason="lost">ογίαν</supplied></w> 
+                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ὁ">τοῖϲ</w></supplied> 
+                        <lb n="39"/> <w lemma="πλείων">πλίωϲιν</w>  <note>sic</note> <w lemma="καί">κ<unclear>α</unclear><supplied reason="lost">ὶ</supplied></w> <supplied reason="lost"><w lemma="ἐπί">ἐπὶ</w></supplied>
+                        <w lemma="ὁ"><supplied reason="lost">τοῖ</supplied>ϲ</w> <w lemma="ἐλάσσων">ἐλάτ<supplied reason="lost">τοϲιν</supplied></w> 
+                        <w lemma="ἀνήρ"><supplied reason="lost">ἀνδράϲιν</supplied></w>
+                        <lb n="40"/> <w lemma="φυλάσσω">φυλάττεϲθα<supplied reason="lost">ι</supplied></w> 
+                        <supplied reason="lost"> <space extent="unknown"/></supplied> 
+                        <lb n="41"/><note>8</note> <w lemma="ὥστε">Ὥϲτε</w> <w lemma="ἐκ">ἐκ</w> <w lemma="πᾶς">πάντων</w>
+                        <w lemma="ὁ"><unclear>τ</unclear><supplied reason="lost">ῶν</supplied></w> <w lemma="ἀριθμός">ἀριθμῶν</w> 
+                        <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="οὐ">οὐκ</w> <w lemma="ἀπό">ἀφ’</w><w lemma="ἕκαστος">ἑκάϲτου</w></supplied> 
+                        <lb n="42"/><w lemma="οὗτος">τούτων</w> <w lemma="ἀποκληρόω">ἀποκεκλ<unclear>η</unclear>ρῶϲθαι</w> <w lemma="ὁ">τ<supplied reason="lost">ῷ</supplied></w> 
+                        <w lemma="περίβλεπτος"><supplied reason="lost"><expan><abbr>περιβλ</abbr><ex>έπτῳ</ex></expan></supplied></w> 
+                        <w lemma="δούξ"><supplied reason="lost">δουκὶ</supplied></w>
+                        <lb n="43"/> <w lemma="ἤτοι">ἤτοι</w> <w lemma="ὁ">τοῖϲ</w> <w lemma="περί">περὶ</w> <w lemma="ὁ">τῶν</w> <w lemma="τοιοῦτος"><unclear>τ</unclear>οιούτω<supplied reason="lost">ν</supplied></w>
+                        <w lemma="ἀποστέλλω"><supplied reason="lost">ἀποϲτέλλειν</supplied></w> 
+                        <lb n="44"/> <w lemma="αὐτός">αὐτοὺϲ</w> <w lemma="ὀφείλω">ὀφίλουϲιν</w> <w lemma="εἰς"><supplied reason="lost">εἰ</supplied>ϲ</w>
+                        <w lemma="γράμμα"><unclear>γραμ</unclear><supplied reason="lost">μάτων</supplied></w> 
+                        <w lemma="ἐπικομιδήν"><supplied reason="lost">ἐπικο</supplied><lb n="45" break="no"/><unclear>μ</unclear>ιδὴν</w> <w lemma="καί">καὶ</w> <w lemma="ἄλλος">ἄλλαϲ</w> 
+                        <w lemma="ἀπόκρισις">ἀ<unclear>π</unclear>οκρ<supplied reason="lost">ίϲειϲ</supplied></w>
+                        <supplied reason="lost"><w lemma="στρατιώτης">ϲτρατιώταϲ</w></supplied> <w lemma="δεκαπέντε"><supplied reason="lost">δε</supplied><lb n="46" break="no"/><unclear>κ</unclear>απέντε</w>, <w lemma="ὁστιάριος">ὁϲτιαρίο<unclear>υ</unclear>ϲ</w> <w lemma="πέντε">πέ<unclear>ν</unclear><supplied reason="lost">τε</supplied></w> 
+                        <supplied reason="lost"><w lemma="καί">καὶ</w> 
+                            <w lemma="εἰς">εἰϲ</w></supplied> <w lemma="παραφυλακή"><supplied reason="lost">παραφυλα</supplied><lb n="47" break="no"/><unclear>κ</unclear>ὴν</w> <w lemma="ὁ">τοῦ</w> <w lemma="δημόσιος">δημοϲίου</w> 
+                       <w lemma="δεσμωτήριον">δεϲμωτηρ<supplied reason="lost">ίου</supplied></w> 
+                        <w lemma="στρατιώτης"><unclear>ϲτρατι</unclear><supplied reason="lost">ώταϲ</supplied></w> 
+                        <supplied reason="lost"><w lemma="ἕπτα">ἕπτα</w></supplied>
+                        <lb n="48"/> <w lemma="παρέχω"><supplied reason="lost">π</supplied>αρέχεϲθαι</w> <w lemma="δέ">δὲ</w> <w lemma="οὗτος">τούτουϲ</w> 
+                        <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τῶ<supplied reason="lost">ν</supplied></w>
+                        <w lemma="λόγος"><supplied reason="lost">λ</supplied>όγῳ</w> <w lemma="ὑπηρεσία">ὑπη<supplied reason="lost">ρεϲίαϲ</supplied></w>
+                        <w lemma="ἐν"><supplied reason="lost">ἐν</supplied></w> <w lemma="ἕκαστος"><supplied reason="lost">ἑ</supplied><lb n="49" break="no"/><supplied reason="lost">κ</supplied>άϲτῳ</w> <w lemma="ἀριθμός">ἀριθμῷ</w> <w lemma="ἐάω">ἐαθέντων</w>
+                        <w lemma="καί">κ<unclear>α</unclear><supplied reason="lost">ὶ</supplied></w>
+                        <w lemma="οὐ"><supplied reason="lost">ο</supplied>ὐκ</w> <w lemma="ἀναγκαῖος">ἀνα<supplied reason="lost">γκαίων</supplied></w> 
+                        <supplied reason="lost"><w lemma="ἐν">ἐν</w></supplied> <w lemma="καιρός"><supplied reason="lost">και</supplied><lb n="50" break="no"/><supplied reason="lost">ρ</supplied>ῷ</w> <w lemma="πόλεμος">πολέμου</w>
+                        <w lemma="καθίστημι">καθεϲτώ<supplied reason="lost">των</supplied></w>
+                        <supplied reason="lost"><w lemma="ἐκ">ἐκ</w></supplied> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῆϲ</w> 
+                        <w lemma="σχολή">ϲχο<unclear>λ</unclear><supplied reason="lost">ῆϲ</supplied></w> 
+                       <w lemma="δηλονότι"><supplied reason="lost">δηλον</supplied><lb n="51" break="no"/><supplied reason="lost">ότι</supplied></w> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶν</w> 
+                        <w lemma="κιρκίτωρ">κιρκιτόρων</w> <w lemma="καί">καὶ</w> <w lemma="ὁ"><unclear>τ</unclear><supplied reason="lost">ῶν</supplied></w>
+                        <supplied reason="lost"><w lemma="μετά">μετ’</w> </supplied> <w lemma="αὐτός">αὐτο<supplied reason="lost">ὺϲ</supplied></w> <supplied reason="lost"><w lemma="στρατιώτης">ϲτρατιωτῶν</w></supplied>
+                        <lb n="52"/><supplied reason="lost"><w lemma="ὁ">τοὺϲ</w> <w lemma="δέ">δὲ</w></supplied> <w lemma="λοιπός">λοιποὺϲ</w>
+                        <w lemma="πᾶς">πάνταϲ</w> <w lemma="προσκαρτερέω"><unclear>π</unclear><supplied reason="lost">ροϲκαρτερεῖν</supplied></w> <supplied reason="lost"><w lemma="ὁ">τοῖϲ</w> <w lemma="φόσσατον">φοϲϲάτοιϲ</w></supplied>
+                        <lb n="53"/><note>9</note> <supplied reason="lost"><w lemma="ὥστε">Ὥϲτε</w> <w lemma="ὁ">τὸν</w></supplied> <w lemma="ἐπίκειμαι">ἐπικείμενον</w> <w lemma="εἰ">εἴ</w> <w lemma="τις">τιϲ</w> 
+                        <w lemma="αἰτιάομαι"><unclear>α</unclear><supplied reason="lost">ἰτιαθείη</supplied></w>
+                        <supplied reason="lost"><w lemma="παρά">παρ’</w><w lemma="αὐτός">αὐτῷ</w> <w lemma="μέχρι">μέχρι</w></supplied> 
+                        <w lemma="νόμισμα"><supplied reason="lost">νο</supplied><lb n="54" break="no"/><supplied reason="lost">μιϲμάτων</supplied></w> <w lemma="ἑκατόν">ἑκατὼν</w>     <note>sic</note>
+                        <w lemma="λαμβάνω">λαμ<unclear>β</unclear><supplied reason="lost">άνειν</supplied></w>
+                        <supplied reason="lost"><w lemma="ἥμισυς">ἥμιϲυ</w> <w lemma="νόμισμα">νομίϲματοϲ</w> <w lemma="καί">καὶ</w></supplied> 
+                        <lb n="55"/><supplied reason="lost"><w lemma="αὐτός">αὐτοῦ</w></supplied> <w lemma="ἐξετάζω"><supplied reason="lost">ἐξετ</supplied><unclear>ά</unclear>ζειν</w> 
+                        <w lemma="ὁ">τὴν</w> <w lemma="ὑπόθεσις">ὑ<supplied reason="lost">πόθεϲιν</supplied></w> <supplied reason="lost"><w lemma="εἰ">εἰ</w> 
+                            <w lemma="δέ">δὲ</w> <w lemma="μή">μὴ</w> <w lemma="παράγω">παραχθείη</w></supplied> 
+                        <lb n="56"/><supplied reason="lost"><w lemma="ὁ">ἡ</w> <w lemma="ὑπόθεσις">ὑπόθεϲιϲ</w></supplied> 
+                        <w lemma="ἀζήμιος"><supplied reason="lost">ἀζ</supplied>ήμιον</w> 
+                        <w lemma="ὁ">τὸ<supplied reason="lost">ν</supplied></w> <supplied reason="lost"><w lemma="αἰτιάομαι">αἰτιαθέντα</w></supplied> 
+                        <w lemma="φυλάσσω"><supplied reason="lost">φυλάττεϲ</supplied><lb n="57" break="no"/><supplied reason="lost">θαι</supplied></w> 
+                        <supplied reason="lost"> <space extent="unknown"/> </supplied> <space extent="unknown"/>
+                        <supplied reason="lost"> <space extent="unknown"/></supplied>
+                        <lb n="58"/><note>10</note> <supplied reason="lost"><w lemma="ὥστε">Ὥϲτε</w> <w lemma="ὁ">τοὺϲ</w> <w lemma="ἐν">ἐν</w> <w lemma="κάστρον">κάϲτροιϲ</w></supplied>
+                        <w lemma="ἰδιώτης"><supplied reason="lost">ἰδι</supplied>ώταϲ</w> <w lemma="δίδωμι">διδ<supplied reason="lost">όναι</supplied></w> <supplied reason="lost"><w lemma="πρότερος">προτέρουϲ</w> <w lemma="ὁ">τὰ</w></supplied>
+                        <lb n="59"/><supplied reason="lost"><w lemma="μιτάτον">μητάτα</w> <w lemma="δίχα">δίχα</w> <w lemma="διατροφή">διατροφῆϲ</w></supplied>
+                        <w lemma="ἕκαστος">ἕκαϲτον</w> <supplied reason="lost"><w lemma="πρός">πρὸϲ</w> 
+                            <w lemma="ὁ">τὴν</w> <w lemma="ὁ">τῶν</w> <w lemma="οἴκημα">οἰκημάτων</w></supplied>
+                        <lb n="60"/><supplied reason="lost"><w lemma="ὅς">ὧν</w> <w lemma="κτάομαι">κέκτηται</w> <w lemma="δύναμις">δύναμιν</w> <w lemma="εἰ">εἰ</w></supplied>
+                        <w lemma="δέ"><unclear>δ</unclear>ὲ</w> <w lemma="μή">μὴ</w> <w lemma="ἐξαρκέω">ἐξα<supplied reason="lost">ρκεῖ</supplied></w> <supplied reason="lost"><w lemma="ὁ">τὰ</w> <w lemma="ἐκεῖνος">ἐκείνων</w></supplied> 
+                        <w lemma="οἴκημα"><supplied reason="lost">οἰκή</supplied><lb n="61" break="no"/><supplied reason="lost">ματα</supplied></w> <supplied reason="lost"><w lemma="καί">καὶ</w> <w lemma="αὐτός">αὐτοὺϲ</w> 
+                        <w lemma="ὁ">τοὺϲ</w></supplied> <w lemma="στρατιώτης"><supplied reason="lost">ϲτρ</supplied>ατιώτα<supplied reason="lost">ϲ</supplied></w>
+                        <supplied reason="lost"><w lemma="ἐπί">ἐφ’</w><w lemma="ὕστερον">ὕϲτερον</w></supplied>
+                        <supplied reason="lost" cert="low"><w lemma="εἰς">εἰϲ</w> <w lemma="ὁ">τὰ</w></supplied>
+                        <lb n="62"/><supplied reason="lost"><w lemma="ἴδιος">ἴδια</w> <w lemma="κομίζω">κομίζειν</w> <w lemma="κάστρον">κάϲτρα</w></supplied> <w lemma="ὡς">ὡϲ</w> 
+                        <w lemma="παρέχω">παρ<supplied reason="lost">έχειν</supplied></w>
+                        <supplied reason="lost"><w lemma="μιτάτον">μητάτα</w> <w lemma="καί">καὶ</w></supplied> 
+                        <lb n="63"/><supplied reason="lost"><w lemma="μή">μὴ</w> <w lemma="ἐνυβρίζω">ἐνυβριϲαμένουϲ</w></supplied> 
+                        <w lemma="ὁ">τοὺϲ</w> <w lemma="ἰδιώτης">ἰ<unclear>δ</unclear><supplied reason="lost">ιώταϲ</supplied></w> 
+                        <w lemma="πρόφασις"><supplied reason="lost">προφάϲει</supplied></w>
+                        <w lemma="μιτάτον"><supplied reason="lost">μη</supplied><lb n="64" break="no"/><supplied reason="lost">τάτων</supplied></w> <gap reason="lost" quantity="12" unit="character" precision="low"/><orig>οτη<unclear>π</unclear></orig>
+                        <gap reason="lost" quantity="2" unit="character" precision="low"/> <supplied reason="lost"><orig><unclear>τ</unclear>ο<unclear>ν</unclear></orig> <w lemma="δίχα">δίχα</w> <w lemma="ὁ">τῶν</w> 
+                            <w lemma="ἑαυτός">αὑτῷ</w></supplied> <w lemma="διαφέρω"><supplied reason="lost">δια</supplied><lb n="65" break="no"/><supplied reason="lost">φερόντων</supplied></w> <supplied reason="lost"><w lemma="οἴκημα">οἰκημάτων</w></supplied>
+                        <supplied reason="lost"> <space extent="unknown" unit="character"/> </supplied>
+                        
+                    </ab>
+                 </div><div subtype="fragment" n="Unlocated" type="textpart"><ab>    
+                            <lb n="1"/><orig>α<unclear>ϲ</unclear></orig> 
+                            <lb n="2"/><orig><unclear>ο</unclear>υκα<unclear>ι</unclear></orig> 
+                            <lb n="3"/><orig><gap reason="illegible" quantity="1" unit="character"/>οϲ-κα</orig> 
+                            <lb n="4"/><orig>ανο</orig> 
+                            <lb n="5"/><orig>τ</orig>
+             </ab>
+</div>
+</div>
+
+         <div type="apparatus">
+            <head>Apparatus</head>
+             <listApp><app loc="1-65"><note>The fragments have been supplemented from the full text found at Ptolemais, <ref type="inscription" n="P.116">P.116</ref>, lines 1-46. 
+                 The following are points at which the wording given here differs from that text.</note></app>
+                 <app loc="35">
+                  <note>Ptolemais: ὠϲ ἀσθενεῖς ἠ ἀχρείους, but there is insufficient room for this at Apollonia.</note>
+               </app>
+                <app loc="37">
+                    <note>Ptolemais: εἰ δὲ διακόσιοι.</note>
+               </app>
+                 <app loc="45-46"><note>Ptolemais: δέκα καὶ πέντε Oliverio.</note>
+               </app>
+                <app loc="53">
+                    <note>Ptolemais: ἐπικίμενόν τις.</note>
+               </app>
+                <!-- <app loc="55-56"><note>πα<unclear>ραυτ</unclear>[ὰ τὴ]<unclear>ν</unclear> ὑπό[θεϲιν] εἰϲά[γ]ιν κα[ὶ] τόν, Oliverio, reading the text from Ptolemais.</note>
+               <note>παραυτ[α][ . . . ]ειϲ ἀζη<unclear>μ</unclear> [ . . . ]τον, Chamoux</note>
+               <note>but the stone has suffered modern damage so that Pacho's drawing of 1825 is relevant and gives ΠΑΡΑΥΟΕΙΗ-Ο ΣΙΣΑ-ΗΤΟΙ
+                  </note>
+               </app> -->
+                <app loc="58">
+                     <note>Ptolemais: [ἐν] το[ῖς] κάϲτροις, 
+                         but there is hardly room for τοῖς at Apollonia</note>
+               </app>
+                <app loc="60">
+                    <note>Ptolemais: εἰ δὲ μὴ ἀρκ]οῦσι (Oliverio), [εἰ] δὲ  μὴ ἐξα]ρκοῖ (Chamoux)</note>
+               </app>
+                 <app loc="62"><note>Ptolemais: ἰδία κομίζ[ει]ν κάστρα leaf.</note>
+               </app>
+               <!--  <app loc="64-5">
+                    <rdg resp="#SEG IX">[ἕκαϲ]<unclear>τ</unclear>ο<unclear>ν</unclear> 
+                        δί<unclear>χ</unclear>α <unclear>τ</unclear>ῶν αὑτῷ διαφ[[φ]]ερόντων κτλ.</rdg> <note>Oliverio, reading the text from Ptolemais.</note>
+               </app> -->
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+             <div type="translation" resp="#edd" xml:lang="en">
+                 <p><note>Translation to follow</note></p>
+             </div>
+         </div>
+         
+          
+          <div type="commentary">
+            <head>Commentary</head>
+             <p>Fragments from a copy of the decree of Anastasius, 
+                 <foreign xml:lang="la">de rebus Libyae Pentapolis denuo constituendis</foreign>: for another fragmentary copy at Teucheira, 
+                 see <ref type="inscription" n="T.219">T.219</ref>, and, for the fullest text, at Ptolemais, <ref type="inscription" n="P.116">P.116</ref>. 
+                 A full edition with translation and commentary is under preparation by Denis Feissel; we are most grateful to him for access to his preliminary account.</p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

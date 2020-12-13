@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C08200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of a statue of Aphrodite by nomophylakes</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.97</idno>
+            <idno type="ircyr2012">C08200</idno>
+            <idno type="JMR">664</idno>
+            <idno type="Excel">107</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragment of a <material>marble</material> <objectType>panel</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Augustan - first century CE</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="-0027" notAfter="0099" precision="low" evidence="lettering">Augustan, or first 
+                         century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              in the Hall of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1006">Nomophylakeion</placeName>: 
+                              first recorded in <date type="found">1919</date>. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2013-10-10" who="TW">Edited pic code</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-14" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-07-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_664front" decls="#photograph"><desc>From left: <ref type="inscription" n="C.132">C.132</ref>, <ref type="inscription" n="C.97">C.97</ref>
+         and <ref target="https://igcyr.unibo.it/igcyr012700">IGCyr 12700</ref>; below, <ref type="inscription" n="C.134">C.134</ref>,fragment b. (Department of Antiquities, F31-378)</desc></graphic>
+      <graphic url="Photos_0007_6" decls="#photograph"><desc>Face (Department of Antiquities, F31-378)</desc></graphic>
+      <graphic url="JMR_664b" decls="#photograph"><desc>Face</desc></graphic>
+      <!--Dept. F 378.-->
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p>
+               <bibl><ptr target="ghislanzoni1925"/>, <citedRange>422</citedRange> and fig 10</bibl>;
+               <bibl><ptr target="SEG"/> <citedRange>9.134</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323987">323987</ref></citedRange></bibl>.
+               See also <bibl><ptr target="vitali1932"/>, <citedRange>11</citedRange></bibl>;
+               <bibl><ptr target="robertBE"/>, <citedRange>1959.325</citedRange></bibl>.</p>
+         </div>
+         
+         
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-63584"><name nymRef="Διονύσιος"><supplied reason="lost">Δι</supplied><unclear>ο</unclear>νυσίω</name></persName>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ος</seg></name> <persName type="attested" key="lgpn:V1-65686"><name nymRef="Σώπατρος">Σωπάτρ<unclear>ω</unclear></name></persName></persName>
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-64297"><name nymRef="Ἰάσων"><supplied reason="lost">Ἰά</supplied>σων</name> <persName type="attested" key="lgpn:V1-64848"><name nymRef="Λυσανίας">Λυσανί<supplied reason="lost">α</supplied></name></persName></persName> 
+                    <lb n="4"/><persName type="attested" key="lgpn:V1-63554"><name nymRef="Δημήτρις"><unclear>Δ</unclear>ημῆτρις</name> <persName type="attested" key="lgpn:V1-64629"><name nymRef="Κλέαρχος">Κλεάρχ<supplied reason="lost">ω</supplied></name></persName></persName>
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-64721"><name nymRef="Κράτης"><unclear>Κ</unclear>ράτης</name> <persName type="attested" key="lgpn:V1-65774"><name nymRef="Τελεσίας">Τελεσ<unclear>ί</unclear><supplied reason="lost">α</supplied></name></persName></persName>
+                    <lb n="6"/> <w lemma="ὁ">τὰν</w> <persName type="divine" key="aphrodite"><name nymRef="Ἀφροδείτη">Ἀφροδ<unclear>ε</unclear><supplied reason="lost">ίταν</supplied></name></persName>
+                    <lb n="7"/><space quantity="2" unit="character"/><w lemma="ἀνατίθημι">ἀνέθηκ<supplied reason="lost">αν</supplied></w>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <listApp><app loc="1"><rdg resp="#ghislanzoni1925">[--Διο]νυσί[ω</rdg></app>
+               <app loc="2"><rdg resp="#ghislanzoni1925"> Σωπάτρ[ω</rdg></app>
+               <app loc="2"><rdg resp="#seg"> . . .]έων</rdg></app>
+               <app loc="4"><rdg resp="#ghislanzoni1925">Δ]ημήτρις</rdg></app>
+               <app loc="5"><rdg resp="#ghislanzoni1925">Κ]ράτης Τελέσ[τα] </rdg></app>
+               <app loc="6"><rdg resp="#ghislanzoni1925">Ἀφροδ[είταν</rdg></app></listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p><gap reason="lost" extent="unknown" unit="line"/> <supplied reason="subaudible">son</supplied> of Dionysios, <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="subaudible">son</supplied> of Sopatros, Jason <supplied reason="subaudible">son</supplied> of Lysanias, Demetris <supplied reason="subaudible">son</supplied> of Klearchos,
+            Krates <supplied reason="subaudible">son</supplied> of Telesias, set up the <supplied reason="subaudible">image of</supplied> Aphrodite.</p></div>
+            <div type="translation" source="#vitali1932" xml:lang="it"><p>I nomofylaci... di Dionysio,... di Sopatro lason di Lysania. Demetris di Clearcho, Crates di Telesta, posero una statua di Afrodite</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>One of a series of lists recording nomophylakes: <ref type="inscription" n="C.93">C.93</ref>, <ref type="inscription" n="C.94">C.94</ref>, <ref type="inscription" n="C.96">C.96</ref>, <ref type="inscription" n="C.95">C.95</ref>, 
+               <ref type="inscription" n="C.97">C.97</ref>, <ref target="https://igcyr.unibo.it/gvcyr026">GVCyr 26</ref>, all describing a series of dedications, and another list, <ref type="inscription" n="C.98">C.98</ref>; 
+               cf also <ref type="inscription" n="C.99">C.99</ref>; see further on <ref type="inscription" n="C.93">C.93</ref>.</p>
+            <p>Line 6: For the dedication to Aphrodite see on <ref type="inscription" n="C.95">C.95</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

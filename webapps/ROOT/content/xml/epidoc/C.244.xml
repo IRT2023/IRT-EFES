@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C19600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">dedication</rs>
+            </title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.244</idno>
+            <idno type="ircyr2012">C19600</idno>
+            <idno type="JMR">786</idno>
+            <idno type="Excel"/>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Unknown</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Circular <objectType>altar</objectType> of <material>limestone</material>, 
+                              moulded above and below
+                              (<dimensions><dim type="diameter">0.35</dim> <depth>0.90</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the drum. Between guide-lines.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Perhaps second century <height>0.035</height>; lunate epsilon, lunate sigma, cursive omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0200" notBefore="0101" precision="low" evidence="lettering">Perhaps second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1041">Baths of Trajan</placeName>: in <date type="found">1928</date> near the west furnace.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Unknown.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from the photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-04" who="MLA">correted Oliverio reference in bibliography</change>
+         <change when="2010-12-01" who="Pietro">metadata</change>
+         <change when="2010-10-07" who="GB">Tokenized</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-19" who="CMR">corrections</change>
+         <change when="2009-07-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_786" decls="#photograph"><desc>Monument, showing the beginnings of the lines only (Department of Antiquities, E. 979) </desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="oliverio1930"/>, <citedRange unit="entry">5</citedRange>, p.165-166, fig. 28</bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>9.114</citedRange></bibl>, <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323968">323968</ref></citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                 <lb n="1"/><persName type="divine" key="di"><certainty locus="value" match="../@key" assertedValue="dioscuri"/><w lemma="θεός">θε<unclear>οῖϲ</unclear></w>
+                 <lb n="2"/><name nymRef="Σωτήρ">σω<supplied reason="lost">τ</supplied>ῆ<unclear>ρϲι</unclear></name></persName> 
+                 <lb n="3"/><gap reason="lost" quantity="1" unit="line"/>
+                 <lb n="4"/><persName type="attested"><name nymRef="Κλ-"><seg part="I">Κλ</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/> 
+                 <lb n="5"/><gap reason="lost" quantity="1" unit="line"><certainty match=".." locus="name"/></gap>
+                 <lb n="6"/><gap reason="lost" quantity="1" unit="line"/>
+                 <lb n="7"/><gap reason="lost" quantity="1" unit="line"/>
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>To the saviour gods <gap reason="lost" extent="unknown" unit="character"/></p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Αll details are taken from Oliverio. The reading has been checked as far as possible from the photo. This shows that guide-lines were cut to provide for 7 lines of text, but suggests that the last three lines were left blank, 
+               or, less probably, inscribed with an extremly inset text. </p>
+            <p>Line 2: <!-- see Roscher, s.v. Soter, col 1261, XXXI. --> The reference might be to gods or to deified rulers, but is most probably to the Dioscuroi, the Saviour gods par excellence, whose temple is near the findspot. </p>
+            <p>Line 4: perhaps from Κλαύδιος.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

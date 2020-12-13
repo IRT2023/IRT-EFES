@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mile ?V: <rs type="textType">Milestone</rs> of Nero</title>
+                             <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">M.225</idno>
+            <idno type="ircyr2012">C79650</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum, garden</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p> <objectType>Column</objectType>ar milestone; surface very corroded.
+                                        No measurements</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face, Latin preceding Greek.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>No measurements<height/>.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace><rs type="milestone" key="cyr-apo" n="8">Cyrene to Apollonia Road, Mile ?VII/VIII</rs>.</origPlace>
+                            <origDate notBefore="0054" notAfter="0055" precision="low" evidence="reign titulature" cert="low">54-55 CE</origDate>
+                        </origin>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>:
+                                Beside the <placeName ref="https://www.slsgazetteer.org/1269">Cyrene to Apollonia road</placeName>, between 10 and 11 km from Apollonia, 
+                                with <ref type="inscription" n="M.223">M.223</ref>; found in <date type="found">1915</date>.</p>
+                        </provenance>
+                                <provenance type="observed">
+                                    <p><placeName type="monuList" ref="institution.xml#db933">Cyrene Museum garden</placeName></p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Transcription (Reynolds).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2011-08-11" who="Pietro">entered and tagged text</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p>
+                    <bibl><ptr target="ghislanzoni1916"/>, <citedRange>159</citedRange></bibl>, whence <bibl><ptr target="friedmann1930"/>, <citedRange>I.6</citedRange></bibl>, 
+                    <bibl><ptr target="SEG"/> <citedRange>9.250</citedRange></bibl>, 
+                    <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324100">324100</ref></citedRange></bibl>; 
+                    mentioned, <bibl><ptr target="rgg1950"/>, <citedRange>8.a</citedRange></bibl>;  
+                    republished <bibl><ptr target="jmr2004"/>, <citedRange>1</citedRange></bibl>,  whence <bibl>
+                        <ptr target="SEG"/> <citedRange>54.1779</citedRange></bibl>, <bibl><ptr target="AE"/> <citedRange>2004.1662</citedRange></bibl>, 
+                    whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067790">HD067790</ref></citedRange></bibl>
+                </p>
+            </div>
+            
+            
+            <div type="edition" xml:space="preserve">
+            <div type="textpart" xml:lang="la">
+            <ab>
+                <lb n="1"/><date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE"><persName type="emperor" key="nero"><name nymRef="Nero"><del rend="erased">Nero</del></name> 
+                    <name nymRef="Claudius">Claudius</name> 
+                <name nymRef="Drusus"><supplied reason="lost">Drusus</supplied></name>		
+	<lb n="2"/><name nymRef="Caesar">Ca<unclear>esa</unclear>r</name> 
+               <name nymRef="Augustus"><unclear>Augus</unclear>tus</name>		
+	<lb n="3"/><name nymRef="Germanicus">G<unclear>e</unclear>r<supplied reason="lost">m</supplied><unclear>an</unclear>i<supplied reason="lost">cu</supplied><unclear>s</unclear></name> 
+               <w lemma="imperator"><expan><abbr><supplied reason="lost">I</supplied><unclear>m</unclear>p</abbr><ex>erator</ex></expan></w></persName></date>		
+<lb n="4"/><w lemma="uia">ui<unclear>a</unclear><supplied reason="lost">s</supplied></w> 
+                <w lemma="facio"><supplied reason="lost">fe</supplied><unclear>cit</unclear></w> <w lemma="per"><unclear>per</unclear></w>	
+	<lb n="5"/><persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucium</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Pedius"><unclear>Pe</unclear><supplied reason="lost">dium</supplied></name> 
+                <name nymRef="Blaesus"><supplied reason="lost">Blaes</supplied>um</name>	
+	<lb n="6"/> <w lemma="proconsul"><expan><abbr>p<supplied reason="lost">roco</supplied></abbr><supplied reason="lost"><ex>n</ex><abbr>s</abbr><ex>ulem</ex></supplied></expan></w></persName> 
+                <placeName nymRef="#Creta et Cyrenae" ref="#creteandcyrene"><placeName nymRef="#Creta" ref="#crete"><supplied reason="lost">Cretae</supplied></placeName> 
+                <w lemma="et">e<supplied reason="lost">t</supplied></w>		
+	<lb n="7"/><placeName nymRef="#Cyrenae" ref="#cyrene"><supplied reason="lost" cert="low">Cyrenarum</supplied></placeName></placeName> 
+                <supplied reason="lost"> <space extent="unknown" unit="character"/></supplied>
+                </ab>
+            </div>
+            <div xml:lang="grc" type="textpart">
+                  <ab>
+<lb n="8"/><date ref="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE"><persName type="emperor" key="nero"><name nymRef="Νέρων"><supplied reason="lost">Νέρων</supplied></name> 
+                <name nymRef="Κλαύδιος"><supplied reason="lost">Κλαύδιος</supplied></name> 
+                <name nymRef="Δροῦσος"><supplied reason="lost">Δροῦσος</supplied></name>
+                <name nymRef="Καῖσαρ"><lb n="9"/>Κα<unclear>ῖσ</unclear><supplied reason="lost">αρ</supplied></name> 
+                <name nymRef="Σεβαστός"><supplied reason="lost">Σεβαστὸς</supplied></name>
+<lb n="10"/><name nymRef="Γερμανικός">Γερμ<unclear>α</unclear><supplied reason="lost">νικ</supplied>ὸ<supplied reason="lost">ς</supplied></name>
+<lb n="11"/> <w lemma="Αὐτοκράτωρ"><unclear>Αὐ</unclear><supplied reason="lost">τοκράτωρ</supplied></w></persName></date>
+<lb n="12"/> <w lemma="ὁδός">ὁδο<unclear>ὺ</unclear>ς</w> <w lemma="ποιέω">ἐ<supplied reason="lost">π</supplied>όησε</w> <w lemma="διά"><unclear>διὰ</unclear></w>
+<lb n="13"/><persName type="attested" key="pir2-p-0212"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Πέδιος">Πε<unclear>δίο</unclear><supplied reason="lost">υ</supplied></name> 
+                <name nymRef="Βλαῖσος"><supplied reason="lost">Βλαίσου</supplied></name>
+<lb n="14"/> <w lemma="ἀνθύπατος">ἀν<unclear>θυπ</unclear><supplied reason="lost">άτου</supplied></w> </persName>
+                <placeName nymRef="#Creta et Cyrene" ref="#creteandcyrene"><placeName nymRef="#Κρήτη" ref="#crete"><supplied reason="lost">Κρήτης</supplied></placeName> 
+                <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
+<lb n="15"/><placeName nymRef="#Κυρήνη" ref="#cyrene"><supplied reason="lost" cert="low">Κυρήνης</supplied></placeName></placeName>
+                <supplied reason="lost"> <space extent="unknown" unit="character"/></supplied>
+<lb n="16"/><gap reason="lost" quantity="1" unit="line"><desc>mileage figure</desc></gap>
+            </ab>
+            </div>
+            </div>
+            
+            <div type="apparatus">
+                <head>Apparatus</head>
+                <listApp><app loc="1"><rdg resp="#ghislanzoni1916">[Ti] Claudius <note>taking this to be the Emperor Claudius</note></rdg></app>
+                    <app loc="2"><rdg resp="#ghislanzoni1916">C[aesar A]ugu[stus]</rdg> </app>
+                    <app loc="4"><rdg resp="#ghislanzoni1916">vi[am . . .</rdg></app>
+                    <app loc="5"><rdg resp="#ghislanzoni1916"> L . . . M . .  .</rdg></app>
+                    <app loc="6"><rdg resp="#ghislanzoni1916"><unclear>R</unclear> .. . E . . .</rdg></app>
+                    <app loc="8"><rdg resp="#ghislanzoni1916">[Τι(βέριος) Κλαύδιος]</rdg></app>
+                    <app loc="12"><rdg resp="#ghislanzoni1916">ὁδὸν [ . . .</rdg></app>
+                    <app loc="12"><rdg resp="#ghislanzoni1916">. Π . . .</rdg></app>
+                    <app loc="12"><rdg resp="#ghislanzoni1916">ΑΝ . . . </rdg></app>
+                  </listApp>
+            </div>
+            
+            <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en">
+                <p> <note>Latin</note><ref target="https://godot.date/id/q8tzTG5MBsGJyh6JvYjDqE"> Nero Claudius Drusus Caesar Augustus Germanicus Imperator</ref> made roads through the agency of Lucius Pedius Blaesus, proconsul of Crete and Cyrene
+</p>
+            <p><note>Greek</note> Nero Claudius Drusus Caesar Augustus Germanicus Imperator made roads through the agency of Lucius Pedius Blaesus, proconsul of Crete and Cyrene</p></div></div>
+            
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>Lines 1-3: The titulature suggests the first months of Nero’s reign</p>
+                <p>Lines 5 (and 13): Pedius Blaesus (<title>PIR<hi rend="superscript">2</hi></title>, P 0212, Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.023) 
+                    is on record in Tacitus, <title>Annales</title> 14.18 (available at <ref target=" http://data.perseus.org/citations/urn:cts:latinLit:phi1351.phi005.perseus-lat1:14.18">Perseus</ref>) and 
+                    Hist. 1.77.6 (available at <ref target="http://data.perseus.org/citations/urn:cts:latinLit:phi1351.phi004.perseus-lat1:1.77">Perseus</ref>) as a proconsul prosecuted by Cyrene and 
+                    condemned for extortion in 59 CE but reinstated by Otho.</p> 
+                <p> Line 16: The mileage figure may have been 7 or 8 in the light of the distance from Cyrene</p>
+                <!-- <p> Claudius was apparently the first Roman ruler to set up milestones in Cyrenaica </p> -->
+            </div>
+        </body>
+    </text>
+</TEI>

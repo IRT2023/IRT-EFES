@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C88800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for a woman</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.446</idno>
+            <idno type="ircyr2012">C88800</idno>
+            
+            <idno type="Excel">na</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">71.801</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A re-used rectangular <objectType>base</objectType> of medium-grained white <material>marble</material>: 
+                              <dimensions><width>0.75</width> <height>0.21</height> <depth>0.55</depth></dimensions>;
+                              Two dowel holes containing metal tenons and a third without tenons to secure a bronze statue, are preserved on top surface.
+                              The stone is stained brown and damaged at all corners
+                              and a piece (<dimensions><width>0.10</width> <height>0.21</height> <depth>0.065</depth></dimensions>) 
+                              has been chiselled neatly away at the left-hand front side
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face which is chipped. Lines 1-3 cut in a slightly sunk area and on an erased surface;
+                           below, lines 4 and 5 may be the remaining lines of the previous, erased, inscription, <ref target="https://igcyr.unibo.it/igcyr077100">IGCyr077100</ref></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>1-4: Letters, probably first century BCE, 
+                        not unlike those of <ref type="inscription" n="C.453">C.453</ref>;
+                        ave. <height>0.025</height>; alpha with a dipped bar.</handNote><handNote/>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</ref>.</origPlace>
+                     <origDate cert="low" evidence="lettering nomenclature" notAfter="-0001" notBefore="-0100">Probably first century BCE; </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: Excavated in <date type="found">1971</date> in the
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>; D12/13, B, 1 and 2 . 
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, Storeroom of the American excavations </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-12-03" who="Pietro">marked up text and metadata</change>
+         <change when="2010-08-14" who="CMR">created from JMR's notes</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="white1972"/>, <citedRange>185</citedRange></bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>26.1825</citedRange></bibl>,
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324720">324720</ref></citedRange></bibl>;
+               <bibl><ptr target="gasperini1985"/> <citedRange>353-5</citedRange></bibl>, whence 
+               <bibl><ptr target="AE"/> <citedRange>1985.842</citedRange></bibl>, 
+               <bibl><ptr target="cdlBE"/>, <citedRange>1988.1008</citedRange></bibl>
+               <bibl><ptr target="SEG"/> <citedRange>35.1716</citedRange></bibl>; 
+               <bibl><ptr target="jmr2012"/>, <citedRange>A.19</citedRange></bibl>, 
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>2013.480</citedRange></bibl>, <bibl><ptr target="rosamilia2014"/>, <citedRange unit="entry">12</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" quantity="5" unit="character" precision="low"/><persName type="attested"><name nymRef="-ία"><seg part="F">ίαν</seg></name> 
+            <persName type="attested"><name nymRef="Λεύκιος">Λευκίω</name></persName> <w lemma="ὁ">τὰν</w> <persName type="attested"><name nymRef="Λεύκιος">Λε<unclear>υκί</unclear>ω</name>
+                    <lb n="2"/><gap reason="lost" quantity="3" unit="character" precision="low"/><name nymRef="-γοντήιος"><seg part="F">γοντηίω</seg></name> 
+           <persName type="attested"><name nymRef="Λεύκιος">Λευκίω</name></persName> <w lemma="υἱός">υἱῶ</w> <name nymRef="Ῥοῦφος">Ῥούφω</name></persName></persName>
+            <lb n="3"/> <w lemma="ὁ"><supplied reason="lost">τῶ</supplied></w> <w lemma="πάτρων">πάτρωνος</w> <w lemma="καί">καὶ</w> <w lemma="εὐεργέτης">εὐεργέτα</w> <w lemma="μήτηρ">ματέρα</w> 
+            <lb n="4"/><supplied reason="lost"> <space quantity="2" unit="character"/></supplied> 
+            <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κ</supplied>υραναῖοι</placeName>
+   <lb n="5"/><persName type="attested" key="lgpn:V1-63100"><name nymRef="Ἄριστις">Ἄριστις</name> 
+                        <persName type="attested" key="lgpn:V1-65753"><name nymRef="Τάβαλβις">Ταβάλβιος</name></persName></persName> <w lemma="ποιέω">ἐπόησε</w>
+             </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+           <listApp> 
+              <app loc="1">
+              <rdg resp="#white1972">. . . -]ίαν and Λε[υκίω at end</rdg> 
+              <rdg resp="#gasperini1985">[Με] or [Μα]μμίαν, and Λευκίω</rdg></app>
+              <app loc="2"><rdg resp="#white1972">Φονταίω</rdg> 
+                 <rdg resp="#gasperini1985">[Βαρ]γοντηίω</rdg></app>
+              <app loc="3-5"><note> showing no loss of space at beginnings of lines, White, corrected by Gasperini.</note></app>
+              </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#jmr2012" xml:lang="en"><p>The Cyrenaeans dedicated the statue of [ . ? . ]ia, daughter of Lucius,
+               mother of Lucius [ . . ]gonteius Rufus son of Lucius, their patron and benefactor.</p>
+            <p>Aristis son of Tabalbis was the sculptor</p></div>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>The Cyrenaeans <supplied reason="subaudible">dedicated</supplied> the statue of [ . ? . ]ia, <supplied reason="subaudible">daughter</supplied> of 
+               Leukios <supplied reason="explanation"><foreign xml:lang="la">Lucius</foreign></supplied>
+               mother of Leukios [. . -]gonteios Rouphos <supplied reason="explanation"><foreign xml:lang="la">Lucius [ . . ]gonteius Rufus</foreign></supplied> son of Leukios 
+               <supplied reason="explanation"><foreign xml:lang="la">Lucius</foreign></supplied>, their patron and benefactor.</p>
+            <p>Aristis <supplied reason="subaudible">son</supplied> of Tabalbis was the sculptor</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> The fact that the Cyrenaeans re-used an older base for this statue is to be related to the fact that all marble used in Cyrenaica had to be imported.
+               If the dedication is rightly dated, long periods of the first century BCE were disrupted by piracy and the Roman Civil Wars and importation of goods from abroad will have been a risky business</p>
+            <p>It is clear that the son, who takes up the greatest space, is the person who matters most to the Cyrenaeans,
+               but he cannot be identified at present.  While he may have been an Italian businessman operating in the province,
+               the presence of his mother with him perhaps suggests that his family were immigrants, (although so far there is no indication of its presence there later),
+               and that the mother had as a result become involved in the cult of Demeter and Kore.</p> 
+               <p> The named sculptor was presumably responsible for this statue, which may therefore have been re-used.
+                  It should be noted that his patronymic is not Greek but Libyan: see Masson (1976) 40 for a comment on it.
+            </p>
+            <p>For honours paid by the city in the Sanctuary see on <ref type="inscription" n="C.445">C.445</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

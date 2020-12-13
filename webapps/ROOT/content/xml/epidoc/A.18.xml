@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C54310" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor> <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.18</idno>
+            <idno type="ircyr2012">C54310</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <objectType>Base</objectType> of white <material>marble</material>
+                              probably Attic, moulded above on all sides, with a hole on the top for an
+                              attachment (<dimensions>
+                                 <width>0.60</width>
+                                 <height>0.50</height>
+                                 <depth>0.48</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffiti</rs>, <note>a</note> on the upper moulding, which is very worn,
+                           and <hi rend="italic">b</hi> on the face which is broken away at the upper right corner and damaged
+                           along all edges; each entry in a different hand. Pugliese reports that Oliverio also drew . Σ on the moulding
+                           but these Reynolds was unable to see (the location is possibly a mistaken reference to
+                           <note>b</note>, lines 1-2).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        a: <height>0.03</height>; b: some certainly Augustan to first century CE, irregularly cut and without proper
+                        alignment, size very various, <height>0.015-0.05.</height>; 
+                        L for ἔτους; c. and d. no description.
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0005" notBefore="-0002" evidence="internal-date">2 BCE- 5 CE</origDate>
+                  </origin>
+                  
+                  
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>:
+                        Unrecorded but probably the <placeName type="monuList" ref="https://www.slsgazetteer.org/914">East Church</placeName> (the only area being excavated at the time of recording);
+                        photographed in <date type="found">1930</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc></sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from stone (a and b), from previous publication (c and d) (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-07-29" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-15" who="GB">aggregated A.218 and 219; moved to Cyrene</change>
+         <change when="2010-02-13" who="CMR">Title, translation, tags</change>
+         <change when="2010-02-11" who="GB">incorporated text from commentary</change>
+         <change when="2009-07-14" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile><!--Dept. F. 1885.--><!--Dept. F. 500.--><surface/>
+            <graphic url="DSC04409" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04410" decls="#photograph"><desc>View from left (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04411" decls="#photograph"><desc>Upper left view (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04412" decls="#photograph"><desc>View from right (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04449" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04450" decls="#photograph"><desc>View from top (2008, H.Walda)</desc></graphic>
+         </facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="SECir"/>, <citedRange>208</citedRange>,
+                  with illustration, fig. 152</bibl>; <bibl>
+                     <ptr target="jmr1976"/>, <citedRange>21</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>27.1127</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>284</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div n="a" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-62061"><name nymRef="Διονύσιος">Διονύσιος</name></persName>
+                        <gap reason="lost" quantity="1" unit="character"/>
+                        <orig><unclear>ιι</unclear>ζ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div>
+            <div n="b" type="textpart"><ab>
+                        <lb n="1"/><date ref="https://godot.date/id/PT2a48jirmisCcxHkqbKc9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="10"><unclear>ι</unclear></num></date> 
+                       <persName type="attested" key="lgpn:V1-62132"><name nymRef="Σωσίβιος">Σωσίβιος</name> </persName>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-62040"><name nymRef="Ἀρίστων">Ἀρίστων</name> <persName type="attested"><name nymRef="Ἱππα-"><seg part="I">Ἱππα</seg></name></persName></persName> 
+                        <lb n="3"/><date ref="https://godot.date/id/mEq9hM8dFBGgdNiciPGWJn"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="32"><unclear>λβ</unclear></num></date> 
+                        <persName type="attested" key="lgpn:V1-62062"><name nymRef="Διονύσιος">Διονύσιος</name></persName> <date ref="https://godot.date/id/df32KTiYDRaJcTmhkGLsb9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                       <num value="30"><unclear>λ</unclear></num></date> 
+                       <persName type="attested" key="lgpn:V1-62094"><name nymRef="Καρνεάδης">Καρνεάδης</name></persName> 
+                        <lb n="4"/><persName type="attested"><name nymRef="Σω">Σω</name> <persName type="attested" key="lgpn:V1-62092"><name nymRef="Ἰτθαλλάμμων">Ἰτθαλλάμμων</name></persName></persName> 
+                        <lb n="5"/> <date ref="https://godot.date/id/gYMVKNoD3BnHTEkSdLg3ta"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                       <num value="21">κ<unclear>α</unclear></num></date> <persName type="attested" key="lgpn:V1-62072"><name nymRef="Εὐφράνωρ">Εὐφράνωρ</name></persName>  
+                        <lb n="6"/><persName type="attested" key="lgpn:V1-62116"><name nymRef="Μᾶρκος">Μᾶρκος</name> 
+                            <persName type="attested"><name nymRef="Σ-"><seg part="I">Σ</seg></name></persName></persName> 
+                       <date ref="https://godot.date/id/df32KTiYDRaJcTmhkGLsb9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="30"><unclear>λ</unclear></num></date> <persName type="attested" key="lgpn:V1-63917"><name nymRef="Εὐφράνωρ">Εὐφράνωρ</name></persName>
+                        <lb n="7"/><date ref="https://godot.date/id/2Vc2nqhe4MTPTndN7SwSWd"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="35"><unclear>λ</unclear>ε</num></date> 
+                       <persName type="attested" key="lgpn:V1-62047"><name nymRef="Βαρκαῖος">Βαρκαῖος</name>
+                            <name nymRef="Κα-"><abbr>Κα</abbr></name></persName>
+                    </ab></div>
+            <div n="c" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested"><name nymRef="Ἀριστο-">Ἀριστο<gap reason="lost" extent="unknown" unit="character"/></name></persName><orig>σ</orig>
+                    </ab></div>
+            <div n="d" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested"><name nymRef="Σωσίβιος"><seg part="I"><unclear>Σωσιβιο</unclear></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><orig>λ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="a">
+                  <lem>Διονύσιος <gap reason="lost" quantity="1" unit="character"/>
+                  </lem>
+                        <rdg resp="#SECir">Διονύσιος [ . . . ]Σ<gap reason="lost" quantity="1" unit="character"/>
+                  </rdg>
+                  <note>Perhaps L (ἔτους) ιζ᾽, year 17.</note>
+               </app>
+            <app loc="b 1">
+                  <lem>ιʹ</lem>
+                        <rdg resp="#SECir"><unclear>γ</unclear>ʹ</rdg>
+               </app>
+                <app loc="b 2">
+                   <lem>Ἱππα</lem>
+                        <rdg resp="#SECir">L πδʹ</rdg>
+               </app>
+                <app loc="b 3">
+                  <lem><unclear>λβ</unclear></lem>
+                   <rdg resp="#SECir"><unclear>λ</unclear></rdg>
+               </app>
+               <app loc="b 3"><lem>(ἔτους) λ̣´</lem>
+                  <rdg resp="#SECir">Ι</rdg></app>
+            <app loc="b 4">
+                  <lem>Ἰτθαλλά(μμων)</lem>
+                        <rdg resp="#SECir"><orig>ιιθαλλα</orig>
+                        </rdg> <note>The name is completed sinistrorsus, by <orig>νωμμ</orig> at the end of line 5</note>
+               </app>
+                <app loc="b 6">
+                   <lem>Σ</lem>
+                        <rdg resp="#SECir">Ν</rdg>
+               </app>
+               <app loc="b 6">
+                  <lem><unclear>λ</unclear></lem>
+                  <rdg resp="#SECir">κ</rdg>
+               </app>
+                <app loc="b 7">
+                  <lem>Κα</lem>
+                        <rdg resp="#SECir">Κ</rdg>
+               </app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#jmr" xml:lang="en"><p><note>a</note>. Dionysios <gap reason="lost" extent="unknown" unit="character"/>
+           </p>
+            <p><note>b</note>. <ref target="https://godot.date/id/PT2a48jirmisCcxHkqbKc9">Year ?10</ref>, Sosibios</p>
+             <p>Ariston <supplied reason="subaudible">son</supplied> of Hippas <note>or Hippa(sios)</note></p>
+            <p><ref target="https://godot.date/id/mEq9hM8dFBGgdNiciPGWJn">Year 32</ref>, Dionysios. <ref target="https://godot.date/id/df32KTiYDRaJcTmhkGLsb9">Year 30</ref>, Karneades</p>
+            <p>So(?) <supplied reason="subaudible">son</supplied> of Ithallamon</p>
+            <p><ref target="https://godot.date/id/gYMVKNoD3BnHTEkSdLg3ta">Year 21</ref>, Euphranor</p>
+            <p>Marcus S(?). <ref target="https://godot.date/id/df32KTiYDRaJcTmhkGLsb9">Year 30</ref>, Euphranor</p>
+            <p><ref target="https://godot.date/id/2Vc2nqhe4MTPTndN7SwSWd">Year 35</ref>, Barkaios <supplied reason="subaudible">son</supplied> of Ka(?)</p>
+             <p><note>c</note>. Aristo[...</p>
+            <p><note>d</note>. Sosibio[...</p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>(أ). ديونيسيوس [---]
+ (ب). السنة 10، سوسيبيوس
+أريستون (بن) هيباس (أو هيبا(سيوس))
+السنة 32، ديونيسيوس. السنة 30، كارنيديس 
+هكذا (؟) (بن) إيثالامون 
+ السنة 21، إيفرانور ماركوس سـ (؟).  السنة 30 إيفرانور 
+السنة 35 ، باركيوس (بن) كا (؟) 
+(ج). أريستو [... 
+(د). سوسبيو [...
+</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The inscription resembles the ephebic graffiti of Cyrene.</p>
+            <p>b. 1: Year 10, but γ'=3 or ρ'=100 are also possible.</p>
+            <!-- <p>l.3: Year 32 of the Actian era = CE 1/2.</p>
+            <p>Year 30 of the Actian era = 2/1 BCE</p> -->
+            <p>b. 4: The Libyan name Ἰτθαλλάμμων is completed
+                    <foreign xml:lang="la">sinistrorsus</foreign> at the end of the next line.</p>
+            <!-- <p>l. 5: Year 21, presumably of the Actian era = CE 4/5.</p> -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

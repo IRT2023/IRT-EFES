@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C19100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Imperial</rs> <rs type="textType">building</rs> inscription for the Baths of Trajan</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.239</idno>
+            <idno type="ircyr2012">C19100</idno>
+            <idno type="JMR">782</idno>
+            <idno type="Excel">8</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Valley Street</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two <material>limestone</material> <objectType>architrave</objectType> blocks, the first broken
+                               (together <dimensions><width>4.82</width> <height>0.56</height> <depth>0.365</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First-second century CE: line 1, <height>0.20</height>; line 2, <height>0.10</height>; stops for abbreviations, and between words; dot for stop.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1041">Baths of Trajan</ref>: probably in the wall above the main (east) entrance to the baths.</origPlace>
+                     <origDate notAfter="0099" notBefore="0098" evidence="titulature">CE 98-99</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1041">Baths of Trajan</placeName>:
+                              The first nearby in <date type="found">1928</date>,
+                              the other two in a Byzantine lime kiln to the south in <date type="found">1935</date>; 'nel piazzale della Fontana di Apollo'.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p> 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1024">Valley Street</placeName>: Assembled on a wall beside the street, near the baths.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-04" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-12-01" who="Pietro">metadata</change>
+         <change when="2010-10-07" who="GB">Tokenized</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-07-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_782" decls="#photograph"><desc>Assembled blocks (1935 October 1; Department of Antiquities, E.2374.)</desc></graphic>
+      <graphic url="1275_doa" decls="#photograph"><desc>Third block, partly excavated (Department of Antiquities, E.1275)</desc></graphic>
+      <graphic url="1276_doa" decls="#photograph"><desc>Third block, excavated (Department of Antiquities, E.1276)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>First block only, <bibl>
+                  <ptr target="oliverio1930"/>, <citedRange>4</citedRange> p.164, fig. 26</bibl>; complete: <bibl>
+                  <ptr target="jmr1959"/>, <citedRange>1</citedRange>, 95f., Fig. 3</bibl>, whence
+              <bibl><ptr target="AE"/> <citedRange>1960.198</citedRange></bibl> whence <bibl>
+                  <ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD018877">018877</ref></citedRange></bibl>; <bibl>
+                     <ptr target="SECir"/>, <citedRange>54</citedRange>, fig. 50</bibl>, whence listed 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.562</citedRange></bibl>.
+               Discussed by <bibl><ptr target="oliverio1940"/>, <citedRange>401</citedRange></bibl>; 
+                  <bibl><ptr target="romanelli1943"/>, <citedRange>103</citedRange></bibl>;
+                  <bibl><author>A. Garzetti</author>, Nerva (Roma, 1950) <citedRange>140f</citedRange>,
+                     <citedRange>95</citedRange></bibl>; <bibl> <ptr target="rgg1959"/> <citedRange>63f</citedRange>.</bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+             
+            <ab>
+                    <lb n="1"/><date ref="https://godot.date/id/XCJuva5f8kygxvPjPs9Qhm"><persName type="emperor" key="traianus"><w lemma="imperator"><expan><abbr>Im</abbr><supplied reason="lost"><abbr>p</abbr><ex>erator</ex></supplied></expan></w> 
+                    <name nymRef="Caesar">Caesar</name> <g ref="symbols.xml#stop"/> <name nymRef="Nerva">Nerva</name> <g ref="symbols.xml#stop"/> <w lemma="diuus">diui</w> <g ref="symbols.xml#stop"/> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <name nymRef="Traianus">Traianus</name> 
+                    <supplied reason="lost"><name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> 
+                        <name nymRef="Germanicus"><expan><abbr>Germ</abbr><ex>anicus</ex></expan></name> <expan><w lemma="pontifex"><abbr>pont</abbr><ex>ifex</ex></w>  
+                        <w lemma="maximus"><abbr>max</abbr><ex>imus</ex></w></expan></supplied>
+                    <lb n="2"/><expan><w lemma="tribunicius"><abbr>tri</abbr><supplied reason="lost"><abbr>bu</abbr><ex>nicia</ex></supplied></w>  
+                    <w lemma="potestas"><supplied reason="lost"><abbr>p</abbr></supplied><abbr>otest</abbr><ex>ate</ex></w></expan>
+                 <expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan>
+                    <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> <num value="2">II</num> </persName></date> 
+                    <w lemma="balneum">balineum</w> <g ref="symbols.xml#stop"/> <w lemma="et">et</w> <g ref="symbols.xml#stop"/> <w lemma="thermae">thermas</w> <g ref="symbols.xml#stop"/> <w lemma="facio">fecit</w> <g ref="symbols.xml#stop"/> <w lemma="per">per</w>
+              <g ref="symbols.xml#stop"/> <persName type="attested" key="pir2-m-0454"><name nymRef="Caius"><expan><abbr>C</abbr><ex>aium</ex></expan></name> <name nymRef="Memmius">Memmium</name></persName>
+                    <gap reason="lost" quantity="27" unit="character" precision="low"/>          
+            </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Emperor Caesar Nerva, son of the deified, Trajan [Augustus, victor in Germany, high priest <supplied reason="explanation"><foreign xml:lang="la">pontifex maximus</foreign></supplied>], 
+               <ref target="https://godot.date/id/XCJuva5f8kygxvPjPs9Qhm">with tribunician power, 
+               Father of the Country, consul for the second time</ref>, made the bath-building and hot baths through Caius Memmius [ . . .</p></div>
+            </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p><!-- For the building, see Oliverio, Afr. Ital. III (1930) 141f. --> </p>
+            <p>Line 1: Between Trajan's accession on the 25th Jan. 98 and the opening of his third consulate on 1st Jan. 100; 
+               in the absence of a figure for his tribunician power and the slightly unusual layout of his name, 
+               the text recalls ILS 280 recording work on the Via Appia begun by an earlier emperor, Nerva, or even Domitian.</p>
+            <p>Line 2: A bath building and hot baths: The gift of so typically Roman an institution, and the Latin used in the inscription,
+               seem to indicate that the imperial government at this time wished to give to Cyrene not simply material help but also
+               a stimulus to Romanisation, cf. <title>Inscr. Cret.</title> II. vi.2 (<title>PHI</title> <ref target="https://epigraphy.packhum.org/text/199823">199823</ref>)
+               recording a similar gift in the same province at almost, perhaps exactly, the same date. </p>
+            <p>Line 3: G. Memmius .  . . .: <title>PIR<hi rend="superscript">2</hi></title>, M 454; probably the proconsul. He is not otherwise known,
+               but possibly his name should be restored in <title>Inscr. Cret.</title>, cited above, where Guarducci proposed L. Elufrius Severus.
+               The only other senatorial Memmius known under Trajan is Senecio Memmius Afer cos. suff. 99, <title>PIR<hi rend="superscript">2</hi></title> M 457;
+               this man may belong to the same family.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

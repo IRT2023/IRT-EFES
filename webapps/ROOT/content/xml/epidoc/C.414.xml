@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C74900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">list</rs> of <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.414</idno>
+            <idno type="ircyr2012">C74900</idno>
+            <idno type="JMR">903 b</idno>
+            <idno type="Excel">1082</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> stele, recomposed from five fragments 
+                              (<dimensions><width>0.07</width> <height>0.19</height> <depth>0.06</depth></dimensions>); the upper text is <ref target="https://igcyr.unibo.it/gvcyr042">GVCyr 42</ref> above;
+                              <ref type="inscription" n="C.415">C.415</ref> is a further fragment</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> in a hand indistinguishable from that of the second hand of 
+                           <ref target="https://igcyr.unibo.it/gvcyr042">GVCyr 42</ref>, and of <ref type="inscription" n="C.415">C.415</ref>. The face has been slightly damaged 
+                           to the right since Oliverio recorded it.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century: line. 1, <height>0.035</height>; lines 2 following, <height>0.015 - 0.02</height>; superscript bar above abbreviated nomina, and a stop after them</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0138" notAfter="0300" precision="low" evidence="reign">Mid-late second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: Findspot unrecorded.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-05-19" who="AO">tokenized</change>
+         <change when="2009-06-23" who="pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNB12_004" decls="#photograph"><desc>Face (Reynolds XII.4)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+           <p> <bibl><ptr target="SECir"/>, <citedRange>68</citedRange> and fig. 60 (from T. XI 81)</bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="emperor" key="hadrianus"><w lemma="θεός">θεὸς</w> <name nymRef="Ἁδριανός">Ἁδ<unclear>ρ</unclear><supplied reason="lost">ιανόϲ</supplied></name></persName>
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-62601"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Ἀγχίστρατος"><unclear>Ἀ</unclear>γχίστρατο<supplied reason="lost">ϲ</supplied></name></persName>
+                    <lb n="3"/><persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιοϲ</ex></expan></name> <name nymRef="Νόβιος"><unclear>Ν</unclear><supplied reason="lost">ό</supplied>βιοϲ</name> <name nymRef="Ῥοῦφος">Ῥοῦφο<supplied reason="lost">ϲ</supplied></name></persName>
+                    <lb n="4"/><persName type="attested"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Μάρκελλος"><supplied reason="lost">Μάρκ</supplied>ελλοϲ</name></persName>
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-63377"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Βαρκαῖος">Βα<unclear>ρ</unclear>καῖοϲ</name></persName>
+                    <lb n="6"/><persName type="attested" key="lgpn:V1-64631"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Κλέαρχος">Κλέαρ<supplied reason="lost">χ</supplied>οϲ</name></persName>
+                    <lb n="7"/><persName type="attested"><name nymRef="Χαιρεσίλαος">Χαιρεσίλα<unclear>ϲ</unclear></name> <persName type="attested"><name nymRef="Εὐφάνης"><supplied reason="lost">Εὐ</supplied><unclear>φ</unclear><supplied reason="lost">ά</supplied>ν<unclear>ε</unclear><supplied reason="lost">υϲ</supplied></name></persName></persName>
+                    <lb n="8"/><persName type="attested" key="lgpn:V1-64424"><name nymRef="Ἰούλιος">Ἰόλιοϲ</name> <name nymRef="Ἰσοκράτης">Ἰϲο<supplied reason="lost">κρ</supplied>άτ<unclear>η</unclear>ϲ</name></persName>
+                    <lb n="9"/><persName type="attested" key="lgpn:V1-62971"><name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Ἀπολλόδωρος">Ἀπολλόδωροϲ</name></persName>
+                    <lb n="10"/><persName type="attested" key="lgpn:V1-65868"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριοϲ</ex></expan></name> <name nymRef="Κλαύδιος">Κλαύ<unclear>δι</unclear>οϲ</name> <name nymRef="Φάος">Φάοϲ</name></persName>
+                    <lb n="11"/><persName type="attested" key="lgpn:V1-62878"><name nymRef="Ἀνδροσθένης">Ἀνδρο<unclear>σ</unclear><supplied reason="lost">θ</supplied><unclear>έ</unclear>νηϲ</name> 
+                    <persName type="attested" key="lgpn:V1-66138"><name nymRef="Χαιρεσίλαος">Χαιρεσί<supplied reason="lost" evidence="previouseditor">λαο<unclear>υ</unclear></supplied></name></persName></persName>
+                    <lb n="12"/><persName type="attested" key="lgpn:V1-65524"><name nymRef="Φλάβιος">Φλάβιοϲ</name> <name nymRef="Πτολεμαῖος">Πτ<unclear>ο</unclear>λεμαῖοϲ</name></persName>
+                    <lb n="13"/><persName type="attested"><gap reason="lost" quantity="1" unit="character"/> <name nymRef="Ἀντώνιος"><supplied reason="lost">Ἀν</supplied>τώνιοϲ</name>
+                    <name nymRef="Ι-"><seg part="I"><unclear>Ι</unclear></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="14"/><persName type="attested"><name nymRef="Ἰούλιος"><supplied reason="lost">Ἰο</supplied><unclear>ύλ</unclear>ιοϲ</name> <name nymRef="Φλ-"><seg part="I">Φλ</seg></name><gap reason="lost" extent="unknown" unit="character"/></persName>
+                    <lb n="15"/><gap reason="lost" quantity="2" unit="character"/> <orig>οϲ</orig> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="15a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="3"><rdg resp="#SECir">[Νό]βιος</rdg></app>
+               <app loc="7"><rdg resp="#SECir">Χαιρεσίλα<unclear>ο</unclear>[ς ..]<unclear>φ</unclear>[.]ν<unclear>ο</unclear>[...]</rdg></app>
+               <app loc="8"><rdg resp="#SECir">Ἰσο[κρ]άτ[η]ς</rdg></app>
+               <app loc="16"><rdg resp="#SECir">[Κλα]ύδιος Φλ[...]</rdg></app>
+            </listApp>
+           </div>
+         
+         <div type="translation" xml:space="preserve">
+           <div type="translation" resp="#cmr" xml:lang="en"><p>Deified Hadrian; Kl(audios) <supplied reason="explanation"><foreign xml:lang="la">Cl(audius)</foreign></supplied> Anchistratos; 
+              L(oukios) Nobios Rouphos<supplied reason="explanation"><foreign xml:lang="la">L(ucius) Novius Rufus</foreign></supplied>; 
+              Kl(audios) [Mark]ellos <supplied reason="explanation"><foreign xml:lang="la">Cl(audius) Marcellus</foreign></supplied>; 
+           Kl(audios) <supplied reason="explanation"><foreign xml:lang="la">Cl(audius)</foreign></supplied> Barkaios; 
+              Kl(audios) <supplied reason="explanation"><foreign xml:lang="la">Cl(audius)</foreign></supplied> Klearchos; Chairesilas <supplied reason="subaudible">son</supplied> of Euphanes; 
+              Iolios <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied> Isokrates; Kl(audios) <supplied reason="explanation"><foreign xml:lang="la">Cl(audius)</foreign></supplied> Apollodoros; 
+              Ti(berios) Klaudios <supplied reason="explanation"><foreign xml:lang="la">Ti(berius) Claudius</foreign></supplied> Phaos; 
+           Androsthenes <supplied reason="subaudible">son</supplied> of Charesilaos; Phlabios <supplied reason="explanation"><foreign xml:lang="la">Flavius</foreign></supplied> Ptolemaios; 
+              Antonios <supplied reason="explanation"><foreign xml:lang="la">Antonius</foreign></supplied> [- - ]; 
+              Ioulios Phl[-  <supplied reason="explanation"><foreign xml:lang="la">Julius Fl[-</foreign></supplied> . . .</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1: After Hadrian's death in 138. The list of names, headed by that of the deified emperor, is quite well cut, 
+               each entry in the same hand. Since the emperor was already dead, it was cut later than the events to which it refers and the 
+               choice seems to lie between a post-contemporary list of priests of Apollo (for another possible reference to Hadrian holding a local office in Cyrenaica see <ref type="inscription" n="P.54">P.54</ref> lines 1-2, 
+               and discussion there),           
+               and a list of contributors to a fund. If there really is a connection between <ref target="https://igcyr.unibo.it/gvcyr042">GVCyr 42</ref> and lines 7f., 
+               then it must be of contributors and the amounts contributed by each may have appeared on the lost right half of the stele. </p>
+            <p>Oliverio considered that <ref type="inscription" n="C.259">C.259</ref> might also be associated.</p>
+           <!-- <p>Line 5: Probably also in A 13.14 at Balagrae </p>
+            <p> line 6 Probably connected with the family of Ti. Claudius Clearchus, see 716, n.8 and or that of M. Claudius Magnus, 810, n.1. </p>
+            <p>line 10 Perhaps also in 885 and possibly also in 901.</p> --> 
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

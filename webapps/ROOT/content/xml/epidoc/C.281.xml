@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C34600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription for restoration of the Baths of Trajan</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.281</idno>
+            <idno type="ircyr2012">C34600</idno>
+            <idno type="JMR">887</idno>
+            <idno type="Excel">1113</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Baths of Trajan</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>panel</objectType> reconstructed from two pieces, 
+                               chipped at the right side
+                               (<dimensions>
+                                   <width>1.54</width>
+                                   <height>0.88</height>
+                                   <depth>0.06-0.10</depth>
+                               </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second cent; line  1, <height>0.09</height>; line 2, <height>0.075</height>; line 3, <height>0.06</height>; 
+                         lines 4-9, <height>0.055</height>. Stops between words almost constantly; leaves in lines 3-6, 9, bars above the figures in line 4</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1041">Baths of Trajan</ref>, inside.</origPlace>
+                     <origDate notBefore="0119" notAfter="0119" precision="high" evidence="titulature">CE 119</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1362">Roman House</placeName>, west of the Temple of Apollo, in the pavement; found in <date type="found">1926</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1041">Baths of Trajan</placeName>, 
+                              fixed to the wall of the frigidarium (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-02-21" who="MLA">corrected Applebaum reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-08-01" who="CMR">corrections</change>
+         <change when="2010-06-21" who="GillianB">tokenized</change>
+         <change when="2009-07-07" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_887" decls="#photograph"><desc>Face (Department of Antiquities E.577)</desc></graphic>
+      <graphic url="DSC04838" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <!-- BSR 49. XXVIII.33.--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="oliverio1928"/>, <citedRange>1</citedRange>, pp. 320f, fig. 5</bibl>, whence 
+               <bibl><ptr target="boehringer1929"/> <citedRange unit="column">400-401</citedRange>, with photograph, 408</bibl>,
+               <bibl><ptr target="friedmann1930"/>, <citedRange>I.3</citedRange></bibl>, <!-- check -->
+               <bibl>
+                  <ptr target="AE"/> <citedRange>1928.2</citedRange></bibl>, whence <bibl>
+                     <ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD023470">023470</ref></citedRange></bibl><!-- <bibl>
+                  <author>Anti</author> p. 298</bibl> -->; 
+               <bibl><ptr target="gl-jmr1983"/>  <citedRange unit="entry">23</citedRange></bibl>; translated, 
+               <bibl><ptr target="williams1988"/>, <citedRange>V.35</citedRange></bibl>; 
+               <bibl>
+                  <ptr target="gasperini2007"/> fig. <citedRange>1</citedRange></bibl>;
+               discussed, <bibl><ptr target="boatwright2000"/>, <citedRange>179</citedRange></bibl>;
+               mentioned 
+               <bibl>
+                  <ptr target="oliverio1931"/>, <citedRange>40</citedRange></bibl>;
+               <bibl>
+                  <ptr target="oliverio1940"/>, <citedRange>409</citedRange></bibl>;
+               <bibl>
+                  <ptr target="romanelli1943"/>, <citedRange>116</citedRange></bibl>;
+               <bibl>
+                  <ptr target="applebaum1950"/>, <citedRange>B.1</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>195</citedRange>, <citedRange>199</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/xX3RBLaqs4bVevkf3d93mJ"><persName type="emperor" key="hadrianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> <g ref="symbols.xml#leaf"/> <name nymRef="Caesar">Caesar</name> <persName type="emperor" key="traianus"><w lemma="diuus">diui</w> <name nymRef="Traianus">Traiani</name>
+                    <lb n="2"/> <name nymRef="Parthicus">Parthici</name></persName> <w lemma="filius"><expan><abbr>fil</abbr><ex>ius</ex></expan></w> <persName type="emperor" key="nerva"><w lemma="diuus">diui</w> <name nymRef="Nerva">Neruae</name></persName> <w lemma="nepos">nepos</w>
+                    <lb n="3"/><name nymRef="Traianus">Traianus</name> <name nymRef="Hadrianus">Hadrianus</name> <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name> </persName>
+                    <w lemma="pontifex"><expan><abbr>pontif</abbr><ex>ex</ex></expan></w> <g ref="symbols.xml#leaf"/> <lb n="4"/><w lemma="maximus"><expan><abbr>max</abbr><ex>imus</ex></expan></w> <g ref="symbols.xml#leaf"/> <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> <w lemma="potestas"><expan><abbr>potest</abbr><ex>ate</ex></expan></w>
+                    <num value="3">III</num> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                    <num value="3">III</num></date> <w lemma="balneum">balineum</w>
+                    <lb n="5"/><w lemma="cum">cum</w> <w lemma="porticus">porticibus</w> <w lemma="et">et</w> <w lemma="sphaeristerium">sphaeristeris</w> <g ref="symbols.xml#leaf"/> <lb n="6"/><w lemma="ceterus">ceteris</w><w lemma="que">que</w> <w lemma="adiaceo">adiacentibus</w> <w lemma="qui">quae</w> <g ref="symbols.xml#leaf"/> <lb n="7"/><w lemma="tumultus">tumultu</w> <placeName type="ethnic" nymRef="#Iudaicus" ref="#ioudaios">Iudaico</placeName> <w lemma="diruo">diruta</w> <w lemma="et">et</w> <w lemma="exuro">exusta</w>
+                    <lb n="8"/><w lemma="sum">erant</w> <w lemma="ciuitas">ciuitati</w> <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene">Cyrenensium</placeName> <w lemma="restituo">restitui</w> 
+                    <lb n="9"/> <space quantity="3" unit="character"/> <g ref="symbols.xml#leaf"/> <w lemma="iubeo">iussit</w> <space quantity="3" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"> <p> Emperor Caesar, son of deified Trajan, victor in Parthia, grandson of deified Nerva, 
+               Hadrian Augustus, high priest <supplied reason="explanation"><foreign xml:lang="la">pontifex maximus</foreign></supplied>, <ref target="https://godot.date/id/xX3RBLaqs4bVevkf3d93mJ">holding tribunician power for the third time, consul for the third time</ref>,
+            ordered that the bath-building, with the porticoes and the ball-courts and other associated structures 
+            which were destroyed and burnt by the Jewish revolt, be restored for the city of the Cyreneans.</p><!-- check - Williams? --></div>
+       </div>
+      
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 4: 1st Jan. -9th Dec. 119. </p>
+            <p>Line 6: Oliverio noted that the portico can be recognised beneath the Byzantine Baths to the south; 
+               the Sphaeristera, he thought, may have been beside these or on an upper storey over the central area of the Baths of Trajan.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

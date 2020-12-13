@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C08100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of a statue of Aphrodite by nomophylakes</title>
+                         <editor xml:id="edd">Catherine Dobias-Lalou, Joyce M. Reynolds, Charlotte Roueché</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="cdl">Catherine Dobias-Lalou</editor> <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.95</idno>
+            <idno type="ircyr2012">C08100</idno>
+            <idno type="JMR">663</idno>
+            <idno type="Excel">106</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">592</idno> <idno type="invNo">576</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular <objectType>panel</objectType> of white <material>marble</material> 
+                               (<dimensions> 
+                               <width precision="low">0.24</width>
+                               <height>0.34</height>
+                               </dimensions>) from one of 
+                                  five pilaster-bases, of which three survive with <ref type="inscription" n="C.93">C.93</ref>, <ref type="inscription" n="C.94">C.94</ref>, 
+                                  <ref type="inscription" n="C.95">C.95</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Augustan; L for ἔτους; slanting stroke for patronymic in line 15; the letters in lines 16 and 17 spaced out in order to fill the line.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notAfter="-0016" notBefore="-0017" evidence="internal-date">17/16 BCE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              in the Hall of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1006">Nomophylakeion</placeName>: first recorded in <date type="found">1919</date>. </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>: fragments from the left edge of lines 1-3, 5-9 seen by C. Dobias-Lalou.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-14" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-07-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. F. 369-->
+      <graphic url="cdlC95_1_3" decls="#photograph"><desc>Lines 1-3, squeeze (C. Dobias-Lalou, 1977: MFA est CD 122)</desc></graphic>
+      <graphic url="cdlC95" decls="#photograph"><desc>Lines 5-9, squeeze (C. Dobias-Lalou, 1977: MFA est CD 123)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="ghislanzoni1925"/>, <citedRange>420</citedRange> and fig 8</bibl>, whence
+               <bibl><ptr target="AE"/> <citedRange>1927.143</citedRange></bibl>, <bibl>
+                  <ptr target="SEG"/> <citedRange>9.133</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323986">323986</ref></citedRange></bibl>, 
+               <bibl><ptr target="vitali1932"/>, <citedRange>10</citedRange></bibl>; see also <bibl><ptr target="robertBE"/>, <citedRange>1959.325</citedRange></bibl>;
+               see also <bibl><ptr target="ferri1925"/>, <citedRange>18</citedRange></bibl><!-- check -->.</p></div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date><date ref="https://godot.date/id/MKvpSxXFU2U4Pacfo3wBmg"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="15">ιε</num></date> <space quantity="2" unit="character"/> <date ref="https://godot.date/id/5H5gZigQeHgNXSJRkgde97"><w lemma="ἐπί">ἐπὶ</w> <roleName><w lemma="ἱερεύς">ἱερέ<space quantity="1" unit="character"/>ως</w></roleName>
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-65953"><name nymRef="Φιλίσκος">Φιλίσκω</name> <persName type="attested" key="lgpn:V1-63908"><name nymRef="Εὐφάνης">Εὐφάνευς</name></persName></persName></date>
+                    <lb n="3"/><date ref="https://godot.date/eponymous_office/Xjzq3894YE45FNuvbNvcr9/hgzEdPhFEnwhCSXLnBWMAC"><persName type="emperor" key="augustus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορος</w> <w lemma="δέ">δὲ</w> <name nymRef="Καῖσαρ">Καίσα<lb
+                       n="4" break="no"/>ρος</name> <w lemma="θεός">Θεῶι</w> <w lemma="υἱός">υἱῶ</w> <name nymRef="Σεβαστός">Σεβαστῶ</name></persName>
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-63374"><name nymRef="Βαρκαῖος">Βαρκαίω</name> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-64220"><name nymRef="Θεύχρηστος">Θεοχρήστω</name></persName></persName></date></date>
+                    <lb n="6"/> <roleName><w lemma="νομοφύλαξ">Νομοφύλακ<supplied reason="omitted">ε</supplied>ς</w></roleName>
+                    <lb n="7"/><persName type="attested" key="lgpn:V1-62989"><name nymRef="Ἀπολλώνιος">Ἀπολλώνιος</name> <persName type="attested" key="lgpn:V1-63802"><name nymRef="Εὔιππος">Εὐίππω</name></persName></persName>
+                    <lb n="8"/><persName type="attested" key="lgpn:V1-64113"><name nymRef="Θεόδωρος">Θεόδωρος</name> <persName type="attested" key="lgpn:V1-63213"><name nymRef="Ἀρίστων">Ἀρίστωνος</name></persName></persName>
+                    <lb n="9"/><persName type="attested" key="lgpn:V1-62990"><name nymRef="Ἀπολλώνιος">Ἀπολλώνιος</name> <persName type="attested" key="lgpn:V1-63795"><name nymRef="Εὐδαίμων">Εὐδαίμονος</name></persName></persName>
+                    <lb n="10"/><persName type="attested" key="lgpn:V1-63252"><name nymRef="Ἀρτεμίδωρος">Ἀρτεμίδωρος</name> <persName type="attested" key="lgpn:V1-62541"><name nymRef="Ἀγέμαχος">Ἁγεμάχω</name></persName></persName>
+                    <lb n="11"/><persName type="attested" key="lgpn:V1-62792"><name nymRef="Ἀμμώνιος">Ἀμμώνιος</name> <persName type="attested" key="lgpn:V1-65751"><name nymRef="Σωφάνης">Σωφάνους</name></persName></persName>
+                    <lb n="12"/><persName type="attested" key="lgpn:V1-64990"><name nymRef="Μένανδρος">Μένανδρος</name> <persName type="attested" key="lgpn:V1-62933"><name nymRef="Ἀντίπατρος">Ἀντιπάτρω</name></persName></persName>
+                    <lb n="13"/><persName type="attested" key="lgpn:V1-65580"><name nymRef="Σεραπίων">Σεραπίων</name> <persName type="attested" key="lgpn:V1-65387"><name nymRef="Πολύμναστος">Π<supplied reason="omitted">ο</supplied>λυμνάστω</name></persName></persName>
+                    <lb n="14"/><persName type="attested" key="lgpn:V1-65859"><name nymRef="Ὕρατθις">Ὕρατθις</name> <persName type="attested" key="lgpn:V1-63581"><name nymRef="Διονύσιος">Διονυσίω</name></persName></persName>
+                    <lb n="15"/><persName type="attested" key="lgpn:V1-62703"><name nymRef="Ἀλέξανδρος">Αλέξανδρος</name> <persName type="attested"><name nymRef="Ἀλέξανδρος"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>Ἀλεξάνδρω</ex></expan></name> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-62702"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρω</name></persName></persName></persName>
+                    <lb n="16"/><persName type="divine" key="aphrodite"><name nymRef="Ἀφροδείτη">Ἀφρ<supplied reason="omitted">ο</supplied>δείταν</name>
+                    <lb n="17"/> <name nymRef="Νομοφυλακίς">Νομοφυλακίδα</name></persName>
+                    <lb n="18"/><space quantity="2" unit="character"/> <w lemma="ἀνατίθημι">ἀνέθηκαν</w> <space quantity="2" unit="character"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp><app loc="6"><rdg> ΝΟΜΟΦΥΛΑΚΑΣ, lapis.</rdg></app>
+               <app loc="15"><note>The slanting stroke for the patronymic first identified by Catherine Dobias-Lalou</note></app></listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/MKvpSxXFU2U4Pacfo3wBmg">Year 15</ref>, <ref target="https://godot.date/id/5H5gZigQeHgNXSJRkgde97">in the time of the priest <supplied reason="subaudible">of Apollo</supplied> Philiskos</ref> <supplied reason="subaudible">son</supplied> of Euphanes, 
+               and <supplied reason="subaudible">the priest</supplied> of Emperor Caesar, son of a divinity, Augustus,
+               Barkaios <supplied reason="subaudible">son</supplied> of Theochrestos, the nomophylakes, Apollonios <supplied reason="subaudible">son</supplied> of Euippos, Theodoros <supplied reason="subaudible">son</supplied> of Ariston, Apollonios <supplied reason="subaudible">son</supplied> of Eudaimon,
+               Aretimidoros <supplied reason="subaudible">son</supplied> of Hagemachos, Ammonios <supplied reason="subaudible">son</supplied> of Sophanes, Menandros <supplied reason="subaudible">son</supplied> of Antipatros, Serapion <supplied reason="subaudible">son</supplied> of Polymnastos, 
+               Hyratthis <supplied reason="subaudible">son</supplied> of Dionysios,
+               Alexander <supplied reason="subaudible">son</supplied> of Alexander, set up <supplied reason="subaudible">the image of</supplied> Aphrodite the Guardian of Law.</p></div>
+           <div type="translation" source="#vitali1932" xml:lang="it"> <p>Nell'anno 15 dell'era cyrenaica (= 16 a, C.) sotto il sacerdozio di Filisco,
+figlio di Eufane, e sotto quello di Barceo, figlio di Theochresto, (addetto al culto) dell' imperatore Cesare Augusto, figlio del divino (Cesare), i nomofylaci... dedicarono una immagine di Afrodite, 
+Custode delle leggi.</p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"> <p>السنة 15 ، في زمن الكاهن  (أبوللو)  فيليسكوس (بن) إيفانيس، (كاهن)  الامبراطور قيصر، ابن المؤله أغسطس، باركيوس (بن) ثيوخريستوس، النوموفلاكيس (حماة القانون)، أبوللونيوس 
+               (بن) إيبوس، ثيودورس (بن) أريستون، أبوللونيوس (بن) إيفدايمون، أرتيميديوس (بن) آغيماخوس، أمونيوس (بن) سوفانيس، ميناندروس 
+               (بن) إنتيباتروس، سيرابيون (بن) بوليمناستوس، إراثيس (بن) ديونسيوس، الإكسندر (بن) الإكسندر، أهدوا (تمثال) لأفروديت راعية القانون.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>One of a series of lists recording nomophylakes: <ref type="inscription" n="C.93">C.93</ref>, <ref type="inscription" n="C.94">C.94</ref>, <ref type="inscription" n="C.96">C.96</ref>, <ref type="inscription" n="C.95">C.95</ref>, 
+               <ref type="inscription" n="C.97">C.97</ref>, <ref target="https://igcyr.unibo.it/gvcyr026">GVCyr 26</ref>, all describing a series of dedications, and another list, <ref type="inscription" n="C.98">C.98</ref>; 
+               cf also <ref type="inscription" n="C.99">C.99</ref>; see further on <ref type="inscription" n="C.93">C.93</ref>.</p>
+            <p>Line 1: year 15 of the Actian era = 17/16 BCE</p>
+            <p>Line 2: For Philiskos see <ref type="inscription" n="C.41">C.41</ref> and references there. <!-- For the imperial cult at Cyrene see introduction, p..... --></p>
+            <p>Line 5: Barkaios: honoured in <ref type="inscription" n="C.276">C.276</ref>.</p>
+            <p>Line 6. The earliest dated reference so far to the imperial cult at Cyrene, listed by Ross Taylor, 
+               <title><ref target="https://zenon.dainst.org/Record/000157884">The divinity of the Roman Emperor</ref></title>, p.<ref target="https://hdl.handle.net/2027/mdp.39015020814813?urlappend=%3Bseq=294">270</ref> </p>
+            <p>Line 17: For the dedication to Aphrodite here and in <ref type="inscription" n="C.97">C.97</ref>, line 6, see Robert, loc.cit., who discusses these texts, among the numerous 
+               dedications to Aphrodite made by magistrates of Greek cities and suggests that this "civic Aphrodite" can be explained as arising from her character as a goddess of concord, 
+               in which, naturally, all officials were interested, cf. <ref type="inscription" n="C.96">C.96</ref>, line 13.</p>
+         </div>
+         
+      </body>   </text>
+</TEI>

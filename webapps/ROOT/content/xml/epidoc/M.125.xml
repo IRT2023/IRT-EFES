@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C83700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Boundary</rs> marker</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.125</idno>
+            <idno type="ircyr2012">C83700</idno>
+            <idno type="JMR">Y 28 b</idno>
+            <idno type="Excel">1213</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Brown <material>limestone</material> <objectType>stele</objectType> damaged above and along the sides 
+                              (<dimensions>
+                                 <width>0.53</width>
+                                 <height>1.03</height>
+                                 <depth>0.42</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on two faces. Face a is extremely worn throughout, with surface lost in the upper part; 
+                           the Latin text presumably preceded the Greek on this face.
+                           Face b is damaged along the sides; a cross appears to have been cut over the middle of line  1.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a. <height>0.04</height>; a. <height>0.04</height>; bar above the abbreviated cognomen.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notAfter="0055" notBefore="0054" evidence="reign prosopography">54-55 CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>: 
+                        <placeName ref="https://www.slsgazetteer.org/1411">Bu Traba</placeName>; 
+                               found in <date type="found">1970</date> in situ, in a line with 
+                              <ref type="inscription" n="M.123">M.123</ref> and <ref type="inscription" n="M.124">M.124</ref>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/87381">Bu Traba</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-30" who="AIO">tokenized</change>
+         <change when="2009-08-27" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--J.R. 70, 31, 32, 37, 38.--><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned <bibl>
+               <ptr target="jmr1990"/>, <citedRange unit="page">70</citedRange></bibl>, whence mentioned <bibl><ptr target="cdlBE"/>, <citedRange>1991.678</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="face" n="a" type="textpart">
+               <ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><persName type="emperor" key="nero"><name nymRef="Νέρων"><supplied reason="lost">Νέρων</supplied></name>
+                       <name nymRef="Κλαύδιος"><supplied reason="lost">Κλαύδιος</supplied></name>
+                       <persName type="emperor" key="claudius"><w lemma="θεός"><supplied reason="lost">θεοῦ</supplied></w>
+                          <name nymRef="Κλαύδιος"><supplied reason="lost">Κλαυδίου</supplied></name></persName>
+                    <lb n="2"/> <w lemma="υἱός"><supplied reason="lost">υἱὸς</supplied></w> 
+                    <persName type="emperor" key="germanicus"><name nymRef="Γερμανικός"><unclear>Γε</unclear><supplied reason="lost">ρμανικοῦ</supplied></name>
+                       <name nymRef="Καῖσαρ"><supplied reason="lost">Καίσα</supplied><lb n="3" break="no"/><supplied reason="lost">ρος</supplied></name></persName> 
+                    <w lemma="ὑωνός"><supplied reason="lost">ὑ</supplied>ων<supplied reason="lost">ὸ</supplied><unclear>ς</unclear></w>
+                    <persName type="emperor" key="tiberius"><name nymRef="Τιβέριος"><supplied reason="lost"><expan><abbr>Τι</abbr><ex>βεριόυ</ex></expan></supplied></name>
+                    <name nymRef="Καῖσαρ">Κ<space quantity="1" unit="character"/>α<supplied reason="lost">ίσαρ</supplied><lb n="4" break="no"/><supplied reason="lost">ος</supplied></name>
+                       <name nymRef="Σεβαστός"><supplied reason="lost">Σε</supplied>βασ<supplied reason="lost">τοῦ</supplied></name></persName> 
+                       <w lemma="καί"><supplied reason="lost">καὶ</supplied></w> 
+                       <persName type="emperor" key="augustus"><w lemma="θεός"><supplied reason="lost">θεοῦ</supplied></w> 
+                          <name nymRef="Σεβαστός"><supplied reason="lost">Σε</supplied><lb n="5" break="no"/><supplied reason="lost">β</supplied>αστοῦ</name></persName>
+                       <w lemma="ἔγγονος"><unclear>ἔγγ</unclear><supplied reason="lost">ον</supplied><unclear>ος</unclear></w> 
+                       <name nymRef="Καῖσαρ">Κ<supplied reason="lost">αῖ</supplied><lb n="6" break="no"/><unclear>σ</unclear>αρ</name> <name nymRef="Σεβαστός">Σεβασ <space quantity="1" unit="character"/>
+                    <supplied reason="lost">τὸς</supplied></name> <name nymRef="Γερμανικός">Γε<supplied reason="lost">ρ</supplied><lb n="7" break="no"/><unclear>μ</unclear>ανικὸς</name></persName> 
+                  <w lemma="ἀρχιερεύς">ἀ<supplied reason="lost">ρχιερ</supplied>εὺς</w> 
+                    <w lemma="μέγιστος"><supplied reason="lost">μέγισ</supplied><lb n="8" break="no"/><supplied reason="lost">τος</supplied></w>
+                  <w lemma="δημαρχικός">δημαρχι<supplied reason="lost">κῆς</supplied></w> <w lemma="ἐξουσία"><supplied reason="lost">ἐξου</supplied><lb n="9" break="no"/><supplied reason="lost">σίας</supplied></w> 
+                  <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτωρ</supplied></w> <w lemma="ὕπατος"><supplied reason="lost">ὕπατος</supplied></w>
+                </ab>
+            </div>
+            <div subtype="face" n="b" type="textpart">
+               <ab>
+                        <lb n="1"/> <w lemma="διά"><supplied reason="lost">δι</supplied>ὰ</w>
+                  <persName type="attested" key="pir2-a-0082"><name nymRef="Λούκιος">Λ<supplied reason="lost">ουκίου</supplied></name>
+                        <name nymRef="Ἀκίλιος">Ἀκι<unclear>λ</unclear><supplied reason="lost">ίου</supplied></name>
+                        <lb n="2"/><name nymRef="Στράβων"><unclear>Στράβ</unclear>ωνος</name></persName> <w lemma="ὁ">τοῦ</w>
+                        <lb n="3"/> <w lemma="ἴδιος"><supplied reason="lost">ἰ</supplied>δίου</w> <w lemma="πρεσβευτής">πρεσβευ<lb n="4" break="no"/><supplied reason="lost">το</supplied>ῦ</w> <w lemma="ὁ">τοὺς</w>
+                  <w lemma="κατέχω">κατε<supplied reason="lost">χο</supplied><lb n="5" break="no"/><supplied reason="lost">μ</supplied>ένους</w> <w lemma="ὅρος">ὅρους</w>
+                        <lb n="6"/> <w lemma="ὑπό"><supplied reason="lost">ὑ</supplied>πὸ</w> <w lemma="ἰδιώτης">ἰδιωτῶν</w>
+                  <w lemma="δῆμος">Δή<lb n="7" break="no"/><supplied reason="lost">μ</supplied>ῳ</w>
+                  <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma">Ῥω<unclear>μα</unclear>ίων</placeName> 
+                  <w lemma="ἀποκαθίστημι">ἀπο<lb n="8" break="no"/><supplied reason="lost">κα</supplied>τέστησεν</w>
+                  <space quantity="1" unit="character"/>
+                    </ab>
+                </div>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+           <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>: [<ref target="https://godot.date/id/3wzhqyNf2WVTfiFGU6ffcV">Nero Claudius</ref>, son of deified Claudius, grandson of] Ge[rmanicus Caesar, 
+              great grandson of Tiberius] Caesar Augustus and of deified Augustus, Caesar Augustus Germanicus, high priest <supplied reason="explanation"><foreign xml:lang="la">pontifex maximus</foreign></supplied>, 
+              holding tribunician power [acclaimed imperator, consul]; <note>b</note> by the action of Loukios Akilios Strabon <supplied reason="explanation"><foreign xml:lang="la">Lucius Acilius Strabo</foreign></supplied>, 
+              his personal envoy, he restored to the Roman People the boundaries 
+                    <supplied reason="explanation">of the estates</supplied> which had been occupied by private persons.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            
+            <p> a, line  1 Nero in AD 55.</p>
+            <p>For Acilius Strabo see <title>PIR<hi rend="superscript">2</hi></title> A 0082, and <ref target="http://pir.bbaw.de/addenda/A/0082.html">addenda</ref>; he was active in Cyrenaica under Claudius and 
+               Nero: <ref type="inscription" n="A.25">A.25</ref>, <ref type="inscription" n="A.50">A.50</ref>, <ref type="inscription" n="A.68">A.68</ref>, 
+               <ref type="inscription" n="C.434">C.434</ref>,  <ref type="inscription" n="C.748">C.748</ref>, <ref type="inscription" n="M.125">M.125</ref>,  
+               <ref type="inscription" n="M.141">M.141</ref>, <ref type="inscription" n="M.143">M.143</ref>, 
+               <ref type="inscription" n="M.153">M.153</ref>, <ref type="inscription" n="M.172">M.172</ref>, <ref type="inscription" n="M.238">M.238</ref>,
+               <ref type="inscription" n="M.251">M.251</ref>, <ref type="inscription" n="M.275">M.275</ref>, and perhaps <ref type="inscription" n="M.68">M.68</ref>; 
+               for his appointment see on <ref type="inscription" n="M.141">M.141</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

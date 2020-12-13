@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C57100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Caption</rs> for the statue of an athlete</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.599</idno>
+            <idno type="ircyr2012">C57100</idno>
+            <idno type="JMR">1136</idno>
+            <idno type="Excel">297</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>stele</objectType> consisting of a base carrying a nude figure of an athlete with 
+                              a palm-branch in one hand. To his right are piled four crowns, and he is placing a fifth on his head. To his left is a small altar 
+                              on which lies an animal, apparently a dog.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><note>a</note>. <rs type="execution" key="scalpro">Inscribed</rs> on the base (<dimensions>
+                           <width>0.28</width>
+                           <height>0.06</height>
+                        </dimensions>), which has been broken at the left side since discovery. <note>b</note>. <rs type="execution" key="scalpro">Inscribed</rs> on the altar (<dimensions>
+                           <width>0.05</width>
+                           <height>0.105</height>
+                        </dimensions>).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century CE. a: line 1, <height>0.03</height>; line 2, <height>0.01-0.015</height>; lunate epsilon, lunate sigma, cursive omega; in line 1, ὁ is 
+                        written within the final lunate sigma of Ἀντωνιανός; a roughly incised <rs type="decoration">palm branch</rs> concludes the text. b: <height>0.01-0.012</height>,
+                        lunate sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0200" notAfter="0350" precision="low" evidence="sculpture">Third century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/1071">North Necropolis</placeName>, in front of the tomb used by the Norton Expedition 
+                              as a dark room; found 
+                              in January <date type="found">1911</date>  
+                              </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from the monument and the photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-29" who="GillianB">tokenized</change>
+         <change when="2009-06-18" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="DSC04259" decls="#photograph"><desc>Statue, front (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04123" decls="#photograph"><desc>Statue, front (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04122" decls="#photograph"><desc>Statue, left side (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04120" decls="#photograph"><desc>Statue, right side (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04263" decls="#photograph"><desc>Statue, right side, detail (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04261" decls="#photograph"><desc>Plinth, with a (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04262" decls="#photograph"><desc>Plinth, with a (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04264" decls="#photograph"><desc>Right side, text b (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_1136_001front" decls="#photograph"><desc>b, with part of a</desc></graphic>
+      <graphic url="JMR_1136_002front" decls="#photograph"><desc>b, with part of a</desc></graphic>
+      <!--Dept. F. 1584 (base only); Rosenbaum, (altar and base).--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="robinson1913"/>, from De Cou, <citedRange>45</citedRange> with drawing</bibl>, cf. 
+               <bibl><ptr target="robinson1913a"/>, <citedRange>505</citedRange></bibl>, whence 
+               <bibl><ptr target="Sammelbuch"/>, <citedRange>I.5892</citedRange></bibl>;
+               <bibl><ptr target="norton1911"/><author>R. Norton</author> <citedRange>160</citedRange>, and pl. LXXVI</bibl>;
+               <bibl><ptr target="rosenbaum1960"/>, <citedRange>285</citedRange>, pl. CI, nos. 3, 4</bibl>, whence  
+               <bibl><ptr target="SEG"/> <citedRange>20.752</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324507">324507</ref></citedRange></bibl>. 
+               Discussed, <bibl><ptr target="chamoux1988a"/><citedRange></citedRange></bibl>, <bibl><ptr target="chamoux2002"/><citedRange></citedRange></bibl>, whence <bibl><ptr target="cdlBE"/>, <citedRange>2004.449</citedRange></bibl>; 
+               see also <bibl><ptr target="chamoux2001"/><citedRange></citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="a" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V5a-39851"><name nymRef="Ἀντωνιανός"><supplied reason="lost">Ἀντ</supplied>ωνιανὸϲ</name></persName> <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w>
+                        <persName type="attested"><name nymRef="Μῶρος">Μῶροϲ</name>
+                        <lb n="2"/><placeName type="ethnic" nymRef="#Ἐφέσιος" ref="#ephesos">Ἐφέσιοϲ</placeName></persName>  
+                    </ab></div><div subtype="section" n="b" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-65268"><name nymRef="Παρηγόρις">Παρή<lb n="2" break="no"/>γοριϲ</name></persName>
+                    </ab>
+</div>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note> Antonios <supplied reason="explanation"><foreign xml:lang="la">Antonius</foreign></supplied> also called Moros, an Ephesian. </p>
+           <p> <note>b</note> Paregoris</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The portrait statue is dated by Rosenbaum, l.c., in the second quarter of third century; for the man see also <ref type="inscription" n="C.553">C.553</ref>. The crowns indicate that he had won at least five contests.</p>
+            <p>b: Chamoux, ponited out that Paregoris is in fact the name of the dog. It is a good name for a dog; she was dead and her image was placed upon her funerary monument on her master’s own monument.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

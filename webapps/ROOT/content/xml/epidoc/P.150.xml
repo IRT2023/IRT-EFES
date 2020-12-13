@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P18200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">honours</rs> for an <rs type="textType">imperial</rs> female</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.150</idno>
+            <idno type="ircyr2012">P18200</idno>
+            <idno type="JMR">365</idno>
+            <idno type="Excel">635</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three adjoining fragments from the right side of a  <material>marble</material> 
+                              <objectType>panel</objectType>,
+                    chipped at the edges (<dimensions><width unit="metre">0.13</width> <height unit="metre">0.12</height> <depth unit="metre">0.07</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre" precision="low">0.012-0.02</height>; rather roughly cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace> Unknown</origPlace>
+                     <origDate notAfter="0096" notBefore="0081" precision="low" evidence="reign">81-96 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/986">Street of the Monuments</placeName>; found in <date type="found">1955</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName> 
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                    <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                </term>
+               <term>
+                    <geogName type="modernCountry" key="LY">Libya</geogName>
+                </term>
+               <term>
+                    <placeName type="modernFindspot" key="Tolmeita">Tolmeita</placeName>
+                </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-09-17" who="Charlotte Tupman">tidied</change>
+         <change when="2008-01-30" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="Photos_0131" decls="#photograph"><desc>View of the three fragments (Joyce Reynolds, Tolmeita V. 27, NS.XIII.27)</desc></graphic>
+      <graphic url="JMR_365_002" decls="#photograph"><desc>a and c, face (1961-05-26, Joyce Reynolds III.28)</desc></graphic>
+      <graphic url="JMR_365_001" decls="#photograph"><desc>a and c, view (Reynolds XII.1) </desc></graphic>
+      <graphic url="JMR_365_003" decls="#photograph"><desc>a and c, face</desc></graphic><!--Dept. JR III. 91;--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                <lb n="1"/><persName type="emperor" key="domitia"><name nymRef="Δομειτία"><supplied reason="lost" cert="low">Δομειτίαν</supplied></name>
+                 <name nymRef="Σεβαστή"><supplied reason="lost">Σεβαστ</supplied><unclear>α</unclear>ν</name> <space quantity="3" unit="character"/>
+                <lb n="2"/> <supplied reason="lost"><w lemma="γυνή">γυναῖκα</w></supplied>
+                <w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκ</supplied>ράτορ<unclear>ο</unclear><supplied reason="lost">ς</supplied></w> 
+                <lb n="3"/><persName type="emperor" key="domitianus"><name nymRef="Δομετιανός"><supplied reason="lost" cert="low">Δομετιανο</supplied><unclear>ῦ</unclear></name>
+                <name nymRef="Καῖσαρ"><unclear>Κ</unclear>αίσαρ<supplied reason="lost">ος</supplied></name> 
+                <lb n="4"/><supplied reason="lost"><name nymRef="Σεβαστός">Σεβαστοῦ</name></supplied> <name nymRef="Γερμανικός"><supplied reason="lost">Γ</supplied>ερμανικ<supplied reason="lost">οῦ</supplied></name></persName></persName> 
+                <lb n="5"/><gap reason="lost" quantity="7" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F"><supplied reason="lost">ο</supplied><unclear>ς</unclear></seg></name> <persName type="attested"><name nymRef="Ἴαλ">Ἴαλος</name></persName></persName> 
+                <orig>υ</orig><gap reason="lost" quantity="1" unit="character"/><lb n="6" break="no"/><gap reason="lost" quantity="6" unit="character"/> 
+                <persName type="attested"><name nymRef="Ὑπερβάσσας"><supplied reason="lost">Ὑπε</supplied>ρβάσσας</name></persName> <gap reason="lost" quantity="1" unit="character"/>
+                <lb n="7"/> 
+                <w lemma="ἱερεύς"><supplied reason="lost">ἱερεῖς</supplied></w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων"><supplied reason="lost">Ἀ</supplied>πόλλωνο<supplied reason="lost">ς</supplied></name></persName>
+            </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Domitia Augusta, wife of Emperor Domiian Caesar Augustus, victor in Germania: [ . .  -]os <supplied reason="subaudible">son</supplied> of Ial, 
+            [ . . . ], Hyperbassas [priests ] of Apollo <supplied reason="subaudible">dedicated her statue</supplied></p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The dedication of a statue of the wife or daughter of a reigning emperor. From what survives of his name and titles,
+                the choice lies between Domitian and Trajan and Domitian's name fills the requirements of the spacing better.</p>
+                
+           
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

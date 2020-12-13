@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C81900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Boundary</rs> marker</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.239</idno>
+            <idno type="ircyr2012">C81900</idno>
+            <idno type="JMR">Y 24</idno>
+            <idno type="Excel">1208</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Brown <material>limestone</material> <objectType>stele</objectType> 
+                              (<dimensions>
+                                 <width>0.66</width>
+                                 <height>1.04</height>
+                                 <depth>0.51</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on three faces: a on the front, b to the left of a, 
+                           c to the right of a. The vacant spaces shown in b, lines 1, 2 and c, line 5 mark holes in the stone avoided by the mason.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Average <height>0.04</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0074" notAfter="0074" evidence="reign titulature">74 CE, first half</origDate><!-- check -->
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>:
+                        <placeName ref="https://www.slsgazetteer.org/1684">Ras al-Hilal</placeName>; found in <date type="found">1961</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/83467">Ras el Hilal</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>         
+         <change when="2011-07-29" who="Pietro">removed wrong photographs and added others</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-16" who="AIO">tokenized</change>
+         <change when="2009-08-26" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-08-19" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="DSC04463" decls="#photograph"><desc>Face a (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04464" decls="#photograph"><desc>Face a (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04466" decls="#photograph"><desc>Face b (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04465" decls="#photograph"><desc>Face c (2008, H.Walda)</desc></graphic>
+           </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>285</citedRange></bibl>.</p>
+         </div>
+         
+         
+         <div type="edition" xml:space="preserve">
+            <div subtype="face" n="a" xml:lang="la" type="textpart">
+               <ab>
+                    <lb n="1"/><date ref="https://godot.date/id/eNEx3CGAZpHkvKSFydWCjE"><persName type="emperor" key="vespasianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w> 
+                    <name nymRef="Caesar">Caisar</name> <name nymRef="Vespasianus">Vesp<supplied reason="lost">a</supplied><lb n="2" break="no"/>sianus</name> <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name></persName>
+                  <expan>  <w lemma="pontifex"><abbr>pont</abbr><ex>ifex</ex></w> <w lemma="maximus"><abbr>max</abbr><ex>imus</ex></w></expan>
+                    <lb n="3"/><expan><w lemma="tribunicius"><abbr><unclear>t</unclear>rib</abbr><ex>unicia</ex></w>
+                    <w lemma="potestas"><abbr>pot</abbr><ex>estate</ex></w></expan> <num value="5">V</num>
+                    <w lemma="imperator"><expan><abbr>imp</abbr><ex>erator</ex></expan></w>
+                    <num value="10">X</num> <expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w> 
+                    <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan> 
+                    <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> <num value="5">V</num></date>
+                    <lb n="4"/><w lemma="per">per</w> <persName type="attested" key="pir2-p-0027"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintum</ex></expan></name> <name nymRef="Paconius">Paconium</name> <name nymRef="Agrippinus">Agrippi<lb 
+                       n="5" break="no"/>nu<unclear>m</unclear></name></persName> <w lemma="legatus"><expan><abbr>leg</abbr><ex>atum</ex></expan></w> <w lemma="suus">suum</w> <w lemma="ager">agrum</w>
+                    <lb n="6"/><w lemma="regius">regium</w> <expan><w lemma="populus"><abbr>P</abbr><ex>opulo</ex></w> 
+                    <placeName type="ethnic" nymRef="#Romanus" ref="#roma"><abbr>R</abbr><ex>omano</ex></placeName></expan> <w lemma="restituo">restituit</w>
+               </ab>
+               <ab xml:lang="grc">
+                    <lb n="7"/><date ref="https://godot.date/id/eNEx3CGAZpHkvKSFydWCjE"><persName type="emperor" key="vespasianus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτωρ</w> <name nymRef="Καῖσαρ">Καῖσαρ</name> 
+                    <lb n="8"/><name nymRef="Οὐεσπασιανός">Οὐεσπασιανὸς</name></persName> <w lemma="ἀρχιερεύς">ἀρχιε<lb n="9" break="no"/>ρεὺς</w> <w lemma="μέγιστος">μέγιστος</w> <w lemma="δημαρχικός">δημαρ<lb n="10" break="no"/>χικῆς</w> <w lemma="ἐξουσία">ἐξουσίας</w> <num value="5">ε</num></date> <space quantity="1" unit="character"/> 
+                    <lb n="10a"/> <space extent="unknown" unit="line"/>
+               </ab>
+            </div>
+            <div subtype="face" n="b" type="textpart" xml:lang="grc">
+               <ab>
+                        <lb n="1"/> <space quantity="3" unit="character"/>
+                        <w lemma="Αὐτοκράτωρ">Αὐ<unclear>τ</unclear><supplied reason="lost">οκράτω</supplied><lb n="2" break="no"/><unclear>ρ</unclear></w> <num value="10"><unclear>ι</unclear></num> <w lemma="πατήρ">πατ<unclear>ὴ</unclear><supplied reason="lost">ρ</supplied></w> <w lemma="πατρίς"><supplied reason="lost">πα</supplied><lb 
+                           n="3" break="no"/><space quantity="1" unit="character"/>τρίδος</w> <w lemma="ὕπατος"><supplied reason="lost">ὕπα</supplied><lb 
+                              n="4" break="no"/>τος</w> <supplied reason="lost"><num value="5">ε</num> 
+                                    <space quantity="1" unit="character"/></supplied>.
+                        <lb n="4a"/> <space extent="unknown" unit="line"/>
+            </ab>
+            </div>
+            <div subtype="face" n="c" type="textpart" xml:lang="grc"><ab>
+                        <lb n="1"/> <w lemma="διά"><supplied reason="lost">διὰ</supplied></w> 
+                        <persName type="attested" key="pir2-p-0027"><name nymRef="Κόϊντος"><supplied reason="lost"><expan><abbr>Κ</abbr><ex>ουΐντου</ex></expan></supplied></name>
+                        <name nymRef="Πακώνιος"><supplied reason="lost">Πα</supplied><unclear>κω</unclear>νίου</name>
+                        <name nymRef="Ἀγριππῖνος"><supplied reason="lost">Ἀγρ</supplied><lb n="2" break="no"/><supplied reason="lost">ι</supplied>ππίνου</name></persName>
+                        <lb n="3"/> <w lemma="ἴδιος">ἰδίου</w> <w lemma="πρεσβευτής">π<unclear>ρ</unclear><supplied reason="lost">ε</supplied>σ<lb n="4" break="no"/>β<unclear>ε</unclear>υτοῦ</w> <w lemma="ἀγρός"><unclear>ἀγρ</unclear>ὸν</w>
+                        <w lemma="βασιλικός"><supplied reason="lost">β</supplied><lb n="5" break="no"/>ασιλικ<space quantity="1" unit="character"/>ὸν</w> <expan><w lemma="δῆμος"><abbr>Δ</abbr><ex>ήμῳ</ex></w>
+                        <placeName type="ethnic" nymRef="#Ῥωμαῖος" ref="#roma"><abbr>Ῥ</abbr><ex>ωμαίων</ex></placeName></expan>
+                        <lb n="6"/> <w lemma="ἀποκαθίστημι"><supplied reason="lost">ἀπ</supplied>οκατέσ<supplied reason="lost">τη</supplied><lb n="7" break="no"/>σεν</w> <space quantity="3" unit="character"/>
+               
+            </ab>
+            </div>
+         </div>
+         
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>Latin</note>: Emperor Caesar Vespasianus Augustus, <foreign xml:lang="la">pontifex maximus</foreign>, 
+            <ref target="https://godot.date/id/eNEx3CGAZpHkvKSFydWCjE">holding tribunician power for the fifth time, 
+            acclaimed imperator ten times, fatehr of the fatherland, consul five times</ref>; through the agency of Q(uintus) Paconius Agrippinus, his envoy, restored the royal estate to the Roman People.</p>
+            <p><note>Greek</note>: Emperor Caesar Vespasianus Augustus, high priest, <ref target="https://godot.date/id/eNEx3CGAZpHkvKSFydWCjE">holding tribunician power for the fifth time, 
+            acclaimed imperator ten times, father of the fatherland, consul five times</ref>, through the agency of [Q(uintus) Pa]conius Agrippinus, his envoy, restored the royal estate to the Roman People.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> The first half of 74. See on <ref type="inscription" n="M.232">M.232</ref></p>
+            <p>a, line 1: for the spelling <foreign xml:lang="la">Caisar</foreign> see also <ref type="inscription" n="M.229">M.229</ref>.</p>
+            <!-- <p> Tri. Pot. V 1st of June 73 - 30 June 74. Cos V ? - 1st of January 74. 
+                    Imp. X Mattingly puts 72 but Cagnat thought he was Imp. XI in the first half of 73. Mattingly
+                    thinks 75. PW during 74. </p> -->
+            <p>Q. Paconius Agrippinus, for whom see <title>PIR<hi rend="superscript">2</hi></title> P 0027, was active in Cyrenaica under Vespasian, 71-74 CE: see <ref type="inscription" n="C.147">C.147</ref>,
+               <ref type="inscription" n="C.428">C.428</ref>, <ref type="inscription" n="C.429">C.429</ref>, <ref type="inscription" n="C.430">C.430</ref>, 
+               <ref type="inscription" n="C.430">C.438</ref>, <ref type="inscription" n="C.747">C.747</ref>, <ref type="inscription" n="M.68">M.68</ref>,
+               <ref type="inscription" n="M.165">M.165</ref>, <ref type="inscription" n="M.229">M.229</ref>, <ref type="inscription" n="M.230">M.230</ref>, 
+               <ref type="inscription" n="M.232">M.232</ref>, <ref type="inscription" n="M.238">M.238</ref>, <ref type="inscription" n="M.239">M.239</ref>,
+               <ref type="inscription" n="P.397">P.397</ref>.</p>
+            <!-- <p> Is this Hilal or Each (?)</p> --></div>
+         
+      </body>
+   </text>
+</TEI>

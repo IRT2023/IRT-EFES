@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Asklepios</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.193</idno>
+            <idno type="ircyr2012">G05900</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Block of white <material>marble</material> (<dimensions>
+                              <width unit="metre">1.67</width>
+                              <height unit="metre">0.22</height>
+                              <depth unit="metre">0.255</depth>
+                           </dimensions>), with moulding, badly chipped, above the inscribed face and
+                              a relief of a female bust within a medallion to the right.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, below moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Tall, narrow letters with lunate sigma and epsilon; unusual mu, omega and kappa; 
+                        slanting strokes for stops; apices, points and a ligature.
+                        Letters 1.1 <height unit="metre">0.035</height>; line  2, <height unit="metre">0.03</height>; 
+                        lines 3-4, <height unit="metre">0.028</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering terminology">Second to third centuries CE</origDate>
+                  </origin><provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>: near
+                     <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>, at <placeName type="monuList" ref="https://www.slsgazetteer.org/1257">Sidi Shaherrwha</placeName>; 
+                     found in excavation in <date type="found">1969</date> of ancient buildings by the modern main road.
+                             </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/89055">Al Baida</placeName>
+               </term> </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds)</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-21" who="CMR">created from publication</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_hygia" decls="#photograph"><desc>Face</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p><bibl><ptr target="jmr1971b"/>, <citedRange>1</citedRange></bibl>,
+               whence <bibl><ptr target="SEG"/> <citedRange>26.1818</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324713">324713</ref></citedRange></bibl>, 
+                <bibl><ptr target="AE"/> <citedRange>1974.680</citedRange></bibl>; discussed <bibl><ptr target="struffolino2014"/>, <citedRange>351-352</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><ab>
+                  
+                    <lb n="1"/>
+                    <persName type="divine" key="asklepios"><name nymRef="Ἀσκληπιός"><supplied reason="lost">Ἀϲκληπ</supplied>ιῶι</name>
+                       <g ref="symbols.xml#stop"/> <placeName type="ethnic" nymRef="#Βαλαγρείτης" ref="#balagrae">Βαλαγρείτηι</placeName> <g ref="symbols.xml#stop"/> <name nymRef="Ἰατρός">Ἰητρῶι</name></persName> <g ref="symbols.xml#stop"/> <lb n="2"/><gap reason="lost" extent="3" unit="character"/>
+            <persName type="attested"><name nymRef="Λούκουλλος"><supplied reason="lost">Λο</supplied>ύκουλλοϲ</name>
+            <g ref="symbols.xml#stop"/> <w lemma="ἐπίτροπος">ἐπίτροποϲ</w> <g ref="symbols.xml#stop"/> <w lemma="ὁ">τοῦ</w>
+            <persName type="emperor" key="anonymus"><name nymRef="Σεβαστός">Ϲεβαϲτοῦ</name></persName></persName>
+            <lb n="3"/><gap reason="lost" extent="3" unit="character"/><orig>ν</orig> <w lemma="ὑγεία">ὑγείαϲ</w> <g ref="symbols.xml#stop"/> <w lemma="καί">καὶ</w> <w lemma="εἰς">εἰϲ</w> <w lemma="ὑπόμνησις">ὑπόμνηϲιν</w> <g ref="symbols.xml#stop"/> <w lemma="ὁ">τῆϲ</w> <w lemma="πρός">πρὸϲ</w>
+            <lb n="4"/> <w lemma="ἑαυτός"><supplied reason="lost" cert="low">ἑαυτὸν</supplied></w> <w lemma="φιλία">φιλίαϲ</w> <g ref="symbols.xml#stop"/> <w lemma="δράκων">δράκοντα</w> <g ref="symbols.xml#stop"/> <w lemma="ἀργύρεος">ἀργύρεον</w> <g ref="symbols.xml#leaf"/> </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" source="#jmr971b" xml:lang="en"><p>[To Asklep]ios of Balagrae, Doctor, [?] Lucullus, procurator of the Emperor, [?in thanks for]
+            health and as a memorial of friendship [towards himself?] (dedicated) a silver serpent.</p></div>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>[To Asklep]ios of Balagrae, Iatros, [Lo]ukoullos, procurator of the Emperor, [?in thanks for]
+            health and in memory of kindnewss [towards himself?] <supplied reason="subaudible">dedicated</supplied> a silver serpent.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>The epithet of the god confirms the identity of Balagrae, site of a famous shrine of Asklepios: τὸ δ᾽ ἐν Βαλάγραις ταῖς Κυρηναίων ἐστὶν Ἀσκληπιὸς καλούμενος Ἰατρὸς, Pausanias, <title>Graeciae Descriptio</title>
+               II, 26, 9, available at 
+               <ref target=" http://data.perseus.org/citations/urn:cts:greekLit:tlg0525.tlg001.perseus-grc1:2.26.9">Perseus</ref>.
+               Lucullus was presumably procurator of Crete and Cyrene, perhaps to be identified with Julius Lucullus, <title>PIR<hi rend="superscript">2</hi></title>, I 0387</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

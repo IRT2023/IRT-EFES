@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P39200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.290</idno>
+            <idno type="ircyr2012">P39200</idno>
+            <idno type="JMR">515</idno>
+            <idno type="Excel">446</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Rock</material>-cut  <objectType>tomb</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> in a rectangular panel.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Pacho's drawing gives the impression of two different hands.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate evidence="lettering" precision="low" notBefore="0001" notAfter="0100">First century A.D </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                              Said in 1930 to have been to the right of the door, high up on the external wall, of the Mausoleum at en-Ugheirat, 
+                              which should be the  <placeName type="monuList" ref="https://www.slsgazetteer.org/973">Hellenistic Mausoleum</placeName> in Quarry III; 
+                              first recorded in <date type="found">1825</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot <date type="observed">1930</date></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>From previous publications (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-02-18" who="MGDA">fixed CIG bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-01-23" who="CMR">tagged description, corrected text</change>
+         <change when="2009-05-14" who="MR">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXIX" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXVIII, numbered LXXIX)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="pacho1827"/> <citedRange unit="plate">LXXVIII</citedRange> (printed as LXXIX) and Letronne p. 403</bibl>, whence <bibl>
+                  <ptr target="cigiii"/>, <citedRange unit="entry">5236</citedRange></bibl>; 
+                    <bibl>
+                  <ptr target="oliverioDAI2"/>, <citedRange unit="entry">482</citedRange> (6), p. 243, pl. XC, fig. 67</bibl>, whence <bibl>
+                     <ptr target="SEG"/> <citedRange>9.361</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324210">324210</ref></citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-61641"><name nymRef="Τενέδιος">Τενέ<unclear>δ</unclear>ιος</name> <name nymRef="Φ-"><seg part="I">Φ</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><g ref="symbols.xml#leaf"/> <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name>
+                    <name nymRef="Ἀντώνιος">Ἀντωνι<g ref="symbols.xml#leaf"/><lb n="3" break="no"/><supplied reason="lost">ο</supplied>ς</name> <name nymRef="Ὕλλας">Ὑ<unclear>λ</unclear>λας</name></persName> 
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    <app loc="1">
+                       <rdg resp="#pacho1827">ΤΕΛΕΣ.ΟΤΟΣΦ</rdg>
+                       <rdg resp="#cigiii">Τελέσ[φ]ο[ρ]ος</rdg>
+                       <rdg resp="#oliverioDAI2">ΤΕΝΕΔΙΟΣΦ</rdg>
+                       <rdg resp="#edd">Τελεσίδοτος ?</rdg>
+               </app>
+               <app loc="2">
+                  <rdg resp="#pacho1827">ΦΛΑΝΤΟΝΙ leaf</rdg>
+                  <rdg resp="#cigiii">Φλ. Ἀντ[ώ]νι[ος]</rdg>
+                  <rdg resp="#oliverioDAI2">ΦΛΑΝΤΩΝΙΟΣ</rdg>
+               </app>
+               <app loc="3">
+                  <rdg resp="#pacho1827">ϹΥΑΛΑΣ</rdg>
+                  <rdg resp="#cigiii">Σύ[λ]λας</rdg>
+                  <rdg resp="#oliverioDAI2">ΣΥΛΛΑΣΣΥΛΛΑΣ</rdg>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Tenedio (di[?)  F-  Fl. Antonio Silla</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Tenedios . . . L(oukios) Antonios <supplied reason="explanation"><foreign xml:lang="la">L(ucius) Antonius</foreign></supplied> Hyllas.</p></div>
+         </div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- <p>On the restoration of the tomb see <bibl>Caputo, <title level="j">Quaderni</title> III (1954) 43f.</bibl> 
+                    <bibl>Kraeling 113f.</bibl> wrongly associates it with royal estates on the basis of mistakes over the boundary stones.</p> -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

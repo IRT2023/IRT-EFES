@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A10800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Boundary</rs> marker</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.54</idno>
+            <idno type="ircyr2012">A10800</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular <objectType>stele</objectType> of brown 
+                              <material>limestone</material>, reconstructed from several pieces, 
+                              chipped along all edges and broken below 
+                              (<dimensions>
+                                 <width unit="metre">0.62</width>
+                                 <height unit="metre">1.05</height>
+                                 <depth unit="metre">0.34</depth>
+                              </dimensions>).
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which was already pitted with holes when the mason worked
+                           on it (except in line 15, the vacant spaces marked in the text are due to the
+                           mason's avoidance of these holes).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE <height unit="metre">0.03-0.04</height>;
+                        very irregular and roughly cut.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0073" notAfter="0077" evidence="reign prosopography">73-77 CE</origDate>
+                  </origin>
+                  
+                  
+                  <provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: In the area known as <placeName type="monuList" ref="https://www.slsgazetteer.org/930">Filtro</placeName>, some 500 metres south of
+                        the modern town of Marsa Susa. Found in <date type="found">1964</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-07-29" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-15" who="CB">bibliography pass</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-18" who="DT">Meta data tagged</change>
+         <change when="2010-03-04" who="GB">fixed Greek; tidied</change>
+         <change when="2010-02-21" who="CMR">Title, translation, tags</change>
+         <change when="2009-07-16" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="Photos_0162" decls="#photograph"><desc>Face (Department of Antiquities, F.4348)</desc></graphic>
+      <graphic url="Photos_0156" decls="#photograph"><desc>Lines 5-15</desc></graphic>
+      <graphic url="DSC04510" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04511" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04512" decls="#photograph"><desc>Lines 1-10 (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04513" decls="#photograph"><desc>Lines 4-13 (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04514" decls="#photograph"><desc>Lines 11-15 (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04515" decls="#photograph"><desc>Lines 13-15 (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04516" decls="#photograph"><desc>Left side (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04517" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <!--Goodchild.--></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="rgg-jmr1965"/>, <citedRange>1</citedRange>, with Plate xl. and a drawing, fig. 2</bibl>, whence <bibl><ptr target="AE"/> <citedRange>1967.531</citedRange></bibl>,
+               (whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015145">015145</ref></citedRange></bibl>), 
+               <bibl><ptr target="jmr1972"/>, <citedRange>46</citedRange></bibl>; <bibl>
+                  <ptr target="jmr1976"/>, <citedRange>76</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>285</citedRange></bibl>.
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><w lemma="ex">E<unclear>x</unclear></w> <w lemma="auctoritas">auctoritate</w>
+                    <lb n="2"/><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratoris</ex></expan></w>
+                        <persName type="emperor" key="vespasianus"><name nymRef="Caesar">Caesaris</name> <name nymRef="Vespasianus">Vespasi<lb n="3" break="no"/>ani</name> <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName>
+                        <date><persName type="attested"><name nymRef="Gaius"><expan><abbr>G</abbr><ex>aius</ex></expan></name> 
+                        <name nymRef="Arinius">Arinius</name> <name nymRef="Modestus">Modes<lb n="4" break="no"/>tus</name> 
+                        <w lemma="proconsul"><expan><abbr>pr<unclear>o</unclear>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                        <num value="2">II</num> </persName></date> <w lemma="chorium">choria</w> <placeName type="ethnic" nymRef="#Apolloniata" ref="#apollonia">Apol<lb n="5" break="no"/>loniatarum</placeName> <w lemma="qui">quae</w> <w lemma="respublica">respu<lb 
+                           n="6" break="no"/>bl<unclear>i</unclear> <space quantity="1" unit="character"/> ca</w> <w lemma="cum">cum</w> 
+                        <w lemma="socius">soci<supplied reason="omitted">i</supplied>s</w> <w lemma="emo">emerat</w> 
+                    <lb n="7"/> <space quantity="1" unit="character"/> <w lemma="diuido">diuisa</w> <space quantity="1" unit="character"/>
+                        <w lemma="loco">locauit</w> 
+                    <lb n="8"/><w lemma="in">in</w> <w lemma="perpetuus">perpetuu<space quantity="1" unit="character"/>m</w> 
+                        <persName type="attested"><name nymRef="Apollonius">Apol<lb n="9" break="no"/>ionio</name> <persName type="attested"><name nymRef="Paraebatas">Paraebatae</name></persName></persName> 
+                        <w lemma="filius"><expan><abbr><unclear>f</unclear></abbr><ex>ilio</ex></expan></w>
+                    <lb n="10"/><w lemma="annuus">an<unclear>nu</unclear> <space quantity="1" unit="character"/> is</w> 
+                        <w lemma="denarius">denari<supplied reason="omitted">i</supplied>s</w>
+                    <lb n="11"/><num value="408">CCCCVIII</num> <space quantity="1" unit="character"/> 
+                        <w lemma="fides">fide</w> <persName type="attested"><name nymRef="Theodorus">Theo<lb n="12" break="no"/>dori</name> <persName type="attested"><name nymRef="Theodorus">Theodori</name></persName></persName> 
+                        <w lemma="filius"><expan><abbr>f</abbr><ex>ili</ex></expan></w> <w lemma="et">et</w> 
+                    <lb n="13"/><persName type="attested"><name nymRef="Antonius">Anto<space quantity="1" unit="character"/> ni</name> 
+                        <name nymRef="Bathyllus">Bathylli</name></persName> <w lemma="in">i<unclear>n</unclear></w>
+                    <lb n="14"/><w lemma="qui">quibus</w> <space quantity="1" unit="character"/> <w lemma="sum">sunt</w>
+                        <w lemma="medimnium">medi<unclear>m</unclear>nia</w> 
+                    <lb n="15"/> <space quantity="1" unit="character"/> <num value="23">XXIII</num> 
+                        <space quantity="1" unit="character"/>
+                        <w lemma="hemisus"><expan><abbr>hemi</abbr><ex>su</ex></expan></w> <num value="1">I</num>
+                        <space quantity="3" unit="character"/>
+                </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#jmr" xml:lang="en"><p>On the authority of Emperor Caesar Vespasian Augustus, Gaius Arinius Modestus, proconsul for
+                    a second year, divided and leased in perpetuity the lands of the Apolloniates which the city had bought
+                    jointly with associates, to Apollonios <supplied reason="subaudible">son</supplied> of Paraibatas, for an annual rent of 408 denarii; on the good faith
+                    of Theodoros <supplied reason="subaudible">son</supplied> of Theodoros and Antonius Bathyllos; the extent is 23 and a half medimnia.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>This resembles closely the boundary stones set up under Claudius, Nero and
+                    Vespasian to mark the limits of public land cf. <ref type="inscription" n="A.25">A.25</ref>, 
+                    <ref type="inscription" n="A.50">A.50</ref> and <ref type="inscription" n="A.51">A.51</ref>, which may come 
+                    from the same estate as this stone. For Vespasian's boundary commission see Oliverio, 
+                    cited on <ref type="inscription" n="A.50">A.50</ref>. So far no Flavian boundary 
+                    stones have been found in the immediate neighborhood of Apollonia; 
+                    <ref type="inscription" n="A.51">A.51</ref> suggests the introduction of a new system there and
+                    this stone seems to indicate that Vespasian was responsible for it. Presumably he
+                    sold the land to the city but authorized the proconsul to supervize the leases
+                    granted on it. For Flavian sales of public land cf. Hyginus p. 8 (Lachmann: available at <ref target="http://forumromanum.org/literature/hyg_gen.html">Forum Romanum</ref>) and
+                    for Flavian interest in city-lands cf. McCrum and Woodhead, <title><ref target="https://zenon.dainst.org/Record/000228551">Select
+                    Documents of the Principates of the Flavian Emperors</ref></title> 339, 444, 447, 448, 451.
+                    If, as seems possible, there were no public estates thereafter in the immediate
+                    neighborhood of the city the field boundaries visible a little west of Marsa
+                    Susa are unlikely to indicate allotments made to veterans by Hadrian after the
+                    Jewish Revolt as suggested by Applebaum, <title level="j">JJS</title> 2 (1951) 181.</p>
+            <p>Lines 3-4: For the proconsul see W. Eck, <title level="j">Vestigia</title> XIII (1970) 119ff,  
+               see <bibl><ref type="external" target="http://pir.bbaw.de/addenda//alia/IRN1891.html">PIR addenda</ref></bibl>, and 
+               Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.030. He may have held office in any 
+                    year of Vespasian's reign except CE 72/3 (Josephus, BJ VII. 439f.) or 77/8 
+                    (<!--xref Milestones to be published in IRC-->); but if his action is to be associated 
+                    with Vespasian's work on public lands in Cyrenaica it should be after the first half 
+                    of 74 when we know that an imperial legate was working in the coastal plain near Apollonia
+                    (see <bibl><ptr target="reynolds1971"/></bibl>). The prolongation of his proconsulate for more than one year may be
+                    associable with the prolonged proconsulates of the period of reorganization
+                    after the Civil War of CE 68/9 (cf. R. Knox McElderry, <title level="j">JRS</title> 2 (1913) 116f.) or
+                    attributed to local conditions such as the Jewish movement suppressed in CE 74
+                    (Josephus, supra).</p>
+            <p>Line 6: That the city needed associates for the purchase may suggest some previous
+                    financial weakness.</p>
+            <p>Line 8.: For a lease <foreign xml:lang="la">in perpetuum</foreign>, well-attested for city-lands, see Gaius, Inst. III.
+                    145; the rent suggests that land values in Cyrenaica conformed to the general
+                    Mediterranean pattern for the period, cf. the material collected by R.P. Duncan
+                    Jones ap. Reynolds and Goodchild.</p>
+            <p>Lines 8-9: Perhaps to be identified with the leaseholder of 
+                    <ref type="inscription" n="A.51">A.51</ref>.</p>
+            <p>Lines 14-15: The terminology shows Roman acceptance of local traditions of land measurements,
+                    cf. Hyginus p. 293 (Lachmann) but as Professor Keith Hopkins pointed out to
+                    me, the rent, 17.37 denarii for a medimnus, is an odd figure. From the
+                    calculations of C. Hultsch, <title><ref target="https://zenon.dainst.org/Record/001318800">Griechische und römische Metrologie</ref></title>  651, the area
+                    concerned would equate to c. 25 1/2 iugera and on this basis the rent would be the more
+                    rational figure of 16 denarii for a iugerum; Hopkins therefore made the
+                    interesting suggestion that the rent was worked out in Roman terms and 
+                    then converted into Greek.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

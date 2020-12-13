@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P05900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary ?<rs type="textType">ephebic</rs> <rs type="textType">list</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.57</idno>
+            <idno type="ircyr2012">P05900</idno>
+            <idno type="JMR">284</idno>
+            <idno type="Excel">660</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three adjoining fragments of a <objectType>stele</objectType> of white <material>marble</material>, probably Attic (together <width unit="metre">0.28</width> <height unit="metre">0.31</height> <depth unit="metre">0.11</depth>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> in two columns. on one face which is very worn.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><height>0.01-0.012</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" cert="low" evidence="lettering">Probably first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              two fragments found in the <placeName type="monuList" ref="https://www.slsgazetteer.org/942">West Church</placeName>, in <date type="found">1935</date>,
+                              the third in the <placeName type="monuList" ref="https://www.slsgazetteer.org/986">Street of the Monuments</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1096">Tolmeita Museum.</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-03-01" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-07-20" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_284" decls="#photograph"><desc>View (Joyce Reynolds, Tolmeita I. 49)</desc></graphic><!--Dept. JR--></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="SECir"/>, Moretti, <citedRange>297</citedRange> p.357</bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-αμμων"><seg part="F"><unclear>α</unclear>μμων</seg></name>  <space quantity="4" unit="character"/>
+                   <persName type="attested" key="lgpn:V1-61380"><name nymRef="Καρνεάδης">Καρνεά<supplied reason="lost">δ</supplied>ου</name></persName></persName>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ητος"><seg part="F"><unclear>η</unclear>τος</seg></name> <space quantity="4" unit="character"/>
+                    <persName type="attested" key="lgpn:V1-61705"><name nymRef="Χαῖνυς"><unclear>Χ</unclear>αίνυος</name></persName></persName>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-νος"><seg part="F">νος</seg></name> <space quantity="4" unit="character"/>
+                   <persName type="attested" key="lgpn:V1-61117"><name nymRef="Ἀπολλώνιος">Ἀπολλωνίου</name></persName></persName>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ν"><seg part="F">ν</seg></name> <space quantity="4" unit="character"/>
+                    <persName type="attested" key="lgpn:V1-61086"><name nymRef="Ἀντίκριτος">Ἀντικρίτου</name></persName></persName>
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-61630"><name nymRef="Σωσανδρίδης"><supplied reason="lost">Σωσανδ</supplied>ρί<unclear>δ</unclear>ης</name> <space quantity="4" unit="character"/>
+                    <persName type="attested" key="lgpn:V1-61629"><name nymRef="Σωσανδρίδης">Σωσανδρίδου</name></persName></persName>
+                    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <space quantity="4" unit="character"/>
+                    <persName type="attested" key="lgpn:V1-61262"><name nymRef="Εὐκλείδας">Εὐ<unclear>κ</unclear>λ<unclear>ε</unclear>ίδα</name></persName>
+                    <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ς"><seg part="F">ς</seg></name> <space quantity="4" unit="character"/> <persName type="attested" key="lgpn:V1-61663"><name nymRef="Ὕρατθις">Ὑράτθιος</name></persName></persName>
+                    <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-αν"><seg part="F"><unclear>α</unclear>ν</seg></name> <space quantity="4" unit="character"/> 
+                   <persName type="attested" key="lgpn:V1-61149"><name nymRef="Ἀρτάφαν">Ἀρταφ<unclear>ά</unclear><supplied reason="lost">ντος</supplied></name></persName></persName>
+                    <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ς"><seg part="F">ς</seg></name> <space quantity="4" unit="character"/>
+                   <persName type="attested" key="lgpn:V1-61573"><name nymRef="Πρατομήδης">Πρατο<supplied reason="lost">μήδης</supplied></name></persName></persName>
+                    <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ν</seg></name> <space quantity="4" unit="character"/> 
+                    <persName type="attested"><name nymRef="-αμ-"><gap reason="lost" quantity="1" unit="character"/><seg part="M">αμ</seg><gap reason="lost" extent="unknown" unit="character"/></name></persName></persName>
+                    <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <space quantity="4" unit="character"/> <persName type="attested"><name nymRef="Φίλων"><supplied reason="lost">Φί</supplied>λωνος</name></persName>
+                    <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-σιος"><seg part="F"><unclear>σ</unclear>ιος</seg></name> <space quantity="4" unit="character"/>
+                    <persName type="attested" key="lgpn:V1-61116"><name nymRef="Ἀπολλώνιος"><supplied reason="lost">Ἀ</supplied>πολλω<supplied reason="lost">νίου</supplied></name></persName></persName>
+                    <lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ν-"><seg part="M"><unclear>ν</unclear></seg></name><gap reason="lost" quantity="2" unit="character"/> <space quantity="4" unit="character"/> 
+                    <persName type="attested" key="lgpn:V1-61647"><name nymRef="Τίμαρχος"><unclear>Τ</unclear>ιμάρχο<unclear>υ</unclear></name></persName></persName>
+                    <lb n="14"/><gap reason="lost" extent="unknown" unit="character"/> <space quantity="4" unit="character"/>
+                    <persName type="attested" key="lgpn:V1-61375"><name nymRef="Καλλίμαχος">Καλλιμάχ<unclear>ο</unclear><supplied reason="lost">υ</supplied></name></persName>
+                    <lb n="15"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-χος"><seg part="F">χος</seg></name> <space quantity="4" unit="character"/> <persName type="attested" key="lgpn:V1-61648"><name nymRef="Τίμαρχος">Τιμάρχου</name></persName></persName>
+                    <lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ος</seg></name> <space quantity="4" unit="character"/> 
+                   <persName type="attested" key="lgpn:V1-61151"><name nymRef="Ἅρχων">Ἄρχ<supplied reason="lost">ο</supplied>ντος</name></persName></persName> 
+                    <lb n="17"/><gap reason="lost" extent="unknown" unit="character"/> <space quantity="4" unit="character"/> 
+                    <persName type="attested" key="lgpn:V1-61632"><name nymRef="Σωσίβιος">Σωσιβίου</name></persName>
+                    <lb n="17a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                   <rdg resp="#SECir">Φιλ]άμμων</rdg>
+               </app>
+            <app loc="5">
+                   <rdg resp="#SECir">. . . ]ναρις <unclear>Σωσά</unclear>νδρου</rdg>
+               </app>
+            <app loc="6">
+                   <rdg resp="#SECir">Εὐελπίδα</rdg>
+               </app>
+            <app loc="7">
+               <rdg resp="#SECir"> . . . ] Ὑράτθιος</rdg>
+               </app>
+            <app loc="8">
+                   <rdg resp="#SECir">Ἁρταφ]<unclear>ὰ</unclear>ν</rdg>
+               </app>
+            <app loc="9">
+                   <rdg resp="#SECir">. . . ]Σ  Πρατο[ . . .
+                  </rdg>
+               </app>
+            <app loc="12">
+                   <rdg resp="#SECir"><unclear>Ἀπ</unclear>ολλω[νίου</rdg>
+               </app>
+            <app loc="13">
+                   <rdg resp="#SECir">. . . ]ν[ . ]ς [Τ]ιμάρχου</rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> . . .-]ammon <supplied reason="subaudible">son</supplied> of Karneades;  . . .-]etos <supplied reason="subaudible"> son</supplied> of Chainys; 
+          [ . . .-]nos <supplied reason="subaudible">son</supplied> of Apollonios;[ . . .-]n <supplied reason="subaudible">son</supplied> of Antikritos; 
+          [Sosand]rides <supplied reason="subaudible">son</supplied> of Sosandrides; [ . . . <supplied reason="subaudible">son</supplied>] of Eukleidas; 
+         [ . . .-]s <supplied reason="subaudible">son</supplied> of Hyratthis;[ . . .-]an <supplied reason="subaudible">son</supplied> of Artaphan; 
+         [ . . .-]s <supplied reason="subaudible">son</supplied> of Prato[medes; [ . . .-]n <supplied reason="subaudible">son</supplied> of ?; . . . <supplied reason="subaudible"> son</supplied>] of Philon; 
+        [ . . .-]sios <supplied reason="subaudible">son</supplied> ofApollonios; [ . . .<supplied reason="subaudible">son</supplied>] of Timarchos; 
+        [ . . . <supplied reason="subaudible">son</supplied>] of Kallimachos; [ . . .-]chos <supplied reason="subaudible">son</supplied> of Timarchos; 
+        [ . . .-]os <supplied reason="subaudible">son</supplied> of Archon; [ . . . <supplied reason="subaudible">son</supplied>] of Sosibios; [ . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>A typical list of names and patronymics, very probably of ephebes.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

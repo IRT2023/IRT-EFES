@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P11500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Civic <rs type="textType">decree</rs> for defense of city</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt> 
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.111</idno>
+            <idno type="ircyr2012">P11500</idno>
+            <idno type="JMR">214</idno>
+            <idno type="Excel">652</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Five adjoining fragments of a <material>marble</material> 
+                              <objectType>stele</objectType> (<dimensions>
+                                 <width unit="metre">0.25</width>
+                                 <height unit="metre">0.35</height>
+                                 <depth unit="metre">0.16</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE - first century CE; <height unit="metre">0.01</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="-0061" notAfter="-0061" precision="low" cert="low" evidence="prosopography">Probably 61 BCE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/948">Square of the Cisterns</placeName>; found in <date type="found">1935</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>.
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-03-27" who="VA">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="Photos_0032" decls="#photograph"><desc>Face (Reynolds III.43)</desc></graphic>
+      <graphic url="Photos_0033" decls="#photograph"><desc>Face (Joyce Reynolds, Tolmeita V.12, NS.XIII.12)</desc></graphic>
+      <graphic url="JMR_214" decls="#photograph"><desc>Detail (Joyce Reynolds, Tolmeita V.12, NS.XIII.12)</desc></graphic>
+       </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="SECir"/>, <citedRange>211</citedRange>, fig. 154</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.590</citedRange></bibl>, 
+               <bibl><ptr target="jmr1972"/>, <citedRange>45</citedRange></bibl>;
+               see <bibl><ptr target="laronde1988"/> <citedRange>1013 n.46</citedRange></bibl>, whence
+               <bibl><ptr target="cdlBE"/>, <citedRange>1989.821</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>38.1904</citedRange></bibl>, 
+               and discussion by <bibl><ptr target="jmr1990"/>, <citedRange>68-69</citedRange></bibl>; republished 
+               <bibl><ptr target="laronde2010"/><citedRange></citedRange></bibl>, whence
+               <bibl><ptr target="cdlBE"/>, <citedRange>2011.660</citedRange></bibl>, <bibl><ptr target="SEG"/> <citedRange>60.1845</citedRange></bibl>, 
+              <bibl><ptr target="AE"/> <citedRange>2010.1765</citedRange></bibl>; discussed <bibl><ptr target="struffolino2014"/>, <citedRange>367, n.66</citedRange></bibl>. <!-- check readings -->
+            </p>
+         </div>
+         
+         
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>οιστη</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">αλόντω<unclear>ν</unclear></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <w lemma="ὁ">τοὺς</w> <w part="I">κα</w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="καί">καὶ</w> 
+                    <w lemma="ποίμνιον">ποιμνίοις</w> <orig><unclear>λ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἅμα">ἅμα</w> <w lemma="ὁ">τῆι</w>
+                    <w lemma="πρός">πρὸς</w> <w part="I">α<unclear>ν</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="πέμπω"><unclear>π</unclear>έμψας</w> <w lemma="καί">καὶ</w>
+                    <w lemma="δίδωμι">δοὺς</w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ων</w> <w lemma="ἄξιος">ἀξίαν</w>
+                    <w lemma="ὁ">τῆς</w> <w part="I">ἐπι<orig><unclear>ι</unclear></orig></w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">μισται</w> 
+                    <w lemma="ὁ">τὴν</w> <w lemma="παράταξις">παράτ<supplied reason="lost" cert="low">αξιν</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>χ</unclear>εν</w>
+                    <w lemma="βάρβαρος">βαρβάρων</w> <w lemma="διατρίβω">διατ<unclear>ρ</unclear><supplied reason="lost" cert="low">ιβόντων</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἡγεμών"><supplied reason="lost">ἡ</supplied>γεμόνων</w> <w lemma="καί">καὶ</w> <w lemma="στρατηγός">στρα<supplied reason="lost" cert="low">τηγῶν</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="πᾶς"><supplied reason="lost">παν</supplied><unclear>τ</unclear>ὶ</w> <w lemma="τρόπος">τρόπω<unclear>ι</unclear></w> <w lemma="τίθημι">θέντων</w> 
+                    <w part="I">τ</w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="φυλάσσω"><supplied reason="lost">φ</supplied>υλαχθε<unclear>ί</unclear>σης</w> <space quantity="1" unit="character"/> <w lemma="ἀγαθός">ἀγα<supplied reason="lost">θῆι</supplied></w>
+                    <supplied reason="lost"><w lemma="τύχη">τύχηι</w> <w lemma="δοκέω">δέδοχθαι</w></supplied>
+                    <lb n="13"/><placeName nymRef="#Πτολεμαιεύς" type="ethnic" ref="#ptolemais"><supplied reason="lost">Πτολεμ</supplied><unclear>α</unclear>ιεῦσι</placeName>
+                    <w lemma="ὁ">το<supplied reason="lost">ῖ</supplied>ς</w> <placeName type="ethnic" nymRef="#Βαρκαῖος" ref="#barke">Βαρκαίοις</placeName>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="14"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ω</unclear>ν</w>
+                    <w lemma="πᾶς">πάντα</w> <w lemma="συντύχημα">σ<unclear>υ</unclear><supplied reason="lost">ντ</supplied>υχήμ<supplied reason="lost">ατα</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="15"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ"><unclear>τ</unclear>οῖς</w> 
+                    <w lemma="γίγνομαι">γ<supplied reason="lost">εγ</supplied>ενημένοις</w> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ιος"><seg part="F"><unclear/>ίου</seg></name> <name nymRef="Λατερανός">Λατερ<unclear>α</unclear><supplied reason="lost">νοῦ</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="17"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="στρατηγός"><supplied reason="lost">στρα</supplied><unclear>τ</unclear>ηγοῦ</w> <space quantity="1" unit="character"/>
+                    <w part="I">απ</w><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="18"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ">τῶι</w>
+                     <persName type="attested" cert="low"><name nymRef="Ἀμμώνιος" cert="low"><seg part="I">Ἀμμω<supplied reason="lost">νίωι</supplied></seg></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="19"/><gap reason="lost" extent="unknown" unit="character"/><orig>νικαιποι</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="20"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>ιονκ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <listApp>
+               <app loc="5">
+                  <note>Pugliese read the last letter as P, which is also possible.</note>
+               </app>
+               <app loc="8">
+                  <rdg resp="#SECir">[πολε]μισταί</rdg>
+               </app>
+               <app loc="9">
+                  <note>Χ might be Υ; Pugliese simply indicated an upright</note>
+               </app>
+               <app loc="10">
+                  <note> Perhaps στρα[τηγῶν</note>
+               </app>
+               <app loc="11">
+                  <rdg resp="#SECir">ἐ]<unclear>π</unclear>ιτρόπω<unclear>ι</unclear></rdg>
+                  <rdg resp="#laronde2010">παν]<unclear>τ</unclear>ὶ τρόπω<unclear>ι</unclear></rdg>
+               </app>
+               <app loc="16">
+                  <rdg resp="#SECir">Τ. Σεξ]τίου Λατερ<unclear>α</unclear>[νοῦ</rdg>
+                  <rdg resp="#laronde2010">Μ.Ἰουεντίου Μάρκου] <unclear>ὑ</unclear>ιοῦ Λατερ<unclear>η</unclear>[νσίου</rdg> <!-- check -->
+                    <note> Τhe first surviving stroke in the line appears to be an upright, more probably N than T, or the seriph of Υ; and the final stroke has a slope to it.</note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ] and flocks [ . . .] together with [ . . . ] having sent and given  [ . . .  behaviour? ] worthy of the [ . . . ] 
+               ?while the barbarians were spending time [ . . . ] commanders and generals [ . . . ] in every way placing [ . . . t?the city/the homeland] protected. With Good [Fortune: 
+               The Ptolem]aeans the Barkaians [ decided [ . . . ] all the chances [ . . . ] by the things events [ . . . ] of ? Latera[nus . . . ] for Ammonios [ . . .</p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>The text is clearly part of a civic decree concerned with measures taken against barbarian invaders, 
+               presumably the Marmaridae of the Augustan period; it seems likely to be honouring a local citizen who had worked with the Romans  <!-- see Introduction, XXX  --></p>
+            <p>Line 10: these should be the local commanders, and the Roman generals (so Laronde).</p>
+            <p>Line 16. The earliest instance so far of this nomenclature for the city.</p>
+            <p>Line 17: Laronde read a reference to M. Iuventius (M.f.) Laterensis, <title>DPRR</title> <ref target="http://romanrepublic.ac.uk/person/2308">2308</ref>, who was active in Cyrenaica; 
+               but the restoration is difficult.</p>
+            <p>Line 18. Probably a man with the name Ἀμμώνιος rathrr than the god Ammon</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C95600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Joyce M. Reynolds, Charlotte Roueché, Catherine Dobias-Lalou</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.759</idno>
+            <idno type="ircyr2012">C95600</idno> <!-- completed by CDL -->
+            <idno type="JMR">nn</idno>
+            <idno type="Excel">nn</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://ircyr.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A <material>marble</material> <objectType>relief</objectType> representing a man on horseback clad in a chlamys.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution">Inscribed</rs> on the lower cornice.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote/>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate cert="high" evidence="internal-date" notAfter="0075" notBefore="0074">74/75 A. D.</origDate>
+                  </origin>
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: location unknown.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Observed by editor at <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName> (inventory 412)</p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+         <creation>Transcription (Pandolfi, Dobias-Lalou).</creation>
+      </profileDesc>
+      <revisionDesc>
+        <change when="2014-03-18" who="cdl">completed from editor and personal commentary</change>
+         <change when="2011-04-05" who="MGDA">fixed Goodchild bibliography</change>
+        <change when="2010-08-11" who="CMR">created from Goodchild and PHI</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--?--><surface/></facsimile>
+   <text>
+      <body>
+
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pandolfi1998"/>, pp. <citedRange>149-150</citedRange> and plate I</bibl>, reread by 
+               <bibl><ptr target="cdlBE"/>, <citedRange>1999.614</citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>48.2061</citedRange></bibl>.</p><!-- check -->
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+               <ab>   
+                  <lb n="1"/><date ref="https://godot.date/id/PQQrkmpUTM8q4M88pR3bbT"><supplied reason="lost"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></supplied> 
+                  <num value="105">ρε</num>  </date>
+                  <persName type="attested"><name nymRef="Μοναλκής">Μονα<unclear>λ</unclear><supplied reason="lost" cert="low">κής</supplied></name> <gap reason="lost" extent="unknown" unit="character"/></persName>
+               </ab>
+             </div>
+
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                  <rdg resp="#pandolfi1998">. . . Εὐ]ρέμον[ος</rdg>
+                
+               </app> 
+            </listApp>        
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><ref target="https://godot.date/id/PQQrkmpUTM8q4M88pR3bbT">Year 105</ref>, Monal[kes? . . .</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Pandolfi's restoration is not acceptable, for the name Εὐρήμων would be written in an archaic alphabet
+               wholly contradictory with the lettering observed on the photograph. The cutting looks more like some names cut by ephebes on equestrian 
+               reliefs in the gymnasium, hence our tentative reading, by Dobias-Lalou.</p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

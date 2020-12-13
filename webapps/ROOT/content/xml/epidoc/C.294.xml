@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C34900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription from ?a temple</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.294</idno>
+            <idno type="ircyr2012">C34900</idno>
+            <idno type="JMR">890</idno>
+            <idno type="Excel">1069</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">329</idno> <idno type="invNo">374</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>A white <material>marble</material> <objectType>stele</objectType>,
+                              moulded above, with a band of laurel in relief below the moulding. Now in three fragments: a: <dimensions> <width>0.04</width> <height>0.105</height> <depth>0.35</depth></dimensions>; 
+                              b, reassembled from two fragments: <dimensions> <width>0.13</width> <height>0.25</height> <depth>0.13</depth></dimensions>. The moulding is now lost.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face below the moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE - Augustan; <height>0.01-0.015</height></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0014" precision="low" evidence="lettering">First century BCE - Augustan </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1062">Amphitheatre</placeName>, reused; 
+                              photographed in <date type="found">1935</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from the photograph (Reynolds); from the stones (Dobias-Lalou).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-03-01" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-08-01" who="CMR">corrections</change>
+         <change when="2010-06-21" who="GillianB">tokenized</change>
+         <change when="2009-06-23" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_890" decls="#photograph"><desc>Monument, when complete (Department of Antiquities,  F. 2731.)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="SECir"/>, <citedRange>120</citedRange> p.290, fig. 91, from the photograph</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.569</citedRange></bibl>.</p>
+         </div>
+            
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+               <ab>
+            <lb n="1"/> <space quantity="1" unit="character"/> <w lemma="θεός">Θεὸς</w> <persName type="divine" key="tyche"><name nymRef="Τύχη">Τ<unclear>ύ</unclear><supplied reason="lost">χα</supplied></name> <supplied reason="lost"><w lemma="ἀγαθός">ἀγαθά</w></supplied></persName>
+                    <lb n="2"/><date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἱερεύς">ἱαρεῦς</w> <persName type="attested"><name nymRef="Δαμ-"><seg part="I">Δαμ</seg></name></persName></date><gap reason="lost" quantity="12" unit="character" precision="low"/>
+                    <lb n="3"/> <w lemma="ὁ">οἱ</w> <w lemma="ἱερατεύω">ἱαρατευκότε<supplied reason="lost">ς</supplied></w> <gap reason="lost" quantity="11" unit="character" precision="low"/>
+                    <lb n="4"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">οἱ</w> <w lemma="χρυσοφορέω">χρυσοφόρ<unclear>ε</unclear><supplied reason="lost">ντες</supplied></w>
+                    <gap reason="lost" quantity="10" unit="character" precision="low"/>
+                    <lb n="5"/> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-62753"><name nymRef="Ἄλεξις">Ἀλέξιος</name></persName> <orig>π</orig><gap reason="lost" quantity="11" unit="character" precision="low"/>
+                    <lb n="6"/> <w lemma="ὁ">τὰ</w> <w lemma="θύρωμα">θυρώματα</w> <w lemma="καί">κ<supplied reason="lost">αὶ</supplied></w> <gap reason="lost" quantity="8" unit="character" precision="low"/>
+                  <w lemma="καί"><supplied reason="lost">καὶ</supplied></w>
+                    <lb n="7"/> <w lemma="ὁ">τὸν</w> <w lemma="τρύφακτος">τρύφακτ<unclear>ο</unclear><supplied reason="lost">ν</supplied></w> <gap reason="lost" quantity="9" unit="character" precision="low"/>
+                    <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+            </div>
+            <div type="apparatus">
+               <listApp>
+                  <app loc="4">
+                     <rdg resp="#SECir">or χρυσοφορέ[ντος or  χρυσοφορη[σαντες σὺν . . ]τῳ </rdg>
+                  </app>
+                  
+               </listApp>
+            </div>
+            
+            <div type="translation" xml:space="preserve">
+               <div type="translation" resp="#cmr" xml:lang="en"><p>God. Good Fortune. In the priesthood of Dam[- . . . ] the former priests [ . . . ] and the 
+               gold-wearers [ . . . ] of Alexis P[- . . .] the doors [ . . . ] and the partition [ . . .</p></div>
+            </div>
+            
+            <div type="commentary">
+               <head>Commentary</head>
+               <p>The stone was clearly re-used in the structure of the amphitheatre. </p>
+               <p>Line 4: Assuming the use of the Cyrenaen dialect form.
+               For the honorary significance of the right to wear gold and its connection with religious ceremonial
+               see A. Wilhelm, <title>\</title> XVII (1914) 39f.,  and cf. also Robert, <title>Hellenica</title> ΧΙ-XII, 452-3 on the objects worn. 
+               It is particularly well attested in the worship of Artemis at Ephesus cf. e.g. IEph 27F, 1.137 (at
+                  <title>PHI</title>  <ref target="https://epigraphy.packhum.org/text/247861">247861</ref>) χρυσοφοροῦντες τῇ  θεῷ ἱέρεις.</p>
+               <p>Line 7: Α variant spelling (known to the grammarians) of δρύφακτος, a door.</p>
+            </div>
+            
+
+      </body>
+   </text>
+</TEI>

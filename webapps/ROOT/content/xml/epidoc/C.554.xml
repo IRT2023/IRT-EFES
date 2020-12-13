@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C54000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription, Tomb N.11</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.554</idno>
+            <idno type="ircyr2012">C54000</idno>
+            <idno type="JMR">1115</idno>
+            <idno type="Excel">277</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> within a rectangular panel (<dimensions><width>1.18</width> <height>1.03</height></dimensions>), beside the entrance.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Lines 1,2, c. <height precision="low">0.10</height>; lines 3,4, c. <height precision="low">0.085</height>; 
+                        lines 5-8, c. <height precision="low">0.08</height>; very badly worn. / for ἀπελεύθερος in lines 5 and 7, in line 7 
+                        overlapping the abbreviated name of the patron.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0001" notAfter="0200" precision="low" evidence="lettering">First - second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/1071">North Necropolis</placeName>, N.11, beside the road to Apollonia
+                        (between N.13 and N.14); first found in <date type="found">1825</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot (<date type="observed">1998</date>)</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-06-18" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXIII" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXIII)</desc></graphic>
+      <graphic url="PachoLXIII_08" decls="#photograph"><desc>Transcription detail (1827, Pacho, plate LXIII.8)</desc></graphic>
+      <graphic url="JMR_1115_002" decls="#photograph"><desc>Text, lines 1-4 (BSR. 49. XXI.7)</desc></graphic>
+      <graphic url="JMR_1115_001" decls="#photograph"><desc>Text, lines 5-8 (BSR. 49. XXI.8)</desc></graphic>
+      <graphic url="DT1998_3_16" decls="#photograph"><desc>Face (Dorothy Thorn, 1998)</desc></graphic>
+      <graphic url="DT1998_3_17" decls="#photograph"><desc>Face (Dorothy Thorn, 1998)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/>, <citedRange unit="plate"><ref target="https://gallica.bnf.fr/ark:/12148/btv1b85409935/f76.item#">LXIII.8</ref></citedRange>, and Letronne, p. 395</bibl>, whence 
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5175</citedRange> and p. 1241</bibl>,
+              <bibl><ptr target="CIL"/>, <citedRange>11</citedRange></bibl>, 
+              <bibl><ptr target="IGRR"/>, <citedRange>I.1042</citedRange></bibl>;
+               <bibl>
+                  <ptr target="oliverioDAI2"/>, <citedRange unit="entry">546</citedRange> (133), pl. CXIV, fig. 109</bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>9.247</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324097">324097</ref></citedRange></bibl>, </p>
+             <p>For the tomb see <bibl><ptr target="thorn2009"/>, <citedRange unit="page">28</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>237</citedRange></bibl>. </p>
+         </div>
+         
+         <div type="edition" xml:space="preserve">
+            <div xml:lang="la" type="textpart">
+               <ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> 
+                    <name nymRef="Vibius">Vibio</name> <persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName>
+                        <w lemma="libertus"><expan><abbr>l</abbr><ex>iberto</ex></expan></w> <name nymRef="Gattabus">Gattabo</name></persName>
+                    <lb n="2"/><persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> 
+                    <name nymRef="Numisius">N<unclear>umi</unclear>sius</name>
+                        <persName type="attested"><name nymRef="Lucius"><expan><abbr><unclear>L</unclear></abbr><ex>uci</ex></expan></name></persName> 
+                    <w lemma="libertus"><expan><abbr><unclear>l</unclear></abbr><ex>ibertus</ex></expan></w> <name nymRef="Mario"><unclear>Mario</unclear></name></persName>
+                    <lb n="3"/><w lemma="frater"><unclear>frater</unclear></w> <w lemma="facio">faciendum</w> 
+                    <lb n="4"/> <space extent="5" unit="character"/> <w lemma="curo">coerauit</w>
+                    </ab>
+            </div>
+            <div xml:lang="grc" type="textpart">
+               <ab>
+                    <lb n="5"/><persName type="attested"><name nymRef="Λεύκιος">Λεύκιος</name> <name nymRef="Οὐίβιος">Οὐίβιος</name> <persName type="attested"><name nymRef="Λεύκιος">Λευκίου</name></persName>
+                        <w lemma="ἀπελεύθερος"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>ἀπελεύθερος</ex></expan></w>
+                    <lb n="6"/> <space extent="5" unit="character"/> <name nymRef="Γάτταβος">Γάτταβος</name></persName>
+                    <lb n="7"/><persName type="attested"><name nymRef="Λεύκιος">Λεύκιο<unclear>ς</unclear></name> <name nymRef="Νουμίσιος"><unclear>N</unclear>ουμίσιος</name>
+                        <name nymRef="Μαρίω">Μαρίω</name>
+                    <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ευκίου</ex></expan></name></persName>
+                        <w lemma="ἀπελεύθερος"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>ἀπελεύθερος</ex></expan></w></persName>
+                    <lb n="8"/><w lemma="ἀδελφός">ἀδελφὸς</w> <w lemma="ποιέω">ἐποίησε<supplied reason="lost">ν</supplied></w>
+                    </ab>
+</div>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>A L(ucio) Vibio, di L(ucio) l(iberto), Gattabo. L(ucio) Numisio, di L(ucio) l(iberto), Mario, fratello, costruire fece. 
+            Lucio Vibio, di Lucio (liberto) Gattabo. Lucio Numisio Mario, (di Lucio liberto) fratello, fece.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>Latin</note>: For L(ucius) Vibius Gattabus, freedman of L(ucius). L(ucius) Numisius Mario, freedman of L(ucius), 
+               his brother, was responsible for the construction <supplied reason="explanation">of the tomb</supplied>.</p>
+            <p><note>Greek</note>: Leukios Ouibios Gattabos, freedman of Leukios. Leukios Numisios Mario, freedman of L(eukios), his brother, 
+               was responsible for the construction <supplied reason="explanation">of the tomb</supplied>.</p></div>
+        </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+           <p>line 1 Also in <ref type="inscription" n="C.555">C.555</ref>. It is tempting to connect the family with the governor Numisius Marcellianus,
+                     but the letter forms here look earlier.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

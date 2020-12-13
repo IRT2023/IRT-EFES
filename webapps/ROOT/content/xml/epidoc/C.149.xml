@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C97900" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Dedication</rs>, probably by the ephoroi</title>
+                <editor>Catherine Dobias-Lalou</editor>
+                <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority/>
+                <idno type="filename">C.149</idno>
+            <idno type="ircyr2012">C97900</idno><!-- was IGCyr116300 -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum, storeroom of the Italian missions</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p>White <material>marble</material> <objectType>panel</objectType>, broken off on top; remains of iron clamps on the left side 
+                                    (<dimensions>
+                                        <width>0.257</width>
+                                        <height min="0.36" max="0.378">0.36 (at right) to 0.378 (at left)</height>
+                                        <depth>0.0625</depth>
+                                    </dimensions>).</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="scalpro">Inscribed</rs> on front face; the writing shows deletions and additions by different hands, of which at least
+                                    two stages be distinguished, a) corresponding to lines 1-2 and 12-13, b) for lines 3-11, amongst which 7-11, badly aligned, would have been added when 
+                                    the inscription was already in situ (Gasperini in Stucchi 1983).</layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote> <note>a</note> Lines 1-2, 12-13: <height min="0.014" max="0.025">0.014-0.025</height>, carefully cut, rather broad letters with small serifs; traces of the original red color;
+                                slightly slanting mu, non-slanting sigma, open omega with large serifs at both ends.</handNote>
+                            <handNote> <note>b</note> Lines 3-11: <height min="0.007" max="0.026">0.007-0.026</height>; traces of the original red color; very irregular letters, much smaller at line 6 and at 
+                                the end of line 4 (added and overwritten); erasure at line  6. (<dimensions><width>0.028</width> <height>0.013</height></dimensions>); the serifs are
+                                not so frequent; some omegas have a special closure with a reflex angle.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="http://pleiades.stoa.org/places/373778 https://www.slsgazetteer.org/909">Cyrene</origPlace>
+                            <origDate evidence="lettering" precision="low" notBefore="-0050" notAfter="-0001">Second half of the first century BCE</origDate>
+                        </origin>
+                        
+                        
+                        <provenance type="found" when="1963-08-04">
+                            <p>Found <date type="found">August, 4th, 1963</date> in
+                            <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:  
+                            reused in a wall to the south of the <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>, near <ref type="inscription" n="C.148">C.148</ref>.
+                            </p>
+                        </provenance>
+                       
+                        <provenance type="observed">
+                            <p><placeName type="monuList" ref="https://www.slsgazetteer.org/1484">Cyrene Museum, storeroom of the Italian missions</placeName>.</p>
+                        </provenance>
+                        
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="photograph">
+                        <catDesc>Digital or digitized photographs</catDesc>
+                    </category>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="InsLib">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://www.geonames.org/" key="Shahat">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+            <creation>Transcription (Marengo); checked from photograph and editor's archive (Dobias-Lalou).</creation></profileDesc>
+        <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+            <change when="2014-03-19" who="cdl">checked again and slightly changed before passing on to IRCyr</change>
+            <change when="2013-07-26" who="Alice">Modified text tagging</change>
+            <change when="2013-07-24" who="Lab Unibo">Modified lemma, apparatus, text tagging</change>
+            <change when="2013-07-19" who="Stefano Lab Unibo">File created: lemma, text, markup, translation and commentary</change>
+            <change when="2013-07-16" who="Marengo">lemma, text finished, commentary</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surface/> <!-- Photograph from the archive of Urbino--> </facsimile>
+    <text>
+        <body>
+           
+            <div type="bibliography">
+            <head>Bibliography</head>
+             <p>
+                <bibl><ptr target="gasperini1967a"/>, <citedRange>24</citedRange>, p. 171 and fig. 208</bibl>, whence
+                 <bibl><ptr target="robertBE"/>, <citedRange>1972.622a</citedRange></bibl>; (again <bibl><ptr target="gasperini2008"/> pp. <citedRange>87-8</citedRange>, fig. 24</bibl>);
+                <bibl>Gasperini in <ptr target="stucchi1981"/> pp. <citedRange>40-41</citedRange></bibl>;  <!-- check -->
+                 <bibl><ptr target="ottone2002"/> p. <citedRange>198</citedRange></bibl>; discussed, <bibl><ptr target="cdl2002"/>, <citedRange>92</citedRange></bibl>.
+
+             </p>
+           </div>
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+                <ab>
+                    <lb n="0"/><gap reason="lost" extent="unknown" unit="line"><certainty locus="name" match=".."/></gap>
+                    
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-62934"><name nymRef="Ἀντίπατρος"><unclear>Ἀντίπατρος</unclear></name></persName> <gap reason="lost" atLeast="5" atMost="6" unit="character"/>
+                    
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-62992"><name nymRef="Ἀπολλώνιος">Ἀπολλώνιος</name> <persName type="attested" key="lgpn:V1-63243"><name nymRef="Ἁρμόδιος">Ἁρμοδί<supplied reason="lost">ω</supplied></name></persName></persName>
+                    
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-64938"><name nymRef="Μαρσύας">Μαρσύας</name> <persName type="attested" key="lgpn:V1-64937"><name nymRef="Μαρσύας">Μαρσύα</name> <persName type="attested"><expan><abbr><am><g ref="symbols.xml#dash"/></am></abbr><w lemma="ὁ"><ex cert="low">τῶ</ex></w> <name type="patronymic" nymRef="Μαρσύας"><ex cert="low">Μαρσύα</ex></name></expan></persName></persName></persName><!-- check -->
+                    <lb n="4"/><persName type="attested" key="lgpn:V1-64607"><name nymRef="Καρτισθένης">Καρτισθένης</name> <persName type="attested" key="lgpn:V1-64606"><name nymRef="Καρτισθένης"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>Καρτισθένευς</ex></expan></name> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-65155">
+                            <name nymRef="Νῖκις">Νίκιος</name></persName></persName></persName>
+                    
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-65504"><name nymRef="Πρώταρχος">Πρώταρχος</name> <persName type="attested" key="lgpn:V1-66063"><name nymRef="Φίλων">Φίλωνος</name></persName></persName>
+                    
+                    <lb n="6"/><persName type="attested" key="lgpn:V1-65493"><name nymRef="Πρῶρος">Πρῶρος</name> <space quantity="1" unit="character"/><del rend="erasure" cert="low"><gap reason="lost" atLeast="2" atMost="3" unit="character"/></del> <persName type="attested" key="lgpn:V1-65740"><name nymRef="Σώστρατος">Σωστράτω</name></persName></persName>
+                    
+                    <lb n="6a"/> <space quantity="2" unit="line"/>
+                    
+                    <lb n="7"/> <w lemma="ἐπιμελέομαι">ἐπιμεληθέντες</w>
+                    
+                    <lb n="8"/> <w lemma="ὁ">τᾶς</w> <w lemma="οἰκοδομεύς">οἰκοδομᾶς</w> <w lemma="ὁ">τῶ</w>
+                    
+                    <lb n="9"/> <w lemma="τοῖχος">τοίχω</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τᾶν</w> <w lemma="στέγη">στε<lb n="10" break="no"/>γᾶν</w> <w lemma="ὁ">τῶν</w> <w lemma="ἀρχεῖον">ἀρχε<supplied reason="omitted">ί</supplied>ων</w>
+                    
+                    <lb n="11"/> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῶ</w> <w lemma="ἡμικύκλιον">ἡμικυκλίω</w> 
+                    
+                    <lb n="12"/><handShift new="a"/> <w lemma="ὁ">τὸν</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλω</name></persName>
+                    
+                    <lb n="13"/> <space quantity="1" unit="character"/> <w lemma="ἀνατίθημι">ἀνέθηκαν</w>.
+                </ab>
+            </div>
+            
+            <div type="apparatus" xml:space="preserve">
+            <head>Apparatus</head>
+                <listApp>
+                    <app loc="8"><rdg resp="#robertBE">τᾶς οἰκοδομᾶς</rdg> 
+                        <rdg resp="#gasperini1967a">τὰς οἰκοδομὰς</rdg></app>
+                    <app loc="9-10"><rdg resp="#robertBE">τᾶν στε<lb/>γᾶν</rdg>  
+                        <rdg resp="#gasperini1967a">τὰν στεγὰν</rdg></app>
+                </listApp>
+            </div>
+            
+            <div type="translation" xml:space="preserve"><head>Translations</head>
+                <div type="translation" resp="#cdl" xml:lang="it"><p> . . . ] Antipatros figlio di [- . . . ], Apollonios figlio di Harmodios, Marsyas figlio di Marsyas e nipote di Marsyas, 
+                    Kartisthenes figlio di Kartisthenes e nipote di Nikis, Protarchos figlio di Philon, Proros figlio di Sostratos, curatori della costruzione del muro e dei tetti degli edifici 
+                    dei magistrati e dell’emiciclo, hanno dedicato <supplied reason="subaudible">la statua di</supplied> Apollo.</p></div>
+            </div>
+            <div type="translation" xml:lang="fr" resp="#cdl">
+                <p><gap reason="lost" extent="unknown" unit="line"/> Antipatros fils de [- . . .], Apollonios fils d'Harmodios, Marsyas fils de Marsyas e petit-fils de Marsyas, 
+                    Kartisthénès fils de Kartisthénès et petit-fils de Nikis, Prôtarchos figlio di Philon, Proros fils de Sôstratos, chargés de la construction du mur et des toits des bâtiments 
+                    des magistrats ainsi que de l’hémicycle, ont consacré <supplied reason="subaudible">la statue d'</supplied> Apollon.</p>
+              </div>  
+            <div type="translation" xml:lang="en" resp="#cdl">
+                <p><gap reason="lost" extent="unknown" unit="line"/> Antipatros son of [- . . .], Apollonios <supplied reason="subaudible">son</supplied> of Harmodios, 
+                    Marsyas <supplied reason="subaudible">son</supplied> of Marsyas and <supplied reason="subaudible">grandson</supplied> of Marsyas, 
+                    Kartisthenes <supplied reason="subaudible">son</supplied> of Kartisthenes and <supplied reason="subaudible">grandson</supplied> of Nikis, 
+                    Protarchos <supplied reason="subaudible">son</supplied> of Philon, Proros <supplied reason="subaudible">son</supplied> of Sostratos, having been in charge of building the wall and the roofs
+                    of the public offices as well as the semicircle, dedicated <supplied reason="subaudible">the statue of</supplied> Apollo.</p>
+            </div>
+            
+           
+            <div type="commentary">
+                <p>The dedicants might have been the ephors, as in <ref target="https://igcyr.unibo.it/igcyr063800">IGCyr063800</ref>; 
+                    in any case, they appear to have been in charge of the maintenance of the public buildings.</p>
+                <p>Line 3: The personal name Μαρσύας is very rare.</p>                    
+                <p>Line 11: The 'semicircle' cannot be identified with the exedra standing on the southern edge of the agora square, 
+                    published by Stucchi, 1981.</p> 
+                <p>Line 12: The accusative Ἀπόλλω (l. 13) is unique in Cyrenaica (see Dobias-Lalou, loc.cit.)</p>
+               
+            </div>
+        </body>
+    </text>
+</TEI>

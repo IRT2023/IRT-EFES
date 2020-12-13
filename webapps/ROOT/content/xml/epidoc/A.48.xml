@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A07000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Imperial</rs> <rs type="textType">building<certainty cert="low" locus="value" match=".."/></rs> inscription of Domitian</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.48</idno>
+            <idno type="ircyr2012">A07000</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Series of <material>sandstone</material> 
+                              <objectType>block</objectType>s
+                        or parts of blocks, moulded above. Similarities in the letter-forms and
+                        cutting between the two groups suggests, but does not prove, that both may be from a
+                        single text presented in two registers. a: fragments of 8 blocks; b: fragments of two inscribed blocks, and three uninscribed fragments.  </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, a. on an upper register, originally disposed in 7 bays (each <width>2.40</width>) 
+                           interrupted by pilasters. Within each bay stood two blocks of unequal size, of which the larger carried 8-9 letters 
+                           and the smaller 4-6, (depending on whether these were narrow
+                           or broad); b. probably on a lower register.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE; series a. <height unit="metre" precision="low">0.22</height>;
+                    bars above the figures; series b. <height unit="metre" precision="low">0.15</height>; 
+                    a stiff, down-pointing ivy-leaf after the text on block i.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>a: On the façade of the scaenae frons; b: uncertain.</origPlace>
+                     <origDate when="0092" evidence="titulature">CE 92</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/926">Theatre</placeName>, in the area of the stage; found in <date type="found">1961</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-08-02" who="Pietro">Added Photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-03-05" who="GB">Tagged place</change>
+         <change when="2010-02-25" who="DT">Tagged metadata</change>
+         <change when="2010-02-18" who="GB">merged with A71 and tidied; retyped and tagged reconstructed text (in nominative)</change>
+         <change when="2010-02-14" who="CMR">Title, translation, tags</change>
+         <change when="2008-08-11" who="VA">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="JMRNB09_041" decls="#photograph"><desc>Block a.i (E.Alföldi-Rosenbaum: Reynolds IX.41)</desc></graphic>
+            <graphic url="DSC04630" decls="#photograph"><desc>Block a.i (2008, H.Walda)</desc></graphic>
+            <graphic url="JMRNB09_040" decls="#photograph"><desc>Block a.i, second part (E.Alföldi-Rosenbaum: Reynolds IX.40)</desc></graphic>
+            <graphic url="DSC04631" decls="#photograph"><desc>Block a.i, second part (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04632" decls="#photograph"><desc>Block a.ii (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04633" decls="#photograph"><desc>Block a.ii, second part (2008, H.Walda)</desc></graphic>
+            <graphic url="DSC04634" decls="#photograph"><desc>Block a.iii, second part (2008, H.Walda)</desc></graphic>
+            <graphic url="JMRNB09_044" decls="#photograph"><desc>Block a.iv (E.Alföldi-Rosenbaum: Reynolds IX.44)</desc></graphic>
+            <graphic url="DSC04635" decls="#photograph"><desc>Block a.iv (2008, H.Walda)</desc></graphic>
+            <graphic url="JMRNB09_043" decls="#photograph"><desc>Block a.v (E.Alföldi-Rosenbaum: Reynolds IX.43)</desc></graphic>
+            <graphic url="DSC04636" decls="#photograph"><desc>Block a.v (2008, H.Walda)</desc></graphic>
+            <graphic url="JMRNS15_006" decls="#photograph"><desc>Block a.v and vi (Reynolds 1971, NS.XV.6)</desc></graphic>
+            <graphic url="JMRNS15_007" decls="#photograph"><desc>Block a.v and vi (Reynolds 1971, NS.XV.7)</desc></graphic>
+            <graphic url="JMRNS16_009" decls="#photograph"><desc>Block a.v and vi (Reynolds 1971, NS.XVΙ.9)</desc></graphic>
+            <graphic url="JMRNS15_008" decls="#photograph"><desc>Block a.v, vi and vii (Reynolds 1971, NS.XV.8)</desc></graphic>
+            <graphic url="DSC04637" decls="#photograph"><desc>Block a.vi (2008, H.Walda)</desc></graphic>
+            <graphic url="JMRNB09_038" decls="#photograph"><desc>Block a.vi, second part (E.Alföldi-Rosenbaum: Reynolds IX.38)</desc></graphic>
+            <graphic url="DSC04638" decls="#photograph"><desc>Block a.vi, second part (2008, H.Walda)</desc></graphic>
+            <graphic url="JMRNB09_042" decls="#photograph"><desc>Block a.vii (E.Alföldi-Rosenbaum: Reynolds IX.42)</desc></graphic>
+            <graphic url="DSC04639" decls="#photograph"><desc>Block final blank block (2008, H.Walda)</desc></graphic>
+            <graphic url="JMRNB09_046" decls="#photograph"><desc>Block b.i (E.Alföldi-Rosenbaum: Reynolds IX.46)</desc></graphic>
+            <graphic url="JMRNB09_045" decls="#photograph"><desc>Block b.ii (E.Alföldi-Rosenbaum: Reynolds IX.45)</desc></graphic>
+            <graphic url="DSC04640" decls="#photograph"><desc>General view (2008, H.Walda)</desc></graphic>
+            <graphic url="JMRNB09_039" decls="#photograph"><desc>Fragments (E.Alföldi-Rosenbaum: Reynolds IX.39)</desc></graphic>
+            <surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p>
+               <bibl>
+                  <ptr target="jmr1976"/>, <citedRange>57</citedRange></bibl>,
+               whence <bibl><ptr target="AE"/> <citedRange>1977.846</citedRange></bibl>,
+               whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD020896">020896</ref></citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>278</citedRange></bibl> 
+            </p>
+         </div>
+         
+         <!--
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <div subtype="series" n="a" type="textpart">
+               <div subtype="block" n="i" type="textpart">
+                  <ab>
+                            <lb n="1"/><orig>i<unclear>mp</unclear>caesa</orig>
+                  </ab>
+               </div>
+               <div subtype="block" n="ii" type="textpart">
+                  <ab>
+                            <lb n="1"/><orig>vespasiani f do</orig>
+                  </ab>
+               </div>
+               <div subtype="block" n="iii" type="textpart">
+                  <ab>
+                            <lb n="1"/><orig>pont</orig><gap reason="lost" extent="unknown" unit="character"/>
+                  </ab>
+               </div>
+               <div subtype="block" n="iv" type="textpart">
+                  <ab>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>rib</orig>
+                  </ab>
+               </div>
+               <div subtype="block" n="v" type="textpart">
+                  <ab>
+                            <lb n="1"/><orig><unclear>pot</unclear><hi rend="supraline">xi</hi>i<unclear>mp</unclear><hi rend="supraline">xxii</hi>co<unclear>s</unclear></orig>
+                  </ab>
+               </div>
+               <div subtype="block" n="vi" type="textpart">
+                  <ab>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>p</unclear>erpe</orig>
+               </ab>
+               </div>
+            </div>
+            <div subtype="series" n="b" type="textpart"><div subtype="block" n="i" type="textpart">
+               <ab>
+                            <lb n="1"/><orig>atarum</orig> <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
+                            <gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+            </div>
+                           <div subtype="block" n="ii" type="textpart">
+                              <ab>
+                            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>edit</orig><gap reason="lost" extent="unknown" unit="character"/>
+                           </ab>
+                           </div>
+                           <div subtype="block" n="iii" type="textpart"><note>Three uninscribed fragments.</note>
+                           </div>
+            </div>
+         </div>
+         -->
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <div subtype="register" n="a" type="textpart">
+               <ab>
+                        <lb n="1"/><persName type="emperor" key="domitianus"><w lemma="imperator"><expan><abbr>I<unclear>mp</unclear></abbr><ex>eratore</ex></expan></w>
+                            <name nymRef="Caesar">Caesa<milestone unit="block"/><supplied reason="lost">r</supplied></name>
+                        <persName type="emperor" key="vespasianus"><supplied reason="lost"><w lemma="diuus">Diui</w></supplied> <milestone unit="bay" n="1"/>
+                           <name nymRef="Vespasianus">Vespasian<milestone unit="block"/>i</name></persName> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w>
+                            <del rend="erasure"><name nymRef="Domitianus">Do<milestone unit="bay" n="2"/><supplied reason="lost">mitianus</supplied></name></del>
+                            <supplied reason="lost"><milestone unit="block"/> <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name></supplied>
+                        </persName>
+                            <milestone unit="bay" n="3"/> <expan><w lemma="pontifex"><abbr>pont</abbr><ex>ifex</ex></w>
+                            <supplied reason="lost"><w lemma="maximus"><abbr>max</abbr><ex>imus</ex></w></supplied></expan>
+                                <milestone unit="block"/>
+                      <date ref="https://godot.date/id/ueucrjNRxXH4HhcE7TdsxK"><expan> <w lemma="tribunicius"><abbr><supplied reason="lost">t</supplied>rib</abbr><ex>unicia</ex></w>
+                        <milestone unit="bay" n="4"/> <w lemma="potestas"><abbr><unclear>pot</unclear></abbr><ex>estate</ex></w></expan>
+                        <num value="11"><hi rend="supraline">XI</hi></num> 
+                  <w lemma="imperator"><expan><abbr>I<unclear>mp</unclear></abbr><ex>erator</ex></expan></w>
+                        <milestone unit="block"/> <num value="22"><hi rend="supraline">XXII</hi></num>
+                        <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr><unclear>s</unclear></abbr><ex>ul</ex></expan></w> <milestone unit="bay" n="5"/>
+                        <supplied reason="lost"><num value="16">XVI</num></supplied> <supplied reason="lost"><w lemma="censor">censor</w></supplied>
+                        <milestone unit="block"/> <w lemma="perpetuus"><unclear>p</unclear>erpe<milestone unit="bay" n="6"/><supplied reason="lost">tuus</supplied></w></date>
+                        <supplied reason="lost"><expan><w lemma="pater"><abbr>p</abbr><ex>ater</ex></w>
+                            <w lemma="patria"><abbr>p</abbr><ex>atriae</ex></w></expan></supplied>
+                        <supplied reason="lost" cert="low"> <space quantity="4" unit="character"/></supplied>
+                        <milestone unit="bay"/>
+               </ab>
+            </div>
+            <div subtype="register" n="b" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <supplied reason="lost"><w lemma="ciuitas">ciuitati</w></supplied> 
+                            <placeName type="ethnic" nymRef="#Apolloniata" ref="#apollonia"><supplied reason="lost">Apolloni</supplied>atarum</placeName>
+                        <g ref="symbols.xml#leaf"/> <space quantity="4" unit="character"/>
+                        <milestone unit="block"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <w lemma="do"><supplied reason="lost">d</supplied>edit</w>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#jmr" xml:lang="en"><p><note>a</note>: Emperor Caesar Domitian <supplied reason="subaudible">son</supplied> of the deified Vespasian, Chief Priest, <ref target="https://godot.date/id/ueucrjNRxXH4HhcE7TdsxK">holding tribunician
+                    power for the eleventh time, acclaimed victor twenty-two times, consul [for the sixteenth time],
+                    perpetual censor</ref>, father of the country.</p>
+            <p><note>b</note>: . . . ?the city of the Apollon]ians [ . . . ] gave.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary.</head>
+            <p>a. These blocks were disposed in seven bays interrupted by
+                    pilasters.  It is clear from blocks ii-iii that local taste was not offended when
+                    pilasters interrupted words (perhaps because the population was essentially
+                    Greek-speaking and did not pay attention to the alien Latin).</p>
+            <p>It is in principle
+                    possible that the emperor's name was in the nominative case and if so the
+                    monument was his gift (Domitian was active in Cyrenaica and attested as donor of
+                    the Nomophylakeion at Cyrene,  <ref type="inscription" n="C.92">C.92</ref>); or in the dative, and if so it was
+                    dedicated to him; or in the ablative, and if so it was dated by reference to him
+                    and his titles. The use of Latin and to some extent the prominence given to the
+                    emperor's name on the façade seems to me to recommend the first possibility. 
+                    Its weakness is that at the
+                    date of the inscription the name Germanicus normally follows Augustus in
+                    Domitian's title. It would indeed be easy to fit two more letters after AVG in
+                    the space available in Bay 3, but the minimum needed is three (GER) and four is
+                    more normal (GERM) - all of them broad; the result would be remarkably crowded.
+                    This aesthetic argument is not conclusive of course - the crowding may have
+                    occurred; but Reynolds prefers to guess that the name was omitted as in ILS 8798
+                    of 93-4. There is, on the other hand, no difficulty in fitting Germanicus into a
+                    reconstruction which uses the dative or the ablative cases but it is necessary
+                    to find an explanation for the surprising use of Latin, which certainly seems to
+                    indicate some official intervention.</p>
+           
+            <p>Domitian's eleventh year of tribunician power ran
+                    from 13th September 91 to 12th September 92. He was cos XV from 1st January 90
+                    to 31st December 91 and became cos XVI on 1st January 92; XVI seems to be
+                    required here by the figure given for the imperial salutations. The exact date
+                    of his 22nd salutation is not known, though it is to be associated with the
+                    Suebo-Sarmatian War of 92-3 (cf. G. Corradi, in De Ruggiero, <title>Dizionario
+                    Epigrafico</title> s.v. Domitianus, p. 1988); its first precisely dated appearance seems
+               to be in a military diploma of July, 93 (CIL XVI. 38, at <title>EDH</title> <ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD075700">075700</ref>) while the last precisely
+                    dated appearance of the 21st salutation is in a diploma of 14th June, 92 (CIL
+                    XVI. 37). Supposing that the figures are correctly transmitted in the three
+                    documents, the Apollonia text implies that the 22nd salutation was given between
+                    14th June and 12th September 92, a fact of interest to the history of Domitian's
+                    reign as well as that of the construction of the Theatre at Apollonia.</p>
+            <p>b. The leaf and the vacat on the first block  might suggest that this concluded the text but
+                    their intention may be simply to emphasize the city name which preceded
+                    <foreign xml:lang="la">Apolloni]atarum</foreign> as in some Hadrianic texts at Cyrene; in that case the second block
+                    can follow after an interval of unknown length, giving a verb, <foreign xml:lang="la">d]edit</foreign>, in a
+                    normal position towards the end of the sentence. It is not unusual for a city to
+                    be described as "giving" a public monument, so that the case to be restored here
+                    must be the dative.</p>
+            <p>Assuming that texts a. and b. are contemporary and connected, the
+                    dative case for Domitian's name can be ruled out for the verb required would be
+                    dedicavit. If he appeared in the nominative he was the subject of the verb dedit
+                    and the text of this series (in any case shorter that that of a., cf.
+                    the uninscribed blocks) may have been filled out by the name of his agent
+                    (presumably the proconsul) and/or a description of those elements of the Theatre
+                    which he gave. If he appeared in the ablative providing a date (and an implied
+                    dedication), this series must surely have contained the name of the donor and/or
+                    a description of his gift.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

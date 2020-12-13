@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T38640" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.397</idno>
+            <idno type="ircyr2012">T38640</idno>
+            <idno type="JMR">165e</idno>
+            <idno type="Excel">31</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType>, inscribed on the façade, 
+                              which is in very poor condition, with <ref type="inscription" n="T.393">T.393</ref>, <ref type="inscription" n="T.394">T.394</ref>, 
+                              <ref type="inscription" n="T.395">T.395</ref>, <ref type="inscription" n="T.396">T.396</ref>, <ref type="inscription" n="T.397">T.397</ref> 
+                              and <ref type="inscription" n="T.398">T.398</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> within a gabled panel 
+                            (<dimensions><width>0.28</width> <height>0.68</height></dimensions>) the gable outlined by an
+                           incised line, the panel by moulding, the surface damaged; to the right of <ref type="inscription" n="T.398">T.398</ref>, to the left of <ref type="inscription" n="T.395">T.395</ref> 
+                           and <ref type="inscription" n="T.396">T.396</ref>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Line 1, <height>0.055</height>; 11.2f., <height>0.045</height>; L for ἔτους, ἐτῶν.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                      <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low" evidence="lettering context">First century BCE to first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1150">Quarry East XI</placeName>, North wall.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+       <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-22" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-08-21" who="Pietro">Tokenized</change>
+         <change when="2009-07-23" who="GF">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_165_002" decls="#photograph"><desc>From left: <ref type="inscription" n="T.398">T.398</ref> (part) <ref type="inscription" n="T.397">T.397</ref>, 
+      <ref type="inscription" n="T.395">T.395</ref>, above <ref type="inscription" n="T.396">T.396</ref> (Joyce Reynolds, Tocra IV.2.30, NS.V.30)</desc></graphic>
+      <graphic url="JMR_165_002c" decls="#photograph"><desc>View (Joyce Reynolds, Tocra IV.2.30, NS.V.30)</desc></graphic>
+      <graphic url="JMR_165_001" decls="#photograph"><desc>From left, <ref type="inscription" n="T.398">T.398</ref>, <ref type="inscription" n="T.397">T.397</ref>  (Joyce Reynolds, Tocra IV.2.31, NS.V.31)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/><!-- El Haddar 100 -->
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/FmKjYyxKaRr4fryc8vBpoC"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="8">η</num> <rs type="month" key="mechir"><w lemma="Μεχίρ">Μεχ<unclear>ὶ</unclear><supplied reason="lost">ρ</supplied></w></rs>
+                    <num><gap reason="lost" extent="unknown" unit="character"/></num></date>
+                    <lb n="2"/><note>sic</note> <persName type="attested"><name nymRef="Μυρτώ">Μυρτὺ</name> 
+                    <lb n="3"/><persName type="attested"><name nymRef="Ἰούλιος">Ἰου<unclear>λί</unclear>ου</name></persName></persName>
+                    <lb n="4"/><date type="life-span" dur="P21Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="21">κα</num> </date>
+                    <lb n="5"/><date ref="https://godot.date/id/uggB4UR8WuKoFkouddSKob"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="8">η</num></date> <persName type="attested"><name nymRef="Ῥο-"><seg part="I">Ῥο</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/FmKjYyxKaRr4fryc8vBpoC">Year 8, Mecheir ?</ref>, Myrto <supplied reason="subaudible">daughter</supplied> 
+               of Ioulios <supplied reason="explanation"><foreign xml:lang="la">Julius</foreign></supplied>, aged 21. 
+               <ref target="https://godot.date/id/uggB4UR8WuKoFkouddSKob">Year 8</ref>, Rho[---</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- Mecheir (?) (January/February) -->
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

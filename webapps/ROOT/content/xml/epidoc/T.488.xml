@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T47700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.488</idno>
+            <idno type="ircyr2012">T47700</idno>
+            <idno type="JMR">199</idno>
+            <idno type="Excel">1674</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType> inscribed on the façade.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc><layout><rs type="execution" key="scalpro">Inscribed</rs> within a gabled panel beside the door 
+                           (<dimensions><width>0.39</width> <height>0.56</height></dimensions>), 
+                            outlined in relief.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ave. <height>0.035</height>; L for ἔτους, ἐτῶν; rather irregular.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" evidence="lettering context">First century BCE - first century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                                <placeName type="monuList" ref="https://www.slsgazetteer.org/1154">Quarry East XV</placeName>, south side; first recorded in <date type="found">1825</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-22" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-09-10" who="Pietro">Tokenized</change>
+         <change when="2008-08-20" who="VA">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoLXXXIII" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXXXIII)</desc></graphic>
+      <graphic url="JMR_199" decls="#photograph"><desc>Face (Joyce Reynolds, Tocra IX.3.27A, NS.X.27)</desc></graphic></facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/> <citedRange unit="plate">LXXXIII</citedRange></bibl>, whence 
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5305</citedRange></bibl>;
+               <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">405</citedRange> (278, La.XV.11.1)</bibl>, whence 
+                <bibl><ptr target="SEG"/> <citedRange>9.668</citedRange></bibl>;
+               <bibl><ptr target="gray1956"/>, <citedRange>41</citedRange></bibl>, whence, with comment from J. Reynolds, 
+               <bibl><ptr target="SEG"/> <citedRange>16.920</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324403">324403</ref></citedRange></bibl>,  
+               <bibl> <ptr target="gl-jmr1983"/>, <citedRange>49</citedRange></bibl>.
+            </p><!-- El Haddar 285 -->
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/yxc8UYTrpgjTqnxMVVRhgA"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="6">ϛ</num> <rs type="month" key="epiphi"><w lemma="Ἐπιφί">Ἐπιφὶ</w></rs> <num value="12">βι</num></date>
+                    <lb n="2"/><persName type="attested" key="lgpn:V1-60587"><name nymRef="Κάνδιδος">Κάνδιδος</name> 
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-60586"><name nymRef="Ἑρέννιος">Ἑρενν<supplied reason="omitted">ί</supplied>ου</name></persName></persName>
+                    <lb n="4"/><date type="life-span" dur="P19Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="19">ιθ</num> </date>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                  <lem>ς'</lem>
+                  <rdg resp="#pacho1827">Ϲ</rdg>
+                  <rdg resp="#gray1956">Ε</rdg>
+               </app>
+                    <app loc="1">
+                  <lem>Φ</lem>
+                       <rdg resp="#pacho1827">Τ</rdg></app>
+               <app loc="4">
+                  <note>Line omitted by Pacho;</note>
+                  <rdg resp="#gray1956">L ΙΕ</rdg>
+               </app>
+                </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Anno 6, Epiphi 12. Candido di Erennio, di anni 19.</p></div>
+            <div type="translation" source="#gray1956" xml:lang="en"><p>Year 5 (?), Epiphi 12th, Candidus, son of Herennus, aged 15.</p></div>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>(Jahr) 6, 12.Epiphi, Candidus des Herennius, 19 (Jahre).</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/yxc8UYTrpgjTqnxMVVRhgA">Year 6, Epeiph 12</ref>, Kandidos <supplied reason="explanation"><foreign xml:lang="la">Candidus</foreign></supplied> 
+               <supplied reason="subaudible">son</supplied> of Herennios <supplied reason="explanation"><foreign xml:lang="la">Herrenius</foreign></supplied>, aged 19.</p></div>
+       </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+         <!-- July 6 -->
+            <p> Oliverio also records here an item numbered 416 (279) - although there is another 416 - apparently in the same block: Letters, 0.11: Ἑ]ρεν[νίου ?</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G10200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Sacred law</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.177</idno>
+            <idno type="ircyr2012">G10200</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two fragments of the right side and upper edge of a <objectType>panel</objectType>: 
+                              a: <dimensions><width>0.45</width> <height>0.33</height></dimensions>; 
+                              b: <dimensions><width>0.14</width> <height>0.13</height> <depth>0.06</depth></dimensions></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on one face; b a small fragment adjoining a at the left side.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably third century CE: <height>0.055</height>. Tall, clearly cut, regular; lunate sigma, epsilon, cursive omega</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notAfter="0101" notBefore="0200" precision="low" evidence="lettering">Second-third century CE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     <placeName ref="https://www.slsgazetteer.org/1179">Balagrae</placeName>, 
+                     in the <placeName type="monuList" ref="https://www.slsgazetteer.org/1289">Asklepeion</placeName>; 
+                     a: photographed 23 March <date type="found">1917</date>; b found in <date type="found">1957</date>.
+                           </p>
+                        </provenance>
+                  <provenance type="observed">
+                     <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                  </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-03-07" who="AFS">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0022b" decls="#photograph"><desc>a: face (Department of Antiquities, E.720) </desc></graphic>
+      <graphic url="JMR_593" decls="#photograph"><desc>b: face (Reynolds IX.3)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>a: Mentioned, citing the last two lines, by <bibl><ptr target="ferri1927a"/>, <citedRange>125-6</citedRange>; 
+            published</bibl>, <bibl><ptr target="ferri1927"/>, <citedRange>244-6</citedRange> with a photograph</bibl>, whence 
+              <bibl><ptr target="rousselBE"/>, <citedRange>1928, p. 387</citedRange></bibl>, <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="page">80</citedRange> note 6</bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>9.347</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324196">324196</ref></citedRange></bibl>;
+               the reissue of the article mentioned <bibl><ptr target="robertBE"/>, <citedRange>1965.467</citedRange></bibl>.
+               Revised by <bibl><ptr target="sokolowski1962"/>, <citedRange unit="entry">118</citedRange></bibl>,
+               whence <bibl><ptr target="SEG"/> <citedRange>20.759</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324515">324515</ref></citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>118</citedRange></bibl>. b: Unpublished.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+           <lb n="1"/> <gap reason="lost" extent="unknown" unit="character"/><orig>ν</orig> <w lemma="πρός">πρὸϲ</w>
+               <w lemma="ὁ">τὸ</w> <w lemma="ἱερόν">ἱερὸν</w> <w lemma="ἀπαντάω">ἀπαντῶ<lb 
+                  n="2" break="no"/><supplied reason="lost">ντες</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> <w lemma="ἐπιβαίνω"><unclear>ἐ</unclear>πιβαίνειν</w> <w lemma="ὀφείλω">ὀφείλοντεϲ</w>
+            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low"><w lemma="ἁγνισμός">ἁγνιϲμὸν</w> <w lemma="καί">καὶ</w></supplied> <w lemma="καθαρμός"><supplied reason="lost">καθαρμὸ</supplied>ν</w> <w lemma="ποιέω">ποιεῖϲθαι</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="ἡμέρα">ἡμέρα<surplus>ι</surplus>ϲ</w> <w lemma="τρεῖς">τρεῖϲ</w>·
+            <lb n="4"/> <supplied reason="lost" cert="low"><w lemma="ὁ">οἱ</w> <w lemma="δέ">δὲ</w> <w lemma="ἁγνεία">ἁγνείαϲ</w> <w lemma="ἀμελέω">ἀμελήϲαντες</w> <w lemma="ὁ">τῆς</w></supplied> <w lemma="ἀπαλλαγή"><supplied reason="lost">ἀ</supplied>παλλαγῆϲ</w> <w lemma="ὁ">τῶν</w> <w lemma="πόνος">πόνων</w> <w lemma="ἀποτυγχάνω">ἀπέ<lb 
+               n="5" break="no"/><supplied reason="lost" cert="low">τυχον</supplied></w> <gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p> . . . ] towards the sanctuary [ . . . ] to access, owing [ . . . ] to carry out [?purification and cleansing] for 
+         three days [?those who disregard purity failed to obtain ] release from troubles [ . . .</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The new fragment only adds 3 letters to the first line, and confirms one in the second.</p>
+            <p>Ferri suggested a third century date; Woodhead, SEG 20, third to fourth century.</p>
+            <p>The supplements are highly speculative.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

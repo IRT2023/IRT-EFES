@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s </title>
+                <editor>Joyce M. Reynolds</editor>
+                <editor xml:id="cmr">Charlotte Roueché</editor> 
+                <editor xml:id="edd">Editors</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">C.144</idno>
+            <idno type="ircyr2012">C12620</idno>
+                <availability>
+                    <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+                    <p>All reuse or distribution of this work must contain somewhere a link back to the
+                        URL <ref>http://inslib.kcl.ac.uk/</ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository>Findspot</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p> White <material>marble</material> <objectType>base</objectType>, with moulding above,
+                                        reused in 172-175 CE to support a stele bearing <ref type="inscription" n="C.143">C.143</ref>.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><rs type="execution" key="litteris scariphatis">Graffiti</rs> cut on 3 faces: 
+                                    a on upper moulding to the front, b on upper moulding of the left side. 
+                                    c on the right side, on the face, upper (l.7) and lower (l.8) moulding.
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>At least eight different hands.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot</origPlace>
+                            <origDate evidence="internal-date" atLeast="0009" atMost="0025">CE 9/10-24/25</origDate>
+                        </origin>
+                        
+                            
+                                <provenance type="found">
+                                    <p>
+                                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>;
+                                         from the <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>; found in <date type="found">1988.</date></p>
+                                </provenance>
+                                <provenance type="observed">
+                                    <p>Findspot.</p>
+                                </provenance>
+                            
+                        
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+            <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+            <textClass/>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+                    <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+                    <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+                </keywords>
+            </textClass>
+        <creation>Publication.</creation></profileDesc>
+        <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+            <change when="2011-08-05" who="Pietro">marked up, named</change>
+            <change when="2011-08-02" who="CMR">created from publication</change>
+        </revisionDesc>
+    </teiHeader><facsimile><graphic url="cdlC144_a" decls="#photograph"><desc>Face a (C. Dobias-Lalou, 2001: MFA 01/11/18)</desc></graphic>
+        <graphic url="cdlC144_b" decls="#photograph"><desc>Face b (C. Dobias-Lalou, 2001: MFA 01/11/16)</desc></graphic>
+        <graphic url="cdlC144_c1" decls="#photograph"><desc>Face c (C. Dobias-Lalou, 2001: MFA 01/11/15)</desc></graphic>
+        <graphic url="cdlC144_c" decls="#photograph"><desc>Face c (C. Dobias-Lalou, 2001: MFA 01/11/17)</desc></graphic></facsimile>
+    <text>
+        <body>
+            
+            <div type="bibliography">
+                <head>Bibliography</head>
+                <p>Mentioned <bibl> <ptr target="mohamed-jmr1992"/>, <citedRange>117-8</citedRange></bibl>; 
+                    published <bibl> <ptr target="jmr2000b"/>, <citedRange>1</citedRange></bibl>,
+                whence <bibl><ptr target="SEG"/> <citedRange>50.1643</citedRange></bibl>
+                </p>
+            </div>
+            
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+<div type="textpart" subtype="text" n="a"><ab>
+    <lb n="1"/><persName type="attested"><name nymRef="Ἀρίμμαν">Ἀρίμμαν</name> 
+        <name nymRef="Καρτίμαχος">Κα<unclear>ρτ</unclear>ίμαχος</name></persName>
+</ab>
+</div>
+<div type="textpart" subtype="text" n="b"><ab>
+    <lb n="1"/><gap quantity="2" unit="character" reason="lost"/><persName type="attested"><name nymRef="Ἡρακλῆς"><supplied reason="lost">Ἡ</supplied><unclear>ρ</unclear>ακ<unclear>λῆ</unclear>ς</name> 
+        <persName type="attested"><name nymRef="Ἰάσων">Ἰάσονος
+</name></persName></persName></ab>
+</div>
+<div type="textpart" subtype="text" n="c"><ab>
+    <lb n="1"/><persName type="attested"><name nymRef="Ἁγήσιος">Ἁγήσιος</name> 
+ <lb n="2"/><date ref="https://godot.date/id/puESXHZfTKfs9yv8eWsbnh"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+    <num value="40">μ</num></date> <persName type="attested"><name nymRef="Βαρκαῖος">Βαρκαίω</name>
+ <lb n="3"/> <w lemma="ὁ">τῶ</w> <persName type="attested"><name nymRef="Δᾶμις">Δάμιος</name></persName></persName></persName>
+ <lb n="4"/><orig>αρ<unclear>ιι</unclear></orig><gap quantity="1" unit="character" reason="lost"/> <space extent="unknown" unit="character"/>
+ <lb n="5"/><date ref="https://godot.date/id/4hCyBccSu2RfCkCKUfXJBM"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w></date>
+    <space extent="unknown" unit="character"/> 
+ <lb n="6"/><date ref="https://godot.date/id/LBG9KV8e2LEJFgAfvtiZJW"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+    <num value="5"><unclear>ε</unclear></num></date> <orig>αλκ</orig> <date ref="https://godot.date/id/LBG9KV8e2LEJFgAfvtiZJW"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+    <num value="5">ε</num></date> <persName type="attested"><name nymRef="Λύκος">Λύκος</name> 
+        <persName type="attested"><name nymRef="Ἀμμώνιος"><expan><abbr>Ἀμμων</abbr><ex>ί</ex><abbr>ου</abbr></expan></name></persName> </persName>
+ <lb n="7"/><date><date ref="https://godot.date/id/PdyuasiMxoqYzoe7MfHeCB"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+    <num value="10">ι</num></date> <date ref="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+    <num value="55">νε</num></date></date> <persName type="attested"><name nymRef="Νασάμων">Νασάμων</name> <persName type="attested"><name nymRef="Αἰάλαν">Αἰάλα<lb break="no" n="8"/><unclear>ν</unclear>τος</name></persName></persName>
+</ab>
+</div>
+</div>
+            <div type="apparatus">
+                <head>Apparatus</head>
+                
+            </div>
+            <div type="translation" xml:space="preserve"><head>Translations</head>
+             <div type="translation" resp="#cmr" xml:lang="en"><p> <note>a</note>: Arimman Kartimachos</p>
+            <p> <note>b</note>: Herakles <supplied reason="subaudible">son</supplied> of Jason</p>
+            <p> <note>c</note>: Hagesios, <ref target="https://godot.date/id/puESXHZfTKfs9yv8eWsbnh">year 40</ref>, <supplied reason="subaudible">son</supplied> of Barkaios <supplied reason="subaudible">son</supplied> of Damis; [ . . .] 
+            Year ? <ref target="https://godot.date/id/LBG9KV8e2LEJFgAfvtiZJW">Year 5</ref>: ALK <ref target="https://godot.date/id/LBG9KV8e2LEJFgAfvtiZJW">Year 5</ref>, Lykos <supplied reason="subaudible">son</supplied> of Ammonios; 
+                <ref target="https://godot.date/id/PdyuasiMxoqYzoe7MfHeCB">Year 10</ref>, <supplied reason="subaudible">also</supplied> <ref target="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H">year 55</ref>: <!-- wait for synchronism -->Nasamon <supplied reason="subaudible">son</supplied> of Aialan.</p></div></div>
+            <div type="commentary">
+                <head>Commentary</head>
+                <p>c: in lines 4 and 6, the mason abandoned cutting after a few letters
+                </p>
+                <p>
+                c.2. year 40 (Actian era) = 9/10 CE
+                </p>
+                <p> c: in lines 4 and 6, the mason abandoned cutting after a few letters
+                </p>
+                <p>
+                c.6. year 5 (presumably a regnal year of Tiberius) = 19/20 CE
+                </p>
+                <p>c. 6. ΑΛΚ: perhaps the beginning of Ἄλκις or a similar name.
+                </p>
+                <p>c.7. double date: year 10 (presumably a regnal year of Tiberius), and also year 55 (Aktian era), so 24/25 CE
+                Νασάμων and Αιαλαν: Libyan names (perhaps members of a Libyan family, Hellenized but still consciously proud of its origin); Νασάμων is related to the tribe of the Nasamones 
+                (known from literary sources as hostile to the Cyrenaicans!), but previously unattested as a personal name.
+                </p>
+            </div> 
+        </body>
+    </text>
+</TEI>

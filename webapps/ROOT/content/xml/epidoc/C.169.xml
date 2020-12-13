@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C17800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Acclamation</rs> on a mosaic panel</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.169</idno>
+            <idno type="ircyr2012">C17800</idno>
+            <idno type="JMR">771</idno>
+            <idno type="Excel">64</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Mosaic</material> <objectType>floor</objectType> emblema figuring the Triumph of Dionysus 
+                              (<dimensions><width>1.40</width> <height>1.01</height></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="tessellis">Mosaic</rs> lettering above the scene.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>ave. <height>0.05</height>; square sigma, square omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0400" notBefore="0301" precision="low" evidence="archaeology">Fourth century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              Valley Street, <placeName type="monuList" ref="https://www.slsgazetteer.org/1335">House of the Mosaic of Dionysos</placeName>, in the floor.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-01" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-10" who="CB">tidied</change>
+         <change when="2009-06-12" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_771_001" decls="#photograph"><desc>Mosaic and inscription (Joyce Reynolds)</desc></graphic>
+      <graphic url="JMR_771_002" decls="#photograph"><desc>Mosaic and inscription (Joyce Reynolds)</desc></graphic>
+      <graphic url="JMRNB08_095" decls="#photograph"><desc>Mosaic and inscription (E. Alföldi-Rosenbaum, Reynolds VIII.95)</desc></graphic>
+      <graphic url="DSC04137" decls="#photograph"><desc>Mosaic and inscription (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04138" decls="#photograph"><desc>Mosaic and inscription (2008, H.Walda)</desc></graphic>
+      </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl> <ptr target="rgg1971"/>, <citedRange>plate 47</citedRange></bibl>; <bibl><ptr target="stucchi1975"/>, <citedRange unit="page">495</citedRange>, n.5</bibl>; 
+            <bibl> <ptr target="venturini2013"/>, <citedRange>75</citedRange></bibl>, on which <bibl><ptr target="cdlBE"/>, <citedRange>2014.539</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><w lemma="εἰς">εἰς</w> <w lemma="αἰών">αἰῶνα</w> <w lemma="ὁ">τὸ</w> <w lemma="γένος">γένος</w> <persName type="attested" key="lgpn:VI-64535"><name nymRef="Καμπανός">Καμπάνου</name></persName> 
+                    <lb n="2"/><w lemma="ὁ">τῇ</w> <w lemma="ματρώνα">ματρώνᾳ</w>
+                    <lb n="3"/><persName type="attested" key="lgpn:VI-63710"><name nymRef="Ἐπικρίτα">Ἐπικρ<space quantity="1" unit="character"/>ίτα</name></persName>.
+                </ab>
+         </div>
+         
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" xml:lang="en" resp="#jmr">
+            <p>For ever the family of Kampanos ! For the matron Epikrita!</p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>إلى الأبد عائلة كامبانوس! لأجل الماترون (السيدة الراعية) إبيكريتا</p></div>
+        </div>
+         
+        
+         
+         <div type="commentary">
+            <head>Commentary</head>
+           <p>For <foreign xml:lang="la">matrona</foreign> as an epithet in Greek see e.g. <title>SEG</title> 51.915 (<title>PHI</title> <ref target="https://epigraphy.packhum.org/text/309741">309741</ref>, 
+              <title>IAph2007</title> <ref target="http://insaph.kcl.ac.uk/iaph2007/iAph120532.html">12.532</ref> line 13, 
+              <title>SEG</title> 6.452 (<title>PHI</title> <ref target="https://epigraphy.packhum.org/text/282239">282239</ref>)</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

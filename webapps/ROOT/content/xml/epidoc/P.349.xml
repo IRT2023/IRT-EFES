@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P25300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">ephebic</rs> <rs type="textType">list</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.349</idno>
+            <idno type="ircyr2012">P25300</idno>
+            <idno type="JMR">427</idno>
+            <idno type="Excel">788</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper right corner of a <material>marble</material> 
+                              <objectType>panel</objectType>, either part of a composite stele of which the component to the right is lost, 
+                              or from a larger stele cut down for re-use, since the right edge cuts through the last letters of lines 3-5. (<dimensions>
+                                 <width unit="metre">0.16</width> 
+                                 <height unit="metre">0.26</height> 
+                                 <depth unit="metre">0.10</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first century BCE - Augustan: <height unit="metre">0.015</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate evidence="lettering" cert="low" precision="low" notBefore="-0099" notAfter="-0001">Probably first century BCE - Augustan </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              original findspot unrecorded; found before <date type="found" atMost="1941">1941</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="CMR">tagged description, corrected text</change>
+         <change when="2009-09-11" who="Pietro">While adding figure references, merged best bits of P25500, which was the same and therefore was Killed</change>
+         <change when="2009-06-01" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_429" decls="#photograph"><desc>Face (1961-05-26, Joyce Reynolds, III.8)</desc></graphic>
+      <graphic url="Photos_0110" decls="#photograph"><desc>Face (Joyce Reynolds, Tolmeita I (NB V). 55)</desc></graphic><!--Dept.--></facsimile>
+   <text>
+      <body>
+       
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+   
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Ἱππίας">Ἱππίο<supplied reason="lost">υ</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="2"/> <date><w lemma="ἐφηβαρχέω"><supplied reason="lost">ἐφηβαρχούν</supplied>των</w> <persName type="attested"><name nymRef="Μελάνιππος">Μελα<supplied reason="lost">νίππου</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ὁ">τοῦ</w> 
+                    <persName type="attested"><name nymRef="Ἀλέκτωρ">Ἀλέκτο<supplied reason="lost">ρος</supplied></name></persName></date> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="4"/> <date><w lemma="γυμνασιαρχέω"><supplied reason="lost">γυμνασιαρχ</supplied>ούντων</w> 
+                    <persName type="attested"><name nymRef="Φαι-">Φαι</name></persName><gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>α</unclear></orig> <persName type="attested"><name nymRef="Τίμαρχος">Τιμάρχου</name> </persName>
+                    <orig>Τ</orig><gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><orig>ου</orig> 
+                    <persName type="attested"><name nymRef="Φίλων">Φίλωνος</name></persName></date> <space quantity="2" unit="character"/> 
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><supplied reason="lost">α</supplied>ρχησας</w> <space quantity="2" unit="character"/> 
+                    <persName type="attested"><name nymRef="Ε-"><seg part="I">Ε</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <space quantity="10" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-ων"><seg part="F"><unclear>ω</unclear>νος</seg></name></persName> <space quantity="3" unit="character"/>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>λλ</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="10a"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>
+               [ . . .] of Hippias  [ . . .], while Directors of Ephebes were Melanippos [ . . .] <supplied reason="subaudible">son</supplied> of Alektor  [ . . .], 
+            while Directors of the Gymnasium were Phai[- . . .]  Timarchos  [ . . . <supplied reason="subaudible">son</supplied>] of Philon [ . . . </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>From the preamble to an ephebic list.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T15800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">T.199</idno>
+            <idno type="ircyr2012">T15800</idno>
+            <idno type="JMR">70.79</idno>
+            <idno type="Excel">1558</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjacent <material>sandstone</material> blocks (a: <dimensions><width>0.81</width> <height>0.48</height></dimensions>; b: <dimensions><width>0.93</width> <height>0.43</height></dimensions>) in the City Wall, in a group 
+                              which comprises <ref type="inscription" n="T.192">T.192</ref>, <ref type="inscription" n="T.193">T.193</ref>, <ref type="inscription" n="T.194">T.194</ref>, 
+                              <ref type="inscription" n="T.195">T.195</ref>, <ref type="inscription" n="T.196">T.196</ref>, <ref type="inscription" n="T.197">T.197</ref>, <ref type="inscription" n="T.198">T.198</ref>, 
+                              <ref type="inscription" n="T.199">T.199</ref>, <ref type="inscription" n="T.200">T.200</ref>, <ref type="inscription" n="T.201">T.201</ref>, <ref type="inscription" n="T.202">T.202</ref>, 
+                              <ref type="inscription" n="T.203">T.203</ref>, <ref type="inscription" n="T.204">T.204</ref>, <ref type="inscription" n="T.205">T.205</ref>, <ref type="inscription" n="T.206">T.206</ref>, 
+                              <ref type="inscription" n="T.207">T.207</ref>, <ref type="inscription" n="T.208">T.208</ref>, <ref type="inscription" n="T.209">T.209</ref>, <ref type="inscription" n="T.210">T.210</ref>, 
+                              <ref type="inscription" n="T.211">T.211</ref>. In the second course.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Incised</rs> on the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>From <height>0.18</height>, decreasing in height.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                      <origPlace>Findspot.</origPlace>
+                     <origDate evidence="lettering context" notBefore="-0050" notAfter="0150" precision="low">Late first century BCE - early second century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/913">Taucheira</placeName>: 
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1126">East Wall</placeName>: in situ on the inner face, the fifth group south of the east gate.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/88834">Tocra</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-16" who="MGDA">Tagged header information</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-08-13" who="Pietro">Tokenized</change>
+         <change when="2009-03-09" who="VA">turned to XML and tidied</change>
+         <change when="2008-08-18" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p> <bibl><ptr target="oliverioDAI2"/>, <citedRange unit="entry">234</citedRange> (VII,110-111)</bibl>, whence
+                    <bibl>
+                       <ptr target="SEG"/> <citedRange>9.496</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324343">324343</ref></citedRange></bibl>,  
+               <bibl><ptr target="vidman1969"/>, <citedRange>809</citedRange></bibl>
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested" key="lgpn:V1-60354"><name nymRef="Ἰσιάς"><unclear>Ἰσιά</unclear><supplied reason="lost">δ</supplied>ος</name></persName>
+                </ab>
+</div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1"><rdg resp="#oliverioDAI2"> - - Ἴσ[ιδ?]ος (or Ἴσ[ι]ος)</rdg>
+               </app>
+               
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Di Iside ?</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Of Isias</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

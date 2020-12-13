@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C15800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Commodus</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.173</idno>
+            <idno type="ircyr2012">C15800</idno>
+            <idno type="JMR">743</idno>
+            <idno type="Excel">186</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fifty fragments of <material>marble</material>, all heavily burned,
+                              from a <objectType>panel</objectType> (originally 
+                              <dimensions><width precision="low">3.00</width> <height>0.35</height> 
+                                 <depth atLeast="0.04" atMost="0.05">0.04 - 0.05</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century CE <height atLeast="0.04" atMost="0.05">0.04 - 0.05</height>; heavily 
+                        rubricated. In lines 1-3 the stops, with the exception of the ivy leaf at the end of line 1 are 
+                        simply <rs type="execution" key="pictura">painted</rs>; in lines 4, 5 they are incised and <rs type="execution" key="pictura">painted</rs>; 
+                        the <rs type="decoration">palm branch</rs>es which flank line 5 are <rs type="execution" key="pictura">painted</rs> only.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref  target="https://www.slsgazetteer.org/1026">Temple of Commodus</ref>, 
+                        from the front of the base of the main cult-statue</origPlace>
+                     <origDate notAfter="0192" notBefore="0185" precision="low" evidence="titulature">CE 185-192</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>, 
+                              Valley Street, <placeName type="monuList" ref="https://www.slsgazetteer.org/1026">Temple of Commodus</placeName>; 
+                              the greater part was found in <date type="found">1957</date>, 
+                              in situ as fallen when the Temple was destroyed, but several fragments from the right end were in 
+                              Cyrene museum before <date type="found">1941</date>, presumably found during construction of modern buildings in the area.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName> (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-04-06" who="MGDA">fixed Goodchild bibliography</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-11-04" who="CB">tidied</change>
+         <change when="2009-06-16" who="CB">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_743_006" decls="#photograph"><desc>Reconstructed fragments (BSR 1632, 7)</desc></graphic>
+      <graphic url="JMR_743_004" decls="#photograph"><desc>Reconstructed fragments (BSR 1632, 8)</desc></graphic>
+      <graphic url="JMR_743_003" decls="#photograph"><desc>Reconstructed fragments (BSR 1632, 9)</desc></graphic>
+      <graphic url="JMR_743_002" decls="#photograph"><desc>Reconstructed fragments (BSR 1632, 10)</desc></graphic>
+      <graphic url="JMR_743_001" decls="#photograph"><desc>Reconstructed fragments (BSR 1632, 11)</desc></graphic>
+      <graphic url="JMRNB08_001" decls="#photograph"><desc>View of reassembled group, left part (Reynolds VIII.1)</desc></graphic>
+      <graphic url="DSC05239" decls="#photograph"><desc>Left end (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05238" decls="#photograph"><desc>Centre left (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05237" decls="#photograph"><desc>Centre left (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05236" decls="#photograph"><desc>Centre (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05235" decls="#photograph"><desc>Right end (2008, H.Walda)</desc></graphic>
+      <graphic url="JMRNB08_005" decls="#photograph"><desc>View of reassembled group, right part (Reynolds VIII.5)</desc></graphic>
+      <!--Dept. F. 4074, 4075, 4076.-->
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="rgg1961"/>, <citedRange>1</citedRange></bibl>, whence  
+               <bibl><ptr target="robertBE"/>, <citedRange>1962.366</citedRange></bibl> 
+              <bibl><ptr target="AE"/> <citedRange>1963.140</citedRange></bibl>,
+               <bibl><ptr target="SEG"/> <citedRange>20.727</citedRange></bibl>, (whence 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324487">324487</ref></citedRange></bibl>); reprinted
+               <bibl><ptr target="rgg-jmr1976"/>, <citedRange>216-228</citedRange>, pl. 77, 78, 79</bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/WrYmscXsHSsbi4DCibJrfC"><persName type="emperor" key="commodus"><w lemma="Αὐτοκράτωρ">Αὐτοκράτορ<unclear>α</unclear></w> <name nymRef="Καῖσαρ">Κ<unclear>α</unclear><supplied reason="lost">ίσα</supplied>ρα</name> <name nymRef="Λούκιος">Λούκιο<supplied reason="lost">ν</supplied></name> 
+                    <name nymRef="Αἴλιος"><supplied reason="lost">Αἴλιον</supplied></name> <name nymRef="Αὐρήλιος"><supplied reason="lost">Αὐρ</supplied><unclear>ή</unclear>λιον</name> 
+                    <name nymRef="Κόμμοδος">Κ<supplied reason="lost">όμμοδ</supplied>ον</name> <w lemma="Εὐσεβής">Εὐ<supplied reason="lost">σ</supplied>εβῆ</w> <g ref="symbols.xml#leaf"/> <lb n="2"/>, <w lemma="εὐτυχής">Εὐτυχῆ</w> <name nymRef="Σεβαστός">Σε<supplied reason="lost">βα</supplied>στ<unclear>ὸ</unclear><supplied reason="lost">ν</supplied></name> 
+                   <name nymRef="Σαρματικός"><supplied reason="lost">Σ</supplied>αρματικὸ<unclear>ν</unclear></name> <name nymRef="Γερμανικός"><supplied reason="lost">Γερμανικὸν</supplied></name> 
+                    <w lemma="μέγιστος">μέγι<unclear>σ</unclear><supplied reason="lost">τον</supplied></w> <name><supplied reason="lost">Βρε</supplied>ταννικὸν</name></persName></date> 
+                    <lb n="3"/><w lemma="ὁ">τὸν</w> <w lemma="σωτήρ">σωτῆ<supplied reason="lost">ρα</supplied></w> <w lemma="καί">καὶ</w> <w lemma="εὐεργέτης">εὐεργέταν</w> <w lemma="ὁ">ἁ</w> <w lemma="πόλις">π<supplied reason="lost">όλις</supplied></w>
+                        <w lemma="ὁ"><supplied reason="lost">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost">Κυρανάων</supplied></placeName> <w lemma="ὁ"><unclear>ἁ</unclear></w> 
+                    <w lemma="μητρόπολις">μ<unclear>α</unclear><supplied reason="lost">τρόπολις</supplied></w> <w lemma="ὁ">τ<unclear>ᾶς</unclear></w> <placeName nymRef="#Ἑξάπολις" key="#hexapolis">Ἑξα <space quantity="1" unit="character"/><lb 
+                       n="4" break="no"/>πόλιο<unclear>ς</unclear></placeName> <w lemma="ἀφιερόω"><supplied reason="lost">ἀ</supplied>φιερώσαντος</w> <persName type="attested"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίω</ex></expan></name>
+                    <name nymRef="Σεμπρώνιος">Σε<unclear>μ</unclear><supplied reason="lost">πρ</supplied><unclear>ω</unclear>νίω</name></persName> <gap reason="lost" quantity="3" unit="character"/>
+                    <orig><unclear>ι</unclear>γ</orig> <gap reason="lost" quantity="8" unit="character" precision="low"/> <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶ</w> 
+                    <w lemma="κράτιστος">κρατίστ<unclear>ω</unclear></w> 
+                    <lb n="5"/> <space quantity="6" unit="character"/> <g ref="symbols.xml#palm"/> <space quantity="2" unit="character"/> <w lemma="ἀνθύπατος">ἀνθυπάτω</w> <space quantity="5" unit="character"/><w lemma="ἐπί">ἐπ’</w><w lemma="ἀγαθός">ἀγαθῷ</w> <space quantity="12" unit="character" precision="low"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="4">
+                  <rdg>[...]ιγ[...]</rdg>
+                  <note>omitted by Goodchild (so Robert, SEG)</note>
+               </app>
+               
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Emperor Caesar Lucius Aelius Aurelius Commodus, <ref target="https://godot.date/id/WrYmscXsHSsbi4DCibJrfC">pious, fortunate, Augustus, victor in Sarmatia, 
+               great victor in Germany, victor in Britain, their saviour and benefactor: the city of the Cyrenaeans, the metropolis of the Hexapolis 
+               <supplied reason="subaudible">erected his image</supplied>; L(ucius) Sempronius [. ? . ]the most excellent proconsul consecrated <supplied reason="subaudible">it</supplied>, 
+               for good fortune. </ref> </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Between 185, when Commodus became Felix, and his death at the end of 192.<!-- check --></p>
+            <p>The use of the accusative case should indicate that the cult statue was of the emperor in divine form, perhaps as Herakles (fragments of
+               a colored Herakles were found in the neighbourhood, although not certainly from this temple.</p>
+            <p>In line 1 there is evidence of a half-hearted attempt at erasure, clearly abandoned before it had got very far, 
+               possibly after Severus had reinstated the memory of Commodus; rather incongruously, the erased letters were not re-inscribed, 
+                    but they were simply painted and the whole text was in fact plastered over. Special merits of Commodus in Cyrene are unknown. </p>
+            <p>Line 3: The title Metropolis for Cyrene is common in the second half of the second century. This description of the Cyrenaican cities as <ref target="https://www.slsgazetteer.org/2224/">Hexapolis</ref> 
+               is the only clearly dated instance. The sixth city must be the Hadrianic foundation of Hadrianopolis which must
+                presumably have been reasonably prosperous at this time. </p>
+            <p>Line 4: The proconsul is not otherwise known. </p>
+               <p>Line 5: The large space before the end of the line may have been filled by e.g. τῷ κυρίῷ.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

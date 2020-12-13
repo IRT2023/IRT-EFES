@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B07500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Caption</rs> for a <rs type="textType">funerary</rs> bust</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">B.55</idno>
+            <idno type="ircyr2012">B07500</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db904">British Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Marble</material> funerary <objectType>bust</objectType> of a young man.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the rectangular base; panel <dimensions> <width>0.127</width> <height>0.092</height></dimensions>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Neatly cut capitals, first-second century CE; ave. <height>0.01</height>; lunate sigma; L for 
+                        ἔτους; bars above L and Η  in line 3; a tricorn stop at end.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notAfter="0120" notBefore="0100" precision="low" evidence="hairstyle">100-120 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/910">Berenike</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1214">Ain es-Selmani</placeName> in a tomb, 
+                           ('Crowe's tomb') in <date type="found">1860</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="https://ror.org/00pbh0a34">British Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Benghazi">Benghazi</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-08-02" who="CMR">bibliography </change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2008-01-10" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="JMR_029" decls="#photograph"><desc>Monument (British Museum)</desc></graphic>
+            <!--Rosenbaum-->
+         </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="BMCatSc"/>, <citedRange>2273</citedRange></bibl>; 
+               <bibl><ptr target="IBM"/>, <citedRange>1059</citedRange>, with illustration</bibl>; 
+               <bibl><ptr target="rosenbaum1960"/>, <citedRange>202</citedRange> and pl. LXXXIII, 2</bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>20.776</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324526">324526</ref></citedRange></bibl>;
+               <bibl><ptr target="bailey1972"/>, <citedRange unit="page">3-4</citedRange></bibl>; <bibl><ptr target="huskinson1975"/>, <citedRange>87</citedRange></bibl>.
+               Republished <bibl><ptr target="jmr1978"/>, <citedRange>25</citedRange></bibl>,
+               whence <bibl><ptr target="SEG"/> <citedRange>28.1539</citedRange></bibl>. 
+               Published <bibl><author>S. Walker</author>, <title>Ancient Faces</title> (British Museum, 1997), <!-- check -->
+                  <citedRange>197</citedRange></bibl> whence <bibl><ptr target="SEG"/> <citedRange>47.2162</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+            <lb n="1"/><persName type="attested" key="lgpn:V1-61890"><name nymRef="Πόπλιος">Πόπλιοϲ</name>
+               <lb n="2"/><persName type="attested" key="lgpn:V1-61889"><name nymRef="Καλλίμαχος">Καλλιμάχου</name></persName></persName> 
+                <lb n="3"/><date type="life-span" dur="P38Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                   <num value="38">λη</num> </date>
+            </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Publius <supplied reason="subaudible">son</supplied> of Kallimachos, aged 38 </p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>In a rock-cut tomb with with <ref type="inscription" n="B.54">B.54</ref> 
+               on the façade, <ref type="inscription" n="B.56">B.56</ref>, <ref type="inscription" n="B.57">B.57</ref>, <ref type="inscription" n="B.58">B.58</ref>, 
+               <ref type="inscription" n="B.59">B.59</ref>, <ref type="inscription" n="B.60">B.60</ref>, <ref type="inscription" n="B.61">B.61</ref>, 
+               <ref type="inscription" n="B.62">B.62</ref>, <ref type="inscription" n="B.63">B.63</ref>, <ref type="inscription" n="B.64">B.64</ref>, 
+               <ref type="inscription" n="B.65">B.65</ref>, <ref type="inscription" n="B.66">B.66</ref>. <ref type="inscription" n="B.67">B.67</ref>, 
+               <ref type="inscription" n="B.68">B.68</ref> on the interior walls.</p>
+            <p>The bust was among objects from the tomb brought to the British Museum</p>
+            <p>Repeated in LGPN as IBM 1059, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=VI-65413">VI-65413</ref>, <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=VI-64478">64478</ref></p> <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

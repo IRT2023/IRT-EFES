@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C10200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of the North Stoa</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.119</idno>
+            <idno type="ircyr2012">C10200</idno>
+            <idno type="JMR">685</idno>
+            <idno type="JMR">73</idno>
+            <idno type="Excel">1268</idno>
+            <idno type="Excel">1038</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Standing on the steps of the stoa</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>panel</objectType>, damaged down both sides (<dimensions>
+                              <width>0.85</width>
+                              <height>0.68</height>
+                              <depth>0.38</depth>
+                           </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First-second century; line 1, <height>0.06</height> (the initial letter rather larger); line 2, <height>0.055</height>;
+                        lines 3-9, <height>0.05</height> lunate epsilon and sigma, cursive omega;
+                        bars above the praenomina in lines 1,2; both praenomina written small and inserted in the lines as
+                        if afterthoughts.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0161" notBefore="0161" evidence="regnal-date">CE 161</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              Agora, near the <placeName type="monuList" ref="https://www.slsgazetteer.org/1012">North Stoa</placeName>; found probably in <date type="found">1919</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Standing on the steps of the stoa.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+          <change when="2013-08-01" who="TW">edited PersName type to Consul from Consular</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-19" who="GB">Merged with C012800</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-17" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-16" who="Pietro">tokenized</change>
+         <change when="2009-06-09" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept F. 365, taken when the stone was in better condition.-->
+      <graphic url="DSC05153" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05154" decls="#photograph"><desc>View of block (2008, H.Walda)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="oliverio1916"/>, <citedRange>3</citedRange> and fig. 3</bibl>, whence
+              <bibl><ptr target="AE"/> <citedRange>1919.95</citedRange></bibl>,
+                    <bibl><ptr target="SEG"/> <citedRange>9.170</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324021">324021</ref></citedRange></bibl>.
+               Discussed <bibl><ptr target="applebaum1951"/>, <citedRange>179</citedRange></bibl>, <bibl><ptr target="larsen1952"/>, <citedRange>8</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>179</citedRange></bibl>..
+                </p>
+         </div>
+         
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+             
+            <ab>
+                    <lb n="1"/><date ref="https://godot.date/id/LWdJCf6KsZY9oHSkNTqink"><w lemma="ἔτος">ἔτει</w> <num value="1">α</num> <persName type="emperor" key="marcusaurelius"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name nymRef="Αὐρήλιος">Αὐρηλίου</name> 
+                    <lb n="2"/><name nymRef="Ἀντωνῖνος">Ἀντωνείνου</name> <g ref="symbols.xml#leaf"/></persName> 
+                    <lb n="3"/><w lemma="καί">καὶ</w> <persName type="emperor" key="luciusverus"><name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name> 
+                    <name nymRef="Αὐρήλιος">Αὐρηλίου</name> <name nymRef="Οὐῆρος">Οὐ<supplied reason="lost">ήρου</supplied></name></persName> 
+                    <lb n="4"/><w lemma="Αὐτοκράτωρ">Αὐτοκρατόρων</w></date> 
+                    <lb n="5"/><persName type="attested" key="pir2-C-1044"><name nymRef="Γάϊος"><expan><abbr>Γ</abbr><ex>άϊοϲ</ex></expan></name>
+                    <name nymRef="Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιοϲ</ex></expan></name> <name nymRef="Τιτιανός">Τιτιανὸϲ</name> 
+                    <name nymRef="Δημόστρατος">Δη<supplied reason="lost">μό</supplied><lb n="6" break="no"/>ϲτρατοϲ</name></persName>  <w lemma="ἀνθύπατος">ἀνθύπ<supplied reason="lost">ατοϲ</supplied></w> 
+                    <placeName ref="#creteandcyrene" nymRef="#Κρήτη καὶ Κυρήνη"><placeName nymRef="#Κρήτη" ref="#crete">Κρήτηϲ</placeName> <w lemma="καί">καὶ</w> <placeName nymRef="#Κυρήνη" ref="#cyrene">Κυρήν<supplied reason="lost">ηϲ</supplied></placeName></placeName>
+                    <lb n="7"/> <space quantity="1" unit="character"/> <w lemma="μητρόπολις">μητροπόλεωϲ</w>  
+                    <lb n="8"/> <space quantity="1" unit="character"/> <w lemma="ἀφιερόω">ἀφιέρωϲεν</w> <space quantity="1" unit="character"/>
+         </ab>
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                  <rdg resp="#oliverio1916">Αὐρηλίο[υ]
+                  </rdg>
+                  <note>; so AE and SEG</note>
+               </app>
+            <app loc="2">
+                  <rdg resp="#oliverio1916">Οὐήρου</rdg>
+                  <note>; so AE and SEG</note>
+               </app>
+            <app loc="7">
+                  <rdg resp="#oliverio1916">Κυρή[νηϲ]
+                  </rdg>
+                  <note>; so AE and SEG</note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/LWdJCf6KsZY9oHSkNTqink">Year one of Marcus Aurelius Antoninus and 
+               Lucius Aurelius Verus</ref>, Emperors;
+               G(aius) Cl(audius) Titianus Demostratos, proconsul of Crete and Cyrene, metropolis,
+               consecrated <supplied reason="subaudible">this</supplied>.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1: CE 161. </p>
+            <p>Line 6: for the proconsul see <title>PIR<hi rend="superscript">2</hi></title>, C 1044, and 
+               Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.044.</p>
+            <p>Line 8: Metropolis:  The earliest dated instance of this applied as a title to 
+                    Cyrene; it presumably underlines her position as chief city 
+                    of the koinon of the Hexapolis. It is strange that it 
+                    should be stressed in the title of the proconsul which ought to refer to
+                    the whole province: Larsen, loc. cit. argued from it that the other cities of 
+                    Cyrenaica did not enjoy full civic status but were in some real sense dependent 
+                    on Cyrene. </p>
+            <p>l.9 Applebaum, loc.cit., takes the text as evidence for the insertion of a small shrine between the columns 
+                        of the Northern portico, and connects the work with restoration after the Jewish
+                        Revolt. The findspot is too imprecise to allow the first conclusion; and it is
+                        unnecessary to attribute every second century building at Cyrene to rebuilding after
+                        the Jewish Revolt.</p>
+         </div>
+         
+         
+      </body>
+   </text>
+</TEI>

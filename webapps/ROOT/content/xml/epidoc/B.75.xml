@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B11900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Decree</rs> of <rs type="textType">honours</rs> by the <rs type="textType">Jewish</rs> politeuma</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">B.75</idno>
+            <idno type="ircyr2012">B11900</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1455">Toulouse: Musée St. Raymond</repository> <idno>Inv. Ro 101</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular <material>marble</material>
+                              <objectType>stele</objectType>
+                    (<dimensions><width>0.36</width> <height>0.44</height> <depth>depth unknown</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Greek capitals of first century BCE - first century CE</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0025" notBefore="0024" cert="low" evidence="internal date">October, CE 24</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/910">Berenike</placeName>,
+                              precise findspot unknown; brought to Provence between 1729 and 1735 with <ref type="inscription" n="B.76">B.76</ref>: for the history see Roux (op. cit. below).
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="institution.xml#db1455">Musée St. Raymond, Toulouse</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" key="Benghazi">Benghazi</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>From previous publications (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-04" who="MGDA">fixed bibliography</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-16" who="CMR">added bibliography, title, xrefs</change>
+         <change when="2007-08-12" who="VA">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="olybriusB75" decls="#photograph">
+      <desc>Face (Olybrius [CC BY-SA 3.0], via Wikimedia Commons) </desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>For the history and early bibliography see <bibl><ptr target="pasqualini2007"/> <citedRange>529-538</citedRange></bibl>:  
+               <bibl>first published by Maffei in 1732, whence 
+                  <ptr target="cigiii"/>, <citedRange unit="entry">5361</citedRange>, p. 557</bibl>; republished 
+               <bibl><ptr target="roschach1865"/>, <citedRange unit="page">98</citedRange></bibl>
+               whence <bibl><ptr target="IGRR"/>, <citedRange>I.1024</citedRange></bibl>; <bibl><ptr target="roux1949"/>, <citedRange>283-4</citedRange></bibl>, 
+                <bibl><ptr target="robertBE"/>, <citedRange>1951.245</citedRange></bibl>,
+               <bibl><ptr target="gabba1958"/> 62.f, no. <citedRange>XIX</citedRange></bibl>; 
+               <bibl><ptr target="caputo1955"/>, <citedRange>283</citedRange></bibl>. From these  
+            <bibl>
+                  <ptr target="jmr1978"/>, <citedRange>17</citedRange></bibl>,
+               whence <bibl><ptr target="SEG"/> <citedRange>28.1539</citedRange></bibl>,   
+               <bibl><ptr target="robertBE"/>, <citedRange>1979.658</citedRange></bibl>,
+               <bibl><ptr target="gl-jmr1983"/>  <citedRange unit="entry">71</citedRange></bibl>, <bibl><ptr target="baldwin-bowsky1987"/> <citedRange>495-510</citedRange></bibl>,
+               <bibl><ptr target="williams1988"/>, <citedRange>V.35</citedRange></bibl>,  
+               <bibl><ptr target="runesson2008"/>, <citedRange>132</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/sXUzJwGA4urSxmC9egK2iN"><w lemma="ἔτος"><supplied reason="lost">Ἔ</supplied>τους</w> <num value="55">νε</num> <rs type="month" key="phaophi"><w lemma="Φαωφί">Φαῶφ</w></rs> <num value="25">κε</num></date> <w lemma="ἐπί">ἐπὶ</w>
+                    <w lemma="σύλλογος">συλλόγου</w> <w lemma="ὁ">τῆς</w> <w lemma="σκηνοπηγία">σκηνο<lb n="2" break="no"/>πηγίας</w> <date><w lemma="ἐπί">ἐπὶ</w> <w lemma="ἄρχων">ἀρχόντων</w> 
+                    <persName type="attested" key="lgpn:V1-61854"><name nymRef="Κλέανδρος">Κλεάνδρου</name> <w lemma="ὁ">τοῦ</w> <lb n="3"/><persName type="attested" key="lgpn:V1-61856"><name nymRef="Στρατόνικος">Στρατονίκου</name></persName></persName>,
+                    <persName type="attested" key="lgpn:V1-61853"><name nymRef="Εὐφράνωρ">Εὐφράνορος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61855"><name nymRef="Ἀρίστων">Ἀρίστωνος</name></persName></persName>, 
+                   <lb n="4"/><persName type="attested" key="lgpn:V1-61859"><name nymRef="Σωσιγένης">Σωσιγένους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61858"><name nymRef="Σώσιππος">Σωσίππου</name></persName></persName>,
+                    <persName type="attested" key="lgpn:V1-61857"><name nymRef="Ἀνδρόμαχος">Ἀνδρομάχου</name> <lb n="5"/> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61861"><name nymRef="Ἀνδρόμαχος">Ἀνδρομάχου</name></persName></persName>, 
+                   <persName type="attested" key="lgpn:V1-61860"><name nymRef="Μᾶρκος">Μάρκου</name> <name nymRef="Λαίλιος">Λαιλίου</name> <name nymRef="Ὀνασίων">Ὀνασί<lb n="6" break="no"/>ωνος</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61863"><name nymRef="Ἀπολλώνιος">Ἀπολλωνίου</name></persName></persName>, 
+                    <persName type="attested" key="lgpn:V1-61864"><name nymRef="Φιλωνίδης">Φιλωνίδου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61862"><name nymRef="Ἁγήμων">Ἁγή<lb n="7" break="no"/>μονος</name></persName></persName>, 
+                    <persName type="attested" key="lgpn:V1-61867"><name nymRef="Αὐτοκλῆς">Αὐτοκλέους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61865"><name nymRef="Ζήνων">Ζήνωνος</name></persName></persName>, 
+                    <persName type="attested" key="lgpn:V1-61866"><name nymRef="Σώνικος">Σωνί<lb n="8" break="no"/>κου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61869"><name nymRef="Θεόδοτος">Θεοδότου</name></persName></persName>,
+                    <persName type="attested" key="lgpn:V1-61870"><name nymRef="Ἰώσηπος">Ἰωσήπου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61868"><name nymRef="Στράτων">Στράτωνος</name></persName></persName>· 
+                    <space unit="line" quantity="1"/>
+   <lb n="9"/> <w lemma="ἐπεί">Ἐπεὶ</w> <persName type="attested" key="pir2-t-0279"><name nymRef="Μᾶρκος">Μᾶρκος</name> <name nymRef="Τίττιος">Τίττιος</name> <persName type="attested"><name nymRef="Σέξτος">Σέξτου</name></persName> <w lemma="υἱός">υἱὸς</w> <name type="tribe" key="Aemilia">Αἱμιλὶᾳ</name></persName></date> 
+                    
+   <lb n="10"/> <w lemma="ἀνήρ">ἀνὴρ</w> <w lemma="καλός">καλὸς</w> <w lemma="καί">καὶ</w> <w lemma="ἀγαθός">ἀγαθὸς</w> <w lemma="παραγίγνομαι">παραγενηθεὶς</w> <w lemma="εἰς">εἰς</w> 
+                     <lb n="11"/> <w lemma="ὁ">τὴν</w> <w lemma="ἐπαρχεία">ἐπαρχείαν</w> <w lemma="ἐπί">ἐπὶ</w> <w lemma="δημόσιος">δημοσίων</w> <w lemma="πρᾶγμα">πραγμάτων</w> <w lemma="ὁ">τήν</w> 
+                     <lb n="12"/> <w lemma="τε">τε</w> <w lemma="προστασία">προστασίαν</w> <w lemma="αὐτός">αὐτῶν</w> <w lemma="ποιέω">ἐποιήσατο</w> <w lemma="φιλάνθρωπος">φιλανθρώ<space quantity="3" unit="character"/><lb n="13" break="no"/>πως</w> 
+                    <w lemma="καί">καὶ</w> <w lemma="καλῶς">καλῶς</w> <w lemma="ἐν">ἔν</w> <w lemma="τε">τε</w> <w lemma="ὁ">τῇ</w> <w lemma="ἀναστροφή">ἀναστροφῇ</w> <w lemma="ἡσύχιος">ἡσύχιον</w>
+   <lb n="14"/> <w lemma="ἦθος">ἦθος</w> <w lemma="ἐνδείκνυμι">ἐνδικνύμενος</w> 
+                    <w lemma="ἀεί">ἀεὶ</w> <w lemma="διατελέω">διατελῶν</w> <w lemma="τυγχάνω">τυγχάνει</w> 
+                   <lb n="15"/> <w lemma="οὐ">οὐ</w> <w lemma="μόνος">μόνον</w> <w lemma="δέ">δὲ</w> <w lemma="ἐν">ἐν</w> <w lemma="οὗτος">τούτοις</w> <w lemma="ἀβαρής">ἀβαρῆ</w> <w lemma="ἑαυτός">ἑαυτὸν</w> <w lemma="παρέχω">παρέσ<lb n="16" break="no"/>χηται</w> <w lemma="ἀλλά">ἀλλὰ</w> <w lemma="καί">καὶ</w>
+                   <w lemma="ὁ">τοῖς</w> <w lemma="κατά">κατ’</w><w lemma="ἴδιος">ἰδίαν</w> <w lemma="ἐντυγχάνω">ἐντυγχάνουσι</w> <lb n="17"/> <w lemma="ὁ">τῶν</w> <w lemma="πολίτης">πολιτῶν</w> <space quantity="1" unit="character"/> <w lemma="ἔτι">ἔτι</w> <w lemma="δέ">δὲ</w> <w lemma="καί">καὶ</w>
+                    <w lemma="ὁ">τοῖς</w> <w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τοῦ</w> <w lemma="πολίτευμα">πολιτεύ<lb 
+                       n="18" break="no"/>ματος</w> <w lemma="ἐγώ">ἡμῶν</w> <placeName type="ethnic" nymRef="#Ἰουδαῖος" ref="#ioudaios">Ἰουδαίοις</placeName> <w lemma="καί">καὶ</w> <w lemma="κοινός">κοινῇ</w>
+                  <w lemma="καί">καὶ</w> <w lemma="κατά">κατ’</w><w lemma="ἴδιος">ἰδίαν</w> <lb n="19"/> <w lemma="εὔχρηστος">εὔχρηστον</w> <w lemma="προστασία">προσστασίαν</w> <w lemma="ποιέω">ποιούμενος</w> <w lemma="οὐ">οὐ</w>
+                    <w lemma="διαλείπω">δια<lb n="20" break="no"/>λείπει</w> <w lemma="ὁ">τῆς</w> <w lemma="ἴδιος">ἰδίας</w> <w lemma="καλοκαγαθία">καλοκαγαθίας</w> <w lemma="ἄξιος">ἄξια</w> <w lemma="πράσσω">πράσσων</w>
+                   <lb n="21"/> <w lemma="ὅς">ὧν</w> <w lemma="χάρις">χάριν</w> <w lemma="δοκέω">ἔδοξε</w> <w lemma="ὁ">τοῖς</w> <w lemma="ἄρχων">ἄρχουσι</w> <w lemma="καί">καὶ</w> <w lemma="ὁ">τῷ</w> <w lemma="πολίτευμα">πολιτεύ<lb n="22" break="no"/>ματι</w>
+                   <w lemma="ὁ">τῶν</w> <w lemma="ἐν">ἐν</w> <placeName nymRef="#Βερενίκη" ref="#berenike">Βερενίκη</placeName> <placeName type="ethnic" nymRef="#Ἰουδαῖος" ref="#ioudaios">Ἰουδαίων</placeName>
+                   <w lemma="ἐπαινέω">ἐπαινέσαι</w> <w lemma="τε">τε</w> <w lemma="αὐτός">αὐ<lb n="23" break="no"/>τὸν</w>
+                    <w lemma="καί">καὶ</w> <w lemma="στεφανόω">στεφανοῦν</w> <w lemma="ὀνομαστί">ὀνομαστὶ</w> <w lemma="κατά">καθ’</w><w lemma="ἕκαστος">ἑκάστην</w> 
+                   <lb n="24"/> <w lemma="σύνοδος">σύνοδον</w> <w lemma="καί">καὶ</w> <w lemma="νουμηνία">νουμηνίαν</w> <w lemma="στέφανος">στεφάνωι</w> <w lemma="ἐλάινος">ἐλαίνωι</w> <w lemma="καί">καὶ</w> <lb n="25"/> <w lemma="λημνίσκος">λημνίσκωι</w> <w lemma="ὁ">τοὺς</w>
+                    <w lemma="δέ">δὲ</w> <w lemma="ἄρχων">ἄρχοντας</w> <w lemma="ἀναγράφω">ἀναγράψαι</w> <w lemma="ὁ">τὸ</w> <lb n="26"/> <w lemma="ψήφισμα">ψήφισμα</w> <w lemma="εἰς">εἰς</w> <w lemma="στήλη">στήλην</w> <w lemma="λίθος">λίθου</w>
+                  <placeName type="ethnic" nymRef="#Πάριος" ref="#paros">Παρίου</placeName> <w lemma="καί">καὶ</w> <w lemma="τίθημι">θεῖναι</w>
+                    <w lemma="εἰς">εἰς</w> <lb n="27"/> <w lemma="ὁ">τὸν</w> <w lemma="ἐπίσημος">ἐπισημότα<unclear>τ</unclear>ον</w> <w lemma="τόπος">τόπον</w> <w lemma="ὁ">τοῦ</w> <w lemma="ἀμφιθέατρον">ἀμφιθεάτρου</w> 
+                  <lb n="28"/> <space quantity="1" unit="character"/> <w lemma="λευκός">Λευ<space quantity="1" unit="character"/>καὶ</w> <space quantity="1" unit="character"/>
+            <w lemma="πᾶς">πᾶ<space quantity="1" unit="character"/>σαι</w> <space quantity="1" unit="character"/></ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>Jahr 55, 25.Phaoph, bei der Versammlung des Laubhüttenfestes, zur Amtszeit 
+            der Archonten Kleandros des Stratonikos, Euphranor des Ariston, Sosigenes des Sosippos, Andromachos des Andromachos, Marcus Laelius Onasion des 
+            Apollonios, Philonides des Hagemon, Autokles des Zenon, Sonikos des Theodotos, Joseph des Straton: Da Marcus Tittius, Sohn des Sextus, (aus der tribus) 
+            Aemilia, ein edler und guter Mann, seit er das Amt des Präfekten über öffentliche Angelegeheiten antrat, deren Leitung gütig und recht ausübte und im 
+            Lebenswandel stets einen ruhigen Charakter an den Tag legt und sich nicht nur darin als nicht beschwerlich erwiesen hat, sondern auch der Bürger gegenüber, 
+            dies sich privat an ihn wenden, und da er ausserdem gegenüber den Juden aus unserem Politeuma allgemein und privat eine nützliche Leitung ausübt, und so nicht 
+            aufhört, sich seiner eigenen edlen Guute würdig zu verhalten - deswegen beschlossen die Archonten und das Politeuma der Jusen in Berenike, ihn zu loben und zu bekränzen, 
+            namentlich, bei jeder Zusammenkunft und (am jeden) Neumond mit einem Kranz aus Olivenzweigen und Wollband, und dass die Archonten des Beschluss aufshreiben lassen 
+            auf eine Stele aus parischen Stein und aufstellen lassen am auffallendsten Platz des Amphitheaters. Alle (Stimmsteine) weiss. 
+            </p></div>
+            
+            <div type="translation" source="#baldwin-bowsky1987" xml:lang="en"><p>In the fifty-fifth year, on the twenty-fifth day of Phaophi, during the Assembly of the Tabernacles,
+                in the archonship of Cleander son of Stratonikos, Euphranor son of Ariston, Sosigenes son of Sosippos, Andromachos son of Andromachos, M. Laelius Onasion son of 
+                Apollonios, Philonodos son of Agemon, Autocles son of Zeno, Sonicos son of Theodotos, Josepos son of Straton:
+whereas M. Tittius Sex.f. Aem., a good and noble man, come to the province on affairs of government administration, provided for their administration in a humane and noble way, 
+and displaying in the turmoil an even temper always managed to bring it about not only that he show himself not burdensome in these circumstances  but also that, 
+while providing an administration well-disposed toward the Jews of our community, too, both as a body and individually, he did not neglect doing things worthy of his personal virtue:
+therefore it seemed right to the archons and to the community of Jews in Berenice that he be praised and crowned by name at each sabbath and new moon with an olive crown and 
+a woolen fillet; and that the archons inscribe the decree on a stele of Parian marble and place it in the most conspicuous spot of the amphitheater. All in favor.  
+</p></div>
+            
+            <div type="translation" source="#williams1988" xml:lang="en"><p><ref target="https://godot.date/id/sXUzJwGA4urSxmC9egK2iN">Year 55, Phaophi 25</ref>, at the assembly of the Feast of the Tabernacles <note>skenopegia</note>, in the archonship of Kleandros <supplied reason="subaudible">son</supplied> of 
+            Stratonikos; Euphranor <supplied reason="subaudible">son</supplied> of Ariston; Sosigenes <supplied reason="subaudible">son</supplied> of Sosippos; Andromachos <supplied reason="subaudible">son</supplied> of Andromachos; 
+            Markos Lailios Onasion <supplied reason="subaudible">son</supplied> of Apollonios; Philonides <supplied reason="subaudible">son</supplied> of Hagemon; Autokles <supplied reason="subaudible">son</supplied> of Zenon; Sonikos <supplied reason="subaudible">son</supplied> of Theodotos; Iosepos <supplied reason="subaudible">son</supplied> of Straton:
+             because Markos Tittios, son of Sextos, of the Aemilian tribe, a worthy and excellent man, since coming to the province to administer 
+            public affairs has directed their governance with benevolence and skill and in his behaviour consistently shown himself to be of an 
+            eirenic disposition and has behaved unoppressively both in these <note>public matters</note> and with regard to those of the citizens 
+               who have approached him privately, and because for the Jews of our politeuma both publicly and privately his administration has been useful 
+            and he has not ceased to perform deeds in keeping with his own essential nobility of character, therefore the archons and the politeuma of the Jews 
+            in Berenice have decided to laud him and crown him 'by name' at each gathering and each New Moon with a wreath of olive leaves and <note>a fillet of</note> 
+               wool. The archons are to inscribe the decree on a stele of Parian stone <note>i.e. marble</note> and to place it in the most conspicuous part 
+            of the amphitheatre. All <note>pebbles</note> white <note>i.e. decided unanimously</note></p></div>
+            
+            <div type="translation" source="#runesson2008" xml:lang="en"><p>In the year 55, on the 25th of Phaoph, during the assembly of the Feast of the Tabernacles, 
+               during the offices of Cleandros, son of 
+            Stratonicos, Euphranor, son of Ariston, Sosigenes, son of Sosippos, Andromachos, son of Andromachos, 
+            Marcus Laelius Onasion, son of Apollonios,  Philonides, son of Hagemon, Autocles, son of Zenon, Sonicos, son of Theodotos and Iosepos, son of Straton.
+             With regards to Marcus Tittius, son of Sextos, (from the tribe of) Aemilia, a noble and good man: whereas he has assumed the office of prefect over
+            public affairs.he has exercised just and kind leadership, and has always displayed a peaceful demeanour in his daily affairs; whreas he has not been 
+            burdensome to the citizens who petition him privately; and whereas he has not himself ceased to act worthily with his own noble kindness; 
+            therefore it seemed well to the rulers (archontes) and to the community (politeuma) of the Jews 
+            in Berenice both to honour him and to crown him by name at each regular assembly (synodos) and each newmon with an olive crown and woollen band
+            and that the rulers (archontes) should inscribe the vote on a stele of Parian stone and place it in the most prominent place  
+            in the amphitheatre. All (stones) white.</p></div>
+       </div> 
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1 gives the date as year 55, Phaophi 25. Two eras are possible - the Cyrenaican/Berenican
+                    one that began after the death of Ptolemy Apion in 96 BCE, which would make
+                    this the year 41 <!-- check --> BCE, or the Actian, making it CE 24; the presence of a man
+                    with Roman citizenship among the officials listed in the preamble (ll. 5-6) is
+                    probably a reason for preferring the later date; but see below on the function
+                    of the honorand. The day is c. 24 October.</p>
+            <p>Line 22 gives the city name in the form Βερενίκη.</p>
+            <p>The document records a decree of the Jewish community in Berenice, passed at the
+                    Feast of the Tabernacles, when nine named officials (ἄρχοντες) held office. The
+                    decree honours a Roman, present in the province on public business, for the
+                    excellence of his administration and for benevolence to the citizens of
+                    Berenice, his behaviour to the Jewish politeuma being an instance of this. Like
+                    <ref type="inscription" n="B.45">B.45</ref>, this document provides information about the internal
+                    organisation of the Jewish group; but only points concerning its relation to the
+                    city as a whole will be noted here.</p>
+            <p>Since nine archons are listed as compared
+                    with ten in <ref type="inscription" n="B.45">B.45</ref>, S. Applebaum has argued that the group was a
+                    little smaller than it became by Nero's reign. Its connections with its Greek
+                    neighbours are already apparent: already specifically Jewish names are rare and
+                    there are a number which are characteristic of Cyrenaean Greek usage (thus
+                    Apollonius, Ariston, Euphranor, Hagemon); while the formulae used in the decree
+                    and the honours conferred are essentially those of any Greek city of the time,
+                    the description of the favourable votes in line 28 appears to be lifted from local
+                    Greek practice (cf. its occurrence in a civic decree at Tauchira, <ref target="https://igcyr.unibo.it/igcyr066900">IGCyr 669</ref>, and in a Greek village decree in
+                    the territory of Cyrene, <ref type="inscription" n="M.245">M.245</ref>; outside Cyrenaica it seems to be rare, see
+                    LSJ, s.v.); further the grounds for the honours are services to the city of
+                    Berenice as a whole. As in <ref type="inscription" n="B.45">B.45</ref>, the impression is of a group
+                    seeking a measure of integration with the Greeks.</p>
+            <p>There has been a controversy
+               over the honorand, M. Tittius, Sexti f., and his position; see Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.011. 
+               It is commonly argued
+                    that his nomen is misspelt for Titius, so that he can be identified
+                    conjecturally with a son or grandson of the Sex. Titius who was probably
+                    quaestor to Antony in 43 BCE (http://romanrepublic.ac.uk/person/2724) <!-- (see S.J. De Laet, De Aamestelling van den
+                    Romeinschen Senaat (Antwerp, 1941, no. 380 and Münzer, PW VI A, col. 1565, no.
+                    24) -->; but the nomen Tittius is also attested, so that this suggestion should be
+                    treated with reserve. 
+                    .His position is clearly one of authority, but it is
+                    noticeable that he is not given the title of one of the normal officials of the
+                    provincial government - proconsul, quaestor, legatus, proconsul; it is possible
+                    that the normal system had been interrupted (more likely in 41 BCE than in CE
+                    24, no doubt), but the abnormality could perhaps be explained, on lines already
+                    adumbrated by S. Applebaum, if Tittius were a publicanus concerned with ager
+                    publicus (which is, in fact, attested in the hinterland of Berenice).</p>
+            <p>Line 26: For Parian marble in Cyrenaica see also <ref type="inscription" n="B.76">B.76</ref>, 
+               <ref type="inscription" n="B.45">B.45</ref>, <ref type="inscription" n="C.737">C.737</ref>, with Robert, Hellenica XI-XII, p.119.</p>
+            <p>Line 27: For the amphitheatre in which the inscribed stele was to be
+               erected, see on <ref type="inscription" n="B.76">B.76</ref>.</p>
+            <!-- check Pasqualini in Gasperini-Marengo for the history of the inscriptions -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

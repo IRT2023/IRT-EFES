@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C01700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">building<certainty cert="low" locus="value" match=".."/></rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.19</idno>
+            <idno type="ircyr2012">C01700</idno>
+            <idno type="JMR">617</idno>
+            <idno type="Excel">353</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Near the Basilica</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>  
+                              <material>Limestone</material> 
+                              block broken at either end 
+                              (<dimensions><width>1.50</width> <height>0.46</height> <depth>0.72</depth></dimensions>), 
+                              with a triangular feature (?gable) cut out in relief on the underside.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <height unit="metre">0.20-0.38</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace> Unknown.</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>, 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/988">Basilica</placeName>:
+                               Found before <date type="found">1941</date>, re-used in the apse.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Near the Basilica (<date type="observed">2008</date>)</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Shahat">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+       <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+          <change when="2010-02-22" who="MLA">corrected Reynolds reference in bibliography</change>
+           <change when="2010-11-30" who="Pietro">finished to mark metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-13" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-10" who="Pietro">tokenized</change>
+         <change when="2007-11-06" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="DSC04957" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_617_001front" decls="#photograph"><desc>View from the side (BSR 49. XXVIIII. 2)</desc></graphic>
+      <graphic url="DSC04959" decls="#photograph"><desc>View from the side (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_617_002front" decls="#photograph"><desc>Lower surface (BSR 49. XXVIIII. 3)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p>
+               <bibl><ptr target="jmr1958"/>, <citedRange>V.a</citedRange>, p. 162f</bibl>;
+               <bibl><ptr target="gasperini1971"/>, <citedRange>B.7</citedRange></bibl>.
+            </p>
+         </div>
+         
+         
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                <w lemma="proconsul"><expan><abbr><supplied reason="lost">p</supplied>ro <space quantity="1" unit="character"/> co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex><gap reason="lost" extent="unknown" unit="character"/></expan></w>
+            </ab>
+</div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p> . . . p]roconsul [ . . .</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The block was perhaps brought into the Basilica during the Hadrianic reconstruction (see <ref type="inscription" n="C.21">C.21</ref>) 
+               and probably served as a pediment over one of the niches in the apse.  There is no clue as to its original position.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

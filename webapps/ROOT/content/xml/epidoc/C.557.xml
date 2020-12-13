@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C57310" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Caption</rs>s for wall-paintings, Tomb N.22</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="cdl">Catherine Dobias-Lalou </editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.557</idno>
+            <idno type="ircyr2012">C57310</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Rock</material>-cut <objectType>tomb</objectType>, with a single chamber, with continuous painting on all four interior walls, at <height>0.80</height> above the floor.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="pictura">Painted</rs>, in several hands, beside several of the figures. There is a venatio to either side of the entrance; 
+                           on the left wall, gladiatorial combats, one captioned with 1; on the back wall, chariot races and athletic contests, captioned by 2 <!-- check -->; on the right wall, musical and 
+                           theatrical spectacles, captioned by 3.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>No measurements</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0150" notAfter="0200" precision="low" evidence="lettering">Late second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:  
+                              <placeName ref="https://www.slsgazetteer.org/1071">North Necropolis</placeName>, Tomb N.22; recorded 
+                              in <date type="found">1823</date>; found again in 1960s.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>From previous publications (Roueché)</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2017-04-07" who="CR">transcribed: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="PachoXLIX" decls="#photograph"><desc>Transcription (1827, Pacho, plate XLIX)</desc></graphic>
+      <graphic url="PachoL" decls="#photograph"><desc>Back wall (1827, Pacho, plate L)</desc></graphic>
+      <graphic url="PachoLII" decls="#photograph"><desc>Venationes (1827, Pacho, plate LII)</desc></graphic>
+      <graphic url="PachoLIII" decls="#photograph"><desc>Gladiatorial combats (1827, Pacho, plate LIII)</desc></graphic></facsimile><!-- check -->
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="pacho1827"/> <citedRange unit="plate">XLIX, L, LII, LIII</citedRange></bibl>, whence 
+               <bibl><ptr target="cigiii"/>, <citedRange unit="entry">5149b</citedRange></bibl>; <!-- Letronne in le moniteur universel 29 Dec. 1825. -->
+               mentioned by <bibl><ptr target="barth1849"/>, <citedRange>444</citedRange></bibl>, <bibl><ptr target="hamilton1856"/>, <citedRange>67-69</citedRange>, with plates from Pacho</bibl>, 
+               <bibl><ptr target="smith-porcher1864"/>, <citedRange>29</citedRange></bibl>; 
+               re-examined and described <bibl><ptr target="bacchielli1993"/><citedRange></citedRange></bibl>; 
+               published more fully, with observations from J.M. Reynolds, <bibl><ptr target="bacchielli2002"/><citedRange></citedRange></bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>52.1845</citedRange></bibl>,   <bibl><ptr target="cdlBE"/>, <citedRange>1994.699</citedRange></bibl>; 
+               discussed <bibl> <ptr target="cinalli2016"/>, <citedRange>191-192</citedRange>.</bibl></p> 
+              <p>For the tomb see 
+            <bibl> <ptr target="cassels1955"/>  <citedRange unit="entry">N.22</citedRange></bibl>, 
+            <bibl><ptr target="thorn2009"/>, <citedRange unit="page">31</citedRange></bibl>.<!-- check thorn2005 29-30, 41, 328, 345, 357 -->
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+         <div subtype="scene" n="1" type="textpart">
+            <ab>
+               <lb n="1"/><persName type="attested"><name nymRef="Ἐπίκτητος"><supplied reason="lost">Ἐ</supplied>πίκτητοϲ</name></persName>
+                <lb n="2"/> <w lemma="ὁπλόμαχος"><supplied reason="lost">ὁπλ</supplied>όμαχοϲ</w>
+            </ab>
+            </div>
+         <div subtype="scene" n="3" type="textpart">
+            <div type="textpart" n="i"><ab>
+               <lb n="1"/> <w lemma="ἀλλά">ἀλλ’</w><w lemma="ψοφέω">ἐψόφηκεν</w> <w lemma="ὁ">ἡ</w> <w lemma="θύρα">θύρα</w>·
+               <lb n="2"/> <w lemma="προσέρχομαι">προϲ<unclear>έ</unclear>ρχεται</w> <w lemma="ὁ">ὁ</w> <w lemma="πατήρ">πατήρ</w> 
+            </ab></div>
+            <div type="textpart" n="ii"><ab>
+               <w lemma="κρούω">κρού<unclear>ϲ</unclear><supplied reason="lost">ομαι</supplied></w> <w lemma="αὐτός">αὐτόϲ</w>
+            </ab></div>
+            </div>
+               </div>
+         <!-- there is more to be added from Pacho; cf LGPN  V1-62960", 65579, 66145-->
+         <!-- In 5149b   
+         Σενεκιων? key="lgpn:V1-65579"--> 
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>1: Epiktetos, fighter in armour. 2: ??<!-- check -->. 3, i: But the door has sounded; the father is approaching. ii: I shall knock myself</p></div>
+            </div>
+         <div type="commentary">
+            <head>Commentary</head>
+           
+            <p>After the initial publication by Pacho, this material was cited frequently, but not seen again until the work of Bacchielli and the Italian team in the 1960s</p>
+            <p>3: This suggests a performance of a comedy, where the protagonists are startled by a knock on the door - perhaps from a vengeful father.</p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

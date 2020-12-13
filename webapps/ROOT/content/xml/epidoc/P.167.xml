@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P20200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.167</idno>
+            <idno type="ircyr2012">P20200</idno>
+            <idno type="JMR">381</idno>
+            <idno type="Excel">469</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Small <objectType>panel</objectType> of greyish <material>marble</material>, perhaps from the
+                              Greek islands, reconstructed from two pieces (<dimensions>
+                                 <width unit="metre">0.16</width>
+                              <height unit="metre">0.185</height>
+                              <depth unit="metre">0.0175</depth>
+                              </dimensions>); the surface damaged on the right side, about the middle, and the lower right corner lost.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face 
+                           within a rectangle defined by an incised line; the text is set out in a column aligned closely to the left margin, 
+                           with a blank space on the right, and line 3 centered.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably second century; irregular, <height unit="metre">0.01</height>; lunate epsilon, sigma and omega; L for ἔτους, with a horizontal bar above the number. The 
+                     first sigma in line 1 is written slightly above the line - perhaps a correction.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate evidence="lettering" precision="low" cert="low" notBefore="0101" notAfter="0200">Probably second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/986">Street of the Monuments</placeName>, surface find near the major crossroads; found in <date type="found">1935</date>.
+                           </p></provenance>
+                        <provenance type="observed">
+                           <p>Tolmeita Museum.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-01-07" who="CMR">checked against publications</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="CMR">tagged monument, date, corrected text</change>
+         <change when="2009-05-08" who="MR">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNB04_007" decls="#photograph"><desc>Face (Reynolds, IV.7)</desc></graphic>
+      <graphic url="JMRNB04_032" decls="#photograph"><desc>Face (Reynolds, IV.32)</desc></graphic></facsimile>
+   
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr1996"/>, <citedRange>Tolmeita 4</citedRange> and plate XVI.a</bibl>, whence 
+               <bibl><ptr target="cdlBE"/>, <citedRange>1999.627</citedRange></bibl>, 
+               <bibl><ptr target="AE"/> <citedRange>1996.1668</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>46.2218</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                   
+                    <lb n="1"/><date ref="https://godot.date/id/dFvHipwoLB8gihLbUGw5Nb"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="2">β</num></date> <persName type="attested"><name nymRef="Ὦλος">Ὦλοϲ</name> <name nymRef="Πούφιος">Πού<lb n="2" break="no"/>φιοϲ</name> 
+                    <name nymRef="Αὔδαξ">Αὔδαξ</name></persName> <space quantity="2" unit="character"/>
+                    <lb n="3"/> <space quantity="2" unit="character"/> <w lemma="φίλος">φίλοϲ</w> <space quantity="3" unit="character"/>
+                    <lb n="4"/><persName type="attested"><name nymRef="Εὐδαίμων">Εὐδαί<unclear>μον</unclear><supplied reason="lost">οϲ</supplied></name></persName>
+                    <lb n="5"/><persName type="attested"><name nymRef="Θεοφείδης">Θεοφείδουϲ</name></persName>
+                       <lb n="6"/><persName type="attested"><name nymRef="Μᾶρκος">Μάρκου</name></persName> 
+                    <persName type="attested"><name nymRef="Σόλων">Ϲόλω<lb n="7" break="no"/>νοϲ</name></persName> 
+                    <persName type="attested"><name nymRef="Νικαγόρας">Νικαγόρα</name></persName> 
+                    <lb n="8"/><persName type="attested"><name nymRef="Ἀρίμμας">Ἀρίμμα</name></persName> 
+                    <persName type="attested"><name nymRef="Φῆλιξ">Φήλι<lb n="9" break="no"/>κοϲ</name></persName> 
+                    <w lemma="νικάω">νικήϲας</w>
+                       <lb n="10"/> <w lemma="ἐνκώμιον">ἐνκώμιον</w> <num value="2">β</num> <space extent="unknown" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#AE" xml:lang="fr"><p> L'an 2, Auius Pupius Audax, ami d'Eudaimon, de Theoupheides, de Marcus, 
+               de Solon, de Nicagoras, d'Arimmas, de Felix, lui qui a vaincu dans te deuxième concours qui était celui de l'encomion ? [ou "ayant remporté deux victoires à l'encomion" ?].</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/dFvHipwoLB8gihLbUGw5Nb">Year 2</ref>. Aulos Pouphios Audax <supplied reason="explanation"><foreign xml:lang="la">Aulus Pupius Audax</foreign></supplied>, 
+               , friend of Eudaimon, Theupheides, 
+               Markos <supplied reason="explanation"><foreign xml:lang="la">Marcus</foreign></supplied>, Solon, Nikagoras, 
+            Arimmas <supplied reason="subaudible">and</supplied> Felix, having won the second <supplied reason="explanation">competition in</supplied> public eulogy</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+                    <p>Each of the seven names in the genitive case must be a personal name and the whole group numbered eight persons. This was presumably a grouping of ephebic friends/philoi: 
+                       see on <ref type="inscription" n="P.9">P.9</ref>. <!-- for ephebic groupings see 70 xref-->.</p>
+            <p> line 10 - The victories were presumably won at a local competition; the specific reference here confirms the inference as to the meaning of the  wreaths in other 
+               ephebic texts such as <ref type="inscription" n="P.90">P.90</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

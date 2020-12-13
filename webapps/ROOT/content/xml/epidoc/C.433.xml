@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C75500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.433</idno>
+            <idno type="ircyr2012">C75500</idno>
+            <idno type="JMR">923 c</idno>
+            <idno type="Excel">158</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower part of a <material>marble</material> base, moulded below, broken in three pieces, (<dimensions>
+                              <width unit="metre">1.03</width> 
+                              <height unit="metre">0.47</height> 
+                              <depth unit="metre">0.285</depth>
+                           </dimensions>),and inscribed apparently on 3 occasions: firstly (perhaps) with the dedication <ref type="inscription" n="C.432">C.432</ref>; 
+                              then with the list <ref type="inscription" n="C.431">C.431</ref>; then overcut with these graffiti.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffiti</rs> overlying the lower part of the earlier inscriptions: i on <ref type="inscription" n="C.431">C.431</ref>;
+                            ii-ix on the moulding between the two inscriptions; x-xviii over <ref type="inscription" n="C.432">C.432</ref>; 
+                           each entry in a different hand, many cut wholly or partly over each other or over illegible texts.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Variable in size, <height>0.01 - 0.035</height>; xv in an almost formal hand, cut over xvii <!-- ; for in line 1 for the patronymic -->.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Given the findspot, presumably a stray from the Gymnasium beside the <ref target="https://www.slsgazetteer.org/987">Caesareum</ref>.</origPlace>
+                     <origDate notBefore="-0001" notAfter="0036" precision="low" evidence="internal-dates">1 BCE - 36 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              about 150m from the <placeName type="monuList" ref="https://www.slsgazetteer.org/1240">City wall</placeName>, south west of the Agora on the road to Beida 
+                              (so Oliverio, notes);
+                              found in <date type="found">1915</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2013-09-25" who="TW">Edited photo info</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-02-22" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-05-19" who="AIO">tokenized</change>
+         <change when="2009-06-17" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="JMR_923abc_front_3" decls="#photograph"><desc>Face, showing <ref type="inscription" n="C.431">C.431</ref>, <ref type="inscription" n="C.432">C.432</ref> and <ref type="inscription" n="C.433">C.433</ref>  (Department of Antiquities, E 294)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="gpc1961"/>, <citedRange>6</citedRange>,p. 19</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>20.740</citedRange>, with readings from Reynolds</bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324496">324496</ref></citedRange></bibl>, 
+               <bibl><ptr target="robertBE"/>, <citedRange>1962.363</citedRange>, p. 218</bibl>, 
+               <bibl><ptr target="jmr1972"/>, <citedRange>46</citedRange></bibl>;
+               <bibl><ptr target="gl-jmr1983"/>, <citedRange>6</citedRange></bibl>. <!-- check -->
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+             
+            
+            <div type="textpart" n="i">
+                      <ab>
+                         <lb n="1"/> <persName type="attested" key="lgpn:V1-65104"><name nymRef="Νίκαθλος">Νίκα<unclear>θ</unclear>λος</name> 
+                            <persName type="attested" key="lgpn:V1-64809"><name nymRef="Λεωνίδας">Λεωνί<supplied reason="omitted">δ</supplied>α</name></persName>
+                         </persName>                      
+                      </ab>
+                    </div>
+            
+            <div type="textpart" n="ii">
+                      <ab>
+                         <lb n="1"/> <date ref="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="55">νε</num></date> <persName type="attested" key="lgpn:V1-66160"><name nymRef="Χαρίτιμος">Χαριτίμω</name> 
+            <w lemma="καί">κα<unclear>ὶ</unclear></w> <persName type="attested" key="lgpn:V1-65206"><name nymRef="Οἶνις">Οἶνις</name> 
+                         <w lemma="ὁ">τῶν</w> <persName type="attested" key="lgpn:V1-63886"><name nymRef="Εὐρυπτόλεμος">Εὐρυπτόλ<lb
+                            break="no" n="2"/> <space quantity="27" unit="character"/>εμω</name></persName></persName></persName>
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="iii">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="55">νε</num> </date><persName type="attested" key="lgpn:V1-66159"><name nymRef="Χαρίτιμος">Χαριτίμω</name> 
+            <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-66160"><name nymRef="Χαρίτιμος"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>Χαριτίμω</ex></expan></name></persName></persName>
+                      </ab>
+               </div>
+                    
+                    <div type="textpart" n="iv">
+                      <ab>
+                         <lb n="1"/> <date ref="https://godot.date/id/df32KTiYDRaJcTmhkGLsb9"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="30">λ</num></date> <space quantity="22" unit="character"/> <persName type="attested" key="lgpn:V1-63535"><name nymRef="Δημήτριος">Δημήτριος</name></persName> 
+                      </ab>
+                    </div>
+            
+            <div type="textpart" n="v">
+                      <ab>
+                         <lb n="1"/> <persName type="attested" key="lgpn:V1-62520"><name nymRef="Ἀγαθοκλῆς">Ἀγαθοκλῆς</name> 
+                            <persName type="attested" key="lgpn:V1-62874"><name nymRef="Ἀνδρόνικος">Ἀνδρονίκω</name></persName></persName>
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="vi">
+                      <ab>
+                         <lb n="1"/><persName type="attested" key="lgpn:V1-64849"><name nymRef="Λυσανίας">Λυσανίαν</name> 
+                            <persName type="attested" key="lgpn:V1-62891"><name nymRef="Ἀνίοχος">Ἀνιόχω</name></persName></persName>
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="vii">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="55">νε</num></date> <space quantity="5" unit="character"/> <persName type="attested" key="lgpn:V1-64268"><name nymRef="Θόας">Θόας</name> 
+                         <persName type="attested" key="lgpn:V1-64609"><name nymRef="Καρτισθένης"><unclear>Κ</unclear>αρ<unclear>τ</unclear>ισθένεoς</name></persName></persName> 
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="viii">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/h3Fbi4Cg4poL5Mn9nfL8ad"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="54">νδ</num></date> <persName type="attested" key="lgpn:V1-65424"><name nymRef="Ποσειδώνις">Ποσειδώνεις</name> 
+                        <persName type="attested" key="lgpn:V1-66004"><name nymRef="Φιλόκωμος">Φιλοκώμω</name></persName></persName> 
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="ix">
+                    <ab>
+                         <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                         <persName type="attested" key="lgpn:V1-63887"><name nymRef="Εὐρυπτόλεμος">Ἐυρυπτόλεμον</name>
+                            <w lemma="ὁ"><supplied reason="lost">τ</supplied>ῶ</w> <persName type="attested" key="lgpn:V1-66159"><name nymRef="Χαρίτιμος">Χαριτίμω</name></persName></persName>
+                       <gap reason="lost" quantity="2" unit="character"/> <orig>πος</orig>
+                        <gap reason="lost" quantity="2" unit="character"/> <orig>υ</orig> 
+                           <persName type="attested" key="lgpn:V1-66158, lgpn:V1-62535"><name nymRef="Χαρίτιμος"><unclear>Χ</unclear>αρί<supplied reason="lost">τι</supplied><unclear>μ</unclear>ο<unclear>ς</unclear></name>
+                        <name nymRef="Ἀγαλλις">Ἀγαλλις</name> <w lemma="ὁ">τῶ</w> 
+                        <persName type="attested" key="lgpn:V1-65233"><name nymRef="Πάμφιλος">Παμφίλω</name></persName></persName>
+                   </ab>
+            </div>
+            
+            <div type="textpart" n="x">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="55">εν</num></date>
+                         <lb n="2"/><persName type="attested" key="lgpn:V1-63918"><name nymRef="Εὐφράνωρ"><expan><abbr>Εὐφρά<lb break="no" n="3"/>ν</abbr><ex>ωρ</ex></expan></name></persName>
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="xi">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/h3Fbi4Cg4poL5Mn9nfL8ad"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="54">δν</num></date>
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="xii">
+                      <ab>
+                         <lb n="1"/><orig>δ</orig> <persName type="attested" key="lgpn:V1-62921"><name nymRef="Ἀντίμαχος">Ἀντιμ<lb break="no" n="2"/>άχω</name></persName>
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="xiii">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/UGsKBAis8vjkqQEseo4oyG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <gap reason="lost" quantity="1" unit="character"/></date> 
+                         <persName type="attested" key="lgpn:V1-65926"><name nymRef="Φίλιος">Φιλί<unclear>ω</unclear></name> </persName>
+            <persName type="attested" key="lgpn:V1-63553"><name nymRef="Δημήτριος">Δημήτριος</name> 
+                <name nymRef="Μαλύλος" key="lgpn:V1-64921">Μαλύλος</name></persName> 
+            <w lemma="ἱερεύς">ἱερεὺς</w> <orig><unclear>ι</unclear>αω</orig><gap reason="lost" unit="character" quantity="1"/><orig><unclear>χ</unclear>ον</orig> 
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="xiv">
+                      <ab>
+                         <lb n="1"/><orig>ν</orig> <space quantity="6" unit="character"/> <w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w><date ref="https://godot.date/id/aiFranwdzxo4QonDse2yu2"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <space quantity="6" unit="character"/> <num value="13">ιγ</num></date> <space quantity="10" unit="character"/>
+                         <persName type="attested" key="lgpn:V1-64488"><name nymRef="Καλλίμαχος"><unclear>Καλ</unclear>λίμ<unclear>αχο</unclear>ς</name></persName>
+                      </ab>
+             </div>
+            
+            <div type="textpart" n="xv">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/gYMVKNoD3BnHTEkSdLg3ta"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <num value="21">κα</num> </date>
+                         <persName type="attested" key="lgpn:V1-64882"><name nymRef="Λῦσις">Λῦσις</name> 
+            <persName type="attested" key="lgpn:V1-64872"><name nymRef="Λύσιππος">Λυσίππω</name></persName></persName>
+                      </ab>
+             </div>
+            
+            <div type="textpart" n="xvi">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/gYMVKNoD3BnHTEkSdLg3ta"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+            <lb n="2"/><num value="21">κα</num> </date>
+                         <persName type="attested" key="lgpn:V1-62916"><name nymRef="Ἀντίγονος"><expan><abbr>Ἀντίγονο</abbr><ex>ς</ex></expan></name> 
+                        <persName type="attested" key="lgpn:V1-65105"><name nymRef="Νίκαιος">Νικαίω</name></persName></persName>
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="xvii">
+                      <ab>
+                         <lb n="1"/><date ref="https://godot.date/id/S6awBv8Zz8NmBZZiKUsTzR"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+             <num atLeast="11"><gap reason="lost" quantity="1" unit="character"/>α</num></date> <space quantity="3" unit="character"/>
+            <persName type="attested" key="lgpn:V1-65135"><name nymRef="Νικᾶς">Νεικ<unclear>ᾶ</unclear>ς</name> <space quantity="8" unit="character"/>
+            <persName type="attested"><name nymRef="Καρνεάδας">Καρ<unclear>ν</unclear><supplied reason="lost" cert="low">εαδα</supplied></name></persName></persName> <space quantity="8" unit="character"/><orig>α</orig>
+                      </ab>
+            </div>
+            
+            <div type="textpart" n="xviii">
+                      <ab>
+                         <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/><orig>ω</orig> <w lemma="ὁ">τῶ</w> 
+                         <persName type="attested" key="lgpn:V1-63289"><name nymRef="Ἄσκλαπος">Ἀσκλ<supplied reason="lost">άπω</supplied></name></persName>
+                      </ab>
+               </div>
+        </div>
+        
+         <div type="apparatus">
+            <listApp>
+               <app loc="i">
+                  <rdg>λεονια <note>on the stone</note></rdg>
+                  <rdg resp="#gpc1961">Λε(ω)νία</rdg>
+                  <rdg resp="#SEG">Λεωνία</rdg>
+               </app>  
+               <app loc="ii">
+                  <rdg resp="#gpc1961">Οἰνιστων</rdg> 
+                  <rdg>οἶνις τῶ{ν} <note>P-C ap O.</note> </rdg>
+               </app>
+            <app loc="ii">
+                  <rdg resp="#gpc1961">Εὐρυπτόλ<lb/>εμω</rdg>
+               </app>
+            <app loc="iii">
+                  <rdg resp="#gpc1961"><orig>ελ</orig></rdg>
+               </app> 
+            <app loc="v">
+                  <rdg resp="#gpc1961">Ἀνδρ</rdg></app>
+            <app loc="vii">
+                  <rdg resp="#gpc1961">Α[ . . . ]σθένευ[ς</rdg></app>
+            <app loc="ix">
+                  <rdg resp="#gpc1961"><!--PC.-->[ . . ]ΟΠΟΣ/
+                     [ . ]ΥΧΑΛ[ . . . . ]Ἄγαλλις τῶ</rdg> 
+                  <rdg resp="#gpc1961"> . . . ]ΥΧΑΛ[ . . Ἀρίμ]μαν Ἀγαμ</rdg>
+                <!-- check <note>SECir. P 368, aggiunte</note> --> 
+                  <rdg resp="#SEG">. . . ]ΠΟΣ[ . . . ]Υ Χαρί[τι]μος 
+                     Ἀγαλλις τῶ</rdg>
+               </app>     
+            <app loc="x">
+                  <rdg resp="#gpc1961">Εὐφρα/ν</rdg></app> 
+            <app loc="xi">
+                  <rdg resp="#gpc1961">L <note>omitted</note></rdg>
+               </app>
+            <app loc="xii">
+                  <rdg resp="#gpc1961">Δ Ἀντιμαχω <note>omitted</note></rdg>
+               </app> 
+               <app loc="xiii"><lem>Φιλίω</lem>
+                  <rdg resp="#gpc1961">Φιλισ</rdg></app> 
+               
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>i</note>. Nikathlos <supplied reason="subaudible" cert="low">son</supplied> of Leonias</p>
+            <p><note>ii</note>. <ref target="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H">Year 55</ref> <supplied reason="explanation">24/5 CE</supplied>, Charitimo and Oinis
+            sons of Euryptolemos.</p>
+            <p><note>iii</note>. <ref target="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H">Year 55</ref> <supplied reason="explanation">24/5 CE</supplied>, Charitimos <supplied reason="subaudible">son</supplied> of (Charitimos).</p>
+            <p><note>iv</note>. <ref target="https://godot.date/id/df32KTiYDRaJcTmhkGLsb9">Year 30</ref> <supplied reason="explanation">1 BCE/1 CE</supplied>, Demetrios.</p>
+            <p><note>v</note>. Agathokles <supplied reason="subaudible">son</supplied> of Andronikos.</p>
+            <p><note>vi</note>. Lysanias <supplied reason="subaudible">son</supplied> of Aniochos.</p>
+            <p><note>vii</note>. <ref target="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H">Year 55</ref> <supplied reason="explanation">24/5 CE</supplied>, Thoas <supplied reason="subaudible">son</supplied> of Karisthenes</p>
+            <p><note>viii</note>. <ref target="https://godot.date/id/h3Fbi4Cg4poL5Mn9nfL8ad">Year 54</ref> <supplied reason="explanation">23/4 CE</supplied>, Posidoneis <supplied reason="subaudible">son</supplied> of Philokomos.</p>
+            <p><note>ix</note>. . . .] Euryptolemos <supplied reason="subaudible">son</supplied> of Charitimos,
+               [ . . . ] Agallis <supplied reason="subaudible">son</supplied> of Pamphilos.</p>
+            <p><note>x</note>. <ref target="https://godot.date/id/Y8KMxhiXFQt8bXaVvVcT2H">Year 55</ref> <supplied reason="explanation">24/5 CE</supplied>, Euphran(or).</p>
+            <p><note>xi</note>. <ref target="https://godot.date/id/h3Fbi4Cg4poL5Mn9nfL8ad">Year 54</ref> <supplied reason="explanation">23/4 CE</supplied>.</p>
+            <p><note>xii</note>. . . . . ] <supplied reason="subaudible" cert="low">son</supplied> of Antimachos.</p>
+            <p><note>xiii</note>. Year (?) of Philios, Demetrios Malylos priest [ . . .</p>
+            <p><note>xiv</note>. <ref target="https://godot.date/id/aiFranwdzxo4QonDse2yu2">Year 13</ref> <note>presumably of Tiberius, 27/28 CE</note>, Kallimachos.</p>
+            <p><note>xv</note>. <ref target="https://godot.date/id/gYMVKNoD3BnHTEkSdLg3ta">Year 21</ref> <note>presumably of Tiberius, 35/6 CE</note>, Lysis <supplied reason="subaudible">son</supplied> of Lysippos.</p>
+            <p><note>xvi</note>. <ref target="https://godot.date/id/gYMVKNoD3BnHTEkSdLg3ta">Year 21</ref> <note>presumably of Tiberius,  35/6 CE</note>, Antigonos <supplied reason="subaudible">son</supplied> of Nikaios.</p>
+            <p><note>xvii</note>. <ref target="https://godot.date/id/S6awBv8Zz8NmBZZiKUsTzR">Year ?-1</ref>, Neikas <supplied reason="subaudible">son</supplied> of Kar[neades?].</p>
+            <p><note>xviii</note>. . . . ] <supplied reason="subaudible">son</supplied> of Asklapos.</p></div>
+       </div> 
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <!-- think about dates -->
+            
+            <p>III, VII and X, year 55 of the Actian Era, 24/5 CE. </p>
+            <p>IV, year 30 of the Actian Era -1/1. </p>
+            <!--<p> line 1 cf. <ref type="inscription" n="C75300">C.431</ref> col. 4, line 3. </p>
+            <p> line 3  year 10, presumably of Tiberius = CE 24/5.</p>-->
+            <p>VIII, 54 of the Actian era = CE 14/15. </p>
+            <p>XIV, year 13, presumably of Tiberius = CE 27/28. </p>
+            <p>XVI and XVII, Year 21, presumably of Tiberius = CE 35/6.</p>
+            <p>xiii, Presumably the genitive case qualifying the father's name; 
+               this name ocurs also at Teuchira and Ptolemais, and is presumably native. </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C44500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">honours</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.761</idno>
+            <idno type="ircyr2012">C44500</idno>
+            <idno type="JMR">1041</idno>
+            <idno type="Excel">201</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1098">Tripoli Castle</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>base</objectType> broken at the left side 
+                              (<dimensions><width>0.63</width> <height>0.18</height> <depth>0.48</depth></dimensions>). On the top are traces of lead attachments 
+                              for a bronze statue</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which is chipped at the top and bottom and at 
+                           both right corners. The lower edge was already damaged when line 3 was cut.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE : lines 1,2, <height>0.03</height>; line 3, <height>0.032</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate evidence="lettering" notBefore="0001" notAfter="0100" precision="low">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                               findspot unrecorded; seen in <date type="found">1825</date> at Cyrene.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/1098">Tripoli Castle Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-03-01" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-02-01" who="GillianB">tokenized</change>
+         <change when="2009-07-08" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_1041front" decls="#photograph"><desc>Face</desc></graphic><!--Dept. Tripoli--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="cigiii"/>, <citedRange>5129</citedRange>, from a copy made in 1819 by Fr. Pacifico da Monte Cassiano and passed to Pietro Negri, the Sardinian consul in Tripoli</bibl>, whence 
+              <bibl><ptr target="SGDI"/>, <citedRange>4855</citedRange></bibl>;
+               <bibl><ptr target="SECir"/>, <citedRange>118</citedRange> p. 290</bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><supplied reason="lost"><space quantity="2" unit="character"/></supplied> 
+             <persName type="attested" key="lgpn:V1-65211"><name nymRef="Ὀλυμπιάς"><supplied reason="lost">Ὀ</supplied><unclear>λ</unclear>υμπιάδα</name>
+                 <persName type="attested" key="lgpn:V1-63955"><name nymRef="Φιλίσκος">Φιλί<unclear>σ</unclear><supplied reason="lost">κω</supplied></name></persName></persName>
+                     <w lemma="φύσις">φύσ<supplied reason="omitted">ε</supplied>ι</w> <w lemma="δέ">δὲ</w> <space quantity="2" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested" key="lgpn:V1-64624"><name nymRef="Κλέαρχος"><supplied reason="lost">Κλε</supplied><unclear>ά</unclear>ρχω</name></persName> 
+                    <w lemma="ἀρετή">ἀρετᾶς</w> <w lemma="ἕνεκα">ἕνεκα</w> <w lemma="καί">καὶ</w>
+             <w lemma="ὁ">τᾶς</w> <w lemma="πρός">ποτὶ</w> <w lemma="ὁ">τὸς</w> 
+                    <lb n="3"/><w lemma="θεός"><supplied reason="lost" cert="low">θεὸ</supplied><unclear>ς</unclear></w>
+             <w lemma="χάρις">χάριν</w> <w lemma="εὐσέβεια">εὐσε<space quantity="1" unit="character"/>βίας</w>
+             <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene">Κυραναῖοι</placeName> <space quantity="2" unit="character"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1"><rdg resp="#cigiii">CΚΟΥΣΙΔΕΜ</rdg><note>Negri, corrected by Franz</note>
+               </app>
+               <app loc="2"><rdg resp="#cigiii">ΕΝΕΚΑΙΤΑΣ</rdg><note>Negri, corrected by Franz</note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Olympias <supplied reason="subaudible">daughter</supplied> of Philiskos, by birth of ?Kle]archos; 
+               because of her virtue and her piety towards [the Gods], the Cyrenaeans <supplied reason="subaudible">honoured her</supplied></p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>It is impossible to tell how much is lost at the beginning of the lines. If it is very little, the text might be restored
+                as above. It seems probable, however, that this Olympias belonged to the family
+                recorded in <ref type="inscription" n="C.41">C.41</ref>, and was perhaps sister of the Claudia Arata mentioned there as adopted daughter of a Philiskos 
+               and natural daughter of Euphanes; if so the restoration should be more like
+                [v. Κλαυδίαν Ὀ]λυμπιάδα Φιλίσ[κω] φύσ(ε)ι δὲ ν. / [Εὐφάνευς γυμνασι]άρχω ἀρετᾶς ἕνεκα καὶ
+                τᾶς ποτὶ τὸς / [θεὸς καὶ θεὰ]ς χάριν εὐσεβίας Κυραναῖοι. <ref type="inscription" n="C.41">C.41</ref> line 4 shows that the family had a connection with the gymasium.
+           </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

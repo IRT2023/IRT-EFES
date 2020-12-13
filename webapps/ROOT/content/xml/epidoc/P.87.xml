@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P08800" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">official</rs> <rs type="textType">document</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.87</idno>
+            <idno type="ircyr2012">P08800</idno>
+            <idno type="JMR">305</idno>
+            <idno type="Excel">385</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Three fragments (a, two contiguous pieces, together <dimensions><width unit="metre">0.11</width> <height unit="metre">0.12</height> <depth unit="metre">0.025</depth></dimensions>; 
+                              b, <dimensions><width unit="metre">0.11</width> <height unit="metre">0.6</height> <depth unit="metre">0.025</depth></dimensions>) of a <material>marble</material> 
+                              <objectType>panel</objectType>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century: rustic capitals; a. line  1, not measurable, line  2, <height unit="metre">0.025</height>, line  3, <height unit="metre">0.02</height>, traces of rubrication; b, <height unit="metre">0.02</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Second-third century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:  
+                              in the fill over the <placeName type="monuList" ref="https://www.slsgazetteer.org/944">Villa of the Four Seasons</placeName>; found in <date type="found">1957</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category>
+         <category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-04-17" who="MR">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="P08800" decls="#photograph">
+      <desc>Text a, main fragment (1958, Kraeling, The Oriental Institute - Chicago, 48639)</desc>
+   </graphic>
+      <graphic url="Photos_0118_4" decls="#photograph"><desc>Text b (1958, Kraeling, The Oriental Institute - Chicago, 49626)</desc></graphic></facsimile>
+   <text>
+      <body>
+
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="kraeling1962"/>, <citedRange>13</citedRange>, and pl. LII C 3 (a only)</bibl>. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <div n="a" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>b</unclear>r</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
+                              <persName type="attested"><name nymRef="Laetus"><unclear>L</unclear>aeti</name></persName>
+                              <orig>i</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
+                              <placeName type="ethnic" nymRef="#Barcaeus" ref="#barke"><supplied reason="lost">Barcae</supplied><unclear>i</unclear></placeName>
+                              <placeName type="ethnic" nymRef="#Ptolemaensis" ref="#ptolemais">Ptolem<unclear>a</unclear><supplied reason="lost">enses</supplied></placeName>
+                              <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>iip</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div n="b" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="ex"><unclear>e</unclear>x</w> 
+                        <w part="I">nu<unclear>m</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="a.1">
+                  <note>Not reported by Kraeling.</note>
+               </app>
+            <app loc="a.2">
+                   <rdg resp="#kraeling1962"> ] . AET<unclear>I</unclear>[ </rdg>
+               </app>
+            <app loc="a.3">
+               <rdg resp="#kraeling1962"> ]. PTOLEM<unclear>A</unclear>[ </rdg></app>
+               <app loc="a.4">
+                  <note>Not reported by Kraeling</note></app>
+               <app loc="b">
+                  <rdg resp="#kraeling1962"> ]X NU<unclear>M</unclear>[ </rdg></app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>A reference to the people of Ptolemais</note></p></div>
+
+</div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>a.2: perhaps from the name Laetus, but possibly from <foreign xml:lang="la">laeti[tia</foreign>.</p>
+            <p>b:  perhaps <foreign xml:lang="la">ex numero</foreign> from <foreign xml:lang="la">numerus</foreign> = a military unit, but <foreign xml:lang="la">nummus</foreign>, 
+               indicating a sum of money or <foreign xml:lang="la">numerarius</foreign> = an accountant, are other possibilities.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

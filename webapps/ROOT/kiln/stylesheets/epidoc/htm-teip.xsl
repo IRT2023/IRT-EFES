@@ -6,7 +6,7 @@
 
   <xsl:template match="t:p">
       <p>
-         <xsl:apply-templates/>
+         <xsl:apply-templates />
       </p>
   </xsl:template>
   

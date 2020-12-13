@@ -8,8 +8,9 @@
   <xsl:template match="t:seg | t:w">
       <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
       <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
-      <xsl:if test="$parm-leiden-style='london' and (@part='M' or @part='F')
-         and not(preceding-sibling::node()[1][self::t:gap])
+    <xsl:if test="($parm-leiden-style='london' or $parm-leiden-style='panciera') and (@part='M' or @part='F')
+         and not(preceding::node()[1][self::t:gap])
+         and not(ancestor::t:abbr[not(ancestor::t:expan)])
          and not($parm-edition-type='diplomatic')">
          <xsl:text>-</xsl:text>
       </xsl:if>
@@ -19,9 +20,10 @@
       <!-- Found in tpl-certlow.xsl -->
     <xsl:call-template name="cert-low"/>
     
-      <xsl:if test="$parm-leiden-style='london' and (@part='I' or @part='M')
-         and not(following-sibling::node()[1][self::t:gap])
+    <xsl:if test="($parm-leiden-style='london' or $parm-leiden-style='panciera') and (@part='I' or @part='M')
+         and not(following::node()[1][self::t:gap])
          and not(descendant::ex[last()])
+         and not(ancestor::t:abbr[not(ancestor::t:expan)])
          and not($parm-edition-type='diplomatic')">
          <xsl:text>-</xsl:text>
       </xsl:if>

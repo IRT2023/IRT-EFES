@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C60400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.619</idno>
+            <idno type="ircyr2012">C60400</idno>
+            <idno type="JMR">1160</idno>
+            <idno type="Excel">366</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Triangular - headed <material>marble</material> <objectType>stele</objectType>, with a <rs type="decoration">wreath</rs> with pendent ribbons, in relief, on the face
+                              (<dimensions>
+                                 <width>0.26</width>
+                                 <height>0.57</height>
+                                 <depth>0.10</depth>
+                              </dimensions>)</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face; each entry in a different hand. Above the face, in the triangle, 
+                           there is a lightly cut design - perhaps a <rs type="decoration" cert="low">wreath</rs>.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE; line 1, <height>0.025</height>; lines 2-7, <height>0.02</height>. The stops are triangular, perhaps vestigial leaves.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Necropolis</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering">First century CE</origDate>
+                  </origin>
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/1074">Necropolis</placeName>, precise location unspecified; found before <date type="found">1916</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-06-19" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>         
+         <facsimile>
+      <graphic url="C60400_DeptF391" decls="#photograph">
+         <desc>Face (Department of Antiquities, F. 391) taken when the surface was still in good condition.</desc>
+      </graphic>
+      <surface/></facsimile>
+         <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="oliverio1916"/>, <citedRange>188</citedRange> fig.9</bibl>, whence
+               <bibl><ptr target="SEG"/> <citedRange>9.245</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324095">324095</ref></citedRange></bibl>;
+                <bibl><ptr target="applebaum1954"/>, <citedRange>41</citedRange> no.2</bibl>. From these 
+                <bibl><ptr target="gl-jmr1983"/>, <citedRange>10</citedRange></bibl>. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-65565"><name nymRef="Σάρρα">Σάρρα</name> <g ref="symbols.xml#leaf"/> <persName type="attested" key="lgpn:V1-62525"><name nymRef="Ἀγαθοκλῆς">Ἀγαθοκ<lb n="2" break="no"/>λέος</name></persName></persName> <g ref="symbols.xml#stop"/> <date type="life-span" dur="P28Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
+                    <num value="28">κη</num></date> <g ref="symbols.xml#stop"/> <persName type="attested" key="lgpn:V1-66092"><name nymRef="Φίλων">Φίλ<lb n="3" break="no"/>ων</name> <persName type="attested" key="lgpn:V1-63847"><name nymRef="Εὐμένης">Εὐμένευς</name></persName></persName>
+                    <lb n="4"/> <space extent="4" unit="character"/> <date type="life-span" dur="P68Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> 
+                    <num value="68">ξη</num></date> <space extent="4" unit="character"/>
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-62548"><name nymRef="Ἁγεμόνα">Ἁγεμόνα</name> <g ref="symbols.xml#stop"/>
+                        <lb n="6"/><persName type="attested" key="lgpn:V1-65610"><name nymRef="Σίμων">Σίμωνος</name></persName></persName> <g ref="symbols.xml#stop"/>
+                    <lb n="7"/><space extent="2" unit="character"/> <g ref="symbols.xml#stop"/> <date type="life-span" dur="P14Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                    <num value="14">ιδ</num> </date> <g ref="symbols.xml#stop"/> <space extent="4" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p>Sarra des Agathokles, 28 (Jahre); Philon des Eumenes, 68 (Jahre); Hagemona des Simon, 14 (Jahre)</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Sarra <supplied reason="subaudible">daughter</supplied> of Agathokles, aged 28. Philo <supplied reason="subaudible">son</supplied> of Eumenes, aged 68. 
+               Hagemona <supplied reason="subaudible">daughter</supplied> of Simon, aged 14.</p></div>
+       </div>
+         
+         <div type="commentary">
+            
+            <head>Commentary</head>
+            <p>Line 1: The name suggests a Jewish family; see Lüderitz. </p>
+         
+         </div>
+         
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C80200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Constantine and sons, perhaps a <rs type="textType">milestone</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.244</idno>
+            <idno type="ircyr2012">C80200</idno>
+            <idno type="JMR">nn</idno>
+            <idno type="Excel">1264</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular block of <material>sandstone</material>, trimmed down on all four edges and broken away at the upper right corner 
+                              (<dimensions>
+                                 <width>0.325</width>
+                                 <height>0.49</height>
+                                 <depth>0.165</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face which is worn and pitted and in some places covered by a hard deposit.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Fourth century CE; lines 1,2, <height>0.04-0.045</height>; lines 3,4, <height>0.035-0.04</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="0333" notAfter="0337" evidence="reign">333-337 CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>:
+                        <placeName ref="https://www.slsgazetteer.org/1684">Ras al-Hilal</placeName>, <placeName type="monuList" ref="https://www.slsgazetteer.org/1197">Church</placeName>,
+                        in the debris, apparently reused; excavated in <date type="found">1961</date> </p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p> <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/83467">Ras el Hilal</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-06-02" who="AIO">tokenized</change>
+         <change when="2009-07-14" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile>
+            <graphic url="JMR_nn 1264(ex)_001" decls="#photograph"><desc>Face (E.Alföldi-Rosenbaum: Reynolds IX.36)</desc></graphic>
+             <graphic url="JMR_nn 1264(ex)_002" decls="#photograph"><desc>Monument</desc></graphic>
+             <!--Dept. JR.-->
+         </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr1964"/>, <citedRange>D</citedRange> and pl. XII c</bibl>; mentioned 
+               <bibl><ptr target="jmr-jbwp-rgg2003"/>, <citedRange>337</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date><supplied reason="lost" cert="low"><expan><w lemma="dominus"><abbr>D<am>DDD</am></abbr><ex>ominis</ex></w>
+                          <w lemma="noster"><abbr>N<am>NNN</am></abbr><ex>ostris quattuor</ex></w></expan> </supplied>
+                    <lb n="2"/><persName type="emperor" key="constantinus1"><name nymRef="Flavius"><supplied reason="lost"><expan><abbr>Fl</abbr><ex>auio</ex></expan></supplied></name> 
+                    <name nymRef="Valerius"><expan><abbr><supplied reason="lost">Va</supplied>l</abbr><ex>erio</ex></expan></name> <name nymRef="Constantinus">Constantino</name>
+            <supplied reason="lost" cert="low"><w lemma="pius"><expan><abbr>P</abbr><ex>io</ex></expan></w> <w lemma="felix"><expan><abbr>F</abbr><ex>elici</ex></expan></w></supplied> 
+                    <lb n="3"/> <w lemma="inuictus"><expan><abbr><supplied reason="lost">in</supplied>uic</abbr><ex>to</ex></expan></w> <w lemma="triumfator"><expan><abbr>tr</abbr><ex>iumphatori</ex></expan></w>
+                    <w lemma="maximus"><expan><abbr><unclear>m</unclear><supplied reason="lost">a</supplied>x</abbr><ex>imo</ex></expan></w> 
+                   <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></persName></date> <w lemma="et">e<supplied reason="lost">t</supplied></w> 
+                    <persName type="emperor"><lb n="4"/><persName type="emperor" key="constantinussecundus"><name nymRef="Flavius"><supplied reason="lost"><expan><abbr>Fl</abbr><ex>auio</ex></expan></supplied></name> 
+                    <name nymRef="Claudius"><expan><abbr>Cl</abbr><ex>audio</ex></expan></name> <name nymRef="Constantinus">Constantino</name></persName> <w lemma="et"><supplied reason="lost">et</supplied></w> 
+                    <lb n="5"/><persName type="emperor" key="constantiussecundus"><name nymRef="Flavius"><supplied reason="lost"><expan><abbr>Fl</abbr><ex>auio</ex></expan></supplied></name> 
+                    <name nymRef="Iulius"><expan><abbr><supplied reason="lost">Iu</supplied>l</abbr><ex>io</ex></expan></name> <name nymRef="Constantius">Constantio</name></persName>
+            <w lemma="et"><supplied reason="lost">et</supplied></w> 
+                    <lb n="6"/><del><persName type="emperor" key="constans"><name nymRef="Flavius"><supplied reason="lost"><expan><abbr>Fl</abbr><ex>auio</ex></expan></supplied></name> 
+                        <name nymRef="Iulius"><expan><abbr>Iul</abbr><ex>io</ex></expan></name> <name nymRef="Constans">Constanti</name></persName></del> 
+                    <lb n="7"/> <w lemma="nobilis"><supplied reason="lost" cert="low"><expan><abbr>nob</abbr><ex>ilissimis</ex></expan></supplied></w>
+            <name nymRef="Caesar"><supplied reason="lost" cert="low"><expan><abbr>Caes</abbr><ex>aribus</ex></expan></supplied></name>  <w lemma="tres"><supplied reason="lost" cert="low">tribus</supplied></w> </persName>
+                    <lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            
+            
+            <listApp>
+               <app loc="6">
+                  <note>Line erased.</note>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+           <div type="translation" resp="#edd" xml:lang="en"> <p>For our masters, Flavius Valerius Constantinus, pious, fortunate, undefeated, triumphant, greatest Augustus, (and) 
+            Flavius Claudius Consantinus (and) Flavius Julius Constantius [(and) Flavius Julius Constans, most noble Caesars] </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the church see Ward-Perkins, loc.cit.. </p>
+            <p>It is difficult to see why an inscription in Latin was erected in this remote place unless in connection with road-building, and for a rectangular milestone of Constantinian date cf. 
+               <ref type="inscription" n="A.70">A.70</ref> near Apollonia; but the point cannot be proved. No milestones have in fact been found along the coast east of Apollonia, 
+               but undoubtedly a coastal track must have existed as far as Hilal, although it may not have continued east of Hilal, where the Gebel comes very close to the sea most of the way to Derna. </p>
+            <p>The date of erection, which must be between 25 December 333, see below and 27 May 337 when Constantine died: <!-- , the title Invictus had been abandoned for Victor (probably in 324, see A. Chastagnol, Latomus XXV (1966) 545f.) --> 
+           Constantine II was Caesar from 1 March 317,  Constantius II,from 8 October 323, and Constans, Caesar from 25 December 333; his name will have been erased after his death in 350 during the ascendancy of Magnentius, 
+               who is known to have been recognised in Cyrenaica (Socrates II. 25.8); for this erasure in other African inscriptions, cf. CIL VIII, 7012, 7013.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

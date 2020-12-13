@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C71100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">name</rs>s</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="mh" role="translator">Muna Abdelhamed</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.124</idno>
+            <idno type="ircyr2012">C71100</idno>
+            <idno type="JMR">668 b</idno>
+            <idno type="Excel">1058</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>base</objectType> with reliefs of drivers in quadrigae on all faces 
+                              (<dimensions><width>0.64</width> <height>0.57</height> <depth>0.64</depth></dimensions>). 
+                              There are informal inscriptions on two faces, <ref type="inscription" n="C.123">C.123</ref> and <ref type="inscription" n="C.124">C.124</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffito</rs> above the relief.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Augustan, varying from <height>0.01 - 0.025</height>;  L for ἔτους; several different hands. In line 1 the patronymic is written 
+                        in small letters within and between the letters of the names.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notBefore="-0031" notAfter="0014" precision="low" evidence="lettering">Augustan</origDate>
+                  </origin><provenance type="found">
+                     <p>
+                        <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>;  
+                        <placeName type="monuList" ref="https://www.slsgazetteer.org/1326">Temple of Apollo Archegetes</placeName>; observed in 1861 and 1904, 
+                        found again during excavation in <date type="found">1917</date>.</p>
+                  </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+          <change when="2013-08-13" who="TW">tagged word</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-21" who="AO">tokenized</change>
+         <change when="2009-06-11" who="MR">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_668(a-b)_001" decls="#photograph"><desc>Face (Reynolds XII.32)</desc></graphic>
+      <!--Dept. D. 452 (for which the letters had been wrongly rubricated).--></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Described, <bibl><ptr target="hamilton1856"/>, <citedRange unit="page">45</citedRange></bibl>, recorded in a lost painting by Porcher (1861), 
+               <bibl><ptr target="thorn2007"/>, <citedRange unit="page">199</citedRange></bibl>;
+               photographed <bibl><ptr target="hogarth1905"/>, <citedRange unit="page">94, 98</citedRange></bibl>; texts published <bibl><ptr target="oliverio1940"/>, <citedRange>412</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>245</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><date ref="https://godot.date/id/aiFranwdzxo4QonDse2yu2"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="13">ιγ</num></date> <persName type="attested" key="lgpn:V1-63380"><name nymRef="Βαρκαῖος">Βαρκαίω</name> <w lemma="ὁ">τῶ</w> <persName type="attested"><name nymRef="Ἐτέαρχος">Ἐτεαρχω</name></persName></persName> 
+                    <lb n="2"/><date ref="https://godot.date/id/aiFranwdzxo4QonDse2yu2"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="13">ιγ</num></date> <persName type="attested" key="lgpn:V1-63265"><name nymRef="Ἀρχέδαμος">Ἀρχέδαμος</name></persName>
+                    <lb n="3"/><date ref="https://godot.date/id/aiFranwdzxo4QonDse2yu2"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <num value="13">ιγ</num></date> <persName type="attested" key="lgpn:V1-64601, lgpn:V1-65558"><name nymRef="Σαραπίων">Σαραπί <lb 
+                       n="4" break="no"/>ων</name> <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w> <name nymRef="Καρτισθένης"><supplied reason="lost">Κ</supplied>αρ<supplied reason="lost">τ</supplied>ισθένη<supplied reason="lost">ς</supplied></name></persName>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/aiFranwdzxo4QonDse2yu2">Year 13</ref>: Of Barkaios <supplied reason="subaudible">son</supplied> of Etearchos.</p>
+            <p><ref target="https://godot.date/id/aiFranwdzxo4QonDse2yu2">Year 13</ref>: Archedamos</p>
+            <p><ref target="https://godot.date/id/aiFranwdzxo4QonDse2yu2">Year 13</ref>: Sarapion also <supplied reason="subaudible">called</supplied> Kartisthenes</p></div>
+            <div type="translation" resp="#mh" xml:lang="ar"><p>
+السنة 13: باركيوس (بن) إتيارخوس
+السنة 13: أرخيداموس 
+السنة 13:  سارابيوسن، أيضاً (دُعي) كارتيسثينيس.
+
+</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Line 1: For the patronymic written in small letters within and between the letters of the names, typical of ephebic inscriptions, see <ref type="inscription" n="C.61">C.61</ref>, 
+               <ref type="inscription" n="C.123">C.123</ref>, <ref type="inscription" n="C.124">C.124</ref>, and many examples at Ptolemais: <ref type="inscription" n="P.2,">P.2,</ref> <ref type="inscription" n="P.11">P.11</ref>, 
+               <ref type="inscription" n="P.13">P.13</ref>, <ref type="inscription" n="P.14">P.14</ref>, <ref type="inscription" n="P.69">P.69</ref>, <ref type="inscription" n="P.91">P.91</ref>, 
+               <ref type="inscription" n="P.124">P.124</ref>, <ref type="inscription" n="P.133">P.133</ref>, <ref type="inscription" n="P.134">P.134</ref>, 
+               <ref type="inscription" n="P.178">P.178</ref>, <ref type="inscription" n="P.182">P.182</ref>, <ref type="inscription" n="P.185">P.185</ref>, <ref type="inscription" n="P.190">P.190</ref>, 
+               and compare <ref type="inscription" n="P.200">P.200</ref>. 
+               <!-- The man should be connected with  Ἐτήαρχος Βαρκαίω who cut his name on an ephebic monument in CE 23, see 689 c lines 23, 24. --></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

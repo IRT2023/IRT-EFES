@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A01200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">List</rs> of priests of Apollo</title>
+            
+             <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.6</idno>
+            <idno type="ircyr2012">A01200</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+                <msIdentifier><repository ref="institution.xml#db932">Apollonia Museum</repository></msIdentifier>
+                <physDesc>
+                    <objectDesc>
+                        <supportDesc>
+                            <support>
+                                <p>
+                                    Part of a <objectType>stele</objectType> of white <material>marble</material>, probably Attic. Inscribed on face a (<dimensions><width>0.52</width> <height>0.66</height></dimensions>), 
+                                    which is damaged along the left edge and bottom, and worn and pitted on the surface, and on face b, which is 
+                                    chipped down the left edge and cut away to the right (surviving surface <dimensions><width>0.04</width> <height>0.68</height></dimensions>). 
+                                    Subsequently cut down for reuse as an impost block in the sixth century Church 
+                                    (<dimensions><width unit="metre">0.52</width> <height unit="metre">0.66</height> <depth unit="metre">0.27</depth></dimensions>). 
+                                    Perhaps associated with <ref type="inscription" n="A.3">A.3</ref>, <ref type="inscription" n="A.5">A.5</ref>.</p>
+                            </support>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout> <rs type="execution" key="scalpro">Inscribed</rs> on two surviving faces; b. is to the right of a. 
+                                In b each entry is in a different hand; there is a superscript bar cut between lines 1 and 2 whose purpose is obscure.</layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+                        <handNote>a. First century CE; <height unit="metre">0.02-0.025</height>.
+                            b: Second century CE; <height unit="metre">0.015-0.002</height>; square sigma in line 2; L for ἔτους.</handNote>
+                    </handDesc>
+                </physDesc>
+                <history>
+                    <origin>
+                        <origPlace>Unknown.</origPlace>
+                        <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering formulae">a. First century CE; b. Second century CE</origDate>
+                    </origin>
+                    
+                    
+                    <provenance type="found">
+                        <p>
+                            <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: <placeName type="monuList" ref="https://www.slsgazetteer.org/914">East Church</placeName>, in
+                            <date type="found">1920</date>.</p>
+                    </provenance>
+                        <provenance type="observed">
+                           <p>
+                               <placeName ref="https://www.slsgazetteer.org/932">Apollonia Museum</placeName>, <date type="observed">2008</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-02-16" who="GB">amalgamated with A013</change>
+         <change when="2010-02-12" who="CMR">Title, tags</change>
+         <change when="2009-07-13" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+       <graphic url="1390_doa" decls="#photograph"><desc>Face (Department of Antiquities, E.1390)</desc></graphic>
+      <graphic url="DSC04442" decls="#photograph"><desc>Face  a (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04443" decls="#photograph"><desc>Face a (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04456" decls="#photograph"><desc>Face b (2008, H.Walda)</desc></graphic>
+      <!--a. Dept. E. 341, 342.; b. Dept. F. 1936.-->
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+                <bibl>a: <ptr target="SECir"/>, <citedRange>202</citedRange>, with illustration, fig. 149 (from photographs)</bibl>;
+                a and b, 
+                <bibl><ptr target="jmr1972"/>, <citedRange>46</citedRange></bibl>: <bibl><ptr target="jmr1976"/>, <citedRange>8</citedRange> and plates LVII, LIX</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>27.1130</citedRange></bibl>. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="face" n="a" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-62018"><name nymRef="Ἀθηναῖος"><supplied reason="lost">Ἀθ</supplied>ηναῖος</name> 
+                            <persName type="attested" key="lgpn:V1-62123"><name nymRef="Ποσειδώνιος">Ποσειδωνίου</name></persName></persName>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-62033"><name nymRef="Ἀπολλώνιος">Ἀπολλώνιοϲ</name> <persName type="attested" key="lgpn:V1-62099"><name nymRef="Καρνεάδης">Καρνεάδου</name></persName></persName> 
+                        <lb n="3"/><persName type="attested" key="lgpn:V1-62089"><name nymRef="Ἰάσων"><supplied reason="lost">Ἰ</supplied>άσων</name> 
+                            <persName type="attested" key="lgpn:V1-62079"><name nymRef="Ζηνίων">Ζηνίωνος</name></persName></persName>
+                        <lb n="4"/><persName type="attested" key="lgpn:V1-62023"><name nymRef="Ἀλέξανδρος"><unclear>Ἀ</unclear>λέξανδρος</name> 
+                            <persName type="attested" key="lgpn:V1-62085"><name nymRef="Θεοκύδης">Θεοκύδου</name></persName></persName>
+                        <lb n="5"/><persName type="attested" key="lgpn:V1-62081"><name nymRef="Ζήνων"><unclear>Ζ</unclear>ήνων</name> 
+                            <persName type="attested" key="lgpn:V1-62080"><name nymRef="Ζήνων">Ζήνωνος</name></persName></persName>
+                        <lb n="6"/><persName type="attested" key="lgpn:V1-62143"><name nymRef="Χαρίφαντος"><supplied reason="lost">Χ</supplied>αρίφαντος</name> <persName type="attested" key="lgpn:V1-62084"><name nymRef="Ἡρακλείδης">Ἡρακλείδου</name></persName></persName>
+                        <lb n="7"/><persName type="attested" key="lgpn:V1-62107"><name nymRef="Κλητόμαχος"><supplied reason="undefined">Κ</supplied><unclear>λ</unclear>ητόμαχος</name> 
+                            <persName type="attested" key="lgpn:V1-62104"><name nymRef="Καρτίμαχος">Καρτιμάχου</name></persName></persName>
+                        <lb n="8"/><persName type="attested" key="lgpn:V1-62077"><name nymRef="Εὖφρις"><supplied reason="undefined">Ε</supplied>ὖφρις</name>
+                            <persName type="attested" key="lgpn:V1-62104"><name nymRef="Καρτίμαχος">Κα<unclear>ρτ</unclear>ιμάχου</name></persName></persName>
+                        <lb n="9"/><persName type="attested" key="lgpn:V1-62120"><name nymRef="Νικίας"><supplied reason="lost">Ν</supplied>ικίας</name>
+                            <persName type="attested" key="lgpn:V1-62022"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρου</name></persName></persName>
+                        <lb n="10"/><persName type="attested" key="lgpn:V1-62043"><name nymRef="Ἀρίστων"><supplied reason="lost">Ἀ</supplied>ρίστων</name> 
+                            <persName type="attested" key="lgpn:V1-62038"><name nymRef="Ἀριστομένης">Ἀ<supplied reason="lost">ρι</supplied>στομένους</name></persName></persName>
+                        <lb n="11"/><persName type="attested" key="lgpn:V1-62032"><name nymRef="Ἀπολλώνιος"><supplied reason="lost">Ἀ</supplied>πολλ<unclear>ω</unclear>νι<unclear>ος</unclear></name> 
+                           <persName type="attested" key="lgpn:V1-62086"><name nymRef="Θέων">Θέωνος</name></persName></persName> 
+                        <lb n="12"/><persName type="attested" key="lgpn:V1-62060"><name nymRef="Διόδωρος"><supplied reason="lost">Δι</supplied>όδωρος</name> 
+                            <persName type="attested" key="lgpn:V1-62059"><name nymRef="Διόδωρος">Δ<supplied reason="lost">ι</supplied><unclear>ο</unclear>δώ<unclear>ρ</unclear>ου</name></persName></persName>
+                        <lb n="13"/><persName type="attested" key="lgpn:V1-62134"><name nymRef="Σωσίβιος"><supplied reason="lost">Σ</supplied>ωσίβιος</name> 
+                            <persName type="attested" key="lgpn:V1-62053"><name nymRef="Διόδοτος">Διοδότου</name></persName></persName>
+                        <lb n="14"/><persName type="attested" key="lgpn:V1-62020"><name nymRef="Ἀθηναῖος"><supplied reason="lost">Ἀ</supplied><unclear>θ</unclear>ηναῖος</name> 
+                            <persName type="attested" key="lgpn:V1-62019"><name nymRef="Ἀθηναῖος">Ἀθηναίου</name></persName></persName>
+                        <lb n="15"/><persName type="attested" key="lgpn:V1-62044"><name nymRef="Ἀρίστων"><supplied reason="lost">Ἀρί</supplied>στων</name>
+                             <persName type="attested" key="lgpn:V1-62055"><name nymRef="Διόδοτος">Διοδότου</name></persName></persName>
+                        <lb n="16"/><persName type="attested" key="lgpn:V1-62110"><name nymRef="Κτήσιππος"><supplied reason="lost">Κτ</supplied>ήσιππος</name>
+                            <persName type="attested" key="lgpn:V1-62066"><name nymRef="Διόφαντος">Διοφάντου</name></persName></persName>
+                        <lb n="17"/><persName type="attested" key="lgpn:V1-62026"><name nymRef="Ἀμμώνιος"><supplied reason="lost">Ἀ</supplied>μμώνιος</name> 
+                            <persName type="attested" key="lgpn:V1-62025"><name nymRef="Ἀμμώνιος">Ἀμμωνίου</name></persName></persName>
+                        <lb n="18"/><persName type="attested" key="lgpn:V1-62135"><name nymRef="Σωσίπατρος"><supplied reason="lost">Σ</supplied>ωσίπατρος</name> 
+                           <persName type="attested" key="lgpn:V1-62111"><name nymRef="Λεύκιος">Λευκίου</name></persName></persName>
+                        <lb n="19"/><persName type="attested"><name nymRef="Σωσίπατρος"><supplied reason="lost">Σ</supplied>ωσίπατρος</name> 
+                            <persName type="attested"><name nymRef="Διο-"><seg part="I">Διο</seg></name><gap reason="lost" extent="unknonw" unit="character"/></persName></persName>
+                        <lb n="20"/><gap reason="lost" quantity="5" unit="character" precision="low"/><orig><unclear>ελ</unclear></orig><gap reason="lost" quantity="2" unit="character"/><orig>ησ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="20a"/><gap reason="lost" extent="unknown" unit="line"/>
+                    </ab></div>
+             <div subtype="column" n="b" type="textpart"><ab>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><orig><unclear>ι</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><orig>ει</orig><gap reason="lost" quantity="1" unit="character"/><orig>ϲ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><orig>λιε</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" quantity="1" unit="character"/><orig>α</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="5"/><gap reason="lost" quantity="1" unit="character"/><orig>δ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="6"/><gap reason="lost" quantity="1" unit="character"/><orig>λ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="7"/><gap reason="lost" quantity="1" unit="character"/><orig>φι</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="8"/><gap reason="lost" quantity="1" unit="line"/>
+                        <lb n="9"/><gap reason="lost" quantity="1" unit="line"/>
+                        <lb n="10"/><gap reason="lost" quantity="1" unit="character"/><orig>α</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="11"/><orig>ηρ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="12"/><orig>κα</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="13"/><orig>μ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="14"/><date ref="https://godot.date/id/UGsKBAis8vjkqQEseo4oyG"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="15"/><orig><unclear>α</unclear></orig><gap reason="lost" extent="unknown" unit="character"/></date>
+                        <lb n="16"/><orig>κα</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="17"/><orig>μ</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="18"/><orig>δο</orig><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="18a"/> <space quantity="1" unit="line"/>
+                    </ab>
+              </div>
+         </div>
+         <div type="apparatus">
+            
+            <listApp>
+                <app loc="a 3">
+                  <lem><supplied reason="lost">Ἰ</supplied>άσων</lem>
+                   <rdg resp="#SECir">Ἰάσων</rdg>
+               </app>
+                    <app loc="a 6">
+                  <lem><supplied reason="lost">Χ</supplied>αρίφαντος</lem>
+                       <rdg resp="#SECir">Ἀριφάντος</rdg>
+               </app>
+                    <app loc="a 10">
+                  <lem>Ἀ<supplied reason="lost">ρι</supplied>στομένους</lem>
+                       <rdg resp="#SECir">Ἀρ<supplied reason="lost">ι</supplied>στομένους</rdg>
+               </app>
+                    <app loc="a 20">
+                        <rdg resp="#SECir">
+                     <gap reason="lost" quantity="4" unit="character"/>
+                     <orig><unclear>ε</unclear></orig>
+                     <gap reason="lost" quantity="2" unit="character"/>
+                     <orig>ιι</orig>
+                     <gap reason="lost" extent="unknown" unit="character"/>
+                  </rdg>
+               </app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve">
+             <div type="translation" xml:lang="en" resp="#jmr"><p><note>a</note>. . . . ] Athenaios <supplied reason="subaudible">son</supplied> of Posidonios, Apollonios son
+                    of Karneades, Jason <supplied reason="subaudible">son</supplied> of Zenion, Alexandros <supplied reason="subaudible">son</supplied> of Theokydes, Zenon <supplied reason="subaudible">son</supplied> of Zenon, Chariphantos
+                    <supplied reason="subaudible">son</supplied> of Herakleides, Kletomachos <supplied reason="subaudible">son</supplied> of Kartimachos, Euphris <supplied reason="subaudible">son</supplied> of Kartimachos, Nikias <supplied reason="subaudible">son</supplied> of Alexandros,
+                    Ariston <supplied reason="subaudible">son</supplied> of Aristomenes, Apollonios <supplied reason="subaudible">son</supplied> of Theon, Diodoros <supplied reason="subaudible">son</supplied> of Diodoros, Sosibios <supplied reason="subaudible">son</supplied> of Diodotos, 
+                    Athenaios <supplied reason="subaudible">son</supplied> of Athenaios, [Ari]ston <supplied reason="subaudible">son</supplied> of Diodotos, Ktesippos son
+                    of Diophantos, Ammonios <supplied reason="subaudible">son</supplied> of Ammonios, Sosipatros <supplied reason="subaudible">son</supplied> of Leukias, Sosipatros <supplied reason="subaudible">son</supplied> of
+                    Dio[- . . .
+            </p><p><note>b</note> not usefully translatable.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Probably a list of eponymous priests of Apollo; see on <ref type="inscription" n="A.3">A.3</ref>.</p>
+            <p>a. line 9: No doubt related to Ἀλέξανδρος Νικίου in <ref type="inscription" n="A.5">A.5</ref>, line 15.</p>
+            <p>a. line 10: Perhaps related to Ἀριστομένης 
+                        Ἀρίσ[τωνος] in <ref type="inscription" n="A.3">A.3</ref>, line 7.</p>
+            <p>a. line 13: No doubt related to Διόδοτος Σωσιβίου in <ref type="inscription" n="A.5">A.5</ref>, line 14.</p>
+            <p>a. line 16: No doubt related to Διόφαντος Κτησίππου in <ref type="inscription" n="A.5">A.5</ref>, line 6.</p>
+            <p>b. line 14 was dated, a practice which seems to start at Cyrene in the Flavian period.</p>
+            <p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

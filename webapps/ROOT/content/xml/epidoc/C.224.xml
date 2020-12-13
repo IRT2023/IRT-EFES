@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C19000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> for a statue of one of the Dioscuri</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.224</idno>
+            <idno type="ircyr2012">C19000</idno>
+            <idno type="JMR">781</idno>
+            <idno type="Excel">7</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Standing beside the Main (Valley) Street near the Baths of Trajan</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Left side of a <material>marble</material> <objectType>stele</objectType> plinth carrying remains of a statue of one of the Dioscuri.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> just below the upper edge of the front face which is semi-dressed
+                           (<dimensions><width>0.39</width> <height>0.10</height> <depth>0.39</depth></dimensions>).</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century: <height>0.008</height>; lunate epsilon, lunate sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Perhaps <ref target="https://www.slsgazetteer.org/1047">Shrine of the Dioscuri</ref></origPlace>
+                     <origDate notAfter="0300" notBefore="0101" precision="low" evidence="lettering">Second to third century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1227">Byzantine Baths</placeName>; found in <date type="found">1928</date></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Standing beside the Main (Valley) Street near the Baths of Trajan.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-03-04" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-12-01" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2009-12-14" who="CB">Tidied and tokenised</change>
+         <change when="2009-07-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="1164_doa" decls="#photograph"><desc>Face (Department of Antiquities, E.1164)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="oliverio1930"/>, <citedRange>32</citedRange>, p.211-12, Fig 70a and b, whence</bibl>  
+               <bibl><ptr target="SEG"/> <citedRange>9.122</citedRange></bibl>,  <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323976">323976</ref></citedRange></bibl>; 
+                    <bibl><ptr target="traversari1959"/>, <citedRange>183</citedRange></bibl>, and  <bibl><ptr target="paribeni1959"/>, <citedRange>387</citedRange> and  pl. 172.</bibl>, whence mentioned
+               <bibl><ptr target="SEG"/> <citedRange>17.806</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-65290, lgpn:V1-65316"><name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκοϲ</ex></expan></name> <name nymRef="Ἰούλιος">Ἰούλιοϲ</name> <name nymRef="Κοκκειανός">Κοκκειανὸϲ</name> 
+                    <name nymRef="Πειθαγόρας">Π<supplied reason="lost">ειθαγόραϲ</supplied></name> <name nymRef="Πλάτων"><supplied reason="lost">Πλάτων</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>M(arkos) Ioulios Kokkeianos <supplied reason="explanation"><foreign xml:lang="la">M(arcus) Julius Cocceianus</foreign></supplied> P[eithagoras Platon ?gave this</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> See on <ref type="inscription" n="C.217">C.217</ref>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

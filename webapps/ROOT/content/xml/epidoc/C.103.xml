@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C08500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">List</rs> of priestesses of Hera</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor>
+            <editor xml:id="paci">Gianfranco Paci</editor>
+            <editor xml:id="cdl">Catherine Dobias-Lalou</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.103</idno>
+            <idno type="ircyr2012">C08500</idno>
+            <idno type="JMR">667</idno>
+            <idno type="Excel">110</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Tall <material>marble</material> <objectType>stele</objectType>, 
+                               formed of two blocks standing one above the other; tapering towards the top 
+                               (<dimensions>
+                               <width>0.70-0.60</width>
+                               <height>1.98</height>
+                               <depth>0.35</depth>
+                               </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on two faces; each entry in a different hand. A relief of a scroll runs round three sides at top. 
+                           On side a, lines 16-17, 22 in rasura. Side b, largely erased, c. 1/3 down some letters on a margin; this probably represents a first attempt to write the list, 
+                           abandoned for reasons of space (so Paci). </layout>
+                       
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE; <height>0.02-0.04</height>; F for 6.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0103" notBefore="0061" evidence="internal-date">l.34: 61/62 CE; line  36: 102/103 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1009">Agora</placeName>, in the area between the west stoa and the Temple of Zeus: 
+                               found in <date type="found">1919</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds, Paci)</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-08-15" who="SS">Improved mark-up</change>
+         <change when="2011-02-18" who="MGDA">fixed bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-07-02" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><!--Dept. D. 69.--><facsimile><graphic  url="cdlC103" decls="#photograph"><desc><ref type="inscription" n="C.103">C.103</ref> 
+      (C. Dobias-Lalou, 2010: MFA DSC01952)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><!-- check -->
+                  <ptr target="oliverioDAI2"/>, <citedRange unit="entry">70</citedRange>, p. 104, pl. XVII-XVIII, figgs. 25a, 25b</bibl> whence <bibl>
+                     <ptr target="SEG"/> <citedRange>9.182</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324033">324033</ref></citedRange></bibl>; reconsidered, <bibl><ptr target="laronde1988a"/> <citedRange>279-286</citedRange></bibl>, whence 
+               <bibl><ptr target="cdlBE"/>, <citedRange>1989.835</citedRange></bibl>; ll. 34-5 discussed by <bibl><ptr target="marengo1994"/> <citedRange>223-231</citedRange></bibl>,
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>1997.708</citedRange></bibl>.
+               A revised version <bibl><ptr target="paci2000"/> <citedRange></citedRange></bibl> <!-- check Warburg-->, 
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>2002.537</citedRange></bibl>, and from these 
+               <bibl><ptr target="SEG"/> <citedRange>50.1641</citedRange></bibl>; further  
+              <bibl><ptr target="paci2002"/> <citedRange>271-284</citedRange></bibl> whence <bibl>
+                  <ptr target="SEG"/> <citedRange>52.1838</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="face" n="a" type="textpart">
+               <ab>
+                    <lb n="1"/> <persName type="divine" key="theos"><name nymRef="Θεός">θέος</name>.</persName> <persName type="divine" key="agathetyche"><name nymRef="Τύχα">Τύχα</name> <w lemma="ἀγαθός">Ἀγαθ<unclear>ά</unclear></w></persName> 
+                    <lb n="2"/> <w lemma="ἱέρεια">Ἱάρεαι</w> <w lemma="ὁ">τᾶς</w> <persName type="divine" key="hera"><name nymRef="Ἥρα">Ἥ<unclear>ρας</unclear></name></persName>
+                    <lb n="3"/><persName type="attested" key="lgpn:V1-64463"><name nymRef="Καλλιβώλα">Καλλιβώλα</name> <persName type="attested"><name nymRef="Κλέαρχος"><unclear>Κλ</unclear><supplied reason="lost" cert="low">εάρ</supplied>χω</name></persName></persName>
+                    <lb n="4"/><persName type="attested" key="lgpn:V1-64204"><name nymRef="Θευπρόπα">Θευπρόπα</name> <persName type="attested"><name nymRef="Η-"><seg part="I"><unclear>Η</unclear></seg><gap reason="lost" quantity="6" unit="character" precision="low"/></name> </persName></persName>
+                    <lb n="5"/><persName type="attested" key="lgpn:V1-64412"><name nymRef="Ἱππονείκα">Ἱππονείκα</name> <persName type="attested" key="lgpn:V1-63977"><name nymRef="Ζευξίμαχος">Ζευ<supplied reason="lost">ξι</supplied><unclear>μάχω</unclear></name> </persName></persName>
+                    <lb n="6"/><persName type="attested" key="lgpn:V1-62668"><name nymRef="Αἴσχρα">Αἴσχρα</name> <persName type="attested"><name nymRef="Αὐτο-">Αὐτ<supplied reason="lost">ο</supplied> <gap reason="lost" extent="2" unit="character"/><unclear>τω</unclear></name> </persName></persName>
+                    <lb n="7"/><persName type="attested" key="lgpn:V1-65805"><name nymRef="Τιμαρέτα">Τιμαρέτ<unclear>α</unclear></name> <persName type="attested" key="lgpn:V1-63970"><name nymRef="Ἔφορος"><unclear>Ἐ</unclear>φό<unclear>ρ</unclear>ω</name></persName> </persName>
+                    <lb n="8"/><persName type="attested" key="lgpn:V1-65145"><name nymRef="Νικίππα">Νεικίππα</name> <persName type="attested" key="lgpn:V1-63069"><name nymRef="Ἀρίσταρχος">Ἀριστάρχ<unclear>ω</unclear></name></persName> </persName>
+                    <lb n="9"/><persName type="attested" key="lgpn:V1-65211"><name nymRef="Ὀλυμπιάς">Ὀλυνπιὰς</name> <persName type="attested"><name nymRef="Κλέαρχος">Κλεάρχω</name></persName> </persName>
+                    <lb n="10"/><persName type="attested" key="lgpn:V1-63986"><name nymRef="Ζευξώ">Ζευξὼ</name> <persName type="attested" key="lgpn:V1-64243"><name nymRef="Θεύχρηστος">Θευχρήστω</name></persName></persName>
+                    <lb n="11"/><persName type="attested" key="lgpn:V1-64462"><name nymRef="Καλλιβώλα">Καλλιβώλα</name> <persName type="attested" key="lgpn:V1-63489"><name nymRef="Δαμοφάνης"><unclear>Δα</unclear>μοφάνευς</name></persName></persName> 
+                    <lb n="12"/><persName type="attested" key="lgpn:V1-63671"><name nymRef="Ἐπαγώ">Ἐπαγὼ</name> <persName type="attested" key="lgpn:V1-64430"><name nymRef="Ἰσοκράτης">Ἰσοκράτους</name></persName></persName>
+                    <lb n="13"/><persName type="attested" key="lgpn:V1-64744"><name nymRef="Κυδιμάχα">Κυδιμάχα</name> <persName type="attested" key="lgpn:V1-64641"><name nymRef="Κλέαρχος">Κλεάρχω</name></persName> </persName>
+                    <lb n="14"/><persName type="attested" key="lgpn:V1-63884"><name nymRef="Εὐρυκλήτα">Εὐρυκλήτα</name> <persName type="attested" key="lgpn:V1-62644"><name nymRef="Αἰγλάνωρ">Αἰγλάνορος</name></persName></persName>
+                    <lb n="15"/><persName type="attested" key="lgpn:V1-62788"><name nymRef="Ἀμμωνάριον">Ἀμμωνάριον</name> <persName type="attested" key="lgpn:V1-62725"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρω</name></persName></persName>
+                    <lb n="16"/><del rend="erasure"><persName type="attested" key="lgpn:V1-64953"><name nymRef="Μεγώ">Μεγὼ</name> <persName type="attested" key="lgpn:V1-62726"><name nymRef="Ἀλέξανδρος">Ἀλεξ<unclear>άνδρ</unclear>ω</name></persName>
+                    <lb n="17"/><w lemma="φύσις">φύσει</w> <w lemma="δέ">δὲ</w> <persName type="attested" key="lgpn:V1-64570"><name nymRef="Καρνήδας">Καρνήδα</name></persName></persName></del> 
+                    <lb n="18"/><persName type="attested" key="lgpn:V1-65077"><name nymRef="Μυρώ">Μυρὼ</name> <persName type="attested" key="lgpn:V1-64971"><name nymRef="Μελάνιππος">Μελαν<unclear>ί</unclear>ππω</name></persName></persName>
+                    <lb n="19"/><persName type="attested" key="lgpn:V1-65783"><name nymRef="Τελεσώ">Τελεσὼ</name> <persName type="attested" key="lgpn:V1-64511"><name nymRef="Κάλλιππος">Καλίπ<unclear>πω</unclear></name></persName></persName> 
+                    <lb n="20"/><persName type="attested" key="lgpn:V1-63408"><name nymRef="Βερνίκα">Βερνίκα</name> <persName type="attested"><name nymRef="Ἱππα-"><seg part="I">Ἱππα</seg><gap reason="lost" extent="4" unit="character"/></name></persName></persName> 
+                    <lb n="21"/><persName type="attested" key="lgpn:V1-66128"><name nymRef="Φρονίμα">Φρονίμα</name> <persName type="attested"><name nymRef="Ἀλεξίμαχος"><unclear>Ἀλε</unclear><supplied reason="lost">ξ</supplied><unclear>ιμά</unclear><supplied reason="lost">χ</supplied><unclear>ω</unclear></name></persName></persName>
+                    <lb n="22"/><persName type="attested" key="lgpn:V1-65804"><name nymRef="Τιμαρέτα">Τειμαρέτα</name> <persName type="attested"><name nymRef="Καρνήδας">Καρν<unclear>ή</unclear>δα</name></persName></persName> 
+                    <lb n="23"/><persName type="attested" key="lgpn:V1-62503"><name nymRef="Ἅβρολα">Ἅβρολα</name> <persName type="attested" key="lgpn:V1-64638"><name nymRef="Κλέαρχος">Κλεάρχω</name></persName> </persName>
+                    <lb n="24"/><persName type="attested" key="lgpn:V1-63023"><name nymRef="Ἀράτα">Ἀράτα</name> <persName type="attested"><name nymRef="Διονύσιος">Διον<unclear>υ</unclear>σ<unclear>ίω</unclear></name></persName></persName>
+                    <lb n="25"/><persName type="attested" key="lgpn:V1-64655"><name nymRef="Κλεοπάτρα">Κλεοπάτρα</name> <persName type="attested"><name nymRef="Εὔιππος">Εὐίππω</name></persName></persName> 
+                    <lb n="26"/><persName type="attested" key="lgpn:V1-65804"><name nymRef="Τιμαρέτα">Τιμαρέτα</name> <persName type="attested" key="lgpn:V1-60843"><name nymRef="Ἄλεξις">Ἀλέξι<supplied reason="lost" cert="low">ος</supplied></name></persName> <w lemma="φύσις">φύσι</w> <w lemma="δέ">δὲ</w> 
+                    <lb n="27"/> <space quantity="2" unit="character"/> <persName type="attested" key="lgpn:V1-64552"><name nymRef="Καρνήδας">Καρνήδ<supplied reason="lost">α</supplied></name></persName></persName> <space quantity="2" unit="character"/> 
+                    <lb n="28"/><persName type="attested" key="lgpn:V1-64464"><name nymRef="Καλλιβώλα">Καλλιβώλα</name> <space quantity="3" unit="character"/> <persName type="attested" key="lgpn:V1-64639"><name nymRef="Κλέαρχος">Κλεάρχω</name></persName></persName> 
+                    <lb n="29"/><persName type="attested" key="lgpn:V1-65301"><name nymRef="Πέλεια">Πέλεια</name> <space quantity="3" unit="character"/> <persName type="attested"><name nymRef="Φιλίσκος">Φιλίσκω</name></persName> </persName>
+                    <lb n="30"/><persName type="attested" key="lgpn:V1-65057"><name nymRef="Μνασώι">Μνασὼι</name> <space quantity="3" unit="character"/> <persName type="attested" key="lgpn:V1-64857"><name nymRef="Λυσανίας"><supplied reason="lost" cert="low">Λυσ</supplied>ανί<unclear>α</unclear></name></persName> </persName>
+                    <lb n="31"/><persName type="attested" key="lgpn:V1-65058"><name nymRef="Μνασώι">Μνασὼι</name> <space quantity="3" unit="character"/> <persName type="attested"><name nymRef="Ἰάσων">Ἰ<supplied reason="lost">ά</supplied>σονος</name></persName></persName>
+                    <lb n="32"/><persName type="attested" key="lgpn:V1-63143"><name nymRef="Ἀριστοδίκα">Ἀριστοδίκα</name> <persName type="attested" key="lgpn:V1-64429"><name nymRef="Ἰσοκράτης">Ἰσοκρά<unclear>τ</unclear>ευς</name></persName></persName> 
+                    <lb n="33"/><persName type="attested" key="lgpn:V1-64952"><name nymRef="Μεγώ">Μεγὼ</name> <persName type="attested"><name nymRef="Ἀρίσταρχος">Ἀριστάρχω</name></persName></persName> 
+                    <lb n="34"/><date ref="https://godot.date/id/VxJSNF2xNcSzTNjTQvUg7L"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="92">ϙβ</num></date> <persName type="attested" key="lgpn:V1-64742, lgpn:V1-64742"><name nymRef="Φαβία">Φαβία</name> <name nymRef="Κυδιμάχα">Κυδιμάχα</name>
+                    <lb n="35"/> <space quantity="3" unit="character"/> <persName type="attested" key="lgpn:V1-65878"><name nymRef="Φάος">Φαώι</name></persName></persName> <space quantity="3" unit="character"/> 
+                    <lb n="36"/><date><date ref="https://godot.date/id/Fi8tsNRiaL5NxRfs54RqLV"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                    <num value="133">ρλγ</num></date> <date ref="https://godot.date/id/P9zkF6cwpXCQyVnbCfZXhF"><w lemma="ὁ">τοῦ</w> <w lemma="καί">καὶ</w> <num value="6">ϛ</num></date> </date> 
+                       <persName type="attested" key="lgpn:V1-64461"><name nymRef="Καλλιβώλα">Καλλιβώλα</name> <persName type="attested" key="lgpn:V1-62698"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδ<supplied reason="lost">ρω</supplied></name></persName></persName>   
+                </ab>
+            </div>
+            <div subtype="face" n="b" type="textpart">
+               <ab>    
+                    <lb n="1"/><date ref="https://godot.date/id/Fi8tsNRiaL5NxRfs54RqLV"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+                    <num value="133">ρλγ</num></date> <!-- check -->
+                </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="3"><rdg resp="#oliverioDAI2">Καλλιβώλα -υς</rdg><note><unclear>Κλ</unclear>[εαρ]χω is highly uncertain;</note></app>
+               <app loc="4"><rdg resp="#oliverioDAI2">Ṇ -</rdg></app>
+            <app loc="6"><rdg resp="#oliverioDAI2">Αὔγ<unclear>α</unclear>[ντος</rdg></app>
+               <app loc="11"><rdg resp="#paci2000"><unclear>Καλ</unclear>λιβώ<unclear>λα</unclear></rdg>
+                  <rdg resp="#cdl">Καλλιβώλα</rdg></app>
+               <app loc="16/17"><note>Erasure not reported by Oliverio</note></app>
+            <app loc="20"><rdg resp="#oliverioDAI2">Βερνίκα <unclear>Δ</unclear>ι<unclear>κ</unclear>-</rdg>
+               <note>Βερνίκα Ἱππ[ίας] LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-64398">V1-64398</ref></note></app>
+               <app loc="21"><rdg resp="#oliverioDAI2">Φρονίμα Ἀλ- </rdg></app>
+               <app loc="22"><rdg resp="#oliverioDAI2">Τειμαρέτα <unclear>Μ</unclear>να[σ]<unclear>ά</unclear>[ρχω ?</rdg> <note>, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=VI-65025">VI-65025</ref></note></app>
+               <app loc="24"><rdg resp="#oliverioDAI2">Ἀράτα Διο[νυσίω</rdg></app>
+               <app loc="24"><rdg resp="#oliverioDAI2">Κλεοπάτρα Ἐ<unclear>τ</unclear>ε<unclear>άρχ</unclear>ω</rdg> <note>, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-63767">V1-63767</ref></note></app>
+            <app loc="26/27"><rdg resp="#oliverioDAI2">Τιμαρέτα Ἀλεξιμ[α]χίδευ[ς] / <unclear>φυ</unclear>[σει] <unclear>δὲ</unclear></rdg></app>
+               <app loc="28"><rdg resp="#oliverioDAI2">Καλλιβώλα [Ἐ]τεάρχω</rdg></app>
+               <app loc="29"><rdg resp="#oliverioDAI2">Πελεία [Ε]ὐαρίστ[ω</rdg> <note>, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-63785">V1-63785</ref></note></app>
+               <app loc="31"><rdg resp="#oliverioDAI2">Μνασὼι - ι -</rdg></app>
+               <app loc="32"><rdg resp="#oliverioDAI2">Ἀριστοδίκα Ἰσο[κράτ̣ε]υς</rdg></app>
+               <app loc="33"><rdg resp="#oliverioDAI2">Μεγὼ Ἀριστο[δά]μω</rdg><note>, whence LGPN <ref target="http://clas-lgpn2.classics.ox.ac.uk/cgi-bin/lgpn_search.cgi?id=V1-63142">V1-63142</ref></note></app>
+               <app loc="b"><rdg resp="#paci2000"><note> Not previously recorded; note a misprint in SEG, ϙ for ρ</note></rdg></app>
+               
+               </listApp>
+         </div>
+           
+           
+              <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#oliverioDAI2" xml:lang="it"><p>Dio. Buona Fortuna. Sacerdotesse di Giunone: Callibola di -, Teopropa di -, Ipponica di Zeuximaco, Aiscra di Augea, 
+            Timareta di Eforo, Nicippa di Aristarco, Olympias di Clearco, Zeuxó di Teucresto, Callibola di Demofane, Epagó di Isocrate, Cidimaca di Clearco, Euricleta di Eglanore, Ammonarion di Alessandro, 
+            Megó di Alessandro (per adozione) ma per natura di Carneade. Myrò di Melanippo, Telesò di Callippo, Bernice di Dic-, Fronima di Al-, Timareta di Mnesarco, Abrola di Clearco, 
+            Arata di Dionisio, Cleopatra di Etearco, Timareta di Alessimachide (peradozione) ma per natura di Carneade; Callibola di Etearco, Pelia di Euaristo, Mnesó di Lisania,  Mnesó -, Aristodice 
+            di Isocrate, Megó di Aristodemo, Anno 92 (= 61 d.) Fabia Cidimaca, Faó, Anno 133 (= 102 d.) così detto il (l'anno) VI (dell'imperatore) Callibola di Alessandro.</p></div>
+           
+                 <div type="translation" resp="#edd" xml:lang="en"><p><note>a</note>: Divine Good Fortune. Priestesses of Hera: Kallibola <supplied reason="subaudible">daughter</supplied> of Kl[ear]chos; Theupropa <supplied reason="subaudible">daughter</supplied> of E[ . . .;
+               Hipponika <supplied reason="subaudible">daughter</supplied> of Zeuximachos; Aischra <supplied reason="subaudible">daughter</supplied> of Aut[ . . .; Timareta <supplied reason="subaudible">daughter</supplied> of Ephoros; Neikippa <supplied reason="subaudible">daughter</supplied> of Aristarchos; Olympias <supplied reason="subaudible">daughter</supplied> of Klearchos;
+               Zeuxo <supplied reason="subaudible">daughter</supplied> of Theuchrestos; Kallibola <supplied reason="subaudible">daughter</supplied> of Damophanes; Epago <supplied reason="subaudible">daughter</supplied> of Isokrates; Kudimacha <supplied reason="subaudible">daughter</supplied> of Klearchos; Eurykleta <supplied reason="subaudible">daughter</supplied> of Aiglanor;
+               Ammonarion <supplied reason="subaudible">daughter</supplied> of Alexandros; Mego <supplied reason="subaudible">daughter</supplied> of Alexandros, natural <supplied reason="subaudible">daughter</supplied> of Karnedas; Myro <supplied reason="subaudible">daughter</supplied> of Melanippos; Teleso <supplied reason="subaudible">daughter</supplied> of Kallippos;
+               Bernika <supplied reason="subaudible">daughter</supplied> of Hippa[ . . .; Phronima <supplied reason="subaudible">daughter</supplied> of Aleximachos; Temareta <supplied reason="subaudible">daughter</supplied> of Karnedas; Habrola <supplied reason="subaudible">daughter</supplied> of Klearchos; Arata <supplied reason="subaudible">daughter</supplied> of Dionysios;
+               Kleopatra <supplied reason="subaudible">daughter</supplied> of Euippos; Timareta <supplied reason="subaudible">daughter</supplied> of Alexis, natural <supplied reason="subaudible">daughter</supplied> of Karnedas; Kallibola <supplied reason="subaudible">daughter</supplied> of Klearchos; Pelia <supplied reason="subaudible">daughter</supplied> of Philiskos;
+               Mnaso <supplied reason="subaudible">daughter</supplied> of Lysanias; Mnaso <supplied reason="subaudible">daughter</supplied> of Jason; Aristodika <supplied reason="subaudible">daughter</supplied> of Isokrates; Mego <supplied reason="subaudible">daughter</supplied> of Aristodamos; Year 92, Fabia Kudimacha <supplied reason="subaudible">daughter</supplied> of Phaos;
+               <ref target="https://godot.date/id/Fi8tsNRiaL5NxRfs54RqLV">Year 133</ref>, <ref target="https://godot.date/id/P9zkF6cwpXCQyVnbCfZXhF">also 6</ref> <note>of the regnal year</note> Kallibola <supplied reason="subaudible">daughter</supplied> of Alexander.</p>
+               <p> <note>b</note>: <ref target="https://godot.date/id/Fi8tsNRiaL5NxRfs54RqLV">Year 133</ref> [ . . .</p></div>
+         </div>
+             
+             
+         <div type="commentary">
+            <head>Commentary</head><!-- check -->
+            <p>For other lists of priestesses of Hera, see <ref type="inscription" n="C.130">C.130</ref>, <ref type="inscription" n="C.142">C.142</ref>, 
+               <ref type="inscription" n="C.423">C.423</ref>. lines 3-11 here repeat <ref type="inscription" n="C.423">C.423</ref>, lines 8-16 but in lines 5-6 
+               reverse order of names as given in lines 10-11 there. The change of hands in each line suggets that the priestess, or the chief priestess, changed, 
+               although the two dates in lines 34, 36 seem to show that it was not annually (but see below). </p>
+            <!--  <p> Line 8: [Κα]λ[λ]ιβώλα Ἰ<unclear>σ</unclear>[- -]; if the patronymic in SE<ref type="inscription" n="C.423">C.423</ref> is correctly read 
+           (but P. believes he discerns traces of a kappa): e.g. Ἰ<unclear>σ</unclear>[ιδώρου P.</p>-->
+            <p> Line 4: also in <ref type="inscription" n="C.423">C.423</ref> line  9 (Θευπρόπα H[- -]); perhaps Ἡ[συχιω] (possibly traces of a sigma in 
+               <ref type="inscription" n="C.423">C.423</ref>): ‘nome caratteristico della Cirenaica’(Paci); but Dobias-Lalou observes tha the name, with this spelling, is
+               
+               panhellenic, whereras in Kyrenaika one would expect Ἁσύχιος.
+           </p>
+            <p>Line 5: also in <ref type="inscription" n="C.423">C.423</ref> line  11</p>
+           
+            <p> Line 6: also on record in <ref type="inscription" n="C.423">C.423</ref> line  10 (Αἴσχρά Αὐτο[- -]); the patronymic could be Αὐτόματος or Αὐτόνομος (Paci).</p>
+           
+            <p>Line 9: also in <ref type="inscription" n="C.423">C.423</ref> line  14</p>
+           
+            <p>Line 10-11: also in <ref type="inscription" n="C.423">C.423</ref> lines 15/16</p>
+            <p> line 13 Also in <ref type="inscription" n="C.423">C.423</ref>, line 2.</p>
+            <p>Line 14: In smaller letters: perhaps a later insertion in the space casually available between lines 13 and 15, 
+               not necessarily respecting the relative chronology postulated for the rest of the list (cf. below at line  34) (Paci).
+            </p>
+         <p>Line 16-17. the rasura, probably made after the following name had been engraved, served either to replace a deleted name or to correct Mego’s (Paci).
+           </p>
+            <p>Line 20: perhaps Ἱππά[ρχω] or Ἱππά[σω] (Paci).
+           </p>
+            <p>Line 26: φύσι, D.-L. (dialectal form, as opposed to the koine-variant in line 16); φύσει, Paci (but φύσι in his commentary)
+           </p>
+            <p>Line 21-27: line  21 in smaller letters and separated from the preceding text by a relatively large interlinear space; 
+               perhaps the following lines (LL. 22-27) were subject of an ‘ampio intervento di rettifica’ (Paci).
+           </p>
+            <p>Line 34: 92 (era of Cyrenaica) = 61/62 CE. Paci loc.cit. argued that the entries are consecutive up to and including this one, 
+               that there was a new priestess each year and therefore that the first entry must have been made in 32/33 CE The argument is attractive but inconclusive. 
+               Assuming that there was a new priestess each year (see above), line 36 here and several of the lists of priests of Apollo show that 
+               names were not always added to these records with systematic efficiency year by year. 
+               The inclusion of the date for the first time in line 34 might even suggest that this entry, like the next, was added after a lapse.  
+           </p>
+            <p>Line 35: patronymic: genitive of Φάος (with ωι for ω: ‘oscillazione ortografica’) (Paci).<!-- [so already O.Masson: see SEG 46] --> 
+           </p>
+            <p>Line 36: 133 (era of Cyrenaica) = 102 CE (= 6th year of Trajan); the fact that this priestess was added some 40 years later shows that the inscription 
+               was not engraved with strictly chronological preoccupations (Paci).
+           </p>
+           <p>b: Left side: previously unnoticed; engraved to continue on the left side after lines 34/35 was finished, a project the mason apparently abandoned on realizing that the relatively 
+              small space on that side was inconvenient for inscribing the names in the usual manner (Paci).</p>
+          
+        
+         
+            
+          
+             
+            
+            <!--  terminus ante quem for the preceding priestesses listed in various stages, 
+              presumably each after her term of office (annual or otherwise); the order is based on relative chronology 
+              (in the sense that priestesses mentioned before others served prior to those others; same order in <ref type="inscription" n="C.423">C.423</ref>, 
+               except for lines 10/11 = lines 5/6 of our inscription in inverse order; cf. above ad lines 5 and 6), 
+               but not necessarily encompasses all those who were in charge of the office, (Paci)<p> line 16 Oliverio's Reading. </p>
+            <p> line 25, 29, 30 Oliverio's Reading. </p>.-->
+            
+         </div>
+      </body>
+   </text>
+</TEI>

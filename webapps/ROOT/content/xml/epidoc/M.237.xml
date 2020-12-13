@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P41400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Christian</rs> <rs type="textType">building</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+            <editor xml:id="cdl">Catherine Dobias-Lalou </editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.237</idno>
+            <idno type="ircyr2012">P41400</idno>
+            <idno type="JMR">1977.17</idno>
+            <idno type="Excel">741</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Right side of a <material>limestone</material> door- or window-<objectType>arch</objectType> from a window or small door (<dimensions>
+                                 <width unit="metre">0.55</width> 
+                                 <height unit="metre">0.45</height> 
+                                 <depth unit="metre">0.27</depth>
+                           </dimensions>), decorated with a central relief of a cross within a <rs type="decoration">wreath</rs>, and a second relief cross to the right. </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> above the relief and around the  cross on the right; 
+                           the surface has been slightly damaged.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Average <height unit="metre">0.03-c.0.035</height>; lunate epsilon, sigma, omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate notBefore="0501" notAfter="0600" precision="low" evidence="lettering">Sixth century CE</origDate>
+                  </origin>
+                        <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>: 
+                              <placeName ref="https://www.slsgazetteer.org/1439">Siret al Bab</placeName>, c. 3km from 
+                              Sidi Bu Breyek, in the ruins of a church;  
+                              found in <date type="found">1976</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/88373">Sirat al Bab</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-05-13" who="MLA">added jmr-jbwp-rgg reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-23" who="CMR">tagged description, corrected text</change>
+         <change when="2009-04-23" who="CB">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><surface/></facsimile>
+   <text>
+      <body>
+      
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="mohamed-jmr2000"/>, <citedRange>3</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>50.1649</citedRange></bibl>;
+               <bibl><ptr target="jmr-jbwp-rgg2003"/>, <citedRange>410</citedRange>, whence 
+                  <bibl><ptr target="cdlBE"/>, <citedRange>2004.437</citedRange></bibl>.</bibl>; for discussion see 
+               <bibl><ptr target="SEG"/> <citedRange>60.1843</citedRange></bibl>
+            </p>
+            <p/>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <supplied reason="lost"><g ref="symbols.xml#crux"/></supplied><w part="F">ϲ</w> <w lemma="καί">καὶ</w>
+                        <w lemma="θεός">Θεοῦ</w> <w lemma="σοφία">ϲοφία</w> 
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <supplied reason="lost"><g ref="symbols.xml#crux"/></supplied> <w lemma="ὁ">τῶν</w> <w lemma="ποιέω">πυ<g ref="symbols.xml#crux"/>ηϲά<lb 
+                           n="3" break="no"/><space quantity="12" unit="character"/>ν<lb 
+                              n="4" break="no"/><space quantity="3" unit="character"/><g ref="symbols.xml#crux"/>τον</w>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="3"><rdg resp="#cdlBE">This line first observed by Dobias-Lalou</rdg>
+               </app>
+               
+            </listApp>
+            
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#jmr-jbwp-rgg2003" xml:lang="en"><p>. . . ] and wisdom of God [ . . . ] of those who made [ . . . </p></div>
+            </div>
+        
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Apparently an invocation for the builders of the church</p><p/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

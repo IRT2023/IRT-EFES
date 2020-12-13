@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G02400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.111</idno>
+            <idno type="ircyr2012">G02400</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1288">Barke Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Upper left part of a <objectType>stele</objectType>, probably of <material>limestone</material>, 
+                              in the form of an aedicula with acroteria (<dimensions><width>0.35</width> <height>1.00</height> <depth>0.10</depth></dimensions>); 
+                              there is a portrait head of a girl, in relief, within the gable. 
+                              Below was a lower panel, framed by pilasters and supporting an architrave.
+                              The point of the gable is broken off, and the right side and the lower part are trimmed away, presumably in order to prepare the stone for re-use.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> <rs type="execution" key="scalpro">Inscribed</rs> on the fascia of the architrave and below.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Well-cut, between guide-lines, with stops between the words; L for ἔτους; no measurements.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notAfter="-0020" notBefore="-0021" evidence="internal-date">21-20 BCE</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1263">Gebel Akhdar: West of Cyrene</placeName>:
+                     area of <placeName ref="https://www.slsgazetteer.org/1181">Barke</placeName>; photographed in <date type="found">1926</date></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/1288">Barke Museum</placeName> (<date type="observed">1926</date>)</p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/88903">El Marj</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription from photograph (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2011-03-03" who="MLA">Corrected Bacchielli reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-10" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2007-11-20" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile><graphic url="G02400_deptE653" decls="#photograph">
+      <desc>Face (Department of Antiquities, E. 653)</desc>
+   </graphic>
+      <surface/></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="rosenbaum1960"/>, <citedRange>293</citedRange> and pl. 103.4</bibl>, 
+               whence <bibl><ptr target="SEG"/> <citedRange>20.762</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324517">324517</ref></citedRange></bibl>; 
+               <bibl><ptr target="jmr-bacchielli1987"/>, <citedRange unit="page"> 476-7</citedRange>, and fig. 21</bibl>.</p> <!-- check -->
+         </div>
+         
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+               <lb n="1"/><date ref="https://godot.date/id/DtPstRBZ678cUvBBJYC4QH"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w>
+               <num value="11">ια</num>
+               <rs type="month" key="mechir"><w lemma="Μεχίρ">Μεχ<unclear>ε</unclear><supplied reason="lost">ὶρ</supplied></w></rs>
+               <gap reason="lost" quantity="1" unit="character" precision="low"/></date>
+              <persName type="attested" key="lgpn:V1-60740"><name nymRef="Πρόκλα" cert="low"><supplied reason="lost" cert="low">Πρ</supplied><lb n="2" break="no"/>όκλα</name>
+               <persName type="attested"><name nymRef="Πρόκλος" cert="low">Πρ<supplied reason="lost" cert="low">όκλου</supplied></name></persName></persName>
+               <lb n="3"/> <space quantity="2" unit="character"/> 
+               <date type="life-span" dur="P14Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w>
+                  <num value="14">ιδ</num> </date><supplied reason="lost" cert="low"> <space quantity="2" unit="character"/></supplied>
+            </ab>
+         </div>
+         
+         <div type="apparatus">
+            <listApp>
+               <app>
+                  <note> Assuming that line 3 was precisely centred, 4-5 letters are missing in each of lines 1 and 2. 
+                     If Πρόκλα is right as it surely is in lines 1-2,
+                     then there is just room for a simple figure after the month name in line 1,
+                     and it is very tempting to propose Πρ[όκλου]
+                     for the patronymic in line 2.
+                  </note>
+               </app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve">
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/DtPstRBZ678cUvBBJYC4QH">Year 11, Mecheir [?]</ref>: Pr]okla <supplied reason="subaudible">daughter</supplied> of Pr[oklos?], aged 14.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <!-- <p>line 1, Mecheir - January/February.</p> -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

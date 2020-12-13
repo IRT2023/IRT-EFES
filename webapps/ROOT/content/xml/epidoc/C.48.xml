@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C06600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">List</rs> of priests of Apollo</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.48</idno>
+            <idno type="ircyr2012">C06600</idno>
+            <idno type="JMR">645</idno>
+            <idno type="Excel"/>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Tapered <objectType>stele</objectType> of Attic <material>marble</material>, 
+                              recomposed from two large pieces and four fragments (together 
+                              <dimensions>
+                              <width>0.57</width>
+                              <height>1.85</height>
+                              <depth>0.33-0.29</depth>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face; each entry in a different hand, and there are several spaces large enough to accommodate additions.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Augustan, lines 1, 17, 26, <height>0.025</height>; lines 2-4,6-9, 15, 18-20, 23-25, 27, <height>0.03</height>; line 5 <height>0.01</height>; 
+                        lines 10, 13, 14, 21, <height>0.035</height>; lines 11, 16, 22, <height>0.04</height>; line 12, <height>0.02</height>; 
+                        / for the homonym in line 20; the letters often crowded at the line ends.<!-- ; line 20 the second ΚΛ --></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="-0031" notAfter="0014" precision="low" evidence="lettering prosopography">Augustan</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              reused in the <placeName type="monuList" ref="https://www.slsgazetteer.org/997">Byzantine Tower</placeName> built against the wall of the Stoa of Hermes and Herakles; 
+                              found in <date type="found">1960</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-14" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-22" who="Lourdes Moya">tTokenized</change>
+         <change when="2009-06-11" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_645" decls="#photograph"><desc>Face (Reynolds VIII.18)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="gasperini1967"/>, <citedRange unit="page"> 58</citedRange>, with <!-- check -->
+                  illustration fig. 5</bibl>, whence  
+               mentioned <bibl><ptr target="robertBE"/>, <citedRange>1973.536</citedRange></bibl>; 
+               <bibl> <ptr target="gasperini1967a"/>, <citedRange>47</citedRange> and fig. 36</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1972.622a</citedRange></bibl>,
+               mentioned <bibl><ptr target="jmr1972"/>, <citedRange>45</citedRange></bibl>. 
+               Republished <bibl><ptr target="laronde1987a"/>, <citedRange>470-474</citedRange></bibl>, whence mentioned <bibl><ptr target="SEG"/> <citedRange>37.1671</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+             <ab>
+            <lb n="1"/> <w lemma="ἱερεύς">Ἱαρὲς</w> <w lemma="ὁ">τῶ</w> <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνος</name></persName>
+                    <lb n="1a"/> <space quantity="1" unit="line"/>
+               <lb n="2"/><persName type="attested" key="lgpn:V1-63068"><name nymRef="Ἀρίσταρχος">Ἀρίσταρχος</name> <persName type="attested" key="lgpn:V1-64241"><name nymRef="Θεύχρηστος">Θευχρήστω</name></persName></persName>
+            <lb n="3"/><persName type="attested" key="lgpn:V1-64242"><name nymRef="Θεύχρηστος">Θεύχρηστος</name> <persName type="attested" key="lgpn:V1-63598"><name nymRef="Διονύσιος">Διονυσίω</name></persName></persName>
+            <lb n="4"/><persName type="attested" key="lgpn:V1-65875"><name nymRef="Φάος">Φάος</name> <persName type="attested" key="lgpn:V1-64636"><name nymRef="Κλέαρχος">Κλεάρχω</name>
+               <lb n="5"/><space quantity="4" unit="character"/> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-66048"><name nymRef="Φιλόπατρις">Φιλοπάτριδος</name></persName></persName></persName>
+            <lb n="6"/><persName type="attested" key="lgpn:V1-64436"><name nymRef="Ἴστρος">Ἴστρος</name> <persName type="attested" key="lgpn:V1-62509"><name nymRef="Ἀγαθῖνος">Ἀγαθίνω</name></persName></persName>
+            <lb n="7"/><persName type="attested" key="lgpn:V1-63301"><name nymRef="Ἀσκληπιάδης">Ἀσκληπιάδης</name> <persName type="attested" key="lgpn:V1-63702"><name nymRef="Ἐπικράτης">Ἐπικράτευς</name></persName></persName>
+            <lb n="8"/><persName type="attested" key="lgpn:V1-63905"><name nymRef="Εὐφάνης">Εὐφάνης</name> <persName type="attested" key="lgpn:V1-64428"><name nymRef="Ἰσοκράτης">Ἰσοκράτευς</name></persName></persName>
+            <lb n="9"/><persName type="attested" key="lgpn:V1-65241"><name nymRef="Πανταλέων">Πανταλέων</name> <persName type="attested" key="lgpn:V1-65240"><name nymRef="Πανταλέων">Πανταλέοντος</name></persName></persName>
+            <lb n="10"/><persName type="attested" key="lgpn:V1-64431"><name nymRef="Ἰσοκράτης"><supplied reason="lost">Ἰ</supplied>σοκράτης</name> <persName type="attested" key="lgpn:V1-62610"><name nymRef="Ἀγχίστρατος">Ἀγχιστράτω</name></persName></persName>
+            <lb n="11"/><persName type="attested" key="lgpn:V1-66026"><name nymRef="Φιλόξενος"><supplied reason="lost">Φιλ</supplied>όξενος</name> <persName type="attested" key="lgpn:V1-65953"><name nymRef="Φιλίσκος">Φιλίσκω</name>
+               <lb n="12"/> <space quantity="3" unit="character"/> <w lemma="φύσις">φύσι</w> <w lemma="δέ">δὲ</w> <persName type="attested" key="lgpn:V1-63906"><name nymRef="Εὐφάνης">Εὐφάνευς</name></persName></persName></persName>
+            <lb n="13"/><persName type="attested" key="lgpn:V1-62632"><name nymRef="Αἰγλάνωρ">Αἰγλάνωρ</name> <persName type="attested" key="lgpn:V1-65526"><name nymRef="Πτολεμαῖος">Πτολεμαίω</name></persName></persName>
+            <lb n="14"/><persName type="attested" key="lgpn:V1-65874"><name nymRef="Φάος">Φάος</name> <persName type="attested" key="lgpn:V1-64567"><name nymRef="Καρνήδας">Καρνήδα</name></persName></persName>
+                    <lb n="14a"/> <space quantity="8" unit="line"/>
+            <lb n="15"/><space quantity="1" unit="character"/><persName type="attested" key="lgpn:V1-65944"><name nymRef="Φίλιππος">Φίλιππος</name> <persName type="attested" key="lgpn:V1-63058"><name nymRef="Ἀρίστανδρος">Ἀριστάνδρω</name></persName></persName>
+                    <lb n="15a"/> <space quantity="1" unit="line"/>
+            <lb n="16"/><persName type="attested" key="lgpn:V1-64625"><name nymRef="Κλέαρχος">Κλέαρχος</name> <persName type="attested" key="lgpn:V1-63909"><name nymRef="Εὐφάνης">Εὐφάνευς</name></persName></persName>
+            <lb n="17"/><persName type="attested" key="lgpn:V1-64437"><name nymRef="Ἴστρος">Ἴστρος</name> <persName type="attested" key="lgpn:V1-64436"><name nymRef="Ἴστρος">Ἴστρω</name> <w lemma="ὁ">τῶ</w> <persName type="attested" key="lgpn:V1-62509"><name nymRef="Ἀγαθῖνος">Ἀγαθίνω</name></persName></persName></persName>
+                    <lb n="17a"/> <space quantity="6" unit="line"/>
+            <lb n="18"/><persName type="attested" key="lgpn:V1-65432"><name nymRef="Πραξιάδας">Πραξιάδας</name> <persName type="attested" key="lgpn:V1-65431"><name nymRef="Πραξιάδας">Πραξιάδα</name> <w lemma="ὁ">τῶ</w>
+            <lb n="19"/><space quantity="6" unit="character"/> <persName type="attested" key="lgpn:V1-65916"><name nymRef="Φιλίννας">Φιλίννα</name></persName></persName></persName> <space quantity="8" unit="character"/>
+            <lb n="20"/><persName type="attested" key="lgpn:V1-63823"><name nymRef="Εὐκλείδας">Εὐκλείδας</name> <persName type="attested" key="lgpn:V1-63822"><!-- check --><name nymRef="Εὐκλείδας">Εὐ<add place="overstrike">κλ</add>είδα</name> <w lemma="ὁ">τῶ</w> 
+            <persName type="attested" key="lgpn:V1-63821"><name nymRef="Εὐκλείδας"><expan><abbr><am><g ref="symbols.xml#slanting-stroke"/></am></abbr><ex>Εὐκλείδα</ex></expan></name></persName></persName></persName>
+            <lb n="21"/><space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-65560"><name nymRef="Σαραπίων">Σεραπ<del rend="erasure">σ</del>ίων</name> <persName type="attested" key="lgpn:V1-63058"><name nymRef="Ἀρίστανδρος">Ἀριστάνδρω</name></persName></persName>
+            <lb n="22"/><space quantity="2" unit="character"/> <persName type="attested" key="lgpn:V1-63994"><name nymRef="Ζηνίων">Ζηνίων</name> <persName type="attested" key="lgpn:V1-65735"><name nymRef="Σῶσος">Σώσου</name></persName></persName> <space quantity="1" unit="character"/>
+            <lb n="23"/><persName type="attested" key="lgpn:V1-64637"><name nymRef="Κλέαρχος">Κλέαρχος</name> <persName type="attested" key="lgpn:V1-64569"><name nymRef="Καρνήδας">Καρνήδα</name></persName></persName>
+            <lb n="24"/><persName type="attested" key="lgpn:V1-64635"><name nymRef="Μᾶρκος">Μᾶρκος</name> <name nymRef="Κλέαρχος">Κλέαρχος</name> <space quantity="2" unit="character"/>                                    
+            <lb n="25"/><space quantity="2" unit="character"/> <persName type="attested" key="lgpn:V1-64422, lgpn:VI-66121"><name nymRef="Φλάμμα">Φλάμμα</name> <name nymRef="Ἰσοκράτης">Ἰσοκράτευς</name></persName></persName>
+               <lb n="26"/><space quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-64566"><name nymRef="Λούκιος">Λούκιος</name> <name nymRef="Καρνήδας">Καρνήδας</name> <space quantity="5" unit="character"/>                                          
+            <lb n="27"/><persName type="attested" key="lgpn:V1-64422, lgpn:VI-66121"><name nymRef="Φλάμμα">Φλάμμα</name> <name nymRef="Ἰσοκράτης">Ἰσοκράτευς</name></persName></persName> <space quantity="2" unit="character"/>
+                </ab>
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="17"><note>Between lines 17 and 18, Gasperini prints an approximately centred Γ, described as <foreign xml:lang="it">debole graffito</foreign>.</note></app>
+            </listApp><!-- check -->
+         </div>  
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Priests of Apollo. Aristarchos <supplied reason="subaudible">son</supplied> of Theochrestos; Theochrestos <supplied reason="subaudible">son</supplied> of Dionysios;
+               Phaos <supplied reason="subaudible">son</supplied> of Klearchos, the lover of his homeland; Istros <supplied reason="subaudible">son</supplied> of Agathinos; Asklepiades <supplied reason="subaudible">son</supplied> of Epikrates; Euphanes <supplied reason="subaudible">son</supplied> of Isokrates;
+               Pantaleon <supplied reason="subaudible">son</supplied> of Pantaleon; Isokrates <supplied reason="subaudible">son</supplied> of Anchistratos; Philoxenos <supplied reason="subaudible">son</supplied> of Philiskos, natural <supplied reason="subaudible">son</supplied> of Euphanes; Aiglanor <supplied reason="subaudible">son</supplied> of Ptolemaios;
+            Phaos <supplied reason="subaudible">son</supplied> of Karneades; Philippos <supplied reason="subaudible">son</supplied> of Aristandros; Klearchos <supplied reason="subaudible">son</supplied> of Euphanes;
+            Istros <supplied reason="subaudible">son</supplied> of Istros <supplied reason="subaudible">son</supplied> of Agathinos; Praxiαdas <supplied reason="subaudible">son</supplied> of Praxiadas <supplied reason="subaudible">son</supplied> of Philinnas; Eukleidas <supplied reason="subaudible">son</supplied> of Eukleidas;
+            Serapion <supplied reason="subaudible">son</supplied> of Aristandros; Zenion <supplied reason="subaudible">son</supplied> of Sosos; Klearchos <supplied reason="subaudible">son</supplied> of Karnedas; Marcus Klearchos <supplied reason="subaudible">son</supplied> of Phlammas Isokrates;
+            Loukios <supplied reason="explanation"><foreign xml:lang="la">Lucius</foreign></supplied> Karnedas <supplied reason="subaudible">son</supplied> of Phlamma <supplied reason="explanation"><foreign xml:lang="la">Flamma</foreign></supplied> Isokrates</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> Gasperini attractively proposed that a cornice block is missing with the inscribed heading <foreign xml:lang="grc">θεός Τύχα ἀγαθά</foreign>, as in <ref type="inscription" n="C.140">C.140</ref>, indicating that the text gives a running record of eponymous priests of Apollo, though the spaces left between some of the entries may mean that the record was 
+               not kept systematically and that the names are not in all cases consecutive; the date suggested by the 
+               names is Augustan to early first century CE; the implications are further developed by Laronde (art.cit.) </p>
+            
+            <p>Line 2: For the same man see <ref type="inscription" n="C.770">C.770</ref>.</p>
+            <p>Line 3: A Theochrestus of unknown patronymic was priest in CE 19 (<ref type="inscription" n="C.303">C.303</ref>, lines 3,4); 
+                but the name is very common at Cyrene and it 
+               would be unwise, therefore, to assume his identity Gasperini referred to <ref type="inscription" n="C.769">C.769</ref>, but the name there is almost 
+                   certainly a patronymic.  </p>
+            <p>Line 5: Phaos son of Klearchos: clearly to be identified with the priest of Apollo and Augustus who was hero of an episode in the 
+               Marmaric War and subject of a laudatory decree (see <ref type="inscription" n="C.416">C.416</ref>) where his name can now be correctly restored in b, lines 5;6. unless 
+                  he was priest twice at a long distance of time, and assuming that his Marmaric War was the one recorded as ending in 
+                   CE 2), this entry should belong near the turn of the millenium. </p>
+            <p>Line 12. For other children of a Euphanes adopted by Philiskos, see <ref type="inscription" n="C.41">C.41</ref>; they include Pausanias who 
+               was priest of Apollo in CE 2, and connected with victory in Marmaric war (<ref target="https://igcyr.unibo.it/gvcyr027">GVCyr 27</ref>, line 1).  </p>
+            <p>Gasperini suggested that the Γ in the space between lines 17 and 18 is probably be a chance scratch, but could also be a figure; he suggested that it might indicate that 
+               this is the third of an adjacent series of stelae (it is clear that the sides of this stele were not meant to be seen). 
+               Alternatively, it might be an indication of a space for 3 more names missing or to be added.</p>
+            <p>Lines 28-31: Marcus Klearchos son of Phlammas Isokrates; Lucius Karnedas son of Phlammas Isokrates: These two men, whose names and patronymic are equally distinctive, must be brothers.  
+               If the stele is correctly dated, their first names and that of their father represent the earliest certain
+                        influence of Roman nomenclature on the priestly class at Cyrene. The father's first name recurs as that of an undated
+                        priest of the early first century CE (<ref type="inscription" n="C.219">C.219</ref>) and especially in the family  of M. Antonii <ref type="inscription" n="C.49">C.49</ref>, <ref type="inscription" n="C.223">C.223</ref>, <ref type="inscription" n="C.141">C.141</ref>., <ref type="inscription" n="C.265">C.265</ref>
+               very notable at Cyrene in the middle and second half of the century.</p>
+            <!-- 
+            
+            <p> line 7. Histros <supplied reason="subaudible">son</supplied> of Agathinos: Perhaps father of the man listed in line 20. for the significance, see. introduction, p.... </p>
+            <p> line 8. Asklepiades <supplied reason="subaudible">son</supplied> of Epikrates: Perhaps grandfather of Ti Claudius Asclepiadas <supplied reason="subaudible">son</supplied> of Epikrates, listed as priest of Apollo, probably in the third quarter of the First century CE (<ref type="inscription" n="C22600">C.260</ref>, lines 3-4) </p>
+            <p> line  10. Pantaleon: Possibly the Παντα[...] whose name is used to date a decree which must be later than 17-16 BCE (<ref type="inscription" n="C23700">C.276</ref>, line 5) </p>
+            <p> line 11: Perhaps father of Asklepos <supplied reason="subaudible">son</supplied> of Isokrates <supplied reason="subaudible">son</supplied> of Anchistratos, listed as priest of Apollo, probably in the third quarter of the first century 
+               CE (<ref type="inscription" n="C71500">C.141</ref>. lines 1-2). </p>
+           
+            <p> line  14. Aiglanor <supplied reason="subaudible">son</supplied> of Ptolemaios:  A homonym appears as an ephebe in CE 3-4 (<ref type="inscription" n="C.145">C.145</ref>, line 18 col. 1) and a possible descendαnt or connection, M. Antonius Cerealis Aiglanor son 
+               of Ptolemaios the descendent of four Ptolemaei, is listed as priest of Apollo in the third quarter of First century CE (<ref type="inscription" n="C05900">C.49</ref>, <ref type="inscription" n="C74000">C.265</ref> lines 1-3).  
+                       </p>
+            <p>line 16. Philippos <supplied reason="subaudible">son</supplied> of Aristrandros. Perhaps brother of the priest listed in line 25. for the significance, see. introduction, p....  </p>
+            <p>l.20. Istros <supplied reason="subaudible">son</supplied> of Agathinos: Perhaps <supplied reason="subaudible">son</supplied> of the priest listed in line 6; for the significance, see. introduction, p.... a homonym appears as ephebic 
+                        trikatierch in CE 3-4 and may be identical. </p>
+            <p> line 27. Perhaps father of Tiberius Claudius Karnedas son of Tiberius Claudius Klearchos, priest of Apollo probably in CE 62-3 (<ref type="inscription" n="C71500">C.141</ref>, lines6-8 , <ref type="inscription" n="C74200">C.393</ref>) 
+                         </p>
+            , -->
+         </div>
+         
+      </body>
+   </text>
+</TEI>

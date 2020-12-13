@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P08400" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fragmentary <rs type="textType">official</rs> <rs type="textType">document</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.83</idno>
+            <idno type="ircyr2012">P08400</idno>
+            <idno type="JMR">301</idno>
+            <idno type="Excel">381</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two adjoining fragments from the upper right corner of a <material>marble</material> 
+                              <objectType>panel</objectType> (<dimensions><width unit="metre">0.24</width> <height unit="metre">1.1</height> <depth unit="metre">0.02</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face of the two fragments.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century: line  1, <height unit="metre">0.02</height>; line  2, <height unit="metre">0.03</height>; lines 3-4, <height unit="metre">0.025</height>; line  1, in a different style, closer to the "actuarial", than the rest.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate precision="low" notBefore="0101" notAfter="0200" evidence="lettering">Second century CE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>: 
+                              in the fill over the <placeName type="monuList" ref="https://www.slsgazetteer.org/944">Villa of the Four Seasons</placeName>; found in <date type="found">1957</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-05" who="MLA">corrected Kraeling reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-04-17" who="MR">turned to XML and tidied</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="JMR_301front" decls="#photograph"><desc>Face (1956, The Oriental Institute - Chicago, 48025)</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl>
+                  <ptr target="kraeling1962"/>, <citedRange>11</citedRange>, and pl. LII D.</bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="-anus"><seg part="F">ano</seg></name></persName> <g ref="symbols.xml#stop"/> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex cert="low">ulibus</ex></expan></w>
+                    <lb n="1a"/> <space quantity="2" unit="line"/>
+                    <lb n="2"/><w lemma="proconsul"><expan><abbr><supplied reason="lost">pr</supplied>oco</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
+             <w lemma="adhibeo"><unclear>a</unclear>dhibi<lb n="4" break="no"/><supplied reason="lost">tis</supplied></w>
+             <supplied reason="lost" cert="low"><w lemma="in">in</w> <w lemma="consilium">consilium</w></supplied> <w lemma="comes" cert="low"><supplied reason="lost">comit</supplied>ibus</w> <w lemma="suus">suis</w>
+                    <lb n="4a"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="4">
+                   <rdg resp="#kraeling1962">[op]ibus</rdg>
+               </app>
+            </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+             <div type="translation" resp="#edd" xml:lang="en"><p>In the consulship of [ . . . ] proconsul [ . . . ] his ?companions having been assembled [in council  . . .
+             </p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>l. 1: probably a consular date, and, if so, the last abbreviation should be restored as <foreign xml:lang="la">co(n)s(ulibus)</foreign>.  
+                    Kraeling suggested that it was a secondary inscription, but its "actuarial" style would be explicable if
+                    the whole text were transcribed from a formal document with a date at its head.</p>
+            <p> lines 2-4: the use of 
+                    <foreign xml:lang="la">adhibeo</foreign> suggests that these lines are from the preamble to a decision taken by the proconsul in
+               the presence of his <foreign xml:lang="la">consilium</foreign>, cf. <title>CIL</title> V, 5050, 17, <foreign xml:lang="la">adhibitis procuratoribus meis</foreign>, <title>CIL</title> IX, 5420, 13
+                    <foreign xml:lang="la">adhibitis utriusque ordinis splendidis uiris</foreign>, CIL XI, 6337, 7 <foreign xml:lang="la">adhibitis in consilium</foreign>.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

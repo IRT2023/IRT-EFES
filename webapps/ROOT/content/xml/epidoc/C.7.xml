@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C00600" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription for repairs after the <rs type="textType">Jewish</rs> revolt</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.7</idno>
+            <idno type="ircyr2012">C00600</idno>
+            <idno type="JMR">606</idno>
+            <idno type="Excel">341</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">B now in the Cyrene Museum; A, C and ?D findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Seven fragments from four <material>limestone</material> wall <objectType>block</objectType>s, all incomplete, bearing a monumental inscription
+                              (Α. <dimensions><width>0.86</width> <height>0.50</height> <depth>0.61</depth></dimensions>; 
+                              Β. <dimensions><width>0.60</width> <height>0.29</height> <depth precision="low">0.61</depth></dimensions>; 
+                              C. <dimensions><width>0.89</width> <height>0.60</height> <depth>0.35</depth></dimensions>; 
+                              D. <dimensions><width>0.48</width> <height>0.50</height> <depth>0.35</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the exposed faces.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century: Latin, line  1, <height>0.09</height>; line  2, <height>0.065</height>; 
+                        Greek, line  1, <height>0.09</height>; line  2, <height>0.065</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>
+                        <ref target="https://www.slsgazetteer.org/987">Caesareum</ref>.</origPlace>
+                     <origDate notAfter="0118" notBefore="0117" evidence="reign titulature" precision="high">CE December 117-December 118</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/987">Caesareum</placeName>: A. found before <date type="found">1941</date>, 
+                              re-used in the internal face of the South pier of the East porch; 
+                        B. found before <date type="found">1941</date>, in the course of the excavation;
+                              C and D found in <date type="found">1956</date>, re-used in the late fourth or fifth century to block a doorway.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>B now in the <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>; A, C and ?D findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>         
+         <change when="2011-07-14" who="Pietro">added photographs</change>
+         <change when="2010-02-22" who="MLA">corrected Reynolds reference in bibliography</change>
+         <change when="2011-02-09" who="MLA">corrected Applebaum reference in bibliography</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-10" who="Pietro">Tokenized</change>         
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader>
+         <facsimile><graphic url="C00600c" decls="#photograph"><desc>Block a</desc></graphic>
+            <graphic url="C00600cd_DeptF3942" decls="#photograph"><desc>Blocks a and b (Department of Antiquities, F 3942)</desc></graphic>
+            <graphic url="C00600d_001" decls="#photograph"><desc>Block b (light 1)</desc></graphic>
+            <graphic url="C00600d" decls="#photograph"><desc>Block b (light 2)</desc></graphic>
+            <graphic url="JMRNB03_072" decls="#photograph"><desc>Block c (Joyce Reynolds, III. 72)</desc></graphic>
+            <graphic url="C00600a_JR_IV_72" decls="#photograph"><desc>Block c (Joyce Reynolds, IV.72)</desc></graphic>
+            <graphic url="DSC05020" decls="#photograph"><desc>Block c (2008, H.Walda)</desc></graphic>
+            <graphic url="C00600b_JR_II_66" decls="#photograph"><desc>Block d (Joyce Reynolds, VIII.42)</desc></graphic>
+            <graphic url="JMRNB02_063" decls="#photograph"><desc><ref type="inscription" n="C.11">C.11</ref> b, resting on <ref type="inscription" n="C.7">C.7</ref>, block d, 
+               first part (Joyce Reynolds, II. 64).</desc></graphic>
+            <graphic url="JMR_610front" decls="#photograph"><desc><ref type="inscription" n="C.11">C.11</ref> b, resting on <ref type="inscription" n="C.7">C.7</ref>, block d, 
+               end (Joyce Reynolds, II.92)</desc></graphic>
+            </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><!-- check first find, Arch. Anz. 1941/BE 1942 -->
+                <bibl><ptr target="applebaum1950"/>, <citedRange>E.1</citedRange></bibl> (block b and part of block d only), whence 
+              <bibl><ptr target="AE"/> <citedRange>1951.123</citedRange></bibl>, whence 
+              <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021148">021148</ref></citedRange></bibl>,
+               <bibl><ptr target="robertBE"/>, <citedRange>1951.244</citedRange></bibl>; all four blocks 
+               <bibl><ptr target="jmr1958"/>, <citedRange>IV.a</citedRange>, p. 161f</bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1960.438</citedRange></bibl>,
+               <bibl><ptr target="SEG"/> <citedRange>17.804</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324417">324417</ref></citedRange></bibl>,
+               <bibl><ptr target="robertBE"/>, <citedRange>1960.438</citedRange></bibl>, and see also 
+               <bibl><ptr target="jmr1958-1959"/><citedRange></citedRange></bibl>; republished  
+               <bibl><ptr target="gasperini1971"/>, <citedRange>C.5</citedRange></bibl>;  
+               <bibl><ptr target="gl-jmr1983"/>, <citedRange>17</citedRange></bibl>; translated, 
+               <bibl><ptr target="williams1988"/>, <citedRange>V.87</citedRange></bibl>. For the original location see 
+               <bibl><ptr target="luni1992"/>, <citedRange unit="page">143-145</citedRange></bibl>, whence 
+               <bibl><ptr target="cdlBE"/>, <citedRange>1993.697</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>42.1665</citedRange></bibl>; discussed, <bibl><ptr target="boatwright2000"/><citedRange></citedRange></bibl>; 
+                  mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>156</citedRange> and following</bibl>.
+             </p>
+         </div>
+            <div type="edition" xml:space="preserve">
+               <ab xml:lang="la">
+                    <lb n="1"/><date ref="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ"><persName type="emperor" key="hadrianus"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan></supplied></w>
+                   <name nymRef="Caesar"><supplied reason="lost">Caesar</supplied></name> 
+                  <w lemma="diuus"><supplied reason="lost">d</supplied>iui</w> 
+                  <persName type="emperor" key="traianus"><name nymRef="Traianus">Tr<supplied reason="lost">aiani</supplied></name> <supplied reason="lost"><name nymRef="Parthicus">Parthici</name></supplied></persName> 
+                  <w lemma="filius"><supplied reason="lost">fil</supplied>ius</w> <g ref="symbols.xml#leaf"/> 
+                    <w lemma="diuus">di<unclear>u</unclear><supplied reason="lost">i</supplied></w> 
+                   <persName type="emperor" key="nerva"><name nymRef="Nerva"><supplied reason="lost">Nerua</supplied><unclear/></name></persName>
+                  <w lemma="nepos"><unclear>n</unclear>epos</w> <name nymRef="Traianus">T<supplied reason="lost">raianus</supplied></name> 
+                        <supplied reason="lost"><name nymRef="Hadrianus">Hadrianus</name> 
+                           <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></name></supplied></persName>
+                       <supplied reason="lost"><w lemma="pontifex"><expan><abbr>pont</abbr><ex>ifex</ex></expan></w>
+                        <w lemma="maximus"><expan><abbr>max</abbr><ex>imus</ex></expan></w>
+                        <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> 
+                       <w lemma="potestas"><expan><abbr>pot</abbr><ex>estate</ex></expan></w>
+                        <num value="2">II</num> 
+                       <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> 
+                           <num value="2">II</num> </supplied></date> 
+                    <lb n="2"/><w lemma="ciuitas"><supplied reason="lost">ciuitati</supplied></w> 
+                  <placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene"><supplied reason="lost">Cy</supplied><unclear>r</unclear>enensium</placeName> 
+                    <placeName nymRef="#Caesareum" ref="#caesareum"><supplied reason="lost">Caesareu</supplied><unclear>m</unclear></placeName> <g ref="symbols.xml#leaf"/>
+                  <w lemma="tumultus">tumul<supplied reason="lost">tu</supplied></w> <placeName type="ethnic" nymRef="#Iudaicus" ref="#ioudaios"><supplied reason="lost">Iudaic</supplied>o</placeName>
+                    <w lemma="diruo">dirutum</w> <supplied reason="lost"><w lemma="et">et</w> <w lemma="exuro">exustum</w></supplied> 
+                  <supplied reason="lost" cert="low"><w lemma="restituo">restitui</w> <w lemma="iubeo">iussit</w></supplied> <space unit="character" quantity="2"/>
+               </ab>
+               <ab xml:lang="grc">
+                    <lb n="3"/><date ref="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ"><persName type="emperor" key="hadrianus"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτωρ</supplied></w> 
+                  <name nymRef="Καῖσαρ">Καῖσαρ</name> 
+                  <w lemma="θεός">θ<supplied reason="lost">εοῦ</supplied></w> 
+                    <persName type="emperor" key="traianus"><supplied reason="lost"><name nymRef="Τραιανός">Τραιανοῦ</name></supplied></persName> 
+                  <name nymRef="Παρθικός"><supplied reason="lost">Π</supplied>αρθικ<supplied reason="lost">οῦ</supplied></name> 
+                  <w lemma="υἱός"><supplied reason="lost">υἱὸς</supplied></w>
+                    <w lemma="θεός">θεοῦ</w> <persName type="emperor" key="hadrianus"><name nymRef="Νέρβα">Νέρου<supplied reason="lost">α</supplied></name></persName> 
+                  <supplied reason="lost"><w lemma="υἱωνός">υἱωνὸς</w> 
+                     <name nymRef="Τραιανός">Τραιανὸς</name> <name nymRef="Ἁδριανός">Ἁδριανὸς</name> 
+                  <name nymRef="Σεβαστός">Σεβαστὸς</name></supplied></persName> <w lemma="ἀρχιερεύς"><supplied reason="lost">ἀρ</supplied>χιερεὺς</w> <space unit="character" quantity="2"/>
+                    <lb n="4"/> <w lemma="μέγιστος"><supplied reason="lost">μέγιστος</supplied></w> <w lemma="δημαρχικός">δημαρχικῆς</w> 
+                    <w lemma="ἐξουσία"><supplied reason="lost">ἐξουσία</supplied><unclear>ς</unclear></w> <w lemma="ὁ">τὸ</w> 
+                  <num value="2"><unclear>β</unclear></num> 
+                  <supplied reason="lost"><w lemma="ὕπατος">ὕπατος</w>
+                        <w lemma="ὁ">τὸ</w> <num value="2">β</num> </supplied></date> 
+                  <w lemma="ὁ"><supplied reason="lost">τ</supplied><unclear>ῇ</unclear></w> <w lemma="πόλις">πόλει</w> <g ref="symbols.xml#leaf"/>
+                  <w lemma="ὁ"><unclear>τ</unclear>ὸ</w> <space quantity="1" unit="character"/>
+                  <placeName nymRef="#Καισάρειον" ref="#caesareum">Κα<unclear>ι</unclear><supplied reason="lost" cert="low">σάρειον</supplied></placeName> 
+                        <supplied reason="lost"><w lemma="ἐν">ἐν</w> <w lemma="ὁ">τῶι</w> 
+                           <placeName type="ethnic" nymRef="#Ἰουδαικός" ref="#ioudaios">Ἰουδαικῶι</placeName> <w lemma="τάραχος">ταράχωι</w>
+                           <w lemma="καταστρέφω">κατεστραμμένον</w></supplied>
+                  <w lemma="καθίστημι"><supplied reason="lost">κα</supplied>τασταθῆναι</w> 
+                  <w lemma="κελεύω">ἐκέλευσ<supplied reason="lost">εν</supplied></w>.
+               </ab>
+            </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" source="#gl-jmr1983" xml:lang="de"><p><note>Lines 1-2</note>: Der Imperator Caesar, Sohn des zum Gott erhobenen Traianus Parthicus, Enkel des 
+            zum Gott erhobenen Nerva, Traianus Hadrianus Augustus, Pontifex Maximus, im zweiten Jahr der tribunizischen Gewalt, zum zweiten Mal Konsul, befahl, dass für 
+            die Bürgerschaft der Kyrener das im jüdischen Aufstand zerstörte und abgebrannte Caesareum widerhergestellt werde.</p></div>
+            <div type="translation" resp="#edd" xml:lang="en"><p><note>Lines 1-2</note>: <ref target="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ">[Emperor Caesar] son of the deified Trajan, [victor in Parthia,] 
+               grandson of the deified [Nerva, Trajan Hadrian Augustus, chief priest, 
+               holding tribunician power for the second time, consul for the second time]</ref>, 
+               [gave orders for the Caesareu]m, destroyed [and burnt in the Jewish] revolt, [to be restored for the city] of the Cyrenaeans.</p>
+               <p><note>Lines 3-4</note>: <ref target="https://godot.date/id/FvCSrUHjtGpgZPe5UWJFtQ">[Emperor] Caesar son of the deified Trajan, victor in Parthia, grandson of the deified Nerva, Trajan Hadrian Augustus, 
+                  [chief] priest, holding tribunician [power] for the second time, [consul for the second time]</ref>,
+                  gave orders for the Cae[sareum, destroyed in the Jewish revolt, to be] restored for the city.</p></div>
+       </div>
+       
+         <div type="commentary">
+            <head>Commentary</head>
+            <p> The date is between 10th December 117 and 9th December 118. 
+               The date indicates that repairs to this building were executed with some speed after the suppression of the Jewish revolt of 115.</p>
+            <p>Line 2:The Latin word [Caesareum] is restored from the Greek text. 
+               In the Greek, τὸ κα<unclear>π</unclear>[ετώλιον is a theoretically possible alternative, but if Cyrene had a Capitolium and if it was correctly identified by Gislanzoni 
+              <!--xref (see CA--> these blocks cannot have belonged to it. 
+               Despite their scattered findspots and a difficulty in deciding where in the Caesareum they can have been placed originally, 
+               it seems reasonable to conclude that it is to the Caesareum that they refer.</p> 
+               <p>There may have been a duplicate text, see <ref type="inscription" n="C.6">C.6</ref>, <ref type="inscription" n="C.10">C.10</ref>
+            </p>
+         </div>
+         <!--<div type="edition" xml:lang="grc-Latn" xml:space="preserve">
+             
+            <div subtype="section" n="a" type="textpart">
+               <ab>
+                            <lb n="1"/><gap reason="lost" extent="unknown" 
+                               unit="character"/> <persName type="emperor"><name nymref"Nerva"><supplied 
+                                  reason="lost">Neru</supplied><unclear>ae</unclear></name>
+                            <w><unclear>n</unclear>epos</w> 
+                            <name nymref"Traianus">T<supplied reason="lost">raianus</supplied></name></persName> 
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                            <lb n="2"/><gap reason="lost" extent="unknown" 
+                               unit="character"/><placeName type="ethnic"><supplied 
+                                  reason="lost">Iudaic</supplied>o</placeName> 
+                            <w lemma = "diruo">dirutum</w> <w><unclear>et</unclear></w> 
+                            <w><unclear>e</unclear><supplied reason="lost">xustum</supplied></w><gap 
+                               reason="lost" extent="unknown" unit="character"/>
+                            <lb n="3"/><gap reason="lost" extent="unknown" 
+                               unit="character"/> <persName type="emperor"><w>θεοῦ</w> 
+                            <name nymRef="Νέρβα">Νέρου<supplied reason="lost">α</supplied></name><gap 
+                               reason="lost" extent="unknown" unit="character"/>
+                            <lb n="4"/><gap reason="lost" extent="unknown"
+                               unit="character"/></persName><w><supplied 
+                                  reason="lost">τ</supplied><unclear>ῆ</unclear></w> 
+                            <w>πόλει</w> <w><unclear>τ</unclear>ὸ</w> 
+                  <w>κα<unclear>ι</unclear><supplied reason="lost">σάρειον</supplied></w><gap 
+                     reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div subtype="section" n="b" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" 
+                           unit="character"/> <space quantity="1" unit="character"/> 
+                        <lb n="2"/><gap reason="lost" extent="unknown" 
+                           unit="character"/> <w><supplied 
+                              reason="lost">ἀρχ</supplied><unclear>ι</unclear>ερε<unclear>ύ</unclear>ς</w> 
+                  <space quantity="1" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" 
+                           unit="character"/> <w><supplied reason="lost">κα</supplied>τασταθῆναι</w> 
+                  <w>ἐκέλευσ<supplied reason="lost">εν</supplied></w> 
+               </ab>
+            </div>
+            <div subtype="section" n="c" type="textpart">
+               <ab>    
+                        <lb n="1"/><gap reason="lost" extent="unknown" 
+                           unit="character"/> <persName type="emperor"><w><supplied 
+                              reason="lost">d</supplied>iui</w> 
+                        <name nymref"Traianus">Tr<supplied reason="lost">aiani</supplied></name></persName> <gap 
+                           reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><placeName 
+                           type="ethnic"><supplied 
+                              reason="lost">Cy</supplied><unclear>r</unclear>enensium</placeName> 
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> 
+                  <persName type="emperor"><name nymRef="Καῖσαρ">Καῖσαρ</name> 
+                        <w>θ<supplied reason="lost">εοῦ</supplied></w> <gap reason="lost" 
+                           extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> 
+                     <w>δημαρχικῆς</w></persName> 
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                    </ab>
+                    </div>
+            <div subtype="section" n="d" type="textpart">
+               <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName 
+                           type="emperor"><w><supplied reason="lost">fil</supplied>ius</w> 
+                        <w lemma= "diuus">di<unclear>u</unclear><supplied reason="lost">i</supplied></w></persName>
+                        <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> 
+                        <w><supplied reason="lost">Caesareu</supplied><unclear>m</unclear></w> 
+                        <w lemma= "tumultus">tumult<supplied reason="lost">u</supplied></w> <gap reason="lost" 
+                           extent="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <persName type="emperor"><name nymref"Παρθικός"><supplied reason="lost">Π</supplied>αρθικ<supplied 
+                           reason="lost">οῦ</supplied></name> <gap reason="lost" 
+                              extent="unknown" unit="character"/>
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w><supplied 
+                           reason="lost">ἐξουσία</supplied><unclear>ς</unclear></w> <w lemma="ὁ">τὸ</w> 
+                           <num value="2"><unclear>β</unclear></num> </persName> <gap reason="lost" 
+                              extent="unknown" unit="character"/>
+               </ab>
+            </div>-->
+      </body>
+   </text>
+</TEI>

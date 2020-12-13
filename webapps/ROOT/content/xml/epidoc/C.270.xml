@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C23100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> of a statue</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.270</idno>
+            <idno type="ircyr2012">C23100</idno>
+            <idno type="JMR">826b</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Reverse face of a <material>marble</material> <objectType>base</objectType> with sockets for the feet of a statue on top 
+                              (<dimensions><width>0.71</width> <height>0.38</height> <depth>0.68</depth></dimensions>); inscribed on 2 opposite faces with 
+                              <ref type="inscription" n="C.269">C.269</ref> and <ref type="inscription" n="C.270">C.270</ref></p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, upside down to <ref type="inscription" n="C.269">C.269</ref>; between lines 2 and 3 
+                        there is a row of indents across the face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century CE; varying <height atLeast="0.028" atMost="0.035">0.028-0.035</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" precision="low" evidence="lettering nomenclature">Second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              First recorded in <date type="found">1847</date>, without findspot, and again in 1850 in the
+                               <placeName type="monuList" ref="https://www.slsgazetteer.org/1033">Temple of Apollo</placeName></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-01" who="MGDA">fixed CIG bibliography</change>
+         <change when="2010-03-01" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-22" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-19" who="Pietro">Tokenized.</change>
+         <change when="2009-06-16" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept. F 445--><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="letronne-bourville1848"/>, <citedRange>I</citedRange></bibl>, and 
+               <bibl><ptr target="vattier1850"/>, <citedRange>584</citedRange></bibl>;
+               from these and from a  copy made in 1819 by Fr. Pacifico da Monte Cassiano and passed to Pietro Negri, the Sardinian consul in Tripoli, 
+               <bibl><ptr target="cigiii"/> <citedRange unit="entry">5137</citedRange>, and addenda, p. 1240</bibl>; 
+                    <bibl><ptr target="smith-porcher1864"/>, <citedRange>26</citedRange>, p. 116, and pl.84</bibl>, 
+               whence <bibl>
+                  <ptr target="SGDI"/>, <citedRange>4845</citedRange></bibl>; 
+                     <bibl><ptr target="SECir"/>, <citedRange>25b</citedRange> p. 237-238,  fig 24, (from T.XI 68)</bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested" key="lgpn:V1-63158, lgpn:V1-65305"><name nymRef="Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name> 
+                    <name nymRef="Κλαύδιος">Κλαύδιος</name> <name nymRef="Ἀριστομένης">Ἀ<unclear>ριστομέ</unclear><lb n="2" break="no"/>νης</name> <name nymRef="Μάγνος">Μάγνος</name></persName> 
+   <w lemma="ὁ">ὁ</w> <w lemma="καί">καὶ</w>
+   <lb n="2a"/> <space extent="1" unit="line"/>
+                    <lb n="3"/><persName type="attested"><name nymRef="Περικλῆς">Περικλῆς</name></persName> <w lemma="ἱαρετεύω">ἱαρειτεύων</w>
+                    <lb n="4"/><w lemma="ἐκ">ἐκ</w> <w lemma="ὁ">τᾶν</w> <surplus>ταν</surplus> <w lemma="ὁ">τῶ</w> 
+                    <persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλω<lb n="5" break="no"/><space quantity="1" unit="character"/> νος</name></persName> <w lemma="πρόσοδος">προσόδων</w> <space quantity="3" unit="character"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                  <note>The end of the line was already damaged when it was reported by de Bourville; Letronne proposed Ἀτιλίω or Ἀτιδίω υἱ[ὸς</note></app>
+               </listApp>
+         </div> 
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p>Ti(berios) Klaudios <supplied reason="explanation"><foreign xml:lang="la">Ti(berius) Claudius</foreign></supplied> Aristomenes Magnos, also called Perikles, serving as priest, 
+               <supplied reason="subaudible">dedicated this</supplied> from the income of Apollo.</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The same man dedicated a statue of Apollo in the Temple of Artemis, <ref type="inscription" n="C.290">C.290</ref>. </p>
+            <p> line 5: Smith and Porcher, followed by Vitali, suggested ἔκταν τᾶν τῶ Ἀπόλλωνος προσόδων; but this formula is without parallels at Cyrene 
+               where it seems to have been the custom to dedicate a tenth, rather than a sixth, to Apollo.<!-- , see. e.g. SEG IX, 76-78, 80, 83, 84, etc. --></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

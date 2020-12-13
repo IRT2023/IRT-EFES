@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="P25100" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">dedication</rs> and <rs type="textType">list</rs></title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">P.79</idno>
+            <idno type="ircyr2012">P25100</idno>
+            <idno type="JMR">426</idno>
+            <idno type="Excel">787</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1096">Tolmeita Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>
+                              <material>Marble</material> 
+                              <objectType>stele</objectType> with gable above and moulding below, 
+                              slightly tapering upwards (at the maximum: <dimensions>
+                                 <width unit="metre">0.32</width> 
+                                 <height unit="metre">0.725</height> 
+                                 <depth unit="metre">0.10</depth>
+                              </dimensions>; upper part <dimensions><width>0.275</width> <height>0.49</height></dimensions>). 
+                              The upper part is well preserved; the lower part is reconstituted from fragments, and the lower left corner is lost.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face (<dimensions>
+                              <width unit="metre">0.275</width> 
+                              <height unit="metre">0.49</height>
+                           </dimensions>). i. across the upper part. b.in two parallel columns (i and ii). c. on the base moulding.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE - first century CE: a and b, <height unit="metre">0.01</height>; 
+                        c, <height unit="metre">0.02</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate notAfter="-0003" notBefore="-0004" evidence="internal-date">4-3 BCE </origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/912">Ptolemais</placeName>:
+                              Findspot unrecorded, but probably found re-used in the <placeName type="monuList" ref="https://www.slsgazetteer.org/942">West Church</placeName>; 
+                              found before <date type="found" atMost="1941">1941</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/1096">Tolmeita Museum</placeName>
+                           </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/89183">Tolmeita</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-06" who="CMR">tagged description, corrected text</change>
+         <change when="2009-02-24" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="Photos_0281" decls="#photograph"><desc>Front view of the monument (1961-5-26, Joyce Reynolds)</desc></graphic>
+      <!--Dept. JR.--></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="jmr-masson1976"/>, <citedRange>89-90</citedRange></bibl>, 
+               with <bibl><ptr target="jmr-masson1976a"/>, <citedRange>1</citedRange></bibl>, whence 
+               <bibl><ptr target="robertBE"/>, <citedRange>1977.592</citedRange></bibl>
+               <bibl><ptr target="SEG"/> <citedRange>26.1839</citedRange></bibl>,
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324730">324730</ref></citedRange></bibl>; 
+               cited, <bibl><ptr target="feissel1983"/> <citedRange unit="page">611</citedRange> n.67</bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>103</citedRange></bibl>.<!-- check text --></p>
+           
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="section" n="a" type="textpart"><ab>
+                        <lb n="1"/><date><date ref="https://godot.date/id/NQ2ZHHYJ3ZZaFLJhuwE5G6"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></w> 
+                        <num value="28">κη</num></date> <date><w lemma="ἐπί">ἐφ’</w><w lemma="ἱερεύς">ἱερέως</w> <persName type="attested" key="lgpn:V1-61243"><name nymRef="Ἐπίνικος">Ἐπινίκου</name> <w lemma="ὁ">τοῦ</w> 
+                        <persName type="attested" key="lgpn:V1-61639"><name nymRef="Σώτεχνος">Σω<unclear>τ</unclear>έ<lb n="2" break="no"/>χνου</name></persName></persName></date>
+                        <date><w lemma="ἐφηβαρχέω">ἐφηβαρχούντων</w> <persName type="attested" key="lgpn:V1-61655"><name nymRef="Τιμῶναξ">Τιμωνάκτο<unclear>υ</unclear></name>
+                            <lb n="3"/><w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61500"><name nymRef="Νίκαθλος">Νικά<unclear>θ</unclear>λου</name></persName></persName>, 
+                        <persName type="attested" key="lgpn:V1-61213"><name nymRef="Δημήτριος">Δημητρίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61521"><name nymRef="Νίκων">Νε<unclear>ί</unclear><lb n="4" break="no"/>κωνος</name></persName></persName>, 
+                        <persName type="attested" key="lgpn:V1-61617"><name nymRef="Σῖμος">Σίμου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61527"><name nymRef="Ξένων">Ξένωνος</name></persName></persName></date>, 
+                        <date><w lemma="γυμνασιαρχέω">γυ<lb n="5" break="no"/>μνασιαρχούντων</w> <persName type="attested" key="lgpn:V1-61313"><name nymRef="Θεόδωρος">θεοδώρου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61504"><name nymRef="Νίκαιος">Ν<supplied reason="lost">ι</supplied><lb n="6" break="no"/>καίου</name></persName> </persName>,
+                        <persName type="attested" key="lgpn:V1-61201"><name nymRef="Δεξικράτης">Δεξικ<unclear>ρ</unclear>άτους</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61561"><name nymRef="Πολυκλῆς">Πολύκλε<lb n="7" break="no"/>ους</name></persName></persName>, 
+                        <persName type="attested" key="lgpn:V1-61653"><name nymRef="Τιμοῦχος">Τιμούχου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61688"><name nymRef="Φιλόκωμος">Φιλοκώμου</name></persName></persName></date>, <date><w lemma="ὑπηρετέω">ὑπ<supplied reason="lost">η</supplied><lb 
+                           n="8" break="no"/>ρετοῦντος</w> <persName type="attested" key="lgpn:V1-61214"><name nymRef="Δημήτριος">Δημητρίου</name> <w lemma="ὁ">τοῦ</w> <persName type="attested" key="lgpn:V1-61283"><name nymRef="Ζηνόδοτος">Ζην<unclear>ο</unclear><lb n="9" break="no"/>δότου</name></persName></persName></date></date>, 
+                        <w lemma="ὁ">τοὺς</w> <w lemma="ὑπό">ὑπ’</w><w lemma="αὐτός">αὐτοὺς</w> <w lemma="ἐφηβεύω">ἐφηβεύσαντ<supplied reason="lost">ας</supplied></w>. 
+                    </ab></div>
+            <div subtype="section" n="b" type="textpart"><div subtype="column" n="i" type="textpart"><ab>
+                        
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-61148"><name nymRef="Ἀρσακης">Ἀρσακης</name> <persName type="attested" key="lgpn:V1-61333"><name nymRef="Ἰάσων">Ἰάσονος</name></persName></persName>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-61212"><name nymRef="Δημήτριος">Δημήτριος</name> <persName type="attested" key="lgpn:V1-61211"><name nymRef="Δημήτριος">Δημητρ<supplied reason="omitted">ί</supplied>ου</name></persName></persName>
+                        <lb n="3"/><persName type="attested" key="lgpn:V1-61312"><name nymRef="Θεόδωρος">Θεόδωρος</name> <persName type="attested" key="lgpn:V1-616890"><name nymRef="Φιλόστρατος">Φιλοστράτου</name></persName></persName> 
+                        <lb n="4"/><persName type="attested" key="lgpn:V1-61634"><name nymRef="Σῶσις"><unclear>Σ</unclear>ῶσις</name> <persName type="attested" key="lgpn:V1-61696"><name nymRef="Φίλων">Φίλωνος</name></persName></persName>
+                        <lb n="5"/><persName type="attested" key="lgpn:V1-61078"><name nymRef="Ἀνδρικός"><unclear>Ἀ</unclear>νδρικὸς</name> <persName type="attested" key="lgpn:V1-61077"><name nymRef="Ἀνδρικός">Ἀνδρικοῦ</name></persName></persName>
+                        <lb n="6"/><persName type="attested" key="lgpn:V1-61649"><name nymRef="Τιμόθεος"><unclear>Τ</unclear>ιμόθεος</name> <persName type="attested" key="lgpn:V1-61530"><name nymRef="Ὀνασίων">Ὀνασίωνος</name></persName></persName> 
+                        <lb n="7"/><persName type="attested" key="lgpn:V1-61646"><name nymRef="Τιμαίνετος"><unclear>Τ</unclear>ιμαίνετος</name> <persName type="attested" key="lgpn:V1-61697"><name nymRef="Φίλων">Φίλωνος</name></persName></persName> 
+                        <lb n="8"/><persName type="attested" key="lgpn:V1-61421"><name nymRef="Λέσχις"><unclear>Λ</unclear>έσχις</name> <persName type="attested" key="lgpn:V1-61069"><name nymRef="Ἀμμώνιος">Ἀμμωνίου</name></persName></persName> 
+                        <lb n="9"/><persName type="attested" key="lgpn:V1-61423"><name nymRef="Λεύκιππος"><unclear>Λ</unclear>εύκιπ<unclear>π</unclear>ος</name> <persName type="attested" key="lgpn:V1-61024"><name nymRef="Ἀκέσων">Ἀκέσωνος</name></persName></persName> 
+                        <lb n="10"/><persName type="attested" key="lgpn:V1-61245"><name nymRef="Ἐπίνικος"><unclear>Ἐ</unclear>πίνικος</name> <persName type="attested" key="lgpn:V1-61244"><name nymRef="Ἐπίνικος">Ἐπινίκου</name></persName></persName>
+                        <lb n="11"/><persName type="attested" key="lgpn:V1-61416"><name nymRef="Κυρηναῖος"><unclear>Κ</unclear>υρηναῖος</name> <persName type="attested" key="lgpn:V1-61376"><name nymRef="Καλλισθένης">Καλλισθένο<supplied reason="omitted">υ</supplied>ς</name></persName></persName>
+                        <lb n="12"/><persName type="attested" key="lgpn:V1-61658"><name nymRef="Ὑπερβάσσας">Ὑπερβάσσας</name> <persName type="attested" key="lgpn:V1-61325"><name nymRef="Ἴαλ">Ιαλος</name></persName></persName>
+                        <lb n="13"/><persName type="attested" key="lgpn:V1-61362"><name nymRef="Ἰτθαλάμμων"><supplied reason="lost">Ἰτθ</supplied>αλαμμων</name> <persName type="attested" key="lgpn:V1-61096"><name nymRef="Ἀπελλᾶς">Ἀπελλᾶ</name></persName></persName>
+                        <lb n="14"/><persName type="attested" key="lgpn:V1-61606"><name nymRef="Σεραπίων"><supplied reason="lost">Σερα</supplied>πίων</name> <persName type="attested" key="lgpn:V1-61447"><name nymRef="Λωΐνικος">Λωινίκου</name></persName></persName>
+                        <lb n="15"/><persName type="attested" key="lgpn:V1-61378"><name nymRef="Καρνεάδης"><supplied reason="lost">Καρ</supplied>νεάδης</name> <persName type="attested" key="lgpn:V1-61547"><name nymRef="Πίθακος">Πιθάκου</name></persName></persName>
+                        <lb n="16"/><gap reason="lost" quantity="4" unit="character"/><persName type="attested"><name nymRef="-νης"><seg part="F">νης</seg></name> <persName type="attested" key="lgpn:V1-61654"><name nymRef="Τίμων">Τίμωνος</name></persName></persName>
+                        <lb n="17"/><gap reason="lost" quantity="11" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ος</seg></name> <persName type="attested" key="lgpn:V1-61084"><name nymRef="Ἀντιγένης">Ἀντιγένο<supplied reason="omitted">υ</supplied>ς</name></persName></persName>
+                        <lb n="18"/><gap reason="lost" quantity="11" unit="character"/> <persName type="attested" key="lgpn:V1-61316"><name nymRef="Θεόχρηστος"><supplied reason="lost">Θ</supplied>εοχρήστου</name></persName>
+                        <lb n="19"/><gap reason="lost" quantity="12" unit="character"/><persName type="attested"><name nymRef="-αν"><seg part="F">αντος</seg></name></persName>
+                        <lb n="20"/><gap reason="lost" quantity="14" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F"><unclear>υ</unclear></seg></name></persName>
+                        <lb n="21"/><gap reason="lost" quantity="14" unit="character"/><persName type="attested"><name nymRef="-νς"><seg part="F">νος</seg></name></persName> 
+                        <lb n="22"/><gap reason="lost" quantity="14" unit="character"/><persName type="attested"><name nymRef="-ας"><seg part="F">α</seg></name></persName>
+                        <lb n="23"/><gap reason="lost" quantity="14" unit="character"/><persName type="attested"><name nymRef="-ις"><seg part="F"><unclear>ι</unclear>ος</seg></name></persName> 
+                        <lb n="24"/><gap reason="lost" quantity="14" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F">ου</seg></name></persName>
+                    </ab></div>
+                       <div subtype="column" n="ii" type="textpart"><ab>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-61568"><name nymRef="Ποτάμων">Ποτάμων</name> <persName type="attested" key="lgpn:V1-61567"><name nymRef="Ποτάμων">Ποτάμωνο<supplied reason="lost">ς</supplied></name></persName></persName>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-61520"><name nymRef="Νίκων">Νίκων</name> <persName type="attested" key="lgpn:V1-61308"><name nymRef="Θεογένης">Θεογένου<supplied reason="lost">ς</supplied></name></persName></persName> 
+                        <lb n="3"/><persName type="attested" key="lgpn:V1-61247"><name nymRef="Ἐράτων">Ἐράτων</name> <persName type="attested" key="lgpn:V1-61627"><name nymRef="Στράτις">Στράτιος</name></persName></persName>
+                        <lb n="4"/><persName type="attested" key="lgpn:V1-61067"><name nymRef="Ἀμμώνιος">Ἀμμώνιος</name> <persName type="attested" key="lgpn:V1-61578"><name nymRef="Φιλάμμων">Φιλάμμον<supplied reason="lost">ος</supplied></name></persName></persName> 
+                        <lb n="5"/><persName type="attested" key="lgpn:V1-61068"><name nymRef="Ἀμμώνιος">Ἀμμώνιος</name> <persName type="attested" key="lgpn:V1-61028"><name nymRef="Ἀλδάμων">Αλ<unclear>δ</unclear>αμωνο<supplied reason="lost">ς</supplied></name></persName></persName>
+                        <lb n="6"/><persName type="attested" key="lgpn:V1-61314"><name nymRef="Θεόξενος">Θεόξενος</name> <persName type="attested" key="lgpn:V1-61138"><name nymRef="Ἀρίσταρχος">Ἀριστάρχο<unclear>υ</unclear></name></persName></persName>
+                        <lb n="7"/><persName type="attested" key="lgpn:V1-61095"><name nymRef="Ἀνύσσαν">Ἀνύσσαν</name> <persName type="attested" key="lgpn:V1-61324"><name nymRef="Ἴαλ">Ιαλος</name></persName></persName>
+                        <lb n="8"/><persName type="attested" key="lgpn:V1-61019"><name nymRef="Αἰσαγυς">Αἰσαγυς</name> <persName type="attested" key="lgpn:V1-61195"><name nymRef="Δάχις">Δάχιος</name></persName></persName>  
+                        <lb n="9"/><persName type="attested" key="lgpn:V1-61273"><name nymRef="Εὔτυχος">Εὔτυχος</name> <persName type="attested" key="lgpn:V1-61177"><name nymRef="Βρόσων">Βρόσωνο<supplied reason="lost">ς</supplied></name></persName></persName> 
+                        <lb n="10"/><persName type="attested" key="lgpn:V1-61484"><name nymRef="Μητρόδωρος">Μητρόδωρος</name> <persName type="attested" key="lgpn:V1-61483"><name nymRef="Μητρόδωρος">Μητρο<supplied reason="lost">δώρου</supplied></name></persName></persName> 
+                        <lb n="11"/><persName type="attested" key="lgpn:V1-61001"><name nymRef="Ἀγάθαρχος">Ἀγάθαρχος</name> <persName type="attested"><name nymRef="Δα-"><seg part="I">Δ<unclear>α</unclear></seg><gap reason="lost" quantity="7" unit="character"/></name></persName></persName> 
+                        <lb n="12"/><persName type="attested" key="lgpn:V1-61499"><name nymRef="Νίκαθλος">Νίκα<unclear>θ</unclear>λος</name> <persName type="attested" key="lgpn:V1-61498"><name nymRef="Νίκαθλος">Ν<supplied reason="omitted">ι</supplied>κάθλο<supplied reason="lost">υ</supplied></name></persName></persName> 
+                        <lb n="13"/><persName type="attested" key="lgpn:V1-61153"><name nymRef="Ἀστυάναξ">Ἀστυάναξ</name> <persName type="attested" key="lgpn:V1-61140"><name nymRef="Ἀριστόναος">Ἀριστονάου</name></persName></persName> 
+                        <lb n="14"/><persName type="attested" key="lgpn:V1-61218"><name nymRef="Διογένης">Διογένης</name> <persName type="attested" key="lgpn:V1-61217"><name nymRef="Διογένης">Διο<supplied reason="omitted">γ</supplied>ένου<supplied reason="lost">ς</supplied></name></persName></persName>
+                        <lb n="15"/><persName type="attested" key="lgpn:V1-61608"><name nymRef="Σεραπίων">Σεραπίων</name> <persName type="attested" key="lgpn:V1-61607"><name nymRef="Σεραπίων">Σεραπίωνος</name></persName></persName> 
+                        <lb n="16"/><persName type="attested" key="lgpn:V1-61192"><name nymRef="Δαμόκριτος">Δαμόκριτος</name> <persName type="attested" key="lgpn:V1-61191"><name nymRef="Δαμόκριτος">Δαμοκρί<supplied reason="omitted">του</supplied></name></persName></persName>
+                        <lb n="17"/><persName type="attested" key="lgpn:V1-61230"><name nymRef="Δωρόθεος">Δωρ<supplied reason="omitted">ό</supplied>θεος</name> 
+                        <persName type="attested" key="lgpn:V1-61637"><name nymRef="Σώστρατος">Σωστράτο<supplied reason="lost">υ</supplied></name></persName></persName> 
+                        <lb n="18"/><persName type="attested" key="lgpn:V1-61070"><name nymRef="Ἀμμώνιος">Ἀμμώνιος</name> <persName type="attested"><name nymRef="Πρατομήδης"><expan><abbr>Πρατομή</abbr><ex>δους</ex></expan></name></persName></persName>
+                        <lb n="19"/><persName type="attested" key="lgpn:V1-61396"><name nymRef="Κλευγένης">Κλεογένης</name> <persName type="attested" key="lgpn:V1-61544"><name nymRef="Πεισικλῆς">Πισικλέο<supplied reason="lost">υς</supplied></name></persName></persName> 
+                        <lb n="20"/><persName type="attested" key="lgpn:V1-61131"><name nymRef="Ἀρίμμαν">Ἀρίμμαν</name> <space quantity="12" unit="character"/>
+                        <lb n="21"/><persName type="attested" key="lgpn:V1-61229"><name nymRef="Δωρίων">Δωρίωνος</name></persName></persName> 
+                        <lb n="22"/><persName type="attested" key="lgpn:V1-61635"><name nymRef="Σωσίστρατος">Σωρίστ<supplied reason="lost">ρ</supplied>ατος</name>
+                        <lb n="23"/><persName type="attested" key="lgpn:V1-61659"><name nymRef="Ὑπερβάσσας">Ὑπερ<supplied reason="lost" cert="low">βάσσου</supplied></name></persName></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    </ab></div></div>
+            <div subtype="section" n="c" type="textpart"><ab> 
+                        <lb n="1"/><gap reason="lost" quantity="9" unit="character"/> <persName type="divine" key="zeus" cert="low"><name><supplied reason="lost">Πά</supplied><unclear>τρι</unclear>ε</name> 
+                        <name nymRef="Δίκαιος">Δίκαι<supplied reason="lost" cert="low">ε</supplied></name></persName>
+                    </ab>
+</div>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="3"><note>ΝΙΚΑΟΛΟΥ</note></app>
+               <app loc="5-6"><rdg resp="#jmr-masson1976">Ν<unclear>ο</unclear>/βάτου</rdg></app>
+               <app loc="b.i.2"><note>ΔΗΜΤΡΟΥ</note></app>
+               <app loc="b.i.9"><note>ΛΕΥΚΙΠΡΟΣ</note></app>
+               <app loc="b.i.11"><note>ΣΘΕΝΟΣ</note></app>
+               <app loc="b.i.17"><note>Α. ΓΕΝΟΣ</note></app>
+              <app loc="b.ii.12"><note>ΝΙΚΑ ΟΛΟΣ ΝΚΑΘΛΟ</note></app>
+               <app loc="b.ii.14"><note>ΔΙΟΕΕΝΟΥ</note></app>
+               <app loc="b.ii.17"><note>ΔΩΡΘΕΟΣ</note></app>  
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p><ref target="https://godot.date/id/NQ2ZHHYJ3ZZaFLJhuwE5G6">Year 28</ref>, in the priesthood of Epinikos <supplied reason="subaudible">son</supplied> of Sotechnos, while Timonaktos 
+               <supplied reason="subaudible">son</supplied> of Nikathlos, Demetrios <supplied reason="subaudible">son</supplied> of Neikon, and Simos <supplied reason="subaudible">son</supplied> of Xenon 
+                    were Directors of Ephebes, while Theodoros <supplied reason="subaudible">son</supplied> of Nikaios, Dexikrates <supplied reason="subaudible">son</supplied> of Polykles, Timouchos 
+            <supplied reason="subaudible">son</supplied> of Philokomos were gymnasiarchs, Demetrios <supplied reason="subaudible">son</supplied> of Zenodotos was assistant: the ephebes under them <supplied reason="subaudible">were</supplied>: </p>
+            <p><note>b.i</note>: Arsakes <supplied reason="subaudible">son</supplied> of Iason; Demetrios <supplied reason="subaudible">son</supplied> of Demetrios; Theodoros <supplied reason="subaudible">son</supplied> of Philostratos; 
+            Sosis <supplied reason="subaudible">son</supplied> of Philon; Andrikos <supplied reason="subaudible">son</supplied> of Andrikos; Timotheos <supplied reason="subaudible">son</supplied> of Onasion; Timainetos 
+              <supplied reason="subaudible">son</supplied> of Philon; Leschis <supplied reason="subaudible">son</supplied> of Ammonios; Leukippos <supplied reason="subaudible">son</supplied> of Akeson; Epinikos <supplied reason="subaudible">son</supplied> of Epinikos; 
+            Kyrenaios <supplied reason="subaudible">son</supplied> of Kallisthenes; Hyperbassas <supplied reason="subaudible">son</supplied> of Ial; Itthalamon <supplied reason="subaudible">son</supplied> of Apellas; 
+            Serapion <supplied reason="subaudible">son</supplied> of Loinikos; Karneades <supplied reason="subaudible">son</supplied> of Pithakos; [ . . . ] <supplied reason="subaudible">son</supplied> of Timon; 
+            [ . . . ] <supplied reason="subaudible">son</supplied> of Antigenes; [ . . . ] <supplied reason="subaudible">son</supplied> of Theochrestos; [ . . . ]. <note>b.ii</note>: Potamon
+             <supplied reason="subaudible">son</supplied> of Potamon; Nikon <supplied reason="subaudible">son</supplied> of Theogenes; Eraton <supplied reason="subaudible">son</supplied> of Stratis; 
+            Ammonmios <supplied reason="subaudible">son</supplied> of Philamon; Ammonios <supplied reason="subaudible">son</supplied> of Aldamon; Theoxenos <supplied reason="subaudible">son</supplied> of Aristarchos; 
+            Anyssan <supplied reason="subaudible">son</supplied> of Ial; Aisagys <supplied reason="subaudible">son</supplied> of Dachis; Eutychos <supplied reason="subaudible">son</supplied> of Broson; Metrodoros
+             <supplied reason="subaudible">son</supplied> of Metrodoros; Agatharchos <supplied reason="subaudible">son</supplied> of  Da[ . . .]; Nikathlos <supplied reason="subaudible">son</supplied> of Nikathlos; 
+            Astyanax <supplied reason="subaudible">son</supplied> of Aristonaos; Diogenes <supplied reason="subaudible">son</supplied> of Diogenes; Serapion <supplied reason="subaudible">son</supplied> of Serapion; 
+            Damokritos <supplied reason="subaudible">son</supplied> of Damokritos; Dorotheos <supplied reason="subaudible">son</supplied> of Sostratos; Ammonios <supplied reason="subaudible">son</supplied> of Pratomedes; 
+               Kleogenes <supplied reason="subaudible">son</supplied> of Pisikes; Arimman <supplied reason="subaudible">son</supplied> of Dorion; Sosistratos <supplied reason="subaudible">son</supplied> of Hyper[bassas].</p>
+            <p><note>c</note>:? To the Just Father?</p></div></div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>a.1: Year 28, presumably an Actian date (4-3 BCE) </p>
+            <p>a.2: One of the few clues to the Constitution of Ptolemais. <!--, see Introduction-<note> a.9</note> For the Ephebes at Ptolemais see Introduction--></p>
+            <p>b.i.13: On Ithalamon son of Apellas see D. Feissel, art.cit.</p>
+            <p>b.ii.5: The editors read Ἀλδαμονος, but discussed the possible reading of Αλλαμμονος, followed by Masson, in his article on Libyan names in Cyrenaica of 
+               the same year (Masson, 1976). But for Ἀλδάμων see now also <ref type="inscription" n="P.299">P.299</ref>.</p>
+               <p>c: Ephebic documents of this type at Cyrene usually conclude with a dedication to Hermes and Herakles as gods of the Gymnasium; 
+                    we have no parallel for what remains here.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

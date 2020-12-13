@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C75300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Ephebic</rs> <rs type="textType">list</rs>
+               
+            </title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.431</idno>
+            <idno type="ircyr2012">C75300</idno>
+            <idno type="JMR">923 a</idno>
+            <idno type="Excel">156</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Lower part of a <material>marble</material> base, moulded below, broken in three pieces, (<dimensions>
+                                 <width unit="metre">1.03</width> 
+                                 <height unit="metre">0.47</height> 
+                                 <depth unit="metre">0.285</depth>
+                           </dimensions>),and inscribed apparently on 3 occasions: firstly (perhaps) with the dedication <ref type="inscription" n="C.432">C.432</ref>; 
+                              then with this list; then overcut with graffiti, <ref type="inscription" n="C.433">C.433</ref>.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>Formal text <rs type="execution" key="scalpro">inscribed</rs> on one face, in neat columns; there is a consistent space between names and patronymics.  In column 1, lines 5 and 6 violate the approximately alphabetic order in which the names are arranged and are later additions;
+                    since the cutting of column 1, line 5 is not distinguishable from that of the main text and that of column 1, line 6 not seriously so (though the name is in larger letters than the patronymic), 
+                    these three names were probably added by the cutter himself to repair his omission, 
+                    but in column 3, line 3, Φιλόδαμον is cut over Φιλόδημον: in column 4, line 5 the final Α  of Ὠρίωνα is lightly cut, perhaps by a later hand and certainly in correction of an omission.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century BCE - Augustan.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Given the findspot it is no doubt presumably a stray from the Gymnasium beside the Caesareum.</origPlace>
+                     <origDate notBefore="-0100" notAfter="0014" evidence="lettering">First century BCE - Augustan. </origDate>
+                  </origin>
+                  <provenance type="found">
+                           <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              about 150m from the <placeName type="monuList" ref="https://www.slsgazetteer.org/1240">City wall</placeName>, south west of the Agora on the road to Beida 
+                              (so Oliverio, notes);
+                              found in <date type="found">1915</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+               <term>Jewish</term>
+               <term>Ephebic</term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-02-22" who="MLA">corrected Oliverio reference in bibliography</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-05-19" who="AO">tokenized</change>
+         <change when="2009-06-17" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="JMR_923abc_front" decls="#photograph"><desc>Face, showing <ref type="inscription" n="C.431">C.431</ref>, <ref type="inscription" n="C.432">C.432</ref> 
+         and <ref type="inscription" n="C.433">C.433</ref> (Department of Antiquities, E 294)</desc></graphic></facsimile>
+   <text>
+      <body>
+        
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="gpc1961"/>, <citedRange>6</citedRange>, p. 19</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>20.740</citedRange>, with readings by Reynolds</bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324496">324496</ref></citedRange></bibl>, 
+               <bibl><ptr target="robertBE"/>, <citedRange>1962.363</citedRange></bibl>, 
+               <bibl><ptr target="jmr1972"/>, <citedRange>46</citedRange></bibl>;
+                <bibl><ptr target="gl-jmr1983"/>  <citedRange unit="entry">6</citedRange></bibl>. 
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve"><div subtype="column" n="1" type="textpart"><ab>
+                        
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <orig>μ</orig><gap reason="lost" quantity="1" unit="character"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>α</orig><gap reason="lost" quantity="2" unit="character"/>
+                        <lb n="3"/><gap reason="lost" atLeast="5" atMost="6" unit="character"/><persName type="attested"><name nymRef="-ος"><seg part="F"><unclear>ον</unclear></seg></name> 
+                        <persName type="attested" key="lgpn:V1-64876"><name nymRef="Λύσιππος"><unclear>Λυσίππω</unclear></name></persName></persName>
+                        <lb n="4"/><persName type="attested"><name nymRef="Λύκος"><supplied reason="lost">Λυ</supplied>κ<unclear>ο</unclear>ν</name> 
+                        <persName type="attested" key="lgpn:V1-63157"><name nymRef="Ἀριστομένης">Ἀριστο<unclear>μένε</unclear><supplied reason="lost">υς</supplied></name></persName></persName>
+                        <lb n="5"/><persName type="attested" key="lgpn:V1-63637"><name nymRef="Ἑκαταῖος">Ἑκαταῖον</name> <persName type="attested" key="lgpn:V1-63636"><name nymRef="Ἑκαταῖος"><unclear>Ἑ</unclear>καταί<unclear>ω</unclear></name></persName></persName>
+                        <lb n="6"/><persName type="attested" key="lgpn:V1-65986"><name nymRef="Φιλοκλῆς"><supplied reason="lost">Φ</supplied>ιλοκλῆν</name> <persName type="attested" key="lgpn:V1-65985"><name nymRef="Φιλοκλῆς">Φιλοκλεῦς</name></persName>
+                    </persName>
+                    </ab></div><div subtype="column" n="2" type="textpart"><ab>
+                        
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-64298"><name nymRef="Ἰάσων">Ἰάσονα</name> <persName type="attested" key="lgpn:V1-64588"><name nymRef="Κάρνις">Κάρνιος</name></persName></persName>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-64381"><name nymRef="Ἰησοῦς">Ἰησουν</name> <persName type="attested" key="lgpn:V1-62952"><name nymRef="Ἀντίφιλος">Ἀντιφίλω</name></persName></persName>
+                        <lb n="3"/><persName type="attested" key="lgpn:V1-64385"><name nymRef="Ἰθαννυρας">Ἰθαννυραν</name> <persName type="attested" key="lgpn:V1-62970"><name nymRef="Ἀπολλόδωρος">Ἀπολλοδώρω</name></persName></persName>
+                        <lb n="4"/><persName type="attested" key="lgpn:V1-66185"><name nymRef="Ὠρίων">Ὠρίωνα</name> <persName type="attested" key="lgpn:V1-66184"><name nymRef="Ὠρίων">Ὠρίωνος</name></persName></persName>
+                        
+                    
+                    </ab></div><div subtype="column" n="3" type="textpart"><ab>
+                        
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-63956"><name nymRef="Φιλίσκος">Φίλ<unclear>ι</unclear>σκον</name> <persName type="attested" key="lgpn:V1-63508"><name nymRef="Δάχις">Δ<unclear>ά</unclear>χιος</name></persName></persName>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-66028"><name nymRef="Φιλόξενος">Φιλόξενον</name> <persName type="attested" key="lgpn:V1-62704"><name nymRef="Ἀλέξανδρος">Ἀλεξάνδρω</name></persName></persName>
+                        <lb n="3"/><persName type="attested" key="lgpn:V1-65977"><name nymRef="Φιλόδαμος">Φιλόδαμον</name> <persName type="attested" key="lgpn:V1-65976"><name nymRef="Φιλόδαμος">Φιλοδάμω</name></persName></persName>
+                        <lb n="4"/><persName type="attested" key="lgpn:V1-66064"><name nymRef="Φίλων">Φίλωνα</name> <persName type="attested" key="lgpn:V1-63230"><name nymRef="Ἀριστώνυμος">Ἀριστωνύμω</name></persName></persName>
+                        <lb n="5"/><persName type="attested" key="lgpn:V1-66067"><name nymRef="Φίλων">Φίλωνα</name> <persName type="attested" key="lgpn:V1-63628"><name nymRef="Εἰρηναῖος">Εἰρηναίω</name></persName></persName>
+                    
+                    </ab></div><div subtype="column" n="4" type="textpart"><ab>
+                        
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+                        <lb n="1"/><persName type="attested" key="lgpn:V1-66065"><name nymRef="Φίλων">Φίλωνα</name>
+                           <persName type="attested"><name nymRef="Θε-"><seg part="I">Θε</seg></name></persName></persName><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/><persName type="attested" key="lgpn:V1-66066"><name nymRef="Φίλων">Φίλωνα</name>
+                          <persName type="attested"><name nymRef="Θε-"><seg part="I">Θε</seg></name></persName></persName><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><persName type="attested" key="lgpn:V1-66160"><name nymRef="Χαρίτιμος">Χαρίτιμον</name>
+                           <persName type="attested" key="lgpn:V1-63886"><name nymRef="Εὐρυπτόλεμος">Εὐρυ<supplied reason="lost">πτολέμω</supplied></name></persName></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="4"/><persName type="attested" key="lgpn:V1-66168"><name nymRef="Χαρτάδας">Χαρτάδαν</name>
+                           <persName type="attested" key="lgpn:V1-64067"><name nymRef="Θαλίαρχος">Θαλι<supplied reason="lost">άρχω</supplied></name></persName></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="5"/><persName type="attested" key="lgpn:V1-66186"><name nymRef="Ὠρίων">Ὠρίωνα</name>
+                           <persName type="attested" key="lgpn:V1-65866"><name nymRef="Φᾶμος">Φαμου</name></persName></persName><!-- check <unclear>τ</unclear> --><gap reason="lost" extent="unknown" unit="character"/>
+                     
+                    </ab>
+                    </div>
+         </div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="Column 1, 3">
+                  <rdg resp="#gpc1961">Λύσ[ιππ]ον</rdg></app> 
+            
+               <app loc="Column 1, 4">
+                  <rdg resp="#gpc1961"><supplied reason="lost">Λύ</supplied>κον Ἀυτοκράτευς</rdg> 
+                  <rdg resp="#SEG">. . . ]κ<unclear>ο</unclear>ν Ἀριστο<unclear>μένε</unclear>[υς</rdg>
+               </app>
+               <app loc="Column 4, 3">
+                  <rdg resp="#gpc1961">Εὐρυ[ . . .</rdg></app> 
+           <app loc="Column 4, 4">
+                  <rdg resp="#gpc1961">Θαλι[ . . .</rdg></app> 
+           <app loc="Column 4, 6">
+                  <rdg resp="#gpc1961">Φαμου[ . . .</rdg> 
+                  <note>Perhaps thinking of Φαμου[θιος</note></app> 
+            </listApp>
+            </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#cmr" xml:lang="en"><p><note>Column 1</note> [ . . . -]os <supplied reason="subaudible">son</supplied> of Lysippos, Lykos <supplied reason="subaudible">son</supplied> of Aristomenes, 
+            Hekataios <supplied reason="subaudible">son</supplied> of Hekataios, Philokles <supplied reason="subaudible">son</supplied> of Philokles.</p>
+            <p><note>Column 2</note> [ . . . ] Iason <supplied reason="subaudible">son</supplied> of Karnis, Iesous <supplied reason="subaudible">son</supplied> of Antiphilos, 
+               Ithannuras <supplied reason="subaudible">son</supplied> of Apollodoros, Orion <supplied reason="subaudible">son</supplied> of Orion.</p>
+            <p><note>Column 3</note> [ . . . ] Philiskos <supplied reason="subaudible">son</supplied> of Karnis, Philoxenos <supplied reason="subaudible">son</supplied> of Alexandros, 
+            Philodamos <supplied reason="subaudible">son</supplied> of Philodamos, Philon <supplied reason="subaudible">son</supplied> of Aristonymos, Philon <supplied reason="subaudible">son</supplied> of Eirenaios.</p>
+            <p><note>Column 4</note> [ . . . ] Philon <supplied reason="subaudible">son</supplied> of The[- . . . ], Philon <supplied reason="subaudible">son</supplied> of The[-  . . .], 
+            Charitimos <supplied reason="subaudible">son</supplied> of Eury[ptolemos], Chartadas <supplied reason="subaudible">son</supplied> of Thali[archos], Orion <supplied reason="subaudible">son</supplied> of Phamos [. . .</p></div>
+       </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>This is clearly a list of Ephebes, inscribed on a stele bore a dedication to Hermes and Herakles as gods of the Gymnαsium, 
+               <ref type="inscription" n="C.432">C.432</ref>.The use of the accusative for the names is unusual.
+                    Ιt was subsequently overcut with ephebic graffiti (<ref type="inscription" n="C.433">C.433</ref>) </p>
+            <p> The names include one which is certainly Jewish (a, col.2, line 2) cf. also in an ephebic context 
+               <ref type="inscription" n="C.145">C.145</ref>, line 5 and  line 13, of similar date. For further discussion see Lüderitz (loc.cit.). It also contains several distinctively native names .</p>
+         </div>
+      </body>
+   </text>
+</TEI>

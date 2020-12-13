@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Funerary</rs> inscription</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">M.293</idno>
+            <idno type="ircyr2012">C86340</idno>
+            
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">3640</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p> Approximately rectangular <material>limestone</material> <objectType>stele</objectType> 
+                               with a projecting  above showing rough incisions for two eyes, a nose and a mouth, broken away below.
+                              (<dimensions><width>0.11</width> <height>0.155</height> <depth>0.05</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, <hi rend="italic">a</hi> between two lines incised across the upper part of the stone and <hi rend="italic">b</hi> below that. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote><hi rend="italic">a</hi>: <height unit="metre">0.08 - 0.017</height><note>In line 1 the fourth letter is unrecognizable - possibly for M or N in ligature.
+                          In line 2 the uprights of letters 2 and 5 are doubly incised, the two lines not quite parallel, and letter 6, apparently a sigma, is reversed. 
+                        <hi rend="italic">b</hi>: omicron is diamond shaped, sigma is lunate </note></handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown</origPlace>
+                     <origDate>Not determinable</origDate>
+                  </origin>
+                  <provenance type="found">
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1617">Gebel Akhdar: East of Cyrene</placeName>: 
+                        <placeName ref="https://www.slsgazetteer.org/1200">Chersis</placeName>, cemetery; found in <date type="found">1988</date> by Dr Daoud Halag.</p>
+                        </provenance>
+                        <provenance type="observed">
+                            <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/85771">Kharsah</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+          <change when="2011-06-29" who="MLA">created from JMR-Mohammed 1995</change>
+         
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="cdlM293" decls="#photograph"><desc>Face (C.Dobias-Lalou, 2020: MFA DSC02041)</desc></graphic></facsimile>
+   <text>
+      <body>
+     
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl>
+                  <ptr target="mohamed-jmr1995"/>, <citedRange>9</citedRange></bibl>, 
+               whence <bibl><ptr target="cdlBE"/>, <citedRange>1997.711</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>45.2162</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+             <div subtype="fragment" n="a" type="textpart"><ab>
+                    <lb n="1"/><orig>ΠΡΙ<unclear>Μ</unclear>ΟΔΨ</orig>
+                    <lb n="2"/><orig>ΑΒΓΦ<unclear>Ρ</unclear>ΣΟ</orig>
+                  </ab>
+             </div>
+            <div subtype="fragment" n="b" type="textpart">
+                     <ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ο<unclear>ϲ</unclear>Ι</orig><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1a"/> <space extent="1" unit="line"/>
+                </ab>
+            </div>
+         </div>
+         
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+               <app loc="1">
+                  <rdg>Μ could be ΝΝ in ligature</rdg>
+               </app>
+               <app loc="1">
+                  <rdg>Σ is reversed</rdg>
+               </app>
+            </listApp>
+         </div>  
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#mohamed-jmr1995" xml:lang="en"><p><note>Not usefully translatable.</note></p></div>
+         </div>
+         
+         <div type="commentary">
+            <p>The first letters of a.2 strongly suggest that the cutter was presenting letters rather than words. 
+                The reversed sigma (line 2) occurs in Libyan texts in the Maghreb
+                (e.g. J.-B. Chabot, <ref target="https://zenon.dainst.org/Record/000169485">Recueil des inscriptions libyques </ref> nos. 1, 2, 1122, 1123: available at 
+               <ref target="https://archive.org/details/RILRecueilDesInscriptionsLibyques">Internet Archive</ref>).</p>
+            <p/>
+         </div>
+      </body>
+   </text>
+</TEI>

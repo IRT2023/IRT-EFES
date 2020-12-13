@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C16300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Acclamation</rs>s for Spata and Therapios</title>
+            <editor>Joyce M. Reynolds</editor>
+            <editor xml:id="cmr">Charlotte Roueché</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.170</idno>
+            <idno type="ircyr2012">C16300</idno>
+            <idno type="JMR">749</idno>
+            <idno type="Excel">191</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Four <material>limestone</material> <objectType>column</objectType>s.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="litteris scariphatis">Graffiti</rs>, carefully designed, with guidelines</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>a. <height atLeast="0.05" atMost="0.07">0.05 - 0.07</height>; 
+                        b. <height>0.04</height>; 
+                        c. <height>0.05</height>; 
+                        d. line 1, <height>0.05</height>;
+                        line 2, <height atMost="0.05" atLeast="0.045">0.045-0.05</height>; 
+                        line 3, <height>0.04</height>; 
+                        lunate epsilon and sigma, cursive omega.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0301" notAfter="0500" precision="low" evidence="context">Fourth - fifth century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                               Valley Street, <placeName type="monuList" ref="https://www.slsgazetteer.org/1336">House of Domina Spata</placeName>, 
+                              fallen from the upper storey of the courtyard; found in <date type="found">1959</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot <date type="observed">1959</date>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+          <change when="2013-08-13" who="TW">tagged orig</change>
+          <change when="2013-08-05" who="TW">Persnamed Eutychos</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-30" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-11-19" who="CB">tidied</change>
+         <change when="2009-06-17" who="CB">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_749front" decls="#photograph"><desc>Column b</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned <bibl><ptr target="kenrick2013"/> <citedRange unit="page">186</citedRange></bibl></p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div subtype="part" n="a" type="textpart">
+               <ab>
+                    <lb n="1"/> <w lemma="εὐτυχής">Εὐτυ<supplied reason="lost">χ</supplied>ῶϲ</w> 
+                    <lb n="2"/><w lemma="ὁ">το<unclear>ῖ</unclear><supplied reason="lost">ϲ</supplied></w> <gap reason="lost" quantity="2" unit="character"/><orig>ϲ</orig> 
+                    <lb n="3"/><gap reason="lost" quantity="1" unit="line" precision="low"/><lb 
+                       n="4" break="no"/><w part="F">λίοιϲ</w>
+               </ab>
+            </div>
+            <div subtype="part" n="b" type="textpart">
+               <ab>
+                    <lb n="1"/> <w lemma="ὁ">Τῇ</w> <w lemma="κυρία">κυρίᾳ</w> 
+                    <lb n="2"/><persName type="attested"><name nymRef="Σπάτα">Ϲπάτᾳ</name></persName>
+                  <lb n="2a"/><space quantity="1" unit="line"/>
+                    <lb n="3"/><w lemma="εὐτυχής">εὐτυχῶ<supplied reason="lost">ϲ</supplied></w>
+                </ab>
+                </div>
+            <div subtype="part" n="c" xml:lang="la" type="textpart">
+                   <ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Spata">S<unclear>pat</unclear>a</name></persName> 
+                    <lb n="2"/><w lemma="uiuo">uiuas</w>
+                </ab>
+                </div>
+            <div subtype="part" n="d" type="textpart">
+                   <ab>
+                     <lb n="1"/> <space quantity="1" unit="character"/> <w lemma="ὁ">Τῷ</w> 
+                     <w lemma="κτίστης">κτί<lb n="2" break="no"/>ϲτῃ</w> 
+                     <persName type="attested"><name nymRef="Θεράπιος">Θε<lb n="3" break="no"/>ραπίῳ</name></persName> 
+                     <lb n="4"/> <space quantity="1" unit="character"/>
+                </ab>
+                </div>
+         </div>
+         
+         
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#cmr" xml:lang="en">
+            <p><note>a</note>: With good fortune [ . . .</p>
+            <p><note>b</note>: For the lady Spata, with good fortune!</p>
+               <p><note>c</note>: Spata, may you live!</p>
+            <p><note>d</note>: For the founder, Therapios! </p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The house is probably of the fourth century</p>
+            <p>For the language  compare <ref type="inscription" n="C.43">C.43</ref></p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

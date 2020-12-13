@@ -5,7 +5,7 @@
                 version="2.0">
   <xsl:include href="teiref.xsl"/>
   
-  <xsl:template match="t:ref">
+  <xsl:template priority="-1" match="t:ref">
       <xsl:choose>
          <xsl:when test="@type = 'reprint-from'">
             <br/>

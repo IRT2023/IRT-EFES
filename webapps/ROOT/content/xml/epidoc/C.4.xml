@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C00300" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription of the Caesareum</title>
+            
+            <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.4</idno>
+            <idno type="ircyr2012">C00300</idno>
+            <idno type="JMR">604b</idno>
+            <idno type="Excel">339</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Caesareum, rebuilt into the wall</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two <material>limestone</material> <objectType>architrave</objectType> blocks.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> across the two blocks; the surface of the first is lost on the lower half of the face; 
+                           the second was still complete in 1915, now in two fragments.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Cut as those of <ref type="inscription" n="C.3">C.3</ref>, first century CE: c. <height>0.15</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Caesareum, the internal face of the east porch.</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" evidence="lettering" precision="low">First century CE</origDate>
+                  </origin> 
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/987">Caesareum</placeName>: block 2 recorded in <date type="found">1817</date>; 
+                              blocks 1 and 2 found between <date type="found" precision="low">1935 and 1941</date> in
+                              the Doric entablatures of the East porch.
+                        </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/987">Caesareum</placeName>, rebuilt into the wall (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Pietro">marked metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-07-13" who="CMR">corrections</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-10-10" who="Pietro">Tokenized</change>
+         <change when="2009-06-11" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="PachoLXIII" decls="#photograph"><desc>Transcription (1827, Pacho, plate LXIII)</desc></graphic>
+      <graphic url="PachoLXIII_01" decls="#photograph"><desc>Transcription detail (1827, Pacho, plate LXIII.1)</desc></graphic>
+      <graphic url="DSC05025" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC05017" decls="#photograph"><desc>View (2008, H.Walda)</desc></graphic>
+      <graphic url="JMR_604b_004front" decls="#photograph"><desc>Left block (BSR 1642.10)</desc></graphic>
+      <graphic url="JMR_604a_002front" decls="#photograph"><desc>Right block (BSR 1642.11)</desc></graphic>
+      <graphic url="DSC05018" decls="#photograph"><desc>Right block (2008, H.Walda)</desc></graphic>
+      <!--BSR 49. XXII.42; Dept.F 2956.--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Block 2: <bibl><ptr target="dellacella1819"/>, <citedRange>141</citedRange></bibl>; 
+               <bibl><ptr target="pacho1827"/> <citedRange unit="plate"><ref target="https://gallica.bnf.fr/ark:/12148/btv1b85409935/f76.item#">LXIII.1</ref></citedRange> with Letronne, p.393</bibl>, whence
+              <bibl><ptr target="CIL"/>, <citedRange>10</citedRange></bibl>;
+               <bibl>
+                  <ptr target="ghislanzoni1915"/>, <citedRange>205</citedRange></bibl>; <!-- check also 1915a 139 -->
+                    <bibl><title>Arch.Anz.</title> <citedRange>1938, 733</citedRange></bibl>, whence <bibl><ptr target="AE"/> <citedRange>1939.120</citedRange></bibl>, 
+               whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD022623">022623</ref></citedRange></bibl>; 
+               again, <bibl><title>Arch.Anz.</title> <citedRange>1941, 703</citedRange></bibl>.
+               <bibl><author>E. Sjoqvist</author> <title>Opuscula Romana</title>, I (1954) <citedRange>99</citedRange></bibl><!-- check -->; 
+               republished <bibl>
+                  <ptr target="jmr1958"/>, <citedRange>II.a.ii</citedRange></bibl>, whence <bibl><ptr target="AE"/> <citedRange>1960.266</citedRange></bibl>; <!-- check for modifications -->
+               <bibl><ptr target="gasperini1971"/>, <citedRange>C.2, C.4</citedRange> and figs. 7, 8, 9, 11, 12</bibl>, 
+               whence <bibl><ptr target="AE"/> <citedRange>1974.667</citedRange></bibl>; 
+               Block 1 discussed <bibl> <ptr target="luni1994"/>, <citedRange>194-197</citedRange></bibl>, 
+               and republished <bibl><ptr target="luni1992"/>, <citedRange>132-5</citedRange></bibl>; 
+               reconsidered <bibl><ptr target="gasperini1996"/><citedRange></citedRange></bibl>, whence <bibl><ptr target="AE"/> <citedRange>1995.1630</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>153</citedRange></bibl>.<!-- check -->
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="la" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="attested"><name nymRef="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name>
+                        <name nymRef="Rubellius">Rube<unclear>ll</unclear>ius</name> <persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucii</ex></expan></name> 
+                      <supplied reason="lost"><w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w></supplied>     
+                    <name nymRef="Blandus"><unclear>Bl</unclear><supplied reason="lost">andus</supplied></name></persName> 
+                    <milestone unit="block" n="2"/><w lemma="proconsul"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> </persName>
+                    <w lemma="porticus">porticus</w> <placeName nymRef="#Caesareum" ref="#caesareum">C<supplied reason="lost" evidence="previouseditor">aes</supplied>ar<supplied reason="lost" evidence="previouseditor">ei</supplied></placeName> 
+                    <w lemma="restituo"><supplied reason="lost" evidence="previouseditor">r</supplied><milestone unit="block"/><supplied reason="lost" cert="low">estituit</supplied></w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="2"/> <space extent="unknown" unit="character"/> <milestone unit="block" n="2"/> <gap reason="lost" quantity="6" unit="character" precision="low"/><persName type="attested" key="pir2-p-0023"><w part="F">ius</w> 
+                    <persName type="attested"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name></persName> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> 
+                    <name nymRef="Pacilaeus">Pacilaeus</name></persName> <w lemma="legatus"><expan><abbr>l<supplied reason="lost">eg</supplied></abbr><ex>atus</ex></expan></w> <supplied reason="lost"><w lemma="propraetor">pro <expan><abbr>pr</abbr><ex>aetore</ex></expan></w></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp><app><note>Della Cella, Pacho and Ghislanzoni saw the second block intact.</note></app>
+            <app loc="1">
+               <rdg resp="#jmr1958"><unclear>C</unclear>(aius) Rube<unclear>ll</unclear>iu[s] <unclear>Blan</unclear>[dus]</rdg>
+               <rdg resp="#luni1992">C(aius) Rubel<unclear>lius</unclear> L(ucii) [f(ilius)] <unclear>B</unclear>l[andus]</rdg>
+               <rdg resp="#gasperini1996">C. Rube<unclear>llius</unclear> L. [f(ilius)] <unclear>Bl</unclear>[andus]</rdg>
+            </app></listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>Caius, son of Lucius, Rubellius Blandus, proconsul, [restored] the porticoes of the Caesareum [ . . . ] </p>
+               <p>[ . . . -]ius Pacilaeus, son of M(arcus) [ . . .  propraetorian] legate [ . . . ]</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>See also the inscription from the opposite portico, <ref type="inscription" n="C.3">C.3</ref>, 
+               <!--check now both replaced in their original position, where they are not accessible to close examination  -->.</p>
+            <p>Line 1: Della Cella, Pacho and Ghislanzoni saw the whole of the word <foreign xml:lang="la">Caesarei</foreign>; Pacho and Ghislanzoni also saw the next letter, R. 
+               This suggests the work  carried out by Blandus should have been a restoration and might be connected with that by Sufenas Proculus, in <ref type="inscription" n="C.9">C.9</ref>.</p>
+            <p>Rubellius Blandus, governor of Crete and Cyrene, is also attested in Crete, <title>InsCret</title> IV 293 
+               (at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/200736">200736</ref>); he seems also to be attested at Marruvium (see Gasperini (1996) loc cit.); 
+               see also Thomassen, <title><ref target="http://www.isvroma.it/public/Publications/laterculi.pdf">Laterculi</ref></title> 38.009.
+             He should not, therefore, be identified with the  proconsul of Africa (<title>PIR<hi rend="superscript">2</hi></title> R.109) attested in Tripolitania: see <title>IRT</title>
+               <ref target="http://inslib.kcl.ac.uk/irt2009/IRT269.html">269</ref>, and also 
+               <title>IRT</title> 330, <title>IRT</title> <ref target="http://inslib.kcl.ac.uk/irt2009/IRT331.html">331</ref> and 
+               <title>IRT</title> <ref target="http://inslib.kcl.ac.uk/irt2009/IRT540.html">540</ref> where a praetorian legate let the contract for construction undertaken at Lepcis Magna 
+               by the proconsul.</p><!-- check PIR -->
+            <p>Line 2: Pacilaeus, <title>PIR<hi rend="superscript">2</hi></title> P.23, here and in <ref type="inscription" n="C.3">C.3</ref>, is otherwise unknown.</p> <!-- add links -->
+            <p>There continues to be uncertainty as to whether the location of the blocks and the hand 
+               indicate that Blandus and Pacilaeus operated simultaneously. For a pro praetorian legate acting in the absence of the governor, cf. e.g. 
+               <title>IRT</title> <ref target="http://inslib.kcl.ac.uk/irt2009/IRT342.html">342</ref>.</p>
+            <!-- The Rubellius block  restored on propileo oreintale interno (Gasperini C.2) with
+               The Pacilaeus block (Gasperini C.3) But C 2 is actually from the propileo medidionele interno. C3 is from propileo orientale esterno. 
+               G's C 4 is rom the prop. orientale interno -->
+         </div>
+      </body>
+   </text>
+</TEI>

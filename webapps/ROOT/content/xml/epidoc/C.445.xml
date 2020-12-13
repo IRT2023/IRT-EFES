@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C88700" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> for Aretaphila</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.445</idno>
+            <idno type="ircyr2012">C88700</idno>
+            <idno type="JMR">922</idno>
+            <idno type="Excel">1001</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">71-116</idno> 
+                  <idno type="invNo">73-1026</idno> <idno type="invNo">78-736</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><objectType>Base</objectType> of medium-grained greyish-white <material>marble</material> 
+                              assembled (by James Thorn) from three fragments:
+                              a: <dimensions><width>0.337</width>  <height>0.463</height> <depth>0.199</depth></dimensions>; 
+                              b: <dimensions><width>0.15</width> <height>0.21</height> <depth>0.105</depth></dimensions> 
+                              c:  <dimensions><height>0.09</height> <depth>0.035</depth></dimensions>.
+                              The moulding of the upper edge is visible on b. 
+                           </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face. Lines 1-2 are cut on a lightly erased area and more widely spaced than the rest,
+                           while lines 3-4 are rather closer together.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first century BCE: <height precision="low">0.018</height></handNote><handNote/>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</ref>.</origPlace>
+                     <origDate evidence="lettering nomenclature" notBefore="-0100" notAfter="-0001" precision="low">Probably first century BCE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: Found between <date type="found">1971</date> and <date type="found">1978</date>.
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>, in excavations; a at D14/E14; b at D12, c unrecorded. 
+                           </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, Storeroom of the American excavations: </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+          <change when="2013-08-05" who="TW">changed a few Persnam tags to Divine from Divinity and tagged Antonia</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-03" who="Pietro">marked up text and metadata</change>
+         <change when="2010-08-14" who="CMR">created from JMR's notes</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="white790_IRCyrC445" decls="#photograph"><desc>Central face (Donald White)</desc></graphic>
+      <graphic url="white830_IRCyrC445" decls="#photograph"><desc>Face (Donald White)</desc></graphic>
+      <!-- White830_IRCyrC.445.jpg, White831_IRCyrC.445.jpg, --><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p> <bibl><ptr target="jmr2012"/>, <citedRange>A.18</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>62.1795.9</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="divine" key="demeter"><name nymRef="Δημήτηρ">Δά<supplied reason="lost">ματ</supplied><unclear>ρι</unclear></name></persName>
+            <w lemma="καί">καὶ</w> 
+            <persName type="divine" key="kore"><name nymRef="Κόρη">Κό<supplied reason="lost">ρ</supplied>α<supplied reason="lost">ι</supplied></name></persName>
+                    <lb n="2"/><persName type="attested"><name nymRef="Ἀντωνία">Ἀντωνία</name></persName>
+                    <lb n="3"/> <w lemma="ὁ">τ<supplied reason="lost">ὰν</supplied></w> 
+            <persName type="attested"><name nymRef="Ἀρεταφίλα">Ἀρεταφ<supplied reason="lost">ίλαν</supplied></name></persName>
+                     <lb n="4"/> <supplied reason="lost"> <space quantity="1" unit="character"/></supplied> 
+            <w lemma="ἀνατίθημι"><supplied reason="lost">ἀ</supplied>νέθηκε</w> <space quantity="3" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#jmr2012" xml:lang="en"><p>To Demeter and Kore, Antonia dedicated the <supplied reason="subaudible">statue of</supplied> Aretaphila.
+</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>The dedicator names herself only by a Roman nomen, 
+               apparently without filiation or a cognomen.
+               It is probable that she belonged to a family of Antonii who are attested among Cyrene’s leading citizens in the first century CE (see index)</p> 
+            <p>Aretaphila, whose statue was dedicated, apparently lived in the first half of the first century BCE
+               and played a decisive part in securing
+               the overthrow of a tyrant of Cyrene: Plutarch <title>Mulierum virtutes</title>, no.19, (at <ref target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0007.tlg083.perseus-grc1:19">Perseus</ref>); 
+               Polyaenus, Strat. VIII.38 (at <ref target="http://www.attalus.org/greek/polyaenus8B.html">Attalus</ref>),
+               after which she is said to have withdrawn into private life,
+               which would be compatible with engagement in a women’s cult,
+               so that it may be that she was honoured here as a significant figure in the cult of Demeter and Kore.
+               On the other hand, such evidence as we have seems to suggest that the city was erecting public honours
+               in the Sanctuary in the first century BCE (<ref type="inscription" n="C.446">C.446</ref>, <ref type="inscription" n="C.447">C.447</ref>, <ref type="inscription" n="C.448">C.448</ref>),
+               perhaps always of women (although this is not certain given the condition of some texts, e.g.<ref type="inscription" n="C.447">C.447</ref>, <ref type="inscription" n="C.448">C.448</ref>);
+               and Aretaphila may be honoured by Antonia for her public services which,
+               no doubt, did not need to be stated.
+            </p>
+            
+         </div>
+         
+      </body>
+   </text>
+</TEI>

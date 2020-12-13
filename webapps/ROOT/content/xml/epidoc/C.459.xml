@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Demetria</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.459</idno>
+            <idno type="ircyr2012">C90000</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository> <idno type="invNo">73-227</idno></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Small <objectType>base</objectType> of chalky white <material>limestone</material>, with rectangular depression on top 
+                              (<dimensions>
+                                 <width>0.125</width>
+                                 <height>0.09</height>
+                                 <depth>0.10</depth>
+                              </dimensions>). A portrait base, chipped on all edges and without its upper left-hand corner.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face. The photograph shows some lightly cut marks near the lower left-hand 
+                           corner and bottom edge - apparently N and xxxv.xx, presumably the work of a doodler.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Probably first to second century CE, ave. <height>0.01</height>; rho with a square bowl, L for ἐτῶν;  
+                        stops on either side of L in line 2 and between name and article in line 3, a bar above the L in line 2.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0200" notBefore="0001" precision="low" evidence="lettering">Probably first to second century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1381">Sanctuary of Demeter and Kore</placeName>: area E12/E11, 2. 
+                             </p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>, Storeroom of the American excavations </p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc><encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-11-23" who="Ljuba">entered and tagged text</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="white824_IRCyrC459" decls="#photograph"><desc>Face (Donald White)</desc></graphic>
+      <graphic url="white811_IRCyrC459" decls="#photograph"><desc>Face (Donald White)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="white1973"/>, <citedRange>205</citedRange> n.16</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>26.1836</citedRange></bibl>,
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324728">324728</ref></citedRange></bibl>; 
+               <bibl><ptr target="jmr2012"/>, <citedRange>A.31</citedRange></bibl>, whence <bibl><ptr target="SEG"/> <citedRange>62.1795.14</citedRange></bibl>.</p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab><lb n="1"/><persName type="attested" key="lgpn:V1-63525"><name nymRef="Δημητρία">Δημητρία</name> <space quantity="1" unit="character"/>
+               <lb n="2"/><persName type="attested" key="lgpn:V1-62804"><name nymRef="Ἀμμώνιος">Ἀμμωνίω</name></persName></persName>
+               <g ref="symbols.xml#stop"/> <date type="life-span" dur="P10Y"><w lemma="ἔτος"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἐτῶν</ex></expan></w> <g ref="symbols.xml#stop"/> <num type="age" value="10">ι</num> </date>
+              
+               <lb n="3"/><persName type="attested" key="lgpn:V1-63247"><name nymRef="Ἀρρία">Ἀρρία</name></persName> <g ref="symbols.xml#stop"/> <w lemma="ὁ">τὰν</w> <space quantity="3" unit="character"/>
+               <lb n="4"/> <space quantity="1" unit="character"/> <w lemma="θυγάτηρ">θυγατέρα</w> <space quantity="1" unit="character"/>
+            </ab>
+         </div>
+         <div type="translation" xml:space="preserve">
+            <div type="translation" source="#jmr2012" xml:lang="en"><p>Demetria <supplied reason="subaudible">daughter</supplied> of Ammonios, aged 10. Arria 
+               <supplied reason="subaudible">gave the statue of</supplied> her daughter.</p></div>
+         </div>
+         <div type="commentary">
+            <head>Commentary</head>
+            
+            <p>Demetria was probably dead when commemorated here.  She and her father have Greek personal names, but her mother has a Roman nomen; 
+               that could mean that she came of a family with Roman citizenship, but may not do so since, at the likely date, some local families used such 
+               names as if they were Greek personal names.  The statue must have been small even for a child, and this, with the poor quality of the stone and 
+               of lettering, suggests a family of modest means only.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C21500" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Building</rs> inscription from the Temple of Apollo</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.250</idno>
+            <idno type="ircyr2012">C21500</idno>
+            <idno type="JMR">807</idno>
+            <idno type="Excel">1133</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> block damaged at the left end 
+                              (<dimensions><width>1.34</width> <height>0.49</height> <depth>0.60</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second century : line 1, <height>0.05</height>; lines 2,3,5, <height>0.045</height>; 
+                        line 4 <height>0.04</height>; L for ἔτους<!-- ; bar above the cognomen in line 2 -->.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace><ref target="https://www.slsgazetteer.org/1033">Temple of Apollo</ref>, probably the cella wall.</origPlace>
+                     <origDate notAfter="0192" notBefore="0177" precision="low" evidence="reign">177-192 CE</origDate>
+                  </origin>
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1033">Temple of Apollo</placeName>, south side; found during excavations in <date type="found">1917</date></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot: standing on the stylobate, beside <ref type="inscription" n="C.252">C.252</ref> (<date type="observed">2008</date>).</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-12-01" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2009-12-05" who="Pietro">tokenized</change>
+         <change when="2009-06-15" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile>
+      <graphic url="318_doa" decls="#photograph"><desc>Face  (Department of Antiquities, E.318)</desc></graphic>
+      <graphic url="DSC04856" decls="#photograph"><desc>Face (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04857" decls="#photograph"><desc>Face, left end (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04858" decls="#photograph"><desc>Face, right end (2008, H.Walda)</desc></graphic>
+      <graphic url="DSC04859" decls="#photograph"><desc>View of block (2008, H.Walda)</desc></graphic>
+      </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="ferri1923"/>, <citedRange>4ff</citedRange></bibl>;
+                    <bibl><ptr target="vitali1932"/>, <citedRange>77</citedRange></bibl>;
+                    <bibl><ptr target="SEG"/> <citedRange>9.173</citedRange></bibl>, 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324024">324024</ref></citedRange></bibl>;
+                    Mentioned <bibl><ptr target="pernier1935"/>, <citedRange unit="page">111, 138</citedRange></bibl>.
+               <bibl><ptr target="romanelli1943"/>, <citedRange>123</citedRange></bibl>; 
+               mentioned <bibl><ptr target="kenrick2013"/>, <citedRange>195</citedRange>, <citedRange>205</citedRange></bibl>.
+               <!-- check SECir p.372 fig 169-->
+                </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                    <lb n="1"/><date ref="https://godot.date/id/femgEKASPbWBRjnGsHzyYd"><w lemma="ἔτος"><supplied reason="lost"><expan><abbr><am><g ref="symbols.xml#year"/></am></abbr><ex>ἔτους</ex></expan></supplied></w> <gap reason="lost" quantity="1" unit="character"/> <persName type="emperor" key="commodus"><name nymRef="Μᾶρκος"><expan><abbr><unclear>Μ</unclear></abbr><ex>άρκου</ex></expan></name> 
+                    <name nymRef="Αὐρήλιος"><unclear>Αὐρη</unclear>λίου</name> <del rend="erasure"><name nymRef="Κόμμοδος">Κομμόδου</name></del> <name nymRef="Ἀντωνῖνος">Ἀντωνείνου</name>
+                    <lb n="2"/><name nymRef="Σεβαστός"><supplied reason="lost">Σε</supplied>β<supplied reason="lost">α</supplied><unclear>στ</unclear>οῦ</name></persName></date>
+                   <persName type="attested" key="lgpn:V1-63184"><name nymRef="Δέκμος"><expan><abbr>Δ</abbr><ex>έκμος</ex></expan></name> 
+                    <name nymRef="Κασκέλλιος">Κασκέλλιος</name> <name nymRef="Ἀριστοτέλης">Ἀριστοτέλης</name></persName>
+                    <lb n="3"/><w lemma="ἱερεύς"><supplied reason="lost">ἱερ</supplied>εὺς</w> <space quantity="1" unit="character"/> <w lemma="καλλιέτης">καλλιέτης</w>
+                    <space quantity="1" unit="character"/> <w lemma="καί">καὶ</w> <space quantity="3" unit="character"/>
+                    <lb n="4"/><gap reason="lost" quantity="1" unit="character"/> <persName type="attested" key="lgpn:V1-63185"><name nymRef="Κασκέλλιος"><supplied reason="lost">Κ</supplied>ασκέ<unclear>λλ</unclear>ιος</name> 
+                    <name nymRef="Ἀριστοτέλης">Ἀριστοτέλης</name></persName> <orig>να<unclear>ι</unclear></orig><gap reason="lost" quantity="5" unit="character" precision="low"/>
+                    <lb n="5"/><date><w lemma="ἐπί"><supplied reason="lost">ἐφ’</supplied></w><w lemma="ὅς"><unclear>ὧ</unclear>ν</w></date> <w lemma="ὁ">ὁ</w> <w lemma="ναός"><unclear>ν</unclear>εὼς</w> 
+                    <w lemma="γίγνομαι">ἐγένετο</w> <w lemma="καί">καὶ</w> <w lemma="ἀφιερόω">ἀφ<supplied reason="lost">ιερώθη</supplied></w>
+                </ab>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p> [?]of Marcus Aurelius [[Commodus]] Antoninus Augustus: D(ekmos) Kaskellios <supplied reason="explanation"><foreign xml:lang="la">D(ecimus) Cascellius</foreign></supplied> Aristotles, 
+               priest in a good year and [? K]askellios <supplied reason="explanation"><foreign xml:lang="la">Cascellius</foreign></supplied> Aristotles [ . . . ] 
+               in whose time the temple was built and consecrated.</p></div>
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>See also <ref type="inscription" n="C.251">C.251</ref>, for the date of the reconstruction of the temple after its destruction during the Jewish Revolt of CE 115. </p>
+            <!-- <p>Line 2: he or his uncle, see line 4 and n.4, also appears in  156 <ref type="inscription" n="C22100">C.256</ref>, and probably 170, 
+               <ref type="inscription" n="C22800">C.267</ref> line 8.  ee There was an eponymus Patronomos of the same name at Sparta in the Second century, see A.M. Woodward, ABSA XLIII (1948) 258, perhaps a member of the same family or even identical with one of these Cyrenaeans.
+               Given the connections between Sparta and Cyrene, which were much publicised in the second cent CE   lines some individuals may have held citizenship and office in both cities, and others may have emigrated from one to the other.
+               In view ofthe need for additional population in Cyrenaica after the Jewish Revolt of CE 115, emigration of a member of a notable Spartan family to Cyrene may seem quite likely . </p> --> 
+            <p>Line 3: For this epithet applied to priests at Cyrene, see commentary on <ref type="inscription" n="C.222">C.222</ref>.</p>
+            <p>Line 4: ⟨<!--Perhaps νάν[νος] or possibly ναπ[οιοί]  -->Enough of the third letter survives to rule out Robert's attractive suggestion of ναυκόρος.</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

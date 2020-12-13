@@ -2,14 +2,17 @@
 <query q_fields="document_type" range_fields="origin_date">
   <df default="true">text</df>
   <q default="true">*</q>
-  <document_type>(tei or epidoc)</document_type>
+  <document_type>(epidoc)</document_type>
   <facet>true</facet>
   <facet.field>found_provenance</facet.field>
-  <facet.field>origin_place</facet.field>
+  <!--<facet.field>origin_place</facet.field>-->
   <facet.field>source_repository</facet.field>
   <facet.field>support_material</facet.field>
   <facet.field>support_object_type</facet.field>
-  <facet.field>origin_date_evidence</facet.field>
+  <facet.field>text_type</facet.field>
+  <facet.field>language</facet.field>
+  <!-- <facet.field>title_text_type</facet.field> -->
+ <!--  <facet.field>origin_date_evidence</facet.field> -->
   <facet.limit>-1</facet.limit>
   <facet.mincount>1</facet.mincount>
   <!-- facet.sort's value may be either "index" (alphabetic order of
@@ -17,5 +20,5 @@
   <facet.sort>index</facet.sort>
   <!-- The number of rows returned by Solr at once (that is the number
        displayed per page of results). -->
-  <rows default="true">20</rows>
+  <rows default="true">3000</rows>
 </query>

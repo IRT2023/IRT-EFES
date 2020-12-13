@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C68900" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Honours</rs> for Antoninus Pius</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.110</idno>
+            <idno type="ircyr2012">C68900</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Two fragments of a <material>marble</material> 
+                              <objectType>panel</objectType> (<dimensions><width>0.33</width> <height>0.44</height> <depth>0.15</depth></dimensions> and 
+                              <dimensions><width>0.49</width> <height>0.44</height> <depth>0.15</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face of the panel.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Line 1, <height unit="metre">0.06</height>; lines 2-6, <height unit="metre">0.045-0.05</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown </origPlace>
+                     <origDate notAfter="0161" notBefore="0138" evidence="reign">138-161 CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              fragment a: unknown; fragment b  recorded in the <placeName type="monuList" ref="https://www.slsgazetteer.org/1483">Augusteum</placeName> in <date type="found">1861</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>  <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName></p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc> <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 8</p><classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="Shahat">Shahat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-04-14" who="AO">tokenized</change>
+         <change when="2007-11-01" who="Charlotte Tupman">created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><!--Dept F.401-->
+      <graphic url="cdlC110" decls="#photograph"><desc>Face (C. Dobias-Lalou, 1979: MFA 79/IX/30)</desc></graphic></facsimile>
+   <text>
+      <body>
+         
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               Right side: <bibl><ptr target="smith-porcher1864"/>, <citedRange>23</citedRange>, p.115 and pl. 83</bibl>, 
+               whence <bibl><ptr target="rossberg1876"/>, <citedRange unit="page">25</citedRange>, note 1</bibl>, 
+              <bibl><ptr target="SGDI"/>, <citedRange>4852</citedRange> (second fragment only)</bibl>; <!-- check -->
+              <bibl><ptr target="IGRR"/>, <citedRange>I.1039</citedRange></bibl>;
+              Both sides: <bibl><ptr target="SECir"/>, <citedRange>56</citedRange> and fig. 52 (from T. XI.71)</bibl>,
+               <bibl><ptr target="SECir"/>, <citedRange>56bis</citedRange> and fig. 53 (from T. XI 72)</bibl>, and combined by Pugliese Carratelli, whence
+               <bibl> 
+                  <ptr target="AE"/> <citedRange>1974.679</citedRange></bibl>, listed   
+               <bibl><ptr target="robertBE"/>, <citedRange>1964.562</citedRange></bibl>
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                
+                <lb n="1"/><persName type="emperor" key="antoninuspius"><w lemma="Αὐτοκράτωρ"><supplied reason="lost">Αὐτοκράτορα</supplied></w> <name nymRef="Καῖσαρ"><supplied reason="lost">Καί</supplied>σαρα</name> <g ref="symbols.xml#stop"/> <name nymRef="Τίτος">Τίτ<supplied reason="lost">ον</supplied></name> <name nymRef="Αἴλιος"><supplied reason="lost">Αἴ</supplied>λιον</name> 
+                    <g ref="symbols.xml#stop"/> <name nymRef="Ἁδριανός">Ἁδριανὸν</name> <g ref="symbols.xml#leaf"/> <lb n="2"/> <name nymRef="Ἀντωνῖνος"><supplied reason="lost">Ἀντωνεῖνον</supplied></name> <name nymRef="Σεβαστός"><supplied reason="lost">Σεβα</supplied><unclear>σ</unclear>τὸν</name> <w lemma="Εὐσεβής">Εὐσ<supplied reason="lost">εβῆ</supplied></w>
+                    <w lemma="υἱός">υἱὸν</w> <g ref="symbols.xml#stop"/> <persName type="emperor" key="hadrianus"><w lemma="θεός">θεῶ</w> <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
+                    <lb n="3"/><name nymRef="Τραιανός"><supplied reason="lost">Τραιανῶ</supplied></name> <name nymRef="Ἁδριανός"><supplied reason="lost">Ἁδριανῶ</supplied></name></persName> 
+                    <persName type="emperor" key="traianus"><w lemma="θεός">θεῶ</w> <name nymRef="Τραιανός">Τραι<unclear>α</unclear><supplied reason="lost">νῶ</supplied></name></persName> <w lemma="υἱωνός">υἱωνὸν</w> <g ref="symbols.xml#stop"/> <persName type="emperor" key="nerva"><w lemma="θεός">θεῶ</w> <g ref="symbols.xml#leaf"/> 
+                       <lb n="4"/><name nymRef="Νέρβα"><supplied reason="lost">Νέρβα</supplied></name></persName>
+					 <w lemma="ἔκγονος"><supplied reason="lost">ἔκγονον</supplied></w></persName> 
+                    <w lemma="τροφεύς"><supplied reason="lost" cert="low">τροφέ</supplied>α</w> <g ref="symbols.xml#stop"/> <w lemma="καί">καὶ</w> <w lemma="σωτήρ">σωτ<supplied reason="lost">ῆρα</supplied></w> <w lemma="καί"><supplied reason="lost">κ</supplied>αὶ</w> <g ref="symbols.xml#stop"/> <w lemma="εὐεργέτης">εὐεργέταν</w> <g ref="symbols.xml#leaf"/> 
+   <lb n="5"/> <w lemma="ὁ"><supplied reason="lost" cert="low">ἁ</supplied></w> <w lemma="πόλις"><supplied reason="lost" cert="low">πόλις</supplied></w> <w lemma="ὁ"><supplied reason="lost" cert="low">ἁ</supplied></w> <placeName type="ethnic" nymRef="#Κυραναῖος" ref="#cyrene"><supplied reason="lost" cert="low">Κυρανάων</supplied></placeName> 
+                    <date><w lemma="ἐπί">ἐπὶ</w> <g ref="symbols.xml#stop"/> <persName type="attested"><name nymRef="Κόϊντος"><expan><abbr>Κ</abbr><ex>οίντου</ex></expan></name></persName> 
+                    <g ref="symbols.xml#stop"/> <persName type="attested" key="pir2-i-0484a"><name nymRef="Ἰούλιος">Ἰο<supplied reason="lost">υλίου</supplied></name> <name nymRef="Ποτῖτος">Ποτείτου</name> </persName>
+                    <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/>
+                    <lb n="6"/> <w lemma="τις"><supplied reason="lost">τοῦ</supplied></w> <w lemma="κράτιστος"><supplied reason="lost">κρατίστου</supplied></w> <w lemma="ἀνθύπατος"><supplied reason="lost">ἀνθυπά</supplied>του</w></date>
+                    <g ref="symbols.xml#leaf"/> <space quantity="3" unit="character"/></ab>
+</div>
+         <div type="apparatus">
+            <head>Apparatus</head>
+            <listApp>
+                    
+                <app loc="3">
+                   <lem>[Τραιανῶ Ἁδριανῶ]</lem>
+                        <rdg resp="#SECir">[Ἁδριανῶ υἱωνὸν], <note> P-C</note></rdg>
+               </app>
+                <app loc="4">
+                   <lem>[Νέρβα ἔκγονον τροφέ?]α</lem>
+                   <rdg resp="#SECir">[Νέρουα, πατέρ]α <note>P-C</note></rdg>
+               </app>
+                <app loc="5">
+                   <lem>[ἁ? πόλις? ἁ? Κυρανάων?]</lem>
+                        <rdg resp="#SECir">[τῆς οἰκουμένης]</rdg>
+                        </app>
+                </listApp>
+         </div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>[Emperor Cae]sar Titus Aelius Hadrianus [Antoninus] Augustus, son of deified [Trajan Hadrian], grandson of deified Trajan, [great-grandson] of deified 
+            [Nerva, sustainer?] and saviour and benefactor: [the city of the Cyrenaeans <supplied reason="subaudible">honoured him</supplied>] when Quintus Julius Poteitus
+               was the proconsul.</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For the proconsul see <title>PIR</title><hi rend="superscript">2</hi> I 0484a</p>
+            <p>Line 4: for the restoration see the fragmentary <ref type="inscription" n="C.674">C.674</ref>, also for Antoninus. </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

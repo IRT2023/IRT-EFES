@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>a. <rs type="textType">Honours</rs> for a soldier; b and c. <rs type="textType">Name</rs>s</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.750</idno>
+            <idno type="ircyr2012">C94600</idno>
+            <availability>
+               <p/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Rectangular <objectType>block</objectType> of
+                              <material>marble</material>
+                              (<dimensions>
+                                 <width>0.58</width>
+                                 <height>1.85</height>
+                                 <dim type="diameter">0.30</dim>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the front face (a); <rs type="execution" key="litteris scariphatis">incised</rs>  on the rear face (b)
+                           and on the right side (c)</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>i: line 1 <height>0.075</height>, lines 2 ff, <height>0.03</height>; ii: <height>0.04</height>; iii: <height>0.015</height>. Standard forms in a and b 
+                        except for lunate sigma in b.iii iii; other texts are rough graffito hands. b iii is 
+                        written upside down to b.ii.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Cyrene</origPlace>
+                     <origDate notAfter="0200" notBefore="0001" precision="low" evidence="lettering">First to second centuries CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>:
+                                 unknown.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName type="monuList" ref="institution.xml#db933">Cyrene museum</placeName>.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="photograph">
+                  <catDesc>Digital or digitized photographs</catDesc>
+               </category>
+               <category xml:id="representation">
+                  <catDesc>Digitized other representations</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahhat</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2020-11-24" who="Irene">inserted lemmata and normalized Unicode</change>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2012-07-27" who="GB">lemmatized Greek placenames</change>
+         <change when="2011-10-18" who="PaolaPiliego">Entered and tagged text and data</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="302_doa" decls="#photograph"><desc>Face a (Department of Antiquities, E.302)</desc></graphic>
+      <graphic url="Photos_0313" decls="#photograph"><desc>Face b (Archive H.33)</desc></graphic>
+      <graphic url="Photos_0311" decls="#photograph"><desc>Face c</desc></graphic>
+      <graphic url="Photos_0312" decls="#photograph"><desc>Face c</desc></graphic>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p><bibl><ptr target="gpc1961"/>, <citedRange>16</citedRange>, p. 36, and fig. 28/30</bibl>
+               whence i: <bibl><ptr target="AE"/> <citedRange>1951.88</citedRange></bibl>, 
+               whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021100">021100</ref></citedRange></bibl>,
+               ii: <bibl><ptr target="SEG"/> <citedRange>20.749</citedRange></bibl>, <bibl>
+                  <ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/324505">324505</ref></citedRange></bibl>.
+            </p>
+         </div>
+            
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div type="textpart" n="a" xml:lang="la">
+               <ab>
+                     <lb n="1"/><persName type="attested"><name type="praenomen" nymRef="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" nymRef="Iulius">Iulio</name>
+                     <persName type="attested"><name type="praenomen" nymRef="Caius"><expan><abbr>C</abbr><ex>aii</ex></expan></name></persName> 
+                     <w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w>
+                     <name type="tribe" key="Voltinia"><expan><abbr>Vo<supplied reason="lost">l</supplied></abbr><ex>tinia</ex></expan></name> <supplied reason="subaudible"><w lemma="tribus">tribu</w></supplied>
+                     <lb n="2"/><name type="cognomen" nymRef="Karus">Karo</name></persName> <w lemma="ex">ex</w> <w lemma="prouincia">prouincia</w>
+                  <placeName nymRef="#Narbonensis" ref="#narbonensis">Narbo<lb n="3" break="no"/>nensi</placeName> <w lemma="tribunus"><expan><abbr>trib</abbr><ex>uno</ex></expan></w>
+                  <w lemma="miles"><expan><abbr>mil</abbr><ex>itum</ex></expan></w>
+                     <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num>
+                     <placeName type="ethnic" nymRef="#Cyrenaicus" ref="#cyrenaica"><expan><abbr>Cy<supplied reason="lost">r</supplied></abbr><ex>enaicae</ex></expan></placeName>
+                     <lb n="4"/> <w lemma="praefectus"><expan><abbr>praef</abbr><ex>ecto</ex></expan></w>
+                  <w lemma="cohors"><expan><abbr>coh</abbr><ex>ortis</ex></expan></w> <num value="2">II</num>
+                     <placeName type="ethnic" nymRef="#Astur" ref="#asturia">Asturum</placeName> <w lemma="equito"><expan><abbr>eq</abbr><ex>uitatae</ex></expan></w> 
+                     <lb n="5"/><w lemma="dono">donato</w> <w lemma="bellum">bello</w> <placeName type="ethnic" nymRef="#Brittanicus" ref="#britannia">Brittanico</placeName> 
+                  <w lemma="corona"><expan><abbr>c<supplied reason="lost">or</supplied></abbr><supplied reason="lost"><ex>ona</ex></supplied></expan></w>
+                     <lb n="6"/><w lemma="muralis">murali</w> <w lemma="corona">corona</w> <w lemma="uallaris">uallari</w> <w lemma="corona"><expan><abbr>cor</abbr><ex>ona</ex></expan></w> 
+                     <lb n="7"/><w lemma="aureus">aurea</w> <w lemma="hasta">hasta</w> <w lemma="purus">pura</w> 
+                     <lb n="8"/> <w lemma="centurio"><supplied reason="lost">c</supplied>ent<choice><corr>u</corr><sic>y</sic></choice>riones</w>
+                  <w lemma="et">et</w> 
+                     <lb n="9"/><w lemma="miles">milites</w> <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num>
+                     <placeName type="ethnic" nymRef="#Cyrenaicus" ref="#cyrenaica"><expan><abbr>Cyr</abbr><ex>enaicae</ex></expan></placeName> <w lemma="et">et</w>
+                  <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w>
+                     <lb n="10"/><num value="22"><supplied reason="lost">X</supplied>XII</num> <w lemma="mitto">missi</w> <w lemma="in">in</w>
+                  <w lemma="prouincia">prouinciam</w> 
+                     <lb n="11"/><placeName type="ethnic" nymRef="#Cyrenensis" ref="#cyrene"><supplied reason="lost">C</supplied>yrenensium</placeName> <w lemma="diligo">dilectus</w>
+                  <w lemma="causa">caussa</w>
+               </ab>
+            </div>
+            <div type="textpart" n="b">
+               <div type="textpart" n="i">
+                  <ab>
+                     <lb n="1"/><gap reason="lost" quantity="6" unit="character" precision="low"/><orig>EI</orig><gap reason="lost" quantity="8" unit="character" precision="low"/>
+                  </ab>
+               </div>
+               <div type="textpart" n="ii">
+                  <ab>
+                     <lb n="1"/><persName type="attested" key="lgpn:V1-64792"><name nymRef="Λέων">Λέων</name> <persName type="attested" key="lgpn:V1-64959"><name nymRef="Μέγων">Μέγωνος</name></persName></persName>.
+                  </ab>
+               </div>
+               <div type="textpart" n="iii">
+                  <ab>
+                     <lb n="1"/><gap reason="lost" quantity="6" unit="character" precision="low"/> 
+                     <persName type="attested"><name type="gentilicium" nymRef="Οὐαλέριος"><supplied reason="lost">Οὐ</supplied>ᾳλέριος</name> <g ref="symbols.xml#slanting-stroke"/>
+                     <name nymRef="Σταδιεύς" cert="low"><seg part="I">Σταδι</seg></name><gap reason="lost" extent="unknown" unit="character"/></persName>
+                  </ab>
+               </div>
+            </div>
+            <div type="textpart" n="c">
+               <ab>
+                  <lb n="1"/><gap reason="lost" quantity="8" unit="character" precision="low"/><orig>Ν</orig>
+                  <lb n="2"/><gap reason="lost" quantity="8" unit="character" precision="low"/><orig>O<unclear>M</unclear>‖</orig>
+                  <lb n="3"/><gap reason="lost" quantity="8" unit="character" precision="low"/><w part="F"><unclear>ον</unclear>δων</w>
+                  <lb n="4"/><gap reason="lost" quantity="4" unit="character" precision="low"/><space quantity="4" unit="character"/><orig>αδ</orig> 
+                  <lb n="5"/><gap reason="lost" quantity="10" unit="character" precision="low"/><persName type="attested" key="lgpn:V1-64915"><name nymRef="Λύων">Λύοντος</name></persName>
+                  <lb n="6"/><gap reason="lost" quantity="4" unit="character" precision="low"/><w part="F">νεφι</w>
+               </ab>
+            </div>
+         </div>
+         
+         <div type="apparatus">
+            <listApp><app loc="b.iii"><note>. Could be [- - -Β]αλέριος SEG</note></app>
+               <app loc="c.5"><note> Perhaps - - - Λύοντος. SEG</note></app></listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+         <div type="translation" resp="#cmr" xml:lang="en"><p><note>a</note>: For Caius, Julius Karo, son of Caius, of the tribe Voltinia, fron the province Narbonensis, military tribune of the 
+            Third Cyrenaican legion, prefect of the Second Mounted Cohort of Astyrians, granted a crown for the Brittanic war, a mural crown, a camp crown, a golden pure spear; 
+            the centurions and soldiers of the Third Cyrenaican legion and the Twenty-second legion, deployed in the province of the Cyrenaeans, <supplied reason="subaudible">put this up</supplied> because of their affection. </p>
+         <p><note>b</note>: ii. Leon <supplied reason="subaudible">son</supplied> of Megon. iii. Oualerios <supplied reason="explanation">son of Oualerios son </supplied> of ?Stadieus</p> 
+            <p><note>c</note>: <note>not usefully translatable</note>.</p></div>
+         
+         </div>
+         
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>For other Spanish cohorts in Cyrenaica see <ref type="inscription" n="C.118">C.118</ref>, <ref type="inscription" n="C.276">C.726</ref>, <ref type="inscription" n="P.220">P.220</ref>, 
+               and with commentary, <ref type="inscription" n="C.552">C.552</ref>; and see M. Roxan, <title>The auxilia of the Roman Army raised in the Iberian Peninsula</title> (1973), available at
+               <ref target="https://discovery.ucl.ac.uk/id/eprint/1318033/">UCL</ref> 
+            </p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

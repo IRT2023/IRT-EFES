@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="C28000" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><rs type="textType">Dedication</rs> to Apollo Nymphagetes and the Nymphs</title>
+                         <editor xml:id="edd">Editors</editor> <editor xml:id="jmr">Joyce M. Reynolds </editor> <editor xml:id="cmr"> Charlotte Roueché</editor> 
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">C.317</idno>
+            <idno type="ircyr2012">C28000</idno>
+            <idno type="JMR">876</idno>
+            <idno type="Excel">144</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                    (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> <objectType>base</objectType> moulded on three sides 
+                              (<dimensions><width>0.66</width> <height>0.25</height> <depth>0.37</depth></dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the front face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>First century CE: <height>0.035</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notAfter="0100" notBefore="0001" evidence="lettering" precision="low">First century CE</origDate>
+                  </origin>
+                  
+                     
+                        <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/909">Cyrene</placeName>: 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1059">Spring of Kura/Cave of the Nymphs</placeName>, in one of the entrances to a rock-cut chamber beside the cave; 
+                              found probably in <date type="found" cert="low">1933</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot.</p>
+                        </provenance>
+                     
+                  
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/82972">Shahat</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2011-04-07" who="MLA">added bibliography</change>
+         <change when="2010-12-02" who="Pietro">metadata</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-03-30" who="GB">lemmatized</change>
+         <change when="2010-01-18" who="GillianB">tokenized</change>
+         <change when="2009-06-15" who="Pietro">turned to XML and tidied</change>
+         <change when="2009-05-11" who="GB">mailmerged: created from template</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMR_876_001front" decls="#photograph"><desc>Face (Joyce Reynolds VI.25)</desc></graphic>
+      <graphic url="JMR_876_002front" decls="#photograph"><desc>Face (Joyce Reynolds XIII.47)</desc></graphic></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>Mentioned by <bibl><ptr target="stucchi1975"/>, <citedRange>591 n. 1</citedRange></bibl>; republished by 
+               <bibl><ptr target="laronde1987"/>, <citedRange>426-27</citedRange> and fig. 162</bibl>, whence <bibl><ptr target="cdlBE"/>, <citedRange>1988.1012</citedRange></bibl>, 
+               <bibl><ptr target="SEG"/> <citedRange>38.1900</citedRange></bibl>. </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+<ab>
+                    <lb n="1"/><persName type="divine" key="apollo"><name nymRef="Ἀπόλλων">Ἀπόλλωνι</name> <name nymRef="Νυμφαγέτας">Νυμφαγέται</name></persName>
+                    <lb n="2"/><space quantity="5" unit="character"/> <w lemma="καί">καὶ</w> <space quantity="1" unit="character"/> <persName type="divine" key="nymphae"><name nymRef="Νύμφη">Νύμφαις</name></persName> <space quantity="3" unit="character"/>
+                </ab>
+</div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#edd" xml:lang="en"><p>For Apollo Nymphagetes and the Nymphs</p></div></div>
+         <div type="commentary">
+            <head>Commentary</head>
+            <p>Laronde, loc.cit., dates this text to the second century BCE</p>
+            <p><!-- See also in 853, lines 4,5, now IGCyrFor the association of Apollo with the Nymphs PW, vol XVII.2 col. 1572 -->For Apollo as Nymphagetes/Nymphegetes elsewhere, 
+               see e.g. Thasos, IG XII,8 358 (at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/79549">79549</ref>) and regularly at Samos, e.g. <title>BCH</title> IV (1880) 335 (at <title>PHI</title> <ref target="https://epigraphy.packhum.org/text/254612">254612</ref>)</p>
+            <p> <!-- line 2 See also 872, line 5, --> For the nymphs see the informal prayers <ref type="inscription" n="C.336">C.336</ref> to <ref type="inscription" n="C.392">C.392</ref>,
+               <!-- and for the literary evidence on the cult of the nymphs at cyrene, PW vol. XVII.2 col 1566 --> .</p>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

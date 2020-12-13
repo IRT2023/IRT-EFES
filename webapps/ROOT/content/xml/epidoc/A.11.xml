@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A02200" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Dedication<certainty cert="low" locus="value" match=".."/></rs>s to Asklepios</title>
+            
+            <editor xml:id="jmr">Joyce M. Reynolds</editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">A.11</idno>
+            <idno type="ircyr2012">A02200</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0
+                        (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the
+                    URL <ref>http://inslib.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db933">Cyrene Museum</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Fragments of white <material>marble</material>, probably from the Greek islands, cut down for reuse. a: Left quarter of the abacus and capital of a colonnette
+                        (<dimensions><width unit="metre">0.085</width> <height unit="metre">0.09</height> <depth unit="metre">0.07</depth></dimensions>).
+                    b: Left quarter of the base and lower moulding of the same colonnette;
+                    the carving of the mouldings is rough.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>a. <rs type="execution" key="scalpro">Inscribed</rs> on the abacus; b. on the base. The surfaces are rough-tooled.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Second-third century; <height>0.035</height>; square sigma.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Unknown.</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low" evidence="lettering">Second to third centuries CE</origDate>
+                  </origin>
+                  <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/911">Apollonia</placeName>: photographed in <date type="found">1929</date>; unrecorded but
+                        probably the <placeName type="monuList" ref="https://www.slsgazetteer.org/914">East Church</placeName>,
+                        the only site being excavated at the time of discovery.</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer.org/933">Cyrene Museum</placeName>.</p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      <classDecl><taxonomy><category xml:id="photograph"><catDesc>Digital or digitized photographs</catDesc></category><category xml:id="representation"><catDesc>Digitized other representations</catDesc></category></taxonomy></classDecl></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                        <geogName type="ancientRegion" key="Cyrene">Cyrenaica</geogName>
+                    </term>
+               <term>
+                        <geogName type="modernCountry" key="LY">Libya</geogName>
+                    </term>
+               <term>
+                        <placeName type="modernFindspot" ref="http://sws.geonames.org/81584">Marsa Suza</placeName>
+                    </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Reynolds).</creation></profileDesc>
+      <revisionDesc>
+         <change when="2012-11-05" who="GB">moved text-constituted-from to profileDesc/creation</change>
+         <change when="2012-10-16" who="GB">broke provenance events into multiple provenance elements</change>
+         <change when="2010-08-04" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2010-02-11" who="GB">merged with A02300; tidied text; dimensions</change>
+         <change when="2009-07-13" who="Pietro">corrected text; tagged words and name</change>
+         <change when="2008-06-30" who="VA">hand-copied from Apollonia article</change>
+      </revisionDesc>
+   </teiHeader><facsimile><graphic url="JMRNB06_047" decls="#photograph"><desc>Face a (Reynolds VI.47: Alföldi-Rosenbaum)</desc></graphic>
+      <!--Dept. F. 1425.--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <head>Bibliography</head>
+            <p>
+               <bibl><ptr target="jmr1976"/>, <citedRange>16</citedRange> and pl. LXII</bibl>, whence 
+               <bibl><ptr target="SEG"/> <citedRange>27.1144</citedRange></bibl>.
+            </p>
+         </div>
+         
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <div n="a" type="textpart">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="asklepios"><name nymRef="Ἀσκληπιός"><seg part="I">Ἀϲ<supplied reason="lost">κλαπ</supplied></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div n="b" type="textpart">
+               <ab>
+                  <lb n="1"/><persName type="divine" key="asklepios"><name nymRef="Ἀσκληπιός"><seg part="I">Ἀϲκ<supplied reason="lost">λαπ</supplied></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translations</head>
+            <div type="translation" xml:lang="en" resp="#jmr"><p>
+               <note>a</note> 
+               <supplied reason="subaudible" cert="low">To</supplied> As<supplied reason="lost">klepios</supplied></p>
+            <p>
+               <note>b</note> 
+               <supplied reason="subaudible" cert="low">To</supplied> Ask<supplied reason="lost">lepios</supplied>
+            </p></div>
+         </div>
+         <div type="commentary">
+            <p>The type of monument suggests that the god Asklepios rather than a man's name,
+                    e.g. Asklapos, stood in both places.</p>
+         </div>
+ </body>
+   </text>
+</TEI>
