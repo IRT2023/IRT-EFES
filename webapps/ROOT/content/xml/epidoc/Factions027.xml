@@ -3,16 +3,16 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="factions026" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="factions027" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><rs type="textType">Acclamation</rs> for Makarios and the <rs type="textType">Blue</rs>s</title>
+            <title><rs type="textType">Acclamation</rs> for georgios and the <rs type="textType">Blue</rs>s</title>
             <editor xml:id="cmr">Charlotte Roueché</editor>
          </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">factions026</idno>
+            <idno type="filename">factions027</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
                         (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>)</p>
@@ -26,16 +26,16 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment of a <objectType>column</objectType>, <dimensions><height>0.355</height> <dim>0.39</dim> </dimensions></p>
+                           <p>Fragment of a <objectType>column</objectType>, <dimensions><height>0.51</height> <dim>0.37</dim> </dimensions></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face.
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face, within guidelines.
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height>0.05</height></handNote>
+                     <handNote><height>0.045</height></handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -93,33 +93,38 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="rehm1958"/> <citedRange unit="entry">603</citedRange></bibl>; 
+            <p><bibl><ptr target="rehm1958"/> <citedRange unit="entry">604</citedRange></bibl>; 
                emended <bibl><ptr target="robert1960"/> <citedRange unit="page">490-491</citedRange></bibl>, 
-               whence <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/247688">247688</ref></citedRange></bibl>; 
+               whence <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/247689">247689</ref></citedRange></bibl>; 
                listed <bibl><ptr target="cameronCF"/> <citedRange unit="page">315</citedRange></bibl>
                </p>
          </div>
          
          <div type="edition" xml:lang="grc" xml:space="preserve">
              <ab>
-                <lb n="1"/><persName type="attested" key="lgpn:V5b-23039"><name nymRef="Μακάριος">Μακαρίου</name></persName> 
-    <lb n="2"/><w lemma="ὁ">τοῦ</w> <orig>λιιριαλs</orig> 
-      <lb n="3"/><w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w> <w lemma="ὁ">τῶν</w> <w lemma="Βένετος"><unclear>Β</unclear>ενε- 
-      <lb n="4" break="no"/>τῶ<unclear>ν</unclear></w> <w lemma="πολύς">πολλὰ</w> 
+                <lb n="1"/><persName type="attested" key="lgpn:V5b-17051"><name nymRef="Γεώργιος"><supplied reason="lost">Γ</supplied>εωργίου </name></persName> <w lemma="ὁ">τοῦ</w> 
+    <lb n="2"/> <w lemma="πρωτοκαγκελλάριος"><expan><abbr>πρ</abbr><ex>ώτο</ex><abbr>καγκελ</abbr> 
+      <lb n="3" break="no"/><abbr>λαρ</abbr><ex>ίου</ex></expan></w> <w lemma="καί"><expan><abbr>κ</abbr><ex>αὶ</ex></expan></w>  <w lemma="Βένετος"><supplied reason="lost">Β</supplied>ενε- 
+      <lb n="4" break="no"/>τῶν</w> <w lemma="πολύς">πολλὰ</w> 
       <lb n="5"/><w lemma="ὁ">τὰ</w> <w lemma="ἔτος">ἔτη</w> 
       <lb n="6"/><space/> <g type="crux"/>
 </ab>     </div>
          
          
          <div type="apparatus">
-            <listApp><app loc="3"><rdg source="#rehm1958">γενε/τῶν</rdg></app></listApp>
+            <listApp>
+               <app loc="2"><note>Before the π Rehm reported a vertical stroke</note></app>
+               <app loc="2/3"><rdg source="#rehm1958">πρκαγκελ/λαρ</rdg></app>
+               <app loc="3"><note>The rho has an abbreviation mark in its tail</note></app>
+               <app loc="3/4"><rdg source="#rehm1958">[γ]ενε/τῶν</rdg></app>
+            </listApp>
          </div> 
          
          
          <div type="translation" xml:space="preserve">
-           <div type="translation" resp="#cmr" xml:lang="en"><p>Many years for Makarios the  . . . and the Blues</p></div></div>
+           <div type="translation" resp="#cmr" xml:lang="en"><p>Many years for Georgios the protokankellarios and the Blues!</p></div></div>
          <div type="commentary">
-            <p>A pair with Text 27.
+            <p>A pair with Text 26.
             </p> 
          </div>
          
