@@ -3,6 +3,12 @@ Inscriptions of Roman Tripolitania (2021)
 
 This is an EFES instance, based on the IRCyr 2020 publication hosted by King's Digital Lab, used to publish a new edition of Inscriptions of Roman Tripolitania (2009 version at <http://inslib.kcl.ac.uk/irt2009/>) in 2021 by Charlotte M. Roueché, Gabriel Bodard and Irene Vagionakis.
 
+In collaboration with:
+
+* Caroline Barron
+* Usama Gad
+* Scott Vanderbilt
+
 EFES: EpiDoc Front-End Services
 ----
 
