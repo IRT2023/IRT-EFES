@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT021" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT021" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -123,7 +126,7 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></w> 
-               <persName type="emperor"><name type="cognomen" nymRef="Caesar">Caes<supplied reason="lost">ari</supplied></name> 
+               <persName type="emperor" key="marcusaurelius"><name type="cognomen" nymRef="Caesar">Caes<supplied reason="lost">ari</supplied></name> 
                <supplied reason="lost"><name type="praenomen" nymRef="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name></supplied>
                   <name type="gentilicium" nymRef="Aurelius"><supplied reason="lost">Au</supplied>re<unclear>li</unclear><supplied reason="lost">o</supplied></name> 
                <supplied reason="lost"><name type="gentilicium" nymRef="Antoninus">Antonino</name> <name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name>
@@ -135,7 +138,7 @@
                <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w>
                <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num> <w lemma="et">et</w></supplied>
                <lb n="2"/><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></w> 
-               <persName type="emperor"><name type="cognomen" nymRef="Caesar">Caesari</name> 
+               <persName type="emperor" key="luciusverus"><name type="cognomen" nymRef="Caesar">Caesari</name> 
                <name type="praenomen" nymRef="Lucius"><expan><abbr><unclear>L</unclear></abbr><ex>ucio</ex></expan></name> 
                <supplied reason="lost"><name type="gentilicium" nymRef="Aurelius">Aurelio</name> <name type="cognomen" nymRef="Verus">Vero</name> 
                   <name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name> 
@@ -146,13 +149,13 @@
                   <w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w> <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num>
                   <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w>
                   <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num>
-                  <persName type="emperor"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Pius">Pii</name></persName> <w lemma="filius">filiis</w>
-                 <persName type="emperor"> <w lemma="diuus">diui</w> <name type="cognomen" nymRef="Hadrianus">Hadriani</name></persName></supplied> 
+                  <persName type="emperor" key="antoninuspius"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Pius">Pii</name></persName> <w lemma="filius">filiis</w>
+                 <persName type="emperor" key="hadrianus"> <w lemma="diuus">diui</w> <name type="cognomen" nymRef="Hadrianus">Hadriani</name></persName></supplied> 
                <w lemma="nepos"><expan><abbr>nepotib</abbr><ex>us</ex></expan></w>
-               <lb n="3"/><persName type="emperor"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Traianus">Traiani</name>
+               <lb n="3"/><persName type="emperor" key="traianus"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Traianus">Traiani</name>
                   <name type="cognomen" nymRef="Parthicus">P<unclear>a</unclear><supplied reason="lost">rthici</supplied></name></persName> 
                <supplied reason="lost"><w lemma="pronepos">pronepotibus</w>
-               <persName type="emperor"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Nerua">Neruae</name></persName></supplied>
+               <persName type="emperor" key="nerva"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Nerua">Neruae</name></persName></supplied>
                <supplied reason="lost"><w lemma="abnepos">abnepotibus</w></supplied>
                <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="4"/><persName type="attested"><name type="praenomen" nymRef="Manius"><expan><abbr>M</abbr><ex>anius</ex></expan></name> <name type="gentilicium" nymRef="Acilius">Acilius</name> 
