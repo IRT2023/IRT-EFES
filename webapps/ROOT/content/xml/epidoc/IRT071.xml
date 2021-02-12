@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT071" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT071" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -121,12 +124,12 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/><gap reason="lost" quantity="1" unit="line"/>
-               <lb n="2"/><persName type="emperor"><name><seg part="I">G<unclear>e</unclear><supplied reason="lost">rmanic</supplied></seg></name>
+               <lb n="2"/><persName type="emperor" key="anonymus"><name><seg part="I">G<unclear>e</unclear><supplied reason="lost">rmanic</supplied></seg></name>
                <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="3"/><w part="I">po<supplied reason="lost">ntif</supplied></w> 
-               <w part="I"><supplied reason="lost">maxim</supplied></w></persName>
+               <lb n="3"/><w lemma="pontifex" part="I">po<supplied reason="lost">ntif</supplied></w> 
+               <w lemma="maximus" part="I"><supplied reason="lost">maxim</supplied></w></persName>
                <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="4"/>O<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="4"/><orig>o</orig><gap reason="lost" extent="unknown" unit="character"/>
             </ab></div>
          <div type="translation" xml:space="preserve"><head>Translation</head><p><gap reason="lost" extent="unknown" unit="character"/>victor in Germany <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">chief</supplied> priest <gap reason="lost" extent="unknown" unit="character"/> <note>case unknown</note></p></div>
          <div type="commentary">

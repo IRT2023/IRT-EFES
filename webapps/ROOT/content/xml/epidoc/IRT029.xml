@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT029" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT029" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -135,11 +138,11 @@
                   <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><del rend="erasure"><w lemma="deus" part="M">di</w></del><gap reason="lost" extent="unknown" unit="character"/>
                </ab></div><div subtype="fragment" n="g" type="textpart"><ab>
                   <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
-                  <w lemma="imperator" part="I"><expan><abbr><supplied reason="lost">im</supplied>p</abbr><ex>erator</ex></expan></w> 
+                  <persName type="emperor" key="anonymus"><w lemma="imperator" part="I"><expan><abbr><supplied reason="lost">im</supplied>p</abbr><ex>erator</ex></expan></w> 
                   <num value="8">VIII</num> <w lemma="consul" part="I"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> 
                   <num value="5">V</num> 
                   <w part="I"><expan><abbr><unclear>p</unclear></abbr><supplied reason="lost"><ex>at</ex></supplied></expan></w> 
-                  <supplied reason="lost"><w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w></supplied><gap reason="lost" extent="unknown" unit="character"/>
+                  <supplied reason="lost"><w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w></supplied></persName><gap reason="lost" extent="unknown" unit="character"/>
                </ab></div><div subtype="fragment" n="h" type="textpart"><ab>
                   <lb n="1"/>
                   <subst><del rend="erasure"><w lemma="imperator" part="I"><expan><abbr>Im<unclear>p</unclear></abbr><ex>erator</ex></expan></w></del><add place="above"><w lemma="imperator" part="I"><expan><abbr>Imp</abbr><ex>erator</ex></expan></w></add></subst>
@@ -147,7 +150,7 @@
                </ab></div><div subtype="fragment" n="i" type="textpart"><ab>
                   <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
                   <subst><del rend="erasure"><gap reason="lost" quantity="1" unit="line"/></del><add place="above">
-                        <persName type="emperor"><name><seg part="I"><expan><abbr><supplied reason="lost">M</supplied></abbr><supplied reason="lost"><ex>arc</ex></supplied></expan></seg></name>
+                        <persName type="emperor" key="anonymus"><name><seg part="I"><expan><abbr><supplied reason="lost">M</supplied></abbr><supplied reason="lost"><ex>arc</ex></supplied></expan></seg></name>
                         <name type="gentilicium" nymRef="Aurelius"><seg part="I">Aur<supplied reason="lost">eli</supplied></seg></name></persName>
                      </add></subst>
                  <gap reason="lost" extent="unknown" unit="character"/>

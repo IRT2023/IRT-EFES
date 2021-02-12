@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT044" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT044" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -122,11 +125,11 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/><gap reason="lost" quantity="1" unit="line"/>
-               <lb n="2"/><persName type="emperor"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Magnus">M<supplied reason="lost">agni</supplied></name>
+               <lb n="2"/><persName type="emperor" key="caracalla"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Magnus">M<supplied reason="lost">agni</supplied></name>
                <name type="gentilicium" nymRef="Antoninus"><supplied reason="lost">Antonini</supplied></name></persName> <w lemma="filius"><supplied reason="lost">fili</supplied></w>
                <lb n="3"/>
                   <del rend="erasure"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratoris</ex></expan></w></del> 
-               <persName type="emperor"><del rend="erasure"><name type="cognomen" nymRef="Caesar"><expan><abbr>C<supplied reason="lost">aes</supplied></abbr><supplied reason="lost"><ex>aris</ex></supplied></expan></name> 
+               <persName type="emperor" key="severusalexander"><del rend="erasure"><name type="cognomen" nymRef="Caesar"><expan><abbr>C<supplied reason="lost">aes</supplied></abbr><supplied reason="lost"><ex>aris</ex></supplied></expan></name> 
                   <supplied reason="lost"><name type="praenomen" nymRef="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> 
                      <name type="gentilicium" nymRef="Aurelius">Aureli</name> <name type="cognomen" nymRef="Seuerus">Seueri</name></supplied></del>
                <lb n="4"/><del rend="erasure"><name type="cognomen" nymRef="Alexander">Alex<supplied reason="lost">andri</supplied></name> <name type="cognomen" nymRef="Pius">Pii</name> 
@@ -139,9 +142,9 @@
                <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num>
                <supplied reason="lost"><w lemma="pater"><expan><abbr>p</abbr><ex>atris</ex></expan></w> 
                   <w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w> <w lemma="et">et</w></supplied></del>
-               <lb n="7"/><persName type="emperor"><del rend="erasure"><name type="gentilicium" nymRef="Iulia">Iulia<supplied reason="lost">e</supplied></name> 
+               <lb n="7"/><persName type="emperor" key="juliamamaea"><del rend="erasure"><name type="gentilicium" nymRef="Iulia">Iulia<supplied reason="lost">e</supplied></name> 
                <supplied reason="lost"><name type="cognomen" nymRef="Mamaea">Mamaeae</name> <w lemma="mater">matris</w> 
-                  <persName type="emperor"><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName></supplied></del>
+                  <persName type="emperor" key="severusalexander"><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName></supplied></del>
                <lb n="8"/><w lemma="et">et</w> <w lemma="castra">ca<supplied reason="lost">strorum</supplied></w>
                <supplied reason="lost"><w lemma="et">et</w> <w lemma="senatus">Senatus</w> <w lemma="et">et</w> <w lemma="patria">patriae</w></supplied></persName>
                <lb n="9"/><placeName type="ethnic" nymRef="Sabrathensis">Sa<supplied reason="lost">brathenses</supplied></placeName> 

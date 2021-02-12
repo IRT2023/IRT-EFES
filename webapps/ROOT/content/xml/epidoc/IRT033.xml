@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT033" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT033" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -124,7 +127,7 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><div subtype="fragment" n="a" type="textpart"><ab>
                   <lb n="1"/><supplied reason="lost"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></w></supplied> 
-                  <persName type="emperor"><supplied reason="lost"><name type="cognomen" nymRef="Caesar">Caesari</name> 
+                  <persName type="emperor" key="septimiusseverus"><supplied reason="lost"><name type="cognomen" nymRef="Caesar">Caesari</name> 
                      <name type="praenomen" nymRef="Lucius">Lucio</name> <name type="gentilicium" nymRef="Septimius">Septimio</name> <name type="cognomen" nymRef="Seuerus">Seuero</name></supplied>
                      <name type="cognomen" nymRef="Pius"><supplied reason="lost">Pi</supplied>o</name> 
                      <name type="cognomen" nymRef="Pertinax">Pert<supplied reason="lost">ina</supplied>ci</name> 
@@ -136,10 +139,10 @@
                      <w lemma="magnus"><supplied reason="lost">maxi</supplied>mo</w>
                      <w lemma="tribunicius">tribun<supplied reason="lost">ici</supplied>ae</w> 
                      <w lemma="potestas">potes<supplied reason="lost">tatis</supplied></w>
-                     <supplied reason="lost"><num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num></supplied>
-                     <lb n="3"/><supplied reason="lost"><w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w> <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num>
-                        <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w>
-                        <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num></supplied> 
+                     <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num>
+                     <lb n="3"/><supplied reason="lost"><w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w></supplied> <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num>
+                       <supplied reason="lost"> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w></supplied>
+                        <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num> 
                      <w lemma="pater"><expan><abbr>p</abbr><ex>atri</ex></expan></w> 
                      <w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w>
                   </ab></div><div subtype="fragment" n="b" type="textpart"><ab>

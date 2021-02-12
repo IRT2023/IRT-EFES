@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT066" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT066" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -122,11 +125,11 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/><w lemma="imperator" part="I"><expan><supplied reason="lost"><abbr>Imp</abbr><ex>erator</ex></supplied></expan></w> 
-               <persName type="emperor"><name type="cognomen" nymRef="Caesar"><seg part="I"><expan><abbr><supplied reason="lost">Ca</supplied>es</abbr><ex>ar</ex></expan></seg></name></persName> 
+               <persName type="emperor" key="anonymus"><name type="cognomen" nymRef="Caesar"><seg part="I"><expan><abbr><supplied reason="lost">Ca</supplied>es</abbr><ex>ar</ex></expan></seg></name> 
                <w part="I">d</w><gap reason="lost" extent="unknown" unit="character"/>
                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
-               <persName type="emperor"><name><seg part="I"><expan><abbr><supplied reason="lost">Ger</supplied><unclear>m</unclear></abbr><ex>anic</ex></expan></seg></name></persName> 
-               <name><seg part="I"><expan><abbr>Sa<unclear>r</unclear></abbr><supplied reason="lost"><abbr>m</abbr><ex>atic</ex></supplied></expan></seg></name>
+               <name nymRef="Germanicus"><seg part="I"><expan><abbr><supplied reason="lost">Ger</supplied><unclear>m</unclear></abbr><ex>anic</ex></expan></seg></name> 
+               <name nymRef="Sarmaticus"><seg part="I"><expan><abbr>Sa<unclear>r</unclear></abbr><supplied reason="lost"><abbr>m</abbr><ex>atic</ex></supplied></expan></seg></name></persName>
                <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">uit</w>
                <gap reason="lost" extent="unknown" unit="character"/>
