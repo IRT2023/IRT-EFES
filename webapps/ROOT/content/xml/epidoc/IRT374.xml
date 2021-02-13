@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT374" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT374" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -117,8 +120,7 @@
          <div type="bibliography">
             <head>Bibliography</head>
             <p>
-               <bibl>
-                  <ptr target="bartoccini1929"/>, <citedRange>90</citedRange>ff.</bibl>.</p>
+               <bibl><ptr target="bartoccini1929"/>, <citedRange>90</citedRange>ff.</bibl>.</p>
          </div>
          <div subtype="text-constituted-from" type="history">
             <head>Text constituted from</head>
@@ -126,12 +128,12 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><div subtype="fragment" n="a" type="textpart"><ab>
                   <lb n="1"/>
-                  <persName type="emperor"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>eratore</ex></expan></supplied></w> <name type="cognomen" nymRef="Caesar"><supplied reason="lost">Caesar</supplied>e</name> 
-                     <persName type="emperor"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Hadrianus">Hadriani</name></persName> 
+                  <persName type="emperor" key="antoninuspius"><w lemma="imperator"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>eratore</ex></expan></supplied></w> <name type="cognomen" nymRef="Caesar"><supplied reason="lost">Caesar</supplied>e</name> 
+                     <persName type="emperor" key="hadrianus"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Hadrianus">Hadriani</name></persName> 
                   <w lemma="filius"><expan><abbr>fil</abbr><ex>io</ex></expan></w> 
-                     <supplied reason="lost"><persName type="emperor"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Traianus">Traiani</name></persName> <w lemma="nepos">nepote</w></supplied> 
+                     <supplied reason="lost"><persName type="emperor" key="traianus"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Traianus">Traiani</name></persName> <w lemma="nepos">nepote</w></supplied> 
                   <lb n="2"/>
-                     <persName type="emperor"><supplied reason="lost"><w lemma="diuus">diui</w></supplied> <name type="cognomen" nymRef="Nerua"><supplied reason="lost">Nerua</supplied>e</name></persName> <w lemma="pronepos"><expan><abbr>pron</abbr><ex>epote</ex></expan></w> 
+                     <persName type="emperor" key="nerva"><supplied reason="lost"><w lemma="diuus">diui</w></supplied> <name type="cognomen" nymRef="Nerua"><supplied reason="lost">Nerua</supplied>e</name></persName> <w lemma="pronepos"><expan><abbr>pron</abbr><ex>epote</ex></expan></w> 
                   <name type="praenomen" nymRef="Titus"><expan><abbr>T</abbr><ex>ito</ex></expan></name> <name type="gentilicium" nymRef="Aelius">Aelio</name> 
                   <name type="cognomen" nymRef="Hadrianus">Had<supplied reason="lost">riano</supplied></name> <supplied reason="lost"><name type="gentilicium" nymRef="Antoninus">Antonino</name>
                      <name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name> <name type="cognomen" nymRef="Pius">Pio</name></supplied></persName> 
@@ -148,7 +150,7 @@
                   <w lemma="res"><supplied reason="lost">r</supplied>em</w> <w lemma="publicus">publica<supplied reason="lost">m</supplied></w>
                   <gap reason="lost" extent="unknown" unit="character"/>
                   <lb n="6"/>
-                  <gap reason="lost" extent="unknown" unit="character"/>it<gap reason="lost" quantity="3" unit="character"/> 
+                  <gap reason="lost" extent="unknown" unit="character"/><orig>it</orig><gap reason="lost" quantity="3" unit="character"/> 
                   <w part="I">p<unclear>r</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
                </ab></div><div subtype="fragment" n="b" type="textpart"><ab>
                   <lb n="8"/>
