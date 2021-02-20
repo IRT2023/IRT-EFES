@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT001" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT001" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,9 +20,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl xml:id="irt1952">
-                  <author>J. M. Reynolds</author> and <author>J. B. Ward-Perkins</author>, <title level="m">The Inscriptions of Roman Tripolitania</title>, <pubPlace>Rome</pubPlace>: <publisher>British
-                  School at Rome</publisher>, <date>1952</date>. </bibl>
+            
             <msDesc>
                <msIdentifier/>
                <physDesc>
@@ -55,10 +56,40 @@
                      <listEvent>
                         <event type="found">
                            <p>
-                              <placeName type="ancientFindspot"
-                                         ref="http://atlantides.org/batlas/abrotonum-sabratha-35-e2"
-                                         key="db659">Sabratha</placeName>:
-                  <rs type="monuList" key="db832">Capitolium</rs>, found in the vaults.</p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/659">Sabratha</placeName>:
+                              <rs type="monuList" ref="https://www.slsgazetteer.org/832">Capitolium</rs>, found in the vaults. When excavated by Bartoccini, these vaults were found to contain a large series of
+                              architectural fragments, inscriptions, and burnt debris, deposited almost certainly when
+                              the Forum area was cleared after the disastrous sack of the city by the Austuriani,
+                              c. 363-5 (see IRT 2009, introduction). Other inscriptions in the series are:
+                              <ref type="inscription">3</ref>, <ref type="inscription">10</ref>,
+                              <ref type="inscription">11</ref>, <ref type="inscription">14</ref>, 
+                              <ref type="inscription">17</ref>, <ref type="inscription">19</ref>,
+                              <ref type="inscription">20</ref>, <ref type="inscription">24</ref>,
+                              <ref type="inscription">25</ref>, <ref type="inscription">26</ref>, <ref type="inscription">28</ref>,
+                              <ref type="inscription">30</ref>, <ref type="inscription">32</ref>,
+                              <ref type="inscription">34</ref>,<ref type="inscription">38</ref>, <ref type="inscription">39</ref>,
+                              <ref type="inscription">42</ref>, <ref type="inscription">44</ref>,
+                              <ref type="inscription">48</ref>, <ref type="inscription">50</ref>, 
+                              <ref type="inscription">51</ref>, <ref type="inscription">52</ref>,
+                              <ref type="inscription">54</ref>, <ref type="inscription">62</ref>,
+                              <ref type="inscription">64</ref>, <ref type="inscription">65</ref>, <ref type="inscription">66</ref>,
+                              <ref type="inscription">67</ref>, <ref type="inscription">70</ref>,
+                              <ref type="inscription">71</ref>, <ref type="inscription">73</ref>, <ref type="inscription">75</ref>,
+                              <ref type="inscription">76</ref>, <ref type="inscription">77</ref>,
+                              <ref type="inscription">82</ref>, <ref type="inscription">84</ref>, <ref type="inscription">87</ref>,
+                              <ref type="inscription">88</ref>, <ref type="inscription">92</ref>,
+                              <ref type="inscription">95</ref>, <ref type="inscription">96</ref>,
+                              <ref type="inscription">97</ref>, <ref type="inscription">99</ref>, 
+                              <ref type="inscription">113</ref>, <ref type="inscription">115</ref>,
+                              <ref type="inscription">116</ref>, <ref type="inscription">117</ref>,
+                              <ref type="inscription">128</ref>, <ref type="inscription">131</ref>, 
+                              <ref type="inscription">133</ref>, <ref type="inscription">137</ref>, 
+                              <ref type="inscription">139</ref>, <ref type="inscription">140</ref>,
+                              <ref type="inscription">141</ref>, <ref type="inscription">143</ref>, <ref type="inscription">147</ref>, 
+                              <ref type="inscription">149</ref>, <ref type="inscription">156</ref>,
+                              <ref type="inscription">160</ref>, <ref type="inscription">167</ref>,
+                              <ref type="inscription">168</ref>, <ref type="inscription">172</ref>, 
+                              <ref type="inscription">175</ref>, <ref type="inscription">190</ref>.</p>
                         </event>
                         <event type="observed">
                            <p>Findspot</p>
@@ -101,59 +132,29 @@
                </term>
             </keywords>
          </textClass>
+         <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-20" who="CMR">adapted</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="0001.jpg"><desc>Ward-Perkins Archive, BSR (BSR 48.XXVII.15)</desc></graphic>
+   </facsimile>
    <text>
       <body>
-         <div subtype="recording" type="history">
-            <p> When excavated by Bartoccini, these vaults were found to contain a large series of
-      architectural fragments, inscriptions, and burnt debris, deposited almost certainly when
-      the Forum area was cleared after the disastrous sack of the city by the Austuriani,
-      c. 363-5 (see introduction). Other inscriptions in the series are:
-      <ref type="inscription">3</ref>, <ref type="inscription">10</ref>,
-      <ref type="inscription">11</ref>, <ref type="inscription">14</ref>, 
-      <ref type="inscription">17</ref>, <ref type="inscription">19</ref>,
-      <ref type="inscription">20</ref>, <ref type="inscription">24</ref>,
-      <ref type="inscription">25</ref>, <ref type="inscription">26</ref>, <ref type="inscription">28</ref>,
-      <ref type="inscription">30</ref>, <ref type="inscription">32</ref>,
-      <ref type="inscription">34</ref>,<ref type="inscription">38</ref>, <ref type="inscription">39</ref>,
-      <ref type="inscription">42</ref>, <ref type="inscription">44</ref>,
-      <ref type="inscription">48</ref>, <ref type="inscription">50</ref>, 
-      <ref type="inscription">51</ref>, <ref type="inscription">52</ref>,
-      <ref type="inscription">54</ref>, <ref type="inscription">62</ref>,
-      <ref type="inscription">64</ref>, <ref type="inscription">65</ref>, <ref type="inscription">66</ref>,
-      <ref type="inscription">67</ref>, <ref type="inscription">70</ref>,
-      <ref type="inscription">71</ref>, <ref type="inscription">73</ref>, <ref type="inscription">75</ref>,
-      <ref type="inscription">76</ref>, <ref type="inscription">77</ref>,
-      <ref type="inscription">82</ref>, <ref type="inscription">84</ref>, <ref type="inscription">87</ref>,
-      <ref type="inscription">88</ref>, <ref type="inscription">92</ref>,
-      <ref type="inscription">95</ref>, <ref type="inscription">96</ref>,
-      <ref type="inscription">97</ref>, <ref type="inscription">99</ref>, 
-      <ref type="inscription">113</ref>, <ref type="inscription">115</ref>,
-      <ref type="inscription">116</ref>, <ref type="inscription">117</ref>,
-      <ref type="inscription">128</ref>, <ref type="inscription">131</ref>, 
-      <ref type="inscription">133</ref>, <ref type="inscription">137</ref>, 
-      <ref type="inscription">139</ref>, <ref type="inscription">140</ref>,
-      <ref type="inscription">141</ref>, <ref type="inscription">143</ref>, <ref type="inscription">147</ref>, 
-      <ref type="inscription">149</ref>, <ref type="inscription">156</ref>,
-      <ref type="inscription">160</ref>, <ref type="inscription">167</ref>,
-      <ref type="inscription">168</ref>, <ref type="inscription">172</ref>, 
-      <ref type="inscription">175</ref>, <ref type="inscription">190</ref>.</p>
-         </div>
+         
          <div type="bibliography">
             <head>Bibliography</head>
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="irt1952"/> <citedRange>1</citedRange></bibl>, whence <bibl><ptr target="irt2009"/> <citedRange>1</citedRange></bibl>, whence 
+               <bibl>EDH <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059004">059004</ref></citedRange></bibl>
+            </p>
          </div>
-         <div subtype="text-constituted-from" type="history">
-            <head>Text constituted from</head>
-            <p>Transcription (Reynolds, Ward-Perkins)</p>
-         </div>
+         
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/>
                <gap reason="lost" extent="unknown" unit="character"/><w part="M">ecur</w><gap reason="lost" extent="unknown" unit="character"/>
@@ -164,20 +165,14 @@
                <gap reason="lost" extent="unknown" unit="character"/> 
                <w part="I">inp</w><gap reason="lost" extent="unknown" unit="character"/>
             </ab></div>
-         <div type="translation" xml:space="preserve"><head>Translation</head><p><note>Not usefully translatable</note></p></div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" resp="#jmr" xml:lang="en"><p><note>Not usefully translatable</note></p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p>There may be a reference to the god Apollo, or part of a personal name (e.g. Apollinaris).</p>
          </div>
-         <div type="figure">
-            <head>Photographs</head>
-            <p>
-               <figure>
-                  <graphic url="0001"/>
-                  <head>Ward-Perkins Archive, BSR (BSR 48.XXVII.15)</head>
-               </figure>
-            </p>
-         </div>
+         
       </body>
    </text>
 </TEI>
