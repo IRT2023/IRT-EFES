@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT006" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT006" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -18,9 +21,7 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl xml:id="irt1952">
-                  <author>J. M. Reynolds</author> and <author>J. B. Ward-Perkins</author>, <title level="m">The Inscriptions of Roman Tripolitania</title>, <pubPlace>Rome</pubPlace>: <publisher>British
-                  School at Rome</publisher>, <date>1952</date>. </bibl>
+            
             <msDesc>
                <msIdentifier/>
                <physDesc>
@@ -48,20 +49,16 @@
                      <p>Unknown</p>
                      <origDate notAfter="0300" notBefore="0201" precision="low" evidence="lettering">Second to third centuries A.D. (lettering)</origDate>
                   </origin>
-                  <provenance>
-                     <listEvent>
-                        <event type="found">
+                  <provenance type="found">
+                     
                            <p>
-                              <placeName type="ancientFindspot"
-                                         ref="http://atlantides.org/batlas/abrotonum-sabratha-35-e2"
-                                         key="db659">Sabratha</placeName>:
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer/659">Sabratha</placeName>:
                   The <rs type="monuList" ref="https://www.slsgazetteer/848">Justinian church</rs>: found re-used face-downwards as a column base, one of a series.</p>
-                        </event>
-                        <event type="observed">
-                           <p>Findspot</p>
-                        </event>
-                     </listEvent>
                   </provenance>
+                     <provenance type="observed">
+                           <p>Findspot</p>
+                        </provenance>
+                    
                </history>
             </msDesc>
          </sourceDesc>
@@ -98,7 +95,9 @@
                </term>
             </keywords>
          </textClass>
+         <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
+      
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
@@ -106,16 +105,17 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="wp0008.jpg">
+         <desc>Ward-Perkins Archive, BSR (BSR 47.VII.25)</desc></graphic>
+   </facsimile>
    <text>
       <body>
          <div type="bibliography">
             <head>Bibliography</head>
             <p>Not previously published.</p>
          </div>
-         <div subtype="text-constituted-from" type="history">
-            <head>Text constituted from</head>
-            <p>Transcription (Reynolds, Ward-Perkins)</p>
-         </div>
+         
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/><gap reason="lost" quantity="1" unit="line"/>
                <lb n="2"/><w lemma="is">eius</w> <w lemma="statua">sta<supplied reason="lost">t</supplied>uam</w> 
@@ -141,15 +141,7 @@
             <head>Commentary</head>
             <p>No comment</p>
          </div>
-         <div type="figure">
-            <head>Photographs</head>
-            <p>
-               <figure>
-                  <graphic url="0008"/>
-                  <head>Ward-Perkins Archive, BSR (BSR 47.VII.25)</head>
-               </figure>
-            </p>
-         </div>
+         
       </body>
    </text>
 </TEI>

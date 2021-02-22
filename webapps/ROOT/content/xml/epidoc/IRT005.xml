@@ -21,11 +21,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl xml:id="irt1952">
-                  <author>J. M. Reynolds</author> and <author>J. B. Ward-Perkins</author>, <title level="m">The Inscriptions of Roman Tripolitania</title>, <pubPlace>Rome</pubPlace>: <publisher>British
-                  School at Rome</publisher>, <date>1952</date>. </bibl>
+            
             <msDesc>
-               <msIdentifier/>
+               <msIdentifier><repository ref="institution.xml#db660">Sabratha Museum</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -58,21 +56,16 @@
                      <p>Unknown</p>
                      <origDate notBefore="0201" notAfter="0300" precision="low" evidence="lettering">Third century A.D. (lettering)</origDate>
                   </origin>
-                  <provenance>
-                     <listEvent>
-                        <event type="found">
+                  
+                        <provenance type="found">
                            <p>
-                              <placeName type="ancientFindspot"
-                                         ref="http://atlantides.org/batlas/abrotonum-sabratha-35-e2"
-                                         key="db659">Sabratha</placeName>:
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer/659">Sabratha</placeName>:
                   <rs type="monuList" ref="https://www.slsgazetteer/856">Regio  II</rs>: in the open space between insula  12 and 13</p>
-                        </event>
-                        <event type="observed">
+                        </provenance>
+                        <provenance type="observed">
                            <p>
-                              <rs type="monuList" ref="https://www.slsgazetteer/660">Sabratha Museum</rs>.</p>
-                        </event>
-                     </listEvent>
-                  </provenance>
+                              <rs ref="https://www.slsgazetteer/660">Sabratha Museum</rs>.</p>
+                        </provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -109,51 +102,60 @@
                </term>
             </keywords>
          </textClass>
+         <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-22" who="CMR">adapted</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+                  <graphic url="wp0006.jpg">
+                  <desc>Left side: Ward-Perkins Archive, BSR (BSR 47.VIII.26)</desc></graphic>
+                  <graphic url="wp0007.jpg">
+                  <desc>Front face: Ward-Perkins Archive, BSR (BSR 48.XVIII.34)</desc></graphic>
+               </facsimile>
    <text>
       <body>
          <div type="bibliography">
             <head>Bibliography</head>
-            <p>Not previously published.</p>
+            <p><!-- check </bibl>
+               <bibl><ptr type="goodchild1949"/> <citedRange>30</citedRange>-->
+               <bibl><ptr target="irt1952"/> <citedRange>5</citedRange></bibl>, whence 
+               <bibl><ptr target="guey1953"/> <citedRange>336</citedRange></bibl>, 
+               <bibl><ptr target="irt2009"/> <citedRange>5</citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/>
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059006">059006</ref></citedRange></bibl>; 
+               discussed <bibl><ptr target="brouquier1992"/> <citedRange>189-190</citedRange></bibl>
+            </p>
          </div>
-         <div subtype="text-constituted-from" type="history">
-            <head>Text constituted from</head>
-            <p>Transcription (Reynolds, Ward-Perkins)</p>
-         </div>
+        
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
-               <lb n="1"/><persName type="divine"><w lemma="genius">Genio</w></persName>
+               <lb n="1"/><persName type="divine" key="geniusaug"><w lemma="genius">Genio</w></persName>
                <lb n="2"/><w lemma="frugifer">frugi<lb n="3" break="no"/>fero</w> <surplus>a</surplus>
                <lb n="4"/><persName type="emperor" key="anonymus"><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName>
                <lb n="5"/><persName type="attested"><name type="gentilicium" nymRef="Iunius">Iunius</name>
                <lb n="6"/><name type="cognomen" nymRef="Crescens">Cres<lb n="7" break="no"/>c<supplied reason="lost">e</supplied></name> <orig>n<unclear>s</unclear></orig></persName>
                <lb n="8"/><gap reason="lost" quantity="1" unit="line"/>
             </ab></div>
-         <div type="translation" xml:space="preserve"><head>Translation</head><p>To the fruit-bearing Genius of Augustus; Junius Crescens 
-            <supplied reason="subaudible">gave and dedicated this</supplied>. </p></div>
+         
+         <div type="apparatus">
+            <listApp>
+               <app loc="4"><rdg resp="#guey1953">Aug(ustus)</rdg></app>
+            </listApp>
+         </div>
+         
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#irt2009" xml:lang="en"><p>To the fruit-bearing Genius of Augustus; Junius Crescens 
+            <supplied reason="subaudible">gave and dedicated this</supplied>. </p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p>No comment.</p>
          </div>
-         <div type="figure">
-            <head>Photographs</head>
-            <p>
-               <figure>
-                  <graphic url="0006"/>
-                  <head>Ward-Perkins Archive, BSR (BSR 47.VIII.26 (left side))</head>
-               </figure>
-               <figure>
-                  <graphic url="0007"/>
-                  <head>Ward-Perkins Archive, BSR (BSR 48.XVIII.34)</head>
-               </figure>
-            </p>
-         </div>
+         
       </body>
    </text>
 </TEI>
