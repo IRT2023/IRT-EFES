@@ -21,17 +21,15 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl xml:id="irt1952">
-                  <author>J. M. Reynolds</author> and <author>J. B. Ward-Perkins</author>, <title level="m">The Inscriptions of Roman Tripolitania</title>, <pubPlace>Rome</pubPlace>: <publisher>British
-                  School at Rome</publisher>, <date>1952</date>. </bibl>
+            
             <msDesc>
-               <msIdentifier/>
+               <msIdentifier><repository ref="institution.xml#db660">Sabratha Museum</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
                            <p>The left side of a <material>marble</material> 
-                              <rs type="objectType">panel</rs>
+                              <objectType>panel</objectType>
                (surviving, <dimensions>
                                  <width unit="metre">0.48</width>
                                  <height unit="metre">0.44</height>
@@ -49,25 +47,24 @@
                </physDesc>
                <history>
                   <origin>
-                     <p>Unknown</p>
+                     <origPlace>Unknown</origPlace>
                      <origDate notBefore="0340" notAfter="0350" evidence="reign">A.D. 340-350 (reign)</origDate>
                   </origin>
-                  <provenance>
-                     <listEvent>
-                        <event type="found">
+                  <provenance type="found">
+                     
+                       
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="http://atlantides.org/batlas/abrotonum-sabratha-35-e2"
-                                         key="db659">Sabratha</placeName>:
+                                 ref="https://www.slsgazetteer/659">Sabratha</placeName>:
                   <rs type="monuList" ref="https://www.slsgazetteer/864">Theatre</rs>
                            </p>
-                        </event>
-                        <event type="observed">
-                           <p>
-                              <rs type="monuList" ref="https://www.slsgazetteer/660">Sabratha Museum</rs>.</p>
-                        </event>
-                     </listEvent>
                   </provenance>
+                  <provenance type="observed">
+                           <p>
+                              <placeName ref="https://www.slsgazetteer/660">Sabratha Museum</placeName>.</p>
+                        </provenance>
+                     
+                 
                </history>
             </msDesc>
          </sourceDesc>
@@ -104,6 +101,7 @@
                </term>
             </keywords>
          </textClass>
+         <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -112,23 +110,27 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="wp0009.jpg">
+         <desc>Ward-Perkins Archive, BSR (Sopr. DS 227)</desc></graphic>
+   </facsimile>
    <text>
       <body>
          <div type="bibliography">
             <head>Bibliography</head>
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="irt1952"/> <citedRange>7</citedRange></bibl>, whence <bibl><ptr target="irt2009"/> <citedRange>7</citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/>
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059008">059008</ref></citedRange></bibl>
+            </p>
          </div>
-         <div subtype="text-constituted-from" type="history">
-            <head>Text constituted from</head>
-            <p>Transcription (Reynolds, Ward-Perkins)</p>
-         </div>
+         
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/><gap reason="lost" atLeast="1" atMost="2" unit="character"/><orig><unclear>i</unclear>u</orig><gap reason="lost" extent="unknown" unit="character"/>
                <supplied reason="lost"><w lemma="et">et</w> <w lemma="totus">toto</w></supplied> 
                <lb n="2"/><w lemma="orbis">orbe</w> <w lemma="uictor">uicto<supplied reason="lost">ribus</supplied></w>
                <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="3"/><w lemma="dominus"><expan><abbr>d</abbr><ex>ominis</ex></expan></w> 
-               <w lemma="noster"><expan><abbr>n</abbr><ex>ostris</ex></expan></w>
+               <lb n="3"/><w lemma="dominus"><expan><abbr>dd</abbr><ex>ominis</ex></expan></w> 
+               <w lemma="noster"><expan><abbr>nn</abbr><ex>ostris</ex></expan></w>
                <persName type="emperor" key="constans"><name type="gentilicium" nymRef="Flauius"><expan><abbr>Fl</abbr><ex>auio</ex></expan></name>
                <name type="gentilicium" nymRef="Iulius">Iulio</name> 
                <name nymRef="Constans">C<supplied reason="lost">onstante</supplied></name></persName> 
@@ -137,7 +139,7 @@
                <name type="gentilicium" nymRef="Iulius"><supplied reason="lost">I</supplied>ulio</name> 
                <name type="cognomen" nymRef="Constantius">Consta<unclear>n</unclear><supplied reason="lost">tio</supplied></name></persName>
                <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="5"/><persName type="divine"><name nymRef="Hercules"><unclear>H</unclear>erculis</name></persName>
+               <lb n="5"/><persName type="divine" key="herakles"><name nymRef="Hercules"><unclear>H</unclear>erculis</name></persName>
                <orig><unclear>lo</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
                <lb n="6"/><w part="I"><unclear>h</unclear>orro</w><gap reason="lost" extent="unknown" unit="character"/>
                <lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
@@ -152,21 +154,15 @@
                </app>
             </p>
          </div>
-         <div type="translation" xml:space="preserve"><head>Translation</head><p>To <supplied reason="lost">the</supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">and</supplied> victors <supplied reason="lost">throughout the whole world</supplied>, our lords Flavius Julius Constans and 
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div type="translation" source="#irt2009" xml:lang="en"><p>To <supplied reason="lost">the</supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">and</supplied> victors <supplied reason="lost">throughout the whole world</supplied>, our lords Flavius Julius Constans and 
                Flavius Julius Constantius <gap reason="lost" extent="unknown" unit="character"/>; of Hercules <gap reason="lost" extent="unknown" unit="character"/></p></div>
+         </div>
          <div type="commentary">
             <head>Commentary</head>
             <p>Constans and Constantius were Augusti together from 340-350.</p>
          </div>
-         <div type="figure">
-            <head>Photographs</head>
-            <p>
-               <figure>
-                  <graphic url="0009"/>
-                  <head>Ward-Perkins Archive, BSR (Sopr. DS 227)</head>
-               </figure>
-            </p>
-         </div>
+         
       </body>
    </text>
 </TEI>
