@@ -21,11 +21,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl xml:id="irt1952">
-                  <author>J. M. Reynolds</author> and <author>J. B. Ward-Perkins</author>, <title level="m">The Inscriptions of Roman Tripolitania</title>, <pubPlace>Rome</pubPlace>: <publisher>British
-                  School at Rome</publisher>, <date>1952</date>. </bibl>
+            
             <msDesc>
-               <msIdentifier/>
+               <msIdentifier><repository ref="institution.xml#db660">Sabratha Museum</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -38,8 +36,7 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed within a moulded panel (die, 
-               <dimensions>
+                        <layout>Inscribed within a moulded panel (die, <dimensions>
                               <width unit="metre">0.33</width>
                               <height unit="metre">0.67</height>
                            </dimensions>).</layout>
@@ -62,8 +59,7 @@
                               <placeName type="monuList" ref="https://www.slsgazetteer/832">Capitolium</placeName>: found with associated bust.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>Lent from Sabratha Museum to the <rs type="monuList">Mostra
-                  Coloniale at Naples</rs> and not yet returned (as of 1952). Not seen.</p>
+                           <p><placeName ref="https://www.slsgazetteer/660">Sabratha Museum</placeName> (2010)</p>
                         </provenance>
                     
                   
@@ -103,7 +99,9 @@
                </term>
             </keywords>
          </textClass>
+         <creation>Previous publications (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
+      
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
@@ -111,6 +109,12 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="wp0011.jpg">
+         <desc>Ward-Perkins Archive, BSR (Sopr. B 1237)</desc></graphic>
+      <graphic url="cmr0009.jpg">
+      <desc>Base (Roueché, 2010: DSCN1432)</desc></graphic>
+   </facsimile>
    <text>
       <body>
          <div type="bibliography">
@@ -119,10 +123,7 @@
                <bibl><ptr target="ae"/> <citedRange>1925:100</citedRange>
                </bibl>.</p>
          </div>
-         <div subtype="text-constituted-from" type="history">
-            <head>Text constituted from</head>
-            <p>Previous publications</p>
-         </div>
+         
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/><persName type="divine"><name nymRef="Iuppiter">Ioui</name></persName>
                <lb n="2"/><persName type="attested"><name type="cognomen" nymRef="Africanus">Africanus</name></persName>
@@ -132,17 +133,11 @@
          
          <div type="commentary">
             <head>Commentary</head>
+            <p>In 1952 the editors reported that the monument had been lent from Sabratha Museum to the Mostra
+               Coloniale at Naples and not yet been returned.</p>
             <p>Africanus also appears in <ref type="inscription">4</ref> line 2.</p>
          </div>
-         <div type="figure">
-            <head>Photographs</head>
-            <p>
-               <figure>
-                  <graphic url="0011"/>
-                  <head>Ward-Perkins Archive, BSR (Sopr. B 1237)</head>
-               </figure>
-            </p>
-         </div>
+         
       </body>
    </text>
 </TEI>
