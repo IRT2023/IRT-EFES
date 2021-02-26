@@ -61,11 +61,11 @@
                               <placeName type="ancientFindspot"
                                          ref="http://atlantides.org/batlas/abrotonum-sabratha-35-e2"
                                          key="db659">Sabratha</placeName>:
-                  <rs type="monuList" ref="https://www.slsgazetteer/861">Temple of Isis</rs>, found in the southernmost vault beneath the cella</p>
+                  <rs type="monuList" ref="https://www.slsgazetteer.org/861">Temple of Isis</rs>, found in the southernmost vault beneath the cella</p>
                         </event>
                         <event type="observed">
                            <p> 
-                              <rs type="monuList" ref="https://www.slsgazetteer/660">Sabratha Museum</rs>.</p>
+                              <rs type="monuList" ref="https://www.slsgazetteer.org/660">Sabratha Museum</rs>.</p>
                         </event>
                      </listEvent>
                   </provenance>
@@ -105,6 +105,7 @@
                </term>
             </keywords>
          </textClass>
+         <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -113,16 +114,20 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+                  <graphic url="0010">
+                  <desc>Tracing (Ward-Perkins Archive, BSR)</desc></graphic>
+               </facsimile>
    <text>
       <body>
          <div type="bibliography">
             <head>Bibliography</head>
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="irt1952"/> <citedRange>8</citedRange></bibl>, whence <bibl><ptr target="irt2009"/> <citedRange>8</citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/>
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059009">059009</ref></citedRange></bibl>
+            </p>
          </div>
-         <div subtype="text-constituted-from" type="history">
-            <head>Text constituted from</head>
-            <p>Transcription (Reynolds, Ward-Perkins)</p>
-         </div>
+        
          <div type="edition" xml:lang="la" xml:space="preserve"><head xml:lang="en">Text</head><ab>
                <lb n="1"/><persName type="divine"><name type="cognomen" nymRef="Isis">Isidi</name></persName> 
                <w lemma="sacer"><expan><abbr>sac</abbr><ex>rum</ex></expan></w> 
@@ -132,20 +137,14 @@
                <lb n="3"/><w part="F">ca</w>  <g type="stop"/>  
                <gap reason="lost" extent="unknown" unit="character"/>
             </ab></div>
-         <div type="translation" xml:space="preserve"><head>Translation</head><p>Sacred to Isis; <gap reason="lost" extent="unknown" unit="character"/>lia <gap reason="lost" extent="unknown" unit="character"/>ca <supplied reason="subaudible">gave and dedicated this</supplied></p></div>
+         <div type="translation" xml:space="preserve"><head>Translation</head>
+            <div  type="translation" source="#irt2009" xml:lang="en"><p>Sacred to Isis; <gap reason="lost" extent="unknown" unit="character"/>-lia <gap reason="lost" extent="unknown" unit="character"/>-ca 
+               <supplied reason="subaudible">gave and dedicated this</supplied></p></div></div>
          <div type="commentary">
             <head>Commentary</head>
             <p>No comment</p>
          </div>
-         <div type="figure">
-            <head>Photographs</head>
-            <p>
-               <figure>
-                  <graphic url="0010"/>
-                  <head>Ward-Perkins Archive, BSR</head>
-               </figure>
-            </p>
-         </div>
+         
       </body>
    </text>
 </TEI>
