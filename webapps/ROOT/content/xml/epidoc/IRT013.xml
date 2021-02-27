@@ -21,11 +21,9 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <bibl xml:id="irt1952">
-                  <author>J. M. Reynolds</author> and <author>J. B. Ward-Perkins</author>, <title level="m">The Inscriptions of Roman Tripolitania</title>, <pubPlace>Rome</pubPlace>: <publisher>British
-                  School at Rome</publisher>, <date>1952</date>. </bibl>
+            
             <msDesc>
-               <msIdentifier/>
+               <msIdentifier><repository ref="institution.xml#db660">Sabratha Museum</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -63,7 +61,7 @@
                   between the altar and the bema of the Church (Regio  III insula  4).</p>
                         </event>
                         <event type="observed">
-                           <p>Findspot</p>
+                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/660">Sabratha Museum</placeName>.</p>
                         </event>
                      </listEvent>
                   </provenance>
@@ -111,12 +109,23 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="wp0017.jpg">
+         <desc>In situ: Ward-Perkins Archive, BSR (BSR 47.IX.10)</desc></graphic>
+      <graphic url="cmr0013.jpg">
+         <desc>In museum, 2010: Roueché, DSCN1435</desc></graphic>
+   </facsimile>
    <text>
       <body>
          <div type="bibliography">
             <head>Bibliography</head>
             <p> 
-               <bibl><ptr target="romanelli1940b"/> <citedRange>I:261</citedRange></bibl>.</p>
+               <bibl><ptr target="romanelli1940b"/> <citedRange>I:261</citedRange></bibl>; 
+               <bibl><ptr target="irt1952"/> <citedRange>13</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/> <citedRange>13</citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/>
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD0590124">059012</ref></citedRange></bibl>
+            </p>
          </div>
          <div subtype="text-constituted-from" type="history">
             <head>Text constituted from</head>
@@ -157,15 +166,7 @@
             <p>The most recent excavation (1949) appears to establish that the mosaic is contemporary with an earlier
                form of the church, and is therefore Christian.</p>
          </div>
-         <div type="figure">
-            <head>Photographs</head>
-            <p>
-               <figure>
-                  <graphic url="0017"/>
-                  <head>Ward-Perkins Archive, BSR (BSR 47.IX.10)</head>
-               </figure>
-            </p>
-         </div>
+         
       </body>
    </text>
 </TEI>
