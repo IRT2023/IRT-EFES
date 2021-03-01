@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0904" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0904" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,18 +46,14 @@
                      <p>Unknown</p>
                      <origDate>No indication</origDate>
                   </origin>
-                  <provenance>
-                     <listEvent>
-                        <event type="found">
+                  <provenance type="found">
                            <p>
-                              <placeName type="ancientFindspot" key="db899">Wadi Zemzem</placeName>: 
-                  <rs type="monuList" ref="https://www.slsgazetteer.org/776">Gasr Chanifes</rs>, Wadi Scetaf (map ref. W 6379), among the ruins of two tombs adjoining a group of large fortified farms. Recorded in <rs type="foundDate">1948</rs> by Goodchild.</p>
-                        </event>
-                        <event type="observed">
+                              <placeName type="ancientFindspot" key="https://www.slsgazetteer.org/899">Wadi Zemzem</placeName>: 
+                  <placeName type="monuList" ref="https://www.slsgazetteer.org/776">Gasr Chanifes</placeName>, Wadi Scetaf (map ref. W 6379), among the ruins of two tombs adjoining a group of large fortified farms. Recorded in <date type="foundDate">1948</date> by Goodchild.</p>
+                        </provenance>
+                        <provenance type="observed">
                            <p>Findspot (1948)</p>
-                        </event>
-                     </listEvent>
-                  </provenance>
+                        </provenance>
                </history>
             </msDesc>
          </sourceDesc>
