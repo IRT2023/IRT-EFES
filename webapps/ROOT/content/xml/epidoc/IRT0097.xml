@@ -47,13 +47,12 @@
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0201" notAfter="0300" precision="low" evidence="lettering">Third century A.D. (lettering)</origDate>
+                     <origDate notBefore="0201" notAfter="0300" precision="low" evidence="lettering">Third century CE (lettering)</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="http://atlantides.org/batlas/abrotonum-sabratha-35-e2"
-                                         key="https://www.slsgazetteer.org/659">Sabratha</placeName>:  
+                                         ref="https://www.slsgazetteer.org/659">Sabratha</placeName>:  
                   <placeName type="monuList" ref="https://www.slsgazetteer.org/832">Capitolium</placeName>, found in the vaults; see note on <ref type="inscription" n="IRT0001">1</ref>.</p>
                         </provenance>
                         <provenance type="observed">
@@ -113,7 +112,12 @@
    <text>
       <body>
          <div type="bibliography">
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>96</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>,  <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT096.html">96</ref></citedRange></bibl>; considered  
+               <bibl><ptr target="pflaum1953"/> <citedRange></citedRange></bibl>, whence <bibl> <ptr target="ae"/>1955.226</bibl>, 
+            whence 
+            <bibl><ptr target="EDH"/> (Gräf, 2011) 
+               <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD019563">019563</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
@@ -126,10 +130,9 @@
                <persName type="emperor" key="anonymus"><name type="cognomen" nymRef="Augustus"><seg part="I"><expan><abbr>Aug</abbr><supplied reason="lost"><ex>ust</ex></supplied></expan></seg></name>
                <gap reason="lost" extent="unknown" unit="character"/></persName>
                <lb n="4"/><w lemma="duco">duci</w> 
-               <w lemma="per" part="I">per</w><gap reason="lost" extent="unknown" unit="character"/>
+               <w lemma="per" part="I">per</w> <supplied reason="lost"><w lemma="limes">limitem</w></supplied>
                <placeName type="ethnic" nymRef="Tripolitanus"><supplied reason="lost">Tri</supplied><lb n="5" break="no"/>politanum</placeName> 
                <w lemma="procurator"><expan><abbr>pr</abbr><supplied reason="lost"><abbr>oc</abbr><ex>uratori</ex></supplied></expan></w>
-               <gap reason="lost" extent="unknown" unit="character"/>
                <w lemma="regio"><supplied reason="lost">regio</supplied><lb n="6" break="no"/><supplied reason="lost">ni</supplied>s</w> <placeName type="ethnic" nymRef="Lepthinimensis">Lepthimi<supplied reason="lost">nensis</supplied></placeName>
                <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="7"/><persName type="attested"><name type="gentilicium"><gap reason="lost" quantity="5" unit="character" precision="low"/><seg part="F">ius</seg></name> <name type="cognomen" nymRef="V-"><unclear>V</unclear>
@@ -137,8 +140,11 @@
             </ab></div>
          <div type="apparatus">
             <listApp>
+               <app loc="4-5">
+                  <rdg source="#pflaum1953">[limitem Tri]/politanum pr[oc(uratori) regio]/[ni]s</rdg>
+               </app>
                <app loc="7">
-                  <note> Or  N [...]</note>
+                  <rdg sameAs="#irt1952"><note> Or  N [...]</note></rdg>
                </app>
             </listApp>
          </div>
