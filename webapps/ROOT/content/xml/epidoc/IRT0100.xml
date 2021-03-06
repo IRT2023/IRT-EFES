@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0100" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0100" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -49,8 +52,7 @@
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="http://atlantides.org/batlas/abrotonum-sabratha-35-e2"
-                                         key="https://www.slsgazetteer.org/659">Sabratha</placeName>:  
+                                         ref="https://www.slsgazetteer.org/659">Sabratha</placeName>:  
                   <placeName type="monuList" ref="https://www.slsgazetteer.org/864">Theatre</placeName>
                            </p>
                         </provenance>
@@ -105,12 +107,17 @@
    </teiHeader>
    <facsimile>
                   <graphic url="wp0069.jpg">
-                  <desc>Ward-Perkins Archive, BSR (BSR 48.XVIII.20)</desc></graphic>
+                     <desc>From left: <ref type="inscription" n="IRT0047">IRT.47</ref>, <ref type="inscription" n="IRT0100">IRT.100</ref>: 
+                        Ward-Perkins Archive, 1948 (Ward-Perkins Archive, BSR 48.XVIII.20)</desc>
+                  </graphic>
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>100</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>,  <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT100.html">100</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> 
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059088">059088</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
@@ -119,8 +126,8 @@
                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="statua">statuam</w> 
                <w part="I">co</w><gap reason="lost" extent="unknown" unit="character"/>
                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="curo"><supplied reason="lost">c</supplied><unclear>ura</unclear>nte</w> 
-               <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
-               <persName type="attested"><name type="cognomen" nymRef="Calpurnius"><supplied reason="lost">Cal</supplied>purnio</name></persName> 
+               <lb n="4"/> <g type="leaf"/><gap reason="lost" extent="unknown" unit="character"/>
+               <persName type="attested" key="plre:1-calpurnius2" cert="low"><name type="cognomen" nymRef="Calpurnius"><supplied reason="lost">Cal</supplied>purnio</name></persName> 
                <w lemma="uir"><expan><abbr>u</abbr><ex>iro</ex></expan></w> 
                <w lemma="perficio"><expan><abbr>p</abbr><ex>erfectissimo</ex></expan></w>
                <lb n="5"/><w lemma="praeses"><supplied reason="lost">praeside</supplied></w> 
