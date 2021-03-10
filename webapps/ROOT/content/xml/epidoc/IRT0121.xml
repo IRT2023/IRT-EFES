@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0121" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0121" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -28,7 +31,8 @@
                                  <width unit="metre">0.56</width>
                                  <height unit="metre">0.88</height>
                                  <depth unit="metre">0.57</depth>
-                              </dimensions>) of coarse <material>grey limestone</material>, with moulded panels on three sides, uniform with <ref type="inscription" n="IRT0118">118</ref>, <ref type="inscription" n="IRT0119">119</ref>, <ref type="inscription" n="IRT0120">120</ref>, <ref type="inscription" n="IRT0121">121</ref>, <ref type="inscription" n="IRT0120">120</ref>, <ref type="inscription" n="IRT0122">122</ref>, <ref type="inscription" n="IRT0123">123</ref>, <ref type="inscription" n="IRT0124">124</ref>, <ref type="inscription" n="IRT0125">125</ref>.</p>
+                              </dimensions>) of coarse <material>grey limestone</material>, with moulded panels on three sides, uniform with 
+                              <ref type="inscription" n="IRT0118">118</ref>, <ref type="inscription" n="IRT0119">119</ref>, <ref type="inscription" n="IRT0120">120</ref>, <ref type="inscription" n="IRT0121">121</ref>, <ref type="inscription" n="IRT0120">120</ref>, <ref type="inscription" n="IRT0122">122</ref>, <ref type="inscription" n="IRT0123">123</ref>, <ref type="inscription" n="IRT0124">124</ref>, <ref type="inscription" n="IRT0125">125</ref>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -103,12 +107,16 @@
    </teiHeader>
    <facsimile>
                   <graphic url="wp0161.jpg">
-                  <desc>Ward-Perkins Archive, BSR (BSR 47.VII.20)</desc></graphic>
+                     <desc>Ward-Perkins, 1947 (Ward-Perkins Archive, BSR 47.VII.20)</desc></graphic>
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="bartoccini1950"/> <citedRange unit="page">47</citedRange>, <citedRange unit="page">58</citedRange></bibl>, whence mentioned 
+               <bibl><ptr target="ae"/> <citedRange>1950.152a</citedRange></bibl>; <bibl><ptr target="irt1952"/>, <citedRange>121</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT121.html">121</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> 
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021913">021913</ref></citedRange></bibl> </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
@@ -122,8 +130,8 @@
                <lb n="3"/><w lemma="flamen"><expan><abbr>f<supplied reason="lost">lam</supplied></abbr><ex>ini</ex></expan></w>
                <w lemma="perpetuus"><expan><abbr>perpet</abbr><ex>uo</ex></expan></w>
                <lb n="4"/><w lemma="curia">C<supplied reason="lost">uri</supplied>a</w> 
-               <persName type="emperor" nymRef="Hadrianus"><w lemma="Hadrianus"><expan><abbr>Hadr</abbr><ex>iana</ex></expan></w>
-               </persName><lb n="5"/><w lemma="ob">o<supplied reason="lost">b</supplied></w> <w lemma="mereo">merit<supplied reason="lost">a</supplied></w>  
+               <addName nymRef="Hadrianus"><w lemma="Hadrianus"><expan><abbr>Hadr</abbr><ex>iana</ex></expan></w>
+               </addName><lb n="5"/><w lemma="ob">o<supplied reason="lost">b</supplied></w> <w lemma="mereo">merit<supplied reason="lost">a</supplied></w>  
             </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>To Caius <supplied reason="lost">Flavius</supplied> Pudens, son of Quintus, of the Roman voting tribe Papiria,

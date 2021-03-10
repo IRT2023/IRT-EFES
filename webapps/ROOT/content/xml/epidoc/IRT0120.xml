@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0120" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0120" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -100,12 +103,16 @@
    </teiHeader>
    <facsimile>
                   <graphic url="wp0160.jpg">
-                  <desc>Ward-Perkins Archive, BSR (BSR 47.VII.30)</desc></graphic>
+                     <desc>Ward-Perkins, 1947 (Ward-Perkins Archive, BSR 47.VII.30)</desc></graphic>
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="bartoccini1950"/> <citedRange unit="page">47</citedRange>, <citedRange unit="page">58</citedRange></bibl>, whence mentioned 
+               <bibl><ptr target="ae"/> <citedRange>1950.152a</citedRange></bibl>; <bibl><ptr target="irt1952"/>, <citedRange>120</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT120.html">120</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> 
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021910">021910</ref></citedRange></bibl> </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
@@ -118,7 +125,7 @@
                <lb n="2"/><name type="cognomen" nymRef="Pudens">Pudenti</name></persName>
                <lb n="3"/><w lemma="flamen"><expan><abbr>flam</abbr><ex>ini</ex></expan></w> <w lemma="perpetuus"><expan><abbr>perp</abbr><ex>etuo</ex></expan></w>
                <lb n="4"/><w lemma="curia">Curia</w> 
-               <persName type="emperor"><name type="cognomen" nymRef="Faustina">Faus<supplied reason="lost">t</supplied><lb n="5" break="no"/><supplied reason="lost">i</supplied>na</name></persName>
+               <addName nymRef="Faustina"><w lemma="Faustina">Faus<supplied reason="lost">t</supplied><lb n="5" break="no"/><supplied reason="lost">i</supplied>na</w></addName>
                <w lemma="ob">ob</w> <w lemma="mereo">meri<lb n="6"/>ta</w>
             </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
