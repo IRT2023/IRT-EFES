@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0235" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0235" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -106,14 +109,17 @@
    <text>
       <body>
          <div type="bibliography">
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>235</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT235.html">235</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> 
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059207">059207</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
                <lb n="1"/>
                <gap reason="lost" extent="unknown" unit="character"/>
                <orig>vicv<unclear>l</unclear>m</orig><gap reason="lost" quantity="1" unit="character"/><orig>o</orig> 
-               <orig>e<unclear>o</unclear>r</orig> pontifice 
+               <orig>e<unclear>o</unclear>r</orig> <w lemma="pontifex">pontifice</w> 
                <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="2"/>
                <gap reason="lost" extent="unknown" unit="character"/>
@@ -130,7 +136,7 @@
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><gap reason="lost" extent="unknown" unit="character"/> priest <note>ablative case</note><gap reason="lost" extent="unknown" unit="character"/></p></div>
          <div type="commentary">
-            <p>There may have been a reference to an eques Romanus (Roman Knight).</p>
+            <p>There may have been a reference to an <foreign xml:lang="la">eques Romanus</foreign> (Roman Knight).</p>
          </div>
       </body>
    </text>

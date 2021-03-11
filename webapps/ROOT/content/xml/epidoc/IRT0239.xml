@@ -118,16 +118,22 @@
    <text>
       <body>
          <div type="bibliography">
-            <p>
-               <bibl>
-                  <ptr target="cil1916"/>,  <citedRange>22687</citedRange>,  <citedRange>22688</citedRange></bibl>; 
-               <bibl><ptr target="romanelli1922b"/>, <citedRange>21</citedRange> ff., fig. 5.</bibl></p>
+            <p><bibl><ptr target="clermont1903b"/> <citedRange>358-361</citedRange></bibl>, whence 
+               <bibl><ptr target="ae"/> <citedRange>1904.19</citedRange></bibl>, 
+               <bibl> <ptr target="cil1916"/>,  <citedRange>22687</citedRange>,  <citedRange>22688</citedRange></bibl>; 
+               <bibl><ptr target="romanelli1922b"/>, <citedRange>21</citedRange> ff., fig. 5.</bibl>; 
+                  <bibl><ptr target="irt1952"/>, <citedRange>239</citedRange></bibl>, whence 
+                  <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT239.html">239</ref></citedRange></bibl>, whence 
+                  a and b: <bibl><ptr target="EDH"/> 
+                     <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059210">059210</ref></citedRange></bibl>
+               c: <bibl><ptr target="EDH"/> 
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD033036">033036</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <div subtype="text" n="a" type="textpart"><ab>
                <lb n="1"/>
-                  <w lemma="deus"><expan><abbr>D</abbr><ex>is</ex></expan></w>
-                  <w lemma="manes"><expan><abbr>m</abbr><ex>anibus</ex></expan></w>
+                  <persName type="divine"><w lemma="deus"><expan><abbr>D</abbr><ex>is</ex></expan></w>
+                  <w lemma="manes"><expan><abbr>m</abbr><ex>anibus</ex></expan></w></persName>
                   <w lemma="sacer"><expan><abbr>s</abbr><ex>acrum</ex></expan></w> 
                <lb n="2"/><persName type="attested"><name type="gentilicium" nymRef="Aelia">Aelia</name> 
                   <name type="cognomen" nymRef="Arisuth">Arisuth</name></persName>
@@ -138,8 +144,8 @@
                   <w lemma="minus">minus</w>
             </ab></div><div subtype="text" n="b" type="textpart"><ab>
                <lb n="1"/>
-               <w lemma="deus"><expan><abbr>D</abbr><ex>is</ex></expan> 
-               </w><w lemma="manes"><supplied reason="lost"><expan><abbr>m</abbr><ex>anibus</ex></expan></supplied></w> 
+               <persName type="divine"><w lemma="deus"><expan><abbr>D</abbr><ex>is</ex></expan> 
+               </w><w lemma="manes"><supplied reason="lost"><expan><abbr>m</abbr><ex>anibus</ex></expan></supplied></w></persName> 
                <w lemma="sacer"><expan><abbr>s</abbr><ex>acrum</ex></expan></w> 
                <lb n="2"/><persName type="attested"><name type="gentilicium" nymRef="Aelius">Aelios</name> 
                   <name type="cognomen" nymRef="Ma-"><seg part="I">Ma</seg><gap reason="lost" quantity="5" unit="character" precision="low"/></name> 
@@ -149,9 +155,19 @@
                <w part="F"><gap reason="lost" quantity="5" unit="character"/>agin<supplied reason="lost">ta</supplied>
                   </w><w lemma="quinque">qui<unclear>n</unclear><supplied reason="lost">que</supplied></w></date> 
                <lb n="4"/><w lemma="plus">plus</w> <w lemma="minus">m<supplied reason="lost">i</supplied>nus</w>
-               </ab></div><div subtype="text" n="c" type="textpart"><div subtype="urn" n="i" type="textpart"><ab><lb n="1"/><w lemma="qui">Quae</w> <w lemma="lea">lea</w> <w lemma="iaceo">iacet</w></ab></div><div subtype="urn" n="ii" type="textpart"><ab><lb n="1"/><w lemma="qui">Qui</w> <w lemma="leo">leo</w> <w lemma="iaceo">iacet</w></ab></div></div></div>
+               </ab></div>
+            <div subtype="text" n="c" type="textpart"><div subtype="urn" n="i" type="textpart">
+               <ab><lb n="1"/><w lemma="qui">Quae</w> <w lemma="lea">lea</w> <w lemma="iaceo">iacet</w></ab></div>
+               <div subtype="urn" n="ii" type="textpart"><ab>
+                  <lb n="1"/><w lemma="qui">Qui</w> <w lemma="leo">leo</w> <w lemma="iaceo">iacet</w></ab></div>
+            </div>
+         </div>
+         
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p>a. Sacred to the gods below. Aelia Arisuth lived approximately 60 years.</p><p>. Aelius Ma<gap reason="lost" extent="unknown" unit="character"/>, ? son of Jurathan. He lived approximately <gap reason="lost" extent="unknown" unit="character"/>5 years.</p><p>c. Who lies here, a lioness; d. who lies here, a lion. </p></div>
+            <p><note>a</note>: Sacred to the gods below. Aelia Arisuth lived approximately 60 years.</p>
+            <p><note>b</note>: Aelius Ma<gap reason="lost" extent="unknown" unit="character"/>, ? son of Jurathan. 
+               He lived approximately <gap reason="lost" extent="unknown" unit="character"/>5 years.</p>
+            <p><note>c</note> <note>i</note>: Who lies here, a lioness; <note>ii</note>: Who lies here, a lion. </p></div>
          <div type="commentary">
             <p>No comment.</p>
          </div>
