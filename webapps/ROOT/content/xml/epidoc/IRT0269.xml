@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0269" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0269" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -111,14 +114,16 @@
    <text>
       <body>
          <div type="bibliography">
-            <p>
-               <bibl>
-                  <ptr target="archanz"/>, <citedRange>1939-1941:717</citedRange>
-               </bibl>.</p>
+            <p><bibl><ptr target="archanz"/>, <citedRange>1939-1941.717</citedRange></bibl>, whence 
+            <bibl><ptr target="ae"/> <citedRange>1951.84</citedRange></bibl>; 
+               <bibl><ptr target="irt1952"/>, <citedRange>269</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT269.html">269</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> 
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/021091">021091</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><persName type="divine"><name type="cognomen" nymRef="Ceres">Cereri</name> <name type="cognomen" nymRef="Augusta">Augustae</name></persName> <w lemma="sacer">sacrum</w>
+               <lb n="1"/><persName type="divine"><name nymRef="Ceres">Cereri</name> <addName nymRef="Augusta">Augustae</addName></persName> <w lemma="sacer">sacrum</w>
                <lb n="2"/>
                <persName type="attested"><name type="praenomen" nymRef="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" nymRef="Rubellius">Rubellius</name> <name type="cognomen" nymRef="Blandus">Blandus</name></persName> 
                <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> 
@@ -129,11 +134,11 @@
                <w lemma="patria">pat<supplied reason="lost">ria</supplied>e</w> 
                   <persName type="attested"><name type="cognomen" nymRef="Annobal">Annobalis</name> <name type="cognomen" nymRef="Ruso">Rusonis</name></persName>
                </persName> 
-                  <expan><abbr>d</abbr><ex>e</ex></expan> 
-                  <expan><abbr>s</abbr><ex>ua</ex></expan> 
-                  <expan><abbr>p</abbr><ex>ecunia</ex></expan> 
-                  <expan><abbr>f</abbr><ex>aciendum</ex></expan> 
-                  <expan><abbr>c</abbr><ex>urauit</ex></expan>
+                  <w><expan><abbr>d</abbr><ex>e</ex></expan></w> 
+                  <w><expan><abbr>s</abbr><ex>ua</ex></expan> </w>
+                  <w><expan><abbr>p</abbr><ex>ecunia</ex></expan></w> 
+                  <w><expan><abbr>f</abbr><ex>aciendum</ex></expan> </w>
+                  <w><expan><abbr>c</abbr><ex>urauit</ex></expan></w>
             </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>Sacred to Ceres Augusta. Caius Rubellius Blandus, consul, pontifex <note>Roman priest</note>, proconsul, dedicated <supplied reason="subaudible">this</supplied>; Suphunibal, adorner of her city, wife of Annobal Ruso, organised its construction at her own expense.</p></div>
