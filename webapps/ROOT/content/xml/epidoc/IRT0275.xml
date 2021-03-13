@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0275" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0275" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -103,18 +106,22 @@
    </teiHeader>
    <facsimile>
                   <graphic url="wp0325.jpg">
-                  <desc>Ward-Perkins Archive, BSR (BSR 47.XV.23)</desc></graphic>
+                     <desc>Ward-Perkins, 1947 (Ward-Perkins Archive, BSR 47.XV.23)</desc></graphic>
                   <graphic url="wp0326.jpg">
                   <desc>Ward-Perkins Archive, BSR (Sopr. CLM 947)</desc></graphic>
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>275</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT275.html">275</ref></citedRange></bibl>; 
+               <bibl><ptr target="laronde2005"/> <citedRange>79</citedRange></bibl>, whence <bibl><ptr target="ae"/> <citedRange>2005.1662</citedRange></bibl>; <!-- check for translation  -->
+               <bibl><ptr target="EDH"/> (Gräf, 2014)
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059240">059240</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><w lemma="deus">Dibus</w> <placeName nymRef="Lepcis Magna">Lepcis <w lemma="magnus">Magnae</w></placeName>
+               <lb n="1"/><persName type="divine"><w lemma="deus">Dibus</w> <placeName nymRef="Lepcis Magna">Lepcis <w lemma="magnus">Magnae</w></placeName></persName>
                <lb n="2"/>
                <persName type="attested"><name type="praenomen" nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" nymRef="Vipsanius">Vipsanius</name> <name type="cognomen" nymRef="Clemens">Clemens</name></persName> <w lemma="redemptor">redemtor</w> 
                <lb n="3"/><w lemma="marmorarius">marmorarius</w> <w lemma="templum">templi</w> <persName type="divine"><name nymRef="Liber">Liberi</name>
@@ -124,7 +131,7 @@
                <w lemma="uotum"><expan><abbr>u</abbr><ex>otum</ex></expan></w> 
                <w lemma="soluo"><expan><abbr>s</abbr><ex>oluit</ex></expan></w> <w lemma="sub">sub</w> <w lemma="cura">cura</w>
                <lb n="6"/>
-               <expan><abbr>Q</abbr><ex>uinti</ex></expan> <persName type="attested"><name type="gentilicium" nymRef="Seruilius">Seruili</name> <name type="cognomen" nymRef="Candidus">Candidi</name></persName> <w lemma="amator">amatoris</w> <w lemma="patria">patriae</w>
+               <persName type="attested"><name type="praenomen" nymRef="Quintus"><expan><abbr>Q</abbr><ex>uinti</ex></expan></name> <name type="gentilicium" nymRef="Seruilius">Seruili</name> <name type="cognomen" nymRef="Candidus">Candidi</name></persName> <w lemma="amator">amatoris</w> <w lemma="patria">patriae</w>
                <lb n="7"/><w lemma="amator">amatoris</w> <w lemma="ciuis">ciuium</w> <w lemma="ornator">ornatoris</w> <supplied reason="lost"><w lemma="patria">patriae</w></supplied>
                <lb n="8"/><w lemma="flamen">flaminis</w> <persName type="emperor"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Vespasianus">Vespas<supplied reason="lost">iani</supplied></name></persName>
                <gap reason="lost" atLeast="8" atMost="9" unit="character"/>
