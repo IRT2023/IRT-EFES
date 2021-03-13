@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0292" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0292" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -127,10 +130,12 @@
                      <name>Merlat</name>
                   </author>, <title level="m">Répertoire des Inscriptions et des Monuments figurés du Culte de Jupiter Dolichenus</title>, Rennes, <date>1949</date>
                </bibl>
-               <bibl><ptr target="guey1950"/>
-                  <author>
-                     <name>Guey</name>
-                  </author>, <title level="j">Revue Africaine</title>,  <citedRange>XCIV:55</citedRange> ff.</bibl>
+               <bibl><ptr target="guey1950a"/><citedRange>55</citedRange> ff.</bibl>, whence
+               <bibl><ptr target="ae"/>, <citedRange>1951.228</citedRange></bibl>;
+               <bibl><ptr target="irt1952"/>, <citedRange>292</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT292.html">292</ref></citedRange></bibl>; 
+               <bibl><ptr target="EDH"/>  
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021460">021460</ref></citedRange></bibl>
             </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
@@ -143,7 +148,7 @@
                   <lb n="3"/><w lemma="pro">pro</w> <w lemma="salus">salute</w> <w lemma="et">et</w> <w lemma="uictoria">uictoria</w> 
                   <w lemma="dominus">domi<lb n="4" break="no"/>norum</w> <w lemma="noster">nostrorum</w> <persName type="emperor"><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustorum</ex></expan></name></persName> <w lemma="et">et</w> 
                   <lb n="5"/><del rend="erasure"><gap reason="lost" extent="unknown" unit="character"/></del>
-                  <lb n="6"/><del rend="erasure"><gap reason="lost" extent="unknown" unit="character"/>e</del>
+                  <lb n="6"/><del rend="erasure"><gap reason="lost" extent="unknown" unit="character"/><orig>e</orig></del>
                   <unclear><g type="crux"/></unclear> 
                   <w lemma="redeo">redi<lb n="7" break="no"/>tu</w> 
                   <w lemma="imperator"><expan><abbr><supplied reason="lost">I</supplied>m<unclear>p</unclear></abbr><ex>eratorum</ex></expan></w> 

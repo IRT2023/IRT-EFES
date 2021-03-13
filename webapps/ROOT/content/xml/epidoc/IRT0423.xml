@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0423" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0423" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -110,22 +113,26 @@
    <text>
       <body>
          <div type="bibliography">
-            <p>Not previously published.</p>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>423</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT423.html">423</ref></citedRange></bibl>; 
+               <bibl><ptr target="EDH"/>  (Bigi, 2014)
+                  <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059330">059330</ref></citedRange></bibl></p>
+            <p>Discussed <bibl><ptr target="tantillo2010"/> <citedRange>82</citedRange></bibl>;</p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
                <del rend="erasure">
-               <lb n="1"/><persName type="emperor"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></w> 
+               <lb n="1"/><persName type="emperor" key="caracalla"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></w> 
                <name type="cognomen" nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ari</ex></expan></name> 
                <name type="praenomen" nymRef="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> 
                <name type="gentilicium" nymRef="Aurelius"><supplied reason="lost">Aurel</supplied>io</name> <name type="gentilicium" nymRef="Antoninus">Antonino</name> <name type="cognomen" nymRef="Pius">Pio</name>
                <lb n="2"/><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name> 
-                  <name type="cognomen" nymRef="Seuerus">Seueri</name> <name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> 
+                  <persName type="emperor"><name type="cognomen" nymRef="Seuerus">Seueri</name> <name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName></persName> 
                <w lemma="filius"><expan><abbr>fil</abbr><ex>io</ex></expan></w> <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> 
                <w lemma="potestas"><expan><abbr>potest</abbr><ex>ate</ex></expan></w> <num value="5">V</num> 
                <lb n="3"/><w lemma="proconsul"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w> 
                <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w> 
-                  <lb n="4"/><placeName type="ethnic" nymRef="Lepcitanus">Lepcitani</placeName> <name type="cognomen" nymRef="Septimianus">Septimiani</name> <w lemma="publice"><expan><abbr>publ</abbr><ex>ice</ex></expan></w>
+                  <lb n="4"/><placeName type="ethnic" nymRef="Lepcitanus">Lepcitani</placeName> <addName nymRef="Septimianus"><w>Septimiani</w></addName> <w lemma="publice"><expan><abbr>publ</abbr><ex>ice</ex></expan></w>
                <lb n="5"/><w lemma="ob">ob</w> <w lemma="eximius">eximiam</w> <w lemma="atque">ac</w> <w lemma="diuinus">diuinam</w> <w lemma="in">in</w> <w lemma="se">se</w> <w lemma="indulgentia">indulgentiam</w>
                </del>
             </ab></div>
