@@ -123,16 +123,11 @@
    <text>
       <body>
          <div type="bibliography">
-            <p>
-               <bibl>
-                  <author>N. <name>Degrassi</name>
-                  </author>, <ptr target="epigraphica"/> 
-                  <citedRange>VII:11</citedRange>, n. 2 (1. 3 only)</bibl>; 
-               <bibl><ptr target="degrassi1954"/>
-                  <author>A. <name>Degrassi</name>
-                  </author>, <ptr target="quaderni"/> III <date>1954</date>
-               </bibl>;
-            <bibl><ptr target="irt1952"/>, <citedRange>341</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT341.html">341</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HDXXX">XXX</ref></citedRange></bibl>
+            <p><bibl><ptr type="degrassi1945"/> <citedRange>11</citedRange>, n. 2 (1. 3 only)</bibl>; 
+               <bibl><ptr target="degrassi1954"/> <citedRange></citedRange></bibl>;
+            <bibl><ptr target="irt1952"/>, <citedRange>341</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT341.html">341</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059275">059275</ref></citedRange></bibl>
                    </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
@@ -269,12 +264,12 @@
                <lb n="2"/>
                <persName type="attested"><name type="praenomen" nymRef="Seruius"><expan><abbr>Ser</abbr><ex>uius</ex></expan></name> <name type="gentilicium" nymRef="Cornelius">Cornelius</name> 
                <persName type="attested"><name><expan><abbr>Ser</abbr><ex>ui</ex></expan></name></persName> 
-               <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w></persName> <name type="tribe"><expan><abbr>Lem</abbr><ex>onia tribu</ex></expan></name> 
-               <name type="cognomen" nymRef="Orfitus">Orfitu<supplied reason="lost">s</supplied></name> 
+               <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w> <name type="tribe"><expan><abbr>Lem</abbr><ex>onia tribu</ex></expan></name> 
+               <name type="cognomen" nymRef="Orfitus">Orfitu<supplied reason="lost">s</supplied></name> </persName>
                <gap reason="lost" quantity="8" unit="character" precision="low"/> <w lemma="quaestor">quaestor</w> 
                <persName type="emperor"><w lemma="diuus">diui</w> <name type="gentilicium" nymRef="Claudius">Claud<supplied reason="lost">i</supplied></name></persName> 
                <supplied reason="lost"><w lemma="praetor"><expan><abbr>pr</abbr><ex>aetor</ex></expan></w></supplied> 
-               <expan><abbr><supplied reason="lost">u</supplied><unclear>r</unclear>b</abbr><ex>anus</ex></expan> 
+               <w lemma="urbanus"><expan><abbr><supplied reason="lost">u</supplied><unclear>r</unclear>b</abbr><ex>anus</ex></expan></w> 
                <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> 
                <w lemma="pontifex"><expan><abbr>pontif</abbr><ex>ex</ex></expan></w> <w lemma="sodalis">sodalis</w> <w lemma="augustalis">Augustalis</w> 
                <w lemma="proconsul"><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan></w> <w lemma="patronus">patronus</w> 
@@ -285,9 +280,9 @@
                <gap reason="lost" extent="unknown" unit="character"/>
                <w lemma="columna">columnas</w> <w lemma="et">et</w> <w lemma="super">super</w> <w lemma="columnia">columnia</w> <w lemma="et">et</w> <w lemma="super">super</w> <w lemma="ostia">ostia</w> <w lemma="in">in</w> <w lemma="tres">tribus</w> <gap reason="lost" quantity="15" unit="character" precision="low"/>
                <persName type="attested"><name><supplied reason="lost">It</supplied>hymba<unclear>l</unclear></name>
-                  <persName><name type="cognomen" nymRef="Aris">Arinis</name> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w></persName>
+                  <persName type="attested"><name type="cognomen" nymRef="Aris">Arinis</name> <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w></persName>
                   <name>Sabinus</name> <name type="cognomen" nymRef="Tapapius">Tapapius</name></persName>
-               <w lemma="flamen">flamen</w> <w lemma="diuus">diui</w> <name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> <w lemma="sufes">sufetu</w> 
+               <w lemma="flamen">flamen</w> <persName type="emperor"><w lemma="diuus">diui</w> <name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> </persName><w lemma="sufes">sufetu</w> 
                <gap reason="lost" extent="unknown" unit="character"/>
                <w lemma="facio"><supplied reason="lost">fa</supplied>ciendas</w> <w lemma="curo">cura<supplied reason="lost">uit</supplied></w> 
                <w lemma="idem">idemque</w> <w lemma="curator">cura<unclear>t</unclear>or</w> <w lemma="pecunia">pecuniae</w> <w lemma="publicus">publicae</w> <w lemma="is">eas</w> <w lemma="porticus">port<supplied reason="lost">icus</supplied></w>
