@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0361" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0361" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -105,10 +108,16 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>XXX</citedRange></bibl>, whence  <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT361.html">361</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HDXXX">XXX</ref></citedRange></bibl>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>361</citedRange></bibl>, whence 
+               <bibl><ptr target="thomasson1996"/> <citedRange>69b</citedRange></bibl>
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT361.html">361</ref></citedRange></bibl>;
+               <bibl><ptr target="christol2005"/> <citedRange>194</citedRange></bibl>, whence 
+               <bibl><ptr target="ae"/> <citedRange>2005.1663</citedRange></bibl>,
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD030787">030787 </ref></citedRange></bibl>
                    </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
+            
             <div subtype="line" n="1" type="textpart"><ab>
                   <lb n="1"/>
                   <persName type="emperor"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratore</ex></expan></w> <name type="cognomen" nymRef="Caesar">Caesar<supplied reason="lost">e</supplied></name> 
@@ -196,17 +205,18 @@
                   </ab></div></div></div>
          <div type="apparatus">
             <listApp>
-               <app loc="1 1">
-                  <note>That Hadrian is here wrongly given the title <foreign xml:lang="la">pater patriae</foreign> seems the only explanation of the letter P followed by a space, 
-                     at the left end of a block, clearly the last of a group of letters.</note>
+               <app loc="1.1"><rdg resp="#irt1952">pot(estate)] XI [</rdg>
+                  <rdg resp="#christol2005">pot(estate) X]XI [</rdg>
                </app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><note>1</note> When emperor Caesar Trajan Hadrian Augustus, son of deified Trajan, victor in Parthia, grandson of deified Nerva, was <supplied reason="lost">chief priest</supplied>, holding tribunician <supplied reason="lost">power</supplied> for the eleventh time, <supplied reason="lost">consul for the third, father</supplied> of the country <gap reason="lost" extent="unknown" unit="character"/> </p><p><note>2.a.</note><gap reason="lost" extent="unknown" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>b.<gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">Publius</supplied> Valerius Priscus proconsul, employing Popilius Celer his legate <gap reason="lost" extent="unknown" unit="character"/></p><p>c. ? took the auspices <gap reason="lost" extent="unknown" unit="character"/> baths <gap reason="lost" extent="unknown" unit="character"/> d.<gap reason="lost" extent="unknown" unit="character"/> public<gap reason="lost" extent="unknown" unit="character"/> j.<gap reason="lost" extent="unknown" unit="character"/> Lepcitanian <gap reason="lost" extent="unknown" unit="character"/></p><p>The other fragments are not usefully translatable.</p></div>
          <div type="commentary">
-            <p>1) l. 1. trib. pot. XI - 10 Dec 126 - 9 Dec. 127.</p>
+            <p>Line 1. IRT suggested XI - 10 Dec 126 - 9 Dec. 127; but for the reading suggested by Christol and Drew-Bear see also Syme, Roman Papers III, 1310; this gives 137 CE.</p>
             <p>2) l. 1. P. Valerius Priscus. Cos. an. inc. under Trajan = PIR1V 116.</p>
+            
+            <p></p>
          </div>
       </body>
    </text>
