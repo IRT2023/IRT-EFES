@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0441" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0441" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -107,10 +110,10 @@
       <body>
          <div type="bibliography">
             <p> 
-               <bibl>
-                  <author>U. Ciotti</author>, <ptr target="bolldarch"/> 
-                  <citedRange>XI:118</citedRange> ff</bibl>;
-            <bibl><ptr target="irt1952"/>, <citedRange>441</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT441.html">441</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HDXXX">XXX</ref></citedRange></bibl>
+               <bibl><ptr target="ciotti1948"/> <citedRange>118</citedRange> ff</bibl>;
+            <bibl><ptr target="irt1952"/>, <citedRange>441</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT441.html">441</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059344">059344</ref></citedRange></bibl>
                    </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
@@ -127,7 +130,7 @@
                   <supplied reason="lost"><name type="cognomen" nymRef="Augustus">Augusti</name> <name type="cognomen" nymRef="Pius">Pii</name></supplied></persName>
                <lb n="4"/><w lemma="frater">fratri</w> 
                <placeName type="ethnic" nymRef="Lepcitanus"><expan><abbr>Lepc</abbr><ex>itani</ex></expan></placeName> 
-                <name type="cognomen" nymRef="Septimianus">Septimian<supplied reason="lost">i</supplied></name>
+                <addName nymRef="Septimianus"><w>Septimian<supplied reason="lost">i</supplied></w></addName>
                <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="ob">ob</w></supplied>
                <lb n="5"/><w lemma="eximius">eximiam</w> <w lemma="atque">ac</w> <w lemma="diuinus">diuinam</w> <w lemma="in">in</w> <w lemma="se">s<supplied reason="lost">e</supplied></w>
                <supplied reason="lost"><w lemma="indulgentia">indulgentiam</w></supplied> 
