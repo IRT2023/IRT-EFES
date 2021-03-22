@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0580" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0580" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -112,25 +115,29 @@
    </facsimile>
    <text>
       <body>
-         <div type="bibliography">
-            <p>
-               <bibl>
-                  <ptr target="relscav"/> 
-                  <citedRange>22.1.27</citedRange>
-               </bibl>;
-            <bibl><ptr target="irt1952"/>, <citedRange>580</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT580.html">580</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HDXXX">XXX</ref></citedRange></bibl>
-                   </p>
+         <div type="bibliography"> <!-- add 653 -->
+            <p>Right hand fragment: <bibl><ptr target="relscav"/> <citedRange>22.1.27</citedRange></bibl>;
+            <bibl><ptr target="irt1952"/>, <citedRange>580</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT580.html">580</ref></citedRange></bibl>;
+               Central left hand fragment: <bibl><ptr target="irt1952"/>, <citedRange>653</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT653.html">653</ref></citedRange></bibl>;
+               combined, with two further fragments, <bibl><ptr target="tantillo2010"/> <citedRange>75</citedRange></bibl>, whence
+               <bibl><ptr target="ae"/> <citedRange>2010.1783</citedRange></bibl>,
+               <bibl><ptr target="EDH"/> (Bigi, 2014) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059440">059440</ref></citedRange></bibl>.</p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="curia"><supplied reason="lost">c</supplied>uria</w> <w lemma="ad">ad</w> 
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="thermae"><supplied reason="lost" cert="low">therm</supplied>as</w> <orig>sa</orig><gap reason="lost" extent="unknown" unit="character"/>
+<w lemma="incuria"><supplied reason="lost">inc</supplied><supplied reason="lost">c</supplied>uria</w> <w lemma="ad">ad</w> 
                <w lemma="squalor">squa<lb n="2" break="no"/><supplied reason="lost">lorem</supplied></w>
-               <gap reason="lost" extent="unknown" unit="character"/>
+               <gap reason="lost" extent="unknown" unit="character"/><orig>ria</orig><gap reason="lost" extent="unknown" unit="character"/>
                <w lemma="in"><supplied reason="lost">i</supplied>n</w> <w lemma="splendor">splendorem</w>
-               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="praeses">praeses</w> 
-               <w lemma="prouincia">proui<lb n="4" break="no"/><supplied reason="lost">nciae</supplied></w> <placeName type="ethnic" nymRef="Tripolitanus"><supplied reason="lost">Tripolitanae</supplied></placeName>
-               <gap reason="lost" extent="unknown" unit="character"/><w lemma="colo">coluit</w> <w lemma="dedico">dedicauit</w>
-               <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">didit</w> <w lemma="uoluptas">uoluptati</w>
+               <lb n="3"/><supplied reason="lost" cert="low"><w lemma="pristinus">pristinum</w></supplied> <persName type="attested"> <name><expan><abbr><supplied reason="lost">F</supplied>l</abbr><ex>avius</ex></expan></name> 
+               <name><seg part="I">Ar</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w><expan><abbr>v</abbr><ex>ir</ex></expan></w> <w><expan><abbr>p</abbr><ex>erfectissimus</ex></expan></w></supplied>
+<w lemma="praeses">praeses</w> 
+               <w lemma="prouincia">proui<lb n="4" break="no"/><supplied reason="lost">nciae</supplied></w> <placeName type="ethnic" nymRef="Tripolitanus"><supplied reason="lost">Trip</supplied>olita<supplied reason="lost">nae</supplied></placeName>
+               <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low"><w>restituit</w></supplied> <w lemma="excolo"><supplied reason="lost">ex</supplied>coluit</w> <w lemma="dedico">dedicauit</w>
+               <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><w lemma="et">et</w><w lemma="populus">populi</w></supplied> <w part="F"><supplied reason="lost">red</supplied>didit</w> <w lemma="uoluptas">uoluptati</w>
             </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><gap reason="lost" extent="unknown" unit="character"/> the meeting-house of the city-council <supplied reason="lost" cert="low">fallen</supplied> into a damaged condition <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost" cert="low">restored</supplied> to splendour <gap reason="lost" extent="unknown" unit="character"/> the governor of the province <supplied reason="lost">of Tripolitania</supplied><gap reason="lost" extent="unknown" unit="character"/> he concerned himself with and dedicated <gap reason="lost" extent="unknown" unit="character"/> to pleasure. </p></div>
