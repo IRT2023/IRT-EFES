@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0623" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0623" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -23,13 +26,12 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment from the right-hand side of a <material>marble</material> 
-                              <objectType>panel</objectType> 
-               (<dimensions>
-                                 <width unit="metre">0.095</width>
-                                 <height unit="metre">0.12</height>
-                                 <depth unit="metre">0.03</depth>
-                              </dimensions>).</p>
+                           <p>a: Fragment from the right-hand side of a <material>marble</material> 
+                              <objectType>panel</objectType> (<dimensions><width unit="metre">0.095</width>
+                                 <height unit="metre">0.12</height><depth unit="metre">0.03</depth></dimensions>).
+                              b: Fragment from the lower part of a <material>marble</material> 
+                              <objectType>panel</objectType> (<dimensions><width unit="metre">0.12</width>
+                                 <height unit="metre">0.15</height><depth unit="metre">0.025</depth></dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +51,8 @@
                            <p>
                               <placeName type="ancientFindspot"
                                          ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:  
-                  <placeName type="monuList" ref="https://www.slsgazetteer.org/720">Forum Vetus</placeName>
-                           </p>
+                  a: <placeName type="monuList" ref="https://www.slsgazetteer.org/720">Forum Vetus</placeName>
+                              b: <placeName type="monuList" ref="https://www.slsgazetteer.org/725">Hadrianic Baths</placeName>; Found in the road west of the baths.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>
@@ -103,16 +105,23 @@
    </teiHeader>
    <facsimile>
                   <graphic url="wp0650.jpg">
-                  <desc>Ward-Perkins, 1948 (Ward-Perkins Archive, BSR 48.XXII.19)</desc></graphic>
+                  <desc>a: Ward-Perkins, 1948 (Ward-Perkins Archive, BSR 48.XXII.19)</desc></graphic>
+      <graphic url="wp0953.jpg">
+         <desc>b: Ward-Perkins, 1948 (Ward-Perkins Archive, BSR 48.XXII.6)</desc></graphic>
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>XXX</citedRange></bibl>, whence  <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT623.html">623</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HDXXX">XXX</ref></citedRange></bibl>
-                   </p>
+            <p>a: <bibl><ptr target="irt1952"/>, <citedRange>623</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT623.html">623</ref></citedRange></bibl>;
+               b: <bibl><ptr type="relscav"/> <citedRange>23.10.26</citedRange></bibl>; 
+               <bibl><ptr target="irt1952"/>, <citedRange>786</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT786.html">786</ref></citedRange></bibl>;
+               Assembled <bibl><ptr target="tantillo2010"/> <citedRange>51</citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> (Bigi, 2014) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059477">059477</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <ab>
+            <div type="textpart" n="a"><ab>
                <lb n="1"/>
                <gap reason="lost" extent="unknown" unit="character"/>
                <w lemma="populus"><supplied reason="lost">p</supplied>opuli</w>
@@ -121,6 +130,15 @@
                <lb n="2a"/>
                <gap reason="lost" extent="unknown" unit="line"/>
             </ab></div>
+         <div type="textpart" n="b"><ab>
+            <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>borum</unclear></w>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/>
+               <gap reason="lost" extent="unknown" unit="character"/><w part="F">s</w> <w lemma="fera">feraru<supplied reason="lost">m</supplied></w>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/>
+               <gap reason="lost" extent="unknown" unit="character"/><w part="F">uit</w>
+         </ab></div></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><gap reason="lost" extent="unknown" unit="character"/> ? of the people <gap reason="lost" extent="unknown" unit="character"/></p></div>
          <div type="commentary">
