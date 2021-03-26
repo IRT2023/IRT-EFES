@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0768" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0768" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -112,12 +115,17 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>XXX</citedRange></bibl>, whence  <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT768.html">768</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HDXXX">XXX</ref></citedRange></bibl>
-                   </p>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>768</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT768.html">768</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD009596">009596</ref></citedRange></bibl>
+            </p><p><bibl><ptr target="gasperini1988"/> <citedRange></citedRange></bibl>, whence 
+               <bibl><ptr target="ae"/> <citedRange>1988.1100</citedRange></bibl> <!-- check -->
+               <bibl><ptr target="laronde2005"/> <citedRange unit="page">181</citedRange></bibl>, whence 
+               <bibl><ptr target="ae"/> <citedRange>2005.1662</citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/>Mal <space quantity="1" unit="character"/> er 
+               <lb n="1"/><orig>Mal</orig> <space quantity="1" unit="character"/> <orig>er</orig> 
             </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>Not usefully translatable.</p></div>
