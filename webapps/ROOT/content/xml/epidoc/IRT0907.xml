@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0907" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0907" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -102,9 +105,10 @@
       <body>
          <div type="bibliography">
             <p>
-               <bibl><ptr target="karthago1951"/>
-                  <author>G-Ch. Picard</author> and <author>Ch. Saumagne</author>, <title level="m">Karthago</title>, <citedRange>II:105</citedRange>ff. </bibl>;
-               <bibl><ptr target="irt1952"/>, <citedRange>907</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT907.html">907</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HDXXX">XXX</ref></citedRange></bibl>
+               <bibl><ptr target="picard1951"/> <citedRange>105</citedRange>ff. </bibl>; <!-- check -->
+               <bibl><ptr target="irt1952"/>, <citedRange>907</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT907.html">907</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059748">059748</ref></citedRange></bibl>
                    </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
@@ -115,7 +119,7 @@
                <w lemma="praetendo"><supplied reason="lost">prae</supplied>tendent<supplied reason="lost">es</supplied></w>
                <lb n="2"/>
                <persName type="attested"><placeName nymRef="Cydamae"><supplied reason="lost">Cy</supplied>damis</placeName></persName> <w lemma="uotum">uotu<supplied reason="lost">m</supplied></w><w lemma="soluo"><supplied reason="lost"><expan><abbr>sol</abbr><ex>uerunt</ex></expan></supplied></w><lb n="3"/>
-               <w lemma="libens"><expan><supplied reason="lost">li</supplied><abbr>b</abbr><ex>entes</ex></expan></w> <w lemma="sub">sub</w> <persName type="attested"><name type="gentilicium" nymRef="Valerius">Val<supplied reason="lost">erio</supplied></name>
+               <w lemma="libens"><expan><abbr><supplied reason="lost">li</supplied>b</abbr><ex>entes</ex></expan></w> <w lemma="sub">sub</w> <persName type="attested"><name type="gentilicium" nymRef="Valerius">Val<supplied reason="lost">erio</supplied></name>
                <name type="cognomen" nymRef="Senecio"><supplied reason="lost">Sene</supplied>cione</name></persName>  <supplied reason="lost"><w lemma="legatus"><expan><abbr>leg</abbr><ex>ato</ex></expan></w> 
                   <persName type="emperor"><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName></supplied>
                <lb n="5"/>
