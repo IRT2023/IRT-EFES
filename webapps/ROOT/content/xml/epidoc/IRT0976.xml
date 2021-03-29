@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0976" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0976" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -114,24 +117,26 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>XXX</citedRange></bibl>, whence  <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT976.html">976</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HDXXX">XXX</ref></citedRange></bibl>
+            <p><bibl><ptr target="reynolds1955"/>, <citedRange>S.4</citedRange></bibl>, whence 
+               <bibl><ptr target="ae"/> <citedRange>1957.231</citedRange></bibl>, 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT976.html">976</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059814">059814</ref></citedRange></bibl>
                    </p>
          </div>
-         <div type="edition" xml:lang="la" xml:space="preserve">
+         <div type="edition" xml:lang="la" xml:space="preserve"><!-- check - ask Ulrike -->
             <ab>
-               <lb n="1"/><persName type="emperor"><name type="gentilicium" nymRef="Aurelius">Aurelio</name> <lb n="2"/><name type="cognomen" nymRef="Caesar">Caesari</name> <lb n="3"/><name type="gentilicium" nymRef="Antoninus">Antonini</name></persName> <lb n="4"/><persName type="emperor"><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> <name type="cognomen" nymRef="Pius">Pii</name></persName> <expan><abbr>f</abbr><ex>ilio</ex></expan>
-               <lb n="5"/><w lemma="uitalis">Vitalis</w> <w part="I">
-<abbr>lib</abbr></w><lb n="6" break="no"/><w lemma="uerna">uerna</w> <w lemma="ab" part="I">
-<abbr>a</abbr></w>
-               <num value="10">X</num>
-               <w part="I">
-<abbr>mo</abbr></w>
+               <lb n="1"/><persName type="emperor"><name type="gentilicium" nymRef="Aurelius">Aurelio</name> 
+                  <lb n="2"/><name type="cognomen" nymRef="Caesar">Caesari</name> <lb n="3"/><name type="gentilicium" nymRef="Antoninus">Antonini</name></persName> 
+               <lb n="4"/><persName type="emperor"><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> <name type="cognomen" nymRef="Pius">Pii</name></persName> <expan><abbr>f</abbr><ex>ilio</ex></expan>
+               <lb n="5"/><persName type="attested"><name nymRef="Uitalis">Vitalis</name></persName> <w part="I"><abbr>lib</abbr></w>
+               <lb n="6"/><w lemma="uerna">uerna</w> <w lemma="ab" part="I"><abbr>a</abbr></w> <num value="10">X</num> <w part="I"><abbr>mo</abbr></w>
             </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>To Aurelius Caesar, son of Antoninus Augustus Pius, <supplied reason="subaudible">set up by</supplied> Vitalis, freed home-born slave, ?in charge of claims for ships with capacity for ten thousand measures <supplied reason="subaudible">of corn</supplied>.</p></div>
          <div type="commentary">
             <p>ll. 1-2.  Marcus Aurelius, Caesar from 139 to 161.</p>
-            <p>l.5. <foreign xml:lang="la">Lib(ertus)</foreign> or <foreign xml:lang="la">lib(rarius)</foreign>: <foreign xml:lang="la">Liberti</foreign> are sometimes described also as <foreign xml:lang="la">uernae</foreign>, see
+            <p>l.5. <foreign xml:lang="la">Lib(ertus)</foreign> or <foreign xml:lang="la">lib(rarius)</foreign>: <foreign xml:lang="la">Liberti</foreign> are sometimes described also 
+               as <foreign xml:lang="la">uernae</foreign>, see
                e.g. <title level="j">L'Ann. Ep.</title> 1941, 161 <foreign xml:lang="la">uernae et liberto incomparibili</foreign>: but in view of the order of
                words here and of the context a term descriptive of the man's function might be
                preferable. For slave <foreign xml:lang="la">librarii</foreign> see <title level="m">CIL</title> VIII, 12165-9.</p>
