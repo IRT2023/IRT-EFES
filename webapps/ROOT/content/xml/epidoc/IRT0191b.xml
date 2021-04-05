@@ -2,17 +2,19 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0877a" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0191b" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">Libyan</rs> text</title>
+            <title>
+               <rs type="textType">Mason's marks</rs>
+            </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0877a</idno>
+            <idno type="filename">IRT0191b</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -21,40 +23,38 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>
-                              <objectType>block</objectType> of soft <material>brown limestone</material> (<dimensions>
-                                 <width unit="metre">0.80</width>
-                                 <height unit="metre">0.18</height>
-                                 <depth unit="metre">0.50</depth>
-                              </dimensions>), part of a window frame, carved on one of the narrow faces with a rinceau.</p>
+                           <p>A Corithian <objectType>capital</objectType>, re-used in restoration. 
+              </p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed on one of the adjacent broad faces; the inscribed face is roughly dressed, more carefully smoothed on the part inscribed, and cannot have been visible when the block was in position.</layout>
+                        <layout>Inscribed on the under side.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Roughly incised lettering, which includes local fourth to fifth century CE forms: <height unit="metre" atLeast="0.03" atMost="0.04">0.03-0.04</height>.</handNote>
+                     <handNote>No description</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0301" notAfter="0500" precision="low" evidence="lettering">Fourth to fifth centuries CE (lettering)</origDate>
+                     <origDate>No indication</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
-                              <placeName type="ancientFindspot" key="https://www.slsgazetteer.org/650">Eastern Djebel</placeName>: 
-                  From the church excavated by Caputo at <placeName type="monuList" ref="https://www.slsgazetteer.org/679">Al Khadra</placeName>, near Sidi Ali ben Zaid, South of the Tarhuna-Cussabat road near the East bank of the Wadi el-Fergian(map ref. M 095176).</p>
+                              <placeName type="ancientFindspot"
+                                         ref="https://www.slsgazetteer.org/659">Sabratha</placeName>: re-used in the fourth century CE 
+                              portico between the <placeName type="monuList" ref="https://www.slsgazetteer.org/843">Forum</placeName> and the 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/842">East Forum Temple</placeName>.
+               </p>
                         </provenance>
                         <provenance type="observed">
-                           <p>
-                              <placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName>. </p>
+                           <p>Findspot</p>
                         </provenance>
                </history>
             </msDesc>
@@ -88,12 +88,11 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="http://www.geonames.org/2219918/al-kha%E1%B8%91ra.html">Al Khaḑrā'</placeName>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/2208578/marsa-zawaghah.html">Marsa Zawaghah</placeName>
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Bartoccini's MS notes.</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -102,28 +101,24 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile>
-                  <graphic url="wp1096.jpg">
-                  <desc>Ward-Perkins Archive, BSR (BSR 49.IX.21)</desc></graphic>
-                  <graphic url="Sketch877a.jpg">
-                  <desc>Sketch from a squeeze (from IRT p. 213)</desc></graphic>
-   </facsimile>
+   <facsimile><surface/><!--No photographs.--></facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p>
-               <bibl><ptr target="caputo1942"/>, <citedRange>152</citedRange></bibl>;
-               <bibl><ptr target="irt1952"/>, <citedRange>877a</citedRange></bibl>, whence 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT877a.html">877a</ref></citedRange></bibl>, whence 
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059723">059723</ref></citedRange></bibl>
-                   </p>
+            <p>Described, <bibl><ptr target="wp1951"/> <citedRange>94</citedRange></bibl>; 
+               <bibl><ptr target="irt1952"/>, <citedRange>191</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT191.html">191b</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/189496">189496</ref></citedRange></bibl>
+               a: <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD000139">000139</ref></citedRange></bibl></p>
          </div>
-         <div type="edition" xml:lang="la" xml:space="preserve">
-            <note>Not transcribed, see image.</note></div>
+         <div type="edition" xml:lang="grc" xml:space="preserve">
+            <ab>
+                  <lb n="1"/><orig>αριϲ</orig>
+               </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><note>Not usefully translatable</note></p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>Perhaps the start of a personal name,<foreign xml:lang="la">e.g.</foreign> b. Aris[toteles</p>
          </div>
       </body>
    </text>

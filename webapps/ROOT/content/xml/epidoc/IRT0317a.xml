@@ -2,17 +2,18 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0877a" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0317a" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">Libyan</rs> text</title>
+            <title>
+               <rs type="textType">Title</rs> for image of Venus</title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0877a</idno>
+            <idno type="filename">IRT0317a</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -21,40 +22,41 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>
-                              <objectType>block</objectType> of soft <material>brown limestone</material> (<dimensions>
-                                 <width unit="metre">0.80</width>
-                                 <height unit="metre">0.18</height>
-                                 <depth unit="metre">0.50</depth>
-                              </dimensions>), part of a window frame, carved on one of the narrow faces with a rinceau.</p>
+                           <p>Moulded <objectType>base</objectType> of <material>grey limestone</material>.
+               <height unit="metre">1.10</height>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed on one of the adjacent broad faces; the inscribed face is roughly dressed, more carefully smoothed on the part inscribed, and cannot have been visible when the block was in position.</layout>
+                        <layout>Inscribed on one face,  die, <dimensions>
+                              <width unit="metre">0.47</width>
+                              <height unit="metre">0.70</height>
+                           </dimensions>.
+              </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Roughly incised lettering, which includes local fourth to fifth century CE forms: <height unit="metre" atLeast="0.03" atMost="0.04">0.03-0.04</height>.</handNote>
+                     <handNote>Lettering (of good period): <height unit="metre">0.05</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0301" notAfter="0500" precision="low" evidence="lettering">Fourth to fifth centuries CE (lettering)</origDate>
+                     <origDate>Unknown</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
-                              <placeName type="ancientFindspot" key="https://www.slsgazetteer.org/650">Eastern Djebel</placeName>: 
-                  From the church excavated by Caputo at <placeName type="monuList" ref="https://www.slsgazetteer.org/679">Al Khadra</placeName>, near Sidi Ali ben Zaid, South of the Tarhuna-Cussabat road near the East bank of the Wadi el-Fergian(map ref. M 095176).</p>
+                              <placeName type="ancientFindspot"
+                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:  
+                  Along the presumed line of a  <placeName type="monuList" ref="https://www.slsgazetteer.org/701">road from the Circus to the Port</placeName>.  
+                  Seen by Aurigemma in 1912, about 100 m. west of the Circus and 30 m. from the sea. </p>
                         </provenance>
                         <provenance type="observed">
-                           <p>
-                              <placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName>. </p>
+                           <p>Findspot (<date type="observed">1912</date>)</p>
                         </provenance>
                </history>
             </msDesc>
@@ -88,42 +90,41 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot"
-                             key="http://www.geonames.org/2219918/al-kha%E1%B8%91ra.html">Al Khaḑrā'</placeName>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/2215692/leptis-magna.html">Leptis Magna</placeName>
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Previous publications</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-04-05" who="CMR">separated</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile>
-                  <graphic url="wp1096.jpg">
-                  <desc>Ward-Perkins Archive, BSR (BSR 49.IX.21)</desc></graphic>
-                  <graphic url="Sketch877a.jpg">
-                  <desc>Sketch from a squeeze (from IRT p. 213)</desc></graphic>
-   </facsimile>
+   <facsimile><surface/><!--No photographs.--></facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p>
-               <bibl><ptr target="caputo1942"/>, <citedRange>152</citedRange></bibl>;
-               <bibl><ptr target="irt1952"/>, <citedRange>877a</citedRange></bibl>, whence 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT877a.html">877a</ref></citedRange></bibl>, whence 
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059723">059723</ref></citedRange></bibl>
-                   </p>
+            <p><bibl><ptr target="romanelli1925"/>, <citedRange>152</citedRange></bibl>, whence 
+               <bibl><ptr target="ae"/> <citedRange>1926.165-6</citedRange></bibl>; 
+               <bibl><ptr target="aurigemma1930"/>, <citedRange>76</citedRange> ff., fig. 1</bibl>;
+            <bibl><ptr target="irt1952"/>, <citedRange>317</citedRange>.a</bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT317.html">317.a</ref></citedRange></bibl>, whence 
+               a: <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD025543">025543</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <note>Not transcribed, see image.</note></div>
+            <ab>
+                  <lb n="1"/><persName type="divine"><name nymRef="Venus"><unclear>V</unclear>e<unclear>n</unclear>u<unclear>s</unclear></name>
+                  <lb n="2"/><addName><name nymRef="Cassiana">Cassian<unclear>a</unclear></name></addName></persName>
+               </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p><note>Not usefully translatable</note></p></div>
+            <p>Venus Cassiana <note>nominative case</note></p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>Apparently a pair to <ref type="inscripion" n="IRT0317b">IRT.317b</ref> 
+               A third base of the same type was found nearby, but no inscription was legible on it.</p>
          </div>
       </body>
    </text>
