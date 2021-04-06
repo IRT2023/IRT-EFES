@@ -2,18 +2,19 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0316" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0667b" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>
-               <rs type="textType">Dedication</rs> of a statue of Cupid </title>
+               <rs type="textType">Sculptor's signature</rs> 
+            </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0316</idno>
+            <idno type="filename">IRT 667b</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -27,34 +28,31 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p> Moulded <objectType>base</objectType> (<dimensions>
-                                 <width unit="metre">0.49</width>
-                                 <height unit="metre">1.31</height>
-                                 <depth unit="metre">0.45</depth>
-                              </dimensions>) of <material>brown limestone</material>.</p>
+                           <p>A statue <objectType>base</objectType> of <material>brown limestone</material>; only the feet of the statue survive. </p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed on one face within a moulded <objectType>panel</objectType> (die, <dimensions>
-                              <width unit="metre">0.20</width>
-                              <height unit="metre">0.60</height>
-                           </dimensions>).</layout>
+                        <layout>Inscribed on one face: die, <dimensions>
+                           <width unit="metre">0.54</width>
+                           <height unit="metre">0.07</height>
+                        </dimensions></layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Rustic capitals: <height unit="metre">0.05-0.04</height>.</handNote>
+                     <handNote> Capitals: <height unit="metre">0.03</height>. </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0138" notAfter="0161" evidence="reign">CE 138-161 (reign)</origDate>
+                     <origDate notBefore="0001" notAfter="0400" evidence="nomenclature">First to fourth century CE (nomenclature)</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
                                          ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
-                  <placeName type="monuList" ref="https://www.slsgazetteer.org/709">Chalcidicum</placeName>, beside the central gable. </p>
+                              <placeName  ref="https://www.slsgazetteer.org/720">Forum Vetus</placeName>, 
+                              in the <placeName type="monuList" ref="https://www.slsgazetteer.org/705">Basilica Vetus</placeName>.  </p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot</p>
@@ -104,42 +102,24 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile>
-                  <graphic url="wp0381.jpg">
-                  <desc>Ward-Perkins, 1947 (Ward-Perkins Archive, BSR 47.XVI.14)</desc></graphic>
+   <facsimile><surface/>
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p>
-               <bibl><ptr target="aurigemma1949"/>, <citedRange>58</citedRange></bibl>;
-            <bibl><ptr target="irt1952"/>, <citedRange>316</citedRange></bibl>, whence 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT316.html">316</ref></citedRange></bibl>, whence 
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059265">059265</ref></citedRange></bibl>
-                   </p>
+            <p><bibl><ptr target="caputo1949c"/>, <citedRange>205-7</citedRange>, pl. lvi</bibl>;
+                <bibl><ptr target="irt1952"/>, <citedRange>667</citedRange>.b</bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT667.html">667.b</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067678">067678</ref></citedRange></bibl>    </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><w lemma="pro">Pro</w> 
-               <w lemma="salus">salu<lb n="2" break="no"/>te</w> <persName type="emperor"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratoris</ex></expan></w> 
-                  <name type="gentilicium" nymRef="Antoninus">An<lb n="3" break="no"/>tonini</name> <name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name>
-               <lb n="4"/><name type="cognomen" nymRef="Pius">Pii</name></persName> 
-               <w lemma="liber"><expan><abbr>libero<lb n="5" break="no"/>rumq</abbr><ex>ue</ex></expan></w> <w lemma="is">eius</w>
-               <lb n="6"/><persName type="divine"><name type="cognomen" nymRef="Venus">Veneri</name>
-               <lb n="7"/><name type="cognomen" nymRef="Calchidica">Calchidicae</name></persName>
-               <lb n="8"/><persName type="divine"><name nymRef="Cupido">Cupidinis</name></persName>
-               <lb n="9"/><w lemma="statua">statuam</w>
-               <lb n="10"/><persName type="attested"><name type="praenomen" nymRef="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> 
-               <name type="gentilicium" nymRef="Claudius"><expan><abbr>Cl</abbr><ex>audius</ex></expan></name> 
-                  <name type="gentilicium" nymRef="Septimius">Septimi<lb n="11" break="no"/>us</name> <name type="cognomen" nymRef="Afer"><supplied reason="lost">A</supplied><unclear>f</unclear>er</name></persName> 
-               <w lemma="donum"><expan><abbr>d</abbr><ex>ono</ex></expan></w> 
-               <w lemma="do"><expan><abbr>d</abbr><ex>edit</ex></expan></w> 
-               <w lemma="dedico"><expan><abbr>d</abbr><ex>edicauit</ex></expan></w> 
-               <w lemma="pono"><expan><abbr>p</abbr><ex>osuit</ex></expan></w></ab></div>
+                  <lb n="1"/><persName type="attested"><name type="gentilicium" nymRef="Aristius">Aristius</name> <name type="cognomen" nymRef="Antiochus">Antiochus</name></persName> <w lemma="facio">fecit</w>
+               </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p>Fro the safety of the emperor Antoninus Augustus Pius and his children; Caius Claudius Septimius Afer gave as a gift, dedicated and set up a statue of Cupid to Venus Calchidica.</p></div>
+            <p> Aristius Antiochus had <supplied reason="subaudible">this</supplied> made.</p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>Antiochus also in <ref type="inscription" n="IRT0667a">IRT 667a</ref>.</p>
          </div>
       </body>
    </text>
