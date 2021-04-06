@@ -2,18 +2,18 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0317b" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0516" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>
-               <rs type="textType">Title</rs> for image of Juno</title>
+            <title>Fragmentary <rs type="textType">building<certainty match=".." locus="value"/>
+               </rs> inscription</title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0317b</idno>
+            <idno type="filename">IRT0516</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -27,33 +27,38 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>A moulded <objectType>base</objectType> of <material>grey limestone</material>, 
-              <height unit="metre">0.94</height>.</p>
+                           <p><objectType>block</objectType> of <material>grey limestone</material>
+               (<dimensions>
+                                 <width unit="metre">1.34</width>
+                                 <height unit="metre">0.52</height>
+                                 <depth unit="metre">0.20</depth>
+                              </dimensions> - the depth measurement is approximate).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed on one face; 
-                die, <dimensions>
-                              <width unit="metre">0.47</width>
-                              <height unit="metre">0.54</height>
-                           </dimensions>.</layout>
+                        <layout>Inscribed within a <rs type="decoration">tabella ansata</rs> (die, surviving width <dimensions>
+                              <width unit="metre">0.91</width>
+                              <height unit="metre">0.39</height>
+                        </dimensions>). Apparently identical to <ref type="inscription" n="IRT0516b">IRT 516.b</ref></layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>No description</handNote>
+                     <handNote> Lapidary capitals: l. 1, <height unit="metre">0.105</height>; 
+               l. 2, <height unit="metre">0.085</height>; l. 3, <height unit="metre">0.08</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate>Unknown</origDate>
+                     <origDate notBefore="0079" notAfter="0090" evidence="titulature">After CE 79 (titulature)</origDate><!-- check -->
+                     <precision match="//origDate/"/>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:  
-                  Along the presumed line of a  <placeName type="monuList" ref="https://www.slsgazetteer.org/701">road from the Circus to the Port</placeName>.  
-                  Seen by Aurigemma in 1912, about 100 m. West of the Circus and 30 m. from the sea.</p>
+                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
+                  <placeName type="monuList" ref="https://www.slsgazetteer.org/735">Port area</placeName>, on the East Mole, 
+                              together with much re-used material from other sites.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot</p>
@@ -94,7 +99,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Previous publications</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -103,28 +108,44 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile><surface/><!--No photographs.--></facsimile>
+   <facsimile>
+                  
+                  <graphic url="wp0656.jpg">
+                  <desc>Ward-Perkins Archive, BSR (Sopr. CLM 602)</desc></graphic>
+   </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="romanelli1925"/>, <citedRange>152</citedRange></bibl>, whence 
-               <bibl><ptr target="ae"/> <citedRange>1926.165-6</citedRange></bibl>; 
-               <bibl><ptr target="aurigemma1930"/>, <citedRange>76</citedRange> ff., fig. 1</bibl>;
-            <bibl><ptr target="irt1952"/>, <citedRange>317</citedRange>.b</bibl>, whence 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT317.html">317b</ref></citedRange></bibl>, whence 
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD025546">025546</ref></citedRange></bibl>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>516</citedRange>.a</bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT516.html">516a</ref></citedRange></bibl>, whence
+               <bibl><ptr target="thomasson1996"/> <citedRange>19</citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD030952">030952</ref></citedRange></bibl>
                    </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-                  <lb n="1"/><persName type="divine"><name nymRef="Iuno"><unclear>I</unclear>u<unclear>no</unclear></name>
-                  <lb n="2"/><addName><name nymRef="Cassiana">Ca<unclear>s</unclear>siana</name></addName></persName>
-               </ab></div>
+               <lb n="1"/> <persName type="attested"><name type="praenomen" nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> 
+                  <name type="gentilicium" nymRef="Annius">Annius</name> <name type="cognomen" nymRef="Messal-"><seg part="I">Messal</seg><gap reason="lost" extent="unknown" unit="character"/></name></persName>
+               <lb n="2"/><w lemma="allecto">adlectus</w> <w lemma="in">in</w> <w lemma="senatus">senatum</w> <w lemma="ab">a</w> <w lemma="diuus">d<supplied reason="lost">iuo</supplied></w>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/><w lemma="ab">a</w> <persName type="emperor"><w lemma="diuus">diuo</w> <name type="cognomen" nymRef="Vespasianus">Vespasiano</name></persName> 
+               <w lemma="legatus"><expan><abbr>leg</abbr><ex>atus</ex></expan></w> <placeName>Afric<supplied reason="lost">ae</supplied></placeName>
+               <gap reason="lost" extent="unknown" unit="character"/>
+            </ab></div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="a 1">
+                  <note> Probably Messalla.</note>
+               </app>
+            
+               
+            </listApp>
+         </div>
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p>Juno Cassiana <note>nominative case</note></p></div>
+            <p> Marcus Annius Messal<gap reason="lost" extent="unknown" unit="character"/> adlected into the Senate by deified <supplied reason="lost" cert="low">Claudius</supplied> <gap reason="lost" extent="unknown" unit="character"/> by deified Vespasian, legate of Africa <gap reason="lost" extent="unknown" unit="character"/> </p></div>
          <div type="commentary">
-            <p>Apparently a pair to <ref type="inscripion" n="IRT0317a">IRT.317a</ref> 
-               A third base of the same type was found nearby, but no inscription was legible on it.</p>
+            <p>l.1:  For the name see L Cornelius Pusio Annius Messalla, PIR (2) C 1425.</p>
+            <p>l.2: deified: Claudius or Vespasian.</p>
          </div>
       </body>
    </text>

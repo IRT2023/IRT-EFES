@@ -2,18 +2,18 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0886f" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0590i" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>
-               <rs type="textType">Funerary</rs> inscription</title>
+               <rs type="textType">Building</rs> inscriptions  for benches</title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0886f</idno>
+            <idno type="filename">IRT0590i</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -22,39 +22,45 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository ref="institution.xml#db1098">Tripoli Castle</repository></msIdentifier>
+               <msIdentifier><repository>replaced in position between the columns of the octagonal limestone building. </repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Rectangular <objectType>stele</objectType> of <material>brown limestone</material> (<dimensions>
-                                 <width unit="metre">0.26</width>
-                                 <height unit="metre">0.80</height>
-                              <depth>0.26</depth>
-                              </dimensions>)</p>
+                           <p>Market-<objectType>bench</objectType> of <material>grey limestone</material>, roughly uniform with 
+                              <ref type="inscription" n="IRT0590ef">IRT 590ad</ref>, <ref type="inscription" n="IRT0590ef">IRT 590ef</ref>,  <ref type="inscription" n="IRT0590g">IRT 590g</ref>, 
+                              <ref type="inscription" n="IRT0590h">IRT 590h</ref> (av. <dimensions>
+                                 <width unit="metre">1.90</width>
+                                 <height unit="metre">0.20</height>
+                                 <depth unit="metre">0.52</depth>
+                              </dimensions>).</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed on the face. </layout>
+                        <layout>Inscribed on the front edge within a moulded border (die, <dimensions>
+                              <width unit="metre">1.65</width>
+                              <height unit="metre">0.05</height>
+                           </dimensions>).</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height unit="metre">0.025</height>.</handNote>
+                     <handNote> Irregular first century CE capitals: <height unit="metre">0.045</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <p>Findspot</p>
-                     <origDate>No indication</origDate>
+                     <p>Between the columns of the octagonal limestone building</p>
+                     <origDate notBefore="0001" notAfter="0100" precision="low" evidence="lettering">First century CE (lettering).</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
-                              <placeName type="ancientFindspot" key="https://www.slsgazetteer.org/655">Middle Lower Sofeggin Basin</placeName>:
-                  <placeName type="monuList" ref="https://www.slsgazetteer.org/774">Bir ed-Dreder</placeName>: Surveyed in situ, in the Libyan cemetery, by Goodchild in <date type="foundDate">1949</date>.</p>
+                              <placeName type="ancientFindspot"
+                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                  <placeName type="monuList" ref="https://www.slsgazetteer.org/729">Market</placeName>. 
+                              One of them was found re-used as a step in the main entrance to the Turkish hospital in Homs (Aurigemma, loc. cit.).<!-- check --></p>
                         </provenance>
                         <provenance type="observed">
-                           <p>
-                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1098">Tripoli Castle</placeName>?</p>
+                           <p>Replaced in position.</p>
                         </provenance>
                </history>
             </msDesc>
@@ -88,14 +94,13 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot" key="http://www.geonames.org/2217718/bi-r-duraydir.html">Bi'r Duraydir</placeName>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/2215692/leptis-magna.html">Leptis Magna</placeName>
                </term>
             </keywords>
          </textClass>
-         <creation>Transcription (Goodchild).</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2021-04-01" who="CMR">divided, updated</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
@@ -107,32 +112,24 @@
    <text>
       <body>
          <div type="bibliography">
-            <p> <bibl><ptr target="irt1952"/>, <citedRange>886</citedRange>.f</bibl> (part only), whence 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT886.html">886f</ref></citedRange></bibl>; 
-               <bibl><ptr target="goodchild1954"/> <citedRange>6</citedRange></bibl>;
-               <bibl><ptr target="elmayer1983"/>88-89</bibl>.</p>
+            <p> 
+               <bibl><ptr target="aurigemma1939"/>, <citedRange>91</citedRange></bibl>; 
+               <bibl><ptr target="degrassi1945"/><citedRange>11-12</citedRange></bibl>;
+            <bibl><ptr target="irt1952"/>, <citedRange>590</citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD065318">065318</ref></citedRange></bibl>
+                   </p>
          </div>
-         <div type="edition" xml:lang="ber-Latn" xml:space="preserve">
+         <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-                  <lb n="1"/><persName type="attested"><name>Iulius</name> <name>Nasif</name>
-                       <lb n="2"/><w>tribunus</w> <w>bym
-                       <lb n="3" break="no"/>sir</w> <w>aban</w> <w>byn</w>
-                       <lb n="4"/><persName type="attested"><name>Jyeihan</name> <name>Rira
-                       <lb n="5" break="no"/>chan</name></persName></persName> <w>b<supplied reason="lost">al</supplied></w> <w>mys
-                       <lb n="6" break="no"/>rasthie</w> <w>vy</w> <w>mysy
-                       <lb n="7" break="no"/>rthim</w> <w>bal</w> <w>sem</w> <w>rm</w>
-                       <lb n="8"/><w>sabsi</w> <w>ben</w> <persName type="other"><name>Mycne
-                       <lb n="9" break="no"/>i</name></persName> <w>sabsy</w> <supplied reason="lost"></supplied><w>v</w> <w>fathsy</w> <w>by
-                       <lb n="10" break="no"/>n</w> <persName type="attested"><name>Aabsm<supplied reason="lost">un</supplied></name></persName> <w><supplied reason="lost">r</supplied>osa</w> <w>l
-               <lb n="11" break="no"/>vn</w> <w><unclear>sn</unclear></w> <gap reason="lost" extent="unknown" unit="line"/>
+                  <lb n="1"/>
+               <w lemma="aedilis"><expan><abbr>Aedil</abbr><ex>es</ex></expan></w> <space extent="unknown"></space> <gap reason="lost" extent="unknown" unit="character"/>
             </ab></div>
+         
          <div type="translation" source="#irt2009" xml:lang="en">
-           <p> Julius Nasif, tribune.</p></div>
-         <div type="translation" source="#elmayer1983" xml:lang="en">
-            <p>Julius Nasif, Tribunus stele of stone, son of Jyeihan Rirachan, chief of administration and justice, great man and great soldier, from the tribe of Mycnei, war-like people (?) and
-               victorious (?) Byn Abdsmun the great (?), lived years ...</p></div>
-         <div type="commentary">
             
+            <p>The aediles <gap reason="lost" extent="unknown" unit="character"/></p></div>
+         <div type="commentary">
+            <p>No comment.</p>
          </div>
       </body>
    </text>
