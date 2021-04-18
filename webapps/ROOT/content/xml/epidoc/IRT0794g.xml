@@ -2,19 +2,17 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0499" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0794g" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">dedication<certainty match=".." locus="value"/>
-               </rs>
-            </title>
+            <title><rs type="textType">Quarry-mark</rs></title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0499</idno>
+            <idno type="filename">IRT0794g</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -28,31 +26,26 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Fragment from the upper part of a <material>marble</material> 
-                              <objectType>panel</objectType> (<dimensions>
-                                 <width unit="metre">0.16</width>
-                                 <height unit="metre">0.11</height>
-                              </dimensions>). </p>
+                           <p>On the rough edge of a fragment of a <objectType>panel</objectType>: no measurements</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed on one face.</layout>
+                        <layout>Roughly incised on undressed surfaces.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote> Rustic capitals: <height unit="metre">0.075</height>.</handNote>
+                     <handNote> <height unit="metre">0.03</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0101" notAfter="0233" precision="low" evidence="lettering">Second to early third centuries CE (lettering)</origDate>
+                     <origDate>Unknown</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
-                  <placeName type="monuList" ref="https://www.slsgazetteer.org/720">Forum Vetus</placeName>.</p>
+                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: findspot unrecorded.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>
@@ -103,28 +96,44 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile><graphic url="wp0640.jpg">
-      <desc>From left: <ref type="inscription" n="IRT0499">IRT 499</ref>, unidentified, <ref type="inscription" n="IRT0794j">IRT 794j</ref>; 
-         below, <ref type="inscription" n="IRT0507">IRT 507</ref>, <ref type="inscription" n="IRT0660">IRT 660</ref>: 
-         Ward-Perkins, 1948 (Ward-Perkins Archive, BSR 48.XXIV.7)</desc></graphic>
+   <facsimile>
+      
+      
+      <graphic url="wp0968.jpg">
+         <desc>Left, from top, <ref type="inscription" n="IRT0794f">IRT 794f</ref>, <ref type="inscription" n="IRT0794g">IRT 794g</ref>, 
+            <ref type="inscription" n="IRT0794h">IRT 794h</ref>, to right <ref type="inscription" n="IRT0794k">IRT 794k</ref>: Ward-Perkins, 1948 
+            (Ward-Perkins Archive, BSR 48.XXII.9)</desc></graphic>
+                  
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>499</citedRange></bibl>, whence 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT499.html">499</ref></citedRange></bibl>, whence 
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059392">059392</ref></citedRange></bibl>
+            <p>
+               <bibl>
+                  <ptr target="bartoccini1929"/>, <citedRange>95</citedRange>
+               </bibl>;
+            <bibl><ptr target="irt1952"/>, <citedRange>794</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT794.html">794</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD67694">067694</ref></citedRange></bibl>; 
+               see also <bibl><ptr target="wp1951"/> <citedRange>89-90</citedRange></bibl>
+               
                    </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <ab>
-               <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/> <persName type="emperor"><name type="cognomen" nymRef="Nerua"><seg part="I">Nerua</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
-            </ab></div>
+            <div subtype="fragment" n="g" type="textpart"><ab> <lb n="1"/>
+               <gap reason="lost" extent="unknown" unit="character"/><w lemma="edo" part="F">es</w> <w lemma="sub">sub</w> <w lemma="cura">c<supplied reason="lost">ura</supplied></w>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <w lemma="procurator"><expan><abbr><supplied reason="lost">p</supplied>roc</abbr><ex>uratoris</ex></expan></w> <w part="I">f</w><gap reason="lost" extent="unknown" unit="character"/> </ab></div>
+            </div>
+         
+         
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p><gap reason="lost" extent="unknown" unit="character"/>Nerva <note>case unknown</note><gap reason="lost" extent="unknown" unit="character"/></p></div>
+            <p> <gap reason="lost" extent="unknown" unit="character"/>under the care <gap reason="lost" extent="unknown" unit="character"/> procurator <gap reason="lost" extent="unknown" unit="character"/>  </p>
+         </div>
          <div type="commentary">
-            <p>No comment.</p>
+           
          </div>
       </body>
    </text>
