@@ -349,8 +349,8 @@
 
    <xsl:template name="inslib-title">
      <xsl:choose>
-       <xsl:when test="//t:titleStmt/t:title and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),2,5))">
-         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()"/>
+       <xsl:when test="//t:titleStmt/t:title and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),4,7))">
+         <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename']/text(),4,7)"/>
          <xsl:text>. </xsl:text>
          <xsl:apply-templates select="//t:titleStmt/t:title"/>
        </xsl:when>
@@ -436,7 +436,7 @@
                   <xsl:text>.html</xsl:text>
               </xsl:attribute>
               <xsl:text>&#171;</xsl:text>
-              <i18n:text>Previous: </i18n:text><xsl:value-of select="$prev"/>
+              <i18n:text>Previous: </i18n:text><xsl:value-of select="substring($prev,4)"/>
             </a>
           </li>
           </xsl:if>
@@ -449,7 +449,7 @@
                   <xsl:value-of select="$next"/>
                   <xsl:text>.html</xsl:text>
               </xsl:attribute>
-              <i18n:text>Next: </i18n:text><xsl:value-of select="$next"/>
+              <i18n:text>Next: </i18n:text><xsl:value-of select="substring($next,4)"/>
               <xsl:text>&#187;</xsl:text>
             </a>
           </li>
