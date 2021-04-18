@@ -71,6 +71,26 @@
         <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
       </tbody>
     </table>
+        
+        <xsl:if test="doc[arr[@name='language_code']='ber-Latn']">
+          <table class="index tablesorter">
+            <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
+            <tbody>
+              <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='ber-Latn']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+              <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='ber-Latn']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
+            </tbody>
+          </table>
+        </xsl:if>
+        <xsl:if test="doc[arr[@name='language_code']='phn-LY']">
+          <table class="index tablesorter">
+            <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
+            <tbody>
+              <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='phn-LY']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+              <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='phn-LY']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
+            </tbody>
+          </table>
+        </xsl:if>
+        
       </xsl:when>
       <xsl:otherwise>
         <table class="index tablesorter">
