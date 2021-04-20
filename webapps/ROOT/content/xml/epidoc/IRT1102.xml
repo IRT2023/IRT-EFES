@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0000" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Meilen-/Leugenstein</title>
+                <editor xml:id="xxx">xxx - EDH</editor>
+                <editor xml:id="cmr">Charlotte Roueché</editor>
+            </titleStmt>  
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="EDH">HD050461</idno>
+                <idno type="TM">201720</idno>
+                <idno type="filename">IRT0000</idno>
+                <availability>
+                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+                </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>...</repository>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                  <p>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/89">Meilen-/Leugenstein</objectType>
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <dimensions>
+                                        <height unit="metre">1.67</height>
+                                        <width unit="metre">0.36</width>
+                                        <depth unit="metre"/>
+                                    </dimensions>
+                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                                  </p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote><height unit="metre">0.065-0.04</height></handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace><placeName ref="http://www.trismegistos.org/place/002036"/></origPlace>
+                            <origDate notBefore="0244" notAfter="0247">244 AD – 247 AD
+                            </origDate>
+                        </origin>
+                        <provenance type="found"><p><placeName>El-Garib</placeName></p></provenance>
+                        <provenance type="observed"><p></p></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+                <language ident="xpu">Punic</language>
+                <language ident="ber-Latn">Native Libyan language in Latin script</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
+                    <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                    <term ref="http://www.eagle-network.eu/voc/typeins/lod/102">Meilen-/Leugenstein</term><!--move info inside <title> in <titleStmt>-->
+                </keywords>
+            </textClass>
+        <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
+        <revisionDesc>
+         <change when="2021-04-18" who="IV">adapted</change>
+         <change when="2008-07-21" who="Platz">provisorisch bearbeitet</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><graphic url=""/></facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <p>
+                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD050461">050461</ref></citedRange></bibl>
+                    <bibl><ptr target="ae"/> <citedRange>1996, 1695</citedRange>.</bibl>
+                </p>
+            </div>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
+                <expan><abbr>Imp</abbr><ex>erator</ex></expan> <expan><abbr>Caes</abbr><ex>ar</ex></expan> <lb n="2"/><expan><abbr>M</abbr><ex>arcus</ex></expan> Iulius Filipus <note>sic</note> <lb n="3"/>Pius Felix <expan><abbr>Aug</abbr><ex>ustus</ex></expan> po<lb break="no" n="4"/>ntifex maximus <lb n="5"/>tribunicie <note>sic</note> potestate <gap reason="lost" extent="unknown" unit="character"/> pater pat<lb break="no" n="6"/>ri<expan><ex>a</ex><abbr>e</abbr></expan> et <expan><abbr>M</abbr><ex>arcus</ex></expan> Iulius <lb n="7"/>Philippus nobil<lb break="no" n="8"/>iss<supplied reason="lost">i</supplied>mus C<expan><ex>a</ex><abbr>esar</abbr></expan> <lb n="9"/>filius Augusti <lb n="10"/>nostri <lb n="11"/><expan><abbr>m</abbr><ex>ilia</ex></expan> <expan><abbr>p</abbr><ex>assuum</ex></expan> <expan><abbr>n</abbr><ex>umero</ex></expan> LVI
+            </ab></div>
+            <div type="translation" resp="#cmr" xml:lang="en">
+                <p/>
+            </div>
+            <div type="commentary">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

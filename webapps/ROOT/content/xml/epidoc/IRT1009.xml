@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0000" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>AE 1971, 0484.</title>
+                <editor xml:id="xxx">xxx - EDH</editor>
+                <editor xml:id="cmr">Charlotte Roueché</editor>
+            </titleStmt>  
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="EDH">HD011890</idno>
+                <idno type="TM">199162</idno>
+                <idno type="filename">IRT0000</idno>
+                <availability>
+                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+                </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>...</repository>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                  <p>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <dimensions>
+                                        <height unit="metre"/>
+                                        <width unit="metre"/>
+                                        <depth unit="metre"/>
+                                    </dimensions>
+                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                                  </p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote></handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
+                            <origDate>
+                            </origDate>
+                        </origin>
+                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
+                        <provenance type="observed"><p></p></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+                <language ident="xpu">Punic</language>
+                <language ident="ber-Latn">Native Libyan language in Latin script</language>
+            </langUsage>
+            <textClass>
+              <keywords scheme="IRCyr">
+                    <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
+                    <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+              </keywords>
+            </textClass>
+            <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
+        <revisionDesc>
+         <change when="2021-04-18" who="IV">adapted</change>
+         <change when="2014-05-20" who="Bigi">provisorisch bearbeitet</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><graphic url=""/></facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <p>
+                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD011890">011890</ref></citedRange></bibl>
+                    <bibl><ptr target="ae"/> <citedRange>1971, 0484</citedRange>.</bibl>
+                </p>
+            </div>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
+                Divo <gap reason="lost" extent="unknown" unit="character"/> Au<gap reason="lost" extent="unknown" unit="character"/> Divae <gap reason="lost" extent="unknown" unit="character"/> <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+            </ab></div>
+            <div type="translation" resp="#cmr" xml:lang="en">
+                <p/>
+            </div>
+            <div type="commentary">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>
