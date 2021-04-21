@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Meilen-/Leugenstein</title>
+                <title><rs type="textType">Milestone</rs></title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -31,20 +31,18 @@
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/89">Meilen-/Leugenstein</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/89">Milestone</objectType>
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
                                     <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
-                                    </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                                        <height unit="metre">1.04</height>
+                                        <dim unit="metre">0.48</dim></dimensions>
+                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">none</rs>
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -54,12 +52,13 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName ref="http://www.trismegistos.org/place/016995">Sabratha, bei</placeName></origPlace>
+                            <origPlace>Findspot</origPlace>
                             <origDate notBefore="0008" notAfter="0013">8 AD – 13 AD
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName>Şabrātah, bei</placeName><placeName type="modern_region">Az Zāwiyah</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot"
+                            ref="https://www.slsgazetteer.org/659">Sabratha</placeName>, to the east.</p></provenance><!-- check road -->
+                        <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,7 +85,7 @@
                 <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2212771/sabratah.html">Sabratah</placeName></term>
                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/102">Meilen-/Leugenstein</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
@@ -114,14 +113,19 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="vitaevrard1987"/> <citedRange>9-16</citedRange>, pl. 1c; pl. 2a u. 2b</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1987.992</citedRange></bibl>, whence 
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD004277">004277</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>1987, 0992</citedRange>.</bibl>
-                    <bibl> G. Di Vita-Evrard, LibAnt 15/16, 1978/79, 9-16; pl. 1c; pl. 2a u. 2b.</bibl> <bibl><ptr target="ae"/> <citedRange>1987</citedRange>.</bibl>
+                    
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <expan><abbr>A</abbr><ex>ulo</ex></expan> Caecina <lb n="2"/>Severo <lb n="3"/>proco<expan><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan> <lb n="4"/><expan><abbr>leg</abbr><ex>io</ex></expan> III <expan><abbr>Aug</abbr><ex>usta</ex></expan> <lb n="5"/>IIII
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/><persName type="attested">
+                <name><expan><abbr>A</abbr><ex>ulo</ex></expan></name> <name>Caecina</name> 
+                <lb n="2"/><name>Severo</name></persName> 
+                <lb n="3"/><w><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> 
+                <lb n="4"/><w><expan><abbr>leg</abbr><ex>io</ex></expan></w> <num value="3">III</num> <w><expan><abbr>Aug</abbr><ex>usta</ex></expan></w> 
+                <lb n="5"/><space quantity="4" unit="character"/><num value="4">IIII</num><space quantity="4" unit="character"/>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

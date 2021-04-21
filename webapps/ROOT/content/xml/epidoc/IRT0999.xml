@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AE 1980, 0900.AE.</title>
+                <title><rs type="textType">Dedication</rs></title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -31,25 +31,23 @@
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Labrum</objectType> of
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">marble</material>
                                     <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
-                                    </dimensions>
+                                        <dim unit="metre">0.58</dim>
+                                        <height unit="metre">0.10</height></dimensions>
                                     <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the rim, i on the interior side, ii on the outside
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote><height>0.03-0.032</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -58,7 +56,8 @@
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName>Şabrātah</placeName><placeName type="modern_region">Az Zāwiyah</placeName></p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot"  ref="https://www.slsgazetteer.org/659">Sabratha</placeName>
+                            <placeName type="modern_region">Az Zāwiyah</placeName>; found in <date type="foud">1973</date>.</p></provenance>
                         <provenance type="observed"><p></p></provenance>
                     </history>
                 </msDesc>
@@ -86,7 +85,7 @@
               <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                  <term><placeName type="modernFindspot" key="http://www.geonames.org/2212771/sabratah.html">Sabratah</placeName></term>
               </keywords>
             </textClass>
             <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
@@ -99,15 +98,34 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD005919">005919</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>1980, 0900</citedRange>.</bibl>
-                    <bibl> M. Rossi - G. Gabrini, LibAnt 13/14, 1976/77, 9-13; tav. 2-4. - AE. V</bibl>
+                <p> <bibl><ptr target="rossigarbini"/> <citedRange>9-13</citedRange>, plates 2-4</bibl>, whence
+                    <bibl><ptr target="ae"/> <citedRange>1980.900</citedRange></bibl>, whence 
+                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD005919">005919</ref></citedRange></bibl>;
+                    Reconsidered, <bibl><ptr target="vitaevrard2002"/> <citedRange>297-300</citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2003.1923</citedRange></bibl>, whence 
+                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD045236">045236</ref></citedRange></bibl>
+                   
                 </p>
+                   
+                   
+               
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                Dom<expan><ex>i</ex><abbr>no</abbr></expan> Sa<choice><corr>t</corr><sic>P</sic></choice>urno#Sa<supplied reason="omitted">t</supplied>urno#SAPURNO vico M<gap reason="lost" extent="unknown" unit="character"/>no <expan><abbr>v</abbr><ex>oto</ex></expan> <expan><abbr>s</abbr><ex>uscepto</ex></expan> Iu<gap reason="lost" extent="unknown" unit="character"/>hn <gap reason="lost" extent="unknown" unit="character"><certainty match=".." locus="name"/></gap>giaduris f<supplied reason="lost">il</supplied>ius <expan><abbr>f</abbr><ex>ecit</ex></expan>
-            </ab></div>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <div type="textpart" n="i"  xml:lang="xpu"><ab></ab></div><!-- punic to add -->
+                <div type="textpart" n="ii"  xml:lang="la"><ab><lb n="1"/>
+              <persName type="divine"><w><expan> <abbr>Dom</abbr><ex>i</ex><abbr>no</abbr></expan></w> 
+                  <name nymRef="Saturnus">Saturno</name></persName> <placeName><w>vico</w> <name>A<supplied reason="lost">ntistia</supplied>no</name></placeName> <w><expan><abbr>v</abbr><ex>oto</ex></expan></w> <w><expan><abbr>s</abbr><ex>uscepto</ex></expan></w> 
+                   <persName type="attested"> <name nymRef="Iurathan">Iu<gap reason="lost" extent="unknown" unit="character"/>hn</name> <gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name nymRef="Agiadur"><supplied reason="lost" cert="low">A</supplied>giaduris</name></persName> <w>f<supplied reason="lost">il</supplied>ius</w></persName> 
+                        <w><expan><abbr>f</abbr><ex>ecit</ex></expan></w>
+            </ab></div></div>
+            
+            <div type="apparatus">
+                <listApp>
+                    <app loc="ii.1"><rdg>SAPURNO</rdg></app>
+                    <app loc="ii.1"><rdg resp="rossigarbini">M[ . . . ]no</rdg></app>
+                </listApp>
+            </div>
+            
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
