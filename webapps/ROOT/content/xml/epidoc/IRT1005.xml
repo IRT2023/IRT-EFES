@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AE 1961, 0108.</title>
+                <title><rs type="textType">Dedication</rs> for a monumnet</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -31,8 +31,8 @@
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">No description</objectType>
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">No description</material>
                                     <dimensions>
                                         <height unit="metre"/>
                                         <width unit="metre"/>
@@ -44,12 +44,12 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">No description</rs>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote>No description</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -58,8 +58,15 @@
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName>Ţarābulus (Tripoli)</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p>
+                            <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>: 
+                            <placeName ref="https://www.slsgazetteer.org/657">Oea</placeName>,  
+                            near the <placeName type="monuList" ref="https://www.slsgazetteer.org/805">Arch of Marcus Aurelius</placeName>; 
+                            described to Girard in <date type="found">1670</date>.</p>
+                        </provenance>
+                        <provenance type="observed">
+                            <p>Findspot (<date type="observed">1654</date>)</p>
+                        </provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -99,24 +106,26 @@
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="girard1685"/></bibl>; 
-                    <bibl><ptr target="ae"/> <citedRange>1961, 0108</citedRange></bibl>, whence
+                <p><bibl><ptr target="girard1685"/> <citedRange><ref target="https://gallica.bnf.fr/ark:/12148/btv1b10720760b/f33.item">f.22</ref></citedRange></bibl>, whence 
+                    <bibl><ptr target="bartoccini1958"/> <citedRange></citedRange></bibl>,
+                    <bibl><ptr target="ae"/> <citedRange>1961.108</citedRange></bibl>, 
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD017794">017794</ref></citedRange></bibl>
                     
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab>
-                <lb n="1"/>
+                <lb n="1"/><gap reason="lost" quantity="7" unit="character"/>
                 <persName type="attested"><name>Dolabella</name> </persName><w><abbr>Rom</abbr></w> <w><expan><abbr>proco</abbr><ex>nsul</ex></expan></w> 
                 <lb n="2"/><persName type="attested"><name><expan><abbr>Tacfa</abbr><ex>rinate</ex></expan></name></persName> <w><expan><abbr>debel</abbr><ex>lato</ex></expan></w> <w>civitas</w>  <placeName>Oeam</placeName> <w><expan><abbr>rest</abbr><ex>ituit</ex></expan></w> 
-                <lb n="3"/><w><expan><abbr>pac</abbr><ex>e</ex></expan></w> <w><expan><abbr>conserv</abbr><ex>ata</ex></expan></w> POP APHR PROT 
-                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <w>et</w> <w><expan><abbr>consec</abbr><ex>ravit</ex></expan></w>
+                <lb n="3"/><w><expan><abbr>pac</abbr><ex>e</ex></expan></w> <w><expan><abbr>conserv</abbr><ex>ata</ex></expan></w> <orig>pop</orig> <orig>Aphr</orig> <orig>prot</orig> 
+                <lb n="4"/><gap reason="lost" quantity="12" unit="character"/> <w>et</w> <w><expan><abbr>consec</abbr><ex>ravit</ex></expan></w>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
             <div type="commentary">
-                <p/>
+               <p> The authenticity of this text, copied in the 17th century, was doubted by Cumont (1925); but the discovery of 
+                   <ref type="inscription" n="IRT1021">IRT 1021</ref> appears to confirm the reality of this report.</p>
             </div>
         </body>
     </text>
