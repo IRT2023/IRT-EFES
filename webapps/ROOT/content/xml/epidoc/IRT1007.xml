@@ -24,19 +24,19 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <repository>Al Khums, Lepcis Magna Museum (Altes Museum)</repository>
+                        <repository ref="institution.xml#db654">Lepcis Museum</repository>
                     </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/89">Meilen-/Leugenstein</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/89">Column</objectType>ar milestone of 
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
                                     <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
+                                        <height unit="metre">2.196</height>
+                                        <dim unit="metre">0.375-0.455</dim>
+                                        <depth unit="metre"></depth>
                                     </dimensions>
                                     <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
                                   </p>
@@ -44,12 +44,12 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote><height>0.01 - 0.04</height>, line 15, <height>0.07</height>.</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -58,8 +58,10 @@
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot"
+                            ref="https://www.slsgazetteer.org/726">Homs</placeName>: found during demolition of a Turkish building adjoining the main mosque, in 
+                            <date type="found">1966</date></p></provenance>
+                        <provenance type="observed"><p><placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName></p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,7 +88,7 @@
                 <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/102">Meilen-/Leugenstein</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
@@ -100,31 +102,44 @@
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="gasperini1988"/> <citedRange>159-164</citedRange></bibl>, whence 
+                <p>Mantioned <bibl><ptr target="bakir1967"/> <citedRange>249</citedRange></bibl>, and 
+                    <bibl><ptr target="vitaevrard1979"/> <citedRange>71</citedRange>, note 10</bibl>;
+                    published <bibl><ptr target="gasperini1988"/> <citedRange>159-164</citedRange></bibl>, whence 
                     <bibl><ptr target="ae"/> <citedRange>1988.1101</citedRange></bibl>,
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD009599">009599</ref></citedRange></bibl>
-                    
-                    <bibl>                    </bibl>
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><div n="1" type="textpart"><ab><lb n="1"/>
-                <expan><abbr>Imp</abbr><ex>eratori</ex></expan> <expan><abbr>Caes</abbr><ex>ari</ex></expan> divi Septimi Severi Adiabenici Par
-                <lb break="no" n="2"/><supplied reason="lost">thi</supplied>ci maximi Brittannici 
-                <lb n="3"/>m<supplied reason="lost">a</supplied>ximi filio divi Antonini 
-                <lb n="4"/>Pii Germanici Sarmatici ne
-                <lb break="no" n="5"/>poti divi Antonini Pii prone<lb break="no" n="6"/>poti divi Hadriani abnepoti 
-                <lb n="7"/>divi Traiani Parthici et divi 
-                <lb n="8"/>Nervae adnepot<supplied reason="lost">i</supplied> 
-                <lb n="9"/>Marco Au<supplied reason="lost">reli</supplied>o Antoni<supplied reason="lost">n</supplied>o Pio Felici 
-                <lb n="10"/><expan><abbr>Aug</abbr><ex>usto</ex></expan> Parthico maximo Brittanico 
-                <lb n="11"/>maximo Germanico maximo pon
-                <lb break="no" n="12"/>tifici maximo tribuniciae po
-                <lb break="no" n="13"/>testatis XVIII <expan><abbr>imp</abbr><ex>eratori</ex></expan> III co<expan><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan> IIII </ab></div>
-                <div n="2" type="textpart"><ab><lb n="1"/> I
-            </ab></div></div>
-            <div type="translation" resp="#cmr" xml:lang="en">
-                <p/>
-            </div>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <ab>
+                <lb n="1"/>
+               <w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></w> <persName type="emperor"><name type="cognomen" nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ari</ex></expan></name>, 
+               <lb n="2"/><w lemma="diuus">diui</w> <name type="gentilicium" nymRef="Septimius">Sep<unclear>timi</unclear></name> <name type="cognomen" nymRef="Seuerus"><unclear>Seueri</unclear></name> 
+                   <name type="cognomen" nymRef="Pius">Pii</name> <name>Arabici</name> <name type="cognomen" nymRef="Adiabenicus">Adiabenici</name> <name type="cognomen" nymRef="Parthicus">Par
+               <lb n="3" break="no"/><supplied reason="lost">thi</supplied>ci</name> <w lemma="magnus">maximi</w> <name type="cognomen" nymRef="Britannicus">Brittanici</name> 
+                <lb n="4"/><w lemma="magnus"><unclear>m</unclear><supplied reason="lost">a</supplied><unclear>x</unclear>imi</w></persName> <w lemma="filius">filio</w> <persName type="emperor"><w lemma="diuus">diui</w> <name type="gentilicium" nymRef="Antoninus">Antoni<unclear>ni</unclear></name> 
+                <lb n="5"/><name type="cognomen" nymRef="Pius">Pii</name> <name type="cognomen" nymRef="Germanicus">Girmanici</name> <name type="cognomen" nymRef="Sarmaticus">Sar<lb n="9" break="no"/>matici</name></persName> <w lemma="nepos">ne
+                <lb n="6" break="no"/>poti</w> <persName type="emperor"><w lemma="diuus">di<lb n="10" break="no"/>ui</w> <name type="gentilicium" nymRef="Antoninus">Antonini</name> <name type="cognomen" nymRef="Pius">Pii</name></persName>
+               <w lemma="pronepos">prone
+               <lb n="7" break="no"/>poti</w> <w lemma="diuus">diui</w> <persName type="emperor"><name type="cognomen" nymRef="Hadrianus">Hadriani</name></persName> <w lemma="abnepos">abnepoti</w>
+               <lb n="8" break="no"/> <w lemma="diuus">diui</w> <persName type="emperor"><name type="cognomen" nymRef="Traianus">Traiani</name> <name type="cognomen" nymRef="Parthicus">Parthici</name></persName>
+               <w lemma="et"><unclear>et</unclear></w> <persName type="emperor"><w lemma="diuus"><unclear>di</unclear>ui</w> 
+               <lb n="9"/> <name type="cognomen" nymRef="Nerua">Neruae</name></persName> <w lemma="adnepos">adnepot<supplied reason="lost">i</supplied></w>
+               <lb n="10"/>
+               <persName type="emperor"><name type="praenomen" nymRef="Marcus">Marco</name> <name type="gentilicium" nymRef="Aurellius">Au<supplied reason="lost">relli</supplied><unclear>o</unclear></name> <name type="gentilicium" nymRef="Antoninus">Antoni<supplied reason="lost">n</supplied>o</name>
+               <name type="cognomen" nymRef="Pius">Pio</name> <name type="cognomen" nymRef="Felix">Fe<unclear>lici</unclear></name> 
+               <lb n="11"/><name type="cognomen" nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name> <name type="cognomen" nymRef="Parthicus"><unclear>Parth</unclear>ico</name> <w lemma="magnus">max<unclear>im</unclear>o</w> <name type="cognomen" nymRef="Britannicus"><unclear>Br</unclear>ittanico</name> 
+               <lb n="12"/><w lemma="magnus">maximo</w> <name type="cognomen" nymRef="Germanicus">Germani<unclear>c</unclear>o</name></persName> <w lemma="magnus"><unclear>m</unclear>aximo</w> <w lemma="pontifex">pon
+                <lb n="13" break="no"/>tifici</w> <w lemma="magnus">maximo</w> <w lemma="tribunicius">tri<unclear>b</unclear>uniciae</w> <w lemma="potestas">po
+                     <lb n="14" break="no"/><unclear>test</unclear>a<unclear>tis</unclear></w> <num value="19"><unclear>X</unclear>VIIII</num>, <w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w> <num value="3">III</num>
+               
+               <lb n="15"/> <num value="1">I</num>
+            </ab></div>
+            <div type="translation" source="#cmr" xml:lang="en">
+                <p>To emperor Caesar, son of deified Septimius Severus, Pius, victor in Arabia, victor in Adiabene, 
+                    greatest victor in Parthia, greatest victor in Britannia, grandson of deified Antoninus Pius , victor in Germany, victor in Sarmatia, 
+                    great grandson of deified Antoninus Pius, great great grandson of deified Hadrian, great great great grandson of deified Trajan, victor in Parthia and of deified Nerva, 
+                    Marcus Aurellius Antoninus Pius Felix Augustus, greatest victor in Parthia, greatest victor in Britannia, greatest victor in Germany, chief priest, holding tribunician power 
+                    for the nineteenth time, acclaimed victor three times, consul four times. <supplied reason="explanation">Milestone</supplied> One.</p></div>
             <div type="commentary">
                 <p/>
             </div>
