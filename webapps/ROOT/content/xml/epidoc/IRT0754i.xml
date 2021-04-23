@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0754d" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0754i" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,7 +13,7 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0754d</idno>
+            <idno type="filename">IRT0754i</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -22,7 +22,7 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -31,26 +31,26 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed in rough capitals on the two faces of the lid.</layout>
+                        <layout>Inscribed in rough capitals on the body.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height unit="metre">0.05</height>.</handNote>
-                     </handDesc>
+                     <handNote>No measurements</handNote></handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate>Unknown.</origDate></origin>
+                     <origDate>Unknown.</origDate>
+                     </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
                                          ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
-                  findspot unrecorded.</p>
+                 found in the <placeName type="monuList" ref="https://www.slsgazetteer.org/719">Forum Severianum</placeName>. 
+</p>
                         </provenance>
                         <provenance type="observed">
-                           <p><placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName>.
-                  </p>
+                           <p>Findspot</p>
                         </provenance>
                </history>
             </msDesc>
@@ -98,22 +98,27 @@
       </revisionDesc>
    </teiHeader>
    <facsimile><surface/>
-                  
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>754</citedRange></bibl>, whence 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT754.html">754</ref>.4</citedRange></bibl>, whence 
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067703">067703</ref></citedRange></bibl></p>
+            <p><bibl>
+                  <ptr target="relscav"/> 
+                  <citedRange>3.2.35</citedRange>
+               </bibl>; 
+               <bibl><ptr target="irt1952"/>, <citedRange>754</citedRange>9</bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT754.html">754</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067708">067708</ref></citedRange></bibl>.
+                   </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <ab><lb n="1"/><persName type="attested"><name><seg part="I">A</seg></name><gap reason="lost" extent="unknown" unit="character"/>
-            <lb n="2"/><name type="cognomen" nymRef="Amo">Amo</name></persName></ab>
+            
+            <div subtype="series" n="9" type="textpart"><ab><lb n="1"/><persName type="attested"><name type="cognomen" nymRef="Capito">Capito</name> 
+               <lb n="2"/><name type="cognomen" nymRef="Cesalo">Cesalo</name></persName></ab></div>
             </div>
          
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p> A<gap reason="lost" extent="unknown" unit="character"/>amo <note>?misread for Anno</note> </p>
+            <p>Capito Cesalo</p>
          </div>
          <div type="commentary">
             
