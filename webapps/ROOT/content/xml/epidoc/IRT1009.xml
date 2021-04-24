@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AE 1971, 0484.</title>
+                <title><rs type="textType">Dedication</rs> to Septomius Severus</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -31,10 +31,10 @@
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Plaque</objectType> of white
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">marble</material>
                                     <dimensions>
-                                        <height unit="metre"/>
+                                        <height unit="metre"/><!-- check -->
                                         <width unit="metre"/>
                                         <depth unit="metre"/>
                                     </dimensions>
@@ -44,7 +44,7 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -54,12 +54,14 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
+                            <origPlace>Apparently from the <placeName ref="https://www.slsgazetteer.org/746">Arch of Septimius Severus</placeName></origPlace>
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                            on the <placeName ref="https://www.slsgazetteer.org/1705">Decumanus Maximus</placeName>, 
+                            near the <placeName type="monuList" ref="https://www.slsgazetteer.org/746">Arch of Septimius Severus</placeName></p></provenance>
+                        <provenance type="observed"><p>xxx</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -99,13 +101,15 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="ioppolo1968"/> <citedRange></citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1971.484</citedRange></bibl>, whence
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD011890">011890</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>1971, 0484</citedRange></bibl>
+                    
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                Divo <gap reason="lost" extent="unknown" unit="character"/> Au<gap reason="lost" extent="unknown" unit="character"/> Divae <gap reason="lost" extent="unknown" unit="character"/> <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/>
+                <w>Divo</w> <gap reason="lost" extent="unknown" unit="character"/> <w part="I">Au</w><gap reason="lost" extent="unknown" unit="character"/> <w>Divae</w> <gap reason="lost" extent="unknown" unit="character"/> <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
