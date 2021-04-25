@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AE 1989, 0771.</title>
+                <title><rs type="textType">Name</rs></title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -31,35 +31,36 @@
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Fragment</objectType>
+                                    <!--  <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>-->
                                     <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
+                                        <height unit="metre">0.51</height>
+                                        <width unit="metre">1.53</width>
+                                        <depth unit="metre"></depth>
                                     </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                             <!--       <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>  -->
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote> <height>0.19</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
+                            <origPlace>Unknown</origPlace>
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                            re-used in the wall of the house of Ali Bin Gish; recorded in <date type="found">1910</date>.</p></provenance>
+                        <provenance type="observed"><p>Findspot (<date type="observed">1910</date>)</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -99,13 +100,17 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="paci1989"/> <citedRange>5</citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1989.771</citedRange></bibl>,
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD018477">018477</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>1989, 0771</citedRange></bibl>
+                  
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="0"/>
-                <gap reason="lost" extent="unknown" unit="line"/> <lb n="1"/>Crescentis filius sibi <gap reason="lost" extent="unknown" unit="character"/> <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="0"/>
+                <gap reason="lost" extent="unknown" unit="line"/> 
+                <lb n="1"/>Crescentis filius sibi <gap reason="lost" extent="unknown" unit="character"/> 
+                <lb n="1a"/><gap reason="lost" extent="unknown" unit="line"/>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
