@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AE 1987, 0991.</title>
+                <title><rs type="textType">Caption</rs> for a mosaic</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -24,19 +24,18 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <repository>...</repository>
+                        <repository>Findspot</repository>
                     </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Mosaic</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">floor</objectType>
+                                    
                                     <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
+                                        <width unit="metre">4.00</width>
+                                        <depth unit="metre">2.5</depth>
                                     </dimensions>
                                     <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
                                   </p>
@@ -44,7 +43,9 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Mosaic</rs>, above the image of a bull 
+                                   and captives (<foreign xml:lang="la">damnatio ad bestias</foreign>).
+                                    
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -54,12 +55,13 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna, bei</placeName></origPlace>
+                            <origPlace>Findspot</origPlace>
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Silin</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/648">Oea to Lepcis, coast</placeName>: 
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/1522">Villa Silin</placeName>, Room 14.</p></provenance>
+                        <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -99,19 +101,20 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="picard1985"/> <citedRange></citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1987.991</citedRange></bibl>,
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD012944">012944</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>1987, 0991</citedRange></bibl>
+                    
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
                 <gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Filoserapis">Filoserapis</name></persName> <w lemma="compono"><expan><abbr>comp</abbr><ex>osuit</ex></expan></w>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
-                <p/>
+                <p>Filoserapis organised <supplied reason="subaudible">the event</supplied></p>
             </div>
             <div type="commentary">
-                <p> Inschriftträger: mosaic.</p>
+                
             </div>
         </body>
     </text>
