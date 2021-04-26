@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Weihinschrift auf Altar</title>
+                <title><rs type="textType">Dedication</rs> to Serapis</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -30,36 +30,38 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">Altar</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                  <p>Mall 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">altar</objectType> of white 
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">marble</material>
                                     <dimensions>
                                         <height unit="metre">0.17</height>
-                                        <width unit="metre">0.12</width>
+                                        <width unit="metre">0.10-0.12</width>
                                         <depth unit="metre"/>
                                     </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                               <!-- <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs> -->     
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on two adjacent faces
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height unit="metre">0.024</height></handNote>
+                            <handNote><height unit="metre">0.017-0.024</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
-                            <origDate notBefore="0101" notAfter="0300">101 AD – 300 AD
+                            <origPlace>Findspot</origPlace>
+                            <origDate notBefore="0101" notAfter="0300">101 CE – 300 CE
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                                <placeName ref="https://www.slsgazetteer.org/859">Regio V</placeName>, in the <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">Serapeion</placeName>.</p></provenance>
+                        <provenance type="observed"><p>xxx</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,7 +88,7 @@
                 <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/80">Weihinschrift</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
@@ -100,13 +102,15 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD045234">045234</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>2003, 1921</citedRange></bibl>
+                <p><bibl><ptr target="vitaevrard2003"/> <citedRange>18</citedRange>, 285-6</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2003.1921</citedRange></bibl>,
+                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD045234">045234</ref></citedRange></bibl>>
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><div n="1" type="textpart"><ab><lb n="1"/>
-                <expan><abbr>Cl</abbr><ex>audius</ex></expan> Syr<lb break="no" n="2"/>apiacu<lb break="no" n="3"/>s <expan><abbr>vo</abbr><ex>tum</ex></expan> <expan><abbr>sol</abbr><ex>vit</ex></expan> </ab></div><div n="2" type="textpart"><ab><lb n="1"/> <expan><abbr><supplied reason="lost">C</supplied>l</abbr><ex>audius</ex></expan> Syra<lb break="no" n="2"/>piacus <lb n="3"/><expan><abbr>vo</abbr><ex>tum</ex></expan> <expan><abbr>so</abbr><ex>lvit</ex></expan>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <div n="1" type="textpart" subtype="face"><ab><lb n="1"/>
+                <expan><abbr>Cl</abbr><ex>audius</ex></expan> Syr<lb break="no" n="2"/>apiacu<lb break="no" n="3"/>s <expan><abbr>vo</abbr><ex>tum</ex></expan> <expan><abbr>sol</abbr><ex>vit</ex></expan> </ab></div>
+                <div n="2" type="textpart"  subtype="face"><ab><lb n="1"/> <expan><abbr><supplied reason="lost">C</supplied>l</abbr><ex>audius</ex></expan> Syra<lb break="no" n="2"/>piacus <lb n="3"/><expan><abbr>vo</abbr><ex>tum</ex></expan> <expan><abbr>so</abbr><ex>lvit</ex></expan>
             </ab></div></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

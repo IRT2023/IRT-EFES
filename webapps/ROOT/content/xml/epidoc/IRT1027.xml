@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Weihinschrift auf Altar</title>
+                <title><rs type="textType">Dedication</rs> to Serapis</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -31,10 +31,10 @@
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">Altar?</objectType>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">Altar?</objectType>, broken above
                                     <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
                                     <dimensions>
-                                        <height unit="metre">-0.235</height>
+                                        <height unit="metre">0.235</height>
                                         <width unit="metre">0.175</width>
                                         <depth unit="metre">0.11</depth>
                                     </dimensions>
@@ -55,11 +55,13 @@
                     <history>
                         <origin>
                             <origPlace><placeName>Lepcis Magna</placeName></origPlace>
-                            <origDate notBefore="-0100" notAfter="-0001">100 BC – 1 BC
+                            <origDate notBefore="-0100" notAfter="-0001">100 BCE – 1 BCE
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                                <placeName ref="https://www.slsgazetteer.org/859">Regio V</placeName>, in the <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">Serapeion</placeName>.</p></provenance>
+                        <provenance type="observed"><p>xxx</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -100,13 +102,16 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="vitaevrard2003"/> <citedRange>17</citedRange>, 285-6</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2003.1920</citedRange></bibl>,
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD045232">045232</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>2003, 1920</citedRange></bibl>
+                   
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <expan><abbr>Q</abbr><ex>uintus</ex></expan> Titleis <expan><abbr>C</abbr><ex>ai</ex></expan> <expan><abbr>f</abbr><ex>ilius</ex></expan> <lb n="2"/>Sarapi <expan><abbr>Isi</abbr><ex>di</ex></expan> <expan><abbr>d</abbr><ex>edit</ex></expan>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/>
+                <expan><abbr>Q</abbr><ex>uintus</ex></expan> Titleis <expan><abbr>C</abbr><ex>ai</ex></expan> <expan><abbr>f</abbr><ex>ilius</ex></expan> 
+                <lb n="2"/>Sarapi <expan><abbr>Isi</abbr><ex>di</ex></expan> <expan><abbr>d</abbr><ex>edit</ex></expan>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

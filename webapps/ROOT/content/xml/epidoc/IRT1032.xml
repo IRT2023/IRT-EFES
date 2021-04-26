@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Grabinschrift auf Urne</title>
+                <title><rs type="textType">Funerary</rs> inscription</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -30,9 +30,9 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/78">Urne</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                  <p>Small coffin-shaped funerary
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/78">urn</objectType> in soft 
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">stone</material>
                                     <dimensions>
                                         <height unit="metre">0.495</height>
                                         <width unit="metre">0.22</width>
@@ -43,8 +43,8 @@
                                 </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                <layout>Lightly 
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">inscribed</rs> at the upper corner of a long side.
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -54,12 +54,14 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
+                            <origPlace>Findspot</origPlace>
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: in a hypogaeum in the  
+                                <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">East Necropolis</placeName>.</p></provenance>
+                        <provenance type="observed"><p>xxx</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -100,13 +102,14 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="vitaevrard1997"/> <citedRange>3</citedRange>, 122-123</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1997.1581</citedRange></bibl>,
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD049857">049857</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>1997, 1581</citedRange></bibl>
+                   
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                Maso
+                <persName type="attested"><name>Maso</name></persName>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

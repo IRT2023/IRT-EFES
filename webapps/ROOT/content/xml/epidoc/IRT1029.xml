@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Grabinschrift auf Tafel</title>
+                <title><rs type="textType">Funerary</rs> inscription</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -30,21 +30,21 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/257">Tafel</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                  <p>Fragment of a <material ref="http://www.eagle-network.eu/voc/material/lod/138">marble</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/257">panel</objectType>
+                                    
                                     <dimensions>
-                                        <height unit="metre">-0.13</height>
-                                        <width unit="metre">-0.12</width>
+                                        <height unit="metre">0.13</height>
+                                        <width unit="metre">0.12</width>
                                         <depth unit="metre">0.022</depth>
                                     </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                              <!-- <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs> -->      
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed on the face</rs>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -54,12 +54,14 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
-                            <origDate notBefore="0201" notAfter="0300">201 AD – 300 AD
+                            <origPlace>Unknown</origPlace>
+                            <origDate notBefore="0201" notAfter="0300">Third century CE
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                                <placeName ref="https://www.slsgazetteer.org/859">Regio V</placeName>, in the <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">Serapeion</placeName>.</p></provenance>
+                        <provenance type="observed"><p>xxx</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -100,9 +102,9 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="vitaevrard2003"/> <citedRange>19</citedRange>, 286</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2003.1922</citedRange></bibl>,
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD045235">045235</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>2003, 1922</citedRange></bibl>
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
