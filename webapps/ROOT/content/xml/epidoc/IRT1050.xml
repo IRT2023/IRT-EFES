@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Bau-/Stifterinschrift auf Basis</title>
+                <title><rs type="textType">Dedication</rs> to emperors</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -30,9 +30,9 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/53">Basis</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/60">Kalkstein</material>
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/60">Limestone</material> statue 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/53">base</objectType>
+                                    
                                     <dimensions>
                                         <height unit="metre">-1.09</height>
                                         <width unit="metre">0.61</width>
@@ -44,7 +44,8 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> 
+                                    over an erased earlier text, after the base had also been used  as a fountain. 
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -54,12 +55,14 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
+                            <origPlace>Unknown</origPlace>
                             <origDate notBefore="0351" notAfter="0400">351 AD – 400 AD
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                            <placeName ref="https://www.slsgazetteer.org/742">Regio IV</placeName>, 
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/719">Severan Forum</placeName></p></provenance>
+                        <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,7 +89,7 @@
                 <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/261">Bau-/Stifterinschrift</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
@@ -120,10 +123,11 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067628">067628</ref></citedRange></bibl>
-                    <bibl>I. Tantillo - F. Bigi (Hrsg.), Leptis Magna. Una città e le sue iscrizioni in epoca tardoromana (Cassino 2010) 481-483, Nr. 88; tav. 23; fig. 10.104 (Zeichnung).</bibl>
-                    <bibl> PLRE 1 Rusticus 1.</bibl>
+                <p><bibl><ptr target="bartoccini1961"/>, <citedRange>108</citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1963.144b.2</citedRange></bibl>; 
+                    <bibl><ptr target="tantillo2010"/> <citedRange>88</citedRange></bibl>, whence 
+                    <bibl><ptr target="EDH"/> (Bigi) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067628">067628</ref></citedRange></bibl>.
+                    
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><div n="1" type="textpart"><ab><lb n="1"/>
@@ -133,7 +137,8 @@
                 <p/>
             </div>
             <div type="commentary">
-                <p> The inscription is carved over an erased earlier text, after the base had been used also as a fountain. Same text of HD017197; HD067630; HD067631. Datierung: ca. um 355-360 oder 364-367.</p>
+                <p>
+                    PLRE 1 Rusticus 1.Same text of HD017197; HD067630; HD067631. Datierung: ca. um 355-360 oder 364-367.</p>
             </div>
         </body>
     </text>

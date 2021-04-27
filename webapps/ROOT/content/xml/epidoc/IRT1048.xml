@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Ehreninschrift auf Basis</title>
+                <title><rs type="textType">Verse</rs> <rs type="textType">honours</rs></title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -24,42 +24,46 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <repository>...</repository>
+                        <repository>Findspot</repository>
                     </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/53">Basis</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/48">Marmor</material>
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/48">Marble</material> 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/53">statue-base</objectType>, with a simple moulding above and below; 
+                                      created by reusing the pedistalt for a column: 
+                                    
                                     <dimensions>
                                         <height unit="metre">1.17</height>
                                         <width unit="metre">0.815</width>
                                         <depth unit="metre">0.815</depth>
                                     </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                               
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote><!-- check --></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
+                            <origPlace>Finspot</origPlace>
                             <origDate notBefore="0271" notAfter="0330">271 AD – 330 AD
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                                <placeName ref="https://www.slsgazetteer.org/859">Regio V</placeName>, 
+                                in the <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">Serapeion</placeName>.</p></provenance>
+                        <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,7 +90,7 @@
                 <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/69">Ehreninschrift</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
@@ -108,15 +112,18 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067617">067617</ref></citedRange></bibl>
-                    <bibl>SEG 53, 1165.</bibl>
-                    <bibl> A. Di Vita u. a., QAL 18, 275, N. 13; fig. 13. - SEG 53.</bibl>
-                    <bibl> I. Tantillo - F. Bigi (Hrsg.), Leptis Magna. Una città e le sue iscrizioni in epoca tardoromana (Cassino 2010) 415 u. 416, Nr. 53; fig. 8.7 u. fig. 10.60.</bibl>
-                </p>
+                <p><bibl><ptr target="pugliese2003"/> <citedRange>13</citedRange>, 275</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2003.1916</citedRange></bibl>,
+                    <bibl><ptr target="seg"/> <citedRange>53.1165</citedRange></bibl>;
+                    <bibl><ptr target="tantillo2010"/> <citedRange>53</citedRange></bibl>, whence 
+                    <bibl><ptr target="EDH"/> (Bigi) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067617">067617</ref></citedRange></bibl>
+                    </p>
             </div>
             <div type="edition" xml:lang="grc" xml:space="preserve"><div n="1" type="textpart"><ab><lb n="1"/>
-                Δουλκῖτι </ab></div><div n="2" type="textpart"><ab><lb n="1"/> Εἱκόνα χαλκεότευκτον <lb n="2"/>ἑθήκατο τὴνδε Σερήνηῳ <lb n="3"/>Λέπτις ἁμειβομένη <lb n="4"/>Μοῦσαν ἁοιδοπόλον
+                Δουλκῖτι </ab></div><div n="2" type="textpart"><ab><lb n="1"/> Εἱκόνα χαλκεότευκτον 
+                    <lb n="2"/>ἑθήκατο τὴνδε Σερήνηῳ 
+                    <lb n="3"/>Λέπτις ἁμειβομένη 
+                    <lb n="4"/>Μοῦσαν ἁοιδοπόλον
             </ab></div></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

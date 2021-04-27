@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Bau-/Stifterinschrift auf Basis</title>
+                <title><rs type="textType">Dedication</rs> to emperors</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -31,35 +31,33 @@
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/53">Basis</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
-                                    <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
-                                    </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                                       Statue 
+                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/53">base</objectType>,  probabaly
+                                      <material ref="http://www.eagle-network.eu/voc/material/lod/60">limestone</material>; no measurements.
+                                    
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote> No description</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
+                            <origPlace>Unknown</origPlace>
                             <origDate notBefore="0351" notAfter="0400">351 AD – 400 AD
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                            <placeName ref="https://www.slsgazetteer.org/742">Regio IV</placeName>, 
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/719">Severan Forum</placeName></p></provenance>
+                        <provenance type="observed"><p>Findspot (<date type="observed">1960</date>)</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,7 +84,7 @@
                 <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/261">Bau-/Stifterinschrift</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
@@ -100,10 +98,10 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067631">067631</ref></citedRange></bibl>
-                    <bibl>I. Tantillo - F. Bigi (Hrsg.), Leptis Magna. Una città e le sue iscrizioni in epoca tardoromana (Cassino 2010) 486, Nr. 91.</bibl>
-                    <bibl> PLRE 1 Rusticus 1.</bibl>
+                <p><bibl><ptr target="bartoccini1961"/>, <citedRange>108</citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1963.144b.4</citedRange></bibl>; 
+                    <bibl><ptr target="tantillo2010"/> <citedRange>91</citedRange></bibl>, whence
+                    <bibl><ptr target="EDH"/> (Bigi) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD067631">067631</ref></citedRange></bibl>
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
@@ -113,7 +111,7 @@
                 <p/>
             </div>
             <div type="commentary">
-                <p> Same text of HD017197; HD067628; HD067630. Datierung: ca. um 355-360 oder 364-367. Angabe von Zeilenfällen nicht möglich.</p>
+                <p>  PLRE 1 Rusticus 1.Same text of HD017197; HD067628; HD067630. Datierung: ca. um 355-360 oder 364-367. Angabe von Zeilenfällen nicht möglich.</p>
             </div>
         </body>
     </text>
