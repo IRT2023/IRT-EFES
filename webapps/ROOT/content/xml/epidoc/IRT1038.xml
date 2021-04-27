@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Grabinschrift auf Urne</title>
+                <title><rs type="textType">Funerary</rs> inscription</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -30,9 +30,8 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/78">Urne</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                  <p>Coffin-shaped <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
+                                  cinerary  <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/78">urn</objectType> 
                                     <dimensions>
                                         <height unit="metre">0.35</height>
                                         <width unit="metre">0.68</width>
@@ -54,12 +53,14 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName>Lepcis Magna</placeName></origPlace>
+                            <origPlace>Findspot</origPlace>
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName ref="http://www.geonames.org/2219905">Al Khums</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
+                                <placeName ref="https://www.slsgazetteer.org/699/">West Necropolis</placeName>, in a hypogaeum at Gast Gelda</p></provenance>
+                        <provenance type="observed"><p>xxx</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,7 +87,7 @@
                 <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/92">Grabinschrift</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
@@ -100,13 +101,16 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="vitaevrard1996"/> <citedRange unit="page">103</citedRange>, 3</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1996.1687</citedRange></bibl>
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD050451">050451</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>1996, 1687</citedRange></bibl>
+                    
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                Flavia Amoth<lb break="no" n="2"/>mic Nys<lb break="no" n="3"/>fur
+                Flavia Amoth
+                <lb break="no" n="2"/>mic Nys
+                <lb break="no" n="3"/>fur
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
