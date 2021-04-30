@@ -2,16 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1129" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1131" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Christian</rs> <rs type="textType">invocation</rs></title>
+                <title><rs type="textType">Christian</rs> <rs type="textType">funerary</rs> inscription</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="filename">IRT1129</idno>
+                <idno type="filename">IRT1131</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -20,20 +20,17 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier>
-                        <repository>Findspot</repository>
-                    </msIdentifier>
+                    <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Lintel</objectType> block in
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>, possibly broken to the left
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">block</objectType> 
                                     <dimensions>
                                         <height unit="metre">0.30</height>
-                                        <width unit="metre">0.82</width>
-                                        <depth unit="metre">0.15</depth>
+                                        <width unit="metre">0.90</width>
+                                        <depth unit="metre">0.35</depth>
                                     </dimensions>
                                     .
                                   </p>
@@ -42,13 +39,12 @@
                             <layoutDesc>
                                 <layout>
                                     <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> 
-                                    within a lightly cut outline, to the right of a <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">hand</rs> in relief. The 
-                                    second line has been compressed into the lower border
+                                    to the right (i) and left (ii) of a <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">Chi-Rho</rs>.
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote> Line 1, <height>0.12-0.13</height>; line 2, <height>0.04</height></handNote>
+                            <handNote> Crude lettering: i, <height>0.08</height>; ii, <height>0.05</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -58,9 +54,9 @@
                             </origDate>
                         </origin>
                         <provenance type="found"><p>
-                            <placeName type="ancientFindspot" key="https://www.slsgazetteer.org/1553">Eastern Djebel</placeName>: in the ruins of a ditched gasr
-                            about 6 km north west of <placeName type="monuList" ref="https://www.slsgazetteer.org/1579">Marconi</placeName></p></provenance>
-                        <provenance type="observed"><p>Findspot</p></provenance>
+                            <placeName type="ancientFindspot" key="https://www.slsgazetteer.org/1553">Eastern Djebel</placeName>: in the ruins of a small gasr
+                            about 3 km east-sout-east of <placeName type="monuList" ref="https://www.slsgazetteer.org/1579">Marconi</placeName></p></provenance>
+                        <provenance type="observed"><p><placeName ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName></p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -99,20 +95,27 @@
     <text>
         <body>
             <div type="bibliography">
-                <p> <bibl><ptr target="oates1954"/> <citedRange>113</citedRange>, 1</bibl>, whence 
+                <p> <bibl><ptr target="oates1954"/> <citedRange>115</citedRange>, 4</bibl>, whence 
                         mentioned <bibl><ptr target="ae"/> <citedRange>1955, page 60</citedRange></bibl>,
                     </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
-                <lb n="1"/><persName type="divine">
-               <w> <expan><abbr>Dom</abbr><ex>inus</ex></expan></w></persName> <w lemma="benedico">bened
-                <lb n="2" break="no"/>xit</w></ab></div>
+            <div type="edition" xml:lang="la" xml:space="preserve">
+                <div type="textpart" n="i"><ab>
+                    <lb n="1"/><w lemma="in">In</w> <w lemma="hoc">oc</w>
+                <lb n="2"/><w lemma="signum">sig
+                <lb n="3" break="no"/>no</w></ab></div>
+                <div type="textpart" n="ii"><ab>
+                    <lb n="1"/><persName type="attested"><name>Granii</name></persName> <w lemma="vivo">bi
+                <lb n="2" break="no"/>bas</w> <w lemma="cum">cum</w>
+                <lb n="3"/><w lemma="filius">filis</w> <w lemma="et">et</w> <w lemma="nepos">nep
+                <lb n="4" break="no"/>otibus</w></ab></div> 
+               </div>
             
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
             <div type="commentary">
-                <p><note>The article has a WBP photograph</note></p>
+                <p></p>
             </div>
         </body>
     </text>
