@@ -2,19 +2,17 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1136" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1129" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AE 1921, 0088.</title>
+                <title><rs type="textType">Christian</rs> <rs type="textType">invocation</rs></title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD027787</idno>
-                <idno type="TM">200706</idno>
-                <idno type="filename">IRT1136</idno>
+                <idno type="filename">IRT1129</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -24,42 +22,46 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <repository>...</repository>
+                        <repository>Findspot</repository>
                     </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Lintel</objectType> block in
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>, possibly broken to the left
                                     <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
+                                        <height unit="metre">0/30</height>
+                                        <width unit="metre">0.82</width>
+                                        <depth unit="metre">0.15</depth>
                                     </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                                    .
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> 
+                                    within a lightly cut outline, to the right of a <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">hand</rs> in relief. The 
+                                    second line has been compressed into the lower border
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote> Line 1, <height>0.12-0.13</height>; line 2, <height>0.04</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName ref="http://www.trismegistos.org/place/002036"/></origPlace>
+                            <origPlace>Findspot</origPlace>
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName>Ulàd Brech</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p>
+                            <placeName type="ancientFindspot" key="https://www.slsgazetteer.org/1553">Eastern Djebel</placeName>: in the ruins of a ditched gasr
+                            about 6 km north west of <placeName type="monuList" ref="https://www.slsgazetteer.org/1579">Marconi</placeName></p></provenance>
+                        <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -91,34 +93,27 @@
             </textClass>
             <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-04-18" who="IV">adapted</change>
-         <change when="1997-08-24" who="Niquet">provisorisch bearbeitet</change>
+         <change when="2021-04-30" who="CMR">transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-               
-                    <p> <bibl><ptr target="oates1953"/> <citedRange>115</citedRange></bibl>, whence 
+                <p> <bibl><ptr target="oates1954"/> <citedRange>113</citedRange>, 1</bibl>, whence 
                         mentioned <bibl><ptr target="ae"/> <citedRange>1955, page 60</citedRange></bibl>,
-                </p>
+                    </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab>
-                <lb n="1"/><persName type="attested"><name>Muthunibal</name>
-                <lb n="2"/><name>Alandrias</name></persName>
-                 <lb n="3"/><w><expan><abbr>vix</abbr><ex>it</ex></expan></w> <w><expan><abbr>an</abbr><ex>norum</ex></expan></w> <num value="78">LXXIIX</num>
-                 <lb n="4"/><w>hic</w> <w><expan><abbr>s</abbr><ex>ita</ex></expan></w> <w>est</w>
-                 <lb n="5"/><persName type="attested"><name><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name>Iulius</name> <name>Pro
-                 <lb n="6" break="no"/>bus</name></persName> <w>matri</w>
-                 <lb n="7"/>S.P.F.
-                
-            </ab></div>
+                <lb n="1"/><persName type="divine">
+               <w> <expan><abbr>Dom</abbr><ex>inus</ex></expan></w></persName> <w lemma="benedico">bened
+                <lb n="2" break="no"/>xit</w></ab></div>
+            
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
             <div type="commentary">
-                <p/>
+                <p><note>The article has a WBP photograph</note></p>
             </div>
         </body>
     </text>
