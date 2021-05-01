@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AE 1979, 0649.</title>
+                <title><rs type="textType">Boundary</rs> marker</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -23,43 +23,38 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier>
-                        <repository>...</repository>
-                    </msIdentifier>
+                    <msIdentifier><repository ref="institution.xml#db1098">Tripoli Castle</repository></msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
-                                    <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material> 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">panel</objectType>
+                                    <dimensions><!-- check -->
+                                        <height unit="metre">0.32-0.37</height>
+                                        <width unit="metre">0.18-0.55</width>
+                                        <depth unit="metre">?</depth>
                                     </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face.
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote> <height>0.025-0.04</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName ref="http://www.trismegistos.org/place/002036"/></origPlace>
-                            <origDate>
-                            </origDate>
+                            <origPlace>Findspot</origPlace>
+                            <origDate></origDate>
                         </origin>
-                        <provenance type="found"><p><placeName>Ras el-Halga</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName>Ras el-Halga</placeName> CHECK!</p></provenance><!-- check, find -->
+                        <provenance type="observed"><p><placeName ref="https://www.slsgazetteer.org/1098">Tripoli Castle</placeName></p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -99,13 +94,20 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD008548">008548</ref></citedRange></bibl>
+                <p><bibl><ptr target="vitaevrard1979"/> <citedRange>78</citedRange>, 4</bibl>, whence 
                     <bibl><ptr target="ae"/> <citedRange>1979.649</citedRange></bibl>
+                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD008548">008548</ref></citedRange></bibl>
+                    
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                Ex <supplied reason="lost">auctoritate</supplied> <lb n="2"/><expan><abbr><supplied reason="lost">I</supplied>mp</abbr><ex>eratoris</ex></expan> Ves<supplied reason="lost">pasiani Cae</supplied><lb break="no" n="3"/>saris <expan><abbr>Aug</abbr><ex>usti</ex></expan> <expan><abbr>p</abbr><ex>atris</ex></expan> <expan><abbr>p</abbr><ex>atriae</ex></expan> pon<supplied reason="lost"><expan><abbr>t</abbr><ex>ificis</ex></expan> <expan><abbr>max</abbr><ex>imi</ex></expan> <expan><abbr>trib</abbr><ex>unicia</ex></expan></supplied> <lb n="4"/><expan><abbr>potest</abbr><ex>ate</ex></expan> V <expan><abbr>imp</abbr><ex>eratoris</ex></expan> XIII c<supplied reason="lost"><expan><abbr>o</abbr><ex>n</ex><abbr>s</abbr><ex>ulis</ex></expan> V <expan><abbr>desig</abbr><ex>nati</ex></expan> VI</supplied> <lb n="5"/><expan><abbr>Q</abbr><ex>uintus</ex></expan> Iulius Cordinus <supplied reason="lost"><expan><abbr>C</abbr><ex>aius</ex></expan>? Rutilius Galli</supplied><lb break="no" n="6"/>cus <expan><abbr>leg</abbr><ex>atus</ex></expan> <expan><abbr>Aug</abbr><ex>usti</ex></expan> pro <supplied reason="lost"><expan><abbr>pr</abbr><ex>aetore</ex></expan> <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan> <expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied> <lb n="7"/>limitem inter Le<supplied reason="lost">pcitanos et Oeen</supplied>ses derexit <note>sic</note> Lepcitan<supplied reason="lost" cert="low">i pub(lice)? pos(uerunt)</supplied>
+                Ex <supplied reason="lost">auctoritate</supplied> 
+                <lb n="2"/><expan><abbr><supplied reason="lost">I</supplied>mp</abbr><ex>eratoris</ex></expan> Ves<supplied reason="lost">pasiani Cae</supplied>
+                <lb break="no" n="3"/>saris <expan><abbr>Aug</abbr><ex>usti</ex></expan> <expan><abbr>p</abbr><ex>atris</ex></expan> <expan><abbr>p</abbr><ex>atriae</ex></expan> pon<supplied reason="lost"><expan><abbr>t</abbr><ex>ificis</ex></expan> <expan><abbr>max</abbr><ex>imi</ex></expan> <expan><abbr>trib</abbr><ex>unicia</ex></expan></supplied> 
+                <lb n="4"/><expan><abbr>potest</abbr><ex>ate</ex></expan> V <expan><abbr>imp</abbr><ex>eratoris</ex></expan> XIII c<supplied reason="lost"><expan><abbr>o</abbr><ex>n</ex><abbr>s</abbr><ex>ulis</ex></expan> V <expan><abbr>desig</abbr><ex>nati</ex></expan> VI</supplied> 
+                <lb n="5"/><expan><abbr>Q</abbr><ex>uintus</ex></expan> Iulius Cordinus <supplied reason="lost"><expan><abbr>C</abbr><ex>aius</ex></expan>? Rutilius Galli</supplied>
+                <lb break="no" n="6"/>cus <expan><abbr>leg</abbr><ex>atus</ex></expan> <expan><abbr>Aug</abbr><ex>usti</ex></expan> pro <supplied reason="lost"><expan><abbr>pr</abbr><ex>aetore</ex></expan> <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan> <expan><abbr>pont</abbr><ex>ifex</ex></expan></supplied> 
+                <lb n="7"/>limitem inter Le<supplied reason="lost">pcitanos et Oeen</supplied>ses derexit <note>sic</note> Lepcitan<supplied reason="lost" cert="low">i pub(lice)? pos(uerunt)</supplied>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
