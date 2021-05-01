@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1106" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1118" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Dedication</rs> of an image of Hercules</title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+                <title><rs type="textType">Funerary</rs> inscription</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD019518</idno>
-                <idno type="TM">199717</idno>
-                <idno type="filename">IRT1106</idno>
+                <idno type="filename">IRT1118</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -23,43 +20,37 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier><repository ref="institution.xml#db1098">Tripoli Castle</repository></msIdentifier>
-                    
+                    <msIdentifier><repository ref="institution.xml#db1105">Ghadames Museum</repository></msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
-                                    <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
-                                    </dimensions>
-                                     
+                                  <p>Right side fragment of <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material> 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">panel</objectType>, chipped at the upper edge: <dimensions>
+                                        <height unit="metre">0.18</height>
+                                        <width unit="metre">0.18</width></dimensions>.
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> within a panel defined by an incised line
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote> <height>0.04</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName ref="http://www.trismegistos.org/place/002036"/></origPlace>
+                            <origPlace>Unknown</origPlace>
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName  type="ancientFindspot" ref="https://www.slsgazetteer.org/2241">Jabal Nafusah</placeName>, 
-                            ar <placeName  type="monuList" key="https://www.slsgazetteer.org/1946">Gasr el-Gezira</placeName></p></provenance>
-                        <provenance type="observed"><p><placeName ref="https://www.slsgazetteer.org/1098">Tripoli Castle</placeName>.</p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/827">Ghadames</placeName>: 
+                        findspot unknown. Found by C.J. Barron in <date type="found">1955</date></p></provenance>
+                        <provenance type="observed"><p><placeName  key="https://www.slsgazetteer.org/1105">Ghadames Museum</placeName></p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,28 +77,28 @@
               <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                  <term><placeName type="modernFindspot" key="http://www.geonames.org/2217440">Ghadamès</placeName></term>
               </keywords>
             </textClass>
-            <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
+            <creation>IRT2021</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-04-18" who="IV">adapted</change>
-         <change when="1995-07-27" who="Scheithauer">provisorisch bearbeitet</change>
+         <change when="2021-05-01" who="CMR">transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="broganoates1953"/> <citedRange>79-80</citedRange></bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1955.196</citedRange></bibl>,
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD019518">019518</ref></citedRange></bibl>
+                <p><bibl><ptr target="reynolds1958"/> <citedRange>135-6</citedRange>, 2</bibl>.
                     
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <supplied reason="lost">De</supplied>i Herculis simu<supplied reason="lost">lacrum</supplied> 
-                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"><certainty match=".." locus="name"/></gap> <expan><abbr>M</abbr><ex>arcus</ex></expan> Pacatus Amil<gap reason="lost" extent="unknown" unit="character"/>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/> <w lemma="deus"><expan><abbr>D</abbr><ex>is</ex></expan></w> <supplied reason="lost"><w lemma="manes"><expan><abbr>M</abbr><ex>anibus</ex></expan></w></supplied>
+                <lb n="2"/><persName type="attested"><name nymRef="Atinia">Atin<supplied reason="lost">ia</supplied></name> <gap reason="lost" extent="unknown" unit="character" /> <w lemma="filia"><supplied reason="lost" cert="low">fi</supplied>
+                <lb n="3" break="no"/>lia</w> <persName type="attested"><name nymRef="Atinius">Ati<supplied reason="lost">ni</supplied></name></persName></persName> <gap reason="lost" extent="unknown" unit="character" /> <w lemma="vivo"><supplied reason="lost">ui</supplied>
+               <lb n="4" break="no"/>xit</w> <w lemma="annus">an<supplied reason="lost">nos</supplied></w><gap reason="lost" extent="unknown" unit="character" />  
+                
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

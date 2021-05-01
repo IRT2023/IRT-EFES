@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AE 1985, 0850.</title>
+                <title><rs type="textType">Funerary</rs> inscription</title>
                 <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
@@ -24,42 +24,44 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <repository>...</repository>
+                        <repository>Findspot</repository>
                     </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">unbestimmt</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">unbestimmt</material>
+                                  <p>Damaged <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">panel</objectType>
+                                    
                                     <dimensions>
-                                        <height unit="metre"/>
-                                        <width unit="metre"/>
-                                        <depth unit="metre"/>
+                                        <height unit="metre">0.37</height><!-- check -->
+                                        <width unit="metre">0.73</width>
+                                        <depth unit="metre">0.26</depth>
                                     </dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">nein</rs>
+                                    
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">unbestimmt</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> within a panel
+                                    <!-- check -->
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote> <height>0.025-0.03</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName ref="http://www.trismegistos.org/place/002036"/></origPlace>
+                            <origPlace>Unknown</origPlace>
                             <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName>Wadi Antar</placeName></p></provenance>
-                        <provenance type="observed"><p></p></provenance>
+                        <provenance type="found"><p><placeName  type="ancientFindspot" ref="https://www.slsgazetteer.org/1995">Wadi Antar</placeName>, in the 
+                        ruins of a mausoleum</p></provenance>
+                        <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -99,16 +101,20 @@
     <text>
         <body>
             <div type="bibliography">
-                <p>
+                <p><bibl><ptr target="broganreynolds1985"/> <citedRange></citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1985.850</citedRange></bibl>,
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD008529">008529</ref></citedRange></bibl>
-                    <bibl><ptr target="ae"/> <citedRange>1985.850</citedRange></bibl>
+                    
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
                 Dis Manibus <expan><abbr>T</abbr><ex>itus</ex></expan> Flavius <gap reason="lost" extent="unknown" unit="character"/>
                 <lb break="no" n="2"/>ninus <expan><abbr>Achul</abbr><ex cert="low"/></expan> Vuzale <expan><abbr>f</abbr><ex>ilius</ex></expan> Mas
                 <lb break="no" n="3"/>than<gap reason="lost" extent="unknown" unit="character"/> <expan><abbr>n</abbr><ex>epos</ex></expan> vi<supplied reason="lost">xit a</supplied>nnis XXIX 
-                <lb n="4"/>monim<supplied reason="lost">e</supplied>ntum <expan><abbr>fec</abbr><ex>erunt</ex></expan> <gap reason="lost" extent="unknown" unit="character"/>athob<lb break="no" n="5"/>bab et Ime<gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">nsis</supplied> <lb n="6"/>inpensis Thaneci <expan><abbr>f</abbr><ex>iliae</ex></expan> Sanmilc <lb n="7"/><expan><abbr>Lep</abbr><ex>citanae</ex></expan> <expan><abbr>ite</abbr><ex>m</ex></expan> matris eorum |(denariis) CCL (ducentis miliis quinquaginta)
+                <lb n="4"/>monim<supplied reason="lost">e</supplied>ntum <expan><abbr>fec</abbr><ex>erunt</ex></expan> <gap reason="lost" extent="unknown" unit="character"/>athob
+                <lb break="no" n="5"/>bab et Ime<gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">nsis</supplied> 
+                <lb n="6"/>inpensis Thaneci <expan><abbr>f</abbr><ex>iliae</ex></expan> Sanmilc 
+                <lb n="7"/><expan><abbr>Lep</abbr><ex>citanae</ex></expan> <expan><abbr>ite</abbr><ex>m</ex></expan> matris eorum |(denariis) CCL (ducentis miliis quinquaginta)
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

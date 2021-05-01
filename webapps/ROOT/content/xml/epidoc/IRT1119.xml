@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1109" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1118" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Private <rs type="textType">dedication</rs></title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+                <title><rs type="textType">Libyan?</rs>  inscription</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD019027</idno>
-                <idno type="TM">199670</idno>
-                <idno type="filename">IRT1109</idno>
+                <idno type="filename">IRT1118</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -28,22 +25,23 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material> 
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">altar</objectType>, broken away above: <dimensions>
-                                        <height unit="metre">0.54</height>
-                                        <width unit="metre">0.36</width>
-                                        <depth unit="metre">0.36</depth></dimensions>. A groove down the back suggests that it was attached to a wall.
+                                  <p>Right side fragment of <material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material> 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">panel</objectType>, broken away to the right 
+                                      chipped at the edges: <dimensions>
+                                        <height unit="metre">0.455</height>
+                                        <depth unit="metre">0.17</depth></dimensions>.
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscibed on the face, within a moulded panel</rs>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> within a sunk panel on the face, 
+                                    which is extremely worn 
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote> <height>0.035-0.04</height></handNote>
+                            <handNote> <height>0.02-0.025</height>; non-standard forms.</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -53,7 +51,7 @@
                             </origDate>
                         </origin>
                         <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/827">Ghadames</placeName>: 
-                            findspot unknown. Found by C.J. Barron in <date type="found">1955</date></p></provenance>
+                        findspot unknown. Found by C.J. Barron in <date type="found">1955</date></p></provenance>
                         <provenance type="observed"><p><placeName  key="https://www.slsgazetteer.org/1105">Ghadames Museum</placeName></p></provenance>
                     </history>
                 </msDesc>
@@ -84,32 +82,29 @@
                   <term><placeName type="modernFindspot" key="http://www.geonames.org/2217440">Ghadamès</placeName></term>
               </keywords>
             </textClass>
-            <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
+            <creation>IRT2021</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-04-18" who="IV">adapted</change>
-         <change when="1997-08-23" who="Niquet">provisorisch bearbeitet</change>
+         <change when="2021-05-01" who="CMR">transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="reynolds1958"/> <citedRange>135</citedRange>, 1</bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1960.264</citedRange></bibl>
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD019027">019027</ref></citedRange></bibl>
+                <p><bibl><ptr target="reynolds1958"/> <citedRange>136</citedRange>, 3</bibl>.
                     
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab>
-                <lb n="1"/>
-                <gap reason="lost" extent="unknown" unit="character"/>
-                <lb break="no" n="2"/>nae <expan><abbr>Aug</abbr><ex>ustae</ex></expan> 
-                <lb n="3"/>sacrum 
-                <lb n="4"/><expan><abbr>M</abbr><ex>arcus</ex></expan> Aureli
-                <lb break="no" n="5"/>us Ianu<lb break="no" n="6"/>arius <w><expan><abbr>X</abbr><ex>centurio</ex></expan></w> 
-                <lb n="7"/><expan><abbr>leg</abbr><ex>ionis</ex></expan> III <expan><abbr>Aug</abbr><ex>ustae</ex></expan> 
-                <lb n="8"/><expan><abbr>p</abbr><ex>iae</ex></expan> <expan><abbr>v</abbr><ex>indicis</ex></expan> 
-                <lb n="9"/><expan><abbr>s</abbr><ex>olvit</ex></expan> <expan><abbr>l</abbr><ex>ibens</ex></expan> <expan><abbr>a</abbr><ex>nimo</ex></expan>
+                <lb n="0"/> <gap reason="lost" quantity="7" unit="line"/>
+                <lb n="1"/> <orig><unclear>r</unclear>a</orig> <gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="2"/> <orig><unclear>te</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="3"/> <orig>bue</orig> <gap reason="lost" quantity="13" unit="character"/><orig>b</orig><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="4"/> <orig><unclear>l</unclear>a<unclear>n</unclear></orig><gap reason="lost" quantity="2" unit="character"/><orig>e</orig><gap reason="lost" quantity="1" unit="character"/><orig>c</orig><gap reason="lost" quantity="9" unit="character"/><orig>an</orig> <space quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="5"/> <orig>lu</orig><gap reason="lost" quantity="2" unit="character"/><orig><unclear>b</unclear>unu</orig><gap reason="lost" quantity="8" unit="character"/><orig>m<unclear>m</unclear>se</orig><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="6"/> <gap reason="lost" quantity="4" unit="character"/><orig><unclear>r</unclear>emaeicibesme<unclear>i</unclear>s<unclear>h</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="6"/> <gap reason="lost" quantity="4" unit="character"/><orig><unclear>m</unclear>usesducen<unclear>i</unclear>os<expan><abbr>s</abbr><ex>t</ex></expan>erio</orig><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="6"/> <gap reason="lost" quantity="4" unit="character"/><orig><unclear>r</unclear>isas<unclear>i</unclear>efe<unclear>θ</unclear>a<unclear>θ</unclear>ar<unclear>eitl</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
