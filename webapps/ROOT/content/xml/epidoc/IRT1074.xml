@@ -2,16 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1070" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1074" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Verse</rs> <rs type="textType">honours</rs> for Dulcitius</title>
+                <title><rs type="textType">Dedication</rs> ?</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="filename">IRT1070</idno>
+                <idno type="filename">IRT1074</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -27,14 +27,16 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>Statue 
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">base</objectType> of white 
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">marble</material>:
-                                    <dimensions>
-                                        <height unit="metre">1.17</height>
-                                        <width unit="metre">0.815</width>
-                                        <depth unit="metre">0.81.5</depth>
-                                    </dimensions></p>
+                                  <p>Two fragments of a 
+                                    <!-- <material ref="http://www.eagle-network.eu/voc/material/lod/138">marble</material>  -->
+                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">cornice</objectType>.
+                                  a: <dimensions>
+                                        <height unit="metre">0.235</height>
+                                        <width unit="metre">0.21</width>
+                                      <depth unit="metre">0.17</depth></dimensions>; b: <dimensions>
+                                          <height unit="metre">0.15</height>
+                                          <width unit="metre">0.11</width>
+                                          <depth unit="metre">0.17</depth></dimensions></p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
@@ -44,18 +46,18 @@
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote> <height unit="metre">0.053-0.059</height>; lunate sigma and epsilon</handNote>
+                            <handNote> a: <height unit="metre">0.036-0.043</height>, ΑΥ and ΡΗΛ in ligature; b: <height>0.045-0.047</height>; lunate sigma and epsilon</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>
-                            <origDate notBefore="0275" notAfter="0325" evidence="lettering">Late third to early fourth century
-                            </origDate>
+                            <origDate notBefore="0161" notAfter="0325" evidence="lettering">After 161 CE</origDate>
                         </origin>
                         <provenance type="found">
                             <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
-                                <placeName ref="https://www.slsgazetteer.org/859">Regio V</placeName>, in the <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">Serapeion</placeName>.</p></provenance>
+                                <placeName ref="https://www.slsgazetteer.org/859">Regio V</placeName>, in the 
+                                <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">Serapeion</placeName>: from the cornice crowning the right-hand anta enclosing steps to the temple.</p></provenance>
                         <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
@@ -95,29 +97,33 @@
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="pugliese2003"/> <citedRange>13</citedRange>, 275</bibl>, whence 
-                    <bibl><ptr type="cdlBE"/> <citedRange>2004.459</citedRange></bibl>,
-                    <bibl><ptr target="ae"/> <citedRange>2003.1916</citedRange></bibl>, 
-                    <bibl><ptr target="seg"/> <citedRange>53.1165</citedRange></bibl>, whence 
-                    <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323910">323910</ref></citedRange></bibl>; 
-                    <bibl><ptr target="tantillo2006"/> <citedRange>53</citedRange></bibl>, 
-                    <bibl><ptr target="tantillo2010"/> <citedRange>53</citedRange></bibl>
+                <p><bibl><ptr target="pugliese2003"/> <citedRange>2 a-b</citedRange>, 273</bibl>, whence 
+                    <bibl><ptr type="cdlBE"/> <citedRange>2004.459</citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2003.1905</citedRange></bibl>, 
+                    <bibl><ptr target="seg"/> <citedRange>53.1170</citedRange></bibl>, whence
+                    <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323916">323916</ref></citedRange></bibl>
+                    
                    
                 </p>
             </div>
             <div type="edition" xml:lang="grc" xml:space="preserve">
-                <ab><lb n="1"/> <persName type="attested"><name>Δουλκῖτι</name></persName>
-               <lb  n="2"/> <w>εἰκόνα</w> <w>χαλκεότευκτον</w> 
-                    <lb n="3"/> <w>ἐθήκατο</w> <w>τήνδε</w> <persName type="attested"><name>Ϲερήνῳ</name></persName>
-               <lb n="3a"/> <space quantity="1" unit="line" /> 
-                 <lb n="4"/> <placeName>Λέπτιϲ</placeName> <w>ἀμειβομένη</w> 
-                    <lb n="5"/> <persName type="divine"><name>Μοῦϲαν</name></persName> <w>ἀοιδοπόλον</w>
-                </ab></div>
-            <div type="translation" resp="#tantillo2010" xml:lang="it">
-                <p>Dulcitius! Leptis dedicò a Sereno questa immagine fatta di bronzo, per ricambiare la (sua) Musa versificatrice</p>
+                <div type="textpart" n="a"> <ab>
+                <lb n="1"/><persName type="attested"><name>Aὐρήλ<supplied reason="lost">ιος</supplied></name></persName><gap reason="lost" extent="unknown" unit="character"/></ab></div>
+            <div type="textpart" n="b"> <ab>
+                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName type="divine"><name><supplied reason="lost" cert="low"> Ἄμμω</supplied>ν</name> <addName><w> Ὕψ<supplied reason="lost">ιστος</supplied></w></addName></persName> </ab></div>
+            </div>
+            <div type="apparatus">
+                <listApp>
+                    <app loc="a"><rdg source="#pugliese2003">Οὐρά<unclear>ν</unclear>[ιος</rdg></app>
+                    
+               </listApp>
+            </div>  
+            <div type="translation" resp="#cmr" xml:lang="en">
+               
+                  <p></p>
             </div>
             <div type="commentary">
-                <p/>
+               
             </div>
         </body>
     </text>
