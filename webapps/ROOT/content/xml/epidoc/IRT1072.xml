@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1072" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Dedication</rs> to Serapis</title>
+                <editor xml:id="cmr">Charlotte Roueché</editor>
+            </titleStmt>  
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">IRT1072</idno>
+                <availability>
+                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+                </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>Findspot</repository>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                  <p>Three  
+                                    <!-- check <material ref="http://www.eagle-network.eu/voc/material/lod/138">marble</material>  -->
+                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">block</objectType>s, crowned by an upper 
+                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">cornice</objectType> which is broken above and to the right: the 
+                                      ensemble supported a statue. No overall measurements.
+                                   <!--  <dimensions>
+                                        <height unit="metre"/>
+                                        <width unit="metre"/>
+                                        <depth unit="metre"/>
+                                    </dimensions> --></p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the cornice (A) and 
+                                    on the blocks (B); inscribed area <dimensions><height>0.93</height> <width>0.48</width></dimensions>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote> A: <height unit="metre">0.068</height>, B: Line 1, <height>0.045</height>, lines 2 following, <height>0.035-0.04</height>; lunate sigma and epsilon</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot</origPlace>
+                            <origDate notBefore="0161" notAfter="0325" evidence="lettering">After 161 CE</origDate>
+                        </origin>
+                        <provenance type="found">
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                                <placeName ref="https://www.slsgazetteer.org/859">Regio V</placeName>, in the 
+                                <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">Serapeion</placeName>: the left hand anta enclosing the steps to the temple.</p></provenance>
+                        <provenance type="observed"><p>Findspot</p></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+                <language ident="xpu">Punic</language>
+                <language ident="ber-Latn">Native Libyan language in Latin script</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="IRCyr">
+                    <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
+                    <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
+                </keywords>
+            </textClass>
+        <creation>IRT2021</creation></profileDesc>
+        <revisionDesc>
+         <change when="2021-05-02" who="CMR">transcribed</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><graphic url=""/></facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <p><bibl><ptr target="pugliese2003"/> <citedRange>1</citedRange>, 272</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2003.1903</citedRange></bibl>, 
+                    <bibl><ptr target="seg"/> <citedRange>53.1168</citedRange></bibl>, whence 
+                    <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323914">323914</ref></citedRange></bibl>
+                    
+                   
+                </p>
+            </div>
+            <div type="edition" xml:lang="grc" xml:space="preserve">
+                <div type="textpart" n="A"><ab>
+                    <lb n="1"/><persName type="divine"><name><supplied reason="lost">Ζ</supplied>εὺϲ</name> <space/> <name>Ϲ<supplied reason="lost" cert="low">άραπιϲ</supplied></name></persName>
+               </ab></div>
+            <div type="textpart" n="B"><ab>
+             <lb n="1"/>  <persName type="divine"><name>Διὶ</name> <name>Ἡλίῳ</name> <w>μεγά-
+	<lb n="2" break="no"/>λῳ</w> <name>Ϲαράπιδι</name></persName> <w>καὶ</w> <persName type="divine"><w>τοῖϲ</w>
+	         <lb n="3"/>  <w>συννάοιϲ</w> <w>θεοῖϲ</w></persName>
+	           <lb n="4"/><persName type="attested"><name>Αὐρήλιοϲ</name> <name>Διόϲκοροϲ</name></persName> <w>ϲὺν</w>
+5 	         <lb n="5"/><persName type="attested"><name>Αὐρηλίῳ</name> <name>Διοϲκόρῳ</name></persName> <w>τῷ</w> <w>πατρὶ</w>
+	         <lb n="6"/><w>καὶ</w> <persName type="attested"><name>Αὐρηλίᾳ</name> <name>Θεωδώρᾳ</name></persName> <w>τῇ</w> <w>ἀδελφῇ</w>
+	         <lb n="7"/><w>καὶ</w> <persName type="attested"><name>Κανουληίᾳ</name> <name>Κλαυδιανῇ</name></persName> <w>τῇ</w>
+	         <lb n="8"/><w>ϲυμβίῳ</w> <w>καὶ</w> <w>τοῖϲ</w> <w>τέκνοιϲ</w> <persName type="attested"><name>Αὐρηλί-
+	         <lb n="9" break="no"/>ῳ</name> <name>Διοσκόρῳ</name></persName> <w>καὶ</w> <persName type="attested"><name>Αὐρηλίᾳ</name> <name>Εὐτυ-
+10 	         <lb n="10" break="no"/>χίᾳ</name></persName> <w>καὶ</w> <w>τοῖϲ</w> <w>τῆϲ</w> <w>ἀδελφῆϲ</w> <w>τέ-
+	         <lb n="11" break="no"/>κνοιϲ</w> <persName type="attested"><name>Αὐρηλίῳ</name> <name>Ποτάμωνι</name></persName> <w>καὶ</w>
+	         <lb n="12"/><persName type="attested"><name>Αὐρηλίᾳ</name> <name>Θεοδώρᾳ</name></persName> <w>καὶ</w> <persName type="attested"><name>Αὐρηλίῳ</name>
+	         <lb n="13"/><name>Ποτάμωνι</name></persName> <w>τῷ</w> <w>τούτων</w> <w>πατρί</w>,
+	         <lb n="14"/><w>ἐπιφανεϲτάτῳ</w> <w>θεῷ</w> <w>ἐκ</w> <w>μεγά-
+15 	         <lb n="15" break="no"/>λης</w> <w>νόϲου</w> <w>διασωθεὶϲ</w> <w>εὐχαρι-
+	         <lb n="16" break="no"/>ϲτήριον</w> <w>ἀνέθηκα</w> <w>ἐπ’</w><w>ἀγαθῷ</w>.
+
+            </ab></div></div>
+            
+            <div type="translation" resp="#ae" xml:lang="fr">
+                <p><note>A</note>:  Zeus Sarapis. </p>
+                  <p><note> B</note>: À Zeus Helios Grand Sarapis et aux dieux synnaoi, moi, Aurelius Dioscoros, avec Aurelius Dioscoros, mon pere, Aurelia Theodora, ma soeur, 
+                      Canuleia Claudianè, mon épouse, Aurelius Dioscoros et Aurelia Eutychia, mes enfants, Aurelius Potamon et Aurelia Theodora, les enfants de ma soeur, 
+                      et Aurelius Potamon, le père de ces derniers, sauvé d'une grave maladie, j'ai fait cette consécration à un dieu tres visible en action de grâces, 
+                      pour le bien.</p>
+            </div>
+            <div type="commentary">
+               
+            </div>
+        </body>
+    </text>
+</TEI>
