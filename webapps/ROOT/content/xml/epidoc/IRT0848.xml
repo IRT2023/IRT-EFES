@@ -6,7 +6,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragment</title>
+            <title> 
+               <rs type="textType">Dedication</rs> to Herakles</title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
@@ -45,7 +46,7 @@
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate>No indication</origDate>
+                     <origDate notAfter="0100" n="-0100" cert="low" evidence="lettering">?First century BCE - First century CE</origDate><!-- check with CDL -->
                   </origin>
                   <provenance type="found">
                            <p>
@@ -111,6 +112,7 @@
             <p>
                <bibl><ptr target="caputo1947"/>, <citedRange>2786</citedRange>, fig. 82</bibl>;
                <bibl><ptr target="irt1952"/>, <citedRange>848</citedRange></bibl>, whence 
+               <bibl><ptr target="robertBE"/> <citedRange>1953.257</citedRange></bibl>
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT848.html">848</ref></citedRange></bibl>, whence 
                <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059699">059699</ref></citedRange></bibl>
                    </p>
@@ -118,9 +120,9 @@
          <div type="edition" xml:lang="grc" xml:space="preserve">
             <ab>
                <lb n="1"/>
-               <persName type="attested"><gap reason="lost" extent="unknown" unit="character"/><name><seg part="F">υσανίου</seg></name></persName>
+               <persName type="attested"><gap reason="lost" extent="unknown" unit="character"/><name><supplied reason="lost" cert="low">Πα</supplied>υσανίου</name></persName>
                <lb n="2"/>
-               <gap reason="lost" extent="unknown" unit="character"/><w part="F">αρχήσας</w>
+               <gap reason="lost" extent="unknown" unit="character"/><w part="F"><supplied reason="lost" evidence="previouseditor">υ</supplied>αρχήσας</w>
                <lb n="3"/>
                <gap reason="lost" extent="unknown" unit="character"/><w part="F">υστρας</w>
                <lb n="4"/>
@@ -132,17 +134,18 @@
          <div type="apparatus">
             <listApp>
                <app loc="1">
-                  <rdg>
-                     <supplied reason="lost">Πα</supplied>υσανίου</rdg>
-                  <rdg>
-                     <supplied reason="lost">Λ</supplied>υσανίου</rdg>
+                  <rdg resp="#irt1952"> <note> or perhaps 
+                     [Λ]υσανίου</note></rdg>
+               </app>
+               <app loc="2">
+                  <rdg resp="#caputo1947">[?να]υαρχήσας</rdg>
                </app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><gap reason="lost" extent="unknown" unit="character"/> of Pausanias <gap reason="lost" extent="unknown" unit="character"/> having held an office <note>nominative case</note> <gap reason="lost" extent="unknown" unit="character"/> eighty <gap reason="lost" extent="unknown" unit="character"/> to Heracles.</p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>'Ce texte est à la fois énigmatique et important pour l'hellénisme dans la région'. (Robert, loc. cit.)</p>
          </div>
       </body>
    </text>
