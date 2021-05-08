@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title> 
+            <title> <rs type="textType">Acclamation</rs>
                <rs type="textType">Dedication</rs> to the Genius of Lepcis </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
@@ -36,9 +36,9 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed on front and back (see also <ref type="inscription" n="IRT0543">543</ref>); on the right-hand side a <rs type="decoration">jug</rs>,
+                        <layout>Inscribed on  the facefront; <ref type="inscription" n="IRT0543">543</ref>i is cut on the back; on the right-hand side a <rs type="decoration">jug</rs>,
                on the left <rs type="decoration">lituus</rs>, both in low relief. 
-               The first line is cut above the die; there are formal <rs type="decoration">sprays</rs> at the beginning and end of ll. 2 and 4</layout>
+               ii is cut in a central panel, defined by moulding, i on the flat fascia above; in ii. there are formal <rs type="decoration">palms</rs> at the beginning and end of lines 1 and 3.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -116,32 +116,44 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>282</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT282.html">282</ref></citedRange></bibl>;
+            <p><bibl><ptr target="irt1952"/>, <citedRange>282</citedRange></bibl>, whence 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/189504">189504</ref></citedRange></bibl>; 
+               <bibl><ptr target="robertBE"/> <citedRange>1953.257</citedRange>, p.203</bibl>, whence 
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/189505">189505</ref></citedRange></bibl>; 
+               <bibl> <ptr target="degrassi1954"/> <citedRange>115</citedRange></bibl>;
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT282.html">282</ref></citedRange></bibl>;
+               <bibl><ptr target="tantillo2010"/> <citedRange>84</citedRange></bibl>
                <bibl><ptr target="EDH"/> (Bigi, 2014)
                   <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059418">059418</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <ab>
-               <lb n="1"/><foreign xml:lang="grc"><placeName nymRef="Λέπκις ἡ Μεγάλη">Λέπκις <w lemma="ὁ">ἡ</w> <w lemma="μέγας">μεγάλη</w></placeName> <w lemma="φιλησιρώμη">φιλισερώμη</w></foreign>
-               <lb n="2"/><g type="spray"/> <persName type="divine" nymRef="Genius"><name type="cognomen" nymRef="Genius">Genio</name> <g type="spray"/>
-               <lb n="3"/><w lemma="colonia">coloniae</w>
-               <lb n="4"/><g type="spray"/> <placeName nymRef="Lepcis Magna">Lepcis <g type="spray"/>
-                  <lb n="5"/><w lemma="magnus">Magnae</w>
-                  <lb n="6"/><w lemma="crescentinus">Crescentinae</w></placeName></persName>
-            </ab></div>
+            <div type="textpart" n="i"><ab>
+               <lb n="1"/><foreign xml:lang="grc"><placeName nymRef="Λέπκις ἡ Μεγάλη">Λέπκις <w lemma="ὁ">ἡ</w> <w lemma="μέγας">μεγάλη</w></placeName> <w lemma="φιλέω">φιλῖ</w> <w>σε</w><placeName>Ῥώμη</placeName></foreign>
+               </ab></div>
+            <div type="textpart" n="ii"><ab><lb n="1"/><g type="palm"/> <persName type="divine" nymRef="Genius"><name type="cognomen" nymRef="Genius">Genio</name> <g type="palm"/>
+               <lb n="2"/><w lemma="colonia">coloni1e</w>
+               <lb n="3"/><g type="palm"/> <placeName nymRef="Lepcis Magna">Lepcis <g type="palm"/>
+                  <lb n="4"/><w lemma="magnus">Magnae</w></placeName></persName>
+                  <lb n="5"/><persName type="attested"><name nymRef="Crescentina">Crescentina</name></persName> <w lemma="facio"><expan><abbr>f</abbr><ex>ecit</ex></expan></w>
+            </ab></div></div>
          <div type="apparatus">
             <listApp>
-               <app loc="1">
+               <app loc="i.1">
                   <note>Or perhaps <foreign xml:lang="grc">φιλησιρώμη</foreign>.</note>
                </app>
-               <app><note>The final letter could be read as E or as F: but a check on the stone shows that there is no stop before it (the photograph is misleading on this point).
-               This is perhaps in favour of the IRT reading Crescentinae - presumably a municipal title.</note></app>
+               <app loc="ii.5"><rdg resp="#irt1952"> Crescentinae. 
+                  <note>The final letter could be read as E or as F: but a check on the stone shows that there is no stop before it (the photograph is misleading on this point).
+               This is perhaps in favour of the IRT reading Crescentinae - presumably a municipal title.</note></rdg></app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p>Lepcis, the great <supplied reason="subaudible">city</supplied>; Rome loves you. <note>or</note> Lepcis, great city, lover of Rome.</p><p>To the genius of the colony of Lepcis Magna Crescentina</p></div>
+            <p>Lepcis, the great <supplied reason="subaudible">city</supplied>; Rome loves you.</p>
+            <p>To the genius of the colony of Lepcis Magna Crescentina</p></div>
+         
+         <div type="translation" source="#tantillo2010" xml:lang="it">
+            <p>Leptis Magna ti ama, o Roma! Al Genio della colonia di Leptis Magna, Crescentina fece (?)</p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>For the acclamation see Robert, loc.cit.</p>
          </div>
       </body>
    </text>
