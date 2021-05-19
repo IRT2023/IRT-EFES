@@ -4,6 +4,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
                 xmlns:t="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t"
+                xmlns:fn="http://www.w3.org/2005/xpath-functions"
                 version="2.0">
   <!-- Contains named templates for InsLib file structure (aka "metadata" aka "supporting data") -->
 
@@ -146,26 +147,28 @@
              <i18n:text i18n:key="epidoc-xslt-inslib-translation">translation</i18n:text></h3></xsl:if>
            <xsl:if test="@source">
              <xsl:variable name="source-id" select="substring-after(@source, '#')"/>
-             <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
              <p><xsl:text>Translation source: </xsl:text> 
                <xsl:choose>
-                 <xsl:when test="$source">
-                 <a>
-                   <xsl:attribute name="href">
-                     <xsl:text>../concordance/bibliography/</xsl:text>
-                     <xsl:value-of select="$source-id"/>
-                     <xsl:text>.html</xsl:text>
-                   </xsl:attribute>
-                   <xsl:attribute name="target">_blank</xsl:attribute>
-                   <xsl:choose>
-                     <xsl:when test="$source//t:bibl[@type='abbrev']">
-                       <xsl:apply-templates select="$source//t:bibl[@type='abbrev'][1]"/>
-                     </xsl:when>
-                     <xsl:otherwise>
-                       <xsl:apply-templates select="$source"/>
-                     </xsl:otherwise>
-                   </xsl:choose>
-                 </a>
+                 <xsl:when test="doc-available(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')) = fn:true()">
+                   <xsl:variable name="source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
+                   <xsl:if test="$source">
+                     <a>
+                       <xsl:attribute name="href">
+                         <xsl:text>../concordance/bibliography/</xsl:text>
+                         <xsl:value-of select="$source-id"/>
+                         <xsl:text>.html</xsl:text>
+                       </xsl:attribute>
+                       <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+                       <xsl:choose>
+                         <xsl:when test="$source//t:bibl[@type='abbrev']">
+                           <xsl:apply-templates select="$source//t:bibl[@type='abbrev'][1]"/>
+                         </xsl:when>
+                         <xsl:otherwise>
+                           <xsl:apply-templates select="$source"/>
+                         </xsl:otherwise>
+                       </xsl:choose>
+                     </a>
+                   </xsl:if>
                  </xsl:when>
                  <xsl:otherwise>
                    <xsl:value-of select="$source-id"/>
@@ -207,7 +210,16 @@
            <xsl:apply-templates select="$commtxt" mode="sqbrackets"/>
          </xsl:when>
          <xsl:otherwise>
-             <p><xsl:text>No comment (2020).</xsl:text></p>
+             <p>
+               <xsl:choose>
+                 <xsl:when test="starts-with(//t:publicationStmt/t:idno[@type='filename']/text(), 'IRT')">
+                   <xsl:text>No comment (2021).</xsl:text>
+                 </xsl:when>
+                 <xsl:otherwise>
+                   <xsl:text>No comment (2020).</xsl:text>
+                 </xsl:otherwise>
+               </xsl:choose>
+             </p>
          </xsl:otherwise>
        </xsl:choose>
        
@@ -250,7 +262,16 @@
          </xsl:when>
          <xsl:otherwise>
            <xsl:for-each select="//t:facsimile[not(//t:graphic)]">
-             <p><xsl:text>None available (2021).</xsl:text></p>
+             <p>
+               <xsl:choose>
+                 <xsl:when test="starts-with(//t:publicationStmt/t:idno[@type='filename']/text(), 'IRT')">
+                   <xsl:text>None available (2021).</xsl:text>
+                 </xsl:when>
+                 <xsl:otherwise>
+                   <xsl:text>None available (2020).</xsl:text>
+                 </xsl:otherwise>
+               </xsl:choose>
+               </p>
            </xsl:for-each>
          </xsl:otherwise>
        </xsl:choose>
@@ -308,7 +329,6 @@
 
   <xsl:template match="t:placeName|t:rs|t:repository" mode="inslib-placename"> <!-- remove rs? -->
     <xsl:variable name="museum-ref" select="substring-after(@ref, '#')"/>
-    <xsl:variable name="museum-link" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/institution.xml'))//t:place[@xml:id=$museum-ref]//t:idno[1]"/>
       <xsl:choose>
         <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org') or contains(@ref,'ror.org') or contains(@ref,'wikidata.org')">
             <a>
@@ -319,18 +339,14 @@
                <xsl:apply-templates/>
             </a>
       </xsl:when>
-        <xsl:when test="starts-with(@ref,'institution.xml') and $museum-link">
+        <xsl:when test="doc-available(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/institution.xml')) = fn:true() and starts-with(@ref,'institution.xml') and document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/institution.xml'))//t:place[@xml:id=$museum-ref]//t:idno[1]">
           <a>
-            <xsl:attribute name="href">
-              <xsl:value-of select="$museum-link"/>
-            </xsl:attribute>
-            <xsl:attribute name="target">_blank</xsl:attribute>
+            <xsl:attribute name="href"><xsl:value-of select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/institution.xml'))//t:place[@xml:id=$museum-ref]//t:idno[1]"/></xsl:attribute>
+            <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
             <xsl:apply-templates/>
           </a>
         </xsl:when>
-         <xsl:otherwise>
-            <xsl:apply-templates/>
-         </xsl:otherwise>
+         <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
       </xsl:choose>
    </xsl:template>
 
@@ -349,8 +365,13 @@
 
    <xsl:template name="inslib-title">
      <xsl:choose>
-       <xsl:when test="//t:titleStmt/t:title and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),4,7))">
+       <xsl:when test="//t:titleStmt/t:title and starts-with(//t:publicationStmt/t:idno[@type='filename']/text(), 'IRT')">
          <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename']/text(),4,7)"/>
+         <xsl:text>. </xsl:text>
+         <xsl:apply-templates select="//t:titleStmt/t:title"/>
+       </xsl:when>
+       <xsl:when test="//t:titleStmt/t:title and number(substring(//t:publicationStmt/t:idno[@type='filename']/text(),2,5))">
+         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()"/>
          <xsl:text>. </xsl:text>
          <xsl:apply-templates select="//t:titleStmt/t:title"/>
        </xsl:when>
@@ -370,24 +391,31 @@
    </xsl:template>
 
   <xsl:template match="t:ptr[@target]">
-    <xsl:variable name="bibl-ref" select="@target"/>
-    <xsl:variable name="bibl" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$bibl-ref][not(@sameAs)]"/>
-    <a>
-      <xsl:attribute name="href">
-        <xsl:text>../concordance/bibliography/</xsl:text>
-        <xsl:value-of select="$bibl-ref"/>
-        <xsl:text>.html</xsl:text>
-      </xsl:attribute>
-      <xsl:attribute name="target">_blank</xsl:attribute>
-      <xsl:choose>
-        <xsl:when test="$bibl//t:bibl[@type='abbrev']">
-          <xsl:apply-templates select="$bibl//t:bibl[@type='abbrev'][1]"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:apply-templates select="$bibl"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </a>
+    <xsl:choose>
+      <xsl:when test="doc-available(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')) = fn:true()">
+        <xsl:variable name="bibl-ref" select="@target"/>
+        <xsl:variable name="bibl" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$bibl-ref][not(@sameAs)]"/>
+        <a>
+          <xsl:attribute name="href">
+            <xsl:text>../concordance/bibliography/</xsl:text>
+            <xsl:value-of select="$bibl-ref"/>
+            <xsl:text>.html</xsl:text>
+          </xsl:attribute>
+          <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+          <xsl:choose>
+            <xsl:when test="$bibl//t:bibl[@type='abbrev']">
+              <xsl:apply-templates select="$bibl//t:bibl[@type='abbrev'][1]"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:apply-templates select="$bibl"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </a>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates select="@target"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   
   <xsl:template match="t:title[not(ancestor::t:titleStmt)]">
@@ -419,6 +447,7 @@
   
   
   <xsl:template name="navigation">
+    <xsl:if test="doc-available(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/lists/all_inscriptions.xml')) = fn:true()">
     <xsl:variable name="filename"><xsl:value-of select="//t:idno[@type='filename']"/></xsl:variable>
     <xsl:variable name="list" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/lists/all_inscriptions.xml'))//t:list"/>
     <xsl:variable name="prev" select="$list/t:item[substring-before(@n,'.xml')=$filename]/preceding-sibling::t:item[1]/substring-before(@n,'.xml')"/>
@@ -436,7 +465,11 @@
                   <xsl:text>.html</xsl:text>
               </xsl:attribute>
               <xsl:text>&#171;</xsl:text>
-              <i18n:text>Previous: </i18n:text><xsl:value-of select="substring($prev,4)"/>
+              <i18n:text>Previous: </i18n:text>
+              <xsl:choose>
+                <xsl:when test="starts-with($filename, 'IRT')"><xsl:value-of select="substring($prev,4)"/></xsl:when>
+                <xsl:otherwise><xsl:value-of select="$prev"/></xsl:otherwise>
+              </xsl:choose>
             </a>
           </li>
           </xsl:if>
@@ -449,7 +482,11 @@
                   <xsl:value-of select="$next"/>
                   <xsl:text>.html</xsl:text>
               </xsl:attribute>
-              <i18n:text>Next: </i18n:text><xsl:value-of select="substring($next,4)"/>
+              <i18n:text>Next: </i18n:text>
+              <xsl:choose>
+                <xsl:when test="starts-with($filename, 'IRT')"><xsl:value-of select="substring($next,4)"/></xsl:when>
+                <xsl:otherwise><xsl:value-of select="$next"/></xsl:otherwise>
+              </xsl:choose>
               <xsl:text>&#187;</xsl:text>
             </a>
           </li>
@@ -457,6 +494,7 @@
         </ul>
       </div>
     </div>
+    </xsl:if>
   </xsl:template>
 
   <!--  old code for inscription numbers now in <idno type="ircyr2012">:
