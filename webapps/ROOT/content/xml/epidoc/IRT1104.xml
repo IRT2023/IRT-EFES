@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1100" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1104" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Military</rs> <rs type="textType">funerary</rs> inscriotion</title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+                <title><rs type="textType">Funerary</rs> inscriotion</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD016966</idno>
-                <idno type="TM">199474</idno>
-                <idno type="filename">IRT1100</idno>
+                <idno type="filename">IRT1104</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -29,12 +26,12 @@
                             <supportDesc>
                                 <support>
                                   <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Stele</objectType> of brown 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Cippus</objectType> of
                                     <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
                                     <dimensions>
-                                        <height unit="metre">1.15</height>
-                                        <width unit="metre">0.40</width>
-                                        <depth unit="metre">0.025</depth>
+                                        <height unit="metre">0.49</height>
+                                        <width unit="metre">0.39</width>
+                                        <depth unit="metre">0.87</depth>
                                     </dimensions>
                                      
                                   </p>
@@ -42,24 +39,24 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on one face
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> within an inset panel (<dimensions><height>0.43</height> <width>0.30</width></dimensions>)
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>Third-fourth century; lines 1-6, <height>0.05</height>; lines 7-8, <height>0.025</height></handNote>
+                            <handNote><height>0.03-0.045</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Unknown</origPlace>
-                            <origDate notBefore="0201" notAfter="0.399" evidence="lettering">Third-fourth century</origDate>
+                            <origPlace>Findspot</origPlace>
+                            <origDate>
+                            </origDate>
                         </origin>
                         <provenance type="found">
                             <p>
                                 <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/666">Western Djebel</placeName>: 
-                                <placeName type="monuList" ref="https://www.slsgazetteer.org/881">Ain el-Auenia</placeName>; found south of the Jefren-Zintan road, 
-                                in 1959 </p>
+                                <placeName type="monuList" ref="https://www.slsgazetteer.org/881">Ain el-Auenia</placeName> near Jefren </p>
                         </provenance>
                         <provenance type="observed">
                             <p>
@@ -96,28 +93,25 @@
             </textClass>
             <creation>Transcription (Brogan)</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-04-18" who="IV">adapted</change>
-         <change when="1997-08-22" who="Niquet">provisorisch bearbeitet</change>
+         <change when="2021-05-19" who="CMR">transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="broganreynolds1960"/> <citedRange>2</citedRange></bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1962.305</citedRange></bibl>,
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD016966">016966</ref></citedRange></bibl>
+                <p><bibl><ptr target="broganreynolds1960"/> <citedRange>3</citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1962.306</citedRange></bibl>
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <persName type="divine"><w><expan><abbr>D</abbr><ex>is</ex></expan></w> <name><expan><abbr>M</abbr><ex>anibus</ex></expan></name></persName> <w><expan><abbr>s</abbr><ex>acrum</ex></expan></w> 
-                <lb n="2"/><persName type="attested"><name nymRef="Migin"><expan><abbr>Migin</abbr><ex cert="low"/></expan></name></persName> <w><expan><abbr>p</abbr><ex>ius</ex></expan></w> 
-                <lb n="3"/><w><expan><abbr>mil</abbr><ex>es</ex></expan></w> <w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num> 
-                <lb n="4"/><addName><expan><abbr>Aug</abbr><ex>ustae</ex></expan></addName> <w>vixit</w> 
-                <lb n="5"/><w><expan><abbr>an</abbr><ex>nos</ex></expan></w> <num value="111">CXI</num> <note>sic</note> <w>mi
-                <lb break="no" n="6"/>litavit</w> <w><expan><abbr>an</abbr><ex>nos</ex></expan></w> 
-                <lb n="7"/><num value="9">VIIII</num> <w><expan><abbr>fec</abbr><ex>erun</ex><abbr>t</abbr></expan></w> <w>conta
-                <lb break="no" n="8"/>bernales</w> <note>sic</note> <w>aeius</w> <note>sic</note>
+                <persName type="divine"><w><expan><abbr>D</abbr><ex>is</ex></expan></w> <w><expan><abbr>M</abbr><ex>anibus</ex></expan></w></persName> <w><expan><abbr>s</abbr><ex>acrum</ex></expan></w>
+                <lb n="2"/><persName type="attested"><name>Corneli 
+                <lb n="3" break="no"/>a</name> <name>Quintul 
+                <lb n="4" break="no"/>a</name></persName> <date type="life-span" dur="P22Y"><w>vixit</w> <w>an
+                <lb n="5" break="no"/>nis</w> <num value="22">XXII</num></date> <surplus>M</surplus> 
+                <lb n="6"/><w>maritus</w> <w>eius</w> 
+                <lb n="7"/> <w>fecit</w>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
