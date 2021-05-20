@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1048" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Libyan</rs> inscription</title>
+                <editor xml:id="cmr">Charlotte Roueché</editor>
+            </titleStmt>  
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">IRT1048</idno>
+                <availability>
+                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+                </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository>Findspot</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                  <p>Left part of a <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material> 
+                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">block</objectType>: <dimensions>
+                                          <height unit="metre">0.29</height>
+                                          <width unit="metre">0.404</width>
+                                      </dimensions></p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on one face, which is moulded above and below, within guideliens
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Local fourth-fifth century capitals; lines 1 and 4, <height>0.04</height>; lines 2-3, <height>0.03</height>; 
+                            line 3, TH in ligature.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot</origPlace>
+                            <origDate notAfter="0499" notBefore="0301" cert="low" evidence="lettering">Fourth-fifth century CE</origDate>
+                        </origin>
+                        <provenance type="found">
+                            <p>
+                                <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/650">Eastern Djebel</placeName>: <placeName ref="https://www.slsgazetteer.org/1570">Wadi Nfed</placeName>, in Wadi umm el Acherab, 
+                                in situ above the door of <placeName type="monuList" ref="https://www.slsgazetteer.org/2255">Gasr Bugar</placeName> </p>
+                        </provenance>
+                        <provenance type="observed">
+                            <p>
+                                <placeName>Findspot (1959)</placeName>.</p>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+                <language ident="xpu">Punic</language>
+                <language ident="ber-Latn">Native Libyan language in Latin script</language>
+            </langUsage>
+            <textClass>
+              <keywords scheme="IRCyr">
+                    <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
+                    <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+              </keywords>
+            </textClass>
+            <creation>Transcription (Brogan)</creation></profileDesc>
+        <revisionDesc>
+         <change when="2021-05-20" who="CMR">transcribed</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><graphic url=""/></facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <p><bibl><ptr target="broganreynolds1960"/> <citedRange>6</citedRange> and plate XVIII.c</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1962, page 73</citedRange></bibl>
+                </p>
+            </div>
+            <div type="edition" xml:lang="ber-Latn" xml:space="preserve">
+                <ab><lb n="1"/><orig>flanahiav</orig> <gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="2"/><orig>nohvsvd<unclear>r</unclear>v<unclear>ca</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="3"/><orig>bv<hi rend="ligature">th</hi>aivb<unclear>a</unclear>v<unclear>n</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="4"/><orig><unclear>r</unclear>ianrano<unclear>ni</unclear></orig><gap reason="lost" extent="unknown" unit="character"/></ab>
+            </div>     
+            
+            
+            <div type="translation" resp="#cmr" xml:lang="en">
+                <p/>
+            </div>
+            <div type="commentary">
+                
+            </div>
+        </body>
+    </text>
+</TEI>
