@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1104" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1105" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -11,7 +11,7 @@
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="filename">IRT1104</idno>
+                <idno type="filename">IRT1105</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -25,13 +25,13 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Cippus</objectType> of
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
+                                  <p>Two 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">block</objectType>s of
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>, apparently adjoining; together 
                                     <dimensions>
-                                        <height unit="metre">0.49</height>
-                                        <width unit="metre">0.39</width>
-                                        <depth unit="metre">0.87</depth>
+                                        <height unit="metre">0.51</height>
+                                        <width unit="metre">1.66</width>
+                                        <depth unit="metre">0.37</depth>
                                     </dimensions>
                                      
                                   </p>
@@ -39,24 +39,23 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> within an inset panel (<dimensions><height>0.43</height> <width>0.30</width></dimensions>)
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on one face within an inset panel (<dimensions><height>0.39</height> <width>0.91</width></dimensions>)
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height>0.03-0.045</height></handNote>
+                            <handNote>Perhaps third century; <height>0.06</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>
-                            <origDate>
-                            </origDate>
+                            <origDate notAfter="0299" notBefore="0201" cert="low" evidence="lettering">Third century?</origDate>
                         </origin>
                         <provenance type="found">
                             <p>
                                 <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/650">Eastern Djebel</placeName>: 
-                                <placeName type="monuList" ref="https://www.slsgazetteer.org/2254">Gasr er-Resciada</placeName> near the Garian-Mizda road </p>
+                                <placeName type="monuList" ref="https://www.slsgazetteer.org/2254">Gasr er-Resciada</placeName> near the Garian-Mizda road, in the ruins of a mausoleum </p>
                         </provenance>
                         <provenance type="observed">
                             <p>
@@ -106,18 +105,23 @@
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
                 <persName type="divine"><w>Dis</w> <w>Manib<supplied reason="lost">us</supplied></w></persName> <supplied reason="lost"><w>sacrum</w></supplied> <persName type="attested"><name><supplied  reason="lost">Ta</supplied>
-                <lb n="2" break="no"/>rquiti</name> <name>Ius<supplied reason="lost">ti</supplied></name></persName>  <gap reason="lost" quantity="8" unit="character" cert="low"/>
+                <lb n="2" break="no"/>rquiti</name> <name>Iys<supplied reason="lost">ti</supplied></name></persName>  <gap reason="lost" quantity="8" unit="character" cert="low"/>
                 <lb n="3" break="no"/><persName type="attested"><name><seg part="F">is</seg></name> <name>Gabini</name></persName> <w><expan><abbr>f</abbr><ex>ili</ex></expan></w>  <gap reason="lost" quantity="10" unit="character" cert="low"/>
                 <lb n="4"/><persName type="attested"><name>Bagis</name></persName> <w>et</w> <persName type="attested"><name><seg part="I">Iu</seg></name></persName> <gap reason="lost" quantity="10" unit="character" cert="low"/>
                 <lb n="5"/><gap reason="lost" quantity="1" unit="character"/><orig>hyr</orig> <orig>agii</orig> <gap reason="lost" quantity="10" unit="character" cert="low"/>
                 
             </ab></div>
+            <div type="apparatus">
+                <listApp>
+                    <app loc="2"><rdg resp="broganreynolds1960"><note>Ius[tini or Ius[tiniani are also possible; another cognomen giving a genitive in -is presumably followed.</note></rdg></app>
+                    <app loc="3"><rdg resp="broganreynolds1960"><note>F(ili) may be the genitive, indicating that Tarquitius was the son of Gabinius, or a plural, indicating that his sons, whose names followed, made the monument.</note></rdg></app>
+                </listApp>
+            </div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
             <div type="commentary">
-                <p>Line 2: Iustini or Iustiniani are also possible; another cognomen giving a genitive in -is presumably followed. </p>
-                <p>Line 3: F(ili) may be the genitive, indicating that Tarquitius was the son of Gabinius, or a plural, indicating that his sons, whose names followed, made the monument</p>
+                
             </div>
         </body>
     </text>
