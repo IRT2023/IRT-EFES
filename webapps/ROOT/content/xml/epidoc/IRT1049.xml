@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1100" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1049" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Military</rs> <rs type="textType">funerary</rs> inscription</title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+                <title><rs type="textType">Libyan</rs> inscription</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD016966</idno>
-                <idno type="TM">199474</idno>
-                <idno type="filename">IRT1100</idno>
+                <idno type="filename">IRT1049</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -28,42 +25,38 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Stele</objectType> of brown 
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material> with a sharply ponted peak
-                                    <dimensions>
-                                        <height unit="metre">1.15</height>
-                                        <width unit="metre">0.40</width>
-                                        <depth unit="metre">0.025</depth>
-                                    </dimensions>
-                                     
-                                  </p>
+                                  <p>Lower right corner of a <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material> 
+                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">block</objectType>: <dimensions>
+                                          <height unit="metre">0.52</height>
+                                          <width unit="metre">0.30</width>
+                                          <depth unit="metre">0.11-0.13</depth>
+                                      </dimensions></p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on one face
-                                </layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on one face, within a 
+                                    <rs type="decoration">tabella ansata</rs> which is defined by a raised border; the last letter is outside the border</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>Third-fourth century; lines 1-6, <height>0.05</height>; lines 7-8, <height>0.025</height></handNote>
+                            <handNote>Very rough local fourth-fifth century capitals; <height>0.035-0.04</height>; lines 2-3, <height>0.03</height>; 
+                                lines 4-5 slope upwards</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Unknown</origPlace>
-                            <origDate notBefore="0201" notAfter="0399" evidence="lettering">Third-fourth century</origDate>
+                            <origDate notAfter="0499" notBefore="0301" cert="low" evidence="lettering">Fourth-fifth century CE</origDate>
                         </origin>
                         <provenance type="found">
                             <p>
-                                <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/666">Western Djebel</placeName>: 
-                                <placeName type="monuList" ref="https://www.slsgazetteer.org/881">Ain el-Auenia</placeName>; found south of the Jefren-Zintan road, 
-                                in 1959 </p>
+                                <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/650">Eastern Djebel</placeName>: 
+                                in a hut at <placeName type="monuList" ref="https://www.slsgazetteer.org/2256">Muagen Ngorta</placeName>, 
+                            Wadi Scetaj</p>
                         </provenance>
                         <provenance type="observed">
-                            <p>
-                                <placeName ref="https://www.slsgazetteer.org/1098">Tripoli Castle</placeName>.</p>
+                            <p><placeName ref="https://www.slsgazetteer.org/1098">Tripoli Castle</placeName>.</p>
                         </provenance>
                     </history>
                 </msDesc>
@@ -96,33 +89,34 @@
             </textClass>
             <creation>Transcription (Brogan)</creation></profileDesc>
         <revisionDesc>
-            <change when="2021-05-19" who="CMR">transcribed</change>
+         <change when="2021-05-20" who="CMR">transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="broganreynolds1960"/> <citedRange>2</citedRange>, and plate XVIII</bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1962.305</citedRange></bibl>,
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD016966">016966</ref></citedRange></bibl>
+                <p><bibl><ptr target="broganreynolds1960"/> <citedRange>7</citedRange> and plate XVIII.b</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1962, page 73</citedRange></bibl>
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <persName type="divine"><w><expan><abbr>D</abbr><ex>is</ex></expan></w> <name><expan><abbr>M</abbr><ex>anibus</ex></expan></name></persName> <w><expan><abbr>s</abbr><ex>acrum</ex></expan></w> 
-                <lb n="2"/><persName type="attested"><name nymRef="Migin"><expan><abbr>Migin</abbr><ex cert="low"/></expan></name></persName> <w><expan><abbr>p</abbr><ex>ius</ex></expan></w> 
-                <lb n="3"/><w><expan><abbr>mil</abbr><ex>es</ex></expan></w> <w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num> 
-                <lb n="4"/><addName><w><expan><abbr>Aug</abbr><ex>ustae</ex></expan></w></addName> <date type="life-span" dur="P111Y"><w>vixit</w> 
-                <lb n="5"/><w><expan><abbr>an</abbr><ex>nos</ex></expan></w> <num value="111">CXI</num></date> <note>sic</note> <w>mi
-                <lb break="no" n="6"/>litavit</w> <w><expan><abbr>an</abbr><ex>nos</ex></expan></w> 
-                <lb n="7"/><num value="9">VIIII</num> <w><expan><abbr>fec</abbr><ex>erun</ex><abbr>t</abbr></expan></w> <w>conta
-                <lb break="no" n="8"/>bernales</w> <note>sic</note> <w>aeius</w> <note>sic</note>
-            </ab></div>
+            <div type="edition" xml:lang="ber-Latn" xml:space="preserve">
+                <ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig>ari</orig>
+                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><orig>lvthc</orig> 
+                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>ni syt</orig>
+                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>v</unclear>s<hi rend="ligature">st</hi><unclear>n</unclear>imm<unclear>a</unclear>h</orig>
+            <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><space quantity="1" unit="character"/><orig>chrvsvbvn</orig> </ab>
+            </div>     
+            
+            <div type="apparatus">
+                <listApp><app loc="4"><note>ST represented by S with a horizontal bar</note></app>
+                </listApp>
+            </div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
             <div type="commentary">
-                <p/>
+                
             </div>
         </body>
     </text>
