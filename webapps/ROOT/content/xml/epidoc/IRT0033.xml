@@ -36,7 +36,7 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Inscribed on one face.</layout>
+                        <layout>Inscribed on the face, a on the upper row of blocks, b on the row below</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -51,7 +51,7 @@
                         <height unit="metre">7.34</height>
                      </dimensions>), 
                         the remains of which have been identified at a cross-roads to the west of the Theatre.</p>
-                     <origDate cert="low" when="0202" evidence="titulature-as-restored">CE 202 (titulature, as restored).</origDate>
+                     <origDate cert="low" when="0202" evidence="titulature">CE 202 (titulature, as restored).</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
@@ -110,7 +110,7 @@
    </teiHeader>
    <facsimile>
                   <graphic url="wp0048.jpg">
-                  <desc>Drawing: Ward-Perkins Archive, BSR</desc></graphic>
+                  <desc>Reconstruction drawing: Ward-Perkins Archive, BSR</desc></graphic>
                   <graphic url="wp0049.jpg">
                      <desc>Ward-Perkins, 1946 (Ward-Perkins Archive, BSR 46.III.4)</desc></graphic>
                   <graphic url="wp0050.jpg">
@@ -121,8 +121,10 @@
    <text>
       <body>
          <div type="bibliography">
-            <p> <bibl><ptr target="irt1952"/>, <citedRange>33</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>,  <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT033.html">33</ref></citedRange></bibl>; 
-               <bibl><ptr target="kenrick1986"/> <citedRange>213-217</citedRange>, fig. 93-95</bibl>, whence <bibl><ptr target="ae"/> <citedRange>1986.710</citedRange></bibl>; from these
+            <p> <bibl><ptr target="irt1952"/>, <citedRange>33</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/> <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT033.html">33</ref></citedRange></bibl>; 
+               <bibl><ptr target="kenrick1986"/>, <citedRange>213-217</citedRange>, fig. 93-95</bibl>, whence 
+               <bibl><ptr target="ae"/> <citedRange>1986.710</citedRange></bibl>; from these
                <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059028">059028</ref></citedRange></bibl></p><!-- check -->
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
@@ -140,29 +142,21 @@
                      <w lemma="magnus"><supplied reason="lost">maxi</supplied>mo</w>
                      <w lemma="tribunicius">tribun<supplied reason="lost">ici</supplied>ae</w> 
                      <w lemma="potestas">potes<supplied reason="lost">tatis</supplied></w>
-                     <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num>
-                     <lb n="3"/><supplied reason="lost"><w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w></supplied> <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num>
+                     <supplied reason="lost" cert="low"><num value="10">X</num></supplied>
+                     <lb n="3"/><supplied reason="lost"><w lemma="imperator"><expan><abbr>imp</abbr><ex>eratori</ex></expan></w></supplied> <supplied cert="low" reason="lost"><num value="11">XI</num></supplied>
                        <supplied reason="lost"> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w></supplied>
-                        <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num> 
+                        <supplied cert="low" reason="lost"><num value="3">III</num></supplied> 
                      <w lemma="pater"><expan><abbr>p</abbr><ex>atri</ex></expan></w> 
                      <w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w>
                   </ab></div><div subtype="fragment" n="b" type="textpart"><ab>
-                  <lb n="1"/><w lemma="ex">ex</w> <w lemma="testamentum">testam<supplied reason="lost">ento</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
-                  <lb n="2"/><persName type="attested"><name><seg part="I"><expan><abbr>Q</abbr><ex>uint-</ex></expan></seg></name> 
-                  <name type="gentilicium" nymRef="Caecilius"><seg part="I">Caeci<supplied reason="lost">li</supplied></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+                  <lb n="1"/><w lemma="ex">ex</w> <w lemma="testamentum">testam<supplied reason="lost">ento</supplied></w><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost" cert="low"><w>faciendum</w> <w>curauit</w></supplied>
+                  <lb n="2"/><persName type="attested"><name><expan><abbr>Q</abbr><ex>uintus</ex></expan></name> 
+                  <name type="gentilicium" nymRef="Caecilius">Caeci<supplied reason="lost">lius</supplied></name></persName><gap reason="lost" extent="unknown" unit="character"/>
                </ab></div></div>
          <div type="apparatus">
             <listApp>
-               <app loc="a 2">
-                  <note>Parthicus maximus from 198. The restoration of these titles is required by the length of the line.</note>
-               </app>
-            
-               <app loc="a 2">
-                  <note>Perhaps, from the relative lengths of lines 1 and 2, trib. pot. X, 10 Dec. 201-9 Dec. 202.</note>
-               </app>
-            
-               <app loc="b 3">
-                  <note> Perhaps, from the relative size of the lettering, not the testator but the dedicating proconsul.</note>
+                <app loc="a 2">
+                  <rdg resp="#kenrick1986">[X], suggested by the length of the line</rdg>
                </app>
             </listApp>
          </div>
@@ -170,10 +164,12 @@
             <p>a. <supplied reason="lost">To Emperor Caesar Lucius Septimus Severus</supplied> Pius Pertinax Augustus, Victor in Arabia, 
                <supplied reason="lost">Victor in Adiabene, greatest Victor in Parthia</supplied>,
                chief <supplied reason="lost">priest</supplied>, holding tribunician power 
-               <supplied reason="lost">for the  ?  time, acclaimed Victor ? times, consul for the ? time</supplied> father of the country</p><p> b.  <note>Set up</note> in accordance with the will <supplied reason="lost">of</supplied><gap reason="lost" extent="unknown" unit="character"/> 
+               <supplied reason="lost">for the  ?  time, acclaimed Victor ? times, consul for the ? time</supplied> father of the country</p>
+            <p> b.  <note>Set up</note> in accordance with the will <supplied reason="lost">of</supplied><gap reason="lost" extent="unknown" unit="character"/> 
                Quintus Caecilius <note> case unknown</note> <gap reason="lost" extent="unknown" unit="character"/> </p></div>
          <div type="commentary">
-            <p>No comment</p>
+            <p>Line a.2: Parthicus maximus from 198. The restoration of these titles is required by the length of the line.</p>
+            <p>Line b.2:Perhaps, from the relative size of the lettering, not the testator but the dedicating proconsul: so Kenrick, loc.cit.</p>
          </div>
       </body>
    </text>
