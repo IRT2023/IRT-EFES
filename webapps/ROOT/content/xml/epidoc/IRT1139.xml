@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1036" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1139" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Funerary</rs> inscription</title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+                <title><rs type="textType">Libyan</rs> <rs type="textType">funerary</rs> inscription</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD049861</idno>
-                <idno type="TM">201576</idno>
-                <idno type="filename">IRT1036</idno>
+                <idno type="filename">IRT1139</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -23,46 +20,40 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier>
-                        <repository>Al Khums, Lepcis Magna Museum (Altes Museum)</repository>
-                    </msIdentifier>
+                    <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/189">Block</objectType> of
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/60">limestone</material>
+                                  <p>A dressed 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">column</objectType> of 
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
                                     <dimensions>
-                                        <height unit="metre">0.36</height>
-                                        <width unit="metre">0.645</width>
-                                        <depth unit="metre">0.15</depth>
-                                    </dimensions>
+                                        <height unit="metre">1.06</height>
+                                        <dim unit="metre">0.39</dim></dimensions>; there is a hole in the top for an attachment.
                                     
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed </rs> on the face, 
-                                     a <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">tabula ansata</rs>.
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> within a convex area 0.414 from the original top of the column
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>No description</handNote>
+                            <handNote>Lapidary caitals, lines 1-7 <height>0.055-0.06</height>5; line 8, <height>0.0</height>8</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Unknown</origPlace>
-                            <origDate>
+                            <origDate notBefore="0199" notAfter="0299" evidence="lettering" cert="low">?Third century CE
                             </origDate>
                         </origin>
-                        <provenance type="found">
-                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
-                                <placeName ref="https://www.slsgazetteer.org/699">West Necropolis</placeName>, reused in a building at Ez-Zeita.</p></provenance>
-                        <provenance type="observed"><p>xxx</p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/2258">Jabal Tarhuna</placeName> area, 
+                            near <placeName type="monuList" ref="https://www.slsgazetteer.org/1556">Tarhuna</placeName></p></provenance>
+                        <provenance type="observed"><p><placeName ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName></p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,42 +77,46 @@
                 <language ident="ber-Latn">Native Libyan language in Latin script</language>
             </langUsage>
             <textClass>
-                <keywords scheme="IRCyr">
+              <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
-                    <term ref="http://www.eagle-network.eu/voc/typeins/lod/92">Grabinschrift</term><!--move info inside <title> in <titleStmt>-->
-                </keywords>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+              </keywords>
             </textClass>
-        <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
+            <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
         <revisionDesc>
          <change when="2021-04-18" who="IV">adapted</change>
-         <change when="2014-06-04" who="Bigi">provisorisch bearbeitet</change>
+         <change when="1995-07-27" who="Scheithauer">provisorisch bearbeitet</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="elnemsi1997"/> no. 1, <citedRange>210-211</citedRange></bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1997.1585</citedRange></bibl>,
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD049861">049861</ref></citedRange></bibl>
-                   
+                <p> <bibl><ptr target="elmayer2006"/> <citedRange></citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2006.1668</citedRange></bibl>
+                    
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve">
-                <ab><lb n="1"/>
-                <persName type="divine"><w>Diis</w> <w>Manibus</w> </persName>
-                <lb n="2"/><w>fecit</w> 
-                <lb n="3"/><persName type="attested"><name nymRef="Marcus"><expan><abbr>Ma</abbr><ex cert="low">rcus</ex></expan></name> <name nymRef="Eppius">Ep<supplied reason="omitted">p</supplied>ii</name></persName>  <w>sib<supplied reason="omitted">i</supplied></w> <w>et</w> 
-                <lb n="4"/><w>suis</w> <w>et</w> <w>patrona</w> 
-                <lb n="5"/><w>sua</w>
-            </ab></div>
-            <div type="translation" resp="#cmr" xml:lang="en">
-                <p/>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/><persName type="attested"><name nymRef="Chadda">Chadda</name>
+                <lb n="2"/><w>byn</w> <persName type="attested"><name nymRef="Nimmirath">Nim
+                <lb n="3" break="no"/>mirath</name></persName>
+                <lb n="4"/><name nymRef="Nytros"><unclear>N</unclear>ytros</name></persName>
+                <lb n="5"/><w>fel</w> <w>myn
+                <lb n="6" break="no"/>syth</w> <w>lim
+                <lb n="7" break="no"/>mim</w> <persName type="attested"><name nymRef="Thubab">Thu
+                <lb n="8" break="no"/>bab</name></persName>
+                
+                </ab></div>
+            <div type="translation" source="#elmayer2006" xml:lang="en">
+                <p>Chadda, son of Nimmirath, Nytros, made (this) funerary monument for his mother Thubab</p>
+            </div>
+            <div type="translation" source="#ae" xml:lang="fr">
+                <p>Chadda,fils de Nimmirath, Nytros,a fait (ce) monument funéraire pour sa mère Thubab</p>
             </div>
             <div type="commentary">
-                <p></p>
+                <p>Line 4: Nytros could be Vytros/Bytros</p>
             </div>
         </body>
     </text>

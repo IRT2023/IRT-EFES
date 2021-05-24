@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1036" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1067" xml:lang="en">
     <teiHeader>
         <fileDesc>
-            <titleStmt>
-                <title><rs type="textType">Funerary</rs> inscription</title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+            <titleStmt> 
+                <title>Fragmentary <rs type="textType">dedication</rs>  </title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD049861</idno>
-                <idno type="TM">201576</idno>
-                <idno type="filename">IRT1036</idno>
+                <idno type="filename">IRT1067</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -23,34 +20,28 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier>
-                        <repository>Al Khums, Lepcis Magna Museum (Altes Museum)</repository>
-                    </msIdentifier>
+                    <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/189">Block</objectType> of
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/60">limestone</material>
+                                  <p>Six joining fragments from the left side of a <material ref="http://www.eagle-network.eu/voc/material/lod/138">marble</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">panel</objectType> from the support for a statue 
                                     <dimensions>
-                                        <height unit="metre">0.36</height>
-                                        <width unit="metre">0.645</width>
-                                        <depth unit="metre">0.15</depth>
-                                    </dimensions>
-                                    
+                                        <height unit="metre">0.65</height>
+                                    <width>0.33</width>
+                                    <depth>0.015</depth></dimensions>
+                                     
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed </rs> on the face, 
-                                     a <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">tabula ansata</rs>.
-                                </layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face</layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>No description</handNote>
+                            <handNote>Lapidary rustic capitals, <depth>0.043</depth></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -58,11 +49,11 @@
                             <origPlace>Unknown</origPlace>
                             <origDate>
                             </origDate>
-                        </origin>
-                        <provenance type="found">
-                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
-                                <placeName ref="https://www.slsgazetteer.org/699">West Necropolis</placeName>, reused in a building at Ez-Zeita.</p></provenance>
-                        <provenance type="observed"><p>xxx</p></provenance>
+                        </origin><provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/658">Bu Ngem</placeName></p></provenance>
+                        <provenance type="observed">
+                            <p> 
+                                <placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName>.</p>
+                        </provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,42 +77,41 @@
                 <language ident="ber-Latn">Native Libyan language in Latin script</language>
             </langUsage>
             <textClass>
-                <keywords scheme="IRCyr">
+              <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
-                    <term ref="http://www.eagle-network.eu/voc/typeins/lod/92">Grabinschrift</term><!--move info inside <title> in <titleStmt>-->
-                </keywords>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+              </keywords>
             </textClass>
-        <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
+            <creation>EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy</creation></profileDesc>
         <revisionDesc>
          <change when="2021-04-18" who="IV">adapted</change>
-         <change when="2014-06-04" who="Bigi">provisorisch bearbeitet</change>
+         <change when="2010-06-02" who="Feraudi">provisorisch bearbeitet</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="elnemsi1997"/> no. 1, <citedRange>210-211</citedRange></bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1997.1585</citedRange></bibl>,
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD049861">049861</ref></citedRange></bibl>
-                   
+                <p><bibl><ptr target="vitaevrard2008"/> <citedRange></citedRange></bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>2008.1619</citedRange></bibl>
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve">
-                <ab><lb n="1"/>
-                <persName type="divine"><w>Diis</w> <w>Manibus</w> </persName>
-                <lb n="2"/><w>fecit</w> 
-                <lb n="3"/><persName type="attested"><name nymRef="Marcus"><expan><abbr>Ma</abbr><ex cert="low">rcus</ex></expan></name> <name nymRef="Eppius">Ep<supplied reason="omitted">p</supplied>ii</name></persName>  <w>sib<supplied reason="omitted">i</supplied></w> <w>et</w> 
-                <lb n="4"/><w>suis</w> <w>et</w> <w>patrona</w> 
-                <lb n="5"/><w>sua</w>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/><persName type="attested"><name><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name>Iulio</name> <name>Cer<supplied reason="lost">eali</supplied></name></persName> 
+                <lb n="2"/><persName type="attested"><name>Iulia</name> <name>Seu<supplied reason="lost">era</supplied></name> <name><supplied reason="lost">Gae</supplied>
+                 <lb n="3" break="no"/><unclear>t</unclear>ulica</name></persName> <w>pr<supplied  reason="lost">o</supplied></w> <w><supplied reason="lost">mari</supplied>
+                <lb n="4" break="no"/><unclear>t</unclear>o</w> <w>suo</w> <w>statuam</w>
+                <lb n="5"/><w>iussit</w> <w><unclear>q</unclear><supplied reason="lost">uam</supplied></w>
+                <lb n="6"/><persName type="attested"><name><seg part="I">Gratill</seg></name></persName>
+                <lb n="7"/><w>heres</w> <supplied reason="lost"><w><expan><abbr>fac</abbr><ex>iendum</ex></expan></w> <w><expan><abbr>cur</abbr><ex>auit</ex></expan></w></supplied>
+                
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
             <div type="commentary">
-                <p></p>
+                <p/>
             </div>
         </body>
     </text>
