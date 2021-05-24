@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -118,8 +119,7 @@
                   <desc>Ward-Perkins Archive, BSR (BSR 51.II.31)</desc></graphic>
                   <graphic url="wp0509.jpg">
                   <desc>Ward-Perkins, 1948 (Ward-Perkins Archive, BSR 48.XXII.16)</desc></graphic>
-                  <graphic url="wp0509.jpg">
-                  <desc>Ward-Perkins, 1948 (Ward-Perkins Archive, BSR 48.XXII.16)</desc></graphic>
+                  
    </facsimile>
    <text>
       <body>
@@ -130,7 +130,9 @@
                <bibl><ptr target="irt1952"/>, <citedRange>396</citedRange></bibl>, whence 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT396.html">396</ref></citedRange></bibl>; 
                <bibl><ptr target="benseddik2010"/> <citedRange>60</citedRange></bibl>;  
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059316">059316</ref></citedRange></bibl></p>
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059316">059316</ref></citedRange></bibl>; 
+               <bibl> <ptr target="vitaevrard1991"/> <citedRange></citedRange></bibl>, whence 
+               <bibl> <ptr target="ae"/> <citedRange>1991.1619</citedRange></bibl>;</p> 
             <p>See also <bibl><ptr target="laronde2005"/> <citedRange>114-115</citedRange></bibl>, whence 
                <bibl><ptr target="ae"/> <citedRange>2005.1662</citedRange></bibl></p>
          </div>
@@ -204,6 +206,10 @@
                   <gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>b</unclear>us</w> 
                   <gap reason="lost" extent="unknown" unit="character"/>
                </ab></div></div>
+         <div type="apparatus">
+            
+            <app loc="3-4"><rdg resp="#vitaevrard1991">[c]ry/[pta]</rdg></app>
+         </div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>a.<gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">of Emperor Caesar Lucius Septimius</supplied> Severus 
    <supplied reason="lost">Pius Pertinax Augustus, victor in Arabia</supplied>, victor in Adiabene, greatest victor in Parthia, 
