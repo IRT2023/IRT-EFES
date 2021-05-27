@@ -22,12 +22,12 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository>?<!-- Unknown? --></repository></msIdentifier>
+               <msIdentifier><repository ref="institution.xml#db660">Sabratha Museum</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>The upper part of a <material>marble</material> 
+                           <p>Eleven joining fragments from upper part of a <material>marble</material> 
                               <objectType>panel</objectType> (<dimensions>
                                  <width unit="metre">0.83</width>
                                  <height unit="metre">0.62</height>
@@ -39,21 +39,22 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Late second to third centuries CE lapidary capitals: <height unit="metre" atLeast="0.07" atMost="0.08">0.07-0.08</height>.</handNote>
+                     <handNote>Late second to third centuries CE lapidary capitals: <height unit="metre" atLeast="0.06" atMost="0.07">0.06-0.07</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0068" notAfter="0300" precision="low" evidence="lettering">Late second to third centuries CE (lettering)</origDate>
+                     <origDate notBefore="0222" notAfter="0235" precision="low" evidence="prosopography">222-235</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="https://www.slsgazetteer.org/659">Sabratha</placeName>: <placeName ref="https://www.slsgazetteer.org/855">Regio I</placeName>, <placeName type="monuList" ref="https://www.slsgazetteer.org/832">Capitolium</placeName>, found in the vaults; see <ref type="inscription" n="IRT0001">1</ref>, note 1.</p>
+                                         ref="https://www.slsgazetteer.org/659">Sabratha</placeName>: <placeName ref="https://www.slsgazetteer.org/855">Regio I</placeName>, 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/832">Capitolium</placeName>, found in the vaults; see <ref type="inscription" n="IRT0001">1</ref>, note 1.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p/>
+                           <p><placeName ref="https://www.slsgazetteer.org/660">Sabratha Museum</placeName></p>
                         </provenance>
                </history>
             </msDesc>
@@ -91,7 +92,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription from the stone (Reynolds, Ward-Perkins); from the photograph (Marmouri)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -111,18 +112,24 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>113</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT113.html">113</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059099">059099</ref></citedRange></bibl></p>
+            <p><bibl><ptr target="irt1952"/>, <citedRange>113</citedRange></bibl>, whence 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT113.html">113</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059099">059099</ref></citedRange></bibl>, 
+               <bibl><ptr target="marmouri2015"/><citedRange></citedRange></bibl>, whence
+               Epigraphica Romana <ref target="http://www.epigraphica-romana.fr/notice/detail?notice=3744">2015_57_001</ref></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
                <lb n="1"/> 
                <persName type="attested"><name type="praenomen" nymRef="Publius"><expan><abbr><unclear>P</unclear></abbr><ex>ublio</ex></expan></name> 
-               <gap reason="lost" atLeast="4" atMost="5" unit="character"/><name><w part="F">o</w></name>  
+               <name><supplied reason="lost">Alfi</supplied>o</name>  
                <persName type="attested"><name type="praenomen" nymRef="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName>
                <w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w> 
                <name type="tribe" nymRef="Galeria"><w lemma="tribus"><unclear>G</unclear><supplied reason="lost">a</supplied>leria <expan><ex>tribu</ex></expan></w></name> 
                <lb n="2"/><name type="cognomen" nymRef="Maximus">Maximo</name> <name type="gentilicium" nymRef="Numerius">Numerio</name>
-               <lb n="3"/><name type="cognomen" nymRef="Auitus">Auito</name></persName> <orig>u</orig> <orig><unclear>g</unclear></orig> <orig>c</orig> <orig>u</orig>
+               <lb n="3"/><name type="cognomen" nymRef="Auitus">Auito</name></persName> <w lemma="legatus"><expan><abbr><supplied reason="lost">l</supplied>eg</abbr><ex>ato</ex></expan></w> 
+               <w lemma="clarus"><expan><abbr>c</abbr><ex>larissimo</ex></expan></w> <w lemma="uir"><expan><abbr>u</abbr><ex>iro</ex></expan></w> 
+                       
                <lb n="4"/><w lemma="rarus">rarissimo</w>
                <lb n="5"/><placeName type="ethnic" nymRef="#Sabrathensis" ref="#sabratha">Sabrathenses</placeName>
                <lb n="6"/><w lemma="publice">pub<supplied reason="lost">l</supplied>ice</w>
@@ -132,36 +139,9 @@
          <div type="apparatus">
             <listApp>
                <app loc="1">
-                  <note>Perhaps <persName type="attested">
-                        <foreign xml:lang="la">
-                           <name type="praenomen" nymRef="Publius">
-                              <expan>
-                                 <abbr>P</abbr>
-                                 <ex>ublio</ex>
-                              </expan>
-                           </name> 
-                           <name type="gentilicium" nymRef="Alfius">Alfio</name>
-                        </foreign>
-                     </persName>
-                  </note>
-               </app>
-            
-               <app loc="3">
-                  <note>Perhaps 
-                     <foreign xml:lang="la">
-                        <expan>
-                           <abbr>u</abbr>
-                           <ex>iro</ex>
-                        </expan> 
-                        <expan>
-                           <abbr>c</abbr>
-                           <ex>larissimo</ex>
-                        </expan> 
-                        <expan>
-                           <abbr>cu</abbr>
-                           <ex>ratori</ex>
-                        </expan>
-                     </foreign>.</note>
+                  <rdg resp="#irt1952">P[ . . 4/5 . . ]o <note>Perhaps P. [Alfi]o</note></rdg></app>
+                  
+                  <app loc="3"><rdg resp="#irt1952">U<unclear>G</unclear>CU <note>Perhaps u(iro) c(larissimo) cu(ratori)</note></rdg>
                </app>
             </listApp>
          </div>
@@ -169,6 +149,9 @@
             <p>To Publius <supplied reason="lost" cert="low">Alfius</supplied> Maximus Numerius Avitus son of Publius, of the Roman voting tribe Galeria, excellent man <note>i.e. roman Senator</note> curator, most remarkable; the people of Sabratha publicly to a patron <gap reason="lost" extent="unknown" unit="character"/></p></div>
          <div type="commentary">
             <p>See PIR A 530, 531, 534 and 535 for the family to which this man seems to belong.
+               For the man, PIR², N 202
+            </p>
+            <p>
             </p>
          </div>
       </body>
