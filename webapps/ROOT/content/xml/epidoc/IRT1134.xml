@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1133" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1134" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -11,7 +11,7 @@
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="filename">IRT1133</idno>
+                <idno type="filename">IRT1134</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -25,12 +25,12 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>Broken <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material> <!-- check -->
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">stele</objectType> with a triangular pediment
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material> <!-- check -->
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">stele</objectType> broken above
                                     
                                     <dimensions>
-                                        <height unit="metre">0.92</height>
-                                        <width unit="metre">0.48</width>
+                                        <height unit="metre">0.46</height>
+                                        <width unit="metre">0.34</width>
                                         <depth unit="metre">0.11</depth>
                                     </dimensions>
                                      
@@ -39,12 +39,12 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> in the pediment (line 1) and on the face below
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs>  on the face.
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote> <height>0.045-0.063</height></handNote>
+                            <handNote> <height>0.05-0.058</height>; ligatured IL in line 2</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -54,7 +54,7 @@
                         </origin>
                         <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/899">Wadi Zemzem</placeName>: 
                             <placeName type="monuList" ref="https://www.slsgazetteer.org/782">Gheriat el-Garbia</placeName>: found in <date type="found">2009</date>.</p></provenance>
-                        <provenance type="observed"><p>Excavation depot; inventory 09/9. </p></provenance>
+                        <provenance type="observed"><p>Excavation depot; inventory 09/10</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -86,7 +86,7 @@
             </textClass>
             <creation>Transcription (Mackensen)</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-05-30" who="CMR">transcribed</change>
+         <change when="2021-05-31" who="CMR">transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
@@ -94,19 +94,23 @@
         <body>
             <div type="bibliography">
                 <p><bibl><ptr target="mackensen2010"/> <citedRange>381-383</citedRange></bibl>, whence 
-                <bibl><ptr target="ae"/> <citedRange>2010.1784</citedRange></bibl>; 
-                    <bibl><ptr target="mackensen2012"/> <citedRange>58</citedRange>, note 1</bibl>
+                <bibl><ptr target="ae"/> <citedRange>2010.1785</citedRange></bibl>;
+                    <bibl><ptr target="mackensen2012"/> <citedRange>58</citedRange>, note 1</bibl>             
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab>
-                <lb n="1"/><persName type="divine"><w><expan><abbr>D</abbr><ex>is</ex></expan></w> <w><expan><abbr>M</abbr><ex>
-                </ex></expan></w></persName> <w><expan><abbr>s</abbr><ex>acrum</ex></expan></w> <g type="stop"/>
-                <lb n="2"/><persName type="attested"><name nymRef="Titus"><expan><abbr>T</abbr><ex>itus</ex></expan></name> <g type="stop"/> <name nymRef="Claudius">Claudius</name>
-                 <lb n="3"/><name nymRef="Donatus">Donatus</name></persName>
-                  <lb n="4"/><w><expan><abbr><hi rend="ligature">mi</hi>l</abbr><ex>es</ex></expan></w> <g type="stop"/> <w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num> <w><expan><abbr><hi rend="ligature">Au</hi>
-                   <lb n="5" break="no"/>g</abbr><ex>ustae</ex></expan></w> <g type="stop"/> <w><expan><abbr>P</abbr><ex>iae</ex></expan></w> <w><expan><abbr>V</abbr><ex>indicis</ex></expan></w> <w>vix<hi rend="ligature">it</hi></w>
-                 <lb n="6"/><date type="life-span" dur="P52Y"><w><expan><abbr>a<hi rend="ligature">nn</hi></abbr><ex>is</ex></expan></w> <g type="stop"/> <num value="52">LII</num> <g type="stop"/></date>
+                <lb n="0"/><gap reason="lost" unit="line" quantity="1"/>
+                 
+                <lb n="1"/><persName type="attested"><name nymRef="Rogatus" cert="low"><supplied reason="lost">Ro</supplied>gatus</name></persName>
+                  <lb n="2"/><w><expan><abbr>m<hi rend="ligature">il</hi></abbr><ex>es</ex></expan></w> <w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num> 
+                <lb n="3"/><w><expan><abbr>Aug</abbr><ex>ustae</ex></expan></w> <w><expan><abbr>P</abbr><ex>iae</ex></expan></w> <w><expan><abbr>V</abbr><ex>indicis</ex></expan></w> <w>vixit</w>
+                 <lb n="4"/><date type="life-span" dur="P31Y"><w><expan><abbr>ann</abbr><ex>nis</ex></expan></w> <num value="31">XXXI</num></date>
                 </ab></div>
+            <div type="apparatus">
+                <listApp>
+                    <app loc="1"><rdg resp="mackensen2010">[ . . ] Gaius</rdg> <rdg resp="ae">[Ro]gatus</rdg></app>
+                </listApp>
+            </div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
