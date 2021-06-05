@@ -27,14 +27,16 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Long rectangular <objectType>base</objectType>. The left-hand face of <ref type="inscription" n="IRT0457">457</ref>, q.v.</p>
+                           <p>Long rectangular <objectType>base</objectType>, for an equestrian statue. The left-hand face of 
+                              <ref type="inscription" n="IRT0457">457</ref>, which is inscribed on the short end.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout><rs type="execution" key="scalpro">Inscribed</rs>  within a moulded panel (die. <dimensions>
                               <width unit="metre">1.51</width>
                               <height unit="metre">0.46</height>
-                           </dimensions>). which is divided into two halves by a vertical line. Uniform with <ref type="inscription" n="IRT0462">462</ref>.</layout>
+                           </dimensions>). which is divided into two halves by a vertical line. a to the left, b to the right, 
+                           c centered below.<!--  Uniform with <ref type="inscription" n="IRT0462">462</ref>.--></layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -44,7 +46,7 @@
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0337" notAfter="0340" evidence="reign">CE 337-340 (reign)</origDate>
+                     <origDate notBefore="0352" notAfter="0354" evidence="reign">CE 352-354 (reign)</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
@@ -91,7 +93,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+         <creation>Transcription (Reynolds, Ward-Perkins, Tantillo)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -102,11 +104,11 @@
    </teiHeader>
    <facsimile>
                   <graphic url="wp0605.jpg">
-                  <desc>Ward-Perkins Archive, BSR (Sopr. DLM 1555 Leica)</desc></graphic>
+                  <desc>Complete: Ward-Perkins Archive, BSR (Sopr. DLM 1555 Leica)</desc></graphic>
                   <graphic url="wp0606.jpg">
-                  <desc>Ward-Perkins Archive, BSR (Sopr. DLM 227 Lastre)</desc></graphic>
+                  <desc>Left end: Ward-Perkins Archive, BSR (Sopr. DLM 227 Lastre)</desc></graphic>
                   <graphic url="wp1183.jpg">
-                  <desc>Ward-Perkins Archive, BSR</desc></graphic>
+                  <desc>Unidentified: Ward-Perkins Archive, BSR</desc></graphic>
    </facsimile>
    <text>
       <body>
@@ -118,7 +120,7 @@
                    </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <div subtype="half" n="a" type="textpart"><note>Left half</note><ab>
+            <div n="a" type="textpart"><ab>
                   <lb n="1"/>
                   <del rend="erasure"><w lemma="dominus">Domino</w> <w lemma="noster">nostro</w></del>
                   <lb n="2"/>
@@ -126,21 +128,35 @@
                   <lb n="4"/>
                   <del rend="erasure"><w lemma="nobilis">nobilissimo</w> <w lemma="atque">ac</w> 
                      <w lemma="floreo">floren<lb n="5" break="no"/>tissimo</w> <persName type="emperor"><name type="cognomen" nymRef="Caesar">Caesari</name></persName></del> 
-               </ab></div><div subtype="half" n="b" type="textpart"><note>Right half</note><ab>
+               </ab></div><div n="b" type="textpart"><ab>
                   <lb n="1"/><w lemma="dominus">Domino</w> <w lemma="noster">nostro</w>
                   <lb n="2"/>
                   <persName type="emperor"><name type="gentilicium" nymRef="Flauius"><expan><abbr>Fl</abbr><ex>auio</ex></expan></name> 
                   <name type="gentilicium" nymRef="Iulius"><expan><abbr>Iul</abbr><ex>io</ex></expan></name> <name type="cognomen" nymRef="Constantius">Constantio</name>
                   <lb n="3"/><name type="cognomen" nymRef="Pius">Pio</name> <name type="cognomen" nymRef="Felix">F<supplied reason="lost">elici</supplied></name>
-                  <w lemma="semper"><supplied reason="lost">sem</supplied><lb n="3" break="no"/>per</w> <name type="cognomen" nymRef="Augustus">Augusto</name></persName>
-               </ab></div></div>
+                  <w lemma="semper"><unclear>sem</unclear><lb n="3" break="no"/>per</w> <name type="cognomen" nymRef="Augustus">Augusto</name></persName>
+               </ab></div>
+         <div n="c" type="textpart"><ab>
+            <supplied reason="lost" cert="low"><placeName type="ethnic" nymRef="Lepcitanus">Lepcitani</placeName> <w lemma="publice">publice</w></supplied></ab></div></div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="b.3"><rdg resp="#irt1952"><supplied reason="lost">sem</supplied></rdg></app>
+               <app loc="c"><note>Tentatively suggested by Tantillo</note></app>
+            </listApp>
+         </div>
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p>a.To our lord Flavius Claudius Constantine, most noble and excellent Caesar <note>all erased</note>. b. To our Lord Flavius Julius Constantius Pius, Felix, always Augustus. </p></div>
+            <p>a. To our lord Flavius Claudius Constantine, most noble and excellent Caesar <note>all erased</note>. b. To our Lord Flavius Julius Constantius Pius, Felix, always Augustus. </p></div>
+         
+         <div type="translation" source="#tantillo2010" xml:lang="it">
+            <p>Al nostro signore Flavio Claudio Costanzo (?) nobilissimo e fiorentissimo Cesare. Al nostro signore Flavio Giulio Costanzo,
+               Pio Felice per sempre Augusto . . . ?</p></div>
+         
          <div type="commentary">
-            <p>
+            
+           <!--   <p>
                <note>a</note> Constantinus II: Erased after damnatio in 340. The omission of the title Augustus is singular, see below. </p>
             <p>
-               <note>b</note> Constantius II: Augustus with his brothers, Constantinus and Constans, from Sept. 337</p>
+               <note>b</note> Constantius II: Augustus with his brothers, Constantinus and Constans, from Sept. 337</p>-->
          </div>
       </body>
    </text>
