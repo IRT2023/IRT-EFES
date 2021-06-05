@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0799l" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0799u" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,7 +13,7 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0799l</idno>
+            <idno type="filename">IRT0799u</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -33,7 +33,7 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on the underside; i at 90 degrees to ii.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on the underside</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -102,36 +102,23 @@
          <change when="2009-08-24" who="RV">Added Figures</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile><graphic url="wp1951_Fig7.jpg">
-      <desc>Drawing by Ward-Perkins (from JRS 1951, page 92)</desc></graphic>
+   <facsimile><surface/>
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>799.l</citedRange></bibl>, whence 
-               <bibl><ptr target="wp1951"/> <citedRange>92.1</citedRange></bibl>,  
-               i: <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/189546">189546</ref></citedRange>, 
-               ii:   <citedRange><ref target="https://epigraphy.packhum.org/text/189547">189547</ref></citedRange></bibl>,
+            <p><bibl><ptr target="irt1952"/>, <citedRange>Addenda, p.274</citedRange></bibl>, whence
+               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/189556">189556</ref></citedRange></bibl>,
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT799.html">799</ref></citedRange></bibl>, 
                <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059648">059648</ref></citedRange></bibl>, 
                
                    </p>
          </div>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <div n="i" type="textpart"><ab>
-               <lb n="1"/><persName type="attested"><name nymRef="Σασ-">Ϲα<unclear>ϲ</unclear><gap reason="lost" quantity="3" unit="character"/>νίου</name></persName>
-               <lb n="2"/><persName type="attested"><name nymRef="Σοφιανός">Ϲοφ<supplied reason="lost">ι</supplied>ανοῦ</name></persName></ab></div>
-            <div n="ii" type="textpart"><ab>
-                  <lb n="1"/> <persName type="attested"><name nymRef="Ελ-"><seg part="I">Ελ</seg></name></persName><gap reason="lost" quantity="1" unit="character"/>
-               <lb n="2"/><persName type="attested"><name nymRef="Σοφ-"><seg part="I">Ϲοφ</seg></name></persName></ab></div>
-            </div>
-         <div type="apparatus">
-            <app loc="i.2"><rdg resp="#irt1952">ΣΟΦΑΝΟΥ</rdg></app>
-         </div>
+            <ab><lb n="1"/><persName type="attested"><name nymRef="Ἀρτ-"><seg part="I">Ἀρτ</seg></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="2"/><w lemma="νεώτερος">νεω<supplied reason="lost" cert="low">τέρου</supplied></w></ab></div>
          
-            <div type="translation" source="#irt2009" xml:lang="en">
-               <p><note>i</note> Of Sas[ . . . ]nios. Sophanos. 
-                  <note>ii</note>El<gap reason="lost" extent="unknown" unit="character"/> of Soph(anos?)</p></div>
+         
          <div type="commentary">
             
          </div>
