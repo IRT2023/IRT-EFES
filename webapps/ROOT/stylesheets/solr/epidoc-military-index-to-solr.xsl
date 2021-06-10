@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:w[@lemma][ancestor::tei:rs[@type='military']]|//tei:w[@lemma][ancestor::tei:orgName]" group-by="@lemma">
+      <xsl:for-each-group select="//tei:w[@lemma][ancestor::tei:rs[@type='military'] or ancestor::tei:orgName]" group-by="@lemma">
         <xsl:variable name="key-id" select="@lemma"/>
         <xsl:variable name="key" select="document('../../content/xml/authority/military.xml')//tei:item[@xml:id=$key-id]"/>
         <doc>
@@ -47,7 +47,7 @@
         </doc>
       </xsl:for-each-group>
       
-      <xsl:for-each-group select="//tei:placeName[@nymRef][ancestor::tei:rs[@type='military']]|//tei:name[@nymRef][ancestor::tei:rs[@type='military']]" group-by="@nymRef">
+      <xsl:for-each-group select="//tei:placeName[@nymRef][ancestor::tei:rs[@type='military'] or ancestor::tei:orgName]|//tei:name[@nymRef][ancestor::tei:rs[@type='military'] or ancestor::tei:orgName]" group-by="@nymRef">
         <xsl:variable name="key-id" select="@nymRef"/>
         <xsl:variable name="key" select="document('../../content/xml/authority/military.xml')//tei:item[@xml:id=$key-id]"/>
         <doc>
@@ -78,10 +78,28 @@
           <xsl:apply-templates select="current-group()" />
         </doc>
       </xsl:for-each-group>
+      
+      <!--<xsl:for-each-group select="//tei:num[ancestor::tei:rs[@type='military'] or ancestor::tei:orgName]" group-by=".">
+        <doc>
+          <field name="document_type">
+            <xsl:value-of select="$subdirectory" />
+            <xsl:text>_</xsl:text>
+            <xsl:value-of select="$index_type" />
+            <xsl:text>_index</xsl:text>
+          </field>
+          <xsl:call-template name="field_file_path" />
+          <field name="index_item_name">
+                <xsl:value-of select="." />
+          </field>
+          <field name="index_external_resource">
+          </field>
+          <xsl:apply-templates select="current-group()" />
+        </doc>
+      </xsl:for-each-group>-->
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:w[@lemma][ancestor::tei:rs[@type='military'] or ancestor::tei:orgName]|tei:placeName[@nymRef][ancestor::tei:rs[@type='military']]|tei:name[@nymRef][ancestor::tei:rs[@type='military']]">
+  <xsl:template match="tei:w[@lemma][ancestor::tei:rs[@type='military'] or ancestor::tei:orgName]|tei:placeName[@nymRef][ancestor::tei:rs[@type='military'] or ancestor::tei:orgName]|tei:name[@nymRef][ancestor::tei:rs[@type='military'] or ancestor::tei:orgName]"> <!-- |tei:num[ancestor::tei:rs[@type='military'] or ancestor::tei:orgName] -->
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 
