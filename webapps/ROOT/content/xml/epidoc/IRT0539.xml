@@ -50,7 +50,7 @@
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0301" notAfter="0400" precision="low" evidence="lettering">Fourth century CE (lettering)</origDate>
+                     <origDate notBefore="0275" notAfter="0325" precision="low" evidence="lettering">Late third or early fourth century CE (lettering)</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
@@ -113,9 +113,9 @@
    <text>
       <body>
          <div type="bibliography">
-            <p>
-               <bibl><ptr target="degrassi1954"/><citedRange></citedRange></bibl>;
-               <bibl><ptr target="irt1952"/>, <citedRange>539</citedRange></bibl>, whence 
+            <p><bibl><ptr target="irt1952"/>, <citedRange>539</citedRange></bibl>, 
+               <bibl><ptr target="degrassi1954"/><citedRange></citedRange></bibl> whence 
+               <bibl><ptr target="reynolds1955"/> <citedRange>143</citedRange></bibl>, 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT539.html">539</ref></citedRange></bibl>;
                <bibl><ptr target="tantillo2010"/> <citedRange>18</citedRange></bibl>;
                <bibl><ptr target="EDH"/> (Bigi, 2014) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059416">059416</ref></citedRange></bibl></p>
@@ -125,33 +125,41 @@
                <lb n="1"/><w lemma="bonus">Bono</w> <w lemma="genus">generis</w>
                <lb n="2"/><w lemma="humanus">humani</w> <supplied reason="lost"><w lemma="nascor">nato</w></supplied> 
                <lb n="3"/><w lemma="prouideo">pr<supplied reason="lost">o</supplied>uiso</w> 
-               <w lemma="fortis">fortis<lb n="4" break="no"/>simo</w> <gap reason="lost" quantity="9" unit="character" precision="low"/>
-               <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><w part="M">olin<gap reason="lost" quantity="1" unit="character"/>o</w>
-               <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><orig>vc</orig>
+               <w lemma="fortis">fortis<lb n="4" break="no"/>simo</w> <supplied reason="lost"><w lemma="princeps">principi</w></supplied>
+               <lb n="5"/><supplied reason="lost"><w><expan><abbr>d</abbr><ex>omino</ex></expan></w> <w><expan><abbr>n</abbr><ex>ostro</ex></expan></w></supplied><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="6"/><gap reason="lost" quantity="5" unit="character"/><orig>l</orig><gap reason="lost" quantity="1" unit="character"/><orig>o</orig>
+               <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="Augustus"><expan><abbr><supplied reason="lost">A</supplied>ug</abbr><ex>usto</ex></expan></w>
                <lb n="8"/><persName type="attested"><name type="gentilicium" nymRef="A-"><seg part="I">A</seg><gap reason="lost" extent="unknown" unit="character"/>us</name> 
-                  <name type="cognomen" nymRef="Rogatianus">Rogati<supplied reason="lost">an</supplied>us</name></persName>
+                  <name type="cognomen" nymRef="Rogatianus">Rogati<supplied reason="lost">n</supplied>us</name></persName>
                <lb n="9"/><w lemma="uir"><expan><abbr>u</abbr><ex>ir</ex></expan></w> 
                <w lemma="clarus"><expan><abbr>c</abbr><ex>larissimus</ex></expan></w> 
                <orig><unclear>ap</unclear>ll</orig> 
                <w lemma="deuoueo"><expan><abbr>d</abbr><ex>euotus</ex></expan></w> 
                <w lemma="numen"><expan><abbr>n</abbr><ex>umini</ex></expan></w> 
                <w lemma="maiestas"><expan><abbr>m</abbr><ex>aiestati</ex><abbr>q</abbr><ex>ue</ex></expan></w> 
-               <lb n="10"/><w lemma="is">e<supplied reason="lost">ius</supplied></w><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="11"/><orig>n</orig><gap reason="lost" quantity="2" unit="character"/><orig><unclear>v</unclear></orig><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/>
-            </ab></div>
-         <div type="translation" source="#irt2009" xml:lang="en">
-            <p><supplied reason="lost">Born</supplied> for the good of the human race foreseen, the bravest <gap reason="lost" extent="unknown" unit="character"/> A<gap reason="lost" extent="unknown" unit="character"/>us Rogatianus, splendid man, <note>of senatorial status</note>, APLL <note>abbreviation not resolved</note>, devoted to his divine power and majesty, <gap reason="lost" extent="unknown" unit="character"/></p></div>
-         <div type="apparatus">
+               <lb n="10"/><w lemma="is">e<supplied reason="lost">ius</supplied></w> <supplied reason="lost" cert="low"><w lemma="cum">cum</w></supplied> <placeName type="ethnic"><supplied reason="lost" cert="low">Lepcimagne</supplied>
+               <lb n="11" break="no"/>n<supplied reason="lost">sib</supplied>u<supplied reason="lost">s</supplied></placeName><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="12"/><supplied cert="low" reason="lost"><w lemma="pono">posuit</w></supplied>
+            </ab></div> <div type="apparatus">
             <listApp>
-               <app loc="2">
-                  <rdg resp="degrassi1954">humani <supplied reason="lost">nato</supplied>
-                  </rdg>
-                  <note>: this should be accepted; in fact some consistent traces of the letters survive.</note>
-               </app>
+               <app loc="2"><rdg resp="#degrassi1954">humani <supplied reason="lost">nato</supplied></rdg></app>
+               <app loc="4"><rdg resp="#irt1952">simo [ .c.9. . ]</rdg></app>
+               <app loc="5"><rdg resp="#irt1952"> [ . . . ]</rdg></app>
+               <app loc="6"><rdg resp="#irt1952"> [---]olin[.]o-</rdg></app>
+               <app loc="7"><rdg resp="#irt1952"> [---]VC</rdg></app>
+               <app loc="8"><rdg resp="#irt1952">  Rogati[an]us</rdg></app>
+               <app loc="10"><rdg resp="#irt1952">e[ius---] </rdg></app>
+               <app loc="11"><rdg resp="#irt1952"> N[..]Ṿ[---] </rdg></app>
             </listApp>
          </div>
+         <div type="translation" source="#irt2009" xml:lang="en">
+            <p><supplied reason="lost">Born</supplied> for the good of the human race foreseen, the bravest <gap reason="lost" extent="unknown" unit="character"/> 
+               A<gap reason="lost" extent="unknown" unit="character"/>us Rogatianus, splendid man, <note>of senatorial status</note>, APLL <note>abbreviation not resolved</note>, devoted to his divine power and majesty, <gap reason="lost" extent="unknown" unit="character"/></p></div>
+        
+         
+         <div type="translation" source="#tantillo2010" xml:lang="it">
+            <p>Procurato (?) per il bene del genere umano, fortissimo principe,al nostro signore ? . . . Augusto, A… Rogatinus, uomo
+               chiarissimo . . . devoto al suo nume e alla sua maestà, pose insieme agli abitanti di Leptis Magna (?).</p></div>
          <div type="commentary">
             <p>No comment.</p>
          </div>
