@@ -6,8 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary <rs type="textType">dedication<certainty match=".." locus="value"/>
-               </rs>
+            <title>Fragmentary <rs type="textType">honours</rs> for an emperor
             </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
@@ -28,24 +27,23 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p> Two fragments, the upper and lower parts of a moulded <objectType>base</objectType>.</p>
-                           <p>a) <dimensions>
+                           <p> Two fragments, the upper and lower parts of a moulded <objectType>base</objectType> of grey <material>limestone</material>: a) <dimensions>
                                  <width unit="metre">0.65</width>
                                  <height unit="metre">0.50</height>
-                              </dimensions>
-                           </p>
-                           <p>b) <dimensions>
+                              </dimensions>; 
+                           b) <dimensions>
                                  <width unit="metre">0.50</width>
                                  <height unit="metre">0.65</height>
                               </dimensions> 
-               of <material>grey limestone</material>.</p>
+               </p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Re-inscribed on one face within a moulded panel 
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, after the base had been reversed from its first use (Tantillo): line a.1 on the front fascia of the upper moulding; the remainder of the text 
+                           within a moulded panel 
                (die, <dimensions>
                               <width unit="metre">0.97</width>
-                           </dimensions>), from which a previous inscription has been erased. </layout>
+                           </dimensions>), from which a previous inscription has been erased; </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -102,7 +100,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins, Tantillo)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -113,9 +111,9 @@
    </teiHeader>
    <facsimile>
                   <graphic url="wp0652.jpg">
-                  <desc>Ward-Perkins Archive, BSR (Sopr. DLM 1552 Leica)</desc></graphic>
+                  <desc>Upper part: Ward-Perkins Archive, BSR (Sopr. DLM 1552 Leica)</desc></graphic>
                   <graphic url="wp0653.jpg">
-                  <desc>Ward-Perkins Archive, BSR (Sopr. DLM 1553 Leica)</desc></graphic>
+                  <desc>Lower part: Ward-Perkins Archive, BSR (Sopr. DLM 1553 Leica)</desc></graphic>
    </facsimile>
    <text>
       <body>
@@ -127,20 +125,27 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <div subtype="fragment" n="a" type="textpart"><ab>
-               <lb n="1"/><w lemma="liberator">Liberatori</w>
-               <lb n="2"/><w lemma="orbis">orbis</w> <gap reason="lost" quantity="4" unit="character" precision="low"/>
-               <lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><orig><unclear>i</unclear>us<unclear>iiiiiiii</unclear></orig>
+               <lb n="2"/><w lemma="liberator">Liberatori</w>
+               <lb n="3"/><w lemma="orbis">orbis</w> <w lemma="ac"><unclear>ac</unclear></w>
+               <lb n="3a"/><gap reason="lost" quantity="2" unit="line"/>
             </ab></div><div subtype="fragment" n="b" type="textpart"><ab>
-               <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
-               <lb n="2"/><gap reason="lost" quantity="4" unit="character" precision="low"/> 
-               <w part="I"><expan><abbr>d</abbr><ex>euot</ex></expan></w>
+               <lb n="1"/><orig>r</orig><gap reason="lost" quantity="6" unit="character"/> <placeName type="ethnic"><supplied reason="lost">Lepci</supplied>
+               <lb n="2"/><unclear>tani</unclear></placeName> 
+               <w lemma="deuoueo"><expan><abbr>d</abbr><ex>euoti</ex></expan></w>
                <w lemma="numen"><expan><abbr>n</abbr><ex>umini</ex></expan></w> 
                <w lemma="maiestas"><expan><abbr>m</abbr><ex>aiestati</ex><abbr>que</abbr></expan></w> 
                <lb n="3"/><w lemma="is">eius</w> </ab></div></div>
+         
+         <div type="apparatus"> <listApp>
+            <app loc="a.1"><note>This line first reported by Tantillo</note></app>
+            <app loc="a.3"><rdg resp="#irt1952">orbis [c. 4]</rdg></app>
+            <app loc="b.2"><rdg resp="#irt1952">[c. 4] d(euot)- </rdg></app>
+         </listApp></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>a. To the liberator of the world <gap reason="lost" quantity="4" unit="character" precision="low"/> b. <gap reason="lost" extent="unknown" unit="character"/> devoted to his divine power and majesty.</p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>For the history of the stone see Tantillo, loc.cit.</p>
          </div>
       </body>
    </text>
