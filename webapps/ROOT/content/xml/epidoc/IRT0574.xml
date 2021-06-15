@@ -37,10 +37,10 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Reinscribed on one face within a moulded panel (die, <dimensions>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, from which a previous inscription has been erased: line 1 on the upper moulding, and line 16 on the lower nmoulding; lines 2-15 within a moulded panel (die, <dimensions>
                               <width unit="metre">0.34</width>
                               <height unit="metre">0.88</height>
-                           </dimensions>), from which a previous inscription has been erased; the first word is cut above the die, and the last line below it. </layout>
+                           </dimensions>). </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -50,7 +50,7 @@
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate when="0317" evidence="prosopography">317 CE (prosopography).</origDate>
+                     <origDate notBefore="0324" notAfter="0326"  evidence="prosopography">324-326 CE (prosopography).</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
@@ -97,7 +97,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins, Tantillo)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -117,13 +117,15 @@
                <bibl><ptr target="aurigemma1939"/>, <citedRange>113</citedRange> ff., fig. 2</bibl>, whence 
                <bibl><ptr target="ae"/> <citedRange>1948.38</citedRange></bibl>; 
             <bibl><ptr target="irt1952"/>, <citedRange>574</citedRange></bibl>, whence 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT574.html">574</ref></citedRange></bibl>;
+               <bibl><ptr target="chastagnol1966"/> <citedRange>540</citedRange></bibl>,
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT574.html">574</ref></citedRange></bibl>, ;
                <bibl><ptr target="tantillo2010"/> <citedRange>33</citedRange></bibl>, whence 
                <bibl><ptr target="EDH"/> (Bigi, 2014) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021543">021543</ref></citedRange></bibl>.</p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><persName type="attested"><name type="signum" nymRef="Romulius">Romulii</name></persName> 
+               <lb n="1"/><space/> <persName type="attested"  key="plre:1-romulus4"><name type="signum" nymRef="Romulius">Romulii</name></persName> <space/>
+               <lb n="1a"/><space quantity="1" unit="line"/>
                <lb n="2"/><w lemma="ob">Ob</w> <w lemma="tantus">tantam</w>
                <lb n="3"/><w lemma="moderatio">moderatio<lb n="4" break="no"/>nem</w> 
                <w lemma="iudicium">iudici<lb n="5" break="no"/>orum</w> 
@@ -144,23 +146,27 @@
                <lb n="15"/><w lemma="decerno">dec<supplied reason="lost">r</supplied>eto</w> 
                <w lemma="splendidus"><expan><abbr>s</abbr><ex>plendidissimi</ex></expan></w> 
                <w lemma="ordo"><expan><abbr>o</abbr><ex>rdinis</ex></expan></w> 
-               <w lemma="sumptus"><expan><abbr>sum<lb n="16" break="no"/>ptib</abbr><ex>us</ex></expan></w> <w lemma="se">suis</w> 
-               <w lemma="pono"><expan><abbr>pos</abbr><ex>uerunt</ex></expan></w>
+               <w lemma="sumptus"><expan><abbr>sum<abbr>p</abbr>tib</abbr><ex>us</ex></expan></w> <w lemma="se">suis</w> 
+               <w lemma="pono"><expan><abbr>pos</abbr><ex>uit</ex></expan></w>
             </ab></div>
          <div type="apparatus">
             <listApp>
-               <app loc="13">
-                  <lem>sufragio</lem>
-                  <note>sic</note>
-               </app>
+               <app loc="15"><rdg resp="#irt1952">dec[r]eto s(plendidissimi) o(rdinis) sum-
+                  ptib(us) suis pos(uerunt)</rdg></app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p><supplied reason="subaudible">In honour</supplied> of Romulius. On account of the great moderation of his judgements and  advantageous foresight and good fortune of his arrival <supplied reason="subaudible">among us</supplied>, they <note>the Lepcitanians</note> set <supplied reason="subaudible">this</supplied> up to Laenatius Romulus, excellent man <note>of equestrian status</note>, governor of the province of Tripolitania, in accordance with a vote of the most peaceful people and a decree of the most splendid city council, at their own expense.</p></div>
+            <p><supplied reason="subaudible">In honour</supplied> of Romulius. On account of the great moderation of his judgements and  advantageous foresight and good fortune of 
+               his arrival <supplied reason="subaudible">among us</supplied>, they <note>the Lepcitanians</note> set <supplied reason="subaudible">this</supplied> up to 
+               Laenatius Romulus, excellent man <note>of equestrian status</note>, governor of the province of Tripolitania, in accordance with a vote of the most peaceful people 
+               and a decree of the most splendid city council, at their own expense.</p></div>
+         
+         <div type="translation" source="#tantillo2010" xml:lang="it">
+            <p>Romulus! Per la grande moderazione nei giudizi, e per i quanto mai salutari provvedimenti, e per il felice suo avvento,
+               a Laenatius Romulus, uomo perfettissimo, governatore della provincia di Tripolitania, per suffragio del popolo quietissimo
+               e per decreto dello splendidissimo ordine, a sue spese pose.</p></div>
          <div type="commentary">
-            <p>
-               l.10: Praeses c. 317, see Aurigemma, loc. cit.; also in <ref type="inscription" n="IRT0101">101</ref>, ll. 1-8; <ref type="inscription" n="IRT0467">467</ref>, l. 7; <ref type="inscription" n="IRT0468">468</ref>, l. 10. 
-            </p>
+            <p/>
          </div>
       </body>
    </text>
