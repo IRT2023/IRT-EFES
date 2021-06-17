@@ -6,7 +6,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- This XSLT transforms a set of EpiDoc documents into a Solr
-       index document representing an index of symbols in those
+       index document representing an index of erasures in those
        documents. -->
 
   <xsl:import href="epidoc-index-utils.xsl" />
