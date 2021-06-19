@@ -35,14 +35,14 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on one face within a moulded panel (die, <dimensions>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on one face, line 1 on the upper moulding, lines 2-11  within a moulded panel (die, <dimensions>
                               <width unit="metre">0.29</width>
                               <height unit="metre">0.65</height>
-                           </dimensions>); the first word is cut above the die, and the last line below it. </layout>
+                           </dimensions>) line 12 below it. </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Fourth century CE capitals: l. 1, <height unit="metre">0.07</height>; remainder, <height unit="metre">0.06</height>.</handNote>
+                     <handNote>Fourth century CE capitals: line 1, <height unit="metre">0.07</height>; remainder, <height unit="metre">0.06</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -53,7 +53,7 @@
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
+                                 ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: <placeName ref="https://www.slsgazetteer.org/742">Regio IV</placeName>,  
                   <placeName type="monuList" ref="https://www.slsgazetteer.org/719">Forum Severianum</placeName>, East Portico. </p>
                         </provenance>
                         <provenance type="observed">
@@ -95,7 +95,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins, Tantillo)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -120,12 +120,12 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><persName type="attested"><name type="signum" nymRef="Inachius">Inachii</name></persName>
+               <lb n="1"/><persName type="attested"  key="plre:1-valerianus16"><name type="signum" nymRef="Inachius">Inachii</name></persName>
                <lb n="1a"/><space quantity="1" unit="line"/>
                <lb n="2"/><w lemma="omnis">Omnium</w>
                <lb n="3"/><w lemma="uirtus">uirtutum</w>
-               <lb n="4"/><w lemma="uir">uiro</w>
-               <persName type="attested"><name type="gentilicium" nymRef="Publicius">Publicio</name>
+               <lb n="4"/><w lemma="uir">uiro</w> <w lemma="perfectus"><expan><abbr>p</abbr><ex>erfectissimo</ex></expan></w>
+               <persName type="attested" key="plre:1-valerianus16"><name type="gentilicium" nymRef="Publicius">Publicio</name>
                <lb n="5"/><name type="cognomen" nymRef="Valerianus">Valeriano</name></persName> 
                <w lemma="uir"><expan><abbr>u</abbr><ex>iro</ex></expan></w> <orig>f</orig>
                <lb n="6"/><w lemma="ex">ex</w> <w lemma="praeses">praesidibus</w>
@@ -133,21 +133,25 @@
                <w lemma="integritas">inte<lb n="8" break="no"/>gritatis</w> <w lemma="et">et</w>
               <w lemma="moderatio"> mode<lb n="9" break="no"/>rationis</w> 
                <placeName type="ethnic" nymRef="Lepcimagnensis">Lepci<lb n="10" break="no"/>magnenses</placeName> 
-               <w lemma="patronus">pa<lb n="11" break="no"/>trono</w> 
+               <w lemma="patronus"><unclear>pa</unclear><lb n="11" break="no"/>trono</w> 
                <w lemma="praesto"><expan><abbr>prae<supplied reason="lost">stan</supplied><lb n="12" break="no"/>tiss</abbr><ex>imo</ex></expan></w> 
                <w lemma="pono">posuerunt</w></ab></div>
          <div type="apparatus">
             <listApp>
-               <app loc="5">
-                  <lem>F</lem>
-                  <note>Perhaps an error for p(erfectissimo).</note>
+               <app loc="5"><rdg resp="#irt1952">u(iro) F </rdg>
                </app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><supplied reason="subaudible">In honour</supplied> of Inachius. To a man of all virtues, Publicius Valerianus, ?excellent man <note>of equestrian status</note>, one of the former governors, of singular integrity and moderation; the Lepcimagnensians set <supplied reason="subaudible">this</supplied> up to an outstanding patron.</p></div>
+         
+         <div type="translation" source="#tantillo2010" xml:lang="it">
+            <p> Inachius! Uomo di ogni virtù, a Publicius Valerianus, uomo
+               perfettissimo, ex governatore, di speciale integrità e moderazione,
+               gli abitanti di Leptis Magna, al patrono eccellentissimo,
+               posero.</p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>PLRE I, Valerianus 16.</p>
          </div>
       </body>
    </text>

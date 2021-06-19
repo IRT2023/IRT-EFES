@@ -36,21 +36,21 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on one face within a moulded panel (die, <dimensions>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on one face: lines i and 2 on the upper moulding, 
+                           lines 3 ff. within a moulded panel (die, <dimensions>
                               <width unit="metre">0.31</width>
                               <height unit="metre">0.80</height>
-                           </dimensions>); 
-               ll. 1-2 are cut above the die; there are <rs type="decoration">formal sprays</rs> at either end of l. 1 and at the end of l. 25. </layout>
+                           </dimensions>); there are <rs type="decoration">formal sprays</rs> at either end of line 1 and at the end of line 25. </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Fourth century CE capitals: l. 1, <height unit="metre">0.05</height>; remainder, <height unit="metre" atLeast="0.03" atMost="0.035">0.03-0.035</height>.</handNote>
+                     <handNote>Fourth century CE capitals: line 1, <height unit="metre">0.05</height>; remainder, <height unit="metre" atLeast="0.03" atMost="0.035">0.03-0.035</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0301" notAfter="0400" precision="low" evidence="lettering">Fourth century CE (lettering).</origDate>
+                     <origDate notBefore="0350" notAfter="0360" precision="low" evidence="prosopography">350-360 CE .</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
@@ -97,7 +97,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins, Tantillo)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -130,13 +130,13 @@
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT565.html">565</ref></citedRange></bibl>; 
                <bibl><ptr target="tantillo2010"/> <citedRange>41</citedRange></bibl>, whence 
                <bibl><ptr target="EDH"/> (Bigi, 2014) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD019184">019184</ref></citedRange></bibl>.</p>
-            <p>PLRE 1 Nepotianus 1 u. 4</p>
+            
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><persName type="attested"><name type="signum" nymRef="Nepotianius">Nepotianii</name></persName>
+               <lb n="1"/><g ref="symbols.xml#palm"/> <persName type="attested" key="plre:1-nepotianus1"><name type="signum" nymRef="Nepotianius">Nepotianii</name></persName> <g ref="symbols.xml#palm"/>
                <lb n="1a"/><space quantity="1" unit="line"/>
-               <lb n="2"/><persName type="attested"><name type="gentilicium" nymRef="Flauius"><expan><abbr>Fl</abbr><ex>auio</ex></expan></name> <name type="cognomen" nymRef="Nepotianus">Nepotiano</name></persName> 
+               <lb n="2"/><persName type="attested"  key="plre:1-nepotianus1"><name type="gentilicium" nymRef="Flauius"><expan><abbr>Fl</abbr><ex>auio</ex></expan></name> <name type="cognomen" nymRef="Nepotianus">Nepotiano</name></persName> 
                <w lemma="uir"><expan><abbr>u</abbr><ex>iro</ex></expan></w> 
                <w lemma="perficio"><expan><abbr>p</abbr><ex>erfectissimo</ex></expan></w> 
                <w lemma="comes"><expan><abbr>com</abbr><ex>iti</ex></expan></w> <w lemma="et">et</w> <w lemma="praeses">praesidi</w> 
@@ -172,30 +172,42 @@
                <placeName type="ethnic" nymRef="Lepcimagnensis"><expan><abbr>Lepcimag</abbr><ex>nensis</ex></expan></placeName>
                <lb n="23"/><w lemma="cum">cum</w> <w lemma="populus">populo</w> <w lemma="statua">statuam</w> <w lemma="marmoreus">marmoream</w>
                <lb n="24"/><w lemma="ob">ob</w> <w lemma="hic">haec</w> <w lemma="mereo">merita</w> <w lemma="decerno">decretis</w> <w lemma="et">et</w> <w lemma="suffragium">sufragiis</w>
-               <lb n="25"/><w lemma="concino">concinnentibus</w> <w lemma="conloco">conlocauit</w></ab></div>
+               <lb n="25"/><w lemma="concino">concinnentibus</w> <w lemma="conloco">conlocauit</w> <g ref="symbols.xml#palm"/></ab></div>
          <div type="apparatus">
             <listApp>
-               <app loc="3">
-                  <note>sic</note>
-               </app>
-            
                <app loc="12">
-                  <rdg resp="degrassi1954">...(a)uitis beneficiis</rdg>
-                  <rdg resp="oliver1955">benevolentia multis beneficiis cumulauerit.</rdg>
-                  <note>: Professor Oliver's proposal is certainly the correct one.</note>
-               </app>
+                  <rdg resp="#irt1952">uiti(i)s </rdg>
+                  <rdg resp="#degrassi1954">(a)uitis</rdg>
+                  <rdg resp="#oliver1955">multis</rdg>
+                  </app>
             
-               <app loc="24">
-                  <lem>sufragiis</lem>
-                  <note>sic. </note>
-               </app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><supplied reason="subaudible">In honour</supplied> of Flavius Nepotianus. To Flavius Nepotianus excellent man <note>of equestrian status</note>, count and governor of the province of Tripolitania, in justice and integrity an outstanding man, in good guidance and benevolence exceptional, concerned for benevolence and honourable feeling and all public duties, very knowledgeable also in military science, experienced in arms and councils of war; because he provided with benevolence many benefits to councils and to all inhabitants of the province by dispensing justice with good faith; because he wore down the arrogance of the barbarians by the exercise of military skill; because he provided permanent defense and protection of the frontier even for the future times and secure against every hostile invader; because he adorned the walls of the cities by renewal of works or new building; the council of the city of Lepcis Magna, with the people, put up a marble statue on account of these merits, with decrees and votes <supplied reason="subaudible">all</supplied> in accord.</p></div>
+         <div type="translation" source="#tantillo2010" xml:lang="it">
+            <p>Nepotianus! A Flavius Nepotianus, uomo perfettissimo,
+               conte e governatore della provincia di Tripolitania. Eminente
+               per giustizia e integrità, eccellentissimo per moderazione e benignità,
+               devoto fautore della probità, dell’onestà e di tutti i
+               pubblici doveri, quanto mai esperto anche delle cose militari,
+               impareggiabile nelle armi e nelle decisioni; per aver accresciuto
+               gli ordini e i provinciali tutti con il rendere giustizia secondo
+               rettitudine e benevolenza, e con molti benefici; per aver
+               schiacciato l’insolenza dei barbari mettendo in pratica la sua
+               scienza militare; per aver reso la difesa della frontiera e la sua
+               ininterrotta protezione munite e sicure anche per i tempi a
+               venire contro ogni incursione nemica; per aver ornato gli edifici
+               delle città con il restauro delle fabbriche o con nuove costruzioni;
+               per questi meriti, l’ordine della città di Leptis
+               Magna insieme al popolo, riecheggiando all’unisono i decreti
+               e i suffragi, collocò una statua marmorea.</p></div>
+         
          <div type="commentary">
-            <p>l. 2. Fl. Nepotianus. Perhaps to be connected with the Nepotianus <title level="m">PW</title> XVI, 2513,5, correspondent of Ausonius. </p>
-         </div>
+            <p>PLRE I Nepotianus 1, see also Nepotianus 4</p><!-- check -->
+            <p>Discussion: <ref target="https://zenon.dainst.org/Record/000250369">Jouffroy (1986)</ref>, p.291 </p>
+            <!--  <p>l. 2. Fl. Nepotianus. Perhaps to be connected with the Nepotianus <title level="m">PW</title> XVI, 2513,5, correspondent of Ausonius. </p>
+         --></div>
       </body>
    </text>
 </TEI>
