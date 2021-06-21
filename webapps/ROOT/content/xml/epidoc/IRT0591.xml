@@ -42,18 +42,18 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote> Late form of Rustic capitals: <height unit="metre">0.09</height>.</handNote>
+                     <handNote> Late form of Rustic capitals: <height unit="metre">0.09</height>; dot for stop.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0200" notAfter="0350" evidence="lettering">Third to fourth century CE (lettering)</origDate>
+                     <origDate notBefore="0250" notAfter="0275" precision="low" evidence="lettering, context">Third quarter of the third century CE</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
+                                 ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: <placeName ref="https://www.slsgazetteer.org/742">Regio IV</placeName>, 
                   <placeName type="monuList" ref="https://www.slsgazetteer.org/719">Forum Severianum</placeName>, at the angle of the East and South Porticoes. </p>
                         </provenance>
                         <provenance type="observed">
@@ -95,7 +95,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins, Tantillo)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -118,25 +118,29 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/>
+               <lb n="0"/>
                <gap reason="lost" extent="unknown" unit="line"/>
-               <lb n="2"/><persName type="attested"><persName type="attested"><name type="cognomen" nymRef="Clemens">Clementis</name></persName> <name type="cognomen" nymRef="Vffil">Vffil</name> <name type="cognomen" nymRef="Amilitis">Amilitis</name></persName> 
-               <lb n="3"/><w lemma="ciuis">ciui</w> <w lemma="patronus">patrono</w> <w lemma="ordo">ordo </w>
-               <w lemma="splendidus"><expan><abbr>spl</abbr><ex>endidissimus</ex></expan></w> 
-               <placeName type="ethnic" nymRef="Lepcimagnensis"><expan><abbr>Lepc</abbr><ex>imagnensium</ex></expan></placeName>
+               <lb n="1"/><g ref="stop"/> <persName type="attested"><name type="cognomen" nymRef="Clemens">Clementis</name></persName> <g ref="stop"/> 
+                  <w lemma="uir"><expan><abbr>u</abbr><ex>iri</ex></expan></w> <g ref="stop"/> <w lemma="egregius"><expan><abbr>e</abbr><ex>gregii</ex></expan></w> <g ref="stop"/> 
+               <w lemma="filius"><expan><abbr>fil</abbr><ex>io</ex></expan></w> <g ref="stop"/> <w lemma="a">a</w> <w lemma="militia">militi<supplied reason="omitted">i</supplied>s</w>
+               <lb n="3"/><w lemma="ciuis">ciui</w> <g type="stop"/> <w lemma="patronus">patrono</w> <g ref="stop"/> <w lemma="ordo">ordo </w>
+               <w lemma="splendidus"><expan><abbr>spl</abbr><ex>endidissimus</ex></expan></w> <g ref="stop"/> 
+               <placeName type="ethnic" nymRef="Lepcimagnensis"><expan><abbr>Lepc</abbr><ex cert="low">imagnensium</ex></expan></placeName>
             </ab></div>
          <div type="apparatus">
             <listApp>
-               <app loc="2">
-                  <lem>Vffil</lem>
-                  <note>: perhaps Clementis u(iri) e(gregii) fil(io) Amilitis. </note>
+               <app loc="1">
+                  <rdg resp="#irt1952">Vffil Amilitis</rdg>
                </app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><gap reason="lost" extent="unknown" unit="character"/> ?Amilitis, son of Clement, eminent man <note>of equestrian status</note> citizen and patron, the most splendid city council of the Lepcimagnensians <supplied reason="subaudible">set this up</supplied> </p></div>
+         <div type="translation" source="#tantillo2010" xml:lang="it">
+            <p>A . . . figlio di Clemente uomo egregio, che ha ricoperto le milizie equestri, al concittadino e patrono, l’ordine splendidissimo
+               di Leptis Magna.</p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            
          </div>
       </body>
    </text>
