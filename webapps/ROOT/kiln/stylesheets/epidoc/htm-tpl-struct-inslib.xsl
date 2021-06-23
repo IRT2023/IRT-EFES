@@ -13,7 +13,9 @@
    <xsl:template name="inslib-body-structure">
      <xsl:call-template name="navigation"/>
 
-     <p><b><i18n:text i18n:key="epidoc-xslt-inslib-description">Description</i18n:text>: </b>
+     <p>
+       <xsl:if test="//t:support">
+         <b><i18n:text i18n:key="epidoc-xslt-inslib-description">Description</i18n:text>: </b>
      <xsl:choose>
        <xsl:when test="//t:support/t:p/text()">
          <xsl:apply-templates select="//t:support/t:p" mode="inslib-dimensions"/>
@@ -23,8 +25,10 @@
        </xsl:when>
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text></xsl:otherwise>
      </xsl:choose>
+       </xsl:if>
 
-     <br />
+       <xsl:if test="//t:layoutDesc">
+         <br />
      <b><i18n:text i18n:key="epidoc-xslt-inslib-text">Text</i18n:text>: </b>
      <xsl:choose>
        <xsl:when test="//t:layoutDesc/t:layout//text()">
@@ -32,14 +36,19 @@
        </xsl:when>
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text>.</xsl:otherwise>
      </xsl:choose>
+       </xsl:if>
+       
+       <xsl:if test="//t:handDesc">
      <br />
      <b><i18n:text i18n:key="epidoc-xslt-inslib-letters">Letters</i18n:text>: </b>
      <xsl:if test="//t:handDesc/t:handNote/text()">
        <xsl:apply-templates select="//t:handDesc/t:handNote"/>
      </xsl:if>
+       </xsl:if>
      </p>
 
-     <p><b><i18n:text i18n:key="epidoc-xslt-inslib-date">Date</i18n:text>: </b>
+     <xsl:if test="//t:origDate">
+       <p><b><i18n:text i18n:key="epidoc-xslt-inslib-date">Date</i18n:text>: </b>
      <xsl:choose>
        <xsl:when test="//t:origin/t:origDate/text()">
          <xsl:apply-templates select="//t:origin/t:origDate"/>
@@ -57,14 +66,19 @@
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text>.</xsl:otherwise>
      </xsl:choose>
      </p>
+     </xsl:if>
 
-     <p><b><i18n:text i18n:key="epidoc-xslt-inslib-findspot">Findspot</i18n:text>: </b>
+     <p>
+       <xsl:if test="//t:provenance">
+       <b><i18n:text i18n:key="epidoc-xslt-inslib-findspot">Findspot</i18n:text>: </b>
      <xsl:choose>
        <xsl:when test="//t:provenance[@type='found'][string(translate(normalize-space(.),' ',''))]">
          <xsl:apply-templates select="//t:provenance[@type='found']" mode="inslib-placename"/>
        </xsl:when>
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text></xsl:otherwise>
      </xsl:choose>
+       </xsl:if>
+       <xsl:if test="//t:origPlace">
      <br/>
      <b><i18n:text i18n:key="epidoc-xslt-inslib-original-location">Original location</i18n:text>: </b>
      <xsl:choose>
@@ -73,6 +87,8 @@
        </xsl:when>
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text></xsl:otherwise>
      </xsl:choose>
+       </xsl:if>
+       <xsl:if test="//t:provenance or //t:repository">
      <br/>
      <b><i18n:text i18n:key="epidoc-xslt-inslib-last-recorded-location">Last recorded location</i18n:text>: </b>
      <xsl:choose>
@@ -92,9 +108,11 @@
          </xsl:choose>
        </xsl:otherwise>
      </xsl:choose>
+       </xsl:if>
      </p>
 
-     <div class="section-container tabs" data-section="tabs">
+     <xsl:if test="//t:div[@type='edition']">
+       <div class="section-container tabs" data-section="tabs">
        <section>
          <p class="title" data-section-title="data-section-title"><a href="#"><i18n:text i18n:key="epidoc-xslt-inslib-edition">Interpretive</i18n:text></a></p>
          <div class="content" id="edition" data-section-content="data-section-content">
@@ -122,8 +140,10 @@
          </div>
        </section>
      </div>
+     </xsl:if>
 
-     <div id="apparatus">
+     <xsl:if test="//t:div[@type='apparatus']">
+       <div id="apparatus">
        <!-- Apparatus text output -->
        <xsl:variable name="apptxt">
          <xsl:apply-templates select="//t:div[@type='apparatus']"/>
@@ -131,8 +151,10 @@
        <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
        <xsl:apply-templates select="$apptxt" mode="sqbrackets"/>
      </div>
+     </xsl:if>
 
-     <div id="translation">
+     <xsl:if test="//t:div[@type='translation']">
+       <div id="translation">
          <xsl:variable name="editor" select="//t:teiHeader/t:fileDesc/t:titleStmt/t:editor"/>
          <xsl:for-each select="//t:div[@type='translation'][@xml:lang]">
            <xsl:if test="@xml:lang"><h3><xsl:choose>
@@ -197,8 +219,10 @@
            <xsl:apply-templates select="$transtxt" mode="sqbrackets"/>
          </xsl:for-each>
      </div>
+     </xsl:if>
 
-     <div id="commentary">
+     <xsl:if test="//t:div[@type='commentary']">
+       <div id="commentary">
        <h3><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text></h3>
        <!-- Commentary text output -->
        <xsl:variable name="commtxt">
@@ -222,16 +246,20 @@
              </p>
          </xsl:otherwise>
        </xsl:choose>
-       
+         
      </div>
+     </xsl:if>
 
-     <p><b><i18n:text i18n:key="epidoc-xslt-inslib-bibliography">Bibliography</i18n:text>: </b>
+     <xsl:if test="//t:div[@type='bibliography']">
+       <p><b><i18n:text i18n:key="epidoc-xslt-inslib-bibliography">Bibliography</i18n:text>: </b>
      <xsl:apply-templates select="//t:div[@type='bibliography']/t:p/node()"/>
      <br/>
      <b><i18n:text i18n:key="epidoc-xslt-inslib-constituted-from">Text constituted from</i18n:text>: </b>
      <xsl:apply-templates select="//t:creation"/>
      </p>
+     </xsl:if>
 
+     <xsl:if test="//t:facsimile">
      <div id="images">
        <h3>Images</h3>
        <xsl:choose>
@@ -276,6 +304,7 @@
          </xsl:otherwise>
        </xsl:choose>
      </div>
+     </xsl:if>
    </xsl:template>
 
    <xsl:template name="inslib-structure">
