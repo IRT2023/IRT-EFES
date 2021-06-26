@@ -34,7 +34,7 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on the surviving face.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on the surviving face, from which a previous text has been erased.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -44,13 +44,13 @@
                <history>
                   <origin>
                      <p>Unknown</p>
-                     <origDate notBefore="0301" notAfter="0400" precision="low" evidence="lettering">Fourth century CE (lettering)</origDate>
+                     <origDate notBefore="0324" notAfter="0326" evidence="context">324-326 CE </origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
                                          ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
-                  <placeName type="monuList" ref="https://www.slsgazetteer.org/760">Wadi Lebdah</placeName> (Rel. Scav.7.8.32)</p>
+                  <placeName type="monuList" ref="https://www.slsgazetteer.org/760">Wadi Lebdah</placeName> )</p>
                         </provenance>
                         <provenance type="observed">
                            <p> 
@@ -92,7 +92,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins, Tantillo)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -110,30 +110,34 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>771</citedRange></bibl>, whence 
+            <p><bibl> <ptr target="relscav"/> <citedRange>7.8.32</citedRange></bibl>, 
+               <bibl><ptr target="irt1952"/>, <citedRange>771</citedRange></bibl>, whence 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT771.html">771</ref></citedRange></bibl>;
-               Assembled <bibl><ptr target="tantillo2010"/> <citedRange>72</citedRange></bibl>, whence 
+               Revised <bibl><ptr target="tantillo2010"/> <citedRange>72</citedRange></bibl>, whence 
                <bibl><ptr target="EDH"/> (Bigi, 2014) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059619">059619</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="0"/>
-               <gap reason="lost" quantity="1" unit="line"/>
-               <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/><w lemma="per" part="F">per</w> <w part="I">t<unclear>h</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="2"/>
-               <gap reason="lost" extent="unknown" unit="character"/><w part="F">dine</w> <w part="I">su</w><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="3"/>
-               <gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>i</unclear>um</w> <w lemma="columna" part="I">column</w><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="5"/>
-               <gap reason="lost" extent="unknown" unit="character"/> <w lemma="opus">operis</w> <w part="I">p<unclear>r</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="6"/>
-               <gap reason="lost" extent="unknown" unit="character"/><w lemma="tu" part="M">tu</w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w lemma="tripertitus"><supplied reason="lost">tr</supplied>ipertit<supplied reason="lost">a</supplied></w> <supplied reason="lost"><w lemma="porticus">porticus</w></supplied>
+<lb n="2"/><w lemma="magnitudo"><supplied reason="lost">magnitu</supplied>dine</w> <w lemma="suus">su<supplied reason="lost">i</supplied></w> <supplied reason="lost"><w lemma="ac">ac</w></supplied> <placeName nymRef="#Troadensis"><supplied reason="lost">Troa</supplied>
+<lb break="no" n="3"/><supplied reason="lost">dens</supplied>ium</placeName> <w lemma="columna">column<supplied reason="lost">arum</supplied></w> <w lemma="adorno"><supplied reason="lost">ado</supplied>
+<lb break="no" n="4"/><supplied reason="lost">rnat</supplied>a</w> <w>operis</w> <w lemma="prouincialis">pr<supplied reason="lost">ovincialium</supplied></w>
+<lb n="5"/><supplied reason="lost"><w lemma="ac">ac</w></supplied> <w lemma="sumptus"><supplied reason="lost">sump</supplied>tu</w> <w lemma="publicus">p<supplied reason="lost">ublico</supplied></w>
+
             </ab></div>
+         
+         <div type="apparatus">
+            <listApp>
+               <app loc="1"><rdg resp="#irt1952">[---]per tḥ[---] </rdg></app>
+               <app loc="4"><rdg resp="#irt1952">[---] operis pṛ[---] </rdg></app></listApp>
+         </div>
+         
+         
          <div type="translation" source="#irt2009" xml:lang="en">
             <p><gap reason="lost" extent="unknown" unit="character"/> <note>l.3 column<supplied reason="lost">s <note>case and number unknown</note></supplied><gap reason="lost" extent="unknown" unit="character"/> of the work <gap reason="lost" extent="unknown" unit="character"/></note></p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>The text has been restored by reference to <ref type="inscription" n="IRT0467">467</ref>, lines 5-6.</p>
          </div>
       </body>
    </text>
