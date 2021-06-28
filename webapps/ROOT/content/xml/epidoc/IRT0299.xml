@@ -7,7 +7,7 @@
       <fileDesc>
          <titleStmt>
             <title>
-               <rs type="textType">Title</rs> for an image of Liber Pater, Amor and Apollo </title>
+               <rs type="textType">Verse</rs> <rs type="textType">dedication</rs> for an image of Liber Pater, Amor and Apollo </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
@@ -22,7 +22,7 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository>?<!-- Unknown? --></repository></msIdentifier>
+               <msIdentifier><repository>Findspopt</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -51,10 +51,11 @@
                            <p>
                               <placeName type="ancientFindspot"
                                          ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
-                  <placeName type="monuList" ref="https://www.slsgazetteer.org/741">Regio III</placeName>, insula  8 opposite the Chalcidicum; found in association with a statue combining the attributes of all three gods.</p>
+                              <placeName ref="https://www.slsgazetteer.org/741">Regio III</placeName>, insula 8 opposite the 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/709">Chalcidicum</placeName>; found in association with a statue combining the attributes of all three gods.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p></p>
+                           <p>Findspot</p>
                         </provenance>
                </history>
             </msDesc>
@@ -92,7 +93,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription (Reynolds, Ward-Perkins, Tantillo)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -108,7 +109,9 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>299</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT299.html">299</ref></citedRange></bibl>;
+            <p><bibl><ptr target="irt1952"/>, <citedRange>299</citedRange></bibl>, whence
+               <bibl><ptr target="guey1953"/> <citedRange>201d</citedRange></bibl>,
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT299.html">299</ref></citedRange></bibl>;
                <bibl><ptr target="tantillo2010"/> <citedRange>87</citedRange></bibl>
                <bibl><ptr target="EDH"/> (Bigi, 2014)
                   <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/018194">018194</ref></citedRange></bibl></p>
@@ -116,15 +119,19 @@
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><w lemma="sum">Sum</w> <persName type="divine"><name nymRef="Liber">Liber</name></persName>
-               <!-- amorque is two words -->
+               <lb n="1"/><space quantity="1" unit="character"/> <w lemma="sum">Sum</w> <persName type="divine"><name nymRef="Liber">Liber</name></persName> <space quantity="1" unit="character"/>
+             
                <lb n="2"/><persName type="divine"><name type="cognomen" nymRef="Amor"><w lemma="amor"><expan><abbr>Amorq</abbr><ex>ue</ex></expan></w></name> <w lemma="deus">deus</w></persName>
                <lb n="3"/><w lemma="et">et</w> <w lemma="pulcher">pulcher</w> <persName type="divine"><name nymRef="Apollo">Apollo</name></persName>
                </ab></div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>I am Liber and the god Love and beautiful Apollo.</p></div>
+         
+         <div type="translation" resp="#tantillo2010" xml:lang="it">
+            <p> Sono Libero, e il dio Amore, e il bell’Apollo.</p>
+         </div>
          <div type="commentary">
-            <p>No comment.</p>
+            <p>Recognised as verse by Guey, loc.cit.</p>
          </div>
       </body>
    </text>
