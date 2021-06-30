@@ -17,10 +17,10 @@
        <xsl:if test="//t:support">
          <b><i18n:text i18n:key="epidoc-xslt-inslib-description">Description</i18n:text>: </b>
      <xsl:choose>
-       <xsl:when test="//t:support/t:p/text()">
+       <xsl:when test="//t:support/t:p/node()">
          <xsl:apply-templates select="//t:support/t:p" mode="inslib-dimensions"/>
        </xsl:when>
-       <xsl:when test="//t:support//text()">
+       <xsl:when test="//t:support//node()">
          <xsl:apply-templates select="//t:support" mode="inslib-dimensions"/>
        </xsl:when>
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text></xsl:otherwise>
@@ -31,7 +31,7 @@
          <br />
      <b><i18n:text i18n:key="epidoc-xslt-inslib-text">Text</i18n:text>: </b>
      <xsl:choose>
-       <xsl:when test="//t:layoutDesc/t:layout//text()">
+       <xsl:when test="//t:layoutDesc/t:layout//node()">
          <xsl:apply-templates select="//t:layoutDesc/t:layout" mode="inslib-dimensions"/>
        </xsl:when>
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text>.</xsl:otherwise>
@@ -41,7 +41,7 @@
        <xsl:if test="//t:handDesc">
      <br />
      <b><i18n:text i18n:key="epidoc-xslt-inslib-letters">Letters</i18n:text>: </b>
-     <xsl:if test="//t:handDesc/t:handNote/text()">
+     <xsl:if test="//t:handDesc/t:handNote/node()">
        <xsl:apply-templates select="//t:handDesc/t:handNote"/>
      </xsl:if>
        </xsl:if>
@@ -50,7 +50,7 @@
      <xsl:if test="//t:origDate">
        <p><b><i18n:text i18n:key="epidoc-xslt-inslib-date">Date</i18n:text>: </b>
      <xsl:choose>
-       <xsl:when test="//t:origin/t:origDate/text()">
+       <xsl:when test="//t:origin/t:origDate/node()">
          <xsl:apply-templates select="//t:origin/t:origDate"/>
          <xsl:if test="//t:origin/t:origDate[@type='evidence']">
            <xsl:text>(</xsl:text>
@@ -82,7 +82,7 @@
      <br/>
      <b><i18n:text i18n:key="epidoc-xslt-inslib-original-location">Original location</i18n:text>: </b>
      <xsl:choose>
-       <xsl:when test="//t:origin/t:origPlace/text()">
+       <xsl:when test="//t:origin/t:origPlace/node()">
          <xsl:apply-templates select="//t:origin/t:origPlace" mode="inslib-placename"/>
        </xsl:when>
        <xsl:otherwise><i18n:text i18n:key="epidoc-xslt-inslib-unknown">Unknown</i18n:text></xsl:otherwise>
@@ -229,7 +229,7 @@
          <xsl:apply-templates select="//t:div[@type='commentary']//t:p"/>
        </xsl:variable>
        <xsl:choose>
-         <xsl:when test="//t:div[@type='commentary']//t:p//text()">
+         <xsl:when test="//t:div[@type='commentary']//t:p//node()">
            <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
            <xsl:apply-templates select="$commtxt" mode="sqbrackets"/>
          </xsl:when>
@@ -407,7 +407,7 @@
        <xsl:when test="//t:titleStmt/t:title">
          <xsl:apply-templates select="//t:titleStmt/t:title"/>
        </xsl:when>
-       <xsl:when test="//t:sourceDesc//t:bibl/text()">
+       <xsl:when test="//t:sourceDesc//t:bibl/node()">
          <xsl:value-of select="//t:sourceDesc//t:bibl"/>
        </xsl:when>
        <xsl:when test="//t:idno[@type='filename']/text()">
