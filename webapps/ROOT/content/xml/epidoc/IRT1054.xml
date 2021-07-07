@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1054" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Dedication</rs> to Jupiter Hammon</title>
+            <editor xml:id="jmr">J. M. Reynolds</editor>
+            <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
+         <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">IRT1054</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository> . . .</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p> Block (<dimensions>
+                                 <width unit="metre">0.42</width>
+                                 <height unit="metre">0.30</height>
+                              </dimensions>).</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on one face.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> Late second to third century capitals.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <p>Unknown</p>
+                     <origDate notBefore="0205" notAfter="0209" precision="low" evidence="reign">205-209 CE </origDate>
+                  </origin>
+                  <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/658">Bu-Ngem</placeName>:  on the hill below the
+                  <placeName type="monuList" ref="https://www.slsgazetteer.org/2238">Temple of Jupiter Ammon</placeName></p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p>Findspot. </p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+            <language ident="xpu">Punic</language>
+            <language ident="ber-Latn">Native Libyan language in Latin script</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/2220431/abu-nujaym.html">Abū Nujaym</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Previous publication  (Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2021-06-07" who="cmr">Transcribed</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><surface/></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p><bibl><ptr target="faure2013"/>, <citedRange>100.b</citedRange></bibl>, whence 
+               <bibl><ptr target="ae"/>, <citedRange>2013.1767</citedRange></bibl></p>
+         </div>
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab><lb n="0"/> <gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><persName type="emperor"><w>nobilissimi</w> <name>Caesaris</name></persName> <w>et</w> <persName type="emperor"><name>Iuliae</name> <name><expan>Augusta</expan>e</name></persName> <w>matris</w>
+               <lb n="2"/><w><expan>castrorum</expan></w> <w>totiusque</w> <w>domus</w> <w>divinae</w> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <w><expan>legato</expan></w> <persName type="emperor"><name><expan>Augggustorum</expan></name></persName> <w><expan>pro</expan></w> <w><expan>praetore</expan></w> <persName type="attested"><name type="gentilicium" nymRef="Tullius">Tullius</name> <name type="cognomen" nymRef="Romulus">Romulus</name></persName>  
+              <lb n="4"/><w lemma="centurio"><expan><abbr>c</abbr><ex>enturio</ex></expan></w> <w>ex</w> <w lemma="maioriarius">maiorario</w> <w><expan>praepositus</expan></w> <w lemma="uexillatio"><expan>vexillationis</expan></w> 
+               <w><expan>legionis</expan></w> <num value="3">III</num> <addName><w><expan>Augustae</expan></w></addName> <w><expan>piae</expan></w> <w><expan>uindici</expan>s</w>
+               <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><persName type="attested"><name><seg part="F">us</seg></name> <persName type="attested"><name>Longini</name></persName></persName><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="5a"/><gap reason="lost" extent="unknown" unit="line"/>
+            </ab></div>
+         <div type="translation" resp="#cmr" xml:lang="en">
+            <p/></div>
+         <div type="commentary">
+            <p>No comment.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1002" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Name</rs> to Commodus by Messius Rufinus</title>
+         <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">IRT1002</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Marble</material> 
+                              <objectType>paving</objectType> stone: <dimensions><height>0.325</height><width>0.47</width> </dimensions>
+               </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face, which is very worn, in two hands; 
+                           it is not clear whether thwe two lines are related.</layout> <!-- check -->
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote> <height unit="metre">0.047-0.075</height>. </handNote></handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <p>Findspot</p>
+                     <origDate/>
+                  </origin>
+                  <provenance type="found">
+                           <p>
+                              <placeName type="ancientFindspot"
+                                 ref="https://www.slsgazetteer.org/659">Sabratha</placeName>: <placeName ref="https://www.slsgazetteer.org/859">Regio V</placeName>, 
+                              (insula  7) <placeName type="monuList" ref="https://www.slsgazetteer.org/860">Temple of Hercules</placeName>, in the paving of the portico.</p></provenance>
+                        <provenance type="observed">
+                           <p>Findspot</p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+            <language ident="xpu">Punic</language>
+            <language ident="ber-Latn">Native Libyan language in Latin script</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/2212771/sabratah.html">Sabratah</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Previous publication (Roueché)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
+         <change when="2008-09-09" who="ZA">converted using CHET-C</change>
+         <change when="2009-05-19" who="RV">Added Figures</change>
+         <change when="2009-08-24" who="RV">Added Figures</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><surface/><!--No photographs.--></facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p> <bibl><ptr target="aiosa2013"/>, <citedRange unit="page">203-204</citedRange></bibl>, whence 
+               <bibl><ptr target="ae"/>, <citedRange>2013.1761</citedRange></bibl> </p>
+         </div>
+         <div type="edition" xml:lang="ber-Latn" xml:space="preserve">
+            <ab>
+                  <lb n="1"/><orig>Iπiu</orig>
+               <lb n="2"/><orig>Sat</orig>
+               </ab></div>
+         
+         
+         
+         <div type="translation" source="#irt2009" xml:lang="en"></div>
+         <div type="commentary">
+            
+         </div>
+      </body>
+   </text>
+</TEI>
