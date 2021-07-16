@@ -10,7 +10,8 @@
                <rs type="textType">Dedication</rs> to Liber Pater </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
-         <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
+         <editor xml:id="cmr">Charlotte Roueché</editor>
+            <editor xml:id="cb">Caroline Barron</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
             <idno type="filename">IRT0294</idno>
@@ -121,8 +122,8 @@
                <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD045500">045500</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <ab>
-               <lb n="1"/><persName type="divine" key="liber"><name nymRef="Liber"><w lemma="Liber">Libero</w></name> <w lemma="pater">Patri</w></persName> <w lemma="sacer"><expan><abbr>sacr</abbr><ex>um</ex></expan></w>
+           
+               <div type="textpart" n="i"> <ab><lb n="1"/><persName type="divine" key="liber"><name nymRef="Liber"><w lemma="Liber">Libero</w></name> <w lemma="pater">Patri</w></persName> <w lemma="sacer"><expan><abbr>sacr</abbr><ex>um</ex></expan></w>
                <lb n="2"/><persName type="attested"><name type="cognomen" nymRef="Boncarth">Boncarth</name> 
                <persName type="attested"><name type="cognomen" nymRef="Muthumbal">Mu<unclear>th</unclear>umbalis</name> 
                   <w lemma="filius"><expan><abbr>f</abbr><ex>ilius</ex></expan></w>
@@ -130,11 +131,11 @@
                <lb n="5"/><w lemma="denarius"><expan><abbr><am><g ref="symbols.xml#denarius"/></am></abbr><ex>denariorum</ex></expan></w> <num value="62">LXII</num> <w lemma="qui">quibus</w>
                <w lemma="adicio">adiecit</w> <w lemma="de">de</w> <w lemma="suus">suo</w> 
                <w lemma="denarius"><expan><abbr><am><g ref="symbols.xml#denarius"/></am></abbr><ex>denarios</ex></expan></w> <num value="53">LIII</num>
-            </ab>
-         <div type="textpart" xml:lang="xpu">
+            </ab></div>
+         <div type="textpart" xml:lang="xpu" n="ii">
         <ab> 
-         <lb n="1"/>mᵓš z ṭynᵓ lᵓdn šdrpᵓ b̊d̊
-         <lb n="2"/>mlqrt bn mtnbᶜl šmkyᵓ̊
+         <lb n="1"/>mᵓš z ṭynᵓ lᵓdn <persName type="divine"><name>šdrpᵓ</name></persName> <persName type="attested"><name>b̊d̊
+         <lb n="2"/>mlqrt</name> <w>bn</w> <name>mtnbᶜl</name></persName> šmkyᵓ̊
          <lb n="3"/>ms̊p̊r̊[ ]hb̊qr špṭm̊ ṭnᵓt̊[
          <lb n="4"/>ṭ[ ]wššm wšnm
            <lb n="5"/>[ dnᶜ]r̊yᵓ ḥmšm wšlš
@@ -143,24 +144,26 @@
          </div>
          <div type="apparatus">
             <listApp>
-               <app loc="3">
+               <app loc="i.3">
                   <rdg resp="#irt1952">sobti IIIvir</rdg></app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p>Sacred to Liber Pater; Boncath son of Muthumbal, ?sufete, member of the commitee of three for the market <supplied reason="subaudible">set this up</supplied> 
-               using sixty-two denarii raised in fines, to which he added fifty-three denarii from his own fonds.</p>
-      <p resp="cb">This statue has been set up to the lord ŠDRPᵓ B̊D̊
+            <p>i: Sacred to Liber Pater; Boncath son of Muthumbal, ?sufete, member of the commitee of three for the market <supplied reason="subaudible">set this up</supplied> 
+               using sixty-two denarii raised in fines, to which he added fifty-three denarii from his own fonds.</p> </div>
+         <div type="translation" resp="#cb" xml:lang="en"> <p>ii: This statue has been set up to the lord ŠDRPᵓ B̊D̊
             MLQRT, son of MTNBᶜL ŠMKYᵓ̊
             [ ]il BQR (?) sufetes
             [ ] and sixty two
             [ ]fifty-three denari</p>     
-         </div>       
+         </div> 
+         <div type="translation" source="#dellavida1942" xml:lang="en"> <!-- surely Italian -->
+            <p>ii: This is the statue which Bodmelqart ben Muttunba`al Sh.- m.ki set up to the Lord Sh. d. r.p.</p> </div>
+         <div type="translation" source="#vitaevrard2002" xml:lang="fr"> <!-- surely Italian -->
+            <p>ii: Cette statue, l'a élevé au Seigneur Shadrapa Bodmelqart fils de Muthunba [ . . .</p> </div>
        
          <div type="commentary">
-            <p>Of the Neo-Punic text. 1. 1 only is clearly legible. 
-               It is translated by Levi Della Vida: "This is the statue which Bodmelqart ben Muttunba`al Sh.- m.ki set up to the Lord Sh. d. r.p,". 
-            Di Vita Évrard: "cette statue, l'a élevé au Seigneur Shadrapa Bodmelqart fils de Muthunbal".</p>
+            <p>ii: only line 1 is clearly legible.</p>
          </div>
       </body>
    </text>
