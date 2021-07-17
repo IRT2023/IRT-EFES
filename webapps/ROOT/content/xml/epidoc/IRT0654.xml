@@ -11,7 +11,9 @@
                </rs> inscription of Boncar Clodius </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
-         <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
+         <editor xml:id="cmr">Charlotte Roueché</editor>
+         <editor xml:id="cb">Caroline Barron</editor>
+         </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
             <idno type="filename">IRT0654</idno>
@@ -107,6 +109,7 @@
       <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-07-17" who="CB">Added Punic text and translation</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
@@ -134,7 +137,7 @@
                <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059507">059507</ref></citedRange></bibl>
                    </p>
          </div>
-         <div type="edition" xml:space="preserve">
+         <div type="edition" xml:space="preserve"><div type="textpart" n="i"> 
             <ab xml:lang="la">
                <lb n="1"/><persName type="attested"><name type="cognomen" nymRef="Boncar">Bonca<unclear>r</unclear></name> <name type="cognomen" nymRef="Mecrasi"><unclear>Me</unclear>crasi</name> 
                <name type="cognomen" nymRef="Clodius">Clodi<lb n="2" break="no"/>us</name></persName> <w lemma="medicus">medicus</w></ab>
@@ -144,6 +147,12 @@
                <w lemma="ἰατρός"><supplied reason="lost" evidence="previouseditor">ἰατρός</supplied></w>
                
             </ab></div>
+         <div type="textpart" xml:lang="xpu" n="ii">
+            <ab>
+               <lb n="1"/>bdᶜlqrt hmqrty qlᶜᵓy hrbᵓ
+            </ab>
+         </div>
+         </div>
          <div type="apparatus">
             <listApp>
                <app loc="3-4">
@@ -153,6 +162,10 @@
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>Boncar Clodius son of Mecrasus, doctor <note>in Latin</note> </p><p>Boncar Clodius son of Mecrasus, doctor <note>in Greek</note> </p></div>
+         <div type="translation" source="#cb" xml:lang="en">
+            <p>ii. BDᶜLQRT, the Mekrathi, Clodius, the doctor</p>
+         </div>
+         
          <div type="commentary">
             <p>ll. 1-2. Boncar Mercrasi Clodius. Also in <ref type="inscription" n="IRT0655">655</ref>, ll. 1-2.</p>
          </div>
