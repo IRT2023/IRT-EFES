@@ -2,16 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1087" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1101" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmentary 
-               <rs type="textType">honours</rs> for Blaesilla</title>
+            <title>
+               <rs type="textType">Funerary</rs> inscription</title>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1087</idno>
+            <idno type="filename">IRT1101</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -20,41 +20,37 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Three joining fragments of a marbled <material>limestone</material> <objectType>panel</objectType> (<dimensions>
-                                 <width unit="metre">0.52</width>
-                                 <height unit="metre">0.16</height>
-                              </dimensions>)</p>
+                           <p><material>Limestone</material> 
+                              <objectType>block</objectType>, <dimensions><width>0.93</width> <depth>0.78</depth> <height>0.455</height></dimensions></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on the face, within a <rs type="decoration">tabella ansata</rs>, <dimensions><height>0.34</height> <width>0.765</width></dimensions>; i to the left of ii, 
+                        iii across the face below both texts</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Standard forms</handNote>
+                     <handNote><height>0.05</height> </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <p>Findspot</p>
-                     <origDate>No indication</origDate>
+                     <origDate notAfter="0175" notBefore="0125" evidence="context">Mid second century CE</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                 ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:  
-                              <placeName ref="https://www.slsgazetteer.org/1705">Decumanus maximus</placeName>, 
-                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1702">Schola</placeName>; from the aula à exèdres.</p>
+                                 ref="https://www.slsgazetteer.org/6456">Western Djebel</placeName>:  in the remains of a tomb at 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/2263">Al-Brahama</placeName>.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>
-                              <placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName>
-                           </p>
+                           <p>Findspot</p>
                         </provenance>
                </history>
             </msDesc>
@@ -95,31 +91,31 @@
       <creation>Previous publications (Roueché)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2021-07-16" who="CMR">Transcribed</change>
+         <change when="2021-05-31" who="CMR">transcribed</change>
       </revisionDesc>
    </teiHeader>
    <facsimile><surface/>
-   </facsimile>
+                  </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="chaisemartin2017"/>, <citedRange>38</citedRange>, no. 2 and fig.31</bibl>, whence  
-               <bibl><ptr target="ae"/>, <citedRange>2017.1683</citedRange></bibl>.<!-- check -->
+            <p> 
+               <bibl><ptr target="elmayer2020"/>, <citedRange unit="page">26</citedRange>, no.2</bibl> 
                </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <ab><lb n="1"/><persName type="attested"><name nymRef="Aquilia">Aquiliae</name>  <g ref="symbols.xml#stop"/> <persName type="attested"><name nymRef="Caius"><expan><abbr>C</abbr><ex>aii</ex></expan></name></persName>  <g ref="symbols.xml#stop"/>
-               <w lemma="filia"><expan><abbr>f</abbr><ex>iliae</ex></expan></w>  <g ref="symbols.xml#stop"/> <name nymRef="Blaesilla">Blaesill<unclear>a</unclear><supplied reason="lost">e</supplied></name></persName>
-      <lb n="2"/><gap reason="lost" quantity="12" unit="character"/> <w lemma="optimus"><unclear>optima</unclear><supplied reason="lost">e</supplied></w> <g ref="symbols.xml#stop"/> <gap reason="lost" extent="unknown" unit="character"/>
-       <lb n="2a"/>     <gap reason="lost" extent="unknown" unit="line"/></ab>
-           
+           <ab>
+         <lb n="1"/><persName type="divine" key="manes"><w lemma="deus"><expan><abbr>D</abbr><ex>is</ex></expan></w> <w lemma="manes"><expan><abbr>m</abbr><ex>anibus</ex></expan></w></persName> <w lemma="sacer"><expan><abbr>s</abbr><ex>acrum</ex></expan></w>
+           <lb n="2"/><persName type="attested"><name nymRef="Flavius">Flavi</name> <name nymRef="Venustus">Venus
+              <lb n="3"/>ti</name></persName> <w><expan><abbr>vix</abbr><ex>it</ex></expan></w> <date type="life-span" dur="P70Y"><w>annis</w>
+             <lb n="4"/><num value="70">LXX</num></date>
+          <lb n="5"/><w lemma="filius">filii</w> <w lemma="mereo">merenti</w></ab>
+            
          </div>
-         
-         
-         <div type="translation" source="#chaisemartin2017" xml:lang="fr">
-            <p>À Aquilia Blaesilla, fille de Caius . . . excellente . . . </p></div>
+         <div type="translation" source="#elmayer2020" xml:lang="en">
+            <p>Sacred to the departed spirits of Flavius Venustus, (who) lived 70 years, (his) children (set this up) to a deserving (parent).</p></div>
          <div type="commentary">
-            <p>No comment.</p>
+            
          </div>
       </body>
    </text>

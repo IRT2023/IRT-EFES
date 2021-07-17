@@ -7,7 +7,7 @@
       <fileDesc>
          <titleStmt>
             <title>
-               <rs type="textType">Funerary</rs> inscription</title>
+               <rs type="textType">Name</rs></title>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
@@ -20,37 +20,41 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository>Findspot</repository></msIdentifier>
+               <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
-                        <support>
-                           <p><material>Limestone</material> 
-                              <objectType>block</objectType>, <dimensions><width>0.93</width> <depth>0.78</depth> <height>0.455</height></dimensions></p>
+                        <support>Fragmentary 
+                           <p><material>limestone</material> <objectType>architrave</objectType> block, brken to left, complete to right 
+                              
+               (no measurements)</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on the face, within a <rs type="decoration">tabella ansata</rs>, <dimensions><height>0.34</height> <width>0.765</width></dimensions>; i to the left of ii, 
-                        iii across the face below both texts</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the face</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote><height>0.05</height> </handNote>
+                     <handNote> <height unit="metre">0.20</height>
+                     </handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <p>Findspot</p>
-                     <origDate notAfter="0175" notBefore="0125" evidence="context">Mid second century CE</origDate>
+                     <p>South façade of the <placeName ref="https://www.slsgazetteer.org/1702">Schola</placeName></p>
+                     <origDate>No indication</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                 ref="https://www.slsgazetteer.org/6456">Western Djebel</placeName>:  in the remains of a tomb at 
-                              <placeName type="monuList" ref="https://www.slsgazetteer.org/2263">Al-Brahama</placeName>.</p>
+                                 ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:  
+                              <placeName ref="https://www.slsgazetteer.org/1705">Decumanus maximus</placeName>, 
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/1702">Schola</placeName>, reused in the baths, room C5.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>Findspot</p>
+                           <p>
+                              <placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName>
+                           </p>
                         </provenance>
                </history>
             </msDesc>
@@ -91,31 +95,29 @@
       <creation>Previous publications (Roueché)</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2021-05-31" who="CMR">transcribed</change>
+         <change when="2021-07-16" who="CMR">Transcribed</change>
+         
       </revisionDesc>
    </teiHeader>
    <facsimile><surface/>
-                  </facsimile>
+   </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p> 
-               <bibl><ptr target="elmayer2020"/>, <citedRange unit="page">26</citedRange>, no.2</bibl> 
+            <p><bibl><ptr target="chaisemartin2017"/>, <citedRange>27</citedRange> and fig. 12</bibl>, whence  
+               <bibl><ptr target="ae"/>, <citedRange>2017.1682</citedRange></bibl>.<!-- check -->
                </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-           <ab>
-         <lb n="1"/><persName type="divine" key="manes"><w lemma="deus"><expan><abbr>D</abbr><ex>is</ex></expan></w> <w lemma="manes"><expan><abbr>m</abbr><ex>anibus</ex></expan></w></persName> <w lemma="sacer"><expan><abbr>s</abbr><ex>acrum</ex></expan></w>
-           <lb n="2"/><persName type="attested"><name nymRef="Flavius">Flavi</name> <name nymRef="Venustus">Venus
-              <lb n="3"/>ti</name></persName> <w><expan><abbr>vix</abbr><ex>it</ex></expan></w> <date type="life-span" dur="P70Y"><w>annis</w>
-             <lb n="4"/><num value="70">LXX</num></date>
-          <lb n="5"/><w lemma="filius">filii</w> <w lemma="mereo">merenti</w></ab>
-            
+            <ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <persName type="attested"><name nymRef="Blaesilla"><seg part="I">Blaesi<milestone unit="block"/><supplied reason="lost">ll</supplied></seg></name></persName><gap reason="lost" extent="unknown" unit="character"/></ab>
+           
          </div>
-         <div type="translation" source="#elmayer2020" xml:lang="en">
-            <p>Sacred to the departed spirits of Flavius Venustus, (who) lived 70 years, (his) children (set this up) to a deserving (parent).</p></div>
+         
+         
+         <div type="translation" source="#chaisemartin2017" xml:lang="fr">
+            <p> . . . ] Blaesi[lla <note>case unknown</note>  . . .</p></div>
          <div type="commentary">
-            
+            <p>No comment.</p>
          </div>
       </body>
    </text>
