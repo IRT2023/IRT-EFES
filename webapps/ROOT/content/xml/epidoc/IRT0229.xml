@@ -10,7 +10,9 @@
                <rs type="textType">Dedication</rs> to Apollo</title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
-         <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
+         <editor xml:id="cmr">Charlotte Roueché</editor>
+         <editor xml:id="cb">Caroline Barron</editor>
+         </titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
             <idno type="filename">IRT0229</idno>
@@ -102,6 +104,7 @@
       <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-07-17" who="CB">Added Punic text and translation</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
@@ -129,7 +132,7 @@
               <bibl><ptr target="irt1952"/>, <citedRange>229</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT229.html">229</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD026850">026850</ref></citedRange></bibl>.
             </p>
          </div>
-         <div type="edition" xml:lang="la" xml:space="preserve">
+         <div type="edition" xml:lang="la" xml:space="preserve" n="i">
             <ab>
                <lb n="1"/><del rend="erasure"><persName type="divine" key="apollo"><name nymRef="Apollo">Apollini</name></persName>
                <lb n="2"/><w lemma="sacer">sacrum</w>
@@ -141,9 +144,23 @@
                   <w lemma="suus"><expan><abbr>s</abbr><ex>uo</ex></expan></w> 
                   <w lemma="do"><expan><abbr>d</abbr><ex>edit</ex></expan></w>
                </del>
-            </ab></div>
+            </ab>
+         <div type="textpart" xml:lang="xpu" n="ii">
+            <ab>
+               <lb n="1"/>ᶜb̊d̊mlq̊rt bn mt/n[ ]b[ 
+               <lb n="2"/>]l[ ]bᶜ[ 
+             <lb n="3"/>]ᶜmyᵓn/t[
+
+            
+            </ab>
+         </div>
+         
+         </div>
          <div type="translation" source="#irt2009" xml:lang="en">
-            <p>Sacred to Apollo. Aurellius son of Epagrus gave this at his own expense.</p></div>
+            <p>i. Sacred to Apollo. Aurellius son of Epagrus gave this at his own expense.</p></div>
+         <div type="translation" source="#cb" xml:lang="en">
+            <p>ii. B̊D̊MLQ̊RT, the son of MT/N[ ]B</p>
+         </div>
          <div type="commentary">
             <p>ll. 3-4. <foreign xml:lang="la">Aurellius Epagri filius</foreign>. See also in <ref type="inscription" n="IRT0246">246</ref>.</p>
          </div>
