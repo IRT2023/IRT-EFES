@@ -41,12 +41,12 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote> Lettering: <height unit="metre" atLeast="0.07" atMost="0.09">0.07-0.09</height>.</handNote>
+                     <handNote>  <height unit="metre" atLeast="0.07" atMost="0.09">0.07-0.09</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <p>Unknown</p>
+                     <p>Findspot</p>
                      <origDate notBefore="0301" notAfter="0400" precision="low">The floor is of the fourth century, but antedates the church in its present form.</origDate>
                   </origin>
                   <provenance type="found">
@@ -95,7 +95,7 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Previous publications (Roueché)</creation>
       </profileDesc>
       <revisionDesc>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
@@ -121,37 +121,32 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
                <lb n="1"/><persName type="attested"><name type="gentilicium" nymRef="Flauius"><expan><abbr>Fl</abbr><ex>auius</ex></expan></name> 
-               <name type="cognomen" nymRef="Bon">Bon<gap reason="lost" extent="unknown" unit="character"/></name></persName>
-               <lb n="2"/> <w lemma="exceptor">excepto<unclear>r</unclear></w>
-               <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="3"/><w part="F">m</w> <w lemma="se">suis</w> 
-               <w lemma="de" part="F">de</w><gap reason="lost" extent="unknown" unit="character"/>
+               <name type="cognomen" nymRef="Bon">Bon<unclear>e</unclear><gap reason="lost" extent="unknown" unit="character"/></name></persName>
+               <lb n="2"/> <w lemma="exceptor">excepto<unclear>r</unclear></w> <w lemma="cum"><supplied reason="lost">cu</supplied>
+               <lb n="3" break="no"/>m</w> <w lemma="se">suis</w> 
+               <orig>de</orig> <gap reason="lost" quantity="4" unit="character"/>
                <lb n="4"/><w lemma="uotum">uotum</w> <w lemma="soluo">s<supplied reason="lost">oluit</supplied></w>
             </ab></div>
          <div type="apparatus">
             <listApp>
                <app>
                   <rdg resp="#romanelli1940">
-                     <expan>
-                        <abbr>Fl</abbr>
-                        <ex>auius</ex>
-                     </expan>Boni<supplied reason="lost">fatius</supplied> 
-                  exceptor <supplied reason="lost">cu</supplied>m suis de<supplied reason="lost">o</supplied> 
-                  uotum s<supplied reason="lost">oluit</supplied>
-                  </rdg>
-                  <note>l. 2 can more easily be read as
-                     <foreign xml:lang="la">EXCEPTO N<gap reason="lost" extent="unknown" unit="character"/>
-                     </foreign>
-                  </note>
-               </app>
+                     Fl(auius) Boni[fatius] exceptor [cu]m suis de[o] uotum s[oluit]
+                  </rdg></app>
+               <app loc="1">  
+                  <rdg resp="#irt1952">BON[ . . .</rdg></app>
+               <app loc="2">  
+                  <rdg resp="#irt1952">
+                     <note>l. 2 can more easily be read as EXCEPTO N[ . .</note>
+                  </rdg></app>
             </listApp>
          </div>
          <div type="translation" source="#irt2009" xml:lang="en">
             <p>Flavius Bon<supplied reason="lost" cert="low">ifatius</supplied>  shorthand writer, <supplied reason="lost">with</supplied> his family, paid 
-               his <supplied reason="lost">vow</supplied></p></div>
+               his vow</p></div>
          <div type="commentary">
-            <p>The most recent excavation (1949) appears to establish that the mosaic is contemporary with an earlier
-               form of the church, and is therefore Christian.</p>
+            <!-- <p>The most recent excavation (1949) appears to establish that the mosaic is contemporary with an earlier
+               form of the church, and is therefore Christian.</p> -->
          </div>
       </body>
    </text>
