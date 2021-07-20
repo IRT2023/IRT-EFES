@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1142" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1145" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -12,7 +12,7 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1142</idno>
+            <idno type="filename">IRT1145</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
                   (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
@@ -28,13 +28,13 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><objectType>Tomb</objectType> of rubble, with a stucco surface 
-                              <dimensions><width>1.38</width> <depth>0.52</depth> <height>0.42</height></dimensions>, supported on a plinth
-                              <dimensions><width>0.09</width></dimensions></p>
+                           <p><objectType>Tomb</objectType> of rubble, in very bad condition, with a stucco surface; 
+                              <dimensions><width>2.09</width> <depth>0.49</depth> <height>0.40</height></dimensions>, supported on a plinth
+                              <dimensions><width>0.09-0.13</width></dimensions></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="litteris scariphatis">Scratched</rs>, with traces of red paint, a on the south face of the coffin, b on the lower rim. </layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the south face, within an outline of a double line, which is scratched on left and below, painted above.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -48,7 +48,7 @@
                   </origin>
                   <provenance type="found">
                      <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>: <placeName ref="https://www.slsgazetteer.org/803">Ain Zara</placeName>, 
-                     Tomb 2.</p>
+                     Tomb 5.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot (<date type="observed">1911-1914</date>)</p>
@@ -92,7 +92,7 @@
          <creation>Previous publications (Roueché)</creation></profileDesc>
       <revisionDesc>
          
-         <change when="2021-07-18" who="CMR">Transcribed</change>
+         <change when="2021-07-20" who="CMR">Transcribed</change>
          
       </revisionDesc>
    </teiHeader>
@@ -100,24 +100,17 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="aurigemma1932"/> <citedRange>2</citedRange> and fig.25</bibl>;
+            <p><bibl><ptr target="aurigemma1932"/> <citedRange>5</citedRange> and fig.28 (misprinted as 29)</bibl>;
                mentioned <bibl><ptr target="irt1952"/>, <citedRange>261</citedRange></bibl>, whence 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT261.html">261</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <div type="textpart" n="a"><ab>
-                <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
-               <lb n="1"/><gap reason="lost" quantity="4" unit="character"/><w>b<supplied reason="lost">ixi</supplied><unclear>t</unclear></w> <w lemma="in">in</w> <w><unclear>pa</unclear>ce</w> 
-               <date type="life-span" dur="P29Y"><w>plu<unclear>s</unclear></w> <w><unclear>m</unclear>in<unclear>us</unclear></w> <w lemma="annus">anos</w> <num value="295">XXVIIII</num></date>
-               <lb n="2"/><w>recessit</w> <w>de</w> <w lemma="hic">o<unclear>k</unclear></w> <w lemma="saeculum">se<unclear>k</unclear>u<supplied reason="lost">lo</supplied></w> <w><unclear>s</unclear>ub</w>
-               <w><supplied reason="lost">d</supplied>ie</w> <w>mensis</w> <w>se<supplied reason="lost">pt</supplied><unclear>ema</unclear></w> <orig>s</orig><gap reason="lost" extent="unknown" unit="character"/></ab></div>
-            <div type="textpart" n="b">
-               <ab> <w lemma="requies"><supplied reason="lost">re</supplied>quiem</w> <w><unclear>etern</unclear>am</w> <w>de<supplied reason="omitted">t</supplied></w> <w>tibi</w> 
-                  <persName type="divine" key="kyrios"><w><expan><abbr>D</abbr><ex>omi</ex><abbr>n</abbr><ex>u</ex><abbr>s</abbr></expan></w></persName>
-                  </ab></div>
-         </div>
+          <ab>  <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+            <lb n="1"/> <w>et</w> <w>lux</w> <w lemma="perpetuus"><unclear>perpetu</unclear><supplied reason="lost">a</supplied></w> 
+             <w lemma="luceo">l<unclear>ukeat</unclear></w> <w lemma="tu"><unclear>ti</unclear>bi</w>.  <w><unclear>A</unclear><supplied reason="lost">men</supplied></w>
+          </ab> </div>
          <div type="translation" resp="#cmr" xml:lang="en">
-            <p/>
+            <p></p>
          </div>
          <div type="commentary">
             <p/>
