@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1148" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1149" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -12,7 +12,7 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1148</idno>
+            <idno type="filename">IRT1149</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
                   (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
@@ -29,16 +29,16 @@
                      <supportDesc>
                         <support>
                            <p><objectType>Tomb</objectType> of rubble, with a stucco surface; 
-                              <dimensions><width>1.37</width> <depth>0.34</depth> <height>0.37</height></dimensions>, supported on a plinth
-                              <dimensions><width>0.12</width></dimensions></p>
+                              <dimensions><width>1.957</width> <depth>0.68</depth> <height>0.50</height></dimensions>, supported on a plinth
+                              <dimensions><width>0.13-0.31</width></dimensions></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs>, not deeply, with traces of rubrication, on the south face; there is a circle containing a cross, on west side.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> i on the south face; ii on the east face. </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>No measurements</handNote>
+                     <handNote>Handsome letters; no measurements. ii: cross within a circle.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -48,7 +48,7 @@
                   </origin>
                   <provenance type="found">
                      <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>: <placeName ref="https://www.slsgazetteer.org/803">Ain Zara</placeName>, 
-                     Tomb 8.</p>
+                     Tomb 9.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot (<date type="observed">1911-1914</date>)</p>
@@ -92,7 +92,7 @@
          <creation>Previous publications (Roueché)</creation></profileDesc>
       <revisionDesc>
          
-         <change when="2021-07-20" who="CMR">Transcribed</change>
+         <change when="2021-07-22" who="CMR">Transcribed</change>
          
       </revisionDesc>
    </teiHeader>
@@ -100,20 +100,20 @@
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="aurigemma1932"/> <citedRange>8</citedRange> and fig.32</bibl>;
+            <p><bibl><ptr target="aurigemma1932"/> <citedRange>9</citedRange> and figs.33, and 34</bibl>;
                mentioned <bibl><ptr target="irt1952"/>, <citedRange>261</citedRange></bibl>, whence 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT261.html">261</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-          <ab><lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
+          <div type="textpart" n="i"><ab><lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
              <lb n="0a"/><gap reason="lost" quantity="1" unit="line"/>
-             <lb n="0b"/><gap reason="lost" quantity="1" unit="line"/>
-            <lb n="1"/><gap reason="lost" quantity="15" unit="character" cert="low"/><orig>iiii</orig><w lemma="requies"><supplied reason="lost">re</supplied><unclear>quiem</unclear></w> 
-             <w><supplied reason="lost">e</supplied><unclear>ter</unclear><supplied reason="lost">nam</supplied></w> 
-             <lb n="2"/><w><supplied reason="lost">d</supplied>e<supplied reason="omitted">t</supplied></w> <w><unclear>tibi</unclear></w>  
-            <persName type="divine" key="kyrios"><w><expan><abbr><unclear>D</unclear></abbr><ex>omi</ex><abbr><unclear>n</unclear></abbr><ex>u</ex><abbr>s</abbr></expan></w></persName> 
-             <w>et</w> <w lemma="lux">lux</w> <w lemma="perpetuus">perpetua</w> <w lemma="luceo">lucea<supplied reason="omitted">t</supplied></w> <w lemma="tu">tibi</w>. <w>Amen</w>
-          </ab> </div>
+            <lb n="1"/><orig><unclear>l</unclear></orig><gap reason="lost" quantity="11" unit="character" cert="low"/> <w><supplied reason="lost">rekes</supplied><unclear>i</unclear>t</w> <w><unclear>de</unclear></w> <w><unclear>ok</unclear></w> <w><unclear>s</unclear><supplied reason="lost">eculo</supplied></w>
+             <lb n="2"/><w>men<unclear>sis</unclear></w> <w>Iul<unclear>i</unclear></w> <w><supplied reason="lost">ind</supplied>iktio</w> <num value="7">VII</num>
+          </ab></div>
+         <div type="textpart" n="ii"><ab>
+            <lb n="1"/><g ref="symbols.xml#crux"/>
+             <lb n="2"/><persName type="divine" key="deus"><w><expan><abbr>D</abbr><ex>eu</ex><abbr>s</abbr></expan></w> <addName nymRef="Sabaoth"><name><expan><abbr>Sab</abbr><ex>aoth</ex></expan></name></addName></persName>
+         </ab></div></div>
          <div type="translation" resp="#cmr" xml:lang="en">
             <p></p>
          </div>
