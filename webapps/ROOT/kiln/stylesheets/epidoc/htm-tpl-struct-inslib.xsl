@@ -253,9 +253,8 @@
      <xsl:if test="//t:div[@type='bibliography']">
        <p><b><i18n:text i18n:key="epidoc-xslt-inslib-bibliography">Bibliography</i18n:text>: </b>
      <xsl:apply-templates select="//t:div[@type='bibliography']/t:p/node()"/>
-     <br/>
-     <b><i18n:text i18n:key="epidoc-xslt-inslib-constituted-from">Text constituted from</i18n:text>: </b>
-     <xsl:apply-templates select="//t:creation"/>
+     <!--<br/><b><i18n:text i18n:key="epidoc-xslt-inslib-constituted-from">Text constituted from</i18n:text>: </b>
+     <xsl:apply-templates select="//t:creation"/>-->
      </p>
      </xsl:if>
 
