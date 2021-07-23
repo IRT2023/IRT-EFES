@@ -68,6 +68,9 @@
           <xsl:text>0</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
+        <!-- for contextual index of words -->
+        <xsl:text>#</xsl:text>
+        <xsl:if test="self::tei:w[@lemma]"><xsl:value-of select="self::tei:w"/></xsl:if>
       </xsl:if>
     </field>
   </xsl:template>

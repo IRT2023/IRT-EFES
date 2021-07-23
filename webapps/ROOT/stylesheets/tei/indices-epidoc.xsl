@@ -60,6 +60,10 @@
           <xsl:value-of select="$location_parts[4]" />
         </span>
         </xsl:if>
+        <!-- for contextual index of words -->
+        <xsl:if test="$location_parts[6]">
+          <xsl:text>: </xsl:text><xsl:value-of select="$location_parts[6]" />
+        </xsl:if>
         <xsl:if test="$location_parts[5] = '1'">
           <xsl:text>]</xsl:text>
         </xsl:if>
