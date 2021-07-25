@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1150" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1153" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -12,7 +12,7 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1150</idno>
+            <idno type="filename">IRT1153</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
                   (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
@@ -28,17 +28,17 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface; 
-                              <dimensions><width>1.64</width> <depth>0.55</depth> <height>0.50</height></dimensions>, supported on a plinth
-                              <dimensions><width>0.15</width></dimensions></p>
+                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface 0.018 thick; 
+                              <dimensions><width>1.65</width> <depth>0.80</depth> <height>0.54</height></dimensions>, supported on a plinth
+                              <dimensions><width>0.15-0.17</width></dimensions></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Lightly <rs type="execution" key="litteris scariphatis">graffito</rs> on the south face, with a double line above and below each line; there is a rubricated cross on the east face. </layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the south face.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>No measurements.</handNote>
+                     <handNote>No measurements</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -48,7 +48,7 @@
                   </origin>
                   <provenance type="found">
                      <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>: <placeName ref="https://www.slsgazetteer.org/803">Ain Zara</placeName>, 
-                        cemetery, Tomb 10.</p>
+                        cemetery, Tomb 13.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot (<date type="observed">1911-1914</date>)</p>
@@ -92,26 +92,29 @@
          <creation>Previous publications (Roueché)</creation></profileDesc>
       <revisionDesc>
          
-         <change when="2021-07-22" who="CMR">Transcribed</change>
+         <change when="2021-07-20" who="CMR">Transcribed</change>
          
       </revisionDesc>
    </teiHeader>
-   <facsimile><graphic url="az0010a.jpg"><desc>Main text: drawing (Luigi Turba)</desc></graphic>
-      <graphic url="az0010b.jpg"><desc>East face, from a plaster cast</desc></graphic></facsimile>
+   <facsimile><graphic url="az012.jpg"><desc>Drawing (Luigi Turba)</desc></graphic></facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="aurigemma1932"/>, <citedRange>10</citedRange> and figs.36, and 354</bibl>;
+            <p><bibl><ptr target="aurigemma1932"/>, <citedRange>13</citedRange> and fig.41</bibl>;
                mentioned <bibl><ptr target="irt1952"/>, <citedRange>261</citedRange></bibl>, whence 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT261.html">261</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
           <ab><lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
-             <lb n="0a"/><gap reason="lost" quantity="1" unit="line"/>
-            <lb n="1"/><gap reason="lost" quantity="25" unit="character" cert="low"/><orig><unclear>ii</unclear></orig> <gap reason="lost" quantity="3" unit="character"/> <w lemma="mensis"><unclear>me</unclear><supplied reason="lost">n</supplied><unclear>s</unclear><supplied reason="lost">is</supplied></w> 
-             <lb n="2"/> <w lemma="Iunius">Iuni<unclear>us</unclear></w> <w lemma="indictio"><expan><abbr>ind</abbr><ex>ictio</ex></expan></w> <num value="14">XIIII</num>. <w lemma="requies"><unclear>Requie</unclear>m</w> 
-             <w lemma="aeternus">eter<unclear>n</unclear>a<unclear>m</unclear></w> <w lemma="do">det</w> <w lemma="te">t<unclear>ibi</unclear></w> <persName type="divine" key="kyrios"><w><expan><abbr><unclear>D</unclear></abbr><ex>omi</ex><abbr><supplied reason="lost">n</supplied></abbr><ex>u</ex><abbr><supplied reason="lost">s</supplied></abbr></expan></w></persName>
-          </ab>
+             <lb n="1"/><gap reason="lost" quantity="22" unit="character" cert="low"/><orig><unclear>ii</unclear> <unclear>iy</unclear>s</orig> <w>rekesit</w>
+            <lb n="2"/> <supplied reason="lost"><w lemma="de">de</w> <w lemma="hic">ok</w></supplied> <w lemma="saeculum"><supplied reason="lost">sek</supplied><unclear>ulo</unclear></w> <w><unclear>sub</unclear></w> <w><unclear>die</unclear></w> 
+             <w><supplied reason="lost">me</supplied>nsis</w> <w>Ianuarius</w> <w><expan><abbr>in</abbr><ex>dictio</ex></expan></w>
+             <lb n="3"/> <num value="2">II</num>. <w lemma="requies">Requiem</w>. <w lemma="amen">Amen</w> <orig>u</orig>
+          </ab> </div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="3"><lem>II Requiem</lem><note>Aurigemma suggests an alternative may be <foreign xml:lang="la">In requie</foreign>m.</note></app>
+            </listApp>
          </div>
          <div type="translation" resp="#cmr" xml:lang="en">
             <p></p>
