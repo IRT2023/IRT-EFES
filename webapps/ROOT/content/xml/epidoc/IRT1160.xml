@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1158" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1160" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -12,7 +12,7 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1158</idno>
+            <idno type="filename">IRT1160</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
                   (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
@@ -29,13 +29,13 @@
                      <supportDesc>
                         <support>
                            <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface; 
-                              <dimensions><width>1.78</width> <depth>0.57</depth> <height>0.54</height></dimensions>, supported on a plinth
-                              <dimensions><width>0.14-0.18</width></dimensions></p>
+                              <dimensions><width>1.50</width> <depth>0.50</depth> <height>0.33</height></dimensions>, supported on a plinth
+                              <dimensions><width>0.13</width></dimensions></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> with deep and lavishly rubricated letters, and a double line between the lines; lines 1-3 on the south face, line 4 on the 
-                           south face continuing onto the east face.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> with almost no traces of rubrication, i, with  a double line between the lines, on the south face an and ii  arranged 
+                           around the lower part of a cross on the west face; there are traces of a cross and birds on the north face and of a cross on the east face.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -49,7 +49,7 @@
                   </origin>
                   <provenance type="found">
                      <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>: <placeName ref="https://www.slsgazetteer.org/803">Ain Zara</placeName>, 
-                        cemetery, Tomb 18.</p>
+                        cemetery, Tomb 20.</p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot (<date type="observed">1911-1914</date>)</p>
@@ -93,32 +93,34 @@
          <creation>Previous publications (Roueché)</creation></profileDesc>
       <revisionDesc>
          
-         <change when="2021-07-25" who="CMR">Transcribed</change>
+         <change when="2021-07-27" who="CMR">Transcribed</change>
          
       </revisionDesc>
    </teiHeader>
-   <facsimile><graphic url="az0018.jpg"><desc>Drawing (Luigi Turba)</desc></graphic></facsimile>
+   <facsimile><graphic url="az0020a.jpg"><desc>i: Drawing (Luigi Turba)</desc></graphic>
+      <graphic url="az0020d.jpg"><desc>ii: Drawing, from a cast (Stefani)</desc></graphic>
+      <graphic url="az0020b.jpg"><desc>North face: Drawing, from a cast (Stefani)</desc></graphic>
+      <graphic url="az0020c.jpg"><desc>East face: Drawing, from a cast (Stefani)</desc></graphic></facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="aurigemma1932"/>, <citedRange>18</citedRange> and fig.48</bibl>;
-               mentioned and indexed <bibl><ptr target="irt1952"/>, <citedRange>261</citedRange></bibl>, whence mentioned 
+            <p><bibl><ptr target="aurigemma1932"/>, <citedRange>20</citedRange> and figs.51, 52, 53 and 54</bibl>;
+               mentioned and indexed <bibl><ptr target="irt1952"/>, <citedRange>261</citedRange></bibl>, whence 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT261.html">261</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-          <ab><lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
-             <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w><supplied reason="lost">abst</supplied><unclear>ulit</unclear></w><gap reason="lost" extent="unknown" unit="character"/>
-             <lb n="2"/><gap reason="lost" quantity="6" cert="low"  unit="character"/> <w><supplied reason="lost" cert="low">fun</supplied><unclear>u</unclear>s</w> <w><unclear>mers</unclear>it</w> <w>akerb<unclear>u</unclear>s</w>. 
-             <w>Bi<unclear>x</unclear>it</w> <w lemma="in">in</w> <w lemma="pax"><unclear>p</unclear><supplied reason="lost">a</supplied><unclear>k</unclear><supplied reason="lost">e</supplied></w> <w><supplied reason="lost">pl</supplied>
-             <lb n="3" break="no"/>us</w> <w>minus</w> <w lemma="annus">annos</w> <num>XX</num> <w>rekessit</w> <w lemma="de">de</w> <w lemma="hic">o<unclear>k</unclear></w> <w lemma="saeculum"><unclear>sekulo</unclear></w> 
-             <supplied reason="lost"><w lemma="sub">sub</w></supplied> 
-             <lb n="4"/><w lemma="dies">die</w> <num value="7">VII</num>
-             <w lemma="mensis"><expan><abbr>m</abbr><ex>ensis</ex></expan></w> <w lemma="Iunius">Iunius</w>  <w lemma="indictio">indiktionis</w> <num value="14">XIIII</num>  
-             <w lemma="requies">Requiem</w> <w lemma="aeternus">eternam</w> <w lemma="do">de<milestone unit="block"/><unclear>t</unclear></w> <w lemma="te"><unclear>ti</unclear>bi</w> 
-             <persName type="divine" key="kyrios"><w><expan><abbr><supplied reason="lost">D</supplied></abbr><ex>omi</ex><abbr><supplied reason="lost">n</supplied></abbr><ex>u</ex><abbr><unclear>s</unclear></abbr></expan></w></persName>. 
-             <w><unclear>Ame</unclear>n</w> 
-          </ab> </div>
-         
+          <div type="textpart" n="i"><ab><lb n="0"/><gap reason="lost" quantity="1" unit="line"/>
+             <lb n="0a"/><gap reason="lost" quantity="1" unit="line"/>
+             <lb n="1"/><date type="life-span" dur="P27Y"><w><unclear>p</unclear>lus</w> <w><unclear>m</unclear>i<unclear>nus</unclear></w> <w lemma="annus"><unclear>annos</unclear></w> <gap reason="lost" quantity="6" unit="character"/> 
+              <num value="27">XXVII</num></date>. <w><unclear>Rekes</unclear>sit</w> <w lemma="de">de</w> <w lemma="hic">ok</w>  
+             <lb n="2"/><w lemma="saeculum">s<supplied reason="omitted">e</supplied>kulo</w> <w lemma="sub"><unclear>s</unclear>ub</w> <w lemma="dies">die</w> 
+             <w lemma="mensis">mensis</w> <num value="22">XXII</num> <w lemma="Aprilis">Aprille</w>  <w lemma="indictio">indiktionis</w> 
+             <num value="4">IIII</num></ab></div>
+         <div type="textpart" n="ii"><ab>
+            <lb n="1"/><g ref="symbols.xml#crux"/>
+             <lb n="2"/><persName type="divine" key="kyrios"><w><expan><abbr><unclear>D</unclear></abbr><ex>omi</ex><abbr><unclear>n</unclear></abbr><ex>u</ex><abbr><unclear>s</unclear></abbr></expan></w> 
+             <w><expan><abbr>D</abbr><ex>eu</ex><abbr>s</abbr></expan></w> </persName>
+         </ab></div></div>
          
          <div type="translation" resp="#cmr" xml:lang="en">
             <p></p>
