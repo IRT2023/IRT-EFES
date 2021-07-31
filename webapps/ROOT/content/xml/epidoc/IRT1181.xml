@@ -2,22 +2,22 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.item/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.item/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0253a" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1181" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>
-               <rs type="textType">Mason's mark</rs>
-            </title>
-            <editor xml:id="jmr">J. M. Reynolds</editor>
-            <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
+               <rs type="textType">Christian</rs> 
+               <rs type="textType">funerary</rs> text</title>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT0253a</idno>
+            <idno type="filename">IRT1181</idno>
             <availability>
-               <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.item/licenses/by/2.0/uk/</ref>). </p>
-               <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+               <p>Creative Commons licence Attribution UK 2.0
+                  (<ref>http://creativecommons.item/licenses/by/2.0/uk/</ref>). </p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the URL
+                  <ref>http://irt.kcl.ac.uk/</ref>
                </p>
             </availability>
          </publicationStmt>
@@ -28,29 +28,29 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p> A <objectType>column</objectType>, possibly of <material>grey granite</material>.</p>
+                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface, <dimensions><width>1.78</width> <depth>0.775</depth> <height>0.36</height></dimensions>, 
+                              supported on a plinth <dimensions><width>0.12</width></dimensions>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs>  on the underside.</layout>
+                        <layout>Carefully <rs type="execution" key="litteris scariphatis">incised</rs> on the south face of the coffin.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Rough lettering, size not recorded.</handNote>
+                     <handNote>No measurements</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <p>Unknown</p>
-                     <origDate>Unknown</origDate>
+                     <p>Findspot</p>
+                     <origDate notBefore="0500" notAfter="0650" evidence="context, lettering">Fifth-sixth century CE</origDate>
                   </origin>
                   <provenance type="found">
-                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>:
-                              <placeName ref="https://www.slsgazetteer.org/657">Oea</placeName>: 
-                  <placeName type="monuList" ref="https://www.slsgazetteer.org/811">Near the fish-market</placeName>. Found during demolition work.</p>
+                     <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>: <placeName ref="https://www.slsgazetteer.org/803">Ain Zara</placeName>, 
+                        cemetery, Tomb 41.</p>
                         </provenance>
                         <provenance type="observed">
-                           <p>Findspot</p>
+                           <p>Findspot (<date type="observed">1911-1914</date>)</p>
                         </provenance>
                </history>
             </msDesc>
@@ -84,36 +84,34 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot" key="http://www.geonames.item/2210247/tripoli.html">Tripoli</placeName>
+                  <placeName type="modernFindspot" key="http://www.geonames.item/2219021">Ayn Zara</placeName>
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
-      </profileDesc>
+         <creation>Previous publications (Roueché)</creation></profileDesc>
       <revisionDesc>
-         <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
-         <change when="2008-09-09" who="ZA">converted using CHET-C</change>
-         <change when="2009-05-19" who="RV">Added Figures</change>
-         <change when="2009-08-24" who="RV">Added Figures</change>
+         
+         <change when="2021-07-30" who="CMR">Transcribed</change>
+         
       </revisionDesc>
    </teiHeader>
-   <facsimile><surface/><!--No photographs.--></facsimile>
+   <facsimile><graphic url="az0041.jpg"><desc>Drawing (Luigi Turba)</desc></graphic></facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>253a</citedRange></bibl>, whence 
-               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.item/text/189499">189499</ref></citedRange></bibl>,
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT253a.html">253a</ref></citedRange></bibl>, whence 
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059223">059223</ref></citedRange></bibl></p>
-            <!-- check romanelli1916 331 -->
+            <p><bibl><ptr target="aurigemma1932"/>, <citedRange>41</citedRange> and fig.98</bibl>;
+               mentioned and indexed <bibl><ptr target="irt1952"/>, <citedRange>261</citedRange></bibl>, whence mentioned 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT261.html">261</ref></citedRange></bibl></p>
          </div>
-         <div type="edition" xml:lang="grc" xml:space="preserve">
-            <ab>
-               <lb n="1"/><orig>πα</orig></ab></div>
-         <div type="translation" source="#irt2009" xml:lang="en">
-            <p>PA</p></div>
+         <div type="edition" xml:lang="la" xml:space="preserve">
+           <ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w part="F"><unclear>ber</unclear></w> <w lemma="indictio"><unclear>in</unclear>diktio</w> <num value="16"><unclear>XVI</unclear></num> <gap reason="lost" extent="unknown" unit="character"/> </ab>
+         </div>
+         <div type="translation" resp="#cmr" xml:lang="en">
+         <p/>
+         </div>
          <div type="commentary">
-            <p>Probably an abbreviated name.</p>
+            <p></p>
          </div>
       </body>
    </text>

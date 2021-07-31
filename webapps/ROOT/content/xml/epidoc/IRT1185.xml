@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.item/dsdl/schematron"?>
-<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.item/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1180" xml:lang="en">
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1185" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -12,10 +12,10 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1180</idno>
+            <idno type="filename">IRT1185</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0
-                  (<ref>http://creativecommons.item/licenses/by/2.0/uk/</ref>). </p>
+                  (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL
                   <ref>http://irt.kcl.ac.uk/</ref>
                </p>
@@ -28,17 +28,16 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface, <dimensions><width>1.89</width> <depth>0.55</depth> <height>0.36</height></dimensions>, 
-                              supported on a plinth <dimensions><width>0.30</width></dimensions>.</p>
+                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface, <dimensions><width>1.36</width> <depth>0.48</depth> <height>0.36</height></dimensions>, 
+                              supported on a plinth <dimensions><width>0.06-0.10</width></dimensions>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>Deeply <rs type="execution" key="litteris scariphatis">incised</rs> on the south face of the coffin, with a double line 
-                           below the text; there are traces of a cross on the east face.</layout>
+                        <layout>Deeply <rs type="execution" key="litteris scariphatis">incised</rs> with clear traces of rubrication on the south face of the coffin; there are double lines under each line of text.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote> Line 2, <height>0.075-0.095</height></handNote>
+                     <handNote>No measurements.</handNote>
                   </handDesc>
                </physDesc>
                <history>
@@ -48,7 +47,7 @@
                   </origin>
                   <provenance type="found">
                      <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>: <placeName ref="https://www.slsgazetteer.org/803">Ain Zara</placeName>, 
-                        cemetery, Tomb 40.</p>
+                        cemetery, Tomb 45</p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot (<date type="observed">1911-1914</date>)</p>
@@ -85,7 +84,7 @@
                   <geogName type="modernCountry" key="LY">Libya</geogName>
                </term>
                <term>
-                  <placeName type="modernFindspot" key="http://www.geonames.item/2219021">Ayn Zara</placeName>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/2219021">Ayn Zara</placeName>
                </term>
             </keywords>
          </textClass>
@@ -96,23 +95,27 @@
          
       </revisionDesc>
    </teiHeader>
-   <facsimile><graphic url="az0040.jpg"><desc>Facsimile, from a cast</desc></graphic></facsimile>
+   <facsimile><graphic url="az0045.jpg"><desc> Drawing (Luigi Turba)</desc></graphic></facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="aurigemma1932"/>, <citedRange>40</citedRange> and fig.97</bibl>;
+            <p><bibl><ptr target="aurigemma1932"/>, <citedRange>45</citedRange> and figs.103, 104</bibl>;
                mentioned and indexed <bibl><ptr target="irt1952"/>, <citedRange>261</citedRange></bibl>, whence mentioned 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT261.html">261</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-           <ab><lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
-               <lb n="1"/><gap reason="lost" quantity="12" unit="character" cert="low"/>  
-              <date  type="life-span" dur="P35Y"><w lemma="plus"><unclear>pl</unclear><supplied reason="lost">us</supplied></w> <w lemma="minus"><unclear>minus</unclear></w> <w lemma="annus">annos</w> <num value="35">XXXV</num></date>
-               <w lemma="recedo"><unclear>Re</unclear><supplied reason="lost">cessit</supplied></w>  
-              <lb n="2"/><supplied reason="lost"><w lemma="de">de</w></supplied> 
-               <w lemma="hic"><supplied reason="lost">o</supplied><unclear>k</unclear></w> <w lemma="saeculum"><unclear>s</unclear><supplied reason="omitted">e</supplied><unclear>co</unclear>lo</w> 
-              <w lemma="sub"><unclear>s</unclear>ub</w> <w lemma="dies">die</w> 
-             <w lemma="mensis">mensis</w> <w lemma="October">Oktonber</w> <w lemma="indictio">indictio</w> <num value="15">XV</num> </ab>
+            <ab>
+                <lb n="1"/><supplied reason="lost"><w lemma="in">In</w> <w lemma="hic">ok</w></supplied> <w lemma="tumulus"><supplied reason="lost">t</supplied>umulolo</w> 
+               <w lemma="iaceo">iaket</w> <w lemma="corpus">korpus</w> 
+               <w lemma="bonus">bone</w> <w lemma="memoria">memorie</w> 
+               <persName type="attested"><name nymRef="Iui-"><seg part="I">Iui</seg></name></persName>. <gap reason="lost" extent="unknown" unit="character"/>
+                 <lb n="2"/><gap reason="lost"  quantity="5" unit="character"/><w part="F">ae</w>  <w lemma="plus">plus</w> <w lemma="minus">minus</w> <w lemma="annus">anos</w> <w lemma="plus">plus</w> 
+               <w lemma="minus">minus</w>; <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/><gap reason="lost"  quantity="4" unit="character"/> <w lemma="recedo">Recesit</w> <w lemma="de">de</w> 
+               <w lemma="hic">ok</w> <w lemma="saeculum">sekulo</w> 
+              <w>sub</w> <w lemma="dies">die</w> <w lemma="December">Dicenber</w></ab>
+            
+            
          </div>
          <div type="translation" resp="#cmr" xml:lang="en">
          <p/>
