@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1203" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1209" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -14,7 +14,7 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1203</idno>
+            <idno type="filename">IRT1209</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -28,11 +28,11 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface, <dimensions><width>1.90</width> <depth>1.85</depth> <height>1.18</height></dimensions>.</p>
+                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface, <dimensions><width>2.07</width> <depth>0.82</depth> <height>0.56</height></dimensions>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on one face.</layout>
+                        <layout><rs type="execution" key="scalpro">Inscribed</rs> on the south face; there are traces of letters on the north face.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -42,7 +42,7 @@
                <history>
                   <origin>
                      <p>Findspot</p>
-                     <origDate  notBefore="0980" notAfter="0980" evidence="internal-date">980 CE</origDate><!-- check -->
+                     <origDate></origDate><!-- check -->
                   </origin>
                   <provenance type="found">
                            <p>
@@ -91,37 +91,31 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2021-08-04" who="CMR">Transcribed</change>
+         <change when="2021-08-05" who="CMR">Transcribed</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="paribeni1927"/>, <citedRange>III</citedRange></bibl>; 
+            <p><bibl><ptr target="paribeni1927"/>, <citedRange>IX</citedRange></bibl>;
                mentioned and indexed <bibl><ptr target="irt1952"/>, <citedRange>262</citedRange></bibl>, whence mentioned 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT262.html">262</ref></citedRange></bibl></p><!-- check -->
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT262.html">262</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
-            <ab>
-            <lb n="1"/><w lemma="in">in</w> <persName type="divine" key="iesus"><name><expan><abbr><g ref="symbols.xml#chi-rho"/></abbr><ex>Christ</ex><abbr>i</abbr></expan></name></persName> 
-               <w lemma="nomen">nomine</w> <w lemma="in">in</w> <w lemma="hic">hoc</w> 
-              <w lemma="tumulus">tumu<supplied reason="lost">lo</supplied></w> <supplied reason="lost"><w lemma="iaceo">iacet</w></supplied> <w lemma="corpus"><supplied reason="lost">cor</supplied>
-             <lb n="2" break="no"/>pus</w> <w lemma="bonus">bone</w> <w lemma="memoria">memorie</w> <persName type="attested"><name nymRef="Petrus">Petrus</name></persName> <w>Kl<supplied reason="lost" cert="low">arissimus</supplied></w>
-                <lb n="3"/><w lemma="iudex">iudex</w>. <w lemma="uiuo">Bixit</w> <w>in</w> <w lemma="hic">hoc</w> <w lemma="saeculum"><expan><abbr>s</abbr><ex>e</ex><abbr>c</abbr><ex>u</ex><abbr>lo</abbr></expan></w> 
-               <date type="life-span" dur="P55Y"> <w lemma="annus">annos</w> <w lemma="sexaginta">se<supplied reason="lost">xa</supplied>
-               <lb n="4" break="no"/>ginta</w> <w lemma="plus">plus</w> <w lemma="minus">minus</w></date>: <w>in</w> <w>anno</w> <num>VIMILLO<gap reason="lost" quantity="3" unit="character" cert="low"/></num>
-            <lb n="5"/> <w lemma="indictio"><expan><abbr>ind</abbr><ex>ic</ex><abbr>tio</abbr></expan></w> <w lemma="quintadecima">quintadecima</w> <w>in</w> <w>prima</w> <w lemma="dies">d<supplied reason="lost">ie</supplied></w> 
-              <lb n="6"/> <w lemma="mensis">mense</w> <w lemma="Martius">Martiu</w> <w>migrabit</w> <w>de</w> <w lemma="hic">hoc</w> <w>se<supplied reason="lost">culo</supplied></w> 
-<w>              <lb n="7"/>  <w lemma="requies">Requiem</w> <w lemma="aeternus">eternam</w> <w lemma="habeo">abeat</w> <w>et</w> <w lemma="vita">bitam</w>
-</w>                <lb n="8"/><w>eternem</w> <w>possideat</w>, <w>cum</w> <w>sanctis</w> <w>et</w> <w>el
-                <lb n="9" break="no"/>ectis</w> <w>omnibus</w> <w lemma="Amen">Amen</w>, <w lemma="Amen">Amen</w>, <w lemma="Amen">Amen</w>. 
-               <w>In</w> <w lemma="tu">te</w> <persName type="divine" key="kyrios"><w lemma="dominus"><expan><abbr>D</abbr><ex>omi</ex><abbr>ne</abbr></expan></w></persName>
-               <lb n="10"/><w lemma="spero">skerabi</w> <w>non</w> <w lemma="confundo">confundar</w> <w>in</w> <w lemma="aeternus">eternum</w>.
-         </ab>
+            
+               <ab><lb n="1"/><supplied reason="lost"><w lemma="in">In</w> <w lemma="hic">hoc</w></supplied> <w lemma="tumulus"><supplied reason="lost">tumu</supplied>lo</w> <w lemma="iaceo">iacet</w> <w lemma="corpus">corpus</w> 
+               <w lemma="bonus">bone</w> <w lemma="memoria">memo
+            <lb n="2" break="no"/>rie</w> <persName type="attested"><name nymRef="Cora-"><seg part="I">Cora</seg></name></persName> 
+               <gap reason="lost" quantity="3" unit="character" cert="low"/><orig>g</orig><gap reason="lost" quantity="3" unit="character" cert="low"/>
+            <w lemma="uiuo"><supplied reason="lost">Bix</supplied>it</w> <w lemma="in">in</w> <w lemma="hic">oc</w> <w lemma="saeculum">seculo</w> <date type="life-span" dur="P52Y"> <w lemma="annus"><expan><abbr>an</abbr><ex>nos</ex></expan></w> <num value="30">LII</num></date>. 
+                  <w lemma="exeo">Exit</w> <w lemma="de">de</w> <w lemma="hic">oc</w> <w lemma="saeculum">seculo</w> <w lemma="in">in</w> <w lemma="annus">anno</w> 
+                <lb n="3"/>  <num>VI</num><gap reason="lost" quantity="3" unit="character" cert="low"/><num>CCCC</num> <gap reason="lost" quantity="3" unit="character" cert="low"/>
+             <w lemma="indictio">indictio</w> <num value="2">II</num> <w lemma="in">in</w> <w lemma="mensis">mense</w> <w lemma="Februarius">Feurarius</w>. 
+                  <w lemma="requies">Requiem</w> <w lemma="aeternus">eterna<supplied reason="omitted">m</supplied></w> <w lemma="luceo">lucat</w></ab>
          
          </div>
          <div type="commentary">
-            <p></p>
+            <p/>
          </div>
       </body>
    </text>
