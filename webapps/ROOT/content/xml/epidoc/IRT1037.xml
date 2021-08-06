@@ -23,9 +23,7 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier>
-                        <repository>Al Khums, Lepcis Magna Museum (Altes Museum)</repository>
-                    </msIdentifier>
+                    <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
@@ -35,7 +33,7 @@
                                     
                                     <dimensions>
                                         <height unit="metre">2.35</height>
-                                        <width unit="metre">0.39</width></dimensions>
+                                        <dim unit="metre">0.39</dim></dimensions>
                                 <!--      --> 
                                   </p>
                                 </support>
@@ -59,7 +57,7 @@
                         <provenance type="found">
                             <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
                                 <placeName ref="https://www.slsgazetteer.org/699">West Necropolis</placeName>, reused as a doorpost in a building at Ez-Zeita.</p></provenance>
-                        <provenance type="observed"><p>xxx</p></provenance>
+                        <provenance type="observed"><p><placeName ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName></p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -87,7 +85,6 @@
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
                     <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
-                    <term ref="http://www.eagle-network.eu/voc/typeins/lod/92">Grabinschrift</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
         <creation>Epigraphische Datenbank Heidelberg</creation></profileDesc>
@@ -106,16 +103,18 @@
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> 
-                <lb n="2"/><expan><abbr>L</abbr><ex>uciae</ex></expan> Siliae <expan><abbr>L</abbr><ex>uci</ex></expan> <expan><abbr>fil</abbr><ex>iae</ex></expan> <expan><abbr>Pia</abbr><ex>e</ex></expan> 
-                <lb n="3"/><expan><abbr>L</abbr><ex>ucius</ex></expan> Silius Plautius 
-                <lb n="4"/>Haterianus 
-                <lb n="5"/><expan><abbr>v</abbr><ex>ir</ex></expan> <expan><abbr>c</abbr><ex>larissimus</ex></expan> 
-                <lb n="6"/>patruus 
-                <lb n="7"/><expan><abbr>h</abbr><ex>eres</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>
+                <persName type="divine" key="manes"><w><expan><abbr>D</abbr><ex>is</ex></expan></w> <name><expan><abbr>M</abbr><ex>anibus</ex></expan></name></persName> 
+                <lb n="2"/><persName type="attested"><name nymRef="Lucia"><expan><abbr>L</abbr><ex>uciae</ex></expan></name> <name nymRef="Silia">Siliae</name> <persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> 
+                <w><expan><abbr>fil</abbr><ex>iae</ex></expan></w> <name nymRef="Pia"><expan><abbr>Pia</abbr><ex>e</ex></expan></name></persName> 
+                <lb n="3"/><persName type="attested"><name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name nymRef="Silius">Silius</name> <name nymRef="Plautius">Plautius</name> 
+                <lb n="4"/><name nymRef="Haterianus">Haterianus</name></persName> 
+                <lb n="5"/><w><expan><abbr>v</abbr><ex>ir</ex></expan></w> <w><expan><abbr>c</abbr><ex>larissimus</ex></expan></w> 
+                <lb n="6"/><w>patruus</w> 
+                <lb n="7"/><w><expan><abbr>h</abbr><ex>eres</ex></expan></w> <w><expan><abbr>f</abbr><ex>ecit</ex></expan></w>
             </ab></div>
-            <div type="translation" resp="#cmr" xml:lang="en">
-                <p/>
+            <div type="translation" source="#elnemsi1997" xml:lang="en">
+                <p>To the spirits of the dead. Lucia Silia Pia, daughter of Lucius <supplied reason="subaudible">Silius</supplied>, Lucius 
+                Silius Plautius Haterianus, member of the senatorial order, her paternal uncle and heir, made this <supplied reason="subaudible">monument</supplied>.</p>
             </div>
             <div type="commentary">
                 <p/>

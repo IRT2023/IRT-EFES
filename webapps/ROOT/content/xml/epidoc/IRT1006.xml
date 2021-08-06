@@ -2,19 +2,18 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1032" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1045" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title><rs type="textType">Funerary</rs> inscription</title>
-                <editor xml:id="xxx">xxx - EDH</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD049857</idno>
-                <idno type="TM">201572</idno>
-                <idno type="filename">IRT1032</idno>
+                <idno type="EDH">HD050460</idno>
+                <idno type="TM">201719</idno>
+                <idno type="filename">IRT1045</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -30,26 +29,24 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>Small coffin-shaped funerary
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/78">urn</objectType> in soft 
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">stone</material>
+                                    <p>Cinerary 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/78">urn</objectType> of 
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>: 
                                     <dimensions>
-                                        <height unit="metre">0.495</height>
-                                        <width unit="metre">0.22</width>
-                                        <depth unit="metre">0.29</depth>
+                                        <height unit="metre">0.62</height>
                                     </dimensions>
                                      
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>Lightly 
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">inscribed</rs> at the upper corner of a long side.
+                                <layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the body
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height unit="metre">0.025-0.035</height>; the S is barred</handNote>
+                            <handNote><height unit="metre">0.035-0.06</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -59,8 +56,9 @@
                             </origDate>
                         </origin>
                         <provenance type="found">
-                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: in a hypogaeum in the  
-                                <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">East Necropolis</placeName>.</p></provenance>
+                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/726">Al Khums</placeName>: 
+                                <placeName ref="https://www.slsgazetteer.org/699">West Necropolis</placeName>, in a tomb near the 
+                            elementary school 'Al Hadi al-Fergiani'</p></provenance>
                         <provenance type="observed"><p>xxx</p></provenance>
                     </history>
                 </msDesc>
@@ -89,30 +87,33 @@
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
                     <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
-                    <term ref="http://www.eagle-network.eu/voc/typeins/lod/92">Grabinschrift</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
         <creation>Epigraphische Datenbank Heidelberg</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-04-18" who="IV">adapted</change>
-         <change when="2014-05-26" who="Bigi">provisorisch bearbeitet</change>
+         <change when="2021-08-06" who="CMR">Transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="vitaevrard1997"/> <citedRange>3</citedRange>, 122-123</bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1997.1581</citedRange></bibl>,
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD049857">049857</ref></citedRange></bibl>
-                   
+                <p><bibl><ptr target="vitaevrard1996a"/> <citedRange></citedRange></bibl>
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <persName type="attested"><name nymRef="Maso">Maso</name></persName>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/>
+               <persName type="attested"> <name nymRef="Secundio">Secundio</name> </persName>
+                <lb n="2"/><w>actor</w>
+                <lb n="2"/><persName type="attested"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uinti</ex></expan></name> 
+                    <name nymRef="Seruilius">Seruili</name> <name nymRef="Candidus">Candidi</name></persName>
+                <w lemma="uiuo">vixit</w> <date type="life-span" dur="P66Y"><w lemma="annus">annis</w> <num value="66">LXVI</num>, 
+                <w lemma="mensis"><expan><abbr>m</abbr><ex>ensibus</ex></expan></w> <num value="5">V</num>, <w lemma="dies"><expan><abbr>d</abbr><ex>iebus</ex></expan></w> <num value="11">XI</num> 
+                <w><expan><abbr>s</abbr><ex>emisse</ex></expan></w></date>
+                <lb n="2"/>
             </ab></div>
-            <div type="translation" resp="#cmr" xml:lang="en">
-                <p/>
+            <div type="translation" resp="#vitaevrard1996a" xml:lang="fr">
+                <p>Secundio, regisseur de Q. Servilius Candidus, a veecu soixante-six ans, cinq mois, onze jours et demi.</p>
             </div>
             <div type="commentary">
                 <p/>
