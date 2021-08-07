@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1210" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1211" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -14,7 +14,7 @@
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1210</idno>
+            <idno type="filename">IRT1211</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -28,7 +28,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface, <dimensions><width>2.24</width> <depth>0.65</depth> <height>0.73</height></dimensions>.</p>
+                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface, <dimensions><width>2.15</width> <depth>0.58</depth> <height>0.50</height></dimensions>.</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -91,33 +91,35 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2021-08-05" who="CMR">Transcribed</change>
+         <change when="2021-08-07" who="CMR">Transcribed</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="paribeni1927"/>, <citedRange>X</citedRange></bibl>; 
-               recopied, although not recognised, <bibl><ptr target="todesco1935"/>, <citedRange>p.6</citedRange></bibl>, whence mentioned <bibl><ptr target="ae"/> <citedRange>1937.220</citedRange></bibl>;
+            <p><bibl><ptr target="paribeni1927"/>, <citedRange>XI</citedRange></bibl>;
                mentioned and indexed <bibl><ptr target="irt1952"/>, <citedRange>262</citedRange></bibl>, whence mentioned 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT262.html">262</ref></citedRange></bibl></p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             
                <div type="textpart" n="i"><ab>
-                  <lb n="1"/><w lemma="in">In</w> <w lemma="hic">oc</w> <w lemma="tumulus">tumulo</w> <w lemma="iaceo">iacet</w> <w lemma="corpus">corpus</w> 
-               <w lemma="bonus">bone</w> <w lemma="memoria">memorie</w> 
-                  <lb n="2"/><persName type="attested"><name nymRef="Andreas">Andreas</name></persName>. <w lemma="uiuo">Binxit</w> <date type="life-span" dur="P45Y"> <w lemma="annus">annos</w> <w>plus</w> <w>minus</w> <num value="45">XXXXV</num></date>. 
-             <lb n="3"/> <w lemma="annus">anno</w> <w lemma="tertius">testio</w> <sic/> <w>millesimo</w> <w>qarientesimo</w> <num>LIIII</num>  <w lemma="indictio">indic<supplied reason="lost">tione</supplied></w>
-              <lb n="4"/>  <w lemma="quartus">qarta</w> <w lemma="in">in</w> <w lemma="mensis">mense</w> <w lemma="December">Deceber</w> <w>dies</w> <w>ante</w> <w>nativitas</w> 
-                  <persName type="divine" key="kyrios"><w lemma="dominus"><expan><abbr>D</abbr><ex>omi</ex><abbr>ni</abbr></expan></w></persName> <w lemma="noster"><expan><abbr>nos</abbr><ex>tri</ex></expan></w> <persName type="divine" key="iesus"><name><expan><abbr>Ie</abbr><ex>s</ex><abbr>u</abbr></expan></name> 
-                     <name><expan><abbr><g ref="symbols.xml#chi-rho"/></abbr><ex>Christ</ex><abbr>i</abbr></expan></name></persName></ab></div>
+                  <lb n="1"/><gap reason="lost" quantity="4" unit="character"/> <w lemma="in">In</w> <w lemma="hic">hoc</w> <w lemma="tumulus">tumulo</w> <w lemma="iaceo">iacet</w> <w lemma="corpus">corpus</w> 
+               <supplied reason="lost"><w lemma="bonus">bone</w> <w lemma="memoria">memorie</w></supplied> 
+                  <lb n="2"/><persName type="attested"><name nymRef="Speratus">Speratus</name> <persName type="attested"><name nymRef="Petrus">Petrus</name></persName> <w lemma="filius">filius</w></persName>. 
+                  <w lemma="uiuo">Bixit</w> <w lemma="in">in</w> <w lemma="hic">hoc</w> <w lemma="saeculum"><expan><abbr>s</abbr><ex>e</ex><abbr>c</abbr><ex>u</ex><abbr>lo</abbr></expan></w> 
+                  <date type="life-span" dur="P30Y"> <w lemma="annus">annos</w> <w>pl<supplied reason="lost">us</supplied></w> <supplied reason="lost"><w>minus</w></supplied> 
+                  <lb n="3"/>   <num value="30">XXX</num></date>. <w lemma="migro">Migrabit</w> <w lemma="hic">hoc</w> <w lemma="saeculum"><expan><abbr>s</abbr><ex>e</ex><abbr>c</abbr><ex>u</ex><abbr>lo</abbr></expan></w>
+              <w lemma="in">in</w> <w lemma="annus">anno</w> <w lemma="sextus">sexto</w> <sic/> <w lemma="millesimus"><expan><abbr>mill</abbr><ex>esim</ex><abbr>o</abbr></expan></w> <num value="512">DXII</num>  <w lemma="indictio"><expan><abbr>ind</abbr><ex>i</ex><abbr>ct</abbr><ex>i</ex><abbr>o</abbr></expan></w>
+              <lb n="4"/>  <w lemma="secundus">secunda</w> <w lemma="in">in</w> <w lemma="mensis">mense</w> <w lemma="November">Nobembre</w>. <w lemma="requies">Recuiem</w> <w lemma="aeternus">eternam</w> <w lemma="habeo">abeat</w> <w lemma="et">et</w>
+              <lb n="5"/><w lemma="vita">bitam</w> <w lemma="aeternus">eternam</w> <w lemma="possideo">possideat</w>. <w lemma="Amen"><expan><abbr>Am</abbr><ex>en</ex></expan></w> <w lemma="Amen"><expan><abbr>Am</abbr><ex>en</ex></expan></w> <w lemma="Amen"><expan><abbr>Am</abbr><ex>en</ex></expan></w>. </ab></div>
             <div type="textpart" n="ii">
-               <ab><lb n="1"/> <w>o</w> <w>bos</w> <w>omnes</w> <supplied reason="lost"><w>qui</w> <w>transitis</w> <w>per</w> <w>viam</w> <w>attendite</w> <w>et</w> <w>videte</w></supplied>
-               <lb n="2"/><w>si</w> <w>est</w> <w>dolor</w> <w>bester</w> <w>sic</w> <w>est</w> <w>dolor</w> <w>meus</w> <gap reason="lost" quantity="4" unit="character" cert="low"/> <supplied reason="lost"><w>Orate</w> <w>pro</w></supplied>
-                  <lb n="3"/><w>me</w> <w>ut</w> <w>sic</w> <w>abeatis</w> <w><expan><abbr>D</abbr><ex>eu</ex><abbr>m</abbr></expan></w> <w>adiutorem</w> <w>sicut</w> <w>dix
-                  <lb n="4" break="no"/>it</w> <persName type="divine"><name nymRef="Jacobus">Jacobus</name> <w><expan><abbr>apo</abbr><ex>sto</ex><abbr>l</abbr><ex>u</ex><abbr>s</abbr></expan></w></persName>. <w>Orate</w> <persName type="divine" key="iesus"><name><expan><abbr><g ref="symbols.xml#chi-rho"/></abbr><ex>Christ</ex><abbr>i</abbr></expan></name></persName> 
-                  <w>inbicem</w> <w>ut</w> <w>salbeamini</w> <w><expan><abbr>Am</abbr><ex>en</ex></expan></w>
+               <ab><lb n="1"/><gap reason="lost"/><w lemma="qualis"><supplied reason="lost">qu</supplied>alis</w> <w lemma="sum">est</w> <supplied reason="lost"><w lemma="dolor">dolor</w> <w lemma="meus">meus</w>.</supplied> <w><supplied reason="lost">Ora</supplied>
+                  <lb n="2" break="no"/>te</w> <w>pro</w> <w>me</w> <w lemma="sicut">sicut</w> <w lemma="dico">dixit</w> <persName type="divine"><name nymRef="Jacobus">Jacobus</name> <w><expan><abbr>ap</abbr><ex>osto</ex><abbr>l</abbr><ex>u</ex><abbr>s</abbr></expan></w></persName>. 
+                  <w lemma="oro">Orate</w> <supplied reason="lost" cert="low"><persName type="divine" key="kyrios"><w lemma="dominus"><expan><abbr>D</abbr><ex>omi</ex><abbr>n</abbr><ex>u</ex><abbr>m</abbr></expan></w></persName></supplied>
+                 <lb n="3"/> <w lemma="invicem">inbicem</w> <w lemma="ut">ut</w> <w lemma="salveo">salbeamini</w>. <w lemma="requies">Requiem</w> <w lemma="aeternus">eternam</w> <w lemma="habeo">abeat</w> 
+                  <lb n="4"/><w lemma="et">et</w> <w lemma="vita">bitam</w> <w lemma="aeternus">eternam</w> <w lemma="custodio">custodiat</w> <w lemma="cum">cum</w> <w lemma="sanctus">sanctis</w> <w lemma="et">et</w> 
+                  <w lemma="electus">electis</w> <w lemma="omnis">omnibus</w>. <w lemma="Amen"><expan><abbr>Am</abbr><ex>en</ex></expan></w>
             </ab></div>
          
          </div>
