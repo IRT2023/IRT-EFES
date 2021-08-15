@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1219" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Libyan</rs> <rs type="textType">funerary</rs> inscription</title>
+                <editor xml:id="cmr">Charlotte Roueché</editor>
+            </titleStmt>  
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">IRT1219</idno>
+                <availability>
+                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+                </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db1103">Bani Walid Museum</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                  <p> 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">?</objectType>No description
+                                    <dimensions>
+                                        <height unit="metre"></height>
+                                        <dim unit="metre"></dim></dimensions>.
+                                    
+                                  </p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> No description
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>No description</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot</origPlace>
+                            <origDate notAfter="0299" notBefore="0250" evidence="context">second half of the second century CE
+                            </origDate>
+                        </origin>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/2004">Wadi Chanafes</placeName> area, 
+                           precise location unknown</p></provenance>
+                        <provenance type="observed"> <p><placeName ref="https://www.slsgazetteer.org/1103">Bani Walid Museum</placeName> (<date type="observed">2003</date>).</p></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+                <language ident="xpu">Punic</language>
+                <language ident="ber-Latn">Native Libyan language in Latin script</language>
+            </langUsage>
+            <textClass>
+              <keywords scheme="IRCyr">
+                    <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
+                    <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
+                  <term><placeName type="modernFindspot" key="http://www.geonames.org/2216087">Wādī Kanāfis</placeName></term>
+              </keywords>
+            </textClass>
+            <creation>From Kerr</creation></profileDesc>
+        <revisionDesc>
+            <change when="2021-08-15" who="CMR">transcribed</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><graphic url=""/></facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <p><bibl><ptr target="kerr2010"/> <citedRange unit="page">218</citedRange></bibl>
+                    
+                </p>
+            </div>
+            <div type="edition" xml:lang="ber-Latn" xml:space="preserve"><ab>
+                <lb n="1"/><w lemma="myn&#xA7A9;yfth">myn&#xA7A9;yfth</w> <w lemma="mv">mv</w> <w lemma="fel">felu</w> <persName type="attested"><name nymRef="Pudens">Pudens</name></persName>
+                <lb n="2"/><w lemma="vy">vy</w><persName type="attested"><name nymRef="Severus">Severe</name></persName> <w lemma="ly">l</w><w lemma="ab">abvnom</w> <persName type="attested"><name nymRef="Amsuala">Amsva
+                <lb n="3" break="no"/>la</name> <w lemma="byn">byn</w> <persName type="attested"><name nymRef="Masuna">Masvna</name></persName></persName> 
+                <w lemma="by">by</w> <w lemma="sestertius"><expan><abbr><am><g ref="symbols.xml#denarius"/></am></abbr><ex>denariis</ex></expan></w> 
+                <num value="1700">oo oocc</num>
+                <lb n="4"/><w lemma="vy">vy</w><w lemma="bal">bal</w> <w lemma="ars">ars</w> <w lemma="ys">ys</w> <w lemma="fel">fel</w> <persName type="attested"><name nymRef="Reginus">Regine</name></persName> <orig>ysaobbygnno</orig>
+                 </ab></div>
+           
+            <div type="translation" source="#kerr2010" xml:lang="en">
+                <p>Mausoleum, which made Pudens and Severus for their father Amsuala son of Masuna, for 1700 denarii, and the architect who made it 
+                    was Reginus who . . . </p>
+            </div>
+            <div type="commentary">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>
