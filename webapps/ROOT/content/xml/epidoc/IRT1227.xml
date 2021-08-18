@@ -2,16 +2,17 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1213" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1227" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Libyan</rs> inscription</title>
+                <title> <rs type="textType">Honours</rs> for the emperors; <rs type="textType">building</rs> inscription for a cistern</title>
+                
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="filename">IRT1213</idno>
+                <idno type="filename">IRT1227</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -20,35 +21,41 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier><repository>Findspot</repository></msIdentifier>
+                    <msIdentifier>
+                        <repository>Findspot</repository>
+                    </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>A flat 
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">rock</objectType> </p>
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">block</objectType>
+                                    
+                                    <dimensions>
+                                        <height unit="metre">0.35</height>
+                                        <width unit="metre">1.02</width>
+                                    </dimensions>
+                                    
+                                  </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Incised</rs> on the flat rock surface; 
-                                    <dimensions><height>0.40</height> <width>0.30</width></dimensions>
-                                </layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote>Roughly incised, <height>0.07</height> </handNote>
+                            <handNote> <height>0.065-0.075</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>
-                            <origDate notBefore="0199" notAfter="0299" evidence="lettering" cert="low">?Third century CE
+                            <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/2267">Wadi el Hammam</placeName> 
-                            
-                           Dukkara, near Bir Tiwa Map: sheet 1574, Garian, 599864</p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1948">Gasr Zerzi</placeName>: 
+                           built into a cistern beside the Gasr</p></provenance>
                         <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
@@ -76,33 +83,34 @@
               <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                  <term><placeName type="modernFindspot" key="http://www.geonames.org/?">?</placeName></term>
               </keywords>
             </textClass>
-            <creation>From Kerr</creation></profileDesc>
+            <creation>Transcription (Brogan and Reynolds)</creation></profileDesc>
         <revisionDesc>
-            <change when="2021-08-15" who="CMR">transcribed</change>
+         <change when="2021-08-18" who="CMR">Transcribed</change>
         </revisionDesc>
     </teiHeader>
-    <facsimile><graphic url=""/></facsimile>
+    <facsimile><surface/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p> <bibl><ptr target="broganreynolds1964"/> <citedRange>5</citedRange></bibl>, whence 
-                    <bibl><ptr target="kerr2010"/>, <citedRange unit="page">191</citedRange> (where see bibliography)</bibl>
+                <p><bibl><ptr target="broganreynolds1964"/> <citedRange>2</citedRange>, p. 44</bibl>
                     
                 </p>
             </div>
-            <div type="edition" xml:lang="ber-Latn" xml:space="preserve"><ab>
-                <lb n="1"/><persName type="attested"><name nymRef="Rastim">Rastim</name></persName>
-                <lb n="2"/><orig>hy</orig> <persName type="attested"><name nymRef="Iado">Nim</name></persName>
-                <lb n="3"/><orig>ilaterist</orig>
-                <lb n="4"/><orig>mlemia</orig>
-               
-                </ab></div>
-           
-            <div type="translation" source="#kerr2010" xml:lang="en">
-                <p>Rastim . . . Iado [ . . .</p>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/><w lemma="imperator"><expan><abbr>Impp</abbr><ex>eratoribus</ex></expan></w> <persName type="emperor"><name nymRef="Caesar"><expan><abbr>Caess</abbr><ex>are</ex></expan></name> Lucio 
+                    <name nymRef="Septimius">Sep<unclear>t</unclear>imio</name> <name nymRef="Seuerus">Seuero</name></persName>
+              <lb n="2"/>    Pio <expan><abbr>Per</abbr><ex>tinace</ex></expan> <expan><abbr><hi rend="ligature">Au</hi>g</abbr><ex>usto</ex></expan> et <persName type="emperor"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name nymRef="Aurelius">Aure
+                  lio</name> <name nymRef="Antoninus">Antoni
+                       <lb n="3" break="no"/>no</name> et <del rend="erasure"><supplied reason="lost"><expan><abbr>P</abbr><ex>ublio</ex></expan></supplied></del> Septimio
+                      <del rend="erasure"><unclear>G</unclear><supplied reason="lost">eta</supplied>e</del> <name nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ari</ex></expan></name> 
+                  <expan><abbr><hi rend="ligature">Au</hi>g</abbr><ex>usto</ex></expan></persName>
+                  <lb n="4"/>et Iuliae <expan><abbr><hi rend="ligature">Au</hi>g</abbr><ex>ustae</ex></expan> matri <expan><abbr>castr</abbr><ex>orum</ex></expan> <expan><abbr>cister</abbr><ex cert="low">na</ex></expan>
+               </ab></div>
+            <div type="translation" resp="#cmr" xml:lang="en">
+                <p/>
             </div>
             <div type="commentary">
                 <p/>

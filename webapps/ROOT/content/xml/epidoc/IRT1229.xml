@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1096" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1229" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Brick-stamp</rs></title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+                <title><rs type="textType">Dedication?</rs> to Alexander Severus</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD010018</idno>
-                <idno type="TM">199073</idno>
-                <idno type="filename">IRT1096</idno>
+                <idno type="filename">IRT1229</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -23,26 +20,33 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier><repository ref="institution.xml#db1098">Tripoli Castle</repository></msIdentifier>
+                    <msIdentifier>
+                        <repository>...</repository>
+                    </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                      
-                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/147">Brick</objectType>, left side broken away    
+                                  <p>Fragmentary
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/257">block</objectType> of 
+                                     <material>limestone</material>
+                                    <dimensions>
+                                        <height unit="metre">0.48</height>
+                                        <width unit="metre">0.37</width>
+                                        <depth unit="metre">0.195</depth>
+                                    </dimensions>
+                                    
                                   </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/77">Stamped</rs> raised letters. 
-                                    Die <dimensions><height>0.026</height>  <width>0.045</width></dimensions>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height>0.02</height>0</handNote>
+                            <handNote> <height>0.055</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -50,14 +54,9 @@
                             <origPlace>Unknown</origPlace>
                             <origDate>
                             </origDate>
-                        </origin>
-                        <provenance type="found">
-                            <p>
-                                <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/6456">Western Djebel</placeName>: 
-                                <placeName type="monuList" ref="https://www.slsgazetteer.org/881">Ain el-Auenia</placeName> (map ref. U 785720)</p>
-                        </provenance>
-                        
-                        <provenance type="observed"><p><placeName ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName></p></provenance>
+                        </origin><provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/658">Bu Ngem</placeName>: 
+                        Principia</p></provenance>
+                        <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -84,34 +83,36 @@
                 <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
-                    <term ref="http://www.eagle-network.eu/voc/typeins/lod/311">Besitzer-/Herstellerinschrift</term><!--move info inside <title> in <titleStmt>-->
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2220431">Abū Nujaym</placeName></term>
+                    <term ref="http://www.eagle-network.eu/voc/typeins/lod/261">Bau-/Stifterinschrift</term><!--move info inside <title> in <titleStmt>-->
                 </keywords>
             </textClass>
-        <creation>Epigraphische Datenbank Heidelberg</creation></profileDesc>
+        <creation>Taken from Rebuffat</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-04-18" who="IV">adapted</change>
-         <change when="2013-10-15" who="Gräf">provisorisch bearbeitet</change>
+         <change when="2021-08-18" who="CMR">transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="reynolds1967"/> <citedRange>45-46</citedRange>, 1c</bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1972.683c</citedRange></bibl>,
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010018">010018</ref></citedRange></bibl>
-                </p>
-            </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <gap reason="lost" extent="unknown" unit="character"/><w><expan><abbr><supplied reason="lost">A</supplied>ug</abbr><ex>ustae</ex></expan></w> <w><expan><abbr>p</abbr><ex>iae</ex></expan></w> 
-                <w><expan><abbr>v</abbr><ex>indicis</ex></expan></w>
+                <p><bibl><ptr target="rebuffat1970"/> <citedRange>70-49</citedRange>, pp 139-140
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                 <lb n="1"/><gap reason="lost" quantity="1" unit="line"/>
+                <lb n="2"/><orig>pm<unclear>po</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><orig>ri</orig><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="4"/><supplied reason="lost">Alexandri</supplied> P<unclear>ii</unclear> <unclear>Fel</unclear>(ici) Aug
+                <lb n="5"/><supplied reason="lost">et Iul(iae) Auitae Mamaeae</supplied>
+                <lb n="6"/><supplied reason="lost">matris</supplied> Aug. n. e<unclear>t</unclear> Cast
+                <lb n="7"/><orig>iuii</orig><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="7a"/> <gap reason="lost" extent="unknown" unit="line"/>
+               
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>
             <div type="commentary">
-                <p> Schreibtechnik: gestempelt; </p>
+                
             </div>
         </body>
     </text>

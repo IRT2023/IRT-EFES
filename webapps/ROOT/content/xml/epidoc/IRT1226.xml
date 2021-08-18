@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1058" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1226" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Building</rs> inscription?</title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+                <title> <rs type="textType">Honours</rs> for the emperors</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD008746</idno>
-                <idno type="TM">199047</idno>
-                <idno type="filename">IRT1058</idno>
+                <idno type="filename">IRT1226</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -24,19 +21,19 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <repository>...</repository>
+                        <repository>Findspot</repository>
                     </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>Broken 
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/257">paving-stone</objectType> of
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material>
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material>
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">block</objectType>
+                                    
                                     <dimensions>
-                                        <height unit="metre">0.315</height>
-                                        <width unit="metre">0.61</width>
-                                        <depth unit="metre">0.10</depth>
+                                        <height unit="metre">0.58</height>
+                                        <width unit="metre">0.56</width>
+                                        <depth unit="metre">0.22</depth>
                                     </dimensions>
                                     
                                   </p>
@@ -44,22 +41,22 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face
-                                </layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face within a 
+                                    moulded border </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height unit="metre">0.045</height></handNote>
+                            <handNote> <height>0.05-0.055</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>
-                            <origDate when="0248">248 AD
+                            <origDate>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/658">Bu Ngem</placeName>, in the floor 
-                        at the entrance to the chapel</p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/1948">Gasr Zerzi</placeName>: 
+                            lying outside the entrance to the Gasr</p></provenance>
                         <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
@@ -87,33 +84,30 @@
               <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+                  <term><placeName type="modernFindspot" key="http://www.geonames.org/?">?</placeName></term>
               </keywords>
             </textClass>
-            <creation>Epigraphische Datenbank Heidelberg</creation></profileDesc>
+            <creation>Transcription (Brogan and Reynolds)</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-04-18" who="IV">adapted</change>
-         <change when="2013-10-15" who="Gräf">provisorisch bearbeitet</change>
+         <change when="2021-08-18" who="CMR">Transcribed</change>
         </revisionDesc>
     </teiHeader>
-    <facsimile><graphic url=""/></facsimile>
+    <facsimile><surface/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="rebuffat1967"/> <citedRange>67-68</citedRange>, p.100</bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1972.679</citedRange></bibl>, 
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD008746">008746</ref></citedRange></bibl>
-                   
+                <p><bibl><ptr target="broganreynolds1964"/> <citedRange>1</citedRange>, pp. 43-4</bibl>
+                    
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="0"/>
-                <gap reason="lost" extent="unknown" unit="line"/> 
-                <lb n="1"/><orig>fu<unclear>n</unclear></orig> <gap reason="lost" extent="unknown" unit="character"/> 
-                <lb n="2"/><placeName><expan><abbr>Golens</abbr><ex></ex></expan></placeName> <w part="I">fe</w><gap reason="lost" extent="unknown" unit="character"/> 
-                <lb n="3"/><persName type="emperor"><del rend="erasure"><supplied reason="lost"><w><expan><abbr>Impp</abbr><ex>eratoribus</ex></expan></w> 
-                    <name nymRef="Philippus">Philippo</name></supplied> <num value="3"><unclear>III</unclear></num> <supplied reason="lost"><w>et</w></supplied></del> <del rend="erasure"><name nymRef="Philippus"><supplied reason="lost">Phi</supplied>
-                <lb break="no" n="4"/>lippo</name></del></persName> <del rend="erasure"><num value="2">II</num></del> 
-                <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan></w> <g ref="symbols.xml#leaf"/> <space/>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                <lb n="1"/><w lemma="imperator"><expan><abbr>Im<hi rend="ligature">pp</hi></abbr><ex>eratoribus</ex></expan></w> <persName type="emperor"><name nymRef="Caesar"><expan><abbr>Caes</abbr><ex>are</ex></expan></name> Lucio <name nymRef="Septimius">Sep<hi  rend="ligature">ti</hi>mio</name> <name nymRef="Seuerus">Seue
+                    <lb n="2" break="no"/>ro</name></persName>
+                 <hi rend="ligature">Pi</hi>o <hi rend="ligature">Pe</hi>r<hi rend="ligature">ti</hi>nace et <persName type="emperor"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name nymRef="Aurelius">Aure<hi rend="ligature">li</hi>o</name>
+                     <lb n="3"/><name nymRef="Antoninus">Antonino</name> <hi rend="ligature">et</hi> <del rend="erasure"><supplied reason="lost"><expan><abbr>P</abbr><ex>ublio</ex></expan></supplied></del> Sep<hi rend="ligature">t</hi>imio
+                     <lb n="4"/> <del rend="erasure"><unclear>G</unclear><supplied reason="lost">eta</supplied>e</del> <name nymRef="Caesar"><expan><abbr>Caess<del>s</del></abbr><ex>aribus</ex></expan></name> <expan><abbr>Augg<del>g</del></abbr><ex>ustis</ex></expan> 
+               <w lemma="totus">to<hi rend="ligature">ti</hi><lb n="5"/>usque</w> <w>domus</w> <w><expan><abbr>divin</abbr><ex>ae</ex></expan></w></persName> 
+               <lb n="6"/> <supplied reason="lost" cert="low"><del rend="erasure"><w><expan><abbr>leg</abbr><ex>io</ex></expan></w> <num value="3">III</num> <w><expan><abbr>Aug</abbr><ex>usta</ex></expan></w> </del></supplied>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
