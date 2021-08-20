@@ -3,133 +3,110 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1223" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>
-               <rs type="textType">Christian</rs> 
-               <rs type="textType">funerary</rs> text</title>
-         <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
-         <publicationStmt>
-            <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1223</idno>
-            <availability>
-               <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
-               <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
-               </p>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <msDesc>
-               <msIdentifier><repository>Findspot</repository></msIdentifier>
-               <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>
-                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface, 
-                              <dimensions><width>2.05</width> <depth>0.64</depth> <height>0.50</height></dimensions>.</p>
-                        </support>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Inscribed</rs> i on the south face, ii on the north, iii 
-                           above a cross in a circle on the west face.</layout>
-                     </layoutDesc>
-                  </objectDesc>
-                  <handDesc>
-                     <handNote>Large clear uncial letters, <height>0.06-0.08</height></handNote>
-                  </handDesc>
-               </physDesc>
-               <history>
-                  <origin>
-                     <p>Findspot</p>
-                     <origDate></origDate><!-- check -->
-                  </origin>
-                  <provenance type="found">
-                           <p>
-                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>:
-                  Christian cemetery among the sand-dunes at <placeName ref="https://www.slsgazetteer.org/821">en-Ngila</placeName> 
-                              (map ref. L 410550) 18 km. SSW of Tripoli, near Suani Ben Adem. Tomb 8, excavated in <date type="found">1973</date>.</p>
-                        </provenance>
-                        <provenance type="observed">
-                           <p>Findspot</p>
-                        </provenance>
-               </history>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="ar">Arabic</language>
-            <language ident="en">English</language>
-            <language ident="fr">French</language>
-            <language ident="de">German</language>
-            <language ident="grc">Ancient Greek</language>
-            <language ident="grc-Latn">Transliterated Greek</language>
-            <language ident="el">Modern Greek</language>
-            <language ident="he">Hebrew</language>
-            <language ident="it">Italian</language>
-            <language ident="la">Latin</language>
-            <language ident="xpu">Punic</language>
-            <language ident="ber-Latn">Native Libyan language in Latin script</language>
-         </langUsage>
-         <textClass/>
-         <textClass>
-            <keywords scheme="IRCyr">
-               <term>
-                  <geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName>
-               </term>
-               <term>
-                  <geogName type="modernCountry" key="LY">Libya</geogName>
-               </term>
-               <term>
-                  <placeName type="modernFindspot" key="http://www.geonames.org/2219597/tripoli.html">an Najīlah</placeName>
-               </term>
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change when="2021-08-17" who="CMR">Transcribed</change>
-      </revisionDesc>
-   </teiHeader>
-   <text>
-      <body>
-         <div type="bibliography">
-            <p><bibl><ptr target="rizzardi1973"/>, <citedRange>I</citedRange> pp.285-292</bibl> and figs. 3-8</p>
-         </div>
-         <div type="edition" xml:lang="la" xml:space="preserve">
-            <div type="textpart" n="i"><ab>
-            <lb n="1"/><g ref="symbols.xml#crux"/> <supplied reason="lost"><w>In</w> <w>ok</w></supplied> <w>tumulo</w> <w>iaket</w> 
-               <w>korpus</w> <w lemma="bonus">bone</w> <w lemma="memoria">memorie</w> <w>aba</w><persName type="attested"><name nymRef="Petrus">Petrus</name></persName> <w><expan><abbr><unclear>mon</unclear></abbr><ex>ach</ex><abbr><unclear>u</unclear></abbr><ex>s</ex></expan></w>
-<lb n="2"/><w>Bixit</w> <w lemma="in">in</w> <w lemma="pax">pake</w> <date type="life-span" dur="P75Y"><w>annos</w> <w lemma="plus">plus</w> <w lemma="minus">min
-            us</w> LXXV </date>. <w>Rekessit</w> <w>de</w> <w>ok</w> <w>se
-               <lb n="3" break="no"/>kulo</w> sub
- <w lemma="dies">die</w> XXI <w>indictionis</w> X. 
-               <w lemma="requies">Requiem</w> <w lemma="aeternus">eternam</w> <w lemma="do">det</w> 
-               <lb n="4"/><w lemma="tu">tibi</w> 
-                  <persName type="divine" key="kyrios"><w lemma="dominus">Dominus</w></persName>
-et <w lemma="lux">l<supplied reason="omitted">u</supplied>x</w> <w>perpetua</w> <w>lukeat</w> <w>tibi</w> <w>indulgentia</w>
-         </ab></div>
-            <div type="textpart" n="ii"><ab>
-               <lb n="1"/><w lemma="sanctus"><expan><abbr>S</abbr><ex>an</ex><abbr>k</abbr><ex>tu</ex><abbr>s</abbr></expan></w>  
-               <w lemma="sanctus"><expan><abbr>S</abbr><ex>an</ex><abbr>k</abbr><ex>tu</ex><abbr>s</abbr></expan></w> 
-               <w lemma="sanctus"><expan><abbr>S</abbr><ex>an</ex><abbr>k</abbr><ex>tu</ex><abbr>s</abbr></expan></w> 
-               <w><expan><abbr>D</abbr><ex>omi</ex><abbr>n</abbr><ex>u</ex><abbr>s</abbr></expan></w> <w><expan><abbr>D</abbr><ex>eu</ex><abbr>s</abbr></expan></w> <w>Sabaoth</w>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Libyan</rs> inscription</title>
+                <editor xml:id="cmr">Charlotte Roueché</editor>
+            </titleStmt>  
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">IRT1223</idno>
+                <availability>
+                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+                </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository>Findspot</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                  <p>A flat 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">rock</objectType> </p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Incised</rs> on the flat rock surface; 
+                                    <dimensions><height>0.40</height> <width>0.30</width></dimensions>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Roughly incised, <height>0.07</height> </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot</origPlace>
+                            <origDate notBefore="0199" notAfter="0299" evidence="lettering" cert="low">?Third century CE
+                            </origDate>
+                        </origin>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/2267">Wadi el Hammam</placeName> 
+                            
+                           Dukkara, near Bir Tiwa Map: sheet 1574, Garian, 599864</p></provenance>
+                        <provenance type="observed"><p>Findspot</p></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+                <language ident="xpu">Punic</language>
+                <language ident="ber-Latn">Native Libyan language in Latin script</language>
+            </langUsage>
+            <textClass>
+              <keywords scheme="IRCyr">
+                    <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
+                    <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+              </keywords>
+            </textClass>
+            <creation>From Kerr</creation></profileDesc>
+        <revisionDesc>
+            <change when="2021-08-15" who="CMR">transcribed</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><graphic url=""/></facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <p> <bibl><ptr target="broganreynolds1964"/> <citedRange>5</citedRange></bibl>, whence 
+                    <bibl><ptr target="kerr2010"/>, <citedRange unit="page">191</citedRange> (where see bibliography)</bibl>
+                    
+                </p>
+            </div>
+            <div type="edition" xml:lang="ber-Latn" xml:space="preserve"><ab>
+                <lb n="1"/><persName type="attested"><name nymRef="Rastim">Rastim</name></persName>
+                <lb n="2"/><orig>hy</orig> <persName type="attested"><name nymRef="Iado">Nim</name></persName>
+                <lb n="3"/><orig>ilaterist</orig>
+                <lb n="4"/><orig>mlemia</orig>
                
-               
-            </ab></div>
-            <div type="textpart" n="iii"><ab>
-               <lb n="1"/><w lemma="sanctus"><expan><abbr>S</abbr><ex>an</ex><abbr>k</abbr><ex>tu</ex><abbr>s</abbr></expan></w>  
-               <w lemma="sanctus"><expan><abbr>S</abbr><ex>an</ex><abbr>k</abbr><ex>tu</ex><abbr>s</abbr></expan></w>
-               <lb n="2"/><g ref="symbols.xml#crux"/>
-            </ab></div>
-         
-         </div>
-         <div type="commentary">
-            <p></p>
-         </div>
-      </body>
-   </text>
+                </ab></div>
+           
+            <div type="translation" source="#kerr2010" xml:lang="en">
+                <p>Rastim . . . Iado [ . . .</p>
+            </div>
+            <div type="commentary">
+                <p/>
+            </div>
+        </body>
+    </text>
 </TEI>

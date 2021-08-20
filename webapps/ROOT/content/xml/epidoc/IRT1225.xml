@@ -3,117 +3,114 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1225" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>
-               <rs type="textType">Christian</rs> 
-               <rs type="textType">funerary</rs> text</title>
-         <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
-         <publicationStmt>
-            <authority>Centre for Computing in the Humanities, King's College London</authority>
-            <idno type="filename">IRT1225</idno>
-            <availability>
-               <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
-               <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
-               </p>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <msDesc>
-               <msIdentifier><repository>Findspot</repository></msIdentifier>
-               <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>
-                           <p><objectType>Tomb</objectType> of rubble, with a <material>plaster</material> surface; no measurements.</p>
-                        </support>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout><rs type="execution" key="scalpro">Incised</rs> on the upper face</layout>
-                     </layoutDesc>
-                  </objectDesc>
-                  <handDesc>
-                     <handNote> Elegant uncials, <height>0.031-0.037</height></handNote>
-                  </handDesc>
-               </physDesc>
-               <history>
-                  <origin>
-                     <p>Findspot</p>
-                     <origDate></origDate><!-- check -->
-                  </origin>
-                  <provenance type="found">
-                           <p>
-                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/819">Tripoli</placeName>:
-                  Christian cemetery among the sand-dunes at <placeName ref="https://www.slsgazetteer.org/821">en-Ngila</placeName> 
-                              (map ref. L 410550) 18 km. SSW of Tripoli, near Suani Ben Adem. Tomb 13, excavated in <date type="found">1973</date>.</p>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><rs type="textType">Libyan</rs> <rs type="textType">building</rs> inscription</title>
+                <editor xml:id="cmr">Charlotte Roueché</editor>
+            </titleStmt>  
+            <publicationStmt>
+                <authority>Centre for Computing in the Humanities, King's College London</authority>
+                <idno type="filename">IRT1225</idno>
+                <availability>
+                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+                </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                  <p> 
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Brick</objectType>
+                                    <dimensions>
+                                        <height unit="metre"></height>
+                                        <dim unit="metre"></dim></dimensions>.
+                                    
+                                  </p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/8">Stamped</rs> within a half-moon outline
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>CHECK</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Findspot</origPlace>
+                            <origDate>
+                            </origDate>
+                        </origin>
+                        <provenance type="found"><p><placeName type="ancientFindspot"
+                            ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: <placeName ref="https://www.slsgazetteer.org/740">Regio II</placeName>, 
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/725">Hadrianic Baths</placeName></p>
                         </provenance>
-                        <provenance type="observed">
-                           <p>Findspot</p>
-                        </provenance>
-               </history>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="ar">Arabic</language>
-            <language ident="en">English</language>
-            <language ident="fr">French</language>
-            <language ident="de">German</language>
-            <language ident="grc">Ancient Greek</language>
-            <language ident="grc-Latn">Transliterated Greek</language>
-            <language ident="el">Modern Greek</language>
-            <language ident="he">Hebrew</language>
-            <language ident="it">Italian</language>
-            <language ident="la">Latin</language>
-            <language ident="xpu">Punic</language>
-            <language ident="ber-Latn">Native Libyan language in Latin script</language>
-         </langUsage>
-         <textClass/>
-         <textClass>
-            <keywords scheme="IRCyr">
-               <term>
-                  <geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName>
-               </term>
-               <term>
-                  <geogName type="modernCountry" key="LY">Libya</geogName>
-               </term>
-               <term>
-                  <placeName type="modernFindspot" key="http://www.geonames.org/2219597/tripoli.html">an Najīlah</placeName>
-               </term>
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change when="2021-08-17" who="CMR">Transcribed</change>
-      </revisionDesc>
-   </teiHeader>
-   <text>
-      <body>
-         <div type="bibliography">
-            <p><bibl><ptr target="rizzardi1973"/>, <citedRange>II</citedRange> pp.292-294</bibl> and figs. 10-12</p>
-         </div>
-         <div type="edition" xml:lang="la" xml:space="preserve">
-           <ab>
-            <lb n="1"/><g ref="symbols.xml#crux"/> <w>Bona</w> <w>me
-<lb n="2" break="no"/>moria</w> <orig>avs</orig>
-               <lb n="3"/><name nymRef="Victorinus">Bictorinus</name>
-               <lb n="4"/><w lemma="uiuo">Bixit</w> <date type="life-span" dur="P75Y"><w>anos</w>
-               <lb n="5"/><num>LXXV</num> <w>plus</w> <w lemma="minus">min<supplied reason="omitted">u</supplied>s</w></date>
-               <lb n="6"/><w>ed</w> <w>obdormib
-               <lb n="7" break="no"/>it</w> in pace <w>sub</w> <w>d<supplied reason="omitted">i</supplied>e</w>
-               <lb n="8"/><w>dodecim</w> <w><expan><abbr>m</abbr><ex>ensis</ex></expan></w> <w lemma="Martius">Ma
-               <lb n="9"/>rxiarum</w> <g ref="symbols.xml#palm"/>
-           </ab>   
-            
-         </div>
-         <div type="commentary">
-            <p></p>
-         </div>
-      </body>
-   </text>
+                        <provenance type="observed"><p><placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName>.</p></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="ar">Arabic</language>
+                <language ident="en">English</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="grc">Ancient Greek</language>
+                <language ident="grc-Latn">Transliterated Greek</language>
+                <language ident="el">Modern Greek</language>
+                <language ident="he">Hebrew</language>
+                <language ident="it">Italian</language>
+                <language ident="la">Latin</language>
+                <language ident="xpu">Punic</language>
+                <language ident="ber-Latn">Native Libyan language in Latin script</language>
+            </langUsage>
+            <textClass>
+              <keywords scheme="IRCyr">
+                    <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
+                    <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
+                  <term><placeName type="modernFindspot" key="http://www.geonames.org/2219748">Qaryah al Gharbiyah</placeName></term>
+              </keywords>
+            </textClass>
+            <creation>From Kerr</creation></profileDesc>
+        <revisionDesc>
+            <change when="2021-08-15" who="CMR">transcribed</change>
+         
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><graphic url="bart1215.jpg"><desc>Drawing (Bartoccini, fig.33)</desc></graphic></facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <p> <bibl><ptr target="bartoccini1926"/> <citedRange>64</citedRange>, and fig 33</bibl>, whence  
+                    <bibl><ptr target="kerr2010"/>, <citedRange unit="page">203</citedRange> (where see bibliography)</bibl>
+                    
+                </p>
+            </div>
+            <div type="edition" xml:lang="ber-Latn" xml:space="preserve"><ab>
+                <lb n="1"/><w lemma="fel">felioth</w> <w lemma="yad">iadem</w> <w lemma="ly">ly</w><persName type="attested"><name nymRef="Rogatus">Ro
+                <lb n="2" break="no"/>gate</name></persName> <w>ymma
+               <lb n="3" break="no"/>nnai</w>
+                </ab></div>
+           
+            <div type="translation" source="#kerr2010" xml:lang="en">
+                <p>Hand-craftsmanship by/of Rogatus, the builder</p>
+            </div>
+            <div type="commentary">
+                <p/>
+            </div>
+        </body>
+    </text>
 </TEI>
