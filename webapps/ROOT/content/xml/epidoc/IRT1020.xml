@@ -2,19 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1017" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1020" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Christian </rs> <rs type="textType">funerary </rs> inscription</title>
-                <editor xml:id="xxx">xxx - EDH</editor>
+                <title><rs type="textType">Honours </rs> for the emperors</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="EDH">HD017200</idno>
-                <idno type="TM">199497</idno>
-                <idno type="filename">IRT1017</idno>
+                <idno type="filename">IRT1020</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -24,37 +21,39 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <repository>...</repository>
+                        <repository>Findspot</repository>
                     </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Tomb</objectType> covered in 
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">plater</material>: no measurements
-                                  </p>
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material> 
+                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">archtrave</objectType> block, <dimensions>
+                                        <height unit="metre">0.58</height>
+                                        <width unit="metre">1.85</width>
+                                        <depth unit="metre">0.60</depth>
+                                    </dimensions> </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Painted</rs> text
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face below a moulding 
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote></handNote>
+                            <handNote><height>0.09</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>
-                            <origDate notAfter="0650" notBefore="0450" evidence="context, lettering">Fifth-seventh century CE</origDate>
+                            <origDate>
+                            </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
-                            <placeName ref="https://www.slsgazetteer.org/742">Regio IV</placeName>, 
-                            <placeName type="monuList" ref="https://www.slsgazetteer.org/712">Colonnaded Street</placeName>, built against the 
-                        south wall of the Forum.</p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
+                            <placeName ref="https://www.slsgazetteer.org/701">Road from the Circus to the Port</placeName>,  
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/702">Amphitheatre</placeName>.</p></provenance>
                         <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
@@ -91,25 +90,22 @@
          <change when="2014-05-20" who="Bigi">provisorisch bearbeitet</change>
         </revisionDesc>
     </teiHeader>
-    <facsimile><graphic url=""/></facsimile>
+    <facsimile><surface/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="bartoccini1961"/> <citedRange>117</citedRange></bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1963.144c</citedRange></bibl>,
-                    <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD017200">017200</ref></citedRange></bibl>
-                    
+                <p><bibl><ptr target="pellegrino2018"/> <citedRange>3</citedRange></bibl>
+                   
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <w lemma="bonus"><expan><abbr>B</abbr><ex>onae</ex></expan></w> <w lemma="memoria"><expan><abbr>m</abbr><ex>emoriae</ex></expan></w> <persName type="attested"><name nymRef="Segundianus">Se
-                <lb break="no" n="2"/>gundianu
-                <lb break="no" n="3"/>s</name></persName> <note>sic</note> <w lemma="vivo">binxit</w> <note>sic</note> 
-                <lb n="4"/><w>in</w> <w lemma="pax">pake</w> <date type="life-span" dur="P65Y"><w lemma="annus">an
-                <lb break="no" n="5"/><supplied reason="omitted">n</supplied>os</w> <w lemma="plus">plus</w> <w lemma="minus">m
-                <lb break="no" n="6"/>inus</w> <num value="65">LXV</num></date> 
-                <lb n="7"/><w><supplied reason="lost">r</supplied>e<supplied reason="lost">quiebit</supplied></w> <supplied reason="lost"><w lemma="in">in</w></supplied> 
-                <lb n="8"/><w lemma="pax">pakke</w> 
+                <persName type="enperor"><addName nymRef="Imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></addName> <addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ar</ex></expan></addName> <name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name nymRef="Septimius">Septimius</name> <name nymRef="Seuerus">Seuerus</name> 
+                    <addName nymRef="Pius">Pius</addName> <addName nymRef="Pertinax">Perti<supplied reason="lost">nax</supplied></addName> <supplied reason="lost"><addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></addName></supplied> </persName><gap reason="lost" unit="character"/> <supplied reason="lost"><w>et</w></supplied>
+                <lb n="2"/><persName type="emperor"><addName nymRef="Imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></addName> 
+                    <addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ar</ex></expan></addName> <name nymRef="Marcus">Marcus</name> <name nymRef="Aurelius">Aurellius</name> <name nymRef="Antoninus">Antoninus</name></persName> <gap reason="lost" unit="character"/> <supplied reason="lost"><w>et</w></supplied> <persName type="emperor"><supplied reason="lost"><name nymRef="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name nymRef="Septimius">Septimius</name> <name nymRef="Geta">Geta</name></supplied>
+                    <lb n="3"/><del rend="erasure"><addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ar</ex></expan></addName> 
+                        <supplied reason="lost"><addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></addName></supplied></del></persName> et <persName type="emperor"><name nymRef="Iulia">Iulia</name> <addName nymRef="Augusta"><expan><abbr>Aug</abbr><ex>usta</ex></expan></addName> <w>mater</w> 
+                            <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustorum</ex></expan></addName></persName> <supplied reason="lost">et castrorum</supplied> <gap reason="lost" unit="character"/>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

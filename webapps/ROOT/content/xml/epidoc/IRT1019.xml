@@ -2,16 +2,16 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1078" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1019" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Dedication</rs> to Serapis</title>
+                <title><rs type="textType">Dedication</rs> to Nemesis</title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="filename">IRT1078</idno>
+                <idno type="filename">IRT1019</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -27,28 +27,34 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>Several fragmwents of a <material>marble</material> 
-                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/29">panel</objectType>; 
-                                    no measurements</p>
+                                  <p><objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Base</objectType> of 
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
+                                    <dimensions>
+                                        <height unit="metre">1.7</height>
+                                        <width unit="metre">0.77</width>
+                                        <depth unit="metre">0.64</depth>
+                                    </dimensions> </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the front face</layout>
+                                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/21">Inscribed</rs> on the face within a moulded panel 
+                                </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote> No measurements; cursive omega.</handNote>
+                            <handNote>Lines 1-4, <height>0.07-0.085</height>; lines 5-9, <height>0.05</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Findspot</origPlace> <origDate notBefore="0161" notAfter="0325" evidence="context">After 161 CE</origDate>
+                            <origPlace>Findspot</origPlace>
+                            <origDate>
+                            </origDate>
                         </origin>
-                        <provenance type="found">
-                            <p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
-                                <placeName ref="https://www.slsgazetteer.org/744">Regio V</placeName>, in the 
-                                <placeName type="monulist" ref="https://www.slsgazetteer.org/1698/">Serapeion</placeName>.</p></provenance>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
+                            <placeName ref="https://www.slsgazetteer.org/701">Road from the Circus to the Port</placeName>,  
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/702">Amphitheatre</placeName>.</p></provenance>
                         <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
@@ -73,53 +79,42 @@
                 <language ident="ber-Latn">Native Libyan language in Latin script</language>
             </langUsage>
             <textClass>
-                <keywords scheme="IRCyr">
+              <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2219905">Al Khums</placeName></term>
-                </keywords>
+                    <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
+              </keywords>
             </textClass>
-        <creation>IRT2021</creation></profileDesc>
+            <creation>Epigraphische Datenbank Heidelberg</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-05-02" who="CMR">transcribed</change>
+         <change when="2021-04-18" who="IV">adapted</change>
+         <change when="2014-05-20" who="Bigi">provisorisch bearbeitet</change>
         </revisionDesc>
     </teiHeader>
-    <facsimile><graphic url=""/></facsimile>
+    <facsimile><graphic url="tantillo0002.jpg"><desc>Photograph (Tantillo, 2005)</desc></graphic></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="pugliese2003"/> <citedRange>10</citedRange>, 274</bibl>, whence 
-                    <bibl><ptr target="cdlBE"/> <citedRange>2004.459</citedRange></bibl>,
-                    <bibl><ptr target="ae"/> <citedRange>2003.1913</citedRange></bibl>, 
-                    <bibl><ptr target="seg"/> <citedRange>53.1178</citedRange></bibl>, whence 
-                    <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/323924">323924</ref></citedRange></bibl>
-                    
+                <p><bibl><ptr target="pellegrino2018"/> <citedRange>2</citedRange></bibl>
                    
                 </p>
             </div>
-            <div type="edition" xml:lang="grc" xml:space="preserve">
-           
-           <ab>
-             <lb n="1"/>  <persName type="divine" key="zeus"><name nymRef="Ζεύς">Διὶ</name></persName> <persName type="divine" key="sol"><name nymRef="Ἥλιος">Ἡλί<supplied reason="lost">ῳ</supplied></name></persName> 
-               <persName type="divine" key="serapis"><w>μεγάλῳ</w> 
-              <lb n="2"/>   <name nymRef="Σαράπις">Σαράπιδι</name></persName> <g ref="symbols.xml#leaf"/> <w lemma="καί">καὶ</w> <g ref="symbols.xml#leaf"/> <persName type="divine" key="unknown"><w>τοῖς</w> 
-                 <lb n="3"/> <w>συννάοις</w> <g ref="symbols.xml#leaf"/> <w>θεοῖς</w></persName> 
-	            <lb n="4"/><persName type="attested"> <name nymRef="Λούκιος"><expan><abbr>Λ</abbr><ex>ούκιος</ex></expan></name> <g ref="symbols.xml#leaf"/> 
-	               <name nymRef="Αὐρήλιος">Αὐρήλιος</name> <g ref="symbols.xml#leaf"/> <name nymRef="Ἱέραξ">Ἱέραξ</name> </persName>
-	            <lb n="5"/><w>ἀνέθηκεν</w>  
-                  
-               </ab> 
-
-            </div>
-           
-            
-            
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
+                <persName type="divine"><name nymRef="Nemesis">Nemesi</name> <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustae</ex></expan></addName> </persName>
+                <lb n="2"/><persName type="attested"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name nymRef="Iunius">Iunius</name>
+                 <lb n="3"/> <name nymRef="Crescens">Crescens</name>
+                    <lb n="4"/><persName type="attested"> <name nymRef="Afer">Afri</name></persName> <w><expan><abbr>>fil</abbr><ex>ius</ex></expan></w> </persName> <w>fla
+                <lb n="5" break="no"/>men</w> <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></addName> <w>curator</w>
+                <lb n="6"/><w>muneris</w> <w>publici</w>
+                <lb n="7"/><w>augur</w> <w>IIuirum</w>
+                <lb n="8"/><w><expan><abbr>q</abbr><ex>uin</ex><abbr>q</abbr><ex>uennalium</ex></expan></w> <w>munerarius</w>
+                <lb n="9"/><w>de</w> <w>suo</w> <w><expan><abbr>u</abbr><ex>otum</ex></expan></w> <w><expan><abbr>s</abbr><ex>oluit</ex></expan></w>
+            </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
-                <p></p>
-                  
+                <p/>
             </div>
             <div type="commentary">
-               
+                <p/>
             </div>
         </body>
     </text>
