@@ -87,6 +87,7 @@
             </textClass>
             <creation>Taken from Bartoccini</creation></profileDesc>
         <revisionDesc>
+            <change when="2021-08-31" who="CB">Marked up inscription and bibl</change>
             <change when="2021-08-24" who="CB">transcribed</change>
         </revisionDesc>
     </teiHeader>
@@ -94,9 +95,13 @@
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="bartoccini1928c"/> <citedRange>187-200</citedRange>, p. 195, no. 1; p. 192, tav. I, n. 1</bibl></p>
+                <p> 
+                    <bibl><ptr target="bartoccini1928c"/> <citedRange>8</citedRange>, p. 195; p. 192, tav. I</bibl>;
+                    mentioned and indexed <bibl><ptr target="irt1952"/>, <citedRange>855</citedRange></bibl>, whence mentioned 
+                    <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT855.html">855</ref></citedRange></bibl>
+                </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve">
+            <div type="edition" xml:lang="ber-Latn" xml:space="preserve">
                 <ab>
                     <lb n="1"/><persName type="attested"><name  nymRef="Vernus">Bernu</name></persName> 
                     <lb n="2"/><w lemma="vivo"><expan><abbr>v</abbr><ex>ixit</ex></expan></w> 
@@ -104,15 +109,10 @@
                     <date type="life-span" dur="P25Y"><num value="25">XXV</num></date>        
                 </ab>
             </div>
-            <div type="apparatus">
-                <listApp>
-                    <app loc="1"></app>
-                </listApp>
-            </div>
             <div type="translation" resp="#cb" xml:lang="en">
                 <p>Vernus lived 25 years.</p>
             </div>
-            <div type="commentary">
+            <div type="commentary" source="#rbart">
                 <p>For the name Vernus, see Dessau, <ref target="https://zenon.dainst.org/Record/000978336"> 4520; 6098.</ref></p> 
             </div>
         </body>
