@@ -43,7 +43,7 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution">Inscribed</rs> within the tabula ansata.
+                                    <rs type="execution">Inscribed</rs> within the tabula ansata, with the exception of line 4 which is beneath it.
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -94,27 +94,28 @@
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="bartoccini1928c"/> <citedRange>187-200</citedRange>, p. 198, no. 35; p. 192, tav. II, n. 35</bibl></p>
+                <p><bibl><ptr target="bartoccini1928c"/> <citedRange>187-200</citedRange>, p. 198; p. 193, tav. II</bibl>;
+                    mentioned and indexed <bibl><ptr target="irt1952"/>, <citedRange>855</citedRange></bibl>, whence mentioned 
+                    <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT855.html">855</ref></citedRange></bibl>
+                </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve">
+            <div type="edition" xml:lang="ber-Latn" xml:space="preserve">
                 <ab>
-                 <lb n="1"/>Debixit 
-                    <lb n="2"/>NVBALSILR<!-- backwards C -->E
-                    <lb n="3"/>bixit Mamar ann(os) III
+                 <lb n="1"/><w>debixit</w> 
+                    <lb n="2"/><orig>NVBALSILRↃE</orig>
+                    <lb n="3"/><w lemma="vivo">bixit</w> <persName type="attested"><name nymRef="Mamar">Mamar</name></persName> 
+                    <w lemma="annus"><expan><abbr>ann</abbr><ex>os</ex></expan></w> <date type="life-span" dur="P3Y"><num value="3">III</num></date>
                 </ab>
             </div>
             <div type="apparatus">
                 <listApp>
-                    <app loc="1"></app> 
+                    <app loc="1"><rdg source="#bartoccini1928c">The first part of line 2 may read Nubal, for the indigenous name Nubel.</rdg></app> 
                 </listApp>
             </div>
             <div type="translation" resp="#cb" xml:lang="en">
                 <p>
-                    
+                   <lb n="3"/>Mamar lived 3 years. 
                 </p>
-            </div>
-            <div type="commentary">
-                <p></p> 
             </div>
         </body>
     </text>
