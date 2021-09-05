@@ -32,18 +32,18 @@
                                 <support>
                                     <p>
                                         <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/257">Plaque</objectType> of 
-                                        <material>plaster</material>, inscribed with the form of a tabula ansata, originally plastered over the openings of loculi, 
+                                        <material>plaster</material>, inscribed with the form of a tabula ansata. Originally plastered over the openings of loculi, 
                                         which measure approximately:
                                         <dimensions>
-                                            <height unit="metre">1.75</height>
-                                            <width unit="metre">0.45</width>
+                                            <height unit="metre">0.45</height>
+                                            <width unit="metre">1.75</width>
                                         </dimensions>
                                     </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution">Inscribed</rs> within the tabula ansata.
+                                    <rs type="execution">Inscribed</rs> within the tabula ansata. A Chi-Rho is incised above the top left-hand corner of the tabula ansata.
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -100,10 +100,15 @@
                     <bibl><ptr target="kerr2010"/> <citedRange>213</citedRange>, no.5 (where see bibliography)</bibl></p>
             </div>
             <div type="edition" xml:lang="ber-Latn" xml:space="preserve">
-                <ab>
+                <div type="textpart" n="i"><ab>
+                 <lb n="1"/><g ref="#chi-rho"/>
+                </ab></div>
+            </div>
+            <div type="edition" xml:lang="ber-Latn" xml:space="preserve">
+                <div type="textpart" n="ii"><ab>
                  <lb n="1"/><persName type="attested"><name nymRef="Abdusmun">abdvsmyn</name></persName> <w part="I" cert="low">av</w>
                     <lb n="2"/><w lemma="sanvth">sanvth</w> <date type="life-span" dur="P30Y"><num value="30">λ</num></date>
-                </ab>
+                </ab></div>
             </div>
             <div type="apparatus">
                 <listApp>
@@ -117,7 +122,12 @@
                     <lb n="2"/> 30 years
                 </p>
             </div>
-            <div type="translation" resp="#cb" xml:lang="en">
+            <div type="translation" resp="#cb" xml:lang="en" n="i">
+                <p>
+                    <note>Chi-Rho symbol</note>
+                </p>
+            </div>
+            <div type="translation" resp="#cb" xml:lang="en" n="ii">
                 <p>
                   Abdusmun liv<supplied reason="lost">ed</supplied> 30 years
                 </p>
