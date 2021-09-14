@@ -23,20 +23,18 @@
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier>
-                        <repository>Sabrātha</repository>
-                    </msIdentifier>
+                    <msIdentifier><repository ref="institution.xml#db660">Sabratha Museum</repository></msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p>
-                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/89">Milestone</objectType>
-                                    <material ref="http://www.eagle-network.eu/voc/material/lod/138">limestone</material>
+                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material> 
+                                      columnar
+                                    <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/89">milestone</objectType>
+                                    
                                     <dimensions>
                                         <height unit="metre">1.04</height>
                                         <dim unit="metre">0.48</dim></dimensions>
-                                    <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">none</rs>
                                   </p>
                                 </support>
                             </supportDesc>
@@ -57,8 +55,9 @@
                             </origDate>
                         </origin>
                         <provenance type="found"><p><placeName type="ancientFindspot"
-                            ref="https://www.slsgazetteer.org/659">Sabratha</placeName>, to the east.</p></provenance><!-- check road -->
-                        <provenance type="observed"><p>Findspot</p></provenance>
+                            ref="https://www.slsgazetteer.org/659">Sabratha</placeName>, six kilometres to the east, om the Cooast Road .</p></provenance><!-- check road -->
+                        <provenance type="observed"><p>
+                            <placeName ref="https://www.slsgazetteer.org/6450">Sabratha Museum</placeName>.</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -98,40 +97,40 @@
     <facsimile><graphic url=""/></facsimile>
     <facsimile>
         <graphic url="http://edh-www.adw.uni-heidelberg.de/fotos/F009805.JPG">
-            <desc>F009805</desc>
+            <desc>EDL: F009805</desc>
         </graphic>
         <graphic url="http://edh-www.adw.uni-heidelberg.de/fotos/F011561.JPG">
-            <desc>F011561</desc>
+            <desc>EDL: F011561</desc>
         </graphic>
         <graphic url="http://edh-www.adw.uni-heidelberg.de/fotos/F011562.JPG">
-            <desc>F011562</desc>
+            <desc>EDL: F011562</desc>
         </graphic>
         <graphic url="http://edh-www.adw.uni-heidelberg.de/fotos/F011563.JPG">
-            <desc>F011563</desc>
+            <desc>EDL: F011563</desc>
         </graphic>
     </facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="vitaevrard1987"/> <citedRange>9-16</citedRange>, pl. 1c; pl. 2a u. 2b</bibl>, whence 
-                    <bibl><ptr target="ae"/> <citedRange>1987.992</citedRange></bibl>, whence 
+                <p><bibl><ptr target="vitaevrard1978"/> <citedRange>9-16</citedRange>, pl. 1c; pl. 2a u. 2b</bibl>, whence 
+                    <bibl><ptr target="ae"/> <citedRange>1987.992</citedRange></bibl>, whence <!-- check -->
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD004277">004277</ref></citedRange></bibl>
                     
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve"><ab>
                 <lb n="1"/><persName type="attested">
-                <name nymRef="Aulus"><expan><abbr>A</abbr><ex>ulo</ex></expan></name> <name nymRef="Caecina">Caecina</name> 
-                <lb n="2"/><name nymRef="Seuerus">Seuero</name></persName> 
-                <lb n="3"/><w><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> 
-                <lb n="4"/><w><expan><abbr>leg</abbr><ex>io</ex></expan></w> <num value="3">III</num> <w><expan><abbr>Aug</abbr><ex>usta</ex></expan></w> 
+                <name nymRef="Aulus"><expan><abbr>A</abbr><ex>ulo</ex></expan></name> <g ref="symbols.xml#stop"/> <name nymRef="Caecina">Caecina</name> 
+                <lb n="2"/><space/> <name nymRef="Seuerus">Seue<unclear>ro</unclear></name></persName> <space/>
+                <lb n="3"/><w><expan><abbr>pr<unclear>o</unclear><g ref="symbols.xml#stop"/>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> 
+                <lb n="4"/><w><expan><abbr>l<unclear>e</unclear>g</abbr><ex>io</ex></expan></w> <num value="3"><unclear>I</unclear>II</num> <w><expan><abbr>Aug</abbr><ex>usta</ex></expan></w> 
                 <lb n="5"/><space quantity="4" unit="character"/><num value="4">IIII</num><space quantity="4" unit="character"/>
             </ab></div>
-            <div type="translation" resp="#cmr" xml:lang="en">
-                <p/>
+            <div type="translation" source="#vitaevrard1978" xml:lang="fr">
+                <p>Sous le proconsulat d'A. Caecina Severus, la Troisième Légion Augusta (a aménagé ou jalonné cette route). (Milliaire) no. 4, ou 4 (milles)</p>
             </div>
             <div type="commentary">
-                <p> Y: zwischen 8 und 13 Proconsulat des A. Caecina Severus. Es handelt sich um den ältesten Meilenstein der Tripolitania.</p>
+                <p/>
             </div>
         </body>
     </text>
