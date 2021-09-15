@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1012" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <rs type="textType">Funerary</rs> 
+               <rs type="textType">building</rs> inscription</title>
+            <editor xml:id="jmr">J. M. Reynolds</editor>
+            <editor xml:id="ob">Olwen Brogan</editor>
+         <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
+         <publicationStmt>
+            <authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">IRT1012</idno>
+            <availability>
+               <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+               <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+               </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1098">Tripoli Castle</repository></msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p><material>Limestone</material> 
+                              <objectType>panel</objectType> (<dimensions>
+                                 <width unit="metre">1.53</width>
+                                 <height unit="metre">0.52</height>
+                                 <depth unit="metre">0.43</depth>
+                              </dimensions>) 
+               damaged above.
+              </p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout> Inscribed within a moulded <rs type="decoration">tabella ansata</rs> 
+               (die, <dimensions>
+                              <width unit="metre">0.43</width>
+                              <height unit="metre">0.46</height>
+                           </dimensions>); the tabella is supported on each side by an eagle with outstretched wings, holding a hare in its claews </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Good square capitals, <height unit="metre">0.04</height>.</handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot</origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low" evidence="lettering">Third century CE (lettering)</origDate>
+                  </origin>
+                  <provenance type="found">
+                           <p>
+                  
+                              <placeName type="ancientFindspot"
+                                         ref="https://www.slsgazetteer.org/1997">Wadi el-Amud</placeName>: Gasr at Site 10</p>
+                        </provenance>
+                        <provenance type="observed">
+                           <p><placeName ref="https://www.slsgazetteer.org/1098">Tripoli Castle</placeName></p>
+                        </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Marked-up according to the EpiDoc Guidelines version 8</p>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ar">Arabic</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="grc">Ancient Greek</language>
+            <language ident="grc-Latn">Transliterated Greek</language>
+            <language ident="el">Modern Greek</language>
+            <language ident="he">Hebrew</language>
+            <language ident="it">Italian</language>
+            <language ident="la">Latin</language>
+            <language ident="xpu">Punic</language>
+            <language ident="ber-Latn">Native Libyan language in Latin script</language>
+         </langUsage>
+         <textClass/>
+         <textClass>
+            <keywords scheme="IRCyr">
+               <term>
+                  <geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName>
+               </term>
+               <term>
+                  <geogName type="modernCountry" key="LY">Libya</geogName>
+               </term>
+               <term>
+                  <placeName type="modernFindspot" key="http://www.geonames.org/2219614">Wādī al ‘Amūd</placeName>
+               </term>
+            </keywords>
+         </textClass>
+      <creation>Transcription (Brogan)</creation>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2021-09-15" who="CMR">Transcribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile><surface/>
+   </facsimile>
+   <text>
+      <body>
+         <div type="bibliography">
+            <p> 
+               <bibl><ptr target="brogan1964"/>, <citedRange>53</citedRange>
+               </bibl>, whence <bibl><ptr target="elmayer1997"/>, <citedRange>xxx</citedRange>
+               </bibl>, EDCS 59900161</p>
+         </div>
+         <div type="edition" xml:lang="la" xml:space="preserve">
+            <ab>
+               <lb n="1"/>
+               <gap reason="lost" quantity="4" unit="character"/><persName type="attested"><name nymRef="-ius"><seg part="F"><unclear>u</unclear>ius</seg></name> 
+                  <name nymRef="Bau-"><seg part="I">Bau</seg></name> 
+                  <lb n="2"/><gap reason="lost" quantity="4" unit="character"/><name nymRef="-san"><seg part="F">san</seg></name> <orig><unclear>e</unclear>s</orig>
+               <lb n="3"/><gap reason="lost" quantity="4" unit="character"/><orig><unclear>u</unclear>a<unclear>r</unclear>a<unclear>f</unclear></orig>
+              <lb n="4"/> <gap reason="lost" quantity="4" unit="character"/> <name nymRef="Masira"><unclear>M</unclear>asira</name> </persName>
+               <lb n="5" break="no"/><orig><unclear>inr</unclear></orig>  <w lemma="pronepos">pronepos</w> 
+               <lb n="6"/><w>hoc</w> <w>opus</w> <w>super</w>
+               <lb n="7"/><w>patris</w> <w>aedifici
+               <lb n="8" break="no"/>um</w> <w>addidit</w> <g ref="symbols.xml#leaf"/> <foreign xml:lang="ber-Latn"><w lemma="fel">fel</w></foreign>
+               
+            </ab></div>
+         <div type="apparatus">
+            <listApp>
+               <app loc="4"><note>perhaps NI.</note></app>
+               <app loc="7"><rdg resp="#brogan1964"> FE . . .</rdg></app>
+            </listApp>
+         </div>
+         <div type="translation" resp="#cmr" xml:lang="en">
+            </div>
+         <div type="commentary">
+            <p>The names seem to be local, and the final word is Punic</p>
+         </div>
+      </body>
+   </text>
+</TEI>
