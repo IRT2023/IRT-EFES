@@ -2,7 +2,7 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1287" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1301" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -14,7 +14,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="filename">IRT1287</idno>
+                <idno type="filename">IRT1301</idno>
                 <availability>
                     <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                     <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -31,27 +31,27 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <p><material>Marble</material> closing block
-                                    </p>
+                                    <p><material>Marble</material> <objectType>panel</objectType> (
+                                        <dimensions><height>0.39</height><width>0.60</width><depth>0.02-0.025</depth></dimensions>)</p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" key="litteris scariphatis" >Graffito</rs>
+                                    <rs type="execution" key="scalpro">Inscribed</rs> on the facesa
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote> <height>0.11</height></handNote>
+                            <handNote><height>0.035-0.11</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace>Findspot</origPlace>
+                            <origPlace>Unknown</origPlace>
                             <origDate>
                             </origDate>
                         </origin><provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/659">Sabratha</placeName>: 
-                            <placeName type="monuList" ref="https://www.slsgazetteer.org/833">Catacomb</placeName>, arcosolium  A10</p></provenance>
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/833">Catacomb</placeName>, lying on the tomb in arcosolium  B10</p></provenance>
                         <provenance type="observed"><p>Findspot</p></provenance>
                     </history>
                 </msDesc>
@@ -84,23 +84,25 @@
             </textClass>
             <creation>Taken from Nestori</creation></profileDesc>
         <revisionDesc>
-            <change when="2021-08-26" who="cmr">transcribed</change>
+            <change when="2021-09-16" who="cmr">transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><graphic url=""/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="nestori1973"/> <citedRange>11</citedRange></bibl>, whence 
-                    <bibl><ptr target="edcs"/> <citedRange>59800076</citedRange></bibl>
+                <p><bibl><ptr target="nestori1973"/> <citedRange>23</citedRange></bibl>, whence 
+                    <bibl><ptr target="edcs"/> <citedRange>59800097</citedRange></bibl>
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve">
                 <ab>
-                 <lb n="1"/> . . . <w>vixit</w>] <date type="life-span" dur="P32Y"><w lemma="annus">anos</w> <num value="32">XXXII</num></date> 
-                    <foreign xml:lang="grc"><w lemma="ἄλφα"><expan><abbr>Ἄ</abbr><ex>λφα</ex></expan></w></foreign> <g ref="symbols.xml#chi-rho"/> <foreign xml:lang="grc"><w lemma="ὠμέγα"><expan><abbr>Ὠ</abbr><ex>μέγα</ex></expan></w></foreign>
+               <lb n="1"/><persName type="attested"><name nymRef="Aurelia">Aurelliae</name> <name nymRef="Cornelia">Corneliae</name> <name nymRef="Hammonilla">Hammonillae</name></persName> 
+                    <w>vixit</w> <w>in</w> <w>pace</w> <date type="life-span" dur="P25Y"><w><expan><abbr>an</abbr><ex>nos</ex></expan></w> <num>XXV</num></date></ab>
                  
-                   </ab>
+                    
+                 
+                 
             </div>
             
             
