@@ -2,47 +2,45 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1292" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1312" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>
-                    <rs type="textType">Christian</rs> 
-                    <rs type="textType">funerary</rs> text (Sabratha catacomb)</title>
-                <editor xml:id="an">A. Nestori</editor>
+                <title>Fragment</title>
+                <editor xml:id="rr">René Rebuffat</editor>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
-            </titleStmt>
+            </titleStmt>  
             <publicationStmt>
                 <authority>Centre for Computing in the Humanities, King's College London</authority>
-                <idno type="filename">IRT1292</idno>
+                
+                <idno type="filename">IRT1312</idno>
                 <availability>
-                    <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
-                    <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
-                    </p>
+                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
+                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
+                </p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    
                     <msIdentifier>
-                        <repository>Findspot</repository>
+                        <repository>??</repository>
                     </msIdentifier>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <p><objectType>Wall</objectType> <material>plaster</material></p> 
-                                   
+                                    <p>Fragment of <objectType>wall</objectType> <material>plaster</material> (<dimensions><height>0.71</height><!-- check --><width>0.35</width><depth>0.06</depth></dimensions>)
+                                  </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution">Incised</rs>
+                                    <rs type="execution">Graffito</rs> with a wide point
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote> <height>0.135-0.20</height></handNote>
+                            <handNote>Large letters, <height>0.065</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -50,9 +48,12 @@
                             <origPlace>Findspot</origPlace>
                             <origDate>
                             </origDate>
-                        </origin><provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/659">Sabratha</placeName>: 
-                            <placeName type="monuList" ref="https://www.slsgazetteer.org/833">Catacomb</placeName>, arcosolium  A2</p></provenance>
-                        <provenance type="observed"><p>Findspot</p></provenance>
+                        </origin>
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/658">Bu Njem</placeName>: 
+                            <placeName ref="https://www.slsgazetteer.org/826">Fort</placeName>, 
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/2268">Principia</placeName>, south wing; 
+                            found in 1971, inventory number 71-225.</p></provenance>
+                        <provenance type="observed"><p></p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -76,55 +77,35 @@
                 <language ident="ber-Latn">Native Libyan language in Latin script</language>
             </langUsage>
             <textClass>
-                <keywords scheme="IRCyr">
+              <keywords scheme="IRCyr">
                     <term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term>
                     <term><geogName type="modernCountry" key="LY">Libya</geogName></term>
-                    <term><placeName type="modernFindspot" key="http://www.geonames.org/2212771/sabratah.html">Sabratah</placeName></term>
-                </keywords>
+                  <term><placeName type="modernFindspot" key="http://www.geonames.org/2220431">Abū Nujaym</placeName></term>
+              </keywords>
             </textClass>
-            <creation>Taken from Nestori</creation></profileDesc>
+            <creation>Transcribed from Rebuffat</creation></profileDesc>
         <revisionDesc>
-            <change when="2021-08-26" who="cmr">transcribed</change>
+         <change when="2021-09-17" who="CMR">created</change>
         </revisionDesc>
     </teiHeader>
-    <facsimile><graphic url=""/></facsimile>
+    <facsimile><surface/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="nestori1973"/> <citedRange>13</citedRange></bibl>, whence 
-                    <bibl><ptr target="edcs"/> <citedRange>59800083</citedRange></bibl>
+                <p><bibl><ptr target="rebuffat1975"/> <citedRange unit="page">221-2</citedRange></bibl>, whence 
+                    <bibl><ptr target="edcs"/> <citedRange>59800061</citedRange></bibl>
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve">
-                <ab>
-                 <lb n="1"/> <w>Bonae</w>
-                     <lb n="1"/><w><expan><abbr>m</abbr><ex>emoriae</ex></expan></w> <persName type="attested"><name nymRef="Magoria">Mago
-                     <lb n="2" break="no"/>re</name></persName> <w>vixit</w>
-                     <lb n="3"/><w><expan><abbr>ann</abbr><ex>os</ex></expan></w> <orig>ti</orig>
-                    <lb n="4"/><space/> <orig>d</orig>
-                    
-                 </ab>
-            </div>
-            
-            
+               <ab>
+                <lb n="1"/><orig>canai</orig>
+               </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
-                <p/>
-                </div>
+                <p>Not usefully translatable</p>
+            </div>
+            <div type="commentary">
+                <p>The text is complete</p>
+            </div>
         </body>
     </text>
 </TEI>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
