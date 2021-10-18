@@ -153,7 +153,7 @@
      </div>
      </xsl:if>
 
-     <xsl:if test="//t:div[@type='translation']">
+     <xsl:if test="//t:div[@type='translation']//t:p//node()">
        <div id="translation">
          <xsl:variable name="editor" select="//t:teiHeader/t:fileDesc/t:titleStmt/t:editor"/>
          <xsl:for-each select="//t:div[@type='translation'][@xml:lang]">
@@ -221,34 +221,35 @@
      </div>
      </xsl:if>
 
-     <xsl:if test="//t:div[@type='commentary']">
+     <xsl:if test="//t:div[@type='commentary']//t:p//node() and not(contains(//t:div[@type='commentary'][1]//t:p[1]/node(), 'No comment'))">
+       <div id="commentary">
+         <h3><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text></h3>
+         <!-- Commentary text output -->
+         <xsl:variable name="commtxt">
+           <xsl:apply-templates select="//t:div[@type='commentary']//t:p"/>
+         </xsl:variable>
+             <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
+             <xsl:apply-templates select="$commtxt" mode="sqbrackets"/>
+       </div>
+     </xsl:if>
+     
+     <!-- Old code for printing 'No comment' in texts without commentary:
+       <xsl:if test="//t:div[@type='commentary']">
        <div id="commentary">
        <h3><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text></h3>
-       <!-- Commentary text output -->
+       <!-\- Commentary text output -\->
        <xsl:variable name="commtxt">
          <xsl:apply-templates select="//t:div[@type='commentary']//t:p"/>
        </xsl:variable>
        <xsl:choose>
          <xsl:when test="//t:div[@type='commentary']//t:p//node()">
-           <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
+           <!-\- Moded templates found in htm-tpl-sqbrackets.xsl -\->
            <xsl:apply-templates select="$commtxt" mode="sqbrackets"/>
          </xsl:when>
-         <xsl:otherwise>
-             <p>
-               <xsl:choose>
-                 <xsl:when test="starts-with(//t:publicationStmt/t:idno[@type='filename']/text(), 'IRT')">
-                   <xsl:text>No comment (2021).</xsl:text>
-                 </xsl:when>
-                 <xsl:otherwise>
-                   <xsl:text>No comment (2020).</xsl:text>
-                 </xsl:otherwise>
-               </xsl:choose>
-             </p>
-         </xsl:otherwise>
+         <xsl:otherwise><p>No comment.</p></xsl:otherwise>
        </xsl:choose>
-         
      </div>
-     </xsl:if>
+     </xsl:if>-->
 
      <xsl:if test="//t:div[@type='bibliography']">
        <p><b><i18n:text i18n:key="epidoc-xslt-inslib-bibliography">Bibliography</i18n:text>: </b>
