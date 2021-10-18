@@ -52,13 +52,11 @@
      <xsl:choose>
        <xsl:when test="//t:origin/t:origDate/node()">
          <xsl:apply-templates select="//t:origin/t:origDate"/>
-         <xsl:if test="//t:origin/t:origDate[@type='evidence']">
-           <xsl:text>(</xsl:text>
-           <xsl:for-each select="tokenize(//t:origin/t:origDate[@evidence],' ')">
-             <xsl:value-of select="translate(.,'-',' ')"/>
-             <xsl:if test="position()!=last()">
-               <xsl:text>, </xsl:text>
-             </xsl:if>
+         <xsl:if test="//t:origin/t:origDate[@evidence]">
+           <xsl:text> (</xsl:text>
+           <xsl:for-each select="tokenize(//t:origin/t:origDate/@evidence,' ')">
+             <xsl:value-of select="translate(translate(.,'-',' '),',','')"/>
+             <xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
            </xsl:for-each>
            <xsl:text>)</xsl:text>
          </xsl:if>
