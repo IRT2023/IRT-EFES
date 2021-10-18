@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.2/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/9.2/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="IRT1581">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>keiner</title>
+            <editor xml:id="GB" role="translation (English); merge script">Gabriel Bodard</editor>            <editor xml:id="UG" role="translation (Arabic)">Usama Gad</editor>            <editor xml:id="SV" role="translation (English)">Scott Vanderbilt</editor>          </titleStmt>
+         <publicationStmt><authority>Centre for Computing in the Humanities, King's College London</authority>
+            <idno type="filename">IRT1581</idno>            <idno type="hgv">73231</idno>
+            <idno type="TM">73231</idno>
+            <idno type="ddb-perseus-style">0016;;81</idno>
+            <idno type="ddb-filename">o.bu.njem.81</idno>
+            <idno type="ddb-hybrid">o.bu.njem;;81</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier><repository ref="institution.xml#db1098">Tripoli National Museum</repository><idno/></msIdentifier>
+               <physDesc>
+                  <objectDesc><supportDesc><support><p><material>Ceramic</material> <objectType>ostrakon</objectType>.</p></support></supportDesc>            <layoutDesc><layout><rs type="execution" key="dipinti">Painted</rs> on one face.</layout></layoutDesc></objectDesc>            <handDesc><handNote/></handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Findspot.</origPlace>
+                     <origDate when="0259-07-30" evidence="occupation">
+                        <certainty locus="value" match="../day-from-date(@when)"/>30. Juli 259 (Tag unsicher)</origDate>
+                  </origin>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/658">Bu Njem</placeName>: <placeName type="monuList" ref="https://www.slsgazetteer.org/826">Fort</placeName>.</p></provenance>            <provenance type="observed"><p><placeName type="monuList" ref="https://www.slsgazetteer.org/1098">Tripoli National Museum</placeName>.</p></provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc><p>Marked-up according to the EpiDoc Guidelines version 9.</p></encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">Französisch</language>
+            <language ident="en">Englisch</language>
+            <language ident="de">Deutsch</language>
+            <language ident="it">Italienisch</language>
+            <language ident="es">Spanisch</language>
+            <language ident="la">Latein</language>
+            <language ident="el">Griechisch</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="hgv">
+               <term>Brief (amtlich)</term>
+               <term>Militär</term>
+               <term>Aurelius Donatus an N.N.</term>
+               <term>Transport</term>
+            </keywords>
+         </textClass>         <textClass><keywords scheme="IRCyr"><term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term><term><geogName type="modernCountry" key="LY">Libya</geogName></term><term><placeName type="modernFindspot" key="https://www.slsgazetteer.org/658">Bu Njem</placeName></term></keywords></textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2021-10-18" who="#GB">Merged HGV data, Duke Databank text, PE translation from Papyri.info EpiDoc; aligned structure to IRT</change>
+         <change who="HGV" when="1999-05-10">Record created</change>
+         <change who="HGV" when="2011-04-19">Record last modified</change>
+         <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>            <div xml:lang="la" type="edition" xml:space="preserve"><ab>
+    <lb n="1"/><gap reason="lost" quantity="8" unit="character"/>o <expan><abbr>d</abbr><ex>ecurioni</ex></expan> <choice><reg>praeposito</reg><orig>preposito</orig></choice> 
+
+    <lb n="2"/>salutem 
+
+    <lb n="3"/><supplied reason="lost">ab Au</supplied>relio Donato <expan><abbr>mili</abbr><ex>te</ex></expan> suscipies ab 
+
+    <lb n="4"/><unclear>G</unclear>lareo asgatui dua semis <num value="2"/><num value="1/2"/> <g type="middot"/> <choice><reg>facient</reg><orig>facent</orig></choice> 
+
+    <lb n="5"/><expan><abbr>m</abbr><ex>odios</ex></expan> triginta <num value="30"/> ad usus militum moran
+
+    <lb n="6" break="no"/>tium Golas <supplied reason="lost">iii</supplied> <expan><abbr>kal</abbr><ex>endas</ex></expan> Augustas <g type="middot"/> Aemi
+
+    <lb n="7" break="no"/>liano et Basso <choice><reg><expan><abbr>Co</abbr><ex>n</ex></expan>s</reg><orig>cos</orig></choice><expan><ex>ulibus</ex></expan> </ab></div>            
+         <div type="commentary" subtype="general">
+            <p>Lateinisch. Vgl. Stauner, Schriftwesen, S. 47-51.</p>
+         </div>
+         <div type="bibliography">            <p><bibl><ptr target="OBuNjem"/> <citedRange unit="numbers">81</citedRange></bibl></p></div>
+         
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl><ptr target="OBuNjem"/> </bibl>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>
