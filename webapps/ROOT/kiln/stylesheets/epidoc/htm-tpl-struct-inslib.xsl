@@ -219,7 +219,7 @@
      </div>
      </xsl:if>
 
-     <xsl:if test="//t:div[@type='commentary']//t:p//node() and not(contains(//t:div[@type='commentary'][1]//t:p[1]/node(), 'No comment'))">
+     <xsl:if test="//t:div[@type='commentary']//t:p//node() and not(contains(//t:div[@type='commentary'][1]/t:p[1], 'No comment'))">
        <div id="commentary">
          <h3><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text></h3>
          <!-- Commentary text output -->
