@@ -65,7 +65,10 @@
             </xsl:if>
           </field>
           <field name="index_external_resource">
-            <xsl:value-of select="@key" />
+            <xsl:choose>
+              <xsl:when test="@ref"><xsl:value-of select="@ref" /></xsl:when>
+              <xsl:when test="@key and not(@ref)"><xsl:value-of select="@key" /></xsl:when>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="." />
         </doc>
@@ -120,7 +123,10 @@
             </xsl:if>
           </field>
           <field name="index_external_resource">
-            <xsl:value-of select="@key" />
+            <xsl:choose>
+              <xsl:when test="@ref"><xsl:value-of select="@ref" /></xsl:when>
+              <xsl:when test="@key and not(@ref)"><xsl:value-of select="@key" /></xsl:when>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="." />
         </doc>
@@ -168,7 +174,10 @@
             </xsl:if>
           </field>
           <field name="index_external_resource">
-            <xsl:value-of select="@key" />
+            <xsl:choose>
+              <xsl:when test="@ref"><xsl:value-of select="@ref" /></xsl:when>
+              <xsl:when test="@key and not(@ref)"><xsl:value-of select="@key" /></xsl:when>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="." />
         </doc>
@@ -212,7 +221,10 @@
             </xsl:if>
           </field>
           <field name="index_external_resource">
-            <xsl:value-of select="@key" />
+            <xsl:choose>
+              <xsl:when test="@ref"><xsl:value-of select="@ref" /></xsl:when>
+              <xsl:when test="@key and not(@ref)"><xsl:value-of select="@key" /></xsl:when>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="." />
         </doc>
@@ -252,7 +264,10 @@
             </xsl:if>
           </field>
           <field name="index_external_resource">
-            <xsl:value-of select="@key" />
+            <xsl:choose>
+              <xsl:when test="@ref"><xsl:value-of select="@ref" /></xsl:when>
+              <xsl:when test="@key and not(@ref)"><xsl:value-of select="@key" /></xsl:when>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="." />
         </doc>
@@ -288,7 +303,10 @@
             </xsl:if>
           </field>
           <field name="index_external_resource">
-            <xsl:value-of select="@key" />
+            <xsl:choose>
+              <xsl:when test="@ref"><xsl:value-of select="@ref" /></xsl:when>
+              <xsl:when test="@key and not(@ref)"><xsl:value-of select="@key" /></xsl:when>
+            </xsl:choose>
           </field>
           <xsl:apply-templates select="." />
         </doc>

@@ -15,9 +15,9 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='divine']" group-by="@key">
-        <xsl:variable name="key-id" select="@key"/>
-        <xsl:variable name="key" select="document('../../content/xml/authority/divine.xml')//tei:person[@xml:id=$key-id]"/>
+      <xsl:for-each-group select="//tei:persName[@type='divine'][@ref]" group-by="translate(@ref, '#', '')">
+        <xsl:variable name="id" select="translate(@ref, '#', '')"/>
+        <xsl:variable name="idno" select="document('../../content/xml/authority/divine.xml')//tei:person[@xml:id=$id]"/>
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -28,20 +28,53 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="$key">
-            <xsl:value-of select="$key/tei:persName[1]" />
-            <xsl:if test="$key/tei:persName[2]">
-              <xsl:text> / </xsl:text>
-              <xsl:value-of select="$key/tei:persName[2]" />
-            </xsl:if>
+              <xsl:when test="$idno">
+                <xsl:value-of select="$idno/tei:persName[1]" />
+                <xsl:if test="$idno/tei:persName[2]">
+                  <xsl:text> / </xsl:text>
+                  <xsl:value-of select="$idno/tei:persName[2]" />
+                </xsl:if>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="@key" />
+                <xsl:value-of select="$id" />
               </xsl:otherwise>
             </xsl:choose>
           </field>
           <field name="index_external_resource">
-            <xsl:value-of select="$key/tei:idno" />
+            <xsl:value-of select="$idno/tei:idno" />
+          </field>
+          <xsl:apply-templates select="current-group()" />
+        </doc>
+      </xsl:for-each-group>
+      
+      <!-- the following code is to ensure compatibility with older markup where @key was used instead of @ref -->
+      <xsl:for-each-group select="//tei:persName[@type='divine'][@key][not(@ref)]" group-by="translate(@key, '#', '')">
+        <xsl:variable name="id" select="translate(@key, '#', '')"/>
+        <xsl:variable name="idno" select="document('../../content/xml/authority/divine.xml')//tei:person[@xml:id=$id]"/>
+        <doc>
+          <field name="document_type">
+            <xsl:value-of select="$subdirectory" />
+            <xsl:text>_</xsl:text>
+            <xsl:value-of select="$index_type" />
+            <xsl:text>_index</xsl:text>
+          </field>
+          <xsl:call-template name="field_file_path" />
+          <field name="index_item_name">
+            <xsl:choose>
+              <xsl:when test="$idno">
+            <xsl:value-of select="$idno/tei:persName[1]" />
+            <xsl:if test="$idno/tei:persName[2]">
+              <xsl:text> / </xsl:text>
+              <xsl:value-of select="$idno/tei:persName[2]" />
+            </xsl:if>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$id" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </field>
+          <field name="index_external_resource">
+            <xsl:value-of select="$idno/tei:idno" />
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
