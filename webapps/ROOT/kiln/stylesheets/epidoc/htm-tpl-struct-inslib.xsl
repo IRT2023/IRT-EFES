@@ -393,7 +393,17 @@
    <xsl:template name="inslib-title">
      <xsl:choose>
        <xsl:when test="//t:titleStmt/t:title and starts-with(//t:publicationStmt/t:idno[@type='filename']/text(), 'IRT')">
-         <xsl:value-of select="substring(//t:publicationStmt/t:idno[@type='filename']/text(),4,7)"/>
+         <xsl:value-of select="substring-after(//t:publicationStmt/t:idno[@type='filename']/text(),'IRT')"/>
+         <xsl:text>. </xsl:text>
+         <xsl:apply-templates select="//t:titleStmt/t:title"/>
+       </xsl:when>
+       <xsl:when test="//t:titleStmt/t:title and starts-with(//t:publicationStmt/t:idno[@type='filename']/text(), 'IGCyr')">
+         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']"/>
+         <xsl:text>. </xsl:text>
+         <xsl:apply-templates select="//t:titleStmt/t:title"/>
+       </xsl:when>
+       <xsl:when test="//t:titleStmt/t:title and starts-with(//t:publicationStmt/t:idno[@type='filename']/text(), 'GVCyr')">
+         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']"/>
          <xsl:text>. </xsl:text>
          <xsl:apply-templates select="//t:titleStmt/t:title"/>
        </xsl:when>
