@@ -45,9 +45,9 @@
       <xsl:apply-templates select="str[@name='index_findspot_upper_level']" />
       <xsl:apply-templates select="str[@name='index_findspot_intermediate_level']" />
       <xsl:apply-templates select="str[@name='index_findspot_lower_level']" />
+      <xsl:apply-templates select="arr[@name='index_epithet']" />
       <xsl:apply-templates select="str[@name='index_external_resource']" />
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
-      
       <xsl:apply-templates select="str[@name='index_item_sort_dur']" />
     </tr>
   </xsl:template>
@@ -208,6 +208,18 @@
   <xsl:template match="str[@name='index_findspot_lower_level']">
     <td>
       <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="arr[@name='index_epithet']">
+    <td>
+      <xsl:variable name="epithets">
+      <xsl:for-each select="str">
+          <xsl:value-of select="."/>
+        <xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+      </xsl:for-each>
+      </xsl:variable>
+      <xsl:value-of select="string-join(distinct-values(tokenize($epithets, ', ')), ', ')"/>
     </td>
   </xsl:template>
   

@@ -40,6 +40,12 @@
               </xsl:otherwise>
             </xsl:choose>
           </field>
+          <field name="index_epithet">
+            <xsl:for-each select="descendant::tei:addName[@nymRef]">
+              <xsl:value-of select="@nymRef" />
+              <xsl:if test="position()!=last()">, </xsl:if>
+            </xsl:for-each>
+          </field>
           <field name="index_external_resource">
             <xsl:value-of select="$idno/tei:idno" />
           </field>
@@ -72,6 +78,12 @@
                 <xsl:value-of select="$id" />
               </xsl:otherwise>
             </xsl:choose>
+          </field>
+          <field name="index_epithet">
+            <xsl:for-each select="descendant::tei:addName[@nymRef]">
+              <xsl:value-of select="@nymRef" />
+              <xsl:if test="position()!=last()">, </xsl:if>
+            </xsl:for-each>
           </field>
           <field name="index_external_resource">
             <xsl:value-of select="$idno/tei:idno" />

@@ -53,6 +53,12 @@
           <field name="index_item_sort_name">
             <xsl:value-of select="$idno/@n" />
           </field>
+          <field name="index_epithet">
+            <xsl:for-each select="$emperor//tei:addName[@nymRef]">
+              <xsl:value-of select="@nymRef" />
+              <xsl:if test="position()!=last()">, </xsl:if>
+            </xsl:for-each>
+          </field>
           <field name="index_external_resource">
             <xsl:value-of select="$idno/tei:idno" />
           </field>
