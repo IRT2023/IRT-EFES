@@ -39,15 +39,15 @@
       <xsl:apply-templates select="str[@name='index_item_name']"/>
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
       <xsl:apply-templates select="str[@name='index_numeral_value']"/>
-      <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'findspot', 'emperors', 'months')])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
+      <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'findspot', 'emperors', 'months', 'epithets')])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'fragment')])"><xsl:apply-templates select="arr[@name='language_code']"/></xsl:if>
       <xsl:apply-templates select="str[@name='index_ethnic']" />
       <xsl:apply-templates select="str[@name='index_findspot_upper_level']" />
       <xsl:apply-templates select="str[@name='index_findspot_intermediate_level']" />
       <xsl:apply-templates select="str[@name='index_findspot_lower_level']" />
+      <xsl:apply-templates select="arr[@name='index_epithet']" />
       <xsl:apply-templates select="str[@name='index_external_resource']" />
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
-      
       <xsl:apply-templates select="str[@name='index_item_sort_dur']" />
     </tr>
   </xsl:template>
@@ -60,15 +60,15 @@
         <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
-        <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='la']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
-        <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='la']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
+        <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='la']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+        <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='la']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
       </tbody>
     </table>
     <table class="index tablesorter">
       <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
       <tbody>
-        <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
-        <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
+        <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+        <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='grc']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
       </tbody>
     </table>
         
@@ -76,8 +76,8 @@
           <table class="index tablesorter">
             <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
             <tbody>
-              <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='ber-Latn']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
-              <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='ber-Latn']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
+              <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='ber-Latn']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+              <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='ber-Latn']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
             </tbody>
           </table>
         </xsl:if>
@@ -85,8 +85,8 @@
           <table class="index tablesorter">
             <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
             <tbody>
-              <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='xpu']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
-              <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='xpu']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
+              <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')]]"><xsl:apply-templates select="doc[arr[@name='language_code']='xpu']"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+              <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')])]"><xsl:apply-templates select="doc[arr[@name='language_code']='xpu']"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
             </tbody>
           </table>
         </xsl:if>
@@ -96,8 +96,8 @@
         <table class="index tablesorter">
           <xsl:apply-templates select="/aggregation/index_metadata/tei:div/tei:div[@type='headings']" />
           <tbody>
-            <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')]]"><xsl:apply-templates select="doc"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
-            <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months')])]"><xsl:apply-templates select="doc"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
+            <xsl:if test="doc[ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')]]"><xsl:apply-templates select="doc"><xsl:sort select="str[@name='index_item_sort_name']"/></xsl:apply-templates></xsl:if>
+            <xsl:if test="doc[not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')])]"><xsl:apply-templates select="doc"><xsl:sort select="translate(normalize-unicode(lower-case(.),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/></xsl:apply-templates></xsl:if>
           </tbody>
         </table>
       </xsl:otherwise>
@@ -208,6 +208,18 @@
   <xsl:template match="str[@name='index_findspot_lower_level']">
     <td>
       <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="arr[@name='index_epithet']">
+    <td>
+      <xsl:variable name="epithets">
+      <xsl:for-each select="str">
+          <xsl:value-of select="."/>
+        <xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
+      </xsl:for-each>
+      </xsl:variable>
+      <xsl:value-of select="string-join(distinct-values(tokenize($epithets, ', ')), ', ')"/>
     </td>
   </xsl:template>
   
