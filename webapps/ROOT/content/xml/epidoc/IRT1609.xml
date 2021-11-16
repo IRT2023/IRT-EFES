@@ -1,28 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://epidoc.stoa.org/schema/9.2/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://epidoc.stoa.org/schema/9.2/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="IRT1609">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.2/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://epidoc.stoa.org/schema/9.2/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="IRT1609">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
-            <editor xml:id="GB" role="translation (English); encoding; scripting">Gabriel Bodard</editor>            <editor xml:id="UG" role="translation (Arabic)">Usama Gad</editor>            <!--<editor xml:id="SV" role="translation (English)">Scott Vanderbilt</editor>-->          </titleStmt>
-         <publicationStmt>            <publisher>Society for Libyan Studies</publisher>            <distributor>King’s College London</distributor>
-            <idno type="filename">IRT1609</idno>            <idno type="hgv">73259</idno>
+            <title><rs type="textType">Letter</rs></title>
+            <editor xml:id="GB" role="translation (English); encoding; scripting">Gabriel Bodard</editor>
+            <editor xml:id="UG" role="translation (Arabic)">Usama Gad</editor>
+            <editor xml:id="cmr" role="translation (English)">Charlotte Roueché</editor>
+          </titleStmt>
+         <publicationStmt>
+            <publisher>Society for Libyan Studies</publisher>
+            <distributor>King’s College London</distributor>
+            <idno type="filename">IRT1609</idno>
+            <idno type="hgv">73259</idno>
             <idno type="TM">73259</idno>
             <idno type="ddb-perseus-style">0016;;109</idno>
             <idno type="ddb-filename">o.bu.njem.109</idno>
             <idno type="ddb-hybrid">o.bu.njem;;109</idno>
-         <availability>              <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). All reuse or distribution of this work must link back to the URL <ref>http://irt.kcl.ac.uk/</ref></p>            </availability>         </publicationStmt>
+         <availability>
+              <p>Creative Commons licence Attribution 4.0 (<ref>http://creativecommons.org/licenses/by/4.0/</ref>). All reuse or distribution of this work must link back to the URL <ref>http://irt.kcl.ac.uk/</ref></p>
+            </availability>
+         </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository ref="institution.xml#db1098">Tripoli National Museum</repository><idno> </idno></msIdentifier>
+               <msIdentifier><repository ref="institution.xml#db1098">Tripoli National Museum</repository><idno>71-88 </idno></msIdentifier>
                <physDesc>
-                  <objectDesc><supportDesc><support><p><material>Ceramic</material> <objectType>ostrakon</objectType> (<dimensions unit="metre"><height></height><width></width><depth></depth></dimensions>).</p></support></supportDesc>            <layoutDesc><layout>Letters <rs type="execution" key="pictura">painted</rs> on one side.</layout></layoutDesc></objectDesc>            <handDesc><handNote/></handDesc>
+                  <objectDesc><supportDesc><support><p><material>Ceramic</material> <objectType>ostrakon</objectType> (<dimensions unit="metre"><height>0.045</height><width>0.06</width><depth>0.001</depth></dimensions>).</p></support></supportDesc>
+            <layoutDesc><layout>Letters <rs type="execution" key="pictura">painted</rs> on one side.</layout></layoutDesc></objectDesc>
+            <handDesc><handNote/></handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown.</origPlace>
-                     <origDate notBefore="0253" notAfter="0259" evidence="context">253 - 259</origDate>
+                     <origDate notBefore="0253" notAfter="0259" evidence="context">253 - 259: 13th November</origDate>
                   </origin>
-                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/658">Bu Njem</placeName>: <placeName ref="https://www.slsgazetteer.org/826">Fort</placeName>, in the <placeName ref="https://www.slsgazetteer.org/2268" type="monuList">Principia</placeName>.</p></provenance>            <provenance type="observed"><p><placeName type="monuList" ref="https://www.slsgazetteer.org/1098">Tripoli National Museum</placeName>.</p></provenance>
+                  <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/658">Bu Njem</placeName>: <placeName ref="https://www.slsgazetteer.org/826">Fort</placeName>, 
+                     in the <placeName ref="https://www.slsgazetteer.org/2268" type="monuList">Principia</placeName>; found in <date type="found">1971</date>.</p></provenance>
+            <provenance type="observed"><p><placeName type="monuList" ref="https://www.slsgazetteer.org/1098">Tripoli National Museum</placeName>.</p></provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -43,7 +60,8 @@
                <term>Brief (privat)</term>
                <term>Militär</term>
             </keywords>
-         </textClass>         <textClass><keywords scheme="IRCyr"><term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term><term><geogName type="modernCountry" key="LY">Libya</geogName></term><term><placeName type="modernFindspot" ref="https://www.slsgazetteer.org/658">Bu Njem</placeName></term><term><ref type="pleiades" target="https://pleiades.stoa.org/places/344377">Gholaia</ref></term><term><ref type="geonames" target="https://www.geonames.org/2220431">Qaryat Bū Nujaym</ref></term><term><placeName xml:lang="ar">بو نجيم</placeName></term></keywords></textClass>
+         </textClass>
+         <textClass><keywords scheme="IRCyr"><term><geogName type="ancientRegion" key="Tripolitania">Tripolitania</geogName></term><term><geogName type="modernCountry" key="LY">Libya</geogName></term><term><placeName type="modernFindspot" ref="https://www.slsgazetteer.org/658">Bu Njem</placeName></term><term><ref type="pleiades" target="https://pleiades.stoa.org/places/344377">Gholaia</ref></term><term><ref type="geonames" target="https://www.geonames.org/2220431">Qaryat Bū Nujaym</ref></term><term><placeName xml:lang="ar">بو نجيم</placeName></term></keywords></textClass>
       </profileDesc>
       <revisionDesc>
          <change when="2021-11-05" who="#GB">Merged HGV data, Duke Databank text, PE translation from Papyri.info EpiDoc; aligned structure to IRT</change>
@@ -53,31 +71,33 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>            <div xml:lang="la" type="edition" xml:space="preserve"><ab>
-    <lb n="1"/><gap reason="lost" quantity="8" unit="character"/> suo 
+      <body>
+            <div xml:lang="la" type="edition" xml:space="preserve"><ab>
+    <lb n="1"/><gap reason="lost" quantity="8" unit="character"/> <w>suo</w> 
 
-    <lb n="2"/><gap reason="lost" quantity="2" unit="character"/><supplied reason="lost"> P</supplied><unclear>o</unclear>mponiu<unclear>s</unclear> 
+    <lb n="2"/><gap reason="lost" quantity="2" unit="character"/><persName type="attested"><name nymRef="Pomponius"><supplied reason="lost"> P</supplied><unclear>o</unclear>mponiu<unclear>s</unclear> </name>
 
-    <lb n="3"/><unclear>F</unclear>elix die Idu
+    <lb n="3"/><name nymRef="Felix"><unclear>F</unclear>elix</name></persName> <w>die</w> <w>Idu
 
-    <lb n="4" break="no"/>s <choice><reg>Novembres</reg><orig>novemres</orig></choice> 
+    <lb n="4" break="no"/>s</w> <w lemma="November">Nouemres</w> 
 
-    <lb n="5"/>opto te <choice><reg>bene</reg><orig>bone</orig></choice> 
+    <lb n="5"/><w>opto</w> <w>te</w> <w lemma="bene">bone</w> 
 
-    <lb n="6"/>valer<unclear>e</unclear> </ab></div>            
-         <div type="commentary" subtype="general">
-            <p>Lateinisch.</p>
+    <lb n="6"/><w>valer<unclear>e</unclear></w> </ab></div>
+            
+         <div type="translation" resp="#cmr" xml:lang="en">
+            <p> . . . ] his own [ . . ] Pomponius Felix, on the Ides of November <note>13th November</note>: I wish you to enjoy good health.</p>
          </div>
-         <div type="bibliography">            <p><bibl><ptr target="OBuNjem"/> <citedRange unit="numbers">109</citedRange></bibl>, whence <bibl><title>Heidelberger Gesamtverzeichnis</title> <citedRange>73259</citedRange></bibl>, <bibl><title>Duke Databank of Documentary Papyri</title> <citedRange>o.bu.njem.109</citedRange></bibl>.
+         
+         
+         <div type="commentary" subtype="general">
+            
+         </div>
+         <div type="bibliography">
+            <p><bibl><ptr target="OBuNjem"/> <citedRange unit="numbers">109</citedRange></bibl>, whence <bibl><title>Heidelberger Gesamtverzeichnis</title> <citedRange>73259</citedRange></bibl>, <bibl><title>Duke Databank of Documentary Papyri</title> <citedRange>o.bu.njem.109</citedRange></bibl>.
     </p></div>
          
-         <div type="bibliography" subtype="otherPublications">
-            <head>Andere Publikation</head>
-            <listBibl>
-               <bibl><ptr target="OBuNjem"/> </bibl>, whence <bibl><title>Heidelberger Gesamtverzeichnis</title> <citedRange>73259</citedRange></bibl>, <bibl><title>Duke Databank of Documentary Papyri</title> <citedRange>o.bu.njem.109</citedRange></bibl>.
-    
-            </listBibl>
-         </div>
+         
       </body>
    </text>
 </TEI>
