@@ -378,9 +378,9 @@
    </xsl:template>
 
    <xsl:template name="inslib-invno">
-      <xsl:if test="//t:idno[@type='invNo'][string(translate(normalize-space(.),' ',''))]">
+     <xsl:if test="//t:idno[ancestor::t:msIdentifier][string(translate(normalize-space(.),' ',''))]">
          <xsl:text> (Inv. no. </xsl:text>
-         <xsl:for-each select="//t:idno[@type='invNo'][string(translate(normalize-space(.),' ',''))]">
+       <xsl:for-each select="//t:idno[ancestor::t:msIdentifier][string(translate(normalize-space(.),' ',''))]">
             <xsl:value-of select="."/>
             <xsl:if test="position()!=last()">
                <xsl:text>, </xsl:text>
