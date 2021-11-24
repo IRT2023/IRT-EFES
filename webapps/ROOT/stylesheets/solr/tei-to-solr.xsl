@@ -42,6 +42,13 @@
     </field>
   </xsl:template>
   
+  
+  <xsl:template match="tei:rs[@type='execution']" mode="facet_execution_technique">
+    <field name="execution_technique">
+      <xsl:value-of select="@ref" />
+    </field>
+  </xsl:template>
+  
   <xsl:template match="tei:idno[@type='filename']" mode="facet_ordered_id">
     <field name="ordered_id">
       <xsl:variable name="filename-letter" select="substring-before(., '.')"/>
@@ -64,6 +71,7 @@
     <xsl:call-template name="field_text_type"/>
     <xsl:call-template name="field_language"/>
     <xsl:call-template name="field_ordered_id"/>
+    <xsl:call-template name="field_execution_technique"/>
   </xsl:template>
   
   <xsl:template name="field_text_type">
@@ -76,6 +84,10 @@
   
   <xsl:template name="field_ordered_id">
     <xsl:apply-templates mode="facet_ordered_id" select="//tei:publicationStmt//tei:idno[@type='filename']"/>
+  </xsl:template>
+  
+  <xsl:template name="field_execution_technique">
+    <xsl:apply-templates mode="facet_execution_technique" select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:layoutDesc/tei:layout/tei:rs[@type='execution']"/>
   </xsl:template>
 
 </xsl:stylesheet>
