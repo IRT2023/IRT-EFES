@@ -45,7 +45,15 @@
   
   <xsl:template match="tei:rs[@type='execution']" mode="facet_execution_technique">
     <field name="execution_technique">
-      <xsl:value-of select="@ref" />
+      <xsl:variable name="ref" select="translate(@ref,' #', '')"/>
+      <xsl:choose>
+        <xsl:when test="document('../../content/xml/authority/execution.xml')//tei:item[@xml:id=$ref]">
+          <xsl:value-of select="normalize-space(translate(translate(document('../../content/xml/authority/execution.xml')//tei:item[@xml:id=$ref]/tei:term[@xml:lang='en'], '/', '／'), '_', ' '))"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$ref" />
+        </xsl:otherwise>
+      </xsl:choose>
     </field>
   </xsl:template>
   
