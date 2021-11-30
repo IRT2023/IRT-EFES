@@ -2,17 +2,17 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purlineoclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purlineoclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1020" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1334" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Honours </rs> for the Severan emperors</title>
+                <title><rs type="textType">Acclamation </rs> </title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <publisher>Society for Libyan Studies</publisher>
             <distributor>King’s College London</distributor>
-                <idno type="filename">IRT1020</idno>
+                <idno type="filename">IRT1334</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -28,33 +28,30 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p><material ref="http://www.eagle-network.eu/voc/material/lod/138">Limestone</material> 
-                                      <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">archtrave</objectType> block, <dimensions>
-                                        <height unit="metre">0.58</height>
-                                        <width unit="metre">1.85</width>
-                                        <depth unit="metre">0.60</depth>
-                                    </dimensions> </p>
+                                  <p><objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Wall</objectType> 
+                                      <material ref="http://www.eagle-network.eu/voc/material/lod/138">plaster</material> 
+                                       (no measurements)</p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
-                                <layout>
-                                    <rs type="execution" ref="scalpro">Inscribed</rs> on the face below a moulding 
+                                <layout>Fragmentary 
+                                    <rs type="execution" ref="pictura">painted</rs> text
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height>0.09</height></handNote>
+                            <handNote>No measurements</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>
-                            <origDate notAfter="0209" notBefore="0198" evidence="reign">198-209 CE</origDate>
+                            <origDate notAfter="0225" notBefore="0175" evidence="context">Late second-early third century CE</origDate>
                         </origin>
                         <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
                             <placeName ref="https://www.slsgazetteer.org/701">Road from the Circus to the Port</placeName>,  
                             <placeName type="monuList" ref="https://www.slsgazetteer.org/702">Amphitheatre</placeName>.</p></provenance>
-                        <provenance type="observed"><p>Findspot</p></provenance>
+                        <provenance type="observed"><p>Findspot (before 1966)</p></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -84,29 +81,25 @@
                     <term><placeName type="modernFindspot" key="http://www.geonames.org/...">...</placeName></term>
               </keywords>
             </textClass>
-            <creation>Epigraphische Datenbank Heidelberg</creation></profileDesc>
+            <creation>Transcribed form AE</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-04-18" who="IV">adapted</change>
-         <change when="2014-05-20" who="Bigi">provisorisch bearbeitet</change>
+         <change when="2021-11-30" who="CMR">Transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><surface/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="pellegrino2018"/>, <citedRange>3</citedRange></bibl>, whence 
-                    <bibl><ptr target="ae"/>, <citedRange>2018.1886</citedRange></bibl>
+                <p><bibl><ptr target="pellegrino2018"/>, <citedRange>3.1</citedRange>, pp 253-5</bibl>, whence 
+                    <bibl><ptr target="ae"/>, <citedRange>2018.1887</citedRange></bibl>
                    
                 </p>
             </div>
-            <div type="edition" xml:lang="la" xml:space="preserve"><ab><lb n="1"/>
-                <persName type="enperor" ref="#septimiusseuerus"><addName nymRef="Imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></addName> <addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ar</ex></expan></addName> <name nymRef="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name nymRef="Septimius">Septimius</name> <name nymRef="Seuerus">Seuerus</name> 
-                    <addName nymRef="Pius">Pius</addName> <addName nymRef="Pertinax">Perti<supplied reason="lost">nax</supplied></addName> <supplied reason="lost"><addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></addName></supplied> </persName><gap reason="lost" unit="character"/> <supplied reason="lost"><w>et</w></supplied>
-                <lb n="2"/><persName type="emperor" ref="#caracalla"><addName nymRef="Imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></addName> 
-                    <addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ar</ex></expan></addName> <name nymRef="Marcus">Marcus</name> <name nymRef="Aurelius">Aurellius</name> <name nymRef="Antoninus">Antoninus</name></persName> <gap reason="lost" unit="character"/> <supplied reason="lost"><w>et</w></supplied> <persName type="emperor" ref="#geta"><supplied reason="lost"><name nymRef="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name nymRef="Septimius">Septimius</name> <name nymRef="Geta">Geta</name></supplied>
-                    <lb n="3"/><del rend="erasure"><addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ar</ex></expan></addName> 
-                        <supplied reason="lost"><addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustus</ex></expan></addName></supplied></del></persName> et <persName type="emperor" ref="#juliadomna"><name nymRef="Iulia">Iulia</name> <addName nymRef="Augusta"><expan><abbr>Aug</abbr><ex>usta</ex></expan></addName> <w>mater</w> 
-                            <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustorum</ex></expan></addName></persName> <supplied reason="lost">et castrorum</supplied> <gap reason="lost" unit="character"/>
+            <div type="edition" xml:lang="la" xml:space="preserve"><ab>
+                
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><w><supplied reason="lost">fe</supplied>liciter</w> <w>qui</w><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><persName type="divine" ref="#fortuna"><name nymRef="Fortuna"><supplied reason="lost" cert="low">Fortu</supplied>na</name> <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usta</ex></expan></addName></persName> 
+                             <gap reason="lost" unit="character"/>
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>

@@ -2,19 +2,20 @@
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" schematypens="http://purlineoclc.org/dsdl/schematron"?>
 <!--<?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purlineoclc.org/dsdl/schematron"?>-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0272" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1325" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>
-               <rs type="textType">Votive</rs> fragment </title>
+            <title> Fragmentary <rs type="textType">honours<certainty match=".." locus="value"/>
+               </rs> 
+            </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
          <editor xml:id="cmr">Charlotte Roueché</editor></titleStmt>
          <publicationStmt>
             <publisher>Society for Libyan Studies</publisher>
             <distributor>King’s College London</distributor>
-            <idno type="filename">IRT0272</idno>
+            <idno type="filename">IRT1325</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -23,38 +24,41 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier><repository ref="institution.xml#db654">Lepcis Museum</repository></msIdentifier>
+               <msIdentifier><repository>Findspot</repository></msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Right-hand side of a <objectType>panel</objectType> (width incomplete <dimensions>
-                                 <width unit="metre">0.32</width>
-                                 <height unit="metre">0.25</height>
-                              </dimensions>) of <material>grey-flecked white</material> 
-                              <material>marble</material>.</p>
+                           <p> Two adjoining <material>limestone</material> <objectType>panel</objectType>s with moulding above and below  (<dimensions>
+                                 <width unit="metre">1.36</width>
+                                 <height unit="metre">0.598</height>
+                                 <depth unit="metre">0.19</depth>
+                              </dimensions>). </p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" ref="scalpro">Inscribed</rs>  on one face.</layout>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs>  on one face  </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>Lettering: <height unit="metre" atLeast="0.04" atMost="0.045">0.04-0.045</height>.</handNote>
+                     <handNote> Capitals, diminishing in height: line 1, <height unit="metre">0.095</height>, line 2, <height unit="metre">0.075</height>, 
+                        line 3, <height unit="metre">0.065</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0001" notAfter="0300" evidence="lettering">First-third centuries CE</origDate>
+                     <origDate notBefore="0001" notAfter="0300" evidence="titulature">First to third centuries CE </origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot"
-                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:
-                  Findspot unrecorded</p>
+                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>:  
+                              <placeName ref="https://www.slsgazetteer.org/720">Forum Vetus</placeName>, in the <placeName type="monuList" ref="https://www.slsgazetteer.org/714">Curia</placeName>. </p>
                         </provenance>
-                        <provenance type="observed"><p><placeName type="monuList" ref="https://www.slsgazetteer.org/654">Lepcis Museum</placeName>.</p></provenance>
+                        <provenance type="observed">
+                           <p>Findspot</p>
+                        </provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -91,36 +95,32 @@
                </term>
             </keywords>
          </textClass>
-      <creation>Transcription (Reynolds, Ward-Perkins)</creation>
+      <creation>Transcription from publication</creation>
       </profileDesc>
       <revisionDesc>
-         <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
-         <change when="2008-09-09" who="ZA">converted using CHET-C</change>
-         <change when="2009-05-19" who="RV">Added Figures</change>
-         <change when="2009-08-24" who="RV">Added Figures</change>
+         <change when="2021-11-30" who="CMR">Transcribed</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile>
-                  <graphic url="wp0321.jpg">
-                     <desc>Ward-Perkin, 1948 (Ward-Perkins Archive, BSR 48.XV.19A)</desc></graphic>
+   <facsimile><surface/>
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>272</citedRange></bibl>, whence <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT272.html">272</ref></citedRange></bibl>, whence <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059238">059238</ref></citedRange></bibl></p>
+            <p><bibl><ptr target="livadiotti2018"/>, <citedRange>334-5</citedRange>, Mon 21 (photograph only)</bibl>, whence 
+               <bibl><ptr target="ae"/>, <citedRange>2018.1865</citedRange></bibl>
+                   </p>
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w lemma="honoro">honoratus</w>
-               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">forus</w> <placeName type="ethnic" ref="#cirta" nymRef="#Cirtensis"><expan><abbr>Cirten</abbr><ex>sis</ex></expan></placeName>
-               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><w part="F">ris</w> <w lemma="deus">deum</w> <w lemma="uotum"><expan><abbr>u</abbr><ex>otum</ex></expan></w> 
-               <w lemma="soluo"><expan><abbr>s</abbr><ex>oluit</ex></expan></w> 
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>n Ti Caesaris Aug pro<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>e sodalis Titi frater Arvali<supplied reason="lost">s</supplied><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><orig><unclear>u</unclear>tta</orig> ex testamento L. Clodi M. <supplied reason="lost">f.</supplied><gap reason="lost" extent="unknown" unit="character"/>
+                  
             </ab></div>
-         <div type="translation" resp="#jmr" xml:lang="en">
-            <p><gap reason="lost" extent="unknown" unit="character"/> honoured <note>nominative case</note> <gap reason="lost" extent="unknown" unit="character"/>forus <note>end of a name in the nominative case</note> of Cirta<gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">the mother</supplied> <note>case unknown</note> of the gods, paid his vow.</p></div>
+         <div type="translation" resp="#cmr" xml:lang="en">
+            <p> </p></div>
          <div type="commentary">
-            <p>Line 3:  Perhaps .. <foreign xml:lang="la">sacerdos matris deum</foreign>. see also  <ref type="inscription" n="IRT0567">567</ref> . 
-            </p>
+            <p>No comment.</p>
          </div>
       </body>
    </text>
