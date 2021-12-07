@@ -46,7 +46,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0222" notAfter="0235" precision="low" cert="low" evidence="reign">CE 222-235 (reign of Severus Alexander)</origDate>
+                     <origDate notBefore="0222" notAfter="0235" precision="low" cert="low" evidence="reign">CE 222-235 </origDate>
                      <precision match="//origDate/"/>
                   </origin>
                   <provenance type="found">
@@ -118,9 +118,13 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
                <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/> <orig>a</orig><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="2"/>
-               <gap reason="lost" extent="unknown" unit="character"/><w lemma="ater" part="M">atri</w><gap reason="lost" extent="unknown" unit="character"/>
+               <persName type="emperor" ref="#juliamamaea"><supplied reason="lost" cert="low"><name type="gentilicium" nymRef="Iulia">Iuliae</name> 
+               <name type="cognomen" nymRef="Mamaea">Mamaeae</name></supplied> 
+                  <lb n="2"/><g ref="symbols.xml#stop"/> <addName nymRef="Augustus">A<supplied reason="lost" cert="low">ugustae</supplied></addName>
+                     <w lemma="mater"><supplied reason="lost" cert="low">ma</supplied>
+                  <lb n="3" break="no"/>tri</w></persName> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3a"/><gap reason="lost" extent="unknown" unit="line"/>
+               
             </ab></div>
          <div type="apparatus">
             <listApp>
@@ -130,7 +134,7 @@
             </listApp>
          </div>
          <div type="translation" resp="#jmr" xml:lang="en">
-            <p><note>Perhaps</note> To Julia Mamaea Augusta, mother of Augustus <gap reason="lost" extent="unknown" unit="character"/>.</p></div>
+            <p><note>Perhaps</note> To Julia Mamaea Augusta, mother [of Augustus <gap reason="lost" extent="unknown" unit="character"/>.</p></div>
          <div type="commentary">
             <p>No comment.</p>
          </div>
