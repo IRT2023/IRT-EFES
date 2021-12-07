@@ -48,7 +48,7 @@
                <history>
                   <origin>
                      <origPlace>Unknown</origPlace>
-                     <origDate notBefore="0222" notAfter="0235" evidence="reign">CE 222-235 (reign of Severus Alexander)</origDate>
+                     <origDate notBefore="0222" notAfter="0235" evidence="reign">CE 222-235</origDate>
                      <precision match="//origDate/"/>
                   </origin>
                   <provenance type="found">
@@ -115,8 +115,10 @@
       <body>
          <div type="bibliography">
             <p>
-               <bibl><ptr target="degrassi1954"/> <citedRange></citedRange></bibl>;
-               <bibl><ptr target="irt1952"/>, <citedRange>449</citedRange></bibl>, whence 
+               
+               <bibl><ptr target="irt1952"/>, <citedRange>449</citedRange></bibl>, 
+               <bibl><ptr target="degrassi1954"/> <citedRange></citedRange></bibl>, 
+               <bibl><ptr target="reynolds1955"/> <citedRange></citedRange></bibl>, whence 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT449.html">449</ref></citedRange></bibl>, whence 
                <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059352">059352</ref></citedRange></bibl>
                    </p>
@@ -139,19 +141,19 @@
          <div type="apparatus">
             <listApp>
                <app loc="3">
-                  <rdg resp="degrassi1954">
+                  <rdg resp="#degrassi1954">
                      <note>Another line containing the titles of Severus Alexander, following line 3.</note>
                   </rdg>
-                  <note>: on the surviving fragment of line 3 there are traces of a line below, quite illegible. Degrassi may be right in his explanation of these; 
-                     or they may be part of the missing words of the line given as line 4 in IRT.</note>
+                  <rdg resp="#reynolds1955">: on the surviving fragment of line 3 there are traces of a line below, quite illegible. Degrassi may be right in his explanation of these; 
+                     or they may be part of the missing words of line 4.</rdg>
                </app>
             
                <app loc="5">
-                  <rdg resp="degrassi1954">
+                  <rdg resp="#degrassi1954">
                      <supplied reason="lost">civitati</supplied>s patro<supplied reason="lost">nae</supplied>
                      <gap reason="lost" extent="unknown" unit="character"/>
                   </rdg>
-                  <note>: the stone has been re-examined: the letter before PATRO is unlikely to be S, which should have left traces of its lower curve, but may be C.</note>
+                  <rdg resp="#reynolds1955">: the stone was re-examined: the letter before PATRO is unlikely to be S, which should have left traces of its lower curve, but may be C.</rdg>
                </app>
             </listApp>
          </div>
