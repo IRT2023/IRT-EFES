@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:rs[@type='military'][@ref]|//tei:orgName[@type='military'][@ref]" group-by="translate(@ref, '#', '')">
+      <xsl:for-each-group select="//tei:rs[@type='military'][@ref]|//tei:orgName[@type='military'][@ref]|//tei:orgName[@type='civil'][@ref]" group-by="translate(@ref, '#', '')">
         <xsl:variable name="id" select="translate(@ref, '#', '')"/>
         <xsl:variable name="idno" select="document('../../content/xml/authority/military.xml')//tei:item[@xml:id=$id]"/>
         <doc>
@@ -94,7 +94,7 @@
     </add>
   </xsl:template>
 
-  <xsl:template match="tei:rs[@type='military']|tei:orgName[@type='military']">
+  <xsl:template match="tei:rs[@type='military']|tei:orgName[@type='military']|tei:orgName[@type='civil']">
     <xsl:call-template name="field_index_instance_location" />
   </xsl:template>
 
