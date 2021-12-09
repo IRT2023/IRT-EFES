@@ -28,7 +28,7 @@
       <xsl:for-each select="$ids">
         <xsl:variable name="id" select="." />
         <xsl:variable name="idno" select="document('../../content/xml/authority/emperors.xml')//tei:person[@xml:id=$id]"/>
-        <xsl:variable name="emperor" select="$root//tei:persName[@type='emperor'][contains(concat(' ', translate(@ref, '#', ''), ' '), $id) or contains(concat(' ', translate(@key, '#', ''), ' '), $id)]" />
+        <xsl:variable name="emperor" select="$root//tei:persName[@type='emperor'][contains(concat(' ', translate(@ref, '#', ''), ' '), concat(' ',$id,' ')) or contains(concat(' ', translate(@key, '#', ''), ' '), concat(' ',$id,' '))]" />
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
