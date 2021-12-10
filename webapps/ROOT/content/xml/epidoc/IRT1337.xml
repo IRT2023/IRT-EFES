@@ -2,17 +2,17 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purlineoclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purlineoclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1335" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1337" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Name? </rs> </title>
+                <title><rs type="textType">Seat inscription</rs>s </title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <publisher>Society for Libyan Studies</publisher>
             <distributor>King’s College London</distributor>
-                <idno type="filename">IRT1335</idno>
+                <idno type="filename">IRT1337</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -28,29 +28,28 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p><objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Wall</objectType> 
-                                      <material ref="http://www.eagle-network.eu/voc/material/lod/138">plaster</material> 
-                                       (no measurements)</p>
+                                  <p>Fourteen <material>limestone</material>
+                                      <objectType>seat</objectType>s, damaged: <dimensions><height>0.67</height> <width>6.50</width> <depth>0.16-0.28</depth></dimensions>,></p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="pictura">Graffito</rs> text
+                                    <rs type="execution" ref="scalpro">Inscribed</rs> on the upper face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height>0.16-0.18</height></handNote>
+                            <handNote>Line 1 <height>0.18-0.28</height>, line 2 <height>0.10-0.17</height></handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>
-                            <origDate notAfter="0225" notBefore="0175" evidence="context">Late second-early third century CE</origDate>
+                            <origDate notAfter="0175" notBefore="0125" evidence="context">Mid second century CE</origDate>
                         </origin>
                         <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
                             <placeName ref="https://www.slsgazetteer.org/701">Road from the Circus to the Port</placeName>,  
-                            <placeName type="monuList" ref="https://www.slsgazetteer.org/702">Amphitheatre</placeName>.</p></provenance>
+                            <placeName type="monuList" ref="https://www.slsgazetteer.org/702">Amphitheatre</placeName>: west section of podium, second row of seats.</p></provenance>
                         <provenance type="observed"><p>Findspot </p></provenance>
                     </history>
                 </msDesc>
@@ -83,22 +82,31 @@
             </textClass>
             <creation>Transcribed from AE</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-11-30" who="CMR">Transcribed</change>
+         <change when="2021-12-10" who="CMR">Transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><surface/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="pellegrino2018"/>, <citedRange>p.261</citedRange>, pl.330</bibl>, whence 
-                    <bibl><ptr target="ae"/>, <citedRange>2018.1887</citedRange></bibl>
+                <p><bibl><ptr target="pellegrino2018"/>, <citedRange>1-14</citedRange>, p.216-219</bibl>, whence 
+                    <bibl><ptr target="ae"/>, <citedRange>2018.1868</citedRange></bibl>, with the observations of G. Di Vita-Évrard and K Marmouri, whence this text.
                    
                 </p>
             </div>
             <div type="edition" xml:lang="grc" xml:space="preserve"><ab>
                 
-               <lb n="1"/><persName type="attested"><name  nymRef="Κολα-">Κολα</name></persName>
+               <lb n="1"/><persName type="attested"><name nymRef="Tiberius"><expan><abbr>Ti</abbr><ex>berius</ex></expan></name> <name nymRef="Larcius">Larcius</name> <name nymRef="Cerealis">Cerealis</name></persName>, 
+                <persName type="attested"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name> <name nymRef="Clodius">C<unclear>l</unclear><supplied reason="lost">odi</supplied>us</name> 
+                    <name nymRef="Crescens">Crescens</name></persName>  <gap reason="lost"/> 
+               <lb n="2"/> <persName nymRef="-nianus"><seg part="F">niani</seg></persName> <persName type="attested"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name> 
+                   <name nymRef="Mar-"><seg part="I"><unclear>M</unclear>ar</seg></name></persName> <gap reason="lost"/> <!-- check -->
             </ab></div>
+            <div type="apparatus">
+                <listApp>
+                    <app loc="2"><rdg resp="#pellegrino2018">- - - ]nianus Q. +AR [ . . . ] A</rdg></app>
+                </listApp>
+            </div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
             </div>

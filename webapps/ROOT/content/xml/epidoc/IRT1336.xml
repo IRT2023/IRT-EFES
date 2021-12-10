@@ -2,17 +2,17 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purlineoclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purlineoclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1335" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT1336" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title><rs type="textType">Name? </rs> </title>
+                <title><rs type="textType">Name</rs>s </title>
                 <editor xml:id="cmr">Charlotte Roueché</editor>
             </titleStmt>  
             <publicationStmt>
                 <publisher>Society for Libyan Studies</publisher>
             <distributor>King’s College London</distributor>
-                <idno type="filename">IRT1335</idno>
+                <idno type="filename">IRT1336</idno>
                 <availability>
                 <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                 <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -28,25 +28,26 @@
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                  <p><objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/2">Wall</objectType> 
-                                      <material ref="http://www.eagle-network.eu/voc/material/lod/138">plaster</material> 
-                                       (no measurements)</p>
+                                  <p>Eleven <material>limestone</material>
+                                      <objectType>seat</objectType>s, damaged and some broken: nos. 1-7 <dimensions><height>0.68</height> <width>3.14</width> <depth>0.12-0.20</depth></dimensions>, 
+                                      nos. 8-9 <dimensions><height>0.48-0.49</height> <width>0.75</width> <depth>0.14-0.21</depth></dimensions>, 
+                                      nos. 10-11 <dimensions><height>0.40-0.43</height> <width>1.10</width> <depth>0.41</depth></dimensions></p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <rs type="execution" ref="pictura">Graffito</rs> text
+                                    <rs type="execution" ref="scalpro">Inscribed</rs> on the upper face
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote><height>0.16-0.18</height></handNote>
+                            <handNote><height>0.15-0.23</height>; circle for stop</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
                         <origin>
                             <origPlace>Findspot</origPlace>
-                            <origDate notAfter="0225" notBefore="0175" evidence="context">Late second-early third century CE</origDate>
+                            <origDate notAfter="0175" notBefore="0125" evidence="context">Mid second century CE</origDate>
                         </origin>
                         <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
                             <placeName ref="https://www.slsgazetteer.org/701">Road from the Circus to the Port</placeName>,  
@@ -83,21 +84,27 @@
             </textClass>
             <creation>Transcribed from AE</creation></profileDesc>
         <revisionDesc>
-         <change when="2021-11-30" who="CMR">Transcribed</change>
+         <change when="2021-12-10" who="CMR">Transcribed</change>
         </revisionDesc>
     </teiHeader>
     <facsimile><surface/></facsimile>
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="pellegrino2018"/>, <citedRange>p.261</citedRange>, pl.330</bibl>, whence 
-                    <bibl><ptr target="ae"/>, <citedRange>2018.1887</citedRange></bibl>
+                <p><bibl><ptr target="pellegrino2018"/>, <citedRange>1-11</citedRange>, p.219-222</bibl>, whence 
+                    <bibl><ptr target="ae"/>, <citedRange>2018.1867</citedRange></bibl>, with the observations of G. Di Vita-Évrard and K Marmouri, whence this text.
                    
                 </p>
             </div>
             <div type="edition" xml:lang="grc" xml:space="preserve"><ab>
                 
-               <lb n="1"/><persName type="attested"><name  nymRef="Κολα-">Κολα</name></persName>
+               <lb n="1"/><persName type="attested"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintu</ex>s</expan></name> <name nymRef="Pompeius">Pompeius</name> <name nymRef="Saturninus">Saturni<supplied reason="lost">nus</supplied></name></persName>, 
+                <persName type="attested"><supplied reason="lost"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintu</ex>s</expan></name> <name nymRef="Pompeius">Pompeius</name></supplied> 
+                    <name nymRef="Saturninus">Satur<unclear>n</unclear>inu<unclear>s</unclear></name></persName> <milestone unit="block"/> 
+                <persName type="attested"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintu</ex>s</expan></name> <name nymRef="Marcius"><expan><abbr>Marc</abbr><ex>i</ex></expan></name> 
+                    <name nymRef="Rus-"><seg part="I">Rus</seg></name></persName><gap reason="lost"/> 
+                <persName type="attested"><supplied reason="lost"><name nymRef="Quintus"><expan><abbr>Q</abbr><ex>uintu</ex>s</expan></name> <name nymRef="Pompeius">Pompeius</name></supplied> 
+                    <name nymRef="Saturninus">Satur<unclear>n</unclear>i<unclear>n</unclear>u<unclear>s</unclear></name></persName><milestone unit="block"/><gap reason="lost"/> <!-- check -->
             </ab></div>
             <div type="translation" resp="#cmr" xml:lang="en">
                 <p/>
