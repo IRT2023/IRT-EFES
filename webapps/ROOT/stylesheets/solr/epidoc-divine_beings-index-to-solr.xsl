@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='divine'][@ref]" group-by="translate(@ref, '#', '')">
+      <xsl:for-each-group select="//tei:persName[@type='divine'][@ref]" group-by="concat(translate(@ref, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
         <xsl:variable name="id" select="translate(@ref, '#', '')"/>
         <xsl:variable name="idno" select="document('../../content/xml/authority/divine.xml')//tei:person[@xml:id=$id]"/>
         <doc>
