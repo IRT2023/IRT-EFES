@@ -72,6 +72,7 @@
     <!-- the following code handles single values inside @ref/@key but considers also epithets in @group-by -->
     <add>
       <xsl:for-each-group select="//tei:persName[@type='emperor'][@ref]" group-by="concat(translate(@ref, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
+        <xsl:variable name="self" select="."/>
         <xsl:variable name="id" select="translate(@ref, '#', '')"/>
         <xsl:variable name="idno" select="document('../../content/xml/authority/emperors.xml')//tei:person[@xml:id=$id]"/>
         <doc>
@@ -97,7 +98,7 @@
             <xsl:value-of select="$idno/@n" />
           </field>
           <field name="index_epithet">
-            <xsl:for-each select="descendant::tei:addName[@nymRef]">
+            <xsl:for-each select="descendant::tei:addName[@nymRef][not(ancestor::tei:persName[ancestor::tei:persName=$self])]">
               <xsl:value-of select="@nymRef" />
               <xsl:if test="position()!=last()">, </xsl:if>
             </xsl:for-each>
@@ -111,6 +112,7 @@
       
       <!-- the following code is to ensure compatibility with older markup where @key was used instead of @ref -->
       <xsl:for-each-group select="//tei:persName[@type='emperor'][not(@ref)][@key]" group-by="concat(translate(@key, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
+        <xsl:variable name="self" select="."/>
         <xsl:variable name="id" select="translate(@key, '#', '')"/>
         <xsl:variable name="idno" select="document('../../content/xml/authority/emperors.xml')//tei:person[@xml:id=$id]"/>
         <doc>
@@ -136,7 +138,7 @@
             <xsl:value-of select="$idno/@n" />
           </field>
           <field name="index_epithet">
-            <xsl:for-each select="descendant::tei:addName[@nymRef]">
+            <xsl:for-each select="descendant::tei:addName[@nymRef][not(ancestor::tei:persName[ancestor::tei:persName=$self])]">
               <xsl:value-of select="@nymRef" />
               <xsl:if test="position()!=last()">, </xsl:if>
             </xsl:for-each>

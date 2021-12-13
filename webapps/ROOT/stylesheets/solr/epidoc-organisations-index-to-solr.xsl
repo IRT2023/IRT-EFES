@@ -16,6 +16,7 @@
   <xsl:template match="/">
     <add>
       <xsl:for-each-group select="//tei:rs[@type='military'][@ref]|//tei:orgName[@type='military'][@ref]|//tei:orgName[@type='civil'][@ref]" group-by="concat(translate(@ref, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
+        <xsl:variable name="self" select="."/>
         <xsl:variable name="id" select="translate(@ref, '#', '')"/>
         <xsl:variable name="idno" select="document('../../content/xml/authority/military.xml')//tei:item[@xml:id=$id]"/>
         <doc>
@@ -41,7 +42,7 @@
             </xsl:choose>
           </field>
           <field name="index_epithet">
-            <xsl:for-each select="descendant::tei:addName[@nymRef]">
+            <xsl:for-each select="descendant::tei:addName[@nymRef][not(ancestor::tei:rs[ancestor::tei:rs=$self])]">
               <xsl:value-of select="@nymRef" />
               <xsl:if test="position()!=last()">, </xsl:if>
             </xsl:for-each>
@@ -55,6 +56,7 @@
       
       <!-- the following code is to ensure compatibility with older markup where @key was used instead of @ref -->
       <xsl:for-each-group select="//tei:rs[@type='military'][not(@ref)][@key]|//tei:orgName[@type='military'][not(@ref)][@key]" group-by="translate(@key, '#', '')">
+        <xsl:variable name="self" select="."/>
         <xsl:variable name="id" select="translate(@key, '#', '')"/>
         <xsl:variable name="idno" select="document('../../content/xml/authority/military.xml')//tei:item[@xml:id=$id]"/>
         <doc>
@@ -80,7 +82,7 @@
             </xsl:choose>
           </field>
           <field name="index_epithet">
-            <xsl:for-each select="descendant::tei:addName[@nymRef]">
+            <xsl:for-each select="descendant::tei:addName[@nymRef][not(ancestor::tei:rs[ancestor::tei:rs=$self])]">
               <xsl:value-of select="@nymRef" />
               <xsl:if test="position()!=last()">, </xsl:if>
             </xsl:for-each>
