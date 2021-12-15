@@ -12,7 +12,7 @@
                 <xsl:variable name="filepath"><xsl:text>../xml/epidoc/</xsl:text><xsl:value-of select="@n"/></xsl:variable>
                     <xsl:for-each select="document($filepath)//t:div[@type='edition']">
                         <xsl:text>
-                            [REF:</xsl:text><xsl:value-of select="$filename"/><xsl:text>] </xsl:text>
+[REF:</xsl:text><xsl:value-of select="$filename"/><xsl:text>] </xsl:text>
                         <xsl:value-of select="normalize-space(.)"/>
                     </xsl:for-each>
                 </xsl:for-each>
