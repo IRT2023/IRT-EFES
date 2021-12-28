@@ -15,7 +15,8 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@type='divine'][@ref]" group-by="translate(@ref, '#', '')">
+      <xsl:for-each-group select="//tei:persName[@type='divine'][@ref]" group-by="concat(translate(@ref, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
+        <xsl:variable name="self" select="."/>
         <xsl:variable name="id" select="translate(@ref, '#', '')"/>
         <xsl:variable name="idno" select="document('../../content/xml/authority/divine.xml')//tei:person[@xml:id=$id]"/>
         <doc>
@@ -41,7 +42,7 @@
             </xsl:choose>
           </field>
             <field name="index_epithet">
-              <xsl:for-each select="descendant::tei:addName[@nymRef]">
+              <xsl:for-each select="descendant::tei:addName[@nymRef][not(ancestor::tei:persName[ancestor::tei:persName=$self])]">
                 <xsl:value-of select="@nymRef" />
                 <xsl:if test="position()!=last()">, </xsl:if>
               </xsl:for-each>
@@ -54,7 +55,8 @@
       </xsl:for-each-group>
       
       <!-- the following code is to ensure compatibility with older markup where @key was used instead of @ref -->
-      <xsl:for-each-group select="//tei:persName[@type='divine'][@key][not(@ref)]" group-by="translate(@key, '#', '')">
+      <xsl:for-each-group select="//tei:persName[@type='divine'][@key][not(@ref)]" group-by="concat(translate(@key, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
+        <xsl:variable name="self" select="."/>
         <xsl:variable name="id" select="translate(@key, '#', '')"/>
         <xsl:variable name="idno" select="document('../../content/xml/authority/divine.xml')//tei:person[@xml:id=$id]"/>
         <doc>
@@ -80,7 +82,7 @@
             </xsl:choose>
           </field>
           <field name="index_epithet">
-            <xsl:for-each select="descendant::tei:addName[@nymRef]">
+            <xsl:for-each select="descendant::tei:addName[@nymRef][not(ancestor::tei:persName[ancestor::tei:persName=$self])]">
               <xsl:value-of select="@nymRef" />
               <xsl:if test="position()!=last()">, </xsl:if>
             </xsl:for-each>

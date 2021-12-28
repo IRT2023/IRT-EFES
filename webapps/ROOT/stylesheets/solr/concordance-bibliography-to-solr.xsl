@@ -10,7 +10,7 @@
   <xsl:template match="/">
     <add>
       <xsl:for-each-group select="//tei:body/tei:div[@type='bibliography']//tei:bibl/tei:ptr" group-by="@target">
-        <xsl:variable name="target" select="@target" />
+        <xsl:variable name="target" select="replace(@target, '#', '')" />
         <xsl:for-each-group select="current-group()" group-by="../tei:citedRange">
           <doc>
             <field name="document_type">
@@ -21,6 +21,9 @@
             </field>
             <field name="concordance_bibliography_ref">
               <xsl:value-of select="$target" />
+            </field>
+            <field name="concordance_bibliography_date">
+              <xsl:value-of select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//tei:bibl[not(@sameAs)][@xml:id=$target]//tei:date[1]" />
             </field>
             <field name="concordance_bibliography_cited_range">
               <xsl:value-of select="../tei:citedRange" />
