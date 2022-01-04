@@ -58,7 +58,7 @@
                                 <ref target="https://godot.date/id/RdHLXDcqcCKHg4t3kU299c">GODOT</ref>
                             </origDate>
                         </origin>
-                        <provenance type="found"><p><placeName type="ancientFindspot"  ref="https://www.slsgazetteer.org/659">Sabratha</placeName>;  
+                        <provenance type="found"><p><placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/659">Sabratha</placeName>;  
                             <placeName ref="https://www.slsgazetteer.org/857">Regio III</placeName>,  
                             <placeName type="monuList" ref="https://www.slsgazetteer.org/861">Temple of Isis</placeName>; fragments found scattered and re-used.</p></provenance>
                         <provenance type="observed"><p>Findspot</p></provenance><!-- check IRT 15, 16 -->
@@ -93,6 +93,7 @@
             </textClass>
             <creation>Epigraphische Datenbank Heidelberg</creation></profileDesc>
         <revisionDesc>
+         <change when="2022-01-04" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
          <change when="2021-04-18" who="IV">adapted</change>
          <change when="2011-08-04" who="Gräf">provisorisch bearbeitet</change>
         </revisionDesc>
@@ -114,10 +115,10 @@
                         <citedRange> <ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059015">059015</ref></citedRange></bibl>; 
                     Discovery of three further blocks mentioned in Fasti Archaeologici 12, 1957, no.5621, whence 
                     <bibl> <ptr target="ae"/> <citedRange>1961.143</citedRange></bibl>; 
-                    All published <bibl><ptr target="vitaevrard1967"/> <citedRange></citedRange></bibl>, whence 
+                    All published <bibl><ptr target="vitaevrard1967"/> <citedRange/></bibl>, whence 
                     <bibl><ptr target="ae"/> <citedRange>1968.551</citedRange></bibl>,
                     <bibl><ptr target="thomasson1996"/> <citedRange>49.c</citedRange></bibl>;
-                    Revised <bibl><ptr target="benario1966"/> <citedRange></citedRange></bibl>, whence 
+                    Revised <bibl><ptr target="benario1966"/> <citedRange/></bibl>, whence 
                     <bibl> <ptr target="ae"/> <citedRange>1971.485</citedRange></bibl>, <!-- check -->
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015596">015596</ref></citedRange></bibl>
                 </p>
@@ -125,12 +126,12 @@
             <div type="edition" xml:lang="la" xml:space="preserve"><ab>
                 <lb n="1"/>
                 <persName type="emperor" ref="#vespasianus"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratore</ex></expan></w> <name nymRef="Vespasianus">U<supplied reason="lost">e</supplied><unclear>spa</unclear><supplied reason="lost">siano</supplied></name> 
-                    <addName nymRef="Augustus"><expan><abbr><unclear>A</unclear><supplied reason="lost">ug</supplied></abbr><ex>usto</ex></expan></addName> <supplied reason="lost"><w><expan><abbr>pont</abbr><ex>ifice</ex></expan></w> <w><expan><abbr>max</abbr><ex>imo</ex></expan></w></supplied> 
-                <lb n="2"/><supplied reason="lost"><w><expan><abbr>trib</abbr><ex>unicia</ex></expan></w></supplied> <w><expan><abbr><supplied reason="lost">p</supplied>ot</abbr><ex>estate</ex></expan></w> <num value="9">I<supplied reason="lost">X</supplied></num> 
-                    <w><expan><abbr><supplied reason="lost">i</supplied>mp</abbr><ex>eratore</ex></expan></w> <num value="17">XVII<supplied reason="lost">I</supplied></num> <supplied reason="lost"><w><expan><abbr>p</abbr><ex>atre</ex></expan></w> <w><expan><abbr>p</abbr><ex>atriae</ex></expan></w> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> <num value="8">VIII</num></supplied></persName> 
-                <lb n="3"/><persName type="emperor" ref="#titus"><supplied reason="lost"><w>et</w> <w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratore</ex></expan></w> <name nymRef="Titus"><expan><abbr>T</abbr><ex>ito</ex></expan></name></supplied> <name nymRef="Vespasianus">Ue<unclear>s</unclear><supplied reason="lost">pa</supplied>siano</name> <addName nymRef="Augustus"><expan><abbr>A<supplied reason="lost">ug</supplied></abbr><ex>usti</ex></expan></addName> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> <num value="6">VI</num></supplied></persName> 
-                <lb n="4"/><supplied reason="lost"><w>et</w></supplied> <persName type="emperor" ref="#domitianus"><del rend="erasure"><name nymRef="Domitianus">Domitiano</name>  <addName nymRef="Augustus"><expan><abbr>A<supplied reason="lost">ug</supplied></abbr>
-                    <ex>usti</ex></expan></addName> <supplied reason="lost"><w><expan><abbr>f</abbr><ex>ilio</ex></expan></w> <addName nymRef="Caesar">Caesare</addName></supplied></del> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> <supplied reason="lost"><num value="5">V</num></supplied></persName> 
+                    <addName nymRef="Augustus"><expan><abbr><unclear>A</unclear><supplied reason="lost">ug</supplied></abbr><ex>usto</ex></expan></addName> <supplied reason="lost"><w lemma="pontifex"><expan><abbr>pont</abbr><ex>ifice</ex></expan></w> <w lemma="maximus"><expan><abbr>max</abbr><ex>imo</ex></expan></w></supplied> 
+                <lb n="2"/><supplied reason="lost"><w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w></supplied> <w lemma="potestas"><expan><abbr><supplied reason="lost">p</supplied>ot</abbr><ex>estate</ex></expan></w> <num value="9">I<supplied reason="lost">X</supplied></num> 
+                    <w lemma="imperator"><expan><abbr><supplied reason="lost">i</supplied>mp</abbr><ex>eratore</ex></expan></w> <num value="17">XVII<supplied reason="lost">I</supplied></num> <supplied reason="lost"><w lemma="pater"><expan><abbr>p</abbr><ex>atre</ex></expan></w> <w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> <num value="8">VIII</num></supplied></persName> 
+                <lb n="3"/><persName type="emperor" ref="#titus"><supplied reason="lost"><w lemma="et">et</w> <w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratore</ex></expan></w> <name nymRef="Titus"><expan><abbr>T</abbr><ex>ito</ex></expan></name></supplied> <name nymRef="Vespasianus">Ue<unclear>s</unclear><supplied reason="lost">pa</supplied>siano</name> <addName nymRef="Augustus"><expan><abbr>A<supplied reason="lost">ug</supplied></abbr><ex>usti</ex></expan></addName> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> <num value="6">VI</num></supplied></persName> 
+                <lb n="4"/><supplied reason="lost"><w lemma="et">et</w></supplied> <persName type="emperor" ref="#domitianus"><del rend="erasure"><name nymRef="Domitianus">Domitiano</name>  <addName nymRef="Augustus"><expan><abbr>A<supplied reason="lost">ug</supplied></abbr>
+                    <ex>usti</ex></expan></addName> <supplied reason="lost"><w lemma="filius"><expan><abbr>f</abbr><ex>ilio</ex></expan></w> <addName nymRef="Caesar">Caesare</addName></supplied></del> <w lemma="consul"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan></w> <supplied reason="lost"><num value="5">V</num></supplied></persName> 
                 <lb n="5"/><persName type="attested" key="pir-p-0014"><name nymRef="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name nymRef="Paccius">Paccius</name> <name nymRef="Africanus">African<supplied reason="lost">us</supplied></name></persName> 
                 <lb n="0"/><gap reason="lost" extent="unknown" unit="line"/>
             </ab></div>

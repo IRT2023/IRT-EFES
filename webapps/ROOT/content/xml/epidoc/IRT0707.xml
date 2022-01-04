@@ -62,8 +62,7 @@
                   </origin>
                   <provenance type="found">
                            <p>
-                              <placeName type="ancientFindspot"
-                                         ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
                   <placeName ref="https://www.slsgazetteer.org/742">Regio IV</placeName>,                                , insula  11, beside a building to which they probably belong, 
                               opposite the Severan Basilica.</p>
                         </provenance>
@@ -109,6 +108,7 @@
       <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-01-04" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
@@ -146,7 +146,7 @@
                with <bibl><ptr target="reynolds1955"/>, <citedRange unit="page">132</citedRange></bibl>, whence 
                <bibl><ptr target="ae"/> <citedRange>1957.239</citedRange></bibl>,
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT707.html">707</ref></citedRange></bibl>;
-               <bibl><ptr target="vitaevrard2008"/> <citedRange></citedRange></bibl>, whence 
+               <bibl><ptr target="vitaevrard2008"/> <citedRange/></bibl>, whence 
                <bibl><ptr target="ae"/> <citedRange>2008.1618</citedRange></bibl>;
                <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059556">059556</ref></citedRange></bibl>
                    </p>
@@ -154,15 +154,15 @@
          <div type="edition" xml:lang="la" xml:space="preserve">
            <ab>
 <lb n="1"/>
-<persName type="divine" ref="#apollo"><supplied reason="lost"><w>Deo</w></supplied> <name nymRef="Apollo"><supplied reason="lost">Ap</supplied>ollini</name></persName> 
-              <w>e<supplied reason="lost">x</supplied></w> <w lemma="sestertius"><expan><abbr><am><unclear><g ref="symbols.xml#sestertius"/></unclear></am></abbr><ex>sestertios</ex></expan></w>  
+<persName type="divine" ref="#apollo"><supplied reason="lost"><w lemma="deus">Deo</w></supplied> <name nymRef="Apollo"><supplied reason="lost">Ap</supplied>ollini</name></persName> 
+              <w lemma="ex">e<supplied reason="lost">x</supplied></w> <w lemma="sestertius"><expan><abbr><am><unclear><g ref="symbols.xml#sestertius"/></unclear></am></abbr><ex>sestertios</ex></expan></w>  
               <num value="200000"><expan><abbr>CC</abbr><ex>milia</ex></expan></num> 
-              <w>te<supplied reason="lost">sta</supplied>men<supplied reason="lost">to</supplied></w> <persName type="attested"><supplied reason="lost"><name nymRef="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> 
+              <w lemma="testamentum">te<supplied reason="lost">sta</supplied>men<supplied reason="lost">to</supplied></w> <persName type="attested"><supplied reason="lost"><name nymRef="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> 
               <name nymRef="Iulius">Iuli</name></supplied> <name nymRef="Cerealis"><supplied reason="lost">Cere</supplied>alis</name></persName> <w lemma="lego">legatis</w>
               <persName type="attested"><name nymRef="Iulia">Iu<supplied reason="lost">lia</supplied></name> <name nymRef="Seuera"><supplied reason="lost">Seuer</supplied>a</name> <name nymRef="Gaetulica">Gaetul<supplied reason="lost">ica</supplied></name></persName> 
-              <supplied reason="lost"><w>filia</w> <w>et</w></supplied> <w>heres</w>
-<w><supplied reason="lost">comp</supplied>arata</w> <w>de</w> <w>suo</w> <w>area</w> <w>et</w> <w>amplius</w> <w>adiectis</w> 
-              <w lemma="sestertius"><expan><abbr><am><g ref="symbols.xml#sestertius"/></am></abbr><ex>sestertiis</ex></expan></w> <num value="72500">LXXIID</num> <w>fecit</w>
+              <supplied reason="lost"><w lemma="filia">filia</w> <w lemma="et">et</w></supplied> <w lemma="heres">heres</w>
+<w lemma="comparo"><supplied reason="lost">comp</supplied>arata</w> <w lemma="de">de</w> <w lemma="suus">suo</w> <w lemma="area">area</w> <w lemma="et">et</w> <w lemma="ample">amplius</w> <w lemma="adicio">adiectis</w> 
+              <w lemma="sestertius"><expan><abbr><am><g ref="symbols.xml#sestertius"/></am></abbr><ex>sestertiis</ex></expan></w> <num value="72500">LXXIID</num> <w lemma="facio">fecit</w>
 </ab>
             
             </div>

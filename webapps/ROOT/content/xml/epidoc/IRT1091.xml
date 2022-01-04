@@ -93,6 +93,7 @@
             </textClass>
             <creation>Epigraphische Datenbank Heidelberg</creation></profileDesc>
         <revisionDesc>
+         <change when="2022-01-04" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
          <change when="2021-04-18" who="IV">adapted</change>
          <change when="2013-10-31" who="Gräf">provisorisch bearbeitet</change>
         </revisionDesc>
@@ -106,55 +107,55 @@
     <text>
         <body>
             <div type="bibliography">
-                <p><bibl><ptr target="rebuffat1995"/> <citedRange></citedRange></bibl>, whence <!-- check -->
+                <p><bibl><ptr target="rebuffat1995"/> <citedRange/></bibl>, whence <!-- check -->
                     <bibl><ptr target="ae"/> <citedRange>1995.1641</citedRange></bibl>,
                     <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD051092">051092</ref></citedRange></bibl>, 
-                    <bibl><ptr target="adams1999"/> <citedRange></citedRange>, with further bibliography</bibl>
+                    <bibl><ptr target="adams1999"/> <citedRange/>, with further bibliography</bibl>
                     
                 </p>
             </div>
             <div type="edition" xml:lang="la" xml:space="preserve">
                 <div n="1" type="textpart"><ab><lb n="1"/>
-                <persName type="emperor" ref="#caracalla"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></w> <addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ari</ex></expan></addName> <name nymRef="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name nymRef="Aurelius">Aurelio</name> <del rend="erasure"><name nymRef="Antoninus">Antonino</name> <addName nymRef="Pius">Pio</addName> <addName nymRef="Felix">Felici</addName> <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></addName> <w>sacerdoti</w></del> 
-                <lb n="2"/><w>amplissimo</w> <w>pontifici</w> <w>maximo</w> <w><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> <w><expan><abbr>pot</abbr><ex>estate</ex></expan></w> <del rend="erasure"><num value="5">V</num></del> <w>co<expan><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w> <del rend="erasure"><num value="4">IIII</num></del> <w><expan><abbr>p</abbr><ex>atri</ex></expan></w> <w><expan><abbr>p</abbr><ex>atriae</ex></expan></w></persName> <w>et</w> 
-                <lb n="3"/><persName type="emperor" ref="#seuerusalexander"><del rend="erasure"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name nymRef="Aurelius">Aurelio</name></del> <name nymRef="Alexander"><del rend="erasure">Alexandr</del>o</name> <w>nobilissimo</w> <addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ari</ex></expan></addName> <w><expan><abbr>d</abbr><ex>omini</ex></expan></w> <w><expan><abbr>n</abbr><ex>ostri</ex></expan></w> <del rend="erasure"><name nymRef="Antoninus">Antonini</name></del> 
-                     <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></addName> <del rend="erasure"><w><expan><abbr>fil</abbr><ex>io</ex></expan></w></del>  <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></persName> 
-                <lb n="4"/><persName type="attested" key="bbaw:6231"><name nymRef="Flauius">Flauius</name> <name nymRef="Sossianus">Sossianus</name></persName> <w lemma="uir"><expan><abbr>u</abbr><ex>ir</ex></expan></w> <w><expan><abbr>e</abbr><ex>gregius</ex></expan></w> <w>uice</w> <w>praesidis</w> <placeName ref="#numidia" nymRef="#Numidia">Numidiae</placeName> <w lemma="per">per</w> <w>uexillationem</w> 
+                <persName type="emperor" ref="#caracalla"><w lemma="imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></w> <addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ari</ex></expan></addName> <name nymRef="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name nymRef="Aurelius">Aurelio</name> <del rend="erasure"><name nymRef="Antoninus">Antonino</name> <addName nymRef="Pius">Pio</addName> <addName nymRef="Felix">Felici</addName> <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></addName> <w lemma="sacerdos">sacerdoti</w></del> 
+                <lb n="2"/><w lemma="amplus">amplissimo</w> <w lemma="pontifex">pontifici</w> <w lemma="maximus">maximo</w> <w lemma="tribunicius"><expan><abbr>trib</abbr><ex>unicia</ex></expan></w> <w lemma="potestas"><expan><abbr>pot</abbr><ex>estate</ex></expan></w> <del rend="erasure"><num value="5">V</num></del> <w lemma="consul">co<expan><ex>n</ex><abbr>s</abbr><ex>uli</ex></expan></w> <del rend="erasure"><num value="4">IIII</num></del> <w lemma="pater"><expan><abbr>p</abbr><ex>atri</ex></expan></w> <w lemma="patria"><expan><abbr>p</abbr><ex>atriae</ex></expan></w></persName> <w lemma="et">et</w> 
+                <lb n="3"/><persName type="emperor" ref="#seuerusalexander"><del rend="erasure"><name nymRef="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name nymRef="Aurelius">Aurelio</name></del> <name nymRef="Alexander"><del rend="erasure">Alexandr</del>o</name> <w lemma="nobilis">nobilissimo</w> <addName nymRef="Caesar"><expan><abbr>Caes</abbr><ex>ari</ex></expan></addName> <w lemma="dominus"><expan><abbr>d</abbr><ex>omini</ex></expan></w> <w lemma="noster"><expan><abbr>n</abbr><ex>ostri</ex></expan></w> <del rend="erasure"><name nymRef="Antoninus">Antonini</name></del> 
+                     <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></addName> <del rend="erasure"><w lemma="filius"><expan><abbr>fil</abbr><ex>io</ex></expan></w></del>  <name nymRef="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></persName> 
+                <lb n="4"/><persName type="attested" key="bbaw:6231"><name nymRef="Flauius">Flauius</name> <name nymRef="Sossianus">Sossianus</name></persName> <w lemma="uir"><expan><abbr>u</abbr><ex>ir</ex></expan></w> <w lemma="egregius"><expan><abbr>e</abbr><ex>gregius</ex></expan></w> <w lemma="uicis">uice</w> <w lemma="praeses">praesidis</w> <placeName ref="#numidia" nymRef="#Numidia">Numidiae</placeName> <w lemma="per">per</w> <w lemma="uexillatio">uexillationem</w> 
                 <lb n="5"/><orgName type="military" ref="#legio3august"><w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num> <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustae</ex></expan></addName> 
-                    <addName nymRef="Pius"><expan><abbr>p</abbr><ex>iae</ex></expan></addName> <addName nymRef="Uindex"><expan><abbr>u</abbr><ex>indicis</ex></expan></addName> <del rend="erasure"><addName nymRef="Antoninianus">Antoninianae</addName></del></orgName> <w>deuotissimi</w> <w>numini</w> <w>eorum</w> </ab></div>
+                    <addName nymRef="Pius"><expan><abbr>p</abbr><ex>iae</ex></expan></addName> <addName nymRef="Uindex"><expan><abbr>u</abbr><ex>indicis</ex></expan></addName> <del rend="erasure"><addName nymRef="Antoninianus">Antoninianae</addName></del></orgName> <w lemma="deuotus">deuotissimi</w> <w lemma="numen">numini</w> <w lemma="is">eorum</w> </ab></div>
                 
-                <div n="2" type="textpart"><ab><lb n="1"/> <w>Portam</w> <w>uetustate</w> <w>conlabsam</w> <note>sic</note> <w>lapidi</w> <w>quadrato</w> <w>arco</w> <w>curuato</w> <w>restituit</w> 
-                    <lb n="2"/><w>omnes</w> <w>praeteriti</w> <w>cuius</w> <w>labore</w> <w>uitabant</w> 
-                    <lb n="3"/><w>rigido</w> <w>uigore</w> <w>iuuenum</w> <orgName type="military" ref="#legio3august"><w>tertia</w> <addName nymRef="Augustanus">Augustani</addName></orgName> <w>fecerunt</w> 
-                    <lb n="4"/><w>creto</w> <w>consilio</w> <w>hortante</w> <persName type="attested"><name nymRef="Paratus">Parato</name></persName> <w>magistro</w> 
-                    <lb n="5"/><w>iuncta</w> <w>uirtus</w> <w>militum</w> <w>paucorum</w> <w>uelocitas</w> <w>ingens</w> 
-                    <lb n="6"/><w>usui</w> <w>compendio</w> <w>lapides</w> <w>de</w> <w>longe</w> <w>adtractos</w> <w>chamulco</w> 
-                    <lb n="7"/><w lemma="sub">sub</w> <w>arcata</w> <w>militum</w> <w>uirtus</w> <w><expan><abbr>funib</abbr><ex>us</ex></expan></w> <w>cannabinis</w> <w>strictis</w> 
-                    <lb n="8"/><w>iam</w> <w>nunc</w> <w>contendunt</w> <w>fieri</w> <w>cito</w> <w>milites</w> <w>omnes</w> 
-                    <lb n="9"/><w>arta</w> <w>uirtute</w> <w>sua</w> <w>opera</w> <w>aeternale</w> <w>fecerunt</w> 
-                    <lb n="10"/><w>subsequentes</w> <w>stipendiis</w> <w>antecessorum</w> <w>onestia</w> <w>bona</w> <w>sumebant</w> 
-                    <lb n="11"/><w>urguente</w> <w>tempore</w> <w>hiemis</w> <w>necumqua<supplied reason="omitted">m</supplied></w> <w>cessauerunt</w> 
-                    <lb n="12"/><w>celerius</w> <w>excelsae</w> <w>turres</w> <w>quater</w> <w>diuisae</w> <w>cum</w> <w>uoce</w> <w>militum</w> <w>a</w> <w>terra</w> <w>uenerunt</w> 
-                    <lb n="13"/><w>torrens</w> <w>uirtus</w> <del rend="erasure"><orgName type="military" ref="#legio3august"><w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num> <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustae</ex></expan></addName> 
+                <div n="2" type="textpart"><ab><lb n="1"/> <w lemma="porta">Portam</w> <w lemma="uetustas">uetustate</w> <w lemma="collapsus">conlabsam</w> <note>sic</note> <w lemma="lapis">lapidi</w> <w lemma="quadratus">quadrato</w> <w lemma="arco">arco</w> <w lemma="curuo">curuato</w> <w lemma="restituo">restituit</w> 
+                    <lb n="2"/><w lemma="omnis">omnes</w> <w lemma="praeteritus">praeteriti</w> <w lemma="qui">cuius</w> <w lemma="labor">labore</w> <w lemma="uito">uitabant</w> 
+                    <lb n="3"/><w lemma="rigidus">rigido</w> <w lemma="uigor">uigore</w> <w>iuuenum</w> <orgName type="military" ref="#legio3august"><w lemma="tertius">tertia</w> <addName nymRef="Augustanus">Augustani</addName></orgName> <w lemma="facio">fecerunt</w> 
+                    <lb n="4"/><w lemma="cretus">creto</w> <w lemma="consilium">consilio</w> <w lemma="hortor">hortante</w> <persName type="attested"><name nymRef="Paratus">Parato</name></persName> <w lemma="magister">magistro</w> 
+                    <lb n="5"/><w lemma="iungo">iuncta</w> <w lemma="uirtus">uirtus</w> <w lemma="miles">militum</w> <w lemma="paucus">paucorum</w> <w lemma="uelocitas">uelocitas</w> <w lemma="ingens">ingens</w> 
+                    <lb n="6"/><w lemma="usus">usui</w> <w lemma="compendium">compendio</w> <w lemma="lapis">lapides</w> <w lemma="de">de</w> <w lemma="longe">longe</w> <w lemma="attraho">adtractos</w> <w lemma="chamulcus">chamulco</w> 
+                    <lb n="7"/><w lemma="sub">sub</w> <w lemma="arcatus">arcata</w> <w lemma="miles">militum</w> <w lemma="uirtus">uirtus</w> <w lemma="funis"><expan><abbr>funib</abbr><ex>us</ex></expan></w> <w lemma="cannabinus">cannabinis</w> <w lemma="stringo">strictis</w> 
+                    <lb n="8"/><w lemma="iam">iam</w> <w lemma="nunc">nunc</w> <w lemma="contendo">contendunt</w> <w lemma="fio">fieri</w> <w lemma="cito">cito</w> <w lemma="miles">milites</w> <w lemma="omnis">omnes</w> 
+                    <lb n="9"/><w lemma="artus">arta</w> <w lemma="uirtus">uirtute</w> <w lemma="suus">sua</w> <w lemma="opus">opera</w> <w lemma="aeternalis">aeternale</w> <w lemma="facio">fecerunt</w> 
+                    <lb n="10"/><w lemma="subsequens">subsequentes</w> <w lemma="stipendium">stipendiis</w> <w lemma="antecedo">antecessorum</w> <w lemma="honestus">onestia</w> <w lemma="bonus">bona</w> <w lemma="sumo">sumebant</w> 
+                    <lb n="11"/><w lemma="urgeo">urguente</w> <w lemma="tempus">tempore</w> <w lemma="hiems">hiemis</w> <w lemma="necumquam">necumqua<supplied reason="omitted">m</supplied></w> <w lemma="cesso">cessauerunt</w> 
+                    <lb n="12"/><w lemma="celeriter">celerius</w> <w lemma="excelsus">excelsae</w> <w lemma="turris">turres</w> <w lemma="quater">quater</w> <w lemma="diuido">diuisae</w> <w lemma="cum">cum</w> <w lemma="uox">uoce</w> <w lemma="miles">militum</w> <w lemma="ab">a</w> <w lemma="terra">terra</w> <w lemma="uenio">uenerunt</w> 
+                    <lb n="13"/><w lemma="torrens">torrens</w> <w lemma="uirtus">uirtus</w> <del rend="erasure"><orgName type="military" ref="#legio3august"><w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> <num value="3">III</num> <addName nymRef="Augustus"><expan><abbr>Aug</abbr><ex>ustae</ex></expan></addName> 
                         <addName nymRef="Pius"><expan><abbr>P</abbr><ex>iae</ex></expan></addName> <addName nymRef="Uindex"><expan><abbr>u</abbr><ex>indicis</ex></expan></addName></orgName></del> 
-                    <lb n="14"/><w>haec</w> <w>ut</w> <w>fierent</w> <w>milites</w> <w>omnes</w> <w>sibi</w> <w>zelum</w> <w>tradebant</w> </ab></div>
+                    <lb n="14"/><w lemma="hic">haec</w> <w lemma="ut">ut</w> <w lemma="fio">fierent</w> <w lemma="miles">milites</w> <w lemma="omnis">omnes</w> <w lemma="se">sibi</w> <w lemma="zelus">zelum</w> <w lemma="trado">tradebant</w> </ab></div>
                 <div n="3" type="textpart"><ab>
-                    <lb n="1"/> <w>animaduertentes</w> <w>quod</w> <w>priores</w> <w>sibi</w> <w>uestigia</w> <w>fecissent</w> 
-                    <lb n="2"/><w>nunc</w> <w>et</w> <w>ipsi</w> <w>titulis</w> <w>suis</w> <w>uirtutis</w> <w>deuotionis</w> <w>ornauerunt</w> 
-                    <lb n="3"/><w>contendentes</w> <w>si</w> <w>amplius</w> <w>esset</w> <w>athuc</w> <w>opera</w> <w>fecissent</w> 
-                    <lb n="4"/><w>ex</w> <w>numero</w> <w>militum</w> <w>quidam</w> <w>amplius</w> <w>uoluntatem</w> <w>suam</w> <w>dederit</w> 
-                    <lb n="5"/><w>necumquam</w> <w>operam</w> <w>suam</w> <w>erupi</w> <w>exhibuerunt</w> 
-                    <lb n="6"/><w>tantus</w> <w>fuit</w> <w>eis</w> <w>zelus</w> <w>magna</w> <w>uir</w> <gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="7"/><w>laetis</w> <w>temporibus</w> <w>honoribu<supplied reason="lost">s</supplied></w><gap reason="lost" extent="unknown" unit="character"/> 
-                    <lb n="8"/><w>effecta</w> <w>opera</w> <w>gaudet</w> <w>aeterna</w> <w>militum</w> <w>uirtus</w> 
-                    <lb n="9"/><w>gemma</w> <w>ut</w> <w>auro</w> <w>cluditur</w> <note>sic</note> <w>castram</w> <w>porta</w> <w>decorat</w> 
-                    <lb n="10"/><orgName type="military" ref="#legio3august"><addName nymRef="Floridus">Florida</addName> <w>Tertia</w> <addName nymRef="Augustus">Augusta</addName> <w>legio</w></orgName> <w>cum</w> <w>magna</w> <w>uirtute</w> 
-                    <lb n="11"/><w>curauit</w> <w>faciendum</w> <w>deuotionis</w> <w>suae</w> <w>honorem</w> 
-                    <lb n="12"/><w>muneri</w> <w>quoque</w> <w>dictatores</w> <w>strenue</w> <w>cesserunt</w> 
-                    <lb n="13"/><w>animosos</w> <w>duo</w> <w>contemnentes</w> <w>residuum</w> <w>turpis</w> <w>oppresserat</w> 
-                    <lb n="14"/><w>capita</w> <w>uersorum</w> <w>relegens</w> <w>adgnosce</w> <w>curantem</w> </ab></div>
-                <div n="4" type="textpart"><ab><lb n="1"/> <persName type="attested"><name nymRef="Porcius">Porcius</name> <name nymRef="Iasucthan">Iasucthan</name></persName> <w><expan><abbr>cent</abbr><ex>urio</ex></expan></w> <w><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> 
-                    <w><expan><abbr>f</abbr><ex>ecit</ex></expan></w> <w><expan><abbr>c</abbr><ex>urante</ex></expan></w> <w><expan><abbr>mac</abbr><ex>istro</ex></expan></w> <note>sic</note>
+                    <lb n="1"/> <w>animaduertentes</w> <w lemma="quod">quod</w> <w lemma="prior">priores</w> <w lemma="se">sibi</w> <w lemma="uestigium">uestigia</w> <w lemma="facio">fecissent</w> 
+                    <lb n="2"/><w lemma="nunc">nunc</w> <w lemma="et">et</w> <w lemma="ipse">ipsi</w> <w lemma="titulus">titulis</w> <w lemma="suus">suis</w> <w lemma="uirtus">uirtutis</w> <w lemma="deuotio">deuotionis</w> <w>ornauerunt</w> 
+                    <lb n="3"/><w lemma="contendo">contendentes</w> <w lemma="si">si</w> <w lemma="ample">amplius</w> <w lemma="sum">esset</w> <w lemma="athuc">athuc</w> <w lemma="opus">opera</w> <w lemma="facio">fecissent</w> 
+                    <lb n="4"/><w lemma="ex">ex</w> <w lemma="numerus">numero</w> <w lemma="miles">militum</w> <w lemma="quidam">quidam</w> <w lemma="ample">amplius</w> <w lemma="uoluntas">uoluntatem</w> <w lemma="suus">suam</w> <w lemma="do">dederit</w> 
+                    <lb n="5"/><w lemma="necumquam">necumquam</w> <w lemma="opera">operam</w> <w lemma="suus">suam</w> <w lemma="erumpo">erupi</w> <w lemma="exhibeo">exhibuerunt</w> 
+                    <lb n="6"/><w lemma="tantus">tantus</w> <w lemma="sum">fuit</w> <w lemma="is">eis</w> <w lemma="zelus">zelus</w> <w lemma="magnus">magna</w> <w lemma="uir">uir</w> <gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="7"/><w lemma="laetus">laetis</w> <w lemma="tempus">temporibus</w> <w lemma="honor">honoribu<supplied reason="lost">s</supplied></w><gap reason="lost" extent="unknown" unit="character"/> 
+                    <lb n="8"/><w lemma="efficio">effecta</w> <w lemma="opus">opera</w> <w lemma="gaudeo">gaudet</w> <w lemma="aeternus">aeterna</w> <w lemma="miles">militum</w> <w lemma="uirtus">uirtus</w> 
+                    <lb n="9"/><w lemma="gemma">gemma</w> <w lemma="ut">ut</w> <w lemma="aurum">auro</w> <w lemma="claudo">cluditur</w> <note>sic</note> <w lemma="castra">castram</w> <w lemma="porta">porta</w> <w lemma="decoro">decorat</w> 
+                    <lb n="10"/><orgName type="military" ref="#legio3august"><addName nymRef="Floridus">Florida</addName> <w lemma="tertius">Tertia</w> <addName nymRef="Augustus">Augusta</addName> <w lemma="legio">legio</w></orgName> <w lemma="cum">cum</w> <w lemma="magnus">magna</w> <w lemma="uirtus">uirtute</w> 
+                    <lb n="11"/><w lemma="curo">curauit</w> <w lemma="facio">faciendum</w> <w lemma="deuotio">deuotionis</w> <w lemma="suus">suae</w> <w lemma="honor">honorem</w> 
+                    <lb n="12"/><w lemma="munus">muneri</w> <w lemma="quoque">quoque</w> <w lemma="dictator">dictatores</w> <w lemma="strenue">strenue</w> <w lemma="cedo">cesserunt</w> 
+                    <lb n="13"/><w lemma="animosus">animosos</w> <w lemma="duo">duo</w> <w lemma="contemno">contemnentes</w> <w lemma="residuus">residuum</w> <w lemma="turpis">turpis</w> <w lemma="opprimo">oppresserat</w> 
+                    <lb n="14"/><w lemma="caput">capita</w> <w lemma="uersus">uersorum</w> <w lemma="relego">relegens</w> <w lemma="agnosco">adgnosce</w> <w lemma="curo">curantem</w> </ab></div>
+                <div n="4" type="textpart"><ab><lb n="1"/> <persName type="attested"><name nymRef="Porcius">Porcius</name> <name nymRef="Iasucthan">Iasucthan</name></persName> <w lemma="centurio"><expan><abbr>cent</abbr><ex>urio</ex></expan></w> <w lemma="legio"><expan><abbr>leg</abbr><ex>ionis</ex></expan></w> 
+                    <w lemma="facio"><expan><abbr>f</abbr><ex>ecit</ex></expan></w> <w lemma="curo"><expan><abbr>c</abbr><ex>urante</ex></expan></w> <w lemma="magister"><expan><abbr>mac</abbr><ex>istro</ex></expan></w> <note>sic</note>
             </ab></div></div>
             <div type="translation" source="#rebuffat1995" xml:lang="fr">
                 <p> En l'honneur de l'empereur césar Marc Aurèle Antonin pieux heureux auguste, prêtre très considérable, pontife suprême, 

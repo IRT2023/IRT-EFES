@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<!-- XSLT to insert lemmata from all_latin_words.xml and all_greek_words.xml into <w> elements in IRCyr inscriptions -->
+<!-- XSLT to insert lemmata from all_latin_words.xml and all_greek_words.xml into <w> elements in IRT inscriptions -->
 
 <!-- |||||||||||||||  run against files inside webapps/ROOT/content/xml/epidoc |||||||||||||| -->
 <!--  ||||||||||||||  NB do it without an internet connection, otherwise some unwanted attributes will be added, among which @default="false", @part="N",  @instant="false", @status="draft", @full="yes", @org="uniform", @sample="complete" |||||||||||||| -->

@@ -52,8 +52,7 @@
                   </origin>
                   <provenance type="found">
                            <p>
-                              <placeName type="ancientFindspot"
-                                 ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: <placeName ref="https://www.slsgazetteer.org/744">Regio V</placeName>, 
+                              <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: <placeName ref="https://www.slsgazetteer.org/744">Regio V</placeName>, 
                               <placeName type="monuList" ref="https://www.slsgazetteer.org/756">Theatre</placeName>. Found fallen and re-used as steps.</p>
                         </provenance>
                         <provenance type="observed">
@@ -98,6 +97,7 @@
       <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-01-04" who="IV">inserted Greek and Latin lemmata (and normalized unicode)</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
@@ -140,25 +140,25 @@
                <bibl><ptr target="guey1951b"/> <citedRange>311-315</citedRange></bibl>, whence 
                <bibl><ptr target="ae"/> <citedRange>1952.177</citedRange>.b</bibl>;
                <bibl><ptr target="irt1952"/>, <citedRange>534</citedRange></bibl>, 
-               <bibl><ptr target="degrassi1954"/> <citedRange></citedRange></bibl>, whence  
+               <bibl><ptr target="degrassi1954"/> <citedRange/></bibl>, whence  
                <bibl><ptr target="reynolds1955"/> <citedRange>143</citedRange></bibl>, whence 
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT534.html">534</ref></citedRange></bibl>;
-               <bibl><ptr target="divita1989"/> <citedRange></citedRange></bibl>, whence 
+               <bibl><ptr target="divita1989"/> <citedRange/></bibl>, whence 
                <bibl><ptr target="ae"/> <citedRange>1990.1030</citedRange></bibl>;
                <bibl><ptr target="EDH"/> (Bigi, 2014) <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD025086">025086</ref></citedRange></bibl></p>
             
          </div>
          <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
-               <lb n="1"/> <milestone unit="bay" n="i" rend="|"/><w lemma="proscaenium">Pro<unclear>scaenium</unclear></w> <milestone unit="bay" n="ii"  rend="|"/> <w lemma="columna">columnis</w> <w lemma="et"><supplied reason="lost">e</supplied>t</w> <w lemma="marmor">marmoribus</w> 
-               <milestone  unit="bay" n="iii"  rend="|"/> <w lemma="ex">ex</w> 
+               <lb n="1"/> <milestone unit="bay" n="i" rend="|"/><w lemma="proscaenium">Pro<unclear>scaenium</unclear></w> <milestone unit="bay" n="ii" rend="|"/> <w lemma="columna">columnis</w> <w lemma="et"><supplied reason="lost">e</supplied>t</w> <w lemma="marmor">marmoribus</w> 
+               <milestone unit="bay" n="iii" rend="|"/> <w lemma="ex">ex</w> 
                <w lemma="sestertius"><expan><abbr><am><g ref="symbols.xml#sestertius"/></am></abbr><ex>sestertiis</ex></expan></w> 
                <num value="200000"><hi rend="supraline">CC</hi></num> <w lemma="ab">a</w> <persName type="attested"><name type="gentilicium" nymRef="Marcius">Marcio</name> <name type="cognomen" nymRef="Uitalis">Uitale</name></persName> <w lemma="item">itemque</w> <w lemma="ex">ex</w> 
                <w lemma="sestertius"><expan><abbr><am><g ref="symbols.xml#sestertius"/></am></abbr><ex>sestertiis</ex></expan></w> 
                <num value="300000"><hi rend="supraline">CCC</hi></num> <w lemma="ab">a</w> <persName type="attested"><name type="gentilicium" nymRef="Iunius">Iunio</name> 
                   <name type="cognomen" nymRef="Galba">Galba</name></persName> 
-               <w lemma="in">in</w> <w lemma="is">eam</w> <w lemma="res">rem</w> <milestone unit="bay" rend="|" n="iv"/><supplied reason="lost"><w>datis</w> <w>item</w></supplied> 
-               <milestone unit="bay" rend="|" n="v"/><supplied reason="lost"><w>tetrastylis</w></supplied> <w>lac<supplied reason="lost">u</supplied>na<unclear>r</unclear><supplied reason="lost">um</supplied></w>
+               <w lemma="in">in</w> <w lemma="is">eam</w> <w lemma="res">rem</w> <milestone unit="bay" rend="|" n="iv"/><supplied reason="lost"><w lemma="do">datis</w> <w lemma="item">item</w></supplied> 
+               <milestone unit="bay" rend="|" n="v"/><supplied reason="lost"><w lemma="tetrastyla">tetrastylis</w></supplied> <w lemma="lacuna">lac<supplied reason="lost">u</supplied>na<unclear>r</unclear><supplied reason="lost">um</supplied></w>
                <milestone unit="bay" rend="|" n="vi"/><w lemma="pecunia"><expan><abbr>pec</abbr><ex>unia</ex></expan></w> 
                <w lemma="publicus"><expan><abbr>publ</abbr><ex>ica</ex></expan></w> 
                <w lemma="exorno">exornatum</w> <w lemma="dedico">dedicatum</w> <w lemma="sum">est</w>
@@ -167,7 +167,7 @@
                <milestone unit="bay" rend="|" n="vii"/> 
                <w lemma="proconsul">
 <abbr><expan><abbr>proco</abbr><ex>n</ex><abbr>s</abbr></expan></abbr><expan><ex>ule</ex></expan></w> 
-               <persName type="attested" key="bbaw:14367"><name type="praenomen" nymRef="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" nymRef="Vibius">Uibio</name> <name type="cognomen" nymRef="Gallio">Gallione</name> <name type="gentilicium" nymRef="Claudius">Clau<milestone unit="bay" rend="|"  n="viii" break="no"/>dio</name> 
+               <persName type="attested" key="bbaw:14367"><name type="praenomen" nymRef="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" nymRef="Vibius">Uibio</name> <name type="cognomen" nymRef="Gallio">Gallione</name> <name type="gentilicium" nymRef="Claudius">Clau<milestone unit="bay" rend="|" n="viii" break="no"/>dio</name> 
                <name type="cognomen" nymRef="Seuerus">Seue<supplied reason="lost">ro</supplied></name></persName> 
                <w lemma="legatus"><expan><abbr>leg</abbr><ex>ato</ex></expan></w> 
             </ab></div>
