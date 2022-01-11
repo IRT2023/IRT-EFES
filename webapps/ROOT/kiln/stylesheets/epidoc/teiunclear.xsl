@@ -69,9 +69,19 @@
                </xsl:when>
                <xsl:otherwise>
                   <xsl:variable name="text" select="normalize-space(normalize-unicode($text-content))"/>
-                  <xsl:for-each select="1 to string-length()">
-                     <xsl:value-of select="concat(substring($text,.,1),'&#x0323;')"/>
-                  </xsl:for-each>
+                  <xsl:choose>
+                     <!-- Punic texts -->
+                        <xsl:when test="ancestor::t:*[@xml:lang='xpu']">
+                           <xsl:for-each select="1 to string-length()">
+                              <xsl:value-of select="concat(substring($text,.,1),'&#x30A;')"/>
+                           </xsl:for-each>
+                        </xsl:when>
+                        <xsl:otherwise>
+                           <xsl:for-each select="1 to string-length()">
+                              <xsl:value-of select="concat(substring($text,.,1),'&#x0323;')"/>
+                           </xsl:for-each>
+                        </xsl:otherwise>
+                     </xsl:choose>
                   <!--<xsl:call-template name="subpunct">
                      <xsl:with-param name="unc-len" select="string-length($text-content)"/>
                      <xsl:with-param name="abs-len" select="string-length($text-content)+1"/>
