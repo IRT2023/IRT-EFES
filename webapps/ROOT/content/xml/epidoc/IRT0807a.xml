@@ -2,12 +2,12 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purlineoclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purlineoclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0807" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0807a" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>
-               <rs type="textType">Mason's marks</rs>
+               <rs type="textType">Mason's mark</rs>
             </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
@@ -15,7 +15,7 @@
          <publicationStmt>
             <publisher>Society for Libyan Studies</publisher>
             <distributor>King’s College London</distributor>
-            <idno type="filename">IRT0807</idno>
+            <idno type="filename">IRT0807a</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -29,7 +29,7 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>Carved <material>marble</material> architectural members of the Severan Basilica and Forum</p>
+                           <p>Rectangular <material>marble</material> rectangular pilaster <objectType>base</objectType></p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -37,24 +37,22 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote>a) <height unit="metre">0.04</height>.</handNote>
-                     <handNote>b) <height unit="metre" precision="low" atLeast="0.04" atMost="0.05">0.04-0.05</height>.</handNote>
+                     <handNote><height unit="metre">0.04</height>.</handNote>
+                     
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
+                     <origPlace>Findspot</origPlace>
                      <origDate notBefore="0101" notAfter="0300" evidence="context">Second to third centuries CE</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
                               <placeName ref="https://www.slsgazetteer.org/719">Severan Forum</placeName>: 
-                  <placeName type="monuList" ref="https://www.slsgazetteer.org/704">Severan Basilica</placeName> and Forum;   Inscribed on carved marble architectural members:
-a) Between the mouldings of the rectangular marble <objectType>base</objectType> of the easternmost of the four sculptured <objectType>pilaster</objectType>s at the North end.
-b) Upside-down on the <objectType>balustrade</objectType> of the third column from the North end of the engaged order in the East portico.
-                              d) <placeName type="monuList" ref="https://www.slsgazetteer.org/2276">East Portico</placeName> of the Forum
-               f) North end of the East colonnade of the Basilica Severiana</p>
+                  <placeName type="monuList" ref="https://www.slsgazetteer.org/704">Severan Basilica</placeName>:
+between the mouldings of the easternmost of the four sculptured pilasters at the North end.
+</p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot</p>
@@ -98,6 +96,7 @@ b) Upside-down on the <objectType>balustrade</objectType> of the third column fr
       <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-01-13" who="CMR">Subdivided</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
@@ -106,42 +105,27 @@ b) Upside-down on the <objectType>balustrade</objectType> of the third column fr
    </teiHeader>
    <facsimile>
                   <graphic url="wp1000.jpg">
-                  <desc>a: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.I.26)</desc></graphic>
-                  <graphic url="wp1001.jpg">
-                  <desc>d: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.IX.15)</desc></graphic>
-                  <graphic url="wp1002.jpg">
-                  <desc>c: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.III.38)</desc></graphic>
-                  <graphic url="wp1003.jpg">
-                  <desc>d: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.III.36)</desc></graphic>
-                  <graphic url="wp1004.jpg">
-                  <desc>e: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.I.7)</desc></graphic>
+                  <desc>Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.I.26)</desc></graphic>
+                  
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>807</citedRange></bibl>, whence 
-               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/189650">189650</ref></citedRange>,  
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189651">189651</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189652">189652</ref></citedRange>,
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189653">189653</ref></citedRange>,
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189654">189654</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189655">189655</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189656">189656</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189657">189657</ref></citedRange></bibl>, 
+            <p>Mentioned, <bibl><ptr target="wp1951"/> <citedRange>94</citedRange>, note 41</bibl>, whence 
+               <bibl><ptr target="PHI"/> 
+                  <citedRange><ref target="https://epigraphy.packhum.org/text/189651">189650</ref></citedRange></bibl>; 
+               <bibl><ptr target="irt1952"/>, <citedRange>807a</citedRange></bibl>, whence
                <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT807.html">807</ref></citedRange></bibl>, whence 
                <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059657">059657</ref></citedRange></bibl>;
                  for BSR images see <ref target="http://www.search-libnet.org/cgi-bin/koha/opac-detail.pl?biblionumber=83555">BSR Digital Collections</ref>.
                    </p>
          </div>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <div subtype="part" n="a" type="textpart"><ab><lb n="1"/><orig>ευ</orig></ab></div>
-            <div subtype="part" n="b" type="textpart"><ab><lb n="1"/><orig>ιε</orig></ab></div>
-            <div subtype="part" n="c" type="textpart"><ab><lb n="1"/><orig>ϲαλ</orig></ab></div>
-            <div subtype="part" n="d" type="textpart"><ab><lb n="1"/><orig>ιε</orig></ab></div>
-            <div subtype="part" n="e" type="textpart"><ab><lb n="1"/><orig>πρ</orig></ab></div>
-            <div subtype="part" n="f" type="textpart"><ab><lb n="1"/><orig>κ</orig></ab></div></div>
+            <ab><lb n="1"/><orig>ευ</orig></ab></div>
+            
+            
          <div type="translation" resp="#jmr" xml:lang="en">
-            <p><note>a</note> Eu( ?)</p><p>  <note>b</note> Ie( ?) </p><p><note>c</note> Sal( ?)</p><p><note>d</note> Ie( ?)</p><p><note>e</note> Pr( ?)</p><p><note>f</note> K( ?)</p></div>
+            <p> Eu( ?)</p></div>
          <div type="commentary">
             <p>No comment.</p>
          </div>

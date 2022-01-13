@@ -2,12 +2,12 @@
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://epidoc.stoa.org/schema/9.3/tei-epidoc.rng" schematypens="http://purlineoclc.org/dsdl/schematron"?>
 <?xml-model href="http://epidoc.stoa.org/schema/dev/ircyr-checking.sch" schematypens="http://purlineoclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0806" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IRT0807c" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>
-               <rs type="textType">Mason's mark</rs>s
+               <rs type="textType">Mason's mark</rs>
             </title>
             <editor xml:id="jmr">J. M. Reynolds</editor>
             <editor xml:id="jbwp">J. B. Ward-Perkins</editor>
@@ -15,7 +15,7 @@
          <publicationStmt>
             <publisher>Society for Libyan Studies</publisher>
             <distributor>King’s College London</distributor>
-            <idno type="filename">IRT0806</idno>
+            <idno type="filename">IRT0807c</idno>
             <availability>
                <p>Creative Commons licence Attribution UK 2.0 (<ref>http://creativecommons.org/licenses/by/2.0/uk/</ref>). </p>
                <p>All reuse or distribution of this work must contain somewhere a link back to the URL <ref>http://irt.kcl.ac.uk/</ref>
@@ -29,32 +29,27 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <p>
-                              <objectType>column</objectType> of <material>red Egyptian granite</material>
-                           </p>
+                           <p><material>Marble</material> <objectType>architrave</objectType> blocks</p>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout><rs type="execution" ref="scalpro">Inscribed</rs>  on the under surface.
-            f) Inscribed on the drum, just above the foot</layout>
+                        <layout><rs type="execution" ref="scalpro">Inscribed</rs> on two blocks.</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote> 
-                        <height unit="metre">0.12</height>. </handNote>
+                    
+                     <handNote><height unit="metre" precision="low" atLeast="0.04" atMost="0.05">0.04-0.05</height>.</handNote>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Unknown</origPlace>
+                     <origPlace>Findspot</origPlace>
                      <origDate notBefore="0101" notAfter="0300" evidence="context">Second to third centuries CE</origDate>
                   </origin>
                   <provenance type="found">
                            <p>
                               <placeName type="ancientFindspot" ref="https://www.slsgazetteer.org/653">Lepcis Magna</placeName>: 
-                              <placeName ref="https://www.slsgazetteer.org/719">Forum Severianum</placeName>:  
-              <placeName type="monuList" ref="https://www.slsgazetteer.org/704">Severan Basilica</placeName>. Texts b-f were recorded in <date type="found">1951</date>
-                           </p>
+                              <placeName ref="https://www.slsgazetteer.org/719">Severan Forum</placeName></p>
                         </provenance>
                         <provenance type="observed">
                            <p>Findspot</p>
@@ -98,6 +93,7 @@
       <creation>Transcription (Reynolds, Ward-Perkins)</creation>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-01-13" who="CMR">Subdivided</change>
          <change when="2010-08-18" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema v. 8)</change>
          <change when="2008-09-09" who="ZA">converted using CHET-C</change>
          <change when="2009-05-19" who="RV">Added Figures</change>
@@ -105,39 +101,31 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-                  <graphic url="wp0996.jpg">
-                  <desc>a: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.XI.33)</desc></graphic>
-                  <graphic url="wp0997.jpg">
-                  <desc>b: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.XI.28)</desc></graphic>
-                  <graphic url="wp0998.jpg">
-                  <desc>d: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.I.6)</desc></graphic>
-                  <graphic url="wp0999.jpg">
-                  <desc>f: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.XI.8)</desc></graphic>
+                  
+                  <graphic url="wp1002.jpg">
+                  <desc>i: Ward-Perkins, 1951 (Ward-Perkins Archive, BSR 51.III.38)</desc></graphic>
+                  
    </facsimile>
    <text>
       <body>
          <div type="bibliography">
-            <p><bibl><ptr target="irt1952"/>, <citedRange>806</citedRange></bibl>, whence 
-               <bibl><ptr target="PHI"/> <citedRange><ref target="https://epigraphy.packhum.org/text/189644">189644</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189645">189645</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189646">189646</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189647">189647</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189648">189648</ref></citedRange>, 
-                  <citedRange><ref target="https://epigraphy.packhum.org/text/189649">189649</ref></citedRange> </bibl>, 
-               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT806.html">806</ref></citedRange></bibl>, whence 
-               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059656">059656</ref></citedRange></bibl>;
+            <p><bibl><ptr target="irt1952"/>, <citedRange>807c</citedRange></bibl>, whence 
+               <bibl><ptr target="PHI"/> 
+                  <citedRange><ref target="https://epigraphy.packhum.org/text/189653">189653</ref></citedRange>,
+                  <citedRange><ref target="https://epigraphy.packhum.org/text/189654">189654</ref></citedRange> 
+                  </bibl>, 
+               <bibl><ptr target="irt2009"/>, <citedRange><ref target="http://inslib.kcl.ac.uk/irt2009/IRT807.html">807</ref></citedRange></bibl>, whence 
+               <bibl><ptr target="EDH"/> <citedRange><ref target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD059657">059657</ref></citedRange></bibl>;
                  for BSR images see <ref target="http://www.search-libnet.org/cgi-bin/koha/opac-detail.pl?biblionumber=83555">BSR Digital Collections</ref>.
                    </p>
          </div>
          <div type="edition" xml:lang="grc" xml:space="preserve">
-            <div subtype="part" n="a" type="textpart"><ab><lb n="1"/><orig>ρο</orig></ab></div>
-            <div subtype="part" n="b" type="textpart"><lb n="1"/><ab><orig>π</orig></ab></div>
-            <div subtype="part" n="c" type="textpart"><lb n="1"/><ab><orig>μ</orig></ab></div>
-            <div subtype="part" n="d" type="textpart"><lb n="1"/><ab><orig>μαρ</orig></ab></div>
-            <div subtype="part" n="e" type="textpart"><lb n="1"/><ab><orig>μεν</orig></ab></div>
-            <div subtype="part" n="f" type="textpart"><lb n="1"/><ab><orig>βλ</orig></ab></div></div>
+            
+            <div  n="i" type="textpart"><ab><lb n="1"/><orig>ϲαλ</orig></ab></div>
+            <div  n="ii" type="textpart"><ab><lb n="1"/><orig>ϲαλ</orig></ab></div>
+            </div>
          <div type="translation" resp="#jmr" xml:lang="en">
-            <p><note>a</note> Ro( ?)</p><p><note>b</note> P( ?)</p><p><note>c</note>  M( ?)</p><p><note>d</note> Mar( ?)</p><p><note>e</note> Men( ?)</p><p><note>f</note> Bl( ?)</p></div>
+            <p> Sal( ?)</p></div>
          <div type="commentary">
             <p>No comment.</p>
          </div>
