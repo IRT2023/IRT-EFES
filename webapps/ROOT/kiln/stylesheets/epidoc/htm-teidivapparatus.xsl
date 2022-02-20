@@ -2,6 +2,7 @@
 <!-- $Id$ -->
 <xsl:stylesheet xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:t="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:fn="http://www.w3.org/2005/xpath-functions"
   exclude-result-prefixes="#all" version="2.0">
 
 
@@ -199,39 +200,38 @@
 
   <xsl:template match="t:div[@type = 'apparatus']//t:rdg">
     <xsl:param name="parm-external-app-style" tunnel="yes" required="no"/>
-      <xsl:value-of select="."/>
-      <xsl:variable name="rdg-resp" select="substring-after(@resp, '#')"/>
-      <xsl:variable name="rdg-resp-source" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//t:bibl[@xml:id=$rdg-resp]"/>
-      <xsl:if test="@resp">
-        <xsl:text> </xsl:text>
+    <xsl:value-of select="."/>
+    <xsl:variable name="rdg-resp" select="substring-after(@resp, '#')"/>
+    <xsl:if test="@resp">
+      <xsl:text> </xsl:text>
+      <!-- if you are running this template outside EFES, change the path to the bibliography authority list accordingly -->
+      <xsl:variable name="bibliography-al" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')"/>
+      <xsl:variable name="rdg-resp-source" select="document($bibliography-al)//t:bibl[@xml:id=$rdg-resp]"/>
       <xsl:choose>
-        <xsl:when test="$rdg-resp-source">
-          <a>
-            <xsl:attribute name="href">
-              <xsl:text>../concordance/bibliography/</xsl:text>
-              <xsl:value-of select="$rdg-resp"/>
-              <xsl:text>.html</xsl:text>
-            </xsl:attribute>
-            <xsl:attribute name="target">_blank</xsl:attribute>
+        <xsl:when test="doc-available($bibliography-al) = fn:true() and $rdg-resp-source">
+          <a href="{concat('../concordance/bibliography/', $rdg-resp, '.html')}" target="_blank">
             <xsl:choose>
               <xsl:when test="$rdg-resp-source//t:*[@type='abbrev']">
                 <xsl:apply-templates select="$rdg-resp-source//t:*[@type='abbrev']"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:apply-templates select="$rdg-resp-source"/>
+                <xsl:apply-templates select="$rdg-resp"/>
               </xsl:otherwise>
             </xsl:choose>
           </a>
         </xsl:when>
         <xsl:otherwise><xsl:value-of select="$rdg-resp"/></xsl:otherwise>
       </xsl:choose>
-      </xsl:if>
-    <xsl:if test="following-sibling::t:rdg and not(following-sibling::*[1][self::t:note])"><xsl:text>; </xsl:text></xsl:if>
+    </xsl:if>
+    
     <xsl:call-template name="sources">
       <xsl:with-param name="root" select="ancestor-or-self::t:TEI"/>
     </xsl:call-template>
+    
+    <xsl:if test="following-sibling::t:rdg and not(following-sibling::*[1][self::t:note])">
+      <xsl:text>; </xsl:text>
+    </xsl:if>
   </xsl:template>
-
 
   <xsl:template match="t:div[@type = 'apparatus']//t:lem">
     <xsl:param name="parm-external-app-style" tunnel="yes" required="no"/>
