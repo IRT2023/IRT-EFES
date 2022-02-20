@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="2.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fn="http://www.w3.org/2005/xpath-functions">
 
   <!-- Index references to bibliographic items. -->
 
@@ -23,7 +24,10 @@
               <xsl:value-of select="$target" />
             </field>
             <field name="concordance_bibliography_date">
-              <xsl:value-of select="document('../../content/xml/authority/bibliography.xml')//tei:bibl[not(@sameAs)][@xml:id=$target]//tei:date[1]" />
+              <xsl:variable name="bibliography-al" select="'../../content/xml/authority/bibliography.xml'"/>
+                <xsl:if test="doc-available($bibliography-al) = fn:true()">
+                  <xsl:value-of select="document($bibliography-al)//tei:bibl[not(@sameAs)][@xml:id=$target]//tei:date[1]" />
+                </xsl:if>
             </field>
             <field name="concordance_bibliography_cited_range">
               <xsl:value-of select="../tei:citedRange" />
