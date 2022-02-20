@@ -230,30 +230,16 @@
              <xsl:apply-templates select="$commtxt" mode="sqbrackets"/>
        </div>
      </xsl:if>
-     
-     <!-- Old code for printing 'No comment' in texts without commentary:
-       <xsl:if test="//t:div[@type='commentary']">
-       <div id="commentary">
-       <h3><i18n:text i18n:key="epidoc-xslt-inslib-commentary">Commentary</i18n:text></h3>
-       <!-\- Commentary text output -\->
-       <xsl:variable name="commtxt">
-         <xsl:apply-templates select="//t:div[@type='commentary']//t:p"/>
-       </xsl:variable>
-       <xsl:choose>
-         <xsl:when test="//t:div[@type='commentary']//t:p//node()">
-           <!-\- Moded templates found in htm-tpl-sqbrackets.xsl -\->
-           <xsl:apply-templates select="$commtxt" mode="sqbrackets"/>
-         </xsl:when>
-         <xsl:otherwise><p>No comment.</p></xsl:otherwise>
-       </xsl:choose>
-     </div>
-     </xsl:if>-->
 
      <xsl:if test="//t:div[@type='bibliography']">
        <p><b><i18n:text i18n:key="epidoc-xslt-inslib-bibliography">Bibliography</i18n:text>: </b>
      <xsl:apply-templates select="//t:div[@type='bibliography']/t:p/node()"/>
-     <!--<br/><b><i18n:text i18n:key="epidoc-xslt-inslib-constituted-from">Text constituted from</i18n:text>: </b>
-     <xsl:apply-templates select="//t:creation"/>-->
+     
+         <xsl:if test="//t:creation and not(starts-with(//t:publicationStmt/t:idno[@type='filename']/text(), 'IRT'))">
+           <br/>
+         <b><i18n:text i18n:key="epidoc-xslt-inslib-constituted-from">Text constituted from</i18n:text>: </b>
+           <xsl:apply-templates select="//t:creation"/>
+         </xsl:if>
      </p>
      </xsl:if>
 
