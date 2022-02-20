@@ -5,9 +5,25 @@
                 version="2.0">
   <xsl:include href="teiref.xsl"/>
   
-  <xsl:template priority="-1" match="t:ref">
+   <xsl:template match="t:ref" mode="#default inslib-dimensions inslib-placename sample-dimensions">
+     <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
       <xsl:choose>
-         <xsl:when test="@type = 'reprint-from'">
+         <xsl:when test="$parm-edn-structure='inslib' or $parm-edn-structure='sample'">
+            <xsl:choose>
+               <xsl:when test="@target">
+                  <a href="{@target}" target="_blank"><xsl:apply-templates/></a>
+               </xsl:when>
+               <xsl:when test="@corresp and not(@target)">
+                  <a href="{@corresp}" target="_blank"><xsl:apply-templates/></a>
+               </xsl:when>
+               <xsl:when test="@type='inscription' and @n and not(@target) and not(@corresp)">
+                  <a href="{concat('./',@n,'.html')}" target="_blank"><xsl:apply-templates/></a>
+               </xsl:when>
+            </xsl:choose>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:choose>
+            <xsl:when test="@type = 'reprint-from'">
             <br/>
             <!-- Found in teiref.xsl -->
         <xsl:call-template name="reprint-text">
@@ -31,6 +47,8 @@
          </xsl:when>
          <xsl:otherwise>
             <xsl:apply-templates/>
+         </xsl:otherwise>
+      </xsl:choose>
          </xsl:otherwise>
       </xsl:choose>
   </xsl:template>
