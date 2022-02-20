@@ -23,7 +23,7 @@
               <xsl:value-of select="$target" />
             </field>
             <field name="concordance_bibliography_date">
-              <xsl:value-of select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml'))//tei:bibl[not(@sameAs)][@xml:id=$target]//tei:date[1]" />
+              <xsl:value-of select="document('../../content/xml/authority/bibliography.xml')//tei:bibl[not(@sameAs)][@xml:id=$target]//tei:date[1]" />
             </field>
             <field name="concordance_bibliography_cited_range">
               <xsl:value-of select="../tei:citedRange" />
