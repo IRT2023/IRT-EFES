@@ -24,7 +24,7 @@
               <xsl:value-of select="$target" />
             </field>
             <field name="concordance_bibliography_date">
-              <xsl:variable name="bibliography-al" select="'../../content/xml/authority/bibliography.xml'"/>
+                <xsl:variable name="bibliography-al" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')"/>
                 <xsl:if test="doc-available($bibliography-al) = fn:true()">
                   <xsl:value-of select="document($bibliography-al)//tei:bibl[not(@sameAs)][@xml:id=$target]//tei:date[1]" />
                 </xsl:if>
