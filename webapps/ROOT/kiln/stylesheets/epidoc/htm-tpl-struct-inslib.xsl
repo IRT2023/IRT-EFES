@@ -28,10 +28,10 @@
               <xsl:value-of select="//t:publicationStmt//t:idno[@type='filename']"/>
             </a>
             <xsl:if test="//t:publicationStmt//t:idno[@type='TM']">
-            <br/>Trismegistos ID: 
-            <a target="_blank" href="https://www.trismegistos.org/text/{//t:publicationStmt//t:idno[@type='TM']}">
-              <xsl:value-of select="//t:publicationStmt//t:idno[@type='TM']"/>
-            </a>
+              <br/>Trismegistos ID: 
+              <a target="_blank" href="https://www.trismegistos.org/text/{//t:publicationStmt//t:idno[@type='TM']}">
+                <xsl:value-of select="//t:publicationStmt//t:idno[@type='TM']"/>
+              </a>
             </xsl:if>
           </p>
         </xsl:if>
@@ -90,7 +90,6 @@
             </p>
           </xsl:if>
           
-          
           <xsl:if test="//t:provenance">
             <p><b>Findspot: </b>
               <xsl:choose>
@@ -101,6 +100,7 @@
               </xsl:choose>
             </p>
           </xsl:if>
+          
           <xsl:if test="//t:origPlace">
             <p><b><xsl:value-of select="if ($inslib-corpus='IGCyr') then 'Place of origin: ' else 'Original location: '"/></b>
               <xsl:choose>
@@ -111,6 +111,7 @@
               </xsl:choose>
             </p>
           </xsl:if>
+          
           <xsl:if test="//t:provenance[@type!='found']//text()|//t:repository//text()">
             <p><b>Last recorded location: </b>
               <xsl:if test="//t:repository and $inslib-corpus='IGCyr'">
@@ -120,15 +121,15 @@
                 <xsl:text>. </xsl:text>
               </xsl:if>
               <xsl:for-each select="//t:provenance[@type!='found']">
-                    <xsl:apply-templates mode="inslib-placename"/>
-                    <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
-                  </xsl:for-each>
+                <xsl:apply-templates mode="inslib-placename"/>
+                <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
+              </xsl:for-each>
               <xsl:if test="$inslib-corpus!='IGCyr'">
-              <xsl:if test="//t:repository[@ref] and not(//t:provenance[@type='observed'])">
-                      <xsl:apply-templates select="//t:repository[@ref][1]" mode="inslib-placename"/>
-              </xsl:if>
-              <!-- Named template found below. -->
-              <xsl:call-template name="inslib-invno"/>
+                <xsl:if test="//t:repository[@ref] and not(//t:provenance[@type='observed'])">
+                  <xsl:apply-templates select="//t:repository[@ref][1]" mode="inslib-placename"/>
+                </xsl:if>
+                <!-- Named template found below. -->
+                <xsl:call-template name="inslib-invno"/>
               </xsl:if>
             </p>
           </xsl:if>
@@ -227,17 +228,7 @@
                   <xsl:choose>
                     <xsl:when test="doc-available($bibliography-al) = fn:true() and document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]">
                       <xsl:variable name="source" select="document($bibliography-al)//t:bibl[@xml:id=$source-id][not(@sameAs)]"/>
-                      <a target="_blank">
-                        <xsl:attribute name="href">
-                          <xsl:choose>
-                            <xsl:when test="$inslib-corpus='IGCyr'">
-                              <xsl:value-of select="concat('../texts/bibliography.html#',$source-id)"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                              <xsl:value-of select="concat('../concordance/bibliography/',$source-id,'.html')"/>
-                            </xsl:otherwise>
-                          </xsl:choose>
-                        </xsl:attribute>
+                      <a href="concat('../concordance/bibliography/',$source-id,'.html')" target="_blank">
                         <xsl:choose>
                           <xsl:when test="$source//t:bibl[@type='abbrev']">
                             <xsl:apply-templates select="$source//t:bibl[@type='abbrev'][1]"/>
@@ -339,16 +330,16 @@
               <xsl:when test="//t:facsimile//t:graphic">
                 <xsl:for-each select="//t:facsimile//t:graphic">
                   <div class="embedded_image">
-                    <xsl:choose>
-                      <xsl:when test="contains(@url,'http')">
+                  <xsl:choose>
+                    <xsl:when test="contains(@url,'http')">
                         <a href="{@url}" target="_blank">
                           <img src="{@url}" style="max-height:200px"/>
                         </a>
-                      </xsl:when>
-                      <xsl:otherwise>
+                    </xsl:when>
+                    <xsl:otherwise>
                         <xsl:apply-templates select="." />
-                      </xsl:otherwise>
-                    </xsl:choose>
+                    </xsl:otherwise>
+                  </xsl:choose>
                     <p style="margin-top:5px">
                       <strong><xsl:text>Fig. </xsl:text><xsl:number value="position()" format="1" /></strong>
                       <xsl:if test="t:desc"><xsl:text>. </xsl:text><xsl:apply-templates select="t:desc" /></xsl:if>
@@ -363,6 +354,70 @@
               </xsl:otherwise>
             </xsl:choose>
           </div>
+        </xsl:if>
+          
+        <xsl:if test="$inslib-corpus='IGCyr'">
+          <!-- if you are running this template outside EFES, change the path to the places authority list accordingly -->
+          <xsl:if test="doc-available(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/places.xml')) = fn:true()">
+            <div id="maps">
+              <h3>Maps</h3>
+              <div class="row map_box">
+                <div id="specific_map" class="map inscription_map"></div>
+                <xsl:variable name="place-name" select="//t:provenance[@type='found'][1]//t:p[1]//t:placeName[@type='ancientFindspot'][1]"/>
+                <xsl:variable name="place-id" select="//t:provenance[@type='found'][1]//t:p[1]//t:placeName[@type='ancientFindspot'][1]/@key"/>
+                <xsl:variable name="places-al" select="document(concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/places.xml'))//t:place[descendant::t:placeName=$place-name][1]"/>
+                <xsl:variable name="counter" select="$places-al//t:note[@type='total_inscriptions']"/>
+                <xsl:variable name="points" select="concat(string-join($place-name, ''), '#', string-join($counter, '') ,'@', substring-after(string-join($place-id, ''), 'slsgazetteer.org/'))"/>
+                <script type="text/javascript">
+                  var points = {"<xsl:value-of select="$points"/>": "<xsl:value-of select="$places-al//t:geo"/>"};
+                </script>
+                <script type="text/javascript" src="../../assets/scripts/maps.js"></script>
+                <script type="text/javascript">
+                  var mymap = L.map('specific_map', { center: [32, 22], zoom: 6, fullscreenControl: true, layers: layers });
+                  L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+                  L.control.scale().addTo(mymap);
+                  L.Control.geocoder().addTo(mymap);
+                  toggle_places.addTo(mymap); 
+                </script>
+              </div>
+              
+              <div id="specific_archaeo_map" class="map">
+                <xsl:variable name="findspot" select="string-join(//t:provenance[@type='found']//t:placeName, '')"/>
+                <xsl:variable name="findspot-rs" select="lower-case(string-join(//t:provenance[@type='found']//t:rs, ' '))"/>
+                <xsl:if test="contains($findspot, 'Apollonia')">
+                  <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Apollonia'"/></xsl:call-template>
+                </xsl:if>
+                <xsl:if test="contains($findspot, 'Berenike')">
+                  <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Berenike'"/></xsl:call-template>
+                </xsl:if>
+                <xsl:if test="$findspot='Cyrene'">
+                  <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Cyrene_general_plan'"/></xsl:call-template>
+                  <xsl:if test="contains($findspot-rs, 'agora')">
+                    <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Cyrene_agora'"/></xsl:call-template>
+                  </xsl:if>
+                  <xsl:if test="contains($findspot-rs, 'central quarter')">
+                    <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Cyrene_central_quarter'"/></xsl:call-template>
+                  </xsl:if>
+                  <xsl:if test="contains($findspot-rs, 'north necropolis')">
+                    <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Cyrene_north_necropolis'"/></xsl:call-template>
+                  </xsl:if>
+                  <xsl:if test="contains($findspot-rs, 'of apollo')">
+                    <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Cyrene_sanctuary_of_Apollo'"/></xsl:call-template>
+                  </xsl:if>
+                </xsl:if>
+                <xsl:if test="contains($findspot, 'Euesperides')">
+                  <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Euesperides'"/></xsl:call-template>
+                </xsl:if>
+                <xsl:if test="contains($findspot, 'Ptolemais')">
+                  <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Ptolemais_inner'"/></xsl:call-template>
+                  <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Ptolemais_outer'"/></xsl:call-template>
+                </xsl:if>
+                <xsl:if test="contains($findspot, 'Taucheira')">
+                  <xsl:call-template name="inslib-map"><xsl:with-param name="map_name" select="'map_Tocra'"/></xsl:call-template>
+                </xsl:if>
+              </div>
+            </div>
+          </xsl:if>
         </xsl:if>
       </div>
     </div>
@@ -400,8 +455,18 @@
           <xsl:text>, </xsl:text>
         </xsl:if>
       </xsl:for-each>
-      <xsl:if test="$inslib-corpus!='IGCyr'"><xsl:text>)</xsl:text></xsl:if>
+    <xsl:if test="$inslib-corpus!='IGCyr'"><xsl:text>)</xsl:text></xsl:if>
     </xsl:if>
+  </xsl:template>
+  
+  <xsl:template name="inslib-map">
+    <xsl:param name="map_name"/>
+    <!-- if you are running this template outside EFES, change the path to the images folder accordingly -->
+    <xsl:variable name="images" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/images/')"/>
+    <div id="{$map_name}" class="archaeo_map">
+      <h4><xsl:value-of select="translate(replace($map_name, 'map_', ''), '_', ' ')"/></h4>
+      <p><a href="../texts/{$map_name}.html"><img alt="image" class="image" src="/images/{$map_name}.png"/></a></p>
+    </div>
   </xsl:template>
   
   <xsl:template name="inslib-title">
