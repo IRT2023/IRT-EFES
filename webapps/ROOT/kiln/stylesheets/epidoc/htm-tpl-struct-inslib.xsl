@@ -161,6 +161,22 @@
                 <xsl:apply-templates select="$edtxt" mode="sqbrackets"/>
               </div>
             </section>
+            <xsl:if test="$inslib-corpus='IGCyr' and //t:l">
+              <section>
+                <p class="title" data-section-title="data-section-title"><a href="#">Metrical</a></p>
+                <div class="content" id="edition" data-section-content="data-section-content">
+                  <!-- Edited text output -->
+                  <xsl:variable name="edtxt">
+                    <xsl:apply-templates select="//t:div[@type='edition']">
+                      <xsl:with-param name="parm-edition-type" select="'interpretive'" tunnel="yes"/>
+                      <xsl:with-param name="parm-verse-lines" select="'on'" tunnel="yes"/>
+                    </xsl:apply-templates>
+                  </xsl:variable>
+                  <!-- Moded templates found in htm-tpl-sqbrackets.xsl -->
+                  <xsl:apply-templates select="$edtxt" mode="sqbrackets"/>
+                </div>
+              </section>
+            </xsl:if>
             <section>
               <p class="title" data-section-title="data-section-title"><a href="#">Diplomatic</a></p>
               <div class="content" id="diplomatic" data-section-content="data-section-content">
@@ -424,6 +440,7 @@
   </xsl:template>
   
   <xsl:template name="inslib-structure">
+    <!-- in EFES this is overridden by webapps/ROOT/assets/templates/epidoc.xml | base.xml -->
     <xsl:variable name="title">
       <xsl:call-template name="inslib-title" />
     </xsl:variable>
@@ -439,7 +456,7 @@
       </head>
       <body>
         <h1>
-          <xsl:value-of select="$title"/>
+          <xsl:apply-templates select="$title"/>
         </h1>
         <xsl:call-template name="inslib-body-structure" />
       </body>
@@ -474,18 +491,18 @@
       <xsl:when test="//t:titleStmt/t:title and $inslib-corpus='IRT'">
         <xsl:value-of select="substring-after(//t:publicationStmt/t:idno[@type='filename']/text(),'IRT')"/>
         <xsl:text>. </xsl:text>
-        <xsl:apply-templates select="//t:titleStmt/t:title"/>
+        <xsl:apply-templates select="//t:titleStmt/t:title" mode="inslib-foreign-title"/>
       </xsl:when>
       <xsl:when test="//t:titleStmt/t:title and $inslib-corpus='IGCyr'">
-        <xsl:apply-templates select="//t:titleStmt/t:title"/>
+        <xsl:apply-templates select="//t:titleStmt/t:title" mode="inslib-foreign-title"/>
       </xsl:when>
       <xsl:when test="//t:titleStmt/t:title and $inslib-corpus='IRCyr'">
         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()"/>
         <xsl:text>. </xsl:text>
-        <xsl:apply-templates select="//t:titleStmt/t:title"/>
+        <xsl:apply-templates select="//t:titleStmt/t:title" mode="inslib-foreign-title"/>
       </xsl:when>
       <xsl:when test="//t:titleStmt/t:title/node()">
-        <xsl:apply-templates select="//t:titleStmt/t:title"/>
+        <xsl:apply-templates select="//t:titleStmt/t:title" mode="inslib-foreign-title"/>
       </xsl:when>
       <xsl:when test="//t:sourceDesc//t:bibl/node()">
         <xsl:value-of select="//t:sourceDesc//t:bibl"/>
@@ -497,6 +514,10 @@
         <xsl:text>EpiDoc example output, InsLib style</xsl:text>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="t:title//t:foreign" mode="inslib-foreign-title">
+    <i><xsl:apply-templates/></i>
   </xsl:template>
   
   <xsl:template match="t:dimensions" mode="inslib-dimensions">

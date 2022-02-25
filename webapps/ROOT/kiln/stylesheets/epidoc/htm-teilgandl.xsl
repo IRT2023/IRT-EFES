@@ -24,6 +24,7 @@
   <xsl:template match="t:l">
       <xsl:param name="parm-line-inc" tunnel="yes" required="no"></xsl:param>
       <xsl:param name="parm-verse-lines" tunnel="yes" required="no"></xsl:param>
+      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
       <xsl:choose>
           <xsl:when test="$parm-verse-lines = 'on'">   
             <xsl:variable name="div-loc">
@@ -43,6 +44,13 @@
          </xsl:when>
          <xsl:otherwise>
             <xsl:apply-templates/>
+         <!-- if final lb in l is L2R or R2L, then print arrow here -->
+            <xsl:if test="$parm-edn-structure='inslib' and not(following-sibling::t:l) and descendant::t:lb[last()][@rend='left-to-right']">
+               <xsl:text>&#xa0;&#xa0;→</xsl:text>
+            </xsl:if>
+            <xsl:if test="$parm-edn-structure='inslib' and not(following-sibling::t:l) and descendant::t:lb[last()][@rend='right-to-left']">
+               <xsl:text>&#xa0;&#xa0;←</xsl:text>
+            </xsl:if>
          </xsl:otherwise>
       </xsl:choose>
   </xsl:template>
