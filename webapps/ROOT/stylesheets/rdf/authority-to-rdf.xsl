@@ -17,7 +17,7 @@
   transformation. Currently it supports the TEI markup used in IOSPE's
   authority lists (tei:place and children, tei:person and children,
   tei:org and children, tei:item with tei:term and tei:gloss,
-  and tei:glyph from charDecl).
+  etc).
 
   Further markup, TEI or not, can be added since there is little
   overlap in the markup structures for different things. -->
@@ -59,14 +59,6 @@
       <xsl:apply-templates />
     </so:Thing>
   </xsl:template>
-  
-  <xsl:template match="tei:glyph[@xml:id]">
-    <so:Thing>
-      <xsl:call-template name="add-rdf-about-uri" />
-      <xsl:apply-templates />
-    </so:Thing>
-  </xsl:template>
-  
   
   <xsl:template match="tei:org[@xml:id]">
     <so:Organization>
@@ -137,9 +129,6 @@
     <owl:Class rdf:about="{$gn_ns}alternateName">
       <rdfs:subClassOf rdf:resource="{$so_ns}name" />
     </owl:Class>
-    <owl:Class rdf:about="{$gn_ns}Thing">
-      <rdfs:subClassOf rdf:resource="{$so_ns}Thing" />
-    </owl:Class>
-  </xsl:template>
+    </xsl:template>
 
 </xsl:stylesheet>

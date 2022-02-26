@@ -57,9 +57,10 @@
               </label>
             </xsl:if>
             <label id="search_options">
-              <a href="#" onclick="toggle_visibility('keyboard_box');">Greek keyboard</a> <xsl:text> | </xsl:text>
+              <a href="#" onclick="toggle_visibility('keyboard_box');">Greek keyboard</a> <xsl:text> | </xsl:text> <!-- comment this line out if you do not want the Greek keyboard -->
               <a href="{kiln:url-for-match('local-search', ($language), 0)}"><xsl:text>Reset search</xsl:text></a>
             </label>
+            <!-- comment the following div out if you do not want to display the Greek keyboard -->
             <div id="keyboard_box">
               <ul id="keyboard">
                 <li class="letter">α</li>
@@ -207,6 +208,7 @@
         setup_slider(widget, label);
       });
       </script>
+      <!-- Greek keyboard -->
       <script>
         $(function(){
         var $write = $('#write');
@@ -227,6 +229,7 @@
         });
         });
       </script>
+      <!-- The following script enables to show or hide the facets items and the Greek keyboard. -->
       <script>
         function toggle_visibility(id) {
         var e = document.getElementById(id);
