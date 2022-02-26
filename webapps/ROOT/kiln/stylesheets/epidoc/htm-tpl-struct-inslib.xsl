@@ -440,7 +440,6 @@
   </xsl:template>
   
   <xsl:template name="inslib-structure">
-    <!-- in EFES this is overridden by webapps/ROOT/assets/templates/epidoc.xml | base.xml -->
     <xsl:variable name="title">
       <xsl:call-template name="inslib-title" />
     </xsl:variable>
@@ -491,18 +490,18 @@
       <xsl:when test="//t:titleStmt/t:title and $inslib-corpus='IRT'">
         <xsl:value-of select="substring-after(//t:publicationStmt/t:idno[@type='filename']/text(),'IRT')"/>
         <xsl:text>. </xsl:text>
-        <xsl:apply-templates select="//t:titleStmt/t:title" mode="inslib-foreign-title"/>
+        <xsl:apply-templates select="//t:titleStmt/t:title"/>
       </xsl:when>
       <xsl:when test="//t:titleStmt/t:title and $inslib-corpus='IGCyr'">
-        <xsl:apply-templates select="//t:titleStmt/t:title" mode="inslib-foreign-title"/>
+        <xsl:apply-templates select="//t:titleStmt/t:title"/>
       </xsl:when>
       <xsl:when test="//t:titleStmt/t:title and $inslib-corpus='IRCyr'">
         <xsl:value-of select="//t:publicationStmt/t:idno[@type='filename']/text()"/>
         <xsl:text>. </xsl:text>
-        <xsl:apply-templates select="//t:titleStmt/t:title" mode="inslib-foreign-title"/>
+        <xsl:apply-templates select="//t:titleStmt/t:title"/>
       </xsl:when>
       <xsl:when test="//t:titleStmt/t:title/node()">
-        <xsl:apply-templates select="//t:titleStmt/t:title" mode="inslib-foreign-title"/>
+        <xsl:apply-templates select="//t:titleStmt/t:title"/>
       </xsl:when>
       <xsl:when test="//t:sourceDesc//t:bibl/node()">
         <xsl:value-of select="//t:sourceDesc//t:bibl"/>
@@ -514,10 +513,6 @@
         <xsl:text>EpiDoc example output, InsLib style</xsl:text>
       </xsl:otherwise>
     </xsl:choose>
-  </xsl:template>
-  
-  <xsl:template match="t:title//t:foreign" mode="inslib-foreign-title">
-    <i><xsl:apply-templates/></i>
   </xsl:template>
   
   <xsl:template match="t:dimensions" mode="inslib-dimensions">

@@ -7,11 +7,19 @@
 
   <xsl:template match="t:lg">
       <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
+     <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/>
       <xsl:choose>
         <!-- in IOSPE, if preceded by ab, will be called inside that div (in htm-teiab.xsl) -->
           <xsl:when test="$parm-leiden-style='iospe' and preceding-sibling::t:*[1][local-name()='ab']"/>
+         <xsl:when test="$parm-edn-structure='inslib' and following-sibling::t:lg">
+            <div class="textpart no-space">
+               <!-- Found in htm-tpl-lang.xsl -->
+               <xsl:call-template name="attr-lang"/>
+               <xsl:apply-templates/>
+            </div>
+         </xsl:when>
         <xsl:otherwise>
-        <div class="textpart">
+           <div class="textpart">
          <!-- Found in htm-tpl-lang.xsl -->
          <xsl:call-template name="attr-lang"/>
             <xsl:apply-templates/>
