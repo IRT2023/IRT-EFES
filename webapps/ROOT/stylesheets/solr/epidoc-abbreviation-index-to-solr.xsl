@@ -29,7 +29,7 @@
                     <field name="index_item_name">
                         <xsl:choose>
                             <xsl:when test="descendant::tei:g">
-                                <xsl:value-of select="concat(normalize-unicode(normalize-space(substring-after(descendant::tei:g[1]/@ref,'#')),'NFD'), 'QQQQQ')" /> <!-- added normalize-unicode(), normalize-space(), lower-case(); substring-after(descendant::tei:g/@ref,'#') instead of $base-uri, descendant::tei:g/@ref -->
+                                <xsl:value-of select="concat(normalize-unicode(normalize-space(substring-after(string-join(descendant::tei:g/@ref, ''),'#')),'NFD'), 'QQQQQ')" /> <!-- added normalize-unicode(), normalize-space(), lower-case(); substring-after(descendant::tei:g/@ref,'#') instead of $base-uri, descendant::tei:g/@ref -->
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:value-of select="upper-case(translate(normalize-unicode(translate(normalize-space(string-join(.//tei:abbr//text(), '')), 'Ϲϲ', 'Σσ'),'NFD'),'&#x300;&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- added //text(), normalize-unicode(), normalize-space(), upper-case(), translate()x2 -->
@@ -39,7 +39,7 @@
                     <field name="index_item_sort_name">
                         <xsl:choose>
                             <xsl:when test="descendant::tei:g">
-                                <xsl:value-of select="lower-case(translate(normalize-unicode(normalize-space(concat(substring-after(descendant::tei:g[1]/@ref,'#'), 'QQQQQ')),'NFD'),'&#x300;&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- substring-after(descendant::tei:g/@ref,'#') instead of $base-uri, descendant::tei:g/@ref; added normalize-space() -->
+                                <xsl:value-of select="lower-case(translate(normalize-unicode(normalize-space(concat(substring-after(string-join(descendant::tei:g/@ref, ''),'#'), 'QQQQQ')),'NFD'),'&#x300;&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- substring-after(descendant::tei:g/@ref,'#') instead of $base-uri, descendant::tei:g/@ref; added normalize-space() -->
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:value-of select="upper-case(translate(normalize-unicode(normalize-space(string-join(.//tei:abbr//text(), '')),'NFD'),'&#x300;&#x0301;&#x0313;&#x0314;&#x0342;',''))" /> <!-- added //text(), normalize-space(), translate(), upper-case() -->

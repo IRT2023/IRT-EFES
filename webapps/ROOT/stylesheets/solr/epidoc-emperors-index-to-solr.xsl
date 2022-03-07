@@ -14,20 +14,19 @@
   <xsl:param name="subdirectory" />
   
   <xsl:template match="/">
-    
-    <!-- the commented out code handles multiple values inside @ref/@key -->
-    <!--<xsl:variable name="root" select="." />
-    
-    <xsl:variable name="id-values">
+    <!-- the following code handles multiple values inside @ref/@key -->
+    <!-- <xsl:variable name="root" select="." />
+      <xsl:variable name="id-values">
       <xsl:for-each select="//tei:persName[@type='emperor'][@ref]/@ref|//tei:persName[@type='emperor'][@key][not(@ref)]/@key">
         <xsl:value-of select="normalize-space(translate(., '#', ''))" />
         <xsl:text> </xsl:text>
       </xsl:for-each>
     </xsl:variable>
-    <xsl:variable name="ids"
-      select="distinct-values(tokenize(normalize-space($id-values), '\s+'))" />
+    <xsl:variable name="ids" select="distinct-values(tokenize(normalize-space($id-values), '\s+'))" />-->
+    
     <add>
-      <xsl:for-each select="$ids">
+      <!-- the following code handles multiple values inside @ref/@key -->
+      <!-- <xsl:for-each select="$ids">
         <xsl:variable name="id" select="." />
         <xsl:variable name="idno" select="document('../../content/xml/authority/emperors.xml')//tei:person[@xml:id=$id]"/>
         <xsl:variable name="emperor" select="$root//tei:persName[@type='emperor'][contains(concat(' ', translate(@ref, '#', ''), ' '), concat(' ',$id,' ')) or contains(concat(' ', translate(@key, '#', ''), ' '), concat(' ',$id,' '))]" />
@@ -42,8 +41,6 @@
           <field name="index_item_name">
             <xsl:choose>
               <xsl:when test="$idno">
-                <!-\-<xsl:value-of select="$idno/@n" />
-                <xsl:text>. </xsl:text>-\->
                 <xsl:value-of select="$idno/tei:persName" />
                 <xsl:if test="$idno/tei:floruit"><xsl:text> (</xsl:text><xsl:value-of select="$idno/tei:floruit" /><xsl:text>)</xsl:text></xsl:if>
               </xsl:when>
@@ -66,14 +63,21 @@
           </field>
           <xsl:apply-templates select="$emperor" />
         </doc>
-      </xsl:for-each>
-    </add>-->
-    
-    <!-- the following code handles single values inside @ref/@key but considers also epithets in @group-by -->
-    <add>
-      <xsl:for-each-group select="//tei:persName[@type='emperor'][@ref]" group-by="concat(translate(@ref, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
+      </xsl:for-each> -->
+      
+      <!-- the following code handles single values inside @ref/@key and takes into account also epithets in @group-by -->
+      <xsl:for-each-group select="//tei:persName[@type='emperor'][@ref]|//tei:persName[@type='emperor'][@key][not(@ref)]" group-by="concat(translate(@ref, '#', ''), '-', translate(@key, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
         <xsl:variable name="self" select="."/>
-        <xsl:variable name="id" select="translate(@ref, '#', '')"/>
+        <xsl:variable name="id">
+          <xsl:choose>
+            <xsl:when test="@ref">
+              <xsl:value-of select="translate(@ref, '#', '')"/>
+            </xsl:when>
+            <xsl:when test="@key and not(@ref)">
+              <xsl:value-of select="translate(@key, '#', '')"/>
+            </xsl:when>
+          </xsl:choose>
+        </xsl:variable>
         <xsl:variable name="idno" select="document('../../content/xml/authority/emperors.xml')//tei:person[@xml:id=$id]"/>
         <doc>
           <field name="document_type">
@@ -110,45 +114,6 @@
         </doc>
       </xsl:for-each-group>
       
-      <!-- the following code is to ensure compatibility with older markup where @key was used instead of @ref -->
-      <xsl:for-each-group select="//tei:persName[@type='emperor'][not(@ref)][@key]" group-by="concat(translate(@key, '#', ''), '-', string-join(descendant::tei:addName/@nymRef, ' '))">
-        <xsl:variable name="self" select="."/>
-        <xsl:variable name="id" select="translate(@key, '#', '')"/>
-        <xsl:variable name="idno" select="document('../../content/xml/authority/emperors.xml')//tei:person[@xml:id=$id]"/>
-        <doc>
-          <field name="document_type">
-            <xsl:value-of select="$subdirectory" />
-            <xsl:text>_</xsl:text>
-            <xsl:value-of select="$index_type" />
-            <xsl:text>_index</xsl:text>
-          </field>
-          <xsl:call-template name="field_file_path" />
-          <field name="index_item_name">
-            <xsl:choose>
-              <xsl:when test="$idno">
-                <xsl:value-of select="$idno/tei:persName" />
-                <xsl:if test="$idno/tei:floruit"><xsl:text> (</xsl:text><xsl:value-of select="$idno/tei:floruit" /><xsl:text>)</xsl:text></xsl:if>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="$id" />
-              </xsl:otherwise>
-            </xsl:choose>
-          </field>
-          <field name="index_item_sort_name">
-            <xsl:value-of select="$idno/@n" />
-          </field>
-          <field name="index_epithet">
-            <xsl:for-each select="descendant::tei:addName[@nymRef][not(ancestor::tei:persName[ancestor::tei:persName=$self])]">
-              <xsl:value-of select="@nymRef" />
-              <xsl:if test="position()!=last()">, </xsl:if>
-            </xsl:for-each>
-          </field>
-          <field name="index_external_resource">
-            <xsl:value-of select="$idno/tei:idno" />
-          </field>
-          <xsl:apply-templates select="current-group()" />
-        </doc>
-      </xsl:for-each-group>
     </add>
   </xsl:template>
   

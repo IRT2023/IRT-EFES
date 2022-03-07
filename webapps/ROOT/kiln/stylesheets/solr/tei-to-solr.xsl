@@ -37,6 +37,7 @@
         <xsl:call-template name="field_findspot_-_upper_level" />
         <xsl:call-template name="field_findspot_-_intermediate_level" />
         <xsl:call-template name="field_findspot_-_lower_level" />
+        <xsl:call-template name="field_found_provenance" />
         <xsl:call-template name="field_mentioned_people" />
         <xsl:call-template name="field_mentioned_places" />
         <xsl:call-template name="field_origin_place" />
@@ -210,6 +211,12 @@
   </xsl:template>
 
   <xsl:template match="text()" mode="facet_mentioned_people" />
+  
+  <xsl:template match="tei:placeName[@type='ancientFindspot']" mode="facet_found_provenance">
+    <field name="found_provenance">
+      <xsl:value-of select=".[1]" />
+    </field>
+  </xsl:template>
 
   <xsl:template match="tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot']" mode="facet_findspot_-_upper_level">
     <field name="findspot_-_upper_level">
@@ -259,6 +266,10 @@
     <field name="file_path">
       <xsl:value-of select="$file-path" />
     </field>
+  </xsl:template>
+  
+  <xsl:template name="field_found_provenance">
+    <xsl:apply-templates mode="facet_found_provenance" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" />
   </xsl:template>
 
   <xsl:template name="field_findspot_-_upper_level">
