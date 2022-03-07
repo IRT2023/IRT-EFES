@@ -28,7 +28,7 @@
           <field name="index_findspot_upper_level">
             <!--<xsl:value-of select="$place-n" />
             <xsl:text>. </xsl:text>-->
-            <xsl:value-of select="." />
+            <xsl:value-of select="normalize-unicode(string-join(., ''))" />
           </field>
           <field name="index_findspot_intermediate_level">
             <xsl:choose>

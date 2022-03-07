@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:g[@ref][ancestor::tei:div/@type='edition']" group-by="@ref">
+      <xsl:for-each-group select="//tei:g[@ref][ancestor::tei:div/@type='edition']" group-by="normalize-unicode(@ref)">
         <xsl:variable name="ref-id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="ref" select="document('../../content/xml/authority/symbols.xml')//tei:glyph[@xml:id=$ref-id]"/>
         <doc>

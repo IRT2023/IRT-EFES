@@ -18,7 +18,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:del[@rend='erasure'][matches(normalize-space(string-join(descendant::text(), '')), '.*[a-zA-Z].*')][ancestor::tei:div/@type='edition']" group-by="normalize-unicode(string-join(., ''))">
+      <xsl:for-each-group select="//tei:del[@rend='erasure'][translate(normalize-space(string-join(descendant::text(), '')), ' ', '')!=''][ancestor::tei:div/@type='edition']" group-by="normalize-unicode(normalize-space(string-join(descendant::text(), '')))">
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -28,7 +28,7 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <xsl:value-of select="normalize-unicode(string-join(., ''))"/>
+            <xsl:value-of select="normalize-unicode(normalize-space(string-join(descendant::text(), '')))"/>
           </field>
           <xsl:apply-templates select="current-group()">
           </xsl:apply-templates>

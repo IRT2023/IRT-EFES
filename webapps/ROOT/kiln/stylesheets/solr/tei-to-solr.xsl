@@ -195,15 +195,15 @@
   </xsl:template>
 
   <xsl:template match="tei:repository[@ref]" mode="facet_source_repository">
-    <xsl:variable name="repo-id" select="substring-after(@ref,'#')"/>
-    <xsl:variable name="repository-id" select="document('../../../content/xml/authority/institution.xml')//tei:place[@xml:id=$repo-id]//tei:placeName"/>
+    <xsl:variable name="id" select="substring-after(@ref,'#')"/>
+    <xsl:variable name="institutions-al" select="'../../../content/xml/authority/institution.xml'"/>  
     <field name="source_repository">
       <xsl:choose>
-        <xsl:when test="$repository-id">
-          <xsl:value-of select="$repository-id"/>
+        <xsl:when test="doc-available($institutions-al) = fn:true() and document($institutions-al)//tei:place[@xml:id=$id]//tei:placeName">
+          <xsl:value-of select="document($institutions-al)//tei:place[@xml:id=$id]//tei:placeName"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="$repo-id"/>
+          <xsl:value-of select="$id"/>
         </xsl:otherwise>
       </xsl:choose>
     </field>
