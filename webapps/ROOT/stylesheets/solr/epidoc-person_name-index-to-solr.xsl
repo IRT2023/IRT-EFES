@@ -15,7 +15,7 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:name[@nymRef][ancestor::tei:persName[@type='attested']][ancestor::tei:div/@type='edition']" group-by="replace(translate(normalize-unicode(@nymRef,'NFD'), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')"> <!-- or "." -->
+      <xsl:for-each-group select="//tei:name[@nymRef][ancestor::tei:persName[@type='attested']][ancestor::tei:div[@type='edition']]" group-by="replace(translate(normalize-unicode(translate(@nymRef, '#', ''),'NFD'), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')"> <!-- or "." -->
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -25,21 +25,7 @@
           </field>
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
-            <!--<xsl:choose>
-              <xsl:when test="@nymRef">-->
-            <xsl:value-of select="replace(translate(normalize-unicode(@nymRef,'NFD'), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')" />
-              <!--</xsl:when>
-              <xsl:otherwise>
-                <xsl:choose>
-                  <xsl:when test="descendant::tei:seg[@part='I']"><xsl:value-of select="." /><xsl:text>-</xsl:text></xsl:when>
-                  <xsl:when test="descendant::tei:seg[@part='M']"><xsl:text>-</xsl:text><xsl:value-of select="." /><xsl:text>-</xsl:text></xsl:when>
-                  <xsl:when test="descendant::tei:seg[@part='F']"><xsl:text>-</xsl:text><xsl:value-of select="." /></xsl:when>
-                  <xsl:otherwise>
-                    <xsl:value-of select="." />
-                  </xsl:otherwise>
-                </xsl:choose>
-              </xsl:otherwise>
-            </xsl:choose>-->
+            <xsl:value-of select="replace(translate(normalize-unicode(translate(translate(@nymRef, '#', ''), '_', '-'),'NFD'), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')" />
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
