@@ -38,7 +38,6 @@
     <tr>
       <xsl:apply-templates select="str[@name='index_item_name']"/>
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
-      <xsl:apply-templates select="str[@name='index_numeral_value']"/>
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'findspot', 'emperors', 'months', 'epithets')])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'fragment')])"><xsl:apply-templates select="arr[@name='language_code']"/></xsl:if>
       <xsl:apply-templates select="str[@name='index_ethnic']" />
@@ -46,6 +45,9 @@
       <xsl:apply-templates select="str[@name='index_findspot_intermediate_level']" />
       <xsl:apply-templates select="str[@name='index_findspot_lower_level']" />
       <xsl:apply-templates select="arr[@name='index_epithet']" />
+      <xsl:apply-templates select="str[@name='index_attested_form']" />
+      <xsl:apply-templates select="str[@name='index_item_type']" />
+      <xsl:apply-templates select="str[@name='index_numeral_value']"/>
       <xsl:apply-templates select="str[@name='index_external_resource']" />
       <xsl:apply-templates select="arr[@name='index_instance_location']" />
       <xsl:apply-templates select="str[@name='index_item_sort_dur']" />
@@ -192,6 +194,12 @@
       <xsl:value-of select="."/>
     </td>
   </xsl:template>
+  
+  <xsl:template match="str[@name='index_item_type']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
 
   <xsl:template match="str[@name='index_findspot_upper_level']">
     <td class="larger_cell">
@@ -206,6 +214,12 @@
   </xsl:template>
   
   <xsl:template match="str[@name='index_findspot_lower_level']">
+    <td>
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
+  
+  <xsl:template match="str[@name='index_attested_form']">
     <td>
       <xsl:value-of select="."/>
     </td>
