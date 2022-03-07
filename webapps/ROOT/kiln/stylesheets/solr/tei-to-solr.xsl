@@ -34,9 +34,9 @@
         <xsl:call-template name="field_text" />
         <xsl:call-template name="field_lemmatised_text" />
         <!-- Facets. -->
-        <xsl:call-template name="field_findspot_-_upper_level" />
-        <xsl:call-template name="field_findspot_-_intermediate_level" />
-        <xsl:call-template name="field_findspot_-_lower_level" />
+        <xsl:call-template name="field_findspot_upper_level" />
+        <xsl:call-template name="field_findspot_intermediate_level" />
+        <xsl:call-template name="field_findspot_lower_level" />
         <xsl:call-template name="field_found_provenance" />
         <xsl:call-template name="field_mentioned_people" />
         <xsl:call-template name="field_mentioned_places" />
@@ -176,8 +176,13 @@
 
   <xsl:template match="tei:material" mode="facet_support_material">
     <field name="support_material">
-      <xsl:value-of select="upper-case(substring(., 1, 1))" />
-      <xsl:value-of select="substring(., 2)" />
+      <xsl:choose>
+        <xsl:when test="text()">
+          <xsl:value-of select="upper-case(substring(., 1, 1))" />
+          <xsl:value-of select="substring(., 2)" />
+        </xsl:when>
+        <xsl:otherwise><xsl:text>-</xsl:text></xsl:otherwise>
+      </xsl:choose>
     </field>
   </xsl:template>
 
@@ -192,7 +197,8 @@
   <xsl:template match="tei:origDate[@evidence]" mode="facet_origin_date_evidence">
     <xsl:for-each select="tokenize(@evidence, '\s+')">
       <field name="origin_date_evidence">
-        <xsl:value-of select="." />
+        <xsl:value-of select="upper-case(substring(normalize-space(.), 1, 1))" />
+        <xsl:value-of select="substring(normalize-space(translate(., '-', ' ')), 2)" />
       </field>
     </xsl:for-each>
   </xsl:template>
@@ -218,18 +224,18 @@
     </field>
   </xsl:template>
 
-  <xsl:template match="tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot']" mode="facet_findspot_-_upper_level">
-    <field name="findspot_-_upper_level">
+  <xsl:template match="tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot']" mode="facet_findspot_upper_level">
+    <field name="findspot_upper_level">
       <!--<xsl:text>I. </xsl:text>--><xsl:value-of select="." />
     </field>
   </xsl:template>
-  <xsl:template match="tei:provenance[@type='found']//tei:placeName[not(@type='ancientFindspot')][not(@type='monuList')]" mode="facet_findspot_-_intermediate_level">
-    <field name="findspot_-_intermediate_level">
+  <xsl:template match="tei:provenance[@type='found']//tei:placeName[not(@type='ancientFindspot')][not(@type='monuList')]" mode="facet_findspot_intermediate_level">
+    <field name="findspot_intermediate_level">
       <!--<xsl:text>II. </xsl:text>--><xsl:value-of select="." />
     </field>
   </xsl:template>
-  <xsl:template match="tei:provenance[@type='found']//tei:placeName[@type='monuList']" mode="facet_findspot_-_lower_level">
-    <field name="findspot_-_lower_level">
+  <xsl:template match="tei:provenance[@type='found']//tei:placeName[@type='monuList']" mode="facet_findspot_lower_level">
+    <field name="findspot_lower_level">
       <!--<xsl:text>III. </xsl:text>--><xsl:value-of select="." />
     </field>
   </xsl:template>
@@ -272,14 +278,14 @@
     <xsl:apply-templates mode="facet_found_provenance" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" />
   </xsl:template>
 
-  <xsl:template name="field_findspot_-_upper_level">
-    <xsl:apply-templates mode="facet_findspot_-_upper_level" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot']" />
+  <xsl:template name="field_findspot_upper_level">
+    <xsl:apply-templates mode="facet_findspot_upper_level" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot']" />
   </xsl:template>
-  <xsl:template name="field_findspot_-_intermediate_level">
-    <xsl:apply-templates mode="facet_findspot_-_intermediate_level" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[not(@type='ancientFindspot')][not(@type='monuList')]" />
+  <xsl:template name="field_findspot_intermediate_level">
+    <xsl:apply-templates mode="facet_findspot_intermediate_level" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[not(@type='ancientFindspot')][not(@type='monuList')]" />
   </xsl:template>
-  <xsl:template name="field_findspot_-_lower_level">
-    <xsl:apply-templates mode="facet_findspot_-_lower_level" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[@type='monuList']" />
+  <xsl:template name="field_findspot_lower_level">
+    <xsl:apply-templates mode="facet_findspot_lower_level" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']//tei:placeName[@type='monuList']" />
   </xsl:template>
 
   <xsl:template name="field_lemmatised_text">

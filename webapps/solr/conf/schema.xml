@@ -145,11 +145,11 @@
           multiValued="true" stored="true" required="false" />
    <field name="found_provenance" type="string" indexed="true"
      multiValued="true" stored="true" required="false" />
-   <field name="findspot_-_upper_level" type="string" indexed="true"
+   <field name="findspot_upper_level" type="string" indexed="true"
      multiValued="true" stored="true" required="false" />
-   <field name="findspot_-_intermediate_level" type="string" indexed="true"
-     multiValued="true" stored="true" required="false" />
-   <field name="findspot_-_lower_level" type="string" indexed="true"
+   <field name="findspot_intermediate_level" type="string" 
+     indexed="true" multiValued="true" stored="true" required="false" />
+   <field name="findspot_lower_level" type="string" indexed="true"
      multiValued="true" stored="true" required="false" />
    <field name="mentioned_places" type="string" indexed="true"
           multiValued="true" stored="true" required="false" />
@@ -165,6 +165,16 @@
      multiValued="true" stored="true" indexed="true" />
    <field name="ordered_id" type="string" required="false"
      multiValued="false" stored="true" indexed="false" /> 
+   <field name="origin_date_evidence" required="false" indexed="true"
+     multiValued="true" stored="true" type="string" />
+   <field name="execution_technique" required="false" indexed="true"
+     multiValued="true" stored="true" type="string" />
+   <field name="direction_of_the_text" required="false" indexed="true"
+     multiValued="true" stored="true" type="string" />
+   <field name="verse_line" required="false" indexed="true"
+     multiValued="true" stored="true" type="string" />
+   <field name="previously_unpublished" required="false" indexed="true" 
+     multiValued="true" stored="true" type="string" />
    <!-- User index fields. -->
    <field name="index_item_name" stored="true" indexed="true"
           multiValued="false" required="false" type="string" />
@@ -178,15 +188,6 @@
           multiValued="true" required="false" type="string" />
    <field name="index_numeral_value" stored="true" indexed="false"
           multiValued="false" required="false" type="string" />
-   <field name="origin_date_evidence" required="false" indexed="true"
-     multiValued="true" stored="true" type="string" />
-   <field name="execution_technique" required="false" indexed="true"
-     multiValued="true" stored="true" type="string" />
-   <field name="direction_of_the_text" required="false" indexed="true"
-     multiValued="false" stored="true" type="string" />
-   <field name="verse_line" required="false" indexed="true"
-     multiValued="true" stored="true" type="string" />
-   <field name="previously_unpublished" required="false" indexed="true" multiValued="true" stored="true" type="string" />
    <field name="index_item_sort_name" stored="true" indexed="true"
      multiValued="false" required="false" type="string" />
    <field name="index_item_sort_dur" stored="true" indexed="true"
@@ -199,7 +200,8 @@
      multiValued="true" stored="true" indexed="true" />
    <field name="index_ethnic" type="string" required="false"
      multiValued="false" stored="true" indexed="true" />
-   <field name="index_findspot_upper_level" type="string" required="false" multiValued="false" stored="true" indexed="true" />
+   <field name="index_findspot_upper_level" type="string" required="false"
+     multiValued="false" stored="true" indexed="true" />
    <field name="index_findspot_intermediate_level" type="string" required="false"
      multiValued="false" stored="true" indexed="true" />
    <field name="index_findspot_lower_level" type="string" required="false"
@@ -207,7 +209,8 @@
    <!-- Concordance fields. -->
    <field name="concordance_bibliography_ref" stored="true" indexed="true"
      multiValued="false" required="false" type="string" />
-   <field name="concordance_bibliography_type" stored="true" indexed="true" multiValued="false" required="false" type="string" />
+   <field name="concordance_bibliography_type" stored="true" indexed="true" 
+     multiValued="false" required="false" type="string" />
    <field name="concordance_bibliography_cited_range" stored="true"
           indexed="true" multiValued="false" required="false" type="string" />
    <field name="concordance_bibliography_date" stored="true"

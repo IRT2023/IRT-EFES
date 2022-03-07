@@ -42,7 +42,7 @@
                 </xsl:choose>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="$ref-id" />
+                <xsl:value-of select="$nymRef-id" />
               </xsl:otherwise>
             </xsl:choose>
           </field>
@@ -58,11 +58,11 @@
           </field>
           <field name="index_ethnic">
             <xsl:choose>
-              <xsl:when test="@type='ethnic'">
-                <xsl:text>Ethnic</xsl:text>
+              <xsl:when test="@type">
+                <xsl:value-of select="@type"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:text>Toponym</xsl:text>
+                <xsl:text>toponym</xsl:text>
               </xsl:otherwise>
             </xsl:choose>
           </field>

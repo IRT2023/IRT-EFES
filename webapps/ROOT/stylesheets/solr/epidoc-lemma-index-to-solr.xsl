@@ -21,7 +21,7 @@
          sequence. -->
     <xsl:variable name="lemma-values">
       <xsl:for-each select="//tei:w[@lemma][ancestor::tei:div/@type='edition']/@lemma">
-        <xsl:value-of select="normalize-space(.)" />
+        <xsl:value-of select="normalize-unicode(normalize-space(.))" />
         <xsl:text> </xsl:text>
       </xsl:for-each>
     </xsl:variable>
@@ -30,7 +30,7 @@
     <add>
       <xsl:for-each select="$lemmata">
         <xsl:variable name="lemma" select="concat(' ',.,' ')" />
-        <xsl:variable name="w" select="$root//tei:w[ancestor::tei:div/@type='edition'][contains(concat(' ', @lemma, ' '), $lemma)]" />
+        <xsl:variable name="w" select="$root//tei:w[ancestor::tei:div/@type='edition'][contains(concat(' ', normalize-unicode(@lemma), ' '), $lemma)]" />
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />

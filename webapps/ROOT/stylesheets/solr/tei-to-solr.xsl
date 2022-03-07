@@ -72,6 +72,44 @@
     </field>
   </xsl:template>
 
+  <xsl:template match="tei:repository[text()]|tei:provenance[@type='observed' or @type='not-observed']//tei:placeName[text()]" mode="facet_last_recorded_location">
+    <field name="last_recorded_location">
+      <xsl:value-of select="." />
+    </field>
+  </xsl:template>
+  
+  <xsl:template match="tei:div[@type='edition']" mode="facet_direction_of_the_text">
+    <field name="direction_of_the_text">
+      <xsl:choose>
+        <xsl:when test="descendant::tei:lb[@rend='left-to-right'] and descendant::tei:lb[@rend='right-to-left']">Boustrophedon</xsl:when>
+        <xsl:when test="descendant::tei:lb[@rend='right-to-left'] and not(descendant::tei:lb[@rend='left-to-right'])">Right-to-left</xsl:when>
+        <xsl:when test="descendant::tei:lb[@rend='left-to-right'] and not(descendant::tei:lb[@rend='right-to-left'])">Left-to-right</xsl:when>
+        <xsl:otherwise>Left-to-right</xsl:otherwise>
+      </xsl:choose>
+    </field>
+  </xsl:template>
+  
+  <xsl:template match="tei:lg|tei:l[@met]" mode="facet_verse_line">
+    <field name="verse_line">
+      <xsl:choose>
+        <xsl:when test="@met">
+          <xsl:value-of select="upper-case(substring(normalize-space(@met), 1, 1))" />
+          <xsl:value-of select="substring(normalize-space(@met), 2)" />
+        </xsl:when>
+        <xsl:otherwise><xsl:text>Other</xsl:text></xsl:otherwise>
+      </xsl:choose>
+    </field>
+  </xsl:template>
+  
+  <xsl:template match="tei:div[@type='bibliography']//tei:p" mode="facet_previously_unpublished">
+    <field name="previously_unpublished">
+      <xsl:choose>
+        <xsl:when test="contains(lower-case(.), 'not previously published')"><xsl:text>Yes</xsl:text></xsl:when>
+        <xsl:otherwise><xsl:text>No</xsl:text></xsl:otherwise>
+      </xsl:choose>
+    </field>
+  </xsl:template>
+
   <!-- This template is called by the Kiln tei-to-solr.xsl as part of
        the main doc for the indexed file. Put any code to generate
        additional Solr field data (such as new facets) here. -->
@@ -79,7 +117,11 @@
     <xsl:call-template name="field_text_type"/>
     <xsl:call-template name="field_language"/>
     <xsl:call-template name="field_ordered_id"/>
+    <xsl:call-template name="field_last_recorded_location"/>
     <xsl:call-template name="field_execution_technique"/>
+    <xsl:call-template name="field_direction_of_the_text"/>
+    <xsl:call-template name="field_verse_line"/>
+  <xsl:call-template name="field_previously_unpublished"/>
   </xsl:template>
   
   <xsl:template name="field_text_type">
@@ -94,8 +136,24 @@
     <xsl:apply-templates mode="facet_ordered_id" select="//tei:publicationStmt//tei:idno[@type='filename']"/>
   </xsl:template>
   
+  <xsl:template name="field_last_recorded_location">
+    <xsl:apply-templates mode="facet_last_recorded_location" select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc"/>
+  </xsl:template>
+  
   <xsl:template name="field_execution_technique">
-    <xsl:apply-templates mode="facet_execution_technique" select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:layoutDesc/tei:layout/tei:rs[@type='execution']"/>
+    <xsl:apply-templates mode="facet_execution_technique" select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:layoutDesc/tei:layout"/>
+  </xsl:template>
+  
+  <xsl:template name="field_direction_of_the_text">
+    <xsl:apply-templates mode="facet_direction_of_the_text" select="/tei:TEI/tei:text/tei:body/tei:div[@type='edition']"/>
+  </xsl:template>
+  
+  <xsl:template name="field_verse_line">
+    <xsl:apply-templates mode="facet_verse_line" select="/tei:TEI/tei:text/tei:body/tei:div[@type='edition']"/>
+  </xsl:template>
+
+<xsl:template name="field_previously_unpublished">
+    <xsl:apply-templates mode="facet_previously_unpublished" select="/tei:TEI/tei:text/tei:body/tei:div[@type='bibliography']"/>
   </xsl:template>
 
 </xsl:stylesheet>
