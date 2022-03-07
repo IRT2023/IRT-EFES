@@ -60,7 +60,28 @@
   </xsl:template>
 
   <xsl:template match="tei:bibl[@xml:id]" mode="short-citation">
-    <strong><xsl:value-of select="tei:bibl[@type='abbrev']"/></strong>
+    <strong>
+      <xsl:choose>
+        <xsl:when test="tei:bibl[@type='abbrev']">
+          <xsl:apply-templates select="tei:bibl[@type='abbrev'][1]"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:choose>
+            <xsl:when test="ancestor::tei:div[@xml:id='authored_editions']">
+              <xsl:for-each select="descendant::tei:name[@type='surname'][not(parent::*/preceding-sibling::tei:title)]">
+                <xsl:value-of select="."/>
+                <xsl:if test="position()!=last()"> – </xsl:if>
+              </xsl:for-each>
+              <xsl:if test="descendant::tei:date/text()"><xsl:text> </xsl:text>
+                <xsl:value-of select="descendant::tei:date"/></xsl:if>
+            </xsl:when>
+            <xsl:when test="ancestor::tei:div[@xml:id='series_collections']">
+              <i><xsl:value-of select="@xml:id"/></i>
+            </xsl:when>
+          </xsl:choose>
+        </xsl:otherwise>
+      </xsl:choose>
+    </strong>
     <!--<xsl:choose>
       <xsl:when test="tei:editor">
         <xsl:value-of select="tei:editor[1]" />
@@ -82,7 +103,11 @@
   </xsl:template>
   
   <xsl:template match="tei:ref[@target]">
-    <a target="_blank"><xsl:attribute name="href"><xsl:value-of select="@target" /></xsl:attribute><xsl:value-of select="." /></a>
+    <a target="_blank" href="{@target}"><xsl:value-of select="." /></a>
+  </xsl:template>
+  
+  <xsl:template match="tei:ptr[@target]">
+    <a target="_blank" href="{@target}"><xsl:value-of select="@target" /></a>
   </xsl:template>
   
   <!--<xsl:template match="tei:author">

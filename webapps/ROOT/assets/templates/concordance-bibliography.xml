@@ -3,6 +3,7 @@
            xmlns:xi="http://www.w3.org/2001/XInclude"
            xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
            xmlns:tei="http://www.tei-c.org/ns/1.0"
+           xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Imports stylesheet to convert Solr results and bibliography
@@ -10,18 +11,18 @@
   <xsl:import href="cocoon://_internal/template/xsl/stylesheets/authority/bibliography-to-concordance-html.xsl" />
 
   <kiln:parent>
-    <xi:include href="base.xml" />
+    <xi:include href="works.xml" />
   </kiln:parent>
 
   <kiln:child>
     <kiln:block name="title">
       <kiln:super />
-      <xsl:text>Bibliographic Concordance</xsl:text>
+      <i18n:text i18n:key="menu-concordance-bibliography">Bibliographic Concordance</i18n:text>
     </kiln:block>
     
     <kiln:block name="page-heading">
       <kiln:super />
-      <xsl:text>Bibliographic Concordance</xsl:text>
+      <i18n:text i18n:key="menu-concordance-bibliography">Bibliographic Concordance</i18n:text>
     </kiln:block>
 
     <kiln:block name="content">
