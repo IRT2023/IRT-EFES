@@ -24,16 +24,31 @@
   
   <xsl:template match="doc" mode="bibl-list">  
     <xsl:variable name="bibl-id" select="str[@name='concordance_bibliography_ref']" />
-    <tr>
-      <td><xsl:value-of select="str[@name='concordance_bibliography_date']"/></td>
-      <td>
-      <li>
-          <a href="{kiln:url-for-match('local-concordance-bibliography-item', ($language, $bibl-id), 0)}">
-            <xsl:apply-templates mode="short-citation" select="id($bibl-id)" />
-          </a>: <xsl:apply-templates mode="full-citation" select="id($bibl-id)" />
-        </li>
-      </td>
-    </tr>
+    <xsl:choose>
+      <!-- the following condition ensures that each bibliographic reference is displayed just once in the bibl. list -->
+      <xsl:when test="str[@name='concordance_bibliography_listed']">
+        <tr>
+          <td><xsl:value-of select="str[@name='concordance_bibliography_date']"/></td>
+          <td>
+            <li>
+              <xsl:choose>
+                <xsl:when test="str[@name='concordance_bibliography_cited_range']">
+                  <a href="{kiln:url-for-match('local-concordance-bibliography-item', ($language, $bibl-id), 0)}">
+                    <xsl:apply-templates mode="short-citation" select="id($bibl-id)"/>
+                  </a>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:apply-templates mode="short-citation" select="id($bibl-id)"/>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:text>: </xsl:text>
+              <xsl:apply-templates mode="full-citation" select="id($bibl-id)" />
+            </li>
+          </td>
+        </tr>
+      </xsl:when>
+    <xsl:otherwise/>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="str[@name='concordance_bibliography_cited_range']">

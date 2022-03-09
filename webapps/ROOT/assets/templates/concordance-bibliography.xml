@@ -36,8 +36,9 @@
               </tr>
             </thead>
             <tbody>
-            <xsl:apply-templates mode="bibl-list"
-              select="/aggregation/response/result/doc[str[@name='concordance_bibliography_ref'][not(text() = ancestor::doc/preceding-sibling::doc/descendant::str[@name='concordance_bibliography_ref'])]]"><xsl:sort select="lower-case(translate(./id(str[@name='concordance_bibliography_ref']), 'Ł', 'L'))"/></xsl:apply-templates>
+            <xsl:apply-templates mode="bibl-list" select="/aggregation/response/result/doc">
+              <xsl:sort select="str[@name='concordance_bibliography_short']"/>
+            </xsl:apply-templates>
             </tbody>
           </table>
         </div>
