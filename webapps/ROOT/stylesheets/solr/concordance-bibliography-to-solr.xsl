@@ -13,7 +13,16 @@
     <xsl:variable name="bibliography-al" select="concat('file:',system-property('user.dir'),'/webapps/ROOT/content/xml/authority/bibliography.xml')"/>
     <add>
       <xsl:for-each-group select="//tei:body/tei:div[@type='bibliography']//tei:bibl/tei:ptr" group-by="@target">
-        <xsl:variable name="target" select="translate(@target, '#', '')" />
+        <xsl:variable name="target">
+          <xsl:choose>
+            <xsl:when test="contains(@target, '#')">
+              <xsl:value-of select="substring-after(@target, '#')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="@target"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
         <xsl:variable name="bibl" select="document($bibliography-al)//tei:bibl[@xml:id=$target][not(@sameAs)]"/>
         <xsl:for-each-group select="current-group()" group-by="../tei:citedRange">
           <doc>
@@ -79,7 +88,7 @@
       
       <!-- to include also the bibliographic entries that are not cited in <div type="bibliography"> -->
       <xsl:if test="doc-available($bibliography-al) = fn:true()">
-        <xsl:for-each-group select="document($bibliography-al)//tei:div[@type='bibliography']//tei:bibl[not(contains(concat(' ', translate(string-join($root//tei:bibl/tei:ptr/@target, ' '), '#', ''), ' '), concat(' ',@xml:id,' ')))]" group-by="@xml:id"> 
+        <xsl:for-each-group select="document($bibliography-al)//tei:div[@type='bibliography']//tei:bibl[not(contains(concat(' ', translate(string-join($root//tei:bibl/tei:ptr/@target, ' '), '#', ' '), ' '), concat(' ',@xml:id,' ')))]" group-by="@xml:id"> 
           <doc>
             <field name="document_type">
               <xsl:text>concordance_bibliography</xsl:text>
