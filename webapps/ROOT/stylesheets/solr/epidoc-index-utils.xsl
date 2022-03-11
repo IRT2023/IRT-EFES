@@ -57,7 +57,6 @@
         </xsl:if>
       </xsl:for-each>
       <xsl:text>#</xsl:text>
-      <xsl:if test="ancestor::tei:div[@type='edition']">
       <xsl:value-of select="preceding::tei:lb[1]/@n" />
       <xsl:text>#</xsl:text>
       <xsl:choose>
@@ -68,10 +67,11 @@
           <xsl:text>0</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
-        <!-- for contextual index of words -->
-        <xsl:text>#</xsl:text>
-        <xsl:if test="self::tei:w[@lemma]"><xsl:value-of select="self::tei:w"/></xsl:if>
-      </xsl:if>
+      <!-- for contextual index of words; NB: this impacts not only the lemmata index, but all indices dealing with tei:w[@lemma] (words, fragments) -->
+        <xsl:if test="self::tei:w[@lemma]">
+          <xsl:text>#</xsl:text>
+          <xsl:value-of select="self::tei:w"/>
+        </xsl:if>
     </field>
   </xsl:template>
 
