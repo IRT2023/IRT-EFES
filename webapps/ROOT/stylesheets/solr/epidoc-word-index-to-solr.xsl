@@ -13,7 +13,7 @@
     <xsl:param name="index_type" />
     <xsl:param name="subdirectory" />
 
-    <xsl:template name="ignore" mode="ignore" match="//tei:am | //tei:sic | //tei:orig | //tei:surplus | //tei:del[@rend='corrected']"></xsl:template>
+    <xsl:template name="ignore" mode="ignore" match="//tei:am | //tei:sic | //tei:orig | //tei:surplus | //tei:del[@rend='corrected']"/>
     <xsl:template match="/">
         <add>
             <xsl:for-each-group select="//tei:w[ancestor::tei:div/@type='edition']" group-by="normalize-unicode(normalize-space(replace(translate(., 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')),'NFD')">
