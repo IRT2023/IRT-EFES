@@ -15,7 +15,7 @@
     
     <xsl:template match="/">
         <add>
-            <xsl:for-each-group select="//tei:expan[ancestor::tei:div/@type='edition']" 
+            <xsl:for-each-group select="//tei:expan[ancestor::tei:div/@type='edition'][not(ancestor::tei:abbr)]" 
                 group-by="normalize-unicode(translate(translate(concat(string-join(descendant::tei:abbr//text()|descendant::tei:g/@ref, ''), '-', string-join(.//text()[not(ancestor::tei:am or ancestor::tei:g)], '')), 'Ϲϲ', 'Σσ'), ' ', ''),'NFD')">
                 <doc>
                     <field name="document_type">
@@ -27,7 +27,7 @@
                     <xsl:call-template name="field_file_path" />
                     <field name="index_item_name">
                         <xsl:variable name="abbr">
-                            <xsl:for-each select="descendant::tei:abbr//node()[self::text()[not(ancestor::tei:g)] or self::tei:g//text() or self::tei:g/@ref]">
+                            <xsl:for-each select="descendant::tei:abbr//node()[self::text()[not(ancestor::tei:g)] or self::tei:g//text() or self::tei:g/@ref][not(ancestor::tei:ex)]">
                                 <xsl:choose>
                                     <xsl:when test="self::tei:g//text() or self::tei:g/@ref">
                                         <xsl:variable name="g">
@@ -66,6 +66,9 @@
                     </field>
                     <field name="index_abbreviation_expansion">
                         <xsl:value-of select="normalize-unicode(normalize-space(replace(translate(string-join(.//text()[not(ancestor::tei:am or ancestor::tei:g)], ''), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1')), 'NFD')"/>
+                    </field>
+                    <field name="language_code">
+                        <xsl:value-of select="ancestor-or-self::*[@xml:lang][1]/@xml:lang"/>
                     </field>
                     <xsl:apply-templates select="current-group()" />
                 </doc>
