@@ -38,7 +38,7 @@
     <tr>
       <xsl:apply-templates select="str[@name='index_item_name']"/>
       <xsl:apply-templates select="str[@name='index_abbreviation_expansion']"/>
-      <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'findspot', 'emperors', 'months', 'epithets')])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
+      <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('findspot', 'emperors', 'months', 'epithets')])"><xsl:apply-templates select="str[@name='index_item_sort_name']"/></xsl:if>
       <xsl:if test="not(ancestor::aggregation/index_metadata/tei:div[@xml:id=('abbreviation', 'fragment')])"><xsl:apply-templates select="arr[@name='language_code']"/></xsl:if>
       <xsl:apply-templates select="str[@name='index_ethnic']" />
       <xsl:apply-templates select="str[@name='index_findspot_upper_level']" />

@@ -2,6 +2,7 @@
 <xsl:stylesheet exclude-result-prefixes="#all"
                 version="2.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
+                xmlns:fn="http://www.w3.org/2005/xpath-functions"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- This XSLT transforms a set of EpiDoc documents into a Solr
@@ -16,8 +17,9 @@
   <xsl:template match="/">
     <add>
       <xsl:for-each-group select="//tei:g[@ref][ancestor::tei:div/@type='edition']" group-by="normalize-unicode(@ref)">
-        <xsl:variable name="ref-id" select="substring-after(@ref,'#')"/>
-        <xsl:variable name="ref" select="document('../../content/xml/authority/symbols.xml')//tei:glyph[@xml:id=$ref-id]"/>
+        <xsl:variable name="g" select="substring-after(@ref,'#')"/>
+        <xsl:variable name="symbolsAL" select="'../../content/xml/authority/symbols.xml'"/>
+        <xsl:variable name="glyph" select="document($symbolsAL)//tei:glyph[@xml:id=$g]"/> 
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -28,11 +30,11 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <xsl:choose>
-              <xsl:when test="$ref">
-            <xsl:value-of select="$ref//tei:value[preceding-sibling::tei:localName[text()='text-display']]" />
-            <xsl:if test="$ref//tei:localName[text()='glyph-display'][following-sibling::tei:value/text()]">
+              <xsl:when test="doc-available($symbolsAL) = fn:true() and $glyph">
+                <xsl:value-of select="$glyph//tei:value[preceding-sibling::tei:localName[text()='text-display']]" />
+                <xsl:if test="$glyph//tei:localName[text()='glyph-display'][following-sibling::tei:value/text()]">
               <xsl:text> (</xsl:text>
-              <xsl:value-of select="$ref//tei:value[preceding-sibling::tei:localName[text()='glyph-display']]" />
+                  <xsl:value-of select="$glyph//tei:value[preceding-sibling::tei:localName[text()='glyph-display']]" />
               <xsl:text>)</xsl:text>
             </xsl:if>
               </xsl:when>
