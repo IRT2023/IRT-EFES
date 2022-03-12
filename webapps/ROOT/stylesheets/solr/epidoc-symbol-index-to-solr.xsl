@@ -16,10 +16,29 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:g[@ref][ancestor::tei:div/@type='edition']" group-by="normalize-unicode(@ref)">
-        <xsl:variable name="g" select="substring-after(@ref,'#')"/>
+      <xsl:for-each-group select="//tei:g[@ref or @type][ancestor::tei:div/@type='edition']" group-by="normalize-unicode(concat(string-join(., ''), '-', @ref, '-', @type))">
+        <xsl:variable name="ref-id">
+          <xsl:choose>
+            <xsl:when test="contains(@ref, '#')">
+              <xsl:value-of select="normalize-unicode(substring-after(@ref, '#'),'NFD')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="normalize-unicode(@ref,'NFD')"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="type-id">
+          <xsl:choose>
+            <xsl:when test="contains(@type, '#')">
+              <xsl:value-of select="normalize-unicode(substring-after(@type, '#'),'NFD')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="normalize-unicode(@type,'NFD')"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
         <xsl:variable name="symbolsAL" select="'../../content/xml/authority/symbols.xml'"/>
-        <xsl:variable name="glyph" select="document($symbolsAL)//tei:glyph[@xml:id=$g]"/> 
+        <xsl:variable name="glyph" select="document($symbolsAL)//tei:glyph[@xml:id=$ref-id]"/> 
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory" />
@@ -39,9 +58,19 @@
             </xsl:if>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="@ref"/>
+                <xsl:choose>
+                  <xsl:when test="@ref">
+                    <xsl:value-of select="$ref-id"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:value-of select="normalize-unicode(string-join(., ''))"/>
+                  </xsl:otherwise>
+                </xsl:choose>
               </xsl:otherwise>
             </xsl:choose>
+          </field>
+          <field name="index_item_type">
+            <xsl:value-of select="$type-id"/>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
