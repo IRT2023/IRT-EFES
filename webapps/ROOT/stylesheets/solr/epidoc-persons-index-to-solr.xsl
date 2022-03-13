@@ -43,11 +43,11 @@
               <xsl:text>-</xsl:text>
             </xsl:if>
             
-            <!-- disjoint patronymic(s); THIS SHOULD HANDLE NOT ONLY THE DISJOINT PATRONYMIC BUT ALSO SEPARATE PARTS OF THE ONOMASTICS, RE-JOINED WITH @sameAs -->
             <xsl:if test="@xml:id">
               <xsl:variable name="id" select="@xml:id"/>
-              <xsl:text> child of </xsl:text>
-              <xsl:for-each select="ancestor::tei:div//tei:persName[translate(@sameAs,'#','')=$id]//tei:name[@type='patronymic'][ancestor::tei:persName[@type='attested'][2]][not(ancestor::tei:persName[@type='attested'][3])]">
+              <!-- disjoint name(s) -->
+              <xsl:for-each select="ancestor::tei:div//tei:persName[translate(@sameAs,'#','')=$id]//tei:name[ancestor::tei:persName[@type='attested'][1]][not(ancestor::tei:persName[@type='attested'][2])]">
+                <xsl:if test="position()=1"><xsl:text> </xsl:text></xsl:if>
                 <xsl:choose>
                   <xsl:when test="@nymRef">
                     <xsl:value-of select="translate(translate(normalize-unicode(@nymRef), '#', ''), '_', '-')"/>
@@ -58,8 +58,24 @@
                 </xsl:choose>
                 <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
               </xsl:for-each>
-              <xsl:if test="not(ancestor::tei:div//tei:persName[translate(@sameAs,'#','')=$id]//tei:name[@type='patronymic'][ancestor::tei:persName[@type='attested'][2]][not(ancestor::tei:persName[@type='attested'][3])])">
-                <xsl:text>-</xsl:text>
+              
+              <!-- disjoint patronymic(s) -->
+              <xsl:if test="ancestor::tei:div//tei:persName[translate(@sameAs,'#','')=$id]//tei:persName[@type='attested']">
+                <xsl:text> child of </xsl:text>
+                <xsl:for-each select="ancestor::tei:div//tei:persName[translate(@sameAs,'#','')=$id]//tei:name[ancestor::tei:persName[@type='attested'][2]][not(ancestor::tei:persName[@type='attested'][3])]">
+                  <xsl:choose>
+                    <xsl:when test="@nymRef">
+                      <xsl:value-of select="translate(translate(normalize-unicode(@nymRef), '#', ''), '_', '-')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:text>-</xsl:text>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                  <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
+                </xsl:for-each>
+                <xsl:if test="not(ancestor::tei:div//tei:persName[translate(@sameAs,'#','')=$id]//tei:name[ancestor::tei:persName[@type='attested'][2]][not(ancestor::tei:persName[@type='attested'][3])])">
+                  <xsl:text>-</xsl:text>
+                </xsl:if>
               </xsl:if>
             </xsl:if>
             
