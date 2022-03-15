@@ -37,7 +37,7 @@
         <xsl:when test="@xml:lang='grc'"><xsl:text>Ancient Greek</xsl:text></xsl:when>
         <xsl:when test="@xml:lang='grc-Latn'">Transliterated Greek</xsl:when>
         <xsl:when test="@xml:lang='ber-Latn'">Latino-Punic</xsl:when>
-        <xsl:when test="@xml:lang='xpu'">Neo-Punic</xsl:when>
+        <xsl:when test="@xml:lang='xpu' or @xml:lang='xpu-Latn'">Neo-Punic</xsl:when>
         <xsl:otherwise><xsl:value-of select="@xml:lang" /></xsl:otherwise>
       </xsl:choose>
     </field>

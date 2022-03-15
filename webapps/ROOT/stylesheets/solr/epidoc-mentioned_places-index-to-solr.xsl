@@ -76,7 +76,7 @@
               </xsl:otherwise>
             </xsl:choose>
           </field>
-          <field name="index_ethnic">
+          <field name="index_item_type">
             <xsl:choose>
               <xsl:when test="@type">
                 <xsl:value-of select="@type"/>

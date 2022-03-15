@@ -61,7 +61,7 @@
               </xsl:matching-substring>
             </xsl:analyze-string>
           </field>
-          <!--<field name="index_item_sort_dur">
+          <!--<field name="index_item_sort_name">
             <xsl:value-of select="substring(current-grouping-key(),2,4 )"/> !!! needs sorting
           </field>-->
           <xsl:apply-templates select="current-group()">

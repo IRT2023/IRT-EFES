@@ -28,9 +28,9 @@
                     <field name="index_item_name">
                         <xsl:value-of select="lower-case(replace(translate(normalize-space(normalize-unicode(string-join(.//text(), ''))), 'Ϲϲ', 'Σσ'), 'σ([:punct:]{1}|[:blank:]{1}|$)', 'ς$1'))" />
                     </field>
-                    <!-- <field name="language_code">
+                     <field name="language_code">
                         <xsl:value-of select="ancestor-or-self::*[@xml:lang][1]/@xml:lang"/>
-                    </field> -->
+                    </field> 
                     <xsl:apply-templates select="current-group()" />
                 </doc>
             </xsl:for-each-group>
