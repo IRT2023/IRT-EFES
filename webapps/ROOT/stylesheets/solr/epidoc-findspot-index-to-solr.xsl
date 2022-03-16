@@ -15,8 +15,8 @@
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" group-by="concat(@ref,'-',following-sibling::tei:placeName[not(@type)][1]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][1]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][2]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][3]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][4]/@ref,'-',following-sibling::tei:placeName[@type='monuList'][5]/@ref)">
-        <xsl:variable name="place" select="normalize-unicode(string-join(., ''))"/>
+      <xsl:for-each-group select="//tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" group-by="concat(@ref,'-',following-sibling::tei:placeName[not(@type)][1]/@ref,'-',string-join(following-sibling::tei:*[@type='monuList']/@ref, ' '))">
+        <xsl:variable name="place" select="normalize-space(string-join(., ''))"/>
         <xsl:variable name="placesAL" select="'../../content/xml/authority/places.xml'"/>
         <xsl:variable name="place-n" select="document($placesAL)//tei:listPlace[descendant::tei:head=$place]/@n"/>
         <doc>
@@ -29,19 +29,19 @@
           <xsl:call-template name="field_file_path" />
           <field name="index_item_name">
             <!-- upper level -->
-            <xsl:value-of select="normalize-unicode(string-join(., ''))" />
+            <xsl:value-of select="normalize-space(.)" />
             
             <!-- intermediate level -->
               <xsl:if test="following-sibling::tei:placeName[not(@type)]">
                 <xsl:text>. </xsl:text>
-                <xsl:value-of select="following-sibling::tei:placeName[not(@type)][1]" />
+                <xsl:value-of select="normalize-space(following-sibling::tei:placeName[not(@type)][1])"/>
               </xsl:if>
             
             <!-- lower level -->
-              <xsl:if test="following-sibling::tei:placeName[@type='monuList']"> <!-- up to 5 in IRT/IRCyr -->
+              <xsl:if test="following-sibling::tei:*[@type='monuList']">
                 <xsl:text>. </xsl:text>
-                <xsl:for-each select="following-sibling::tei:placeName[@type='monuList']">
-                  <xsl:value-of select="." />
+                <xsl:for-each select="following-sibling::tei:*[@type='monuList']">
+                  <xsl:value-of select="normalize-space(.)" />
                   <xsl:if test="position()!=last()"><xsl:text>; </xsl:text></xsl:if>
                 </xsl:for-each>
               </xsl:if>
@@ -49,20 +49,15 @@
           
           <xsl:if test="doc-available($placesAL) = fn:true() and $place-n">
             <field name="index_item_sort_name">
-              <xsl:value-of select="concat($place-n, following-sibling::tei:placeName[not(@type)][1], following-sibling::tei:placeName[@type='monuList'][1])" />
+              <xsl:value-of select="concat($place-n, following-sibling::tei:placeName[not(@type)][1], following-sibling::tei:*[@type='monuList'][1])" />
            </field>
           </xsl:if>
           
           <field name="index_external_resource">
-            <xsl:choose>
-              <xsl:when test="following-sibling::tei:placeName[@type='monuList']">
-                <xsl:value-of select="following-sibling::tei:placeName[@type='monuList']/@ref" />
-              </xsl:when>
-              <xsl:when test="following-sibling::tei:placeName[not(@type)]">
-                <xsl:value-of select="following-sibling::tei:placeName[not(@type)][1]/@ref" />
-              </xsl:when>
-              <xsl:otherwise><xsl:value-of select="@ref" /></xsl:otherwise>
-            </xsl:choose>
+            <xsl:for-each select="following-sibling::tei:*[@type='monuList']/@ref|following-sibling::tei:placeName[not(@type)][1]/@ref|@ref">
+              <xsl:value-of select="." />
+              <xsl:if test="position()!=last()"><xsl:text> </xsl:text></xsl:if>
+            </xsl:for-each>
           </field>
           <xsl:apply-templates select="current-group()" />
         </doc>
