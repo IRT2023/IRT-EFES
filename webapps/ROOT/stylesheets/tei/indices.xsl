@@ -55,14 +55,14 @@
           <tbody>
             <xsl:apply-templates select="doc">
               <xsl:sort>
-                <xsl:choose>
-                  <xsl:when test="str[@name='index_item_sort_name']">
-                    <xsl:value-of select="str[@name='index_item_sort_name']"/>
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:value-of select="translate(normalize-unicode(lower-case(translate(str[@name='index_item_name'], 'ᵓᶜ', '!,')),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/>
-                  </xsl:otherwise>
-                </xsl:choose>
+                <xsl:variable name="sort">
+                  <xsl:choose>
+                    <xsl:when test="str[@name='index_item_sort_name']"><xsl:value-of select="str[@name='index_item_sort_name']"/></xsl:when>
+                    <xsl:when test="str[@name='index_item_name']"><xsl:value-of select="str[@name='index_item_name']"/></xsl:when>
+                    <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+                  </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="translate(normalize-unicode(lower-case(translate($sort, 'ᵓᶜ', '!,')),'NFD'), '&#x0300;&#x0301;&#x0308;&#x0303;&#x0304;&#x0313;&#x0314;&#x0345;&#x0342;' ,'')"/>
               </xsl:sort>
             </xsl:apply-templates>
           </tbody>
