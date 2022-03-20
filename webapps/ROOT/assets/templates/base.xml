@@ -42,16 +42,18 @@
       </kiln:block>
       <kiln:block name="body">
         <body>
-          <kiln:block name="navigation">
+          
             <div id="site-heading">
               <img id="heading_image" alt="WP 0005" title="WP 0005" src="{$kiln:assets-path}/images/wp0005_detail.jpg"/>
               <span id="title-box">
                 <h1 id="site-title"><span id="site-title-abbr">IRT2021</span>
                   <br/><span id="site-title-full">Inscriptions of Roman Tripolitania 2021</span></h1></span>
             </div>
+          <kiln:block name="navigation">
             <nav class="top-bar">
               <kiln:block name="main-navigation">
                 <ul class="title-area">
+                  <li class="name"></li>
                   <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
                   </li>
@@ -59,13 +61,13 @@
                 <section class="top-bar-section">
                   <ul class="left">
                     <xsl:apply-templates mode="main-menu"
-                                         select="/aggregation/kiln:nav" />
+                      select="/aggregation/kiln:nav" />
                   </ul>
                   <!--<ul class="right">
                     <li class="has-form search">
                       <form action="{kiln:url-for-match('local-search', ($language), 0)}" method="get">
                         <input name="q" placeholder="Search"
-                               required="required" type="search" />
+                          required="required" type="search" />
                       </form>
                     </li>
                   </ul>-->
@@ -73,6 +75,10 @@
               </kiln:block>
             </nav>
           </kiln:block>
+            <!--<kiln:block name="navigation">
+              <nav class="top-bar">
+              <kiln:block name="main-navigation">-->
+          
           <kiln:block name="page-header">
             <div class="row">
               <div class="large-12 columns">
