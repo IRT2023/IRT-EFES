@@ -23,8 +23,8 @@
     </add>
   </xsl:template>
   
-  <xsl:template match="tei:rs[@type='textType']/text()" mode="facet_text_type">
-    <field name="text_type">
+  <xsl:template match="tei:rs[@type='textType']/text()" mode="facet_inscription_type">
+    <field name="inscription_type">
       <xsl:value-of select="upper-case(substring(normalize-space(.), 1, 1))" />
       <xsl:value-of select="substring(normalize-space(.), 2)" />
     </field>
@@ -129,7 +129,7 @@
        the main doc for the indexed file. Put any code to generate
        additional Solr field data (such as new facets) here. -->
   <xsl:template name="extra_fields">
-    <xsl:call-template name="field_text_type"/>
+    <xsl:call-template name="field_inscription_type"/>
     <xsl:call-template name="field_language"/>
     <xsl:call-template name="field_ordered_id"/>
     <xsl:call-template name="field_last_recorded_location"/>
@@ -139,8 +139,8 @@
   <xsl:call-template name="field_previously_unpublished"/>
   </xsl:template>
   
-  <xsl:template name="field_text_type">
-    <xsl:apply-templates mode="facet_text_type" select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title/tei:rs[@type='textType']"/>
+  <xsl:template name="field_inscription_type">
+    <xsl:apply-templates mode="facet_inscription_type" select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title/tei:rs[@type='textType']"/>
   </xsl:template>
   
   <xsl:template name="field_language">

@@ -35,14 +35,14 @@
         <xsl:call-template name="field_text" />
         <xsl:call-template name="field_lemmatised_text" />
         <!-- Facets. -->
-        <xsl:call-template name="field_findspot" />
+        <xsl:call-template name="field_found_provenance" />
         <xsl:call-template name="field_mentioned_people" />
         <xsl:call-template name="field_mentioned_places" />
-        <xsl:call-template name="field_place_of_origin" />
+        <xsl:call-template name="field_origin_place" />
         <xsl:call-template name="field_source_repository"/>
         <xsl:call-template name="field_support_object_type" />
         <xsl:call-template name="field_support_material" />
-        <xsl:call-template name="field_dating_criteria"/>
+        <xsl:call-template name="field_origin_date_evidence"/>
         <xsl:call-template name="extra_fields" />
       </doc>
     </xsl:if>
@@ -218,8 +218,8 @@
     </field>
   </xsl:template>
 
-  <xsl:template match="tei:origPlace" mode="facet_place_of_origin">
-    <field name="place_of_origin">
+  <xsl:template match="tei:origPlace" mode="facet_origin_place">
+    <field name="origin_place">
       <xsl:choose>
         <xsl:when test="tei:placeName">
           <xsl:value-of select="tei:placeName" />
@@ -231,9 +231,9 @@
     </field>
   </xsl:template>
   
-  <xsl:template match="tei:origDate[@evidence]" mode="facet_dating_criteria">
+  <xsl:template match="tei:origDate[@evidence]" mode="facet_origin_date_evidence">
     <xsl:for-each select="tokenize(@evidence, '\s+')">
-      <field name="dating_criteria">
+      <field name="origin_date_evidence">
         <xsl:value-of select="upper-case(substring(normalize-space(.), 1, 1))" />
         <xsl:value-of select="substring(normalize-space(translate(., '-', ' ')), 2)" />
       </field>
@@ -255,8 +255,8 @@
 
   <xsl:template match="text()" mode="facet_mentioned_people" />
   
-  <xsl:template match="tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" mode="facet_findspot">
-    <field name="findspot">
+  <xsl:template match="tei:provenance[@type='found']//tei:placeName[@type='ancientFindspot'][1]" mode="facet_found_provenance">
+    <field name="found_provenance">
       <xsl:value-of select="." />
     </field>
   </xsl:template>
@@ -295,8 +295,8 @@
     </field>
   </xsl:template>
   
-  <xsl:template name="field_findspot">
-    <xsl:apply-templates mode="facet_findspot" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']" />
+  <xsl:template name="field_found_provenance">
+    <xsl:apply-templates mode="facet_found_provenance" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:provenance[@type='found']" />
   </xsl:template>
 
   <xsl:template name="field_lemmatised_text">
@@ -313,8 +313,8 @@
     <xsl:apply-templates mode="facet_mentioned_places" select="//tei:text/tei:body/tei:div[@type='edition']" />
   </xsl:template>
 
-  <xsl:template name="field_place_of_origin">
-    <xsl:apply-templates mode="facet_place_of_origin" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin/tei:origPlace" />
+  <xsl:template name="field_origin_place">
+    <xsl:apply-templates mode="facet_origin_place" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin/tei:origPlace" />
   </xsl:template>
 
   <xsl:template name="field_source_repository">
@@ -325,8 +325,8 @@
     <xsl:apply-templates mode="facet_support_material" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc/tei:objectDesc/tei:supportDesc/tei:support//tei:material" />
   </xsl:template>
   
-  <xsl:template name="field_dating_criteria">
-    <xsl:apply-templates mode="facet_dating_criteria" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin/tei:origDate[@evidence]"/>
+  <xsl:template name="field_origin_date_evidence">
+    <xsl:apply-templates mode="facet_origin_date_evidence" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin/tei:origDate[@evidence]"/>
   </xsl:template>
 
   <xsl:template name="field_support_object_type">
